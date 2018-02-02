@@ -26,7 +26,7 @@ Namespace Samples.AspNet.VB.Controls
 
                     ' Else the parsed element is not a LiteralControl.
                 Else
-                    ' If the server control has a value in the the Text property.
+                    ' If the server control has a value in the Text property.
                     Dim currentText As String = Me.Text
                     If currentText.Length <> 0 Then
 

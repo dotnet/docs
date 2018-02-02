@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
 caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XSLT Parameters
 XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace URI are associated with the parameter object at that time.  
@@ -35,11 +36,11 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
   
 |W3C type|Equivalent .NET class (type)|XPath or XSLT type|  
 |--------------|------------------------------------|------------------------|  
-|`String`|<xref:System.String?displayProperty=fullName>|XPath|  
-|`Boolean`|<xref:System.Boolean?displayProperty=fullName>|XPath|  
-|`Number`|<xref:System.Double?displayProperty=fullName>|XPath|  
-|`Result Tree Fragment`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=fullName>|XSLT|  
-|`Node*`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=fullName>|XPath|  
+|`String`|<xref:System.String?displayProperty=nameWithType>|XPath|  
+|`Boolean`|<xref:System.Boolean?displayProperty=nameWithType>|XPath|  
+|`Number`|<xref:System.Double?displayProperty=nameWithType>|XPath|  
+|`Result Tree Fragment`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>|XSLT|  
+|`Node*`|<xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>|XPath|  
 |`Node Set`|<xref:System.Xml.XPath.XPathNodeIterator><br /><br /> **XPathNavigator[]**|XPath|  
   
  *This is equivalent to a node set that contains a single node.  

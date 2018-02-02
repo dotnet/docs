@@ -149,5 +149,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> derived object to a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertBack">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Not supported in this release.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Internet Information Services (IIS) Server Certificate Installation Instructions
 To run the samples that securely communicate with Internet Information Services (IIS), you must create and install a server certificate.  

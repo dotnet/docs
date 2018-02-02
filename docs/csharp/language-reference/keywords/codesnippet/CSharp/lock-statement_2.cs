@@ -65,5 +65,9 @@
             {
                 threads[i].Start();
             }
+            
+            //block main thread until all other threads have ran to completion.
+            foreach (var t in threads)
+                t.Join();
         }
     }

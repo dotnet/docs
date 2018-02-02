@@ -33,7 +33,7 @@
 ## Remarks  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
   
- The UTF-7 encoding represents Unicode characters as sequences of 7-bit ASCII characters. This encoding supports certain protocols for which it is required, most often e-mail or newsgroup protocols. Since UTF-7 is not particularly secure or robust, and most modern systems allow 8-bit encodings, UTF-8 should normally be preferred to UTF-7.  
+ The UTF-7 encoding represents Unicode characters as sequences of 7-bit ASCII characters. This encoding supports certain protocols for which it is required, most often email or newsgroup protocols. Since UTF-7 is not particularly secure or robust, and most modern systems allow 8-bit encodings, UTF-8 should normally be preferred to UTF-7.  
   
 > [!NOTE]
 >  <xref:System.Text.UTF7Encoding> does not provide error detection. For security reasons, the application should use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
@@ -60,6 +60,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Decoder" />
+    <altmember cref="T:System.Text.Encoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates an instance that does not allow optional characters. Calling the <xref:System.Text.UTF7Encoding.%23ctor%2A> constructor is equivalent to calling the <xref:System.Text.UTF7Encoding.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor that takes an `allowOptionals` parameter and specifying `false` for that parameter.  
+ This constructor creates an instance that does not allow optional characters. Calling the <xref:System.Text.UTF7Encoding.%23ctor%2A> constructor is equivalent to calling the <xref:System.Text.UTF7Encoding.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor that takes an `allowOptionals` parameter and specifying `false` for that parameter.  
   
  If an instance allows optional characters, Unicode code points are encoded with a corresponding optional character instead of a modified base 64 character. The optional characters are exclamation point ("!"), backward slash ("\\"), vertical line ("&#124;"), double quote ("""), number sign ("#"), dollar sign ("$"), percent sign ("%"), ampersand ("&"), asterisk ("*"), semicolon (";"), left angle bracket ("\<"), right angle bracket (">"), left curly bracket ("{"), right curly bracket ("}"), left square bracket ("["), right square bracket ("]"), equal sign ("="), at sign ("@"), circumflex accent ("^"), underscore ("_"), and grave accent ("`").  
   
@@ -199,6 +201,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
+        <altmember cref="Overload:System.Text.UTF7Encoding.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -263,6 +267,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -329,6 +336,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF7Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -403,6 +413,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -480,6 +493,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -569,6 +585,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -661,6 +680,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -727,6 +749,9 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Text.UTF7Encoding.GetChars" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -801,6 +826,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.UTF7Encoding.GetChars" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -878,6 +906,10 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF7Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -967,6 +999,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDecoder">
@@ -999,7 +1035,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
    
   
@@ -1012,6 +1048,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Decoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1044,7 +1085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF7Encoding.GetChars%2A> method. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF7Encoding.GetDecoder%2A> and <xref:System.Text.UTF7Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
    
   
@@ -1057,6 +1098,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1137,7 +1182,7 @@
   
  <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> can return large values.  
   
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>. While UTF-7 is very efficient at encoding ASCII data, one byte per character, it is extremely inefficient for other data. As remarked above, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> deals with a worst case. If the data to be encoded is largely ASCII, and especially if the ASCII characters cluster together, UTF-7 is significantly more efficient than the number returned by this method suggests.  
+ In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType>. While UTF-7 is very efficient at encoding ASCII data, one byte per character, it is extremely inefficient for other data. As remarked above, <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> deals with a worst case. If the data to be encoded is largely ASCII, and especially if the ASCII characters cluster together, UTF-7 is significantly more efficient than the number returned by this method suggests.  
   
  <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetChars%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetChars%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>.  
   
@@ -1166,6 +1211,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxCharCount">
@@ -1205,7 +1253,7 @@
   
  <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> can return large values.  
   
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName>.  
+ In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF7Encoding.GetCharCount%2A> or <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType>.  
   
  <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.UTF7Encoding.GetBytes%2A>. If your application needs a similar function to use with <xref:System.Text.UTF7Encoding.GetBytes%2A>, it should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>.  
   
@@ -1234,6 +1282,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1310,7 +1362,61 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF7Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF7Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.UTF7Encoding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

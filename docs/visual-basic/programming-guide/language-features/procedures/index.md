@@ -1,41 +1,23 @@
 ---
 title: "Procedures in Visual Basic"
 ms.custom: ""
-ms.date: "2017-04-28"
+ms.date: 04/28/2017
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "procedures, structured code"
+  - "procedures [Visual Basic], structured code"
   - "Visual Basic code, procedures"
-  - "procedures, types of"
-  - "structured code, procedures"
+  - "procedures [Visual Basic], types of"
+  - "structured code [Visual Basic], procedures"
   - "procedures"
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Procedures in Visual Basic
 A *procedure* is a block of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements enclosed by a declaration statement (`Function`, `Sub`, `Operator`, `Get`, `Set`) and a matching `End` declaration. All executable statements in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] must be within some procedure.  
@@ -84,13 +66,13 @@ A *procedure* is a block of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statemen
 -   After you develop procedures for use in one program, you can use them in other programs, often with little or no modification. This helps you avoid code duplication.  
   
 ## See Also  
- [How to: Create a Procedure](./how-to-create-a-procedure.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Recursive Procedures](./recursive-procedures.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)   
+ [How to: Create a Procedure](./how-to-create-a-procedure.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Recursive Procedures](./recursive-procedures.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md)  
  [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

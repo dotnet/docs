@@ -34,7 +34,7 @@
   <Members>
     <Member MemberName="OnFieldChange">
       <MemberSignature Language="C#" Value="public int OnFieldChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int hRow, int cColumns, int[] rgColumns, int dbReason, int eventPhase, int fCantDeny);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnFieldChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 hRow, int32 cColumns, int32[] rgColumns, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnFieldChange([in]class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, [in]int32 hRow, [in]int32 cColumns, [in]int32[] rgColumns, [in]int32 dbReason, [in]int32 eventPhase, [in]int32 fCantDeny) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnFieldChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -77,7 +77,7 @@
     </Member>
     <Member MemberName="OnRowChange">
       <MemberSignature Language="C#" Value="public int OnRowChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int cRows, int[] rghRows, int dbReason, int eventPhase, int fCantDeny);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 cRows, int32[] rghRows, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowChange([in]class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, [in]int32 cRows, [in]int32[] rghRows, [in]int32 dbReason, [in]int32 eventPhase, [in]int32 fCantDeny) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -118,7 +118,7 @@
     </Member>
     <Member MemberName="OnRowsetChange">
       <MemberSignature Language="C#" Value="public int OnRowsetChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int dbReason, int eventPhase, int fCantDeny);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowsetChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowsetChange([in]class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, [in]int32 dbReason, [in]int32 eventPhase, [in]int32 fCantDeny) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowsetChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

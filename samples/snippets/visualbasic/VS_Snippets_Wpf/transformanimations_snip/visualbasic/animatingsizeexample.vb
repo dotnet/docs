@@ -23,7 +23,7 @@ Namespace Microsoft.Samples.Animation
 			myCanvas.Height = 400
 
 			'
-			'  Create the the first button.
+			'  Create the first button.
 			'
 			Dim myAnimatedWidthButton As New Button()
 			myAnimatedWidthButton.Name = "AnimatedWidthButton"

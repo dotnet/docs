@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "CopyTo method"
   - "Join method"
@@ -20,12 +23,15 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Creating New Strings in .NET
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also provides several methods in the <xref:System.String?displayProperty=fullName> class that create new string objects by combining several strings, arrays of strings, or objects.  
+The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
   
 ## Creating Strings Using Assignment  
- The easiest way to create a new <xref:System.String> object is simply to assign a string literal to a <xref:System.String>object.  
+ The easiest way to create a new <xref:System.String> object is simply to assign a string literal to a <xref:System.String> object.  
   
 ## Creating Strings Using a Class Constructor  
  You can use overloads of the <xref:System.String> class constructor to create strings from character arrays. You can also create a new string by duplicating a particular character a specified number of times.  
@@ -35,11 +41,11 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
   
 |Method name|Use|  
 |-----------------|---------|  
-|<xref:System.String.Format%2A?displayProperty=fullName>|Builds a formatted string from a set of input objects.|  
-|<xref:System.String.Concat%2A?displayProperty=fullName>|Builds strings from two or more strings.|  
-|<xref:System.String.Join%2A?displayProperty=fullName>|Builds a new string by combining an array of strings.|  
-|<xref:System.String.Insert%2A?displayProperty=fullName>|Builds a new string by inserting a string into the specified index of an existing string.|  
-|<xref:System.String.CopyTo%2A?displayProperty=fullName>|Copies specified characters in a string into a specified position in an array of characters.|  
+|<xref:System.String.Format%2A?displayProperty=nameWithType>|Builds a formatted string from a set of input objects.|  
+|<xref:System.String.Concat%2A?displayProperty=nameWithType>|Builds strings from two or more strings.|  
+|<xref:System.String.Join%2A?displayProperty=nameWithType>|Builds a new string by combining an array of strings.|  
+|<xref:System.String.Insert%2A?displayProperty=nameWithType>|Builds a new string by inserting a string into the specified index of an existing string.|  
+|<xref:System.String.CopyTo%2A?displayProperty=nameWithType>|Copies specified characters in a string into a specified position in an array of characters.|  
   
 ### Format  
  You can use the **String.Format** method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an **Int32** value and a **DateTime** value to the user, you can easily construct a string to represent these values using the **Format** method. For information about formatting conventions used with this method, see the section on [composite formatting](../../../docs/standard/base-types/composite-formatting.md).  
@@ -49,7 +55,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
  [!code-csharp[Strings.Creating#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Strings.Creating/cs/Example.cs#1)]
  [!code-vb[Strings.Creating#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#1)]  
   
- In this example,<xref:System.DateTime.Now%2A?displayProperty=fullName> displays the current date and time in a manner specified by the culture associated with the current thread.  
+ In this example,<xref:System.DateTime.Now%2A?displayProperty=nameWithType> displays the current date and time in a manner specified by the culture associated with the current thread.  
   
 ### Concat  
  The **String.Concat** method can be used to easily create a new string object from two or more existing objects. It provides a language-independent way to concatenate strings. This method accepts any class that derives from **System.Object**. The following example creates a string from two existing string objects and a separating character.  
@@ -80,5 +86,5 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
  [!code-vb[Strings.Creating#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Strings.Creating/vb/Example.vb#5)]  
   
 ## See Also  
- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
  [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

@@ -87,7 +87,7 @@
 ## Remarks  
  Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A> property.  
   
- The value of the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A> property can be any user defined XML qualified name, including the codes represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode?displayProperty=fullName>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode?displayProperty=fullName>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingMissingIdFaultCode?displayProperty=fullName>, and <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode?displayProperty=fullName> fields.  
+ The value of the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A> property can be any user defined XML qualified name, including the codes represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode?displayProperty=nameWithType>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode?displayProperty=nameWithType>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingMissingIdFaultCode?displayProperty=nameWithType>, and <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode?displayProperty=nameWithType> fields.  
   
  ]]></format>
         </remarks>
@@ -119,5 +119,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapFaultSubcode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

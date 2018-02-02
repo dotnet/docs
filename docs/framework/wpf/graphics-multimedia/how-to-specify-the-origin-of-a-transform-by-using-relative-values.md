@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "origins of Transforms"
-  - "Transforms, origins of"
-  - "graphics, origins of Transforms"
+  - "origins of Transforms [WPF]"
+  - "Transforms [WPF], origins of"
+  - "graphics [WPF], origins of Transforms"
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Specify the Origin of a Transform by Using Relative Values
 This example shows how to use relative values to specify the origin of a <xref:System.Windows.UIElement.RenderTransform%2A> that is applied to a <xref:System.Windows.FrameworkElement>.  
@@ -46,6 +48,6 @@ A 45 degree rotation by using the RenderTransform property with a RenderTransfor
  For more information about transforming <xref:System.Windows.FrameworkElement> objects, see the [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md).  
   
 ## See Also  
- <xref:System.Windows.Media.Transform>   
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)   
+ <xref:System.Windows.Media.Transform>  
+ [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)

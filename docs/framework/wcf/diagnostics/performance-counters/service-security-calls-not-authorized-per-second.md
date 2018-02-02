@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Service: Security Calls Not Authorized Per Second
 Counter name: Security Calls Not Authorized Per Second  

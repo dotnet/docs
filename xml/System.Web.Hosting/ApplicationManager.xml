@@ -295,8 +295,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method to retrieve the <xref:System.Web.Hosting.ApplicationManager> instance for a Web application.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]
+ [!code-aspx-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -354,8 +354,8 @@
 ## Examples  
  The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetRunningApplications%2A> method to display information about the applications managed by an <xref:System.Web.Hosting.ApplicationManager> instance.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]
+ [!code-aspx-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -451,7 +451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=nameWithType> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
   
  ]]></format>
         </remarks>
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=nameWithType> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
   
  ]]></format>
         </remarks>
@@ -516,5 +516,23 @@
  <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAppDomain">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the application domain of a specified application.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an object for the specified application domain and object type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,18 +1,18 @@
 ---
-title: dotnet-vstest command
-description: The dotnet-vstest command builds a project and all of its dependencies. 
-keywords: dotnet-vstest, CLI, CLI command, .NET Core
+title: dotnet vstest command - .NET Core CLI
+description: The dotnet vstest command builds a project and all of its dependencies.
 author: guardrex
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet vstest
 
-# dotnet-vstest
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
@@ -114,6 +114,10 @@ Run tests in `mytestproject.dll`:
 
 `dotnet vstest mytestproject.dll`
 
+Run tests in `mytestproject.dll`, exporting to custom folder with custom name:
+
+`dotnet vstest mytestproject.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:custom/file/path`
+
 Run tests in `mytestproject.dll` and `myothertestproject.exe`:
 
 `dotnet vstest mytestproject.dll myothertestproject.exe`
@@ -125,3 +129,4 @@ Run `TestMethod1` tests:
 Run `TestMethod1` and `TestMethod2` tests:
 
 `dotnet vstest /Tests:TestMethod1,TestMethod2`
+

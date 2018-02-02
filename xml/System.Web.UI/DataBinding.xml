@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataBinder" />
+    <altmember cref="T:System.Web.UI.DataBindingCollection" />
+    <altmember cref="T:System.Web.UI.IDataBindingsAccessor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataBinder" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -83,6 +87,7 @@
         <returns>
           <see langword="true" /> if the data-binding property names match; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.DataBinding.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Expression">
@@ -133,10 +138,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.UI.DataBinding> objects are placed in a <xref:System.Web.UI.DataBindingCollection> object, accessible only at design time. The collection is a hash table that represents the bindings on a control. There can only be one binding per property, so the hash code computation matches the <xref:System.Web.UI.DataBinding.Equals%2A?displayProperty=fullName> implementation and only takes the property name into account.  
+ <xref:System.Web.UI.DataBinding> objects are placed in a <xref:System.Web.UI.DataBindingCollection> object, accessible only at design time. The collection is a hash table that represents the bindings on a control. There can only be one binding per property, so the hash code computation matches the <xref:System.Web.UI.DataBinding.Equals%2A?displayProperty=nameWithType> implementation and only takes the property name into account.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataBinding.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="PropertyName">

@@ -360,7 +360,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -413,6 +413,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -612,6 +613,7 @@
         <summary>Gets or sets the <see cref="T:System.Data.LoadOption" /> that determines how the adapter fills the <see cref="T:System.Data.DataTable" /> from the <see cref="T:System.Data.Common.DbDataReader" />.</summary>
         <value>A <see cref="T:System.Data.LoadOption" /> value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Data.LoadOption" />
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -686,6 +688,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -868,6 +871,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingMappingAction" /> values.</exception>
+        <altmember cref="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
       </Docs>
     </Member>
     <Member MemberName="MissingSchemaAction">
@@ -911,6 +915,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingSchemaAction" /> values.</exception>
+        <altmember cref="P:System.Data.Common.DataAdapter.MissingMappingAction" />
       </Docs>
     </Member>
     <Member MemberName="OnFillError">
@@ -1251,7 +1256,7 @@
   
 6.  The <xref:System.Data.Common.DbDataAdapter.OnRowUpdated%2A> event is raised.  
   
-7.  <xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName> is called. This will raise both the <xref:System.Data.DataTable.RowChanging?displayProperty=fullName> and <xref:System.Data.DataTable.RowChanged?displayProperty=fullName> events for the updated <xref:System.Data.DataRow>.  
+7.  <xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=nameWithType> is called. This will raise both the <xref:System.Data.DataTable.RowChanging?displayProperty=nameWithType> and <xref:System.Data.DataTable.RowChanged?displayProperty=nameWithType> events for the updated <xref:System.Data.DataRow>.  
   
  Each command associated with the <xref:System.Data.Common.DataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DataAdapter> references to obtain parameter values for the current row.  
   
@@ -1272,7 +1277,7 @@
 > [!NOTE]
 >  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
 >   
->  For every column that you propagate to the data source on<xref:System.Data.Common.DataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
+>  For every column that you propagate to the data source on <xref:System.Data.Common.DataAdapter.Update%2A>, a parameter should be added to the `InsertCommand`, `UpdateCommand`, or `DeleteCommand`. The `SourceColumn` property of the parameter should be set to the name of the column. This setting indicates that the value of the parameter is not set manually, but is taken from the particular column in the currently processed row.  
   
    
   
@@ -1288,5 +1293,35 @@
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Fill">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

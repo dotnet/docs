@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeDirectionExpression" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,7 +66,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeMethodReferenceExpression method, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeMethodReferenceExpression method, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeMethodReferenceExpression method, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeMethodReferenceExpression,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -92,10 +93,11 @@
         <param name="parameters">An array of <see cref="T:System.CodeDom.CodeExpression" /> objects that indicate the parameters with which to invoke the method.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class using the specified method and parameters.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeExpression targetObject, string methodName, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeMethodInvokeExpression (System.CodeDom.CodeExpression targetObject, string methodName, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -175,7 +177,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeExpressionCollection" />
+        <altmember cref="T:System.CodeDom.CodeDirectionExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodInvokeExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

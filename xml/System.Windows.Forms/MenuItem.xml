@@ -49,6 +49,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MainMenu" />
+    <altmember cref="T:System.Windows.Forms.Menu" />
+    <altmember cref="T:System.Windows.Forms.MenuMerge" />
+    <altmember cref="T:System.Windows.Forms.ContextMenu" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -296,6 +300,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.MenuItem.Popup" />
+        <altmember cref="E:System.Windows.Forms.MenuItem.Select" />
+        <altmember cref="E:System.Windows.Forms.MenuItem.Click" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeType" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeOrder" />
       </Docs>
     </Member>
     <Member MemberName="BarBreak">
@@ -341,6 +350,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.Break" />
       </Docs>
     </Member>
     <Member MemberName="Break">
@@ -384,6 +394,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.BarBreak" />
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -643,6 +654,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.MenuItem.MeasureItem" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -840,6 +853,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.OwnerDraw" />
+        <altmember cref="E:System.Windows.Forms.MenuItem.DrawItem" />
       </Docs>
     </Member>
     <Member MemberName="MenuID">
@@ -960,6 +975,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeType" />
+        <altmember cref="M:System.Windows.Forms.MenuItem.MergeMenu" />
       </Docs>
     </Member>
     <Member MemberName="MergeType">
@@ -1000,6 +1017,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.MenuMerge" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.MenuMerge" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeOrder" />
       </Docs>
     </Member>
     <Member MemberName="Mnemonic">
@@ -1030,6 +1049,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.Text" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -1101,6 +1121,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.MenuItem.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MenuItem.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DrawItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInitMenuPopup">
@@ -1153,6 +1174,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.MenuItem.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MenuItem.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.MeasureItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPopup">
@@ -1273,6 +1295,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.Menu" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1380,6 +1404,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.MenuItem.PerformClick" />
       </Docs>
     </Member>
     <Member MemberName="Popup">
@@ -1445,7 +1470,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.MenuItem.Checked%2A> property to change the state of an application. In the example, a group of menu items are provided that are used to specify the color for the text in an <xref:System.Windows.Forms.TextBox> control. In the example, the event handler provided is used by the <xref:System.Windows.Forms.MenuItem.Click> event of the three menu items. Each menu item specifies a color, `menuItemRed`, `menuItemGreen`, or `menuItemBlue`. The event handler determines which menu item was clicked, places a checkmark to the selected menu item, and changes the text color of the form's <xref:System.Windows.Forms.TextBox> control, named `textBox1`. The example also uses the <xref:System.Windows.Forms.MenuItem.RadioCheck%2A> property to demonstrate how a radio-button check is used to show menu items that are mutually exclusive. This example requires that the <xref:System.Drawing?displayProperty=fullName> namespace has been added to the form that contains this code.  
+ The following code example uses the <xref:System.Windows.Forms.MenuItem.Checked%2A> property to change the state of an application. In the example, a group of menu items are provided that are used to specify the color for the text in an <xref:System.Windows.Forms.TextBox> control. In the example, the event handler provided is used by the <xref:System.Windows.Forms.MenuItem.Click> event of the three menu items. Each menu item specifies a color, `menuItemRed`, `menuItemGreen`, or `menuItemBlue`. The event handler determines which menu item was clicked, places a checkmark to the selected menu item, and changes the text color of the form's <xref:System.Windows.Forms.TextBox> control, named `textBox1`. The example also uses the <xref:System.Windows.Forms.MenuItem.RadioCheck%2A> property to demonstrate how a radio-button check is used to show menu items that are mutually exclusive. This example requires that the <xref:System.Drawing?displayProperty=nameWithType> namespace has been added to the form that contains this code.  
   
  [!code-cpp[Classic MenuItem.RadioCheck Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MenuItem.RadioCheck Example/CPP/source.cpp#1)]
  [!code-csharp[Classic MenuItem.RadioCheck Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MenuItem.RadioCheck Example/CS/source.cs#1)]
@@ -1453,6 +1478,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.Checked" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1489,6 +1515,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.MenuItem.Click" />
       </Docs>
     </Member>
     <Member MemberName="Shortcut">
@@ -1532,6 +1559,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.Shortcut" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.Shortcut" />
       </Docs>
     </Member>
     <Member MemberName="ShowShortcut">
@@ -1575,6 +1603,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.Shortcut" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1616,6 +1645,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MenuItem.Mnemonic" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1680,5 +1710,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MergeMenu">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges this <see cref="T:System.Windows.Forms.MenuItem" /> with another <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CloneMenu">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a copy of a <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

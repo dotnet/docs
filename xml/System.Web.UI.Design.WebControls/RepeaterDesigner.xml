@@ -18,6 +18,9 @@
     <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="T:System.Web.UI.Design.IDataSourceProvider" />
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,6 +37,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.RepeaterDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="T:System.Web.UI.WebControls.Repeater" />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -53,6 +58,7 @@
         <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that contains the <see cref="T:System.ComponentModel.Design.DesignerActionList" /> items for the control designer.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -230,6 +236,8 @@
         <returns>An <see cref="T:System.Collections.IEnumerable" /> object containing sample data for use at design time.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.GetResolvedSelectedDataSource" />
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -295,6 +303,7 @@
         <returns>The HTML markup used to represent a control at design time that would otherwise have no visual representation. The default is a rectangle that contains the type and ID of the component.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -345,6 +354,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectedDataSource">
@@ -367,7 +377,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=fullName> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
+ The <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.GetSelectedDataSource%2A> method uses the <xref:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource%2A?displayProperty=nameWithType> method to construct a data source from the object that is specified by the <xref:System.Web.UI.Design.WebControls.RepeaterDesigner.DataSource%2A> property.  
   
  ]]></format>
         </remarks>
@@ -394,6 +404,7 @@
         <summary>Initializes the designer with the provided <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -459,6 +470,7 @@
         <summary>Filters the properties to replace the runtime data source property descriptor with the designer's property descriptor.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
       </Docs>
     </Member>
     <Member MemberName="TemplatesExist">
@@ -478,7 +490,18 @@
         <value>A value that indicates whether any templates are defined for the associated control.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+        <altmember cref="T:System.Web.UI.Design.TemplateGroupCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeDataSource">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns design-time sample data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

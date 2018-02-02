@@ -109,32 +109,10 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Threading.ThreadPriority (System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Threading.ThreadPriority op_Implicit(class System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintThreadPriorityProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Threading.ThreadPriority" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.ThreadPriority</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Threading.ThreadPriority" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" />.</summary>
+        <returns>A <see cref="T:System.Threading.ThreadPriority" /> value.</returns>
+        <ReturnType>System.Object</ReturnType>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -160,5 +138,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Threading.ThreadPriority" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

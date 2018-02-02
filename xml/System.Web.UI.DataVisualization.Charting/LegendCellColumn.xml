@@ -747,7 +747,7 @@
   
  This <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.ToolTip%2A> property allows you to set special keywords to display different types of chart-related data.  
   
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
   
  ]]></format>
         </remarks>
@@ -788,11 +788,20 @@
   
  The <xref:System.Web.UI.DataVisualization.Charting.LegendCellColumn.Url%2A> property allows you to set special keywords to display different types of chart-related data.  
   
- To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart>object.  
+ To create image maps that have user-defined coordinates, use the <xref:System.Web.UI.DataVisualization.Charting.Chart.MapAreas%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.LegendCellColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,7 +76,17 @@
         <summary>Gets the collection of context items for this instance.</summary>
         <value>An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> objects that provide context for the request (RST) as a collection of name-value pairs. The default is an empty list.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

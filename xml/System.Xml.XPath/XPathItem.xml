@@ -155,10 +155,11 @@
 ## Remarks  
  If the value of the item is not valid according to its specified schema type, the value of the <xref:System.Xml.XPath.XPathItem.TypedValue%2A> property is equivalent to the value of the <xref:System.Xml.XPath.XPathItem.Value%2A> property.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XPath.XPathItem.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -279,13 +280,14 @@
   
  The <xref:System.Xml.IXmlNamespaceResolver> object is used to resolve namespace prefixes related to type conversions. For example, when converting an `xs:QName` to an `xs:string`.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The item's value is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -322,7 +324,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Boolean> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -364,7 +366,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDateTime%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.DateTime> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -406,7 +408,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsDouble%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Double> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -449,7 +451,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsInt%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int32> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -492,7 +494,7 @@
 ## Remarks  
  The <xref:System.Xml.XPath.XPathItem.ValueAsLong%2A> property attempts to convert the value of the item to the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)] <xref:System.Int64> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -537,13 +539,14 @@
   
  For example, an element of type `xs:int` would have a <xref:System.Xml.XPath.XPathItem.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.XPath.XPathItem.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>All implementers must provide a <see cref="P:System.Xml.XPath.XPathItem.ValueType" /> property for every item, even if it is only <see cref="T:System.String" />.</para>
         </block>
+        <altmember cref="P:System.Xml.XPath.XPathItem.TypedValue" />
       </Docs>
     </Member>
     <Member MemberName="XmlType">
@@ -578,7 +581,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaSimpleType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaComplexType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValueAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item's value as the specified type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

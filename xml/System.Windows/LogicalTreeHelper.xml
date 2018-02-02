@@ -20,7 +20,7 @@
   
 -   Instead of calling the static <xref:System.Windows.LogicalTreeHelper.GetChildren%2A> method, which returns an enumerator for the logical child objects, use the dedicated collection exposed in the content model for that object. Nearly all objects that support a content model expose some property that contains the collection of child objects, and provides collection interface support directly on that collection.  
   
--   Instead of calling the static <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> method to obtain a child object by specifying its name, call the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=fullName> method on specific objects.  
+-   Instead of calling the static <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> method to obtain a child object by specifying its name, call the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=nameWithType> method on specific objects.  
   
  <xref:System.Windows.LogicalTreeHelper> is most useful for analysis scenarios where you are traveling up or down the logical tree recursively through multiple levels, and want to use a consistent approach for examining the various parent or child objects. In this case, you might be accessing a mixture of content models, and using the more content-model specific APIs would be too complex.  
   
@@ -50,12 +50,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is typically more convenient to call the instance methods <xref:System.Windows.FrameworkElement.BringIntoView%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.BringIntoView%2A?displayProperty=fullName> rather than this static utility method. The behavior of the instance methods is equivalent to the behavior of the static method.  
+ It is typically more convenient to call the instance methods <xref:System.Windows.FrameworkElement.BringIntoView%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.BringIntoView%2A?displayProperty=nameWithType> rather than this static utility method. The behavior of the instance methods is equivalent to the behavior of the static method.  
   
- Even if the `current` UI element provided was a <xref:System.Windows.FrameworkContentElement>, the resulting event is still the same <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> event, with the originating <xref:System.Windows.FrameworkContentElement> identifiable by checking the event data of the event.  
+ Even if the `current` UI element provided was a <xref:System.Windows.FrameworkContentElement>, the resulting event is still the same <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=nameWithType> event, with the originating <xref:System.Windows.FrameworkContentElement> identifiable by checking the event data of the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.FrameworkElement.RequestBringIntoView" />
       </Docs>
     </Member>
     <Member MemberName="FindLogicalNode">
@@ -83,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The methods <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=fullName> and <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> are superficially similar to <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A>, but operate by different logic:  
+ The methods <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=nameWithType> and <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=nameWithType> are superficially similar to <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A>, but operate by different logic:  
   
 -   The search direction for <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> is toward child objects (down the tree); the search direction for the `FindName` methods is towards parent objects (up the tree).  
   
@@ -189,11 +190,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is merely a wrapper that gets the appropriate type version (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) of the <xref:System.Windows.FrameworkElement.Parent%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.Parent%2A?displayProperty=fullName> property; so unless you are unable to determine the `current` type, you might want to check the respective instance properties instead.  
+ This method is merely a wrapper that gets the appropriate type version (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) of the <xref:System.Windows.FrameworkElement.Parent%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkContentElement.Parent%2A?displayProperty=nameWithType> property; so unless you are unable to determine the `current` type, you might want to check the respective instance properties instead.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildren">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of immediate child objects of the specified object by processing the logical tree.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -162,5 +163,14 @@
         <exception cref="T:System.ArgumentNullException">Trying to set this property to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedConditionAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

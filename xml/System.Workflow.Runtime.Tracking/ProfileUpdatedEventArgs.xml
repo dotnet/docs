@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event to notify the runtime tracking infrastructure that the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a particular workflow <xref:System.Type> has changed. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> to provide the workflow <xref:System.Type> and the new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated?displayProperty=fullName> event. When it receives a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event, the runtime tracking infrastructure will update the tracking profile for the specified workflow <xref:System.Type> in its profile cache.  
+ A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event to notify the runtime tracking infrastructure that the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a particular workflow <xref:System.Type> has changed. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> to provide the workflow <xref:System.Type> and the new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated?displayProperty=nameWithType> event. When it receives a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event, the runtime tracking infrastructure will update the tracking profile for the specified workflow <xref:System.Type> in its profile cache.  
   
  ]]></format>
     </remarks>
@@ -130,5 +130,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

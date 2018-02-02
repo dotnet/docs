@@ -1,7 +1,7 @@
 ---
 title: "How to: Find a Single Descendant Using the Descendants Method (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 6f735be9-0293-4680-8007-ca9d96bfebed
 caps.latest.revision: 3
 author: "BillWagner"

@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;wsFederation&gt;
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  
@@ -84,7 +86,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 ## Remarks  
  You can use the `<wsFederation>` element to configure default WS-Federation parameter settings and default behavior for the WSFAM. WS-Federation parameter settings defined under the `<wsFederation>` element set equivalent properties exposed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. These properties remain the same for every request issued by the WSFAM. You can change the WS-Federation parameters dynamically during request processing by adding event handlers for the events exposed by WSFAM; for example, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event. For more information, see the documentation for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class.  
   
- The `<wsFederation>` element is represented by the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> class. The configuration object itself is represented by the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class. A single <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> instance is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property and provides configuration for the WSFAM.  
+ The `<wsFederation>` element is represented by the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> class. The configuration object itself is represented by the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class. A single <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> instance is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property and provides configuration for the WSFAM.  
   
 ## Example  
  The following XML shows a `<wsFederation>` element that specifies settings for the WSFAM.  
@@ -104,5 +106,5 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>   
- <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName>
+ <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>  
+ <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType>

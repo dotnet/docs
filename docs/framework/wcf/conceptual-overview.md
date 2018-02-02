@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF [WCF], concepts"
   - "Windows Communication Foundation [WCF], concepts"
 ms.assetid: 503fae4b-014c-44df-a9c7-c76ec4ed4229
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Conceptual Overview
 This topic summarizes information about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] messaging system and the classes that support its use.  

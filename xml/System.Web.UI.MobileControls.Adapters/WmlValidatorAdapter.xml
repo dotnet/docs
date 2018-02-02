@@ -73,6 +73,7 @@
         <param name="writer">The text writer to receive output.</param>
         <summary>Generates the target-specific markup for the control to which the control adapter is attached, using the provided writer. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
       </Docs>
     </Member>
   </Members>

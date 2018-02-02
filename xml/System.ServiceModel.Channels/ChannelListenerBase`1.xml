@@ -282,5 +282,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAcceptChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to accept a channel of the type specified by the current channel listener.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcceptChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accepts a channel of the type specified by the current channel listener.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

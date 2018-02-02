@@ -37,20 +37,25 @@
 ## Remarks  
  The <xref:System.Security.Claims.ClaimsIdentity> class is a concrete implementation of a claims-based identity; that is, an identity described by a collection of claims. A claim is a statement about an entity made by an issuer that describes a property, right, or some other quality of that entity. Such an entity is said to be the subject of the claim. A claim is represented by the <xref:System.Security.Claims.Claim> class. The claims contained in a <xref:System.Security.Claims.ClaimsIdentity> describe the entity that the corresponding identity represents, and can be used to make authorization and authentication decisions. A claims-based access model has many advantages over more traditional access models that rely exclusively on roles. For example, claims can provide much richer information about the identity they represent and can be evaluated for authorization or authentication in a far more specific manner.  
   
- Beginning with .NET Framework 4.5, Windows Identity Foundation (WIF) and claims-based identity have been fully integrated into the .NET Framework. This means that many classes that represent an identity in the .NET Framework now derive from <xref:System.Security.Claims.ClaimsIdentity> and describe their properties through a collection of claims. This is different from previous versions of the .NET Framework, in which, these classes implemented the <xref:System.Security.Principal.IIdentity> interface directly. The collection of claims that describe the identity can be accessed through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> property. The <xref:System.Security.Claims.ClaimsIdentity> class provides several methods for finding and modifying claims and fully supports language integrated queries (LINQ). In application code, <xref:System.Security.Claims.ClaimsIdentity> objects are typically accessed through <xref:System.Security.Claims.ClaimsPrincipal> objects; for example, the principal returned by <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName>.  
+ Beginning with .NET Framework 4.5, Windows Identity Foundation (WIF) and claims-based identity have been fully integrated into the .NET Framework. This means that many classes that represent an identity in the .NET Framework now derive from <xref:System.Security.Claims.ClaimsIdentity> and describe their properties through a collection of claims. This is different from previous versions of the .NET Framework, in which, these classes implemented the <xref:System.Security.Principal.IIdentity> interface directly. The collection of claims that describe the identity can be accessed through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> property. The <xref:System.Security.Claims.ClaimsIdentity> class provides several methods for finding and modifying claims and fully supports language integrated queries (LINQ). In application code, <xref:System.Security.Claims.ClaimsIdentity> objects are typically accessed through <xref:System.Security.Claims.ClaimsPrincipal> objects; for example, the principal returned by <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  The <xref:System.Security.Claims.ClaimsPrincipal> class has a <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property as well. In the majority of cases you should access the user’s claims through the <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A?displayProperty=fullName> collection rather than through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection. You will need to access the claims of an individual <xref:System.Security.Claims.ClaimsIdentity> only in the cases where the principal contains more than one <xref:System.Security.Claims.ClaimsIdentity> and you need to evaluate or modify a specific identity.  
+>  The <xref:System.Security.Claims.ClaimsPrincipal> class has a <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property as well. In the majority of cases you should access the user’s claims through the <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A?displayProperty=nameWithType> collection rather than through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection. You will need to access the claims of an individual <xref:System.Security.Claims.ClaimsIdentity> only in the cases where the principal contains more than one <xref:System.Security.Claims.ClaimsIdentity> and you need to evaluate or modify a specific identity.  
   
 > [!IMPORTANT]
 >  To add or remove claims from the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection, a caller must have full trust.  
   
- In the claims-based model, the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property and the <xref:System.Security.Principal.IPrincipal.IsInRole%28System.String%29?displayProperty=fullName> method are implemented by evaluating the claims contained by an identity. The base implementations in the claims-based model are provided by the <xref:System.Security.Claims.ClaimsIdentity.Name%2A?displayProperty=fullName> property and the <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A?displayProperty=fullName> method. The <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A> properties enable you to specify a claim type that should be used to evaluate the claims contained by the identity when performing these operations.  
+ In the claims-based model, the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property and the <xref:System.Security.Principal.IPrincipal.IsInRole%28System.String%29?displayProperty=nameWithType> method are implemented by evaluating the claims contained by an identity. The base implementations in the claims-based model are provided by the <xref:System.Security.Claims.ClaimsIdentity.Name%2A?displayProperty=nameWithType> property and the <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%2A?displayProperty=nameWithType> method. The <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A> properties enable you to specify a claim type that should be used to evaluate the claims contained by the identity when performing these operations.  
   
  Delegation scenarios are supported through the <xref:System.Security.Claims.ClaimsIdentity.Actor%2A> and <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> properties.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Claims.Claim" />
+    <altmember cref="T:System.Security.Claims.ClaimsPrincipal" />
+    <altmember cref="T:System.Security.Principal.GenericIdentity" />
+    <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+    <altmember cref="T:System.Web.Security.FormsIdentity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -297,12 +302,12 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Security.Claims.ClaimsIdentity.Actor%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Actor` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName>) property is used.|  
+|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType>) property is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.BootStrapContext` property; otherwise, `null`.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Claims%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the claims from `identity` are added to the new instance; otherwise, an empty collection.|  
 |<xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A>|**Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A> property is returned based on the value of the <xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A> property.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Label%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Label` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
+|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
 |<xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.NameClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType> is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.RoleClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType> is used.|  
   
@@ -480,12 +485,12 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Security.Claims.ClaimsIdentity.Actor%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Actor` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The `authenticationType` parameter. If the `authenticationType` parameter is `null` or an empty string, the value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName>) property is used.|  
+|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The `authenticationType` parameter. If the `authenticationType` parameter is `null` or an empty string, the value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType>) property is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.BootStrapContext` property; otherwise, `null`.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Claims%2A>|Initialized from the `claims` parameter. If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the claims from `identity` are added to the new instance before those specified by the `claims` parameter.|  
 |<xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A>|**Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A> property is returned based on the value of the <xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A> property.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Label%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Label` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
+|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
 |<xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.NameClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType> is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.RoleClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType> is used.|  
   
@@ -639,12 +644,12 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Security.Claims.ClaimsIdentity.Actor%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Actor` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The `authenticationType` parameter. If the `authenticationType` parameter is `null` or an empty string, the value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=fullName>) property is used.|  
+|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The `authenticationType` parameter. If the `authenticationType` parameter is `null` or an empty string, the value of the `identity.AuthenticationType` (<xref:System.Security.Principal.IIdentity.AuthenticationType%2A?displayProperty=nameWithType>) property is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.BootStrapContext` property; otherwise, `null`.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Claims%2A>|Initialized from the `claims` parameter. If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the claims from `identity` are added to the new instance before those specified by the `claims` parameter.|  
 |<xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A>|**Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.IsAuthenticated%2A> property is returned based on the value of the <xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A> property.|  
 |<xref:System.Security.Claims.ClaimsIdentity.Label%2A>|If `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.Label` property; otherwise, `null`.|  
-|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=fullName> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
+|<xref:System.Security.Claims.ClaimsIdentity.Name%2A>|If `identity` is not assignable from <xref:System.Security.Claims.ClaimsIdentity>, is not `null`, and has an <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property that is not `null`; a name claim is added to the new instance using the value of the <xref:System.Security.Principal.IIdentity.Name%2A?displayProperty=nameWithType> property. **Note:**  When accessed, the value of the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property is returned based on the <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> and the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.|  
 |<xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A>|The value of the `nameType` parameter. However, if the value of the `nameType` parameter is `null` or an empty string and `identity` is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.NameClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultNameClaimType> is used.|  
 |<xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A>|The value of the `roleClaimType` parameter. However, if the value of the `roleClaimType` parameter is `null` or an empty string and identity is assignable from <xref:System.Security.Claims.ClaimsIdentity>, the value of the `identity.RoleClaimType` property is used; otherwise, <xref:System.Security.Claims.ClaimsIdentity.DefaultRoleClaimType> is used.|  
   
@@ -725,7 +730,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The claim is examined and if the subject is different than this claims identity, the <xref:System.Security.Claims.Claim.Clone%28System.Security.Claims.ClaimsIdentity%29?displayProperty=fullName> method is invoked with this claims identity as the parameter to create a new claim with the correct subject.  
+ The claim is examined and if the subject is different than this claims identity, the <xref:System.Security.Claims.Claim.Clone%28System.Security.Claims.ClaimsIdentity%29?displayProperty=nameWithType> method is invoked with this claims identity as the parameter to create a new claim with the correct subject.  
   
  This method has the `SecurityCritical` attribute applied to control which entities can add claims to the identity. Further down the pipe, authorization decisions are made based on the claims that are present in the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.  
   
@@ -773,7 +778,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each claim is examined and if the subject is different than this claims identity, the <xref:System.Security.Claims.Claim.Clone%28System.Security.Claims.ClaimsIdentity%29?displayProperty=fullName> method is invoked with this claims identity as the parameter to create a new claim with the correct subject.  
+ Each claim is examined and if the subject is different than this claims identity, the <xref:System.Security.Claims.Claim.Clone%28System.Security.Claims.ClaimsIdentity%29?displayProperty=nameWithType> method is invoked with this claims identity as the parameter to create a new claim with the correct subject.  
   
  This method has the `SecurityCritical` attribute applied to control which entities can add claims to the identity. Further down the pipe, authorization decisions are made based on the claims that are present in the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection.  
   
@@ -853,15 +858,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The underlying object is an instance of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=fullName> class.  
+ The underlying object is an instance of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=nameWithType> class.  
   
- Set the `saveBootstrapContext` attribute on either the [\&lt;identityConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) or the [\&lt;securityTokenHandlerConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element in a configuration file to specify whether the token used to generate the <xref:System.Security.Claims.ClaimsIdentity> should be preserved in the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property.  
+ Set the `saveBootstrapContext` attribute on either the [&lt;identityConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) or the [&lt;securityTokenHandlerConfiguration&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element in a configuration file to specify whether the token used to generate the <xref:System.Security.Claims.ClaimsIdentity> should be preserved in the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property.  
   
- If the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property is not `null`, applications can access the original token and the claims it produced through the properties and methods of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=fullName> class.  
+ If the <xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A> property is not `null`, applications can access the original token and the claims it produced through the properties and methods of the <xref:System.IdentityModel.Tokens.BootstrapContext?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Set operation requires full trust for the immediate caller. This member cannot be set by partially trusted or transparent code.</permission>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.Actor" />
       </Docs>
     </Member>
     <Member MemberName="Claims">
@@ -898,10 +904,11 @@
  The claims contained in the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection essentially describe the entity that is represented by the <xref:System.Security.Claims.ClaimsIdentity>. The claims describe the properties and rights possessed by the entity and can be examined by applications to make decisions about authentication and authorization.  
   
 > [!NOTE]
->  The <xref:System.Security.Claims.ClaimsPrincipal> class has a <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property as well. In the majority of cases you should access the user’s claims through the <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A?displayProperty=fullName> collection rather than through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection. You will need to access the claims of an individual <xref:System.Security.Claims.ClaimsIdentity> only in the cases where the principal contains more than one <xref:System.Security.Claims.ClaimsIdentity> and you need to evaluate or modify a specific identity.  
+>  The <xref:System.Security.Claims.ClaimsPrincipal> class has a <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A> property as well. In the majority of cases you should access the user’s claims through the <xref:System.Security.Claims.ClaimsPrincipal.Claims%2A?displayProperty=nameWithType> collection rather than through the <xref:System.Security.Claims.ClaimsIdentity.Claims%2A> collection. You will need to access the claims of an individual <xref:System.Security.Claims.ClaimsIdentity> only in the cases where the principal contains more than one <xref:System.Security.Claims.ClaimsIdentity> and you need to evaluate or modify a specific identity.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsPrincipal.Claims" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -1451,6 +1458,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.NameClaimType" />
       </Docs>
     </Member>
     <Member MemberName="NameClaimType">
@@ -1482,12 +1490,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> property specifies the claim type (<xref:System.Security.Claims.Claim.Type%2A?displayProperty=fullName>) that is used to provide the name for this identity. The name is accessed through the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property.  
+ The <xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A> property specifies the claim type (<xref:System.Security.Claims.Claim.Type%2A?displayProperty=nameWithType>) that is used to provide the name for this identity. The name is accessed through the <xref:System.Security.Claims.ClaimsIdentity.Name%2A> property.  
   
  This property is set by the constructor.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Claims.ClaimsIdentity.Name" />
       </Docs>
     </Member>
     <Member MemberName="RemoveClaim">
@@ -1568,10 +1577,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The role claim type is the claim type (<xref:System.Security.Claims.Claim.Type%2A?displayProperty=fullName>) that is used when evaluating this identity for the <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%28System.String%29?displayProperty=fullName> method. The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%28System.String%29?displayProperty=fullName> method is called to determine whether the current principal is in a specified role. The claims-based model extends this check to use claims presented by the principal. A <xref:System.Security.Claims.ClaimsPrincipal> object can contain one or more <xref:System.Security.Claims.ClaimsIdentity> objects and each identity object can contain multiple <xref:System.Security.Claims.Claim> objects. The <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A> property specifies the claim type of the claim that should be used to provide the value for the role when evaluating this <xref:System.Security.Claims.ClaimsIdentity> object. The property is set by the constructor. A common value is <xref:System.Security.Claims.ClaimTypes.Role?displayProperty=fullName>.  
+ The role claim type is the claim type (<xref:System.Security.Claims.Claim.Type%2A?displayProperty=nameWithType>) that is used when evaluating this identity for the <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%28System.String%29?displayProperty=nameWithType> method. The <xref:System.Security.Claims.ClaimsPrincipal.IsInRole%28System.String%29?displayProperty=nameWithType> method is called to determine whether the current principal is in a specified role. The claims-based model extends this check to use claims presented by the principal. A <xref:System.Security.Claims.ClaimsPrincipal> object can contain one or more <xref:System.Security.Claims.ClaimsIdentity> objects and each identity object can contain multiple <xref:System.Security.Claims.Claim> objects. The <xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A> property specifies the claim type of the claim that should be used to provide the value for the role when evaluating this <xref:System.Security.Claims.ClaimsIdentity> object. The property is set by the constructor. A common value is <xref:System.Security.Claims.ClaimTypes.Role?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.Claims.ClaimsPrincipal.IsInRole(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryRemoveClaim">
@@ -1694,5 +1704,45 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HasClaim">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the claims identity possesses a claim that matches specified conditions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all of the claims that match a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindFirst">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the first claim that matches a specified condition.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -58,10 +58,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs#2d265edc718b158b). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Collections.Generic.HashSet%601> class provides high-performance set operations. A set is a collection that contains no duplicate elements, and whose elements are in no particular order.  
   
 > [!NOTE]
@@ -121,6 +117,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.SortedSet`1" />
+    <altmember cref="T:System.Collections.Generic.ISet`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -888,7 +886,7 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
@@ -1618,12 +1616,13 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1671,12 +1670,13 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="TrimExcess">
@@ -1727,7 +1727,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, !T actualValue) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.HashSet`1.TryGetValue(`0,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1798,5 +1798,27 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of a <see cref="T:System.Collections.Generic.HashSet`1" /> collection to an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.HashSet`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

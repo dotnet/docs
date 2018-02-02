@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e3da85c8-57f3-4e32-a4cb-50123f30fea6
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Stream Upgrades
 Stream-oriented transports such as TCP and Named Pipes operate on a continuous stream of bytes between the client and server. This stream is realized by a  <xref:System.IO.Stream> object. In a stream upgrade, the client wants to add an optional protocol layer to the channel stack, and asks the other end of the communication channel to do so. The stream upgrade consists in replacing the original <xref:System.IO.Stream> object with an upgraded one.  
@@ -38,13 +40,13 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
 ## How to Implement a Stream Upgrade  
  [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides four `abstract` classes that you can implement:  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeProvider?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Channels.StreamUpgradeProvider?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement?displayProperty=fullName>  
+-   <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement?displayProperty=nameWithType>  
   
  To implement a custom stream upgrade, do the following. This procedure implements a minimal stream upgrade process on both the client and server machines.  
   
@@ -77,11 +79,11 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
   
  For security scenarios not met by the above two binding elements, three security-related `abstract` classes are derived from the above initiator, acceptor and provider base classes:  
   
-1.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator?displayProperty=fullName>  
+1.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator?displayProperty=nameWithType>  
   
-2.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor?displayProperty=fullName>  
+2.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor?displayProperty=nameWithType>  
   
-3.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider?displayProperty=fullName>  
+3.  <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider?displayProperty=nameWithType>  
   
  The process of implementing a security stream upgrade is the same as before, with the difference that you would derive from these three classes. Override the additional properties in these classes to supply security information to the runtime.  
   
@@ -99,12 +101,12 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
 4.  The stream will be upgraded after each call to <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> and <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A>.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>   
- <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator>   
- <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>   
- <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor>   
- <xref:System.ServiceModel.Channels.StreamUpgradeProvider>   
- <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider>   
- <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement>   
- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>   
+ <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>  
+ <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator>  
+ <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor>  
+ <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor>  
+ <xref:System.ServiceModel.Channels.StreamUpgradeProvider>  
+ <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider>  
+ <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement>  
+ <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
  <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>

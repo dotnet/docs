@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetResourceString">
-      <MemberSignature Language="C#" Value="public static string GetResourceString (string ResourceKey, string[] Args);" />
+      <MemberSignature Language="C#" Value="public static string GetResourceString (string ResourceKey, params string[] Args);" />
       <MemberSignature Language="ILAsm" Value=".method public static string GetResourceString(string ResourceKey, string[] Args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Utils.GetResourceString(System.String,System.String[])" />
       <MemberType>Method</MemberType>

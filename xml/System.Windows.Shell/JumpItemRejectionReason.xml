@@ -12,6 +12,8 @@
   <Docs>
     <summary>Describes why a <see cref="T:System.Windows.Shell.JumpItem" /> could not be added to the Jump List by the Windows shell.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
+    <altmember cref="P:System.Windows.Shell.JumpItemsRejectedEventArgs.RejectionReasons" />
   </Docs>
   <Members>
     <Member MemberName="InvalidItem">

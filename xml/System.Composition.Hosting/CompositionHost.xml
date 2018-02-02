@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateCompositionHost">
-      <MemberSignature Language="C#" Value="public static System.Composition.Hosting.CompositionHost CreateCompositionHost (System.Composition.Hosting.Core.ExportDescriptorProvider[] providers);" />
+      <MemberSignature Language="C#" Value="public static System.Composition.Hosting.CompositionHost CreateCompositionHost (params System.Composition.Hosting.Core.ExportDescriptorProvider[] providers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Composition.Hosting.CompositionHost CreateCompositionHost(class System.Composition.Hosting.Core.ExportDescriptorProvider[] providers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.CompositionHost.CreateCompositionHost(System.Composition.Hosting.Core.ExportDescriptorProvider[])" />
       <MemberType>Method</MemberType>
@@ -97,7 +97,7 @@
     </Member>
     <Member MemberName="TryGetExport">
       <MemberSignature Language="C#" Value="public override bool TryGetExport (System.Composition.Hosting.Core.CompositionContract contract, out object export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, object export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, [out] object&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.CompositionHost.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

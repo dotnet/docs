@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "displaying a background image inside a text box to aid user input [WPF]"
   - "aid usability of a TextBox using a background image [WPF]"
@@ -17,6 +20,8 @@ caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add a Watermark to a TextBox
 The following example shows how to aid usability of a <xref:System.Windows.Controls.TextBox> by displaying an explanatory background image inside of the <xref:System.Windows.Controls.TextBox> until the user inputs text, at which point the image is removed. In addition, the background image is restored again if the user removes their input. See illustration below.  
@@ -33,5 +38,5 @@ The following example shows how to aid usability of a <xref:System.Windows.Contr
  [!code-vb[TextBoxMiscSnippets_snip#TextBoxBackgroundCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/textbox_with_background_image.xaml.vb#textboxbackgroundcodeexamplewholepage)]  
   
 ## See Also  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

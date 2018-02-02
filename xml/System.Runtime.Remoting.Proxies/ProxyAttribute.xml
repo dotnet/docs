@@ -32,7 +32,7 @@
  Apply the current attribute to types that need custom proxies. You can use the ProxyAttribute class to intercept the `new` (`New` in Visual Basic) statement by deriving from the ProxyAttribute and placing the attribute on a child of `ContextBoundObject`. (Placing the proxy attribute on a child of `MarshalByRefObject` is not supported.)  
   
 > [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -44,6 +44,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+    <altmember cref="T:System.Runtime.Remoting.Proxies.RealProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,7 +136,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The current method is called when a proxy is created out of a<xref:System.Runtime.Remoting.ObjRef> instance that references a class that is marked with the <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> attribute. Therefore, the method is used only when a <xref:System.Runtime.Remoting.ObjRef> is received from a return or parameter on a call, or during the activation of a client-activated object. The <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> is not used for well-known object types.  
+>  The current method is called when a proxy is created out of a <xref:System.Runtime.Remoting.ObjRef> instance that references a class that is marked with the <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> attribute. Therefore, the method is used only when a <xref:System.Runtime.Remoting.ObjRef> is received from a return or parameter on a call, or during the activation of a client-activated object. The <xref:System.Runtime.Remoting.Proxies.ProxyAttribute> is not used for well-known object types.  
   
    
   

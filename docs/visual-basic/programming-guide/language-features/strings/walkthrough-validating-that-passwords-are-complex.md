@@ -1,7 +1,7 @@
 ---
 title: "Validating Passwords Complexity (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,29 +9,12 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "String data type, validation"
+  - "String data type [Visual Basic], validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Validating That Passwords Are Complex (Visual Basic)
 This method checks for some strong-password characteristics and updates a string parameter with information about which checks the password fails.  
@@ -66,5 +49,5 @@ This method checks for some strong-password characteristics and updates a string
 -   Do not allow passwords in which all the symbols are entered from the keyboard's top row.  
   
 ## See Also  
- <xref:System.Text.RegularExpressions.Regex>   
+ <xref:System.Text.RegularExpressions.Regex>  
  [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc)

@@ -36,7 +36,7 @@
   </Docs>
   <Members>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DataPoint Add (double[] y);" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DataPoint Add (params double[] y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.DataPoint Add(float64[] y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.Add(System.Double[])" />
       <MemberType>Method</MemberType>
@@ -99,7 +99,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddXY">
-      <MemberSignature Language="C#" Value="public int AddXY (object xValue, object[] yValue);" />
+      <MemberSignature Language="C#" Value="public int AddXY (object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddXY(object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddXY(System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -175,7 +175,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddY">
-      <MemberSignature Language="C#" Value="public int AddY (object[] yValue);" />
+      <MemberSignature Language="C#" Value="public int AddY (params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddY(object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddY(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -278,7 +278,7 @@
       </Docs>
     </Member>
     <Member MemberName="DataBindXY">
-      <MemberSignature Language="C#" Value="public void DataBindXY (System.Collections.IEnumerable xValue, System.Collections.IEnumerable[] yValues);" />
+      <MemberSignature Language="C#" Value="public void DataBindXY (System.Collections.IEnumerable xValue, params System.Collections.IEnumerable[] yValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindXY(class System.Collections.IEnumerable xValue, class System.Collections.IEnumerable[] yValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.DataBindXY(System.Collections.IEnumerable,System.Collections.IEnumerable[])" />
       <MemberType>Method</MemberType>
@@ -386,7 +386,7 @@
       </Docs>
     </Member>
     <Member MemberName="DataBindY">
-      <MemberSignature Language="C#" Value="public void DataBindY (System.Collections.IEnumerable[] yValue);" />
+      <MemberSignature Language="C#" Value="public void DataBindY (params System.Collections.IEnumerable[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DataBindY(class System.Collections.IEnumerable[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.DataBindY(System.Collections.IEnumerable[])" />
       <MemberType>Method</MemberType>
@@ -772,7 +772,7 @@
       </Docs>
     </Member>
     <Member MemberName="InsertXY">
-      <MemberSignature Language="C#" Value="public void InsertXY (int index, object xValue, object[] yValue);" />
+      <MemberSignature Language="C#" Value="public void InsertXY (int index, object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertXY(int32 index, object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.InsertXY(System.Int32,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -803,7 +803,7 @@
       </Docs>
     </Member>
     <Member MemberName="InsertY">
-      <MemberSignature Language="C#" Value="public void InsertY (int index, object[] yValue);" />
+      <MemberSignature Language="C#" Value="public void InsertY (int index, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertY(int32 index, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.InsertY(System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -831,5 +831,77 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all the data points that are equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the Y-value(s) of the data points to the specified column(s) of the specified data source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified Y-value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindMaxByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds  the data point with the maximum value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first data point that is equal to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> object to the end of the collection, with the specified X-value and Y-value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindXY">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds the X-value and Y-values of the data points in the collection to the specified columns of the specified data sources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindMinByValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the data point with the minimum value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

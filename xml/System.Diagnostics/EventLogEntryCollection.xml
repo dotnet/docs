@@ -35,6 +35,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="P:System.Diagnostics.EventLog.Entries" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -73,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Entries" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -107,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Entries" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -178,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntryCollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

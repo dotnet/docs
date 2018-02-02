@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "best practices [WCF], queued communication"
 ms.assetid: 446a6383-cae3-4338-b193-a33c14a49948
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices for Queued Communication
 This topic provides recommended practices for queued communication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. The following sections discuss recommended practices from a scenario perspective.  
@@ -26,7 +28,7 @@ This topic provides recommended practices for queued communication in [!INCLUDE[
   
  In addition, you can choose not to incur the cost of disk writes by setting the <xref:System.ServiceModel.MsmqBindingBase.Durable%2A> property to `false`.  
   
- Security has implications on performance. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Performance Considerations](../../../../docs/framework/wcf/feature-details/performance-considerations.md).  
+ Security has implications on performance. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Performance Considerations](../../../../docs/framework/wcf/feature-details/performance-considerations.md).  
   
 ## Reliable End-to-End Queued Messaging  
  The following sections describe recommended practices for scenarios that require end-to-end reliable messaging.  
@@ -54,9 +56,9 @@ This topic provides recommended practices for queued communication in [!INCLUDE[
 ## Achieving High Throughput  
  To achieve high throughput on a single endpoint, use the following:  
   
--   Transacted batching. Transacted batching ensures that many messages can be read in a single transaction. This optimizes transaction commits, increasing overall performance. The cost of batching is that if a failure occurs in a single message within a batch, then the entire batch is rolled back and the messages must be processed one at a time until it is safe to batch again. In most cases, poison messages are rare, so batching is the preferred way to increase system performance, particularly when you have other resource managers that participate in the transaction. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md).  
+-   Transacted batching. Transacted batching ensures that many messages can be read in a single transaction. This optimizes transaction commits, increasing overall performance. The cost of batching is that if a failure occurs in a single message within a batch, then the entire batch is rolled back and the messages must be processed one at a time until it is safe to batch again. In most cases, poison messages are rare, so batching is the preferred way to increase system performance, particularly when you have other resource managers that participate in the transaction. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md).  
   
--   Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Concurrency](../../../../docs/framework/wcf/samples/concurrency.md).  
+-   Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md).  
   
 -   Throttling. For optimal performance, throttle the number of messages in the dispatcher pipeline. For an example of how to do this, see [Throttling](../../../../docs/framework/wcf/samples/throttling.md).  
   
@@ -88,14 +90,14 @@ This topic provides recommended practices for queued communication in [!INCLUDE[
 -   With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
   
 ## See Also  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)   
- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)   
- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)   
- [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md)   
- [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)   
- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)   
- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)   
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)   
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)   
- [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md)   
+ [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
+ [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
+ [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
+ [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md)  
+ [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
+ [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
+ [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)  
+ [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
+ [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
+ [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md)  
  [Troubleshooting Queued Messaging](../../../../docs/framework/wcf/feature-details/troubleshooting-queued-messaging.md)

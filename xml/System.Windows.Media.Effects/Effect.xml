@@ -21,6 +21,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">for full access to UI resources. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+    <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+    <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,6 +69,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValue">
@@ -91,10 +95,11 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="EffectMapping">
@@ -128,6 +133,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
     <Member MemberName="ImplicitInput">
@@ -163,6 +170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="T:System.Windows.Media.Effects.PixelShader" />
       </Docs>
     </Member>
   </Members>

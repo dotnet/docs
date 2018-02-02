@@ -109,31 +109,9 @@
         <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerProperty" />
       </Parameters>
       <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServer (System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintServer op_Implicit(class System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintServer" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Printing.PrintServer</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      </Parameters>
-      <Docs>
-        <param name="attribRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="attribRef">A pointer to the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> that is converted.</param>
+        <summary>Provides implicit conversion to a <see cref="T:System.Printing.PrintServer" /> value from a pointer to a <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" />.</summary>
+        <returns>The <see cref="T:System.Printing.PrintServer" /> that is the converted value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,5 +134,23 @@
         <exception cref="T:System.InvalidOperationException">The property is not internally initialized.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Printing.PrintServer" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "member design guidelines, properties"
   - "properties [.NET Framework], design guidelines"
@@ -21,6 +16,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Property Design
 Although properties are technically very similar to methods, they are quite different in terms of their usage scenarios. They should be seen as smart fields. They have the calling syntax of fields, and the flexibility of methods.  
@@ -50,7 +48,7 @@ Although properties are technically very similar to methods, they are quite diff
 ### Indexed Property Design  
  An indexed property is a special property that can have parameters and can be called with special syntax similar to array indexing.  
   
- Indexed properties are commonly referred to as indexers. Indexers should be used only in APIs that provide access to items in a logical collection. For example, a string is a collection of characters, and the indexer on <xref:System.String?displayProperty=fullName> was added to access its characters.  
+ Indexed properties are commonly referred to as indexers. Indexers should be used only in APIs that provide access to items in a logical collection. For example, a string is a collection of characters, and the indexer on <xref:System.String?displayProperty=nameWithType> was added to access its characters.  
   
  **✓ CONSIDER** using indexers to provide access to data stored in an internal array.  
   
@@ -60,7 +58,7 @@ Although properties are technically very similar to methods, they are quite diff
   
  If the design requires multiple parameters, reconsider whether the property really represents an accessor to a logical collection. If it does not, use methods instead. Consider starting the method name with `Get` or `Set`.  
   
- **X AVOID** indexers with parameter types other than <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.String?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, or an enum.  
+ **X AVOID** indexers with parameter types other than <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Object?displayProperty=nameWithType>, or an enum.  
   
  If the design requires other types of parameters, strongly reevaluate whether the API really represents an accessor to a logical collection. If it does not, use a method. Consider starting the method name with `Get` or `Set`.  
   
@@ -96,5 +94,5 @@ Although properties are technically very similar to methods, they are quite diff
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)   
+ [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

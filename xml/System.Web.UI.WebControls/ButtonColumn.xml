@@ -34,6 +34,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGridColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.EditCommandColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateColumn" />
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +72,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGrid.Columns" />
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -112,6 +121,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified column type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonColumnType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonColumnType" />
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -147,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -173,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to associate a command name, such as `Add` or `Remove`, with a button. You can set the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to any string that identifies the action to perform when a button in the <xref:System.Web.UI.WebControls.ButtonColumn?displayProperty=fullName> object is clicked. Then, you can determine programmatically the command name in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event and perform the appropriate actions.  
+ Use the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to associate a command name, such as `Add` or `Remove`, with a button. You can set the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to any string that identifies the action to perform when a button in the <xref:System.Web.UI.WebControls.ButtonColumn?displayProperty=nameWithType> object is clicked. Then, you can determine programmatically the command name in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event and perform the appropriate actions.  
   
  The value of this property is stored in view state.  
   
@@ -182,11 +195,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.CommandName%2A> property to associate a command name with a button. Then, the command name of the clicked button is determined programmatically in the event handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event and the appropriate action is performed.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnCommandName/CS/ButtonColumnCommandNameCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnCommandName/VB/ButtonColumnCommandNameVB.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnCommandName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnCommandName/CS/ButtonColumnCommandNameCS.aspx#1)]
+ [!code-aspx-vb[ButtonColumnCommandName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnCommandName/VB/ButtonColumnCommandNameVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="DataTextField">
@@ -224,11 +239,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.DataTextField%2A> property to bind the <xref:System.Web.UI.WebControls.ButtonColumn> object to a field in a data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.Text" />
       </Docs>
     </Member>
     <Member MemberName="DataTextFormatString">
@@ -293,11 +309,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString%2A> property to display the caption of each button in the <xref:System.Web.UI.WebControls.ButtonColumn> object in currency format.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonColumnDataTextField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnDataTextField/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[ButtonColumnDataTextField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnDataTextField/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="FormatDataTextValue">
@@ -330,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -355,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -387,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ButtonColumn.Initialize" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -432,11 +452,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonColumn.Text%2A> property to specify the caption for the buttons in the <xref:System.Web.UI.WebControls.ButtonColumn> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ButtonColumn.ButtonType Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ButtonColumn.ButtonType Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.DataTextField" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -471,6 +493,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

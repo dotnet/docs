@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class contains a string <xref:System.Windows.PropertyPath.Path%2A>, and list of dependency properties that are the <xref:System.Windows.PropertyPath.PathParameters%2A> into the string<xref:System.Windows.PropertyPath.Path%2A>.  
+ This class contains a string <xref:System.Windows.PropertyPath.Path%2A>, and list of dependency properties that are the <xref:System.Windows.PropertyPath.PathParameters%2A> into the string <xref:System.Windows.PropertyPath.Path%2A>.  
   
  <xref:System.Windows.PropertyPath> supports two modes of behavior:  
   
@@ -68,16 +68,17 @@
 ## Remarks  
  This constructor has two completely different usages depending on whether it is being used for a source-mode property path for a binding, or for a target-mode single-step property path for a storyboard target.  
   
- If using this <xref:System.Windows.PropertyPath> in source mode for a binding, `parameter` is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property referenced must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ If using this <xref:System.Windows.PropertyPath> in source mode for a binding, `parameter` is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property referenced must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
- If using this <xref:System.Windows.PropertyPath> in target mode for a single-step path for a storyboard target, `parameter` is generally provided as type <xref:System.Windows.DependencyProperty>. You can also specify a string that is the <xref:System.Windows.DependencyProperty.Name%2A>. Either of these evaluate to the same result, because it is stored internally as a string. A provided <xref:System.Windows.DependencyProperty> is converted to a string through <xref:System.Windows.Markup.DependencyPropertyConverter>. The <xref:System.Windows.Markup.DependencyPropertyConverter> supports a qualified naming format for dependency properties, so you can specify a *typeName*.*propertyName* qualified dependency property name string to the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=fullName> constructor in code. The qualified path to the dependency property identifier is a different concept than a complex path. A complex-path <xref:System.Windows.PropertyPath> should instead be created with the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=fullName> constructor.  
+ If using this <xref:System.Windows.PropertyPath> in target mode for a single-step path for a storyboard target, `parameter` is generally provided as type <xref:System.Windows.DependencyProperty>. You can also specify a string that is the <xref:System.Windows.DependencyProperty.Name%2A>. Either of these evaluate to the same result, because it is stored internally as a string. A provided <xref:System.Windows.DependencyProperty> is converted to a string through <xref:System.Windows.Markup.DependencyPropertyConverter>. The <xref:System.Windows.Markup.DependencyPropertyConverter> supports a qualified naming format for dependency properties, so you can specify a *typeName*.*propertyName* qualified dependency property name string to the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=nameWithType> constructor in code. The qualified path to the dependency property identifier is a different concept than a complex path. A complex-path <xref:System.Windows.PropertyPath> should instead be created with the <xref:System.Windows.PropertyPath.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.Binding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PropertyPath (string path, object[] pathParameters);" />
+      <MemberSignature Language="C#" Value="public PropertyPath (string path, params object[] pathParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, object[] pathParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.String,System.Object[])" />
       <MemberType>Constructor</MemberType>
@@ -134,7 +135,7 @@
 ## Remarks  
  The string contained in this property has three completely different meanings depending on whether a <xref:System.Windows.PropertyPath> is being used for a source-mode property path for a binding, for a target-mode single-step property path for a storyboard target, or for a complex path for a storyboard target.  
   
- If using this <xref:System.Windows.PropertyPath> in source mode for a binding, <xref:System.Windows.PropertyPath.Path%2A> is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=fullName>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property source must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+ If using this <xref:System.Windows.PropertyPath> in source mode for a binding, <xref:System.Windows.PropertyPath.Path%2A> is a string representing a property name, or can be a string that describes a "step-through" path to the property in the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object model of the object that is being used as the source for a binding. For a binding property path, the character that identifies a "step" is a dot (.). Indexer references (including multiple indexers, and type differentiation) are also supported. For more details on the syntax of the string as specifically used by the <xref:System.Windows.Data.Binding> object, see <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType>. A property used as a binding source need not be a dependency property. If the binding updates two-way, the property source must be read-write. Also note that the binding target does have to be a dependency property. For details, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  If using this <xref:System.Windows.PropertyPath> in target mode for a single-step path for a storyboard target, <xref:System.Windows.PropertyPath> is a string that is a *typeName*.*propertyName* qualified dependency property name string.  
   
@@ -181,7 +182,7 @@
   
  If the final property that is the target is a <xref:System.Windows.Freezable> type, that value will be cloned. For details, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
- The actual evaluation of the property chain is performed by the storyboard animation mechanisms. At the <xref:System.Windows.PropertyPath> level, no validation is performed to make sure that the steps of the path connect at all. For instance, you can construct a property path that has <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=fullName> as the first step, and <xref:System.Windows.FrameworkElement.FlowDirectionProperty?displayProperty=fullName> as the second step. But such a property path would fail if actually applied as a target, because the Brush type that fills <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=fullName> does not have a <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=fullName> property. Invalid property paths fail silently. For more information, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
+ The actual evaluation of the property chain is performed by the storyboard animation mechanisms. At the <xref:System.Windows.PropertyPath> level, no validation is performed to make sure that the steps of the path connect at all. For instance, you can construct a property path that has <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=nameWithType> as the first step, and <xref:System.Windows.FrameworkElement.FlowDirectionProperty?displayProperty=nameWithType> as the second step. But such a property path would fail if actually applied as a target, because the Brush type that fills <xref:System.Windows.Controls.Control.BackgroundProperty?displayProperty=nameWithType> does not have a <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType> property. Invalid property paths fail silently. For more information, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
  **XAML:** When you use a <xref:System.Windows.PropertyPath> to describe a property reference in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], as an attribute value, the string that you specify is first handled by a type converter (<xref:System.Windows.PropertyPathConverter>). This type converter then processes the string and based on its syntax will call one of the <xref:System.Windows.PropertyPath> constructor signatures. This indirection through the type converter handling an attribute value is generally how you use <xref:System.Windows.PropertyPath> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], rather than declaring a <xref:System.Windows.PropertyPath> object element and then applying specific values to attributes such as <xref:System.Windows.PropertyPath.Path%2A> and <xref:System.Windows.PropertyPath.PathParameters%2A>. For more information, see [PropertyPath XAML Syntax](~/docs/framework/wpf/advanced/propertypath-xaml-syntax.md).  
   
@@ -193,5 +194,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.PropertyPath" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

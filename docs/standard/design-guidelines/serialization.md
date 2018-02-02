@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Serialization
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the Internet using HTTP, and deserialized it at the destination machine.  
@@ -70,7 +68,7 @@ Serialization is the process of converting an object into a format that can be r
   
  **✓ CONSIDER** implementing <xref:System.Runtime.Serialization.IExtensibleDataObject> to allow round-tripping between different versions of the type.  
   
- The interface allows the serializer to ensure that no data is lost during round-tripping. The <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A?displayProperty=fullName> property is used to store any data from the future version of the type that is unknown to the current version, and so it cannot store it in its data members. When the current version is subsequently serialized and deserialized into a future version, the additional data will be available in the serialized stream.  
+ The interface allows the serializer to ensure that no data is lost during round-tripping. The <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A?displayProperty=nameWithType> property is used to store any data from the future version of the type that is unknown to the current version, and so it cannot store it in its data members. When the current version is subsequently serialized and deserialized into a future version, the additional data will be available in the serialized stream.  
   
 ## Supporting XML Serialization  
  Data Contract Serialization is the main (default) serialization technology in the .NET Framework, but there are serialization scenarios that Data Contract Serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, XML Serialization has to be used, and you need to design your types to support this serialization technology.  
@@ -84,7 +82,7 @@ Serialization is the process of converting an object into a format that can be r
   
  The basic support for Runtime Serialization can be provided by applying the <xref:System.SerializableAttribute>, and more advanced scenarios involve implementing a simple Runtime Serializable Pattern (implement <xref:System.Runtime.Serialization.ISerializable> and provide serialization constructor).  
   
- **✓ CONSIDER** supporting Runtime Serialization if your types will be used with .NET Remoting. For example, the <xref:System.AddIn?displayProperty=fullName> namespace uses .NET Remoting, and so all types exchanged between `System.AddIn` add-ins need to support Runtime Serialization.  
+ **✓ CONSIDER** supporting Runtime Serialization if your types will be used with .NET Remoting. For example, the <xref:System.AddIn?displayProperty=nameWithType> namespace uses .NET Remoting, and so all types exchanged between `System.AddIn` add-ins need to support Runtime Serialization.  
   
  **✓ CONSIDER** implementing the Runtime Serializable Pattern if you want complete control over the serialization process. For example, if you want to transform data as it gets serialized or deserialized.  
   
@@ -103,12 +101,12 @@ public class Person : ISerializable {
   
  **✓ DO** implement the `ISerializable` members explicitly.  
   
- **✓ DO** apply a link demand to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> implementation. This ensures that only fully trusted core and the Runtime Serializer have access to the member.  
+ **✓ DO** apply a link demand to <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> implementation. This ensures that only fully trusted core and the Runtime Serializer have access to the member.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
+ [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
  [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

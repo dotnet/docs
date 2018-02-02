@@ -13,7 +13,7 @@ Module ContinuationDemo
     '   A sequence of three related tasks is created - each task negates its argument and passes is to the next task: 5, -5, 5 is printed.
     '   A sequence of three unrelated tasks is created where tasks have different types.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskfactory_members(VS.100).aspx
+    '   http://msdn.microsoft.com/library/system.threading.tasks.taskfactory_members(VS.100).aspx
     Sub Main()
         Dim action As Action(Of String) = Sub(str) Console.WriteLine("Task={0}, str={1}, Thread={2}", Task.CurrentId, str, Thread.CurrentThread.ManagedThreadId)
 

@@ -110,7 +110,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddAlgorithm">
-      <MemberSignature Language="C#" Value="public static void AddAlgorithm (Type algorithm, string[] names);" />
+      <MemberSignature Language="C#" Value="public static void AddAlgorithm (Type algorithm, params string[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAlgorithm(class System.Type algorithm, string[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])" />
       <MemberType>Method</MemberType>
@@ -163,7 +163,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddOID">
-      <MemberSignature Language="C#" Value="public static void AddOID (string oid, string[] names);" />
+      <MemberSignature Language="C#" Value="public static void AddOID (string oid, params string[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddOID(string oid, string[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.AddOID(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -295,7 +295,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFromName">
-      <MemberSignature Language="C#" Value="public static object CreateFromName (string name, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object CreateFromName (string name, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateFromName(string name, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoConfig.CreateFromName(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -443,5 +443,15 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateFromName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the specified cryptographic object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

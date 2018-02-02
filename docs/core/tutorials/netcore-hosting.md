@@ -1,6 +1,6 @@
 ---
 title: Hosting .NET Core
-description: Hosting the .NET Core runtime from native code 
+description: Hosting the .NET Core runtime from native code
 keywords: .NET, .NET Core, Hosting, Hosting .NET Core
 author: mjrousos
 ms.author: mikerou
@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 13edec8b-614d-47ed-9e95-ed6d3b94ec0c
+ms.workload: 
+  - "dotnetcore"
 ---
 
 # Hosting .NET Core
@@ -23,7 +25,7 @@ This article gives an overview of the steps necessary to start the .NET Core run
 
 Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://www.visualstudio.com/downloads/)).
 
-You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](../../csharp/getting-started/with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
+You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](../../core/tutorials/with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
 This tutorial and its associated sample build a Windows host; see the notes at the end of this article about hosting on Unix.
 

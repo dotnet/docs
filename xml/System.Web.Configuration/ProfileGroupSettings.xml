@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.ProfileGroupSettings> class provides a way to programmatically create, access, and modify groups of properties added to the `group` subsection of the `profile` section of a configuration file.  
   
- The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=fullName> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `properties` subsection of the `profile` section of the configuration file. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -30,6 +30,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.ProfileSection" />
+    <altmember cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+    <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +83,7 @@
         <returns>
           <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -97,6 +103,7 @@
         <summary>Gets a unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</summary>
         <returns>A unique value representing the current <see cref="T:System.Configuration.ConfigurationElement" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Configuration.ConfigurationElement.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -135,6 +142,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettings" />
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -186,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettings" />
       </Docs>
     </Member>
   </Members>

@@ -11,19 +11,21 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Analytic Tracing
-This sample demonstrates how to add your own tracing events into the stream of analytic traces that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] writes to ETW in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]. Analytic traces are meant to make it easy to get visibility into your services without paying a high performance penalty. This sample shows how to use the <xref:System.Diagnostics.Eventing?displayProperty=fullName> APIs to write events that integrate with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
+This sample demonstrates how to add your own tracing events into the stream of analytic traces that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] writes to ETW in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]. Analytic traces are meant to make it easy to get visibility into your services without paying a high performance penalty. This sample shows how to use the <xref:System.Diagnostics.Eventing?displayProperty=nameWithType> APIs to write events that integrate with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the <xref:System.Diagnostics.Eventing?displayProperty=fullName> APIs, see <xref:System.Diagnostics.Eventing?displayProperty=fullName>.  
+ [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the <xref:System.Diagnostics.Eventing?displayProperty=nameWithType> APIs, see <xref:System.Diagnostics.Eventing?displayProperty=nameWithType>.  
   
  To learn more about event tracing in Windows, see [Improve Debugging and Performance Tuning with ETW](http://go.microsoft.com/fwlink/?LinkId=166488).  
   
 ## Disposing EventProvider  
- This sample uses the <xref:System.Diagnostics.Eventing.EventProvider?displayProperty=fullName> class, which implements <xref:System.IDisposable?displayProperty=fullName>. When implementing tracing for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, it is likely that you may use the <xref:System.Diagnostics.Eventing.EventProvider>’s resources for the lifetime of the service. For this reason, and for readability, this sample never disposes of the wrapped <xref:System.Diagnostics.Eventing.EventProvider>. If for some reason your service has different requirements for tracing and you must dispose of this resource, then you should modify this sample in accordance with the best practices for disposing of unmanaged resources. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] disposing unmanaged resources, see [Implementing a Dispose Method](http://go.microsoft.com/fwlink/?LinkId=166436).  
+ This sample uses the <xref:System.Diagnostics.Eventing.EventProvider?displayProperty=nameWithType> class, which implements <xref:System.IDisposable?displayProperty=nameWithType>. When implementing tracing for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, it is likely that you may use the <xref:System.Diagnostics.Eventing.EventProvider>’s resources for the lifetime of the service. For this reason, and for readability, this sample never disposes of the wrapped <xref:System.Diagnostics.Eventing.EventProvider>. If for some reason your service has different requirements for tracing and you must dispose of this resource, then you should modify this sample in accordance with the best practices for disposing of unmanaged resources. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] disposing unmanaged resources, see [Implementing a Dispose Method](http://go.microsoft.com/fwlink/?LinkId=166436).  
   
 ## Self-Hosting vs. Web Hosting  
  For Web-hosted services, WCF’s analytic traces provide a field, called "HostReference", which is used to identify the service that is emitting the traces. The extensible user traces can participate in this model and this sample demonstrates best practices for doing so. The format of a Web host reference when the pipe ‘&#124;’ character actually appears in the resulting string can be any one of the following:  

@@ -1,30 +1,29 @@
 ---
-title: "Serialization Guidelines"
-ms.custom: ""
+title: "Serialization guidelines"
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serialization, guidelines"
   - "binary serialization, guidelines"
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# Serialization Guidelines
+# Serialization guidelines
 This document lists the guidelines to consider when designing an API to be serialized.  
+
+[!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
- The .NET Framework offers three main serialization technologies that are optimized for various serialization scenarios. The following table lists these technologies and the main Framework types related to these technologies.  
+ .NET offers three main serialization technologies that are optimized for various serialization scenarios. The following table lists these technologies and the main .NET types related to these technologies.  
   
 |Technology|Relevant Classes|Notes|  
 |----------------|----------------------|-----------|  
@@ -40,7 +39,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
      Serialization is an important design consideration for any type, because programs might need to persist or transmit instances of the type.  
   
-### Choosing the Right Serialization Technology to Support  
+### Choosing the right serialization technology to support  
  Any given type can support none, one, or more of the serialization technologies.  
   
 -   CONSIDER supporting *data contract serialization* if instances of your type might need to be persisted or used in Web Services.  
@@ -53,8 +52,8 @@ This document lists the guidelines to consider when designing an API to be seria
   
 -   AVOID supporting runtime serialization or XML serialization just for general persistence reasons. Prefer data contract serialization instead  
   
-#### Supporting Data Contract Serialization  
- Types can support data contract serialization by applying the **DataContractAttribute** to the type and the **DataMemberAttribute** to the members (fields and properties) of the type.  
+#### Supporting data contract serialization  
+ Types can support data contract serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.  
   
  [!code-csharp[SerializationGuidelines#1](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#1)]
  [!code-vb[SerializationGuidelines#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#1)]  
@@ -98,7 +97,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
      For more information, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
-#### Supporting XML Serialization  
+#### Supporting XML serialization  
  Data contract serialization is the main (default) serialization technology in the .NET Framework, but there are serialization scenarios that data contract serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, *XML serialization* has to be used, and you need to design your types to support this serialization technology.  
   
 1.  AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.  
@@ -108,9 +107,9 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
   
-2.  CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A>and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
+2.  CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
   
-#### Supporting Runtime Serialization  
+#### Supporting runtime serialization  
  *Runtime serialization* is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, you need to make sure they support runtime serialization.  
   
  The basic support for *runtime serialization* can be provided by applying the <xref:System.SerializableAttribute> attribute, and more advanced scenarios involve implementing a simple *runtime serializable pattern* (implement -<xref:System.Runtime.Serialization.ISerializable> and provide a serialization constructor).  
@@ -122,7 +121,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 2.  CONSIDER implementing the *runtime serializable pattern* if you want complete control over the serialization process. For example, if you want to transform data as it gets serialized or deserialized.  
   
-     The pattern is very simple. All you need to do is implement the **ISerializable** interface and provide a special constructor that is used when the object is deserialized.  
+     The pattern is very simple. All you need to do is implement the <xref:System.Runtime.Serialization.ISerializable> interface and provide a special constructor that is used when the object is deserialized.  
   
      [!code-csharp[SerializationGuidelines#8](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#8)]
      [!code-vb[SerializationGuidelines#8](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#8)]  
@@ -142,11 +141,11 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#11](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#11)]
      [!code-vb[SerializationGuidelines#11](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#11)]  
   
-## See Also  
- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)   
- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)   
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
- [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58)   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
+## See also  
+ [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
+ [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)  
+ [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)  
+ [Binary Serialization](binary-serialization.md)  
+ [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [XML and SOAP Serialization](xml-and-soap-serialization.md)  
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

@@ -1,40 +1,21 @@
 ---
 title: "Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "bc30982"
   - "vbc30982"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30982"
 ms.assetid: 741e85d9-a747-42ad-a1e1-a3f1928aaff5
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type of &#39;&lt;variablename&gt;&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type
 You have written a `For...Next` loop in which the compiler cannot infer a data type for the loop control variable because the following conditions are true:  
@@ -85,10 +66,10 @@ Dim n = 20
     ```  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Conversion.Val%2A>   
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
+ <xref:Microsoft.VisualBasic.Conversion.Val%2A>  
+ [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
+ [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
+ [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

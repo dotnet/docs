@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Using an Asynchronous Client Socket
 An asynchronous client socket does not suspend the application while waiting for network operations to complete. Instead, it uses the standard .NET Framework asynchronous programming model to process the network connection on one thread while the application continues to run on the original thread. Asynchronous sockets are appropriate for applications that make heavy use of the network or that cannot wait for network operations to complete before continuing.  
@@ -37,9 +37,9 @@ An asynchronous client socket does not suspend the application while waiting for
   
  Asynchronous operations require a callback method to return the result of the operation. If your application does not need to know the result, then no callback method is required. The example code in this section demonstrates using a method to start connecting to a network device and a callback method to complete the connection, a method to start sending data and a callback method to complete the send, and a method to start receiving data and a callback method to end receiving data.  
   
- Asynchronous sockets use multiple threads from the system thread pool to process network connections. One thread is responsible for initiating the sending or receiving of data; other threads complete the connection to the network device and send or receive the data. In the following examples, instances of the <xref:System.Threading.ManualResetEvent?displayProperty=fullName> class are used to suspend execution of the main thread and signal when execution can continue.  
+ Asynchronous sockets use multiple threads from the system thread pool to process network connections. One thread is responsible for initiating the sending or receiving of data; other threads complete the connection to the network device and send or receive the data. In the following examples, instances of the <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class are used to suspend execution of the main thread and signal when execution can continue.  
   
- In the following example, to connect an asynchronous socket to a network device, the `Connect` method initializes a **Socket** and then calls the <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=fullName> method, passing a remote endpoint that represents the network device, the connect callback method, and a state object (the client **Socket**), which is used to pass state information between asynchronous calls. The example implements the `Connect` method to connect the specified **Socket** to the specified endpoint. It assumes a global **ManualResetEvent** named `connectDone`.  
+ In the following example, to connect an asynchronous socket to a network device, the `Connect` method initializes a **Socket** and then calls the <xref:System.Net.Sockets.Socket.Connect%2A?displayProperty=nameWithType> method, passing a remote endpoint that represents the network device, the connect callback method, and a state object (the client **Socket**), which is used to pass state information between asynchronous calls. The example implements the `Connect` method to connect the specified **Socket** to the specified endpoint. It assumes a global **ManualResetEvent** named `connectDone`.  
   
 ```vb  
 Public Shared Sub Connect(remoteEP As EndPoint, client As Socket)  
@@ -292,6 +292,6 @@ private static void ReceiveCallback( IAsyncResult ar ) {
 ```  
   
 ## See Also  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)   
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)   
+ [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
+ [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
  [Asynchronous Client Socket Example](../../../docs/framework/network-programming/asynchronous-client-socket-example.md)

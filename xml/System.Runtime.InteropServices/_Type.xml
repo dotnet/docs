@@ -33,7 +33,7 @@
 ## Remarks  
  This interface is for access to managed classes from unmanaged code and should not be called from managed code.  
   
- This interface preserves the vtable order of the <xref:System.Type?displayProperty=fullName> class members that can be accessed by unmanaged COM objects.  
+ This interface preserves the vtable order of the <xref:System.Type?displayProperty=nameWithType> class members that can be accessed by unmanaged COM objects.  
   
  ]]></format>
     </remarks>
@@ -61,7 +61,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Assembly%2A?displayProperty=fullName> property gets the <xref:System.Reflection.Assembly> in which the type is declared. For generic types, this property gets the <xref:System.Reflection.Assembly> in which the generic type is defined.  
+ The <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property gets the <xref:System.Reflection.Assembly> in which the type is declared. For generic types, this property gets the <xref:System.Reflection.Assembly> in which the generic type is defined.  
   
  ]]></format>
         </remarks>
@@ -89,7 +89,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> property gets the assembly-qualified name of the <xref:System.Type>, including the name of the assembly from which the <xref:System.Type> was loaded.  
+ The <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> property gets the assembly-qualified name of the <xref:System.Type>, including the name of the assembly from which the <xref:System.Type> was loaded.  
   
  ]]></format>
         </remarks>
@@ -117,7 +117,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Attributes%2A?displayProperty=fullName> property gets the attributes associated with the <xref:System.Type>.  
+ The <xref:System.Type.Attributes%2A?displayProperty=nameWithType> property gets the attributes associated with the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -145,7 +145,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.BaseType%2A?displayProperty=fullName> property gets the type from which the current <xref:System.Type> directly inherits.  
+ The <xref:System.Type.BaseType%2A?displayProperty=nameWithType> property gets the type from which the current <xref:System.Type> directly inherits.  
   
  ]]></format>
         </remarks>
@@ -173,7 +173,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.DeclaringType%2A?displayProperty=fullName> property gets the class that declares this member.  
+ The <xref:System.Type.DeclaringType%2A?displayProperty=nameWithType> property gets the class that declares this member.  
   
  ]]></format>
         </remarks>
@@ -193,7 +193,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Equals%2A?displayProperty=fullName> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object> or <xref:System.Type>.  
+ The <xref:System.Type.Equals%2A?displayProperty=nameWithType> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object> or <xref:System.Type>.  
   
  .  
   
@@ -228,7 +228,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Equals%2A?displayProperty=fullName> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object>.  
+ The <xref:System.Type.Equals%2A?displayProperty=nameWithType> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Object>.  
   
  ]]></format>
         </remarks>
@@ -261,7 +261,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Equals%2A?displayProperty=fullName> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Type>.  
+ The <xref:System.Type.Equals%2A?displayProperty=nameWithType> method determines if the underlying system type of the current <xref:System.Type> is the same as the underlying system type of the specified <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -299,7 +299,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.FindInterfaces%2A?displayProperty=fullName> method returns an array of <xref:System.Type> objects representing a filtered list of interfaces implemented or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.FindInterfaces%2A?displayProperty=nameWithType> method returns an array of <xref:System.Type> objects representing a filtered list of interfaces implemented or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -347,7 +347,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.FindMembers%2A?displayProperty=fullName> method returns a filtered array of <xref:System.Reflection.MemberInfo> objects of the specified member type.  
+ The <xref:System.Type.FindMembers%2A?displayProperty=nameWithType> method returns a filtered array of <xref:System.Reflection.MemberInfo> objects of the specified member type.  
   
  ]]></format>
         </remarks>
@@ -375,7 +375,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.FullName%2A?displayProperty=fullName> property gets the fully qualified name of the <xref:System.Type>, including the namespace of the <xref:System.Type> but not the assembly.  
+ The <xref:System.Type.FullName%2A?displayProperty=nameWithType> property gets the fully qualified name of the <xref:System.Type>, including the namespace of the <xref:System.Type> but not the assembly.  
   
  ]]></format>
         </remarks>
@@ -404,7 +404,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetArrayRank%2A?displayProperty=fullName> method gets the number of dimensions in an <xref:System.Array>.  
+ The <xref:System.Type.GetArrayRank%2A?displayProperty=nameWithType> method gets the number of dimensions in an <xref:System.Array>.  
   
  ]]></format>
         </remarks>
@@ -424,7 +424,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method gets a specific constructor of the current <xref:System.Type>.  
+ The <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> method gets a specific constructor of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -460,7 +460,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method searches for a public instance constructor whose parameters match the types in the specified array.  
+ The <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> method searches for a public instance constructor whose parameters match the types in the specified array.  
   
  ]]></format>
         </remarks>
@@ -514,7 +514,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
+ The <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> method searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -566,7 +566,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructor%2A?displayProperty=fullName> method searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.  
+ The <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType> method searches for a constructor whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.  
   
  ]]></format>
         </remarks>
@@ -586,7 +586,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructors%2A?displayProperty=fullName> method gets the constructors of the current <xref:System.Type>.  
+ The <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> method gets the constructors of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -615,7 +615,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructors%2A?displayProperty=fullName> method returns all the public constructors defined for the current <xref:System.Type>.  
+ The <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> method returns all the public constructors defined for the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -651,7 +651,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetConstructors%2A?displayProperty=fullName> method searches for the constructors defined for the current <xref:System.Type>, using the specified <xref:System.Reflection.BindingFlags>.  
+ The <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> method searches for the constructors defined for the current <xref:System.Type>, using the specified <xref:System.Reflection.BindingFlags>.  
   
  ]]></format>
         </remarks>
@@ -671,7 +671,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method returns all attributes applied to this member.  
+ The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> method returns all attributes applied to this member.  
   
  ]]></format>
         </remarks>
@@ -703,7 +703,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> method returns all attributes applied to this member.  
+ The <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=nameWithType> method returns all attributes applied to this member.  
   
  ]]></format>
         </remarks>
@@ -737,7 +737,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method returns all attributes applied to this member.  
+ The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> method returns all attributes applied to this member.  
   
  ]]></format>
         </remarks>
@@ -770,7 +770,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetDefaultMembers%2A?displayProperty=fullName> method searches for the members defined for the current <xref:System.Type> whose <xref:System.Reflection.DefaultMemberAttribute> is set.  
+ The <xref:System.Type.GetDefaultMembers%2A?displayProperty=nameWithType> method searches for the members defined for the current <xref:System.Type> whose <xref:System.Reflection.DefaultMemberAttribute> is set.  
   
  ]]></format>
         </remarks>
@@ -803,7 +803,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetElementType%2A?displayProperty=fullName> method returns the <xref:System.Type> of the object encompassed or referred to by the current array, pointer or reference type.  
+ The <xref:System.Type.GetElementType%2A?displayProperty=nameWithType> method returns the <xref:System.Type> of the object encompassed or referred to by the current array, pointer or reference type.  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvent%2A?displayProperty=fullName> method gets a specific event declared or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method gets a specific event declared or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -863,7 +863,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvent%2A?displayProperty=fullName> method searches for events that are declared or inherited by the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method searches for events that are declared or inherited by the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -901,7 +901,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvent%2A?displayProperty=fullName> method returns the <xref:System.Reflection.EventInfo> object representing the specified event, using the specified binding constraints.  
+ The <xref:System.Type.GetEvent%2A?displayProperty=nameWithType> method returns the <xref:System.Reflection.EventInfo> object representing the specified event, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -921,7 +921,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvents%2A?displayProperty=fullName> method gets the events that are declared or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.GetEvents%2A?displayProperty=nameWithType> method gets the events that are declared or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -954,7 +954,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvents%2A?displayProperty=fullName> method returns all the public events that are declared or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.GetEvents%2A?displayProperty=nameWithType> method returns all the public events that are declared or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -994,7 +994,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetEvents%2A?displayProperty=fullName> method searches for events that are declared or inherited by the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetEvents%2A?displayProperty=nameWithType> method searches for events that are declared or inherited by the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1014,7 +1014,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetField%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
+ The <xref:System.Type.GetField%2A?displayProperty=nameWithType> method gets a specific field of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1046,7 +1046,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetField%2A?displayProperty=fullName> method searches for the public field with the specified name.  
+ The <xref:System.Type.GetField%2A?displayProperty=nameWithType> method searches for the public field with the specified name.  
   
  ]]></format>
         </remarks>
@@ -1084,7 +1084,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetField%2A?displayProperty=fullName> method searches for the specified field, using the specified binding constraints.  
+ The <xref:System.Type.GetField%2A?displayProperty=nameWithType> method searches for the specified field, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1104,7 +1104,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetFields%2A?displayProperty=fullName> method gets a specific field of the current <xref:System.Type>.  
+ The <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method gets a specific field of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1137,7 +1137,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetFields%2A?displayProperty=fullName> method returns all the public fields of the current <xref:System.Type>.  
+ The <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method returns all the public fields of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1177,7 +1177,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetFields%2A?displayProperty=fullName> method searches for the fields defined for the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method searches for the fields defined for the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1206,7 +1206,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Type.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1214,7 +1214,7 @@
     </Member>
     <Member MemberName="GetIDsOfNames">
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1263,7 +1263,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetInterface%2A?displayProperty=fullName> method gets a specific interface implemented or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.GetInterface%2A?displayProperty=nameWithType> method gets a specific interface implemented or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1295,7 +1295,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetInterface%2A?displayProperty=fullName> method searches for the interface with the specified name..  
+ The <xref:System.Type.GetInterface%2A?displayProperty=nameWithType> method searches for the interface with the specified name..  
   
  ]]></format>
         </remarks>
@@ -1334,7 +1334,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetInterface%2A?displayProperty=fullName> method searches for the specified interface, specifying whether to do a case-sensitive search.  
+ The <xref:System.Type.GetInterface%2A?displayProperty=nameWithType> method searches for the specified interface, specifying whether to do a case-sensitive search.  
   
  ]]></format>
         </remarks>
@@ -1366,7 +1366,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetInterfaceMap%2A?displayProperty=fullName> method returns an interface mapping for the specified interface type.  
+ The <xref:System.Type.GetInterfaceMap%2A?displayProperty=nameWithType> method returns an interface mapping for the specified interface type.  
   
  ]]></format>
         </remarks>
@@ -1399,7 +1399,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetInterfaces%2A?displayProperty=fullName> method gets all the interfaces implemented or inherited by the current <xref:System.Type>.  
+ The <xref:System.Type.GetInterfaces%2A?displayProperty=nameWithType> method gets all the interfaces implemented or inherited by the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1419,7 +1419,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMember%2A?displayProperty=fullName> method gets the specified members of the current <xref:System.Type>.  
+ The <xref:System.Type.GetMember%2A?displayProperty=nameWithType> method gets the specified members of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1451,7 +1451,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMember%2A?displayProperty=fullName> method searches for the public members with the specified name.  
+ The <xref:System.Type.GetMember%2A?displayProperty=nameWithType> method searches for the public members with the specified name.  
   
  ]]></format>
         </remarks>
@@ -1489,7 +1489,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMember%2A?displayProperty=fullName> method searches for the specified members, using the specified binding constraints.  
+ The <xref:System.Type.GetMember%2A?displayProperty=nameWithType> method searches for the specified members, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1529,7 +1529,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMember%2A?displayProperty=fullName> method searches for the specified members of the specified member type, using the specified binding constraints.  
+ The <xref:System.Type.GetMember%2A?displayProperty=nameWithType> method searches for the specified members of the specified member type, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1549,7 +1549,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMembers%2A?displayProperty=fullName> method gets the members (properties, methods, fields, events, and so on) of the current <xref:System.Type>.  
+ The <xref:System.Type.GetMembers%2A?displayProperty=nameWithType> method gets the members (properties, methods, fields, events, and so on) of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1582,7 +1582,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMembers%2A?displayProperty=fullName> method returns all the public members of the current <xref:System.Type>.  
+ The <xref:System.Type.GetMembers%2A?displayProperty=nameWithType> method returns all the public members of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1622,7 +1622,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMembers%2A?displayProperty=fullName> method searches for the members defined for the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetMembers%2A?displayProperty=nameWithType> method searches for the members defined for the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1642,7 +1642,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1674,7 +1674,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the public method with the specified name..  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the public method with the specified name..  
   
  ]]></format>
         </remarks>
@@ -1712,7 +1712,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the specified method, using the specified binding constraints.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the specified method, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1750,7 +1750,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the specified public method whose parameters match the specified argument types.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the specified public method whose parameters match the specified argument types.  
   
  ]]></format>
         </remarks>
@@ -1790,7 +1790,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the specified public method whose parameters match the specified argument types and modifiers.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the specified public method whose parameters match the specified argument types and modifiers.  
   
  ]]></format>
         </remarks>
@@ -1842,7 +1842,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -1896,7 +1896,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethod%2A?displayProperty=fullName> method searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.  
+ The <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method searches for the specified method whose parameters match the specified argument types and modifiers, using the specified binding constraints and the specified calling convention.  
   
  ]]></format>
         </remarks>
@@ -1916,7 +1916,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethods%2A?displayProperty=fullName> method gets the methods of the current <xref:System.Type>.  
+ The <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> method gets the methods of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1949,7 +1949,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethods%2A?displayProperty=fullName> method returns all the public methods of the current <xref:System.Type>.  
+ The <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> method returns all the public methods of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -1989,7 +1989,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetMethods%2A?displayProperty=fullName> method searches for the methods defined for the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> method searches for the methods defined for the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -2009,7 +2009,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetNestedType%2A?displayProperty=fullName> method gets a specific type nested within the current <xref:System.Type>.  
+ The <xref:System.Type.GetNestedType%2A?displayProperty=nameWithType> method gets a specific type nested within the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2041,7 +2041,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetNestedType%2A?displayProperty=fullName> method searches for the public nested type with the specified name.  
+ The <xref:System.Type.GetNestedType%2A?displayProperty=nameWithType> method searches for the public nested type with the specified name.  
   
  ]]></format>
         </remarks>
@@ -2079,7 +2079,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetNestedType%2A?displayProperty=fullName> method searches for the specified nested type, using the specified binding constraints.  
+ The <xref:System.Type.GetNestedType%2A?displayProperty=nameWithType> method searches for the specified nested type, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -2099,7 +2099,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetNestedTypes%2A?displayProperty=fullName> method gets the types nested within the current <xref:System.Type>.  
+ The <xref:System.Type.GetNestedTypes%2A?displayProperty=nameWithType> method gets the types nested within the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2132,7 +2132,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetNestedTypes%2A?displayProperty=fullName> method returns all the types nested within the current <xref:System.Type>.  
+ The <xref:System.Type.GetNestedTypes%2A?displayProperty=nameWithType> method returns all the types nested within the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2190,7 +2190,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperties%2A?displayProperty=fullName> method gets the properties of the current <xref:System.Type>..  
+ The <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method gets the properties of the current <xref:System.Type>..  
   
  ]]></format>
         </remarks>
@@ -2223,7 +2223,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperties%2A?displayProperty=fullName> method returns all the public properties of the current <xref:System.Type>.  
+ The <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method returns all the public properties of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2263,7 +2263,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperties%2A?displayProperty=fullName> method searches for the properties of the current <xref:System.Type>, using the specified binding constraints.  
+ The <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method searches for the properties of the current <xref:System.Type>, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -2283,7 +2283,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method gets a specific property of the current <xref:System.Type>.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method gets a specific property of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2315,7 +2315,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the public property with the specified name.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the public property with the specified name.  
   
  ]]></format>
         </remarks>
@@ -2353,7 +2353,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the specified property, using the specified binding constraints.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the specified property, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -2387,7 +2387,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the public property with the specified name and return type.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the public property with the specified name and return type.  
   
  ]]></format>
         </remarks>
@@ -2425,7 +2425,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the specified public property whose parameters match the specified argument types..  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the specified public property whose parameters match the specified argument types..  
   
  ]]></format>
         </remarks>
@@ -2465,7 +2465,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the specified public property whose parameters match the specified argument types.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the specified public property whose parameters match the specified argument types.  
   
  ]]></format>
         </remarks>
@@ -2507,7 +2507,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the specified public property whose parameters match the specified argument types and modifiers.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the specified public property whose parameters match the specified argument types and modifiers.  
   
  ]]></format>
         </remarks>
@@ -2561,7 +2561,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetProperty%2A?displayProperty=fullName> method searches for the specified property whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
+ The <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method searches for the specified property whose parameters match the specified argument types and modifiers, using the specified binding constraints.  
   
  ]]></format>
         </remarks>
@@ -2590,7 +2590,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GetType%2A?displayProperty=fullName> method gets the current <xref:System.Type>.  
+ The <xref:System.Type.GetType%2A?displayProperty=nameWithType> method gets the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2631,7 +2631,7 @@
     </Member>
     <Member MemberName="GetTypeInfoCount">
       <MemberSignature Language="C#" Value="public void GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2680,7 +2680,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.GUID%2A?displayProperty=fullName> property gets the GUID associated with the <xref:System.Type>.  
+ The <xref:System.Type.GUID%2A?displayProperty=nameWithType> property gets the GUID associated with the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -2709,7 +2709,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.HasElementType%2A?displayProperty=fullName> property  
+ The <xref:System.Type.HasElementType%2A?displayProperty=nameWithType> property  
   
  ]]></format>
         </remarks>
@@ -2717,7 +2717,7 @@
     </Member>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public void Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2772,7 +2772,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes a specific member of the current <xref:System.Type>.  
+ The <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> method invokes a specific member of the current <xref:System.Type>.  
   
  .  
   
@@ -2826,7 +2826,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes the specified member, using the specified binding constraints and matching the specified argument list.  
+ The <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> method invokes the specified member, using the specified binding constraints and matching the specified argument list.  
   
  ]]></format>
         </remarks>
@@ -2884,7 +2884,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes the specified member, using the specified binding constraints and matching the specified argument list and culture.  
+ The <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> method invokes the specified member, using the specified binding constraints and matching the specified argument list and culture.  
   
  ]]></format>
         </remarks>
@@ -2946,7 +2946,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.InvokeMember%2A?displayProperty=fullName> method invokes the specified member, using the specified binding constraints and matching the specified argument list, modifiers, and culture.  
+ The <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> method invokes the specified member, using the specified binding constraints and matching the specified argument list, modifiers, and culture.  
   
  ]]></format>
         </remarks>
@@ -2975,7 +2975,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsAbstract%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is abstract and must be overridden.  
+ The <xref:System.Type.IsAbstract%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is abstract and must be overridden.  
   
  ]]></format>
         </remarks>
@@ -3004,7 +3004,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsAnsiClass%2A?displayProperty=fullName> property gets a value indicating whether the string format attribute `AnsiClass` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsAnsiClass%2A?displayProperty=nameWithType> property gets a value indicating whether the string format attribute `AnsiClass` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3033,7 +3033,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsArray%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is an array.  
+ The <xref:System.Type.IsArray%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is an array.  
   
  ]]></format>
         </remarks>
@@ -3093,7 +3093,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsAutoClass%2A?displayProperty=fullName> property gets a value indicating whether the string format attribute `AutoClass` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsAutoClass%2A?displayProperty=nameWithType> property gets a value indicating whether the string format attribute `AutoClass` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3122,7 +3122,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsAutoLayout%2A?displayProperty=fullName> property gets a value indicating whether the class layout attribute `AutoLayout` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsAutoLayout%2A?displayProperty=nameWithType> property gets a value indicating whether the class layout attribute `AutoLayout` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3151,7 +3151,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsByRef%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is passed by reference.  
+ The <xref:System.Type.IsByRef%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is passed by reference.  
   
  ]]></format>
         </remarks>
@@ -3180,7 +3180,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsClass%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is a class; that is, not a value type or interface.  
+ The <xref:System.Type.IsClass%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is a class; that is, not a value type or interface.  
   
  ]]></format>
         </remarks>
@@ -3209,7 +3209,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsCOMObject%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is a COM object.  
+ The <xref:System.Type.IsCOMObject%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is a COM object.  
   
  ]]></format>
         </remarks>
@@ -3238,7 +3238,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsContextful%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> can be hosted in a context.  
+ The <xref:System.Type.IsContextful%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> can be hosted in a context.  
   
  ]]></format>
         </remarks>
@@ -3273,7 +3273,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.MemberInfo.IsDefined%2A?displayProperty=fullName> method indicates whether one or more instance of `attributeType` is applied to this member.  
+ The <xref:System.Reflection.MemberInfo.IsDefined%2A?displayProperty=nameWithType> method indicates whether one or more instance of `attributeType` is applied to this member.  
   
  ]]></format>
         </remarks>
@@ -3302,7 +3302,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsEnum%2A?displayProperty=fullName> property gets a value indicating whether the current <xref:System.Type> represents an enumeration.  
+ The <xref:System.Type.IsEnum%2A?displayProperty=nameWithType> property gets a value indicating whether the current <xref:System.Type> represents an enumeration.  
   
  ]]></format>
         </remarks>
@@ -3331,7 +3331,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsExplicitLayout%2A?displayProperty=fullName> property gets a value indicating whether the class layout attribute `ExplicitLayout` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsExplicitLayout%2A?displayProperty=nameWithType> property gets a value indicating whether the class layout attribute `ExplicitLayout` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3360,7 +3360,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsImport%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> has <xref:System.Runtime.InteropServices.ComImportAttribute>, indicating that it was imported from a COM type library.  
+ The <xref:System.Type.IsImport%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> has <xref:System.Runtime.InteropServices.ComImportAttribute>, indicating that it was imported from a COM type library.  
   
  ]]></format>
         </remarks>
@@ -3393,7 +3393,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsInstanceOfType%2A?displayProperty=fullName> method determines whether the specified object is an instance of the current <xref:System.Type>.  
+ The <xref:System.Type.IsInstanceOfType%2A?displayProperty=nameWithType> method determines whether the specified object is an instance of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3422,7 +3422,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsInterface%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is an interface; that is, not a class or a value type.  
+ The <xref:System.Type.IsInterface%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is an interface; that is, not a class or a value type.  
   
  ]]></format>
         </remarks>
@@ -3451,7 +3451,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsLayoutSequential%2A?displayProperty=fullName> property gets a value indicating whether the class layout attribute `SequentialLayout` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsLayoutSequential%2A?displayProperty=nameWithType> property gets a value indicating whether the class layout attribute `SequentialLayout` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3480,7 +3480,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsMarshalByRef%2A?displayProperty=fullName> property gets a value indicating whether the Type is marshaled by reference.  
+ The <xref:System.Type.IsMarshalByRef%2A?displayProperty=nameWithType> property gets a value indicating whether the Type is marshaled by reference.  
   
  ]]></format>
         </remarks>
@@ -3509,7 +3509,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedAssembly%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is nested and visible only within its own assembly.  
+ The <xref:System.Type.IsNestedAssembly%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is nested and visible only within its own assembly.  
   
  ]]></format>
         </remarks>
@@ -3538,7 +3538,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedFamANDAssem%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is nested and visible only to classes that belong to both its own family and its own assembly.  
+ The <xref:System.Type.IsNestedFamANDAssem%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is nested and visible only to classes that belong to both its own family and its own assembly.  
   
  ]]></format>
         </remarks>
@@ -3567,7 +3567,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedFamily%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is nested and visible only within its own family.  
+ The <xref:System.Type.IsNestedFamily%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is nested and visible only within its own family.  
   
  ]]></format>
         </remarks>
@@ -3596,7 +3596,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedFamORAssem%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is nested and visible only to classes that belong to either its own family or to its own assembly.  
+ The <xref:System.Type.IsNestedFamORAssem%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is nested and visible only to classes that belong to either its own family or to its own assembly.  
   
  ]]></format>
         </remarks>
@@ -3625,7 +3625,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedPrivate%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is nested and declared private.  
+ The <xref:System.Type.IsNestedPrivate%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is nested and declared private.  
   
  ]]></format>
         </remarks>
@@ -3654,7 +3654,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNestedPublic%2A?displayProperty=fullName> property gets a value indicating whether a class is nested and declared public.  
+ The <xref:System.Type.IsNestedPublic%2A?displayProperty=nameWithType> property gets a value indicating whether a class is nested and declared public.  
   
  ]]></format>
         </remarks>
@@ -3683,7 +3683,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsNotPublic%2A?displayProperty=fullName> property gets a value indicating whether the top-level <xref:System.Type> is not declared public.  
+ The <xref:System.Type.IsNotPublic%2A?displayProperty=nameWithType> property gets a value indicating whether the top-level <xref:System.Type> is not declared public.  
   
  ]]></format>
         </remarks>
@@ -3712,7 +3712,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsPointer%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is a pointer.  
+ The <xref:System.Type.IsPointer%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is a pointer.  
   
  ]]></format>
         </remarks>
@@ -3741,7 +3741,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is one of the primitive types.  
+ The <xref:System.Type.IsPrimitive%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is one of the primitive types.  
   
  ]]></format>
         </remarks>
@@ -3770,7 +3770,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsPublic%2A?displayProperty=fullName> property gets a value indicating whether the top-level <xref:System.Type> is declared public.  
+ The <xref:System.Type.IsPublic%2A?displayProperty=nameWithType> property gets a value indicating whether the top-level <xref:System.Type> is declared public.  
   
  ]]></format>
         </remarks>
@@ -3799,7 +3799,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsSealed%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is declared sealed.  
+ The <xref:System.Type.IsSealed%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is declared sealed.  
   
  ]]></format>
         </remarks>
@@ -3828,7 +3828,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsSerializable%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is serializable.  
+ The <xref:System.Type.IsSerializable%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is serializable.  
   
  ]]></format>
         </remarks>
@@ -3857,7 +3857,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsSpecialName%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> has a name that requires special handling.  
+ The <xref:System.Type.IsSpecialName%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> has a name that requires special handling.  
   
  ]]></format>
         </remarks>
@@ -3890,7 +3890,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsSubclassOf%2A?displayProperty=fullName> method determines whether the class represented by the current <xref:System.Type> derives from the class represented by the specified <xref:System.Type>.  
+ The <xref:System.Type.IsSubclassOf%2A?displayProperty=nameWithType> method determines whether the class represented by the current <xref:System.Type> derives from the class represented by the specified <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3919,7 +3919,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsUnicodeClass%2A?displayProperty=fullName> property gets a value indicating whether the string format attribute `UnicodeClass` is selected for the <xref:System.Type>.  
+ The <xref:System.Type.IsUnicodeClass%2A?displayProperty=nameWithType> property gets a value indicating whether the string format attribute `UnicodeClass` is selected for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -3948,7 +3948,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.IsValueType%2A?displayProperty=fullName> property gets a value indicating whether the <xref:System.Type> is a value type.  
+ The <xref:System.Type.IsValueType%2A?displayProperty=nameWithType> property gets a value indicating whether the <xref:System.Type> is a value type.  
   
  ]]></format>
         </remarks>
@@ -3976,7 +3976,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.MemberType%2A?displayProperty=fullName> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is a type or a nested type.  
+ The <xref:System.Type.MemberType%2A?displayProperty=nameWithType> property gets a <xref:System.Reflection.MemberTypes> value indicating that this member is a type or a nested type.  
   
  ]]></format>
         </remarks>
@@ -4004,7 +4004,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Module%2A?displayProperty=fullName> property gets the module (the DLL) in which the current <xref:System.Type> is defined.  
+ The <xref:System.Type.Module%2A?displayProperty=nameWithType> property gets the module (the DLL) in which the current <xref:System.Type> is defined.  
   
  ]]></format>
         </remarks>
@@ -4032,7 +4032,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Reflection.MemberInfo.Name%2A?displayProperty=fullName> property gets the name of the <xref:System.Type>.  
+ The <xref:System.Reflection.MemberInfo.Name%2A?displayProperty=nameWithType> property gets the name of the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -4060,7 +4060,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.Namespace%2A?displayProperty=fullName> property gets the namespace of the <xref:System.Type>.  
+ The <xref:System.Type.Namespace%2A?displayProperty=nameWithType> property gets the namespace of the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -4088,7 +4088,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.ReflectedType%2A?displayProperty=fullName> property gets the class object that was used to obtain this member.  
+ The <xref:System.Type.ReflectedType%2A?displayProperty=nameWithType> property gets the class object that was used to obtain this member.  
   
  ]]></format>
         </remarks>
@@ -4117,7 +4117,7 @@
 ## Remarks  
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.ToString%2A?displayProperty=fullName> method returns the name of the current <xref:System.Type>.  
+ The <xref:System.Type.ToString%2A?displayProperty=nameWithType> method returns the name of the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -4145,7 +4145,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.TypeHandle%2A?displayProperty=fullName> property gets the handle for the current <xref:System.Type>.  
+ The <xref:System.Type.TypeHandle%2A?displayProperty=nameWithType> property gets the handle for the current <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -4173,7 +4173,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.TypeInitializer%2A?displayProperty=fullName> property gets the initializer for the <xref:System.Type>.  
+ The <xref:System.Type.TypeInitializer%2A?displayProperty=nameWithType> property gets the initializer for the <xref:System.Type>.  
   
  ]]></format>
         </remarks>
@@ -4201,7 +4201,7 @@
 ## Remarks  
  This property is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
- The <xref:System.Type.UnderlyingSystemType%2A?displayProperty=fullName> property indicates the type provided by the common language runtime that represents this type.  
+ The <xref:System.Type.UnderlyingSystemType%2A?displayProperty=nameWithType> property indicates the type provided by the common language runtime that represents this type.  
   
  ]]></format>
         </remarks>

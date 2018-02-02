@@ -244,6 +244,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Columns" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
+    <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -278,11 +285,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]
+ [!code-aspx-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -307,7 +315,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by control developers to insert the additional attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.TextBox> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+ This method is used primarily by control developers to insert the additional attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.TextBox> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=nameWithType>.  
   
    
   
@@ -317,8 +325,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorender.cs#2)]
  [!code-vb[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorender.vb#2)]  
@@ -354,8 +362,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobject.cs#2)]
  [!code-vb[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobject.vb#2)]  
@@ -364,6 +372,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AutoCompleteType">
@@ -393,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To assist with data entry, Microsoft Internet Explorer 5 and later and some other browsers support a feature referred to as AutoComplete. AutoComplete monitors a text box and creates a list of values entered by the user. When the user returns to the text box at a later time, the list is displayed. Instead of retyping a previously entered value, the user can simply select the value from this list. Use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control. The <xref:System.Web.UI.WebControls.AutoCompleteType?displayProperty=fullName> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+ To assist with data entry, Microsoft Internet Explorer 5 and later and some other browsers support a feature referred to as AutoComplete. AutoComplete monitors a text box and creates a list of values entered by the user. When the user returns to the text box at a later time, the list is displayed. Instead of retyping a previously entered value, the user can simply select the value from this list. Use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control. The <xref:System.Web.UI.WebControls.AutoCompleteType?displayProperty=nameWithType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
   
 > [!NOTE]
 >  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  
@@ -414,12 +423,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]
+ [!code-aspx-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.AutoCompleteType" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.AutoCompleteType" />
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -465,11 +475,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]
+ [!code-aspx-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -510,6 +522,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.CheckBox.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -541,12 +555,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]
+ [!code-aspx-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -579,6 +595,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -729,6 +747,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -758,8 +777,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerender.cs#2)]
  [!code-vb[CustomTextBoxOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerender.vb#2)]  
@@ -795,7 +814,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -807,8 +826,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxOnTextChanged#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchanged.cs#2)]
  [!code-vb[CustomTextBoxOnTextChanged#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchanged.vb#2)]  
@@ -818,6 +837,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -843,6 +864,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -891,11 +917,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -932,14 +959,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_render.cs#2)]
  [!code-vb[CustomTextBoxRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_render.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -984,12 +1014,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than 0.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Columns" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1020,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -1052,6 +1085,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -1077,6 +1112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -1104,8 +1141,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]
+ [!code-aspx-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  
   
  [!code-csharp[CustomTextBoxTagKey#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkey.cs#2)]
  [!code-vb[CustomTextBoxTagKey#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkey.vb#2)]  
@@ -1267,6 +1304,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.MaxLength" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1292,7 +1331,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1318,6 +1357,7 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TextMode">
@@ -1363,12 +1403,15 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified mode is not one of the <see cref="T:System.Web.UI.WebControls.TextBoxMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TextBoxMode" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.Wrap" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1406,6 +1449,9 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1446,11 +1492,12 @@ protected void TextBox1_TextChanged(object sender, EventArgs e)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]
+ [!code-aspx-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TextBox.TextMode" />
       </Docs>
     </Member>
   </Members>

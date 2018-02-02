@@ -43,7 +43,7 @@
     <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
     <summary>Represents an immutable, unordered collection of keys and values.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -1259,7 +1259,7 @@
     </Member>
     <Member MemberName="TryGetKey">
       <MemberSignature Language="C#" Value="public bool TryGetKey (TKey equalKey, out TKey actualKey);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetKey(!TKey equalKey, !TKey actualKey) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetKey(!TKey equalKey, [out] !TKey&amp; actualKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary`2.TryGetKey(`0,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1299,7 +1299,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableDictionary`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

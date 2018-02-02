@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You should only call the <xref:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance%2A> method on data sources that are designable for example, if the<xref:System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable%2A> value is `true`.  
+ You should only call the <xref:System.ComponentModel.Design.Data.DataSourceProviderService.AddDataSourceInstance%2A> method on data sources that are designable for example, if the <xref:System.ComponentModel.Design.Data.DataSourceDescriptor.IsDesignable%2A> value is `true`.  
   
  This method enables the service implementer to perform custom actions when a data source is added to the design surface.  
   

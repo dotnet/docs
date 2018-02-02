@@ -56,6 +56,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+    <altmember cref="T:System.Web.UI.Design.DesignerAutoFormatStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -115,6 +122,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -140,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -170,6 +183,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf(System.Web.UI.Design.DesignerAutoFormat)" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -195,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -224,6 +244,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -263,6 +286,9 @@
  \- or -  
   
  <paramref name="index" /> is greater than the <see cref="P:System.Web.UI.Design.DesignerAutoFormatCollection.Count" /> property.</exception>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -300,6 +326,9 @@
  \- or -  
   
  <paramref name="index" /> is greater than the <see cref="P:System.Web.UI.Design.DesignerAutoFormatCollection.Count" /> property.</exception>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="PreviewSize">
@@ -325,6 +354,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -362,6 +394,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -422,10 +457,14 @@
 ## Remarks  
  Enumerating through a collection is not a thread-safe procedure intrinsically. Even when a collection is synchronized, other threads can still modify the collection. This causes exceptions during enumeration.  
   
- Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName>.  
+ Lock the collection by using the <xref:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot%2A> method during the entire enumeration to guarantee thread safety. For detailed information about locking collections for thread-safe access, see <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -456,6 +495,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -481,6 +522,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerAutoFormatCollection.Count" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -507,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerAutoFormatCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -533,6 +577,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="M:System.Collections.IEnumerable.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -562,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.Add(System.Web.UI.Design.DesignerAutoFormat)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -592,6 +640,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.Contains(System.Web.UI.Design.DesignerAutoFormat)" />
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -621,6 +671,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.IndexOf(System.Web.UI.Design.DesignerAutoFormat)" />
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -651,6 +703,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.Insert(System.Int32,System.Web.UI.Design.DesignerAutoFormat)" />
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -676,6 +730,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IList.IsFixedSize" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -697,10 +752,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.DesignerAutoFormatCollection> instance is cast to an <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerAutoFormat" />
+        <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <altmember cref="P:System.Web.UI.Design.ControlDesigner.AutoFormats" />
+        <altmember cref="T:System.Collections.IList" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -730,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.DesignerAutoFormatCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -758,6 +818,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.Remove(System.Web.UI.Design.DesignerAutoFormat)" />
+        <altmember cref="M:System.Collections.SortedList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -786,6 +848,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.DesignerAutoFormatCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.IList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
   </Members>

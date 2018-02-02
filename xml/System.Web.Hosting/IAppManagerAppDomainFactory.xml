@@ -23,7 +23,7 @@
   <Members>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public object Create (string appId, string appPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(string appId, string appPath) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create([in]string appId, [in]string appPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppManagerAppDomainFactory.Create(System.String,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

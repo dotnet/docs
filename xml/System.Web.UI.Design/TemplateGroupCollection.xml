@@ -56,6 +56,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
+    <altmember cref="T:System.Web.UI.Design.TemplateGroup" />
+    <altmember cref="T:System.Web.UI.Design.TemplateDefinition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.TemplateGroupCollection.Insert(System.Int32,System.Web.UI.Design.TemplateGroup)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -196,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.TemplateGroupCollection.IndexOf(System.Web.UI.Design.TemplateGroup)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -296,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.TemplateGroupCollection.Contains(System.Web.UI.Design.TemplateGroup)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -335,6 +341,7 @@
  \- or -  
   
  <paramref name="index" /> is greater than the <see cref="P:System.Web.UI.Design.TemplateGroupCollection.Count" /> property.</exception>
+        <altmember cref="M:System.Web.UI.Design.TemplateGroupCollection.Add(System.Web.UI.Design.TemplateGroup)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -527,6 +534,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -552,6 +561,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

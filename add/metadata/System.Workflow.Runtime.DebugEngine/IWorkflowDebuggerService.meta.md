@@ -1,20 +1,20 @@
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoked
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoking(System.Delegate)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

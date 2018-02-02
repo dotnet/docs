@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_FUNCTION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_FUNCTION structure [.NET Framework profiling]"
 ms.assetid: 8bb5acf5-cf4b-4ccb-93f1-46db1f3f8bf3
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_FUNCTION Structure
 Provides a unique representation of a function by combining its ID with the ID of its recompiled version.  

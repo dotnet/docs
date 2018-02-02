@@ -143,12 +143,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the &lt;<see langword="service" />&gt; configuration element.</summary>
-        <value>The name of the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
+        <value>The name of the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
+ This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [&lt;service&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
   
    
   
@@ -327,7 +327,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
+ When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A> maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
   
    
   
@@ -365,5 +365,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetService">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a service description initialized with a specified service object or type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDescription" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

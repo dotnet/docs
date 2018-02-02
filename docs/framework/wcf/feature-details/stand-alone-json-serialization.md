@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 caps.latest.revision: 32
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Stand-Alone JSON Serialization
 JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  
@@ -112,7 +114,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
  For details of how polymorphic serialization works and a discussion of some of the limitations that must be respected when using it, see the Advanced Information section later in this topic.  
   
 ### Versioning  
- The data contract versioning features, including the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, are fully supported in JSON. Furthermore, in most cases it is possible to deserialize a type in one format (for example, XML) and then serialize it into another format (for example, JSON) and still preserve the data in <xref:System.Runtime.Serialization.IExtensibleDataObject>. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). Remember that JSON is unordered so any order information is lost. Furthermore, JSON does not support multiple key/value pairs with the same key name. Finally, all operations on <xref:System.Runtime.Serialization.IExtensibleDataObject> are inherently polymorphic - that is their derived type are assigned to <xref:System.Object>, the base type for all types.  
+ The data contract versioning features, including the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface, are fully supported in JSON. Furthermore, in most cases it is possible to deserialize a type in one format (for example, XML) and then serialize it into another format (for example, JSON) and still preserve the data in <xref:System.Runtime.Serialization.IExtensibleDataObject>. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). Remember that JSON is unordered so any order information is lost. Furthermore, JSON does not support multiple key/value pairs with the same key name. Finally, all operations on <xref:System.Runtime.Serialization.IExtensibleDataObject> are inherently polymorphic - that is their derived type are assigned to <xref:System.Object>, the base type for all types.  
   
 ## JSON in URLs  
  When using ASP.NET AJAX endpoints with the HTTP GET verb (using the <xref:System.ServiceModel.Web.WebGetAttribute> attribute), incoming parameters appear in the request URL instead of the message body. JSON is supported even in the request URL, so if you have an operation that takes an `Int` called "number" and a `Person` complex type called "p", the URL may resemble the following URL.  

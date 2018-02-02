@@ -20,13 +20,14 @@
    
   
 ## Examples  
- The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A?displayProperty=fullName> property using the <xref:System.Web.UI.WebControls.LogoutAction> enumeration.  
+ The following code example shows how to set the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A?displayProperty=nameWithType> property using the <xref:System.Web.UI.WebControls.LogoutAction> enumeration.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutAction/CS/loginstatuslogoutactioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutAction/VB/loginstatuslogoutactionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginStatusLogoutAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutAction/CS/loginstatuslogoutactioncs.aspx#1)]
+ [!code-aspx-vb[LoginStatusLogoutAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutAction/VB/loginstatuslogoutactionvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.LoginStatus.LogoutAction" />
   </Docs>
   <Members>
     <Member MemberName="Redirect">

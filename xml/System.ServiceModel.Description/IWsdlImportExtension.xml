@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
+ The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   
@@ -91,12 +91,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> method is called when a contract is being imported. You can modify the contract or insert other exporting behaviors such as <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> objects to modify the code that is generated for the contract.  
+ The <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> method is called when a contract is being imported. You can modify the contract or insert other exporting behaviors such as <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> objects to modify the code that is generated for the contract.  
   
    
   
 ## Examples  
- The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=fullName> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=fullName> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
+ The following code example shows the use of <xref:System.ServiceModel.Description.IWsdlImportExtension> to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension?displayProperty=nameWithType> and an <xref:System.ServiceModel.Description.IOperationContractGenerationExtension?displayProperty=nameWithType> (the `WsdlDocumentationImporter`, in this case) to modify generated [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client code at the interface and operation level.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   

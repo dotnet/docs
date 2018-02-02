@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This override of <xref:System.Security.PermissionSet.FromXml%2A?displayProperty=fullName> is intended to be called by the base class <xref:System.Security.PermissionSet> when it is deserializing the permission set. An exception is thrown if you attempt to call <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> directly. You cannot modify a read-only permission set with a <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> call.  
+ This override of <xref:System.Security.PermissionSet.FromXml%2A?displayProperty=nameWithType> is intended to be called by the base class <xref:System.Security.PermissionSet> when it is deserializing the permission set. An exception is thrown if you attempt to call <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> directly. You cannot modify a read-only permission set with a <xref:System.Security.ReadOnlyPermissionSet.FromXml%2A> call.  
   
  ]]></format>
         </remarks>

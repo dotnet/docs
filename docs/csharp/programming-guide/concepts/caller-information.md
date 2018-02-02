@@ -1,31 +1,19 @@
 ---
 title: "Caller Information (C#)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: ffad3d24-2fb7-4641-9124-53b5bc91d339
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Caller Information (C#)
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.  
   
- To obtain this information, you use attributes that are applied to optional parameters, each of which has a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=fullName> namespace:  
+ To obtain this information, you use attributes that are applied to optional parameters, each of which has a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:  
   
 |Attribute|Description|Type|  
 |---|---|---|  
@@ -89,7 +77,7 @@ public void TraceMessage(string message,
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|  
   
 ## See Also  
- [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)   
- [Common Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)   
- [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   
+ [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)  
+ [Common Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)  
+ [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)  
  [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)

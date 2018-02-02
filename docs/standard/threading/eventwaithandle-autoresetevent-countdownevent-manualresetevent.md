@@ -17,11 +17,14 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
 Event wait handles allow threads to synchronize activities by signaling each other and by waiting on each other's signals. These synchronization events are based on Win32 wait handles and can be divided into two types: those that reset automatically when signaled and those that are reset manually.  
   
- Event wait handles are useful in many of the same synchronization scenarios as the <xref:System.Threading.Monitor> class. Event wait handles are often easier to use than the <xref:System.Threading.Monitor.Wait%2A?displayProperty=fullName> and <xref:System.Threading.Monitor.Pulse%2A?displayProperty=fullName> methods, and they offer more control over signaling. Named event wait handles can also be used to synchronize activities across application domains and processes, whereas monitors are local to an application domain.  
+ Event wait handles are useful in many of the same synchronization scenarios as the <xref:System.Threading.Monitor> class. Event wait handles are often easier to use than the <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType> and <xref:System.Threading.Monitor.Pulse%2A?displayProperty=nameWithType> methods, and they offer more control over signaling. Named event wait handles can also be used to synchronize activities across application domains and processes, whereas monitors are local to an application domain.  
   
 ## In This Section  
  [EventWaitHandle](../../../docs/standard/threading/eventwaithandle.md)  
@@ -41,9 +44,9 @@ Event wait handles allow threads to synchronize activities by signaling each oth
  The <xref:System.Threading.WaitHandle> class is the base class for the <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.Semaphore>, and <xref:System.Threading.Mutex> classes. It contains static methods such as <xref:System.Threading.WaitHandle.SignalAndWait%2A> and <xref:System.Threading.WaitHandle.WaitAll%2A> that are useful when working with all types of wait handles.  
   
 ## See Also  
- <xref:System.Threading.EventWaitHandle>   
- <xref:System.Threading.WaitHandle>   
- <xref:System.Threading.AutoResetEvent>   
- <xref:System.Threading.ManualResetEvent>   
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)   
+ <xref:System.Threading.EventWaitHandle>  
+ <xref:System.Threading.WaitHandle>  
+ <xref:System.Threading.AutoResetEvent>  
+ <xref:System.Threading.ManualResetEvent>  
+ [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
  [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)

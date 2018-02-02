@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.PictureBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -87,7 +88,7 @@
 ## Remarks  
  You must keep the stream open for the lifetime of the <xref:System.Drawing.Bitmap>.  
   
- Due to a limitation of the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] decoder, an <xref:System.ArgumentException?displayProperty=fullName> is thrown if you construct a bitmap from a .png image file with a single dimension greater than 65,535 pixels.  
+ Due to a limitation of the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] decoder, an <xref:System.ArgumentException?displayProperty=nameWithType> is thrown if you construct a bitmap from a .png image file with a single dimension greater than 65,535 pixels.  
   
    
   
@@ -209,7 +210,7 @@
 ## Remarks  
  You must keep the stream open for the lifetime of the <xref:System.Drawing.Bitmap>.  
   
- Due to a limitation of the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] decoder, an <xref:System.ArgumentException?displayProperty=fullName> is thrown if you construct a bitmap from a .png image file with a single dimension greater than 65,535 pixels.  
+ Due to a limitation of the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] decoder, an <xref:System.ArgumentException?displayProperty=nameWithType> is thrown if you construct a bitmap from a .png image file with a single dimension greater than 65,535 pixels.  
   
  ]]></format>
         </remarks>
@@ -574,7 +575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Drawing.Bitmap.FromResource%2A> requires security permission to call unmanaged code. For a managed alternative for creating a bitmap from an embedded resource, see <xref:System.Drawing.Bitmap.%23ctor%28System.Type%2CSystem.String%29?displayProperty=fullName>. <xref:System.Drawing.Bitmap.FromResource%2A> works only with bitmaps that are named resources in a DLL.  
+ <xref:System.Drawing.Bitmap.FromResource%2A> requires security permission to call unmanaged code. For a managed alternative for creating a bitmap from an embedded resource, see <xref:System.Drawing.Bitmap.%23ctor%28System.Type%2CSystem.String%29?displayProperty=nameWithType>. <xref:System.Drawing.Bitmap.FromResource%2A> works only with bitmaps that are named resources in a DLL.  
   
  ]]></format>
         </remarks>
@@ -708,7 +709,7 @@
   
 -   Gets an icon handle for the <xref:System.Drawing.Bitmap>.  
   
--   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=fullName> attribute of the form to an icon created from the handle.  
+-   Sets the <xref:System.Windows.Forms.Form.Icon%2A?displayProperty=nameWithType> attribute of the form to an icon created from the handle.  
   
  [!code-cpp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CPP/form1.cpp#6)]
  [!code-csharp[System.Drawing.ClassicBitmapExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicBitmapExamples/CS/form1.cs#6)]
@@ -793,7 +794,7 @@
   
  The <xref:System.Drawing.Imaging.BitmapData> specifies the attributes of the <xref:System.Drawing.Bitmap>, such as size, pixel format, the starting address of the pixel data in memory, and length of each scan line (stride).  
   
- When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi> will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
+ When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> values such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi> will throw an <xref:System.ArgumentException?displayProperty=nameWithType>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=nameWithType>.  
   
    
   
@@ -845,9 +846,9 @@
 ## Remarks  
  Use the <xref:System.Drawing.Bitmap.LockBits%2A> method to lock an existing bitmap in system memory so that it can be changed programmatically. You can change the color of an image with the <xref:System.Drawing.Bitmap.SetPixel%2A> method, although the <xref:System.Drawing.Bitmap.LockBits%2A> method offers better performance for large-scale changes.  
   
- When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values, such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi>, will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
+ When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType> values, such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi>, will throw an <xref:System.ArgumentException?displayProperty=nameWithType>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=nameWithType>.  
   
- This version of the <xref:System.Drawing.Bitmap.LockBits%2A> method is intended to be used with a `flags` value of <xref:System.Drawing.Imaging.ImageLockMode?displayProperty=fullName>.  
+ This version of the <xref:System.Drawing.Bitmap.LockBits%2A> method is intended to be used with a `flags` value of <xref:System.Drawing.Imaging.ImageLockMode.UserInputBuffer?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1068,5 +1069,50 @@
         <exception cref="T:System.Exception">The operation failed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHbitmap">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI bitmap object from a GDI+ <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LockBits">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locks a <see cref="T:System.Drawing.Bitmap" /> into system memory.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clone">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a copy of the section of this <see cref="T:System.Drawing.Bitmap" /> defined with a specified <see cref="T:System.Drawing.Imaging.PixelFormat" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeTransparent">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the default transparent color transparent for this <see cref="T:System.Drawing.Bitmap" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Bitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

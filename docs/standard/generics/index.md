@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "generic methods, type inference"
   - "generics [.NET Framework], collections"
@@ -32,6 +36,9 @@ caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Generics in the .NET Framework
 <a name="top"></a> Generics let you tailor a method, class, structure, or interface to the precise data type it acts upon. For example, instead of using the <xref:System.Collections.Hashtable> class, which allows keys and values to be of any type, you can use the <xref:System.Collections.Generic.Dictionary%602> generic class and specify the type allowed for the key and the type allowed for the value. Among the benefits of generics are increased code reusability and type safety.  
@@ -68,9 +75,9 @@ manager: "wpickett"
 ### Generics terminology  
  The following terms are used to discuss generics in the .NET Framework:  
   
--   A *generic type definition* is a class, structure, or interface declaration that functions as a template, with placeholders for the types that it can contain or use. For example, the <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> class can contain two types: keys and values. Because a generic type definition is only a template, you cannot create instances of a class, structure, or interface that is a generic type definition.  
+-   A *generic type definition* is a class, structure, or interface declaration that functions as a template, with placeholders for the types that it can contain or use. For example, the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class can contain two types: keys and values. Because a generic type definition is only a template, you cannot create instances of a class, structure, or interface that is a generic type definition.  
   
--   *Generic type parameters*, or *type parameters*, are the placeholders in a generic type or method definition. The <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> generic type has two type parameters, `TKey` and `TValue`, that represent the types of its keys and values.  
+-   *Generic type parameters*, or *type parameters*, are the placeholders in a generic type or method definition. The <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> generic type has two type parameters, `TKey` and `TValue`, that represent the types of its keys and values.  
   
 -   A *constructed generic type*, or *constructed type*, is the result of specifying types for the generic type parameters of a generic type definition.  
   
@@ -80,7 +87,7 @@ manager: "wpickett"
   
 -   *Covariance* and *contravariance* of generic type parameters enable you to use constructed generic types whose type arguments are more derived (covariance) or less derived (contravariance) than a target constructed type. Covariance and contravariance are collectively referred to as *variance*. For more information, see [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
   
--   *Constraints* are limits placed on generic type parameters. For example, you might limit a type parameter to types that implement the <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> generic interface, to ensure that instances of the type can be ordered. You can also constrain type parameters to types that have a particular base class, that have a default constructor, or that are reference types or value types. Users of the generic type cannot substitute type arguments that do not satisfy the constraints.  
+-   *Constraints* are limits placed on generic type parameters. For example, you might limit a type parameter to types that implement the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> generic interface, to ensure that instances of the type can be ordered. You can also constrain type parameters to types that have a particular base class, that have a default constructor, or that are reference types or value types. Users of the generic type cannot substitute type arguments that do not satisfy the constraints.  
   
 -   A *generic method definition* is a method with two parameter lists: a list of generic type parameters and a list of formal parameters. Type parameters can appear as the return type or as the types of the formal parameters, as the following code shows.  
   
@@ -177,6 +184,6 @@ manager: "wpickett"
   
  <xref:System.Collections.ObjectModel>  
   
- <xref:System.Reflection.Emit.OpCodes?displayProperty=fullName>  
+ <xref:System.Reflection.Emit.OpCodes?displayProperty=nameWithType>  
   
  [Back to top](#top)

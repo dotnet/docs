@@ -60,13 +60,13 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPart_Overview#14](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/displaymodecs.ascx#14)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPart_Overview#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/displaymodevb.ascx#14)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPart_Overview#14](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/displaymodecs.ascx#14)]
+ [!code-aspx-vb[WebParts_EditorPart_Overview#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/displaymodevb.ascx#14)]  
   
  The second part of the code example is the Web page. It contains a declarative reference to an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, with a child `<zonetemplate>` element that contains declarative references to two of the Web Parts control set <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls. The page also references a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, using a `Register` directive for the assembly, and the `<aspSample:TextDisplayWebPart>` element for the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPart_Overview#12](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/editorpart_overview_cs.aspx#12)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPart_Overview#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/editorpart_overview_vb.aspx#12)]  -->  
+ [!code-aspx-csharp[WebParts_EditorPart_Overview#12](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPart_Overview/CS/editorpart_overview_cs.aspx#12)]
+ [!code-aspx-vb[WebParts_EditorPart_Overview#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPart_Overview/VB/editorpart_overview_vb.aspx#12)]  
   
  The third part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `TextDisplayWebPart`. The class implements the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface. Within this class is a nested, private class that contains the code for a private <xref:System.Web.UI.WebControls.WebParts.EditorPart> class associated with the `TextDisplayWebPart` class and named `TextDisplayEditorPart`. At run time, as the `TextDisplayWebPart` control enters edit mode, in its `TextDisplayWebPart.CreateEditorParts` method, it creates an instance of the `TextDisplayEditorPart` class, and displays it in the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, along with the other <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
   
@@ -82,6 +82,9 @@
   
  If you derive from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> class to create custom editor controls, you can add your custom controls to an <see cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" /> zone by implementing the <see cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" /> interface in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, a user control, or a server control. For more details and a code example, see the <see cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" /> class overview. Also, the code example in the Example section demonstrates how to implement <see cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" /> in a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorZoneBase" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorZone" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +147,8 @@
         <block subset="none" type="overrides">
           <para>A class that derives from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> class must implement the <see cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" /> method. The implemented method gets a reference to the associated control using the <see cref="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" /> property, and then updates the properties of that control with the current values in the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -179,6 +184,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.Display" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" />
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -214,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -240,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IControlDesignerAccessor.GetDesignModeState" />
+        <altmember cref="M:System.Web.UI.Control.GetDesignModeState" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -338,6 +348,8 @@
         <block subset="none" type="overrides">
           <para>A class that derives from the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> class must implement the <see cref="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" /> method. The implemented method gets a reference to the associated control using the <see cref="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" /> property, and then updates the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> control with the property values from the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -392,6 +404,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.WebPartToEdit" />
       </Docs>
     </Member>
     <Member MemberName="Zone">

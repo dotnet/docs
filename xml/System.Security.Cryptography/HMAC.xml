@@ -300,6 +300,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="HashFinal">
@@ -448,5 +449,15 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt is made to change the <see cref="P:System.Security.Cryptography.HMAC.Key" /> property after hashing has begun.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an implementation of a Hash-based Message Authentication Code (<see cref="T:System.Security.Cryptography.HMAC" />) .</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

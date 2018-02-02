@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;protocolMapping&gt;
 Represents a configuration section for defining a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings. When creating default endpoints at runtime, [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] looks at the configured mappings and decides on which binding to use for a particular based address.  
@@ -23,13 +25,10 @@ Represents a configuration section for defining a set of default protocol mappin
   
 ## Syntax  
   
-```vb  
+```xml
    <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
-```  
-  
-```csharp  
-```  
-  
+```
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -61,5 +60,5 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>       
- <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=nameWithType>       
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=nameWithType>    

@@ -1,38 +1,17 @@
 ---
 title: "String Functions (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "string functions"
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # String Functions (Visual Basic)
 The following table lists the functions that Visual Basic provides to search and manipulate strings.  
@@ -105,6 +84,6 @@ The following table lists the functions that Visual Basic provides to search and
  [!code-vb[VbVbalrStrings#27](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_6.vb)]  
   
 ## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)   
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
+ [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)  
  [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)

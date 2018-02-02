@@ -30,6 +30,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.TextWriter" />
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.Page" />
+    <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+    <altmember cref="T:System.Web.UI.Adapters.PageAdapter" />
+    <altmember cref="T:System.Web.UI.ChtmlTextWriter" />
+    <altmember cref="T:System.Web.UI.Html32TextWriter" />
+    <altmember cref="T:System.Web.UI.XhtmlTextWriter" />
+    <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> constructor uses `tabString` when indentation of a line is necessary. It calls the <xref:System.IO.TextWriter.%23ctor%28System.IFormatProvider%29?displayProperty=fullName> base constructor to initialize the new instance.  
+ The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> constructor uses `tabString` when indentation of a line is necessary. It calls the <xref:System.IO.TextWriter.%23ctor%28System.IFormatProvider%29?displayProperty=nameWithType> base constructor to initialize the new instance.  
   
    
   
@@ -100,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="AddAttribute">
@@ -150,6 +162,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AddAttribute">
@@ -205,6 +221,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
       </Docs>
     </Member>
     <Member MemberName="AddAttribute">
@@ -261,6 +280,11 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="AddAttribute">
@@ -293,6 +317,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="AddAttribute">
@@ -349,6 +376,11 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.HttpRequest" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="AddStyleAttribute">
@@ -400,6 +432,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="AddStyleAttribute">
@@ -451,6 +486,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="AddStyleAttribute">
@@ -483,6 +521,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
       </Docs>
     </Member>
     <Member MemberName="BeginRender">
@@ -508,6 +549,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -529,12 +572,15 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method calls the <xref:System.IO.TextWriter.Close%2A?displayProperty=fullName> base method.  
+ This implementation of the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method calls the <xref:System.IO.TextWriter.Close%2A?displayProperty=nameWithType> base method.  
   
  Following a call to the <xref:System.Web.UI.HtmlTextWriter.Close%2A> method, any operations on the <xref:System.Web.UI.HtmlTextWriter> object might throw exceptions because all its resources have been released.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.IO.TextWriter.Close" />
+        <altmember cref="M:System.IO.TextWriter.Dispose(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="DefaultTabString">
@@ -567,6 +613,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="DoubleQuoteChar">
@@ -603,6 +650,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.Write" />
+        <altmember cref="M:System.IO.TextWriter.Dispose(System.Boolean)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="EncodeAttributeValue">
@@ -646,6 +697,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="T:System.Web.HttpRequest" />
       </Docs>
     </Member>
     <Member MemberName="EncodeAttributeValue">
@@ -677,6 +732,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="T:System.Web.HttpRequest" />
       </Docs>
     </Member>
     <Member MemberName="EncodeUrl">
@@ -715,6 +774,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.HttpUtility.UrlPathEncode(System.String)" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
+        <altmember cref="T:System.Web.HttpRequest" />
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -749,6 +812,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="EndRender">
@@ -776,6 +841,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.BeginRender" />
       </Docs>
     </Member>
     <Member MemberName="EndTagLeftChars">
@@ -812,6 +879,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="EnterStyle">
@@ -853,6 +922,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.ExitStyle" />
       </Docs>
     </Member>
     <Member MemberName="EnterStyle">
@@ -896,6 +968,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.ExitStyle" />
       </Docs>
     </Member>
     <Member MemberName="EqualsChar">
@@ -932,6 +1007,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.EqualsDoubleQuoteString" />
       </Docs>
     </Member>
     <Member MemberName="EqualsDoubleQuoteString">
@@ -968,6 +1045,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.WriteAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ExitStyle">
@@ -1007,6 +1087,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.EnterStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="ExitStyle">
@@ -1048,6 +1131,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.EnterStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="FilterAttributes">
@@ -1086,6 +1172,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1111,6 +1200,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributeKey">
@@ -1149,6 +1239,11 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.IsAttributeDefined" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetAttributeName">
@@ -1187,6 +1282,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStyleKey">
@@ -1225,6 +1322,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetStyleName">
@@ -1263,6 +1363,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetTagKey">
@@ -1301,6 +1404,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="GetTagName">
@@ -1339,6 +1444,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Indent">
@@ -1374,6 +1481,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.OutputTabs" />
       </Docs>
     </Member>
     <Member MemberName="InnerWriter">
@@ -1402,7 +1511,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use a custom Web server control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that overrides the <xref:System.Web.UI.Control.Render%2A> method. It uses the <xref:System.Web.UI.HtmlTextWriter> class to write a `<font>` element. After it writes the opening tag of the element, it uses the <xref:System.Web.UI.HtmlTextWriter.InnerWriter%2A> property to write the string `"<br> The time on the server:"` and concatenates this string with the value of the <xref:System.DateTime.Now%2A?displayProperty=fullName> property.  
+ The following code example shows how to use a custom Web server control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that overrides the <xref:System.Web.UI.Control.Render%2A> method. It uses the <xref:System.Web.UI.HtmlTextWriter> class to write a `<font>` element. After it writes the opening tag of the element, it uses the <xref:System.Web.UI.HtmlTextWriter.InnerWriter%2A> property to write the string `"<br> The time on the server:"` and concatenates this string with the value of the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property.  
   
  [!code-cpp[HtmlTextWriter_Properties#3](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Properties/CPP/htmltextwriter_properties1.cpp#3)]
  [!code-csharp[HtmlTextWriter_Properties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Properties/CS/htmltextwriter_properties1.cs#3)]
@@ -1410,6 +1519,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.HttpWriter" />
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
       </Docs>
     </Member>
     <Member MemberName="IsAttributeDefined">
@@ -1449,11 +1561,14 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="IsAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsAttributeDefined (System.Web.UI.HtmlTextWriterAttribute key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsAttributeDefined(valuetype System.Web.UI.HtmlTextWriterAttribute key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsAttributeDefined(System.Web.UI.HtmlTextWriterAttribute,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1481,6 +1596,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="IsStyleAttributeDefined">
@@ -1520,11 +1638,14 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="IsStyleAttributeDefined">
       <MemberSignature Language="C#" Value="protected bool IsStyleAttributeDefined (System.Web.UI.HtmlTextWriterStyle key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStyleAttributeDefined(valuetype System.Web.UI.HtmlTextWriterStyle key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined(System.Web.UI.HtmlTextWriterStyle,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1552,6 +1673,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="IsValidFormAttribute">
@@ -1584,6 +1708,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.HtmlTextWriter.IsValidFormAttribute(System.String)" /> method to return <see langword="true" /> only for those attributes that can be included in the <see langword="&lt;form&gt;" /> element of the markup for which the class derived from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class is intended.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="NewLine">
@@ -1620,6 +1745,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.WriteLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.IO.TextWriter.NewLine" />
       </Docs>
     </Member>
     <Member MemberName="OnAttributeRender">
@@ -1664,6 +1792,8 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>If you inherit from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" /> method to return <see langword="false" /> to prevent an attribute from being rendered at all, being rendered on a particular element, or being rendered for a particular markup. For example, if you do not want the object derived from <see cref="T:System.Web.UI.HtmlTextWriter" /> to render the <see langword="bgcolor" /> attribute to <see langword="&lt;table&gt;" /> elements, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" /> and return <see langword="false" /> when <paramref name="name" /> passes <see langword="bgcolor" /> and the <see cref="P:System.Web.UI.HtmlTextWriter.TagName" /> property value is <see langword="table" />.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleAttributeRender">
@@ -1708,6 +1838,8 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>If you inherit from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" /> method to return <see langword="false" /> to prevent a style attribute from being rendered at all, being rendered on a particular element, or being rendered for a particular markup language. For example, if you do not want the object that is derived from <see cref="T:System.Web.UI.HtmlTextWriter" /> to render the <see langword="color" /> style attribute to a <see langword="&lt;p&gt;" /> element, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" /> and return <see langword="false" /> when <paramref name="name" /> passes <see langword="color" /> and the <see cref="P:System.Web.UI.HtmlTextWriter.TagName" /> property value is <see langword="p" />.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
       </Docs>
     </Member>
     <Member MemberName="OnTagRender">
@@ -1750,6 +1882,8 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>If you inherit from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" /> method to return <see langword="false" /> to prevent a markup element from being rendered at all or for a particular markup language. For example, if you do not want the object that is derived from <see cref="T:System.Web.UI.HtmlTextWriter" /> to render the <see langword="&lt;font&gt;" /> element, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" /> method to return <see langword="false" /> when a page is requested that contains a <see langword="&lt;font&gt;" /> element.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="OutputTabs">
@@ -1786,6 +1920,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.Indent" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
       </Docs>
     </Member>
     <Member MemberName="PopEndTag">
@@ -1813,6 +1950,10 @@ alert('Hello');
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The list of rendered elements is empty.</exception>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.PushEndTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PushEndTag">
@@ -1841,6 +1982,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.PopEndTag" />
       </Docs>
     </Member>
     <Member MemberName="RegisterAttribute">
@@ -1873,6 +2018,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="RegisterStyle">
@@ -1905,6 +2052,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
       </Docs>
     </Member>
     <Member MemberName="RegisterTag">
@@ -1937,6 +2086,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="RenderAfterContent">
@@ -1975,6 +2126,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>The <see cref="T:System.Web.UI.HtmlTextWriter" /> class implementation of the <see cref="M:System.Web.UI.HtmlTextWriter.RenderAfterContent" /> method returns <see langword="null" />. Override <see cref="M:System.Web.UI.HtmlTextWriter.RenderAfterContent" /> if you want to write text or spacing after the element content but before the closing tag.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderAfterTag">
@@ -2013,6 +2165,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>The <see cref="T:System.Web.UI.HtmlTextWriter" /> class implementation of the <see cref="M:System.Web.UI.HtmlTextWriter.RenderAfterTag" /> method returns <see langword="null" />. Override <see cref="M:System.Web.UI.HtmlTextWriter.RenderAfterTag" /> if you want to write text or spacing after the element closing tag.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeforeContent">
@@ -2051,6 +2204,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>The <see cref="T:System.Web.UI.HtmlTextWriter" /> class implementation of the <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeforeContent" /> method returns <see langword="null" />. Override <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeforeContent" /> if you want to write text or spacing after the opening tag but ahead of the element content.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeforeTag">
@@ -2089,6 +2243,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>The <see cref="T:System.Web.UI.HtmlTextWriter" /> class implementation of the <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeforeTag" /> method returns <see langword="null" />. Override <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeforeTag" /> if you want to write text or spacing ahead of the element opening tag.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -2136,6 +2291,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -2181,6 +2340,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddAttribute" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.AddStyleAttribute" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -2223,6 +2386,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="SelfClosingChars">
@@ -2249,6 +2414,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SelfClosingTagEnd">
@@ -2285,6 +2451,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
       </Docs>
     </Member>
     <Member MemberName="SemicolonChar">
@@ -2321,6 +2489,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.Write(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SingleQuoteChar">
@@ -2345,6 +2515,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SlashChar">
@@ -2381,6 +2552,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SpaceChar">
@@ -2428,6 +2601,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="StyleEqualsChar">
@@ -2464,6 +2640,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteStyleAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -2499,6 +2677,10 @@ alert('Hello');
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property value cannot be set.</exception>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.TagName" />
       </Docs>
     </Member>
     <Member MemberName="TagLeftChar">
@@ -2535,6 +2717,11 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteBeginTag(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteFullBeginTag(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -2561,7 +2748,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates an overridden version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method in a class that derives from the <xref:System.Web.UI.HtmlTextWriter> class. The code example checks whether the element to render is a `<label>` element by calling the <xref:System.String.Compare%2A?displayProperty=fullName> method, and then passing the <xref:System.Web.UI.HtmlTextWriter.TagName%2A> property value and a string, `"label"`, as the parameter arguments. If a `<label>` element is about to be rendered, the opening tag of a `<font>` element, with a `color` attribute set to `red`, is rendered before the `<label>` element's opening tag. If the element to render is not a `<label>` element, the base class's version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method is called.  
+ The following code example demonstrates an overridden version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method in a class that derives from the <xref:System.Web.UI.HtmlTextWriter> class. The code example checks whether the element to render is a `<label>` element by calling the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and then passing the <xref:System.Web.UI.HtmlTextWriter.TagName%2A> property value and a string, `"label"`, as the parameter arguments. If a `<label>` element is about to be rendered, the opening tag of a `<font>` element, with a `color` attribute set to `red`, is rendered before the `<label>` element's opening tag. If the element to render is not a `<label>` element, the base class's version of the <xref:System.Web.UI.HtmlTextWriter.RenderBeforeTag%2A> method is called.  
   
  [!code-cpp[HtmlTextWriter_Methods4#1](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods4/CPP/htmltextwriter_methods4.cpp#1)]
  [!code-csharp[HtmlTextWriter_Methods4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods4/CS/htmltextwriter_methods4.cs#1)]
@@ -2569,6 +2756,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TagRightChar">
@@ -2605,6 +2796,10 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteFullBeginTag(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2633,6 +2828,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2675,6 +2871,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2726,6 +2923,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2755,7 +2953,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=fullName> field.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=nameWithType> field.  
   
  This code example generates the following markup:  
   
@@ -2770,6 +2968,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2798,6 +2997,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2826,6 +3026,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2855,7 +3056,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property.  
   
  This code example generates the following markup:  
   
@@ -2872,6 +3073,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2901,7 +3104,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=fullName> field, which is the smallest possible value of the <xref:System.Single> structure.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlTextWriter.Write%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=nameWithType> field, which is the smallest possible value of the <xref:System.Single> structure.  
   
  This code example generates the following markup:  
   
@@ -2916,6 +3119,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2961,6 +3165,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -2999,10 +3204,13 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.String.Format(System.String,System.Object)" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -3050,6 +3258,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.String.Format(System.String,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3105,6 +3315,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3145,6 +3356,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.String.Format(System.String,System.Object,System.Object)" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="WriteAttribute">
@@ -3201,6 +3415,7 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>In derived classes, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String)" /> method to define custom rules for writing attributes and their values. For example, you could write code that allowed the <see cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String)" /> method to write an attribute with an empty value.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteAttribute">
@@ -3262,6 +3477,8 @@ alert('Hello');
         <block subset="none" type="overrides">
           <para>In derived classes, you can override the <see cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" /> method to define custom rules for writing attributes and their values. For example, you could write code that allowed the <see cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" /> method to write an attribute with an empty value.</para>
         </block>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteBeginTag">
@@ -3315,6 +3532,11 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.WriteAttribute" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.TagRightChar" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.SelfClosingTagEnd" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEndTag(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteBreak">
@@ -3348,6 +3570,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedText(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedText">
@@ -3388,6 +3612,9 @@ alert('Hello');
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="text" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteBreak" />
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedUrl">
@@ -3426,6 +3653,7 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedUrlParameter">
@@ -3464,6 +3692,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteUrlEncodedString(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="WriteEndTag">
@@ -3507,6 +3737,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteBeginTag(System.String)" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.WriteAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteFullBeginTag">
@@ -3535,6 +3768,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteBeginTag(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteLine">
@@ -3552,6 +3787,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteLine">
@@ -3586,6 +3824,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3614,6 +3855,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3642,6 +3886,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3693,6 +3940,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3722,7 +3972,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=fullName> field.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Double.MaxValue?displayProperty=nameWithType> field.  
   
  This code example generates the following markup:  
   
@@ -3737,6 +3987,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3765,6 +4018,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3793,6 +4049,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3822,13 +4081,16 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property to a control.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property to a control.  
   
  [!code-csharp[MarkupTextWriter_Methods1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods1/CS/boldedrendering.cs#4)]
  [!code-vb[MarkupTextWriter_Methods1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods1/VB/boldedrendering.vb#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3858,7 +4120,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=fullName> field, which is the smallest possible value of the <xref:System.Single> structure.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.WriteLine%2A> method to render the value of the <xref:System.Single.Epsilon?displayProperty=nameWithType> field, which is the smallest possible value of the <xref:System.Single> structure.  
   
  This code example generates the following markup:  
   
@@ -3873,6 +4135,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3901,6 +4166,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3935,6 +4203,9 @@ alert('Hello');
  ]]></format>
         </remarks>
         <altCompliant cref="M:System.Web.UI.HtmlTextWriter.WriteLine(System.Int64)" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -3973,10 +4244,13 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -4024,6 +4298,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4079,6 +4356,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -4119,6 +4399,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineNoTabs">
@@ -4149,6 +4432,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.NewLine" />
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.WriteLine" />
       </Docs>
     </Member>
     <Member MemberName="WriteStyleAttribute">
@@ -4181,6 +4467,8 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.Write" />
       </Docs>
     </Member>
     <Member MemberName="WriteStyleAttribute">
@@ -4218,6 +4506,9 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="Overload:System.IO.TextWriter.Write" />
+        <altmember cref="M:System.Web.HttpUtility.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteUrlEncodedString">
@@ -4251,7 +4542,123 @@ alert('Hello');
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrl(System.String)" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrlParameter(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlTextWriter" /> class.</summary>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.DefaultTabString" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStyleAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a style attribute and its value to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified markup attribute and value to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsStyleAttributeDefined">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a markup style attribute is rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExitStyle">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing tag of a markup element to end the specified layout and character formatting.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RenderBeginTag">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening tag of a markup element to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a markup attribute and its value to the output stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddStyleAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a markup style attribute to the opening tag of the element that the <see cref="T:System.Web.UI.HtmlTextWriter" /> object creates with a subsequent call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+        <altmember cref="T:System.IO.TextWriter" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriterStyle" />
+        <altmember cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAttributeDefined">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified markup attribute and its value are rendered during the next call to the <see cref="Overload:System.Web.UI.HtmlTextWriter.RenderBeginTag" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified data type to the output stream, along with any pending tab spacing.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EnterStyle">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening tag of a markup element that contains attributes that implement the layout and character formatting of the specified style.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EncodeAttributeValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the value of the specified markup attribute based on the requirements of the <see cref="T:System.Web.HttpRequest" /> object of the current context.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

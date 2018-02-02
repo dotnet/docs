@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSaveSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSaveSize enumeration [.NET Framework metadata]"
 ms.assetid: eb95ce39-5688-43c1-a34d-578794b32faa
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorSaveSize Enumeration
 Contains values indicating the level of precision required when querying for the size of a save operation.  

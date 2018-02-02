@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="T:System.ComponentModel.ISupportInitialize" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +93,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by the <paramref name="uriSource" /> parameter is not found.</exception>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +125,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="uriSource" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by the <paramref name="uriSource" /> parameter is not found.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.Cache.RequestCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -140,6 +145,7 @@
         <summary>Gets or sets a value that represents the base <see cref="T:System.Uri" /> of the current <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> context.</summary>
         <value>The base <see cref="T:System.Uri" /> of the current context.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -178,6 +184,8 @@
  -or-  
   
  The <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> has already been initialized.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.BitmapImage.EndInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="CacheOption">
@@ -199,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
+ Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad?displayProperty=nameWithType> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
   
 <a name="dependencyPropertyInfo_CacheOption"></a>   
 ## Dependency Property Information  
@@ -219,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapCacheOption" />
       </Docs>
     </Member>
     <Member MemberName="CacheOptionProperty">
@@ -260,12 +269,13 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -311,10 +321,11 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -395,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapCreateOptions" />
       </Docs>
     </Member>
     <Member MemberName="CreateOptionsProperty">
@@ -455,6 +467,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth" />
       </Docs>
     </Member>
     <Member MemberName="DecodePixelHeightProperty">
@@ -493,7 +506,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If<xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
+ If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is also set, the aspect ratio of the bitmap is ignored. If <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> is not set, the aspect ratio remains the same.  
   
  The [!INCLUDE[TLA#tla_jpeg](~/includes/tlasharptla-jpeg-md.md)] and [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] codecs natively decode the image to the specified size; other codecs decode the image at its original size and scale the image to the desired size.  
   
@@ -515,6 +528,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight" />
       </Docs>
     </Member>
     <Member MemberName="DecodePixelWidthProperty">
@@ -570,6 +584,8 @@
  -or-  
   
  The <see cref="M:System.Windows.Media.Imaging.BitmapImage.EndInit" /> method is called without first calling <see cref="M:System.Windows.Media.Imaging.BitmapImage.BeginInit" />.</exception>
+        <altmember cref="M:System.Windows.Media.Imaging.BitmapImage.BeginInit" />
+        <altmember cref="T:System.ComponentModel.ISupportInitialize" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -660,6 +676,9 @@
         <value>Not supported.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">An attempt to read the <see cref="P:System.Windows.Media.Imaging.BitmapImage.Metadata" /> occurs.</exception>
+        <altmember cref="T:System.Windows.Media.ImageMetadata" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapFrame" />
+        <altmember cref="T:System.Windows.Media.Imaging.BitmapMetadata" />
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -703,6 +722,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Imaging.Rotation" />
       </Docs>
     </Member>
     <Member MemberName="RotationProperty">
@@ -797,7 +817,7 @@
 ## Remarks  
  If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
   
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
+ Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad?displayProperty=nameWithType> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
   
 <a name="dependencyPropertyInfo_StreamSource"></a>   
 ## Dependency Property Information  
@@ -809,6 +829,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapImage.UriSource" />
       </Docs>
     </Member>
     <Member MemberName="StreamSourceProperty">
@@ -856,6 +877,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="T:System.Net.Cache.RequestCachePolicy" />
       </Docs>
     </Member>
     <Member MemberName="UriCachePolicyProperty">
@@ -924,6 +947,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Imaging.BitmapImage.StreamSource" />
       </Docs>
     </Member>
     <Member MemberName="UriSourceProperty">
@@ -943,5 +967,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.BitmapImage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

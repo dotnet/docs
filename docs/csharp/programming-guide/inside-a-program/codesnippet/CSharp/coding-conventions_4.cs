@@ -1,1 +1,0 @@
-            string displayName = nameList[n].LastName + ", " + nameList[n].FirstName;

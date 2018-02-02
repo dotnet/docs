@@ -37,7 +37,7 @@
 ## Remarks  
  <xref:System.Collections.IList> is a descendant of the <xref:System.Collections.ICollection> interface and is the base interface of all non-generic lists. <xref:System.Collections.IList> implementations fall into three categories: read-only, fixed-size, and variable-size. A read-only <xref:System.Collections.IList> cannot be modified. A fixed-size <xref:System.Collections.IList> does not allow the addition or removal of elements, but it allows the modification of existing elements. A variable-size <xref:System.Collections.IList> allows the addition, removal, and modification of elements.  
   
- For the generic version of this interface, see <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.  
+ For the generic version of this interface, see <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType>.  
   
    
   
@@ -49,6 +49,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.ArrayList" />
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Collections.Generic.IList`1" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -133,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implementations of this method can vary in how they handle the <xref:System.Collections.ICollection.Count%2A?displayProperty=fullName> and the capacity of a collection. Typically, the count is set to zero, and references to other objects from elements of the collection are also released. The capacity can be set to zero or a default value, or it can remain unchanged.  
+ Implementations of this method can vary in how they handle the <xref:System.Collections.ICollection.Count%2A?displayProperty=nameWithType> and the capacity of a collection. Typically, the count is set to zero, and references to other objects from elements of the collection are also released. The capacity can be set to zero or a default value, or it can remain unchanged.  
   
    
   

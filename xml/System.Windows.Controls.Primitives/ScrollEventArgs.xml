@@ -13,6 +13,11 @@
   <Docs>
     <summary>Provides data for a <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event that occurs when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> of a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> moves.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventType" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +61,10 @@
         <param name="genericTarget">The current object along the event's route.</param>
         <summary>Performs the appropriate type casting to call the type-safe <see cref="T:System.Windows.Controls.Primitives.ScrollEventHandler" /> delegate for the <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventType" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -81,6 +90,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.Track" />
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+        <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
       </Docs>
     </Member>
     <Member MemberName="ScrollEventType">
@@ -99,6 +111,8 @@
         <summary>Gets the <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value that describes the change in the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> position that caused this event.</summary>
         <value>A <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> enumeration value that describes the type of <see cref="T:System.Windows.Controls.Primitives.Thumb" /> movement that caused the <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
+        <altmember cref="T:System.Windows.Controls.Primitives.Thumb" />
       </Docs>
     </Member>
   </Members>

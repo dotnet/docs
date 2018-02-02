@@ -21,11 +21,7 @@
   
 ## Remarks  
  The dictionary contains a mapping from resource keys (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey> objects) to resource values (specified as <xref:System.Windows.Markup.Localizer.BamlLocalizableResource> objects).  
-  
-<a name="xamlTextUsage_BamlLocalizationDictionary"></a>   
-## XAML Text Usage  
-   
-  
+    
 ## Examples  
  The following example demonstrates how to use a <xref:System.Windows.Markup.Localizer.BamlLocalizationDictionary>.  
   
@@ -34,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizableResource" />
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +73,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An item with the same key already exists.</exception>
+        <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizableResourceKey" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -349,6 +348,7 @@
         <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.Count" />.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Markup.Localizer.BamlLocalizationDictionary.Count" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -409,6 +409,7 @@
         <param name="value">The object value to add to the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.Add(System.Windows.Markup.Localizer.BamlLocalizableResourceKey,System.Windows.Markup.Localizer.BamlLocalizableResource)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -432,6 +433,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.Contains(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -451,6 +453,7 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.GetEnumerator" />.</summary>
         <returns>An enumerator object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
@@ -473,6 +476,7 @@
         <summary>For a description of this member, see <see cref="P:System.Collections.IDictionary.Item(System.Object)" />.</summary>
         <value>The item with the specified key.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Markup.Localizer.BamlLocalizationDictionary.Item(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -494,6 +498,7 @@
         <param name="key">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IDictionary.Remove(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.Remove(System.Windows.Markup.Localizer.BamlLocalizableResourceKey)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -513,6 +518,7 @@
         <summary>For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">

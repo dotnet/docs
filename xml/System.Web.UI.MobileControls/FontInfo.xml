@@ -24,11 +24,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontInfo> class provides a subset of the functionality of the Web Forms <xref:System.Web.UI.WebControls.FontInfo?displayProperty=fullName> class.  
+ The <xref:System.Web.UI.MobileControls.FontInfo> class provides a subset of the functionality of the Web Forms <xref:System.Web.UI.WebControls.FontInfo?displayProperty=nameWithType> class.  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.FontInfo" />
   </Docs>
   <Members>
     <Member MemberName="Bold">
@@ -65,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.BooleanOption" />
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -101,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.BooleanOption" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -172,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.FontSize" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -191,6 +195,7 @@
         <summary>Converts the specified value to its equivalent string representation. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
   </Members>

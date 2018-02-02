@@ -359,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String}[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -440,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.Add(System.Windows.Markup.XmlLanguage,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -470,6 +472,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String})" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -496,6 +499,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -551,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.LanguageSpecificStringDictionary.Item(System.Windows.Markup.XmlLanguage)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -576,6 +581,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.LanguageSpecificStringDictionary.Keys" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -604,6 +610,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.Remove(System.Collections.Generic.KeyValuePair{System.Windows.Markup.XmlLanguage,System.String})" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -629,6 +636,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.LanguageSpecificStringDictionary.Values" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -655,11 +663,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.LanguageSpecificStringDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (System.Windows.Markup.XmlLanguage key, out string value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Windows.Markup.XmlLanguage key, string value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.Windows.Markup.XmlLanguage key, [out] string&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LanguageSpecificStringDictionary.TryGetValue(System.Windows.Markup.XmlLanguage,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -712,5 +721,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the element from <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a key/value pair to the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

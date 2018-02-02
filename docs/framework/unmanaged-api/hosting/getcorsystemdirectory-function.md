@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetCORSystemDirectory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCORSystemDirectory function [.NET Framework hosting]"
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
@@ -29,6 +27,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetCORSystemDirectory Function
 Returns the installation directory of the common language runtime (CLR) that is loaded into the process. The installation directory is fully qualified, for example, "c:\windows\microsoft.net\framework\v1.0.3705".  

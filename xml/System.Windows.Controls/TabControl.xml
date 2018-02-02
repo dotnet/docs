@@ -86,11 +86,11 @@
    
   
 ## Examples  
- The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A?displayProperty=fullName> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
+ The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A?displayProperty=nameWithType> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
   
  [!code-xaml[ContentStringSnippets#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#tabcontrol)]  
   
- The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  
+ The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> method to return either the `Name` of the student or a string that lists the student's courses.  
   
  [!code-csharp[ContentStringSnippets#TabControlToString](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml.cs#tabcontroltostring)]
  [!code-vb[ContentStringSnippets#TabControlToString](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContentStringSnippets/visualbasic/window1.xaml.vb#tabcontroltostring)]  
@@ -515,7 +515,7 @@
 ## Remarks  
  This property is updated to reference the <xref:System.Windows.Controls.ContentControl.Content%2A> of the active <xref:System.Windows.Controls.TabItem> when the tab selection changes.  
   
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=nameWithType> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=nameWithType> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to "SelectedContent" or by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
 <a name="xamlAttributeUsage_SelectedContent"></a>   
 ## XAML Attribute Usage  
@@ -544,7 +544,7 @@
   
  [!code-xaml[ControlTemplateExamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#13)]  
   
- The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContent%2A> property to the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContent%2A> property to the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=nameWithType> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  [!code-xaml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   
@@ -628,9 +628,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.DataTemplate> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplate%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.DataTemplate> for a <xref:System.Windows.Controls.TabItem>.  
+ The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.DataTemplate> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplate%2A?displayProperty=nameWithType> or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.DataTemplate> for a <xref:System.Windows.Controls.TabItem>.  
   
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=nameWithType> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=nameWithType> property to this property by setting the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to "SelectedContent" or by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
 <a name="xamlAttributeUsage_SelectedContentTemplate"></a>   
 ## XAML Attribute Usage  
@@ -654,7 +654,7 @@
   
  [!code-xaml[ControlTemplateExamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#13)]  
   
- The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=nameWithType> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  [!code-xaml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   
@@ -703,9 +703,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.Controls.DataTemplateSelector> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A?displayProperty=fullName> or the <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.Controls.DataTemplateSelector> for a <xref:System.Windows.Controls.TabItem>.  
+ The <xref:System.Windows.Controls.TabControl> updates this property to reference to the <xref:System.Windows.Controls.DataTemplateSelector> for the active <xref:System.Windows.Controls.TabItem> when the tab selection changes. Set <xref:System.Windows.Controls.TabControl.ContentTemplateSelector%2A?displayProperty=nameWithType> or the <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property on a <xref:System.Windows.Controls.TabItem> to specify the <xref:System.Windows.Controls.DataTemplateSelector> for a <xref:System.Windows.Controls.TabItem>.  
   
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=fullName> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property to this property by setting <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=fullName> property to "SelectedContent" or by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.TabControl> uses the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to bind the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=nameWithType> property to this property. If you create a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl>, be sure to the bind the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=nameWithType> property to this property by setting <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A?displayProperty=nameWithType> property to "SelectedContent" or by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
 <a name="xamlAttributeUsage_SelectedContentTemplateSelector"></a>   
 ## XAML Attribute Usage  
@@ -729,7 +729,7 @@
   
  [!code-xaml[ControlTemplateExamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#13)]  
   
- The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
+ The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=nameWithType> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  [!code-xaml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   

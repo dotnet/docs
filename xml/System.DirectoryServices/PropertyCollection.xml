@@ -236,7 +236,7 @@
 ## Remarks  
  <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection.  
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
   
@@ -265,6 +265,7 @@ Dim myCollection As New ICollection()
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -289,7 +290,7 @@ Dim myCollection As New ICollection()
 ## Remarks  
  For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection's SyncRoot property.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a Synchronized method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
   
  In the absence of a Synchronized method on a collection, the expected usage for <xref:System.Collections.ICollection.SyncRoot%2A> looks like this:  
   
@@ -334,6 +335,7 @@ Dim myCollection As New ICollection()
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -382,6 +384,7 @@ Dim myCollection As New ICollection()
  -or-  
   
  The <see cref="T:System.Collections.IDictionary" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.IDictionary.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Clear">
@@ -572,6 +575,7 @@ Dim myCollection As New ICollection()
  -or-  
   
  The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.IDictionary" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -607,6 +611,7 @@ Dim myCollection As New ICollection()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -688,6 +693,7 @@ Dim myCollection As New ICollection()
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">

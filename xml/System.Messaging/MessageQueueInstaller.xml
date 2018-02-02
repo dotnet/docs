@@ -28,7 +28,7 @@
   
  Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the installutil.exe installation utility. The utility automatically calls the <xref:System.Messaging.MessageQueueInstaller.Install%2A> method during the installation process and calls <xref:System.Messaging.MessageQueueInstaller.Commit%2A> if the installation did not throw an exception. It backs out failures, if necessary, by calling <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> for the object that generated the exception.  
   
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information is continuously updated as each <xref:System.Messaging.MessageQueueInstaller> instance is installed by the utility. It is not usually necessary for your code to explicitly modify the state information.  
+ An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> to automatically maintain information about the components that have already been installed. This state information is continuously updated as each <xref:System.Messaging.MessageQueueInstaller> instance is installed by the utility. It is not usually necessary for your code to explicitly modify the state information.  
   
  ]]></format>
     </remarks>
@@ -188,10 +188,13 @@
   
  After a successful installation of all the components that are associated with the installation project has occurred, the installation utility commits the installations. <xref:System.Messaging.MessageQueueInstaller.Commit%2A> completes the installation of the <xref:System.Messaging.MessageQueue> by setting the queue to the appropriate initial state. If the queue specified by the <xref:System.Messaging.MessageQueueInstaller.Path%2A> property already exists and contains messages, <xref:System.Messaging.MessageQueueInstaller.Commit%2A> clears the messages. <xref:System.Messaging.MessageQueueInstaller.Commit%2A>, rather than <xref:System.Messaging.MessageQueueInstaller.Install%2A>, clears the messages because the act of purging the messages cannot be rolled back.  
   
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Commit%2A> as the `savedState` parameter, is continuously updated as the utility commits each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information. When the queue has been cleared, <xref:System.Messaging.MessageQueueInstaller.Commit%2A> posts a log entry to the `savedState` that is associated with the installation.  
+ An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Commit%2A> as the `savedState` parameter, is continuously updated as the utility commits each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information. When the queue has been cleared, <xref:System.Messaging.MessageQueueInstaller.Commit%2A> posts a log entry to the `savedState` that is associated with the installation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -286,10 +289,14 @@
   
  After a successful installation of all the components that are associated with the installation project has occurred, the installation utility commits the installations. <xref:System.Messaging.MessageQueueInstaller.Commit%2A> completes the installation of the <xref:System.Messaging.MessageQueue> by setting the queue to the appropriate initial state. If the queue specified by the <xref:System.Messaging.MessageQueueInstaller.Path%2A> property already exists and contains messages, <xref:System.Messaging.MessageQueueInstaller.Commit%2A> clears the messages. <xref:System.Messaging.MessageQueueInstaller.Commit%2A>, rather than <xref:System.Messaging.MessageQueueInstaller.Install%2A>, clears the messages because the act of purging the messages cannot be rolled back.  
   
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Install%2A> as the `stateSaver` parameter, is continuously updated as the utility installs each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
+ An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Install%2A> as the `stateSaver` parameter, is continuously updated as the utility installs each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="IsEquivalentInstaller">
@@ -433,6 +440,7 @@
 ```</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
+        <altmember cref="P:System.Messaging.MessageQueue.MulticastAddress" />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -575,6 +583,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -603,10 +612,14 @@
   
  Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the InstallUtil.exe installation utility. The utility automatically calls the <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> method after an installation failure to undo any changes that the installation process has already made.  
   
- An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> as the `savedState` parameter, is continuously updated as the utility rolls back each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
+ An application's install routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> to automatically maintain information about the components that have already been installed. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Rollback%2A> as the `savedState` parameter, is continuously updated as the utility rolls back each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Uninstall(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Transactional">
@@ -666,10 +679,12 @@
   
  Typically, you do not call the methods of the <xref:System.Messaging.MessageQueueInstaller> from within your code; they are generally called only by the InstallUtil.exe installation utility (in uninstall mode). The utility automatically calls the <xref:System.Messaging.MessageQueueInstaller.Uninstall%2A> method to restore the parts of the system that were affected by the installation to their pre-installation states. This includes deleting registry information that is associated with the MessageQueue being uninstalled.  
   
- An application's uninstall routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> to automatically maintain information about the components that have already been uninstalled. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Uninstall%2A> as the `savedState` parameter, is continuously updated as the utility uninstalls each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
+ An application's uninstall routine uses the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> to automatically maintain information about the components that have already been uninstalled. This state information, which is passed to <xref:System.Messaging.MessageQueueInstaller.Uninstall%2A> as the `savedState` parameter, is continuously updated as the utility uninstalls each <xref:System.Messaging.MessageQueueInstaller> instance. Usually, it is not necessary for your code to explicitly modify this state information.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueueInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="UninstallAction">
@@ -700,6 +715,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.Install.UninstallAction" />
       </Docs>
     </Member>
     <Member MemberName="UseJournalQueue">
@@ -735,5 +751,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueueInstaller" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

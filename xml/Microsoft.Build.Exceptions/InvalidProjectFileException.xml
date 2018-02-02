@@ -365,5 +365,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This constructor only exists to satisfy .NET coding guidelines. Use a rich constructor whenever possible.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

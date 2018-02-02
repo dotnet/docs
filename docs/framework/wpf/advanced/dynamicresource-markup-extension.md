@@ -13,13 +13,15 @@ f1_keywords:
   - "DynamicResource"
   - "DynamicResourceExtension"
 helpviewer_keywords: 
-  - "XAML, DynamicResource markup extension"
-  - "DynamicResource markup extensions"
+  - "XAML [WPF], DynamicResource markup extension"
+  - "DynamicResource markup extensions [WPF]"
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # DynamicResource Markup Extension
 Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] property attribute by deferring that value to be a reference to a defined resource. Lookup behavior for that resource is analogous to run-time lookup.  
@@ -44,7 +46,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 |||  
 |-|-|  
-|`key`|The key for the requested resource. This key was initially assigned by the [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md) if a resource was created in markup, or was provided as the `key` parameter when calling <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=fullName> if the resource was created in code.|  
+|`key`|The key for the requested resource. This key was initially assigned by the [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md) if a resource was created in markup, or was provided as the `key` parameter when calling <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType> if the resource was created in code.|  
   
 ## Remarks  
  A `DynamicResource` will create a temporary expression during the initial compilation and thus defer lookup for resources until the requested resource value is actually required in order to construct an object. This may potentially be after the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page is loaded. The resource value will be found based on key search against all active resource dictionaries starting from the current page scope, and is substituted for the placeholder expression from compilation.  
@@ -79,10 +81,10 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
  `DynamicResource` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
 ## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)   
- [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)   
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)   
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
+ [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
+ [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
+ [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
  [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

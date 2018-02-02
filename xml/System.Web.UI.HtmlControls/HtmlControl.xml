@@ -126,22 +126,25 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to programmatically access the attributes of the HTML server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+ Use this property to programmatically access the attributes of the HTML server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property.  
   
  HTML attributes are treated by the .NET Framework as properties on the HTML server control to which they belong.  
   
- For additional information on the attributes collection, see the <xref:System.Web.UI.AttributeCollection?displayProperty=fullName> class.  
+ For additional information on the attributes collection, see the <xref:System.Web.UI.AttributeCollection?displayProperty=nameWithType> class.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Attributes%2A> property to determine the attributes of the <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Attributes Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelect" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -161,6 +164,7 @@
         <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object to hold the child controls (both literal and server) of the server control.</summary>
         <returns>A <see cref="T:System.Web.UI.ControlCollection" /> object to contain the current server control's child server controls.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.CreateControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -201,11 +205,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Disabled%2A> property to programmatically enable and disable an <xref:System.Web.UI.HtmlControls.HtmlInputButton> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Disabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Disabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlControl.Disabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlControl.Disabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Disabled Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputButton" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -231,10 +236,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method to access an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property. HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method's `name` parameter is case-insensitive.  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method to access an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property. HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.GetAttribute%2A> method's `name` parameter is case-insensitive.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.SetAttribute(System.String,System.String)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -263,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -287,12 +295,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method writes the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> attribute of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
+ The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method writes the <xref:System.Web.UI.Control.ID%2A?displayProperty=nameWithType> attribute of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlControl> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ID" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -323,6 +332,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteBeginTag(System.String)" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.TagLeftChar" />
+        <altmember cref="F:System.Web.UI.HtmlTextWriter.TagRightChar" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlControl.TagName" />
       </Docs>
     </Member>
     <Member MemberName="SetAttribute">
@@ -349,12 +362,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method to set an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property.  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method to set an attribute on the <xref:System.Web.UI.HtmlControls.HtmlControl> server control. All HTML server controls store their attributes in the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=nameWithType> property.  
   
  HTML attributes are treated by the ASP.NET page framework as properties on the HTML server control to which they belong. The <xref:System.Web.UI.HtmlControls.HtmlControl.SetAttribute%2A> method's `name` parameter is case-insensitive.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.GetAttribute(System.String)" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -386,18 +401,20 @@
 ## Remarks  
  Use this property to programmatically access the style properties of the HTML server control.  
   
- For additional information on the CSS style collection, see the <xref:System.Web.UI.CssStyleCollection?displayProperty=fullName> class.  
+ For additional information on the CSS style collection, see the <xref:System.Web.UI.CssStyleCollection?displayProperty=nameWithType> class.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.Style%2A> property to determine the style properties of an <xref:System.Web.UI.HtmlControls.HtmlSelect> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Style Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Style Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.Style Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.Style Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.CssStyleCollection" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlSelect" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
@@ -429,6 +446,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.GetAttribute(System.String)" />
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
@@ -461,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlControl.SetAttribute(System.String,System.String)" />
+        <altmember cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TagName">
@@ -497,8 +518,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A> property to programmatically determine the element name of a tag.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlControl.TagName Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -528,7 +549,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewStateIgnoresCase" />
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

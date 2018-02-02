@@ -16,9 +16,11 @@ helpviewer_keywords:
   - "KnownTypes"
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;dataContractSerializer&gt;
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  
@@ -66,8 +68,8 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>   
- <xref:System.ServiceModel.Configuration.DataContractSerializerElement>   
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
+ <xref:System.ServiceModel.Configuration.DataContractSerializerElement>  
+ [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
  [Data Transfer and Serialization](../../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)

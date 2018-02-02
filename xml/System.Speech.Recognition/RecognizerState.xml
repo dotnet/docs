@@ -46,6 +46,12 @@ _recognizer.StateChanged +=
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Speech.Recognition.StateChangedEventArgs.RecognizerState" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.Enabled" />
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.State" />
+    <altmember cref="T:System.Speech.Recognition.StateChangedEventArgs" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.StateChanged" />
   </Docs>
   <Members>
     <Member MemberName="Listening">

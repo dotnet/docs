@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IReferenceIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IReferenceIdentity interface [.NET Framework fusion]"
 ms.assetid: 9180ac5a-7019-4716-9f83-8a91d157239a
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IReferenceIdentity Interface
 Represents a reference to the unique signature of a code object.  
@@ -49,5 +49,5 @@ Represents a reference to the unique signature of a code object.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
  [IEnumIDENTITY_ATTRIBUTE Interface](../../../../docs/framework/unmanaged-api/fusion/ienumidentity-attribute-interface.md)

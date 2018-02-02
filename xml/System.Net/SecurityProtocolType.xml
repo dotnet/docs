@@ -29,16 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration defines permissible values for the <xref:System.Net.ServicePointManager.SecurityProtocol%2A> property and specifies the security protocols that are used by instances of the <xref:System.Net.Security.SslStream> class.  
-  
-   
-  
-## Examples  
- The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
-  
- [!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
- [!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
-  
+ This enumeration defines the set of values that you can use to specify which transport security protocol to use. It is the enumerated type for the <xref:System.Net.ServicePointManager.SecurityProtocol%2A> property. Use this enumeration to determine your transport security protocol policy when you're using HTTP APIs in the .NET Framework such as <xref:System.Net.WebClient>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.Http.HttpClient>, and <xref:System.Net.Mail.SmtpClient> (when using TLS/SSL).
  ]]></format>
     </remarks>
   </Docs>
@@ -93,7 +84,7 @@
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the system default security protocol as defined by [Schannel](https://go.microsoft.com/fwlink/?linkid=833507).</summary>
+        <summary>Allows the operating system to choose the best protocol to use, and to block protocols that are not secure. Unless your app has a specific reason not to, you should use this value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tls">

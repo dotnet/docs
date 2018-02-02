@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.RectAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Media.Animation.RectKeyFrameCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +98,7 @@
         <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.DiscreteRectKeyFrame" />.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Media.Animation.DiscreteRectKeyFrame" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="InterpolateValueCore">
@@ -122,5 +125,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteRectKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

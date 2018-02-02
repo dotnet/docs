@@ -34,7 +34,7 @@
   
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to a <xref:System.Collections.Hashtable>.  
   
- The constructor accepts a Boolean parameter that allows the user to specify whether the collection ignores the case when comparing strings. If the collection is case-sensitive, it uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If the collection is case-insensitive, it performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. By default, the collection is case-sensitive. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ The constructor accepts a Boolean parameter that allows the user to specify whether the collection ignores the case when comparing strings. If the collection is case-sensitive, it uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If the collection is case-insensitive, it performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. By default, the collection is case-sensitive. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  A key cannot be null, but a value can.  
   
@@ -62,6 +62,12 @@
  This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.HybridDictionary" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.HybridDictionary" /> using the <see cref="P:System.Collections.Specialized.HybridDictionary.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.Specialized.ListDictionary" />
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
+    <altmember cref="M:System.Object.GetHashCode" />
+    <altmember cref="M:System.Object.Equals(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName> as the comparer.  
+ By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType> as the comparer.  
   
  The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.HybridDictionary> must be unique.  
   
@@ -138,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  This constructor is an O(1) operation.  
   
@@ -177,7 +183,7 @@
 ## Remarks  
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to the <xref:System.Collections.Hashtable>.  
   
- By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName> as the comparer.  
+ By default, the collection is case-sensitive and uses the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> as the hash code provider and the key's implementation of <xref:System.Object.Equals%2A?displayProperty=nameWithType> as the comparer.  
   
  The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.HybridDictionary> must be unique.  
   
@@ -185,6 +191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -220,7 +228,7 @@
 ## Remarks  
  If the initial size of the collection is greater than the optimal size for a <xref:System.Collections.Specialized.ListDictionary>, the collection is stored in a <xref:System.Collections.Hashtable> to avoid the overhead of copying elements from the <xref:System.Collections.Specialized.ListDictionary> to the <xref:System.Collections.Hashtable>.  
   
- If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ If `caseInsensitive` is `false`, the collection uses the key's implementations of <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>. If `caseInsensitive` is `true`, the collection performs a simple ordinal case-insensitive comparison, which obeys the casing rules of the invariant culture only. For more information on the invariant culture, see <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>.  
   
  This constructor is an O(`n`) operation, where `n` is `initialSize`.  
   
@@ -286,6 +294,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An entry with the same key already exists in the <see cref="T:System.Collections.Specialized.HybridDictionary" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.HybridDictionary.Remove(System.Object)" />
+        <altmember cref="P:System.Collections.Specialized.HybridDictionary.Item(System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -334,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IDictionary.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -387,6 +399,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -453,6 +466,9 @@
   
  The number of elements in the source <see cref="T:System.Collections.Specialized.HybridDictionary" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Specialized.HybridDictionary" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="M:System.Collections.Specialized.HybridDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -553,6 +569,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -584,7 +602,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
   
@@ -625,7 +643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface.  
   
  A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
   
@@ -666,7 +684,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Collections.Specialized.HybridDictionary> implements the <xref:System.Collections.Specialized.HybridDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.HybridDictionary> using the <xref:System.Collections.Specialized.HybridDictionary.SyncRoot%2A> property.  
   
@@ -685,6 +703,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.HybridDictionary.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -743,6 +762,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -791,6 +811,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Specialized.HybridDictionary.Values" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -844,6 +866,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Specialized.HybridDictionary.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.IDictionary.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -892,6 +916,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Specialized.HybridDictionary.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -951,6 +976,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -999,7 +1026,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.Specialized.HybridDictionary.Keys" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.HybridDictionary" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -44,7 +44,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.TimeoutException> in conjunction with members of the <xref:System.IO.Ports.SerialPort?displayProperty=fullName> class.  
+ The following code example demonstrates the use of <xref:System.TimeoutException> in conjunction with members of the <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> class.  
   
  [!code-cpp[TimeoutException.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/TimeoutException.class/cpp/to.cpp#1)]
  [!code-csharp[TimeoutException.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/TimeoutException.class/CS/to.cs#1)]
@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance with a system-supplied error message. This message takes into account the current system culture.  
+ This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new instance with a system-supplied error message. This message takes into account the current system culture.  
   
  The following table shows the initial property values for an instance of <xref:System.TimeoutException>.  
   
@@ -128,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using the value of the `message` parameter.  
+ This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new instance using the value of the `message` parameter.  
   
  The following table shows the initial property values for an instance of <xref:System.TimeoutException>.  
   
@@ -177,6 +178,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" />, or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -213,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new instance using the value of the `message` parameter.  
+ This constructor initializes the inherited <xref:System.Exception.Message%2A?displayProperty=nameWithType> property of the new instance using the value of the `message` parameter.  
   
  An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed to the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
   
@@ -228,5 +231,18 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.TimeoutException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AddRequest (string distinguishedName, System.DirectoryServices.Protocols.DirectoryAttribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public AddRequest (string distinguishedName, params System.DirectoryServices.Protocols.DirectoryAttribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string distinguishedName, class System.DirectoryServices.Protocols.DirectoryAttribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AddRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttribute[])" />
       <MemberType>Constructor</MemberType>
@@ -162,5 +162,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.AddRequest.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

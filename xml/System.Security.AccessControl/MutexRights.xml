@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Security.AccessControl.MutexRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.MutexSecurity> objects. To apply access rights to a named system mutex, use <xref:System.Security.AccessControl.MutexSecurity> objects with the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29> constructor and the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method.  
+ Use the <xref:System.Security.AccessControl.MutexRights> enumeration to specify access control rights when you create <xref:System.Security.AccessControl.MutexSecurity> objects. To apply access rights to a named system mutex, use <xref:System.Security.AccessControl.MutexSecurity> objects with the <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29> constructor and the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
@@ -34,16 +34,18 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Security.AccessControl.MutexRights> values when creating and using <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates an <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=fullName>rule.  
+ The following code example demonstrates the use of <xref:System.Security.AccessControl.MutexRights> values when creating and using <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates an <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object; see <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method, and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object; see <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method, and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.MutexAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.MutexSecurity" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

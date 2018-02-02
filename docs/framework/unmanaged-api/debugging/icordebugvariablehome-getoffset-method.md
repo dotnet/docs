@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugVariableHome::GetOffset Method
 Gets the offset from the base register for a variable.  

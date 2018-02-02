@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CoreClrDebugProcInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "CoreClrDebugProcInfo structure"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CoreClrDebugProcInfo Structure
 Represents a process that is running on a remote machine.  

@@ -43,9 +43,9 @@
   
  If you use <xref:System.Reflection.Emit.ConstructorBuilder> to define a constructor for your dynamic type, a default constructor is not provided. You have the following options for providing a default constructor in addition to the constructor you defined:  
   
--   If you want a default constructor that simply calls the default constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=fullName> method to create one (and optionally restrict access to it). Do not provide an implementation for this default constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> method is called.  
+-   If you want a default constructor that simply calls the default constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=nameWithType> method to create one (and optionally restrict access to it). Do not provide an implementation for this default constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method is called.  
   
--   If you want a default constructor that does something more than simply calling the default constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=fullName> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
+-   If you want a default constructor that does something more than simply calling the default constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=nameWithType> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
   
    
   
@@ -520,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is not supported until after the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> method has been called. In the .NET Framework versions 1.0 and 1.1, <xref:System.InvalidOperationException> is thrown. In the .NET Framework version 2.0, <xref:System.NotSupportedException> is thrown.  
+ This property is not supported until after the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method has been called. In the .NET Framework versions 1.0 and 1.1, <xref:System.InvalidOperationException> is thrown. In the .NET Framework version 2.0, <xref:System.NotSupportedException> is thrown.  
   
    
   
@@ -638,6 +638,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported. You can retrieve the constructor using <see cref="M:System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" /> and call <see cref="M:System.Reflection.ConstructorInfo.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" /> on the returned <see cref="T:System.Reflection.ConstructorInfo" />.</exception>
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -685,6 +687,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This method is not currently supported. You can retrieve the constructor using <see cref="M:System.Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" /> and call <see cref="M:System.Reflection.ConstructorInfo.Invoke(System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" /> on the returned <see cref="T:System.Reflection.ConstructorInfo" />.</exception>
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -795,6 +799,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.Module" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -860,6 +865,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MemberInfo.ReflectedType" />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -1132,7 +1138,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _ConstructorBuilder.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1204,7 +1210,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _ConstructorBuilder.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1234,7 +1240,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ConstructorBuilder.Invoke">
       <MemberSignature Language="C#" Value="void _ConstructorBuilder.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ConstructorBuilder.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ConstructorBuilder.System#Runtime#InteropServices#_ConstructorBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1301,5 +1307,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetILGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Reflection.Emit.ILGenerator" /> that can be used to emit a method body for this constructor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes defined for this constructor.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the constructor dynamically reflected by this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a custom attribute.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

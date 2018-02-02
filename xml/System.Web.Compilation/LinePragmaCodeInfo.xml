@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,6 +72,7 @@
         <param name="isCodeNugget">A value indicating whether the script block is located inside &lt;% %&gt; tags.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.LinePragmaCodeInfo" /> class with parameters for initializing the <see cref="P:System.Web.Compilation.LinePragmaCodeInfo.StartLine" />, <see cref="P:System.Web.Compilation.LinePragmaCodeInfo.StartColumn" />, <see cref="P:System.Web.Compilation.LinePragmaCodeInfo.StartGeneratedColumn" />, <see cref="P:System.Web.Compilation.LinePragmaCodeInfo.CodeLength" />, and <see cref="P:System.Web.Compilation.LinePragmaCodeInfo.IsCodeNugget" /> properties.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName="CodeLength">
@@ -88,6 +91,7 @@
         <summary>Gets the length of the script block.</summary>
         <value>The length of the script block.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName="IsCodeNugget">
@@ -114,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -132,6 +137,7 @@
         <summary>Gets the starting column of a script block in an .aspx file.</summary>
         <value>The starting column of a script block in an .aspx file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName="StartGeneratedColumn">
@@ -150,6 +156,7 @@
         <summary>Gets the starting column of a script block in the generated source file.</summary>
         <value>The starting column of a script block in the generated source file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
     <Member MemberName="StartLine">
@@ -168,7 +175,17 @@
         <summary>Gets the starting line of a script block in an .aspx file.</summary>
         <value>The starting line of a script block in an .aspx file.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.SimpleWebHandlerParser" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.LinePragmaCodeInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

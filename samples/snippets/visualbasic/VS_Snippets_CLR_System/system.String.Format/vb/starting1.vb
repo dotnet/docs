@@ -1,5 +1,7 @@
-' Visual Basic .NET Document
+﻿' Visual Basic .NET Document
 Option Strict On
+
+Imports System.Text
 
 Module Example
    Public Sub Main()
@@ -38,11 +40,12 @@ Module Example
        ' <Snippet33>
        Dim years() As Integer = { 2013, 2014, 2015 }
        Dim population() As Integer  = { 1025632, 1105967, 1148203 }
-       Dim s As String = String.Format("{0,6} {1,15}{2}{2}",
-                                       "Year", "Population", vbCrLf)
+       Dim sb As New StringBuilder()
+       sb.Append(String.Format("{0,6} {1,15}{2}{2}",
+                               "Year", "Population", vbCrLf))
        For index As Integer = 0 To years.Length - 1
-          s += String.Format("{0,6} {1,15:N0}{2}",
-                             years(index), population(index), vbCrLf)
+          sb.AppendFormat("{0,6} {1,15:N0}{2}",
+                          years(index), population(index), vbCrLf)
        Next
        ' Result:
        '      Year      Population
@@ -51,7 +54,7 @@ Module Example
        '      2014       1,105,967
        '      2015       1,148,203
        ' </Snippet33>
-       Console.WriteLine(s)
+       Console.WriteLine(sb)
    End Sub
    
    Private Sub Snippet34()

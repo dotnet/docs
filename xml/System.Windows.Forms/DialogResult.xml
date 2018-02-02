@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property and the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=fullName> method use this enumeration.  
+ The <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=nameWithType> property and the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method use this enumeration.  
   
    
   
@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Button" />
+    <altmember cref="T:System.Windows.Forms.Form" />
   </Docs>
   <Members>
     <Member MemberName="Abort">

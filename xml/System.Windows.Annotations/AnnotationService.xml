@@ -86,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentReader)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -116,6 +117,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="viewer" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentScrollViewer)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,6 +157,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="viewer" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.Disable" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.Primitives.DocumentViewerBase)" />
       </Docs>
     </Member>
     <Member MemberName="ClearHighlightsCommand">
@@ -181,6 +185,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
       </Docs>
     </Member>
     <Member MemberName="CreateHighlightCommand">
@@ -207,6 +215,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.ClearHighlightsCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
       </Docs>
     </Member>
     <Member MemberName="CreateInkStickyNoteCommand">
@@ -233,6 +245,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteStickyNotesCommand" />
       </Docs>
     </Member>
     <Member MemberName="CreateTextStickyNoteCommand">
@@ -259,6 +275,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteStickyNotesCommand" />
       </Docs>
     </Member>
     <Member MemberName="DeleteAnnotationsCommand">
@@ -285,6 +305,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.ClearHighlightsCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteStickyNotesCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateHighlightCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
       </Docs>
     </Member>
     <Member MemberName="DeleteStickyNotesCommand">
@@ -311,6 +336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand" />
+        <altmember cref="F:System.Windows.Annotations.AnnotationService.DeleteAnnotationsCommand" />
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -344,6 +372,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.Enable(System.Windows.Annotations.Storage.AnnotationStore)" />
+        <altmember cref="P:System.Windows.Annotations.AnnotationService.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -382,6 +412,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="annotationStore" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.Disable" />
+        <altmember cref="P:System.Windows.Annotations.AnnotationService.IsEnabled" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetService">
@@ -411,6 +443,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Annotations.AnnotationService.#ctor" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetService">
@@ -454,6 +487,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Annotations.AnnotationService.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -497,6 +531,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="viewer" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Annotations.AnnotationService.#ctor" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentReader)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.Primitives.DocumentViewerBase)" />
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -540,6 +577,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="viewer" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentReader)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.GetService(System.Windows.Controls.FlowDocumentScrollViewer)" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -569,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.Enable(System.Windows.Annotations.Storage.AnnotationStore)" />
+        <altmember cref="M:System.Windows.Annotations.AnnotationService.Disable" />
       </Docs>
     </Member>
     <Member MemberName="Store">

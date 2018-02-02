@@ -36,10 +36,11 @@
 ## Remarks  
  Use the <xref:System.Reflection.InterfaceMapping> structure when a type implements interface methods that use method names other than those specified by the interface, or when a type implements multiple interfaces which have a method with the same name.  
   
- To obtain an <xref:System.Reflection.InterfaceMapping> structure, use the <xref:System.Type.GetInterfaceMap%2A?displayProperty=fullName> method.  
+ To obtain an <xref:System.Reflection.InterfaceMapping> structure, use the <xref:System.Type.GetInterfaceMap%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Type.GetInterfaceMap(System.Type)" />
   </Docs>
   <Members>
     <Member MemberName="InterfaceMethods">
@@ -82,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="InterfaceType">
@@ -117,6 +119,7 @@
       <Docs>
         <summary>Shows the type that represents the interface.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="TargetMethods">
@@ -159,6 +162,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="TargetType">
@@ -201,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
   </Members>

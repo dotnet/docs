@@ -18,15 +18,15 @@
 ## Remarks  
  `RecognizerUpdateReached` events provide a mechanism for pausing a speech recognition engine to apply atomic and synchronous modifications, such as loading and unloading grammars.  
   
- If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance to manage recognition, it can use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A?displayProperty=fullName> methods to request that the engine pauses to receive an update. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=fullName> event when it is ready for the update.  
+ If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance to manage recognition, it can use one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A?displayProperty=nameWithType> methods to request that the engine pauses to receive an update. The <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance raises a <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=nameWithType> event when it is ready for the update.  
   
  While a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance is paused, you can load, unload, enable, and disable <xref:System.Speech.Recognition.Grammar> objects, and modify values for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout%2A>, <xref:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout%2A>, and <xref:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout%2A> properties.  
   
- If your application is using a <xref:System.Speech.Recognition.SpeechRecognizer> instance to manage recognition, it can use one of the <xref:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate%2A?displayProperty=fullName> methods to request that the engine pauses to receive an update. The <xref:System.Speech.Recognition.SpeechRecognizer> instance raises a <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached?displayProperty=fullName> event when it is ready for the update.  
+ If your application is using a <xref:System.Speech.Recognition.SpeechRecognizer> instance to manage recognition, it can use one of the <xref:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate%2A?displayProperty=nameWithType> methods to request that the engine pauses to receive an update. The <xref:System.Speech.Recognition.SpeechRecognizer> instance raises a <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached?displayProperty=nameWithType> event when it is ready for the update.  
   
  While a <xref:System.Speech.Recognition.SpeechRecognizer> instance is paused, you can load, unload, enable, and disable <xref:System.Speech.Recognition.Grammar> objects.  
   
- When handling <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=fullName> and  <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached?displayProperty=fullName> events, a recognition engine pauses until the event handler returns.  
+ When handling <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=nameWithType> and  <xref:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached?displayProperty=nameWithType> events, a recognition engine pauses until the event handler returns.  
   
  <xref:System.Speech.Recognition.RecognizerUpdateReachedEventArgs> derives from <xref:System.EventArgs>.  
   
@@ -35,7 +35,7 @@
 ## Examples  
  The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
   
- At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=fullName> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
+ At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=nameWithType> event writes the name and status of the currently loaded <xref:System.Speech.Recognition.Grammar> objects to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
   
 ```csharp  
 using System;  
@@ -141,6 +141,10 @@ namespace SampleRecognition
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+    <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+    <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
   </Docs>
   <Members>
     <Member MemberName="AudioPosition">
@@ -166,6 +170,11 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
       </Docs>
     </Member>
     <Member MemberName="UserToken">
@@ -187,14 +196,14 @@ namespace SampleRecognition
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application specifies a `UserToken` when it requests the generation of a `RecognizerUpdateReached` event by calling one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate%2A?displayProperty=fullName> methods that take a `userToken` parameter.  
+ An application specifies a `UserToken` when it requests the generation of a `RecognizerUpdateReached` event by calling one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A?displayProperty=nameWithType> or <xref:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate%2A?displayProperty=nameWithType> methods that take a `userToken` parameter.  
   
    
   
 ## Examples  
  The following example shows a console application that loads and unloads <xref:System.Speech.Recognition.Grammar> objects. The application uses the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate%2A> method to request the speech recognition engine to pause so it can receive an update. The method passes in a <xref:System.String> object for the `userToken` parameter that describes what the application will recognize after the update. The application then loads or unloads a <xref:System.Speech.Recognition.Grammar> object.  
   
- At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=fullName> event writes the contents of `userToken` to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
+ At each update, a handler for <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached?displayProperty=nameWithType> event writes the contents of `userToken` to the console. As grammars are loaded and unloaded, the application first recognizes the names of farm animals, then the names of farm animals and the names of fruits, then only the names of fruits.  
   
 ```  
 using System;  
@@ -291,6 +300,11 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate" />
       </Docs>
     </Member>
   </Members>

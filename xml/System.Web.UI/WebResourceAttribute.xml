@@ -37,8 +37,8 @@
   
  The following code example demonstrates how to use the `MyCustomControl` class in a Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  
   
  This example requires that you compile the Image1.jpg and Help.htm resources with the assembly that contains `MyCustomControl`. For more information, see, [/resource (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md) or [/resource (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/resource.md).  
   
@@ -70,6 +70,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,11 +171,12 @@
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="LoadSuccessExpression">
@@ -224,8 +226,8 @@
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  
   
  An example of an HTML Web resource that could be used in this example is shown next. Note that the `WebResource` syntax is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for the resource.  
   
@@ -280,11 +282,12 @@
   
  This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetWebResourceUrl(System.Type,System.String)" />
       </Docs>
     </Member>
   </Members>

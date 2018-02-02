@@ -16,6 +16,8 @@
     <block subset="none" type="overrides">
       <para>To create a custom control builder for a <see cref="T:System.Web.UI.WebControls.PlaceHolder" />-derived control, you need to inherit from this class.</para>
     </block>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,10 +56,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to ignore white spaces in the <xref:System.Web.UI.WebControls.Label> control.  
+ This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=nameWithType> method to ignore white spaces in the <xref:System.Web.UI.WebControls.Label> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
   </Members>

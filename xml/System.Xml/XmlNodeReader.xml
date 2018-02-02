@@ -38,7 +38,7 @@
    
   
 ## Examples  
- In the following example, an XML file is loaded into an XML document and modified. The XML document is passed to an <xref:System.Xml.XmlNodeReader>, which is then passed to the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method. When the validating reader parses the file, it can validate any changes made to the XML file.  
+ In the following example, an XML file is loaded into an XML document and modified. The XML document is passed to an <xref:System.Xml.XmlNodeReader>, which is then passed to the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method. When the validating reader parses the file, it can validate any changes made to the XML file.  
   
  [!code-csharp[XmlReader_Validate_DOM#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader_Validate_DOM/CS/valid_dom.cs#1)]
  [!code-vb[XmlReader_Validate_DOM#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReader_Validate_DOM/VB/valid_dom.vb#1)]  
@@ -1287,6 +1287,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -1548,6 +1549,8 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Xml.XmlNodeReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -1609,6 +1612,8 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Xml.XmlNodeReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64">
@@ -1664,7 +1669,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
    
   
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=fullName> to see an example using this method.  
+ See <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A?displayProperty=nameWithType> to see an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1673,6 +1678,8 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHex">
@@ -1728,7 +1735,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
    
   
 ## Examples  
- See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=fullName> to see an example using this method.  
+ See <xref:System.Xml.XmlReader.ReadElementContentAsBinHex%2A?displayProperty=nameWithType> to see an example using this method.  
   
  ]]></format>
         </remarks>
@@ -1737,6 +1744,8 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlNodeReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadState">
@@ -1914,6 +1923,8 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
+        <altmember cref="Overload:System.Xml.XmlDocument.Validate" />
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -2255,5 +2266,25 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of an attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveToAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves to the specified attribute.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,11 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "initializeData attribute"
   - "add element for <listeners> for <source>"
@@ -25,6 +20,8 @@ caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Adds a listener to the `Listeners` collection for a trace source.  
@@ -51,7 +48,7 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`type`|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute, unless you're referencing a listener in the `sharedListeners` collection, in which case you only need to refer to it by name (see the [Example](#example)).<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class. A <xref:System.Configuration.ConfigurationException> is thrown if the class does not have a constructor that takes a string.|  
 |`name`|Optional attribute.<br /><br /> Specifies the name of the listener.|  
 |`traceOutputOptions`|Optional attribute.<br /><br /> Specifies the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property value for the trace listener.|  
@@ -76,7 +73,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 ## Remarks  
  The listener classes shipped with the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class.  
   
- If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=fullName> collection.  
+ If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collection.  
   
 > [!NOTE]
 >  Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
@@ -90,12 +87,12 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 |Trace listener class|initializeData attribute value|  
 |--------------------------|------------------------------------|  
-|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
-|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
-|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of an existing event log source.|  
-|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener>writes to.|  
-|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
-|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=nameWithType>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to the standard error stream; set it to "`false`" to write to the standard output stream.|  
+|<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
+|<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of an existing event log source.|  
+|<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
+|<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Configuration File  
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
@@ -130,7 +127,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceSource>   
- <xref:System.Diagnostics.TraceListener>   
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)   
+ <xref:System.Diagnostics.TraceSource>  
+ <xref:System.Diagnostics.TraceListener>  
+ [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
  [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

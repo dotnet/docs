@@ -9,14 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
 caps.latest.revision: 28
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;serviceMetadata&gt;
 Specifies the publication of service metadata and associated information.  
@@ -76,7 +75,7 @@ Specifies the publication of service metadata and associated information.
   
  The optional `httpGetBinding` and `httpsGetBinding` attributes allow you to configure the bindings used for metadata retrieval via HTTP GET (or HTTPS GET). If they are not specified, the default bindings (`HttpTransportBindingElement`, in the case of HTTP and `HttpsTransportBindingElement`, in the case of HTTPS) are used for metadata retrieval as appropriate. Notice that you cannot use these attributes with the built-in WCF bindings. Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> will be supported. Additionally, the <xref:System.ServiceModel.Channels.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None%2A>.  
   
- To reduce the exposure of a service to malicious users, it is possible to secure the transfer using the SSL over HTTP (HTTPS) mechanism. To do so, you must first bind a suitable X.509 certificate to a specific port on the computer that is hosting the service. ([!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)][Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md).) Second, add this element to the service configuration and set the `httpsGetEnabled` attribute to `true`. Finally, set the `httpsGetUrl` attribute to the URL of the service metadata endpoint, as shown in the following example.  
+ To reduce the exposure of a service to malicious users, it is possible to secure the transfer using the SSL over HTTP (HTTPS) mechanism. To do so, you must first bind a suitable X.509 certificate to a specific port on the computer that is hosting the service. ([!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md).) Second, add this element to the service configuration and set the `httpsGetEnabled` attribute to `true`. Finally, set the `httpsGetUrl` attribute to the URL of the service metadata endpoint, as shown in the following example.  
   
 ```xml
 <behaviors>  
@@ -130,7 +129,7 @@ Specifies the publication of service metadata and associated information.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>   
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
+ <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>  
+ <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [Metadata Publishing Behavior](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)

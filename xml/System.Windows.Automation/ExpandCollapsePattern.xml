@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.Provider.IExpandCollapseProvider" />
   </Docs>
   <Members>
     <Member MemberName="Cached">
@@ -140,12 +141,12 @@
 ## Remarks  
  This is a blocking method that returns after the <xref:System.Windows.Automation.AutomationElement> has been expanded.  
   
- There are cases when a <xref:System.Windows.Automation.AutomationElement>that is marked as a leaf node might not know whether it has children until either the <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> or the <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> method is called. This behavior is possible with a tree view control that does delayed loading of its child items. For example, [!INCLUDE[TLA#tla_winexpl](~/includes/tlasharptla-winexpl-md.md)] might display the expand icon for a node even though there are currently no child items; when the icon is clicked, the control polls for child items, finds none, and removes the expand icon. In these cases clients should listen for a property-changed event on the <xref:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation.ExpandCollapseState%2A> property by registering an event handler with the <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A> method.  
+ There are cases when a <xref:System.Windows.Automation.AutomationElement> that is marked as a leaf node might not know whether it has children until either the <xref:System.Windows.Automation.ExpandCollapsePattern.Collapse%2A> or the <xref:System.Windows.Automation.ExpandCollapsePattern.Expand%2A> method is called. This behavior is possible with a tree view control that does delayed loading of its child items. For example, [!INCLUDE[TLA#tla_winexpl](~/includes/tlasharptla-winexpl-md.md)] might display the expand icon for a node even though there are currently no child items; when the icon is clicked, the control polls for child items, finds none, and removes the expand icon. In these cases clients should listen for a property-changed event on the <xref:System.Windows.Automation.ExpandCollapsePattern.ExpandCollapsePatternInformation.ExpandCollapseState%2A> property by registering an event handler with the <xref:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler%2A> method.  
   
    
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement>representing a menu item is passed to a function that attempts to expand or collapse the menu item based on its current <xref:System.Windows.Automation.ExpandCollapseState>.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> representing a menu item is passed to a function that attempts to expand or collapse the menu item based on its current <xref:System.Windows.Automation.ExpandCollapseState>.  
   
  [!code-csharp[UIAExpandCollapsePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAExpandCollapsePattern_snip/CSharp/UIAExpandCollapsePattern_snippets.cs#101)]
  [!code-vb[UIAExpandCollapsePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAExpandCollapsePattern_snip/VisualBasic/UIAExpandCollapsePattern_snippets.vb#101)]  

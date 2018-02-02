@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EHostApplicationPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EHostApplicationPolicy enumeration [.NET Framework hosting]"
 ms.assetid: 0be52d90-1976-4bf7-9717-908833a8a78d
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EHostApplicationPolicy Enumeration
 Indicates how to modify an [IHostAssemblyManager](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md) interface object. This enumeration has been deprecated.  

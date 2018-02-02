@@ -27,11 +27,11 @@
 ## Remarks  
  The <xref:System.Data.InvalidConstraintException> is thrown when incorrectly invoking the following methods while trying to create or access a relation.  
   
--   <xref:System.Data.DataRelationCollection.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRelationCollection.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRowCollection.Clear%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Clear%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.GetParentRow%2A?displayProperty=nameWithType>  
   
  If you call <xref:System.Data.DataRelationCollection.Add%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if a relation cannot be created based on the values supplied in the parameters. If you call <xref:System.Data.DataRowCollection.Clear%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if a <xref:System.Data.ForeignKeyConstraint> is enforced on the <xref:System.Data.DataRowCollection>. If you call <xref:System.Data.DataRow.GetParentRow%2A>, the <xref:System.Data.InvalidConstraintException> may be thrown if the columns have different data types or the tables do not belong to the same <xref:System.Data.DataSet>.  
   
@@ -117,6 +117,8 @@
         <param name="context">Description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.InvalidConstraintException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,5 +150,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.InvalidConstraintException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

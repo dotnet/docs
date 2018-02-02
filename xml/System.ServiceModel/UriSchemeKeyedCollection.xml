@@ -28,7 +28,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (Uri[] uris);" />
+      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] uris);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] uris) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" />
       <MemberType>Constructor</MemberType>

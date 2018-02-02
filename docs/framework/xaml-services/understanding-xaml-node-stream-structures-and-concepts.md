@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Understanding XAML Node Stream Structures and Concepts
 XAML readers and XAML writers as implemented in .NET Framework XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the [!INCLUDE[TLA#tla_xmldom](../../../includes/tlasharptla-xmldom-md.md)] and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.  
@@ -70,7 +72,7 @@ while (xxr.Read()) {
 }  
 ```  
   
- This basic example of a load path XAML node loop transparently connects the XAML reader and XAML writer, doing nothing different than if you had used <xref:System.Xaml.XamlServices.Parse%2A?displayProperty=fullName>. But this basic structure is then expanded to apply to your reading or writing scenario. Some possible scenarios are as follows:  
+ This basic example of a load path XAML node loop transparently connects the XAML reader and XAML writer, doing nothing different than if you had used <xref:System.Xaml.XamlServices.Parse%2A?displayProperty=nameWithType>. But this basic structure is then expanded to apply to your reading or writing scenario. Some possible scenarios are as follows:  
   
 -   Switch on <xref:System.Xaml.XamlXmlReader.NodeType%2A>. Perform different actions depending on which node type is being read.  
   
@@ -179,7 +181,7 @@ public class GameBoard {
   
  `EndObject` matches `GameBoard`  
   
- Notice that there is no type converter instance in this node stream. But you can get type converter information by calling <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=fullName> on the <xref:System.Xaml.XamlMember> for `BoardSize`. If you have a valid XAML schema context, you can also invoke the converter methods by obtaining an instance from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
+ Notice that there is no type converter instance in this node stream. But you can get type converter information by calling <xref:System.Xaml.XamlMember.TypeConverter%2A?displayProperty=nameWithType> on the <xref:System.Xaml.XamlMember> for `BoardSize`. If you have a valid XAML schema context, you can also invoke the converter methods by obtaining an instance from <xref:System.Xaml.Schema.XamlValueConverter%601.ConverterInstance%2A>.  
   
 ### Markup Extensions in the XAML Node Stream  
  A markup extension usage is reported in the XAML node stream as an object node within a member, where the object represents a markup extension instance. Thus a markup extension usage is presented more explicitly in the node stream representation than a type converter usage is, and carries more information. <xref:System.Xaml.XamlMember> information could not have told you anything about the markup extension, because the usage is situational and varies in each possible markup case; it is not dedicated and implicit per type or member as is the case with type converters.  
@@ -224,6 +226,6 @@ public class GameBoard {
  `GetObject` represents a XAML node where rather than constructing a new object, a XAML object writer should instead get the value of the object's containing property. A typical  case where a `GetObject` node is encountered in a XAML node stream is for a collection object or a dictionary object, when the containing property is deliberately read-only in the backing type's object model. In this scenario, the collection or dictionary often is created and initialized (usually empty) by the initialization logic of an owning type.  
   
 ## See Also  
- <xref:System.Xaml.XamlObjectReader>   
- [XAML Services](../../../docs/framework/xaml-services/index.md)   
+ <xref:System.Xaml.XamlObjectReader>  
+ [XAML Services](../../../docs/framework/xaml-services/index.md)  
  [XAML Namespaces](../../../docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md)

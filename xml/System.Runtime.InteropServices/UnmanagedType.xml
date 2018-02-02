@@ -34,14 +34,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration with the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attribute to specify how types are marshaled during interoperation with unmanaged code.  You can use this enumeration to marshal code using simple value types (I1, I2, I4, I8, R4, R8, U2, U4, and U8), unmanaged types that are unavailable in the .NET Framework, and various miscellaneous types.  
+ Use the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration with the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=nameWithType> attribute to specify how types are marshaled during interoperation with unmanaged code.  You can use this enumeration to marshal code using simple value types (I1, I2, I4, I8, R4, R8, U2, U4, and U8), unmanaged types that are unavailable in the .NET Framework, and various miscellaneous types.  
   
  For more information, see [Interoperating with Unmanaged Code](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258).  
   
    
   
 ## Examples  
- The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies serveral <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
+ The following code fragment demonstrates how to declare, in managed source code, an unmanaged interface implemented by a COM component. The <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute prevents the `IMyStorage` interface from being exported back for use by COM. (COM clients should use the existing COM component directly.) In this example, <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies serveral <xref:System.Runtime.InteropServices.UnmanagedType> members, which represent the types used by the original COM interface.  
   
  [!code-cpp[ImprovedInteropSnippets#2](~/samples/snippets/cpp/VS_Snippets_CLR/ImprovedInteropSnippets/CPP/codefile2.cpp#2)]
  [!code-csharp[ImprovedInteropSnippets#2](~/samples/snippets/csharp/VS_Snippets_CLR/ImprovedInteropSnippets/CS/codefile2.cs#2)]
@@ -49,6 +49,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.MarshalAsAttribute" />
+    <altmember cref="T:System.Runtime.InteropServices.ComImportAttribute" />
   </Docs>
   <Members>
     <Member MemberName="AnsiBStr">

@@ -58,6 +58,7 @@
         <summary>Retrieves the accessible child corresponding to the specified index.</summary>
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child corresponding to the specified index.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.GetChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -77,6 +78,7 @@
         <summary>Retrieves the number of children belonging to an accessible object.</summary>
         <returns>The number of children belonging to an accessible object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.GetChildCount" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -101,6 +103,7 @@
         <summary>Retrieves the child object at the specified screen coordinates.</summary>
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the child object at the given screen coordinates. This method returns the calling object if the object itself is at the location specified. Returns <see langword="null" /> if no object is at the tested location.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.HitTest(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -119,6 +122,7 @@
         <summary>Gets the role of this accessible object.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ControlAccessibleObject.Role" />
       </Docs>
     </Member>
   </Members>

@@ -1,18 +1,15 @@
 ---
 title: "How to: Convert a String to an Array of Characters in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "character arrays, converting strings"
+  - "character arrays [Visual Basic], converting strings"
   - "arrays [Visual Basic], converting strings to"
   - "examples [Visual Basic], string conversion"
   - "strings [Visual Basic], converting to arrays"
@@ -21,21 +18,6 @@ ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Convert a String to an Array of Characters in Visual Basic
 Sometimes it is useful to have data about the characters in your string and the positions of those characters within your string, such as when you are parsing a string. This example shows how you can get an array of the characters in a string by calling the string's <xref:System.String.ToCharArray%2A> method.  
@@ -51,8 +33,8 @@ Sometimes it is useful to have data about the characters in your string and the 
  [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_2.vb)]  
   
 ## See Also  
- <xref:System.String.Chars%2A>   
- <xref:System.Globalization.StringInfo?displayProperty=fullName>   
- [How to: Access Characters in Strings](../../../../visual-basic/programming-guide/language-features/strings/how-to-access-characters-in-strings.md)   
- [Converting Between Strings and Other Data Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/converting-between-strings-and-other-data-types.md)   
+ <xref:System.String.Chars%2A>  
+ <xref:System.Globalization.StringInfo?displayProperty=nameWithType>  
+ [How to: Access Characters in Strings](../../../../visual-basic/programming-guide/language-features/strings/how-to-access-characters-in-strings.md)  
+ [Converting Between Strings and Other Data Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/converting-between-strings-and-other-data-types.md)  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

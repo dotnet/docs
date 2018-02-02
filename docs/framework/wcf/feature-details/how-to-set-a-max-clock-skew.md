@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "MaxClockSkew property"
   - "WCF, custom bindings"
 ms.assetid: 491d1705-eb29-43c2-a44c-c0cf996f74eb
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Set a Max Clock Skew
 Time-critical functions can be derailed if the clock settings on two computers are different. To mitigate this possibility, you can set the `MaxClockSkew` property to a <xref:System.TimeSpan>. This property is available on two classes:  
@@ -26,7 +31,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
  <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  
   
 > [!IMPORTANT]
->  Important   For a secure conversation, changes to the `MaxClockSkew` property  must be made when the service or client is bootstrapped. To do this, you must set the property on the <xref:System.ServiceModel.Channels.SecurityBindingElement>returned by the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement%2A>.  
+>  Important   For a secure conversation, changes to the `MaxClockSkew` property  must be made when the service or client is bootstrapped. To do this, you must set the property on the <xref:System.ServiceModel.Channels.SecurityBindingElement> returned by the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement%2A>.  
   
  To change the property on one of the system-provided bindings, you must find the security binding element in the collection of bindings and set the `MaxClockSkew` property to a new value. Two classes derive from the <xref:System.ServiceModel.Channels.SecurityBindingElement>: <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>. When retrieving the security binding from the collection, you must cast to one of these types in order to correctly set the `MaxClockSkew` property. The following example uses a <xref:System.ServiceModel.WSHttpBinding>, which uses the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>. For a list that specifies which type of security binding to use in each system-provided binding, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).  
   
@@ -88,7 +93,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
     ```  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>   
- <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
+ <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
+ <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
  [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

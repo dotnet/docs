@@ -133,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a simple call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method.  
+ This method is a simple call to the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method.  
   
  Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
   
@@ -669,5 +669,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a cryptographic object used to perform the asymmetric algorithm.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the serialization infrastructure only, and is not intended for public use. To actually set the serialization mode, create an application configuration file, and set the [\&lt;dateTimeSerialization\&gt; Element](~/docs/standard/serialization/datetimeserialization-element.md) to an appropriate setting. For more information about configuration files, see [Configuration File Schema](~/docs/framework/configure-apps/file-schema/index.md).  
+ This enumeration is used by the serialization infrastructure only, and is not intended for public use. To actually set the serialization mode, create an application configuration file, and set the [&lt;dateTimeSerialization&gt; Element](~/docs/standard/serialization/datetimeserialization-element.md) to an appropriate setting. For more information about configuration files, see [Configuration File Schema](~/docs/framework/configure-apps/file-schema/index.md).  
   
  In versions 1.0 and 1.1 of .NET Framework, as well as in versions 2.0 and later when this property is set to `Local`, <xref:System.DateTime> objects are always formatted as the local time. That is, local time zone information is always included with the serialized data. Set this property to `Local` to ensure compatibility with older versions of the .Net Framework.  
   
@@ -24,6 +24,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.DateTime" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
   </Docs>
   <Members>
     <Member MemberName="Default">

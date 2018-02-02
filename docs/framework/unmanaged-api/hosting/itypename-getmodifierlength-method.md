@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetModifierLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetModifierLength method [.NET Framework hosting]"
   - "GetModifierLength method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeName::GetModifierLength Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

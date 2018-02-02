@@ -142,6 +142,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.CancelButton" />
+        <altmember cref="T:System.Windows.Forms.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -177,6 +179,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for changing focus. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Form.ActiveForm" />
+        <altmember cref="P:System.Windows.Forms.Form.ActiveMdiChild" />
       </Docs>
     </Member>
     <Member MemberName="Activated">
@@ -216,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ActivateMdiChild">
@@ -246,6 +251,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.ActiveMdiChild" />
+        <altmember cref="P:System.Windows.Forms.Form.ActiveForm" />
+        <altmember cref="E:System.Windows.Forms.Form.MdiChildActivate" />
       </Docs>
     </Member>
     <Member MemberName="ActiveForm">
@@ -283,6 +291,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for requesting a form. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Form.ActiveMdiChild" />
       </Docs>
     </Member>
     <Member MemberName="ActiveMdiChild">
@@ -327,6 +336,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.ActiveForm" />
       </Docs>
     </Member>
     <Member MemberName="AddOwnedForm">
@@ -369,6 +379,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.OwnedForms" />
+        <altmember cref="M:System.Windows.Forms.Form.RemoveOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="P:System.Windows.Forms.Form.Owner" />
       </Docs>
     </Member>
     <Member MemberName="AdjustFormScrollbars">
@@ -501,7 +514,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
+>  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=nameWithType>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  You can use this property to allow your form and its controls to automatically adjust based on changes in the font. This can be useful in applications where the font might increase or decrease based on the language specified for use by Windows.  
   
@@ -555,6 +568,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AutoScale" />
+        <altmember cref="M:System.Windows.Forms.Form.GetAutoScaleSize(System.Drawing.Font)" />
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -720,6 +735,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a valid <see cref="T:System.Windows.Forms.AutoSizeMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.AutoSizeMode" />
+        <altmember cref="P:System.Windows.Forms.Form.AutoSize" />
+        <altmember cref="M:System.Windows.Forms.Form.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AutoValidate">
@@ -746,6 +764,7 @@
         <summary>Gets or sets a value that indicates whether controls in this container will be automatically validated when the focus changes.</summary>
         <value>An <see cref="T:System.Windows.Forms.AutoValidate" /> enumerated value that indicates whether contained controls are implicitly validated on focus change. The default is Inherit.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
       </Docs>
     </Member>
     <Member MemberName="AutoValidateChanged">
@@ -789,6 +808,7 @@
         <summary>Gets or sets the background color for the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="CancelButton">
@@ -834,6 +854,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
+        <altmember cref="T:System.Windows.Forms.IButtonControl" />
       </Docs>
     </Member>
     <Member MemberName="CenterToParent">
@@ -861,6 +883,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.FormStartPosition.CenterParent" />
+        <altmember cref="M:System.Windows.Forms.Form.CenterToScreen" />
       </Docs>
     </Member>
     <Member MemberName="CenterToScreen">
@@ -894,6 +918,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Forms.FormStartPosition.CenterScreen" />
+        <altmember cref="P:System.Windows.Forms.Form.Owner" />
       </Docs>
     </Member>
     <Member MemberName="ClientSize">
@@ -939,6 +965,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.Size" />
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
+        <altmember cref="P:System.Windows.Forms.Control.Width" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -965,15 +994,18 @@
  The two conditions when a form is not disposed on `Close` is when (1) it is part of a multiple-document interface (MDI) application, and the form is not visible; and (2) you have displayed the form using <xref:System.Windows.Forms.Form.ShowDialog%2A>. In these cases, you will need to call <xref:System.Windows.Forms.Form.Dispose%2A> manually to mark all of the form's controls for garbage collection.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=fullName> method.  
+>  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=nameWithType> method.  
   
 > [!CAUTION]
->  Prior to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0, the <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  Prior to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0, the <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The form was closed while a handle was being created.</exception>
         <exception cref="T:System.ObjectDisposedException">You cannot call this method from the <see cref="E:System.Windows.Forms.Form.Activated" /> event when <see cref="P:System.Windows.Forms.Form.WindowState" /> is set to <see cref="F:System.Windows.Forms.FormWindowState.Maximized" />.</exception>
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="E:System.Windows.Forms.Form.Closing" />
+        <altmember cref="T:System.Windows.Forms.CloseReason" />
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -1011,7 +1043,7 @@
  You can use this event to perform tasks such as freeing resources used by the form and to save information entered in the form or to update its parent form.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised.  
   
@@ -1028,6 +1060,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="M:System.Windows.Forms.Form.OnClosed(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
       </Docs>
     </Member>
     <Member MemberName="Closing">
@@ -1065,10 +1100,10 @@
  When a form is displayed as a modal dialog box, clicking the **Close** button (the button with an X at the upper-right corner of the form) causes the form to be hidden and the <xref:System.Windows.Forms.Form.DialogResult%2A> property to be set to `DialogResult.Cancel`. You can override the value assigned to the <xref:System.Windows.Forms.Form.DialogResult%2A> property when the user clicks the **Close** button by setting the <xref:System.Windows.Forms.Form.DialogResult%2A> property in an event handler for the <xref:System.Windows.Forms.Form.Closing> event of the form.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=fullName> method.  
+>  When the <xref:System.Windows.Forms.Form.Close%2A> method is called on a <xref:System.Windows.Forms.Form> displayed as a modeless window, you cannot call the <xref:System.Windows.Forms.Control.Show%2A> method to make the form visible, because the form's resources have already been released. To hide a form and then make it visible, use the <xref:System.Windows.Forms.Control.Hide%2A?displayProperty=nameWithType> method.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.Closed?displayProperty=fullName> and <xref:System.Windows.Forms.Form.Closing?displayProperty=fullName> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.Closed?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType> events are not raised when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these events that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
  If the form is an MDI parent form, the <xref:System.Windows.Forms.Form.Closing> events of all MDI child forms are raised before the MDI parent form's <xref:System.Windows.Forms.Form.Closing> event is raised. In addition, the <xref:System.Windows.Forms.Form.Closed> events of all MDI child forms are raised before the <xref:System.Windows.Forms.Form.Closed> event of the MDI parent form is raised. Canceling the <xref:System.Windows.Forms.Form.Closing> event of an MDI child form does not prevent the <xref:System.Windows.Forms.Form.Closing> event of the MDI parent form from being raised. However, canceling the event will set to `true` the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> that is passed as a parameter to the parent form. To force all MDI parent and child forms to close, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false` in the MDI parent form.  
   
@@ -1085,6 +1120,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="M:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ControlBox">
@@ -1130,6 +1167,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MaximizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.ShowIcon" />
+        <altmember cref="P:System.Windows.Forms.Form.FormBorderStyle" />
+        <altmember cref="P:System.Windows.Forms.Form.WindowState" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlsInstance">
@@ -1154,6 +1196,7 @@
         <summary>Creates a new instance of the control collection for the control.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateControlsInstance" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -1178,6 +1221,7 @@
         <summary>Creates the handle for the form. If a derived class overrides this function, it must call the base implementation.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A handle for this <see cref="T:System.Windows.Forms.Form" /> has already been created.</exception>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -1196,6 +1240,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -1223,7 +1268,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Deactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Deactivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.Deactivate> event.  
   
@@ -1232,6 +1277,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Form.Activated" />
+        <altmember cref="M:System.Windows.Forms.Form.Activate" />
+        <altmember cref="M:System.Windows.Forms.Form.OnDeactivate(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DefaultImeMode">
@@ -1255,10 +1303,11 @@
 ## Remarks  
  An input method editor (IME) is a program that allows users to enter complex characters and symbols, such as Japanese Kanji characters, by using a standard keyboard.  
   
- As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=fullName> property.  
+ As implemented in the <xref:System.Windows.Forms.Form> class, this property always returns the <xref:System.Windows.Forms.ImeMode.NoControl?displayProperty=nameWithType> value. The value of this property is assigned to the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -1277,11 +1326,12 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DefWndProc">
       <MemberSignature Language="C#" Value="protected override void DefWndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefWndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.DefWndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1303,6 +1353,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Sends the specified message to the default window procedure.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="DesktopBounds">
@@ -1347,6 +1398,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.DesktopLocation" />
       </Docs>
     </Member>
     <Member MemberName="DesktopLocation">
@@ -1395,6 +1447,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.DesktopBounds" />
       </Docs>
     </Member>
     <Member MemberName="DialogResult">
@@ -1448,6 +1501,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        <altmember cref="T:System.Windows.Forms.DialogResult" />
+        <altmember cref="P:System.Windows.Forms.Button.DialogResult" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1485,7 +1540,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1550,6 +1605,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        <altmember cref="T:System.Windows.Forms.FormBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="FormClosed">
@@ -1581,7 +1637,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosed> event.  
   
@@ -1590,6 +1646,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.Close" />
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
+        <altmember cref="E:System.Windows.Forms.Form.FormClosing" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
+        <altmember cref="E:System.Windows.Forms.Form.Shown" />
+        <altmember cref="T:System.Windows.Forms.CloseReason" />
       </Docs>
     </Member>
     <Member MemberName="FormClosing">
@@ -1624,7 +1689,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosing> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosing> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosing> event.  
   
@@ -1633,6 +1698,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="M:System.Windows.Forms.Form.Close" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Form.FormClosed" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
+        <altmember cref="E:System.Windows.Forms.Form.Shown" />
+        <altmember cref="T:System.Windows.Forms.CloseReason" />
       </Docs>
     </Member>
     <Member MemberName="GetAutoScaleSize">
@@ -1674,6 +1747,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.AutoScaleBaseSize" />
       </Docs>
     </Member>
     <Member MemberName="GetScaledBounds">
@@ -1705,6 +1779,7 @@
         <summary>Retrieves the bounds within which the control is scaled.</summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds within which the control is scaled.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="HelpButton">
@@ -1748,6 +1823,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MinimizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.MaximizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.ControlBox" />
+        <altmember cref="E:System.Windows.Forms.Form.HelpButtonClicked" />
       </Docs>
     </Member>
     <Member MemberName="HelpButtonClicked">
@@ -1783,7 +1862,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.HelpButtonClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.HelpButtonClicked> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.HelpButtonClicked> event.  
   
@@ -1792,6 +1871,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.HelpButton" />
+        <altmember cref="P:System.Windows.Forms.Form.ControlBox" />
+        <altmember cref="M:System.Windows.Forms.Form.OnHelpButtonClicked(System.ComponentModel.CancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.HelpRequested" />
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -1827,6 +1910,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.ControlBox" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanged">
@@ -1854,7 +1938,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanged> event.  
   
@@ -1863,6 +1947,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Form.InputLanguageChanging" />
+        <altmember cref="M:System.Windows.Forms.Form.OnInputLanguageChanged(System.Windows.Forms.InputLanguageChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InputLanguageChanging">
@@ -1890,7 +1976,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanging> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.InputLanguageChanging> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.InputLanguageChanging> event.  
   
@@ -1899,6 +1985,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Form.InputLanguageChanged" />
+        <altmember cref="M:System.Windows.Forms.Form.OnInputLanguageChanging(System.Windows.Forms.InputLanguageChangingEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsMdiChild">
@@ -1938,6 +2026,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MdiParent" />
+        <altmember cref="P:System.Windows.Forms.Form.MdiChildren" />
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
       </Docs>
     </Member>
     <Member MemberName="IsMdiContainer">
@@ -1982,6 +2073,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiChild" />
+        <altmember cref="P:System.Windows.Forms.Form.MdiParent" />
+        <altmember cref="P:System.Windows.Forms.Form.MdiChildren" />
       </Docs>
     </Member>
     <Member MemberName="IsRestrictedWindow">
@@ -2043,7 +2137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to `true`, the form will receive all <xref:System.Windows.Forms.Control.KeyPress>, <xref:System.Windows.Forms.Control.KeyDown>, and <xref:System.Windows.Forms.Control.KeyUp> events. After the form's event handlers have completed processing the keystroke, the keystroke is then assigned to the control with focus. For example, if the <xref:System.Windows.Forms.Form.KeyPreview%2A> property is set to `true` and the currently selected control is a <xref:System.Windows.Forms.TextBox>, after the keystroke is handled by the event handlers of the form the <xref:System.Windows.Forms.TextBox> control will receive the key that was pressed. To handle keyboard events only at the form level and not allow controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=fullName> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event handler to `true`.  
+ When this property is set to `true`, the form will receive all <xref:System.Windows.Forms.Control.KeyPress>, <xref:System.Windows.Forms.Control.KeyDown>, and <xref:System.Windows.Forms.Control.KeyUp> events. After the form's event handlers have completed processing the keystroke, the keystroke is then assigned to the control with focus. For example, if the <xref:System.Windows.Forms.Form.KeyPreview%2A> property is set to `true` and the currently selected control is a <xref:System.Windows.Forms.TextBox>, after the keystroke is handled by the event handlers of the form the <xref:System.Windows.Forms.TextBox> control will receive the key that was pressed. To handle keyboard events only at the form level and not allow controls to receive keyboard events, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A?displayProperty=nameWithType> property in your form's <xref:System.Windows.Forms.Control.KeyPress> event handler to `true`.  
   
  You can use this property to process most keystrokes in your application and either handle the keystroke or call the appropriate control to handle the keystroke. For example, when an application uses function keys, you might want to process the keystrokes at the form level rather than writing code for each control that might receive keystroke events.  
   
@@ -2064,6 +2158,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.KeyPress" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
       </Docs>
     </Member>
     <Member MemberName="LayoutMdi">
@@ -2101,6 +2198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MdiLayout" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -2136,6 +2234,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.Close" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -2168,6 +2268,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
+        <altmember cref="T:System.Windows.Forms.ContainerControl" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
       </Docs>
     </Member>
     <Member MemberName="MainMenuStrip">
@@ -2203,6 +2306,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuStrip" />
+        <altmember cref="P:System.Windows.Forms.Control.Controls" />
       </Docs>
     </Member>
     <Member MemberName="Margin">
@@ -2299,6 +2404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MinimizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.ControlBox" />
       </Docs>
     </Member>
     <Member MemberName="MaximizedBounds">
@@ -2325,6 +2432,8 @@
         <block subset="none" type="overrides">
           <para>Classes that inherit from <see cref="T:System.Windows.Forms.Form" /> can override this method to provide new bounds for the form when it is maximized. The class sets this property internally when the form's **Maximize** button is clicked.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
       </Docs>
     </Member>
     <Member MemberName="MaximizedBoundsChanged">
@@ -2350,7 +2459,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MaximizedBoundsChanged> event.  
   
@@ -2359,6 +2468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MaximizedBounds" />
+        <altmember cref="M:System.Windows.Forms.Form.OnMaximizedBoundsChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -2405,6 +2516,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The values of the height or width within the <see cref="T:System.Drawing.Size" /> object are less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.Form.MaximizedBounds" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
+        <altmember cref="P:System.Windows.Forms.SystemInformation.MaxWindowTrackSize" />
       </Docs>
     </Member>
     <Member MemberName="MaximumSizeChanged">
@@ -2430,7 +2544,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MaximumSizeChanged> event.  
   
@@ -2439,6 +2553,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MdiChildActivate">
@@ -2466,7 +2582,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MdiChildActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MdiChildActivate> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MdiChildActivate> event.  
   
@@ -2475,6 +2591,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnMdiChildActivate(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MdiChildren">
@@ -2519,6 +2636,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiChild" />
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="P:System.Windows.Forms.Form.MdiParent" />
       </Docs>
     </Member>
     <Member MemberName="MdiParent">
@@ -2574,6 +2694,9 @@
   
  The <see cref="T:System.Windows.Forms.Form" /> assigned to this property is located on a different thread.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for requesting a form. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiChild" />
+        <altmember cref="P:System.Windows.Forms.Form.IsMdiContainer" />
+        <altmember cref="P:System.Windows.Forms.Form.MdiChildren" />
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -2619,6 +2742,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.Menu" />
       </Docs>
     </Member>
     <Member MemberName="MenuComplete">
@@ -2651,7 +2777,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuComplete> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuComplete> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MenuComplete> event.  
   
@@ -2660,6 +2786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnMenuComplete(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MenuStart">
@@ -2692,7 +2819,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuStart> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MenuStart> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MenuStart> event.  
   
@@ -2701,6 +2828,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnMenuStart(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MergedMenu">
@@ -2737,6 +2865,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="P:System.Windows.Forms.Form.Menu" />
       </Docs>
     </Member>
     <Member MemberName="MinimizeBox">
@@ -2780,6 +2911,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.MaximizeBox" />
+        <altmember cref="P:System.Windows.Forms.Form.ControlBox" />
       </Docs>
     </Member>
     <Member MemberName="MinimumSize">
@@ -2839,7 +2972,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.MinimumSizeChanged> event.  
   
@@ -2848,6 +2981,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnMinimumSizeChanged(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
       </Docs>
     </Member>
     <Member MemberName="Modal">
@@ -2895,6 +3030,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.ShowDialog" />
       </Docs>
     </Member>
     <Member MemberName="OnActivated">
@@ -2933,6 +3069,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Activated" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnBackgroundImageChanged">
@@ -3037,7 +3175,7 @@
  The <xref:System.Windows.Forms.Form.OnFormClosed%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
    
   
@@ -3053,6 +3191,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnClosed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnClosed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Closed" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnClosing">
@@ -3091,7 +3231,7 @@
  The <xref:System.Windows.Forms.Form.OnClosing%2A> method also allows derived classes to handle the event without attaching a delegate. Overriding this method is the preferred technique for handling the event in a derived class.  
   
 > [!CAUTION]
->  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=fullName> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=fullName> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
+>  The <xref:System.Windows.Forms.Form.OnClosed%2A> and <xref:System.Windows.Forms.Form.OnClosing%2A> methods are not called when the <xref:System.Windows.Forms.Application.Exit%2A?displayProperty=nameWithType> method is called to exit your application. If you have validation code in either of these methods that must be executed, you should call the <xref:System.Windows.Forms.Form.Close%2A?displayProperty=nameWithType> method for each open form individually before calling the <xref:System.Windows.Forms.Application.Exit%2A> method.  
   
    
   
@@ -3107,6 +3247,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Closing" />
+        <altmember cref="T:System.ComponentModel.CancelEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -3178,6 +3320,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnDeactivate(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnDeactivate(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Deactivate" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDpiChanged">
@@ -3236,6 +3380,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -3300,6 +3445,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.OnFontChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFormClosed">
@@ -3340,6 +3486,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.FormClosed" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnFormClosing">
@@ -3378,11 +3529,16 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.FormClosing" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnActivated(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnGetDpiScaledSize">
       <MemberSignature Language="C#" Value="protected virtual bool OnGetDpiScaledSize (int deviceDpiOld, int deviceDpiNew, ref System.Drawing.Size desiredSize);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGetDpiScaledSize(int32 deviceDpiOld, int32 deviceDpiNew, valuetype System.Drawing.Size desiredSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGetDpiScaledSize(int32 deviceDpiOld, int32 deviceDpiNew, valuetype System.Drawing.Size&amp; desiredSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.OnGetDpiScaledSize(System.Int32,System.Int32,System.Drawing.Size@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3439,6 +3595,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -3465,6 +3622,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHelpButtonClicked">
@@ -3503,6 +3661,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnHelpButtonClicked(System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnHelpButtonClicked(System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.HelpButtonClicked" />
+        <altmember cref="E:System.Windows.Forms.Control.QueryAccessibilityHelp" />
+        <altmember cref="M:System.Windows.Forms.Control.OnHelpRequested(System.Windows.Forms.HelpEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnInputLanguageChanged">
@@ -3541,6 +3702,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnInputLanguageChanged(System.Windows.Forms.InputLanguageChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnInputLanguageChanged(System.Windows.Forms.InputLanguageChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.InputLanguageChanged" />
+        <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnInputLanguageChanging">
@@ -3579,6 +3742,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnInputLanguageChanging(System.Windows.Forms.InputLanguageChangingEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnInputLanguageChanging(System.Windows.Forms.InputLanguageChangingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.InputLanguageChanging" />
+        <altmember cref="T:System.Windows.Forms.InputLanguageChangingEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -3638,6 +3803,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMaximizedBoundsChanged">
@@ -3676,6 +3843,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMaximizedBoundsChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMaximizedBoundsChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Form.MaximizedBounds" />
+        <altmember cref="E:System.Windows.Forms.Form.MaximizedBoundsChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMaximumSizeChanged">
@@ -3714,6 +3884,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="E:System.Windows.Forms.Form.MaximumSizeChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMdiChildActivate">
@@ -3752,6 +3925,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMdiChildActivate(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMdiChildActivate(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.MdiChildActivate" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMenuComplete">
@@ -3790,6 +3965,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMenuComplete(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMenuComplete(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.MenuComplete" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMenuStart">
@@ -3828,6 +4005,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMenuStart(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMenuStart(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.MenuStart" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMinimumSizeChanged">
@@ -3866,6 +4045,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnMinimumSizeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnMinimumSizeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.MinimumSizeChanged" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
       </Docs>
     </Member>
     <Member MemberName="OnPaint">
@@ -3892,6 +4073,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -3918,6 +4100,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnResizeBegin">
@@ -3958,6 +4141,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnResizeBegin(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnResizeBegin(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.ResizeBegin" />
+        <altmember cref="M:System.Windows.Forms.Form.OnResizeEnd(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMove(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnResizeEnd">
@@ -3998,6 +4185,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnResizeEnd(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnResizeEnd(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.ResizeEnd" />
+        <altmember cref="M:System.Windows.Forms.Form.OnResizeBegin(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMove(System.EventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnMaximumSizeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftLayoutChanged">
@@ -4038,6 +4229,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnRightToLeftLayoutChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnRightToLeftLayoutChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.RightToLeftLayoutChanged" />
+        <altmember cref="P:System.Windows.Forms.Form.RightToLeftLayout" />
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="Overload:System.Windows.Forms.Form.Dispose" />
+        <altmember cref="M:System.Windows.Forms.Control.RecreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="OnShown">
@@ -4078,6 +4274,12 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Form.Shown" />
+        <altmember cref="Overload:System.Windows.Forms.Form.Show" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Form.OnLoad(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -4104,6 +4306,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.StyleChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnStyleChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -4130,6 +4333,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -4168,6 +4372,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Form.OnVisibleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Form.OnVisibleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
+        <altmember cref="E:System.Windows.Forms.Control.VisibleChanged" />
       </Docs>
     </Member>
     <Member MemberName="Opacity">
@@ -4216,6 +4423,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.TransparencyKey" />
+        <altmember cref="F:System.Windows.Forms.OSFeature.LayeredWindows" />
       </Docs>
     </Member>
     <Member MemberName="OwnedForms">
@@ -4263,6 +4472,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.AddOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="M:System.Windows.Forms.Form.RemoveOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="P:System.Windows.Forms.Form.Owner" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -4299,11 +4511,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">A top-level window cannot have an owner.</exception>
+        <altmember cref="M:System.Windows.Forms.Form.AddOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="M:System.Windows.Forms.Form.RemoveOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="P:System.Windows.Forms.Form.OwnedForms" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4329,12 +4544,17 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Form.ProcessCmdKey%2A> method overrides the base  
   
- <xref:System.Windows.Forms.ContainerControl.ProcessCmdKey%2A?displayProperty=fullName> implementation to provide additional handling of main menu command keys and MDI accelerators.  
+ <xref:System.Windows.Forms.ContainerControl.ProcessCmdKey%2A?displayProperty=nameWithType> implementation to provide additional handling of main menu command keys and MDI accelerators.  
   
  For information about trapping keystrokes, see "How to trap keystrokes in controls by using Visual C#" and "How to trap keystrokes in .NET controls by using Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+        <altmember cref="T:System.Windows.Forms.Message" />
+        <altmember cref="M:System.Windows.Forms.Form.ProcessDialogKey(System.Windows.Forms.Keys)" />
+        <altmember cref="M:System.Windows.Forms.Form.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ProcessMnemonic(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogChar">
@@ -4389,15 +4609,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method overrides the base <xref:System.Windows.Forms.ContainerControl.ProcessDialogKey%2A?displayProperty=fullName> implementation to provide additional handling of the RETURN and ESCAPE keys in dialog boxes. The method performs no processing on keystrokes that include the ALT or CONTROL modifiers.  
+ The <xref:System.Windows.Forms.Form.ProcessDialogKey%2A> method overrides the base <xref:System.Windows.Forms.ContainerControl.ProcessDialogKey%2A?displayProperty=nameWithType> implementation to provide additional handling of the RETURN and ESCAPE keys in dialog boxes. The method performs no processing on keystrokes that include the ALT or CONTROL modifiers.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ProcessDialogKey(System.Windows.Forms.Keys)" />
+        <altmember cref="M:System.Windows.Forms.Form.ProcessDialogChar(System.Char)" />
+        <altmember cref="M:System.Windows.Forms.Form.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ProcessMnemonic(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4416,6 +4640,7 @@
         <returns>
           <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -4463,6 +4688,7 @@
         <returns>
           <see langword="true" /> if a control is selected; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ProcessTabKey(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveOwnedForm">
@@ -4491,6 +4717,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.AddOwnedForm(System.Windows.Forms.Form)" />
+        <altmember cref="P:System.Windows.Forms.Form.Owner" />
+        <altmember cref="P:System.Windows.Forms.Form.OwnedForms" />
       </Docs>
     </Member>
     <Member MemberName="ResizeBegin">
@@ -4529,7 +4758,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeBegin> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeBegin> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.ResizeBegin> event.  
   
@@ -4538,6 +4767,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnResizeBegin(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Form.AutoSize" />
+        <altmember cref="P:System.Windows.Forms.Form.ClientSize" />
+        <altmember cref="P:System.Windows.Forms.Form.DesktopBounds" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
+        <altmember cref="P:System.Windows.Forms.Control.PreferredSize" />
+        <altmember cref="P:System.Windows.Forms.Form.Size" />
+        <altmember cref="P:System.Windows.Forms.Form.SizeGripStyle" />
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
+        <altmember cref="E:System.Windows.Forms.Form.ResizeEnd" />
+        <altmember cref="E:System.Windows.Forms.Control.SizeChanged" />
       </Docs>
     </Member>
     <Member MemberName="ResizeEnd">
@@ -4567,7 +4810,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.ResizeEnd> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.ResizeEnd> event.  
   
@@ -4576,6 +4819,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnResizeEnd(System.EventArgs)" />
+        <altmember cref="P:System.Windows.Forms.Form.AutoSize" />
+        <altmember cref="P:System.Windows.Forms.Form.ClientSize" />
+        <altmember cref="P:System.Windows.Forms.Form.DesktopBounds" />
+        <altmember cref="P:System.Windows.Forms.Control.Location" />
+        <altmember cref="P:System.Windows.Forms.Form.MaximumSize" />
+        <altmember cref="P:System.Windows.Forms.Form.MinimumSize" />
+        <altmember cref="P:System.Windows.Forms.Control.PreferredSize" />
+        <altmember cref="P:System.Windows.Forms.Form.Size" />
+        <altmember cref="P:System.Windows.Forms.Form.SizeGripStyle" />
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
+        <altmember cref="E:System.Windows.Forms.Control.Resize" />
+        <altmember cref="E:System.Windows.Forms.Form.ResizeBegin" />
+        <altmember cref="E:System.Windows.Forms.Control.SizeChanged" />
       </Docs>
     </Member>
     <Member MemberName="RestoreBounds">
@@ -4660,6 +4917,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="Overload:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="E:System.Windows.Forms.Form.RightToLeftLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftLayoutChanged">
@@ -4685,7 +4945,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event.  
   
@@ -4694,6 +4954,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.RightToLeftLayout" />
+        <altmember cref="M:System.Windows.Forms.Form.OnRightToLeftLayoutChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleControl">
@@ -4750,6 +5012,7 @@
         <param name="y">Percentage to scale the form vertically</param>
         <summary>Performs scaling of the form.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -4808,6 +5071,7 @@
         <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
         <summary>Performs the work of setting the specified bounds of this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="SetClientSizeCore">
@@ -4836,6 +5100,7 @@
         <param name="y">Requested height of the client region.</param>
         <summary>Sets the client size of the form. This will adjust the bounds of the form to make the client size the requested size.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Form.ClientSize" />
       </Docs>
     </Member>
     <Member MemberName="SetDesktopBounds">
@@ -4879,6 +5144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.SetDesktopLocation(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetDesktopLocation">
@@ -4918,6 +5184,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.SetDesktopBounds(System.Int32,System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.Form.LayoutMdi(System.Windows.Forms.MdiLayout)" />
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -4945,6 +5213,7 @@
           <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
         <summary>Sets the control to the specified visible state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetVisibleCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -4996,6 +5265,12 @@
  -or-  
   
  The current process is not running in user interactive mode (for more information, see <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" />).</exception>
+        <altmember cref="Overload:System.Windows.Forms.Form.ShowDialog" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="P:System.Windows.Forms.Form.WindowState" />
+        <altmember cref="P:System.Windows.Forms.Form.ShowInTaskbar" />
+        <altmember cref="P:System.Windows.Forms.Form.ShowIcon" />
+        <altmember cref="E:System.Windows.Forms.Form.Shown" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -5052,6 +5327,7 @@
  -or-  
   
  The current process is not running in user interactive mode (for more information, see <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" />).</exception>
+        <altmember cref="P:System.Windows.Forms.Form.DialogResult" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -5112,6 +5388,7 @@
  -or-  
   
  The current process is not running in user interactive mode (for more information, see <see cref="P:System.Windows.Forms.SystemInformation.UserInteractive" />).</exception>
+        <altmember cref="P:System.Windows.Forms.Form.DialogResult" />
       </Docs>
     </Member>
     <Member MemberName="ShowIcon">
@@ -5147,6 +5424,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.Icon" />
+        <altmember cref="P:System.Windows.Forms.Form.ShowInTaskbar" />
+        <altmember cref="P:System.Windows.Forms.Form.FormBorderStyle" />
+        <altmember cref="P:System.Windows.Forms.Form.WindowState" />
       </Docs>
     </Member>
     <Member MemberName="ShowInTaskbar">
@@ -5218,7 +5499,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Shown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.Shown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.Shown> event.  
   
@@ -5227,6 +5508,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.OnShown(System.EventArgs)" />
+        <altmember cref="Overload:System.Windows.Forms.Form.Show" />
+        <altmember cref="M:System.Windows.Forms.Form.Close" />
+        <altmember cref="P:System.Windows.Forms.Control.Visible" />
+        <altmember cref="M:System.Windows.Forms.Control.Hide" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
+        <altmember cref="E:System.Windows.Forms.Form.Activated" />
+        <altmember cref="E:System.Windows.Forms.Form.FormClosing" />
+        <altmember cref="E:System.Windows.Forms.Form.FormClosed" />
+        <altmember cref="M:System.Windows.Forms.Form.LayoutMdi(System.Windows.Forms.MdiLayout)" />
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
       </Docs>
     </Member>
     <Member MemberName="ShowWithoutActivation">
@@ -5262,6 +5554,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.Form.Show" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -5310,6 +5603,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Width" />
+        <altmember cref="P:System.Windows.Forms.Control.Height" />
+        <altmember cref="P:System.Windows.Forms.Form.DesktopBounds" />
+        <altmember cref="P:System.Windows.Forms.Control.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="SizeGripStyle">
@@ -5350,6 +5647,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        <altmember cref="P:System.Windows.Forms.Form.FormBorderStyle" />
+        <altmember cref="T:System.Windows.Forms.SizeGripStyle" />
       </Docs>
     </Member>
     <Member MemberName="StartPosition">
@@ -5395,6 +5694,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        <altmember cref="T:System.Windows.Forms.FormStartPosition" />
       </Docs>
     </Member>
     <Member MemberName="TabIndex">
@@ -5537,6 +5837,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TopLevel">
@@ -5584,6 +5885,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">A Multiple-document interface (MDI) parent form must be a top-level window.</exception>
+        <altmember cref="P:System.Windows.Forms.Form.TopMost" />
       </Docs>
     </Member>
     <Member MemberName="TopMost">
@@ -5624,6 +5926,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Form.TopLevel" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -5708,6 +6011,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ContainerControl.ActiveControl" />
+        <altmember cref="P:System.Windows.Forms.Form.AcceptButton" />
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -5736,6 +6041,7 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -5767,6 +6073,7 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -5798,7 +6105,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Windows.Forms.Form.WindowState%2A>to maximized. The code is called from the <xref:System.Windows.Forms.Form.Shown> event handler after the form has been created.  
+ The following code example demonstrates how to set the <xref:System.Windows.Forms.Form.WindowState%2A> to maximized. The code is called from the <xref:System.Windows.Forms.Form.Shown> event handler after the form has been created.  
   
 ```csharp  
 private void Form1_Shown(object sender, EventArgs e)  
@@ -5816,11 +6123,12 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is outside the range of valid values.</exception>
+        <altmember cref="T:System.Windows.Forms.FormWindowState" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5842,7 +6150,26 @@ End Sub
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateChildren">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates all selectable child controls in the form.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ShowDialog">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Shows the form as a modal dialog box.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

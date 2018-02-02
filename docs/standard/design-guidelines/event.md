@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "pre-events"
   - "events [.NET Framework], design guidelines"
@@ -25,6 +20,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Event Design
 Events are the most commonly used form of callbacks (constructs that allow the framework to call into user code). Other callback mechanisms include members taking delegates, virtual members, and interface-based plug-ins. Data from usability studies indicate that the majority of developers are more comfortable using events than they are using the other callback mechanisms. Events are nicely integrated with Visual Studio and many languages.  
@@ -33,7 +31,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ DO** use the term "raise" for events rather than "fire" or "trigger."  
   
- **✓ DO** use <xref:System.EventHandler%601?displayProperty=fullName> instead of manually creating new delegates to be used as event handlers.  
+ **✓ DO** use <xref:System.EventHandler%601?displayProperty=nameWithType> instead of manually creating new delegates to be used as event handlers.  
   
  **✓ CONSIDER** using a subclass of <xref:System.EventArgs> as the event argument, unless you are absolutely sure the event will never need to carry any data to the event handling method, in which case you can use the `EventArgs` type directly.  
   
@@ -59,7 +57,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ CONSIDER** raising events that the end user can cancel. This only applies to pre-events.  
   
- Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=fullName> or its subclass as the event argument to allow the end user to cancel events.  
+ Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType> or its subclass as the event argument to allow the end user to cancel events.  
   
 ### Custom Event Handler Design  
  There are cases in which `EventHandler<T>` cannot be used, such as when the framework needs to work with earlier versions of the CLR, which did not support Generics. In such cases, you might need to design and develop a custom event handler delegate.  
@@ -70,7 +68,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
  **✓ DO** use `object` as the type of the first parameter of the event handler, and call it `sender`.  
   
- **✓ DO** use <xref:System.EventArgs?displayProperty=fullName> or its subclass as the type of the second parameter of the event handler, and call it `e`.  
+ **✓ DO** use <xref:System.EventArgs?displayProperty=nameWithType> or its subclass as the type of the second parameter of the event handler, and call it `e`.  
   
  **X DO NOT** have more than two parameters on event handlers.  
   
@@ -79,5 +77,5 @@ Events are the most commonly used form of callbacks (constructs that allow the f
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)   
+ [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

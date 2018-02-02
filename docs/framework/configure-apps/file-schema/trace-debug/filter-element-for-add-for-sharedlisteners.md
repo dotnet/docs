@@ -11,11 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "filter element for <add> for <sharedListeners>"
   - "initializeData attribute"
@@ -27,6 +22,8 @@ caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;sharedListeners&gt;
 Adds a filter to a listener in the `sharedListeners` collection.  
@@ -51,7 +48,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|**type**|Required attribute.<br /><br /> Specifies the type of the filter. You can use only the full name of the type (in the format of the <xref:System.Type.FullName%2A?displayProperty=fullName> property), or you can use the fully qualified type name including the assembly information (in the format of the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> property). For information on creating a fully qualified type name, see [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**type**|Required attribute.<br /><br /> Specifies the type of the filter. You can use only the full name of the type (in the format of the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property), or you can use the fully qualified type name including the assembly information (in the format of the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> property). For information on creating a fully qualified type name, see [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
   
 ### Child Elements  
@@ -97,7 +94,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceFilter>   
- <xref:System.Diagnostics.TraceListener>   
- <xref:System.Diagnostics.TraceSource>   
+ <xref:System.Diagnostics.TraceFilter>  
+ <xref:System.Diagnostics.TraceListener>  
+ <xref:System.Diagnostics.TraceSource>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

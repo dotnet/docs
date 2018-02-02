@@ -47,7 +47,7 @@ manager: "wpickett"
 uid: System.Diagnostics.TextWriterTraceListener.WriteLine
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -99,7 +99,7 @@ manager: "wpickett"
 uid: System.Diagnostics.TextWriterTraceListener.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -133,7 +133,7 @@ manager: "wpickett"
 uid: System.Diagnostics.TextWriterTraceListener.Write
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

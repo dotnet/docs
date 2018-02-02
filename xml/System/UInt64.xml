@@ -63,6 +63,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.Int64" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -136,6 +137,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.UInt64" />.</exception>
+        <altmember cref="M:System.UInt64.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -192,11 +194,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.UInt64.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to an object.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.UInt64.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to an object.  
   
  Depending on your programming language, it might be possible to code a <xref:System.UInt64.CompareTo%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
   
- For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method that compares the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
+ For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=nameWithType> method that compares the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
   
  Consult your programming language's documentation to determine whether its compiler performs implicit widening conversions on numeric types.  
   
@@ -211,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.UInt64.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -263,6 +266,7 @@
  [!code-csharp[System.UInt64.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.uint64.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.UInt64.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.uint64.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.UInt64.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -302,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IEquatable%601?displayProperty=fullName> interface, and performs slightly better than <xref:System.UInt64.Equals%2A> because it does not have to convert the `obj` parameter to an object.  
+ This method implements the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, and performs slightly better than <xref:System.UInt64.Equals%2A> because it does not have to convert the `obj` parameter to an object.  
   
    
   
@@ -381,6 +385,7 @@
         <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.UInt64" />.</summary>
         <returns>The enumerated constant, <see cref="F:System.TypeCode.UInt64" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -427,6 +432,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.UInt64.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -473,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.UInt64.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -525,13 +532,13 @@
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
-|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the current culture. However, the negative sign symbol can be used only with zero; otherwise, the method throws an <xref:System.OverflowException>.|  
+|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the current culture. However, the negative sign symbol can be used only with zero; otherwise, the method throws an <xref:System.OverflowException>.|  
 |*digits*|A sequence of digits ranging from 0 to 9. Any leading zeros are ignored.|  
   
 > [!NOTE]
->  The string specified by the `s` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
+>  The string specified by the `s` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. It cannot contain any group separators or decimal separator, and it cannot have a decimal portion.  
   
- The `s` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>. To parse a string by using the formatting information of a specific culture, use the <xref:System.UInt64.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
+ The `s` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse a string by using the formatting information of a specific culture, use the <xref:System.UInt64.Parse%28System.String%2CSystem.IFormatProvider%29> method.  
   
    
   
@@ -547,6 +554,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="s" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The <paramref name="s" /> parameter is not in the correct format.</exception>
         <exception cref="T:System.OverflowException">The <paramref name="s" /> parameter represents a number less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="Overload:System.UInt64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -598,7 +606,7 @@
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- Elements in square brackets ([ and ]) are optional. If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>, the `s` parameter may contain the following elements:  
+ Elements in square brackets ([ and ]) are optional. If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `s` parameter may contain the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -606,16 +614,16 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. However, the negative sign symbol can be used only with zero; otherwise, the method throws an <xref:System.OverflowException>.|  
+|*ws*|Optional white space. White space can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag. However, the negative sign symbol can be used only with zero; otherwise, the method throws an <xref:System.OverflowException>.|  
 |*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
-|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific group separator symbol. The current culture's group separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, a <xref:System.FormatException> is thrown.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |`NumberStyles` value|Elements permitted in `s` in addition to digits|  
 |--------------------------|-----------------------------------------------------|  
@@ -634,7 +642,7 @@
 |<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, group separator (*,*), and decimal point (*.*) elements.|  
 |<xref:System.Globalization.NumberStyles.Any>|All elements. However, `s` cannot represent a hexadecimal number.|  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `s`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `s` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `s`, the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> style value means that the individual numeric characters in `s` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `s` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -665,6 +673,8 @@
  -or-  
   
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
+        <altmember cref="Overload:System.UInt64.ToString" />
+        <altmember cref="Overload:System.UInt64.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -724,7 +734,7 @@
 |*sign*|An optional positive sign, or a negative sign if `s` represents the value zero.|  
 |*digits*|A sequence of digits ranging from 0 to 9.|  
   
- The s parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to the unsigned integer value's decimal digits, only leading and trailing spaces along with a leading sign is allowed. (If the negative sign is present, `s` must represent a value of zero, or the method throws an <xref:System.OverflowException>.) To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.UInt64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29> method.  
+ The s parameter is interpreted using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the unsigned integer value's decimal digits, only leading and trailing spaces along with a leading sign is allowed. (If the negative sign is present, `s` must represent a value of zero, or the method throws an <xref:System.OverflowException>.) To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.UInt64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29> method.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of `s`. There are three ways to use the `provider` parameter to supply custom formatting information to the parse operation:  
   
@@ -739,7 +749,7 @@
    
   
 ## Examples  
- The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=fullName> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.UInt64.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.UInt64> value.  
+ The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.UInt64.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.UInt64> value.  
   
  [!code-csharp[ParseMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParseMethod/cs/Default.aspx.cs#1)]
  [!code-vb[ParseMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParseMethod/vb/Default.aspx.vb#1)]  
@@ -750,6 +760,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="s" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The <paramref name="s" /> parameter is not in the correct style.</exception>
         <exception cref="T:System.OverflowException">The <paramref name="s" /> parameter represents a number less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="M:System.UInt64.ToString" />
+        <altmember cref="Overload:System.UInt64.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -803,7 +815,7 @@
   
  [*ws*][*$*][*sign*]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- Elements in square brackets ([ and ]) are optional. If `style` includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>, the `s` parameter may include the following elements:  
+ Elements in square brackets ([ and ]) are optional. If `style` includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `s` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -811,32 +823,32 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object that is returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. (The method throws an <xref:System.OverflowException> if `s` includes a negative sign and represents a non-zero number.) The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object that is returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. (The method throws an <xref:System.OverflowException> if `s` includes a negative sign and represents a non-zero number.) The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0-9 if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or one or more occurrences of the digit 0 if it does not. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*exponential_digits*|A sequence of digits from 0 through 9. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0-9 if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag, or one or more occurrences of the digit 0 if it does not. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
+|*exponential_digits*|A sequence of digits from 0 through 9. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in `s` in addition to digits|  
 |------------------------------------------|-----------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The decimal point (*.*) and *fractional_digits* elements. However, if style does not include the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, *fractional_digits* must consist of only one or more 0 digits; otherwise, an <xref:System.OverflowException> is thrown.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign before *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign after *digits*.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Parentheses before and after *digits* to indicate a negative value.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The group separator (*,*) element.|  
-|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The currency (*$*) element.|  
+|<xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType>|The decimal point (*.*) and *fractional_digits* elements. However, if style does not include the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag, *fractional_digits* must consist of only one or more 0 digits; otherwise, an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType>|A sign before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType>|A sign after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType>|Parentheses before and after *digits* to indicate a negative value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>|The group separator (*,*) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType>|The currency (*$*) element.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be combined with it are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be combined with it are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If the `s` parameter is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the parse operation to throw an exception.  
@@ -875,6 +887,7 @@
  -or-  
   
  <paramref name="s" /> includes non-zero, fractional digits.</exception>
+        <altmember cref="Overload:System.UInt64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -957,7 +970,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -997,7 +1010,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToByte%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToByte%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1037,7 +1050,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToChar%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToChar%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1111,7 +1124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1151,7 +1164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1191,7 +1204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1231,7 +1244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1271,7 +1284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt64%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt64%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1311,7 +1324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1351,7 +1364,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSingle%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSingle%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1393,7 +1406,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1433,7 +1446,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1473,7 +1486,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.UInt64%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.UInt64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.UInt64%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1575,6 +1588,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.UInt64.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1638,6 +1652,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.UInt64.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1689,7 +1704,7 @@
 |Default ("G") format|A specific culture|<xref:System.UInt64.ToString%28System.IFormatProvider%29>|  
 |A specific format|A specific culture|<xref:System.UInt64.ToString%28System.String%2CSystem.IFormatProvider%29>|  
   
- The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt64> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.UInt64> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
@@ -1710,6 +1725,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is invalid.</exception>
+        <altmember cref="M:System.UInt64.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1763,7 +1779,7 @@
 |Default ("G") format|A specific culture|<xref:System.UInt64.ToString%28System.IFormatProvider%29>|  
 |A specific format|Default (current) culture|<xref:System.UInt64.ToString%28System.String%29>|  
   
- The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt64> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the return value of the current <xref:System.UInt64> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
@@ -1771,7 +1787,7 @@
   
 -   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
- The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. When the <xref:System.UInt64.ToString%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information for formatting the current <xref:System.UInt64> value, such as the group separator symbol or the decimal point symbol. There are three ways to use the `provider` parameter to supply formatting information to the <xref:System.UInt64.ToString%28System.String%2CSystem.IFormatProvider%29> method:  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. When the <xref:System.UInt64.ToString%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information for formatting the current <xref:System.UInt64> value, such as the group separator symbol or the decimal point symbol. There are three ways to use the `provider` parameter to supply formatting information to the <xref:System.UInt64.ToString%28System.String%2CSystem.IFormatProvider%29> method:  
   
 -   You can pass a <xref:System.Globalization.CultureInfo> object that represents the culture that supplies formatting information. Its <xref:System.Globalization.CultureInfo.GetFormat%2A> method returns the <xref:System.Globalization.NumberFormatInfo> object that provides numeric formatting information for that culture.  
   
@@ -1792,11 +1808,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The <paramref name="format" /> parameter is invalid.</exception>
+        <altmember cref="M:System.UInt64.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out ulong result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, unsigned int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] unsigned int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UInt64.TryParse(System.String,System.UInt64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1849,15 +1866,15 @@
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|Optional white space.|  
-|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the current culture.|  
+|*sign*|An optional sign. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the current culture.|  
 |*digits*|A sequence of decimal digits ranging from 0 to 9.|  
   
- The `s` parameter is interpreted by using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `s`, call the <xref:System.UInt64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.UInt64%40%29> method.  
+ The `s` parameter is interpreted by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> style. In addition to the decimal digits, only leading and trailing spaces with a leading sign are allowed. To explicitly define the style elements with the culture-specific formatting information that can be present in `s`, call the <xref:System.UInt64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.UInt64%40%29> method.  
   
 > [!NOTE]
 >  The string specified by the `s` parameter cannot contain any group separators or decimal separator, and it cannot have a fractional portion.  
   
- The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>.  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>.  
   
  This overload interprets all digits in the `s` parameter as decimal digits. To parse the string representation of a hexadecimal number, call the <xref:System.UInt64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.UInt64%40%29> overload instead.  
   
@@ -1872,11 +1889,13 @@
  ]]></format>
         </remarks>
         <altCompliant cref="M:System.Decimal.Parse(System.String)" />
+        <altmember cref="Overload:System.UInt64.Parse" />
+        <altmember cref="Overload:System.UInt64.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out ulong result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, unsigned int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] unsigned int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UInt64.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1928,7 +1947,7 @@
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- Items in square brackets ([ and ]) are optional. Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>, the `s` parameter may include the following elements:  
+ Items in square brackets ([ and ]) are optional. Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>, the `s` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -1936,18 +1955,18 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. However, if the negative sign is present, `s` can only represent the value zero for the parse operation to succeed.|  
+|*ws*|Optional white space. White space can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the start of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag. However, if the negative sign is present, `s` can only represent the value zero for the parse operation to succeed.|  
 |*digits*|A sequence of digits from 0 through 9.|  
-|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*exponential_digits*|A sequence of digits from 0 through 9. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific group separator. The group separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
+|*exponential_digits*|A sequence of digits from 0 through 9. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
- A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
@@ -1966,7 +1985,7 @@
 |<xref:System.Globalization.NumberStyles.Number>|The *ws*, *sign*, group separator (*,*), and decimal point (*.*) elements.|  
 |<xref:System.Globalization.NumberStyles.Any>|All elements. However, `s` cannot represent a hexadecimal number.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `s` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -1998,7 +2017,74 @@
  -or-  
   
  <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <altmember cref="M:System.UInt64.Parse(System.String)" />
+        <altmember cref="Overload:System.UInt64.Parse" />
+        <altmember cref="Overload:System.UInt64.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.UInt64" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether this instance is equal to a specified object or <see cref="T:System.UInt64" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to convert the string representation of a number to its 64-bit unsigned integer equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.UInt64.Parse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its 64-bit unsigned integer equivalent.</summary>
+        <altmember cref="Overload:System.UInt64.TryParse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

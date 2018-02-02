@@ -56,7 +56,7 @@ manager: "wpickett"
 uid: System.Security.Policy.NetCodeGroup.Equals
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

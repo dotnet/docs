@@ -10,16 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "ContextMenuStrips, adding menu items"
-  - "shortcut menus, adding items"
-  - "context menus, adding menu items"
+  - "ContextMenuStrips [Windows Forms], adding menu items"
+  - "shortcut menus [Windows Forms], adding items"
+  - "context menus [Windows Forms], adding menu items"
 ms.assetid: 1ec14776-3ea2-4752-bd22-4fae0fd19e1a
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Add Menu Items to a ContextMenuStrip
 You can add just one menu item or several items at a time to a <xref:System.Windows.Forms.ContextMenuStrip>.  

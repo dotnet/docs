@@ -83,7 +83,7 @@ manager: "wpickett"
 uid: System.Text.UTF32Encoding.GetString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

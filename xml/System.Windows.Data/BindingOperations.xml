@@ -190,6 +190,64 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnableCollectionSynchronization">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables a <see cref="T:System.Windows.Data.CollectionView" /> object to participate in synchronized access to a collection that is used on multiple threads. </summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+A WPF application can display a collection of data using an <xref:System.Windows.Controls.ItemsControl> or one of its subclasses (<xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.TreeView>, <xref:System.Windows.Controls.ListView>, etc.). WPF channels all its access to the collection through a subclass of <xref:System.Windows.Data.CollectionView>. Both the <xref:System.Windows.Controls.ItemsControl> and the <xref:System.Windows.Data.CollectionView> have affinity to the thread on which the <xref:System.Windows.Controls.ItemsControl> was created, meaning that using them on a different thread is forbidden and throws an exception. In effect, this restriction applies to the collection as well.
+ 
+You may want to use the collection on multiple threads.   For example, you want to update the collection (add or remove items) on a "data-gathering" thread, while displaying the results on a "user interface" thread, so that the UI remains responsive while data-gathering is happening. In such a situation, you are responsible for ensuring synchronized ("thread-safe") access to the collection.   This is typically done using either a simple lock mechanism or a more elaborate synchronization mechanism such as semaphores, reset events, etc. 
+ 
+While you must synchronize your application's access to the collection, you must also guarantee that access from WPF (specifically from <xref:System.Windows.Data.CollectionView>) participates in the same synchronization mechanism.  You do this by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.
+ 
+To use a collection on multiple threads, one of which is the UI thread that owns the <xref:System.Windows.Controls.ItemsControl>, an application has the following responsibilities:
+
+1. Choose a synchronization mechanism.
+
+1. Synchronize all access from the application to the collection using that mechanism.
+
+1. Call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> to inform WPF of the mechanism.
+
+   - The call must occur on the UI thread.
+
+   - The call must occur before using the collection on a different thread or before attaching the collection to the <xref:System.Windows.Controls.ItemsControl>, whichever is later.
+
+   - Call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)> overload if using a simple lock mechanism; call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> overload if using a more elaborate mechanism.
+
+1. Ensure that a change to the collection and the notification of that change (through <xref:System.Collections.Specialized.INotifyCollectionChanged>) are atomic; no access from other threads can intervene.  (This is usually free. For instance, <xref:System.Collections.ObjectModel.ObservableCollection%601> guarantees this, provided that all changes are protected by synchronization.)
+
+1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, that call must also occur on the UI thread.
+
+1. If you want to use the same collection on multiple UI threads, you must call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> (and <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, if needed) separately on each UI thread.
+
+1. Avoid deadlock.  This is already the application's responsibility once it chooses to use synchronization, but it must also take into account WPF's participation in the synchronization, as discussed in the following paragraph.
+
+In return, WPF provides the following behavior:
+
+- The <xref:System.Windows.Data.CollectionView> accesses the collection using the given synchronization mechanism.
+
+- The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
+
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
+
+- Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
+
+- The <xref:System.Windows.Data.CollectionView> won't directly use any other synchronization mechanism visible to the application. This is WPF's way of helping to avoid deadlock (see the previous item 7).   
+
+The net effect is that you can change the collection on any thread, and those changes eventually appear in the <xref:System.Windows.Controls.ItemsControl> when the UI thread has time to "catch up".  The implementation has been tuned to throttle the rate that changes flow into the UI thread to keep background threads from saturating the UI thread and starving the response to normal user input.
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnableCollectionSynchronization">
       <MemberSignature Language="C#" Value="public static void EnableCollectionSynchronization (System.Collections.IEnumerable collection, object lockObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableCollectionSynchronization(class System.Collections.IEnumerable collection, object lockObject) cil managed" />
@@ -209,12 +267,49 @@
       <Docs>
         <param name="collection">The collection that needs synchronized access.</param>
         <param name="lockObject">The object to lock when accessing the collection.</param>
-        <summary>Enables a collection to be accessed across multiple threads and specifies the lock object that should be used to synchronize access to the collection.</summary>
+        <summary>Enables a <see cref="T:System.Windows.Data.CollectionView" /> object to participate in synchronized access to a collection used on multiple threads by using a simple locking mechanism. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  When you call this overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> method, the system locks the collection when you access it.  To specify a callback to lock the collection yourself, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> overload.  
+
+## Remarks
+
+A WPF application can display a collection of data using an <xref:System.Windows.Controls.ItemsControl> or one of its subclasses (<xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.TreeView>, <xref:System.Windows.Controls.ListView>, etc.). WPF channels all its access to the collection through a subclass of <xref:System.Windows.Data.CollectionView>. Both the <xref:System.Windows.Controls.ItemsControl> and the <xref:System.Windows.Data.CollectionView> have affinity to the thread on which the <xref:System.Windows.Controls.ItemsControl> was created, meaning that using them on a different thread is forbidden and throws an exception. In effect, this restriction applies to the collection as well.
+ 
+You may want to use the collection on multiple threads.   For example, you want to update the collection (add or remove items) on a "data-gathering" thread, while displaying the results on a "user interface" thread, so that the UI remains responsive while data-gathering is happening. In such a situation, you are responsible for ensuring synchronized ("thread-safe") access to the collection and for guaranteeing that access from WPF (specifically from <xref:System.Windows.Data.CollectionView>) participates in the same synchronization mechanism. By calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)> method, you can do this by using a simple lock mechanism. 
+ 
+To use a collection on multiple threads, one of which is the UI thread that owns the <xref:System.Windows.Controls.ItemsControl>, you must do the following:
+
+1. Instantiate an object to lock when accessing the collection.
+
+1. Synchronize all access from the application to the collection by locking that object.
+
+1. Call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object)> to inform WPF that you are using a simple lock mechanism.
+
+   - The call must occur on the UI thread.
+
+   - The call must occur before using the collection on a different thread or before attaching the collection to the <xref:System.Windows.Controls.ItemsControl>, whichever is later.
+
+1. Ensure that a change to the collection and the notification of that change (through <xref:System.Collections.Specialized.INotifyCollectionChanged>) are atomic; no access from other threads can intervene.  (This is usually free. For instance, <xref:System.Collections.ObjectModel.ObservableCollection%601> guarantees this, provided that all changes are protected by synchronization.)
+
+1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, that call must also occur on the UI thread.
+
+1. If you want to use the same collection on multiple UI threads, you must call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> (and <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, if needed) separately on each UI thread.
+
+1. Avoid deadlock.  This is already the application's responsibility once it chooses to use synchronization, but it must also take into account WPF's participation in the synchronization. (See more, below.)
+
+In return, WPF provides the following behavior:
+
+- The <xref:System.Windows.Data.CollectionView> accesses the collection using the locking mechanism.
+
+- The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
+
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
+
+- Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
+
+- The <xref:System.Windows.Data.CollectionView> will not directly use any other synchronization mechanism visible to the application. This is WPF's way of helping to avoid deadlock (see the previous item 7).   
+
+The net effect is that you can change the collection on any thread, and those changes eventually appear in the <xref:System.Windows.Controls.ItemsControl> when the UI thread has time to "catch up".  The implementation has been tuned to throttle the rate that changes flow into the UI thread to keep background threads from saturating the UI thread and starving the response to normal user input.
   
  ]]></format>
         </remarks>
@@ -240,14 +335,60 @@
       <Docs>
         <param name="collection">The collection that needs synchronized access.</param>
         <param name="context">An object that is passed to the callback.</param>
-        <param name="synchronizationCallback">The callback that is invoked whenever access to the collection is required.</param>
-        <summary>Enables a collection to be accessed across multiple threads and specifies the callback that should be used to synchronize access to the collection.</summary>
+        <param name="synchronizationCallback">The callback that is invoked whenever access to the collection is required. You can use it to ensure that the collection is accessed by one thread at a time. </param>
+        <summary>Enables a <see cref="T:System.Windows.Data.CollectionView" /> object to participate in synchronized access to a collection used on multiple threads by using a mechanism other than a simple lock. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you have a lot of data to collect or modify, you might want to use a background thread to collect and modify the data so that the user interface will remain reactive to input.  To enable multiple threads to access a collection, call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> method.  This overload of the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%2CSystem.Windows.Data.CollectionSynchronizationCallback%29> method enables you to specify a callback that ensures that the collection is accessed by one thread at a time.  You can have the system lock the collection by calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%28System.Collections.IEnumerable%2CSystem.Object%29> overload.  The `context` parameter is an arbitrary object that you can use to information known when you enable collection synchronization. This is passed to the callback and you can use it to determine the synchronization mechanism to use to control access to `collection`. `Context` can be `null`.  
-  
+
+A WPF application can display a collection of data using an <xref:System.Windows.Controls.ItemsControl> or one of its subclasses (<xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.TreeView>, <xref:System.Windows.Controls.ListView>, etc.). WPF channels all its access to the collection through a subclass of <xref:System.Windows.Data.CollectionView>. Both the <xref:System.Windows.Controls.ItemsControl> and the <xref:System.Windows.Data.CollectionView> have affinity to the thread on which the <xref:System.Windows.Controls.ItemsControl> was created, meaning that using them on a different thread is forbidden and throws an exception. In effect, this restriction applies to the collection as well.
+ 
+You may want to use the collection on multiple threads.   For example, you want to update the collection (add or remove items) on a "data-gathering" thread, while displaying the results on a "user interface" thread, so that the UI remains responsive while data-gathering is happening. In such a situation, you are responsible for ensuring synchronized ("thread-safe") access to the collection and for guaranteeing that access from WPF (specifically from <xref:System.Windows.Data.CollectionView>) participates in the same synchronization mechanism. By calling the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> method, you can do this by using a synchronization mechanism such as a semaphores, a reset event, etc. 
+ 
+To use a collection on multiple threads, one of which is the UI thread that owns the <xref:System.Windows.Controls.ItemsControl>, you must do the following:
+
+1. Choose a synchronization mechanism.
+
+1. Synchronize all access from the application to the collection using that mechanism.
+
+1. Call the <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization(System.Collections.IEnumerable,System.Object,System.Windows.Data.CollectionSynchronizationCallback)> overload to inform WPF that you are using a mechanism other than simple locking.
+
+   - The call must occur on the UI thread.
+
+   - The call must occur before using the collection on a different thread or before attaching the collection to the <xref:System.Windows.Controls.ItemsControl>, whichever is later.
+
+1. Ensure that a change to the collection and the notification of that change (through <xref:System.Collections.Specialized.INotifyCollectionChanged>) are atomic; no access from other threads can intervene.  (This is usually free. For instance, <xref:System.Collections.ObjectModel.ObservableCollection%601> guarantees this, provided that all changes are protected by synchronization.)
+
+1. If you call <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, that call must also occur on the UI thread.
+
+1. If you want to use the same collection on multiple UI threads, you must call <xref:System.Windows.Data.BindingOperations.EnableCollectionSynchronization%2A> (and <xref:System.Windows.Data.BindingOperations.DisableCollectionSynchronization%2A>, if needed) separately on each UI thread.
+
+1. Avoid deadlock.  This is already the application's responsibility once it chooses to use synchronization, but it must also take into account WPF's participation in the synchronization. (See more, below.)
+
+In return, WPF provides the following behavior:
+
+- The <xref:System.Windows.Data.CollectionView> accesses the collection by calling the registered <xref:System.Windows.Data.CollectionSynchronizationCallback> with the following arguments:
+
+   - `collection`: the collection of interest.
+   - `context`: the registered context object.
+   - `accessMethod`: a delegate that performs the actual access.
+   - `writeAccess`: `true` if the delegate will modify the collection; `false` otherwise.
+
+   Your <xref:System.Windows.Data.CollectionSynchronizationCallback> should establish synchronization on the collection (using the `context` object and the `writeAccess` value, as appropriate), call the `accessMethod`, then release synchronization.
+
+- The <xref:System.Windows.Data.CollectionView> maintains a "shadow copy" of the collection for use on the UI thread.
+
+- <xref:System.Windows.Data.CollectionView.CollectionChanged> events are queued up as they arrive (on any thread).
+
+- Pending events are applied to the shadow copy asynchronously on the UI thread when it has the opportunity to do so.
+
+- The <xref:System.Windows.Data.CollectionView> will not directly use any other synchronization mechanism visible to the application. This is WPF's way of helping to avoid deadlock (see the previous item 7).   
+
+The net effect is that you can change the collection on any thread, and those changes eventually appear in the <xref:System.Windows.Controls.ItemsControl> when the UI thread has time to "catch up".  The implementation has been tuned to throttle the rate that changes flow into the UI thread to keep background threads from saturating the UI thread and starving the response to normal user input.
+
+ The `context` parameter is an arbitrary object that is passed to the `callback`. You can use it to determine the synchronization mechanism used to control access to `collection`. `Context` can be `null`.  
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -275,6 +416,10 @@
         <returns>The <see cref="T:System.Windows.Data.Binding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.Binding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingBase">
@@ -307,6 +452,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingExpression">
@@ -349,6 +495,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetBindingExpressionBase">
@@ -381,6 +530,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetMultiBinding">
@@ -406,6 +556,8 @@
         <returns>The <see cref="T:System.Windows.Data.MultiBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.MultiBinding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetMultiBindingExpression">
@@ -438,6 +590,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetMultiBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetPriorityBinding">
@@ -463,6 +618,8 @@
         <returns>The <see cref="T:System.Windows.Data.PriorityBinding" /> object set on the given property or <see langword="null" /> if no <see cref="T:System.Windows.Data.PriorityBinding" /> object has been set.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be null.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetPriorityBindingExpression">
@@ -488,6 +645,9 @@
         <returns>The <see cref="T:System.Windows.Data.PriorityBindingExpression" /> object associated with the given property or <see langword="null" /> if none exists.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> and <paramref name="dp" /> parameters cannot be <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpressionBase(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetBindingExpression(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+        <altmember cref="M:System.Windows.Data.BindingOperations.GetPriorityBinding(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
       </Docs>
     </Member>
     <Member MemberName="GetSourceUpdatingBindingGroups">

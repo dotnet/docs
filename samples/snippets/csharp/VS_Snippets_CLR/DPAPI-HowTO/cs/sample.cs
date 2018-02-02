@@ -88,10 +88,10 @@ public class MemoryProtectionSample
 
     public static void EncryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope )
     {
-        if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
         if (Buffer == null)
             throw new ArgumentNullException("Buffer");
+        if (Buffer.Length <= 0)
+            throw new ArgumentException("Buffer");
         
 
         // Encrypt the data in memory. The result is stored in the same same array as the original data.
@@ -101,10 +101,10 @@ public class MemoryProtectionSample
 
     public static void DecryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope)
     {
-        if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
         if (Buffer == null)
             throw new ArgumentNullException("Buffer");
+        if (Buffer.Length <= 0)
+            throw new ArgumentException("Buffer");
         
 
         // Decrypt the data in memory. The result is stored in the same same array as the original data.
@@ -129,28 +129,28 @@ public class MemoryProtectionSample
 
     public static int EncryptDataToStream(byte[] Buffer, byte[] Entropy, DataProtectionScope Scope, Stream S)
     {
-        if (Buffer.Length <= 0)
-            throw new ArgumentException("Buffer");
         if (Buffer == null)
             throw new ArgumentNullException("Buffer");
-        if (Entropy.Length <= 0)
-            throw new ArgumentException("Entropy");
+        if (Buffer.Length <= 0)
+            throw new ArgumentException("Buffer");
         if (Entropy == null)
             throw new ArgumentNullException("Entropy");
+        if (Entropy.Length <= 0)
+            throw new ArgumentException("Entropy");
         if (S == null)
             throw new ArgumentNullException("S");
        
         int length = 0;
 
         // Encrypt the data in memory. The result is stored in the same same array as the original data.
-        byte[] encrptedData = ProtectedData.Protect(Buffer, Entropy, Scope);
+        byte[] encryptedData = ProtectedData.Protect(Buffer, Entropy, Scope);
 
         // Write the encrypted data to a stream.
-        if (S.CanWrite && encrptedData != null)
+        if (S.CanWrite && encryptedData != null)
         {
-            S.Write(encrptedData, 0, encrptedData.Length);
+            S.Write(encryptedData, 0, encryptedData.Length);
 
-            length = encrptedData.Length;
+            length = encryptedData.Length;
         }
 
         // Return the length that was written to the stream. 

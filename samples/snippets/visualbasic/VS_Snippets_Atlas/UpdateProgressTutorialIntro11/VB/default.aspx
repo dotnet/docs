@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="VB" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -35,7 +35,7 @@
     <form id="form1" runat="server">
     <div>
         <asp:ScriptManager ID="ScriptManager1" runat="server" />
-        <%-- <Snippet3> --%>
+        <!-- <Snippet3> -->
         <script language="javascript" type="text/javascript">
         <!-- 
         var prm = Sys.WebForms.PageRequestManager.getInstance();
@@ -44,7 +44,7 @@
               prm.abortPostBack();
             }
         }
-        <%-- <Snippet4> --%>
+        <!-- <Snippet4> -->
         prm.add_initializeRequest(InitializeRequest);
         prm.add_endRequest(EndRequest);
         var postBackElement;
@@ -62,10 +62,10 @@
                 $get('UpdateProgress1').style.display = 'none';
             }
         }
-        <%-- </Snippet4> --%>
+        <!-- </Snippet4> -->
         // -->
         </script>
-        <%-- </Snippet3> --%>
+        <!-- </Snippet3> -->
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:Label ID="Label1" runat="server" Text="Panel rendered."></asp:Label><br />
@@ -90,4 +90,4 @@
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

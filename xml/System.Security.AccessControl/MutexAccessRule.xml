@@ -27,7 +27,7 @@
 > [!NOTE]
 >  Windows access control security is meaningful only for named system mutexes. If a <xref:System.Threading.Mutex> object represents a local mutex, access control is irrelevant.  
   
- To get a list of the rules currently applied to a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.MutexSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAccessRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.MutexAccessRule> objects.  
+ To get a list of the rules currently applied to a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.MutexSecurity> object, and then use its <xref:System.Security.AccessControl.CommonObjectSecurity.GetAccessRules%2A> method to obtain a collection of <xref:System.Security.AccessControl.MutexAccessRule> objects.  
   
  <xref:System.Security.AccessControl.MutexAccessRule> objects do not map one-to-one with access control entries in the underlying discretionary access control list (DACL). When you get the set of all access rules for a mutex, the set contains the minimum number of rules currently required to express all the access control entries.  
   
@@ -36,10 +36,10 @@
   
  Use <xref:System.Security.AccessControl.MutexAccessRule> objects to specify access rights to allow or deny to a user or group. A <xref:System.Security.AccessControl.MutexAccessRule> object always represents either allowed access or denied access, never both.  
   
- To apply a rule to a named system mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the <xref:System.Security.AccessControl.MutexSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to reattach the security object.  
+ To apply a rule to a named system mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the <xref:System.Security.AccessControl.MutexSecurity> object by using its methods to add the rule, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method to reattach the security object.  
   
 > [!IMPORTANT]
->  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named mutex.  
+>  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method to assign the altered security object to the named mutex.  
   
  <xref:System.Security.AccessControl.MutexAccessRule> objects are immutable. Security for a mutex is modified using the methods of the <xref:System.Security.AccessControl.MutexSecurity> class to add or remove rules; as you do this, the underlying access control entries are modified.  
   
@@ -52,13 +52,14 @@
  The following code example demonstrates the creation and use of <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.MutexSecurity" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> method, the user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> access.  
+ To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights.Synchronize?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> method, the user must have <xref:System.Security.AccessControl.MutexRights.Modify?displayProperty=nameWithType> access.  
   
  ]]></format>
         </remarks>
@@ -139,9 +140,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> methods, the user must have <xref:System.Security.AccessControl.MutexRights?displayProperty=fullName> access.  
+ To wait on a <xref:System.Threading.Mutex> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.MutexRights.Synchronize?displayProperty=nameWithType> access. To release the mutex, by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A> methods, the user must have <xref:System.Security.AccessControl.MutexRights.Modify?displayProperty=nameWithType> access.  
   
- This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=fullName> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.MutexAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.MutexRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
+ This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.MutexAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.MutexRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
   
    
   
@@ -149,7 +150,7 @@
  The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
@@ -209,7 +210,7 @@
  The following code example demonstrates the use of the <xref:System.Security.AccessControl.MutexAccessRule.MutexRights%2A> property to display the rights in the set of rules contained in a <xref:System.Security.AccessControl.MutexSecurity> object. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
->  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
  [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
@@ -218,5 +219,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

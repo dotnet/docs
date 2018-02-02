@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModuleBreakpoint::GetModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModuleBreakpoint::GetModule method [.NET Framework debugging]"
   - "GetModule method, ICorDebugModuleBreakpoint interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModuleBreakpoint::GetModule Method
 Gets an interface pointer to an "ICorDebugModule" that references the module in which this breakpoint is set.  

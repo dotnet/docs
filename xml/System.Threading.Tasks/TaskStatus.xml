@@ -29,18 +29,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property returns a member of the <xref:System.Threading.Tasks.TaskStatus> enumeration to indicate the task's current status.  
+ The <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property returns a member of the <xref:System.Threading.Tasks.TaskStatus> enumeration to indicate the task's current status.  
   
    
   
 ## Examples  
- The following example creates 20 tasks that will loop until a counter is incremented to a value of 2 million. When the first 10 tasks reach 2 million, the cancellation token is cancelled, and any tasks whose counters have not reached 2 million are cancelled. The example then examines the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property of each task to indicate whether the task has completed successfully or been cancelled. For those that have completed, it displays the value returned by the task.  
+ The following example creates 20 tasks that will loop until a counter is incremented to a value of 2 million. When the first 10 tasks reach 2 million, the cancellation token is cancelled, and any tasks whose counters have not reached 2 million are cancelled. The example then examines the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of each task to indicate whether the task has completed successfully or been cancelled. For those that have completed, it displays the value returned by the task.  
   
  [!code-csharp[System.Threading.Tasks.Task.Run#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.run/cs/Run7.cs#7)]
  [!code-vb[System.Threading.Tasks.Task.Run#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.run/vb/Run7.vb#7)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Threading.Tasks.Task.Status" />
   </Docs>
   <Members>
     <Member MemberName="Canceled">

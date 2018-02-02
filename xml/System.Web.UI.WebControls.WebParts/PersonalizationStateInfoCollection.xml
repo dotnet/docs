@@ -133,10 +133,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method if you want to create a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> array. This method simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> method and passes the `array` and `index` parameters.  
+ Use this method if you want to create a <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> array. This method simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=nameWithType> method and passes the `array` and `index` parameters.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -424,11 +426,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method, like the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.CopyTo%2A> method, simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> method and passes the `array` and `index` parameters.  
+ This method, like the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection> class's own <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection.CopyTo%2A> method, simply calls the <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=nameWithType> method and passes the `array` and `index` parameters.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <altmember cref="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an element from the collection based on the specified parameters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

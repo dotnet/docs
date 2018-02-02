@@ -46,16 +46,17 @@
   
 ## WPF Scenarios for AmbientAttribute  
   
--   A property of a <xref:System.Windows.Style> (<xref:System.Windows.Style.TargetType%2A>) can qualify the necessary property name lookups that are needed to find the backing references for property names in <xref:System.Windows.Setter.Property%2A?displayProperty=fullName> values.  
+-   A property of a <xref:System.Windows.Style> (<xref:System.Windows.Style.TargetType%2A>) can qualify the necessary property name lookups that are needed to find the backing references for property names in <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> values.  
   
 -   All content within a `Resources` property (items of a <xref:System.Windows.ResourceDictionary>) as well as template content, should be able to access other peers as values. Declaring the entire `Resources` property as ambient invokes logic that enables this in the WPF XAML parser.  
   
  See <xref:System.Windows.ResourceDictionary> for an example of a scenario for setting <xref:System.Windows.Markup.AmbientAttribute> at type level.  
   
-<a name="xamlTextUsage_AmbientAttribute"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Xaml.XamlMember.IsAmbient" />
+    <altmember cref="T:System.Xaml.XamlMember" />
+    <altmember cref="T:System.Xaml.IAmbientProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

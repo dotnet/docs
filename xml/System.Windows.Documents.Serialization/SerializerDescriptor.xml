@@ -47,6 +47,8 @@
         <summary>Gets the name of the assembly that contains the serializer.</summary>
         <value>The name of the assembly (usually a DLL) that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyPath" />
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion" />
       </Docs>
     </Member>
     <Member MemberName="AssemblyPath">
@@ -65,6 +67,8 @@
         <summary>Gets the path to the assembly file that contains the serializer.</summary>
         <value>The path to the assembly file that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName" />
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyVersion" />
       </Docs>
     </Member>
     <Member MemberName="AssemblyVersion">
@@ -83,6 +87,8 @@
         <summary>Gets the version of the assembly that contains the serializer.</summary>
         <value>The version of the assembly that contains the plug-in serializer.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyName" />
+        <altmember cref="P:System.Windows.Documents.Serialization.SerializerDescriptor.AssemblyPath" />
       </Docs>
     </Member>
     <Member MemberName="CreateFromFactoryInstance">

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRErrorReportingManager interface [.NET Framework hosting]"
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRErrorReportingManager Interface
 Provides methods that allow the host to configure custom stack dumps for error reporting.  
@@ -56,5 +56,5 @@ Provides methods that allow the host to configure custom stack dumps for error r
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)   
+ [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)  
  [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

@@ -1,16 +1,10 @@
 ---
 title: "Visual Basic Language Reference"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic language reference"
   - "run-time libraries, Visual Basic"
@@ -23,21 +17,6 @@ ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Visual Basic Language Reference
 This section provides reference information for various aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
@@ -47,7 +26,7 @@ This section provides reference information for various aspects of the [!INCLUDE
  Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] documentation.  
   
  [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)  
- Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=fullName> namespace, with links to their member functions, methods, properties, constants, and enumerations.  
+ Lists the classes and modules of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace, with links to their member functions, methods, properties, constants, and enumerations.  
   
  [Keywords](../../visual-basic/language-reference/keywords/index.md)  
  Lists all Visual Basic keywords and provides links to more information.  

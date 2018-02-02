@@ -134,7 +134,7 @@
 ## Remarks  
  This method is typically used by secure libraries to ensure that callers have permission to access a resource. For example, a file class in a secure class library calls <xref:System.Security.CodeAccessPermission.Demand%2A> for the necessary <xref:System.Security.Permissions.FileIOPermission> before performing a file operation requested by the caller.  
   
- Although the majority of the classes that implement this interface method satisfy the security criteria by performing a full stack walk, a stack walk is not necessarily performed. An example of an implementation that does not perform a stack walk is <xref:System.Security.Permissions.PrincipalPermission.Demand%2A?displayProperty=fullName>.  
+ Although the majority of the classes that implement this interface method satisfy the security criteria by performing a full stack walk, a stack walk is not necessarily performed. An example of an implementation that does not perform a stack walk is <xref:System.Security.Permissions.PrincipalPermission.Demand%2A?displayProperty=nameWithType>.  
   
  When a stack walk is performed, the permissions of the code that calls this method are not examined; the check begins from the immediate caller of that code and proceeds up the stack. The call stack is typically represented as growing down, so that methods higher in the call stack call methods lower in the call stack. <xref:System.Security.CodeAccessPermission.Demand%2A> succeeds only if no <xref:System.Security.SecurityException> is raised.  
   

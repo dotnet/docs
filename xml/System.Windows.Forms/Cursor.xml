@@ -33,12 +33,12 @@
 ## Remarks  
  A cursor is a small picture whose location on the screen is controlled by a pointing device, such as a mouse, pen, or trackball. When the user moves the pointing device, the operating system moves the cursor accordingly.  
   
- Different cursor shapes are used to inform the user what operation the mouse will have. For example, when editing or selecting text, a <xref:System.Windows.Forms.Cursors.IBeam%2A?displayProperty=fullName> cursor is typically displayed. A wait cursor is commonly used to inform the user that a process is currently running. Examples of processes you might have the user wait for are opening a file, saving a file, or filling a control such as a <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.TreeView> with a large amount of data.  
+ Different cursor shapes are used to inform the user what operation the mouse will have. For example, when editing or selecting text, a <xref:System.Windows.Forms.Cursors.IBeam%2A?displayProperty=nameWithType> cursor is typically displayed. A wait cursor is commonly used to inform the user that a process is currently running. Examples of processes you might have the user wait for are opening a file, saving a file, or filling a control such as a <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.TreeView> with a large amount of data.  
   
- All controls that derive from the <xref:System.Windows.Forms.Control> class have a <xref:System.Windows.Forms.Control.Cursor%2A> property. To change the cursor displayed by the mouse pointer when it is within the bounds of the control, assign a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Control.Cursor%2A> property of the control. Alternatively, you can display cursors at the application level by assigning a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Cursor.Current%2A> property. For example, if the purpose of your application is to edit a text file, you might set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.WaitCursor%2A?displayProperty=fullName> to display a wait cursor over the application while the file loads or saves to prevent any mouse events from being processed. When the process is complete, set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=fullName> for the application to display the appropriate cursor over each control type.  
+ All controls that derive from the <xref:System.Windows.Forms.Control> class have a <xref:System.Windows.Forms.Control.Cursor%2A> property. To change the cursor displayed by the mouse pointer when it is within the bounds of the control, assign a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Control.Cursor%2A> property of the control. Alternatively, you can display cursors at the application level by assigning a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Cursor.Current%2A> property. For example, if the purpose of your application is to edit a text file, you might set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.WaitCursor%2A?displayProperty=nameWithType> to display a wait cursor over the application while the file loads or saves to prevent any mouse events from being processed. When the process is complete, set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=nameWithType> for the application to display the appropriate cursor over each control type.  
   
 > [!NOTE]
->  If you call <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> before resetting the <xref:System.Windows.Forms.Cursor.Current%2A> property back to the <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=fullName> cursor, the application will resume listening for mouse events and will resume displaying the appropriate <xref:System.Windows.Forms.Cursor> for each control in the application.  
+>  If you call <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=nameWithType> before resetting the <xref:System.Windows.Forms.Cursor.Current%2A> property back to the <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=nameWithType> cursor, the application will resume listening for mouse events and will resume displaying the appropriate <xref:System.Windows.Forms.Cursor> for each control in the application.  
   
  Cursor objects can be created from several sources, such as the handle of an existing <xref:System.Windows.Forms.Cursor>, a standard <xref:System.Windows.Forms.Cursor> file, a resource, or a data stream.  
   
@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Cursors" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -287,6 +289,9 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IntPtr" />
+        <altmember cref="M:System.Windows.Forms.Cursor.Dispose" />
+        <altmember cref="T:System.GC" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -313,6 +318,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -389,6 +395,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Cursor.DrawStretched(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="DrawStretched">
@@ -428,6 +435,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Cursor.Draw(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -499,6 +507,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
         <summary>Retrieves the hash code for the current <see cref="T:System.Windows.Forms.Cursor" />.</summary>
         <returns>A hash code for the current <see cref="T:System.Windows.Forms.Cursor" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -534,6 +543,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The handle value is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <altmember cref="M:System.Windows.Forms.Cursor.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -569,6 +579,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="M:System.Windows.Forms.Cursor.Show" />
       </Docs>
     </Member>
     <Member MemberName="HotSpot">
@@ -619,7 +630,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
         <returns>
           <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
@@ -630,6 +641,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Cursor.op_Inequality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -655,7 +667,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
         <returns>
           <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=fullName>  
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> to pass into the method when it is called.  
@@ -666,6 +678,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Cursor.op_Equality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -687,7 +700,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Cursor.Position%2A> property is identical to the <xref:System.Windows.Forms.Control.MousePosition%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.Cursor.Position%2A> property is identical to the <xref:System.Windows.Forms.Control.MousePosition%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -700,6 +713,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -734,6 +748,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Cursor.Hide" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -763,6 +778,7 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -839,5 +855,14 @@ vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Cursor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

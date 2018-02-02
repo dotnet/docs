@@ -30,11 +30,12 @@
 ## Examples  
  The following example shows how to declaratively define a <xref:System.Web.UI.PostBackTrigger> control for an <xref:System.Web.UI.UpdatePanel> control. In the panel, a <xref:System.Web.UI.WebControls.FileUpload> control enables users to upload a file. Users must first check whether the file to upload exists. The <xref:System.Web.UI.WebControls.Button> control that calls the event handler to check the file name causes an asynchronous postback. However, the <xref:System.Web.UI.WebControls.Button> control that uploads the file is registered as a <xref:System.Web.UI.PostBackTrigger>, because files cannot be uploaded asynchronously.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/CS/PostBackTriggerCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/VB/PostBackTriggerVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.PostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/CS/PostBackTriggerCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.PostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/VB/PostBackTriggerVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.AsyncPostBackTrigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

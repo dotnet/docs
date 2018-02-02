@@ -27,7 +27,7 @@
 ## Examples  
  The code example that is used in this topic is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT) and it includes an implementation of a passive STS that is capable of serving an SWT token. The STS is implemented by a class that is derived from <xref:System.IdentityModel.SecurityTokenService>. Many of the methods of the <xref:System.IdentityModel.SecurityTokenService> class that are called from its token issuance pipeline take a <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> object as one if their parameters. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
- The following code example shows an implementation of the <xref:System.IdentityModel.SecurityTokenService.GetScope%2A?displayProperty=fullName> method. The method takes a <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> as one of its parameters and properties of this parameter are used to set properties on the <xref:System.IdentityModel.Scope> object that is returned by the method.  
+ The following code example shows an implementation of the <xref:System.IdentityModel.SecurityTokenService.GetScope%2A?displayProperty=nameWithType> method. The method takes a <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken> as one of its parameters and properties of this parameter are used to set properties on the <xref:System.IdentityModel.Scope> object that is returned by the method.  
   
  [!code-csharp[WIFCustomTokenSTS#4](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/customsecuritytokenservice.cs#4)]  
 [!code-csharp[WIFCustomTokenSTS#5](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokensts/cs/passivests/customsecuritytokenservice.cs#5)]  
@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.SecurityTokenService" />
+    <altmember cref="T:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -550,5 +553,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

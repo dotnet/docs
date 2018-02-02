@@ -88,6 +88,7 @@
   
  If your virtual-directory structure contains moderate to large numbers of virtual resources, you should take care to minimize the system resources consumed when enumerating the virtual directory by calling the <see cref="P:System.Web.Hosting.VirtualDirectory.Children" />, <see cref="P:System.Web.Hosting.VirtualDirectory.Directories" />, or <see cref="P:System.Web.Hosting.VirtualDirectory.Files" /> properties.</para>
     </block>
+    <altmember cref="T:System.Web.Hosting.VirtualFile" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -144,6 +146,7 @@
         <block subset="none" type="overrides">
           <para>If your virtual-directory structure contains moderate to large numbers of virtual resources, you should take care to minimize the system resources consumed by enumerating the virtual directory.</para>
         </block>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
       </Docs>
     </Member>
     <Member MemberName="Directories">
@@ -172,6 +175,7 @@
         <block subset="none" type="overrides">
           <para>If your virtual-directory structure contains moderate to large numbers of virtual resources, you should take care to minimize the system resources consumed by enumerating the virtual directory.</para>
         </block>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -200,6 +204,7 @@
         <block subset="none" type="overrides">
           <para>If your virtual directory structure contains moderate to large numbers of virtual resources, you should take care to minimize the system resources consumed by enumerating the virtual directory.</para>
         </block>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
       </Docs>
     </Member>
     <Member MemberName="IsDirectory">
@@ -218,6 +223,7 @@
         <summary>Gets a value that indicates that this is a virtual resource that should be treated as a directory.</summary>
         <value>Always <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.Hosting.VirtualFile" />
       </Docs>
     </Member>
   </Members>

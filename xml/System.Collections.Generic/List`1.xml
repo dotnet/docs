@@ -58,17 +58,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs#cf7f4095e4de7646). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Collections.Generic.List%601> class is the generic equivalent of the <xref:System.Collections.ArrayList> class. It implements the <xref:System.Collections.Generic.IList%601> generic interface by using an array whose size is dynamically increased as required.  
   
  You can add items to a <xref:System.Collections.Generic.List%601> by using the <xref:System.Collections.Generic.List%601.Add%2A> or <xref:System.Collections.Generic.List%601.AddRange%2A> methods.  
   
  The <xref:System.Collections.Generic.List%601> class uses both an equality comparer and an ordering comparer.  
   
--   Methods such as <xref:System.Collections.Generic.List%601.Contains%2A>, <xref:System.Collections.Generic.List%601.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and <xref:System.Collections.Generic.Dictionary%602.Remove%2A> use an equality comparer for the list elements. The default equality comparer for type `T` is determined as follows. If type `T` implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%28%600%29> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>.  
+-   Methods such as <xref:System.Collections.Generic.List%601.Contains%2A>, <xref:System.Collections.Generic.List%601.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and <xref:System.Collections.Generic.Dictionary%602.Remove%2A> use an equality comparer for the list elements. The default equality comparer for type `T` is determined as follows. If type `T` implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%28%600%29> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.  
   
 -   Methods such as <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> use an ordering comparer for the list elements. The default comparer for type `T` is determined as follows.  If type `T` implements the <xref:System.IComparable%601> generic interface, then the default comparer is the <xref:System.IComparable%601.CompareTo%28%600%29> method of that interface; otherwise, if type `T` implements the nongeneric <xref:System.IComparable> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29> method of that interface. If type `T` implements neither interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.  
   
@@ -87,12 +83,12 @@
   
  If a value type is used for type `T`, the compiler generates an implementation of the <xref:System.Collections.Generic.List%601> class specifically for that value type. That means a list element of a <xref:System.Collections.Generic.List%601> object does not have to be boxed before the element can be used, and after about 500 list elements are created the memory saved not boxing list elements is greater than the memory used to generate the class implementation.  
   
- Make certain the value type used for type `T` implements the <xref:System.IEquatable%601> generic interface. If not, methods such as <xref:System.Collections.Generic.List%601.Contains%2A> must call the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, which boxes the affected list element. If the value type implements the <xref:System.IComparable> interface and you own the source code, also implement the <xref:System.IComparable%601> generic interface to prevent the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods from boxing list elements. If you do not own the source code, pass an <xref:System.Collections.Generic.IComparer%601> object to the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods  
+ Make certain the value type used for type `T` implements the <xref:System.IEquatable%601> generic interface. If not, methods such as <xref:System.Collections.Generic.List%601.Contains%2A> must call the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, which boxes the affected list element. If the value type implements the <xref:System.IComparable> interface and you own the source code, also implement the <xref:System.IComparable%601> generic interface to prevent the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods from boxing list elements. If you do not own the source code, pass an <xref:System.Collections.Generic.IComparer%601> object to the <xref:System.Collections.Generic.List%601.BinarySearch%2A> and <xref:System.Collections.Generic.List%601.Sort%2A> methods  
   
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
 ## F# Considerations  
- The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the<xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
+ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](http://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
   
    
   
@@ -100,8 +96,8 @@
  The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.  
   
  [!code-csharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/cs/program.cs#1)]
- [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
+ [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
  The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class of type string. (For an example of a <xref:System.Collections.Generic.List%601> of complex types, see the <xref:System.Collections.Generic.List%601.Contains%2A> method.)  
   
@@ -117,14 +113,16 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
     </remarks>
     <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
  It is safe to perform multiple read operations on a <see cref="T:System.Collections.Generic.List`1" />, but issues can occur if the collection is modified while it’s being read. To ensure thread safety, lock the collection during a read or write operation. To enable a collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization. For collections with built-in synchronization, see the classes in the <see cref="N:System.Collections.Concurrent" /> namespace. For an inherently thread–safe alternative, see the <see cref="T:System.Collections.Immutable.ImmutableList`1" /> class.</threadsafe>
+    <altmember cref="T:System.Collections.IList" />
+    <altmember cref="T:System.Collections.Immutable.ImmutableList`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -171,8 +169,8 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
@@ -225,6 +223,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -278,6 +278,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than 0.</exception>
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -325,8 +326,8 @@
  The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.  
   
  [!code-csharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/cs/program.cs#1)]
- [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
+ [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
  The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class, including the <xref:System.Collections.Generic.List%601.Add%2A> method. The default constructor is used to create a list of strings with a capacity of 0. The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed, and then the <xref:System.Collections.Generic.List%601.Add%2A> method is used to add several items. The items are listed, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
   
@@ -334,11 +335,15 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Remove(`0)" />
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -393,6 +398,13 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
+        <altmember cref="M:System.Collections.Generic.List`1.Add(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AsReadOnly">
@@ -478,7 +490,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -550,7 +562,7 @@
   
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -627,7 +639,7 @@
   
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws <xref:System.InvalidOperationException>.  
   
  The <xref:System.Collections.Generic.List%601> must already be sorted according to the comparer implementation; otherwise, the result is incorrect.  
   
@@ -666,6 +678,8 @@
           <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type <paramref name="T" />.</exception>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -720,14 +734,15 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Collections.Generic.List`1.Capacity" /> is set to a value that is less than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory available on the system.</exception>
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -773,11 +788,14 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.TrimExcess" />
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -815,7 +833,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality by using the default equality comparer, as defined by the object's implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method for `T` (the type of values in the list).  
+ This method determines equality by using the default equality comparer, as defined by the object's implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method for `T` (the type of values in the list).  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -827,13 +845,15 @@
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  
   
- The following example contains a list of complex objects of type `Cube`. The `Cube` class implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method so that two cubes are considered equal if their dimensions are the same. In this example, the <xref:System.Collections.Generic.List%601.Contains%2A> method returns `true`, because a cube that has the specified dimensions is already in the collection.  
+ The following example contains a list of complex objects of type `Cube`. The `Cube` class implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method so that two cubes are considered equal if their dimensions are the same. In this example, the <xref:System.Collections.Generic.List%601.Contains%2A> method returns `true`, because a cube that has the specified dimensions is already in the collection.  
   
  [!code-csharp[System.Collections.Generic.List.Contains#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.contains/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.Contains#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.contains/vb/program.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertAll&lt;TOutput&gt;">
@@ -881,7 +901,7 @@
    
   
 ## Examples  
- The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List`1.ConvertAll``1*> method. The <xref:System.Collections.Generic.List`1.ConvertAll``1*> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
+ The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List%601.ConvertAll%2A> method. The <xref:System.Collections.Generic.List%601.ConvertAll%2A> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
   
  [!code-cpp[List\`1_ConvertAll#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_ConvertAll/cpp/source.cpp#1)]
  [!code-csharp[List\`1_ConvertAll#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_ConvertAll/cs/source.cs#1)]
@@ -891,6 +911,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="converter" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Converter`2" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -926,7 +947,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -983,7 +1004,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -1046,7 +1067,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=nameWithType> to copy the elements.  
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
@@ -1131,11 +1152,12 @@
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -1180,7 +1202,7 @@
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A>methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
+ The following example demonstrates the <xref:System.Collections.Generic.List%601.Contains%2A> and <xref:System.Collections.Generic.List%601.Exists%2A> methods on a <xref:System.Collections.Generic.List%601> that contains a simple business object that implements <xref:System.IEquatable%601.Equals%2A>.  
   
  [!code-csharp[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.ContainsExists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.containsexists/vb/module1.vb#1)]  
@@ -1204,6 +1226,16 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="M:System.Collections.Generic.List`1.TrueForAll(System.Predicate{`0})" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -1276,6 +1308,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -1340,6 +1381,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex">
@@ -1412,6 +1462,15 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex">
@@ -1488,6 +1547,15 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="match" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex">
@@ -1574,6 +1642,15 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLast">
@@ -1641,6 +1718,15 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindLastIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex">
@@ -1707,6 +1793,15 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex">
@@ -1757,6 +1852,15 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="match" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex">
@@ -1837,6 +1941,15 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.FindIndex" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.BinarySearch" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.IndexOf" />
+        <altmember cref="Overload:System.Collections.Generic.List`1.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="ForEach">
@@ -1893,6 +2006,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <exception cref="T:System.ArgumentNullException">
           <paramref name="action" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">An element in the collection has been modified.</exception>
+        <altmember cref="T:System.Action`1" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1940,12 +2054,14 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1.Enumerator" />
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="GetRange">
@@ -2011,6 +2127,9 @@ Public Function StartsWith(e As Employee) As Boolean
  <paramref name="count" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="count" /> do not denote a valid range of elements in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -2049,7 +2168,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at the first element and ending at the last element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2064,6 +2183,8 @@ Public Function StartsWith(e As Employee) As Boolean
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -2104,7 +2225,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at `index` and ending at the last element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from `index` to the end of the <xref:System.Collections.Generic.List%601>.  
   
@@ -2121,6 +2242,8 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -2163,7 +2286,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched forward starting at `index` and ending at `index` plus `count` minus 1, if `count` is greater than 0.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
@@ -2188,6 +2311,8 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -2239,15 +2364,15 @@ Public Function StartsWith(e As Employee) As Boolean
  The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.  
   
  [!code-csharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/cs/program.cs#1)]
- [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
+ [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
  The following example demonstrates the <xref:System.Collections.Generic.List%601.Insert%2A> method, along with various other properties and methods of the <xref:System.Collections.Generic.List%601> generic class. After the list is created, elements are added. The <xref:System.Collections.Generic.List%601.Insert%2A> method is used to insert an item into the middle of the list. The item inserted is a duplicate, which is later removed using the <xref:System.Collections.Generic.List%601.Remove%2A> method.  
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
@@ -2257,6 +2382,9 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> is greater than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.Add(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="InsertRange">
@@ -2323,6 +2451,10 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> is greater than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2388,6 +2520,7 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2426,7 +2559,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at the last element and ending at the first element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2441,6 +2574,8 @@ Public Function StartsWith(e As Employee) As Boolean
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2481,7 +2616,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at `index` and ending at the first element.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `index`.  
   
@@ -2498,6 +2633,8 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2540,7 +2677,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Collections.Generic.List%601> is searched backward starting at `index` and ending at `index` minus `count` plus 1, if `count` is greater than 0.  
   
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
@@ -2565,6 +2702,8 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.IndexOf(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2602,7 +2741,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If type `T` implements the <xref:System.IEquatable%601> generic interface, the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ If type `T` implements the <xref:System.IEquatable%601> generic interface, the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2612,18 +2751,22 @@ Public Function StartsWith(e As Employee) As Boolean
  The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.  
   
  [!code-csharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/cs/program.cs#1)]
- [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
+ [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
  The following example demonstrates <xref:System.Collections.Generic.List%601.Remove%2A> method. Several properties and methods of the <xref:System.Collections.Generic.List%601> generic class are used to add, insert, and search the list. After these operations, the list contains a duplicate. The <xref:System.Collections.Generic.List%601.Remove%2A> method is used to remove the first instance of the duplicate item, and the contents are displayed. The <xref:System.Collections.Generic.List%601.Remove%2A> method always removes the first instance it encounters.  
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Add(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -2688,6 +2831,11 @@ Public Function StartsWith(e As Employee) As Boolean
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
+        <altmember cref="T:System.Predicate`1" />
+        <altmember cref="M:System.Collections.Generic.List`1.Remove(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2733,8 +2881,8 @@ Public Function StartsWith(e As Employee) As Boolean
  The following example demonstrates how to add, remove, and insert a simple business object in a <xref:System.Collections.Generic.List%601>.  
   
  [!code-csharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/cs/program.cs#1)]
- [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
+ [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
  ]]></format>
         </remarks>
@@ -2744,6 +2892,10 @@ Public Function StartsWith(e As Employee) As Boolean
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.Generic.List`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Remove(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Add(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveRange">
@@ -2804,6 +2956,11 @@ Public Function StartsWith(e As Employee) As Boolean
  <paramref name="count" /> is less than 0.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="count" /> do not denote a valid range of elements in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Remove(`0)" />
+        <altmember cref="M:System.Collections.Generic.List`1.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+        <altmember cref="M:System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
       </Docs>
     </Member>
     <Member MemberName="Reverse">
@@ -2836,7 +2993,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2888,7 +3045,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
+ This method uses <xref:System.Array.Reverse%2A?displayProperty=nameWithType> to reverse the order of the elements.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -2936,7 +3093,7 @@ Public Function StartsWith(e As Employee) As Boolean
  Sorts the elements in the entire list using the specified comparer.  
   
  [List\<T>.Sort(IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29)
- Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=fullName>.  
+ Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=nameWithType>.  
   
  [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Int32,System.Int32,System.Collections.Generic.IComparer%7B%600%7D%29)
  Sorts the elements in a range of elements in list using the specified comparer.  
@@ -2954,7 +3111,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
 |Exception|Condition|  
 |---------------|---------------|  
-|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> cannot find implementation of the <xref:System.IComparable%601?displayProperty=fullName> generic interface or the <xref:System.IComparable?displayProperty=fullName> interface for type T.|  
+|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> cannot find implementation of the <xref:System.IComparable%601?displayProperty=nameWithType> generic interface or the <xref:System.IComparable?displayProperty=nameWithType> interface for type T.|  
 |<xref:System.ArgumentNullException>|`comparison` is `null`.|  
 |<xref:System.ArgumentException>|The implementation of `comparison` or `comparer` caused an error during the sort. For example, `comparison` might not return 0 when comparing an item with itself.<br /><br /> -or-<br /><br /> `index` and `count` do not specify a valid range in the <xref:System.Collections.Generic.List%601>.|  
 |<xref:System.ArgumentOutOfRangeException>|`index` is less than 0 or `count` is less than 0.|  
@@ -2993,9 +3150,9 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ This method uses the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> for type `T` to determine the order of list elements. The <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> property checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses the <xref:System.Array.Sort%2A?displayProperty=fullName> method, which applies the introspective sort as follows:  
+ This method uses the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
@@ -3068,9 +3225,9 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are sorted using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses the <xref:System.Array.Sort%2A?displayProperty=fullName> method, which applies the introspective sort as follows:  
+ This method uses the <xref:System.Array.Sort%2A?displayProperty=nameWithType> method, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
@@ -3141,7 +3298,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  If `comparison` is `null`, an <xref:System.ArgumentNullException> is thrown.  
   
- This method uses <xref:System.Array.Sort%2A?displayProperty=fullName>, which applies the introspective sort as follows:  
+ This method uses <xref:System.Array.Sort%2A?displayProperty=nameWithType>, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
@@ -3176,6 +3333,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <exception cref="T:System.ArgumentNullException">
           <paramref name="comparison" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The implementation of <paramref name="comparison" /> caused an error during the sort. For example, <paramref name="comparison" /> might not return 0 when comparing an item with itself.</exception>
+        <altmember cref="T:System.Comparison`1" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3217,9 +3375,9 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  If `comparer` is provided, the elements of the <xref:System.Collections.Generic.List%601> are sorted using the specified <xref:System.Collections.Generic.IComparer%601> implementation.  
   
- If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> throws an <xref:System.InvalidOperationException>.  
+ If `comparer` is `null`, the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable%601> generic interface and uses that implementation, if available.  If not, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> checks whether type `T` implements the <xref:System.IComparable> interface.  If type `T` does not implement either interface, <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException>.  
   
- This method uses <xref:System.Array.Sort%2A?displayProperty=fullName>, which applies the introspective sort as follows:  
+ This method uses <xref:System.Array.Sort%2A?displayProperty=nameWithType>, which applies the introspective sort as follows:  
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
@@ -3350,12 +3508,13 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -3395,7 +3554,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
   
 > [!NOTE]
->  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=nameWithType> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3452,7 +3611,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  In the rare case where enumeration contends with write accesses, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -3462,6 +3621,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Generic.List`1.System#Collections#ICollection#SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -3494,7 +3654,7 @@ Public Function StartsWith(e As Employee) As Boolean
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -3532,6 +3692,7 @@ finally
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.Generic.List`1.System#Collections#ICollection#IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -3579,12 +3740,13 @@ finally
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace are not synchronized.  
   
  This method is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -3664,7 +3826,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3706,7 +3868,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3923,7 +4085,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list.  
   
  This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -3964,7 +4126,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ The elements are copied using <xref:System.Array.Copy%2A?displayProperty=nameWithType>, which is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
@@ -4034,11 +4196,14 @@ finally
   
  [!code-cpp[List\`1_Class#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_Class/cpp/source.cpp#1)]
  [!code-csharp[List\`1_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#1)]
- [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
  [!code-vb[List\`1_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#1)]  
+ [!code-fsharp[List\`1_Class#1](~/samples/snippets/fsharp/VS_Snippets_CLR/List`1_Class/fs/listclass.fs#1)]
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.List`1.Clear" />
+        <altmember cref="P:System.Collections.Generic.List`1.Capacity" />
+        <altmember cref="P:System.Collections.Generic.List`1.Count" />
       </Docs>
     </Member>
     <Member MemberName="TrueForAll">
@@ -4100,7 +4265,97 @@ finally
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for an element that matches the conditions defined by a specified predicate, and returns the zero-based index of the first occurrence within the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it. This method returns -1 if an item that matches the conditions is not found.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindLastIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for an element that matches the conditions defined by a specified predicate, and returns the zero-based index of the last occurrence within the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BinarySearch">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses a binary search algorithm to locate a specific element in the sorted <see cref="T:System.Collections.Generic.List`1" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.List`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it to an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the last occurrence of a value in the <see cref="T:System.Collections.Generic.List`1" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Reverse">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reverses the order of the elements in the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Collections.Generic.List`1" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

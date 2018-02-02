@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;backupList&gt;
 Represents a configuration element that defines a backup endpoint element.  
@@ -26,7 +28,7 @@ Represents a configuration element that defines a backup endpoint element.
   
 ## Syntax  
   
-```vb  
+```xml  
    <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
 ```  
   
@@ -52,4 +54,4 @@ Represents a configuration element that defines a backup endpoint element.
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|Contains a list of endpoints that you would like the Routing Service to use in case the primary endpoint can't be reached.|  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=fullName> 
+ <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=nameWithType> 

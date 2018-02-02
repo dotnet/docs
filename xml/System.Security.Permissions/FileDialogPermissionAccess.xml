@@ -25,6 +25,8 @@
   <Docs>
     <summary>Specifies the type of access to files allowed through the **File** dialog boxes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Security.Permissions.FileDialogPermission" />
+    <altmember cref="T:System.Security.Permissions.FileDialogPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName="None">

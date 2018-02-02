@@ -14,6 +14,8 @@ caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;security&gt; of &lt;wsHttpBinding&gt;
 Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
@@ -78,12 +80,12 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
  The WSHttpBinding class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
   
 ## See Also  
- <xref:System.ServiceModel.WSHttpSecurity>   
- <xref:System.ServiceModel.WSHttpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>   
- <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.WSHttpSecurity>  
+ <xref:System.ServiceModel.WSHttpBinding.Security%2A>  
+ <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>  
+ <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

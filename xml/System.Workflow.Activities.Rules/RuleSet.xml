@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Workflow.Activities.Rules.RuleSet> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> contains the list of errors encountered.  
+ If the <xref:System.Workflow.Activities.Rules.RuleSet> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=nameWithType> contains the list of errors encountered.  
   
  ]]></format>
         </remarks>
@@ -261,5 +261,14 @@
           <paramref name="validation" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

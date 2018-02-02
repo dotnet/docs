@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following code example demonstrates setting the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property to one of the <xref:System.Windows.Forms.View> enumeration values. To run the example, paste the following code in a form and call the `InitializeListView` method in form's constructor or `Load` method.  
+ The following code example demonstrates setting the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType> property to one of the <xref:System.Windows.Forms.View> enumeration values. To run the example, paste the following code in a form and call the `InitializeListView` method in form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CS/form1.cs#1)]
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.ListView.View" />
   </Docs>
   <Members>
     <Member MemberName="Details">

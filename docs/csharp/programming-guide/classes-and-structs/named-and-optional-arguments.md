@@ -1,19 +1,13 @@
 ---
 title: "Named and Optional Arguments (C# Programming Guide)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 f1_keywords: 
   - "namedParameter_CSharpKeyword"
   - "cs_namedParameter"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "parameters [C#], named"
   - "named arguments [C#]"
@@ -26,21 +20,6 @@ ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Named and Optional Arguments (C# Programming Guide)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] introduces named and optional arguments. *Named arguments* enable you to specify an argument for a particular parameter by associating the argument with the parameter's name rather than with the parameter's position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.  
@@ -50,30 +29,39 @@ translation.priority.ht:
  Named and optional parameters, when used together, enable you to supply arguments for only a few parameters from a list of optional parameters. This capability greatly facilitates calls to COM interfaces such as the Microsoft Office Automation APIs.  
   
 ## Named Arguments  
- Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that calculates body mass index (BMI) can be called in the standard way by sending arguments for weight and height by position, in the order defined by the function.  
+ Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called in the standard way by sending arguments by position, in the order defined by the function.
   
- `CalculateBMI(123, 64);`  
+ `PrintOrderDetails("Gift Shop", 31, "Red Mug");`
   
- If you do not remember the order of the parameters but you do know their names, you can send the arguments in either order, weight first or height first.  
+ If you do not remember the order of the parameters but know their names, you can send the arguments in any order.  
   
- `CalculateBMI(weight: 123, height: 64);`  
+ `PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop");`
   
- `CalculateBMI(height: 64, weight: 123);`  
+ `PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);`
   
- Named arguments also improve the readability of your code by identifying what each argument represents.  
+ Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or whitespace. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
   
- A named argument can follow positional arguments, as shown here.  
+ Named arguments, when used with positional arguments, are valid as long as 
+
+- they're not followed by any positional arguments, or
+
+ `PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");`
+
+- _starting with C# 7.2_, they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
+
+ `PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
   
- `CalculateBMI(123, height: 64);`  
-  
- However, a positional argument cannot follow a named argument. The following statement causes a compiler error.  
-  
- `//CalculateBMI(weight: 123, 64);`  
+ However, out-of-order named arguments are invalid if they're followed by positional arguments.
+
+ ```csharp
+ // This generates CS1738: Named argument specifications must appear after all fixed arguments have been specified.
+ PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
+ ```
   
 ## Example  
- The following code implements the examples from this section.  
+ The following code implements the examples from this section along with some additional ones.  
   
- [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
+ [!code-csharp[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
   
 ## Optional Arguments  
  The definition of a method, constructor, indexer, or delegate can specify that its parameters are required or that they are optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters.  
@@ -84,11 +72,11 @@ translation.priority.ht:
   
 -   an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../../csharp/language-reference/keywords/enum.md) or a [struct](../../../csharp/programming-guide/classes-and-structs/structs.md);  
   
--   an expression of the form [default(ValType)](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md),  where `ValType` is a value type.  
+-   an expression of the form [default(ValType)](../../../csharp/programming-guide/statements-expressions-operators/default-value-expressions.md),  where `ValType` is a value type.  
   
  Optional parameters are defined at the end of the parameter list, after any required parameters. If the caller provides an argument for any one of a succession of optional parameters, it must provide arguments for all preceding optional parameters. Comma-separated gaps in the argument list are not supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.  
   
- [!code-cs[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_2.cs)]  
+ [!code-csharp[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_2.cs)]  
   
  The following call to `ExampleMethod` causes a compiler error, because an argument is provided for the third parameter but not for the second.  
   
@@ -109,23 +97,23 @@ Optional parameters in ExampleMethod
 ## Example  
  In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.  
   
- [!code-cs[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_3.cs)]  
+ [!code-csharp[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_3.cs)]  
   
 ## COM Interfaces  
  Named and optional arguments, along with support for dynamic objects and other enhancements, greatly improve interoperability with COM APIs, such as Office Automation APIs.  
   
- For example, the [AutoFormat](http://go.microsoft.com/fwlink/?LinkId=148201) method in the Microsoft Office Excel [Range](http://go.microsoft.com/fwlink/?LinkId=148196) interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
+ For example, the [AutoFormat](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range.autoformat(v=office.15).aspx) method in the Microsoft Office Excel [Range](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range(v=office.15).aspx) interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
   
  ![IntelliSense Quick Info for the AutoFormat method.](../../../csharp/programming-guide/classes-and-structs/media/autoformat_parameters.png "AutoFormat_Parameters")  
 AutoFormat parameters  
   
  In C# 3.0 and earlier versions, an argument is required for each parameter, as shown in the following example.  
   
- [!code-cs[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_4.cs)]  
+ [!code-csharp[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_4.cs)]  
   
  However, you can greatly simplify the call to `AutoFormat` by using named and optional arguments, introduced in C# 4.0. Named and optional arguments enable you to omit the argument for an optional parameter if you do not want to change the parameter's default value. In the following call, a value is specified for only one of the seven parameters.  
   
- [!code-cs[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_5.cs)]  
+ [!code-csharp[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_5.cs)]  
   
  For more information and examples, see [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md).  
   
@@ -142,7 +130,7 @@ AutoFormat parameters
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)   
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)   
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)   
+ [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
+ [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+ [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
  [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)

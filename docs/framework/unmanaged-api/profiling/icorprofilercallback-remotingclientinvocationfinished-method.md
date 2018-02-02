@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientInvocationFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RemotingClientInvocationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingClientInvocationFinished method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RemotingClientInvocationFinished Method
 Notifies the profiler that a remoting call has run to completion on the client.  

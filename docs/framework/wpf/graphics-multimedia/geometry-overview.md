@@ -9,20 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "PathGeometry class"
-  - "classes, geometry"
-  - "geometry classes"
-  - "graphics, geometry classes"
-  - "CombinedGeometry class"
-  - "EllipseGeometry class"
-  - "RectangleGeometry class"
-  - "LineGeometry class"
+  - "geometry classes [WPF]"
+  - "graphics [WPF], geometry classes"
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Geometry Overview
 This overview describes how to use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Geometry> classes to describe shapes. This topic also contrasts the differences between <xref:System.Windows.Media.Geometry> objects and <xref:System.Windows.Shapes.Shape> elements.  
@@ -67,7 +66,7 @@ This overview describes how to use the [!INCLUDE[TLA#tla_winclient](../../../../
   
 -   A <xref:System.Windows.Media.LineGeometry> is defined by specifying the start point of the line and the end point.  
   
--   A <xref:System.Windows.Media.RectangleGeometry> is defined with a <xref:System.Windows.Rect> structure which specifies its relative position and its height and width. You can create a rounded rectangle by setting the <xref:System.Windows.Media.RectangleGeometry.RadiusX%2A> and <xref:System.Windows.Media.RectangleGeometry.RadiusY%2A>properties.  
+-   A <xref:System.Windows.Media.RectangleGeometry> is defined with a <xref:System.Windows.Rect> structure which specifies its relative position and its height and width. You can create a rounded rectangle by setting the <xref:System.Windows.Media.RectangleGeometry.RadiusX%2A> and <xref:System.Windows.Media.RectangleGeometry.RadiusY%2A> properties.  
   
 -   An <xref:System.Windows.Media.EllipseGeometry> is defined by a center point, an x-radius and a y-radius.  The following examples show how to create simple geometries for rendering and for clipping.  
   
@@ -189,7 +188,7 @@ A PathGeometry with multiple figures
   
 -   The <xref:System.Windows.Media.GeometryGroup> class creates an amalgamation of the <xref:System.Windows.Media.Geometry> objects it contains without combining their area. Any number of <xref:System.Windows.Media.Geometry> objects can be added to a <xref:System.Windows.Media.GeometryGroup>. For an example, see [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md).  
   
- Because they do not perform a combine operation, using <xref:System.Windows.Media.GeometryGroup> objects provides performance benefits over using <xref:System.Windows.Media.CombinedGeometry> objects or the <xref:System.Windows.Media.Geometry.Combine%2A>method.  
+ Because they do not perform a combine operation, using <xref:System.Windows.Media.GeometryGroup> objects provides performance benefits over using <xref:System.Windows.Media.CombinedGeometry> objects or the <xref:System.Windows.Media.Geometry.Combine%2A> method.  
   
 <a name="combindgeometriessection"></a>   
 ## Combined Geometries  
@@ -226,13 +225,13 @@ A PathGeometry with multiple figures
  See the <xref:System.Windows.Media.Geometry> class for a complete listing of its methods.  
   
 ## See Also  
- <xref:System.Windows.Media.Geometry>   
- <xref:System.Windows.Media.PathGeometry>   
- <xref:System.Windows.Shapes.Path>   
- <xref:System.Windows.Media.GeometryDrawing>   
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
- [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)   
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)   
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)   
+ <xref:System.Windows.Media.Geometry>  
+ <xref:System.Windows.Media.PathGeometry>  
+ <xref:System.Windows.Shapes.Path>  
+ <xref:System.Windows.Media.GeometryDrawing>  
+ [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
+ [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)  
+ [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
+ [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
+ [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

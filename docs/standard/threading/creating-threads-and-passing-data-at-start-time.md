@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "threading [.NET Framework], creating"
   - "threading [.NET Framework], passing data to threads"
@@ -17,6 +21,9 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Creating Threads and Passing Data at Start Time
 When an operating-system process is created, the operating system injects a thread to execute code in that process, including any original application domain. From that point on, application domains can be created and destroyed without any operating system threads necessarily being created or destroyed. If the code being executed is managed code, then a <xref:System.Threading.Thread> object for the thread executing in the current application domain can be obtained by retrieving the static <xref:System.Threading.Thread.CurrentThread%2A> property of type <xref:System.Threading.Thread>. This topic describes thread creation and discusses alternatives for passing data to the thread procedure.  
@@ -36,9 +43,9 @@ When an operating-system process is created, the operating system injects a thre
  [!code-vb[System.Threading.ThreadStart2#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadStart2/VB/source2.vb#2)]  
   
 ## Passing Data to Threads and Retrieving Data from Threads  
- In the .NET Framework version 2.0, the <xref:System.Threading.ParameterizedThreadStart> delegate provides an easy way to pass an object containing data to a thread when you call the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method overload. See <xref:System.Threading.ParameterizedThreadStart> for a code example.  
+ In the .NET Framework version 2.0, the <xref:System.Threading.ParameterizedThreadStart> delegate provides an easy way to pass an object containing data to a thread when you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method overload. See <xref:System.Threading.ParameterizedThreadStart> for a code example.  
   
- Using the <xref:System.Threading.ParameterizedThreadStart> delegate is not a type-safe way to pass data, because the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method overload accepts any object. An alternative is to encapsulate the thread procedure and the data in a helper class and use the <xref:System.Threading.ThreadStart> delegate to execute the thread procedure. This technique is shown in the two code examples that follow.  
+ Using the <xref:System.Threading.ParameterizedThreadStart> delegate is not a type-safe way to pass data, because the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method overload accepts any object. An alternative is to encapsulate the thread procedure and the data in a helper class and use the <xref:System.Threading.ThreadStart> delegate to execute the thread procedure. This technique is shown in the two code examples that follow.  
   
  Neither of these delegates has a return value, because there is no place to return the data from an asynchronous call. To retrieve the results of a thread method, you can use a callback method, as demonstrated in the second code example.  
   
@@ -54,9 +61,9 @@ When an operating-system process is created, the operating system injects a thre
  [!code-vb[System.Threading.ThreadStart2#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadStart2/VB/source4.vb#4)]  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- <xref:System.Threading.ThreadStart>   
- <xref:System.Threading.ParameterizedThreadStart>   
- <xref:System.Threading.Thread.Start%2A?displayProperty=fullName>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.Thread>  
+ <xref:System.Threading.ThreadStart>  
+ <xref:System.Threading.ParameterizedThreadStart>  
+ <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)

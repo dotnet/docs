@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Embedded script blocks and the XSLT `document()` function are optional features on the <xref:System.Xml.Xsl.XslCompiledTransform> class. These features are disabled by default. The <xref:System.Xml.Xsl.XsltSettings> class specifies which of these optional features to support. Features are enabled or disabled using the class properties. The <xref:System.Xml.Xsl.XsltSettings> object is then passed to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=fullName> method.  
+ Embedded script blocks and the XSLT `document()` function are optional features on the <xref:System.Xml.Xsl.XslCompiledTransform> class. These features are disabled by default. The <xref:System.Xml.Xsl.XsltSettings> class specifies which of these optional features to support. Features are enabled or disabled using the class properties. The <xref:System.Xml.Xsl.XsltSettings> object is then passed to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType> method.  
   
 > [!IMPORTANT]
 >  XSLT style sheets can include references to other files and embedded script blocks. A malicious user can exploit this by supplying you with data or style sheets that when executed can cause your system to process until the computer runs low on resources. Do not enable scripting or the `document()` function unless the style sheet comes from a trusted source. If you cannot verify the source of the style sheet, or if the style sheet does not come from a trusted source, use the default XSLT settings.  
@@ -279,5 +279,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

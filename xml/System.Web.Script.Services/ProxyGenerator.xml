@@ -56,6 +56,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> or <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The specified type is not supported for proxy generation.</exception>
+        <altmember cref="T:System.ServiceModel.ServiceContractAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetClientProxyScript">
@@ -94,7 +95,17 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> or <paramref name="path" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The specified type is not supported for proxy generation.</exception>
+        <altmember cref="T:System.ServiceModel.ServiceContractAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetClientProxyScript">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the proxy generation code for the specified type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

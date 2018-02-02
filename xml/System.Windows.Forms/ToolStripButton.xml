@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Windows.Forms.ToolStripButton> to create a toolbar button that supports both text and images. Use the <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=fullName> properties to get or set the positioning of <xref:System.Windows.Forms.ToolStripButton> images and text.  
+ Use <xref:System.Windows.Forms.ToolStripButton> to create a toolbar button that supports both text and images. Use the <xref:System.Windows.Forms.ToolStripItem.ImageAlign%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ToolStripItem.TextAlign%2A?displayProperty=nameWithType> properties to get or set the positioning of <xref:System.Windows.Forms.ToolStripButton> images and text.  
   
  You can display a <xref:System.Windows.Forms.ToolStripButton> with various border styles, and you can use it to represent and activate operational states. You can also define it to have the focus by default.  
   
@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStrip" />
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -406,7 +408,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripButton.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripButton.CheckStateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripButton> named `ToolStripButton1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripButton.CheckStateChanged> event.  
   
@@ -449,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAutoToolTip">
@@ -624,5 +627,14 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

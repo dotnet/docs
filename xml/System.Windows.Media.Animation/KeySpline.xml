@@ -147,7 +147,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -177,10 +177,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="ControlPoint1">
@@ -250,6 +251,7 @@
         <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -278,7 +280,7 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -308,7 +310,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -359,6 +361,7 @@
       <Docs>
         <summary>Called when the current <see cref="T:System.Windows.Media.Animation.KeySpline" /> object is modified.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.OnChanged" />
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -434,5 +437,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.KeySpline" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

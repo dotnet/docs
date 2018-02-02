@@ -36,32 +36,11 @@ namespace LinqFaroShuffle
     public class Program
     {
         #region snippet4
-        static IEnumerable<Suit> Suits()
-        {
-            yield return Suit.Clubs;
-            yield return Suit.Diamonds;
-            yield return Suit.Hearts;
-            yield return Suit.Spades;
-        }
+        static IEnumerable<Suit> Suits() => Enum.GetValues(typeof(Suit)) as IEnumerable<Suit>;
         #endregion
 
         #region snippet5
-        static IEnumerable<Rank> Ranks()
-        {
-            yield return Rank.Two;
-            yield return Rank.Three;
-            yield return Rank.Four;
-            yield return Rank.Five;
-            yield return Rank.Six;
-            yield return Rank.Seven;
-            yield return Rank.Eight;
-            yield return Rank.Nine;
-            yield return Rank.Ten;
-            yield return Rank.Jack;
-            yield return Rank.Queen;
-            yield return Rank.King;
-            yield return Rank.Ace;
-        }
+        static IEnumerable<Rank> Ranks() => Enum.GetValues(typeof(Rank)) as IEnumerable<Rank>;
         #endregion
 
         #region snippet1

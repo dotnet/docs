@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes use this method to write trace data.  
   
  <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -105,7 +105,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes use this method to write trace data.  
   
  <xref:System.Web.IisTraceListener.TraceData%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes use this method to write trace data.  
   
  <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -204,7 +204,7 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -241,7 +241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=fullName>, <xref:System.Diagnostics.Trace?displayProperty=fullName>, and <xref:System.Diagnostics.TraceSource?displayProperty=fullName> classes use this method to write trace data.  
+ This method is not intended to be called directly by application code. The members of the <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes use this method to write trace data.  
   
  <xref:System.Web.IisTraceListener.TraceEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -384,5 +384,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message and a category name to the <see cref="T:System.Web.IisTraceListener" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

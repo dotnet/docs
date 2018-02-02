@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetCount method [.NET Framework debugging]"
   - "GetCount method, ICorDebugArrayValue interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugArrayValue::GetCount Method
 Gets the total number of elements in the array.  

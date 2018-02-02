@@ -62,12 +62,13 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
+ [!code-aspx-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.Command" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -137,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Web.UI.MobileControls.Command> control is activated, it raises the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. For more information, see the "Device-Specific Rendering" and "Device-Specific Behavior" sections in <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+ When a <xref:System.Web.UI.MobileControls.Command> control is activated, it raises the <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. For more information, see the "Device-Specific Rendering" and "Device-Specific Behavior" sections in <xref:System.Web.UI.MobileControls.Command?displayProperty=nameWithType>.  
   
    
   
@@ -147,8 +149,8 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileCommandExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileCommandExample/CS/default.aspx#1)]
+ [!code-aspx-vb[MobileCommandExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileCommandExample/VB/default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -186,8 +188,8 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-aspx-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -248,14 +250,14 @@
 ## Remarks  
  Access the two available types through the <xref:System.Web.UI.MobileControls.CommandFormat> enumeration.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> (default)  
+ <xref:System.Web.UI.MobileControls.CommandFormat.Button?displayProperty=nameWithType> (default)  
  The command is rendered as a button.  
   
- <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName>  
+ <xref:System.Web.UI.MobileControls.CommandFormat.Link?displayProperty=nameWithType>  
  The command is rendered as a link.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat?displayProperty=fullName> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=fullName> property.  
+>  The <xref:System.Web.UI.MobileControls.Command.Format%2A> property supports the <xref:System.Web.UI.MobileControls.CommandFormat.Link?displayProperty=nameWithType> value only on devices that support JavaScript as indicated by the <xref:System.Web.Configuration.HttpCapabilitiesBase.JavaScript%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -265,8 +267,8 @@
 > [!NOTE]
 >  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-aspx-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -358,7 +360,7 @@
 ## Remarks  
  When an <xref:System.Web.UI.MobileControls.Command.ItemCommand> event handler is defined, the <xref:System.Web.UI.MobileControls.Command> control notifies the handler when an item event is generated through user interaction.  
   
- Unlike the <xref:System.Web.UI.MobileControls.Command.Click> event, the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event is bubbled up to the parent controls. The <xref:System.Web.UI.MobileControls.Command.ItemCommand> event rendering is device-specific and is discussed in detail in the "Device-Specific Behavior" section of <xref:System.Web.UI.MobileControls.Command?displayProperty=fullName>.  
+ Unlike the <xref:System.Web.UI.MobileControls.Command.Click> event, the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event is bubbled up to the parent controls. The <xref:System.Web.UI.MobileControls.Command.ItemCommand> event rendering is device-specific and is discussed in detail in the "Device-Specific Behavior" section of <xref:System.Web.UI.MobileControls.Command?displayProperty=nameWithType>.  
   
  The <xref:System.Web.UI.MobileControls.Command.OnItemCommand%2A> event is raised after an <xref:System.Web.UI.MobileControls.Command.OnClick%2A> event. In a scenario where you repeat the same set of actions each time a command button is clicked, you can use either the <xref:System.Web.UI.MobileControls.Command.CommandName%2A> or <xref:System.Web.UI.MobileControls.Command.CommandArgument%2A> property of the <xref:System.Web.UI.MobileControls.Command> control to identify which command button the user clicked.  
   
@@ -367,8 +369,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.Command.ItemCommand> event for multiple commands on a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileItemCommandSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileItemCommandSample/cs/default.aspx#1)]
+ [!code-aspx-vb[MobileItemCommandSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileItemCommandSample/vb/default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -400,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method.  
+ This method is called by the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method.  
   
 > [!NOTE]
 >  Different devices might provide their data back to the calling server in different ways.  
@@ -465,6 +467,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Command.OnItemCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Command.OnClick(System.EventArgs)" />
+        <altmember cref="P:System.Web.UI.MobileControls.Command.CommandName" />
+        <altmember cref="P:System.Web.UI.MobileControls.Command.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -574,15 +580,10 @@
   
  The value of the <xref:System.Web.UI.MobileControls.Command.SoftkeyLabel%2A> property is truncated to 12 characters (the standard maximum length of a softkey).  
   
-   
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.Command.SoftkeyLabel%2A> property.  
-  
-<!-- TODO: review snippet reference  [!CODE [MobileCommandSample#3](MobileCommandSample#3)]  -->  
-  
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.Command.SoftkeyLabel" />
+        <altmember cref="T:System.Web.UI.MobileControls.TextControl" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -611,7 +612,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler?displayProperty=fullName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.MobileControls.Command> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>

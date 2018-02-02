@@ -41,6 +41,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
+    <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+    <altmember cref="P:System.Windows.Forms.Form.Menu" />
+    <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +78,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+        <altmember cref="P:System.Windows.Forms.Form.Menu" />
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
     <Member MemberName="CloneMenu">
@@ -184,7 +195,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MainMenu.Collapse> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MainMenu.Collapse> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MainMenu> named `MainMenu1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MainMenu.Collapse> event.  
   
@@ -212,6 +223,7 @@
         <summary>Creates a new handle to the Menu.</summary>
         <returns>A handle to the menu if the method succeeds; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.CreateMenuHandle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -279,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Form" />
       </Docs>
     </Member>
     <Member MemberName="OnCollapse">
@@ -358,6 +371,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a valid member of the <see cref="T:System.Windows.Forms.RightToLeft" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.RightToLeft" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -386,5 +400,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MainMenu" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

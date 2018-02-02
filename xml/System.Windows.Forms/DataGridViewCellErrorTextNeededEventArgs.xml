@@ -18,15 +18,15 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event occurs only when the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`. Handling the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event is useful when you want to determine the error for a cell depending on its value or state.  
   
- When you handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event and specify error text in the handler, an error glyph appears in the cell unless the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=fullName> property is set to `false` or the cell is in edit mode. When the user moves the mouse pointer over the error glyph, the error text appears in a ToolTip.  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event and specify error text in the handler, an error glyph appears in the cell unless the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=nameWithType> property is set to `false` or the cell is in edit mode. When the user moves the mouse pointer over the error glyph, the error text appears in a ToolTip.  
   
- The <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property is retrieved.  
+ The <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=nameWithType> property is retrieved.  
   
- You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> property to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A?displayProperty=fullName> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> property, which the event value overrides.  
+ You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> property to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A?displayProperty=nameWithType> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> property, which the event value overrides.  
   
  Handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -39,6 +39,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellErrors" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnCellErrorTextNeeded(System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs)" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorText" />
   </Docs>
   <Members>
     <Member MemberName="ErrorText">
@@ -60,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property initially contains the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property if it has been set for a row.  
+ This property initially contains the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=nameWithType> property if it has been set for a row.  
   
  The <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A> property value displays as a ToolTip for the error glyph in the cell.  
   
@@ -75,6 +83,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ShowCellErrors" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorText" />
       </Docs>
     </Member>
   </Members>

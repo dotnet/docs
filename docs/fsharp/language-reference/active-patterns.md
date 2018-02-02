@@ -119,6 +119,17 @@ The output of the previous code is as follows:
 12/22/2008 12:00:00 AM 1/1/2009 12:00:00 AM 1/15/2008 12:00:00 AM 12/28/1995 12:00:00 AM
 ```
 
+Active patterns are not restricted only to pattern matching expressions, you can also use them on let-bindings.
+
+[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5007.fs)]
+
+The output of the previous code is as follows:
+
+```
+Hello, random citizen!
+Hello, George!
+```
+
 ## See Also
 [F# Language Reference](index.md)
 

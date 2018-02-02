@@ -28,12 +28,16 @@
   
  Message boxes sometimes provide special functionality, such as right-to-left reading. You can customize the behavior of a message box by using one or more <xref:System.Windows.MessageBoxOptions> enumeration values that are accepted by some overloads of the <xref:System.Windows.MessageBox.Show%2A> method.  
   
- Message boxes always have an owner window. By default, the owner of a message box is the window that is currently active in an application at the time that a message box is opened. However, you can specify another owner for the <xref:System.Windows.Window> by using one of several <xref:System.Windows.MessageBox.Show%2A> overloads. For more information about owner windows, see <xref:System.Windows.Window.Owner%2A?displayProperty=fullName>.  
+ Message boxes always have an owner window. By default, the owner of a message box is the window that is currently active in an application at the time that a message box is opened. However, you can specify another owner for the <xref:System.Windows.Window> by using one of several <xref:System.Windows.MessageBox.Show%2A> overloads. For more information about owner windows, see <xref:System.Windows.Window.Owner%2A?displayProperty=nameWithType>.  
   
  For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.MessageBoxButton" />
+    <altmember cref="T:System.Windows.MessageBoxImage" />
+    <altmember cref="T:System.Windows.MessageBoxResult" />
+    <altmember cref="T:System.Windows.MessageBoxOptions" />
   </Docs>
   <Members>
     <MemberGroup MemberName="Show">
@@ -163,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -242,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -325,6 +333,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -412,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -503,6 +515,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -549,6 +563,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Window.Activated" />
+        <altmember cref="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
       </Docs>
     </Member>
   </Members>

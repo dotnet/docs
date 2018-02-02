@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xaml.XamlSchemaException> is thrown by several cases in the CLR binding support classes that provide the schema context for .NET Framework XAML Services (<xref:System.Xaml.XamlXmlReader>, <xref:System.Xaml.XamlObjectWriter>, or <xref:System.Xaml.XamlServices>). A <xref:System.Xaml.XamlSchemaException> is typically passed as the inner exception for other exceptions, such as the <xref:System.Xaml.XamlMember.IsUnknown%2A?displayProperty=fullName>-true property for a <xref:System.Xaml.XamlObjectWriterException>, so it should be uncommon to catch a <xref:System.Xaml.XamlSchemaException> directly unless you are implementing a component such as a specialized object writer.  
+ The <xref:System.Xaml.XamlSchemaException> is thrown by several cases in the CLR binding support classes that provide the schema context for .NET Framework XAML Services (<xref:System.Xaml.XamlXmlReader>, <xref:System.Xaml.XamlObjectWriter>, or <xref:System.Xaml.XamlServices>). A <xref:System.Xaml.XamlSchemaException> is typically passed as the inner exception for other exceptions, such as the <xref:System.Xaml.XamlMember.IsUnknown%2A?displayProperty=nameWithType>-true property for a <xref:System.Xaml.XamlObjectWriterException>, so it should be uncommon to catch a <xref:System.Xaml.XamlSchemaException> directly unless you are implementing a component such as a specialized object writer.  
   
  ]]></format>
     </remarks>
@@ -102,5 +102,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

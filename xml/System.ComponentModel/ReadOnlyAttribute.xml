@@ -34,7 +34,7 @@
  Members that are marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true` or that do not have a `Set` method cannot be changed. Members that do not have this attribute or that are marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false` are read/write, and they can be changed. The default is <xref:System.ComponentModel.ReadOnlyAttribute.No>.  
   
 > [!IMPORTANT]
->  The <xref:System.ComponentModel.PropertyDescriptor> class enforces the <xref:System.ComponentModel.ReadOnlyAttribute> in the design environment and at run time. When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value is <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=fullName>.  
+>  The <xref:System.ComponentModel.PropertyDescriptor> class enforces the <xref:System.ComponentModel.ReadOnlyAttribute> in the design environment and at run time. When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value is <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=nameWithType> or <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=nameWithType>.  
   
  For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
@@ -63,6 +63,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,12 +102,12 @@
  Members that are marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true` or that do not have a `Set` method cannot be changed. Members that do not have this attribute or that are marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false` are read/write, and they can be changed. The default is <xref:System.ComponentModel.ReadOnlyAttribute.No>.  
   
 > [!NOTE]
->  When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value is <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=fullName>.  
+>  When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value is <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=nameWithType> or <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example marks a property as read-only. This code creates a new <xref:System.ComponentModel.ReadOnlyAttribute>, sets its value to <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=fullName>, and binds it to the property.  
+ The following code example marks a property as read-only. This code creates a new <xref:System.ComponentModel.ReadOnlyAttribute>, sets its value to <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=nameWithType>, and binds it to the property.  
   
  [!code-cpp[Classic ReadOnlyAttribute.ReadOnlyAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ReadOnlyAttribute.ReadOnlyAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ReadOnlyAttribute.ReadOnlyAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ReadOnlyAttribute.ReadOnlyAttribute Example/CS/source.cs#1)]
@@ -111,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -141,10 +146,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=fullName>.  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -284,6 +292,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -316,10 +329,12 @@
 ## Remarks  
  This field is the default setting for this attribute.  
   
- When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -350,10 +365,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.ReadOnlyAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.ReadOnlyAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.ReadOnlyAttribute.Yes?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ReadOnlyAttribute" />
+        <altmember cref="F:System.ComponentModel.ReadOnlyAttribute.No" />
       </Docs>
     </Member>
   </Members>

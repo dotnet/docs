@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_VERSION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_VERSION structure [.NET Framework debugging]"
 ms.assetid: 5efaee1c-a001-4c73-9525-4160f4c71567
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_VERSION Structure
 Stores the standard four-part version number of the common language runtime.  
@@ -65,5 +65,5 @@ typedef struct _COR_VERSION {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

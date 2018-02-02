@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::RudeAbort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval2::RudeAbort method [.NET Framework debugging]"
   - "RudeAbort method, ICorDebugEval2 interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::RudeAbort Method
 Aborts the computation that this `ICorDebugEval2` is currently performing.  

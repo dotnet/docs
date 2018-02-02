@@ -246,7 +246,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMethodCallQuery&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="protected System.Linq.IQueryable&lt;TResult&gt; CreateMethodCallQuery&lt;TResult&gt; (object instance, System.Reflection.MethodInfo methodInfo, object[] parameters);" />
+      <MemberSignature Language="C#" Value="protected System.Linq.IQueryable&lt;TResult&gt; CreateMethodCallQuery&lt;TResult&gt; (object instance, System.Reflection.MethodInfo methodInfo, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Linq.IQueryable`1&lt;!!TResult&gt; CreateMethodCallQuery&lt;TResult&gt;(object instance, class System.Reflection.MethodInfo methodInfo, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.CreateMethodCallQuery``1(System.Object,System.Reflection.MethodInfo,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -396,6 +396,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Data.Linq.DataContext.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -439,7 +440,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteCommand">
-      <MemberSignature Language="C#" Value="public int ExecuteCommand (string command, object[] parameters);" />
+      <MemberSignature Language="C#" Value="public int ExecuteCommand (string command, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteCommand(string command, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.ExecuteCommand(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -596,7 +597,7 @@ db.ExecuteCommand("UPDATE Products SET QuantityPerUnit = {0} WHERE ProductID = {
       </Docs>
     </Member>
     <Member MemberName="ExecuteMethodCall">
-      <MemberSignature Language="C#" Value="protected System.Data.Linq.IExecuteResult ExecuteMethodCall (object instance, System.Reflection.MethodInfo methodInfo, object[] parameters);" />
+      <MemberSignature Language="C#" Value="protected System.Data.Linq.IExecuteResult ExecuteMethodCall (object instance, System.Reflection.MethodInfo methodInfo, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Data.Linq.IExecuteResult ExecuteMethodCall(object instance, class System.Reflection.MethodInfo methodInfo, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.ExecuteMethodCall(System.Object,System.Reflection.MethodInfo,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -635,7 +636,7 @@ db.ExecuteCommand("UPDATE Products SET QuantityPerUnit = {0} WHERE ProductID = {
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery">
-      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ExecuteQuery (Type elementType, string query, object[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ExecuteQuery (Type elementType, string query, params object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable ExecuteQuery(class System.Type elementType, string query, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.ExecuteQuery(System.Type,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -691,7 +692,7 @@ db.ExecuteCommand("UPDATE Products SET QuantityPerUnit = {0} WHERE ProductID = {
       </Docs>
     </Member>
     <Member MemberName="ExecuteQuery&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TResult&gt; (string query, object[] parameters) where TResult : new();" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TResult&gt; ExecuteQuery&lt;TResult&gt; (string query, params object[] parameters) where TResult : new();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; ExecuteQuery&lt;.ctor TResult&gt;(string query, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.ExecuteQuery``1(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1163,7 +1164,7 @@ Next
       </Docs>
     </Member>
     <Member MemberName="Refresh">
-      <MemberSignature Language="C#" Value="public void Refresh (System.Data.Linq.RefreshMode mode, object[] entities);" />
+      <MemberSignature Language="C#" Value="public void Refresh (System.Data.Linq.RefreshMode mode, params object[] entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Data.Linq.RefreshMode mode, object[] entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.Refresh(System.Data.Linq.RefreshMode,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1431,5 +1432,23 @@ public IEnumerable<T> Translate<T>(IDataReader reader) {}
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DataContext" /> class. The connection string you use can be an ADO.NET connection string. You can also specify a filename to a SQL Server Express or SQL Server Compact file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Data.Linq.DataContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

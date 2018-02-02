@@ -38,6 +38,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
+    <altmember cref="M:System.Windows.Media.Imaging.BitmapMetadata.SetQuery(System.String,System.Object)" />
+    <altmember cref="M:System.Windows.Media.Imaging.BitmapMetadata.GetQuery(System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -209,12 +212,13 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -241,12 +245,13 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -273,10 +278,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="Comment">
@@ -391,6 +397,7 @@
         <summary>An Implementation of <see cref="M:System.Windows.Freezable.CreateInstance" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="DateTaken">
@@ -480,10 +487,11 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -510,10 +518,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="GetQuery">

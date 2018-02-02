@@ -26,6 +26,7 @@
   <Docs>
     <summary>Represents a lightweight object that is useful for tree insert operations.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateDocumentFragment" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ `CloneNode` serves as a copy constructor for nodes. To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=nameWithType>.  
   
  The cloned node has no parent (<xref:System.Xml.XmlDocumentFragment.ParentNode%2A> returns `null`).  
   
@@ -261,6 +262,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For <see langword="XmlDocumentFragment" /> nodes, this value is XmlNodeType.DocumentFragment.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="OwnerDocument">

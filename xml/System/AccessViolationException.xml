@@ -52,12 +52,12 @@
  If several read or write operations have occurred through bad pointers, memory may be corrupted. This typically occurs when reading or writing to addresses outside of a predefined buffer.  
   
 ## AccessViolationException and try/catch blocks  
- Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.AccessViolationException> exceptions thrown by the common language runtime are not handled by the `catch` statement in a structured exception handler if the exception occurs outside of the memory reserved by the common language runtime. To handle such an <xref:System.AccessViolationException> exception, you should apply the  <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement. For code written for previous versions of the .NET Framework that you want to recompile and run without modification on the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can add the [\<legacyCorruptedStateExceptionsPolicy>](~/docs/framework/configure-apps/file-schema/runtime/legacycorruptedstateexceptionspolicy-element.md) element to your app's configuration file. Note that you can also receive notification of the exceptions if you have defined a handler for the <xref:System.AppDomain.FirstChanceException?displayProperty=fullName> or <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.AccessViolationException> exceptions thrown by the common language runtime are not handled by the `catch` statement in a structured exception handler if the exception occurs outside of the memory reserved by the common language runtime. To handle such an <xref:System.AccessViolationException> exception, you should apply the  <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement. For code written for previous versions of the .NET Framework that you want to recompile and run without modification on the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can add the [\<legacyCorruptedStateExceptionsPolicy>](~/docs/framework/configure-apps/file-schema/runtime/legacycorruptedstateexceptionspolicy-element.md) element to your app's configuration file. Note that you can also receive notification of the exceptions if you have defined a handler for the <xref:System.AppDomain.FirstChanceException?displayProperty=nameWithType> or <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event.  
   
 ## Version Information  
  This exception is thrown in the .NET Framework 2.0 and later versions. In earlier versions of the .NET Framework, an access violation in unmanaged code or unsafe managed code is represented by a <xref:System.NullReferenceException> in managed code. A <xref:System.NullReferenceException> is also thrown when a null reference is dereferenced in verifiable managed code, an occurrence that does not involve data corruption, and there is no way to distinguish between the two situations in versions 1.0 or 1.1.  
   
- Administrators can allow selected applications to revert to the behavior of the .NET Framework version 1.1. Place the following line in the [\&lt;runtime\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the configuration file for the application:  
+ Administrators can allow selected applications to revert to the behavior of the .NET Framework version 1.1. Place the following line in the [&lt;runtime&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the configuration file for the application:  
   
 ```  
 <legacyNullReferenceExceptionPolicy enabled = "1"/>  
@@ -223,5 +223,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AccessViolationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

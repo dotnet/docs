@@ -1,41 +1,20 @@
 ---
 title: "Nothing (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Nothing"
   - "vb.Nothing"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Nothing keyword"
-  - "Nothing keyword, syntax"
+  - "Nothing keyword [Visual Basic]"
+  - "Nothing keyword [Visual Basic], syntax"
 ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Nothing (Visual Basic)
 Represents the default value of any data type. For reference types, the default value is the `null` reference. For value types, the default value depends on whether the value type is nullable.  
@@ -73,9 +52,9 @@ Represents the default value of any data type. For reference types, the default 
  `Nothing` differs from the <xref:System.DBNull> object, which represents an uninitialized variant or a nonexistent database column.  
   
 ## See Also  
- [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)   
- [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)   
- [Lifetime in Visual Basic](../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)   
- [Is Operator](../../visual-basic/language-reference/operators/is-operator.md)   
- [IsNot Operator](../../visual-basic/language-reference/operators/isnot-operator.md)   
+ [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Object Lifetime: How Objects Are Created and Destroyed](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)  
+ [Lifetime in Visual Basic](../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
+ [Is Operator](../../visual-basic/language-reference/operators/is-operator.md)  
+ [IsNot Operator](../../visual-basic/language-reference/operators/isnot-operator.md)  
  [Nullable Value Types](../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

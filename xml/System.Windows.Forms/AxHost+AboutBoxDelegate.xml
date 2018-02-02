@@ -26,11 +26,14 @@
    
   
 ## Examples  
- The following example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code assumes you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax as that is the the only language output by the AxImp.exe.  
+ The following example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code assumes you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax as that is the only language output by the AxImp.exe.  
   
  [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.AxHost.SetAboutBoxDelegate(System.Windows.Forms.AxHost.AboutBoxDelegate)" />
+    <altmember cref="M:System.Windows.Forms.AxHost.ShowAboutBox" />
+    <altmember cref="P:System.Windows.Forms.AxHost.HasAboutBox" />
   </Docs>
 </Type>

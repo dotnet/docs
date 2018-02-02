@@ -23,21 +23,21 @@
   
 -   Calling **AddBackEntry**:  
   
-    -   <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Controls.Frame.AddBackEntry%2A?displayProperty=fullName>.  
+    -   <xref:System.Windows.Controls.Frame.AddBackEntry%2A?displayProperty=nameWithType>.  
   
--   Setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A?displayProperty=fullName> when one of the following events are raised:  
+-   Setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A?displayProperty=nameWithType> when one of the following events are raised:  
   
-    -   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=nameWithType>  
   
-    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=nameWithType>  
   
 -   By implementing <xref:System.Windows.Navigation.IProvideCustomContentState> on the class that wants custom state to be associated with it.  
   
@@ -63,6 +63,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Navigation.NavigationService" />
+    <altmember cref="T:System.Windows.Navigation.JournalEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +115,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
+        <altmember cref="T:System.Windows.Navigation.IProvideCustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="Replay">
@@ -145,6 +150,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
+        <altmember cref="T:System.Windows.Navigation.IProvideCustomContentState" />
       </Docs>
     </Member>
   </Members>

@@ -1,7 +1,7 @@
 ---
 title: "Enabling a Data Source for LINQ Querying2"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,18 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Enabling a Data Source for LINQ Querying
 There are various ways to extend [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to enable any data source to be queried in the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] pattern. The data source might be a data structure, a Web service, a file system, or a database, to name some. The [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] pattern makes it easy for clients to query a data source for which [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] querying is enabled, because the syntax and pattern of the query does not change. The ways in which [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] can be extended to these data sources include the following:  
@@ -53,8 +45,8 @@ There are various ways to extend [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md
  A complex `IQueryable` provider, such as the [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] provider, might translate complete [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries to an expressive query language, such as SQL. A complex provider is more general than a less complex provider, because it can handle a wider variety of questions in the query. It also has an open type system and therefore must contain extensive infrastructure to map user-defined types. Developing a complex provider requires a significant amount of effort.  
   
 ## See Also  
- <xref:System.Linq.IQueryable%601>   
- <xref:System.Collections.Generic.IEnumerable%601>   
- <xref:System.Linq.Enumerable>   
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
+ <xref:System.Linq.IQueryable%601>  
+ <xref:System.Collections.Generic.IEnumerable%601>  
+ <xref:System.Linq.Enumerable>  
+ [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)

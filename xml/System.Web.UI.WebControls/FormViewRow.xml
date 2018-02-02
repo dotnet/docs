@@ -52,11 +52,26 @@
 ## Examples  
  The following example demonstrates how to retrieve an <xref:System.Web.UI.WebControls.Image> control from the <xref:System.Web.UI.WebControls.FormViewRow> object that represents the item row. The <xref:System.Web.UI.WebControls.Image> controls are declared in the edit and item templates.  
   
- <!-- TODO: review snippet reference [!code-csharp[FormViewRowClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRowClass/CS/formviewrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[FormViewRowClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRowClass/VB/formviewrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[FormViewRowClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewRowClass/CS/formviewrowcs.aspx#1)]
+ [!code-aspx-vb[FormViewRowClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewRowClass/VB/formviewrowvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.Row" />
+    <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+    <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
+    <altmember cref="T:System.Web.UI.WebControls.TableCell" />
+    <altmember cref="P:System.Web.UI.Control.Controls" />
+    <altmember cref="M:System.Web.UI.Control.FindControl(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.TableRow" />
+    <altmember cref="P:System.Web.UI.WebControls.TableRow.Cells" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewRow.ItemIndex" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowState" />
+    <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +109,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.Row" />
+        <altmember cref="P:System.Web.UI.WebControls.FormView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewRow.ItemIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowType" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowState" />
       </Docs>
     </Member>
     <Member MemberName="ItemIndex">
@@ -119,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -144,6 +171,7 @@
         <returns>
           <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -199,6 +227,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowType" />
       </Docs>
     </Member>
     <Member MemberName="RowType">
@@ -235,6 +266,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.FormView" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="P:System.Web.UI.WebControls.FormViewRow.RowState" />
       </Docs>
     </Member>
   </Members>

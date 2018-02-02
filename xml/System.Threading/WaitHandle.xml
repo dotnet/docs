@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is the public implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method for the <xref:System.Threading.WaitHandle> class and its derived classes. It provides a standard implementation that calls the `Dispose(Boolean)` overload with a `true` argument and then calls the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method. Call this method to release all resources held by an instance of `WaitHandle` or a derived class.  
+ This method is the public implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method for the <xref:System.Threading.WaitHandle> class and its derived classes. It provides a standard implementation that calls the `Dispose(Boolean)` overload with a `true` argument and then calls the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method. Call this method to release all resources held by an instance of `WaitHandle` or a derived class.  
   
  Once this method is called, references to the current instance cause undefined behavior.  
   
@@ -430,7 +430,7 @@
 ## Examples  
  The following code example uses the <xref:System.Threading.WaitHandle.SignalAndWait%28System.Threading.WaitHandle%2CSystem.Threading.WaitHandle%29> method overload to allow the main thread to signal a blocked thread and then wait until the thread finishes a task.  
   
- The example starts five threads, allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode?displayProperty=fullName> flag, and then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode?displayProperty=fullName> flag.  
+ The example starts five threads, allows them to block on an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType> flag, and then releases one thread each time the user presses the ENTER key. The example then queues another five threads and releases them all using an <xref:System.Threading.EventWaitHandle> created with the <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType> flag.  
   
  [!code-cpp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.WaitHandle.SignalAndWait#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.WaitHandle.SignalAndWait/CS/source.cs#1)]
@@ -565,7 +565,7 @@
 ## Remarks  
  This operation is not guaranteed to be atomic. After the current thread signals `toSignal` but before it waits on `toWaitOn`, a thread that is running on another processor might signal `toWaitOn` or wait on it.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
  If `timeout` is zero, the method does not block. It tests the state of the `toWaitOn` and returns immediately.  
   
@@ -641,7 +641,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   
@@ -806,7 +806,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
  Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
@@ -985,7 +985,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
 ## Notes on Exiting the Context  
  The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAll%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
@@ -1082,12 +1082,12 @@
   
  This method returns when any handle is signaled. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   
 ## Examples  
- The following code example demonstrates calling the <xref:System.Threading.WaitHandle.WaitAny%2A>method.  
+ The following code example demonstrates calling the <xref:System.Threading.WaitHandle.WaitAny%2A> method.  
   
  [!code-cpp[WaitHandle#1](~/samples/snippets/cpp/VS_Snippets_CLR/WaitHandle/cpp/WaitHandle.cpp#1)]
  [!code-csharp[WaitHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/WaitHandle/CS/WaitHandle.cs#1)]
@@ -1225,7 +1225,7 @@
   
  This method returns when the wait terminates, either when any of the handles are signaled or when a time-out occurs. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
  Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
@@ -1392,7 +1392,7 @@
   
  This method returns when the wait terminates, either when any of the handles are signaled or when a time-out occurs. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
 ## Notes on Exiting the Context  
  The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAny%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
@@ -1470,7 +1470,7 @@
   
  The caller of this method blocks indefinitely until the current instance receives a signal. Use this method to block until a <xref:System.Threading.WaitHandle> receives a signal from another thread, such as is generated when an asynchronous operation completes. For more information, see the <xref:System.IAsyncResult> interface.  
   
- Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitOne%28System.Int32%2CSystem.Boolean%29> method overload and specifying -1 or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName> for the first parameter and `false` for the second parameter.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitOne%28System.Int32%2CSystem.Boolean%29> method overload and specifying -1 or <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> for the first parameter and `false` for the second parameter.  
   
  Override this method to customize the behavior of derived classes.  
   
@@ -1596,7 +1596,7 @@
   
  Override this method to customize the behavior of derived classes.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
  Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitOne%28System.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
@@ -1726,7 +1726,7 @@
   
  Override this method to customize the behavior of derived classes.  
   
- The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+ The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
 ## Notes on Exiting the Context  
  The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitOne%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
@@ -1804,5 +1804,67 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignalAndWait">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signals one <see cref="T:System.Threading.WaitHandle" /> and waits on another.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for all the elements in the specified array to receive a signal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for any of the elements in the specified array to receive a signal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitOne">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Blocks the current thread until the current <see cref="T:System.Threading.WaitHandle" /> receives a signal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.WaitHandle" /> class</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

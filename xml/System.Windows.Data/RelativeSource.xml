@@ -25,13 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- One of the ways to specify a binding source is to use the <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=fullName> property. This is the property type of that property. <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself (see <xref:System.Windows.Data.RelativeSource.ProvideValue%2A>), the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form, so that the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> mode can be defined inline with the two extra arguments for ancestor type and level that the other modes do not require.  
+ One of the ways to specify a binding source is to use the <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=nameWithType> property. This is the property type of that property. <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself (see <xref:System.Windows.Data.RelativeSource.ProvideValue%2A>), the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form, so that the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor> mode can be defined inline with the two extra arguments for ancestor type and level that the other modes do not require.  
   
  For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
-  
-<a name="xamlTextUsage_RelativeSource"></a>   
-## XAML Text Usage  
-   
   
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. Using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property, the value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style). For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
@@ -51,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.RelativeSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +155,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="AncestorType">
@@ -196,6 +195,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Data.RelativeSource" /> is not in the <see cref="F:System.Windows.Data.RelativeSourceMode.FindAncestor" /> mode.</exception>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="P:System.Windows.Data.RelativeSource.AncestorLevel" />
+        <altmember cref="F:System.Windows.Data.RelativeSourceMode.FindAncestor" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -231,6 +234,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is immutable after initialization. Instead of changing the <see cref="P:System.Windows.Data.RelativeSource.Mode" /> on this instance, create a new <see cref="T:System.Windows.Data.RelativeSource" /> or use a different static instance.</exception>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="PreviousData">
@@ -260,6 +265,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -325,6 +332,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAncestorLevel">
@@ -465,7 +474,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.RelativeSourceMode" />
+        <altmember cref="T:System.Windows.Data.RelativeSource" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.RelativeSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

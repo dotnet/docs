@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Item Collections (Metadata)](http://msdn.microsoft.com/en-us/3051a40a-ff45-42f8-8f93-7545e427a404).  
+ For more information, see [Item Collections (Metadata)](http://msdn.microsoft.com/library/3051a40a-ff45-42f8-8f93-7545e427a404).  
   
  ]]></format>
     </remarks>
@@ -319,7 +319,7 @@
     </Member>
     <Member MemberName="TryGetEntityContainer">
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, class System.Data.Metadata.Edm.EntityContainer entityContainer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetEntityContainer(System.String,System.Data.Metadata.Edm.EntityContainer@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -344,7 +344,7 @@
     </Member>
     <Member MemberName="TryGetEntityContainer">
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, bool ignoreCase, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, bool ignoreCase, class System.Data.Metadata.Edm.EntityContainer entityContainer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, bool ignoreCase, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetEntityContainer(System.String,System.Boolean,System.Data.Metadata.Edm.EntityContainer@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -372,7 +372,7 @@
     </Member>
     <Member MemberName="TryGetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, !!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetItem``1(System.String,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -405,7 +405,7 @@
     </Member>
     <Member MemberName="TryGetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, bool ignoreCase, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase, !!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetItem``1(System.String,System.Boolean,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -441,7 +441,7 @@
     </Member>
     <Member MemberName="TryGetType">
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, out System.Data.Metadata.Edm.EdmType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, class System.Data.Metadata.Edm.EdmType type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetType(System.String,System.String,System.Data.Metadata.Edm.EdmType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -468,7 +468,7 @@
     </Member>
     <Member MemberName="TryGetType">
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, bool ignoreCase, out System.Data.Metadata.Edm.EdmType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, bool ignoreCase, class System.Data.Metadata.Edm.EdmType type) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, bool ignoreCase, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetType(System.String,System.String,System.Boolean,System.Data.Metadata.Edm.EdmType@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -496,5 +496,68 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFunctions">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a strongly typed item by using the specified identity from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name in this item collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item that is specified by the identity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -94,6 +100,10 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" /> class, at a minimum, you should implement a <see langword="Control" /> property to return a strongly-typed instance of the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="P:System.Web.UI.Adapters.ControlAdapter.Control" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -116,10 +126,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled%2A> property provides access for the adapter and any of its derived classes to the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=fullName> property. <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=fullName> scans the hierarchy of parent controls and returns `true` only if the Web control and all its parents are enabled.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.IsEnabled%2A> property provides access for the adapter and any of its derived classes to the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=nameWithType> property. <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A?displayProperty=nameWithType> scans the hierarchy of parent controls and returns `true` only if the Web control and all its parents are enabled.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -144,13 +156,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method generates target-specific markup to send to the client browser. <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> is called in place of the <xref:System.Web.UI.WebControls.WebControl.Render%2A?displayProperty=fullName> method if a <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter> object is attached to a <xref:System.Web.UI.WebControls.WebControl> object.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> method generates target-specific markup to send to the client browser. <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render%2A> is called in place of the <xref:System.Web.UI.WebControls.WebControl.Render%2A?displayProperty=nameWithType> method if a <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter> object is attached to a <xref:System.Web.UI.WebControls.WebControl> object.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> base method calls <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />, then <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />, and then <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />. If you override <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> and do not call the base method, you must be sure to provide this functionality.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.Control" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -182,6 +203,13 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" /> method. In turn, the <see cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" /> base method calls the appropriate <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" /> overload, which is determined by the type of tag with which the <see cref="T:System.Web.UI.WebControls.WebControl" /> object was created. You can avoid overriding <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" /> by deriving from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class and overriding <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />, and also possibly <see cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -216,13 +244,21 @@
   
  Override <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> to generate target-specific inner markup to send to the client browser.  
   
- The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method calls <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=fullName>. The <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=fullName> base method calls <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName>, which in turn calls <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName>. Thus, overrides of <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> should call the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method only if its processing is in addition to, rather than instead of, <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName>.  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method calls <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=nameWithType>. The <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A?displayProperty=nameWithType> base method calls <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType>, which in turn calls <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=nameWithType>. Thus, overrides of <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> should call the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents%2A> base method only if its processing is in addition to, rather than instead of, <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>For a composite control, you must ensure that the child controls are rendered. If you override the <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" /> method and do not call its base method, you can cause the child controls to be rendered by calling <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> which, if not overridden, calls <see cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" /> from the <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" /> override.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.Control.RenderControl(System.Web.UI.HtmlTextWriter,System.Web.UI.Adapters.ControlAdapter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -254,6 +290,13 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderEndTag(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" /> method. In turn, the <see cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" /> method. You can avoid overriding <see cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" /> by deriving from the <see cref="T:System.Web.UI.HtmlTextWriter" /> class and overriding <see cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />, and also possibly <see cref="M:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.RenderEndTag" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.Adapters.WebControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
   </Members>

@@ -397,7 +397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions%2A> to more precisely define the instance of the reference activity type to be matched. For example, if you want to match only <xref:System.Workflow.Activities.CodeActivity> activities with an <xref:System.Workflow.ComponentModel.Activity.Name%2A?displayProperty=fullName> equal to "MyCode", you can set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName%2A> to"CodeActivity" and add an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions%2A> that specifies that the <xref:System.Workflow.ComponentModel.Activity.Name%2A?displayProperty=fullName> property of the activity instance must be equal to "MyCode".  
+ You can use <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions%2A> to more precisely define the instance of the reference activity type to be matched. For example, if you want to match only <xref:System.Workflow.Activities.CodeActivity> activities with an <xref:System.Workflow.ComponentModel.Activity.Name%2A?displayProperty=nameWithType> equal to "MyCode", you can set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName%2A> to"CodeActivity" and add an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions%2A> that specifies that the <xref:System.Workflow.ComponentModel.Activity.Name%2A?displayProperty=nameWithType> property of the activity instance must be equal to "MyCode".  
   
  Every <xref:System.Workflow.Runtime.Tracking.TrackingCondition> in <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.Conditions%2A> must be `true` and one of the <xref:System.Workflow.ComponentModel.ActivityExecutionStatus> values in <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ExecutionStatusEvents%2A> must be matched for the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> to be matched.  
   
@@ -449,5 +449,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

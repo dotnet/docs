@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ThreadIsBlockingForSuspension"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCThreadControl::ThreadIsBlockingForSuspension method [.NET Framework hosting]"
   - "ThreadIsBlockingForSuspension method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCThreadControl::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.  

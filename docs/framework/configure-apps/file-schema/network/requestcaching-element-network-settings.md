@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "requestCaching element"
   - "<requestCaching> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;requestCaching&gt; Element (Network Settings)
 Controls the caching mechanism for network requests.  
@@ -36,14 +33,14 @@ Controls the caching mechanism for network requests.
 ## Syntax  
   
 ```xml  
-      <requestCaching  
-  isPrivateCache ="true|false"  
-  disableAllCaching="true|false"  
-  defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
-  unspecifiedMaximumAge= "d.hh.mm.ss""  
-  <defaultHttpCachePolicy> … </defaultHttpCachePolicy>  
-  <defaultFtpCachePolicy> … </defaultFtpCachePolicy>  
-/>  
+      <requestCaching>  
+        isPrivateCache ="true|false"  
+        disableAllCaching="true|false"  
+        defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
+        unspecifiedMaximumAge= "d.hh.mm.ss">  
+          <defaultHttpCachePolicy> … </defaultHttpCachePolicy>  
+          <defaultFtpCachePolicy> … </defaultFtpCachePolicy>  
+      </requestCaching>
 ```  
   
 ## Attributes and Elements  
@@ -98,5 +95,5 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.Cache?displayProperty=fullName>   
+ <xref:System.Net.Cache?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

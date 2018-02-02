@@ -124,21 +124,24 @@
 ## Examples  
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ListBox Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ListBox Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/sourcevb.aspx#1)]  
   
  The following example shows how to create a <xref:System.Web.UI.WebControls.ListBox> control that supports multiple selections.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source3cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source3vb.aspx#3)]  -->  
+ [!code-aspx-csharp[Classic ListBox Example 2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source3cs.aspx#3)]
+ [!code-aspx-vb[Classic ListBox Example 2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source3vb.aspx#3)]  
   
  The following example demonstrates how to create a <xref:System.Web.UI.WebControls.ListBox> control through data binding.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListBox Example 2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListBox Example 2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[Classic ListBox Example 2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox Example 2/CS/source2cs.aspx#2)]
+ [!code-aspx-vb[Classic ListBox Example 2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox Example 2/VB/source2vb.aspx#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListControl" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.WebControls.ListItemCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -187,8 +190,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ListBox.AddAttributesToRender%2A> method in a custom server control, so that the <xref:System.Web.UI.WebControls.ListBox> list item text always displays as bold.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomListBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/CS/custom_listbox_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomListBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/VB/custom_listbox_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomListBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/CS/custom_listbox_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomListBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/VB/custom_listbox_addattributestorendervb.aspx#1)]  
   
  [!code-csharp[CustomListBoxAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/CS/custom_listbox_addattributestorender.cs#2)]
  [!code-vb[CustomListBoxAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomListBoxAddAttributesToRender/VB/custom_listbox_addattributestorender.vb#2)]  
@@ -453,8 +456,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ListBox.Rows%2A> property to display six rows in the <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ListBox.Rows Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox.Rows Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ListBox.Rows Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox.Rows Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ListBox.Rows Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ListBox.Rows Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ListBox.Rows Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ListBox.Rows Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -494,12 +497,13 @@
 ## Examples  
  The following example illustrates how to use the <xref:System.Web.UI.WebControls.ListBox.SelectionMode%2A> property to allow the user to select multiple selections from the <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ListBoxSelectionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxSelectionMode/CS/listboxselectionmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ListBoxSelectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxSelectionMode/VB/listboxselectionmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ListBoxSelectionMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListBoxSelectionMode/CS/listboxselectionmodecs.aspx#1)]
+ [!code-aspx-vb[ListBoxSelectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListBoxSelectionMode/VB/listboxselectionmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified selection mode is not one of the <see cref="T:System.Web.UI.WebControls.ListSelectionMode" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ListSelectionMode" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -528,7 +532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A?displayProperty=fullName> method to process posted data for changes to a <xref:System.Web.UI.WebControls.ListBox> object.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.LoadPostData%2A?displayProperty=nameWithType> method to process posted data for changes to a <xref:System.Web.UI.WebControls.ListBox> object.  
   
  The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -537,6 +541,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -558,7 +563,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.ListBox> object changes.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.ListBox> object changes.  
   
  The <xref:System.Web.UI.WebControls.ListBox.System%23Web%23UI%23IPostBackDataHandler%23LoadPostData%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ListBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
@@ -567,6 +572,7 @@
         <block subset="none" type="overrides">
           <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.ListBox" /> object, override the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> member. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
   </Members>

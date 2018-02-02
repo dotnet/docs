@@ -44,6 +44,13 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.CustomValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RangeValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.RequiredFieldValidator" />
+    <altmember cref="T:System.Web.UI.MobileControls.ValidationSummary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="CheckControlValidationProperty">
@@ -90,6 +98,7 @@
         <summary>Determines whether the specified control to be validated has a property that can be validated. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">either the <paramref name="name" /> or <paramref name="propertyName" /> parameters is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -111,6 +120,7 @@
           <see langword="true" /> if control properties to be validated are valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">the <see cref="P:System.Web.UI.MobileControls.BaseValidator.ControlToValidate" /> property is empty or the control does not exist.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ControlToValidate">
@@ -147,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="CreateStyle">
@@ -166,6 +177,7 @@
         <summary>Constructs and returns the <see cref="T:System.Web.UI.MobileControls.Style" /> object to be associated with the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>A new <see cref="T:System.Web.UI.MobileControls.Style" /> object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebValidator">
@@ -192,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -227,6 +240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="ErrorMessage">
@@ -260,6 +274,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -287,6 +302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -317,6 +333,7 @@
         <value>
           <see langword="true" /> if the data validated by the control is valid; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -407,6 +424,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
       </Docs>
     </Member>
     <Member MemberName="VisibleWeight">

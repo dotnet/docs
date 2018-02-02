@@ -46,7 +46,7 @@
   <Members>
     <Member MemberName="GetInterface">
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.CustomQueryInterfaceResult GetInterface (ref Guid iid, out IntPtr ppv);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Runtime.InteropServices.CustomQueryInterfaceResult GetInterface(valuetype System.Guid iid, native int ppv) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Runtime.InteropServices.CustomQueryInterfaceResult GetInterface([in]valuetype System.Guid&amp; iid, [out] native int&amp; ppv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

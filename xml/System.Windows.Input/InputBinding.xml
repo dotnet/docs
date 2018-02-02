@@ -26,7 +26,7 @@
   
  An <xref:System.Windows.Input.InputBinding> can be defined on a specific object or at the class level by registering a <xref:System.Windows.Input.CommandManager.RegisterClassInputBinding%2A> with the <xref:System.Windows.Input.CommandManager>.  
   
- The <xref:System.Windows.Input.InputBinding> class itself does not support [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage because it does not expose a public default constructor (there is a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties on the derived class that are inherited from <xref:System.Windows.Input.InputBinding> with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage. Two existing <xref:System.Windows.Input.InputBinding>-derived classes that can be instantiated in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and can set properties in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>. The typical property in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming that is set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and takes one or more <xref:System.Windows.Input.InputBinding> objects as values is the <xref:System.Windows.UIElement.InputBindings%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Input.InputBinding> class itself does not support [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage because it does not expose a public default constructor (there is a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties on the derived class that are inherited from <xref:System.Windows.Input.InputBinding> with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage. Two existing <xref:System.Windows.Input.InputBinding>-derived classes that can be instantiated in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and can set properties in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>. The typical property in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming that is set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and takes one or more <xref:System.Windows.Input.InputBinding> objects as values is the <xref:System.Windows.UIElement.InputBindings%2A?displayProperty=nameWithType> property.  
   
 <a name="xamlObjectElementUsage_InputBinding"></a>   
 ## XAML Object Element Usage  
@@ -62,12 +62,14 @@
  [!code-csharp[InputCommandBinding#InitializeCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/inputcommandbinding/csharp/mainwindow.xaml.cs#initializecommand)]
  [!code-vb[InputCommandBinding#InitializeCommand](~/samples/snippets/visualbasic/VS_Snippets_Wpf/inputcommandbinding/visualbasic/mainwindow.xaml.vb#initializecommand)]  
   
- Finally, the following example creates the user interface. The example adds a <xref:System.Windows.Input.KeyBinding> and a <xref:System.Windows.Input.MouseBinding> to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.Button> and a <xref:System.Windows.Controls.ListBox>. When the user selects an item in the <xref:System.Windows.Controls.ListBox>, he or she can change the color of the background to the selected color. In each case, the `CommandParameter` property is bound to the selected item in the <xref:System.Windows.Controls.ListBox>, and the `Command` property is bound to the `ColorChangeCommand`. The <xref:System.Windows.Input.KeyBinding.Key%2A?displayProperty=fullName>, <xref:System.Windows.Input.KeyBinding.Modifiers%2A?displayProperty=fullName>, and <xref:System.Windows.Input.MouseBinding.MouseAction%2A?displayProperty=fullName> properties are bound to the corresponding properties on the `SimpleDelegateCommand` class.  
+ Finally, the following example creates the user interface. The example adds a <xref:System.Windows.Input.KeyBinding> and a <xref:System.Windows.Input.MouseBinding> to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.Button> and a <xref:System.Windows.Controls.ListBox>. When the user selects an item in the <xref:System.Windows.Controls.ListBox>, he or she can change the color of the background to the selected color. In each case, the `CommandParameter` property is bound to the selected item in the <xref:System.Windows.Controls.ListBox>, and the `Command` property is bound to the `ColorChangeCommand`. The <xref:System.Windows.Input.KeyBinding.Key%2A?displayProperty=nameWithType>, <xref:System.Windows.Input.KeyBinding.Modifiers%2A?displayProperty=nameWithType>, and <xref:System.Windows.Input.MouseBinding.MouseAction%2A?displayProperty=nameWithType> properties are bound to the corresponding properties on the `SimpleDelegateCommand` class.  
   
  [!code-xaml[InputCommandBinding#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/inputcommandbinding/csharp/mainwindow.xaml#ui)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.UIElement.InputBindings" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -236,7 +238,7 @@
    
   
 ## Examples  
- The following example shows how to use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to the <xref:System.Windows.Input.ApplicationCommands.Open%2A?displayProperty=fullName> command. When the key gesture is performed, the Open command is invoked.  
+ The following example shows how to use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to the <xref:System.Windows.Input.ApplicationCommands.Open%2A?displayProperty=nameWithType> command. When the key gesture is performed, the Open command is invoked.  
   
  [!code-xaml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
@@ -246,6 +248,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Input.InputBinding.Command" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputGesture" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -493,6 +497,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -537,5 +543,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

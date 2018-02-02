@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineExportedType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyEmit::DefineExportedType method [.NET Framework metadata]"
   - "DefineExportedType method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::DefineExportedType Method
 Creates an `ExportedType` structure containing metadata for the specified exported type, and returns the associated metadata token.  

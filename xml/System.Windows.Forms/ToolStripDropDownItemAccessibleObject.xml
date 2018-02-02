@@ -59,6 +59,7 @@
         <block subset="none" type="overrides">
           <para>The default action performed by system-provided user interface elements depends on the keyboard state. That is, if a modifier key such as SHIFT, ALT, or CTRL is down (either by a user action or programmatically) when <see cref="M:System.Windows.Forms.AccessibleObject.DoDefaultAction" /> is called, the default action might not be the same as when those keys are not down. Not all objects have a default action.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.DoDefaultAction" />
       </Docs>
     </Member>
     <Member MemberName="GetChild">
@@ -94,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.AccessibleObject.GetChild(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">

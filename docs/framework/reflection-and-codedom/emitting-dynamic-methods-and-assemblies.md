@@ -1,7 +1,7 @@
 ---
 title: "Emitting Dynamic Methods and Assemblies"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "08/30/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -15,11 +15,11 @@ helpviewer_keywords:
   - "metadata, emit interfaces"
   - "reflection emit, overview"
   - "assemblies [.NET Framework], emitting dynamic assemblies"
-ms.assetid: 8e8e2631-62fd-40e7-a8ee-0039b06749bc
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Emitting Dynamic Methods and Assemblies
 This section describes a set of managed types in the <xref:System.Reflection.Emit> namespace that allow a compiler or tool to emit metadata and Microsoft intermediate language (MSIL) at run time and optionally generate a portable executable (PE) file on disk. Script engines and compilers are the primary users of this namespace. In this section, the functionality provided by the <xref:System.Reflection.Emit> namespace is referred to as reflection emit.  
@@ -42,9 +42,22 @@ This section describes a set of managed types in the <xref:System.Reflection.Emi
   
  Another useful resource for working with metadata and MSIL is the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online on [MSDN](http://go.microsoft.com/fwlink/?LinkID=65555) and at the [Ecma Web site](http://go.microsoft.com/fwlink/?LinkId=116487).  
   
-## In This Section  
- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
- Describes security issues related to creating dynamic assemblies using reflection emit.  
+## In This Section
+  
+[Security issues in reflection emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
+Describes security issues related to creating dynamic assemblies using reflection emit.  
+
+[How to: Define and execute dynamic methods](how-to-define-and-execute-dynamic-methods.md)   
+Shows how to execute a simple dynamic method and a dynamic method bound to an instance of a class.
+
+[How to: Define a generic type with reflection emit](how-to-define-a-generic-type-with-reflection-emit.md)   
+Shows how to create a simple generic type with two type parameters, how to apply class, interface, and special constraints to the type parameters, and how to create memers that use the type parameters of the class as parameter types and return types.
+
+[How to: Define a generic method with reflection emit](how-to-define-a-generic-method-with-reflection-emit.md)   
+Shows how to create, emit, and invoke a simple generic method.
+
+[Collectible assemblies for dynamic type generation](collectible-assemblies.md)   
+Introduces collectible assemblies, which are dynamic assemblies that can be unloaded without unloading the application domain in which they were created.
   
 ## Reference  
  <xref:System.Reflection.Emit.OpCodes>  
@@ -64,4 +77,4 @@ This section describes a set of managed types in the <xref:System.Reflection.Emi
  Explains how to explore metadata and managed code.  
   
  [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- Provides an overview of assemblies in the .NET Framework.
+ Provides an overview of assemblies in .NET implementations.

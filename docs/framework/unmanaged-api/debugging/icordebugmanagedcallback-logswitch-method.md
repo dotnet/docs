@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::LogSwitch"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LogSwitch method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::LogSwitch method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::LogSwitch Method
 Notifies the debugger that a common language runtime (CLR) managed thread has called a method in the <xref:System.Diagnostics.Switch> class to create, modify, or delete a debugging/tracing switch.  

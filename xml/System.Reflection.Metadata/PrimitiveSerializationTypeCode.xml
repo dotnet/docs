@@ -11,8 +11,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants that define the type codes used to encode types of primitive values in a <see cref="T:System.Reflection.Metadata.CustomAttribute" /> value blob.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -29,7 +30,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Boolean" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -46,7 +47,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 1-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -63,7 +64,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Char" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -80,7 +81,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An 8-byte floating point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -97,7 +98,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 2-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -114,7 +115,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 4-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -131,7 +132,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 8-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -148,7 +149,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 1-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -165,7 +166,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 4-byte floating point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -182,7 +183,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.String" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -199,7 +200,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 2-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -216,7 +217,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 4-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -233,7 +234,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveSerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 8-byte integer type.</summary>
       </Docs>
     </Member>
   </Members>

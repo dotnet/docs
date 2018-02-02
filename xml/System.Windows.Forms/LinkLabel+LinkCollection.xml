@@ -188,6 +188,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.Remove(System.Windows.Forms.LinkLabel.Link)" />
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -218,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf(System.Windows.Forms.LinkLabel.Link)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -422,6 +425,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="index" /> is a negative value or greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.IndexOf(System.Windows.Forms.LinkLabel.Link)" />
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.Contains(System.Windows.Forms.LinkLabel.Link)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -500,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -529,6 +536,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="index" /> is a negative value or greater than the number of items in the collection.</exception>
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.Remove(System.Windows.Forms.LinkLabel.Link)" />
+        <altmember cref="M:System.Windows.Forms.LinkLabel.LinkCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -841,5 +850,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a link to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item from the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -37,28 +37,28 @@
 ## Remarks  
  An <xref:System.OutOfMemoryException> exception has two major causes:  
   
--   You are attempting to expand a <xref:System.Text.StringBuilder> object beyond the length defined by its <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=fullName> property.  
+-   You are attempting to expand a <xref:System.Text.StringBuilder> object beyond the length defined by its <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=nameWithType> property.  
   
 -   The common language runtime cannot allocate enough contiguous memory to successfully perform an operation. This exception can be thrown by any property assignment or method call that requires a memory allocation. For more information on the cause of the <xref:System.OutOfMemoryException> exception, see ["Out of Memory" Does Not Refer to Physical Memory](http://blogs.msdn.com/b/ericlippert/archive/2009/06/08/out-of-memory-does-not-refer-to-physical-memory.aspx).  
   
-     This type of <xref:System.OutOfMemoryException> exception represents a catastrophic failure. If you choose to handle the exception, you should include a `catch` block that calls the <xref:System.Environment.FailFast%2A?displayProperty=fullName> method to terminate your app and add an entry to the system event log, as the following example does.  
+     This type of <xref:System.OutOfMemoryException> exception represents a catastrophic failure. If you choose to handle the exception, you should include a `catch` block that calls the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method to terminate your app and add an entry to the system event log, as the following example does.  
   
      [!code-csharp[System.OutOfMemoryException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.outofmemoryexception/cs/failfast1.cs#2)]
      [!code-vb[System.OutOfMemoryException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.outofmemoryexception/vb/failfast1.vb#2)]  
   
  Some of the conditions under which the exception is thrown and the actions you can take to eliminate it include the following:  
   
- You are calling the <xref:System.Text.StringBuilder.Insert%2A?displayProperty=fullName> method.  
- You are attempting to increase the length of a <xref:System.Text.StringBuilder> object beyond the size specified by its <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=fullName> property. The following example illustrates the <xref:System.OutOfMemoryException> exception thrown by a call to the <xref:System.Text.StringBuilder.Insert%28System.Int32%2CSystem.String%2CSystem.Int32%29?displayProperty=fullName> method when the example tries to insert a string that would cause the object's <xref:System.Text.StringBuilder.Length%2A> property to exceed its maximum capacity.  
+ You are calling the <xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType> method.  
+ You are attempting to increase the length of a <xref:System.Text.StringBuilder> object beyond the size specified by its <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=nameWithType> property. The following example illustrates the <xref:System.OutOfMemoryException> exception thrown by a call to the <xref:System.Text.StringBuilder.Insert%28System.Int32%2CSystem.String%2CSystem.Int32%29?displayProperty=nameWithType> method when the example tries to insert a string that would cause the object's <xref:System.Text.StringBuilder.Length%2A> property to exceed its maximum capacity.  
   
  [!code-csharp[System.OutOfMemoryException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.outofmemoryexception/cs/sb_example1.cs#1)]
  [!code-vb[System.OutOfMemoryException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.outofmemoryexception/vb/sb_example1.vb#1)]  
   
  You can do either of the following to address the error:  
   
--   Replace the call to the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor with a call any other <xref:System.Text.StringBuilder> constructor overload. The maximum capacity of your <xref:System.Text.StringBuilder> object will be set to its default value, which is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
+-   Replace the call to the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> constructor with a call any other <xref:System.Text.StringBuilder> constructor overload. The maximum capacity of your <xref:System.Text.StringBuilder> object will be set to its default value, which is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
--   Call the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor with a `maxCapacity` value that is large enough to accommodate any expansions to the <xref:System.Text.StringBuilder> object.  
+-   Call the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=nameWithType> constructor with a `maxCapacity` value that is large enough to accommodate any expansions to the <xref:System.Text.StringBuilder> object.  
   
  Your app runs as a 32-bit process.  
  32-bit processes can allocate a maximum of 2GB of virtual user-mode memory on 32-bit systems, and 4GB of virtual user-mode memory on 64-bit systems. This can make it more difficult for the common language runtime to allocate sufficient contiguous memory when a large allocation is needed. In contrast, 64-bit processes can allocate up to 8TB of virtual memory. To address this exception, recompile your app to target a 64-bit platform. For information on targeting specific platforms in Visual Studio, see [How to: Configure Projects to Target Platforms](http://msdn.microsoft.com/library/845302fc-273d-4f81-820a-7296ce91bd76).  
@@ -66,9 +66,9 @@
  Your app is leaking unmanaged resources  
  Although the garbage collector is able to free memory allocated to managed types, it does not manage memory allocated to unmanaged resources such as operating system handles (including handles to files, memory-mapped files, pipes, registry keys, and wait handles) and memory blocks allocated directly by Windows API calls or by calls to memory allocation functions such as `malloc`. Types that consume unmanaged resources implement the <xref:System.IDisposable> interface.  
   
- If you are consuming a type that uses unmanaged resources, you should be sure to call its <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method when you have finished using it. (Some types also implement a `Close` method that is identical in function to a `Dispose` method.) For more information, see the [Using Objects That Implement IDisposable](~/docs/standard/garbage-collection/using-objects.md) topic.  
+ If you are consuming a type that uses unmanaged resources, you should be sure to call its <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method when you have finished using it. (Some types also implement a `Close` method that is identical in function to a `Dispose` method.) For more information, see the [Using Objects That Implement IDisposable](~/docs/standard/garbage-collection/using-objects.md) topic.  
   
- If you have created a type that uses unmanaged resources, make sure that you have implemented the Dispose pattern and, if necessary, supplied a finalizer. For more information, see the [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md), [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md), and <xref:System.Object.Finalize%2A?displayProperty=fullName> topics.  
+ If you have created a type that uses unmanaged resources, make sure that you have implemented the Dispose pattern and, if necessary, supplied a finalizer. For more information, see the [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md), [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md), and <xref:System.Object.Finalize%2A?displayProperty=nameWithType> topics.  
   
  You are attempting to create a large array in a 64-bit process.  
  By default, the common language runtime does not allow single objects whose size exceeds 2GB. To override this default, you can use the  configuration file setting to enable arrays whose total size exceeds 2 GB.  
@@ -97,16 +97,16 @@
  You are repeatedly concatenating large strings.  
  Because strings are immutable, each string concatenation operation creates a new string. The impact for small strings, or for a small number of concatenation operations, is negligible. But for large strings or a very large number of concatenation operations, string concatenation can lead to a large number of memory allocations and memory fragmentation, poor performance, and possibly <xref:System.OutOfMemoryException> exceptions.  
   
- When concatenating large strings or performing a large number of concatenation operations, you should use the <xref:System.Text.StringBuilder> class instead of the <xref:System.String> class. When you have finished manipulating the string, convert the <xref:System.Text.StringBuilder> instance to a string by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=fullName> method.  
+ When concatenating large strings or performing a large number of concatenation operations, you should use the <xref:System.Text.StringBuilder> class instead of the <xref:System.String> class. When you have finished manipulating the string, convert the <xref:System.Text.StringBuilder> instance to a string by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method.  
   
  You pin a large number of objects in memory.  
- Pinning a large number of objects in memory for long periods can make it difficult for the garbage collector to allocate contiguous blocks of memory. If you've pinned a large number of objects in memory, for example by using the `fixed` statement in C# or by calling the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=fullName> method with a handle type of <xref:System.Runtime.InteropServices.GCHandleType?displayProperty=fullName>, you can do the following to address the <xref:System.OutOfMemoryException> exception.  
+ Pinning a large number of objects in memory for long periods can make it difficult for the garbage collector to allocate contiguous blocks of memory. If you've pinned a large number of objects in memory, for example by using the `fixed` statement in C# or by calling the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=nameWithType> method with a handle type of <xref:System.Runtime.InteropServices.GCHandleType.Pinned?displayProperty=nameWithType>, you can do the following to address the <xref:System.OutOfMemoryException> exception.  
   
 -   Evaluate whether each object really needs to be pinned,  
   
 -   Ensure that each object is unpinned as soon as possible.  
   
--   Make sure that each call to the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=fullName> method to pin memory has a corresponding call to the <xref:System.Runtime.InteropServices.GCHandle.Free%2A?displayProperty=fullName> method to unpin that memory.  
+-   Make sure that each call to the <xref:System.Runtime.InteropServices.GCHandle.Alloc%28System.Object%2CSystem.Runtime.InteropServices.GCHandleType%29?displayProperty=nameWithType> method to pin memory has a corresponding call to the <xref:System.Runtime.InteropServices.GCHandle.Free%2A?displayProperty=nameWithType> method to unpin that memory.  
   
  The following Microsoft intermediate (MSIL) instructions throw an <xref:System.OutOfMemoryException> exception:  
   
@@ -125,6 +125,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -295,7 +296,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.OutOfMemoryException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -24,7 +24,7 @@
   
  Access <xref:System.Windows.Media.Media3D.Visual3D> services by using static methods on the <xref:System.Windows.Media.VisualTreeHelper> class.  
   
- <xref:System.Windows.Media.Media3D.Visual3D> objects are optimized to be scene nodes. For example, they cache bounds. Whenever you can, use <xref:System.Windows.Media.Media3D.Visual3D> objects for unique instances of objects within your scene. This usage contrasts with that of <xref:System.Windows.Media.Media3D.Model3D> objects, which are lightweight objects that are optimized to be shared and reused. For example, use a <xref:System.Windows.Media.Media3D.Model3D>object to build a model of a car; and use ten <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to place ten cars in your scene.  
+ <xref:System.Windows.Media.Media3D.Visual3D> objects are optimized to be scene nodes. For example, they cache bounds. Whenever you can, use <xref:System.Windows.Media.Media3D.Visual3D> objects for unique instances of objects within your scene. This usage contrasts with that of <xref:System.Windows.Media.Media3D.Model3D> objects, which are lightweight objects that are optimized to be shared and reused. For example, use a <xref:System.Windows.Media.Media3D.Model3D> object to build a model of a car; and use ten <xref:System.Windows.Media.Media3D.ModelVisual3D> objects to place ten cars in your scene.  
   
  ]]></format>
     </remarks>
@@ -627,5 +627,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ApplyAnimationClock">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies the effect of a given <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to a given dependency property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginAnimation">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an animation sequence for the <see cref="T:System.Windows.DependencyProperty" /> object, based on both the specified <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> and <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

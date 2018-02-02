@@ -9,16 +9,16 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "keyboard shortcuts, DataGrid control"
+  - "keyboard shortcuts [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], navigation keys"
 ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Keyboard Shortcuts for the Windows Forms DataGrid Control
 > [!NOTE]
@@ -56,8 +56,8 @@ manager: "wpickett"
 |Extend the selection down one screen (excluding child table links).|SHIFT+PAGE DOWN|  
 |Extend the selection up one screen (excluding child table links).|SHIFT+PAGE UP|  
 |Call the <xref:System.Windows.Forms.DataGrid.EndEdit%2A> method for the current row.|CTRL+ENTER|  
-|Enter a <xref:System.DBNull.Value?displayProperty=fullName> value into a cell when in edit mode.|CTRL+0|  
+|Enter a <xref:System.DBNull.Value?displayProperty=nameWithType> value into a cell when in edit mode.|CTRL+0|  
   
 ## See Also  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)   
+ [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)

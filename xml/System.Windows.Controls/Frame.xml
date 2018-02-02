@@ -153,12 +153,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="state" /> is <see langword="null" />, and a <see cref="T:System.Windows.Navigation.CustomContentState" /> object is not returned from <see cref="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />.</exception>
+        <altmember cref="M:System.Windows.Controls.Frame.RemoveBackEntry" />
       </Docs>
     </Member>
     <Member MemberName="AddChild">
@@ -249,6 +250,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
+        <altmember cref="T:System.Windows.Navigation.CustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="BackStackProperty">
@@ -302,6 +305,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Markup.IUriContext.BaseUri" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBack">
@@ -324,7 +328,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.CanGoBack%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.CanGoBack%2A?displayProperty=nameWithType>.  
   
 <a name="dependencyPropertyInfo_FrameCanGoBack"></a>   
 ## Dependency Property Information  
@@ -336,6 +340,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBackProperty">
@@ -394,6 +401,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForwardProperty">
@@ -442,6 +452,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ContentControl.Content" />
+        <altmember cref="E:System.Windows.FrameworkElement.Loaded" />
       </Docs>
     </Member>
     <Member MemberName="CurrentSource">
@@ -463,7 +475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.CurrentSource%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.CurrentSource%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -544,10 +556,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="GoBack">
@@ -571,16 +589,19 @@
 ## Remarks  
  If navigation history for a frame is managed by a parent navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>), the `GoBack` method on that navigator or associated <xref:System.Windows.Navigation.NavigationService> object must be called:  
   
--   <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Controls.Frame.GoBack" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -604,16 +625,19 @@
 ## Remarks  
  If navigation history for a frame is managed by a parent navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>), the `GoForward` method on that navigator or associated <xref:System.Windows.Navigation.NavigationService> object must be called:  
   
--   <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Controls.Frame.GoForward" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoBack" />
+        <altmember cref="M:System.Windows.Controls.Frame.GoBack" />
+        <altmember cref="P:System.Windows.Controls.Frame.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="JournalOwnership">
@@ -698,10 +722,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.LoadCompleted?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -728,7 +758,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%29?displayProperty=nameWithType>.  
   
    
   
@@ -766,7 +796,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
@@ -809,7 +839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Object%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -841,7 +871,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%2CSystem.Object%29?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -865,10 +895,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigated?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigated?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -889,10 +925,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationFailed">
@@ -913,10 +955,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationProgress">
@@ -937,10 +985,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationStopped" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationService">
@@ -994,10 +1048,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.NavigationStopped?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Frame.Navigating" />
+        <altmember cref="E:System.Windows.Controls.Frame.Navigated" />
+        <altmember cref="E:System.Windows.Controls.Frame.LoadCompleted" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationProgress" />
+        <altmember cref="E:System.Windows.Controls.Frame.NavigationFailed" />
+        <altmember cref="E:System.Windows.Controls.Frame.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationUIVisibility">
@@ -1142,7 +1202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1167,7 +1227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Refresh%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Refresh%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1193,10 +1253,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Frame.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
       </Docs>
     </Member>
     <Member MemberName="SandboxExternalContent">
@@ -1313,7 +1374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.Source%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.Source%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
@@ -1374,10 +1435,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Windows.Navigation.NavigationService.StopLoading%2A?displayProperty=fullName>.  
+ See <xref:System.Windows.Navigation.NavigationService.StopLoading%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Controls.Frame.Navigate" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">
@@ -1403,7 +1465,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Frame.BaseUri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates asynchronously to the specified source content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

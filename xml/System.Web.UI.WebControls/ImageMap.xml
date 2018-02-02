@@ -50,16 +50,16 @@
   
  There are two ways to specify the behavior of a <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. You can use either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on an individual <xref:System.Web.UI.WebControls.HotSpot> object. These properties are set using one of the <xref:System.Web.UI.WebControls.HotSpotMode> enumeration values. If both properties are set, the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property specified on each individual <xref:System.Web.UI.WebControls.HotSpot> object takes precedence over the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control.  
   
- To navigate to a URL, set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property to `HotSpotMode.Navigate`. Use the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A> property to specify the URL to navigate to.  
+ To navigate to a URL, set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property to `HotSpotMode.Navigate`. Use the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A> property to specify the URL to navigate to.  
   
- To generate a postback to the server, set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property to `HotSpotMode.Postback`. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the hot spot region. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
+ To generate a postback to the server, set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property to `HotSpotMode.Postback`. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the hot spot region. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
   
- To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, use the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property to specify the behavior. Then, either set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property.  
+ To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, use the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property to specify the behavior. Then, either set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property.  
   
- To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap>, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate` or `HotSpotMode.PostBack`.  
+ To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap>, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate` or `HotSpotMode.PostBack`.  
   
 > [!NOTE]
->  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on any of the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is set to `HotSpotMode.NotSet` or is not set to a value, by default the behavior is `HotSpotMode.Navigate`.  
+>  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on any of the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is set to `HotSpotMode.NotSet` or is not set to a value, by default the behavior is `HotSpotMode.Navigate`.  
   
 <a name="accessibility"></a>   
 ## Accessibility  
@@ -146,23 +146,28 @@
    
   
 ## Examples  
- The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.Navigate`, which causes the page to navigate to the specified URL each time a user clicks one of the circle hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+ The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.CircleHotSpot> objects. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.Navigate`, which causes the page to navigate to the specified URL each time a user clicks one of the circle hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass1/CS/imagemapclass1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass1/VB/imagemapclass1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass1/CS/imagemapclass1cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass1/VB/imagemapclass1vb.aspx#1)]  
   
- The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+ The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  
   
  The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains hot spots with different behaviors. The background area is a defined as a single <xref:System.Web.UI.WebControls.RectangleHotSpot> that posts back to the server. Three <xref:System.Web.UI.WebControls.RectangleHotSpot> objects are defined in the same region. Each of these hot spots looks like a button and navigates to a URL. When an <xref:System.Web.UI.WebControls.ImageMap> control is clicked in a region where two hot spots overlap, the hot spot that is declared first has precedence. In this example, the button hot spots are declared first and the background hot spot that contains them is declared last. Therefore, the user gets the behavior of the button <xref:System.Web.UI.WebControls.RectangleHotSpot> object, not the background <xref:System.Web.UI.WebControls.RectangleHotSpot> object, when the user clicks a button hot spot. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass3/CS/imagemapclass3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass3/VB/imagemapclass3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass3/CS/imagemapclass3cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass3/VB/imagemapclass3vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+    <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
+    <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -188,8 +193,8 @@
 ## Examples  
  The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add it to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]
+ [!code-aspx-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -217,10 +222,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by control developers to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> output stream for an <xref:System.Web.UI.WebControls.ImageMap> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+ This method is used primarily by control developers to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> output stream for an <xref:System.Web.UI.WebControls.ImageMap> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -250,18 +257,21 @@
   
  To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event that contains the code to run when the event is raised.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
- The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The `VoteMap_Clicked` event handler handles the click event for the <xref:System.Web.UI.WebControls.ImageMap> control. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+ The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The `VoteMap_Clicked` event handler handles the click event for the <xref:System.Web.UI.WebControls.ImageMap> control. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]
+ [!code-aspx-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -296,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Enabled" />
       </Docs>
     </Member>
     <Member MemberName="HotSpotMode">
@@ -331,15 +342,15 @@
 |`Navigate`|The <xref:System.Web.UI.WebControls.HotSpot> objects navigate to a URL.|  
 |`PostBack`|The <xref:System.Web.UI.WebControls.HotSpot> objects generate a postback to the server.|  
   
- You can specify a <xref:System.Web.UI.WebControls.HotSpot> object's behavior using either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property of each individual <xref:System.Web.UI.WebControls.HotSpot> object. If both properties are set, the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property specified on each individual <xref:System.Web.UI.WebControls.HotSpot> object takes precedence over the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.ImageMap> control.  
+ You can specify a <xref:System.Web.UI.WebControls.HotSpot> object's behavior using either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property of the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property of each individual <xref:System.Web.UI.WebControls.HotSpot> object. If both properties are set, the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property specified on each individual <xref:System.Web.UI.WebControls.HotSpot> object takes precedence over the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property on the <xref:System.Web.UI.WebControls.ImageMap> control.  
   
- When you set the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property of the <xref:System.Web.UI.WebControls.ImageMap> control, note that the `HotSpotMode.NotSet` and `HotSpotMode.Navigate` values have the same behavior: both navigate to a URL. When you specify `HotSpotMode.NotSet` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property of an individual <xref:System.Web.UI.WebControls.HotSpot> object, that <xref:System.Web.UI.WebControls.HotSpot> determines its behavior from the value of the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property of the <xref:System.Web.UI.WebControls.ImageMap> control.  
+ When you set the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property of the <xref:System.Web.UI.WebControls.ImageMap> control, note that the `HotSpotMode.NotSet` and `HotSpotMode.Navigate` values have the same behavior: both navigate to a URL. When you specify `HotSpotMode.NotSet` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property of an individual <xref:System.Web.UI.WebControls.HotSpot> object, that <xref:System.Web.UI.WebControls.HotSpot> determines its behavior from the value of the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property of the <xref:System.Web.UI.WebControls.ImageMap> control.  
   
- If you specify `HotSpotMode.Navigate` for the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property, the page navigates to a URL when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A> property to specify the URL to navigate to.  
+ If you specify `HotSpotMode.Navigate` for the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property, the page navigates to a URL when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A> property to specify the URL to navigate to.  
   
- If you specify `HotSpotMode.PostBack` for the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property, the page generates a postback to the server when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify the name of the hot spot region. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
+ If you specify `HotSpotMode.PostBack` for the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property, the page generates a postback to the server when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify the name of the hot spot region. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when a postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
   
- If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
+ If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
   
  To create an inactive area within an active hot spot, you must specify the inactive hot spot before the active hot spot in the <xref:System.Web.UI.WebControls.ImageMap> control. For example, the following <xref:System.Web.UI.WebControls.ImageMap> defines an active ring by specifying an inactive circular hot spot within a larger active circular hot spot:  
   
@@ -357,24 +368,29 @@
 </asp:ImageMap>  
 ```  
   
- To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, use the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control to specify the behavior. Then, either set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property.  
+ To cause all <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control to have the same behavior, use the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control to specify the behavior. Then, either set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.NotSet` or do not specify a value for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property.  
   
- To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
+ To specify different behaviors for <xref:System.Web.UI.WebControls.HotSpot> objects in an <xref:System.Web.UI.WebControls.ImageMap> control, set the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on each individual <xref:System.Web.UI.WebControls.HotSpot> object to either `HotSpotMode.Navigate`, `HotSpotMode.PostBack`, or `HotSpotMode.Inactive`.  
   
 > [!NOTE]
->  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on any of the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either set to `HotSpotMode.NotSet` or not set to a value, by default the behavior is `HotSpotMode.Navigate`.  
+>  If an <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=nameWithType> property on any of the <xref:System.Web.UI.WebControls.HotSpot> objects it contains is either set to `HotSpotMode.NotSet` or not set to a value, by default the behavior is `HotSpotMode.Navigate`.  
   
    
   
 ## Examples  
- The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is not set on each of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects because they get their behavior from the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+ The following code example demonstrates how to declaratively create an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is not set on each of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects because they get their behavior from the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=nameWithType> property. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]
+ [!code-aspx-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.HotSpotMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
+        <altmember cref="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
       </Docs>
     </Member>
     <Member MemberName="HotSpots">
@@ -414,11 +430,13 @@
 ## Examples  
  The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. The <xref:System.Web.UI.WebControls.ImageMap.HotSpots%2A> property is used to access the <xref:System.Web.UI.WebControls.HotSpotCollection> for the <xref:System.Web.UI.WebControls.ImageMap> control and add the <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]
+ [!code-aspx-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpotCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -449,6 +467,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="savedState" /> is not a valid <see cref="P:System.Web.UI.Control.ViewState" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.ImageMap.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -475,7 +494,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised when a <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control is clicked. To allow a <xref:System.Web.UI.WebControls.HotSpot> to raise the <xref:System.Web.UI.WebControls.ImageMap.Click> event, you must first set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.ImageMap> control or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property on the <xref:System.Web.UI.WebControls.HotSpot> object to `HotSpotMode.Postback`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.ImageMap.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -484,6 +503,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ImageMap.Click" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -515,6 +536,7 @@
         <block subset="none" type="overrides">
           <para>To handle a click event in a derived class, override the <see cref="M:System.Web.UI.WebControls.ImageMap.OnClick(System.Web.UI.WebControls.ImageMapEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -543,6 +565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -573,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -597,7 +622,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you should use the <xref:System.Web.UI.WebControls.ImageMap.RaisePostBackEvent%2A?displayProperty=fullName> method to raise an event for the <xref:System.Web.UI.WebControls.ImageMap> control when a form is posted back to the server.  
+ Typically, you should use the <xref:System.Web.UI.WebControls.ImageMap.RaisePostBackEvent%2A?displayProperty=nameWithType> method to raise an event for the <xref:System.Web.UI.WebControls.ImageMap> control when a form is posted back to the server.  
   
  The <xref:System.Web.UI.WebControls.ImageMap.System%23Web%23UI%23IPostBackEventHandler%23RaisePostBackEvent%28System.String%29> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageMap> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
   
@@ -662,6 +687,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -687,6 +713,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
   </Members>

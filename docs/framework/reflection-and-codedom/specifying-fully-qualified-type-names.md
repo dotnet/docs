@@ -27,9 +27,11 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Specifying Fully Qualified Type Names
-You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=fullName>, <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=fullName>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
+You must specify type names to have valid input to various reflection operations. A fully qualified type name consists of an assembly name specification, a namespace specification, and a type name. Type name specifications are used by methods such as <xref:System.Type.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>.  
   
 ## Backus-Naur Form Grammar for Type Names  
  The Backus-Naur form (BNF) defines the syntax of formal languages. The following table lists BNF lexical rules that describe how to recognize a valid input. Terminals (those elements that are not further reducible) are shown in all uppercase letters. Nonterminals (those elements that are further reducible) are shown in mixed-case or singly quoted strings, but the single quote (') is not a part of the syntax itself. The pipe character (&#124;) denotes rules that have subrules.  
@@ -70,7 +72,7 @@ You must specify type names to have valid input to various reflection operations
   
  Note that in all TypeSpec components except AssemblyNameSpec, spaces are relevant. In the AssemblyNameSpec, spaces before the ',' separator are relevant, but spaces after the ',' separator are ignored.  
   
- Reflection classes, such as <xref:System.Type.FullName%2A?displayProperty=fullName>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.  
+ Reflection classes, such as <xref:System.Type.FullName%2A?displayProperty=nameWithType>, return the mangled name so that the returned name can be used in a call to <xref:System.Type.GetType%2A>, as in `MyType.GetType(myType.FullName)`.  
   
  For example, the fully qualified name for a type might be `Ozzy.OutBack.Kangaroo+Wallaby,MyAssembly`.  
   
@@ -130,7 +132,7 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
  SimpleTypeSpec & represents a managed pointer or reference. For example, to get a reference to type MyType, use `Type.GetType("MyType &")`. Note that unlike pointers, references are limited to one level.  
   
 ## Specifying Arrays  
- In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=fullName>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=fullName> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.  
+ In the BNF Grammar, ReflectionEmitDimension only applies to incomplete type definitions retrieved using <xref:System.Reflection.Emit.ModuleBuilder.GetType%2A?displayProperty=nameWithType>. Incomplete type definitions are <xref:System.Reflection.Emit.TypeBuilder> objects constructed using <xref:System.Reflection.Emit?displayProperty=nameWithType> but on which <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> has not been called. ReflectionDimension can be used to retrieve any type definition that has been completed, that is, a type that has been loaded.  
   
  Arrays are accessed in reflection by specifying the rank of the array:  
   
@@ -147,10 +149,10 @@ com.microsoft.crypto, Culture=en, PublicKeyToken=a5d015c7d5a0b012,
  For **ModuleBuilder.GetType**, `MyArray[0..5]` indicates a single-dimension array with size 6, lower bound 0. `MyArray[4…]` indicates a single-dimension array of unknown size and lower bound 4.  
   
 ## See Also  
- <xref:System.Reflection.AssemblyName>   
- <xref:System.Reflection.Emit.ModuleBuilder>   
- <xref:System.Reflection.Emit.TypeBuilder>   
- <xref:System.Type.FullName%2A?displayProperty=fullName>   
- <xref:System.Type.GetType%2A?displayProperty=fullName>   
- <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>   
+ <xref:System.Reflection.AssemblyName>  
+ <xref:System.Reflection.Emit.ModuleBuilder>  
+ <xref:System.Reflection.Emit.TypeBuilder>  
+ <xref:System.Type.FullName%2A?displayProperty=nameWithType>  
+ <xref:System.Type.GetType%2A?displayProperty=nameWithType>  
+ <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>  
  [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)

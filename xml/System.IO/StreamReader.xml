@@ -36,10 +36,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/io/streamreader.cs#b5fe1efcec14de32). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.IO.StreamReader> is designed for character input in a particular encoding, whereas the <xref:System.IO.Stream> class is designed for byte input and output. Use <xref:System.IO.StreamReader> for reading lines of information from a standard text file.  
   
 > [!IMPORTANT]
@@ -47,9 +43,9 @@
   
  <xref:System.IO.StreamReader> defaults to UTF-8 encoding unless specified otherwise, instead of defaulting to the ANSI code page for the current system. UTF-8 handles Unicode characters correctly and provides consistent results on localized versions of the operating system. If you get the current character encoding using the <xref:System.IO.StreamReader.CurrentEncoding%2A> property, the value is not reliable until after the first <xref:System.IO.StreamReader.Read%2A> method, since encoding auto detection is not done until the first call to a <xref:System.IO.StreamReader.Read%2A> method.  
   
- By default, a <xref:System.IO.StreamReader> is not thread safe. See <xref:System.IO.TextReader.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
+ By default, a <xref:System.IO.StreamReader> is not thread safe. See <xref:System.IO.TextReader.Synchronized%2A?displayProperty=nameWithType> for a thread-safe wrapper.  
   
- The <xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> and <xref:System.IO.StreamWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overloads read and write the number of characters specified by the `count` parameter. These are to be distinguished from <xref:System.IO.BufferedStream.Read%2A?displayProperty=fullName> and <xref:System.IO.BufferedStream.Write%2A?displayProperty=fullName>, which read and write the number of bytes specified by the `count` parameter. Use the <xref:System.IO.BufferedStream> methods only for reading and writing an integral number of byte array elements.  
+ The <xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> and <xref:System.IO.StreamWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overloads read and write the number of characters specified by the `count` parameter. These are to be distinguished from <xref:System.IO.BufferedStream.Read%2A?displayProperty=nameWithType> and <xref:System.IO.BufferedStream.Write%2A?displayProperty=nameWithType>, which read and write the number of bytes specified by the `count` parameter. Use the <xref:System.IO.BufferedStream> methods only for reading and writing an integral number of byte array elements.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
@@ -72,6 +68,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Encoding" />
+    <altmember cref="T:System.IO.Stream" />
+    <altmember cref="T:System.IO.StreamWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,7 +109,7 @@
 ## Remarks  
  This constructor initializes the encoding to <xref:System.Text.UTF8Encoding>, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -192,6 +191,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -232,9 +232,9 @@
 ## Remarks  
  This constructor initializes the encoding to <xref:System.Text.UTF8Encoding>, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
- The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -291,9 +291,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
- The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -315,6 +315,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -353,7 +354,7 @@
   
  The `path` parameter is not required to be a file stored on disk; it can be any part of a system that supports access using streams.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -408,7 +409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -438,6 +439,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -480,9 +482,9 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
- The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
@@ -504,6 +506,7 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -540,7 +543,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -570,6 +573,7 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -614,9 +618,9 @@
 ## Remarks  
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
- The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
@@ -642,6 +646,7 @@
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -685,7 +690,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
@@ -719,6 +724,7 @@
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="buffersize" /> is less than or equal to zero.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -765,11 +771,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless you set the `leaveOpen` parameter to `true`, the <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
+ Unless you set the `leaveOpen` parameter to `true`, the <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
+ This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
@@ -851,7 +857,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.TextWriter.Close%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.TextWriter.Close%2A?displayProperty=nameWithType> method.  
   
  This implementation of <xref:System.IO.StreamReader.Close%2A> calls the <xref:System.IO.StreamReader.Dispose%2A> method passing a `true` value.  
   
@@ -1128,7 +1134,7 @@
 ## Remarks  
  The <xref:System.IO.StreamReader.Peek%2A> method returns an integer value in order to determine whether the end of the file, or another error has occurred. This allows a user to first check if the returned value is -1 before casting it to a <xref:System.Char> type.  
   
- This method overrides <xref:System.IO.TextReader.Peek%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.Peek%2A?displayProperty=nameWithType>.  
   
  The current position of the <xref:System.IO.StreamReader> object is not changed by <xref:System.IO.StreamReader.Peek%2A>.  
   
@@ -1181,7 +1187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=nameWithType>.  
   
  This method returns an integer so that it can return -1 if the end of the stream has been reached. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
@@ -1209,7 +1215,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (char[] buffer, int index, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1249,7 +1255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=nameWithType>.  
   
  This method returns an integer so that it can return 0 if the end of the stream has been reached.  
   
@@ -1348,7 +1354,7 @@
     </Member>
     <Member MemberName="ReadBlock">
       <MemberSignature Language="C#" Value="public override int ReadBlock (char[] buffer, int index, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadBlock(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadBlock([out] char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1500,7 +1506,7 @@
 ## Remarks  
  A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), or a carriage return immediately followed by a line feed ("\r\n"). The string that is returned does not contain the terminating carriage return or line feed. The returned value is `null` if the end of the input stream is reached.  
   
- This method overrides <xref:System.IO.TextReader.ReadLine%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.ReadLine%2A?displayProperty=nameWithType>.  
   
  If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying <xref:System.IO.Stream> object is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StreamReader.ReadLine%2A> buffer are discarded. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
@@ -1608,7 +1614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=nameWithType>.  
   
  <xref:System.IO.StreamReader.ReadToEnd%2A> works best when you need to read all the input from the current position to the end of the stream. If more control is needed over how many characters are read from the stream, use the <xref:System.IO.StreamReader.Read%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload, which generally results in better performance.  
   
@@ -1687,5 +1693,27 @@
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StreamReader" /> class for the specified stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next character or next set of characters from the input stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

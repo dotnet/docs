@@ -95,7 +95,7 @@
     </Member>
     <Member MemberName="TryAdd">
       <MemberSignature Language="C#" Value="public virtual bool TryAdd (System.Xml.XmlDictionaryString value, out int key);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryAdd(class System.Xml.XmlDictionaryString value, int32 key) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryAdd(class System.Xml.XmlDictionaryString value, [out] int32&amp; key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryWriterSession.TryAdd(System.Xml.XmlDictionaryString,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

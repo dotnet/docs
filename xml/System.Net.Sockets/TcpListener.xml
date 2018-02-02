@@ -49,6 +49,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Net.SocketPermission">to establish an outgoing connection or accept an incoming request.</permission>
+    <altmember cref="T:System.Net.Sockets.TcpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,9 +85,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is obsolete. Use the <xref:System.Net.Sockets.TcpListener.%23ctor%28System.Net.IPAddress%2CSystem.Int32%29?displayProperty=fullName> or <xref:System.Net.Sockets.TcpListener.%23ctor%28System.Net.IPEndPoint%29?displayProperty=fullName> constructors.  
+ This constructor is obsolete. Use the <xref:System.Net.Sockets.TcpListener.%23ctor%28System.Net.IPAddress%2CSystem.Int32%29?displayProperty=nameWithType> or <xref:System.Net.Sockets.TcpListener.%23ctor%28System.Net.IPEndPoint%29?displayProperty=nameWithType> constructors.  
   
- This constructor allows you to specify the port number on which to listen for incoming connection attempts. With this constructor, the underlying service provider assigns the most appropriate network address. If you do not care which local port is used, you can specify 0 for the port number. In this case, the service provider will assign an available port number between 1024 and 5000. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
+ This constructor allows you to specify the port number on which to listen for incoming connection attempts. With this constructor, the underlying service provider assigns the most appropriate network address. If you do not care which local port is used, you can specify 0 for the port number. In this case, the service provider will assign an available ephemeral port number. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
   
  Call the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection attempts.  
   
@@ -103,6 +104,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpListener.Start" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -136,7 +138,7 @@
 ## Remarks  
  This constructor allows you to specify the local IP address and port number on which to listen for incoming connection attempts. Before using this constructor, you must create an <xref:System.Net.IPEndPoint> using the desired local IP address and port number. Pass this <xref:System.Net.IPEndPoint> to the constructor as the `localEP` parameter.  
   
- If you do not care which local address is assigned, you can create an <xref:System.Net.IPEndPoint> using <xref:System.Net.IPAddress.Any?displayProperty=fullName> as the address parameter, and the underlying service provider will assign the most appropriate network address. This might help simplify your application if you have multiple network interfaces. If you do not care which local port is used, you can create an <xref:System.Net.IPEndPoint> using 0 for the port number. In this case, the service provider will assign an available port number between 1024 and 5000. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
+ If you do not care which local address is assigned, you can create an <xref:System.Net.IPEndPoint> using <xref:System.Net.IPAddress.Any?displayProperty=nameWithType> as the address parameter, and the underlying service provider will assign the most appropriate network address. This might help simplify your application if you have multiple network interfaces. If you do not care which local port is used, you can create an <xref:System.Net.IPEndPoint> using 0 for the port number. In this case, the service provider will assign an available ephemeral port number. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
   
  Call the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection attempts.  
   
@@ -156,6 +158,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="localEP" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Start" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,7 +193,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor allows you to specify the local IP address and port number on which to listen for incoming connection attempts. Before calling this constructor you must first create an <xref:System.Net.IPAddress> using the desired local address. Pass this <xref:System.Net.IPAddress> to the constructor as the `localaddr` parameter. If you do not care which local address is assigned, specify <xref:System.Net.IPAddress?displayProperty=fullName> for the `localaddr` parameter, and the underlying service provider will assign the most appropriate network address. This might help simplify your application if you have multiple network interfaces. If you do not care which local port is used, you can specify 0 for the port number. In this case, the service provider will assign an available port number between 1024 and 5000. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
+ This constructor allows you to specify the local IP address and port number on which to listen for incoming connection attempts. Before calling this constructor you must first create an <xref:System.Net.IPAddress> using the desired local address. Pass this <xref:System.Net.IPAddress> to the constructor as the `localaddr` parameter. If you do not care which local address is assigned, specify <xref:System.Net.IPAddress.Any?displayProperty=nameWithType> for the `localaddr` parameter, and the underlying service provider will assign the most appropriate network address. This might help simplify your application if you have multiple network interfaces. If you do not care which local port is used, you can specify 0 for the port number. In this case, the service provider will assign an available port number between 1024 and 5000. If you use this approach, you can discover what local network address and port number has been assigned by using the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property.  
   
  Call the <xref:System.Net.Sockets.TcpListener.Start%2A> method to begin listening for incoming connection attempts.  
   
@@ -211,6 +215,8 @@
           <paramref name="localaddr" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="port" /> is not between <see cref="F:System.Net.IPEndPoint.MinPort" /> and <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
+        <altmember cref="T:System.Net.IPAddress" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Start" />
       </Docs>
     </Member>
     <Member MemberName="AcceptSocket">
@@ -261,6 +267,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Pending" />
       </Docs>
     </Member>
     <Member MemberName="AcceptSocketAsync">
@@ -305,6 +314,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Pending" />
       </Docs>
     </Member>
     <Member MemberName="AcceptTcpClient">
@@ -338,7 +350,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.TcpListener.AcceptTcpClient%2A> is a blocking method that returns a <xref:System.Net.Sockets.TcpClient> that you can use to send and receive data. Use the <xref:System.Net.Sockets.TcpListener.Pending%2A> method to determine if connection requests are available in the incoming connection queue if you want to avoid blocking.  
   
- Use the <xref:System.Net.Sockets.TcpClient.GetStream%2A?displayProperty=fullName> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream> of the returned <xref:System.Net.Sockets.TcpClient>. The <xref:System.Net.Sockets.NetworkStream> will provide you with methods for sending and receiving with the remote host. When you are through with the <xref:System.Net.Sockets.TcpClient>, be sure to call its <xref:System.Net.Sockets.TcpClient.Close%2A> method. If you want greater flexibility than a <xref:System.Net.Sockets.TcpClient> offers, consider using <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A>.  
+ Use the <xref:System.Net.Sockets.TcpClient.GetStream%2A?displayProperty=nameWithType> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream> of the returned <xref:System.Net.Sockets.TcpClient>. The <xref:System.Net.Sockets.NetworkStream> will provide you with methods for sending and receiving with the remote host. When you are through with the <xref:System.Net.Sockets.TcpClient>, be sure to call its <xref:System.Net.Sockets.TcpClient.Close%2A> method. If you want greater flexibility than a <xref:System.Net.Sockets.TcpClient> offers, consider using <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A>.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -356,6 +368,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <altmember cref="T:System.Net.Sockets.TcpClient" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="T:System.Net.Sockets.NetworkStream" />
       </Docs>
     </Member>
     <Member MemberName="AcceptTcpClientAsync">
@@ -392,7 +408,7 @@
 ## Remarks  
  This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after the TCP connection has been accepted.  
   
- Use the <xref:System.Net.Sockets.TcpClient.GetStream%2A?displayProperty=fullName> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream> of the returned <xref:System.Net.Sockets.TcpClient> in the <xref:System.Threading.Tasks.Task%601>. The <xref:System.Net.Sockets.NetworkStream> will provide you with methods for sending and receiving with the remote host. When you are through with the <xref:System.Net.Sockets.TcpClient>, be sure to call its <xref:System.Net.Sockets.TcpClient.Close%2A> method. If you want greater flexibility than a <xref:System.Net.Sockets.TcpClient> offers, consider using <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync%2A>.  
+ Use the <xref:System.Net.Sockets.TcpClient.GetStream%2A?displayProperty=nameWithType> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream> of the returned <xref:System.Net.Sockets.TcpClient> in the <xref:System.Threading.Tasks.Task%601>. The <xref:System.Net.Sockets.NetworkStream> will provide you with methods for sending and receiving with the remote host. When you are through with the <xref:System.Net.Sockets.TcpClient>, be sure to call its <xref:System.Net.Sockets.TcpClient.Close%2A> method. If you want greater flexibility than a <xref:System.Net.Sockets.TcpClient> offers, consider using <xref:System.Net.Sockets.TcpListener.AcceptSocket%2A> or <xref:System.Net.Sockets.TcpListener.AcceptSocketAsync%2A>.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -401,6 +417,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <altmember cref="T:System.Net.Sockets.TcpClient" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="T:System.Net.Sockets.NetworkStream" />
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -437,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.TcpListener.Start" />
       </Docs>
     </Member>
     <Member MemberName="AllowNatTraversal">
@@ -483,6 +504,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" /> method was called after calling the <see cref="M:System.Net.Sockets.TcpListener.Start" /> method</exception>
+        <altmember cref="P:System.Net.IPAddress.IsIPv6Teredo" />
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="BeginAcceptSocket">
@@ -529,7 +555,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -590,7 +616,7 @@
  For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -683,7 +709,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the returned <xref:System.Net.Sockets.Socket> to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -746,7 +772,7 @@
 >  You can call the <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> property of the underlying socket (<xref:System.Net.Sockets.TcpClient.Client%2A>) to identify the remote host's network address and port number.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -862,7 +888,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property to identify the local network interface and port number being used to listen for incoming client connection requests, after a socket connection has been made. You must first cast this <xref:System.Net.EndPoint> to an <xref:System.Net.IPEndPoint>. You can then call the <xref:System.Net.IPEndPoint.Address%2A?displayProperty=fullName> property to retrieve the local IP address, and the <xref:System.Net.IPEndPoint.Port%2A?displayProperty=fullName> property to retrieve the local port number.  
+ You can use the <xref:System.Net.Sockets.TcpListener.LocalEndpoint%2A> property to identify the local network interface and port number being used to listen for incoming client connection requests, after a socket connection has been made. You must first cast this <xref:System.Net.EndPoint> to an <xref:System.Net.IPEndPoint>. You can then call the <xref:System.Net.IPEndPoint.Address%2A?displayProperty=nameWithType> property to retrieve the local IP address, and the <xref:System.Net.IPEndPoint.Port%2A?displayProperty=nameWithType> property to retrieve the local port number.  
   
    
   
@@ -875,6 +901,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="T:System.Net.EndPoint" />
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -922,6 +950,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The listener has not been started with a call to <see cref="M:System.Net.Sockets.TcpListener.Start" />.</exception>
+        <altmember cref="M:System.Net.Sockets.TcpListener.Start" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -968,6 +999,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1020,6 +1054,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code. When you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Stop" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -1061,7 +1099,7 @@
  Use the <xref:System.Net.Sockets.TcpListener.Stop%2A> method to close the <xref:System.Net.Sockets.TcpListener> and stop listening. You are responsible for closing your accepted connections separately.  
   
 > [!NOTE]
->  Use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
+>  Use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code and refer to the Windows Sockets version 2 API error code documentation in the MSDN library at [http://msdn.microsoft.com/library/](http://msdn.microsoft.com/library/) for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1080,6 +1118,11 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred while accessing the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="backlog" /> parameter is less than zero or exceeds the maximum number of permitted connections.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Net.Sockets.Socket" /> is null.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptTcpClient" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AcceptSocket" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.Stop" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -1131,7 +1174,28 @@
         <block subset="none" type="usage">
           <para>The <see cref="M:System.Net.Sockets.TcpListener.Stop" /> method also closes the underlying <see cref="T:System.Net.Sockets.Socket" />, and creates a new <see cref="T:System.Net.Sockets.Socket" /> for the <see cref="T:System.Net.Sockets.TcpListener" />. If you set any properties on the underlying <see cref="T:System.Net.Sockets.Socket" /> prior to calling the <see cref="M:System.Net.Sockets.TcpListener.Stop" /> method, those properties will not carry over to the new <see cref="T:System.Net.Sockets.Socket" />.</para>
         </block>
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts listening for incoming connection requests.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.TcpListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

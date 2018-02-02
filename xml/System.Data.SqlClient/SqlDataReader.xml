@@ -38,7 +38,7 @@
   
  <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed. Although the <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property may be accessed while the <xref:System.Data.SqlClient.SqlDataReader> exists, always call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> before returning the value of <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> to guarantee an accurate return value.  
   
- When using sequential access (<xref:System.Data.CommandBehavior?displayProperty=fullName>), an <xref:System.InvalidOperationException> will be raised if the <xref:System.Data.SqlClient.SqlDataReader> position is advanced and another read operation is attempted on the previous column.  
+ When using sequential access (<xref:System.Data.CommandBehavior.SequentialAccess?displayProperty=nameWithType>), an <xref:System.InvalidOperationException> will be raised if the <xref:System.Data.SqlClient.SqlDataReader> position is advanced and another read operation is attempted on the previous column.  
   
 > [!NOTE]
 >  For optimal performance, <xref:System.Data.SqlClient.SqlDataReader> avoids creating unnecessary objects or making unnecessary copies of data. Therefore, multiple calls to methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> return a reference to the same object. Use caution if you are modifying the underlying value of the objects returned by methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
@@ -2936,5 +2936,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a column in its native format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -39,8 +39,8 @@
   
  In this example, the `UpdateEmployeeInfo` method is used to perform an insert; however, it requires a `NorthwindEmployee` parameter to insert the data. For this reason, the collection of strings that the <xref:System.Web.UI.WebControls.DetailsView> control passes automatically is not sufficient. The `NorthwindEmployeeInserting` delegate is an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> object that handles the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting> event and enables you to manipulate the input parameters before the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation proceeds. Because the `UpdateEmployeeInfo` method requires a `NorthwindEmployee` object as a parameter, one is created using the collection of strings and is added to the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides an example middle-tier business object that the preceding code example uses. The following list describes the two major classes that are defined in the code example:  
   
@@ -57,6 +57,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserting" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Updating" />
+    <altmember cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleting" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,8 +112,8 @@
   
  In this example, the `NorthwindEmployeeUpdating` method is called before the <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> method to add the correct parameters and values to the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> collection. You can add the parameters and values dynamically, as demonstrated, or declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  
   
  ]]></format>
         </remarks>

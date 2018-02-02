@@ -31,6 +31,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyAttribute" />
+    <altmember cref="T:System.Configuration.TimeSpanValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Configuration.PositiveTimeSpanValidatorAttribute.ValidatorInstance%2A> property to perform positive <xref:System.TimeSpan> object validation by calling the <xref:System.Configuration.PositiveTimeSpanValidator.Validate%2A?displayProperty=fullName> method.  
+ You use the <xref:System.Configuration.PositiveTimeSpanValidatorAttribute.ValidatorInstance%2A> property to perform positive <xref:System.TimeSpan> object validation by calling the <xref:System.Configuration.PositiveTimeSpanValidator.Validate%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>

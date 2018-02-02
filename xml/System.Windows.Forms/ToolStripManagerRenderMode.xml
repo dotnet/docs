@@ -15,9 +15,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripManagerRenderMode> is used by the <xref:System.Windows.Forms.ToolStripManager> class and sets the painting style for <xref:System.Windows.Forms.ToolStrip> objects that have their <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> property set to <xref:System.Windows.Forms.ToolStripRenderMode?displayProperty=fullName>.  
+ The <xref:System.Windows.Forms.ToolStripManagerRenderMode> is used by the <xref:System.Windows.Forms.ToolStripManager> class and sets the painting style for <xref:System.Windows.Forms.ToolStrip> objects that have their <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=nameWithType> property set to <xref:System.Windows.Forms.ToolStripRenderMode?displayProperty=nameWithType>.  
   
- You cannot explicitly set the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> to Custom, however the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=fullName> is returned Custom when the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> is set to an extension of the <xref:System.Windows.Forms.ToolStripRenderer> class that is not <xref:System.Windows.Forms.ToolStripProfessionalRenderer> or <xref:System.Windows.Forms.ToolStripSystemRenderer>.  
+ You cannot explicitly set the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=nameWithType> to Custom, however the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A?displayProperty=nameWithType> is returned Custom when the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=nameWithType> is set to an extension of the <xref:System.Windows.Forms.ToolStripRenderer> class that is not <xref:System.Windows.Forms.ToolStripProfessionalRenderer> or <xref:System.Windows.Forms.ToolStripSystemRenderer>.  
   
  ]]></format>
     </remarks>

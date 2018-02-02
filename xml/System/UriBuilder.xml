@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Uri" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -472,7 +473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ The <xref:System.UriBuilder.Fragment%2A> property contains any text following a fragment marker (#) in the URI, including the marker itself. When setting the <xref:System.UriBuilder.Fragment%2A> property, the fragment marker is added to its value. **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=nameWithType> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
   
  **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Fragment%2A> is greater than 1, retrieve the property value as a string, remove the leading pound sign, append the new query string, and set the property with the combined string.  
   
@@ -525,7 +526,7 @@
   
  The hash codes for <xref:System.Uri> A and B are guaranteed to be the same when A.Equals(B) is `true`.  
   
- This method implements <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+ This method implements <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -673,6 +674,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The port cannot be set to a value less than -1 or greater than 65,535.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.UriBuilder.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -710,7 +713,7 @@
   
  The query information is escaped according to RFC 2396.  
   
- **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=fullName> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
+ **Note** In version 1.0 and 1.1 of the .NET Framework, setting the <xref:System.UriBuilder.Fragment%2A> property to any value, including `null`, cleared the <xref:System.UriBuilder.Query%2A> property, and setting the <xref:System.UriBuilder.Fragment%2A> property to `null` or to <xref:System.String.Empty?displayProperty=nameWithType> cleared the property. In version 2.0, however, the <xref:System.UriBuilder.Fragment%2A> and <xref:System.UriBuilder.Query%2A> properties are independent.  
   
  **Note** Do not append a string directly to this property. If the length of <xref:System.UriBuilder.Query%2A> is greater than 1, retrieve the property value as a string, remove the leading question mark, append the new query string, and set the property with the combined string.  
   
@@ -724,6 +727,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.Uri.Query" />
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -766,12 +771,14 @@
 |gopher|The resource is accessed through the Gopher protocol.|  
 |http|The resource is accessed through HTTP.|  
 |https|The resource is accessed through SSL-encrypted HTTP.|  
-|mailto|The resource is an e-mail address and is accessed through SMTP.|  
+|mailto|The resource is an email address and is accessed through SMTP.|  
 |news|The resource is accessed through NNTP.|  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The scheme cannot be set to an invalid scheme name.</exception>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.Uri.Scheme" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -867,6 +874,7 @@
           </block>  
   
  The URI constructed by the <see cref="T:System.UriBuilder" /> properties is invalid.</exception>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -899,5 +907,17 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UriBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

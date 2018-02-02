@@ -27,7 +27,7 @@
 ## Remarks  
  <xref:System.Windows.MultiTrigger> enables you to set property values or start actions based on a collection of <xref:System.Windows.Condition>s. A condition is met when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property of the <xref:System.Windows.Condition> class) of the element matches the specified <xref:System.Windows.Condition.Value%2A>. The comparison is a reference equality check. You can then use setters or the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties to apply changes or start actions when all of the conditions are met.  
   
- The <xref:System.Windows.MultiTrigger.Setters%2A> property of a <xref:System.Windows.MultiTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.MultiTrigger.Setters%2A> property of a <xref:System.Windows.MultiTrigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
    
   
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Trigger" />
+    <altmember cref="T:System.Windows.MultiDataTrigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.MultiTrigger.Setters" />
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -156,7 +159,7 @@
   
  If there are two <xref:System.Windows.Setter> objects in the same or different setter collections setting the same property, the Setter that is declared last is used.  
   
- Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.MultiTrigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.MultiTrigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
    
   
@@ -167,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.MultiTrigger.Conditions" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

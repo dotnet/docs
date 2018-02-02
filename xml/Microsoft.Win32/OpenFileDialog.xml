@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.SaveFileDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
         <permission cref="T:System.Security.Permissions.FileDialogPermission">to create a file stream. Associated enumeration:  <see cref="F:System.Security.Permissions.FileDialogPermissionAccess.Open" /></permission>
+        <altmember cref="P:Microsoft.Win32.FileDialog.SafeFileName" />
       </Docs>
     </Member>
     <Member MemberName="OpenFiles">

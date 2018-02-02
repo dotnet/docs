@@ -1,38 +1,20 @@
 ---
 title: "How to: Validate Strings That Represent Dates or Times (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "strings [Visual Basic], validating"
-  - "String data type, validation"
+  - "String data type [Visual Basic], validation"
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Validate Strings That Represent Dates or Times (Visual Basic)
 The following code example sets a `Boolean` value that indicates whether a string represents a valid date or time.  
@@ -47,6 +29,6 @@ The following code example sets a `Boolean` value that indicates whether a strin
  Use this method to validate the string before trying to convert the `String` to a `DateTime` variable. By checking the date or time first, you can avoid generating an exception at run time.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Information.IsDate%2A>   
- <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>   
+ <xref:Microsoft.VisualBasic.Information.IsDate%2A>  
+ <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>  
  [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)

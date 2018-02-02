@@ -18,7 +18,7 @@
 ## Remarks  
  The `<serviceCertificate>` element is a child element of the `<federationConfiguration>` element and configures the X.509 certificate, if any, that is used to encrypt and decrypt tokens when using WS-Federation.  
   
- The <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate%2A?displayProperty=fullName> property is an instance of <xref:System.IdentityModel.Services.ServiceCertificateElement>.  
+ The <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.ServiceCertificate%2A?displayProperty=nameWithType> property is an instance of <xref:System.IdentityModel.Services.ServiceCertificateElement>.  
   
  ]]></format>
     </remarks>

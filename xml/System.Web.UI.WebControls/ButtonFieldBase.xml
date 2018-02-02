@@ -35,6 +35,18 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class, you must override the following member: <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="P:System.Web.UI.WebControls.DetailsView.Fields" />
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +69,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
       </Docs>
     </Member>
     <Member MemberName="ButtonType">
@@ -98,12 +112,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to specify that buttons are displayed in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseButtonType/CS/buttonfieldbasebuttontypecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseButtonType/VB/buttonfieldbasebuttontypevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonFieldBaseButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseButtonType/CS/buttonfieldbasebuttontypecs.aspx#1)]
+ [!code-aspx-vb[ButtonFieldBaseButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseButtonType/VB/buttonfieldbasebuttontypevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ButtonType" />
+        <altmember cref="P:System.Web.UI.WebControls.ButtonField.ImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -142,11 +158,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property to perform validation when the button is clicked in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -171,13 +189,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current object that is derived from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to the <xref:System.Web.UI.WebControls.DataControlField> object that is passed in the `newField` parameter.  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=nameWithType> method to copy the properties of the current object that is derived from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to the <xref:System.Web.UI.WebControls.DataControlField> object that is passed in the `newField` parameter.  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Control developers should override the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method to copy any properties that are added to the custom control. When overriding the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method for the base class so that the base class properties are copied.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -217,11 +237,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property to display the header section of a <xref:System.Web.UI.WebControls.ButtonField> object in a <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/CS/buttonfieldbaseshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/VB/buttonfieldbaseshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonFieldBaseShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/CS/buttonfieldbaseshowheadercs.aspx#1)]
+ [!code-aspx-vb[ButtonFieldBaseShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/VB/buttonfieldbaseshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+        <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -253,7 +276,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property must be set to `true` for the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to have an effect.  
   
- For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=fullName>.  
+ For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=nameWithType>.  
   
  The value of this property is stored in view state.  
   
@@ -262,11 +285,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to specify that only a certain group of validation controls are validated when a button is clicked in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
       </Docs>
     </Member>
   </Members>

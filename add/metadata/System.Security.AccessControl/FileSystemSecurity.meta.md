@@ -20,7 +20,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.SetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -36,14 +36,14 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -59,7 +59,7 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -129,14 +129,14 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.ResetAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleAll
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -170,14 +170,14 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSystemSecurity.SetAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -202,14 +202,14 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.AddAccessRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -225,5 +225,5 @@ manager: "wpickett"
 uid: System.Security.AccessControl.FileSystemSecurity.AddAuditRule
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

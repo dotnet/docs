@@ -1,37 +1,19 @@
 ---
 title: "How to: Convert an Object to Another Type in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Convert an Object to Another Type in Visual Basic
 You convert an `Object` variable to another data type by using a conversion keyword such as [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md).  
@@ -53,15 +35,15 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System?displayProperty=fullName> namespace.  
+-   A reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## See Also  
- <xref:System.Object>   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)   
- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)   
- [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)   
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+ <xref:System.Object>  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
+ [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
+ [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
+ [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
+ [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

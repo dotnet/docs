@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallOut"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySink2::OnSyncCallOut method [.NET Framework debugging]"
   - "OnSyncCallOut method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySink2::OnSyncCallOut Method
 Gets invoked when a call is out.  
@@ -61,6 +61,6 @@ HRESULT OnSyncCallOut
  **Header:** ProtocolNotify2.idl  
   
 ## See Also  
- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)   
- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)   
+ [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
+ [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
  [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)

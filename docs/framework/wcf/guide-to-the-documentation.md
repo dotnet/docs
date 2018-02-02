@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF [WCF], documentation"
   - "Windows Communication Foundation [WCF], documentation"
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
 caps.latest.revision: 36
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Guide to the Documentation
 Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  
@@ -71,7 +70,7 @@ Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1
  To see a list of protocols supported in the system-provided bindings, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md). To see the list of system-provided bindings, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
   
 ## See Also  
- [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)   
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)   
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)   
+ [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)  
+ [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
+ [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
  [Building Clients](../../../docs/framework/wcf/building-clients.md)

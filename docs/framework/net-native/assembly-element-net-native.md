@@ -14,6 +14,8 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;Assembly&gt; Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified assembly.  
@@ -46,9 +48,9 @@ Applies runtime reflection policy to all the types in a specified assembly.
 |`Browse`|Reflection|Optional attribute. Controls querying for information about or enumerating the types in the assembly, but does not enable any dynamic access at run time.|  
 |`Dynamic`|Reflection|Optional attribute. Controls runtime access to all type members, including constructors, methods, fields, properties, and events, to enable dynamic programming.|  
 |`Serialize`|Serialization|Optional attribute. Controls runtime access to constructors, fields, and properties, to enable type instances to be serialized and deserialized by libraries such as the Newtonsoft JSON serializer.|  
-|`DataContractSerializer`|Serialization|Optional attribute. Controls policy for serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> class.|  
-|`DataContractJsonSerializer`|Serialization|Optional attribute. Controls policy for JSON serialization that uses the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=fullName> class.|  
-|`XmlSerializer`|Serialization|Optional attribute. Controls policy for XML serialization that uses the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> class.|  
+|`DataContractSerializer`|Serialization|Optional attribute. Controls policy for serialization that uses the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType> class.|  
+|`DataContractJsonSerializer`|Serialization|Optional attribute. Controls policy for JSON serialization that uses the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType> class.|  
+|`XmlSerializer`|Serialization|Optional attribute. Controls policy for XML serialization that uses the <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType> class.|  
 |`MarshalObject`|Interop|Optional attribute. Controls policy for marshaling reference types to Windows Runtime and COM.|  
 |`MarshalDelegate`|Interop|Optional attribute. Controls policy for marshaling delegate types as function pointers to native code.|  
 |`MarshalStructure`|Interop|Optional attribute. Controls policy for marshaling structures to native code.|  
@@ -57,7 +59,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*assembly_name*|The simple name of the assembly, without its file extension. This attribute corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=fullName> property. For example, the name of an assembly named Extensions.dll is "Extensions".<br /><br /> You can also specify the literal string `*Application*` to apply policy to all assemblies in your app package, whether those assemblies are loaded or not. `*Application*` never applies policy to .NET Framework assemblies.|  
+|*assembly_name*|The simple name of the assembly, without its file extension. This attribute corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property. For example, the name of an assembly named Extensions.dll is "Extensions".<br /><br /> You can also specify the literal string `*Application*` to apply policy to all assemblies in your app package, whether those assemblies are loaded or not. `*Application*` never applies policy to .NET Framework assemblies.|  
   
 ## All other attributes  
   
@@ -96,6 +98,6 @@ Applies runtime reflection policy to all the types in a specified assembly.
  The `Activate`, `Browse`, `Dynamic`, and `Serialize` attributes are all optional. However, the `<Assembly>` element must contain at least one of these attributes.  
   
 ## See Also  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)   
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
+ [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
  [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

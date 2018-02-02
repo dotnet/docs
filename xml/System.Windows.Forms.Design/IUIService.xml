@@ -63,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Design.IUIService.ShowComponentEditor(System.Object,System.Windows.Forms.IWin32Window)" />
       </Docs>
     </Member>
     <Member MemberName="GetDialogOwnerWindow">
@@ -149,6 +150,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The component does not support component editors.</exception>
+        <altmember cref="M:System.Windows.Forms.Design.IUIService.CanShowComponentEditor(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ShowDialog">
@@ -182,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DialogResult" />
       </Docs>
     </Member>
     <Member MemberName="ShowError">
@@ -395,6 +398,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DialogResult" />
+        <altmember cref="T:System.Windows.Forms.MessageBox" />
       </Docs>
     </Member>
     <Member MemberName="ShowToolWindow">
@@ -429,6 +434,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.StandardToolWindows" />
       </Docs>
     </Member>
     <Member MemberName="Styles">
@@ -465,7 +471,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the specified message in a message box.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ShowError">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the specified error message in a message box.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

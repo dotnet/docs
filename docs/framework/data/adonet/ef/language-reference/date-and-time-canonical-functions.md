@@ -9,15 +9,13 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
 caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Date and Time Canonical Functions
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes date and time canonical functions.  
@@ -41,7 +39,7 @@ manager: "jhubbard"
 |`CreateTime(` `hour`, `minute`, `second``)`|Returns a new `Time` value as the current time.<br /><br /> **Arguments**<br /><br /> `hour` and `minute`: `Int32`.<br /><br /> `second`: `Double`.<br /><br /> **Return Value**<br /><br /> A `Time`.|  
 |`CurrentDateTime()`|Returns a `DateTime` value as the current date and time of the server in the server's time zone.<br /><br /> **Return Value**<br /><br /> A `DateTime`.|  
 |`CurrentDateTimeOffset()`|Returns the current date, time and offset as a `DateTimeOffset`.<br /><br /> **Return Value**<br /><br /> A `DateTimeOffset`.|  
-|`CurrentUtcDateTime()`|Returns a <xref:System.DateTime>value as the current date and time of the server in the UTS time zone.<br /><br /> **Return Value**<br /><br /> A `DateTime`.|  
+|`CurrentUtcDateTime()`|Returns a <xref:System.DateTime> value as the current date and time of the server in the UTS time zone.<br /><br /> **Return Value**<br /><br /> A `DateTime`.|  
 |`Day(` `expression` `)`|Returns the day portion of `expression` as an `Int32` between 1 and 31.<br /><br /> **Arguments**<br /><br /> A `DateTime` and `DateTimeOffset`.<br /><br /> **Return Value**<br /><br /> An `Int32`.<br /><br /> **Example**<br /><br /> `-- The following example returns 12.`<br /><br /> `Day(cast('03/12/1998' as DateTime))`|  
 |`DayOfYear(` `expression` `)`|Returns the day portion of `expression` as an `Int32` between 1 and 366, where 366 is returned for the last day of a leap year.<br /><br /> **Arguments**<br /><br /> A `DateTime` or `DateTimeOffset`.<br /><br /> **Return Value**<br /><br /> An `Int32`.|  
 |`DiffNanoseconds(` `startExpression`, `endExpression``)`|Returns the difference, in nanoseconds, between `startExpression` and `endExpression`.<br /><br /> **Arguments**<br /><br /> `startExpression`, `endExpression`: `DateTime`, `DateTimeOffset`, or `Time`. **Note:**  `startExpression` and `endExpression` must be of the same type. <br /><br /> **Return Value**<br /><br /> An `Int32`.|  

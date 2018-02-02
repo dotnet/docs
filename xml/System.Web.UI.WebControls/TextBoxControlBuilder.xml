@@ -68,10 +68,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> to ignore white space in the <xref:System.Web.UI.WebControls.TextBox> control.  
+ This method overrides <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=nameWithType> to ignore white space in the <xref:System.Web.UI.WebControls.TextBox> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecodeLiterals">
@@ -99,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TextBox" />
       </Docs>
     </Member>
   </Members>

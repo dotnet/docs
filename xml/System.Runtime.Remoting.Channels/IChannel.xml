@@ -25,7 +25,7 @@
   
  The client part of the channel is located at the end of a client context sink chain. The server part of the channel is located at the start of the server context sink chain. Messages are delivered to the client channel using the <xref:System.Runtime.Remoting.Messaging.IMessageSink> interface, travel through the channel, and are then received by the server channel. The server channel delivers the message to the first server context sink.  
   
- Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A> properties. Channels can be registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=fullName> method.  
+ Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A> properties. Channels can be registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
@@ -98,11 +98,17 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpServerChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpClientChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel" />
+        <altmember cref="T:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, string objectURI) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannel.Parse(System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -134,6 +140,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
   </Members>

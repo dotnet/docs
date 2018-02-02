@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mscorlib"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "mscorlib element"
   - "<mscorlib> element"
@@ -25,6 +20,8 @@ caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;mscorlib&gt; Element for Cryptography Settings
 Contains the [\<cryptographySettings> element](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md).  
@@ -58,7 +55,7 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
   
 ## Example  
- The following example shows how to use the **\<mscorlib>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
+ The following example shows how to use the **\<mscorlib>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  
 <configuration>  
@@ -80,9 +77,9 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 ```  
   
 ## See Also  
- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>   
- <xref:System.Security.Cryptography>   
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)   
- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)   
+ <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
+ <xref:System.Security.Cryptography>  
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+ [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+ [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
  [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

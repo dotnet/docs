@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBoxValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBoxValue interface [.NET Framework debugging]"
 ms.assetid: 3d3ae7e2-97d4-46de-a2c3-cb78f3490f9d
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBoxValue Interface1
 A subclass of "ICorDebugHeapValue" that represents a boxed value class object.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager::CreateRWLockOwnerIterator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager::CreateRWLockOwnerIterator method [.NET Framework hosting]"
   - "CreateRWLockOwnerIterator method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRSyncManager::CreateRWLockOwnerIterator Method
 Requests that the common language runtime (CLR) create an iterator for the host to use to determine the set of tasks waiting on a reader-writer lock.  
@@ -81,5 +81,5 @@ HRESULT CreateRWLockOwnerIterator (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)   
+ [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
  [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

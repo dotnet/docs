@@ -17,6 +17,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Exception Thrown_V1 ETW Event
 This event captures information about the exceptions that are thrown.  

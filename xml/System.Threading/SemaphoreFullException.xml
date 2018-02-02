@@ -36,10 +36,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The count on a semaphore is decremented each time a thread enters the semaphore, and incremented when a thread releases the semaphore. When the count is zero, subsequent requests block until other threads release the semaphore. When all threads have released the semaphore, the count is at the maximum value specified when the semaphore was created. If a programming error causes a thread to call the <xref:System.Threading.Semaphore.Release%2A?displayProperty=fullName> method at this point, a <xref:System.Threading.SemaphoreFullException> is thrown.  
+ The count on a semaphore is decremented each time a thread enters the semaphore, and incremented when a thread releases the semaphore. When the count is zero, subsequent requests block until other threads release the semaphore. When all threads have released the semaphore, the count is at the maximum value specified when the semaphore was created. If a programming error causes a thread to call the <xref:System.Threading.Semaphore.Release%2A?displayProperty=nameWithType> method at this point, a <xref:System.Threading.SemaphoreFullException> is thrown.  
   
 > [!NOTE]
->  The <xref:System.Threading.Semaphore> class does not enforce thread identity on calls to the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.Release%2A?displayProperty=fullName> methods. It is not necessary for the same thread that called <xref:System.Threading.WaitHandle.WaitOne%2A> to call <xref:System.Threading.Semaphore.Release%2A>.  
+>  The <xref:System.Threading.Semaphore> class does not enforce thread identity on calls to the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType> and <xref:System.Threading.Semaphore.Release%2A?displayProperty=nameWithType> methods. It is not necessary for the same thread that called <xref:System.Threading.WaitHandle.WaitOne%2A> to call <xref:System.Threading.Semaphore.Release%2A>.  
   
  <xref:System.Threading.SemaphoreFullException> does not necessarily indicate a problem with the code where the exception occurred. Consider the following scenario: Thread A and thread B enter a semaphore that has a maximum count of two. A programming error in thread B causes it to call <xref:System.Threading.Semaphore.Release%2A> twice, so that the count on the semaphore is full. As a result, when thread A eventually calls <xref:System.Threading.Semaphore.Release%2A>, a <xref:System.Threading.SemaphoreFullException> is thrown.  
   
@@ -56,6 +56,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Semaphore" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -96,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Semaphore" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -139,6 +141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Semaphore" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -175,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Semaphore" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -213,7 +217,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Semaphore" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.SemaphoreFullException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

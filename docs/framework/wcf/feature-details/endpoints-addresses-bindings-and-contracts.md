@@ -15,9 +15,11 @@ helpviewer_keywords:
   - "WCF [WCF], endpoints"
 ms.assetid: 9ddc46ee-1883-4291-9926-28848c57e858
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoints: Addresses, Bindings, and Contracts
 All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide clients access to the functionality offered by a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
@@ -67,10 +69,10 @@ All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]
   
      For more information about defining a contract, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).  
   
--   Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][ClientViaBehavior](../../../../docs/framework/wcf/diagnostics/wmi/clientviabehavior.md).  
+-   Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [ClientViaBehavior](../../../../docs/framework/wcf/diagnostics/wmi/clientviabehavior.md).  
   
 ## Defining Endpoints  
- You can specify the endpoint for a service either imperatively using code or declaratively through configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md) and [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).  
+ You can specify the endpoint for a service either imperatively using code or declaratively through configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md) and [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).  
   
 ## In This Section  
  This section explains the purpose of bindings, endpoints, and addresses; shows how to configure a binding and an endpoint; and demonstrates how to use the `ClientVia` behavior and `ListenUri` property.  
@@ -94,5 +96,5 @@ All communication with a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]
  Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## See Also  
- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)   
+ [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
  [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)

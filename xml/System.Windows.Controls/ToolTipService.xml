@@ -16,11 +16,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
+ You define a tooltip for an element by setting the <xref:System.Windows.FrameworkContentElement.ToolTip%2A?displayProperty=nameWithType> or <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property.  The ToolTip property takes one child. The content of the child can vary from a simple text string to more complex content such as a <xref:System.Windows.Controls.StackPanel> that has embedded text and <xref:System.Windows.Controls.Image> elements.  
   
  You can define tooltip content as a <xref:System.Windows.Controls.ToolTip> object, but this is not required. When you do not define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can use the <xref:System.Windows.Controls.ToolTipService> properties to position and customize the tooltip content. Attached properties of the <xref:System.Windows.Controls.ToolTipService> class are used to determine the placement, behavior, and appearance of a tooltip. These properties are set on the element that defines the tooltip.  
   
- The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=fullName> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=fullName> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=fullName> property is used.  
+ The <xref:System.Windows.Controls.ToolTip> class and the <xref:System.Windows.Controls.ToolTipService> class share many of the same properties that are used to customize a tooltip. If equivalent <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties are both set, the <xref:System.Windows.Controls.ToolTipService> property takes precedence. For example, if both the <xref:System.Windows.Controls.ToolTip.Placement%2A?displayProperty=nameWithType> property and the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=nameWithType> property are set for a <xref:System.Windows.Controls.ToolTip?displayProperty=nameWithType> object, the value of the <xref:System.Windows.Controls.ToolTipService.Placement%2A?displayProperty=nameWithType> property is used.  
   
  The following <xref:System.Windows.Controls.ToolTipService> timing properties are only defined for the <xref:System.Windows.Controls.ToolTipService> class and are used by all tooltips:  
   
@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ToolTip" />
+    <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+    <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="AddToolTipClosingHandler">
@@ -143,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetBetweenShowDelay(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="GetHasDropShadow">
@@ -180,6 +185,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHasDropShadow(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       </Docs>
     </Member>
     <Member MemberName="GetHorizontalOffset">
@@ -220,6 +227,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetHorizontalOffset(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="GetInitialShowDelay">
@@ -257,6 +266,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetInitialShowDelay(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="GetIsEnabled">
@@ -294,6 +305,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="GetIsOpen">
@@ -331,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsOpen" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacement">
@@ -368,6 +382,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacement(System.Windows.DependencyObject,System.Windows.Controls.Primitives.PlacementMode)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.Placement" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacementRectangle">
@@ -405,6 +421,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementRectangle(System.Windows.DependencyObject,System.Windows.Rect)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="GetPlacementTarget">
@@ -442,6 +460,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetPlacementTarget(System.Windows.DependencyObject,System.Windows.UIElement)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetShowDuration">
@@ -479,6 +499,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowDuration(System.Windows.DependencyObject,System.Int32)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowDuration" />
       </Docs>
     </Member>
     <Member MemberName="GetShowOnDisabled">
@@ -516,6 +538,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetShowOnDisabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" />
       </Docs>
     </Member>
     <Member MemberName="GetToolTip">
@@ -553,6 +577,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetToolTip(System.Windows.DependencyObject,System.Object)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="GetVerticalOffset">
@@ -593,6 +619,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetVerticalOffset(System.Windows.DependencyObject,System.Double)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="HasDropShadowProperty">
@@ -808,6 +836,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetBetweenShowDelay(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.BetweenShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="SetHasDropShadow">
@@ -841,6 +871,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHasDropShadow(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HasDropShadow" />
       </Docs>
     </Member>
     <Member MemberName="SetHorizontalOffset">
@@ -874,6 +906,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetHorizontalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="SetInitialShowDelay">
@@ -907,6 +941,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetInitialShowDelay(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.InitialShowDelay" />
       </Docs>
     </Member>
     <Member MemberName="SetIsEnabled">
@@ -940,6 +976,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.SetIsEnabled(System.Windows.DependencyObject,System.Boolean)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.IsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacement">
@@ -973,6 +1011,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacement(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.Placement" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacementRectangle">
@@ -1006,6 +1046,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementRectangle(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementRectangle" />
       </Docs>
     </Member>
     <Member MemberName="SetPlacementTarget">
@@ -1039,6 +1081,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetPlacementTarget(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.PlacementTarget" />
       </Docs>
     </Member>
     <Member MemberName="SetShowDuration">
@@ -1072,6 +1116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowDuration(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowDuration" />
       </Docs>
     </Member>
     <Member MemberName="SetShowOnDisabled">
@@ -1105,6 +1151,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetShowOnDisabled(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ShowOnDisabled" />
       </Docs>
     </Member>
     <Member MemberName="SetToolTip">
@@ -1143,6 +1191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetToolTip(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="SetVerticalOffset">
@@ -1176,6 +1226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.ToolTipService.GetVerticalOffset(System.Windows.DependencyObject)" />
+        <altmember cref="P:System.Windows.Controls.ToolTipService.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="ShowDurationProperty">
@@ -1232,14 +1284,14 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event occurs immediately before a tooltip closes.  
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>.  
+ This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType> and <xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=nameWithType>.  
   
  If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Closed> event is also raised when the tooltip closes.  
   
    
   
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ The following example shows how to set an event handler for the <xref:System.Windows.Controls.ToolTipService.ToolTipClosing> event. In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=nameWithType>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
   
  [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
  [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
@@ -1249,6 +1301,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTipService.ToolTipClosing" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipClosing" />
+        <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipClosing" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Closed" />
+        <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpeningEvent">
@@ -1271,14 +1330,14 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event occurs immediately before a tooltip opens. This event does not occur if the tooltip is not defined or if the tooltip content is set to null.  
   
- This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>.  
+ This field registers the behavior of the <xref:System.Windows.Controls.ToolTipService.ToolTipOpening> event for classes that use this service. The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event through the [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] accessors <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType> and <xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=nameWithType>.  
   
  If you specify the tooltip as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> event is also raised when the tooltip opens.  
   
    
   
 ## Examples  
- The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
+ The following example shows how to set an event handler for the <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType> event.  In this case, the event handler is actually for <xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=nameWithType>, because the <xref:System.Windows.Shapes.Ellipse> where the handler is attached is a derived class of <xref:System.Windows.FrameworkElement>.  
   
  [!code-csharp[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#tooltipserviceeventhandlers)]
  [!code-vb[ToolTipService#ToolTipServiceEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#tooltipserviceeventhandlers)]  
@@ -1288,6 +1347,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.ToolTipService.ToolTipOpening" />
+        <altmember cref="E:System.Windows.FrameworkElement.ToolTipOpening" />
+        <altmember cref="E:System.Windows.FrameworkContentElement.ToolTipOpening" />
+        <altmember cref="F:System.Windows.Controls.ToolTipService.ToolTipClosingEvent" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventArgs" />
+        <altmember cref="T:System.Windows.Controls.ToolTipEventHandler" />
+        <altmember cref="E:System.Windows.Controls.ToolTip.Opened" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipProperty">

@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Common Type System & Common Language Specification
@@ -53,5 +56,5 @@ You can consult the documents in the [More Resources](#more-resources) section b
 
 ## More resources
 
-*   [Common Type System](https://msdn.microsoft.com/library/zcx1eb1e.aspx)
-*   [Common Language Specification](https://msdn.microsoft.com/library/12a7a7h3.aspx)
+*   [Common Type System](./base-types/common-type-system.md)
+*   [Common Language Specification](language-independence-and-language-independent-components.md)

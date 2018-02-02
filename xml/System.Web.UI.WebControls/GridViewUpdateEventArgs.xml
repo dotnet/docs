@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object is passed to the event-handling method, which allows you to determine the index of the current row and to indicate that the update operation should be canceled. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A>, and <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> collections, if necessary, before the values are passed to the data source. A common way to use these collections is to HTML-encode the values supplied by the user before they are stored in the data source. This helps to prevent script injection attacks.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
   
@@ -29,11 +29,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs> object passed to the event-handling method to HTML-encode all values supplied by the user before updating the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewUpdateEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -96,18 +100,24 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields specified in the <xref:System.Web.UI.WebControls.GridView.DataKeyNames%2A> property. If multiple fields form the primary key, a separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary for each key field.  
   
- To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> property to access the values of the key fields in the row to update. The values are then written to a log file of updated records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/CS/gridviewupdateeventargskeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/VB/gridviewupdateeventargskeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/CS/gridviewupdateeventargskeyscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsKeys/VB/gridviewupdateeventargskeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -136,18 +146,23 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property is automatically populated with the name/value pairs of the revised non-key fields in the row. A separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property for each non-key field in the row.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> property to HTML-encode all values supplied by the user before updating the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdating/CS/gridviewrowupdatingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdating/VB/gridviewrowupdatingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -176,18 +191,24 @@
   
  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property is automatically populated with the original values of all the field name/value pairs in the row. A separate entry is added to the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property for each field in the row.  
   
- To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry?displayProperty=fullName> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property of a <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> property to access the original values of the fields in the row to update. The values are then written to a log file of updated records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/CS/gridviewupdateeventargsoldvaluescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/VB/gridviewupdateeventargsoldvaluesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/CS/gridviewupdateeventargsoldvaluescs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateEventArgsOldValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateEventArgsOldValues/VB/gridviewupdateeventargsoldvaluesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Key" />
+        <altmember cref="P:System.Collections.DictionaryEntry.Value" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -213,6 +234,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
   </Members>

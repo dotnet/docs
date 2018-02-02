@@ -14,6 +14,8 @@
     <summary>Represents an error object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+    <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
   </Docs>
   <Members>
     <Member MemberName="description">
@@ -32,6 +34,8 @@
         <summary>Specifies the message that explains the reason for the error.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
       </Docs>
     </Member>
     <Member MemberName="message">
@@ -50,6 +54,8 @@
         <summary>Specifies the message that explains the reason for the error.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
       </Docs>
     </Member>
     <Member MemberName="number">
@@ -75,6 +81,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -93,10 +101,12 @@
         <Parameter Name="err" Type="Microsoft.JScript.ErrorObject" />
       </Parameters>
       <Docs>
-        <param name="err">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="err">The object to convert.</param>
+        <summary>Converts an <see cref="T:Microsoft.JScript.ErrorObject" /> to an <see cref="T:System.Exception" />, explicitly.</summary>
+        <returns>The converted <see cref="T:Microsoft.JScript.ErrorObject" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
       </Docs>
     </Member>
     <Member MemberName="ToException">
@@ -120,6 +130,8 @@
         <returns>The converted <see cref="T:Microsoft.JScript.ErrorObject" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ErrorConstructor" />
+        <altmember cref="T:Microsoft.JScript.ErrorPrototype" />
       </Docs>
     </Member>
   </Members>

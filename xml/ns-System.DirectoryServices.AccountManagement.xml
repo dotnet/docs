@@ -17,7 +17,7 @@
   
 -   Cross-store support allows group objects in the Active Directory Domain Services (AD DS), Active Directory Lightweight Directory Services (AD LDS), and Machine SAM (MSAM) databases to contain members from different types of stores.  
   
--   Query by example searching, available on the <xref:System.DirectoryServices.AccountManagement.PrincipalaSearcher> class, enables applications to set properties on a principal object and search the selected store for other objects that contain matching property values.  
+-   Query by example searching, available on the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher> class, enables applications to set properties on a principal object and search the selected store for other objects that contain matching property values.  
   
 -   Enhanced search on computer, user and group principal objects enables applications to search the selected store for matching principal objects.  
   
@@ -29,5 +29,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.DirectoryServices" />
   </Docs>
 </Namespace>

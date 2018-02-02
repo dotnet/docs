@@ -59,7 +59,7 @@
   
  If this format is not followed, the behavior of the `GetValue` and `SetValue` methods is undefined.  
   
- Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=fullName> on `PropertyInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=fullName> to inherit custom attributes.  
+ Calling <xref:System.Reflection.ICustomAttributeProvider.GetCustomAttributes%2A?displayProperty=nameWithType> on `PropertyInfo` when the `inherit` parameter of `GetCustomAttributes` is `true` does not walk the type hierarchy. Use <xref:System.Attribute?displayProperty=nameWithType> to inherit custom attributes.  
   
    
   
@@ -141,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.PropertyInfo.Attributes%2A> property returns the attributes associated with the property represented by this <xref:System.Reflection.PropertyInfo> object.  The attributes are primarily modifiers applied by a compiler when creating a property; they indicate whether a property is the default property, a `SpecialName` property, and so on. Note that, for almost all properties found in types in the .NET Framework class library, the value of the <xref:System.Reflection.PropertyInfo.Attributes%2A> property is <xref:System.Reflection.PropertyAttributes?displayProperty=fullName>.  
+ The <xref:System.Reflection.PropertyInfo.Attributes%2A> property returns the attributes associated with the property represented by this <xref:System.Reflection.PropertyInfo> object.  The attributes are primarily modifiers applied by a compiler when creating a property; they indicate whether a property is the default property, a `SpecialName` property, and so on. Note that, for almost all properties found in types in the .NET Framework class library, the value of the <xref:System.Reflection.PropertyInfo.Attributes%2A> property is <xref:System.Reflection.PropertyAttributes.None?displayProperty=nameWithType>.  
   
 > [!TIP]
 >  In most cases, you probably want to retrieve the custom attributes associated with a property. To do this, retrieve the value of the <xref:System.Reflection.MemberInfo.CustomAttributes%2A> property, or call one of the overloads of the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method.  
@@ -150,7 +150,7 @@
   
 1.  Get a <xref:System.Type> object that represents the type to which the property belongs.  
   
-2.  Get the <xref:System.Reflection.PropertyInfo> object by calling an overload of the <xref:System.Type.GetProperty%2A?displayProperty=fullName> method.  
+2.  Get the <xref:System.Reflection.PropertyInfo> object by calling an overload of the <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method.  
   
 3.  Retrieve the property's attributes from the <xref:System.Reflection.PropertyInfo.Attributes%2A> property.  
   
@@ -158,6 +158,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.MemberInfo.CustomAttributes" />
+        <altmember cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -253,7 +255,7 @@
   
 1.  Get the <xref:System.Type> object of the type that includes the property.  
   
-2.  Call the <xref:System.Type.GetProperty%2A?displayProperty=fullName> to get the <xref:System.Reflection.PropertyInfo> object that represents the property.  
+2.  Call the <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> to get the <xref:System.Reflection.PropertyInfo> object that represents the property.  
   
 3.  Retrieve the value of the <xref:System.Reflection.PropertyInfo.CanWrite%2A> property.  
   
@@ -977,7 +979,7 @@
 ## Remarks  
  You call the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%29> overload to retrieve the value of a non-indexed property; if you try to retrieve the value of an indexed property, the method throws a <xref:System.Reflection.TargetParameterCountException> exception. You can determine whether a property is indexed or not by calling the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the length of the returned <xref:System.Reflection.ParameterInfo> array is zero, the property is not indexed.  
   
- This is a convenience method that provides an implementation for the abstract <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method with the <xref:System.Reflection.BindingFlags> parameter set to <xref:System.Reflection.BindingFlags?displayProperty=fullName>, the <xref:System.Reflection.Binder> set to `null`, the object array of index values set to `null`, and the <xref:System.Globalization.CultureInfo> set to `null`.  
+ This is a convenience method that provides an implementation for the abstract <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method with the <xref:System.Reflection.BindingFlags> parameter set to <xref:System.Reflection.BindingFlags.Default?displayProperty=nameWithType>, the <xref:System.Reflection.Binder> set to `null`, the object array of index values set to `null`, and the <xref:System.Globalization.CultureInfo> set to `null`.  
   
    
   
@@ -1052,14 +1054,14 @@ Console.WriteLine("CurrCult: " +
  To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
 ## Examples  
- The following example shows how to get the value of an indexed property. The <xref:System.String.Chars%2A?displayProperty=fullName> property is the default property (the indexer in C#) of the <xref:System.String> class.  
+ The following example shows how to get the value of an indexed property. The <xref:System.String.Chars%2A?displayProperty=nameWithType> property is the default property (the indexer in C#) of the <xref:System.String> class.  
   
  [!code-csharp[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/CS/source.cs#1)]
  [!code-vb[System.Reflection.PropertyInfo.GetValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflection.PropertyInfo.GetValue Example/VB/source.vb#1)]  
@@ -1148,7 +1150,7 @@ Console.WriteLine("CurrCult: " +
  To use the `GetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `GetValue` method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1164,6 +1166,9 @@ Console.WriteLine("CurrCult: " +
         <exception cref="T:System.MethodAccessException">There was an illegal attempt to access a private or protected method inside a class.</exception>
         <exception cref="T:System.Reflection.TargetInvocationException">An error occurred while retrieving the property value. For example, an index value specified for an indexed property is out of range. The <see cref="P:System.Exception.InnerException" /> property indicates the reason for the error.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Reflection.Binder" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1366,7 +1371,7 @@ Console.WriteLine("CurrCult: " +
   
 1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic  operator, as the example illustrates.  
   
-2.  Get a <xref:System.Reflection.PropertyInfo> object that represents the property in which you're interested. You can do this by getting an array of all properties from the <xref:System.Type.GetProperties%2A?displayProperty=fullName> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.PropertyInfo> object that represents the property directly by calling the <xref:System.Type.GetProperty%2A?displayProperty=fullName> method and specifying the property name.  
+2.  Get a <xref:System.Reflection.PropertyInfo> object that represents the property in which you're interested. You can do this by getting an array of all properties from the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.PropertyInfo> object that represents the property directly by calling the <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method and specifying the property name.  
   
 3.  Retrieve the value of the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property from the <xref:System.Reflection.PropertyInfo> object.  
   
@@ -1420,6 +1425,8 @@ Console.WriteLine("CurrCult: " +
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.PropertyInfo.GetMethod" />
+        <altmember cref="P:System.Reflection.PropertyInfo.CanWrite" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -1470,12 +1477,12 @@ Console.WriteLine("CurrCult: " +
   
  If the property type of this <xref:System.Reflection.PropertyInfo> object is a value type and `value` is `null`, the property will be set to the default value for that type.  
   
- This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, `null` for `Object[]`, and `null` for `CultureInfo`.  
+ This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags.Default?displayProperty=nameWithType> for the `BindingFlags` parameter, `null` for `Binder`, `null` for `Object[]`, and `null` for `CultureInfo`.  
   
  To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo> object. From the <xref:System.Reflection.PropertyInfo> object, call the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1567,12 +1574,12 @@ Console.WriteLine("CurrCult: " +
   
  To determine whether a property is indexed, use the <xref:System.Reflection.PropertyInfo.GetIndexParameters%2A> method. If the resulting array has 0 (zero) elements, the property is not indexed.  
   
- This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags?displayProperty=fullName> for the `BindingFlags` parameter, `null` for `Binder`, and `null` for `CultureInfo`.  
+ This is a convenience method that calls the runtime implementation of the abstract <xref:System.Reflection.PropertyInfo.SetValue%28System.Object%2CSystem.Object%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%5B%5D%2CSystem.Globalization.CultureInfo%29> method, specifying <xref:System.Reflection.BindingFlags.Default?displayProperty=nameWithType> for the `BindingFlags` parameter, `null` for `Binder`, and `null` for `CultureInfo`.  
   
  To use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method, first get a <xref:System.Type> object that represents the class. From the <xref:System.Type>, get the <xref:System.Reflection.PropertyInfo>. From the <xref:System.Reflection.PropertyInfo>, use the <xref:System.Reflection.PropertyInfo.SetValue%2A> method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1685,7 +1692,7 @@ Console.WriteLine("CurrCult: " +
  To use the `SetValue` method, first get the class `Type`. From the `Type`, get the `PropertyInfo`. From the `PropertyInfo`, use the `SetValue` method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1709,7 +1716,7 @@ Console.WriteLine("CurrCult: " +
     </Member>
     <Member MemberName="System.Runtime.InteropServices._PropertyInfo.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _PropertyInfo.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfo.System#Runtime#InteropServices#_PropertyInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1798,7 +1805,7 @@ Console.WriteLine("CurrCult: " +
     </Member>
     <Member MemberName="System.Runtime.InteropServices._PropertyInfo.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _PropertyInfo.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfo.System#Runtime#InteropServices#_PropertyInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1827,7 +1834,7 @@ Console.WriteLine("CurrCult: " +
     </Member>
     <Member MemberName="System.Runtime.InteropServices._PropertyInfo.Invoke">
       <MemberSignature Language="C#" Value="void _PropertyInfo.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._PropertyInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfo.System#Runtime#InteropServices#_PropertyInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1868,5 +1875,54 @@ Console.WriteLine("CurrCult: " +
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGetMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="MethodInfo" /> representing the <see langword="get" /> accessor for this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSetMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Reflection.MethodInfo" /> representing the <see langword="set" /> accessor for this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAccessors">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array of the <see langword="get" /> and <see langword="set" /> accessors on this property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the property value for a specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the property value of a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

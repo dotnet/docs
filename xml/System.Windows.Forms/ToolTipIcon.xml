@@ -15,10 +15,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolTipIcon> enumeration defines a small set of standardized icons that can be displayed as part of a ToolTip. This is accomplished by setting the <xref:System.Windows.Forms.ToolTip.ToolTipIcon%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.ToolTip> class to one of the following values.  
+ The <xref:System.Windows.Forms.ToolTipIcon> enumeration defines a small set of standardized icons that can be displayed as part of a ToolTip. This is accomplished by setting the <xref:System.Windows.Forms.ToolTip.ToolTipIcon%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.ToolTip> class to one of the following values.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolTip" />
+    <altmember cref="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
   </Docs>
   <Members>
     <Member MemberName="Error">

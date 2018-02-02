@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class corresponds to the [\&lt;defaultHttpCachePolicy\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md) configuration element.  
+ This class corresponds to the [&lt;defaultHttpCachePolicy&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md) configuration element.  
   
  This class is used to specify the HTTP caching configuration that applies to network resources obtained by using the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
   
@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Cache.HttpRequestCachePolicy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

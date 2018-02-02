@@ -207,7 +207,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetNamespaces">
-      <MemberSignature Language="C#" Value="public static void SetNamespaces (object target, string[] namespaces);" />
+      <MemberSignature Language="C#" Value="public static void SetNamespaces (object target, params string[] namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespaces(object target, string[] namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespaces(System.Object,System.String[])" />
       <MemberType>Method</MemberType>
@@ -259,7 +259,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetNamespacesForImplementation">
-      <MemberSignature Language="C#" Value="public static void SetNamespacesForImplementation (object target, string[] namespaces);" />
+      <MemberSignature Language="C#" Value="public static void SetNamespacesForImplementation (object target, params string[] namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespacesForImplementation(object target, string[] namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespacesForImplementation(System.Object,System.String[])" />
       <MemberType>Method</MemberType>
@@ -288,7 +288,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetReferences">
-      <MemberSignature Language="C#" Value="public static void SetReferences (object target, System.Activities.Expressions.AssemblyReference[] references);" />
+      <MemberSignature Language="C#" Value="public static void SetReferences (object target, params System.Activities.Expressions.AssemblyReference[] references);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferences(object target, class System.Activities.Expressions.AssemblyReference[] references) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferences(System.Object,System.Activities.Expressions.AssemblyReference[])" />
       <MemberType>Method</MemberType>
@@ -340,7 +340,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetReferencesForImplementation">
-      <MemberSignature Language="C#" Value="public static void SetReferencesForImplementation (object target, System.Activities.Expressions.AssemblyReference[] references);" />
+      <MemberSignature Language="C#" Value="public static void SetReferencesForImplementation (object target, params System.Activities.Expressions.AssemblyReference[] references);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferencesForImplementation(object target, class System.Activities.Expressions.AssemblyReference[] references) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferencesForImplementation(System.Object,System.Activities.Expressions.AssemblyReference[])" />
       <MemberType>Method</MemberType>
@@ -483,5 +483,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetReferencesForImplementation">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Represents an object to set references for implementation of the text expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetNamespaces">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the namespace for the Text expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetNamespacesForImplementation">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Represents an object to set namespaces for implementation of the text expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetReferences">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Represents an object to set references of the text expression.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

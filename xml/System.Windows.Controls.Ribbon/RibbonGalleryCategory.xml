@@ -107,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MaxColumnCount" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGalleryCategory.MinColumnCount" />
       </Docs>
     </Member>
     <Member MemberName="ColumnsStretchToFillProperty">
@@ -435,6 +437,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.OnInitialized(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">

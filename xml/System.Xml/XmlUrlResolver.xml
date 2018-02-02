@@ -33,16 +33,16 @@
 >  <xref:System.Xml.XmlUrlResolver> objects can contain sensitive information such as user credentials. You should be careful when you cache <xref:System.Xml.XmlUrlResolver> objects and should not pass <xref:System.Xml.XmlUrlResolver> objects to an untrusted component.  
   
 ## Resolving DTDs  
- If an XML reader (<xref:System.Xml.XmlReader>) is reading an XML file that contains an external DTD, it calls the <xref:System.Xml.XmlUrlResolver.GetEntityAsync%2A?displayProperty=fullName> method to get a stream representation of the DTD. If the URI of the DTD is a relative URI, the XML reader calls the <xref:System.Xml.XmlUrlResolver.ResolveUri%2A?displayProperty=fullName> method and returns an absolute URI for the given `relativeUri` and `baseURi` parameters. If the <xref:System.Xml.XmlUrlResolver> doesn't know how to resolve the URI, it returns `null`.  
+ If an XML reader (<xref:System.Xml.XmlReader>) is reading an XML file that contains an external DTD, it calls the <xref:System.Xml.XmlUrlResolver.GetEntityAsync%2A?displayProperty=nameWithType> method to get a stream representation of the DTD. If the URI of the DTD is a relative URI, the XML reader calls the <xref:System.Xml.XmlUrlResolver.ResolveUri%2A?displayProperty=nameWithType> method and returns an absolute URI for the given `relativeUri` and `baseURi` parameters. If the <xref:System.Xml.XmlUrlResolver> doesn't know how to resolve the URI, it returns `null`.  
   
- The <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=fullName> method uses the information in the <xref:System.Xml.XmlUrlResolver.Credentials%2A> property as appropriate to gain access to the resource. There is no `get` accessor to this property for security reasons. When overwriting <xref:System.Xml.XmlResolver>, **GetEntity** is the method that utilizes the credential information in the **Credentials** property.  
+ The <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> method uses the information in the <xref:System.Xml.XmlUrlResolver.Credentials%2A> property as appropriate to gain access to the resource. There is no `get` accessor to this property for security reasons. When overwriting <xref:System.Xml.XmlResolver>, **GetEntity** is the method that utilizes the credential information in the **Credentials** property.  
   
  Resolving all other XML resources is very similar to resolving DTDs. <xref:System.Xml.XmlResolver> negotiates the connection with the external resource and returns a <xref:System.IO.Stream> representation of the content. The object that is making the call to <xref:System.Xml.XmlResolver> interprets the stream.  
   
 ## Extending the XmlUrlResolver class  
  The default behavior of the <xref:System.Xml.XmlUrlResolver> class is to resolve an XML data resource from its source, not from cache. In some cases, resolving a data resource from cache can improve the performance of an application by saving a trip to the data resource's server. The performance gains here must be weighed against the need for up-to-date content.  
   
- The following example extends <xref:System.Xml.XmlUrlResolver> and builds a new class, `XmlCachingResolver`, to retrieve resources from the cache. This is done by overriding the <xref:System.Xml.XmlUrlResolver.Credentials%2A?displayProperty=fullName> property and the <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=fullName> method.  
+ The following example extends <xref:System.Xml.XmlUrlResolver> and builds a new class, `XmlCachingResolver`, to retrieve resources from the cache. This is done by overriding the <xref:System.Xml.XmlUrlResolver.Credentials%2A?displayProperty=nameWithType> property and the <xref:System.Xml.XmlUrlResolver.GetEntity%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[XmlCachingResolver_ex#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlCachingResolver_ex/CS/XmlCachingResolver_ex.cs#1)]
  [!code-vb[XmlCachingResolver_ex#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlCachingResolver_ex/VB/XmlCachingResolver_ex.vb#1)]  
@@ -172,6 +172,8 @@ resolver.Credentials = myCache;
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
       </Docs>
     </Member>
     <Member MemberName="GetEntity">
@@ -215,7 +217,7 @@ resolver.Credentials = myCache;
  For the asynchronous version of this method, see <xref:System.Xml.XmlUrlResolver.GetEntityAsync%2A>.  
   
 > [!IMPORTANT]
->  Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method by implementing IStream<xref:System.Runtime.InteropServices.ComTypes.IStream> to limit the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method.  
+>  Your application can mitigate memory denial of service threats to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method by implementing IStream <xref:System.Runtime.InteropServices.ComTypes.IStream> to limit the number of bytes read. This helps guard against situations where malicious code attempts to pass an infinite stream of bytes to the <xref:System.Xml.XmlUrlResolver.GetEntity%2A> method.  
   
    
   
@@ -234,6 +236,7 @@ resolver.Credentials = myCache;
         <exception cref="T:System.ArgumentNullException">
           <paramref name="absoluteUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Exception">There is a runtime error (for example, an interrupted server connection).</exception>
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="GetEntityAsync">

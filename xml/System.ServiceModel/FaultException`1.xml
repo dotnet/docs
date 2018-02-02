@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TDetail" />
   </TypeParameters>
@@ -28,8 +34,8 @@
  Because <xref:System.ServiceModel.FaultException%601> is both a <xref:System.ServiceModel.FaultException> and therefore a <xref:System.ServiceModel.CommunicationException>, to catch specified SOAP faults make sure you catch the <xref:System.ServiceModel.FaultException%601> types prior to the <xref:System.ServiceModel.FaultException> and <xref:System.ServiceModel.CommunicationException> types or handle the specified exceptions in one of those exception handlers.  
   
 > [!NOTE]
->  If you use <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName> to specify a <xref:System.ServiceModel.FaultException%601> where the type parameter is a <xref:System.String?displayProperty=fullName>, the string value is assigned to the <xref:System.ServiceModel.FaultException%601.Detail%2A> property in the client application; clients cannot retrieve that string by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=fullName> method. To have the string value returned when the client application calls <xref:System.Exception.ToString%2A?displayProperty=fullName>, throw a <xref:System.ServiceModel.FaultException?displayProperty=fullName> exception inside the operation and pass the string to the constructor.   
-> In general, it is recommended that detail types be custom serializable types appropriate to the fault and not a <xref:System.String?displayProperty=fullName>.  
+>  If you use <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> to specify a <xref:System.ServiceModel.FaultException%601> where the type parameter is a <xref:System.String?displayProperty=nameWithType>, the string value is assigned to the <xref:System.ServiceModel.FaultException%601.Detail%2A> property in the client application; clients cannot retrieve that string by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> method. To have the string value returned when the client application calls <xref:System.Exception.ToString%2A?displayProperty=nameWithType>, throw a <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> exception inside the operation and pass the string to the constructor.   
+> In general, it is recommended that detail types be custom serializable types appropriate to the fault and not a <xref:System.String?displayProperty=nameWithType>.  
   
    
   
@@ -95,6 +101,10 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
@@ -205,6 +215,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
@@ -255,6 +271,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageFault</ReturnType>
       </ReturnValue>
@@ -274,6 +296,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TDetail</ReturnType>
@@ -318,6 +346,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -328,5 +362,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

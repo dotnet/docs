@@ -65,6 +65,7 @@
         <exception cref="T:System.ArgumentException">An <see cref="T:System.Windows.Annotations.Annotation" /> with the same <see cref="P:System.Windows.Annotations.Annotation.Id" /> property value already exists in the store.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="AnchorChanged">
@@ -89,6 +90,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AuthorChanged">
@@ -113,6 +121,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -141,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.Flush" />
       </Docs>
     </Member>
     <Member MemberName="CargoChanged">
@@ -165,6 +181,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteAnnotation">
@@ -198,6 +221,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation(System.Windows.Annotations.Annotation)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)" />
+        <altmember cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -228,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IDisposable.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -253,7 +280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
+ This protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> method is called by the public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> and <xref:System.Object.Finalize%2A> methods.  The public <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> invokes the protected <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A>`(Boolean)` method with the `disposing` parameter set to `true`.  <xref:System.Object.Finalize%2A> invokes <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> with `disposing` set to `false`.  
   
  When the `disposing` parameter is `true`, <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> releases all resources held by any managed objects that the <xref:System.Windows.Annotations.Storage.AnnotationStore> references.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Dispose%2A> also invokes the `Dispose()` method of each referenced object.  
   
@@ -263,7 +290,7 @@
           <para>
             <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /> can be called multiple times by other objects.  When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />. For more information about how to implement <see langword="" /><see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /><see langword="(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -288,7 +315,7 @@
 ## Remarks  
  This method overrides base <xref:System.Object.Finalize%2A> method.  The application program should not call <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> directly.  <xref:System.Windows.Annotations.Storage.AnnotationStore.Finalize%2A> is automatically invoked during garbage collection unless disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -333,6 +360,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="P:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush" />
       </Docs>
     </Member>
     <Member MemberName="GetAnnotation">
@@ -357,6 +385,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation(System.Guid)" />
+        <altmember cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAnnotations">
@@ -376,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAnnotations">
@@ -406,6 +437,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations(System.Windows.Annotations.ContentLocator)" />
       </Docs>
     </Member>
     <Member MemberName="GetAnnotations">
@@ -435,6 +468,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)" />
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.StartsWith(System.Windows.Annotations.ContentLocator)" />
       </Docs>
     </Member>
     <Member MemberName="IsDisposed">
@@ -475,6 +510,13 @@
         <param name="args">The event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAuthorChanged">
@@ -496,6 +538,13 @@
         <param name="args">The event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnCargoChanged">
@@ -517,6 +566,13 @@
         <param name="args">The event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnStoreContentChanged">
@@ -538,6 +594,13 @@
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="StoreContentChanged">
@@ -568,6 +631,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+        <altmember cref="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -588,5 +658,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the store.</summary>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.Finalize" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

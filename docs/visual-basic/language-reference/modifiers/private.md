@@ -1,40 +1,20 @@
 ---
 title: "Private (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Private"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Private keyword"
-  - "Private keyword, syntax"
+  - "Private keyword [Visual Basic]"
+  - "Private keyword [Visual Basic], syntax"
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Private (Visual Basic)
 Specifies that one or more declared programming elements are accessible only from within their declaration context, including from within any contained types.  
@@ -79,10 +59,10 @@ Specifies that one or more declared programming elements are accessible only fro
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)   
- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)   
- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Public](../../../visual-basic/language-reference/modifiers/public.md)  
+ [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
+ [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

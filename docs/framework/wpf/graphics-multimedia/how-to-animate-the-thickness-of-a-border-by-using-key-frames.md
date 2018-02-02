@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "animation, border thickness with key frames"
-  - "key frames, animating border thickness with"
-  - "border thickness, animating with key frames"
+  - "animation [WPF], border thickness with key frames"
+  - "key frames [WPF], animating border thickness with"
+  - "border thickness [WPF], animating with key frames"
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Animate the Thickness of a Border by Using Key Frames
 This example shows how to animate the <xref:System.Windows.Controls.Control.BorderThickness%2A> property of a <xref:System.Windows.Controls.Border>.  
@@ -36,9 +38,9 @@ This example shows how to animate the <xref:System.Windows.Controls.Control.Bord
  For the complete sample, see [KeyFrame Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See Also  
- <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>   
- <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>   
- <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>   
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)   
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)   
+ <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>  
+ <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>  
+ <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>  
+ [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
+ [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)  
  [Animate a BorderThickness Value](../../../../docs/framework/wpf/controls/how-to-animate-a-borderthickness-value.md)

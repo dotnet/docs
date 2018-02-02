@@ -17,7 +17,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeNew (Type type, Mono.CodeGeneration.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeNew (Type type, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeNew.#ctor(System.Type,Mono.CodeGeneration.CodeExpression[])" />
       <MemberType>Constructor</MemberType>

@@ -7,20 +7,18 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "XML serialization, configuration"
   - "schemaImporterExtensions element"
   - "<schemaImporterExtensions> element"
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # &lt;schemaImporterExtensions&gt; Element
 Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
@@ -60,9 +58,9 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 ```  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlSchemaImporter>   
- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>   
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)   
- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)   
- [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)   
+ <xref:System.Xml.Serialization.XmlSchemaImporter>  
+ <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
+ [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
+ [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
+ [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
  [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)

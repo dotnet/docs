@@ -215,6 +215,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.Hyperlink.DoClick" />
+        <altmember cref="M:System.Windows.Documents.Hyperlink.OnClick" />
       </Docs>
     </Member>
     <Member MemberName="ClickEvent">
@@ -593,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnCreateAutomationPeer%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -626,7 +628,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnKeyDown%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnKeyDown%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -654,7 +656,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonDown%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -687,7 +689,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonUp%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Windows.ContentElement.OnMouseLeftButtonUp%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -818,5 +820,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Hyperlink" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

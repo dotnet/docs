@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "events [.NET Framework], adding event handlers with reflection"
   - "reflection, adding event-handler delegates"
@@ -18,6 +22,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Hook Up a Delegate Using Reflection
 When you use reflection to load and run assemblies, you cannot use language features like the C# `+=` operator or the Visual Basic [AddHandler statement](~/docs/visual-basic/language-reference/statements/addhandler-statement.md) to hook up events. The following procedures show how to hook up an existing method to an event by getting all the necessary types through reflection, and how to create a dynamic method using reflection emit and hook it up to an event.  
@@ -27,7 +33,7 @@ When you use reflection to load and run assemblies, you cannot use language feat
   
 ### To hook up a delegate using reflection  
   
-1.  Load an assembly that contains a type that raises events. Assemblies are usually loaded with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> method. To keep this example simple, a derived form in the current assembly is used, so the <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method is used to load the current assembly.  
+1.  Load an assembly that contains a type that raises events. Assemblies are usually loaded with the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. To keep this example simple, a derived form in the current assembly is used, so the <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> method is used to load the current assembly.  
   
      [!code-cpp[HookUpDelegate#3](../../../samples/snippets/cpp/VS_Snippets_CLR/HookUpDelegate/cpp/source.cpp#3)]
      [!code-csharp[HookUpDelegate#3](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#3)]
@@ -80,7 +86,7 @@ When you use reflection to load and run assemblies, you cannot use language feat
      [!code-csharp[HookUpDelegate#9](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#9)]
      [!code-vb[HookUpDelegate#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#9)]  
   
-2.  Generate a method body. This method loads a string, calls the overload of the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> method that takes a string, pops the return value off the stack (because the handler has no return type), and returns. To learn more about emitting dynamic methods, see [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md).  
+2.  Generate a method body. This method loads a string, calls the overload of the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> method that takes a string, pops the return value off the stack (because the handler has no return type), and returns. To learn more about emitting dynamic methods, see [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md).  
   
      [!code-cpp[HookUpDelegate#10](../../../samples/snippets/cpp/VS_Snippets_CLR/HookUpDelegate/cpp/source.cpp#10)]
      [!code-csharp[HookUpDelegate#10](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#10)]
@@ -114,9 +120,9 @@ When you use reflection to load and run assemblies, you cannot use language feat
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See Also  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName>   
- <xref:System.Reflection.Emit.DynamicMethod>   
- <xref:System.Activator.CreateInstance%2A>   
- <xref:System.Delegate.CreateDelegate%2A>   
- [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)   
+ <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
+ <xref:System.Reflection.Emit.DynamicMethod>  
+ <xref:System.Activator.CreateInstance%2A>  
+ <xref:System.Delegate.CreateDelegate%2A>  
+ [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)  
  [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)

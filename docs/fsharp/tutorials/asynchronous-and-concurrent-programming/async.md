@@ -26,15 +26,19 @@ The key concept to understand is that an async expression’s type is `Async<'T>
 For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
 
 ```fsharp
-let fetchHtmlAsync url = async {
-    let uri = new System.Uri(url)
-    let webClient = new System.Net.WebClient()
+open System
+open System.Net
 
-    // Execution of fetchHtmlAsync won't continue until the result
-    // of AsyncDownloadString is bound.
-    let! html = webClient.AsyncDownloadString(uri)
-    return html
-}
+let fetchHtmlAsync url = 
+    async {
+        let uri = Uri(url)
+        use webClient = new WebClient()
+
+        // Execution of fetchHtmlAsync won't continue until the result
+        // of AsyncDownloadString is bound.
+        let! html = webClient.AsyncDownloadString(uri)
+        return html
+    }
 
 let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 printfn "%s" html
@@ -58,13 +62,17 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
 1.  `Async.RunSynchronously` will start an async workflow on another thread and await its result.
 
- ```fsharp
- let fetchHtmlAsync url = async {
-     let uri = new System.Uri(url)
-     let webClient = new System.Net.WebClient()
-     let! html = webClient.AsyncDownloadString(uri)
-     return html
- }
+```fsharp
+open System
+open System.Net
+
+let fetchHtmlAsync url = 
+    async {
+        let uri = Uri(url)
+        use webClient = new WebClient()
+        let! html = webClient.AsyncDownloadString(uri)
+        return html
+    }
 
  // Execution will pause until fetchHtmlAsync finishes
  let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
@@ -75,19 +83,23 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
 2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
 
- ```fsharp
- let uploadDataAsync url data = async {
-     let uri = new System.Uri(url)
-     let webClient = new System.Net.WebClient()
-     webClient.UploadStringAsync(uri, data)
- }
+```fsharp
+open System
+open System.Net
+  
+let uploadDataAsync url data = 
+    async {
+        let uri = Uri(url)
+        use webClient = new WebClient()
+        webClient.UploadStringAsync(uri, data)
+    }
 
- let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
+let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
 
- // Execution will continue after calling this!
- Async.Start(workflow)
+// Execution will continue after calling this!
+Async.Start(workflow)
 
- printfn "%s" "uploadDataAsync is running in the background..."
+printfn "%s" "uploadDataAsync is running in the background..."
  ```
 
 There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
@@ -103,25 +115,30 @@ Sometimes you may need to perform multiple asynchronous jobs in parallel, collec
 The following example will use `Async.Parallel` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
 
 ```fsharp
-let urlList = [
-    "http://www.microsoft.com"
-    "http://www.google.com"
-    "http://www.amazon.com"
-    "http://www.facebook.com" ]
+open System
+open System.Net
 
-let fetchHtmlAsync url = async {
-    let uri = new System.Uri(url)
-    let webClient = new System.Net.WebClient()
-    let! html = webClient.AsyncDownloadString(uri)
-    return html
-}
+let urlList = 
+    [ "http://www.microsoft.com"
+      "http://www.google.com"
+      "http://www.amazon.com"
+      "http://www.facebook.com" ]
 
-let getHtmlList =
-    Seq.map fetchHtmlAsync    // Build an Async<'T> for each site
-    >> Async.Parallel         // Returns an Async<'T []>
-    >> Async.RunSynchronously // Wait for the result of the parallel work
+let fetchHtmlAsync url = 
+    async {
+        let uri = Uri(url)
+        use webClient = new WebClient()
+        let! html = webClient.AsyncDownloadString(uri)
+        return html
+    }
 
-let htmlList = urlList |> getHtmlList
+let getHtmlList urls =
+    urls
+    |> Seq.map fetchHtmlAsync   // Build an Async<'T> for each site
+    |> Async.Parallel           // Returns an Async<'T []>
+    |> Async.RunSynchronously   // Wait for the result of the parallel work
+
+let htmlList = getHtmlList urlList
 
 // We now have the downloaded HTML for each site!
 for html in htmlList do
@@ -177,11 +194,15 @@ In contrast, F# async workflows are more naturally cancellable. Cancellation is 
 Example:
 
 ```fsharp
-let uploadDataAsync url data = async {
-    let uri = new System.Uri(url)
-    let webClient = new System.Net.WebClient()
-    webClient.UploadStringAsync(uri, data)
-}
+open System
+open System.Net
+
+let uploadDataAsync url data = 
+    async {
+        let uri = Uri(url)
+        use webClient = new WebClient()
+        webClient.UploadStringAsync(uri, data)
+    }
 
 let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
 

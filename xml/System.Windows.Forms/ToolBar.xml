@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolBarButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +84,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="P:System.Windows.Forms.ToolBar.Buttons" />
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -126,6 +129,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarAppearance" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ToolBarAppearance" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -178,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DockStyle" />
+        <altmember cref="P:System.Windows.Forms.ToolBar.ButtonSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -211,7 +217,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolBar.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolBar.AutoSizeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolBar> named `ToolBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolBar.AutoSizeChanged> event.  
   
@@ -437,6 +443,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ButtonClick">
@@ -470,6 +477,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ButtonDropDown">
@@ -503,6 +512,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
+        <altmember cref="T:System.Windows.Forms.ToolBarAppearance" />
       </Docs>
     </Member>
     <Member MemberName="Buttons">
@@ -548,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" />
       </Docs>
     </Member>
     <Member MemberName="ButtonSize">
@@ -591,6 +603,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Size.Width" /> or <see cref="P:System.Drawing.Size.Height" /> property of the <see cref="T:System.Drawing.Size" /> object is less than 0.</exception>
+        <altmember cref="T:System.Drawing.Size" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -648,10 +662,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- As implemented in the <xref:System.Windows.Forms.ToolBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode?displayProperty=fullName> value.  
+ As implemented in the <xref:System.Windows.Forms.ToolBar> class, this property always returns the <xref:System.Windows.Forms.ImeMode.Disable?displayProperty=nameWithType> value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -705,7 +720,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -839,6 +854,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonStyle" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -936,6 +953,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="ImageSize">
@@ -965,6 +984,8 @@
         <summary>Gets the size of the images in the image list assigned to the toolbar.</summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the images (in the <see cref="T:System.Windows.Forms.ImageList" />) assigned to the <see cref="T:System.Windows.Forms.ToolBar" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -991,6 +1012,8 @@
         <summary>This member is not meaningful for this control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ImeMode" />
+        <altmember cref="P:System.Windows.Forms.ToolBar.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -1056,6 +1079,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolBar.OnButtonClick(System.Windows.Forms.ToolBarButtonClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolBar.OnButtonClick(System.Windows.Forms.ToolBarButtonClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ToolBar.ButtonClick" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnButtonDropDown">
@@ -1089,6 +1114,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolBar.OnButtonDropDown(System.Windows.Forms.ToolBarButtonClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolBar.OnButtonDropDown(System.Windows.Forms.ToolBarButtonClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ToolBar.ButtonDropDown" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1372,6 +1399,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
+        <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -1470,6 +1499,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.ToolBarTextAlign" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ToolBarTextAlign" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1532,7 +1562,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1592,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolBarButtonStyle" />
       </Docs>
     </Member>
   </Members>

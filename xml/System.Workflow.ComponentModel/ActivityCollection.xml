@@ -49,7 +49,7 @@
    
   
 ## Examples  
- The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This code example is part of the Using Throw SDK Sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This code example is part of the Using Throw SDK Sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/library/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This example illustrates the use of <xref:System.Workflow.ComponentModel.ActivityCollection.Add%2A>. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/en-us/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
+ The following example shows access of the <xref:System.Workflow.ComponentModel.ActivityCollection> which is the member of a composite activity class containing all child activities. This example illustrates the use of <xref:System.Workflow.ComponentModel.ActivityCollection.Add%2A>. This code example is part of the Throw SDK sample and is from the ThrowWorkflow.cs file. For more information, see [Using the ThrowActivity Activity](http://msdn.microsoft.com/library/82bc0fef-d78a-4750-82b4-e4cb397a10f1).  
   
  [!code-csharp[WF_Samples#179](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#179)]
  [!code-vb[WF_Samples#179](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#179)]  
@@ -206,7 +206,7 @@
 ## Remarks  
  Enumerators only enable reading the data in the collection. You cannot use enumerators to modify the underlying collection.  
   
- To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A>raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+ To begin, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> raises an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
   
  <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
   
@@ -356,7 +356,7 @@
 ## Remarks  
  In this context, adding or removing members raises the event. Modifying a member does not raise this event.  
   
- When you create an <xref:System.Workflow.ComponentModel.ActivityCollection> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create an <xref:System.Workflow.ComponentModel.ActivityCollection> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@
 ## Remarks  
  <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.Generic.ICollection%601>.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -852,7 +852,7 @@
 ## Remarks  
  For collections whose underlying store is not publicly available, the expected implementation is to return the current instance. Note that the pointer to the current instance might not be sufficient for collections that wrap other collections; those should return the underlying collection <xref:System.Collections.ICollection.SyncRoot%2A> property.  
   
- Most collection classes in the <xref:System.Collections?displayProperty=fullName> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property. The synchronizing code must perform operations on the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
+ Most collection classes in the <xref:System.Collections?displayProperty=nameWithType> namespace also implement a `Synchronized` method, which provides a synchronized wrapper around the underlying collection. However, derived classes can provide their own synchronized version of the collection using the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property. The synchronizing code must perform operations on the <xref:System.Workflow.ComponentModel.ActivityCollection.System%23Collections%23ICollection%23SyncRoot> property of the collection, not directly on the collection. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the collection instance.  
   
  ]]></format>
         </remarks>
@@ -1091,5 +1091,14 @@
  <see cref="T:System.Collections.IList" /> has a fixed size.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Collections.ICollection" /> by name or index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

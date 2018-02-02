@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
@@ -179,7 +181,7 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  The software that decides whether a given file is trusted. This decision is based on the certificate associated with the file.  
   
  user principal name (UPN)  
- A user account name (sometimes referred to as the *user logon name*) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an e-mail address).  
+ A user account name (sometimes referred to as the *user logon name*) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an email address).  
   
 > [!NOTE]
 >  In addition to standard UPN form, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] accepts UPNs in down-level form, for example, cohowinery.com\someone.  
@@ -188,6 +190,6 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  An internationally recognized standard for certificates that defines their required parts.  
   
 ## See Also  
- [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)   
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)   
+ [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)  
+ [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

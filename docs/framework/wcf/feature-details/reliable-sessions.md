@@ -18,9 +18,11 @@ helpviewer_keywords:
   - "sessions [WCF]"
 ms.assetid: 143951b3-3aa0-4540-b4b7-d33e77e874a1
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # Reliable Sessions

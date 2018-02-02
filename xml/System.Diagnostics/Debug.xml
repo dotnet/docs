@@ -53,7 +53,7 @@
  The <xref:System.Diagnostics.ConditionalAttribute> attribute is applied to the methods of <xref:System.Diagnostics.Debug>. Compilers that support <xref:System.Diagnostics.ConditionalAttribute> ignore calls to these methods unless "DEBUG" is defined as a conditional compilation symbol. Refer to a compiler's documentation to determine whether <xref:System.Diagnostics.ConditionalAttribute> is supported and the syntax for defining a conditional compilation symbol.  
   
 > [!NOTE]
->  In Visual Studio C# and Visual Basic projects, by default, the "DEBUG" conditional compilation symbol is defined for debug builds, and the "TRACE" symbol is defined for both debug and release builds. For information about how to disable this behavior, see the Visual Studio documentation. For information about conditional debugging in Visual C++, see [Debug Class (C++/CLI)](http://msdn.microsoft.com/library/076bd528-1b6f-4e8a-a372-eb5849cf969a).  
+> In Visual Studio C# and Visual Basic projects, by default, the "DEBUG" conditional compilation symbol is defined for debug builds, and the "TRACE" symbol is defined for both debug and release builds. For information about how to disable this behavior, see the Visual Studio documentation. For information about conditional debugging in Visual C++, see [Debug Class (C++/CLI)](/cpp/dotnet/debug-class-cpp-cli).
   
  To define the "DEBUG" conditional compilation symbol in C#, add the `/d:DEBUG` option to the compiler command line when you compile your code using a command line, or add `#define DEBUG` to the top of your file. In Visual Basic, add the `/d:DEBUG=True` option to the compiler command line or add `#Const DEBUG=True` to the file.  
   
@@ -69,6 +69,16 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Diagnostics.Trace" />
+    <altmember cref="T:System.Diagnostics.Switch" />
+    <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+    <altmember cref="T:System.Diagnostics.TraceSwitch" />
+    <altmember cref="T:System.Diagnostics.TraceListener" />
+    <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+    <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+    <altmember cref="T:System.Diagnostics.EventLogTraceListener" />
+    <altmember cref="T:System.Diagnostics.TraceListenerCollection" />
+    <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
   </Docs>
   <Members>
     <Member MemberName="Assert">
@@ -109,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
 > [!IMPORTANT]
 >  The `Assert` methods are not available for [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)] apps.  
@@ -122,9 +132,9 @@
 >  [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps do not support modal dialog boxes, so they behave the same in user interface mode and non-user interface mode. The message is written to the active trace listeners in debugging mode, or no message is written in release mode.  
   
 > [!NOTE]
->  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -145,6 +155,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Assert">
@@ -187,16 +205,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
  Typically, the <xref:System.Diagnostics.Debug.Assert%2A> method is used to identify logic errors during program development. <xref:System.Diagnostics.Debug.Assert%2A> evaluates the condition. If the result is `false`, it sends the specified diagnostic message to the <xref:System.Diagnostics.Debug.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
  When the application runs in user interface mode, it displays a message box that shows the call stack with file and line numbers. The message box contains three buttons: **Abort**, **Retry**, and **Ignore**. Clicking the **Abort** button terminates the application. Clicking **Retry** sends you to the code in the debugger if your application is running in a debugger, or offers to open a debugger if it is not. Clicking **Ignore** continues with the next instruction in the code.  
   
 > [!NOTE]
->  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -217,6 +235,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Assert">
@@ -260,16 +286,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
  Typically, the <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%2CSystem.String%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Debug.Assert%2A> evaluates the condition. If the result is `false`, it sends the specified diagnostic message and detailed message to the <xref:System.Diagnostics.Debug.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
  When the application runs in user interface mode, it displays a message box that shows the call stack with file and line numbers. The message box contains three buttons: **Abort**, **Retry**, and **Ignore**. Clicking the **Abort** button terminates the application. Clicking **Retry** sends you to the code in the debugger if your application is running in a debugger, or offers to open a debugger if it is not. Clicking **Ignore** continues with the next instruction in the code.  
   
 > [!NOTE]
->  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box depends on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -290,10 +316,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Assert">
-      <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message, string detailMessageFormat, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void Assert (bool condition, string message, string detailMessageFormat, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Assert(bool condition, string message, string detailMessageFormat, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -343,16 +377,16 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is sent to the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
   
- By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+ By default, the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method works only in debug builds. Use the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method if you want to do assertions in release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
- Typically, the <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Debug.Assert%2A> evaluates the condition. If the result is `false`, The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method is called and the `detailMessageFormat` string and `args` array are passed in as parameters. <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D%29> then sends the specified text message and the formatted text message to the <xref:System.Diagnostics.Debug.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
+ Typically, the <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D%29> method is used to identify logic errors during program development. <xref:System.Diagnostics.Debug.Assert%2A> evaluates the condition. If the result is `false`, The <xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method is called and the `detailMessageFormat` string and `args` array are passed in as parameters. <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%2CSystem.String%2CSystem.Object%5B%5D%29> then sends the specified text message and the formatted text message to the <xref:System.Diagnostics.Debug.Listeners%2A> collection. You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
  When the application runs in user interface mode, it displays a message box that shows the call stack with file and line numbers. The message box contains three buttons: **Abort**, **Retry**, and **Ignore**. Clicking the **Abort** button terminates the application. Clicking **Retry** sends you to the code in the debugger if your application is running in a debugger, or offers to open a debugger if it is not. Clicking **Ignore** continues with the next instruction in the code.  
   
 > [!NOTE]
->  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
- You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=fullName> property. The configuration file should be formatted as follows:  
+ You can change the behavior of the <xref:System.Diagnostics.DefaultTraceListener> in the configuration file that corresponds to the name of your application. In this file, you can enable and disable the assert message box or set the <xref:System.Diagnostics.DefaultTraceListener.LogFileName%2A?displayProperty=nameWithType> property. The configuration file should be formatted as follows:  
   
 ```  
 <configuration>  
@@ -412,6 +446,14 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -463,6 +505,14 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -505,7 +555,7 @@
  The default behavior is that the <xref:System.Diagnostics.DefaultTraceListener> outputs the message to a message box when the application is running in user interface mode and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
 > [!NOTE]
->  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
  You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
@@ -526,6 +576,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Fail">
@@ -570,7 +628,7 @@
  The default behavior is that the <xref:System.Diagnostics.DefaultTraceListener> outputs the message to a message box when the application is running in user interface mode and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
 > [!NOTE]
->  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [\&lt;clear\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [\&lt;remove\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
+>  The display of the message box is dependent on the presence of the <xref:System.Diagnostics.DefaultTraceListener>. If the <xref:System.Diagnostics.DefaultTraceListener> is not in the <xref:System.Diagnostics.Trace.Listeners%2A> collection, the message box is not displayed. The <xref:System.Diagnostics.DefaultTraceListener> can be removed by the [&lt;clear&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md), the [&lt;remove&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md), or by calling the <xref:System.Diagnostics.TraceListenerCollection.Clear%2A> method on the <xref:System.Diagnostics.Trace.Listeners%2A> property (`System.Diagnostics.Trace.Listeners.Clear()`).  
   
  You can customize this behavior by adding a <xref:System.Diagnostics.TraceListener> to, or removing one from, the <xref:System.Diagnostics.Debug.Listeners%2A> collection.  
   
@@ -591,6 +649,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -639,6 +705,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Indent">
@@ -693,6 +767,9 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Debug.Unindent" />
+        <altmember cref="P:System.Diagnostics.Debug.IndentLevel" />
+        <altmember cref="P:System.Diagnostics.Debug.IndentSize" />
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -747,6 +824,15 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Debug.IndentSize" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="IndentSize">
@@ -791,6 +877,15 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.Debug.IndentLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Listeners">
@@ -830,6 +925,14 @@ End of list of errors
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -875,7 +978,7 @@ End of list of errors
       </Docs>
     </Member>
     <Member MemberName="Print">
-      <MemberSignature Language="C#" Value="public static void Print (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void Print (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Print(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.Print(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -984,6 +1087,9 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Diagnostics.Debug.Indent" />
+        <altmember cref="P:System.Diagnostics.Debug.IndentLevel" />
+        <altmember cref="P:System.Diagnostics.Debug.IndentSize" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1042,6 +1148,14 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1100,6 +1214,14 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1162,6 +1284,14 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1224,6 +1354,14 @@ End of list of errors
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteIf">
@@ -1300,6 +1438,14 @@ if(mySwitch.TraceError)
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteIf">
@@ -1376,6 +1522,14 @@ if(mySwitch.TraceError)
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteIf">
@@ -1456,6 +1610,14 @@ if(mySwitch.TraceError)
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteIf">
@@ -1503,7 +1665,7 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  The `category` parameter can be used to group output messages.  
   
- This method calls the <xref:System.Diagnostics.TraceListener.Write%2A?displayProperty=fullName> method of the trace listener.  
+ This method calls the <xref:System.Diagnostics.TraceListener.Write%2A?displayProperty=nameWithType> method of the trace listener.  
   
    
   
@@ -1536,6 +1698,14 @@ if(mySwitch.TraceError)
 Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1595,6 +1765,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1654,6 +1832,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1716,10 +1902,18 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public static void WriteLine (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public static void WriteLine (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debug.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1766,11 +1960,11 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string.  
   
- The  keyword in the syntax for this method implies that the object array can be a single value. The exception to this is the <xref:System.String> object. Explicit overloads take precedence, so an `arg` value of a single string will default to the <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.String%29?displayProperty=fullName> overload.  
+ The  keyword in the syntax for this method implies that the object array can be a single value. The exception to this is the <xref:System.String> object. Explicit overloads take precedence, so an `arg` value of a single string will default to the <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.String%29?displayProperty=nameWithType> overload.  
   
  By default, the output is written to an instance of <xref:System.Diagnostics.DefaultTraceListener>.  
   
- This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=fullName> method of the trace listener.  
+ This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=nameWithType> method of the trace listener.  
   
  ]]></format>
         </remarks>
@@ -1836,6 +2030,14 @@ Debug.WriteIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineIf">
@@ -1912,6 +2114,14 @@ if(mySwitch.TraceError)
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineIf">
@@ -1956,7 +2166,7 @@ Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
 ## Remarks  
  By default, the output is written to an instance of <xref:System.Diagnostics.DefaultTraceListener>.  
   
- This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=fullName> method of the trace listener.  
+ This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=nameWithType> method of the trace listener.  
   
    
   
@@ -1989,6 +2199,14 @@ if(mySwitch.TraceError)
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineIf">
@@ -2069,6 +2287,14 @@ if(mySwitch.TraceError)
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineIf">
@@ -2117,7 +2343,7 @@ Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range")
   
  The `category` parameter can be used to group output messages.  
   
- This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=fullName> method of the trace listener.  
+ This method calls the <xref:System.Diagnostics.TraceListener.WriteLine%2A?displayProperty=nameWithType> method of the trace listener.  
   
    
   
@@ -2150,7 +2376,87 @@ if(mySwitch.TraceError)
 Debug.WriteLineIf(mySwitch.TraceError, "aNumber = " + aNumber + " out of range");  
 ```</para>
         </block>
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
+        <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceListener" />
+        <altmember cref="T:System.Diagnostics.DefaultTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConsoleTraceListener" />
+        <altmember cref="T:System.Diagnostics.ConditionalAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Print">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message followed by a line terminator to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLineIf">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the debug to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection if a condition is <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Fail">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Emits an error message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Assert">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks for a condition; if the condition is <see langword="false" />, outputs messages and displays a message box that shows the call stack.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the debug to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteIf">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the debug to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection if a condition is <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes information about the debug to the trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

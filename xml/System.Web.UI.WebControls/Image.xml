@@ -91,11 +91,14 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
+    <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
+    <altmember cref="P:System.Web.UI.WebControls.Image.ImageAlign" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,8 +127,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Image.Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.Image Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Image.Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.Image Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Image.Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.Image Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Image.Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.Image Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -155,8 +158,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Image.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Image> always displays with a thin border.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomImageAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageAddAttributesToRender/CS/custom_image_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomImageAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageAddAttributesToRender/VB/custom_image_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomImageAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageAddAttributesToRender/CS/custom_image_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomImageAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageAddAttributesToRender/VB/custom_image_addattributestorendervb.aspx#1)]  
 [!code-csharp[CustomImageAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageAddAttributesToRender/CS/custom_image_addattributestorender.cs#2)]
 [!code-vb[CustomImageAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageAddAttributesToRender/VB/custom_image_addattributestorender.vb#2)]  
   
@@ -203,11 +206,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property to specify the alternate text to display for the image when the image is not available.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.ImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.Image.GenerateEmptyAlternateText" />
       </Docs>
     </Member>
     <Member MemberName="DescriptionUrl">
@@ -248,6 +253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -355,6 +361,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
       </Docs>
     </Member>
     <Member MemberName="ImageAlign">
@@ -401,12 +408,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.ImageAlign%2A> property to specify the alignment of the <xref:System.Web.UI.WebControls.Image> control in relation to other elements on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.ImageAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ImageAlign" />
       </Docs>
     </Member>
     <Member MemberName="ImageUrl">
@@ -449,8 +457,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property to specify the location of the image to display in the <xref:System.Web.UI.WebControls.Image> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -485,13 +493,14 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Image.RenderContents%2A> method in a custom server control so that some text is always displayed after the <xref:System.Web.UI.WebControls.Image>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomImageRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageRenderContents/CS/custom_image_rendercontentscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomImageRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageRenderContents/VB/custom_image_rendercontentsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomImageRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageRenderContents/CS/custom_image_rendercontentscs.aspx#1)]
+ [!code-aspx-vb[CustomImageRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageRenderContents/VB/custom_image_rendercontentsvb.aspx#1)]  
 [!code-csharp[CustomImageRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageRenderContents/CS/custom_image_rendercontents.cs#2)]
 [!code-vb[CustomImageRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageRenderContents/VB/custom_image_rendercontents.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="SupportsDisabledAttribute">
@@ -514,10 +523,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
   </Members>

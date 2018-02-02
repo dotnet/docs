@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEnumerable" />
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -103,10 +104,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because <xref:System.Resources.IResourceReader> inherits the <xref:System.Collections.IEnumerable> interface, it must also provide an implementation of the <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=fullName> method, which returns an <xref:System.Collections.IEnumerator> object that can be used to enumerate a collection. Typically, <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=fullName> is implemented as an explicit interface implementation.  
+ Because <xref:System.Resources.IResourceReader> inherits the <xref:System.Collections.IEnumerable> interface, it must also provide an implementation of the <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=nameWithType> method, which returns an <xref:System.Collections.IEnumerator> object that can be used to enumerate a collection. Typically, <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=nameWithType> is implemented as an explicit interface implementation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
   </Members>

@@ -18,10 +18,12 @@
 ## Remarks  
  The SourceChanged event is a routed event where the event identifier is not publicly exposed. This is because this event plays a potentially critical part in interoperation and should not be allowed to be raised arbitrarily by any other source than the internal implementation of a known <xref:System.Windows.PresentationSource> subclass (currently, the only such class is <xref:System.Windows.Interop.HwndSource>). When implementing an interoperation solution, you can attach or remove handlers for the event (by calling <xref:System.Windows.PresentationSource.AddSourceChangedHandler%2A> and <xref:System.Windows.PresentationSource.RemoveSourceChangedHandler%2A>, respectively) but you cannot perform other operations normally available to routed events such as class handling, adding owners, or raising the event from an arbitrary element source.  
   
- This class overrides the <xref:System.Windows.RoutedEventArgs> virtual method <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A?displayProperty=fullName>, in order to return a type-specific handler when requested by the event system. This <xref:System.Windows.SourceChangedEventArgs> override does not appear in the class members table in this [!INCLUDE[TLA2#tla_sdk](~/includes/tla2sharptla-sdk-md.md)] documentation because it is a protected member implemented by a sealed class.  
+ This class overrides the <xref:System.Windows.RoutedEventArgs> virtual method <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A?displayProperty=nameWithType>, in order to return a type-specific handler when requested by the event system. This <xref:System.Windows.SourceChangedEventArgs> override does not appear in the class members table in this [!INCLUDE[TLA2#tla_sdk](~/includes/tla2sharptla-sdk-md.md)] documentation because it is a protected member implemented by a sealed class.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.PresentationSource" />
+    <altmember cref="T:System.Windows.Interop.HwndSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -185,5 +187,14 @@
         <permission cref="T:System.Security.Permissions.UIPermission">to get this value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SourceChangedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

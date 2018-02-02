@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Adds the <xref:System.Workflow.Runtime.TimerEventSubscription> to the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=fullName> values; those with smaller values are positioned in front of those with larger values. If the new subscription is added at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=fullName> is called to cancel the timer event that was previously at the beginning of the queue and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=fullName> is called to schedule the new timer event. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Add%2A> locks the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection> before adding the new subscription and is, therefore, thread safe.  
+ Adds the <xref:System.Workflow.Runtime.TimerEventSubscription> to the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=nameWithType> values; those with smaller values are positioned in front of those with larger values. If the new subscription is added at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=nameWithType> is called to cancel the timer event that was previously at the beginning of the queue and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=nameWithType> is called to schedule the new timer event. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Add%2A> locks the <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection> before adding the new subscription and is, therefore, thread safe.  
   
  ]]></format>
         </remarks>
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Removes the <xref:System.Workflow.Runtime.TimerEventSubscription> with the specified subscription id from the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=fullName> values; those with smaller values are positioned in front of those with larger values. If the subscription removed was the subscription at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=fullName> is called to cancel the timer event associated with this subscription and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=fullName> is called to schedule a timer event for the subscription that is now at the beginning of the queue. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Remove%28System.Guid%29> is thread safe.  
+ Removes the <xref:System.Workflow.Runtime.TimerEventSubscription> with the specified subscription id from the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=nameWithType> values; those with smaller values are positioned in front of those with larger values. If the subscription removed was the subscription at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=nameWithType> is called to cancel the timer event associated with this subscription and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=nameWithType> is called to schedule a timer event for the subscription that is now at the beginning of the queue. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Remove%28System.Guid%29> is thread safe.  
   
  ]]></format>
         </remarks>
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Removes the <xref:System.Workflow.Runtime.TimerEventSubscription> from the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=fullName> values; those with smaller values are positioned in front of those with larger values. If the subscription removed was the subscription at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=fullName> is called to cancel the timer event associated with this subscription and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=fullName> is called to schedule a timer event for the subscription that is now at the beginning of the queue. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Remove%28System.Guid%29> is thread safe.  
+ Removes the <xref:System.Workflow.Runtime.TimerEventSubscription> from the timer queue. Subscriptions in the queue are positioned based on their <xref:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt%2A?displayProperty=nameWithType> values; those with smaller values are positioned in front of those with larger values. If the subscription removed was the subscription at the beginning of the queue, <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A?displayProperty=nameWithType> is called to cancel the timer event associated with this subscription and <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule%28System.Threading.WaitCallback%2CSystem.Guid%2CSystem.DateTime%2CSystem.Guid%29?displayProperty=nameWithType> is called to schedule a timer event for the subscription that is now at the beginning of the queue. <xref:System.Workflow.Runtime.TimerEventSubscriptionCollection.Remove%28System.Guid%29> is thread safe.  
   
  ]]></format>
         </remarks>
@@ -292,5 +292,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified <see cref="T:System.Workflow.Runtime.TimerEventSubscription" /> from the timer queue.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A workflow instance may be suspended in one of three ways: the host may call <xref:System.Workflow.Runtime.WorkflowInstance.Suspend%2A?displayProperty=fullName>, a <xref:System.Workflow.ComponentModel.SuspendActivity> activity may be invoked from inside the workflow instance, or the workflow runtime engine may suspend the workflow instance. When the workflow instance is suspended, the workflow runtime engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended?displayProperty=fullName> event. The host may subscribe to this event by adding an event handler to <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended?displayProperty=fullName>.  
+ A workflow instance may be suspended in one of three ways: the host may call <xref:System.Workflow.Runtime.WorkflowInstance.Suspend%2A?displayProperty=nameWithType>, a <xref:System.Workflow.ComponentModel.SuspendActivity> activity may be invoked from inside the workflow instance, or the workflow runtime engine may suspend the workflow instance. When the workflow instance is suspended, the workflow runtime engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended?displayProperty=nameWithType> event. The host may subscribe to this event by adding an event handler to <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the host suspends the workflow instance, it supplies a reason for the suspension in the `string` parameter to <xref:System.Workflow.Runtime.WorkflowInstance.Suspend%2A?displayProperty=fullName>. If the workflow is suspended by a <xref:System.Workflow.ComponentModel.SuspendActivity> activity, the reason is supplied by <xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A?displayProperty=fullName>. Otherwise, the workflow runtime engine supplies a reason for the suspension.  
+ If the host suspends the workflow instance, it supplies a reason for the suspension in the `string` parameter to <xref:System.Workflow.Runtime.WorkflowInstance.Suspend%2A?displayProperty=nameWithType>. If the workflow is suspended by a <xref:System.Workflow.ComponentModel.SuspendActivity> activity, the reason is supplied by <xref:System.Workflow.ComponentModel.SuspendActivity.Error%2A?displayProperty=nameWithType>. Otherwise, the workflow runtime engine supplies a reason for the suspension.  
   
  ]]></format>
         </remarks>

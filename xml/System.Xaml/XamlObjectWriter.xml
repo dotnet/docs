@@ -48,6 +48,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlWriter" />
+    <altmember cref="T:System.Xaml.XamlObjectReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -483,7 +485,7 @@
   
  <xref:System.Xaml.XamlObjectWriter.WriteNamespace%2A> does not use a `Start`/`End` metaphor. Although a XAML namespace has members in the CLR representation sense, the members are known and do not need to be represented as a special type of <xref:System.Xaml.XamlMember> for extensibility. To access the values of a <xref:System.Xaml.NamespaceDeclaration>, you access its <xref:System.Xaml.NamespaceDeclaration.Namespace%2A> and <xref:System.Xaml.NamespaceDeclaration.Prefix%2A> properties.  
   
- A namespace declaration may have a <xref:System.String.Empty?displayProperty=fullName> value for the prefix. A <xref:System.String.Empty?displayProperty=fullName> prefix represents a declaration of the default XAML namespace. Do not attempt to use null to represent the default prefix;  it throws an exception in this API. For more information, see <xref:System.Xaml.NamespaceDeclaration>.  
+ A namespace declaration may have a <xref:System.String.Empty?displayProperty=nameWithType> value for the prefix. A <xref:System.String.Empty?displayProperty=nameWithType> prefix represents a declaration of the default XAML namespace. Do not attempt to use null to represent the default prefix;  it throws an exception in this API. For more information, see <xref:System.Xaml.NamespaceDeclaration>.  
   
  ]]></format>
         </remarks>
@@ -590,5 +592,14 @@
         <exception cref="T:System.Xaml.XamlObjectWriterException">Attempted to write a value in an invalid scope.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

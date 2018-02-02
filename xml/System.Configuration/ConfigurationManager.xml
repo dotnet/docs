@@ -25,7 +25,7 @@
  To use the <xref:System.Configuration.ConfigurationManager> class, your project must reference the `System.Configuration` assembly. By default, some project templates, like Console Application, do not reference this assembly so you must manually reference it.  
   
 > [!NOTE]
->  The name and location of the application configuration file depend on the application's host. For more information, see [NIB: Application Configuration Files](http://msdn.microsoft.com/en-us/0d05b1b8-b18b-43d8-bb3c-526ff0c44fe0).  
+>  The name and location of the application configuration file depend on the application's host. For more information, see [NIB: Application Configuration Files](http://msdn.microsoft.com/library/0d05b1b8-b18b-43d8-bb3c-526ff0c44fe0).  
   
  You can use the built-in <xref:System.Configuration> types or derive from them to handle configuration information. By using these types, you can work directly with configuration information and you can extend configuration files to include custom information.  
   
@@ -313,6 +313,8 @@ End Module
   
 -   Read permissions on all the configuration files.</para>
     </block>
+    <altmember cref="T:System.Configuration.Configuration" />
+    <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
   </Docs>
   <Members>
     <Member MemberName="AppSettings">
@@ -506,6 +508,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Could not retrieve a <see cref="T:System.Collections.Specialized.NameValueCollection" /> object with the application settings data.</exception>
+        <altmember cref="T:System.Configuration.AppSettingsSection" />
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionStrings">
@@ -617,6 +621,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">Could not retrieve a <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object.</exception>
+        <altmember cref="T:System.Configuration.ConnectionStringsSection" />
+        <altmember cref="T:System.Configuration.ConnectionStringSettingsCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -672,6 +678,7 @@ End Module
         <block subset="none" type="overrides">
           <para>You must cast the return value to the expected configuration type. To avoid possible casting exceptions, you should use a conditional casting operation such as the <see langword="as" /> operator in C# or the  function in Visual Basic.</para>
         </block>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="OpenExeConfiguration">
@@ -725,6 +732,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationUserLevel" />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenExeConfiguration">
@@ -769,6 +778,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationUserLevel" />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMachineConfiguration">
@@ -813,6 +824,7 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedExeConfiguration">
@@ -860,6 +872,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationUserLevel" />
+        <altmember cref="T:System.Configuration.Configuration" />
       </Docs>
     </Member>
     <Member MemberName="OpenMappedExeConfiguration">
@@ -951,6 +965,8 @@ End Module
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">A configuration file could not be loaded.</exception>
+        <altmember cref="T:System.Configuration.Configuration" />
+        <altmember cref="T:System.Configuration.ConfigurationFileMap" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSection">
@@ -991,7 +1007,26 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.ConfigurationManager.GetSection(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenExeConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the specified client configuration file as a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenMappedExeConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the specified client configuration file as a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

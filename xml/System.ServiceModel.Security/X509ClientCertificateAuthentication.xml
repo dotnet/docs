@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, then you must create a custom certificate validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
+ If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, then you must create a custom certificate validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
    
   
@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
   </Docs>
   <Members>
     <Member MemberName="CertificateValidationMode">
@@ -138,6 +139,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see langword="set" /> when credential is read-only.</exception>
+        <altmember cref="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode" />
+        <altmember cref="T:System.IdentityModel.Selectors.X509CertificateValidator" />
       </Docs>
     </Member>
     <Member MemberName="IncludeWindowsGroups">

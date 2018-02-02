@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "clients [WCF], building"
   - "clients [WCF]"
 ms.assetid: 28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Building Clients
 The topics in this section demonstrate how to create and use a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] client.  

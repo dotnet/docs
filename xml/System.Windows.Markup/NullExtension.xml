@@ -35,8 +35,6 @@
 ## WPF Usage Notes  
  For WPF dependency properties, when you set a dependency property value to `null`, you are not necessarily setting the property to its default value, even if it is a reference property. The default value of a dependency property depends on its dependency property registration. An unset value is not necessarily `null` either; see <xref:System.Windows.DependencyProperty.UnsetValue>. For more information, see <xref:System.Windows.DependencyObject.ClearValue%2A> or [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md).  
   
-<a name="xamlTextUsage_NullExtension"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -81,10 +79,12 @@
 ## Remarks  
  This method supports XAML processor implementations, and is not intended to be called directly. A XAML processor implementation uses this method when it creates object graphs that include an `x:Null` extension usage. This relies on general behavior for XAML processors when they process any <xref:System.Windows.Markup.MarkupExtension> and call its `ProvideValue` implementation.  
   
- This implementation does not rely on services that are based on the passed `serviceProvider`. It always returns a null reference regardless of context. In the .NET Framework XAML Services implementation, the value to return is obtained by referencing the <xref:System.Xaml.XamlLanguage.Null%2A?displayProperty=fullName> static value.  
+ This implementation does not rely on services that are based on the passed `serviceProvider`. It always returns a null reference regardless of context. In the .NET Framework XAML Services implementation, the value to return is obtained by referencing the <xref:System.Xaml.XamlLanguage.Null%2A?displayProperty=nameWithType> static value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlLanguage.Null" />
+        <altmember cref="T:System.Windows.Markup.MarkupExtension" />
       </Docs>
     </Member>
   </Members>

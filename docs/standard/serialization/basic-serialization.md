@@ -1,27 +1,26 @@
 ---
-title: "Basic Serialization"
-ms.custom: ""
+title: "Basic serialization"
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "binary serialization, basic serialization"
   - "serialization, basic serialization"
 ms.assetid: d899d43c-335a-433e-a589-cd187192984f
+dev_langs: 
+  - "CSharp"
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# Basic Serialization
+# Basic serialization
+
+[!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
+
 The easiest way to make a class serializable is to mark it with the <xref:System.SerializableAttribute> as follows.  
   
 ```csharp  
@@ -33,7 +32,7 @@ public class MyObject {
 }  
 ```  
   
- The code example below shows how an instance of this class can be serialized to a file.  
+The following code example shows how an instance of this class can be serialized to a file.  
   
 ```csharp  
 MyObject obj = new MyObject();  
@@ -46,9 +45,9 @@ formatter.Serialize(stream, obj);
 stream.Close();  
 ```  
   
- This example uses a binary formatter to do the serialization. All you need to do is create an instance of the stream and the formatter you intend to use, and then call the **Serialize** method on the formatter. The stream and the object to serialize are provided as parameters to this call. Although it is not explicitly demonstrated in this example, all member variables of a class will be serialized—even variables marked as private. In this aspect, binary serialization differs from the <xref:System.Xml.Serialization.XmlSerializer> class, which only serializes public fields. For information on excluding member variables from binary serialization, see [Selective Serialization](../../../docs/standard/serialization/selective-serialization.md).  
+This example uses a binary formatter to do the serialization. All you need to do is create an instance of the stream and the formatter you intend to use, and then call the **Serialize** method on the formatter. The stream and the object to serialize are provided as parameters to this call. Although it is not explicitly demonstrated in this example, all member variables of a class will be serialized—even variables marked as private. In this aspect, binary serialization differs from the <xref:System.Xml.Serialization.XmlSerializer> class, which only serializes public fields. For information on excluding member variables from binary serialization, see [Selective Serialization](selective-serialization.md).  
   
- Restoring the object back to its former state is just as easy. First, create a stream for reading and a <xref:System.Runtime.Serialization.Formatter>, and then instruct the formatter to deserialize the object. The code example below shows how this is done.  
+Restoring the object back to its former state is just as easy. First, create a stream for reading and a <xref:System.Runtime.Serialization.Formatter>, and then instruct the formatter to deserialize the object. The code example below shows how this is done.  
   
 ```csharp  
 IFormatter formatter = new BinaryFormatter();  
@@ -62,9 +61,9 @@ Console.WriteLine("n2: {0}", obj.n2);
 Console.WriteLine("str: {0}", obj.str);  
 ```  
   
- The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> used above is very efficient and produces a compact byte stream. All objects serialized with this formatter can also be deserialized with it, which makes it an ideal tool for serializing objects that will be deserialized on the .NET Framework. It is important to note that constructors are not called when an object is deserialized. This constraint is placed on deserialization for performance reasons. However, this violates some of the usual contracts the runtime makes with the object writer, and developers should ensure that they understand the ramifications when marking an object as serializable.  
+The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> used above is very efficient and produces a compact byte stream. All objects serialized with this formatter can also be deserialized with it, which makes it an ideal tool for serializing objects that will be deserialized on the .NET Framework. It is important to note that constructors are not called when an object is deserialized. This constraint is placed on deserialization for performance reasons. However, this violates some of the usual contracts the runtime makes with the object writer, and developers should ensure that they understand the ramifications when marking an object as serializable.  
   
- If portability is a requirement, use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> instead. Simply replace the **BinaryFormatter** in the code above with **SoapFormatter,** and call **Serialize** and **Deserialize** as before. This formatter produces the following output for the example used above.  
+If portability is a requirement, use the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> instead. Simply replace the **BinaryFormatter** in the code above with **SoapFormatter,** and call **Serialize** and **Deserialize** as before. This formatter produces the following output for the example used above.  
   
 ```xml  
 <SOAP-ENV:Envelope  
@@ -87,7 +86,7 @@ Console.WriteLine("str: {0}", obj.str);
 </SOAP-ENV:Envelope>  
 ```  
   
- It is important to note that the **Serializable** attribute cannot be inherited. If you derive a new class from `MyObject`, the new class must be marked with the attribute as well, or it cannot be serialized. For example, when you attempt to serialize an instance of the class below, you will get a <xref:System.Runtime.Serialization.SerializationException> informing you that the `MyStuff` type is not marked as serializable.  
+It's important to note that the [Serializable](xref:System.SerializableAttribute) attribute cannot be inherited. If you derive a new class from `MyObject`, the new class must be marked with the attribute as well, or it cannot be serialized. For example, when you attempt to serialize an instance of the class below, you'll get a <xref:System.Runtime.Serialization.SerializationException> informing you that the `MyStuff` type is not marked as serializable.  
   
 ```csharp  
 public class MyStuff : MyObject   
@@ -96,8 +95,8 @@ public class MyStuff : MyObject
 }  
 ```  
   
- Using the **Serializable** attribute is convenient, but it has limitations as demonstrated above. Refer to the [Serialization Guidelines](../../../docs/standard/serialization/serialization-guidelines.md) for information about when you should mark a class for serialization; serialization cannot be added to a class after it has been compiled.  
+ Using the [Serializable](xref:System.SerializableAttribute) attribute is convenient, but it has limitations as previously demonstrated. Refer to the [Serialization Guidelines](serialization-guidelines.md) for information about when you should mark a class for serialization. Serialization cannot be added to a class after it has been compiled.  
   
-## See Also  
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+## See also  
+ [Binary Serialization](binary-serialization.md)  
+ [XML and SOAP Serialization](xml-and-soap-serialization.md)

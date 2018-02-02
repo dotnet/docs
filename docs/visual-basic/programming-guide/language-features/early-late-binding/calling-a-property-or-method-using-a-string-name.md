@@ -1,45 +1,27 @@
 ---
 title: "Calling a Property or Method Using a String Name (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "passing operators"
+  - "passing operators [Visual Basic]"
   - "strings [Visual Basic], passing new operators as"
   - "objects [Visual Basic], setting properties"
   - "setting properties, object properties at run time"
-  - "method calls, strings"
+  - "method calls [Visual Basic], strings"
   - "methods [Visual Basic], calling with string names"
-  - "calling methods, string names"
+  - "calling methods [Visual Basic], string names"
   - "properties [Visual Basic], setting at run time"
   - "CallByName function"
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Calling a Property or Method Using a String Name (Visual Basic)
 In most cases, you can discover the properties and methods of an object at design time, and write code to handle them. However, in some cases you may not know about an object's properties and methods in advance, or you may just want the flexibility of enabling an end user to specify properties or execute methods at run time.  
@@ -69,5 +51,5 @@ In most cases, you can discover the properties and methods of an object at desig
 >  While the `CallByName` function may be useful in some cases, you must weigh its usefulness against the performance implications — using `CallByName` to invoke a procedure is slightly slower than a late-bound call. If you are invoking a function that is called repeatedly, such as inside a loop, `CallByName` can have a severe effect on performance.  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>   
+ <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>  
  [Determining Object Type](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)

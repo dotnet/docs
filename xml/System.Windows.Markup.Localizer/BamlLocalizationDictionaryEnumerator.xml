@@ -16,15 +16,9 @@
   </Interfaces>
   <Docs>
     <summary>Defines a specialized enumerator that can enumerate over the content of a <see cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" /> object.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="xamlTextUsage_BamlLocalizationDictionaryEnumerator"></a>   
-## XAML Text Usage  
- ]]></format>
-    </remarks>
+    <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Markup.Localizer.BamlLocalizationDictionary" />
+    <altmember cref="M:System.Windows.Markup.Localizer.BamlLocalizationDictionary.GetEnumerator" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -135,6 +129,7 @@
         <summary>For a description of this member, see <see cref="P:System.Collections.IDictionaryEnumerator.Key" />.</summary>
         <value>The key of the current element of the enumeration.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Key" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionaryEnumerator.Value">
@@ -153,6 +148,7 @@
         <summary>For a description of this member, see <see cref="P:System.Collections.IDictionaryEnumerator.Value" />.</summary>
         <value>The value of the current element of the enumeration.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Value" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">

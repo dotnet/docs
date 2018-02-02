@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "brushes, painting with radial gradients"
-  - "radial gradients, painting with"
-  - "painting, with radial gradients"
+  - "brushes [WPF], painting with radial gradients"
+  - "radial gradients [WPF], painting with"
+  - "painting [WPF], with radial gradients"
 ms.assetid: b5d0fc8a-8986-4796-b003-a75b41a48928
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Paint an Area with a Radial Gradient
 This example shows how to use the <xref:System.Windows.Media.RadialGradientBrush> class to paint an area with a radial gradient.  

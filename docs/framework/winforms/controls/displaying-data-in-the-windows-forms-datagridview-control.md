@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"
-  - "data grids, displaying data"
-  - "displaying data, data grids"
+  - "data grids [Windows Forms], displaying data"
+  - "displaying data [Windows Forms], data grids"
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Displaying Data in the Windows Forms DataGridView Control
 The `DataGridView` control is used to display data from a variety of external data sources. Alternatively, you can add rows and columns to the control and manually populate it with data.  
@@ -64,13 +64,13 @@ The `DataGridView` control is used to display data from a variety of external da
  Describes how to display data from two related database tables so that the values shown in one `DataGridView` control depend on the currently selected row in another control.  
   
  [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)  
- Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event to change the appearance of cells depending on their values.  
+ Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to change the appearance of cells depending on their values.  
   
 ## Reference  
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>  
+ <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property.  
   
  <xref:System.Windows.Forms.BindingSource>  
@@ -81,5 +81,5 @@ The `DataGridView` control is used to display data from a variety of external da
  Provides topics that describe how to change the way users add and modify data in the control.  
   
 ## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)   
+ [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

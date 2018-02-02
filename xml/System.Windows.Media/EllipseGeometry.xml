@@ -39,6 +39,9 @@ Two EllipseGeometry objects
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Shapes.Path" />
+    <altmember cref="T:System.Windows.Media.GeometryDrawing" />
+    <altmember cref="P:System.Windows.UIElement.Clip" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -209,7 +212,7 @@ Two EllipseGeometry objects
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -237,7 +240,7 @@ Two EllipseGeometry objects
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -431,5 +434,14 @@ Two EllipseGeometry objects
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.EllipseGeometry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

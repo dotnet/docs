@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.Serialization.Formatter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,7 +69,7 @@
     </Member>
     <Member MemberName="GetId">
       <MemberSignature Language="C#" Value="public virtual long GetId (object obj, out bool firstTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetId(object obj, bool firstTime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetId(object obj, [out] bool&amp; firstTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.GetId(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -104,7 +105,7 @@
     </Member>
     <Member MemberName="HasId">
       <MemberSignature Language="C#" Value="public virtual long HasId (object obj, out bool firstTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 HasId(object obj, bool firstTime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 HasId(object obj, [out] bool&amp; firstTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.HasId(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

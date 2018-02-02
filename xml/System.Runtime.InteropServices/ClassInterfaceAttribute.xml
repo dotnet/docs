@@ -42,11 +42,11 @@
   
  This attribute controls whether the Type Library Exporter (Tlbexp.exe) automatically generates a class interface for the attributed class. A class interface carries the same name as the class itself, but the name is prefixed with an underscore. When exposed, the class interface contains all the `public`, non- `static` members of the managed class, including members inherited from its base class. Managed classes cannot access a class interface and have no need to as they can access the class members directly. Tlbexp.exe generates a unique interface identifier (IID) for the class interface.  
   
- Class interfaces can be dual or dispatch-only interfaces. Optionally, you can suppress the generation of the class interface and provide a custom interface instead. You expose or suppress a class interface by specifying a <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> enumeration member. When you apply <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> to an assembly, the attribute pertains to all classes in the assembly unless the individual classes override the setting with their own attribute.  
+ Class interfaces can be dual or dispatch-only interfaces. Optionally, you can suppress the generation of the class interface and provide a custom interface instead. You expose or suppress a class interface by specifying a <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=nameWithType> enumeration member. When you apply <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> to an assembly, the attribute pertains to all classes in the assembly unless the individual classes override the setting with their own attribute.  
   
  Although class interfaces eliminate the task of explicitly defining interfaces for each class, their use in production applications is strongly discouraged. Dual class interfaces allow clients to bind to a specific interface layout that is subject to change as the class evolves. For example, consider a managed class that exposes a class interface to COM clients. The first version of the class contains methods `North` and `South`. An unmanaged client can bind to the class interface, which provides `North` as the first method in the class interface and method `South` as the second method. Now consider the next version of the class, which has a new method, `East`, inserted between methods `North` and `South`. Unmanaged clients that try to bind to the new class through the old class interface end up calling method `East` when they intend to call method `South`, because the positioning of methods within the interface has changed. Moreover, any change to the layout of a base class also affects the layout of the class interface for all derived classes. Managed clients, which bind directly to classes, do not exhibit the same versioning problems. For specific guidelines on using a class interface, see [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
   
- The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) always applies to imported classes the <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> enumeration member to indicate that existing COM classes never expose managed interfaces.  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) always applies to imported classes the <xref:System.Runtime.InteropServices.ClassInterfaceType.None?displayProperty=nameWithType> enumeration member to indicate that existing COM classes never expose managed interfaces.  
   
    
   
@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -171,5 +173,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -73,6 +73,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeAttributeDeclaration" />
       </Docs>
     </Member>
     <Member MemberName="AdditionalInterfaces">
@@ -98,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
       </Docs>
     </Member>
     <Member MemberName="AdditionalMembers">
@@ -123,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeTypeMember" />
       </Docs>
     </Member>
     <Member MemberName="BaseType">
@@ -141,6 +146,8 @@
         <summary>Gets or sets the base type.</summary>
         <value>The base type. The default is <see cref="T:System.Data.Objects.DataClasses.EntityObject" />, <see cref="T:System.Data.Objects.DataClasses.ComplexObject" />, or <see cref="T:System.Data.Objects.ObjectContext" />, depending on the <see cref="P:System.Data.Entity.Design.TypeGeneratedEventArgs.TypeSource" /> property value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Generic.List`1" />
+        <altmember cref="T:System.CodeDom.CodeTypeReference" />
       </Docs>
     </Member>
     <Member MemberName="TypeSource">
@@ -161,5 +168,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.TypeGeneratedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

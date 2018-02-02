@@ -78,6 +78,9 @@ using (host.CreateTransaction() {
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -166,6 +169,7 @@ using (host.CreateTransaction() {
         <summary>Cancels the transaction and attempts to roll back the changes made by the events of the transaction.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerTransaction.OnCancel" />
       </Docs>
     </Member>
     <Member MemberName="Canceled">
@@ -239,6 +243,7 @@ using (host.CreateTransaction() {
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <altmember cref="M:System.ComponentModel.Design.DesignerTransaction.OnCommit" />
       </Docs>
     </Member>
     <Member MemberName="Committed">
@@ -355,7 +360,7 @@ using (host.CreateTransaction() {
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -387,11 +392,11 @@ using (host.CreateTransaction() {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
   
- Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -434,6 +439,7 @@ using (host.CreateTransaction() {
         <block subset="none" type="overrides">
           <para>When implemented in a derived class, this method cancels a transaction.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.DesignerTransaction.Cancel" />
       </Docs>
     </Member>
     <Member MemberName="OnCommit">
@@ -472,6 +478,7 @@ using (host.CreateTransaction() {
         <block subset="none" type="overrides">
           <para>When implemented in a derived class, this method performs work associated with processing the transaction.</para>
         </block>
+        <altmember cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" />
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">
@@ -509,5 +516,15 @@ using (host.CreateTransaction() {
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

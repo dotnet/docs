@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.Windows.Annotations.ContentLocator.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, <xref:System.Windows.Annotations.ContentLocator.Clone%2A> shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ This <xref:System.Windows.Annotations.ContentLocator.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, <xref:System.Windows.Annotations.ContentLocator.Clone%2A> shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  The cloned <xref:System.Windows.Annotations.ContentLocator>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocator>'s <xref:System.Windows.Freezable.IsFrozen%2A> property was `true.`  
   
@@ -127,6 +127,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.StartsWith(System.Windows.Annotations.ContentLocator)" />
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.Clone" />
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -151,6 +153,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.XmlException">The serialized XML for the <see cref="T:System.Windows.Annotations.ContentLocator" /> is not valid.</exception>
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.WriteXml(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="StartsWith">
@@ -185,6 +188,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="locator" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Annotations.ContentLocator.Parts" />
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -208,6 +212,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Annotations.ContentLocator.ReadXml(System.Xml.XmlReader)" />
       </Docs>
     </Member>
   </Members>

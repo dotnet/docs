@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;authentication&gt; of &lt;serviceCertificate&gt; Element
 Specifies the settings used by the client proxy to authenticate service certificates that are obtained using SSL/TLS negotiation.  
@@ -104,13 +106,13 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>   
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>   
- <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>   
- <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)   
- [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)   
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)   
+ <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>  
+ <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
+ <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication%2A>  
+ <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
+ [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
+ [\<authentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md)  
+ [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

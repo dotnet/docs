@@ -43,7 +43,7 @@
 ## Conversions to and from Base Types  
  A conversion method exists to convert every base type to every other base type. However, the actual call to a particular conversion method can produce one of five outcomes, depending on the value of the base type at run time and the target base type. These five outcomes are:  
   
--   No conversion. This occurs when an attempt is made to convert from a type to itself (for example, by calling <xref:System.Convert.ToInt32%28System.Int32%29?displayProperty=fullName> with an argument of type <xref:System.Int32>). In this case, the method simply returns an instance of the original type.  
+-   No conversion. This occurs when an attempt is made to convert from a type to itself (for example, by calling <xref:System.Convert.ToInt32%28System.Int32%29?displayProperty=nameWithType> with an argument of type <xref:System.Int32>). In this case, the method simply returns an instance of the original type.  
   
 -   An <xref:System.InvalidCastException>. This occurs when a particular conversion is not supported. An <xref:System.InvalidCastException> is thrown for the following conversions:  
   
@@ -57,7 +57,7 @@
   
 -   A <xref:System.FormatException>. This occurs when the attempt to convert a string value to any other base type fails because the string is not in the proper format. The exception is thrown for the following conversions:  
   
-    -   A string to be converted to a <xref:System.Boolean> value does not equal <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+    -   A string to be converted to a <xref:System.Boolean> value does not equal <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
     -   A string to be converted to a <xref:System.Char> value consists of multiple characters.  
   
@@ -93,7 +93,7 @@
   
 -   <xref:System.Convert.ToUInt64%28System.String%2CSystem.Int32%29>, to convert the string representation of an integer in a specified format to an unsigned 64-bit integer.  
   
- The following example converts the value of <xref:System.Int16.MaxValue?displayProperty=fullName> to a string in all supported numeric formats. It then converts the string value back to a <xref:System.Int16> value.  
+ The following example converts the value of <xref:System.Int16.MaxValue?displayProperty=nameWithType> to a string in all supported numeric formats. It then converts the string value back to a <xref:System.Int16> value.  
   
  [!code-cpp[System.Convert#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert/CPP/NonDecimal1.cpp#2)]
  [!code-csharp[System.Convert#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert/CS/NonDecimal1.cs#2)]
@@ -103,15 +103,15 @@
 ## Conversions from Custom Objects to Base Types  
  In addition to supporting conversions between the base types, the <xref:System.Convert> method supports conversion of any custom type to any base type. To do this, the custom type must implement the <xref:System.IConvertible> interface, which defines methods for converting the implementing type to each of the base types. Conversions that are not supported by a particular type should throw an <xref:System.InvalidCastException>.  
   
- When the <xref:System.Convert.ChangeType%2A> method is passed a custom type as its first parameter, or when the `Convert.To`*Type* method (such as <xref:System.Convert.ToInt32%28System.Object%29?displayProperty=fullName> or <xref:System.Convert.ToDouble%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> is called and passed an instance of a custom type as its first parameter, the <xref:System.Convert> method, in turn, calls the custom type's <xref:System.IConvertible> implementation to perform the conversion. For more information, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md).  
+ When the <xref:System.Convert.ChangeType%2A> method is passed a custom type as its first parameter, or when the `Convert.To`*Type* method (such as <xref:System.Convert.ToInt32%28System.Object%29?displayProperty=nameWithType> or <xref:System.Convert.ToDouble%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> is called and passed an instance of a custom type as its first parameter, the <xref:System.Convert> method, in turn, calls the custom type's <xref:System.IConvertible> implementation to perform the conversion. For more information, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md).  
   
 <a name="Culture"></a>   
 ## Culture-Specific Formatting Information  
- All the base type conversion methods and the <xref:System.Convert.ChangeType%2A> method include overloads that have a parameter of type <xref:System.IFormatProvider>. For example, the <xref:System.Convert.ToBoolean%2A?displayProperty=fullName> method has the following two overloads:  
+ All the base type conversion methods and the <xref:System.Convert.ChangeType%2A> method include overloads that have a parameter of type <xref:System.IFormatProvider>. For example, the <xref:System.Convert.ToBoolean%2A?displayProperty=nameWithType> method has the following two overloads:  
   
--   <xref:System.Convert.ToBoolean%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName>  
+-   <xref:System.Convert.ToBoolean%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType>  
   
--   <xref:System.Convert.ToBoolean%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>  
+-   <xref:System.Convert.ToBoolean%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>  
   
  The <xref:System.IFormatProvider> parameter can supply culture-specific formatting information to assist the conversion process. However, it is ignored by most of the base type conversion methods. It is used only by the following base type conversion methods.If a `null`<xref:System.IFormatProvider> argument is passed to these methods, the <xref:System.Globalization.CultureInfo> object that represents the current thread culture is used.  
   
@@ -119,7 +119,7 @@
   
 -   By methods that convert a value to a date and time. The <xref:System.IFormatProvider> parameter is used by the overload that has parameters of type <xref:System.String> and <xref:System.IFormatProvider>. It is also used by the overload that has parameters of type <xref:System.Object> and <xref:System.IFormatProvider> if the object's run-time type is a <xref:System.String>.  
   
--   By the <xref:System.Convert.ToString%2A?displayProperty=fullName> overloads that include an <xref:System.IFormatProvider> parameter and that convert either a numeric value to a string or a <xref:System.DateTime> value to a string.  
+-   By the <xref:System.Convert.ToString%2A?displayProperty=nameWithType> overloads that include an <xref:System.IFormatProvider> parameter and that convert either a numeric value to a string or a <xref:System.DateTime> value to a string.  
   
  However, any user-defined type that implements <xref:System.IConvertible> can make use of the <xref:System.IFormatProvider> parameter.  
   
@@ -156,6 +156,22 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IConvertible" />
+    <altmember cref="T:System.Object" />
+    <altmember cref="T:System.SByte" />
+    <altmember cref="T:System.Int16" />
+    <altmember cref="T:System.Int32" />
+    <altmember cref="T:System.Int64" />
+    <altmember cref="T:System.Byte" />
+    <altmember cref="T:System.UInt16" />
+    <altmember cref="T:System.UInt32" />
+    <altmember cref="T:System.UInt64" />
+    <altmember cref="T:System.Single" />
+    <altmember cref="T:System.Double" />
+    <altmember cref="T:System.Decimal" />
+    <altmember cref="T:System.Boolean" />
+    <altmember cref="T:System.Char" />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName="ChangeType">
@@ -523,13 +539,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Convert.DBNull> field is equivalent to <xref:System.DBNull.Value?displayProperty=fullName>, as the following example shows.  
+ The <xref:System.Convert.DBNull> field is equivalent to <xref:System.DBNull.Value?displayProperty=nameWithType>, as the following example shows.  
   
  [!code-csharp[System.Convert.DBNull#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.dbnull/cs/dbnull1.cs#1)]
  [!code-vb[System.Convert.DBNull#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.dbnull/vb/dbnull1.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DBNull" />
+        <altmember cref="F:System.DBNull.Value" />
       </Docs>
     </Member>
     <Member MemberName="FromBase64CharArray">
@@ -583,7 +601,7 @@
  The valueless character, "=", is used for trailing padding. The end of `inArray` can consist of zero, one, or two padding characters.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.FromBase64CharArray%2A> method is designed to process a single character array that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.FromBase64CharArray%2A> method is designed to process a single character array that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=nameWithType> class.  
   
    
   
@@ -617,6 +635,8 @@
  -or-  
   
  The format of <paramref name="inArray" /> is invalid. <paramref name="inArray" /> contains a non-base-64 character, more than two padding characters, or a non-white-space character among the padding characters.</exception>
+        <altmember cref="M:System.Convert.ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.FromBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="FromBase64String">
@@ -666,7 +686,7 @@
  The valueless character, "=", is used for trailing padding. The end of `s` can consist of zero, one, or two padding characters.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.FromBase64String%2A>method is designed to process a single string that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.FromBase64String%2A> method is designed to process a single string that contains all the data to be decoded. To decode base-64 character data from a stream, use the <xref:System.Security.Cryptography.FromBase64Transform?displayProperty=nameWithType> class.  
   
    
   
@@ -676,7 +696,7 @@
  [!code-csharp[System.Convert.ToBase64String#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String2.cs#1)]
  [!code-vb[System.Convert.ToBase64String#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String2.vb#1)]  
   
- The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=fullName> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. This buffer is then passed to the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
+ The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=nameWithType> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This buffer is then passed to the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
   
  [!code-csharp[System.Convert.ToBase64String#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String.cs#2)]
  [!code-vb[System.Convert.ToBase64String#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String.vb#2)]  
@@ -690,6 +710,8 @@
  -or-  
   
  The format of <paramref name="s" /> is invalid. <paramref name="s" /> contains a non-base-64 character, more than two padding characters, or a non-white space-character among the padding characters.</exception>
+        <altmember cref="M:System.Convert.ToBase64String(System.Byte[])" />
+        <altmember cref="T:System.Security.Cryptography.FromBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeCode">
@@ -758,24 +780,25 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull?displayProperty=fullName>. It is equivalent to the following code:  
+ The <xref:System.Convert.IsDBNull%2A> method tests whether the `value` parameter is equal to <xref:System.DBNull.Value?displayProperty=nameWithType>. It is equivalent to the following code:  
   
  [!code-csharp[System.Convert.IsDBNull#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.IsDBNull/cs/Form1.cs#1)]
  [!code-vb[System.Convert.IsDBNull#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.IsDBNull/vb/Form1.vb#1)]  
   
 > [!NOTE]
->  <xref:System.DBNull?displayProperty=fullName> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=fullName>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
+>  <xref:System.DBNull.Value?displayProperty=nameWithType> is used to indicate a value that is missing. It is not equivalent to `null` or to <xref:System.String.Empty?displayProperty=nameWithType>. Therefore, code such as `Convert.IsDBNull(null)` in C# or `Convert.IsDBNull(Nothing)` in Visual Basic returns`false`.  
   
    
   
 ## Examples  
- The following example uses a <xref:System.Data.SqlClient.SqlDataReader> object to retrieve survey data from a database. It assigns each row's field values to an array, and then passes each array element to the <xref:System.Convert.IsDBNull%2A> method. If the method returns `true`, the example assigns the string "NA" to the array element. The array is then added to the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection of a <xref:System.Windows.Forms.DataGridView?displayProperty=fullName> control.  
+ The following example uses a <xref:System.Data.SqlClient.SqlDataReader> object to retrieve survey data from a database. It assigns each row's field values to an array, and then passes each array element to the <xref:System.Convert.IsDBNull%2A> method. If the method returns `true`, the example assigns the string "NA" to the array element. The array is then added to the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection of a <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> control.  
   
  [!code-csharp[System.Convert.IsDBNull#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.IsDBNull/cs/Form1.cs#2)]
  [!code-vb[System.Convert.IsDBNull#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.IsDBNull/vb/Form1.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DBNull" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64CharArray">
@@ -828,7 +851,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offsetIn` and `offsetOut` parameters are zero-based array positions.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64CharArray%2A>method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
    
   
@@ -853,6 +876,8 @@
  -or-  
   
  <paramref name="offsetOut" /> plus the number of elements to return is greater than the length of <paramref name="outArray" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64CharArray">
@@ -913,7 +938,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offsetIn` and `offsetOut` parameters are zero-based array positions.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64CharArray%2A> method is designed to process a single byte array that contains all the data to be encoded. To create a base-64 character array from a byte stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
@@ -944,6 +969,8 @@
  <paramref name="offsetOut" /> plus the number of elements to return is greater than the length of <paramref name="outArray" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -986,7 +1013,7 @@
  The base-64 digits in ascending order from zero are the uppercase characters "A" to "Z", the lowercase characters "a" to "z", the numerals "0" to "9", and the symbols "+" and "/". The valueless character, "=", is used for trailing padding.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
  Ordinarily, the <xref:System.Convert.ToBase64String%2A> method is not used to round-trip a  UUEncoded (base-64 encoded) string.  That is, if you decode a string by calling the <xref:System.Convert.FromBase64String%2A> method, then encode the returned byte array by calling the <xref:System.Convert.ToBase64String%2A> method, the resulting string will not necessarily be identical to the original string. The string will round-trip only if the original string is a valid base-64 encoded string.  
   
@@ -998,7 +1025,7 @@
  [!code-csharp[System.Convert.ToBase64String#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String2.cs#1)]
  [!code-vb[System.Convert.ToBase64String#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String2.vb#1)]  
   
- The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=fullName> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method. This buffer is then passed to the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
+ The following is a more complex example that creates a 20-element array of 32-bit integers. It then uses the <xref:System.BitConverter.GetBytes%28System.Int32%29?displayProperty=nameWithType> method to convert each element into a byte array, which it stores in the appropriate position in a buffer by calling the <xref:System.Array.Copy%28System.Array%2CSystem.Int32%2CSystem.Array%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This buffer is then passed to the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%29> method to create a UUencoded (base-64) string.  It then calls the <xref:System.Convert.FromBase64String%28System.String%29> method to decode the UUencoded string, and calls the <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> method to convert each set of four bytes (the size of a 32-bit integer) to an integer. The output from the example shows that the original array has been successfully restored.  
   
  [!code-csharp[System.Convert.ToBase64String#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String.cs#2)]
  [!code-vb[System.Convert.ToBase64String#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String.vb#2)]  
@@ -1007,6 +1034,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="inArray" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1054,19 +1083,19 @@
  The base-64 digits in ascending order from zero are the uppercase characters "A" to "Z", the lowercase characters "a" to "z", the numerals "0" to "9", and the symbols "+" and "/". The valueless character "=" is used for trailing padding.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered whitespace characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window. For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
    
   
 ## Examples  
- The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=fullName> with a <xref:System.Base64FormattingOptions?displayProperty=fullName> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
+ The following example calls the <xref:System.Convert.ToBase64String%28System.Byte%5B%5D%2CSystem.Base64FormattingOptions%29?displayProperty=nameWithType> with a <xref:System.Base64FormattingOptions.InsertLineBreaks?displayProperty=nameWithType> argument to insert line breaks in the string that is produced by encoding a 100-element byte array.  
   
  [!code-csharp[System.Convert.ToBase64String#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Convert.ToBase64String/cs/ToBase64String3.cs#3)]
  [!code-vb[System.Convert.ToBase64String#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Convert.ToBase64String/vb/ToBase64String3.vb#3)]  
   
- As the output from the example shows, the <xref:System.Convert.FromBase64String%2A?displayProperty=fullName> succeeds in restoring the original byte array; the line break characters are ignored during the conversion.  
+ As the output from the example shows, the <xref:System.Convert.FromBase64String%2A?displayProperty=nameWithType> succeeds in restoring the original byte array; the line break characters are ignored during the conversion.  
   
  ]]></format>
         </remarks>
@@ -1074,6 +1103,8 @@
           <paramref name="inArray" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1122,7 +1153,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offset` parameter is zero-based.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>
@@ -1134,6 +1165,8 @@
  -or-  
   
  <paramref name="offset" /> plus <paramref name="length" /> is greater than the length of <paramref name="inArray" />.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBase64String">
@@ -1190,7 +1223,7 @@
  The `offset` and `length` parameters are 32-bit signed numbers. The `offset` parameter is zero-based.  
   
 > [!IMPORTANT]
->  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=fullName> class.  
+>  The <xref:System.Convert.ToBase64String%2A> method is designed to process a single byte array that contains all the data to be encoded. To encode data from a stream, use the <xref:System.Security.Cryptography.ToBase64Transform?displayProperty=nameWithType> class.  
   
  If the `options` parameter is set to <xref:System.Base64FormattingOptions.InsertLineBreaks> and the output of the conversion is longer than 76 characters, a line break is inserted every 76 characters. A line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). For more information, see RFC 2045, "Multipurpose Internet Mail Extensions", at [http://www.rfc-editor.org/](http://www.rfc-editor.org/).  
   
@@ -1217,6 +1250,8 @@
  <paramref name="offset" /> plus <paramref name="length" /> is greater than the length of <paramref name="inArray" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> is not a valid <see cref="T:System.Base64FormattingOptions" /> value.</exception>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1252,6 +1287,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1298,6 +1334,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1330,6 +1367,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1419,6 +1457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1465,6 +1504,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1511,6 +1551,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1557,6 +1598,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1603,6 +1645,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1657,6 +1700,7 @@
  -or-  
   
  The conversion of <paramref name="value" /> to a <see cref="T:System.Boolean" /> is not supported.</exception>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1708,6 +1752,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1754,6 +1799,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1792,14 +1838,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=fullName>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=fullName>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean?displayProperty=fullName> and <xref:System.Boolean?displayProperty=fullName>, the method ignores case as well as leading and trailing white space.  
+ For a successful conversion to occur, the `value` parameter must equal either <xref:System.Boolean.TrueString?displayProperty=nameWithType>, a constant whose value is `True`, <xref:System.Boolean.FalseString?displayProperty=nameWithType>, a constant whose value is `False`, or it must be `null`. In comparing `value` with <xref:System.Boolean.TrueString?displayProperty=nameWithType> and <xref:System.Boolean.FalseString?displayProperty=nameWithType>, the method ignores case as well as leading and trailing white space.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=fullName> method to convert various strings to Boolean values.  
+ The following example uses the <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=nameWithType> method to convert various strings to Boolean values.  
   
  [!code-cpp[System.Convert.ToBoolean#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert.ToBoolean/cpp/toboolean1.cpp#1)]
  [!code-csharp[System.Convert.ToBoolean#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToBoolean/cs/ToBoolean1.cs#1)]
@@ -1809,6 +1855,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not equal to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1860,6 +1907,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1911,6 +1959,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -1962,6 +2011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -2023,6 +2073,7 @@
  -or-  
   
  The conversion of <paramref name="value" /> to a <see cref="T:System.Boolean" /> is not supported.</exception>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -2063,12 +2114,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not equal to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2503,7 +2555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -2624,6 +2676,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" /> or less than <see cref="F:System.Byte.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2661,14 +2714,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToByte%28System.String%29> method is equivalent to passing `value` to the <xref:System.Byte.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToByte%28System.String%29> method is equivalent to passing `value` to the <xref:System.Byte.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Byte.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Byte.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
 ## Examples  
- The following example defines a string array and attempts to convert each string to a <xref:System.Byte>.  Note that while a `null` string parses to zero, <xref:System.String.Empty?displayProperty=fullName> throws a <xref:System.FormatException>. Also note that while leading and trailing spaces parse successfully, formatting symbols, such as currency symbols, group separators, or decimal separators, do not.  
+ The following example defines a string array and attempts to convert each string to a <xref:System.Byte>.  Note that while a `null` string parses to zero, <xref:System.String.Empty?displayProperty=nameWithType> throws a <xref:System.FormatException>. Also note that while leading and trailing spaces parse successfully, formatting symbols, such as currency symbols, group separators, or decimal separators, do not.  
   
  [!code-csharp[System.Convert.ToByte#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tobyte/cs/ToByte5.cs#15)]
  [!code-vb[System.Convert.ToByte#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tobyte/vb/tobyte5.vb#15)]  
@@ -2679,6 +2732,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -2881,7 +2935,7 @@
  [!code-csharp[System.Convert.ToByte#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tobyte/cs/tobyte3.cs#12)]
  [!code-vb[System.Convert.ToByte#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tobyte/vb/tobyte3.vb#12)]  
   
- The following example instantiates several `ByteString` objects and calls the <xref:System.Convert.ToByte%28System.Object%2CSystem.IFormatProvider%29> method to convert them to byte values. It illustrates that the <xref:System.Convert.ToByte%28System.Object%2CSystem.IFormatProvider%29> method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=fullName> method of the object to be converted.  
+ The following example instantiates several `ByteString` objects and calls the <xref:System.Convert.ToByte%28System.Object%2CSystem.IFormatProvider%29> method to convert them to byte values. It illustrates that the <xref:System.Convert.ToByte%28System.Object%2CSystem.IFormatProvider%29> method wraps a call to the <xref:System.IConvertible.ToByte%2A?displayProperty=nameWithType> method of the object to be converted.  
   
  [!code-csharp[System.Convert.ToByte#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tobyte/cs/tobyte3.cs#13)]
  [!code-vb[System.Convert.ToByte#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tobyte/vb/tobyte3.vb#13)]  
@@ -2939,7 +2993,7 @@
 ## Remarks  
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Byte.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Byte.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -2955,6 +3009,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <altmember cref="M:System.Byte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToByte">
@@ -3423,7 +3478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToChar%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToChar%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -3567,7 +3622,7 @@
 ## Remarks  
  `value` must be a string that contains a single character.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Char.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Char.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -3772,7 +3827,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToChar%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToChar%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. The base types ignore `provider`; however, the parameter may be used if `value` is a user-defined type that implements the <xref:System.IConvertible> interface.  
   
@@ -3838,7 +3893,7 @@
 ## Remarks  
  `value` must be a string that contains a single character.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Char.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Char.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -3886,6 +3941,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -3918,6 +3974,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -3950,6 +4007,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4046,6 +4104,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4078,6 +4137,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4110,6 +4170,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4142,6 +4203,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4181,7 +4243,7 @@
 ## Remarks  
  For the conversion to succeed, the runtime type of the `value` parameter must be either a <xref:System.DateTime> or a <xref:System.String>, or `value` must be `null`. Otherwise, the method throws an <xref:System.InvalidCastException>. In addition, if `value` is a string, it must contain a valid representation of a date and time value in the current culture or a <xref:System.FormatException> is thrown.  
   
- The return value is the result of invoking the <xref:System.IConvertible.ToDateTime%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToDateTime%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -4238,6 +4300,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4270,6 +4333,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4307,11 +4371,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, the return value is the result of invoking the <xref:System.DateTime.Parse%2A?displayProperty=fullName> method on `value` using the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is initialized for the current culture. The `value` argument must contain the representation of a date and time in one of the formats described in the <xref:System.Globalization.DateTimeFormatInfo> topic. If `value` is `null`, the method returns <xref:System.DateTime.MinValue?displayProperty=fullName>.  
+ If `value` is not `null`, the return value is the result of invoking the <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> method on `value` using the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is initialized for the current culture. The `value` argument must contain the representation of a date and time in one of the formats described in the <xref:System.Globalization.DateTimeFormatInfo> topic. If `value` is `null`, the method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType>.  
   
  This method tries to parse `value` completely and avoid throwing a <xref:System.FormatException>. It completes missing month, day, and year information with the current date. If `value` contains only a date and no time, this method assumes a time of midnight. Any leading, inner, or trailing white-space characters in `value` are ignored.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName>method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -4325,6 +4389,7 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="value" /> is not a properly formatted date and time string.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4362,6 +4427,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4399,6 +4465,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4436,6 +4503,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="ToDateTime">
@@ -4475,9 +4543,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToDateTime%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToDateTime%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
- `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a date, `provider` could supply culture-specific information about the notation used to represent that date. `provider` is involved in the conversion of `value` if the runtime type of `value` is a <xref:System.String>, or if `value` is a user-defined type whose <xref:System.IConvertible.ToDateTime%2A?displayProperty=fullName> implementation makes use of `provider`. If the runtime type of `value` is <xref:System.String> and `provider` is `null`, the <xref:System.Globalization.CultureInfo> object that represents the current thread culture is used.  
+ `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a date, `provider` could supply culture-specific information about the notation used to represent that date. `provider` is involved in the conversion of `value` if the runtime type of `value` is a <xref:System.String>, or if `value` is a user-defined type whose <xref:System.IConvertible.ToDateTime%2A?displayProperty=nameWithType> implementation makes use of `provider`. If the runtime type of `value` is <xref:System.String> and `provider` is `null`, the <xref:System.Globalization.CultureInfo> object that represents the current thread culture is used.  
   
    
   
@@ -4536,11 +4604,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.DateTimeFormatInfo> object. The <xref:System.Globalization.DateTimeFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.DateTimeFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName>method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -4598,6 +4666,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4643,6 +4712,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4686,6 +4756,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4790,7 +4861,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Decimal> value returned by this method contains a maximum of 15 significant digits. If the `value` parameter contains more than 15 significant digits, it is rounded using rounding to nearest. The following example illustrates how the <xref:System.Convert.ToDecimal%28System.Double%29?displayProperty=fullName> method uses rounding to nearest to return a <xref:System.Decimal> value with 15 significant digits.  
+ The <xref:System.Decimal> value returned by this method contains a maximum of 15 significant digits. If the `value` parameter contains more than 15 significant digits, it is rounded using rounding to nearest. The following example illustrates how the <xref:System.Convert.ToDecimal%28System.Double%29?displayProperty=nameWithType> method uses rounding to nearest to return a <xref:System.Decimal> value with 15 significant digits.  
   
  [!code-csharp[System.Convert.ToDecimal#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToDecimal/cs/ToDecimal1.cs#2)]
  [!code-vb[System.Convert.ToDecimal#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToDecimal/vb/ToDecimal1.vb#2)]  
@@ -4808,6 +4879,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4852,6 +4925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4896,6 +4970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4941,6 +5016,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -4978,7 +5054,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToDecimal%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToDecimal%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -5000,6 +5076,7 @@
  The conversion is not supported.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5049,6 +5126,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5103,6 +5181,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5140,14 +5219,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToDecimal%28System.String%29> method is equivalent to passing `value` to the <xref:System.Decimal.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToDecimal%28System.String%29> method is equivalent to passing `value` to the <xref:System.Decimal.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Decimal.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Decimal.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
 ## Examples  
- The following example illustrates the use of `ToDecimal`. It attempts to convert a <xref:System.String>to a <xref:System.Decimal>, and throws the possible exceptions that may arise during the conversion.  
+ The following example illustrates the use of `ToDecimal`. It attempts to convert a <xref:System.String> to a <xref:System.Decimal>, and throws the possible exceptions that may arise during the conversion.  
   
  [!code-cpp[System.Convert Snippets#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert Snippets/CPP/system.convert snippet.cpp#15)]
  [!code-csharp[System.Convert Snippets#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert Snippets/CS/system.convert snippet.cs#15)]
@@ -5208,6 +5287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5257,6 +5337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5306,6 +5387,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5345,7 +5427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToDecimal%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToDecimal%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. The base types ignore `provider`; however, the parameter may be used if `value` is a user-defined type that implements the <xref:System.IConvertible> interface.  
   
@@ -5357,7 +5439,7 @@
  [!code-csharp[System.Convert.ToDecimal2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.todecimal2/cs/todecimal2.cs#10)]
  [!code-vb[System.Convert.ToDecimal2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.todecimal2/vb/todecimal2.vb#10)]  
   
- The following example shows that when a `Temperature` object is passed as a parameter to the <xref:System.Convert.ToDecimal%28System.Object%2CSystem.IFormatProvider%29> method, the <xref:System.IConvertible.ToDecimal%2A?displayProperty=fullName> implementation of the `Temperature` class is called to perform the conversion.  
+ The following example shows that when a `Temperature` object is passed as a parameter to the <xref:System.Convert.ToDecimal%28System.Object%2CSystem.IFormatProvider%29> method, the <xref:System.IConvertible.ToDecimal%2A?displayProperty=nameWithType> implementation of the `Temperature` class is called to perform the conversion.  
   
  [!code-csharp[System.Convert.ToDecimal2#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.todecimal2/cs/todecimal2.cs#11)]
  [!code-vb[System.Convert.ToDecimal2#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.todecimal2/vb/todecimal2.vb#11)]  
@@ -5374,6 +5456,7 @@
  The conversion is not supported.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="ToDecimal">
@@ -5413,11 +5496,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.Decimal.Parse%2A?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.Decimal.Parse%2A?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Decimal.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Decimal.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -5555,6 +5638,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5667,6 +5751,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5837,7 +5922,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToDouble%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToDouble%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -5953,6 +6038,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToDouble">
@@ -5990,9 +6076,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToDouble%28System.String%29> method is equivalent to passing `value` to the <xref:System.Double.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToDouble%28System.String%29> method is equivalent to passing `value` to the <xref:System.Double.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Double.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Double.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -6194,7 +6280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToDouble%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToDouble%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -6256,11 +6342,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.Double.Parse%2A?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.Double.Parse%2A?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Double.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Double.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -6489,6 +6575,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6536,6 +6623,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6700,7 +6789,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt16%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt16%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -6818,6 +6907,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" /> or less than <see cref="F:System.Int16.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -6855,9 +6946,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToInt16%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int16.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToInt16%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int16.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int16.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int16.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -6874,6 +6965,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -7128,7 +7220,7 @@
 ## Remarks  
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int16.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int16.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -7145,6 +7237,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <altmember cref="M:System.Int16.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToInt16">
@@ -7186,7 +7279,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16?displayProperty=fullName> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 15) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int16> data type is converted to an <xref:System.Int16> value without the method throwing an exception. The following example increments <xref:System.Int16.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to -32768."  
   
  [!code-csharp[System.Convert.BaseConversion#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#5)]
  [!code-vb[System.Convert.BaseConversion#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.BaseConversion/vb/Conversion.vb#5)]  
@@ -7443,6 +7536,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -7490,6 +7584,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -7652,7 +7748,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If`value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt32%2A?displayProperty=fullName>implementation of the underlying type of `value`.  
+ If`value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt32%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -7770,6 +7866,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" /> or less than <see cref="F:System.Int32.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -7807,9 +7905,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToInt32%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int32.Parse%28System.String%29?displayProperty=fullName> method.`value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToInt32%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int32.Parse%28System.String%29?displayProperty=nameWithType> method.`value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int32.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -8015,7 +8113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToInt32%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToInt32%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -8077,11 +8175,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.Int32.Parse%2A?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.Int32.Parse%2A?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int32.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -8138,7 +8236,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32?displayProperty=fullName> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
+ Because the negative sign is not supported for non-base 10 numeric representations, the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method assumes that negative numbers use two’s complement representation. In other words, the method always interprets the highest-order binary bit of an integer (bit 31) as its sign bit. As a result, it is possible to write code in which a non-base 10 number that is out of the range of the <xref:System.Int32> data type is converted to an <xref:System.Int32> value without the method throwing an exception. The following example increments <xref:System.Int32.MaxValue?displayProperty=nameWithType> by one, converts the resulting number to its hexadecimal string representation, and then calls the <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x80000000 converts to -2147483648."  
   
  [!code-cpp[System.Convert.BaseConversion#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cpp/toint_str_int32.cpp#1)]
  [!code-csharp[System.Convert.BaseConversion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#1)]
@@ -8379,6 +8477,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -8426,6 +8525,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -8586,7 +8687,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt64%2A?displayProperty=fullName> implementation of the underlying type of `value`.  
+ If `value` is not `null`, this method wraps a call to the <xref:System.IConvertible.ToInt64%2A?displayProperty=nameWithType> implementation of the underlying type of `value`.  
   
    
   
@@ -8704,6 +8805,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" /> or less than <see cref="F:System.Int64.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToInt64">
@@ -8741,9 +8844,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToInt64%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int64.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToInt64%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int64.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int64.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int64.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -8947,7 +9050,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToInt64%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToInt64%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -9013,11 +9116,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.Int64.Parse%2A?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.Int64.Parse%2A?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an `IFormatProvider` instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The `NumberFormatInfo` object provides culture-specific information about the format of `value`. If `provider` is `null`, the `NumberFormatInfo` for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int64.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Int64.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -9347,6 +9450,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9399,6 +9503,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9594,7 +9700,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToSByte%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToSByte%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -9708,6 +9814,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" /> or less than <see cref="F:System.SByte.MinValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9750,9 +9858,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToSByte%28System.String%29> method is equivalent to passing `value` to the <xref:System.SByte.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToSByte%28System.String%29> method is equivalent to passing `value` to the <xref:System.SByte.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.SByte.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.SByte.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -9769,6 +9877,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altmember cref="M:System.SByte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -9973,12 +10082,12 @@
    
   
 ## Examples  
- The following example defines a `ByteString` class that stores both signed and unsigned bytes as hexadecimal strings along with a field that indicates the sign of the byte. The `ByteString` class implements the <xref:System.IConvertible> interface. Its <xref:System.IConvertible.ToSByte%2A?displayProperty=fullName> method calls the <xref:System.SByte.Parse%28System.String%2CSystem.IFormatProvider%29> method to perform the conversion. If it fails, it throws an <xref:System.OverflowException>.  
+ The following example defines a `ByteString` class that stores both signed and unsigned bytes as hexadecimal strings along with a field that indicates the sign of the byte. The `ByteString` class implements the <xref:System.IConvertible> interface. Its <xref:System.IConvertible.ToSByte%2A?displayProperty=nameWithType> method calls the <xref:System.SByte.Parse%28System.String%2CSystem.IFormatProvider%29> method to perform the conversion. If it fails, it throws an <xref:System.OverflowException>.  
   
  [!code-csharp[System.Convert.ToSByte#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tosbyte/cs/tosbyte2.cs#14)]
  [!code-vb[System.Convert.ToSByte#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tosbyte/vb/tosbyte2.vb#14)]  
   
- The following example shows how the <xref:System.IConvertible.ToSByte%2A?displayProperty=fullName> implementation of the `ByteString` class is called by the <xref:System.Convert.ToSByte%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ The following example shows how the <xref:System.IConvertible.ToSByte%2A?displayProperty=nameWithType> implementation of the `ByteString` class is called by the <xref:System.Convert.ToSByte%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Convert.ToSByte#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tosbyte/cs/tosbyte2.cs#15)]
  [!code-vb[System.Convert.ToSByte#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tosbyte/vb/tosbyte2.vb#15)]  
@@ -10041,7 +10150,7 @@
 ## Remarks  
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.SByte.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.SByte.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -10060,6 +10169,7 @@
           <paramref name="value" /> does not consist of an optional sign followed by a sequence of digits (0 through 9).</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> represents a number that is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <altmember cref="M:System.SByte.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToSByte">
@@ -10262,6 +10372,7 @@
         <returns>This conversion is not supported. No value is returned.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">This conversion is not supported.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10340,6 +10451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10386,6 +10498,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10555,7 +10669,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToSingle%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToSingle%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -10661,6 +10775,7 @@
         <returns>
           <paramref name="value" /> is returned unchanged.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="ToSingle">
@@ -10698,9 +10813,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToSingle%28System.String%29> method is equivalent to passing `value` to the <xref:System.Single.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToSingle%28System.String%29> method is equivalent to passing `value` to the <xref:System.Single.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Single.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Single.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -10902,7 +11017,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToSingle%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToSingle%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -10911,12 +11026,12 @@
    
   
 ## Examples  
- The following example defines a `Temperature` class that implements the <xref:System.IConvertible> interface. Its implementation of the <xref:System.IConvertible.ToSingle%2A?displayProperty=fullName> method returns the internal value of a private <xref:System.Single> variable that represents the temperature.  
+ The following example defines a `Temperature` class that implements the <xref:System.IConvertible> interface. Its implementation of the <xref:System.IConvertible.ToSingle%2A?displayProperty=nameWithType> method returns the internal value of a private <xref:System.Single> variable that represents the temperature.  
   
  [!code-csharp[System.Convert.ToSingle#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tosingle/cs/tosingle2.cs#14)]
  [!code-vb[System.Convert.ToSingle#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tosingle/vb/tosingle2.vb#14)]  
   
- The following example illustrates how a call to the <xref:System.Convert.ToSingle%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method, in turn, calls the <xref:System.IConvertible.ToSingle%2A?displayProperty=fullName> implementation of the `Temperature` class.  
+ The following example illustrates how a call to the <xref:System.Convert.ToSingle%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method, in turn, calls the <xref:System.IConvertible.ToSingle%2A?displayProperty=nameWithType> implementation of the `Temperature` class.  
   
  [!code-csharp[System.Convert.ToSingle#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tosingle/cs/tosingle2.cs#15)]
  [!code-vb[System.Convert.ToSingle#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tosingle/vb/tosingle2.vb#15)]  
@@ -10968,11 +11083,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.Single.Parse%2A?displayProperty=fullName> method on `value`.  
+ The return value is the result of invoking the <xref:System.Single.Parse%2A?displayProperty=nameWithType> method on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Single.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.Single.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -11025,12 +11140,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Boolean.ToString%2A?displayProperty=fullName>. It returns <xref:System.Boolean.TrueString?displayProperty=fullName> for `true` values and <xref:System.Boolean.FalseString?displayProperty=fullName> for `false` values.  
+ This implementation is identical to <xref:System.Boolean.ToString%2A?displayProperty=nameWithType>. It returns <xref:System.Boolean.TrueString?displayProperty=nameWithType> for `true` values and <xref:System.Boolean.FalseString?displayProperty=nameWithType> for `false` values.  
   
    
   
 ## Examples  
- The following example illustrates the conversion of a <xref:System.Boolean> to a <xref:System.String>, using `ToString`. It also illustrates that the string returned by the conversion equals either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ The following example illustrates the conversion of a <xref:System.Boolean> to a <xref:System.String>, using `ToString`. It also illustrates that the string returned by the conversion equals either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Convert.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToString/cs/ToString_Bool1.cs#1)]
  [!code-vb[System.Convert.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToString/vb/ToString_Bool1.vb#1)]  
@@ -11075,7 +11190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Byte.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Byte.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11125,7 +11240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Char.ToString%2A?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Char.ToString%2A?displayProperty=nameWithType>.  
   
    
   
@@ -11175,7 +11290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.DateTime.ToString?displayProperty=fullName>. It uses the formatting conventions of the current culture and the "G" format specifier to convert a <xref:System.DateTime> value to its string representation.  
+ This implementation is identical to <xref:System.DateTime.ToString?displayProperty=nameWithType>. It uses the formatting conventions of the current culture and the "G" format specifier to convert a <xref:System.DateTime> value to its string representation.  
   
    
   
@@ -11224,7 +11339,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Decimal.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Decimal.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11274,7 +11389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Double.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Double.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11324,7 +11439,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int16.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Int16.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11373,7 +11488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int32.ToString?displayProperty=fullName>. It formats `value` by using the formatting conventions of the current thread culture.  
+ This implementation is identical to <xref:System.Int32.ToString?displayProperty=nameWithType>. It formats `value` by using the formatting conventions of the current thread culture.  
   
    
   
@@ -11422,7 +11537,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int64.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Int64.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11471,7 +11586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To convert `value` to its string representation, the method tries to call the <xref:System.IConvertible.ToString%2A?displayProperty=fullName> implementation of `value`. If `value` does not implement the <xref:System.IConvertible> interface, the method tries to call the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation of `value`. If value does not implement the <xref:System.IFormattable> interface, the method calls the `ToString` method of the underlying type of `value`.  
+ To convert `value` to its string representation, the method tries to call the <xref:System.IConvertible.ToString%2A?displayProperty=nameWithType> implementation of `value`. If `value` does not implement the <xref:System.IConvertible> interface, the method tries to call the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation of `value`. If value does not implement the <xref:System.IFormattable> interface, the method calls the `ToString` method of the underlying type of `value`.  
   
    
   
@@ -11525,7 +11640,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.SByte.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.SByte.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11574,7 +11689,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Single.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Single.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11621,7 +11736,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example passes a string to the <xref:System.Convert.ToString%28System.String%29> method and calls the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method to confirm that the method returns the original string. The example also calls the <xref:System.String.IsInterned%2A?displayProperty=fullName> method to ensure that the two strings are not identical because the original string is interned.  
+ The following example passes a string to the <xref:System.Convert.ToString%28System.String%29> method and calls the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to confirm that the method returns the original string. The example also calls the <xref:System.String.IsInterned%2A?displayProperty=nameWithType> method to ensure that the two strings are not identical because the original string is interned.  
   
  [!code-csharp[System.Convert.ToString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToString/cs/tostring_string1.cs#2)]
  [!code-vb[System.Convert.ToString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToString/vb/tostring_string1.vb#2)]  
@@ -11670,7 +11785,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt16.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt16.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11724,7 +11839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt32.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt32.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11778,7 +11893,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt64.ToString?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt64.ToString?displayProperty=nameWithType>.  
   
    
   
@@ -11829,7 +11944,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Boolean.ToString%2A?displayProperty=fullName>. It returns <xref:System.Boolean.TrueString?displayProperty=fullName> for `true` values and <xref:System.Boolean.FalseString?displayProperty=fullName> for `false` values.  
+ This implementation is identical to <xref:System.Boolean.ToString%2A?displayProperty=nameWithType>. It returns <xref:System.Boolean.TrueString?displayProperty=nameWithType> for `true` values and <xref:System.Boolean.FalseString?displayProperty=nameWithType> for `false` values.  
   
    
   
@@ -11881,7 +11996,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Byte.ToString%2A?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Byte.ToString%2A?displayProperty=nameWithType>.  
   
    
   
@@ -11937,7 +12052,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `toBase` does not equal 10, the string that is returned by the <xref:System.Convert.ToString%28System.Byte%2CSystem.Int32%29?displayProperty=fullName> method represents `value` by its magnitude only. If the method is called to create a string that will later be converted back to a number, a corresponding method that assumes a magnitude-only numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToByte%28System.String%2CSystem.Int32%29?displayProperty=fullName> or <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>.  
+ If `toBase` does not equal 10, the string that is returned by the <xref:System.Convert.ToString%28System.Byte%2CSystem.Int32%29?displayProperty=nameWithType> method represents `value` by its magnitude only. If the method is called to create a string that will later be converted back to a number, a corresponding method that assumes a magnitude-only numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToByte%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> or <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType>.  
   
    
   
@@ -11991,7 +12106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Char.ToString?displayProperty=fullName>. The `provider` parameter is ignored.  
+ This implementation is identical to <xref:System.Char.ToString?displayProperty=nameWithType>. The `provider` parameter is ignored.  
   
    
   
@@ -12043,7 +12158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12094,7 +12209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12145,7 +12260,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Double.ToString%28System.IFormatProvider%29?displayProperty=fullName>  
+ This implementation is identical to <xref:System.Double.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>  
   
    
   
@@ -12196,7 +12311,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int16.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Int16.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12252,7 +12367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is positive and `toBase` is 2, 8, or 16, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is 2, 8, or 16, the returned string uses two's complement representation. This means that the high-order bit of the high-order byte (bit 15) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int16%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29?displayProperty=fullName> and <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>.  
+ If `value` is positive and `toBase` is 2, 8, or 16, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is 2, 8, or 16, the returned string uses two's complement representation. This means that the high-order bit of the high-order byte (bit 15) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int16%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt16%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> and <xref:System.Int16.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType>.  
   
    
   
@@ -12306,7 +12421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int32.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Int32.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12362,7 +12477,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is positive and `toBase` is 2, 8, or 16, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is 2, 8, or 16, the returned string uses two's complement representation. This means that the high-order bit of the highest-order byte (bit 31) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int32%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29?displayProperty=fullName> and <xref:System.Int32.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>.  
+ If `value` is positive and `toBase` is 2, 8, or 16, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is 2, 8, or 16, the returned string uses two's complement representation. This means that the high-order bit of the highest-order byte (bit 31) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int32%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt32%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> and <xref:System.Int32.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType>.  
   
    
   
@@ -12416,7 +12531,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Int64.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Int64.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12472,7 +12587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is positive and `toBase` is not 10, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is not 10, the returned string uses two's complement representation. This means that the high-order bit of the highest-order byte (bit 63) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int64%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt64%28System.String%2CSystem.Int32%29?displayProperty=fullName> and <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>.  
+ If `value` is positive and `toBase` is not 10, the returned string uses sign-and-magnitude representation. If `value` is negative and `toBase` is not 10, the returned string uses two's complement representation. This means that the high-order bit of the highest-order byte (bit 63) is interpreted as the sign bit. If the <xref:System.Convert.ToString%28System.Int64%2CSystem.Int32%29> method is called to create a string that will later be converted back to a number, a corresponding method that assumes a similar numeric representation should be called to perform the conversion. Such methods include <xref:System.Convert.ToInt64%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> and <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=nameWithType>.  
   
    
   
@@ -12526,19 +12641,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `value` parameter implements the <xref:System.IConvertible> interface, the method calls the <xref:System.IConvertible.ToString%28System.IFormatProvider%29?displayProperty=fullName>implementation of `value`. Otherwise, if the `value` parameter implements the <xref:System.IFormattable> interface, the method calls its <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>implementation. If `value` implements neither interface, the method calls the `value` parameter's `ToString()` method, and the `provider` parameter is ignored.  
+ If the `value` parameter implements the <xref:System.IConvertible> interface, the method calls the <xref:System.IConvertible.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> implementation of `value`. Otherwise, if the `value` parameter implements the <xref:System.IFormattable> interface, the method calls its <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> implementation. If `value` implements neither interface, the method calls the `value` parameter's `ToString()` method, and the `provider` parameter is ignored.  
   
  The `provider` parameter is used if the `value` parameter implements the <xref:System.IConvertible> or <xref:System.IFormattable> interface. The most common use of the `provider` parameter is to specify culture-specific information used in the conversion of `value`. For example, if the `value` parameter is a negative decimal number, the `provider` parameter can supply culture-specific information about the notation used for the negative sign and decimal separator. The second example in the next section illustrates a format provider that does not supply culture-sensitive formatting information.  
   
    
   
 ## Examples  
- The following example defines a `Temperature` class that overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method but does not implement the <xref:System.IConvertible> interface. The example illustrates how calls to the <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> method, in turn, call the `Temperature.ToString` method.  
+ The following example defines a `Temperature` class that overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method but does not implement the <xref:System.IConvertible> interface. The example illustrates how calls to the <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method, in turn, call the `Temperature.ToString` method.  
   
  [!code-csharp[System.Convert.ToString2#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring5.cs#26)]
  [!code-vb[System.Convert.ToString2#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring5.vb#26)]  
   
- The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface but does not implement the <xref:System.IConvertible> interface. Its <xref:System.IFormattable.ToString%2A?displayProperty=fullName>implementation represents the `Temperature` value in Celsius, Fahrenheit, or Kelvin, depending on the format  string. The example also defines a `TemperatureProvider` class that implements <xref:System.IFormatProvider> and provides a randomly generated format string that is used by the <xref:System.IFormattable> implementation of the `Temperature` class.  
+ The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface but does not implement the <xref:System.IConvertible> interface. Its <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation represents the `Temperature` value in Celsius, Fahrenheit, or Kelvin, depending on the format  string. The example also defines a `TemperatureProvider` class that implements <xref:System.IFormatProvider> and provides a randomly generated format string that is used by the <xref:System.IFormattable> implementation of the `Temperature` class.  
   
  [!code-csharp[System.Convert.ToString2#30](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring_obj30.cs#30)]
  [!code-vb[System.Convert.ToString2#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring_obj30.vb#30)]  
@@ -12589,12 +12704,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.SByte.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.SByte.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example defines a custom <xref:System.Globalization.NumberFormatInfo> class that defines its negative sign as the string "~" and its positive sign as the string "!". It then calls the <xref:System.Convert.ToString%28System.SByte%2CSystem.IFormatProvider%29?displayProperty=fullName> method to convert each element in signed byte array to its equivalent string representation. The conversion uses the invariant culture as well as the custom <xref:System.Globalization.NumberFormatInfo> object.  
+ The following example defines a custom <xref:System.Globalization.NumberFormatInfo> class that defines its negative sign as the string "~" and its positive sign as the string "!". It then calls the <xref:System.Convert.ToString%28System.SByte%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to convert each element in signed byte array to its equivalent string representation. The conversion uses the invariant culture as well as the custom <xref:System.Globalization.NumberFormatInfo> object.  
   
  [!code-csharp[System.Convert.ToString2#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring3.cs#17)]
  [!code-vb[System.Convert.ToString2#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring3.vb#17)]  
@@ -12640,7 +12755,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.Single.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.Single.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12741,7 +12856,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt16.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt16.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12797,7 +12912,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt32.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt32.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -12853,7 +12968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation is identical to <xref:System.UInt64.ToString%28System.IFormatProvider%29?displayProperty=fullName>.  
+ This implementation is identical to <xref:System.UInt64.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>.  
   
    
   
@@ -13101,6 +13216,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -13153,6 +13269,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -13348,7 +13466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt16%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt16%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -13473,6 +13591,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt16">
@@ -13515,9 +13635,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToUInt16%28System.String%29> method is equivalent to passing `value` to the <xref:System.UInt16.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToUInt16%28System.String%29> method is equivalent to passing `value` to the <xref:System.UInt16.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt16.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt16.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -13719,7 +13839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt16%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt16%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -13733,7 +13853,7 @@
  [!code-csharp[System.Convert.ToUInt16#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint16/cs/touint16_3.cs#16)]
  [!code-vb[System.Convert.ToUInt16#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint16/vb/touint16_3.vb#16)]  
   
- The following example shows that a call to the <xref:System.Convert.ToUInt16%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt16%2A?displayProperty=fullName> implementation of the `HexString` class.  
+ The following example shows that a call to the <xref:System.Convert.ToUInt16%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt16%2A?displayProperty=nameWithType> implementation of the `HexString` class.  
   
  [!code-csharp[System.Convert.ToUInt16#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint16/cs/touint16_3.cs#17)]
  [!code-vb[System.Convert.ToUInt16#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint16/vb/touint16_3.vb#17)]  
@@ -13794,11 +13914,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking <xref:System.UInt16.Parse%2A?displayProperty=fullName> on `value`.  
+ The return value is the result of invoking <xref:System.UInt16.Parse%2A?displayProperty=nameWithType> on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt16.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt16.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -13860,7 +13980,7 @@
 ## Remarks  
  If `fromBase` is 16, you can prefix the number specified by the `value` parameter with "0x" or "0X".  
   
- Because the <xref:System.UInt16> data type supports unsigned values only, the <xref:System.Convert.ToUInt16%28System.String%2CSystem.Int32%29> method assumes that `value` is expressed using unsigned binary representation. In other words, all 16 bits are used to represent the numeric value, and a sign bit is absent. As a result, it is possible to write code in which a signed integer value that is out of the range of the <xref:System.UInt16> data type is converted to a <xref:System.UInt16> value without the method throwing an exception. The following example converts <xref:System.Int16.MinValue?displayProperty=fullName> to its hexadecimal string representation, and then calls the <xref:System.Convert.ToUInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to 32768."  
+ Because the <xref:System.UInt16> data type supports unsigned values only, the <xref:System.Convert.ToUInt16%28System.String%2CSystem.Int32%29> method assumes that `value` is expressed using unsigned binary representation. In other words, all 16 bits are used to represent the numeric value, and a sign bit is absent. As a result, it is possible to write code in which a signed integer value that is out of the range of the <xref:System.UInt16> data type is converted to a <xref:System.UInt16> value without the method throwing an exception. The following example converts <xref:System.Int16.MinValue?displayProperty=nameWithType> to its hexadecimal string representation, and then calls the <xref:System.Convert.ToUInt16%28System.String%2CSystem.Int32%29> method. Instead of throwing an exception, the method displays the message, "0x8000 converts to 32768."  
   
  [!code-csharp[System.Convert.BaseConversion#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.BaseConversion/cs/Conversion.cs#11)]
  [!code-vb[System.Convert.BaseConversion#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.BaseConversion/vb/Conversion.vb#11)]  
@@ -14132,6 +14252,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -14184,6 +14305,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -14379,7 +14502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt32%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt32%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -14504,6 +14627,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt32">
@@ -14546,9 +14671,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToUInt32%28System.String%29> method is equivalent to passing `value` to the <xref:System.UInt32.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToUInt32%28System.String%29> method is equivalent to passing `value` to the <xref:System.UInt32.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt32.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt32.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -14748,7 +14873,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt32%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt32%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -14762,7 +14887,7 @@
  [!code-csharp[System.Convert.ToUInt32#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint32/cs/touint32_4.cs#17)]
  [!code-vb[System.Convert.ToUInt32#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint32/vb/touint32_4.vb#17)]  
   
- The following example shows that a call to the <xref:System.Convert.ToUInt32%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt32%2A?displayProperty=fullName> implementation of the `HexString` class.  
+ The following example shows that a call to the <xref:System.Convert.ToUInt32%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt32%2A?displayProperty=nameWithType> implementation of the `HexString` class.  
   
  [!code-csharp[System.Convert.ToUInt32#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint32/cs/touint32_4.cs#18)]
  [!code-vb[System.Convert.ToUInt32#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint32/vb/touint32_4.vb#18)]  
@@ -14823,11 +14948,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking <xref:System.UInt32.Parse%2A?displayProperty=fullName> on `value`.  
+ The return value is the result of invoking <xref:System.UInt32.Parse%2A?displayProperty=nameWithType> on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> instance that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt32.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt32.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -15161,6 +15286,7 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15213,6 +15339,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.Double" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15408,7 +15536,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt64%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt64%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
    
   
@@ -15533,6 +15661,8 @@
         </remarks>
         <exception cref="T:System.OverflowException">
           <paramref name="value" /> is less than zero or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <altmember cref="T:System.Single" />
+        <altmember cref="Overload:System.Math.Round" />
       </Docs>
     </Member>
     <Member MemberName="ToUInt64">
@@ -15575,9 +15705,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Convert.ToInt64%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int64.Parse%28System.String%29?displayProperty=fullName> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
+ Using the <xref:System.Convert.ToInt64%28System.String%29> method is equivalent to passing `value` to the <xref:System.Int64.Parse%28System.String%29?displayProperty=nameWithType> method. `value` is interpreted by using the formatting conventions of the current thread culture.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt64.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt64.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -15775,7 +15905,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking the <xref:System.IConvertible.ToUInt64%2A?displayProperty=fullName> method of the underlying type of `value`.  
+ The return value is the result of invoking the <xref:System.IConvertible.ToUInt64%2A?displayProperty=nameWithType> method of the underlying type of `value`.  
   
  `provider` enables the user to specify culture-specific conversion information about the contents of `value`. For example, if `value` is a <xref:System.String> that represents a number, `provider` could supply culture-specific information about the notation used to represent that number.  
   
@@ -15789,7 +15919,7 @@
  [!code-csharp[System.Convert.ToUInt64#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint64/cs/touint64_4.cs#17)]
  [!code-vb[System.Convert.ToUInt64#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint64/vb/touint64_4.vb#17)]  
   
- The following example shows that a call to the <xref:System.Convert.ToUInt64%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt64%2A?displayProperty=fullName> implementation of the `HexString` class.  
+ The following example shows that a call to the <xref:System.Convert.ToUInt64%28System.Object%2CSystem.IFormatProvider%29> method that passes a `HexString` object as a parameter, in turn, calls the <xref:System.IConvertible.ToUInt64%2A?displayProperty=nameWithType> implementation of the `HexString` class.  
   
  [!code-csharp[System.Convert.ToUInt64#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.touint64/cs/touint64_4.cs#18)]
  [!code-vb[System.Convert.ToUInt64#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.touint64/vb/touint64_4.vb#18)]  
@@ -15850,11 +15980,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is the result of invoking <xref:System.UInt64.Parse%2A?displayProperty=fullName> on `value`.  
+ The return value is the result of invoking <xref:System.UInt64.Parse%2A?displayProperty=nameWithType> on `value`.  
   
  `provider` is an <xref:System.IFormatProvider> implementation that obtains a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `value`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
   
- If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt64.TryParse%2A?displayProperty=fullName> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
+ If you prefer not to handle an exception if the conversion fails, you can call the <xref:System.UInt64.TryParse%2A?displayProperty=nameWithType> method instead. It returns a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed.  
   
    
   
@@ -15954,5 +16084,221 @@
  <paramref name="value" /> represents a number that is less than <see cref="F:System.UInt64.MinValue" /> or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChangeType">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an object of a specified type whose value is equivalent to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 32-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBase64String">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of an array of 8-bit unsigned integers to its equivalent string representation that is encoded with base-64 digits.</summary>
+        <altmember cref="M:System.Convert.FromBase64String(System.String)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBase64CharArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a subset of an 8-bit unsigned integer array to an equivalent subset of a Unicode character array encoded with base-64 digits.</summary>
+        <altmember cref="M:System.Convert.FromBase64CharArray(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Security.Cryptography.ToBase64Transform" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 32-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified value to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToChar">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a Unicode character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 64-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDateTime">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt64">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 64-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 16-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSingle">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a single-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDecimal">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a decimal number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToBoolean">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an equivalent Boolean value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToInt16">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a 16-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToSByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an 8-bit signed integer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToDouble">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to a double-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToByte">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified value to an 8-bit unsigned integer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

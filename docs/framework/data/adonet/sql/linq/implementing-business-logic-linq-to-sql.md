@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Implementing Business Logic (LINQ to SQL)
 The term "business logic" in this topic refers to any custom rules or validation tests that you apply to data before it is inserted, updated or deleted from the database. Business logic is also sometimes referred to as "business rules" or "domain logic." In n-tier applications it is typically designed as a logical layer so that it can be modified independently of the presentation layer or data access layer. The business logic can be invoked by the data access layer before or after any update, insertion, or deletion of data in the database.  
@@ -187,7 +192,7 @@ partial class Customer
  [Walkthrough: Adding Validation to Entity Classes](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   
 ## See Also  
- [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)   
- [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)   
- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)   
+ [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)  
+ [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)  
+ [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
  [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

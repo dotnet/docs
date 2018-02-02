@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.Mutex" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -223,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -272,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -321,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -374,6 +381,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName="Mutex">
@@ -406,10 +414,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the exception is thrown on a call to the <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName> method, the <xref:System.Threading.Mutex> returned is the abandoned mutex with the lowest index in the array of <xref:System.Threading.WaitHandle> objects that was passed to <xref:System.Threading.WaitHandle.WaitAny%2A>, or `null` if the abandoned mutex could not be identified. If the exception is thrown on a call to <xref:System.Threading.WaitHandle.WaitOne%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A>, this property always returns `null`.  
+ If the exception is thrown on a call to the <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType> method, the <xref:System.Threading.Mutex> returned is the abandoned mutex with the lowest index in the array of <xref:System.Threading.WaitHandle> objects that was passed to <xref:System.Threading.WaitHandle.WaitAny%2A>, or `null` if the abandoned mutex could not be identified. If the exception is thrown on a call to <xref:System.Threading.WaitHandle.WaitOne%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A>, this property always returns `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
     <Member MemberName="MutexIndex">
@@ -442,12 +451,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the exception is thrown on a call to the <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName> method, this property returns the index of the abandoned mutex with the lowest index in the array of <xref:System.Threading.WaitHandle> objects that was passed to <xref:System.Threading.WaitHandle.WaitAny%2A>, or –1 if the abandoned mutex could not be identified. If the exception is thrown on a call to <xref:System.Threading.WaitHandle.WaitOne%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A>, this property always returns –1.  
+ If the exception is thrown on a call to the <xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=nameWithType> method, this property returns the index of the abandoned mutex with the lowest index in the array of <xref:System.Threading.WaitHandle> objects that was passed to <xref:System.Threading.WaitHandle.WaitAny%2A>, or –1 if the abandoned mutex could not be identified. If the exception is thrown on a call to <xref:System.Threading.WaitHandle.WaitOne%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A>, this property always returns –1.  
   
    
   
 ## Examples  
- The following code example executes a thread that abandons five mutexes. The abandoned mutexes are used to demonstrate the effects on the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName>, <xref:System.Threading.WaitHandle.WaitAny%2A>, and <xref:System.Threading.WaitHandle.WaitAll%2A> method calls. The value of the <xref:System.Threading.AbandonedMutexException.MutexIndex%2A> property is displayed for the <xref:System.Threading.WaitHandle.WaitAny%2A> call.  
+ The following code example executes a thread that abandons five mutexes. The abandoned mutexes are used to demonstrate the effects on the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>, <xref:System.Threading.WaitHandle.WaitAny%2A>, and <xref:System.Threading.WaitHandle.WaitAll%2A> method calls. The value of the <xref:System.Threading.AbandonedMutexException.MutexIndex%2A> property is displayed for the <xref:System.Threading.WaitHandle.WaitAny%2A> call.  
   
 > [!NOTE]
 >  The call to <xref:System.Threading.WaitHandle.WaitAny%2A> is interrupted by one of the abandoned mutexes. The other abandoned mutex could still cause an <xref:System.Threading.AbandonedMutexException> to be thrown by subsequent wait methods.  
@@ -458,7 +467,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Mutex" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.AbandonedMutexException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

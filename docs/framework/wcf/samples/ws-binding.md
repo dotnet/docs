@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 629945b2-d771-46d7-a87b-5df3b2e460da
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WS Binding
 This section contains samples that demonstrate Windows Service binding in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

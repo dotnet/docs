@@ -53,7 +53,7 @@
     </Member>
     <Member MemberName="GetApplicationProperties">
       <MemberSignature Language="C#" Value="public void GetApplicationProperties (string appId, out string virtualPath, out string physicalPath, out string siteName, out string siteId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetApplicationProperties(string appId, string virtualPath, string physicalPath, string siteName, string siteId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetApplicationProperties([in]string appId, [out] string&amp; virtualPath, [out] string&amp; physicalPath, [out] string&amp; siteName, [out] string&amp; siteId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetApplicationProperties(System.String,System.String@,System.String@,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -90,7 +90,7 @@
     </Member>
     <Member MemberName="GetConfigToken">
       <MemberSignature Language="C#" Value="public IntPtr GetConfigToken (string appId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetConfigToken(string appId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetConfigToken([in]string appId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.GetConfigToken(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -160,7 +160,7 @@
     </Member>
     <Member MemberName="MapPath">
       <MemberSignature Language="C#" Value="public void MapPath (string appId, string virtualPath, out string physicalPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MapPath(string appId, string virtualPath, string physicalPath) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MapPath([in]string appId, [in]string virtualPath, [out] string&amp; physicalPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostSupportFunctions.MapPath(System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

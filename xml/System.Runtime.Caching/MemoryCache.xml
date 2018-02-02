@@ -27,7 +27,7 @@
   
  The <xref:System.Runtime.Caching.MemoryCache> class does not allow `null` as a value in the cache. Any attempt to add or change a cache entry with a value of `null` will fail.  
   
- The <xref:System.Runtime.Caching.MemoryCache> type does not implement *cache regions*. Therefore, when you call <xref:System.Runtime.Caching.MemoryCache> methods that implement base methods that contain a parameter for regions, do not pass a value for the parameter. The methods that use the region parameter all supply a default `null` value. For example, the <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A?displayProperty=fullName> method overload has a `regionName` parameter whose default value is `null`.  
+ The <xref:System.Runtime.Caching.MemoryCache> type does not implement *cache regions*. Therefore, when you call <xref:System.Runtime.Caching.MemoryCache> methods that implement base methods that contain a parameter for regions, do not pass a value for the parameter. The methods that use the region parameter all supply a default `null` value. For example, the <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A?displayProperty=nameWithType> method overload has a `regionName` parameter whose default value is `null`.  
   
    
   
@@ -86,6 +86,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Runtime.Caching.ObjectCache" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -289,7 +290,7 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the cache does not have a cache entry whose key matches the `key` parameter, a new cache entry is created, and the <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A?displayProperty=fullName> method overload returns `null`. If a matching cache entry exists, the existing entry is returned.  
+ If the cache does not have a cache entry whose key matches the `key` parameter, a new cache entry is created, and the <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A?displayProperty=nameWithType> method overload returns `null`. If a matching cache entry exists, the existing entry is returned.  
   
 > [!WARNING]
 >  The <xref:System.Runtime.Caching.ObjectCache.Add%2A> and <xref:System.Runtime.Caching.ObjectCache.AddOrGetExisting%2A> method overloads do not support the <xref:System.Runtime.Caching.CacheItemPolicy.UpdateCallback%2A> property. Therefore, to set the <xref:System.Runtime.Caching.CacheItemPolicy.UpdateCallback%2A> property for a cache entry, use the <xref:System.Runtime.Caching.MemoryCache.Set%2A> method overloads instead.  
@@ -386,7 +387,7 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  If the current instance of the cache exceeds the limit on memory set by the <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> property, the cache implementation removes cache entries. Each cache instance in the application can use the amount of memory that is specified by the <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> property.  
   
- The settings for the <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> property can be specified in the application configuration file. Alternatively, they can be passed in the constructor when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to set this value when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%2A> method.  
+ The settings for the <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> property can be specified in the application configuration file. Alternatively, they can be passed in the constructor when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to set this value when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%2A> method.  
   
  <xref:System.Runtime.Caching.MemoryCache> does not instantly enforce <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> each time a new item is added to a <xref:System.Runtime.Caching.MemoryCache> instance. The internal heuristics which evicts extra items from the <xref:System.Runtime.Caching.MemoryCache> does it gradually and takes into account information from the garbage collector (see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)) and other factors such as current cache size and overall system memory pressure. Therefore even though the <xref:System.Runtime.Caching.MemoryCache> tries to keep the cache size within the configured <xref:System.Runtime.Caching.MemoryCache.CacheMemoryLimit%2A> it is possible to temporarily exceed the limit by adding cache items at a very high rate.  
   
@@ -486,7 +487,7 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  This property always returns a reference to the default cache instance. For typical application scenarios, only one instance of <xref:System.Runtime.Caching.MemoryCache> is required.  
   
- Because the default cache instance is not created by the constructor, you must use configuration to explicitly set the memory and polling values for the default cache instance. For more information, see [\&lt;memoryCache\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md).  
+ Because the default cache instance is not created by the constructor, you must use configuration to explicitly set the memory and polling values for the default cache instance. For more information, see [&lt;memoryCache&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md).  
   
  ]]></format>
         </remarks>
@@ -796,7 +797,7 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache.Name%2A> property returns the name of the current instance of the <xref:System.Runtime.Caching.MemoryCache> class. In an application that uses multiple cache instances, you can use the <xref:System.Runtime.Caching.MemoryCache.Name%2A> property to help distinguish instances. For more information, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=fullName> method. The default memory-based cache returns the default name.  
+ The <xref:System.Runtime.Caching.MemoryCache.Name%2A> property returns the name of the current instance of the <xref:System.Runtime.Caching.MemoryCache> class. In an application that uses multiple cache instances, you can use the <xref:System.Runtime.Caching.MemoryCache.Name%2A> property to help distinguish instances. For more information, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=nameWithType> method. The default memory-based cache returns the default name.  
   
  ]]></format>
         </remarks>
@@ -823,7 +824,7 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  The <xref:System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit%2A> property returns the percentage of total physical computer memory that can be used by a single instance of the <xref:System.Runtime.Caching.MemoryCache> class. If the cache instance exceeds the specified limit, cache entries are removed.  
   
- The settings for the <xref:System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit%2A> property can be specified in the application configuration file. Alternatively, they can be passed by a caller when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to configure the property when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=fullName> method.  
+ The settings for the <xref:System.Runtime.Caching.MemoryCache.PhysicalMemoryLimit%2A> property can be specified in the application configuration file. Alternatively, they can be passed by a caller when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to configure the property when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -848,7 +849,7 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The settings for the <xref:System.Runtime.Caching.MemoryCache.PollingInterval%2A> property can be specified in the application configuration file. Alternatively they can be passed when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to configure the property when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=fullName> method.  
+ The settings for the <xref:System.Runtime.Caching.MemoryCache.PollingInterval%2A> property can be specified in the application configuration file. Alternatively they can be passed when the <xref:System.Runtime.Caching.MemoryCache> class is initialized. For more information about how to configure this property, see [&lt;namedCaches&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md). For more information about how to configure the property when the <xref:System.Runtime.Caching.MemoryCache> class is being initialized, see the <xref:System.Runtime.Caching.MemoryCache.%23ctor%28System.String%2CSystem.Collections.Specialized.NameValueCollection%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1167,5 +1168,14 @@ private void btnGet_Click(object sender, EventArgs e)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified item from the cache.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

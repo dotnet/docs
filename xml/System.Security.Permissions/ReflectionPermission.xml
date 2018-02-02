@@ -33,14 +33,16 @@
  Without <xref:System.Security.Permissions.ReflectionPermission>, code can use reflection to access only the public members of objects. Code with <xref:System.Security.Permissions.ReflectionPermission> and the appropriate <xref:System.Security.Permissions.ReflectionPermissionFlag> flags can access the `protected` and `private` members of objects.  
   
 > [!CAUTION]
->  Because <xref:System.Security.Permissions.ReflectionPermission> can provide access to non-public types and members, we recommend that you do not grant <xref:System.Security.Permissions.ReflectionPermission> to Internet code, except with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> allows access to non-public members, with the restriction that the grant set of the non-public members must be equal to, or a subset of, the grant set of the code that accesses the non-public members.  
+>  Because <xref:System.Security.Permissions.ReflectionPermission> can provide access to non-public types and members, we recommend that you do not grant <xref:System.Security.Permissions.ReflectionPermission> to Internet code, except with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag. <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> allows access to non-public members, with the restriction that the grant set of the non-public members must be equal to, or a subset of, the grant set of the code that accesses the non-public members.  
   
- Certain features of reflection emit, such as emitting debug symbols, require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+ Certain features of reflection emit, such as emitting debug symbols, require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag.  
   
  For more information, see the <xref:System.Security.Permissions.ReflectionPermissionFlag> enumeration.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.ReflectionPermissionFlag" />
+    <altmember cref="T:System.Security.Permissions.ReflectionPermissionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,7 +74,7 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.ReflectionPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
+ The following code example shows the use of the <xref:System.Security.Permissions.ReflectionPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=nameWithType> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
   
  [!code-csharp[System.Security.Permissions.ReflectionPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/CS/reflectionpermission.cs#7)]
  [!code-vb[System.Security.Permissions.ReflectionPermission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/VB/reflectionpermission.vb#7)]  
@@ -106,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.ReflectionPermission.%23ctor%28System.Security.Permissions.ReflectionPermissionFlag%29?displayProperty=fullName> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
+ The following code example shows the use of the <xref:System.Security.Permissions.ReflectionPermission.%23ctor%28System.Security.Permissions.ReflectionPermissionFlag%29?displayProperty=nameWithType> constructor. This example is part of a larger example provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
   
  [!code-csharp[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/CS/reflectionpermission.cs#8)]
  [!code-vb[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/VB/reflectionpermission.vb#8)]  
@@ -445,5 +447,15 @@
         <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is not <see langword="null" /> and is not of the same type as the current permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ReflectionPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

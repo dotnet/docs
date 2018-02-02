@@ -29,6 +29,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Configuration.MachineKeySection" />
+    <altmember cref="P:System.Web.Configuration.MachineKeySection.Validation" />
+    <altmember cref="P:System.Web.UI.Page.EnableViewStateMac" />
+    <altmember cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" />
+    <altmember cref="P:System.Web.UI.Page.ViewStateEncryptionMode" />
   </Docs>
   <Members>
     <Member MemberName="AES">
@@ -53,6 +58,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -75,10 +81,11 @@
 ## Remarks  
  The custom hashing algorithm can be implemented in any class that derives from <xref:System.Security.Cryptography.KeyedHashAlgorithm>.  
   
- The custom algorithm is typically specified declaratively in the validation attribute of the  element, in the format `alg:`*algorithm_name*. For information about how to specify a custom algorithm in code, see the <xref:System.Web.Configuration.MachineKeySection.ValidationAlgorithm%2A?displayProperty=fullName> property.  
+ The custom algorithm is typically specified declaratively in the validation attribute of the  element, in the format `alg:`*algorithm_name*. For information about how to specify a custom algorithm in code, see the <xref:System.Web.Configuration.MachineKeySection.ValidationAlgorithm%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="HMACSHA256">
@@ -103,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="HMACSHA384">
@@ -127,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="HMACSHA512">
@@ -151,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="MD5">
@@ -175,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="SHA1">
@@ -199,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
     <Member MemberName="TripleDES">
@@ -223,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
   </Members>

@@ -1,22 +1,22 @@
 ---
-title: dotnet-migrate command - .NET Core CLI
-description: The dotnet-migrate command migrates a project and all of its dependencies. 
-keywords: dotnet-migrate, CLI, CLI command, .NET Core
-author: blackdwarf
+title: dotnet migrate command - .NET Core CLI
+description: The dotnet migrate command migrates a project and all of its dependencies.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet migrate
 
-# dotnet-migrate
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 project.
+`dotnet migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 project.
 
 ## Synopsis
 
@@ -35,7 +35,7 @@ Migration is performed on the following:
 * A *solution.sln* file, where it migrates the projects referenced in the solution.
 * On all sub-directories of the given directory recursively.
 
-The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overriden using the `--skip-backup` option. 
+The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overridden using the `--skip-backup` option.
 
 By default, the migration operation outputs the state of the migration process to standard output (STDOUT). If you use the `--report-file <REPORT_FILE>` option, the output is saved to the file specify. 
 
@@ -58,11 +58,11 @@ Defaults to current directory if nothing is specified.
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-t|--template-file <TEMPLATE_FILE>`
 
-Template csproj file to use for migration. By default, the same template as the one dropped by `dotnet new console` is used. 
+Template csproj file to use for migration. By default, the same template as the one dropped by `dotnet new console` is used.
 
 `-v|--sdk-package-version <VERSION>`
 

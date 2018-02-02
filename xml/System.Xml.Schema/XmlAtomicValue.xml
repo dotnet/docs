@@ -184,7 +184,7 @@
 ## Remarks  
  If the value of the item is not valid according to its specified schema type, the value of the <xref:System.Xml.Schema.XmlAtomicValue.TypedValue%2A> property is equivalent to the value of the <xref:System.Xml.Schema.XmlAtomicValue.Value%2A> property.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -255,13 +255,14 @@
   
  The <xref:System.Xml.IXmlNamespaceResolver> object is used to resolve namespace prefixes related to type conversions. For example, when converting an `xs:QName` to an `xs:string`.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.FormatException">The validated XML element or attribute's value is not in the correct format for the target type.</exception>
         <exception cref="T:System.InvalidCastException">The attempted cast is not valid.</exception>
         <exception cref="T:System.OverflowException">The attempted cast resulted in an overflow.</exception>
+        <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
     <Member MemberName="ValueAsBoolean">
@@ -294,7 +295,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlAtomicValue.ValueAsBoolean%2A> property attempts to convert the value of the validated XML element or attribute to the Microsoft .NET Framework <xref:System.Boolean> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -332,7 +333,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlAtomicValue.ValueAsDateTime%2A> property attempts to convert the value of the validated XML element or attribute to the Microsoft .NET Framework <xref:System.DateTime> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -370,7 +371,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlAtomicValue.ValueAsDouble%2A> property attempts to convert the value of the validated XML element or attribute to the Microsoft .NET Framework <xref:System.Double> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -409,7 +410,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlAtomicValue.ValueAsInt%2A> property attempts to convert the value of the validated XML element or attribute to the Microsoft .NET Framework <xref:System.Int32> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -448,7 +449,7 @@
 ## Remarks  
  The <xref:System.Xml.Schema.XmlAtomicValue.ValueAsLong%2A> property attempts to convert the value of the validated XML element or attribute to the Microsoft .NET Framework <xref:System.Int64> type according to the XPath 2.0 rules for casting the item's type.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -489,7 +490,7 @@
   
  For example, an element of type `xs:int` would have a <xref:System.Xml.Schema.XmlAtomicValue.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.Schema.XmlAtomicValue.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int`, such as <xref:System.Int16> or <xref:System.Double>.  
   
- For more information about type support in the <xref:System.Xml?displayProperty=fullName> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
+ For more information about type support in the <xref:System.Xml?displayProperty=nameWithType> namespace, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
  ]]></format>
         </remarks>
@@ -527,6 +528,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchemaType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaSimpleType" />
+        <altmember cref="T:System.Xml.Schema.XmlSchemaComplexType" />
       </Docs>
     </Member>
   </Members>

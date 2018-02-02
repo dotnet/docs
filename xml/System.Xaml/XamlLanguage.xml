@@ -658,7 +658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework XAML Services implementation, the `Member` <xref:System.Xaml.XamlType> is backed by <xref:System.Windows.Markup.MemberDefinition?displayProperty=fullName>.  
+ In the .NET Framework XAML Services implementation, the `Member` <xref:System.Xaml.XamlType> is backed by <xref:System.Windows.Markup.MemberDefinition?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -837,7 +837,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Reference` is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for referencing another object node in the markup. The implementation for .NET Framework XAML Services is found in <xref:System.Windows.Markup.Reference?displayProperty=fullName>.  
+ `Reference` is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for referencing another object node in the markup. The implementation for .NET Framework XAML Services is found in <xref:System.Windows.Markup.Reference?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1206,7 +1206,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Currently this collection contains only the <xref:System.Xaml.XamlLanguage.Xaml2006Namespace>value.  
+ Currently this collection contains only the <xref:System.Xaml.XamlLanguage.Xaml2006Namespace> value.  
   
  ]]></format>
         </remarks>
@@ -1228,6 +1228,7 @@
         <summary>Gets a <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block in XAML.</summary>
         <value>The <see cref="T:System.Xaml.XamlType" /> for the XAML type that backs an <see langword="XData" /> block. See [[MS-XAML] Section 5.2.23](http://go.microsoft.com/fwlink/?LinkId=114525).</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Markup.XData" />
       </Docs>
     </Member>
     <Member MemberName="Xml1998Namespace">
@@ -1266,7 +1267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Currently this collection contains only the <xref:System.Xaml.XamlLanguage.Xml1998Namespace>value.  
+ Currently this collection contains only the <xref:System.Xaml.XamlLanguage.Xml1998Namespace> value.  
   
  ]]></format>
         </remarks>

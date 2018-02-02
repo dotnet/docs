@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (System.CodeDom.CodeTypeReference createType, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (System.CodeDom.CodeTypeReference createType, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference createType, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -92,10 +92,11 @@
         <param name="parameters">An array of <see cref="T:System.CodeDom.CodeExpression" /> objects that indicates the parameters to use to create the object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeObjectCreateExpression" /> class using the specified type and parameters.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (string createType, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (string createType, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string createType, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -125,7 +126,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (Type createType, System.CodeDom.CodeExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public CodeObjectCreateExpression (Type createType, params System.CodeDom.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type createType, class System.CodeDom.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObjectCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -196,7 +197,17 @@
         <summary>Gets or sets the parameters to use in creating the object.</summary>
         <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the parameters to use when creating the object.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeExpressionCollection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeObjectCreateExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

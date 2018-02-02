@@ -62,7 +62,7 @@
       </Docs>
     </Member>
     <Member MemberName="Bind">
-      <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
+      <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, params System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.GetMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberType>Method</MemberType>
@@ -263,5 +263,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackGetMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the dynamic get member operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

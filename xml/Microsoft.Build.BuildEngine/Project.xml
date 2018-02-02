@@ -779,7 +779,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/library/24a6530c-e837-4774-9da0-6893614524d8).  
   
  ]]></format>
         </remarks>
@@ -1823,5 +1823,59 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the project to a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadXml">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of the specified string into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Build">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds the project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddNewItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified  element to the project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetImportedProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of a property in an imported project.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetProperty">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the specified property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

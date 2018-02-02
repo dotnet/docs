@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType::GetRank"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRank method, ICorDebugType interface [.NET Framework debugging]"
   - "ICorDebugType::GetRank method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetRank Method
 Gets the number of dimensions in an array type.  

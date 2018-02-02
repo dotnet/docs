@@ -22,20 +22,22 @@
 ## Remarks  
  If you add an item to the cache that is dependent on another object, such as a file or array of files, the dependent item is automatically removed from the cache when the object changes. For example, suppose you create a <xref:System.Data.DataSet> object based on data in an XML file. You can add the <xref:System.Data.DataSet> to the cache with a <xref:System.Web.Caching.CacheDependency> object that makes the <xref:System.Data.DataSet> dependent on the XML file. If the XML file changes, the <xref:System.Data.DataSet> is removed from the cache.  
   
- You can add items with dependencies to your application's cache with the <xref:System.Web.Caching.Cache.Add%2A> and <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> methods. You cannot use the <xref:System.Web.Caching.Cache.Item%2A> property to add items to the cache with dependencies.  
+ You can add items with dependencies to your application's cache with the <xref:System.Web.Caching.Cache.Add%2A> and <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> methods. You cannot use the <xref:System.Web.Caching.Cache.Item%2A> property to add items to the cache with dependencies.  
   
- To set up a dependency, you create an instance of the <xref:System.Web.Caching.CacheDependency> class, specifying the files, keys, or directories on which the item is dependent, and then pass the dependency to the <xref:System.Web.Caching.Cache.Add%2A> or <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method. The <xref:System.Web.Caching.CacheDependency> instance can represent a single file or directory, an array of files or directories, or an array of files or directories along with an array of cache keys (these represent other items stored in the <xref:System.Web.Caching.Cache> object).  
+ To set up a dependency, you create an instance of the <xref:System.Web.Caching.CacheDependency> class, specifying the files, keys, or directories on which the item is dependent, and then pass the dependency to the <xref:System.Web.Caching.Cache.Add%2A> or <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method. The <xref:System.Web.Caching.CacheDependency> instance can represent a single file or directory, an array of files or directories, or an array of files or directories along with an array of cache keys (these represent other items stored in the <xref:System.Web.Caching.Cache> object).  
   
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.Caching.CacheDependency.HasChanged%2A> property to determine whether a <xref:System.Web.Caching.CacheDependency> changed since the previous request for an item in the <xref:System.Web.Caching.Cache>. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=fullName>.  
+ The following code example demonstrates using the <xref:System.Web.Caching.CacheDependency.HasChanged%2A> property to determine whether a <xref:System.Web.Caching.CacheDependency> changed since the previous request for an item in the <xref:System.Web.Caching.Cache>. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/CS/t.cs.aspx#1)]
  [!code-vb[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/VB/t.vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,7 +97,7 @@
    
   
 ## Examples  
- The following code example creates an instance of the <xref:System.Web.Caching.CacheDependency> class with a dependency on an XML file. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method then adds an item to the <xref:System.Web.Caching.Cache> that is dependent upon that file.  
+ The following code example creates an instance of the <xref:System.Web.Caching.CacheDependency> class with a dependency on an XML file. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method then adds an item to the <xref:System.Web.Caching.Cache> that is dependent upon that file.  
   
  [!code-csharp[Classic CacheDependency.CacheDependency Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CacheDependency.CacheDependency Example/CS/source.cs#1)]
  [!code-vb[Classic CacheDependency.CacheDependency Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CacheDependency.CacheDependency Example/VB/source.vb#1)]  
@@ -105,6 +109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -138,13 +143,14 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method to add an item to the <xref:System.Web.Caching.Cache> with dependencies on an array of files. You can also make the item dependent on an array of directories.  
+ The following code example demonstrates how to use the <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method to add an item to the <xref:System.Web.Caching.Cache> with dependencies on an array of files. You can also make the item dependent on an array of directories.  
   
  [!code-csharp[Multiple file based dependency#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Multiple file based dependency/CS/DependencyMultiFilecs.aspx#1)]
  [!code-vb[Multiple file based dependency#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Multiple file based dependency/VB/DependencyMultiFilevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,13 +184,15 @@
    
   
 ## Examples  
- The following code example uses this constructor to instantiate a <xref:System.Web.Caching.CacheDependency> object, then inserts an item into the <xref:System.Web.Caching.Cache> with that dependency. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=fullName>.  
+ The following code example uses this constructor to instantiate a <xref:System.Web.Caching.CacheDependency> object, then inserts an item into the <xref:System.Web.Caching.Cache> with that dependency. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/CS/t.cs.aspx#1)]
  [!code-vb[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/VB/t.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -218,13 +226,14 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Web.Caching.CacheDependency> object that passes two XML files and a <xref:System.DateTime.Now%2A?displayProperty=fullName> value when the object is included as a parameter argument in an <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method call.  
+ The following code example creates a <xref:System.Web.Caching.CacheDependency> object that passes two XML files and a <xref:System.DateTime.Now%2A?displayProperty=nameWithType> value when the object is included as a parameter argument in an <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method call.  
   
  [!code-csharp[CacheDependency Constructor4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CacheDependency Constructor4/CS/depmultifilestimecs.aspx#1)]
  [!code-vb[CacheDependency Constructor4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CacheDependency Constructor4/VB/depmultifilestimevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -262,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -297,13 +307,15 @@
    
   
 ## Examples  
- The following code example creates a `CreateDependency` method. When this method is called, it creates a <xref:System.DateTime> object and the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=fullName> property is used to add an item to the cache with a `key` parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value of `key1` as well. This <xref:System.Web.Caching.CacheDependency> constructor then instantiates a <xref:System.Web.Caching.CacheDependency> object that passes `dependencyKey` and the <xref:System.DateTime> object as parameter arguments. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method is called next, using the <xref:System.Web.Caching.CacheDependency> object as a parameter. This makes the object added to the cache using the <xref:System.Web.Caching.Cache.Insert%2A> method dependent on the `key1` key.  
+ The following code example creates a `CreateDependency` method. When this method is called, it creates a <xref:System.DateTime> object and the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=nameWithType> property is used to add an item to the cache with a `key` parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value of `key1` as well. This <xref:System.Web.Caching.CacheDependency> constructor then instantiates a <xref:System.Web.Caching.CacheDependency> object that passes `dependencyKey` and the <xref:System.DateTime> object as parameter arguments. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method is called next, using the <xref:System.Web.Caching.CacheDependency> object as a parameter. This makes the object added to the cache using the <xref:System.Web.Caching.Cache.Insert%2A> method dependent on the `key1` key.  
   
  [!code-csharp[CacheDependency Constructor6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CacheDependency Constructor6/CS/depkeytimecs.aspx#1)]
  [!code-vb[CacheDependency Constructor6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CacheDependency Constructor6/VB/depkeytimevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -336,7 +348,7 @@
    
   
 ## Examples  
- The following code example creates a `CreateDependency` method. When this method is called, it uses the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=fullName> property to add an item to the cache with a `key` parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value of `key1` as well. The <xref:System.Web.Caching.CacheDependency.%23ctor%2A?displayProperty=fullName> constructor is used to create a <xref:System.Web.Caching.CacheDependency> object, `dep1`, which passes `dependencyKey` as a parameter argument. A second <xref:System.Web.Caching.CacheDependency> object, `dep2`, is created using this constructor, with `dep1` passed as the third parameter argument. This second dependency is dependent on the first. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method is called next, using the second <xref:System.Web.Caching.CacheDependency> object as a parameter. If the first dependency changes in any way, the cached item will be invalidated.  
+ The following code example creates a `CreateDependency` method. When this method is called, it uses the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=nameWithType> property to add an item to the cache with a `key` parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value of `key1` as well. The <xref:System.Web.Caching.CacheDependency.%23ctor%2A?displayProperty=nameWithType> constructor is used to create a <xref:System.Web.Caching.CacheDependency> object, `dep1`, which passes `dependencyKey` as a parameter argument. A second <xref:System.Web.Caching.CacheDependency> object, `dep2`, is created using this constructor, with `dep1` passed as the third parameter argument. This second dependency is dependent on the first. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method is called next, using the second <xref:System.Web.Caching.CacheDependency> object as a parameter. If the first dependency changes in any way, the cached item will be invalidated.  
   
  [!code-csharp[CacheDependency Constructor7#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CacheDependency Constructor7/CS/dependencycs.aspx#1)]
  [!code-vb[CacheDependency Constructor7#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CacheDependency Constructor7/VB/dependencyvb.aspx#1)]  
@@ -380,13 +392,15 @@
    
   
 ## Examples  
- The following code example shows a `CreateDependency` method. When this method is called, it creates a <xref:System.DateTime> object and the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=fullName> property is used to add an item to the cache with a key parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value at its first (and only) index set to the value of `key1` as well. The <xref:System.Web.Caching.CacheDependency.%23ctor%2A?displayProperty=fullName> constructor is then used to create a <xref:System.Web.Caching.CacheDependency> object, `dep1`, which passes `dependencyKey` as a parameter argument. A second <xref:System.Web.Caching.CacheDependency> object, `dep2`, is then created using this constructor, with `dep1` and the <xref:System.DateTime> object passed as parameter arguments. This second dependency is dependent on the first, and dependency monitoring will begin 10 seconds after the `CreateDependency` method is called. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method is called next, using the second <xref:System.Web.Caching.CacheDependency> object as a parameter. If the first dependency changes in any way, the cached item will be invalidated.  
+ The following code example shows a `CreateDependency` method. When this method is called, it creates a <xref:System.DateTime> object and the <xref:System.Web.Caching.Cache.Item%2A?displayProperty=nameWithType> property is used to add an item to the cache with a key parameter of `key1` and a value of `Value 1`. An array of strings, `dependencyKey`, is then created with the value at its first (and only) index set to the value of `key1` as well. The <xref:System.Web.Caching.CacheDependency.%23ctor%2A?displayProperty=nameWithType> constructor is then used to create a <xref:System.Web.Caching.CacheDependency> object, `dep1`, which passes `dependencyKey` as a parameter argument. A second <xref:System.Web.Caching.CacheDependency> object, `dep2`, is then created using this constructor, with `dep1` and the <xref:System.DateTime> object passed as parameter arguments. This second dependency is dependent on the first, and dependency monitoring will begin 10 seconds after the `CreateDependency` method is called. The <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method is called next, using the second <xref:System.Web.Caching.CacheDependency> object as a parameter. If the first dependency changes in any way, the cached item will be invalidated.  
   
  [!code-csharp[CacheDependency Constructor8#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CacheDependency Constructor8/CS/dependencytimecs.aspx#1)]
  [!code-vb[CacheDependency Constructor8#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CacheDependency Constructor8/VB/dependencytimevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="DependencyDispose">
@@ -419,6 +433,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -465,6 +481,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.Caching.CacheDependency.FinishInit" /> method must be called at the end of the constructor for derived classes to complete the initialization of the <see cref="T:System.Web.Caching.CacheDependency" /> object.</para>
         </block>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="GetFileDependencies">
@@ -519,6 +537,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
       </Docs>
     </Member>
     <Member MemberName="HasChanged">
@@ -546,13 +565,15 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.Web.Caching.CacheDependency.HasChanged%2A> property to determine whether a <xref:System.Web.Caching.CacheDependency> changed since the previous request for an item in the <xref:System.Web.Caching.Cache>. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=fullName>.  
+ The following code example demonstrates using the <xref:System.Web.Caching.CacheDependency.HasChanged%2A> property to determine whether a <xref:System.Web.Caching.CacheDependency> changed since the previous request for an item in the <xref:System.Web.Caching.Cache>. The `dt` value passed in the `start` parameter is set to <xref:System.DateTime.Now%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/CS/t.cs.aspx#1)]
  [!code-vb[System.Web.Caching.CacheDependency_HasChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching.CacheDependency_HasChanged/VB/t.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="ItemRemoved">
@@ -628,6 +649,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="SetCacheDependencyChanged">
@@ -679,6 +702,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
     <Member MemberName="TakeOwnership">
@@ -739,7 +764,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class.</summary>
+        <altmember cref="T:System.Web.Caching.Cache" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object,System.Web.Caching.CacheDependency)" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

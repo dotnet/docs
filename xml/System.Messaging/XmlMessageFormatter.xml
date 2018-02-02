@@ -70,6 +70,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.ActiveXMessageFormatter" />
+    <altmember cref="T:System.Messaging.BinaryMessageFormatter" />
+    <altmember cref="T:System.Messaging.IMessageFormatter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -217,6 +221,10 @@ TargetTypes = new Type[]{typeof(MyClass)}
         </remarks>
         <exception cref="T:System.InvalidOperationException">Neither the <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" /> nor <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" /> property has been set.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" />
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" />
+        <altmember cref="T:System.Messaging.BinaryMessageFormatter" />
+        <altmember cref="T:System.Messaging.ActiveXMessageFormatter" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -243,6 +251,7 @@ TargetTypes = new Type[]{typeof(MyClass)}
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.IMessageFormatter" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -282,6 +291,11 @@ TargetTypes = new Type[]{typeof(MyClass)}
   
  The instance serialized in the message body does not comply with any of the schemas represented by the types in the <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" /> and <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" /> properties.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)" />
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.Write(System.Messaging.Message,System.Object)" />
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" />
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="TargetTypeNames">
@@ -321,6 +335,9 @@ TargetTypes = new Type[]{typeof(MyClass)}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" /> property is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" />
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)" />
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="TargetTypes">
@@ -377,6 +394,9 @@ TargetTypes = new Type[]{typeof(MyClass)}
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.XmlMessageFormatter.TargetTypes" /> property is <see langword="null" />.</exception>
+        <altmember cref="P:System.Messaging.XmlMessageFormatter.TargetTypeNames" />
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.CanRead(System.Messaging.Message)" />
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -414,7 +434,17 @@ TargetTypes = new Type[]{typeof(MyClass)}
  -or-  
   
  The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.XmlMessageFormatter.Read(System.Messaging.Message)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.XmlMessageFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpResponseHeader" />
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -548,7 +549,7 @@
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The From header, which specifies an Internet E-mail address for the human user who controls the requesting user agent.</summary>
+        <summary>The From header, which specifies an Internet Email address for the human user who controls the requesting user agent.</summary>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -860,7 +861,7 @@
         <ReturnType>System.Net.HttpRequestHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Range header, which specifies the the sub-range(s) of the response that the client requests be returned in lieu of the entire response.</summary>
+        <summary>The Range header, which specifies the sub-range(s) of the response that the client requests be returned in lieu of the entire response.</summary>
       </Docs>
     </Member>
     <Member MemberName="Referer">

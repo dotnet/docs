@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>
@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>
@@ -119,7 +119,7 @@
     </Member>
     <Member MemberName="GetSurrogate">
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.ISerializationSurrogate GetSurrogate (Type type, System.Runtime.Serialization.StreamingContext context, out System.Runtime.Serialization.ISurrogateSelector selector);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, class System.Runtime.Serialization.ISurrogateSelector selector) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Serialization.ISerializationSurrogate GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>

@@ -7,11 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "appSettings Element"
   - "<appSettings> Element"
@@ -19,6 +14,8 @@ ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 author: "guardrex"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # \<appSettings> element for \<configuration>

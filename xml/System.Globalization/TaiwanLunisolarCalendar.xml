@@ -36,14 +36,15 @@
   
  The <xref:System.Globalization.TaiwanLunisolarCalendar> class is derived from the <xref:System.Globalization.EastAsianLunisolarCalendar> class, which represents the lunisolar calendar. The <xref:System.Globalization.EastAsianLunisolarCalendar> class supports the sexagenary year cycle (which repeats every 60 years) in addition to solar years and lunar months. Each solar year in the calendar is associated with a Sexagenary Year, a Celestial Stem, and a Terrestrial Branch, and these calendars can have leap months after any month of the year.  
   
- A leap month can occur after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29?displayProperty=fullName> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+ A leap month can occur after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29?displayProperty=nameWithType> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
   
  Currently, the <xref:System.Globalization.TaiwanLunisolarCalendar> is not used by any of the cultures supported by the <xref:System.Globalization.CultureInfo> class. Therefore, this class can be used only to calculate dates in the Taiwan lunisolar calendar.  
   
- Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
+ Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> to a new <xref:System.Globalization.Calendar>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.TaiwanCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "suspending threads"
   - "DangerousThreadingAPI MDA"
@@ -27,9 +22,11 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # dangerousThreadingAPI MDA
-The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName> method is called on a thread other than the current thread.  
+The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> method is called on a thread other than the current thread.  
   
 ## Symptoms  
  An application is unresponsive or hangs indefinitely. System or application data might be left in an unpredictable state temporarily or even after an application has been shut down. Some operations are not completing as expected.  
@@ -77,6 +74,6 @@ Thread t = new Thread(delegate() { Thread.Sleep(1000); });
 ```  
   
 ## See Also  
- <xref:System.Threading.Thread>   
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)   
+ <xref:System.Threading.Thread>  
+ [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
  [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

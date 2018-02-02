@@ -31,9 +31,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list. Composite formatting is supported by methods such as <xref:System.String.Format%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=fullName>.  For more information on composite formatting, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
+ A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list. Composite formatting is supported by methods such as <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>.  For more information on composite formatting, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
- A <xref:System.FormattableString> instance may result from the an interpolated string in C# or Visual Basic.  
+ A <xref:System.FormattableString> instance may result from an interpolated string in C# or Visual Basic.  
   
  ]]></format>
     </remarks>
@@ -371,5 +371,16 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string that results from formatting the composite format string along with its arguments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

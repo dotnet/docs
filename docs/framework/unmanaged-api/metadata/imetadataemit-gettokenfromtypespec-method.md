@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetTokenFromTypeSpec"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTokenFromTypeSpec method [.NET Framework metadata]"
   - "IMetaDataEmit::GetTokenFromTypeSpec method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataEmit::GetTokenFromTypeSpec Method
 Gets a metadata token for the type with the specified metadata signature.  
@@ -63,5 +63,5 @@ HRESULT GetTokenFromTypeSpec (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)   
+ [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
  [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

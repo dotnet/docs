@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewTriState> enumeration is useful whenever a third state is needed in addition to the two states of the <xref:System.Boolean> type. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A?displayProperty=fullName> property is of type <xref:System.Windows.Forms.DataGridViewTriState> so that a <xref:System.Windows.Forms.DataGridViewCellStyle> object can indicate no preference in regards to the text wrapping of a cell value, and can instead indicate that the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> value of a different <xref:System.Windows.Forms.DataGridViewCellStyle> object should be used.  
+ The <xref:System.Windows.Forms.DataGridViewTriState> enumeration is useful whenever a third state is needed in addition to the two states of the <xref:System.Boolean> type. For example, the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A?displayProperty=nameWithType> property is of type <xref:System.Windows.Forms.DataGridViewTriState> so that a <xref:System.Windows.Forms.DataGridViewCellStyle> object can indicate no preference in regards to the text wrapping of a cell value, and can instead indicate that the <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> value of a different <xref:System.Windows.Forms.DataGridViewCellStyle> object should be used.  
   
    
   
@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
   </Docs>
   <Members>
     <Member MemberName="False">

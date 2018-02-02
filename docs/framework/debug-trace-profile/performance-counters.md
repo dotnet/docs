@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "performance, .NET Framework applications"
   - "performance counters"
@@ -23,6 +18,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Performance Counters in the .NET Framework
 This topic provides a list of performance counters you can find in the [Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx).  
@@ -131,7 +128,7 @@ This topic provides a list of performance counters you can find in the [Performa
 |**# Gen 0 Collections**|Displays the number of times the generation 0 objects (that is, the youngest, most recently allocated objects) are garbage collected since the application started.<br /><br /> Generation 0 garbage collection occurs when the available memory in generation 0 is not sufficient to satisfy an allocation request. This counter is incremented at the end of a generation 0 garbage collection. Higher generation garbage collections include all lower generation collections. This counter is explicitly incremented when a higher generation (generation 1 or 2) garbage collection occurs.<br /><br /> This counter displays the last observed value. The **_Global\_** counter value is not accurate and should be ignored.|  
 |**# Gen 1 Collections**|Displays the number of times the generation 1 objects are garbage collected since the application started.<br /><br /> The counter is incremented at the end of a generation 1 garbage collection. Higher generation garbage collections include all lower generation collections. This counter is explicitly incremented when a higher generation (generation 2) garbage collection occurs.<br /><br /> This counter displays the last observed value. The **_Global\_** counter value is not accurate and should be ignored.|  
 |**# Gen 2 Collections**|Displays the number of times the generation 2 objects are garbage collected since the application started. The counter is incremented at the end of a generation 2 garbage collection (also called a full garbage collection).<br /><br /> This counter displays the last observed value. The **_Global\_** counter value is not accurate and should be ignored.|  
-|**# Induced GC**|Displays the peak number of times garbage collection was performed because of an explicit call to <xref:System.GC.Collect%2A?displayProperty=fullName>. It is good practice to let the garbage collector tune the frequency of its collections.|  
+|**# Induced GC**|Displays the peak number of times garbage collection was performed because of an explicit call to <xref:System.GC.Collect%2A?displayProperty=nameWithType>. It is good practice to let the garbage collector tune the frequency of its collections.|  
 |**# of Pinned Objects**|Displays the number of pinned objects encountered in the last garbage collection. A pinned object is an object that the garbage collector cannot move in memory. This counter tracks pinned objects only in the heaps that are garbage collected. For example, a generation 0 garbage collection causes enumeration of pinned objects only in the generation 0 heap.|  
 |**# of Sink Blocks in use**|Displays the current number of synchronization blocks in use. Synchronization blocks are per-object data structures allocated for storing synchronization information. They hold weak references to managed objects and must be scanned by the garbage collector. Synchronization blocks are not limited to storing synchronization information; they can also store COM interop metadata. This counter indicates performance problems with heavy use of synchronization primitives.|  
 |**# Total committed Bytes**|Displays the amount of virtual memory, in bytes, currently committed by the garbage collector. Committed memory is the physical memory for which space has been reserved in the disk paging file.|  
@@ -261,5 +258,5 @@ for (int i = 0; i < Array.Length; i++)
 |**Total Runtime Checks**|Displays the total number of runtime code access security checks performed since the application started. Runtime code access security checks are performed when a caller demands a particular permission. The runtime check is made on every call by the caller and examines the current thread stack of the caller. When used with the **Stack Walk Depth** counter, this counter indicates the performance penalty that occurs for security checks.|  
   
 ## See Also  
- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)   
+ [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)  
  [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

@@ -45,7 +45,7 @@
 ## Remarks  
  If you have associated the <xref:System.Windows.Controls.ExceptionValidationRule> with your <xref:System.Windows.Data.Binding> object you have the option to use the <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> property to set this callback to provide custom logic for handling the exceptions. This callback is invoked whenever any exception is encountered when the binding engine updates the binding source value.  
   
- If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element.  
+ If an <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> is not specified on the <xref:System.Windows.Data.Binding>, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element.  
   
    
   
@@ -66,5 +66,6 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Data.MultiBinding.UpdateSourceExceptionFilter" />
   </Docs>
 </Type>

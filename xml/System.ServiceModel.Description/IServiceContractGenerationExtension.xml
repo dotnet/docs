@@ -13,14 +13,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> interface on a contract behavior (a <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> type) to enable you to modify the code generated when a contract or endpoint is compiled into code.  
+ Implement the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> interface on a contract behavior (a <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> type) to enable you to modify the code generated when a contract or endpoint is compiled into code.  
   
- Typically, a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName> inserts a custom contract behavior into the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=fullName> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> or <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A>.  
+ Typically, a custom <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> inserts a custom contract behavior into the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=nameWithType> collection during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> or <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A>.  
   
    
   
 ## Examples  
- The following code example shows how to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=fullName> property during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A>.  
+ The following code example shows how to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=nameWithType> property during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A>.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   
@@ -59,12 +59,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext?displayProperty=fullName> to modify the contract, operations, or the <xref:System.ServiceModel.Description.ServiceContractGenerator?displayProperty=fullName> prior to code generation.  
+ Use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext?displayProperty=nameWithType> to modify the contract, operations, or the <xref:System.ServiceModel.Description.ServiceContractGenerator?displayProperty=nameWithType> prior to code generation.  
   
    
   
 ## Examples  
- The following code example shows how to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=fullName> property during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A>.  
+ The following code example shows how to add an <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> to the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A?displayProperty=nameWithType> property during the call to <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A>.  
   
  [!code-csharp[C_CustomWSDLExtensions#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_customwsdlextensions/cs/wsdldocumentationimporter.cs#4)]  
   

@@ -67,16 +67,17 @@ End Class
 ' <Snippet13>
 Public Module Example
    Public Sub Main()
-      Dim temp1 As New Temperature(22d)
+      Dim temp As New Temperature(22d)
+      CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US")
       Console.WriteLine(Convert.ToString(temp1, New CultureInfo("ja-JP")))
-      Console.WriteLine("Temperature: {0:K}", temp1)
-      Console.WriteLine("Temperature: {0:F}", temp1)
-      Console.WriteLine(String.Format(New CultureInfo("fr-FR"), "Temperature: {0:F}", temp1)) 
+      Console.WriteLine("Temperature: {0:K}", temp)
+      Console.WriteLine("Temperature: {0:F}", temp)
+      Console.WriteLine(String.Format(New CultureInfo("fr-FR"), "Temperature: {0:F}", temp)) 
    End Sub
 End Module
 ' The example displays the following output:
 '       22.00°C
-'       Temperature: 295.15°K
+'       Temperature: 295.15K
 '       Temperature: 71.60°F
 '       Temperature: 71,60°F
 ' </Snippet13>

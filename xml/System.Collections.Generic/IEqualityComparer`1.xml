@@ -40,7 +40,7 @@
   
  This interface supports only equality comparisons. Customization of comparisons for sorting and ordering is provided by the <xref:System.Collections.Generic.IComparer%601> generic interface.  
   
- We recommend that you derive from the <xref:System.Collections.Generic.EqualityComparer%601> class instead of implementing the <xref:System.Collections.Generic.IEqualityComparer%601> interface, because the <xref:System.Collections.Generic.EqualityComparer%601> class tests for equality using the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method instead of the <xref:System.Object.Equals%2A?displayProperty=fullName> method. This is consistent with the `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` methods of the <xref:System.Collections.Generic.Dictionary%602> class and other generic collections.  
+ We recommend that you derive from the <xref:System.Collections.Generic.EqualityComparer%601> class instead of implementing the <xref:System.Collections.Generic.IEqualityComparer%601> interface, because the <xref:System.Collections.Generic.EqualityComparer%601> class tests for equality using the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method instead of the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. This is consistent with the `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` methods of the <xref:System.Collections.Generic.Dictionary%602> class and other generic collections.  
   
    
   
@@ -52,6 +52,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.EqualityComparer`1" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2" />
+    <altmember cref="Overload:System.Collections.Generic.Dictionary`2.#ctor" />
+    <altmember cref="T:System.Collections.Generic.IComparer`1" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -148,6 +152,8 @@
         <block subset="none" type="overrides">
           <para>Implementations are required to ensure that if the <see cref="M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
         </block>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
   </Members>

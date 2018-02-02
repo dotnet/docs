@@ -57,7 +57,7 @@ namespace WPF_CS1
                 images[x] = Task.Factory.StartNew(() => LoadImage(files[x]));
             }
 
-            // When they�ve all been loaded, tile them into a single byte array.
+            // When they've all been loaded, tile them into a single byte array.
             var tiledImage = Task.Factory.ContinueWhenAll(
                 images, (i) => TileImages(i));
 
@@ -65,8 +65,8 @@ namespace WPF_CS1
             // the next task so that it can access the UI control "image".
             var UISyncContext = TaskScheduler.FromCurrentSynchronizationContext();
 
-            //  On the UI thread, put the bytes into a bitmap and
-            // and display it in the Image control.
+            // On the UI thread, put the bytes into a bitmap and
+            // display it in the Image control.
             var t3 = tiledImage.ContinueWith((antecedent) =>
             {
                 // Get System DPI.

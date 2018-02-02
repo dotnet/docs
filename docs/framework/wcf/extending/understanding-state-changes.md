@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a79ed2aa-e49a-47a8-845a-c9f436ec9987
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Understanding State Changes
 This topic discusses the states and transitions that channels have, the types used to structure channel states, and how to implement them.  
@@ -52,13 +54,13 @@ Figure 2. The CommunicationObject implementation of the ICommunicationObject sta
 ### Derived Object Callbacks  
  In addition to the five events, <xref:System.ServiceModel.Channels.CommunicationObject> declares eight protected virtual methods designed to allow a derived object to be called back before and after state transitions occur.  
   
- The <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=fullName> and <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=fullName> methods have three such callbacks associated with each of them. For example, corresponding to <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=fullName> there is <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=fullName>, <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A?displayProperty=fullName>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=fullName>. Associated with <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=fullName> are the <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%2A?displayProperty=fullName>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=fullName>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=fullName> methods.  
+ The <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> methods have three such callbacks associated with each of them. For example, corresponding to <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> there is <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=nameWithType>. Associated with <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> are the <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=nameWithType> methods.  
   
- Similarly, the <xref:System.ServiceModel.Channels.CommunicationObject.Abort%2A?displayProperty=fullName> method has a corresponding <xref:System.ServiceModel.Channels.CommunicationObject.OnAbort%2A?displayProperty=fullName>.  
+ Similarly, the <xref:System.ServiceModel.Channels.CommunicationObject.Abort%2A?displayProperty=nameWithType> method has a corresponding <xref:System.ServiceModel.Channels.CommunicationObject.OnAbort%2A?displayProperty=nameWithType>.  
   
- While <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A?displayProperty=fullName>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%2A?displayProperty=fullName>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnAbort%2A?displayProperty=fullName> have no default implementation, the other callbacks do have a default implementation which is necessary for state machine correctness. If you override those methods be sure to call the base implementation or correctly replace it.  
+ While <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnAbort%2A?displayProperty=nameWithType> have no default implementation, the other callbacks do have a default implementation which is necessary for state machine correctness. If you override those methods be sure to call the base implementation or correctly replace it.  
   
- <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=fullName>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=fullName> and <xref:System.ServiceModel.Channels.CommunicationObject.OnFaulted%2A?displayProperty=fullName> fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opening?displayProperty=fullName>, <xref:System.ServiceModel.Channels.CommunicationObject.Closing?displayProperty=fullName> and <xref:System.ServiceModel.Channels.CommunicationObject.Faulted?displayProperty=fullName> events. <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=fullName> and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=fullName> set the object state to Opened and Closed respectively then fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opened?displayProperty=fullName> and <xref:System.ServiceModel.Channels.CommunicationObject.Closed?displayProperty=fullName> events.  
+ <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.OnFaulted%2A?displayProperty=nameWithType> fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opening?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.Closing?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Faulted?displayProperty=nameWithType> events. <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=nameWithType> set the object state to Opened and Closed respectively then fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opened?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Closed?displayProperty=nameWithType> events.  
   
 ### State Transition Methods  
  <xref:System.ServiceModel.Channels.CommunicationObject> provides implementations of Abort, Close and Open. It also provides a Fault method which causes a state transition to the Faulted state. Figure 2 shows the <xref:System.ServiceModel.ICommunicationObject> state machine with each transition labeled by the method that causes it (unlabeled transitions happen inside the implementation of the method that caused the last labeled transition).  
@@ -143,14 +145,14 @@ Override the OnAbort method to implement custom terminate logic such as terminat
   
 |State|Has Abort been called?|Exception|  
 |-----------|----------------------------|---------------|  
-|Created|N/A|<xref:System.InvalidOperationException?displayProperty=fullName>|  
-|Opening|N/A|<xref:System.InvalidOperationException?displayProperty=fullName>|  
-|Opened|N/A|<xref:System.InvalidOperationException?displayProperty=fullName>|  
-|Closing|Yes|<xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=fullName>|  
-|Closing|No|<xref:System.ObjectDisposedException?displayProperty=fullName>|  
-|Closed|Yes|<xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=fullName> in the case that an object was closed by a previous and explicit call of Abort. If you call Close on the object then an <xref:System.ObjectDisposedException?displayProperty=fullName> is thrown.|  
-|Closed|No|<xref:System.ObjectDisposedException?displayProperty=fullName>|  
-|Faulted|N/A|<xref:System.ServiceModel.CommunicationObjectFaultedException?displayProperty=fullName>|  
+|Created|N/A|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Opening|N/A|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Opened|N/A|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Closing|Yes|<xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=nameWithType>|  
+|Closing|No|<xref:System.ObjectDisposedException?displayProperty=nameWithType>|  
+|Closed|Yes|<xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=nameWithType> in the case that an object was closed by a previous and explicit call of Abort. If you call Close on the object then an <xref:System.ObjectDisposedException?displayProperty=nameWithType> is thrown.|  
+|Closed|No|<xref:System.ObjectDisposedException?displayProperty=nameWithType>|  
+|Faulted|N/A|<xref:System.ServiceModel.CommunicationObjectFaultedException?displayProperty=nameWithType>|  
   
 ### Timeouts  
  Several of the methods we discussed take timeout parameters. These are Close, Open (certain overloads and asynchronous versions), OnClose and OnOpen. These methods are designed to allow for lengthy operations (for example, blocking on input/output while gracefully closing down a connection) so the timeout parameter indicates how long such operations can take before being interrupted. Implementations of any of these methods should use the supplied timeout value to ensure it returns to the caller within that timeout. Implementations of other methods that do not take a timeout are not designed for lengthy operations and should not block on input/output.  

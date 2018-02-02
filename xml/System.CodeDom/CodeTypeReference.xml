@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.CodeDom.CodeTypeReference> object is used to represent a type for CodeDOM objects. When CodeDOM types have a `Type` property, it is of type <xref:System.CodeDom.CodeTypeReference>. For example, the <xref:System.CodeDom.CodeMemberField.Type%2A?displayProperty=fullName> property is a <xref:System.CodeDom.CodeTypeReference> that represents a field's data type.  
+ A <xref:System.CodeDom.CodeTypeReference> object is used to represent a type for CodeDOM objects. When CodeDOM types have a `Type` property, it is of type <xref:System.CodeDom.CodeTypeReference>. For example, the <xref:System.CodeDom.CodeMemberField.Type%2A?displayProperty=nameWithType> property is a <xref:System.CodeDom.CodeTypeReference> that represents a field's data type.  
   
  A <xref:System.CodeDom.CodeTypeReference> can be initialized with a <xref:System.Type> object or a string. It is generally recommended to use a <xref:System.Type> to do this, although it may not always be possible. If initializing an instance of this class with a string, it is strongly recommended to always use fully qualified types, such as "System.Console" instead of just "Console", because not all languages support importing namespaces. Array types can be specified by either passing in a type object for an array or using one of the constructors that accept rank as a parameter.  
   
@@ -185,7 +185,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeTypeReference (string typeName, System.CodeDom.CodeTypeReference[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public CodeTypeReference (string typeName, params System.CodeDom.CodeTypeReference[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, class System.CodeDom.CodeTypeReference[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeReference.#ctor(System.String,System.CodeDom.CodeTypeReference[])" />
       <MemberType>Constructor</MemberType>
@@ -470,5 +470,14 @@ System.Collections.Generic.Dictionary`2[[System.String], [System.Collections.Gen
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeReference" /> class using the specified type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

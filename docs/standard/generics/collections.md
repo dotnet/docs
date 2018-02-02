@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "generics [.NET Framework], collections"
   - "generic collections [.NET Framework]"
@@ -16,6 +20,9 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Generic Collections in the .NET Framework
 This topic provides an overview of the generic collection classes and other generic types in the .NET Framework.  
@@ -36,7 +43,7 @@ This topic provides an overview of the generic collection classes and other gene
  The <xref:System.Collections.ObjectModel.Collection%601> generic class provides a base class for deriving your own generic collection types. The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> class provides an easy way to produce a read-only collection from any type that implements the <xref:System.Collections.Generic.IList%601> generic interface. The <xref:System.Collections.ObjectModel.KeyedCollection%602> generic class provides a way to store objects that contain their own keys.  
   
 ## Other Generic Types  
- The <xref:System.Nullable%601>generic structure allows you to use value types as if they could be assigned `null`. This can be useful when working with database queries, where fields that contain value types can be missing. The generic type parameter can be any value type.  
+ The <xref:System.Nullable%601> generic structure allows you to use value types as if they could be assigned `null`. This can be useful when working with database queries, where fields that contain value types can be missing. The generic type parameter can be any value type.  
   
 > [!NOTE]
 >  In C# it is not necessary to use <xref:System.Nullable%601> explicitly because the language has syntax for nullable types.  
@@ -50,8 +57,8 @@ This topic provides an overview of the generic collection classes and other gene
  [!code-vb[Conceptual.Generics.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source2.vb#7)]  
   
 ## See Also  
- <xref:System.Collections.Generic?displayProperty=fullName>   
- <xref:System.Collections.ObjectModel?displayProperty=fullName>   
- [Generics](../../../docs/standard/generics/index.md)   
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)   
+ <xref:System.Collections.Generic?displayProperty=nameWithType>  
+ <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+ [Generics](../../../docs/standard/generics/index.md)  
+ [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
  [Generic Interfaces](../../../docs/standard/generics/interfaces.md)

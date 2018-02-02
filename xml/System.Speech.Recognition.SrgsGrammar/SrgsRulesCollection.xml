@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.Speech.Recognition.SrgsGrammar.SrgsRule[] rules);" />
+      <MemberSignature Language="C#" Value="public void Add (params System.Speech.Recognition.SrgsGrammar.SrgsRule[] rules);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.SrgsGrammar.SrgsRule[] rules) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech.Recognition.SrgsGrammar.SrgsRule[])" />
       <MemberType>Method</MemberType>

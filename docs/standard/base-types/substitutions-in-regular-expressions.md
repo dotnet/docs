@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, substitutions"
   - "replacement patterns"
@@ -20,9 +23,12 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Substitutions in Regular Expressions
-<a name="Top"></a> Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=fullName> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
+<a name="Top"></a> Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
   
  The .NET Framework defines the substitution elements listed in the following table.  
   
@@ -69,7 +75,7 @@ manager: "wpickett"
 |`\d+`|Match one or more decimal digits.|  
 |`[.,]?`|Match zero or one period or comma.|  
 |`\d*`|Match zero or more decimal digits.|  
-|`(\s?\d+[.,]?\d*)`|Match a white space followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the first capturing group. Because the replacement pattern is `$1`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method replaces the entire matched substring with this captured group.|  
+|`(\s?\d+[.,]?\d*)`|Match a white space followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the first capturing group. Because the replacement pattern is `$1`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the entire matched substring with this captured group.|  
   
  [Back to top](#Top)  
   
@@ -95,7 +101,7 @@ manager: "wpickett"
 |`\d+`|Match one or more decimal digits.|  
 |`[.,]?`|Match zero or one period or comma.|  
 |`\d*`|Match zero or more decimal digits.|  
-|`(?<amount>\s?\d[.,]?\d*)`|Match a white space, followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the capturing group named `amount`. Because the replacement pattern is `${amount}`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method replaces the entire matched substring with this captured group.|  
+|`(?<amount>\s?\d[.,]?\d*)`|Match a white space, followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the capturing group named `amount`. Because the replacement pattern is `${amount}`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the entire matched substring with this captured group.|  
   
  [Back to top](#Top)  
   
@@ -177,15 +183,15 @@ manager: "wpickett"
 |2|5|cc3dd4ee5|aabb2cc3dd4ee5bb**cc3dd4ee5**cc3dd4ee5|  
 |3|8|dd4ee5|aabb2cc3dd4ee5bbcc3dd4ee5cc**dd4ee5**dd4ee5|  
 |4|11|ee5|aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5dd**ee5**ee5|  
-|5|14|<xref:System.String.Empty?displayProperty=fullName>|aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5ddee5ee|  
+|5|14|<xref:System.String.Empty?displayProperty=nameWithType>|aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5ddee5ee|  
   
  [Back to top](#Top)  
   
 <a name="LastGroup"></a>   
 ## Substituting the Last Captured Group  
- The `$+` substitution replaces the matched string with the last captured group. If there are no captured groups or if the value of the last captured group is <xref:System.String.Empty?displayProperty=fullName>, the `$+` substitution has no effect.  
+ The `$+` substitution replaces the matched string with the last captured group. If there are no captured groups or if the value of the last captured group is <xref:System.String.Empty?displayProperty=nameWithType>, the `$+` substitution has no effect.  
   
- The following example identifies duplicate words in a string and uses the `$+` substitution to replace them with a single occurrence of the word. The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option is used to ensure that words that differ in case but that are otherwise identical are considered duplicates.  
+ The following example identifies duplicate words in a string and uses the `$+` substitution to replace them with a single occurrence of the word. The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option is used to ensure that words that differ in case but that are otherwise identical are considered duplicates.  
   
  [!code-csharp[Conceptual.Regex.Language.Substitutions#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.substitutions/cs/lastmatch1.cs#6)]
  [!code-vb[Conceptual.Regex.Language.Substitutions#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.substitutions/vb/lastmatch1.vb#6)]  

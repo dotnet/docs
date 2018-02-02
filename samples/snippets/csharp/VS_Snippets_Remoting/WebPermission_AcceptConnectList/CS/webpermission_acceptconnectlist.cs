@@ -1,8 +1,8 @@
 // System.Net.WebPermission.ConnectList;System.Net.WebPermission.AcceptList;
 
 /**
-  * This program demonstrates the the use of the ConnectList and AcceptList WebPermission
-  * class prerties.
+  * This program demonstrates the use of the ConnectList and AcceptList WebPermission
+  * class properties.
   * It first creates a WebPermission object with Permissionstate set to None and then 
   * sets the Connect and Accept access right to some predefined URLs. 
   * The using the AcceptList and ConnectList properties it displays the URLs that have 

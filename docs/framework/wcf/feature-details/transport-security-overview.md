@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
 caps.latest.revision: 23
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport Security Overview
 Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] system-provided bindings.  
@@ -31,7 +36,7 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
  The <xref:System.ServiceModel.BasicHttpBinding> class is primarily used to interoperate with existing Web services, and many of those services are hosted by Internet Information Services (IIS). Consequently, the transport security for this binding is designed for seamless interoperation with IIS sites. This is done by setting the security mode to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport> and then setting the client credential type. The credential type values correspond to IIS directory security mechanisms. The following code shows the mode being set and the credential type set to Windows. You can use this configuration when both client and server are on the same Windows domain.  
   
  [!code-csharp[c_ProgrammingSecurity#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#10)] 
- [!code-vb[c_ProgrammingSecurity#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#10)]   
+ [!code-vb[c_ProgrammingSecurity#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#10)]  
   
  Or, in configuration:  
   
@@ -50,22 +55,22 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
  The following sections discuss other client credential types.  
   
 #### Basic  
- This corresponds to the Basic authentication method in IIS. When using this mode, the IIS server must be configured with Windows user accounts and appropriate NTFS file system permissions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Basic Authentication and Configuring the Realm Name](http://go.microsoft.com/fwlink/?LinkId=88592). [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Basic Authentication](http://go.microsoft.com/fwlink/?LinkId=88593).  
+ This corresponds to the Basic authentication method in IIS. When using this mode, the IIS server must be configured with Windows user accounts and appropriate NTFS file system permissions. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Basic Authentication and Configuring the Realm Name](http://go.microsoft.com/fwlink/?LinkId=88592). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Basic Authentication](http://go.microsoft.com/fwlink/?LinkId=88593).  
   
 #### Certificate  
- IIS has an option to require clients to log on with a certificate. The feature also enables IIS to map a client certificate to a Windows account. [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Client Certificates in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88594). [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
+ IIS has an option to require clients to log on with a certificate. The feature also enables IIS to map a client certificate to a Windows account. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Enabling Client Certificates in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88594). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
   
 #### Digest  
- Digest authentication is similar to Basic authentication, but offers the advantage of sending the credentials as a hash, instead of in clear text. [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkID=88443). [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88596).  
+ Digest authentication is similar to Basic authentication, but offers the advantage of sending the credentials as a hash, instead of in clear text. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkID=88443). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configure Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88596).  
   
 #### Windows  
- This corresponds to integrated Windows authentication in IIS. When set to this value, the server is also expected to exist on a Windows domain that uses the Kerberos protocol as its domain controller. If the server is not on a Kerberos-backed domain, or if the Kerberos system fails, you can use the NT LAN Manager (NTLM) value described in the next section. [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Integrated Windows Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88597). [!INCLUDE[crabout](../../../../includes/crabout-md.md)][!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
+ This corresponds to integrated Windows authentication in IIS. When set to this value, the server is also expected to exist on a Windows domain that uses the Kerberos protocol as its domain controller. If the server is not on a Kerberos-backed domain, or if the Kerberos system fails, you can use the NT LAN Manager (NTLM) value described in the next section. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Integrated Windows Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88597). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkId=88595).  
   
 #### NTLM  
- This enables the server to use NTLM for authentication if the Kerberos protocol fails. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] configuring IIS in [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Forcing NTLM Authentication](http://go.microsoft.com/fwlink/?LinkId=88598). For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the Windows authentication includes NTLM authentication. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkID=88595).  
+ This enables the server to use NTLM for authentication if the Kerberos protocol fails. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] configuring IIS in [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Forcing NTLM Authentication](http://go.microsoft.com/fwlink/?LinkId=88598). For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the Windows authentication includes NTLM authentication. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](http://go.microsoft.com/fwlink/?LinkID=88595).  
   
 ## WsHttpBinding  
- The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  For client authentication, set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to one of the <xref:System.ServiceModel.HttpClientCredentialType> enumeration values. The enumeration values are identical to the client credential types for <xref:System.ServiceModel.BasicHttpBinding> and are designed to be hosted with IIS services.  
   

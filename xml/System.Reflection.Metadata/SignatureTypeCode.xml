@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants that define type codes used in signature encoding.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Array">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a generalized <see cref="System.Array" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.Boolean" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="ByReference">
@@ -67,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents managed pointers (byref return values and parameters) in signatures. It is followed in the blob by the signature encoding of the underlying type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.Byte" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.Char" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -121,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.Double" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="FunctionPointer">
@@ -139,7 +140,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents function pointer types in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericMethodParameter">
@@ -157,7 +158,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a generic method parameter used within a signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeInstance">
@@ -175,7 +176,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the instantiation of a generic type in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeParameter">
@@ -193,7 +194,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a generic type parameter used within a signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -211,7 +212,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.Int16" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -229,7 +230,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.Int32" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -247,7 +248,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.Int64" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntPtr">
@@ -265,7 +266,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.IntPtr" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -283,7 +284,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an invalid or uninitialized type code. It will not appear in valid signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -301,7 +302,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.Object" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="OptionalModifier">
@@ -319,7 +320,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a custom modifier applied to a type within a signature that the caller can ignore.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pinned">
@@ -337,7 +338,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a local variable that is pinned by garbage collector.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pointer">
@@ -355,7 +356,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an unmanaged pointer in signatures. It is followed in the blob by the signature encoding of the underlying type.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequiredModifier">
@@ -373,7 +374,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a custom modifier applied to a type within a signature that the caller must understand.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -391,7 +392,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents an <see cref="System.SByte" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Sentinel">
@@ -409,7 +410,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a marker to indicate the end of fixed arguments and the beginning of variable arguments.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -427,7 +428,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.Single" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -445,7 +446,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.String" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="SZArray">
@@ -463,7 +464,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a single dimensional <see cref="System.Array" /> with a lower bound of 0.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypedReference">
@@ -481,7 +482,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a typed reference in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypeHandle">
@@ -499,7 +500,15 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Precedes a type <see cref="EntityHandle" /> in signatures.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In raw metadata, this will be encoded as either ELEMENT_TYPE_CLASS (0x12) for reference types and ELEMENT_TYPE_VALUETYPE (0x11) for value types. This is collapsed to a single code because Windows Runtime projections can project from class to value type or vice-versa and the raw code is misleading in those cases.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -517,7 +526,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.UInt16" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -535,7 +544,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.UInt32" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -553,7 +562,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.UInt64" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="UIntPtr">
@@ -571,7 +580,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents a <see cref="System.UIntPtr" /> in signatures.</summary>
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -589,7 +598,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents <see cref="System.Void" /> in signatures.</summary>
       </Docs>
     </Member>
   </Members>

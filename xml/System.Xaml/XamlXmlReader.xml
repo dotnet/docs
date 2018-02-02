@@ -22,10 +22,12 @@
 ## Remarks  
  When you construct a <xref:System.Xaml.XamlXmlReader>, an <xref:System.Xml.XmlReader> is required. The purpose of this design is to use established [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] APIs for XML processing in order to handle stream input, to obtain a stream from a file, and so on.  
   
- <xref:System.Xml.XmlReader> is the first component of the standard load path for XAML operations and is incorporated by <xref:System.Xaml.XamlServices.Load%2A?displayProperty=fullName> as well as by several existing framework XAML implementations for loading XAML.  
+ <xref:System.Xml.XmlReader> is the first component of the standard load path for XAML operations and is incorporated by <xref:System.Xaml.XamlServices.Load%2A?displayProperty=nameWithType> as well as by several existing framework XAML implementations for loading XAML.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xaml.XamlXmlReaderSettings" />
+    <altmember cref="T:System.Xaml.XamlObjectWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -647,6 +649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xaml.XamlXmlReader.NodeType" />
       </Docs>
     </Member>
     <Member MemberName="SchemaContext">
@@ -717,5 +720,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

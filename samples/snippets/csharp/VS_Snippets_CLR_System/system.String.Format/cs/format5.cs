@@ -21,7 +21,7 @@ public class Example
       Console.WriteLine(result2);
    }
 }
-// The example displays the following output:
+// The example displays output like the following:
 //       Temperature on 7/1/2009:
 //          14:17:32: 62.1 degrees (hi)
 //          03:16:10: 54.8 degrees (lo)

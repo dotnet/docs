@@ -1,40 +1,21 @@
 ---
 title: "Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc31194"
   - "bc31194"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31194"
 ms.assetid: 03d50c31-addd-4c90-9c53-725b84f9782e
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;
 Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' property to get the string value of the first element of '\<parentElement>'.  
@@ -48,7 +29,7 @@ Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' pr
 -   Use the `Value` property of the XML literal to reference its value as a `String`. Use the `CType` function, another type conversion function, or the <xref:System.Convert> class to cast the value as the specified type.  
   
 ## See Also  
- <xref:System.Convert>   
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)   
+ <xref:System.Convert>  
+ [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
+ [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

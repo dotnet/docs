@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Certain application settings properties have a special significance that alters the way in which their associated settings provider should process them. The <xref:System.Configuration.SpecialSettingAttribute> is used to identify such properties. This class uses the <xref:System.Configuration.SpecialSetting?displayProperty=fullName> enumeration to indicate what special category the property belongs to.  
+ Certain application settings properties have a special significance that alters the way in which their associated settings provider should process them. The <xref:System.Configuration.SpecialSettingAttribute> is used to identify such properties. This class uses the <xref:System.Configuration.SpecialSetting?displayProperty=nameWithType> enumeration to indicate what special category the property belongs to.  
   
  <xref:System.Configuration.SpecialSettingAttribute> can only be applied to the settings class or to the individual settings property.  
   
@@ -33,6 +33,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingsProvider" />
+    <altmember cref="T:System.Configuration.SpecialSetting" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +57,8 @@
         <param name="setting">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SpecialSettingAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.SpecialSetting" />
+        <altmember cref="P:System.Configuration.SpecialSettingAttribute.SpecialSetting" />
       </Docs>
     </Member>
     <Member MemberName="SpecialSetting">
@@ -84,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SpecialSetting" />
       </Docs>
     </Member>
   </Members>

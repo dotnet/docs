@@ -1,21 +1,18 @@
 ---
 title: "Recursive Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
-  - "procedures, that call themselves"
-  - "procedures, recursive"
-  - "procedures, calling"
+  - "procedures [Visual Basic], that call themselves"
+  - "procedures [Visual Basic], recursive"
+  - "procedures [Visual Basic], calling"
   - "recursive procedures"
   - "functions [Visual Basic], calling recursively"
   - "recursion"
@@ -23,21 +20,6 @@ ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recursive Procedures (Visual Basic)
 A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
@@ -60,14 +42,14 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
  **Testing**. If you write a recursive procedure, you should test it very carefully to make sure it always meets some limiting condition. You should also ensure that you cannot run out of memory due to having too many recursive calls.  
   
 ## See Also  
- <xref:System.StackOverflowException>   
- [Procedures](./index.md)   
- [Sub Procedures](./sub-procedures.md)   
- [Function Procedures](./function-procedures.md)   
- [Property Procedures](./property-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Procedure Overloading](./procedure-overloading.md)   
- [Troubleshooting Procedures](./troubleshooting-procedures.md)   
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
+ <xref:System.StackOverflowException>  
+ [Procedures](./index.md)  
+ [Sub Procedures](./sub-procedures.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Property Procedures](./property-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Procedure Overloading](./procedure-overloading.md)  
+ [Troubleshooting Procedures](./troubleshooting-procedures.md)  
+ [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [Troubleshooting Exceptions: System.StackOverflowException](http://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)

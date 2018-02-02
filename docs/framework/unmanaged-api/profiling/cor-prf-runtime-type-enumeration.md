@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_RUNTIME_TYPE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_RUNTIME_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_RUNTIME_TYPE Enumeration
 Contains values that indicate the version of the common language runtime (CLR): desktop or CoreCLR, which is used in Silverlight.  

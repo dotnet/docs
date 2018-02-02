@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IGCThreadControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IGCThreadControl Interface
 Provides methods for participating in the scheduling of threads that would otherwise be blocked for a garbage collection.  

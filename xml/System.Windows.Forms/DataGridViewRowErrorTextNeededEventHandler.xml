@@ -26,19 +26,27 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event occurs only when the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`. Handling the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event is useful when you want to determine the error for a row depending on its state and the values it contains.  
   
- When you handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event and specify error text in the handler, an error glyph appears in the row header unless the <xref:System.Windows.Forms.DataGridView.ShowRowErrors%2A?displayProperty=fullName> property is set to `false`. When the user moves the mouse pointer over the error glyph, the error text appears in a ToolTip.  
+ When you handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event and specify error text in the handler, an error glyph appears in the row header unless the <xref:System.Windows.Forms.DataGridView.ShowRowErrors%2A?displayProperty=nameWithType> property is set to `false`. When the user moves the mouse pointer over the error glyph, the error text appears in a ToolTip.  
   
- The <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property is retrieved.  
+ The <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=nameWithType> property is retrieved.  
   
- You can use the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.RowIndex%2A?displayProperty=fullName> property to determine the state or value of a row, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText%2A?displayProperty=fullName> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> property, which the event value overrides.  
+ You can use the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.RowIndex%2A?displayProperty=nameWithType> property to determine the state or value of a row, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText%2A?displayProperty=nameWithType> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> property, which the event value overrides.  
   
  Handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- When you create a <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.ShowRowErrors" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
   </Docs>
 </Type>

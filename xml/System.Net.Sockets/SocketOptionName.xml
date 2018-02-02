@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.SocketOptionName> enumeration defines the name of each <xref:System.Net.Sockets.Socket> configuration option. Sockets can be configured with the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method.  
+ The <xref:System.Net.Sockets.SocketOptionName> enumeration defines the name of each <xref:System.Net.Sockets.Socket> configuration option. Sockets can be configured with the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
+    <altmember cref="T:System.Net.Sockets.SocketOptionName" />
   </Docs>
   <Members>
     <Member MemberName="AcceptConnection">

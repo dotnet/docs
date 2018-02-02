@@ -38,11 +38,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface for use with collection classes such as the <xref:System.Collections.Generic.Dictionary%602> generic class, or with methods such as <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName>.  
+ Derive from this class to provide a custom implementation of the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface for use with collection classes such as the <xref:System.Collections.Generic.Dictionary%602> generic class, or with methods such as <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property checks whether type `T` implements the <xref:System.IEquatable%601?displayProperty=fullName> generic interface and, if so, returns an <xref:System.Collections.Generic.EqualityComparer%601> that invokes the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method. Otherwise, it returns an <xref:System.Collections.Generic.EqualityComparer%601>, as provided by `T`.  
+ The <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property checks whether type `T` implements the <xref:System.IEquatable%601?displayProperty=nameWithType> generic interface and, if so, returns an <xref:System.Collections.Generic.EqualityComparer%601> that invokes the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method. Otherwise, it returns an <xref:System.Collections.Generic.EqualityComparer%601>, as provided by `T`.  
   
- We recommend that you derive from the <xref:System.Collections.Generic.EqualityComparer%601> class instead of implementing the <xref:System.Collections.Generic.IEqualityComparer%601> interface, because the <xref:System.Collections.Generic.EqualityComparer%601> class tests for equality using the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method instead of the <xref:System.Object.Equals%2A?displayProperty=fullName> method. This is consistent with the `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` methods of the <xref:System.Collections.Generic.Dictionary%602> class and other generic collections.  
+ We recommend that you derive from the <xref:System.Collections.Generic.EqualityComparer%601> class instead of implementing the <xref:System.Collections.Generic.IEqualityComparer%601> interface, because the <xref:System.Collections.Generic.EqualityComparer%601> class tests for equality using the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method instead of the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. This is consistent with the `Contains`, `IndexOf`, `LastIndexOf`, and `Remove` methods of the <xref:System.Collections.Generic.Dictionary%602> class and other generic collections.  
   
    
   
@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
+    <altmember cref="T:System.IEquatable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,19 +111,19 @@
       </ReturnValue>
       <Docs>
         <summary>Returns a default equality comparer for the type specified by the generic argument.</summary>
-        <value>The default instance of the <see cref="T:System.Collections.Generic.EqualityComparer`1" /> class for type <paramref name="T" />.</value>
+        <value>The default instance of the <see cref="T:System.Collections.Generic.EqualityComparer`1" /> class for type <typeparamref name="T" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property checks whether type `T` implements the <xref:System.IEquatable%601?displayProperty=fullName> interface and, if so, returns an <xref:System.Collections.Generic.EqualityComparer%601> that uses that implementation. Otherwise, it returns an <xref:System.Collections.Generic.EqualityComparer%601> that uses the overrides of <xref:System.Object.Equals%2A?displayProperty=fullName> and <xref:System.Object.GetHashCode%2A?displayProperty=fullName> provided by `T`.  
+ The <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> property checks whether type `T` implements the <xref:System.IEquatable%601?displayProperty=nameWithType> interface and, if so, returns an <xref:System.Collections.Generic.EqualityComparer%601> that uses that implementation. Otherwise, it returns an <xref:System.Collections.Generic.EqualityComparer%601> that uses the overrides of <xref:System.Object.Equals%2A?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> provided by `T`.  
   
    
   
 ## Examples  
  The following example creates two dictionary collections of type `Box`. Both dictionaries are created with the constructor that takes an <xref:System.Collections.Generic.EqualityComparer%601> as a parameter.  
   
- To determine the equality of dictionary keys, the `boxesByDim` dictionary uses an equality comparer (`BoxEqDimensions`) that uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.  
+ To determine the equality of dictionary keys, the `boxesByDim` dictionary uses an equality comparer (`BoxEqDimensions`) that uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.  
   
  The `boxesByVol` dictionary uses an equality comparer (`BoxEqVolume`) that defines equality by volume. Two boxes are considered equal if their volumes are the same.  
   
@@ -131,6 +133,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
+        <altmember cref="T:System.IEquatable`1" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -163,7 +168,7 @@
       <Docs>
         <param name="x">The first object to compare.</param>
         <param name="y">The second object to compare.</param>
-        <summary>When overridden in a derived class, determines whether two objects of type <paramref name="T" /> are equal.</summary>
+        <summary>When overridden in a derived class, determines whether two objects of type <typeparamref name="T" /> are equal.</summary>
         <returns>
           <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -260,7 +265,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="x" /> or <paramref name="y" /> is of a type that cannot be cast to type <paramref name="T" />.</exception>
+          <paramref name="x" /> or <paramref name="y" /> is of a type that cannot be cast to type <typeparamref name="T" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEqualityComparer.GetHashCode">
@@ -305,7 +310,7 @@
   
  -or-  
   
- <paramref name="obj" /> is of a type that cannot be cast to type <paramref name="T" />.</exception>
+ <paramref name="obj" /> is of a type that cannot be cast to type <typeparamref name="T" />.</exception>
       </Docs>
     </Member>
   </Members>

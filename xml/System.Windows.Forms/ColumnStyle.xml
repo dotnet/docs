@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ColumnStyle> class represents the user interface (UI) characteristics of column in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the columns in such a table are collected in the <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.ColumnStyle> class represents the user interface (UI) characteristics of column in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the columns in such a table are collected in the <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A?displayProperty=nameWithType> property.  
   
  This simple class offers the <xref:System.Windows.Forms.ColumnStyle.Width%2A> and <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> properties for a column.  
   
@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.TableLayoutPanel.ColumnStyles" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutColumnStyleCollection" />
+    <altmember cref="T:System.Windows.Forms.RowStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.RowStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.RowStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +113,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="width" /> is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ColumnStyle.Width" />
+        <altmember cref="Overload:System.Windows.Forms.RowStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -140,7 +147,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 0 when setting this property.</exception>
+        <altmember cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class to its default state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

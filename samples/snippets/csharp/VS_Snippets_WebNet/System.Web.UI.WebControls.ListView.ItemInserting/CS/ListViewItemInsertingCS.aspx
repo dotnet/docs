@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="C#" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -86,7 +86,7 @@
               <asp:TextBox ID="LastNameTextBox" runat="server" 
                 Text='<%#Bind("LastName") %>' MaxLength="50" /><br />
               <asp:Label runat="server" ID="EmailLabel" 
-                AssociatedControlID="EmailTextBox" Text="E-mail" />
+                AssociatedControlID="EmailTextBox" Text="Email" />
               <asp:TextBox ID="EmailTextBox" runat="server" 
                 Text='<%#Bind("EmailAddress") %>' MaxLength="50" /><br />
             </td>
@@ -116,4 +116,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

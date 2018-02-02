@@ -44,7 +44,7 @@
   
 -   For types that don’t have GUIDs in their type library, it has a constructor that takes two strings (`scope` and `identifier`). These are combined into a GUID and become the key that is used for type equivalence.  
   
- Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=fullName> topic.  
+ Type equivalence is discussed in the <xref:System.Type.IsEquivalentTo%2A?displayProperty=nameWithType> topic.  
   
  ]]></format>
     </remarks>
@@ -193,5 +193,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Runtime.InteropServices.TypeIdentifierAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

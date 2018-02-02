@@ -1,55 +1,36 @@
 ---
 title: "Namespaces in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.global"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "assemblies [Visual Basic], namespaces"
   - "name collisions"
   - "Global keyword [Visual Basic]"
   - "namespace pollution"
-  - "names, avoiding conflicts"
-  - "naming conflicts, namespaces"
-  - "namespaces, assemblies"
+  - "names [Visual Basic], avoiding conflicts"
+  - "naming conflicts [Visual Basic], namespaces"
+  - "namespaces [Visual Basic], assemblies"
   - "Visual Basic code, namespaces"
-  - "fully qualified names"
-  - "naming conventions, naming conflicts"
+  - "fully qualified names [Visual Basic]"
+  - "naming conventions [Visual Basic], naming conflicts"
   - "namespaces"
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Namespaces in Visual Basic
 Namespaces organize the objects defined in an assembly. Assemblies can contain multiple namespaces, which can in turn contain other namespaces. Namespaces prevent ambiguity and simplify references when using large groups of objects such as class libraries.  
   
- For example, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] defines the <xref:System.Windows.Forms.ListBox> class in the <xref:System.Windows.Forms?displayProperty=fullName> namespace. The following code fragment shows how to declare a variable using the fully qualified name for this class:  
+ For example, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] defines the <xref:System.Windows.Forms.ListBox> class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace. The following code fragment shows how to declare a variable using the fully qualified name for this class:  
   
  [!code-vb[VbVbalrApplication#6](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_1.vb)]  
   
@@ -89,7 +70,7 @@ Namespaces organize the objects defined in an assembly. Assemblies can contain m
  Within a namespace, you can define items such as modules, interfaces, classes, delegates, enumerations, structures, and other namespaces. You cannot define items such as properties, procedures, variables and events at the namespace level. These items must be declared within containers such as modules, structures, or classes.  
   
 ## Global Keyword in Fully Qualified Names  
- If you have defined a nested hierarchy of namespaces, code inside that hierarchy might be blocked from accessing the <xref:System?displayProperty=fullName> namespace of the .NET Framework. The following example illustrates a hierarchy in which the `SpecialSpace.System` namespace blocks access to <xref:System?displayProperty=fullName>.  
+ If you have defined a nested hierarchy of namespaces, code inside that hierarchy might be blocked from accessing the <xref:System?displayProperty=nameWithType> namespace of the .NET Framework. The following example illustrates a hierarchy in which the `SpecialSpace.System` namespace blocks access to <xref:System?displayProperty=nameWithType>.  
   
 ```vb  
 Namespace SpecialSpace  
@@ -104,7 +85,7 @@ Namespace SpecialSpace
 End Namespace  
 ```  
   
- As a result, the Visual Basic compiler cannot successfully resolve the reference to <xref:System.Int32?displayProperty=fullName>, because `SpecialSpace.System` does not define `Int32`. You can use the `Global` keyword to start the qualification chain at the outermost level of the .NET Framework class library. This allows you to specify the <xref:System?displayProperty=fullName> namespace or any other namespace in the class library. The following example illustrates this.  
+ As a result, the Visual Basic compiler cannot successfully resolve the reference to <xref:System.Int32?displayProperty=nameWithType>, because `SpecialSpace.System` does not define `Int32`. You can use the `Global` keyword to start the qualification chain at the outermost level of the .NET Framework class library. This allows you to specify the <xref:System?displayProperty=nameWithType> namespace or any other namespace in the class library. The following example illustrates this.  
   
 ```vb  
 Namespace SpecialSpace  
@@ -119,7 +100,7 @@ Namespace SpecialSpace
 End Namespace  
 ```  
   
- You can use `Global` to access other root-level namespaces, such as <xref:Microsoft.VisualBasic?displayProperty=fullName>, and any namespace associated with your project.  
+ You can use `Global` to access other root-level namespaces, such as <xref:Microsoft.VisualBasic?displayProperty=nameWithType>, and any namespace associated with your project.  
   
 ## Global Keyword in Namespace Statements  
  You can also use the `Global` keyword in a [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md). This lets you define a namespace out of the root namespace of your project.  
@@ -143,10 +124,10 @@ End Namespace
  [!code-vb[VbVbalrApplication#21](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/namespaces_8.vb)]  
   
 ## See Also  
- <xref:System.Windows.Forms.ListBox>   
- <xref:System.Windows.Forms?displayProperty=fullName>   
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
- [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)   
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)   
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
+ <xref:System.Windows.Forms.ListBox>  
+ <xref:System.Windows.Forms?displayProperty=nameWithType>  
+ [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+ [How to: Create and Use Assemblies Using the Command Line](http://msdn.microsoft.com/library/70f65026-3687-4e9c-ab79-c18b97dd8be4)  
+ [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
+ [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
  [Writing Code in Office Solutions](https://msdn.microsoft.com/library/bb608596)

@@ -1,70 +1,48 @@
 ---
 title: "Generic Types in Visual Basic (Visual Basic)"
-ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "generic interfaces"
-  - "data type arguments, defining"
+  - "data type arguments [Visual Basic], defining"
   - "generic delegates"
   - "arguments [Visual Basic], data types"
-  - "Of keyword, using"
+  - "Of keyword [Visual Basic], using"
   - "delegates, generic"
   - "constraints, Visual Basic generic types"
   - "generic parameters"
   - "data type parameters"
-  - "procedures, generic"
+  - "procedures [Visual Basic], generic"
   - "generic procedures"
   - "data types [Visual Basic], generic"
   - "data types [Visual Basic], as parameters"
   - "generics [Visual Basic], generic types"
   - "data types [Visual Basic], as arguments"
-  - "generic classes, Visual Basic"
-  - "parameters, type"
+  - "generic classes [Visual Basic], Visual Basic"
+  - "parameters [Visual Basic], type"
   - "type arguments"
-  - "interfaces, generic"
+  - "interfaces [Visual Basic], generic"
   - "generics [Visual Basic]"
   - "types [Visual Basic], generic"
-  - "parameters, generic"
-  - "generic structures"
-  - "generic classes"
+  - "parameters [Visual Basic], generic"
+  - "generic structures [Visual Basic]"
+  - "generic classes [Visual Basic]"
   - "type parameters"
   - "data type arguments"
-  - "structures, generic"
-  - "parameters, data type"
+  - "structures [Visual Basic], generic"
+  - "parameters [Visual Basic], data type"
   - "collections, generic"
   - "classes [Visual Basic], generic"
-  - "data type parameters, defining"
-  - "type arguments, defining"
+  - "data type parameters [Visual Basic], defining"
+  - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 caps.latest.revision: 45
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Generic Types in Visual Basic (Visual Basic)
 A *generic type* is a single programming element that adapts to perform the same functionality for a variety of data types. When you define a generic class or procedure, you do not have to define a separate version for each data type for which you might want to perform that functionality.  
@@ -76,7 +54,7 @@ Screwdriver set as a generic tool
   
  When you define a generic type, you parameterize it with one or more data types. This allows the using code to tailor the data types to its requirements. Your code can declare several different programming elements from the generic element, each one acting on a different set of data types. But the declared elements all perform the identical logic, no matter what data types they are using.  
   
- For example, you might want to create and use a queue class that operates on a specific data type such as `String`. You can declare such a class from <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>, as the following example shows.  
+ For example, you might want to create and use a queue class that operates on a specific data type such as `String`. You can declare such a class from <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>, as the following example shows.  
   
  [!code-vb[VbVbalrDataTypes#1](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-types_1.vb)]  
   
@@ -100,7 +78,7 @@ Screwdriver set as a generic tool
  For a more complete example, see [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md).  
   
 ## Eligible Programming Elements  
- You can define and use generic classes, structures, interfaces, procedures, and delegates. Note that the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=fullName> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it is already available in <xref:System.Collections.Generic?displayProperty=fullName>.  
+ You can define and use generic classes, structures, interfaces, procedures, and delegates. Note that the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=nameWithType> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it is already available in <xref:System.Collections.Generic?displayProperty=nameWithType>.  
   
  Procedures are not types, but you can define and use generic procedures. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
   
@@ -171,14 +149,14 @@ Screwdriver set as a generic tool
 -   *Constructed Type*. A class, structure, interface, procedure, or delegate declared from a generic type by supplying type arguments for its type parameters.  
   
 ## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)   
- [As](../../../../visual-basic/language-reference/statements/as-clause.md)   
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
+ [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
+ [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
+ [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
+ [As](../../../../visual-basic/language-reference/statements/as-clause.md)  
+ [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
+ [Covariance and Contravariance](../../concepts/covariance-contravariance/index.md)  
  [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugBlockingReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugBlockingReason enumeration [.NET Framework debugging]"
 ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugBlockingReason Enumeration
 Specifies the reasons why a thread may become blocked on a given object.  
@@ -48,8 +48,8 @@ Typedef enum CorDebugBlockingReason
 |Member|Description|  
 |------------|-----------------|  
 |`BLOCKING_NONE`|Internal use only.|  
-|`BLOCKING_MONITOR_CRITICAL_SECTION`|A thread is trying to acquire the critical section that is associated with the monitor lock on an object. Typically, this occurs when you call one of the <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName> or <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=fullName> methods.|  
-|`BLOCKING_MONITOR_EVENT`|A thread is waiting on the event that is associated with a monitor lock for an object. Typically, this occurs when you call one of the <xref:System.Threading.Monitor?displayProperty=fullName>`Wait` methods.|  
+|`BLOCKING_MONITOR_CRITICAL_SECTION`|A thread is trying to acquire the critical section that is associated with the monitor lock on an object. Typically, this occurs when you call one of the <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> or <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=nameWithType> methods.|  
+|`BLOCKING_MONITOR_EVENT`|A thread is waiting on the event that is associated with a monitor lock for an object. Typically, this occurs when you call one of the <xref:System.Threading.Monitor?displayProperty=nameWithType>`Wait` methods.|  
   
 ## Remarks  
  When the `BLOCKING_MONITOR_CRITICAL_SECTION` or `BLOCKING_MONITOR_EVENT` member is used in a [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structure, the `pBlockingObject` member of the structure points to an "ICorDebugValue" interface that represents the object that is being entered. It is also guaranteed to implement the [ICorDebugHeapValue3](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-interface.md) interface.  
@@ -64,5 +64,5 @@ Typedef enum CorDebugBlockingReason
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)   
+ [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

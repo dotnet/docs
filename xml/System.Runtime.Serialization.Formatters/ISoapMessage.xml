@@ -21,7 +21,7 @@
 ## Remarks  
  When an object that supports this interface is the root of a serialization graph, SOAP is produced in RPC format. The <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface contains the method call parameter types used during deserialization of a method call.  
   
- To support SOAP RPC calls that are based on the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface and do not use the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, set the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=fullName> property to an object that supports this interface.  
+ To support SOAP RPC calls that are based on the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface and do not use the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, set the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=nameWithType> property to an object that supports this interface.  
   
  ]]></format>
     </remarks>
@@ -44,6 +44,7 @@
         <summary>Gets or sets the out-of-band data of the method call.</summary>
         <value>The out-of-band data of the method call.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Remoting.Messaging.Header" />
       </Docs>
     </Member>
     <Member MemberName="MethodName">

@@ -26,31 +26,36 @@
 ## Remarks  
  This delegate is used with the following attached events:  
   
--   <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.TextCompositionManager.TextInputStart?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInputStart?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate?displayProperty=fullName>  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate?displayProperty=nameWithType>  
   
  This delegate is also used with the following routed events on base elements. These routed events forward some of the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.TextInput?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.TextInput?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewTextInput?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewTextInput?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.TextInput?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.TextInput?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewTextInput?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewTextInput?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.TextCompositionManager" />
+    <altmember cref="T:System.Windows.Input.TextCompositionAutoComplete" />
+    <altmember cref="T:System.Windows.Input.TextCompositionEventArgs" />
+    <altmember cref="T:System.Windows.Input.InputMethod" />
+    <altmember cref="T:System.Windows.Input.InputLanguageManager" />
   </Docs>
 </Type>

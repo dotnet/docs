@@ -35,7 +35,7 @@
 -   The <xref:System.Threading.Tasks.TaskFactory> class, which creates <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. You can call the overloads of this method to create and execute a task that requires non-default arguments.  
   
     > [!WARNING]
-    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method provides the easiest way to create a task with default configuration values and start it immediately.  
   
 -   The <xref:System.Threading.Tasks.TaskFactory%601> class, which creates <xref:System.Threading.Tasks.Task%601> objects.  
   
@@ -44,23 +44,23 @@
 -   Create a task and start it immediately by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method.  
   
     > [!WARNING]
-    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method provides the easiest way to create a task with default configuration values and start it immediately.  
+    >  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method provides the easiest way to create a task with default configuration values and start it immediately.  
   
 -   Create a task that starts when any one of the tasks in an array has completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A> method.  
   
 -   Create a task that starts when all the tasks in an array have completed by calling the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method.  
   
- The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=fullName> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory> class constructors to configure the <xref:System.Threading.Tasks.Task> objects that  the <xref:System.Threading.Tasks.TaskFactory> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
+ The static <xref:System.Threading.Tasks.Task%601.Factory%2A?displayProperty=nameWithType> property returns a default <xref:System.Threading.Tasks.TaskFactory%601> object. You can also call one of the <xref:System.Threading.Tasks.TaskFactory> class constructors to configure the <xref:System.Threading.Tasks.Task> objects that  the <xref:System.Threading.Tasks.TaskFactory> class creates. The following example configures a new <xref:System.Threading.Tasks.TaskFactory> object to create tasks that have a specified cancellation token, task creation options, continuation options, and a customized task scheduler.  
   
  [!code-csharp[TPL_Factories#1](~/samples/snippets/csharp/VS_Snippets_Misc/tpl_factories/cs/program.cs#1)]
  [!code-vb[TPL_Factories#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/tpl_factories/vb/factories_vb.vb#1)]  
   
- In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory> instance. Instead, you can use the <xref:System.Threading.Tasks.Task.Factory%2A?displayProperty=fullName> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
+ In most cases, you do not have to instantiate a new <xref:System.Threading.Tasks.TaskFactory> instance. Instead, you can use the <xref:System.Threading.Tasks.Task.Factory%2A?displayProperty=nameWithType> property, which returns a factory object that uses default values. You can then call its methods to start new tasks or define task continuations. For an illustration, see the example.  
   
    
   
 ## Examples  
- The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=fullName> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
+ The following example uses the static <xref:System.Threading.Tasks.Task.Factory%2A> property to make two calls to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method. The first populates an array with the names of files in the user's MyDocuments directory, while the second populates an array with the names of subdirectories of the user's MyDocuments directory. It then calls the <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%28System.Threading.Tasks.Task%5B%5D%2CSystem.Action%7BSystem.Threading.Tasks.Task%5B%5D%7D%29?displayProperty=nameWithType> method, which displays information about the number of files and directories in the two arrays after the first two tasks have completed execution.  
   
  [!code-csharp[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.factory/cs/factory1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.Factory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.factory/vb/factory1.vb#1)]  
@@ -399,7 +399,7 @@
 ## Remarks  
  The <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A> method executes the `continuationAction` delegate when all tasks in the `tasks` array have completed, regardless of their completion status.  
   
- Exceptions thrown by tasks in the `tasks` array are not available to the continuation task through structured exception handling. You can determine which exceptions were thrown by examining the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=fullName> property of each task in the `tasks` array. To use structured exception handling to handle exceptions thrown by tasks in the `tasks` array, call the <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> method.  
+ Exceptions thrown by tasks in the `tasks` array are not available to the continuation task through structured exception handling. You can determine which exceptions were thrown by examining the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property of each task in the `tasks` array. To use structured exception handling to handle exceptions thrown by tasks in the `tasks` array, call the <xref:System.Threading.Tasks.Task.WaitAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=nameWithType> method.  
   
    
   
@@ -409,7 +409,7 @@
  [!code-csharp[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/cs/continuewhenall1.cs#1)]
  [!code-vb[System.Threading.Tasks.Task.ContinueWhenAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.continuewhenall/vb/continuewhenall1.vb#1)]  
   
- The call to the continuation task's <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method does not allow it to handle exceptions thrown by the antecedent tasks, so the example examines the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property of each antecedent task to determine whether the task succeeded.  
+ The call to the continuation task's <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method does not allow it to handle exceptions thrown by the antecedent tasks, so the example examines the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of each antecedent task to determine whether the task succeeded.  
   
  ]]></format>
         </remarks>
@@ -3653,13 +3653,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method is the recommended way to launch a compute-bound task. Use the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method only when you require fine-grained control for a long-running, compute-bound task. This includes scenarios in which you want to control the following:  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method is the recommended way to launch a compute-bound task. Use the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method only when you require fine-grained control for a long-running, compute-bound task. This includes scenarios in which you want to control the following:  
   
--   Task creation options. Tasks created by the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method by default are created with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option. To override this behavior, or to provide other <xref:System.Threading.Tasks.TaskCreationOptions> options, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload.  
+-   Task creation options. Tasks created by the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method by default are created with the <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType> option. To override this behavior, or to provide other <xref:System.Threading.Tasks.TaskCreationOptions> options, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload.  
   
--   Parameter passing. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method do not allow you to pass a parameter to the task delegate. Overloads of the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method do.  
+-   Parameter passing. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method do not allow you to pass a parameter to the task delegate. Overloads of the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method do.  
   
--   The task scheduler. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> method use the default task scheduler. To control the task scheduler, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload with a `scheduler` parameter. For more information, see .  
+-   The task scheduler. The overloads of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method use the default task scheduler. To control the task scheduler, call a <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> overload with a `scheduler` parameter. For more information, see .  
   
  ]]></format>
         </remarks>
@@ -3702,9 +3702,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a task by using one of its constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=fullName> method to schedule the task for execution.  
+ Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a task by using one of its constructors, and then calling the <xref:System.Threading.Tasks.Task.Start%2A?displayProperty=nameWithType> method to schedule the task for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=fullName> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
   
    
   
@@ -3760,12 +3760,12 @@
 ## Remarks  
  Calling `StartNew` is functionally equivalent to creating a Task using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as  a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see [Task.Run vs Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
   
    
   
 ## Examples  
- The following example calls the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> method to create a task that iterates the files in the C:\Windows\System32 directory. The lambda expression calls the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method to add information about each  file to a <xref:System.Collections.Generic.List%601> object. Each detached nested task invoked by the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> loop checks the state of the cancellation token and, if cancellation is requested, calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method. The <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method throws an <xref:System.OperationCanceledException> exception that is handled in a `catch` block when the calling thread calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method.  
+ The following example calls the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29> method to create a task that iterates the files in the C:\Windows\System32 directory. The lambda expression calls the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> method to add information about each  file to a <xref:System.Collections.Generic.List%601> object. Each detached nested task invoked by the <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop checks the state of the cancellation token and, if cancellation is requested, calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=nameWithType> method. The <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=nameWithType> method throws an <xref:System.OperationCanceledException> exception that is handled in a `catch` block when the calling thread calls the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew2.cs#2)]
  [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew2.vb#2)]  
@@ -3936,7 +3936,7 @@
  [!code-csharp[System.Threading.Tasks.TaskFactory.StartNew#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/cs/startnew4.cs#4)]
  [!code-vb[System.Threading.Tasks.TaskFactory.StartNew#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.taskfactory.startnew/vb/startnew4.vb#4)]  
   
- Note that the example initializes a single random number generator, which is protected by a lock. For the need of a lock, see "The System.Random class and thread safety" in the <xref:System.Random> class topic. To handle the possibility of corruption of the random number generator, a cancellation token is passed to task. If two random numbers equal zero, the method assumes that the random number generator is corrupted and sets the cancellation token. Before sorting the `chars` array that contains the six characters in a word, the method calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method to throw an <xref:System.OperationCanceledException> if the token has been canceled.  
+ Note that the example initializes a single random number generator, which is protected by a lock. For the need of a lock, see "The System.Random class and thread safety" in the <xref:System.Random> class topic. To handle the possibility of corruption of the random number generator, a cancellation token is passed to task. If two random numbers equal zero, the method assumes that the random number generator is corrupted and sets the cancellation token. Before sorting the `chars` array that contains the six characters in a word, the method calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=nameWithType> method to throw an <xref:System.OperationCanceledException> if the token has been canceled.  
   
  ]]></format>
         </remarks>
@@ -4156,7 +4156,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can call the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can call the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4268,7 +4268,7 @@
 ## Remarks  
  Calling <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> is functionally equivalent to creating a <xref:System.Threading.Tasks.Task%601> using one of its constructors and then calling <xref:System.Threading.Tasks.Task.Start%2A> to schedule it for execution.  
   
- Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=fullName> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
+ Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method as a quick way to call <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> with default parameters. Note, however, that there is a difference in behavior between the two methods regarding : <xref:System.Threading.Tasks.Task.Run%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> by default does not allow child tasks started with the <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType> option to attach to the current <xref:System.Threading.Tasks.Task%601> instance, whereas <xref:System.Threading.Tasks.TaskFactory.StartNew%60%601%28System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken%29> does. For more information and code examples, see the entry [Task.Run vs. Task.Factory.StartNew](http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx) in the Parallel Programming with .NET blog.  
   
    
   
@@ -4573,5 +4573,45 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. The exception that is thrown when the <paramref name="creationOptions" /> argument specifies an invalid TaskCreationOptions value. For more information, see the Remarks for <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.Func{System.AsyncCallback,System.Object,System.IAsyncResult},System.Action{System.IAsyncResult},System.Object,System.Threading.Tasks.TaskCreationOptions)" /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContinueWhenAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation task that starts when a set of specified tasks has completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.TaskFactory" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWhenAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation <see cref="T:System.Threading.Tasks.Task" /> that will be started upon the completion of any Task in the provided set.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.Task" /> that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

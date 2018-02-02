@@ -92,7 +92,7 @@ manager: "wpickett"
 uid: System.IO.FileSystemWatcher.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

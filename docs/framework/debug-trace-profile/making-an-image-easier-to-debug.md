@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "images [.NET Framework], debugging"
   - "executable image for debugging"
@@ -23,6 +18,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Making an Image Easier to Debug
 When compiling unmanaged code, you can configure an executable image for debugging by setting IDE switches or command-line options. For example, you can use the /**Zi** command-line option in Visual C++ to ask it to emit debug symbol files (file extension .pdb). Similarly, the /**Od** command-line option tells the compiler to disable optimization. The resulting code runs more slowly, but is easier to debug, should this be necessary.  
@@ -53,7 +50,7 @@ AllowOptimize=0
 >  In the .NET Framework version 2.0, the JIT compiler always generates tracking information regardless of the value for `GenerateTrackingInfo`; however, the `AllowOptimize` value still has an effect. When using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to precompile the native image without optimization, the .ini file must be present in the target folder with `AllowOptimize=0` when Ngen.exe executes. If you have precompiled an assembly without optimization, you must remove the precompiled code using the NGen.exe **/uninstall** option before rerunning Ngen.exe to precompile the code as optimized. If the .ini file is not present in the folder, by default Ngen.exe precompiles the code as optimized.  
   
 > [!NOTE]
->  The <xref:System.Diagnostics.DebuggableAttribute?displayProperty=fullName> controls the settings for an assembly. **DebuggableAttribute** includes two fields that record the settings for whether the JIT compiler should optimize, and/or generate tracking information. In the .NET Framework version 2.0, the JIT compiler will always generate tracking information.  
+>  The <xref:System.Diagnostics.DebuggableAttribute?displayProperty=nameWithType> controls the settings for an assembly. **DebuggableAttribute** includes two fields that record the settings for whether the JIT compiler should optimize, and/or generate tracking information. In the .NET Framework version 2.0, the JIT compiler will always generate tracking information.  
   
 > [!NOTE]
 >  For a retail build, compilers do not set any **DebuggableAttribute**. The JIT-compiler default behavior is to generate the highest performance, hardest to debug machine code. Enabling JIT tracking lowers performance a little, and disabling optimization lowers performance a lot.  
@@ -65,6 +62,6 @@ AllowOptimize=0
 >  In version 1.0 of the .NET Framework, the Microsoft Visual C++ compiler adds the **DebuggableAttribute** when the **/clr** and **/Zi** compiler options are specified. In version 1.1 of the .NET Framework, you must either add the **DebugabbleAttribute** manually in your code or use the **/ASSEMBLYDEBUG** linker option.  
   
 ## See Also  
- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)   
- [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)   
- [Enabling Profiling](http://msdn.microsoft.com/en-us/3b669676-f0e0-4ebf-8674-68986dd2020d)
+ [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
+ [Enabling JIT-Attach Debugging](../../../docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md)  
+ [Enabling Profiling](http://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)

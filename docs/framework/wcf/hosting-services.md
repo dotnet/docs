@@ -9,16 +9,15 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "hosting services [WCF]"
 ms.assetid: 192be927-6be2-4fda-98f0-e513c4881acc
 caps.latest.revision: 31
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Services
 To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] services are designed to run in any Windows process that supports managed code.  
@@ -30,12 +29,12 @@ To become active, a service must be hosted within a run-time environment that cr
 ## Hosting Options  
   
 #### Self-Hosting in a Managed Application  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services can be hosted in any managed application. This is the most flexible option because it requires the least infrastructure to deploy. You embed the code for the service inside the managed application code and then create and open an instance of the <xref:System.ServiceModel.ServiceHost> to make the service available. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md).  
+ [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services can be hosted in any managed application. This is the most flexible option because it requires the least infrastructure to deploy. You embed the code for the service inside the managed application code and then create and open an instance of the <xref:System.ServiceModel.ServiceHost> to make the service available. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md).  
   
  This option enables two common scenarios: [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services running inside console applications and rich client applications such as those based on [!INCLUDE[avalon1](../../../includes/avalon1-md.md)] or Windows Forms (WinForms). Hosting a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service inside a console application is typically useful during the application's development phase. This makes them easy to debug, easy to get trace information from to find out what is happening inside of the application, and easy to move around by copying them to new locations. This hosting option also makes it easy for rich client applications, such as [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] and WinForms applications, to communicate with the outside world. For example, a peer-to-peer collaboration client that uses [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] for its user interface and also hosts a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service that allows other clients to connect to it and share information.  
   
 #### Managed Windows Services  
- This hosting option consists of registering the application domain (AppDomain) that hosts an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service as a managed Windows Service (formerly known as NT service) so that the process lifetime of the service is controlled by the service control manager (SCM) for Windows services. Like the self-hosting option, this type of hosting environment requires that some hosting code is written as part of the application. The service is implemented as both a Windows Service and as an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service by causing it to inherit from the <xref:System.ServiceProcess.ServiceBase> class as well as from an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service contract interface. The <xref:System.ServiceModel.ServiceHost> is then created and opened within an overridden <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> method and closed within an overridden <xref:System.ServiceProcess.ServiceBase.OnStop> method. An installer class that inherits from <xref:System.Configuration.Install.Installer> must also be implemented to allow the program to be installed as a Windows Service by the Installutil.exe tool. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md). The scenario enabled by the managed Windows Service hosting option is that of a long-running [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service hosted outside of IIS in a secure environment that is not message-activated. The lifetime of the service is controlled instead by the operating system. This hosting option is available in all versions of Windows.  
+ This hosting option consists of registering the application domain (AppDomain) that hosts an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service as a managed Windows Service (formerly known as NT service) so that the process lifetime of the service is controlled by the service control manager (SCM) for Windows services. Like the self-hosting option, this type of hosting environment requires that some hosting code is written as part of the application. The service is implemented as both a Windows Service and as an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service by causing it to inherit from the <xref:System.ServiceProcess.ServiceBase> class as well as from an [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service contract interface. The <xref:System.ServiceModel.ServiceHost> is then created and opened within an overridden <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> method and closed within an overridden <xref:System.ServiceProcess.ServiceBase.OnStop> method. An installer class that inherits from <xref:System.Configuration.Install.Installer> must also be implemented to allow the program to be installed as a Windows Service by the Installutil.exe tool. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md). The scenario enabled by the managed Windows Service hosting option is that of a long-running [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service hosted outside of IIS in a secure environment that is not message-activated. The lifetime of the service is controlled instead by the operating system. This hosting option is available in all versions of Windows.  
   
 #### Internet Information Services (IIS)  
  The IIS hosting option is integrated with [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] and uses the features these technologies offer, such as process recycling, idle shutdown, process health monitoring, and message-based activation. On the [!INCLUDE[wxp](../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] operating systems, this is the preferred solution for hosting Web service applications that must be highly available and highly scalable. IIS also offers the integrated manageability that customers expect from an enterprise-class server product. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to configure IIS hosting for a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service, see [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
@@ -71,10 +70,10 @@ To become active, a service must be hosted within a run-time environment that cr
  It is important to note that running a service or any extension from an untrusted host compromises security. Also, note that when opening a <xref:System.ServiceModel.ServiceHost> under impersonation, an application must ensure that the user is not logged off, for example by caching the <xref:System.Security.Principal.WindowsIdentity> of the user.  
   
 ## See Also  
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)   
- [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)   
- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)   
- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)   
- [How to: Host a WCF Service in WAS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)   
- [How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)   
+ [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
+ [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
+ [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)  
+ [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)  
+ [How to: Host a WCF Service in WAS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)  
+ [How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)  
  [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)

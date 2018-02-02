@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::QueryAssemblyInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCache::QueryAssemblyInfo method [.NET Framework fusion]"
   - "QueryAssemblyInfo method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyCache::QueryAssemblyInfo Method
 Gets the requested data about the specified assembly.  

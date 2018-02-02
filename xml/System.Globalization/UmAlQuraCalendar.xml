@@ -42,6 +42,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
+    <altmember cref="T:System.Globalization.HijriCalendar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,7 +120,7 @@
   
  If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -184,7 +188,7 @@
   
  If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
   
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
@@ -362,6 +366,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="time" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.DateTime.Day" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfWeek">
@@ -424,6 +429,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="time" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.DateTime.DayOfWeek" />
+        <altmember cref="T:System.DayOfWeek" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfYear">
@@ -476,6 +483,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="time" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.DateTime.DayOfYear" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -581,6 +589,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> or <paramref name="era" /> is outside the range supported by the <see cref="T:System.Globalization.UmAlQuraCalendar" /> class.</exception>
+        <altmember cref="F:System.Globalization.UmAlQuraCalendar.UmAlQuraEra" />
       </Docs>
     </Member>
     <Member MemberName="GetEra">
@@ -673,7 +682,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29?displayProperty=fullName> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+ In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29?displayProperty=nameWithType> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
   
  ]]></format>
         </remarks>
@@ -730,6 +739,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="time" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.DateTime.Month" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -1202,6 +1212,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="P:System.Globalization.UmAlQuraCalendar.TwoDigitYearMax" />
       </Docs>
     </Member>
     <Member MemberName="TwoDigitYearMax">
@@ -1246,6 +1257,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This calendar is read-only.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">In a set operation, the Um Al Qura calendar year value is less than 1318 but not 99, or is greater than 1450.</exception>
+        <altmember cref="M:System.Globalization.UmAlQuraCalendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="UmAlQuraEra">

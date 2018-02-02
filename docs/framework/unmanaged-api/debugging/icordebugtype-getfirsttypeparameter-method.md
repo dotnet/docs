@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType::GetFirstTypeParameter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugType::GetFirstTypeParameter method [.NET Framework debugging]"
   - "GetFirstTypeParameter method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetFirstTypeParameter Method
 Gets an interface pointer to an ICorDebugType that represents the first <xref:System.Type> parameter of the type represented by this `ICorDebugType`.  

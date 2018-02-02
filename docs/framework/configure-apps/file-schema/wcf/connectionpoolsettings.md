@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;connectionPoolSettings&gt;
 Specifies additional connection pool settings for a Named Pipe binding.  
@@ -55,14 +57,14 @@ Specifies additional connection pool settings for a Named Pipe binding.
 |[\<namedPipeTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/namedpipetransport.md)|Defines a transport that causes a channel to transfer messages using named pipes.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement>   
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings%2A>   
- <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>   
- <xref:System.ServiceModel.Channels.TransportBindingElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement>  
+ <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings%2A>  
+ <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>  
+ <xref:System.ServiceModel.Channels.TransportBindingElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
+ [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

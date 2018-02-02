@@ -45,7 +45,7 @@
   
  All the `Write` methods of <xref:System.IO.TextWriter> having primitive data types as parameters write out the values as strings.  
   
- By default, a <xref:System.IO.TextWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
+ By default, a <xref:System.IO.TextWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=nameWithType> for a thread-safe wrapper.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using any type that derives from this type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IO.TextWriter.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see Dispose and the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -67,6 +67,8 @@
     <block subset="none" type="overrides">
       <para>A derived class must minimally implement the <see cref="M:System.IO.TextWriter.Write(System.Char)" /> method to make a useful instance of <see cref="T:System.IO.TextWriter" />.</para>
     </block>
+    <altmember cref="T:System.IO.StreamWriter" />
+    <altmember cref="T:System.IO.StringWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -180,12 +186,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of `Close` calls the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=fullName> method and passes it a `true` value.  
+ This implementation of `Close` calls the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=nameWithType> method and passes it a `true` value.  
   
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.TextWriter.Flush%2A> or `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=fullName> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
+ Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.TextWriter.Flush%2A> or `Close`. Setting the <xref:System.IO.StreamWriter.AutoFlush%2A?displayProperty=nameWithType> property to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
   
 > [!NOTE]
->  In derived classes, do not override the <xref:System.IO.TextWriter.Close%2A> method. Instead, override the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=fullName> method to add code for releasing resources.  
+>  In derived classes, do not override the <xref:System.IO.TextWriter.Close%2A> method. Instead, override the <xref:System.IO.TextWriter.Dispose%28System.Boolean%29?displayProperty=nameWithType> method to add code for releasing resources.  
   
  ]]></format>
         </remarks>
@@ -228,6 +234,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -366,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -408,6 +418,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -449,6 +461,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="FormatProvider">
@@ -493,6 +507,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="NewLine">
@@ -537,6 +553,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -574,12 +592,14 @@
 ## Remarks  
  Use `Null` to redirect output to a stream that will not consume any operating system resources.  
   
- When the <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName> methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
+ When the <xref:System.IO.TextWriter.Write%2A?displayProperty=nameWithType> methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -661,9 +681,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=fullName> method.  
+ The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> method.  
   
- This method outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ This method outputs either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -671,6 +691,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -718,6 +740,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -767,6 +791,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char[])" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -812,6 +837,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -851,7 +879,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Double.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Double.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -859,6 +887,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -898,7 +929,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -906,6 +937,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -945,7 +979,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -955,6 +989,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1004,6 +1041,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1043,7 +1083,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1051,6 +1091,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1092,7 +1135,7 @@
 ## Remarks  
  This overload is equivalent to the <xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload.  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If `value` is `null`, nothing is written to the text stream.  
   
@@ -1102,6 +1145,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1146,7 +1191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1154,6 +1199,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1198,7 +1246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -1206,6 +1254,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1268,13 +1319,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- . This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ . This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1292,10 +1343,13 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is one).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public virtual void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public virtual void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextWriter.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1361,13 +1415,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1385,6 +1439,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the length of the <paramref name="arg" /> array.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1442,6 +1499,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1506,13 +1565,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1530,6 +1589,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero) or greater than or equal to the number of objects to be formatted (which, for this method overload, is two).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1596,13 +1658,13 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
- This method does not search the specified string  for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName>.  
+ This method does not search the specified string  for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A?displayProperty=nameWithType>.  
   
  If a specified object is not referenced in the format string, it is ignored.  
   
@@ -1620,6 +1682,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is three).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1665,12 +1730,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1715,6 +1782,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1760,12 +1829,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1815,7 +1886,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1826,6 +1897,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1870,6 +1943,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1909,9 +1984,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=fullName> method.  
+ The text representation of the specified value is produced by calling the <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> method.  
   
- This method outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
+ This method outputs either <xref:System.Boolean.TrueString?displayProperty=nameWithType> or <xref:System.Boolean.FalseString?displayProperty=nameWithType>.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -1921,6 +1996,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1970,6 +2047,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2021,6 +2100,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2068,6 +2149,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2115,6 +2199,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2154,7 +2241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2164,6 +2251,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2203,7 +2293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=nameWithType> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2213,6 +2303,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2262,6 +2355,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2309,6 +2405,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2360,6 +2459,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2404,7 +2505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2414,6 +2515,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2458,7 +2562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
+ The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> method. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2468,6 +2572,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2530,9 +2637,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2556,10 +2663,13 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is one).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public virtual void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public virtual void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextWriter.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2625,9 +2735,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2650,6 +2760,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the length of the <paramref name="arg" /> array.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2709,6 +2822,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2773,9 +2888,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2799,6 +2914,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is two).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2865,9 +2983,9 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=fullName>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
-|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> format string.|  
+|:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
  The leading and trailing brace characters, "{" and "}", are required. To specify a single literal brace character in `format`, specify two leading or trailing brace characters; that is, "{{" or "}}".  
   
@@ -2891,6 +3009,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is three).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -2939,6 +3060,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -2986,12 +3108,14 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3043,6 +3167,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3090,12 +3216,14 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3147,7 +3275,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=fullName> method.  
+ The <xref:System.IO.TextWriter> class is an abstract class. Therefore, you do not instantiate it in your code. For an example of using the <xref:System.IO.TextWriter.WriteLineAsync%2A> method, see the <xref:System.IO.StreamWriter.WriteLineAsync%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -3158,7 +3286,75 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to a text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.TextWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator to the text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator asynchronously to the text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.TextWriter" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the text string or stream asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "forms, MDI"
-  - "windows, MDI"
+  - "forms [Windows Forms], MDI"
+  - "windows [Windows Forms], mDI"
   - "Windows Forms, MDI applications"
   - "MDI"
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
@@ -21,6 +19,8 @@ caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Multiple-Document Interface (MDI) Applications
 Multiple-document interface (MDI) applications enable you to display multiple documents at the same time, with each document displayed in its own window. MDI applications often have a Window menu item with submenus for switching between windows or documents.  

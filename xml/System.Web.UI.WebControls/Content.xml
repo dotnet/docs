@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -158,6 +159,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the property at run time.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -190,6 +192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.DataBinding" />
       </Docs>
     </Member>
     <Member MemberName="Disposed">
@@ -222,6 +226,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.Disposed" />
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -254,6 +260,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.Init" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -286,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.Load" />
       </Docs>
     </Member>
     <Member MemberName="PreRender">
@@ -318,6 +328,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -350,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ContentPlaceHolder" />
+        <altmember cref="E:System.Web.UI.Control.Unload" />
       </Docs>
     </Member>
   </Members>

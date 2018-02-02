@@ -77,7 +77,7 @@
     </Member>
     <Member MemberName="GetCompiledState">
       <MemberSignature Language="C#" Value="public virtual void GetCompiledState (out byte[] pe, out byte[] debugInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCompiledState(unsigned int8[] pe, unsigned int8[] debugInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; debugInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

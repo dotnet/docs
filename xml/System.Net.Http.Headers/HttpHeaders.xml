@@ -387,7 +387,7 @@
     </Member>
     <Member MemberName="TryGetValues">
       <MemberSignature Language="C#" Value="public bool TryGetValues (string name, out System.Collections.Generic.IEnumerable&lt;string&gt; values);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValues(string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; values) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValues(string name, [out] class System.Collections.Generic.IEnumerable`1&lt;string&gt;&amp; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -417,5 +417,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryAddWithoutValidation">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether a new header and its values were added to  the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection without validating the provided information.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a new header and its values into the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

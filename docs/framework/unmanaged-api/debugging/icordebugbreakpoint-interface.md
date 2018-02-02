@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugBreakpoint interface [.NET Framework debugging]"
 ms.assetid: aa5ad3d7-e1bb-42af-99bc-471224e3bcaa
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugBreakpoint Interface1
 Represents a breakpoint in a function, or a watch point on a value.  

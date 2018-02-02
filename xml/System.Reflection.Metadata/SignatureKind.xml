@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the signature kind. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Field">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A field signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocalVariables">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A local variables signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -67,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A method reference, method definition, or standalone method signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodSpecification">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A method specification signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="Property">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A property signature.</summary>
       </Docs>
     </Member>
   </Members>

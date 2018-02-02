@@ -59,6 +59,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Argument is not a positive 32-bit integer.</exception>
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -143,6 +144,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Argument is not a positive 32-bit integer.</exception>
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Go">
@@ -171,6 +173,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.HtmlHistory.Go" />
       </Docs>
     </Member>
     <Member MemberName="Go">
@@ -199,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.HtmlHistory.Go" />
       </Docs>
     </Member>
     <Member MemberName="Go">
@@ -227,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.HtmlHistory.Go" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -254,5 +259,16 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Go">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates to a Web page specified as either a Uniform Resource Locator (URL) or a position in the navigation stack.</summary>
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

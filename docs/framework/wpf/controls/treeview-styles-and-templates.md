@@ -21,6 +21,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TreeView Styles and Templates
 This topic describes the styles and templates for the <xref:System.Windows.Controls.TreeView> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
@@ -35,9 +37,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## TreeViewItem Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.TreeViewItem> control.  
@@ -63,9 +65,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Selected|SelectionStates|The <xref:System.Windows.Controls.TreeViewItem> is selected.|  
 |SelectedInactive|SelectionStates|The <xref:System.Windows.Controls.TreeViewItem> is selected but not active.|  
 |Unselected|SelectionStates|The <xref:System.Windows.Controls.TreeViewItem> is not selected.|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## TreeView ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TreeView> control and its associated types.  
@@ -79,9 +81,9 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
  For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
   
 ## See Also  
- <xref:System.Windows.FrameworkElement.Style%2A>   
- <xref:System.Windows.Controls.ControlTemplate>   
- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)   
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)   
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
+ <xref:System.Windows.FrameworkElement.Style%2A>  
+ <xref:System.Windows.Controls.ControlTemplate>  
+ [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
+ [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)  
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)

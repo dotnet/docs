@@ -43,6 +43,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MainMenu" />
+    <altmember cref="T:System.Windows.Forms.ContextMenu" />
+    <altmember cref="T:System.Windows.Forms.MenuItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -105,6 +108,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
       </Docs>
     </Member>
     <Member MemberName="CreateMenuHandle">
@@ -291,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.GetMainMenu" />
       </Docs>
     </Member>
     <Member MemberName="GetMainMenu">
@@ -326,6 +332,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Menu.GetContextMenu" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -406,6 +413,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="P:System.Windows.Forms.Menu.MenuItems" />
       </Docs>
     </Member>
     <Member MemberName="MdiListItem">
@@ -439,6 +447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MdiList" />
       </Docs>
     </Member>
     <Member MemberName="MenuItems">
@@ -471,7 +481,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to obtain a reference to the list of menu items that are currently stored in the menu. For <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> objects, the <xref:System.Windows.Forms.Menu.MenuItems%2A> property contains the entire menu structure in the control. For the <xref:System.Windows.Forms.MenuItem> class, the <xref:System.Windows.Forms.Menu.MenuItems%2A> property contains the list of submenu items associated with the <xref:System.Windows.Forms.MenuItem>. With the reference to the collection of menu items for the menu (provided by this property), you can add and remove menu items, determine the total number of menu items, and clear the list of menu items from the collection. For more information on maintaining the menu item collection for a menu, see the <xref:System.Windows.Forms.Menu.MenuItemCollection?displayProperty=fullName> documentation.  
+ You can use this property to obtain a reference to the list of menu items that are currently stored in the menu. For <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> objects, the <xref:System.Windows.Forms.Menu.MenuItems%2A> property contains the entire menu structure in the control. For the <xref:System.Windows.Forms.MenuItem> class, the <xref:System.Windows.Forms.Menu.MenuItems%2A> property contains the list of submenu items associated with the <xref:System.Windows.Forms.MenuItem>. With the reference to the collection of menu items for the menu (provided by this property), you can add and remove menu items, determine the total number of menu items, and clear the list of menu items from the collection. For more information on maintaining the menu item collection for a menu, see the <xref:System.Windows.Forms.Menu.MenuItemCollection?displayProperty=nameWithType> documentation.  
   
    
   
@@ -484,6 +494,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MainMenu" />
+        <altmember cref="T:System.Windows.Forms.ContextMenu" />
+        <altmember cref="T:System.Windows.Forms.MenuItem" />
+        <altmember cref="T:System.Windows.Forms.Menu.MenuItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="MergeMenu">
@@ -508,13 +522,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method merges <xref:System.Windows.Forms.MenuItem> objects from one menu with the current menu. <xref:System.Windows.Forms.MenuItem> objects are merged according to the values of the <xref:System.Windows.Forms.MenuItem.MergeType%2A?displayProperty=fullName> and <xref:System.Windows.Forms.MenuItem.MergeOrder%2A?displayProperty=fullName> properties.  
+ This method merges <xref:System.Windows.Forms.MenuItem> objects from one menu with the current menu. <xref:System.Windows.Forms.MenuItem> objects are merged according to the values of the <xref:System.Windows.Forms.MenuItem.MergeType%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.MenuItem.MergeOrder%2A?displayProperty=nameWithType> properties.  
   
  Menu merging is typically done to merge the menus of a Multiple Document Interface (MDI) parent form with those of its active MDI child form. This is performed automatically by the .NET Framework common language runtime. For example, if an MDI parent form contains a set of menus for handling files and your MDI child form also has file-related menu items, the menu sets will automatically merge into a single file menu set when the child form is displayed in the MDI parent form.  
   
  You can use the <xref:System.Windows.Forms.Menu.MergeMenu%2A> method if you are merging two menu structures that are not part of an MDI application. This implementation can be called by the <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu> classes to merge two or more objects that derive from <xref:System.Windows.Forms.Menu>.  
   
- To merge two <xref:System.Windows.Forms.MenuItem> objects use the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A?displayProperty=fullName> method.  
+ To merge two <xref:System.Windows.Forms.MenuItem> objects use the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -528,6 +542,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">It was attempted to merge the menu with itself.</exception>
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeType" />
+        <altmember cref="P:System.Windows.Forms.MenuItem.MergeOrder" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -565,7 +581,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

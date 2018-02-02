@@ -46,7 +46,7 @@
 ## Remarks  
  A time zone is a geographical region in which the same time is used.  
   
- The<xref:System.TimeZoneInfo> class offers significant enhancements over the <xref:System.TimeZone> class, which provides only limited functionality.  
+ The <xref:System.TimeZoneInfo> class offers significant enhancements over the <xref:System.TimeZone> class, which provides only limited functionality.  
   
  The <xref:System.TimeZone> class recognizes only the local time zone, and can convert times between Coordinated Universal Time (UTC) and local time. A <xref:System.TimeZoneInfo> object can represent any time zone, and methods of the <xref:System.TimeZoneInfo> class can be used to convert the time in one time zone to the corresponding time in any other time zone. The members of the <xref:System.TimeZoneInfo> class support the following operations:  
   
@@ -135,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.TimeZoneInfo.GetUtcOffset" />
       </Docs>
     </Member>
     <Member MemberName="ClearCachedData">
@@ -169,7 +170,7 @@
   
  You might call the <xref:System.TimeZoneInfo.ClearCachedData%2A> method to reduce the memory devoted to the application's cache of time zone information or to reflect the fact that the local system's time zone has changed.  
   
- Storing references to the local and UTC time zones is not recommended. After the call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method, these object variables will be undefined <xref:System.TimeZoneInfo> objects that are no longer references to <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>. For example, in the following code, the second call to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method throws an <xref:System.ArgumentException> because the `local` variable is no longer considered equal to <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.  
+ Storing references to the local and UTC time zones is not recommended. After the call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method, these object variables will be undefined <xref:System.TimeZoneInfo> objects that are no longer references to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>. For example, in the following code, the second call to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method throws an <xref:System.ArgumentException> because the `local` variable is no longer considered equal to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.TimeZone2.BestPractices#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/cs/System.TimeZone2.BestPractices.cs#1)]
  [!code-vb[System.TimeZone2.BestPractices#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/vb/System.TimeZone2.BestPractices.vb#1)]  
@@ -222,28 +223,28 @@
   
 |Kind property value|Source time zone|Method behavior|  
 |-------------------------|----------------------|---------------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
   
  The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set as shown in the following table.  
   
 |Condition|Returned Kind property value|  
 |---------------|----------------------------------|  
-|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|All other date and time values and destination time zones.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>.|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
+|The `destinationTimeZone` is <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|  
+|All other date and time values and destination time zones.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|  
   
  If the value of the `dateTime` parameter is an ambiguous local time, it is interpreted as a standard time. If the `dateTime` parameter is an invalid local time, this method throws an <xref:System.ArgumentException>.  
   
- If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType> or <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, respectively.  
   
  You can also convert to or from UTC by calling the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods.  
   
    
   
 ## Examples  
- The following example converts an array of date and time values to times in the Eastern Time zone of the U.S. and Canada. It shows that the source time zone depends on the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the source <xref:System.DateTime> value. It also illustrates that the <xref:System.TimeZoneInfo.ConvertTime%2A> method takes time zone adjustments into account, because a time zone adjustment occurs in both the source and destination time zones at 2:00 A.M. on November 7, 2010.  
+ The following example converts an array of date and time values to times in the Eastern Time zone of the U.S. and Canada. It shows that the source time zone depends on the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the source <xref:System.DateTime> value. It also illustrates that the <xref:System.TimeZoneInfo.ConvertTime%2A> method takes time zone adjustments into account, because a time zone adjustment occurs in both the source and destination time zones at 2:00 A.M. on November 7, 2010.  
   
  [!code-csharp[System.TimeZoneInfo.ConvertTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timezoneinfo.converttime/cs/converttime1.cs#1)]
  [!code-vb[System.TimeZoneInfo.ConvertTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timezoneinfo.converttime/vb/converttime1.vb#1)]  
@@ -301,7 +302,7 @@
   
  In converting the `dateTimeOffset` value to the time in the destination time zone, this method takes into account any adjustment rules in effect in the destination time zone.  
   
- If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType> or <xref:System.DateTimeOffset.MaxValue?displayProperty=nameWithType>, respectively.  
   
    
   
@@ -363,11 +364,11 @@
   
 |DateTime.Kind value|sourceTimeZone value|Method behavior|  
 |-------------------------|--------------------------|---------------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|Converts `dateTime` to the destination time zone's time.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|Throws an <xref:System.ArgumentException>.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Equals <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|Converts `dateTime` to the destination time zone's time.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|Throws an <xref:System.ArgumentException>.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Any.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Does not equal <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Equals <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Does not equal <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Any.|Converts `dateTime` to the destination time zone's time.|  
   
  You can also convert to or from Coordinated Universal Time (UTC) by calling the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods.  
   
@@ -375,15 +376,15 @@
   
 |Condition|Returned Kind property value|  
 |---------------|----------------------------------|  
-|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|All other date and time values, source time zones, and destination time zones.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>.|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
+|The `destinationTimeZone` argument is <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|  
+|All other date and time values, source time zones, and destination time zones.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|  
   
  If the value of the `dateTime` parameter is an ambiguous time in the source time zone, it is interpreted as a standard time. If the `dateTime` parameter is an invalid time in the source time zone, this method throws an <xref:System.ArgumentException>.  
   
- If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType> or <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, respectively.  
   
- The <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29> method throws an <xref:System.ArgumentException> exception if the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` argument is <xref:System.DateTimeKind?displayProperty=fullName> but the `sourceTimeZone` argument is not <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>. To determine whether the source time zone is the local time zone or the universal time zone, the method tests for reference equality instead of testing for value equality with the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29> method. Note that <xref:System.TimeZoneInfo> objects that represent the local time zone and that are retrieved by calling the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>. Furthermore, <xref:System.TimeZoneInfo> objects that represent the local or universal time zone and that are retrieved by iterating the collection returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>. As an alternative, you can call the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29> method.  
+ The <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29> method throws an <xref:System.ArgumentException> exception if the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the `dateTime` argument is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> but the `sourceTimeZone` argument is not <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>. To determine whether the source time zone is the local time zone or the universal time zone, the method tests for reference equality instead of testing for value equality with the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29> method. Note that <xref:System.TimeZoneInfo> objects that represent the local time zone and that are retrieved by calling the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>. Furthermore, <xref:System.TimeZoneInfo> objects that represent the local or universal time zone and that are retrieved by iterating the collection returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method do not have referential equality with <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>. As an alternative, you can call the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29> method.  
   
    
   
@@ -412,6 +413,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when performing the conversion if <paramref name="dateTime" /> is treated as a local time, if <paramref name="sourceTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />, or if <paramref name="destinationTimeZone" /> is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately convert times for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
@@ -456,20 +458,20 @@
   
 |Kind property value|Source time zone|Method behavior|  
 |-------------------------|----------------------|---------------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Local%2A>|Converts the local time to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Utc%2A>|Converts Coordinated Universal Time (UTC) to the time in `destinationTimeZone`.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Assumed to be <xref:System.TimeZoneInfo.Local%2A>.|Converts the local time to the time in `destinationTimeZone`.|  
   
  The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set as shown in the following table.  
   
 |Condition|Returned Kind property value|  
 |---------------|----------------------------------|  
-|The `destinationTimeZone` is `TimeZoneInfo.Utc.Id`.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|Any other `destinationTimeZone` value.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|The `destinationTimeZone` is `TimeZoneInfo.Utc.Id`.|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|  
+|Any other `destinationTimeZone` value.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|  
   
  If the value of the `dateTime` parameter is an ambiguous local time, it is interpreted as a standard time. If the `dateTime` parameter is an invalid local time, this method throws an <xref:System.ArgumentException>.  
   
- If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType> or <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, respectively.  
   
  This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
   
@@ -526,7 +528,7 @@
   
  In converting the `dateTimeOffset` value to the time in the destination time zone, the method takes into account any adjustment rules in effect in the destination time zone.  
   
- If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> or <xref:System.DateTimeOffset.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTimeOffset` results in a date and time value that is earlier than <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTimeOffset.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType> or <xref:System.DateTimeOffset.MaxValue?displayProperty=nameWithType>, respectively.  
   
  ]]></format>
         </remarks>
@@ -575,7 +577,7 @@
 ## Remarks  
  When performing the conversion, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method applies any adjustment rules in effect in the `destinationTimeZoneId` time zone.  
   
- Although it is similar to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method, you can use <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=fullName> to specify the source and destination time zones using their identifiers instead of their <xref:System.TimeZoneInfo> objects. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
+ Although it is similar to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method, you can use <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> to specify the source and destination time zones using their identifiers instead of their <xref:System.TimeZoneInfo> objects. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
   
  This method retrieves the time zones whose identifiers are the `sourceTimeZoneId` and `destinationTimeZoneId` parameters from the registry. It cannot retrieve time zone objects that are created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method.  
   
@@ -583,22 +585,22 @@
   
 |DateTime.Kind value|sourceTimeZone value|Method behavior|  
 |-------------------------|--------------------------|---------------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Equals `TimeZoneInfo.Utc.Id`.|Converts `dateTime` to the destination time zone's time.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal `TimeZoneInfo.Utc.Id`.|Throws an <xref:System.ArgumentException>.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Equals `TimeZoneInfo.Local.Id`.|Converts `dateTime` to the destination time zone's time.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Does not equal `TimeZoneInfo.Local.Id`.|Throws an <xref:System.ArgumentException>.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Any.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Equals `TimeZoneInfo.Utc.Id`.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Does not equal `TimeZoneInfo.Utc.Id`.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Equals `TimeZoneInfo.Local.Id`.|Converts `dateTime` to the destination time zone's time.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Does not equal `TimeZoneInfo.Local.Id`.|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Any.|Converts `dateTime` to the destination time zone's time.|  
   
  Because it relies on calls to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method, the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> method performs a case-insensitive search to locate the time zones that correspond to `sourceTimeZoneId` and `destinationTimeZoneId`.  
   
  If the value of the `dateTime` parameter is an ambiguous time in the source time zone, it is interpreted as a standard time. If the `dateTime` parameter is an invalid time in the source time zone, this method throws an <xref:System.ArgumentException>.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName> unless the destination time zone is Coordinated Universal Time (UTC), in which case it is set to <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> unless the destination time zone is Coordinated Universal Time (UTC), in which case it is set to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=fullName> method to display the time that corresponds to the local system time in eight cities of the world.  
+ The following example uses the <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> method to display the time that corresponds to the local system time in eight cities of the world.  
   
  [!code-csharp[System.TimeZone2.Conversions#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/System.TimeZone2.Conversions.cs#3)]
  [!code-vb[System.TimeZone2.Conversions#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/System.TimeZone2.Conversions.vb#3)]  
@@ -665,10 +667,10 @@
   
 |DateTime.Kind property|Conversion|  
 |----------------------------|----------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Throws an <xref:System.ArgumentException>.|  
-|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts from Coordinated Universal Time (UTC).|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Throws an <xref:System.ArgumentException>.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType> or <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Converts from Coordinated Universal Time (UTC).|  
   
- If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later than <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue?displayProperty=fullName> or <xref:System.DateTime.MaxValue?displayProperty=fullName>, respectively.  
+ If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType> or <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, respectively.  
   
    
   
@@ -724,21 +726,21 @@
   
 |DateTime.Kind property|Conversion|  
 |----------------------------|----------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Converts from local time to Coordinated Universal Time (UTC).|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Assumes `dateTime` is local time and converts from local time to UTC.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Returns `dateTime` unchanged.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|Converts from local time to Coordinated Universal Time (UTC).|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Assumes `dateTime` is local time and converts from local time to UTC.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Returns `dateTime` unchanged.|  
   
  If `dateTime` corresponds to an ambiguous local time, this method assumes that it is standard local time. If `dateTime` corresponds to an invalid local time, the method throws an <xref:System.ArgumentException>.  
   
 > [!NOTE]
->  If the current computer's local time zone includes multiple adjustment rules, this overload of the <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> method can return results that differ from the <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=fullName> and <xref:System.DateTime.ToUniversalTime%2A?displayProperty=fullName> methods. <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=fullName> always applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range. And when executing on [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)], <xref:System.DateTime.ToUniversalTime%2A?displayProperty=fullName> also applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range.  
+>  If the current computer's local time zone includes multiple adjustment rules, this overload of the <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> method can return results that differ from the <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=nameWithType> and <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> methods. <xref:System.TimeZone.ToUniversalTime%2A?displayProperty=nameWithType> always applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range. And when executing on [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)], <xref:System.DateTime.ToUniversalTime%2A?displayProperty=nameWithType> also applies the current adjustment rule to time zone conversion, whether or not `dateTime` lies within its date range.  
   
- If the UTC equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later that <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
+ If the UTC equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later that <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
   
    
   
 ## Examples  
- The following example illustrates the conversion of time values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, <xref:System.DateTimeKind?displayProperty=fullName>, and <xref:System.DateTimeKind?displayProperty=fullName>, respectively. It also illustrates the conversion of ambiguous and invalid times.  
+ The following example illustrates the conversion of time values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, and <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, respectively. It also illustrates the conversion of ambiguous and invalid times.  
   
  [!code-csharp[System.TimeZone2.Conversions#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Conversions/cs/System.TimeZone2.Conversions.cs#1)]
  [!code-vb[System.TimeZone2.Conversions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Conversions/vb/System.TimeZone2.Conversions.vb#1)]  
@@ -788,11 +790,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter equals <xref:System.DateTimeKind?displayProperty=fullName> and the `sourceTimeZone` parameter equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>, this method returns `dateTime` without performing any conversion.  
+ If the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter equals <xref:System.DateTimeKind.Utc?displayProperty=nameWithType> and the `sourceTimeZone` parameter equals <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>, this method returns `dateTime` without performing any conversion.  
   
  If `dateTime` corresponds to an ambiguous time, this method assumes that it is the standard time of the source time zone. If `dateTime` corresponds to an invalid time, this method throws an <xref:System.ArgumentException>.  
   
- If the Coordinated Universal Time (UTC) equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=fullName> or later that <xref:System.DateTime.MaxValue?displayProperty=fullName>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
+ If the Coordinated Universal Time (UTC) equivalent of `dateTime` is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later that <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue> or <xref:System.DateTime.MaxValue>, respectively.  
   
    
   
@@ -860,9 +862,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29> method is suitable for creating a time zone that has no adjustments (that is, a time zone that does not support daylight saving time). To define a time zone that includes adjustments for daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method.  
+ This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29> method is suitable for creating a time zone that has no adjustments (that is, a time zone that does not support daylight saving time). To define a time zone that includes adjustments for daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method.  
   
- The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the properties of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method and the properties of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
   
 |CreateCustomTimeZone parameter|TimeZoneInfo property|  
 |------------------------------------|---------------------------|  
@@ -940,9 +942,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method is suitable for creating a time zone that supports daylight saving time. To define a time zone that does not support daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method.  
+ This overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method is suitable for creating a time zone that supports daylight saving time. To define a time zone that does not support daylight saving time, use either the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method.  
   
- The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
   
 |CreateCustomTimeZone parameter|TimeZoneInfo member|  
 |------------------------------------|-------------------------|  
@@ -951,7 +953,7 @@
 |`displayName`|<xref:System.TimeZoneInfo.DisplayName%2A>|  
 |`standardDisplayName`|<xref:System.TimeZoneInfo.StandardName%2A>|  
 |`daylightDisplayName`|<xref:System.TimeZoneInfo.DaylightName%2A>|  
-|`adjustmentRules`|An array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=fullName> objects returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method.|  
+|`adjustmentRules`|An array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=nameWithType> objects returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method.|  
   
  Typically, the time zone's standard time name and its identifier are the same. However, the length of the time zone's identifier should not exceed 32 characters. The string passed to the `displayName` parameter follows a fairly standard format. The first portion of the display name is the time zone's base offset from Coordinated Universal Time, which is indicated by the acronym GMT (for Greenwich Mean Time), enclosed in parentheses. This is followed by a string that identifies the time zone itself, or one or more of the cities, regions, or countries in the time zone, or both. For example:  
   
@@ -1052,9 +1054,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to create a custom time zone whose support for daylight saving time can be determined by conditions at run time.  
+ You can use this overload of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method to create a custom time zone whose support for daylight saving time can be determined by conditions at run time.  
   
- The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
+ The following table shows the relationship between the parameters that are provided to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method and the members of the <xref:System.TimeZoneInfo> object that are returned by the method call.  
   
 |CreateCustomTimeZone parameter|TimeZoneInfo property|  
 |------------------------------------|---------------------------|  
@@ -1062,7 +1064,7 @@
 |`baseUtcOffset`|<xref:System.TimeZoneInfo.BaseUtcOffset%2A>|  
 |`displayName`|<xref:System.TimeZoneInfo.DisplayName%2A>|  
 |`standardDisplayName`|<xref:System.TimeZoneInfo.StandardName%2A>|  
-|`daylightDisplayName`|<xref:System.TimeZoneInfo.DaylightName%2A> if `disableDaylightSavingTime` is `false`; <xref:System.String.Empty?displayProperty=fullName> if `disableDaylightSavingTime` is `true`.|  
+|`daylightDisplayName`|<xref:System.TimeZoneInfo.DaylightName%2A> if `disableDaylightSavingTime` is `false`; <xref:System.String.Empty?displayProperty=nameWithType> if `disableDaylightSavingTime` is `true`.|  
 |`adjustmentRules`|An array of <xref:System.TimeZoneInfo.AdjustmentRule> objects returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method if `disableDaylightSavingTime` is `false`; an empty array returned by the <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method if `disableDaylightSavingTime` is `true`.|  
 |`disableDaylightSavingTime`|Not <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A>.|  
   
@@ -1082,12 +1084,12 @@
   
 3.  Assigning the adjustment rules to an array that can be passed as the `adjustmentRules` parameter.  
   
- If `disableDaylightSavingTime` parameter is `false`, the operation of this method is identical to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> overload. If `disableDaylightSavingTime` is `true`, the returned object includes no adjustment rules and a <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is an empty string.  
+ If `disableDaylightSavingTime` parameter is `false`, the operation of this method is identical to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> overload. If `disableDaylightSavingTime` is `true`, the returned object includes no adjustment rules and a <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is an empty string.  
   
    
   
 ## Examples  
- The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It sets the `disableDaylightSavingTime` parameter in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=fullName> method to `true`. It then displays the new time zone's daylight saving time name, if one is present, and the number of adjustment rules to confirm that the new time zone has no daylight saving time information.  
+ The following example creates a custom time zone for the Palmer station and Anvers Island in Antarctica. It sets the `disableDaylightSavingTime` parameter in the call to the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A?displayProperty=nameWithType> method to `true`. It then displays the new time zone's daylight saving time name, if one is present, and the number of adjustment rules to confirm that the new time zone has no daylight saving time information.  
   
  [!code-csharp[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#3)]
  [!code-vb[System.TimeZone2.CreateTimeZone#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#3)]  
@@ -1154,9 +1156,9 @@
 ## Remarks  
  The display name is localized based on the culture installed with the Windows operating system.  
   
- A <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is not <xref:System.String?displayProperty=fullName> or `null` does not necessarily indicate that the time zone supports daylight saving time. To determine whether the time zone supports daylight saving time, check the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
+ A <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is not <xref:System.String.Empty?displayProperty=nameWithType> or `null` does not necessarily indicate that the time zone supports daylight saving time. To determine whether the time zone supports daylight saving time, check the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   
- In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=fullName> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=fullName>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=fullName> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=fullName> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
+ In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=nameWithType> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=nameWithType>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=nameWithType> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
   
  The <xref:System.TimeZoneInfo.DaylightName%2A> property is equivalent to the <xref:System.TimeZone.DaylightName%2A> property of the <xref:System.TimeZone> class.  
   
@@ -1325,7 +1327,7 @@
   
 -   They have the same adjustment rules.  
   
- <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> returns the Boolean value that results from evaluating the following expression:  
+ <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=nameWithType> returns the Boolean value that results from evaluating the following expression:  
   
  ```csharp 
  other.Id == this.Id && HasSameRules(other);  
@@ -1402,6 +1404,7 @@
         <exception cref="T:System.TimeZoneNotFoundException">The time zone identifier specified by <paramref name="id" /> was not found. This means that a registry key whose name matches <paramref name="id" /> does not exist, or that the key exists but does not contain any time zone data.</exception>
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
+        <altmember cref="P:System.TimeZoneInfo.Id" />
       </Docs>
     </Member>
     <Member MemberName="FromSerializedString">
@@ -1451,6 +1454,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="source" /> parameter is <see cref="F:System.String.Empty" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> parameter is a null string.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The source parameter cannot be deserialized back into a <see cref="T:System.TimeZoneInfo" /> object.</exception>
+        <altmember cref="M:System.TimeZoneInfo.ToSerializedString" />
       </Docs>
     </Member>
     <Member MemberName="GetAdjustmentRules">
@@ -1482,7 +1486,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method retrieves an array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=fullName> objects. Each object in the array defines the effective start and end date of that time zone adjustment, as well as its delta (the exact amount by which the adjustment causes the time to change). In addition, two properties return <xref:System.TimeZoneInfo.TransitionTime?displayProperty=fullName> objects that define when each annual transition to and from standard time occurs.  
+ The <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method retrieves an array of <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=nameWithType> objects. Each object in the array defines the effective start and end date of that time zone adjustment, as well as its delta (the exact amount by which the adjustment causes the time to change). In addition, two properties return <xref:System.TimeZoneInfo.TransitionTime?displayProperty=nameWithType> objects that define when each annual transition to and from standard time occurs.  
   
  If a time zone has multiple adjustment rules, they are generally ordered from earliest (at index 0) to latest (at index <xref:System.Array.Length%2A> – 1).  
   
@@ -1501,6 +1505,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OutOfMemoryException">The system does not have enough memory to make an in-memory copy of the adjustment rules.</exception>
+        <altmember cref="T:System.TimeZoneInfo.AdjustmentRule" />
       </Docs>
     </Member>
     <Member MemberName="GetAmbiguousTimeOffsets">
@@ -1543,11 +1548,11 @@
   
 |TimeZoneInfo object type|Kind property value|Behavior|  
 |------------------------------|-------------------------|--------------|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Returns ambiguous time offsets for `dateTime`.|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the local time, and then returns ambiguous time offsets for that time.|  
-|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|Any value.|Throws an <xref:System.ArgumentException>.|  
-|Any other time zone.|<xref:System.DateTimeKind.Local> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the specified time zone, and then determines whether that time is ambiguous.|  
-|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|Determines whether `dateTime` is ambiguous in the specified time zone.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Returns ambiguous time offsets for `dateTime`.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Converts `dateTime` to the local time, and then returns ambiguous time offsets for that time.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>|Any value.|Throws an <xref:System.ArgumentException>.|  
+|Any other time zone.|<xref:System.DateTimeKind.Local> or <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Converts `dateTime` to the specified time zone, and then determines whether that time is ambiguous.|  
+|Any other time zone.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Determines whether `dateTime` is ambiguous in the specified time zone.|  
   
  The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](~/docs/standard/datetime/resolve-ambiguous-times.md).  
   
@@ -1571,6 +1576,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTime" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
       </Docs>
     </Member>
     <Member MemberName="GetAmbiguousTimeOffsets">
@@ -1620,6 +1626,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when determining whether <paramref name="dateTimeOffset" /> is ambiguous if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report ambiguous time offsets for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1757,9 +1764,9 @@
 ## Remarks  
  The returned time span includes any differences due to the application of adjustment rules to the current time zone. It differs from the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property, which returns the difference between Coordinated Universal Time (UTC) and the time zone's standard time and, therefore, does not take adjustment rules into account.  
   
- If the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property does not correspond to the time zone object, this method performs the necessary conversion before returning a result. For example, this can occur if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> but the time zone object is not the local time zone. If `dateTime` is ambiguous, or if the converted time is ambiguous, this method interprets the ambiguous time as a standard time. If `dateTime` is invalid, this method returns a <xref:System.TimeSpan> object that reflects the difference between UTC and the time zone's standard time.  
+ If the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property does not correspond to the time zone object, this method performs the necessary conversion before returning a result. For example, this can occur if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> but the time zone object is not the local time zone. If `dateTime` is ambiguous, or if the converted time is ambiguous, this method interprets the ambiguous time as a standard time. If `dateTime` is invalid, this method returns a <xref:System.TimeSpan> object that reflects the difference between UTC and the time zone's standard time.  
   
- The <xref:System.TimeZoneInfo.GetUtcOffset%28System.DateTime%29?displayProperty=fullName> method is similar in operation to the <xref:System.TimeZone.GetUtcOffset%2A> method of the <xref:System.TimeZone> class.  
+ The <xref:System.TimeZoneInfo.GetUtcOffset%28System.DateTime%29?displayProperty=nameWithType> method is similar in operation to the <xref:System.TimeZone.GetUtcOffset%2A> method of the <xref:System.TimeZone> class.  
   
    
   
@@ -1774,6 +1781,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule when calculating the offset from UTC if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately calculate the difference between the local time and UTC on <paramref name="dateTime" />. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.BaseUtcOffset" />
       </Docs>
     </Member>
     <Member MemberName="GetUtcOffset">
@@ -1854,7 +1862,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Like the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> method, the <xref:System.TimeZoneInfo.HasSameRules%2A> method indicates whether two time zones have the same base offset (as defined by the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property) and the same adjustment rules. Unlike the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> method, <xref:System.TimeZoneInfo.HasSameRules%2A> does not compare time zone identifiers (as defined by the <xref:System.TimeZoneInfo.Id%2A> property).  
+ Like the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=nameWithType> method, the <xref:System.TimeZoneInfo.HasSameRules%2A> method indicates whether two time zones have the same base offset (as defined by the <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property) and the same adjustment rules. Unlike the <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=nameWithType> method, <xref:System.TimeZoneInfo.HasSameRules%2A> does not compare time zone identifiers (as defined by the <xref:System.TimeZoneInfo.Id%2A> property).  
   
    
   
@@ -1963,12 +1971,12 @@
   
 |TimeZoneInfo object type|Kind property value|Behavior|  
 |------------------------------|-------------------------|--------------|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Determines whether the `dateTime` parameter is ambiguous.|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the local time and then determines whether that time is ambiguous.|  
-|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Returns `false`.|  
-|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|<xref:System.DateTimeKind?displayProperty=fullName>|If `dateTime` is ambiguous, assumes it is a standard time, converts it to UTC, and returns `false`.|  
-|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the time in the specified time zone and then determines whether that time is ambiguous.|  
-|Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|Determines whether `dateTime` is ambiguous.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Determines whether the `dateTime` parameter is ambiguous.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Converts `dateTime` to the local time and then determines whether that time is ambiguous.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Returns `false`.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|If `dateTime` is ambiguous, assumes it is a standard time, converts it to UTC, and returns `false`.|  
+|Any other time zone.|<xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Converts `dateTime` to the time in the specified time zone and then determines whether that time is ambiguous.|  
+|Any other time zone.|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Determines whether `dateTime` is ambiguous.|  
   
    
   
@@ -1984,6 +1992,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an ambiguous time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="M:System.TimeZoneInfo.IsInvalidTime(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsAmbiguousTime">
@@ -2071,35 +2080,35 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter, as the following table shows.  
+ The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter, as the following table shows.  
   
 |TimeZoneInfo object|DateTime.Kind property|Result|  
 |-------------------------|----------------------------|------------|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Local`|Determines whether `dateTime` is daylight saving time.|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Utc`|Converts `dateTime` from Coordinated Universal Time (UTC) to local time and determines whether it is daylight saving time.|  
-|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|`DateTimeKind.Unspecified`|Assumes that `dateTime` represents local time and determines whether it is daylight saving time.|  
-|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName>|`DateTimeKind.Local`, `DateTimeKind.Unspecified`, or `DateTimeKind.Utc`|Returns `false` (UTC does not support daylight saving time).|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Local`|Converts the local time to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Utc`|Converts UTC to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
-|Any other <xref:System.TimeZoneInfo>object.|`DateTimeKind.Unspecified`|Determines whether `dateTime` is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|`DateTimeKind.Local`|Determines whether `dateTime` is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|`DateTimeKind.Utc`|Converts `dateTime` from Coordinated Universal Time (UTC) to local time and determines whether it is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|`DateTimeKind.Unspecified`|Assumes that `dateTime` represents local time and determines whether it is daylight saving time.|  
+|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>|`DateTimeKind.Local`, `DateTimeKind.Unspecified`, or `DateTimeKind.Utc`|Returns `false` (UTC does not support daylight saving time).|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Local`|Converts the local time to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Utc`|Converts UTC to the equivalent time of the <xref:System.TimeZoneInfo> object and then determines whether the latter is daylight saving time.|  
+|Any other <xref:System.TimeZoneInfo> object.|`DateTimeKind.Unspecified`|Determines whether `dateTime` is daylight saving time.|  
   
  If the time zone represented by the <xref:System.TimeZoneInfo> object does not support daylight saving time, the method always returns `false`. A number of time zones, including <xref:System.TimeZoneInfo.Utc%2A>, do not observe daylight saving time.  To determine whether a time zone supports daylight saving time, retrieve the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   
- If the `dateTime` parameter specifies an ambiguous time in the current object's time zone, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method interprets `dateTime` as standard time and returns `false` if its <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>. If the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, this method will select the correct ambiguous time and indicate whether it is a daylight saving time.  
+ If the `dateTime` parameter specifies an ambiguous time in the current object's time zone, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method interprets `dateTime` as standard time and returns `false` if its <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. If the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, this method will select the correct ambiguous time and indicate whether it is a daylight saving time.  
   
- Because the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29?displayProperty=fullName> method can return `false` for a date and time that is ambiguous (that is, a date and time that can represent either a standard time or a daylight saving time in a particular time zone), the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29?displayProperty=fullName> method can be paired with the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method to determine whether a time may be a daylight saving time. Because an ambiguous time is one that can be both a daylight saving time and a standard time, the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29> method can be called first to determine whether a date and time may be a daylight saving time. If the method returns `false`, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method can be called to determine whether the <xref:System.DateTime> value is a daylight saving time. The following example illustrates this technique.  
+ Because the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29?displayProperty=nameWithType> method can return `false` for a date and time that is ambiguous (that is, a date and time that can represent either a standard time or a daylight saving time in a particular time zone), the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29?displayProperty=nameWithType> method can be paired with the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method to determine whether a time may be a daylight saving time. Because an ambiguous time is one that can be both a daylight saving time and a standard time, the <xref:System.TimeZoneInfo.IsAmbiguousTime%28System.DateTime%29> method can be called first to determine whether a date and time may be a daylight saving time. If the method returns `false`, the <xref:System.TimeZoneInfo.IsDaylightSavingTime%28System.DateTime%29> method can be called to determine whether the <xref:System.DateTime> value is a daylight saving time. The following example illustrates this technique.  
   
  [!code-csharp[System.TimeZone2.IsDaylightSavingTime#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#2)]
  [!code-vb[System.TimeZone2.IsDaylightSavingTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#2)]  
   
- If the `dateTime` parameter specifies an invalid time, the method call throws an <xref:System.ArgumentException> if the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>; otherwise, the method returns `false`.  
+ If the `dateTime` parameter specifies an invalid time, the method call throws an <xref:System.ArgumentException> if the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>; otherwise, the method returns `false`.  
   
- Call the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method to determine whether to use a time zone's <xref:System.TimeZoneInfo.StandardName%2A> value or its <xref:System.TimeZoneInfo.DaylightName%2A> value when displaying the time zone name. See the Example section for an illustration.  
+ Call the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method to determine whether to use a time zone's <xref:System.TimeZoneInfo.StandardName%2A> value or its <xref:System.TimeZoneInfo.DaylightName%2A> value when displaying the time zone name. See the Example section for an illustration.  
   
    
   
 ## Examples  
- The following example defines a method named `DisplayDateWithTimeZoneName` that uses the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> method to determine whether to display a time zone's standard time name or daylight saving time name.  
+ The following example defines a method named `DisplayDateWithTimeZoneName` that uses the <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> method to determine whether to display a time zone's standard time name or daylight saving time name.  
   
  [!code-csharp[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/cs/IsDaylightSavingTime.cs#1)]
  [!code-vb[System.TimeZone2.IsDaylightSavingTime#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.IsDaylightSavingTime/vb/IsDaylightSavingTime.vb#1)]  
@@ -2110,6 +2119,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
     <Member MemberName="IsDaylightSavingTime">
@@ -2149,7 +2159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=fullName> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter. If `dateTimeOffset` does not correspond to the current time zone's offset from Coordinated Universal Time (UTC), the method converts that time to the time in the current time zone. It then determines whether that date and time is a daylight saving time.  
+ The return value of <xref:System.TimeZoneInfo.IsDaylightSavingTime%2A?displayProperty=nameWithType> is affected by the relationship between the time zone represented by the <xref:System.TimeZoneInfo> object and the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter. If `dateTimeOffset` does not correspond to the current time zone's offset from Coordinated Universal Time (UTC), the method converts that time to the time in the current time zone. It then determines whether that date and time is a daylight saving time.  
   
  If the time zone represented by the <xref:System.TimeZoneInfo> object does not support daylight saving time, the method always returns `false`. To determine whether a time zone supports daylight saving time, retrieve the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   
@@ -2158,6 +2168,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the current adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTimeOffset" /> is a daylight saving time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
       </Docs>
     </Member>
     <Member MemberName="IsInvalidTime">
@@ -2203,10 +2214,10 @@
   
 |DateTime.Kind property|TimeZoneInfo object (if applicable)|Behavior|  
 |----------------------------|-------------------------------------------|--------------|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName>|Determines whether the time is invalid.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName> or a non-local time zone.|Converts `dateTime` to the time of the <xref:System.TimeZoneInfo> object and returns `false`.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Not applicable.|Assumes `dateTime` is the time of the <xref:System.TimeZoneInfo> object and determines whether it is invalid.|  
-|<xref:System.DateTimeKind?displayProperty=fullName>|Not applicable.|Returns `false`.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>|Determines whether the time is invalid.|  
+|<xref:System.DateTimeKind.Local?displayProperty=nameWithType>|<xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType> or a non-local time zone.|Converts `dateTime` to the time of the <xref:System.TimeZoneInfo> object and returns `false`.|  
+|<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>|Not applicable.|Assumes `dateTime` is the time of the <xref:System.TimeZoneInfo> object and determines whether it is invalid.|  
+|<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>|Not applicable.|Returns `false`.|  
   
    
   
@@ -2221,6 +2232,7 @@
         <block subset="none" type="usage">
           <para>On [!INCLUDE[winxp](~/includes/winxp-md.md)] systems, this method applies only the adjustment rule if the current instance is <see cref="P:System.TimeZoneInfo.Local" />. As a result, the method may not accurately report whether <paramref name="dateTime" /> is an invalid time for periods before the current adjustment rule came into effect. For more information, see the Notes for Callers section in the <see cref="P:System.TimeZoneInfo.Local" /> property.</para>
         </block>
+        <altmember cref="Overload:System.TimeZoneInfo.IsAmbiguousTime" />
       </Docs>
     </Member>
     <Member MemberName="Local">
@@ -2258,9 +2270,9 @@
  The local time zone is the time zone on the computer where the code is executing.  
   
 > [!IMPORTANT]
->  You should always access the local time zone through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property rather than assigning the local time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
+>  You should always access the local time zone through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property rather than assigning the local time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
   
- The <xref:System.TimeZoneInfo> object returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property reflects the setting of the **Automatically adjust clock for daylight saving changes** checkbox or the **Automatically adjust clock for Daylight Saving Time** checkbox in the Control Panel **Date and Time** application for Windows XP and Windows Vista, respectively. If the checkbox is unchecked, the cached copy of the local time zone contains no daylight saving time information. This means that:  
+ The <xref:System.TimeZoneInfo> object returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property reflects the setting of the **Automatically adjust clock for daylight saving changes** checkbox or the **Automatically adjust clock for Daylight Saving Time** checkbox in the Control Panel **Date and Time** application for Windows XP and Windows Vista, respectively. If the checkbox is unchecked, the cached copy of the local time zone contains no daylight saving time information. This means that:  
   
 -   The local time zone's <xref:System.TimeZoneInfo.GetAdjustmentRules%2A> method returns an array whose length is zero.  
   
@@ -2377,7 +2389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property for the local time zone returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=fullName> property reflects the setting of the Control Panel **Date and Time** application's checkbox that defines whether the system automatically adjusts for daylight saving time. If it is unchecked, or if no checkbox is displayed for a time zone, the value of this property is `false`.  
+ The value of the <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property for the local time zone returned by the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property reflects the setting of the Control Panel **Date and Time** application's checkbox that defines whether the system automatically adjusts for daylight saving time. If it is unchecked, or if no checkbox is displayed for a time zone, the value of this property is `false`.  
   
    
   
@@ -2385,7 +2397,8 @@
  The following example retrieves a collection of all time zones that are available on a local system and displays the names of those that do not support daylight saving time.  
   
  [!code-csharp[System.TimeZone2.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Class/CS/TimeZone2_Examples.cs#4)]
- [!code-vb[System.TimeZone2.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#4)]  
+ [!code-vb[System.TimeZone2.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Class/VB/TimeZone2_Examples.vb#4)]
+ [!code-powershell[System.TimeZone2.Class#4](~/samples/snippets/powershell/VS_Snippets_CLR_System/System.TimeZone2.Class/PS/Timezone2_Examples.ps1)] 
   
  ]]></format>
         </remarks>
@@ -2505,6 +2518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.TimeZoneInfo.FromSerializedString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2581,7 +2595,7 @@
  This is a built-in object; information about this <xref:System.TimeZoneInfo> object is not retrieved from the registry.  
   
 > [!IMPORTANT]
->  You should always access the Coordinated Universal Time (UTC) zone through the <xref:System.TimeZoneInfo.Utc%2A?displayProperty=fullName> property rather than assigning the UTC time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
+>  You should always access the Coordinated Universal Time (UTC) zone through the <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType> property rather than assigning the UTC time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  
   
  Coordinated Universal Time was previously known as Greenwich Mean Time (GMT).  
   
@@ -2597,5 +2611,110 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.TimeZoneInfo" /> objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetAmbiguousTimeOffsets">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateCustomTimeZone">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a time zone that is not found on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTimeBySystemTimeZoneId">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in another time zone based on a time zone identifier.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAmbiguousTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsDaylightSavingTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the current <see cref="T:System.TimeZoneInfo" /> object's time zone.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in a particular time zone.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUtcOffset">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTimeToUtc">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a date and time to Coordinated Universal Time (UTC).</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

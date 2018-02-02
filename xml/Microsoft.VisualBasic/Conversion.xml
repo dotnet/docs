@@ -97,6 +97,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
+        <altmember cref="M:System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.CTypeDynamic``1(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CTypeDynamic&lt;TargetType&gt;">
@@ -164,6 +167,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Dynamic.DynamicObject.TryConvert(System.Dynamic.ConvertBinder,System.Object@)" />
+        <altmember cref="M:System.Dynamic.DynamicMetaObject.BindConvert(System.Dynamic.ConvertBinder)" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.CTypeDynamic(System.Object,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="ErrorToString">
@@ -201,6 +207,9 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="ErrorNumber" /> is out of range.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.ErrObject" />
+        <altmember cref="P:Microsoft.VisualBasic.ErrObject.Description" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="ErrorToString">
@@ -241,6 +250,9 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="ErrorNumber" /> is out of range.</exception>
+        <altmember cref="T:Microsoft.VisualBasic.ErrObject" />
+        <altmember cref="P:Microsoft.VisualBasic.ErrObject.Description" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -293,6 +305,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -345,6 +358,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -397,6 +411,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -449,6 +464,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -501,6 +517,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -553,6 +570,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Fix">
@@ -605,6 +623,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -652,6 +671,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -699,6 +720,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -746,6 +769,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -793,6 +818,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -840,6 +867,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -893,6 +922,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -946,6 +977,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -999,6 +1032,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Hex">
@@ -1052,6 +1087,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Oct" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1104,6 +1141,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1156,6 +1194,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1208,6 +1247,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1260,6 +1300,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1312,6 +1353,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1364,6 +1406,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Int">
@@ -1416,6 +1459,7 @@ End Class
         </remarks>
         <exception cref="T:System.ArgumentNullException">Number is not specified.</exception>
         <exception cref="T:System.ArgumentException">Number is not a numeric type.</exception>
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1463,6 +1507,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1510,6 +1556,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1557,6 +1605,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1604,6 +1654,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1651,6 +1703,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1704,6 +1758,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1757,6 +1813,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1810,6 +1868,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Oct">
@@ -1863,6 +1923,8 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Hex" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="Str">
@@ -1908,6 +1970,10 @@ End Class
           <paramref name="Number" /> is not specified.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="Number" /> is not a numeric type.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Conversion.Val" />
+        <altmember cref="T:System.ArgumentNullException" />
+        <altmember cref="T:System.InvalidCastException" />
       </Docs>
     </Member>
     <Member MemberName="Val">
@@ -1950,7 +2016,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When different decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When different decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  
@@ -1982,6 +2048,10 @@ Val("&HFFFF") 
           <paramref name="InputStr" /> is too large.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Expression" /> is an <see langword="Object" /> type expression that is not convertible to <see langword="String" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <altmember cref="T:System.OverflowException" />
+        <altmember cref="T:System.InvalidCastException" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Val">
@@ -2024,7 +2094,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  
@@ -2056,6 +2126,10 @@ Val("&HFFFF") 
           <paramref name="InputStr" /> is too large.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Expression" /> is an <see langword="Object" /> type expression that is not convertible to <see langword="String" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <altmember cref="T:System.OverflowException" />
+        <altmember cref="T:System.InvalidCastException" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Val">
@@ -2098,7 +2172,7 @@ Val("&HFFFF") 
 ```  
   
 > [!NOTE]
->  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=fullName> when converting a string to a `Double`.  
+>  The `Val` function recognizes only the period (`.`) as a valid decimal separator. When other decimal separators are used, as in international applications, use `CDbl` or `CInt` instead to convert a string to a number. To convert the string representation of a number in a particular culture to a numeric value, use the numeric type's `Parse(String, IFormatProvider)` method. For example, use <xref:System.Double.Parse%2A?displayProperty=nameWithType> when converting a string to a `Double`.  
   
 > [!NOTE]
 >  An <xref:System.InvalidCastException> exception might be raised in response to certain uncommon number formats. For example, the following code raises this exception.  
@@ -2130,7 +2204,65 @@ Val("&HFFFF") 
           <paramref name="InputStr" /> is too large.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="Expression" /> is an <see langword="Object" /> type expression that is not convertible to <see langword="String" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <altmember cref="T:System.OverflowException" />
+        <altmember cref="T:System.InvalidCastException" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ErrorToString">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the error message that corresponds to a given error number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Val">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the numbers contained in a string as a numeric value of appropriate type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Oct">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the octal value of a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Fix">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return the integer portion of a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Int">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Return the integer portion of a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Hex">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the hexadecimal value of a number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

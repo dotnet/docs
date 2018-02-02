@@ -51,7 +51,7 @@
  The <xref:System.Web.UI.PropertyConverter.EnumFromString%2A> method is used to convert a string value to its equivalent enumeration value.  
   
 > [!NOTE]
->  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert a string value to its equivalent enumeration value, use the <xref:System.Enum.Parse%2A?displayProperty=fullName> method.  
+>  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert a string value to its equivalent enumeration value, use the <xref:System.Enum.Parse%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -68,6 +68,7 @@
   
  <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="EnumToString">
@@ -98,7 +99,7 @@
  The <xref:System.Web.UI.PropertyConverter.EnumToString%2A> method is used to convert an enumeration value to its equivalent string representation.  
   
 > [!NOTE]
->  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert an enumeration value to its equivalent string representation, use the <xref:System.Enum.Format%2A?displayProperty=fullName> method.  
+>  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert an enumeration value to its equivalent string representation, use the <xref:System.Enum.Format%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -113,6 +114,7 @@
   
  The type of <paramref name="enumValue" /> is not an underlying type of <paramref name="enumType" />.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ObjectFromString">

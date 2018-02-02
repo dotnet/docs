@@ -9,17 +9,22 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "keys, using objects as"
-  - "resources, accessing from procedural code"
-  - "procedural code, creating resources with"
-  - "procedural code, accessing resources from"
-  - "resources, creating with procedural code"
+  - "keys [WPF], using objects as"
+  - "resources [WPF], accessing from procedural code"
+  - "procedural code [WPF], creating resources with"
+  - "procedural code [WPF], accessing resources from"
+  - "resources [WPF], creating with procedural code"
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Resources and Code
 This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] resources can be accessed or created using  code rather than [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] syntax. For more information on general resource usage and resources from a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax perspective, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
@@ -43,12 +48,12 @@ This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../inclu
   
 <a name="creating"></a>   
 ## Creating Resources with Code  
- If you want to create an entire [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application in code, you might also want to create any resources in that application in code. To achieve this, create a new <xref:System.Windows.ResourceDictionary> instance, and then add all the resources to the dictionary using successive calls to <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=fullName>. Then, use the <xref:System.Windows.ResourceDictionary> thus created to set the <xref:System.Windows.FrameworkElement.Resources%2A> property on an element that is present in a page scope, or the <xref:System.Windows.Application.Resources%2A?displayProperty=fullName>. You could also maintain the <xref:System.Windows.ResourceDictionary> as a standalone object without adding it to an element. However, if you do this, you must access the resources within it by item key, as if it were a generic dictionary. A <xref:System.Windows.ResourceDictionary> that is not attached to an element `Resources` property would not  exist as part of the element tree and has no scope in a lookup sequence that can be used by <xref:System.Windows.FrameworkElement.FindResource%2A> and related methods.  
+ If you want to create an entire [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application in code, you might also want to create any resources in that application in code. To achieve this, create a new <xref:System.Windows.ResourceDictionary> instance, and then add all the resources to the dictionary using successive calls to <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType>. Then, use the <xref:System.Windows.ResourceDictionary> thus created to set the <xref:System.Windows.FrameworkElement.Resources%2A> property on an element that is present in a page scope, or the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType>. You could also maintain the <xref:System.Windows.ResourceDictionary> as a standalone object without adding it to an element. However, if you do this, you must access the resources within it by item key, as if it were a generic dictionary. A <xref:System.Windows.ResourceDictionary> that is not attached to an element `Resources` property would not  exist as part of the element tree and has no scope in a lookup sequence that can be used by <xref:System.Windows.FrameworkElement.FindResource%2A> and related methods.  
   
 <a name="objectaskey"></a>   
 ## Using Objects as Keys  
  Most resource usages will set the key of the resource to be a string. However, various [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features deliberately do not use a string type to specify keys, instead this parameter is an object. The capability of having the resource be keyed by an object is used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] style and theming support. The styles in themes which become the default style for an otherwise non-styled control are each keyed by the <xref:System.Type> of the control that they should apply to. Being keyed by type provides a reliable lookup mechanism that works on default instances of each control type, and type can be detected by reflection and used for styling derived classes even though the derived type otherwise has no default style. You can specify a <xref:System.Type> key for a resource defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] by using the [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md). Similar extensions exist for other nonstring key usages that support [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] features, such as [ComponentResourceKey Markup Extension](../../../../docs/framework/wpf/advanced/componentresourcekey-markup-extension.md).  
   
 ## See Also  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   
+ [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

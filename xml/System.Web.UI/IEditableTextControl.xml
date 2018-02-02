@@ -21,7 +21,7 @@
   
  Although the <xref:System.Web.UI.IEditableTextControl> interface contains only the <xref:System.Web.UI.IEditableTextControl.TextChanged> event, it inherits from the <xref:System.Web.UI.ITextControl> interface, which defines a <xref:System.Web.UI.ITextControl.Text%2A> property. To implement the <xref:System.Web.UI.IEditableTextControl> interface, a control must define the <xref:System.Web.UI.ITextControl.Text%2A> property and the <xref:System.Web.UI.IEditableTextControl.TextChanged> event that occurs when the <xref:System.Web.UI.ITextControl.Text%2A> property changes between posts to the server.  
   
- <xref:System.Web.UI.IEditableTextControl> is implemented by <xref:System.Web.UI.WebControls.TextBox> and <xref:System.Web.UI.WebControls.ListControl>. In those classes, the event is raised through the <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A?displayProperty=fullName> or <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A?displayProperty=fullName> methods. A class that implements the <xref:System.Web.UI.IEditableTextControl> interface could define a similar method for raising the event.  
+ <xref:System.Web.UI.IEditableTextControl> is implemented by <xref:System.Web.UI.WebControls.TextBox> and <xref:System.Web.UI.WebControls.ListControl>. In those classes, the event is raised through the <xref:System.Web.UI.WebControls.ListControl.OnTextChanged%2A?displayProperty=nameWithType> or <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A?displayProperty=nameWithType> methods. A class that implements the <xref:System.Web.UI.IEditableTextControl> interface could define a similar method for raising the event.  
   
    
   

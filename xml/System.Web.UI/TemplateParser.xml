@@ -21,6 +21,7 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.BaseTemplateParser" />
   </Docs>
   <Members>
     <Member MemberName="ParseFile">
@@ -56,6 +57,7 @@
         <exception cref="T:System.Web.HttpException">
           <paramref name="physicalPath" /> or <paramref name="virtualPath" /> refers to the file currently being parsed.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.TemplateParser.ProcessError(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -106,6 +108,9 @@
         <summary>Reports a process error by creating a new <see cref="T:System.Web.ParserError" /> object with the specified message and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.TemplateParser.ProcessException(System.Exception)" />
+        <altmember cref="T:System.Web.ParserError" />
+        <altmember cref="T:System.Web.ParserErrorCollection" />
       </Docs>
     </Member>
     <Member MemberName="ProcessException">
@@ -129,6 +134,10 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpCompileException">The <see cref="T:System.Exception" /> to process is a compiler error.</exception>
         <forInternalUseOnly />
+        <altmember cref="M:System.Web.UI.TemplateParser.ProcessError(System.String)" />
+        <altmember cref="T:System.Web.HttpCompileException" />
+        <altmember cref="T:System.Web.ParserError" />
+        <altmember cref="T:System.Web.ParserErrorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Text">

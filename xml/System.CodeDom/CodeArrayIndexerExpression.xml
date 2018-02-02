@@ -63,7 +63,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeArrayIndexerExpression (System.CodeDom.CodeExpression targetObject, System.CodeDom.CodeExpression[] indices);" />
+      <MemberSignature Language="C#" Value="public CodeArrayIndexerExpression (System.CodeDom.CodeExpression targetObject, params System.CodeDom.CodeExpression[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, class System.CodeDom.CodeExpression[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])" />
       <MemberType>Constructor</MemberType>
@@ -150,5 +150,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

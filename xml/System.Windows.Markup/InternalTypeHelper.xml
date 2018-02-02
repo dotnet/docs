@@ -25,8 +25,6 @@
   
  When compiling a XAML file, you can use public types, but you can also use internal types subject to the same limitations that exist on code access to internal types. <xref:System.Windows.Markup.InternalTypeHelper> enables support of internal access level types for markup. This involves the compiler creating a generated class that derives from <xref:System.Windows.Markup.InternalTypeHelper> and implements its members. The generated class exists in a security and access context such that only the same assembly or other assemblies specifically attributed for shared internal access can reference the generated class and thus the internal types.  
   
-<a name="xamlTextUsage_InternalTypeHelper"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>

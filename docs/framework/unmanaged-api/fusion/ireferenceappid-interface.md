@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IReferenceAppId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IReferenceAppId interface [.NET Framework fusion]"
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IReferenceAppId Interface
 Represents a reference to the unique identifier for the application in the current scope.  
@@ -50,6 +50,6 @@ Represents a reference to the unique identifier for the application in the curre
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)   
- [IEnumReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ienumreferenceidentity-interface.md)   
+ [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
+ [IEnumReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ienumreferenceidentity-interface.md)  
  [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)

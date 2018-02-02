@@ -54,6 +54,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnCollection" />
+    <altmember cref="T:System.Windows.Controls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,9 +94,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to get the current width of the <xref:System.Windows.Controls.GridViewColumn> when the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property is set to <xref:System.Double.NaN?displayProperty=fullName>. A value of <xref:System.Double.NaN?displayProperty=fullName> for the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property specifies that the column size accommodate the largest visible item that is not the column header.  
+ You can use this property to get the current width of the <xref:System.Windows.Controls.GridViewColumn> when the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property is set to <xref:System.Double.NaN?displayProperty=nameWithType>. A value of <xref:System.Double.NaN?displayProperty=nameWithType> for the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property specifies that the column size accommodate the largest visible item that is not the column header.  
   
- Unlike <xref:System.Windows.FrameworkElement.ActualWidth%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A?displayProperty=fullName> is not a dependency property.  
+ Unlike <xref:System.Windows.FrameworkElement.ActualWidth%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A?displayProperty=nameWithType> is not a dependency property.  
   
  ]]></format>
         </remarks>
@@ -165,6 +169,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.CellTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.DisplayMemberBinding" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplateProperty">
@@ -398,6 +404,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="HeaderContainerStyle">
@@ -471,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridView.ColumnHeaderContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderContainerStyleProperty">
@@ -540,15 +551,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
+ If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=nameWithType>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=nameWithType> property is set, this property is ignored.  
   
  You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
   
--   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=nameWithType>  
   
 <a name="dependencyPropertyInfo_HeaderStringFormat"></a>   
 ## Dependency Property Information  
@@ -602,7 +613,7 @@
   
  After a <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> or <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> is specified for a <xref:System.Windows.Controls.GridViewColumn>, it cannot be changed.  
   
- You can also define the display of a column header by specifying a <xref:System.Windows.Controls.ControlTemplate> as part of a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A?displayProperty=fullName>.  
+ You can also define the display of a column header by specifying a <xref:System.Windows.Controls.ControlTemplate> as part of a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A?displayProperty=nameWithType>.  
   
  Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
@@ -646,6 +657,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GridView.ColumnHeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateProperty">
@@ -852,7 +866,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the exact width when this property is set to <xref:System.Double?displayProperty=fullName>, use the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property.  
+ To get the exact width when this property is set to <xref:System.Double.NaN?displayProperty=nameWithType>, use the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property.  
   
 <a name="xamlAttributeUsage_Width"></a>   
 ## XAML Attribute Usage  
@@ -905,6 +919,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.ActualWidth" />
       </Docs>
     </Member>
     <Member MemberName="WidthProperty">

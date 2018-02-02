@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "parameter specifiers"
   - "strings [.NET Framework], alignment"
@@ -20,25 +23,28 @@ caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Composite Formatting
 The .NET Framework composite formatting feature takes a list of objects and a composite format string as input. A composite format string consists of fixed text intermixed with indexed placeholders, called format items, that correspond to the objects in the list. The formatting operation yields a result string that consists of the original fixed text intermixed with the string representation of the objects in the list.  
   
  The composite formatting feature is supported by methods such as the following:  
   
--   <xref:System.String.Format%2A?displayProperty=fullName>, which returns a formatted result string.  
+-   <xref:System.String.Format%2A?displayProperty=nameWithType>, which returns a formatted result string.  
   
--   <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=fullName>, which appends a formatted result string to a <xref:System.Text.StringBuilder> object.  
+-   <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, which appends a formatted result string to a <xref:System.Text.StringBuilder> object.  
   
--   Some overloads of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method, which display a formatted result string to the console.  
+-   Some overloads of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, which display a formatted result string to the console.  
   
--   Some overloads of the <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=fullName> method, which write the formatted result string to a stream or file. The classes derived from <xref:System.IO.TextWriter>, such as <xref:System.IO.StreamWriter> and <xref:System.Web.UI.HtmlTextWriter>, also share this functionality.  
+-   Some overloads of the <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=nameWithType> method, which write the formatted result string to a stream or file. The classes derived from <xref:System.IO.TextWriter>, such as <xref:System.IO.StreamWriter> and <xref:System.Web.UI.HtmlTextWriter>, also share this functionality.  
   
--   <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, which outputs a formatted message to trace listeners.  
+-   <xref:System.Diagnostics.Debug.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, which outputs a formatted message to trace listeners.  
   
--   The <xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, <xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and <xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> methods, which output formatted messages to trace listeners.  
+-   The <xref:System.Diagnostics.Trace.TraceError%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, and <xref:System.Diagnostics.Trace.TraceWarning%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> methods, which output formatted messages to trace listeners.  
   
--   The <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method, which writes an informational method to trace listeners.  
+-   The <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method, which writes an informational method to trace listeners.  
   
 ## Composite Format String  
  A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.  
@@ -86,9 +92,9 @@ The .NET Framework composite formatting feature takes a list of objects and a co
 |Type or type category|See|  
 |---------------------------|---------|  
 |Date and time types (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)<br /><br /> [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|  
-|Enumeration types (all types derived from <xref:System.Enum?displayProperty=fullName>)|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|  
+|Enumeration types (all types derived from <xref:System.Enum?displayProperty=nameWithType>)|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|  
 |Numeric types (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)<br /><br /> [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|  
-|<xref:System.Guid>|<xref:System.Guid.ToString%28System.String%29?displayProperty=fullName>|  
+|<xref:System.Guid>|<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|  
 |<xref:System.TimeSpan>|[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)<br /><br /> [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|  
   
 ### Escaping Braces  
@@ -112,7 +118,7 @@ The .NET Framework composite formatting feature takes a list of objects and a co
  [!code-vb[Formatting.Composite#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Escaping1.vb#2)]  
   
 ### Processing Order  
- If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value is not `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it is cached for later use.  
+ If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value is not `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it is cached for later use.  
   
  Each value in the parameter list that corresponds to a format item is converted to a string by performing the following steps. If any condition in the first three steps is true, the string representation of the value is returned in that step, and subsequent steps are not executed.  
   
@@ -122,13 +128,13 @@ The .NET Framework composite formatting feature takes a list of objects and a co
   
 3.  If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. The method is passed the *formatString* value, if one is present in the format item, or `null` if it is not. The <xref:System.IFormatProvider> argument is determined as follows:  
   
-    -   For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
+    -   For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture is used.  
   
-    -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
+    -   For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it is unable to supply one, if the value of the argument is `null`, or if the composite formatting method does not have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used.  
   
-    -   For objects of other types, if a composite formatting is called with an <xref:System.IFormatProvider> argument, its value (including a `null`, if no <xref:System.IFormatProvider> object is supplied) is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation.  Otherwise, a <xref:System.Globalization.CultureInfo> object that represents the current thread culture is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation.  
+    -   For objects of other types, if a composite formatting is called with an <xref:System.IFormatProvider> argument, its value (including a `null`, if no <xref:System.IFormatProvider> object is supplied) is passed directly to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  Otherwise, a <xref:System.Globalization.CultureInfo> object that represents the current thread culture is passed to the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation.  
   
-4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=fullName> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it is present, is ignored.  
+4.  The type's parameterless `ToString` method, which either overrides <xref:System.Object.ToString?displayProperty=nameWithType> or inherits the behavior of its base class, is called. In this case, the format string specified by the *formatString* component in the format item, if it is present, is ignored.  
   
  Alignment is applied after the preceding steps have been performed.  
   
@@ -140,7 +146,7 @@ The .NET Framework composite formatting feature takes a list of objects and a co
   
  Assuming that the current day is a Thursday in May, the value of both strings in the preceding example is `Thursday May` in the U.S. English culture.  
   
- <xref:System.Console.WriteLine%2A?displayProperty=fullName> exposes the same functionality as <xref:System.String.Format%2A?displayProperty=fullName>. The only difference between the two methods is that <xref:System.String.Format%2A?displayProperty=fullName> returns its result as a string, while <xref:System.Console.WriteLine%2A?displayProperty=fullName> writes the result to the output stream associated with the <xref:System.Console> object. The following example uses the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method to format the value of `MyInt` to a currency value.  
+ <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> exposes the same functionality as <xref:System.String.Format%2A?displayProperty=nameWithType>. The only difference between the two methods is that <xref:System.String.Format%2A?displayProperty=nameWithType> returns its result as a string, while <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> writes the result to the output stream associated with the <xref:System.Console> object. The following example uses the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to format the value of `MyInt` to a currency value.  
   
  [!code-csharp[Formatting.Composite#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#4)]
  [!code-vb[Formatting.Composite#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#4)]  
@@ -156,13 +162,13 @@ The .NET Framework composite formatting feature takes a list of objects and a co
  [!code-vb[Formatting.Composite#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#6)]  
   
 ## See Also  
- <xref:System.Console.WriteLine%2A>   
- <xref:System.String.Format%2A?displayProperty=fullName>   
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)   
- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)   
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)   
- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)   
- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)   
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)   
+ <xref:System.Console.WriteLine%2A>  
+ <xref:System.String.Format%2A?displayProperty=nameWithType>  
+ [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+ [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
+ [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
+ [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
+ [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+ [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
+ [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
  [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

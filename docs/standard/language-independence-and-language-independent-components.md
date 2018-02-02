@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "language interoperability"
   - "Common Language Specification"
@@ -20,6 +23,9 @@ caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Language Independence and Language-Independent Components
 The .NET Framework is language independent. This means that, as a developer, you can develop in one of the many languages that target the .NET Framework, such as C#, C++/CLI, Eiffel, F#, IronPython, IronRuby, PowerBuilder, Visual Basic, Visual COBOL, and Windows PowerShell. You can access the types and members of class libraries developed for the .NET Framework without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET Framework app regardless of its language.  
@@ -106,20 +112,20 @@ The .NET Framework is language independent. This means that, as a developer, you
 |Accessibility|[Member accessibility](#MemberAccess)|Accessibility shall not be changed when overriding inherited methods, except when overriding a method inherited from a different assembly with accessibility `family-or-assembly`. In this case, the override shall have accessibility `family`.|10|  
 |Accessibility|[Member accessibility](#MemberAccess)|The visibility and accessibility of types and members shall be such that types in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible. For example, a public method that is visible outside its assembly shall not have an argument whose type is visible only within the assembly. The visibility and accessibility of types composing an instantiated generic type used in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible. For example, an instantiated generic type present in the signature of a member that is visible outside its assembly shall not have a generic argument whose type is visible only within the assembly.|12|  
 |Arrays|[Arrays](#arrays)|Arrays shall have elements with a CLS-compliant type, and all dimensions of the array shall have lower bounds of zero. Only the fact that an item is an array and the element type of the array shall be required to distinguish between overloads. When overloading is based on two or more array types the element types shall be named types.|16|  
-|Attributes|[Attributes](#attributes)|Attributes shall be of type <xref:System.Attribute?displayProperty=fullName>, or a type inheriting from it.|41|  
-|Attributes|[Attributes](#attributes)|The CLS only allows a subset of the encodings of custom attributes. The only types that shall appear in these encodings are (see Partition IV): <xref:System.Type?displayProperty=fullName>, <xref:System.String?displayProperty=fullName>, <xref:System.Char?displayProperty=fullName>, <xref:System.Boolean?displayProperty=fullName>, <xref:System.Byte?displayProperty=fullName>, <xref:System.Int16?displayProperty=fullName>, <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Single?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, and any enumeration type based on a CLS-compliant base integer type.|34|  
+|Attributes|[Attributes](#attributes)|Attributes shall be of type <xref:System.Attribute?displayProperty=nameWithType>, or a type inheriting from it.|41|  
+|Attributes|[Attributes](#attributes)|The CLS only allows a subset of the encodings of custom attributes. The only types that shall appear in these encodings are (see Partition IV): <xref:System.Type?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Char?displayProperty=nameWithType>, <xref:System.Boolean?displayProperty=nameWithType>, <xref:System.Byte?displayProperty=nameWithType>, <xref:System.Int16?displayProperty=nameWithType>, <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.Single?displayProperty=nameWithType>, <xref:System.Double?displayProperty=nameWithType>, and any enumeration type based on a CLS-compliant base integer type.|34|  
 |Attributes|[Attributes](#attributes)|The CLS does not allow publicly visible required modifiers (`modreq`, see Partition II), but does allow optional modifiers (`modopt`, see Partition II) it does not understand.|35|  
 |Constructors|[Constructors](#ctors)|An object constructor shall call some instance constructor of its base class before any access occurs to inherited instance data. (This does not apply to value types, which need not have constructors.)|21|  
 |Constructors|[Constructors](#ctors)|An object constructor shall not be called except as part of the creation of an object, and an object shall not be initialized twice.|22|  
 |Enumerations|[Enumerations](#enums)|The underlying type of an enum shall be a built-in CLS integer type, the name of the field shall be "value__", and that field shall be marked `RTSpecialName`.|7|  
-|Enumerations|[Enumerations](#enums)|There are two distinct kinds of enums, indicated by the presence or absence of the <xref:System.FlagsAttribute?displayProperty=fullName> (see Partition IV Library) custom attribute. One represents named integer values; the other represents named bit flags that can be combined to generate an unnamed value. The value of an `enum` is not limited to the specified values.|8|  
+|Enumerations|[Enumerations](#enums)|There are two distinct kinds of enums, indicated by the presence or absence of the <xref:System.FlagsAttribute?displayProperty=nameWithType> (see Partition IV Library) custom attribute. One represents named integer values; the other represents named bit flags that can be combined to generate an unnamed value. The value of an `enum` is not limited to the specified values.|8|  
 |Enumerations|[Enumerations](#enums)|Literal static fields of an enum shall have the type of the enum itself.|9|  
 |Events|[Events](#events)|The methods that implement an event shall be marked `SpecialName` in themetadata.|29|  
 |Events|[Events](#events)|The accessibility of an event and of its accessors shall be identical.|30|  
 |Events|[Events](#events)|The `add` and `remove` methods for an event shall both either be present or absent.|31|  
-|Events|[Events](#events)|The `add` and `remove` methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from <xref:System.Delegate?displayProperty=fullName>.|32|  
+|Events|[Events](#events)|The `add` and `remove` methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from <xref:System.Delegate?displayProperty=nameWithType>.|32|  
 |Events|[Events](#events)|Events shall adhere to a specific naming pattern. The `SpecialName` attribute referred to in CLS rule 29 shall be ignored in appropriate name comparisons and shall adhere to identifier rules.|33|  
-|Exceptions|[Exceptions](#exceptions)|Objects that are thrown shall be of type <xref:System.Exception?displayProperty=fullName> or a type inheriting from it. Nonetheless, CLS-compliant methods are not required to block the propagation of other types of exceptions.|40|  
+|Exceptions|[Exceptions](#exceptions)|Objects that are thrown shall be of type <xref:System.Exception?displayProperty=nameWithType> or a type inheriting from it. Nonetheless, CLS-compliant methods are not required to block the propagation of other types of exceptions.|40|  
 |General|[CLS compliance: the Rules](#Rules)|CLS rules apply only to those parts of a type that are accessible or visible outsideof the defining assembly.|1|  
 |General|[CLS compliance: the Rules](#Rules)|Members of non-CLS compliant types shall not be marked CLS-compliant.|2|  
 |Generics|[Generic types and members](#Generics)|Nested types shall have at least as many generic parameters as the enclosing type. Generic parameters in a nested type correspond by position to the generic parameters in its enclosing type.|42|  
@@ -139,7 +145,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 |Overloading|[Overloads](#overloads)|Only properties and methods can be overloaded.|37|  
 |Overloading|[Overloads](#overloads)|Properties and methods can be overloaded based only on the number and types of their parameters, except the conversion operators named `op_Implicit` and `op_Explicit`, which can also be overloaded based on their return type.|38|  
 |Overloading|--|If two or more CLS-compliant methods declared in a type have the same nameand, for a specific set of type instantiations, they have the same parameter and return types, thenall these methods shall be semantically equivalent at those type instantiations.|48|  
-|Types|[Type and type member signatures](#Types)|<xref:System.Object?displayProperty=fullName> is CLS-compliant. Any other CLS-compliant class shall inherit from a CLS-compliant class.|23|  
+|Types|[Type and type member signatures](#Types)|<xref:System.Object?displayProperty=nameWithType> is CLS-compliant. Any other CLS-compliant class shall inherit from a CLS-compliant class.|23|  
 |Properties|[Properties](#properties)|The methods that implement the getter and setter methods of a property shallbe marked `SpecialName` in the metadata.|24|  
 |Properties|[Properties](#properties)|A property’s accessors shall all be static, all be virtual, or all be instance.|26|  
 |Properties|[Properties](#properties)|The type of a property shall be the return type of the getter and the type of the last argument of the setter. The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter. All of these types shall be CLS-compliant, and shall not be managed pointers (i.e., shall not be passed by reference).|27|  
@@ -153,7 +159,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
 <a name="Types"></a>   
 ### Types and type member signatures  
- The <xref:System.Object?displayProperty=fullName> type is CLS-compliant and is the base type of all object types in the .NET Framework type system. Inheritance in the .NET Framework is either implicit (for example, the <xref:System.String> class implicitly inherits from the <xref:System.Object> class) or explicit (for example, the <xref:System.Globalization.CultureNotFoundException> class explicitly inherits from the <xref:System.ArgumentException> class, which explicitly inherits from the <xref:System.SystemException> class, which explicitly inherits from the <xref:System.Exception> class). For a derived type to be CLS compliant, its base type must also be CLS-compliant.  
+ The <xref:System.Object?displayProperty=nameWithType> type is CLS-compliant and is the base type of all object types in the .NET Framework type system. Inheritance in the .NET Framework is either implicit (for example, the <xref:System.String> class implicitly inherits from the <xref:System.Object> class) or explicit (for example, the <xref:System.Globalization.CultureNotFoundException> class explicitly inherits from the <xref:System.ArgumentException> class, which explicitly inherits from the <xref:System.SystemException> class, which explicitly inherits from the <xref:System.Exception> class). For a derived type to be CLS compliant, its base type must also be CLS-compliant.  
   
  The following example shows a derived type whose base type is not CLS-compliant. It defines a base `Counter` class that uses an unsigned 32-bit integer as a counter. Because the class provides counter functionality by wrapping an unsigned integer, the class is marked as non-CLS-compliant. As a result, a derived class, `NonZeroCounter`, is also not CLS-compliant.  
   
@@ -227,7 +233,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
  Programming language identifiers, such as the names of namespaces, types, and members, must conform to the [Unicode Standard 3.0, Technical Report 15, Annex 7](http://www.unicode.org/reports/tr15/tr15-18.html). This means that:  
   
--   The first character of an identifier can be any Unicode uppercase letter, lowercase letter, title case letter, modifier letter, other letter, or letter number. For information on Unicode character categories, see the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> enumeration.  
+-   The first character of an identifier can be any Unicode uppercase letter, lowercase letter, title case letter, modifier letter, other letter, or letter number. For information on Unicode character categories, see the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> enumeration.  
   
 -   Subsequent characters can be from any of the categories as the first character, and can also include non-spacing marks, spacing combining marks, decimal numbers, connector punctuations, and formatting codes.  
   
@@ -318,19 +324,19 @@ The .NET Framework is language independent. This means that, as a developer, you
      [!code-csharp[Conceptual.CLSCompliant#7](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/enum3.cs#7)]
      [!code-vb[Conceptual.CLSCompliant#7](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/enum3.vb#7)]  
   
--   An enumeration type must have a single instance field named `Value__` that is marked with the <xref:System.Reflection.FieldAttributes.RTSpecialName?displayProperty=fullName> attribute. This enables you to reference the field value implicitly.  
+-   An enumeration type must have a single instance field named `Value__` that is marked with the <xref:System.Reflection.FieldAttributes.RTSpecialName?displayProperty=nameWithType> attribute. This enables you to reference the field value implicitly.  
   
 -   An enumeration includes literal static fields whose types match the type of the enumeration itself. For example, if you define a `State` enumeration with values of `State.On` and `State.Off`, `State.On` and `State.Off` are both literal static fields whose type is `State`.  
   
 -   There are two kinds of enumerations:  
   
-    -   An enumeration that represents a set of mutually exclusive, named integer values. This type of enumeration is indicated by the absence of the <xref:System.FlagsAttribute?displayProperty=fullName> custom attribute.  
+    -   An enumeration that represents a set of mutually exclusive, named integer values. This type of enumeration is indicated by the absence of the <xref:System.FlagsAttribute?displayProperty=nameWithType> custom attribute.  
   
-    -   An enumeration that represents a set of bit flags that can combine to generate an unnamed value. This type of enumeration is indicated by the presence of the <xref:System.FlagsAttribute?displayProperty=fullName> custom attribute.  
+    -   An enumeration that represents a set of bit flags that can combine to generate an unnamed value. This type of enumeration is indicated by the presence of the <xref:System.FlagsAttribute?displayProperty=nameWithType> custom attribute.  
   
      For more information, see the documentation for the <xref:System.Enum> structure.  
   
--   The value of an enumeration is not limited to the range of its specified values. In other words, the range of values in an enumeration is the range of its underlying value. You can use the <xref:System.Enum.IsDefined%2A?displayProperty=fullName> method to determine whether a specified value is a member of an enumeration.  
+-   The value of an enumeration is not limited to the range of its specified values. In other words, the range of values in an enumeration is the range of its underlying value. You can use the <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method to determine whether a specified value is a member of an enumeration.  
   
 <a name="members"></a>   
 ### Type members in general  
@@ -356,7 +362,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 ### Generic types and members  
  Nested types always have at least as many generic parameters as their enclosing type. These correspond by position to the generic parameters in the enclosing type. The generic type can also include new generic parameters.  
   
- The relationship between the generic type parameters of a containing type and its nested types may be hidden by the syntax of individual languages. In the following example, a generic type `Outer<T>` contains two nested classes, `Inner1A` and `Inner1B<U>`. The calls to the `ToString` method, which each class inherits from <xref:System.Object.ToString%2A?displayProperty=fullName>,  show that each nested class includes the type parameters of its containing class.  
+ The relationship between the generic type parameters of a containing type and its nested types may be hidden by the syntax of individual languages. In the following example, a generic type `Outer<T>` contains two nested classes, `Inner1A` and `Inner1B<U>`. The calls to the `ToString` method, which each class inherits from <xref:System.Object.ToString%2A?displayProperty=nameWithType>,  show that each nested class includes the type parameters of its containing class.  
   
  [!code-csharp[Conceptual.CLSCompliant#29](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/nestedgenerics2.cs#29)]
  [!code-vb[Conceptual.CLSCompliant#29](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/nestedgenerics2.vb#29)]  
@@ -396,7 +402,7 @@ The .NET Framework is language independent. This means that, as a developer, you
      [!code-csharp[Conceptual.CLSCompliant#11](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/ctor1.cs#11)]
      [!code-vb[Conceptual.CLSCompliant#11](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/ctor1.vb#11)]  
   
--   An object constructor cannot be called except to create an object. In addition, an object cannot be initialized twice. For example, this means that <xref:System.Object.MemberwiseClone%2A?displayProperty=fullName> and deserialization methods such as <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=fullName> must not call constructors.  
+-   An object constructor cannot be called except to create an object. In addition, an object cannot be initialized twice. For example, this means that <xref:System.Object.MemberwiseClone%2A?displayProperty=nameWithType> and deserialization methods such as <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> must not call constructors.  
   
 <a name="properties"></a>   
 ### Properties  
@@ -410,11 +416,11 @@ The .NET Framework is language independent. This means that, as a developer, you
   
 <a name="events"></a>   
 ### Events  
- An event is defined by its name and its type. The event type is a delegate that is used to indicate the event. For example, the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event is of type <xref:System.ResolveEventHandler>. In addition to the event itself, three methods with names based on the event name provide the event's implementation and are marked as `SpecialName` in the assembly's metadata:  
+ An event is defined by its name and its type. The event type is a delegate that is used to indicate the event. For example, the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event is of type <xref:System.ResolveEventHandler>. In addition to the event itself, three methods with names based on the event name provide the event's implementation and are marked as `SpecialName` in the assembly's metadata:  
   
--   A method for adding an event handler, named `add_`*EventName*. For example, the event subscription method for the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event is named `add_AssemblyResolve`.  
+-   A method for adding an event handler, named `add_`*EventName*. For example, the event subscription method for the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event is named `add_AssemblyResolve`.  
   
--   A method for removing an event handler, named `remove_`*EventName*. For example, the removal method for the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event is named `remove_AssemblyResolve`.  
+-   A method for removing an event handler, named `remove_`*EventName*. For example, the removal method for the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event is named `remove_AssemblyResolve`.  
   
 -   A method for indicating that the event has occurred, named `raise_`*EventName*.  
   
@@ -443,21 +449,21 @@ The .NET Framework is language independent. This means that, as a developer, you
   
 <a name="exceptions"></a>   
 ### Exceptions  
- Exception objects must derive from <xref:System.Exception?displayProperty=fullName> or from another type derived from <xref:System.Exception?displayProperty=fullName>. The following example illustrates the compiler error that results when a custom class named `ErrorClass` is used for exception handling.  
+ Exception objects must derive from <xref:System.Exception?displayProperty=nameWithType> or from another type derived from <xref:System.Exception?displayProperty=nameWithType>. The following example illustrates the compiler error that results when a custom class named `ErrorClass` is used for exception handling.  
   
  [!code-csharp[Conceptual.CLSCompliant#13](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/exceptions1.cs#13)]
  [!code-vb[Conceptual.CLSCompliant#13](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/exceptions1.vb#13)]  
   
- To correct this error, the `ErrorClass` class must inherit from <xref:System.Exception?displayProperty=fullName>. In addition, the `Message` property must be overridden. The following example corrects these errors to define an `ErrorClass` class that is CLS-compliant.  
+ To correct this error, the `ErrorClass` class must inherit from <xref:System.Exception?displayProperty=nameWithType>. In addition, the `Message` property must be overridden. The following example corrects these errors to define an `ErrorClass` class that is CLS-compliant.  
   
  [!code-csharp[Conceptual.CLSCompliant#14](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/exceptions2.cs#14)]
  [!code-vb[Conceptual.CLSCompliant#14](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/exceptions2.vb#14)]  
   
 <a name="attributes"></a>   
 ### Attributes  
- In.NET Framework assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from <xref:System.Attribute?displayProperty=fullName> or from a type derived from <xref:System.Attribute?displayProperty=fullName>.  
+ In.NET Framework assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from <xref:System.Attribute?displayProperty=nameWithType> or from a type derived from <xref:System.Attribute?displayProperty=nameWithType>.  
   
- The following example violates this rule. It defines a `NumericAttribute` class that does not derive from <xref:System.Attribute?displayProperty=fullName>. Note that a compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.  
+ The following example violates this rule. It defines a `NumericAttribute` class that does not derive from <xref:System.Attribute?displayProperty=nameWithType>. Note that a compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.  
   
  [!code-csharp[Conceptual.CLSCompliant#18](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/attribute1.cs#18)]
  [!code-vb[Conceptual.CLSCompliant#18](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/attribute1.vb#18)]  
@@ -493,7 +499,7 @@ The .NET Framework is language independent. This means that, as a developer, you
   
 <a name="CLSAttribute"></a>   
 ## The CLSCompliantAttribute attribute  
- The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a program element complies with the Common Language Specification. The <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor includes a single required parameter, `isCompliant`, that indicates whether the program element is CLS-compliant.  
+ The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a program element complies with the Common Language Specification. The <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor includes a single required parameter, `isCompliant`, that indicates whether the program element is CLS-compliant.  
   
  At compile time, the compiler detects non-compliant elements that are presumed to be CLS-compliant and emits a warning. The compiler does not emit warnings for types or members that are explicitly declared to be non-compliant.  
   
@@ -504,9 +510,9 @@ The .NET Framework is language independent. This means that, as a developer, you
 -   To ensure that the component library's public interface exposes only program elements that are CLS-compliant. If elements are not CLS-compliant, compilers will generally issue a warning.  
   
 > [!WARNING]
->  In some cases, language compilers enforce CLS-compliant rules regardless of whether the <xref:System.CLSCompliantAttribute> attribute is used. For example, defining a static member in an interface violates a CLS rule. However, if you define a `static` (in C#) or `Shared` (in Visual Basic) member in an interface, both the C# and Visual Basic compilers display an error message and fail to compile the app.  
+>  In some cases, language compilers enforce CLS-compliant rules regardless of whether the <xref:System.CLSCompliantAttribute> attribute is used. For example, defining a static member in an interface violates a CLS rule. In this regard, if you define a `static` (in C#) or `Shared` (in Visual Basic) member in an interface, both the C# and Visual Basic compilers display an error message and fail to compile the app.  
   
- The <xref:System.CLSCompliantAttribute> attribute is marked with an <xref:System.AttributeUsageAttribute> attribute that has a value of <xref:System.AttributeTargets.All?displayProperty=fullName>. This value allows you to apply the <xref:System.CLSCompliantAttribute> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values. However, in practice, you should apply the attribute only to assemblies, types, and type members. Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.  
+ The <xref:System.CLSCompliantAttribute> attribute is marked with an <xref:System.AttributeUsageAttribute> attribute that has a value of <xref:System.AttributeTargets.All?displayProperty=nameWithType>. This value allows you to apply the <xref:System.CLSCompliantAttribute> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values. However, in practice, you should apply the attribute only to assemblies, types, and type members. Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.  
   
  The value of the <xref:System.CLSCompliantAttribute> attribute is inherited by contained program elements. For example, if an assembly is marked as CLS-compliant, its types are also CLS-compliant. If a type is marked as CLS-compliant, its nested types and members are also CLS-compliant.  
   

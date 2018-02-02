@@ -9,28 +9,28 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "ToolStripMenuItems, moving"
-  - "menus, arranging items"
-  - "ToolStripMenuItems, dragging and dropping"
-  - "menu items, moving"
-  - "menu items, cutting and pasting"
-  - "menu items, dragging and dropping"
+  - "ToolStripMenuItems [Windows Forms], moving"
+  - "menus [Windows Forms], arranging items"
+  - "ToolStripMenuItems [Windows Forms], dragging and dropping"
+  - "menu items [Windows Forms], moving"
+  - "menu items [Windows Forms], cutting and pasting"
+  - "menu items [Windows Forms], dragging and dropping"
   - "MenuStrip control [Windows Forms], arranging items"
-  - "ToolStripMenuItems, cutting and pasting"
+  - "ToolStripMenuItems [Windows Forms], cutting and pasting"
 ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Move ToolStripMenuItems
 At design time, you can move entire top-level menus and their menu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also move individual menu items between top-level menus or change the position of menu items within a menu.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### To move a top-level menu and its menu items to another top-level location  
   
@@ -79,6 +79,6 @@ At design time, you can move entire top-level menus and their menu items to a di
      The menu item that you cut is inserted after the selected menu item.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ToolStripMenuItem>   
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ToolStripMenuItem>  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

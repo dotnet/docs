@@ -25,11 +25,14 @@
 ## Examples  
  The following example demonstrates how to get properties of the <xref:System.Web.HttpRuntime> class representing the current application domain and display them to the browser.  
   
- <!-- TODO: review snippet reference [!code-csharp[SystemWebHttpRuntime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebHttpRuntime/CS/systemwebhttpruntime.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SystemWebHttpRuntime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebHttpRuntime/VB/systemwebhttpruntime.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[SystemWebHttpRuntime#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebHttpRuntime/CS/systemwebhttpruntime.cs.aspx#1)]
+ [!code-aspx-vb[SystemWebHttpRuntime#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebHttpRuntime/VB/systemwebhttpruntime.vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.HttpRuntime.ProcessRequest(System.Web.HttpWorkerRequest)" />
+    <altmember cref="T:System.Web.HttpWorkerRequest" />
+    <altmember cref="T:System.Web.Hosting.SimpleWorkerRequest" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -226,7 +229,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see the <xref:System.Web.Caching.Cache?displayProperty=fullName> class.  
+ For more information, see the <xref:System.Web.Caching.Cache?displayProperty=nameWithType> class.  
   
  ]]></format>
         </remarks>

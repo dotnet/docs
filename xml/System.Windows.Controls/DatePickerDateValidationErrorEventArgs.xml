@@ -16,14 +16,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.DatePicker.DateValidationError?displayProperty=fullName> event occurs when <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> is set to a value that cannot be interpreted as a date or when the date cannot be selected. You can subscribe to this event and specify whether an exception is raised by setting the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property. If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=fullName> is `true`, one of the following exceptions is raised:  
+ The <xref:System.Windows.Controls.DatePicker.DateValidationError?displayProperty=nameWithType> event occurs when <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=nameWithType> is set to a value that cannot be interpreted as a date or when the date cannot be selected. You can subscribe to this event and specify whether an exception is raised by setting the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property. If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> is `true`, one of the following exceptions is raised:  
   
 |Exception type|Condition|  
 |--------------------|---------------|  
 |<xref:System.FormatException>|The text entered cannot be parsed to a valid date, and the exception is not suppressed.|  
 |<xref:System.ArgumentOutOfRangeException>|The text entered parses to a date that is not selectable.|  
   
- If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=fullName> is `false`, the application continues execution as usual.  
+ If <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> is `false`, the application continues execution as usual.  
   
    
   

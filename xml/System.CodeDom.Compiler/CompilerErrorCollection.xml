@@ -23,7 +23,7 @@
  The <xref:System.CodeDom.Compiler.CompilerErrorCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.Compiler.CompilerError> objects.  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about inheritance demands, see  [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -37,6 +37,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -152,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.AddRange(System.CodeDom.Compiler.CompilerError[])" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -190,6 +192,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.Add(System.CodeDom.Compiler.CompilerError)" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -228,6 +231,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.Add(System.CodeDom.Compiler.CompilerError)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -266,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.IndexOf(System.CodeDom.Compiler.CompilerError)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -311,6 +316,7 @@
  The number of elements in the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> is greater than the available space between the index value of the <paramref name="arrayIndex" /> parameter in the array indicated by the <paramref name="array" /> parameter and the end of the array indicated by the <paramref name="array" /> parameter.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the lowbound of the array indicated by the <paramref name="array" /> parameter.</exception>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="HasErrors">
@@ -394,6 +400,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.Contains(System.CodeDom.Compiler.CompilerError)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -432,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.CodeDom.Compiler.CompilerErrorCollection.Add(System.CodeDom.Compiler.CompilerError)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -498,5 +506,23 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerErrorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of an array to the end of the error collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

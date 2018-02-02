@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "pattern-matching with regular expressions, about pattern-matching"
   - "substrings"
@@ -27,12 +30,15 @@ caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # .NET Regular Expressions
-Regular expressions provide a powerful, flexible, and efficient method for processing text. The extensive pattern-matching notation of regular expressions enables you to quickly parse large amounts of text to find specific character patterns; to validate text to ensure that it matches a predefined pattern (such as an e-mail address); to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection in order to generate a report. For many applications that deal with strings or that parse large blocks of text, regular expressions are an indispensable tool.  
+Regular expressions provide a powerful, flexible, and efficient method for processing text. The extensive pattern-matching notation of regular expressions enables you to quickly parse large amounts of text to find specific character patterns; to validate text to ensure that it matches a predefined pattern (such as an email address); to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection in order to generate a report. For many applications that deal with strings or that parse large blocks of text, regular expressions are an indispensable tool.  
   
 ## How Regular Expressions Work  
- The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
+ The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
   
 -   The regular expression pattern to identify in the text.  
   
@@ -42,17 +48,17 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
   
  The methods of the <xref:System.Text.RegularExpressions.Regex> class let you perform the following operations:  
   
--   Determine whether the regular expression pattern occurs in the input text by calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method. For an example that uses the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method for validating text, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
+-   Determine whether the regular expression pattern occurs in the input text by calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method. For an example that uses the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> method for validating text, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
   
--   Retrieve one or all occurrences of text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> or <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method. The former method returns a <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object that provides information about the matching text. The latter returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains one <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object for each match found in the parsed text.  
+-   Retrieve one or all occurrences of text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. The former method returns a <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object that provides information about the matching text. The latter returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains one <xref:System.Text.RegularExpressions.Match?displayProperty=nameWithType> object for each match found in the parsed text.  
   
--   Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method. For examples that use the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](../../../docs/standard/base-types/how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](../../../docs/standard/base-types/regular-expression-example-changing-date-formats.md).  
+-   Replace text that matches the regular expression pattern by calling the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method. For examples that use the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method to change date formats and remove invalid characters from a string, see [How to: Strip Invalid Characters from a String](../../../docs/standard/base-types/how-to-strip-invalid-characters-from-a-string.md) and [Example: Changing Date Formats](../../../docs/standard/base-types/regular-expression-example-changing-date-formats.md).  
   
  For an overview of the regular expression object model, see [The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md).  
   
  For more information about the regular expression language, see [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:  
   
- [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)   
+ [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Quick Reference in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
 ## Regular Expression Examples  
@@ -64,7 +70,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
  [!code-csharp[Conceptual.Regex#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example1.cs#2)]
  [!code-vb[Conceptual.Regex#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example1.vb#2)]  
   
- The regular expression pattern`(Mr\.? |Mrs\.? |Miss |Ms\.? )` matches any occurrence of "Mr ", "Mr. ", "Mrs ", "Mrs. ", "Miss ", "Ms or "Ms. ". The call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=fullName> method replaces the matched string with <xref:System.String.Empty?displayProperty=fullName>; in other words, it removes it from the original string.  
+ The regular expression pattern`(Mr\.? |Mrs\.? |Miss |Ms\.? )` matches any occurrence of "Mr ", "Mr. ", "Mrs ", "Mrs. ", "Miss ", "Ms or "Ms. ". The call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the matched string with <xref:System.String.Empty?displayProperty=nameWithType>; in other words, it removes it from the original string.  
   
 ### Example 2: Identifying Duplicated Words  
  Accidentally duplicating words is a common error that writers make. A regular expression can be used to identify duplicated words, as the following example shows.  
@@ -82,7 +88,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |`\1`|Match the substring that is equal to the group named `\1`.|  
 |`\b`|Match a word boundary.|  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
  Note that the input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
   
@@ -99,7 +105,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |`\$`|Look for a single occurrence of the dollar symbol ($) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. (The $ symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string.) To ensure that the current culture's currency symbol is not misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A> method to escape the character.|  
 |`\s*`|Look for zero or more occurrences of a white-space character.|  
 |`[-+]?`|Look for zero or one occurrence of either a positive sign or a negative sign.|  
-|`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property. (The first element in the collection represents the entire match.)|  
+|`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. (The first element in the collection represents the entire match.)|  
 |`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
 |`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  
 |`\.`|Look for a single occurrence of the decimal separator.|  
@@ -118,7 +124,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Provides code examples that illustrate typical uses of regular expressions.|  
   
 ## Reference  
- <xref:System.Text.RegularExpressions?displayProperty=fullName>   
- <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName>   
- [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)   
+ <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
+ <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>  
+ [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Regular Expressions - Quick Reference (download in PDF format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

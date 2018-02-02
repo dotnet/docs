@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;cookieHandler&gt;
 Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.  
@@ -76,7 +78,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
   
  To configure a custom cookie handler, set the mode attribute to "Custom". You must also specify a `<customCookieHandler>` child element that references the type of your custom handler.  
   
- The `<cookieHandler>` element is represented by the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The cookie handler that was specified in configuration is available from the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property of the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property.  
+ The `<cookieHandler>` element is represented by the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The cookie handler that was specified in configuration is available from the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property of the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property.  
   
 ## Example  
  The following XML shows a `<cookieHandler>` element. In this example, because the `mode` attribute is not specified, the default cookie handler will be used by the SAM. This is an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class. Because the `<chunkedCookieHandler>` child element is not specified, the default chunk size will be used. HTTPS will not be required because the `requireSsl` attribute is set `false`.  
@@ -89,6 +91,6 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Services.CookieHandler>   
- <xref:System.IdentityModel.Services.ChunkedCookieHandler>   
+ <xref:System.IdentityModel.Services.CookieHandler>  
+ <xref:System.IdentityModel.Services.ChunkedCookieHandler>  
  <xref:System.IdentityModel.Services.SessionAuthenticationModule>

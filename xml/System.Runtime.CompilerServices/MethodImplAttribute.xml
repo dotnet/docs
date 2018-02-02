@@ -39,7 +39,7 @@
 ## Remarks  
  You can apply this attribute to methods or constructors.  
   
- This attribute lets you customize the configuration of the method or constructor to which it applies by supplying a <xref:System.Runtime.CompilerServices.MethodImplOptions> value to its class constructor. The members of the <xref:System.Runtime.CompilerServices.MethodImplOptions> enumeration correspond to bit fields in the `CorMethodImpl` metadata table. This means that information on the attribute cannot be retrieved at run time by calling the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method; instead, it is retrieved by calling either the `MethodInfo.GetMethodImplementationFlags` or the `ConstructorInfo.GetMethodImplementationFlags` method.  
+ This attribute lets you customize the configuration of the method or constructor to which it applies by supplying a <xref:System.Runtime.CompilerServices.MethodImplOptions> value to its class constructor. The members of the <xref:System.Runtime.CompilerServices.MethodImplOptions> enumeration correspond to bit fields in the `CorMethodImpl` metadata table. This means that information on the attribute cannot be retrieved at run time by calling the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> method; instead, it is retrieved by calling either the `MethodInfo.GetMethodImplementationFlags` or the `ConstructorInfo.GetMethodImplementationFlags` method.  
   
    
   
@@ -49,13 +49,14 @@
  [!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/methodimplattribute1.cs#1)]
  [!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/methodimplattribute1.vb#1)]  
   
- The following example then calls the `MethodInfo.GetMethodImplementationFlags` method to determine which flags are set for the `GetCalendarName` method. It also demonstrates that this information is not retrieved by the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ The following example then calls the `MethodInfo.GetMethodImplementationFlags` method to determine which flags are set for the `GetCalendarName` method. It also demonstrates that this information is not retrieved by the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/cs/getmethodimplattribute1.cs#2)]
  [!code-vb[System.Runtime.CompilerServices.MethodImplAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.methodimplattribute/vb/getmethodimplattribute1.vb#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.MethodBase.GetMethodImplementationFlags" />
       </Docs>
     </Member>
     <Member MemberName="MethodCodeType">
@@ -204,5 +206,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.MethodImplAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

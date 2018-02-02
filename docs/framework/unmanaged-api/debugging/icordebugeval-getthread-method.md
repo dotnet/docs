@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::GetThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetThread method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::GetThread method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::GetThread Method
 Gets the thread in which this evaluation is executing or will execute.  

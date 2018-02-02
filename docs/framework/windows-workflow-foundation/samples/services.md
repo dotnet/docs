@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 521cdb66-98cb-4ad1-b706-370788a43485
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Services
 This section contains links to samples that demonstrate [!INCLUDE[wf](../../../../includes/wf-md.md)] service functionality.  

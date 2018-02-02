@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "security [WCF], authorization"
 ms.assetid: 8ea0b552-af65-45b0-a157-c6c111b8ce5e
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Authorization in WCF
 Authorization is the process of controlling access and rights to resources, such as services or files. The topics in this section show you how to perform this basic task in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] in a variety of ways.  
@@ -53,5 +55,5 @@ Authorization is the process of controlling access and rights to resources, such
  [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

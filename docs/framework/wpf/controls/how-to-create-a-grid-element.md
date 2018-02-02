@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "Grid control, creating, grid instance"
+  - "Grid control [WPF], creating [WPF], grid instance"
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Grid Element
 ## Example  
@@ -26,5 +31,5 @@ manager: "wpickett"
  [!code-xaml[Grid#3](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Grid/XAML/default.xaml#3)]  
   
 ## See Also  
- <xref:System.Windows.Controls.Grid>   
+ <xref:System.Windows.Controls.Grid>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

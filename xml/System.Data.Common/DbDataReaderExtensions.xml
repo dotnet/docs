@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -21,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This class contains column schema extension methods for <see cref="T:System.Data.Common.DbDataReader" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,6 +43,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -46,9 +54,10 @@
         <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Data.Common.DbDataReader" /> to be checked for column schema support.</param>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Data.Common.DbDataReader" /> can get a column schema.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Data.Common.DbDataReader" /> can get a column schema; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,6 +75,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.DbColumn&gt;</ReturnType>
       </ReturnValue>
@@ -73,9 +86,9 @@
         <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:System.Data.Common.DbDataReader" /> to return the column schema.</param>
+        <summary>Gets the column schema (<see cref="T:System.Data.Common.DbColumn" /> collection) for a <see cref="T:System.Data.Common.DbDataReader" />.</summary>
+        <returns>The column schema (<see cref="T:System.Data.Common.DbColumn" /> collection) for a <see cref="T:System.Data.Common.DbDataReader" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

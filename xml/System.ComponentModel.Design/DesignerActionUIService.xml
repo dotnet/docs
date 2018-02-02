@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+    <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+    <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
+    <altmember cref="P:System.ComponentModel.Design.ComponentDesigner.ActionLists" />
   </Docs>
   <Members>
     <Member MemberName="DesignerActionUIStateChange">
@@ -66,10 +70,15 @@
 |<xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler>|Connects the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> with its handler.|  
 |<xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>|Denotes whether the smart tag panel is being displayed or hidden.|  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -129,6 +138,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -219,6 +231,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Add" />
+        <altmember cref="Overload:System.ComponentModel.Design.DesignerActionService.Remove" />
       </Docs>
     </Member>
   </Members>

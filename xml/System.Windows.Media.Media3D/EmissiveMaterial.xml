@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
+    <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,8 @@
         <param name="brush">The new material's brush.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.EmissiveMaterial" /> class with the specified brush.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
+        <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
       </Docs>
     </Member>
     <Member MemberName="Brush">
@@ -86,6 +90,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
+        <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
       </Docs>
     </Member>
     <Member MemberName="BrushProperty">
@@ -127,7 +133,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -155,7 +161,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -184,7 +190,7 @@
   
  Set the <xref:System.Windows.Media.Media3D.DiffuseMaterial.AmbientColor%2A> property to control how the material reflects ambient light.  
   
- The color of the light that appears to be emitted from the <xref:System.Windows.Media.Media3D.EmissiveMaterial> can also be specified by using the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Brush%2A>property.  
+ The color of the light that appears to be emitted from the <xref:System.Windows.Media.Media3D.EmissiveMaterial> can also be specified by using the <xref:System.Windows.Media.Media3D.EmissiveMaterial.Brush%2A> property.  
   
 <a name="dependencyPropertyInfo_Color"></a>   
 ## Dependency Property Information  
@@ -196,6 +202,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Media3D.DiffuseMaterial" />
+        <altmember cref="T:System.Windows.Media.Media3D.SpecularMaterial" />
       </Docs>
     </Member>
     <Member MemberName="ColorProperty">
@@ -241,5 +249,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.EmissiveMaterial" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

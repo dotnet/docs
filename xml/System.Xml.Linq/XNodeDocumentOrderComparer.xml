@@ -77,8 +77,7 @@
  The following example uses of this class to compare the document order for two nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  
@@ -153,8 +152,7 @@ Child3 is before Child5
  The following example uses this class to compare document order for two nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XText("Text content."),  
     new XElement("Child1", "child1 content"),  
     new XElement("Child2", "child2 content"),  

@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanExecute">
@@ -151,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -177,6 +181,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.MaximumRows" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -199,10 +206,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control can request a total row count by adding the <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> field to the <xref:System.Web.UI.DataSourceSelectArguments?displayProperty=fullName> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests a total row count, but the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property returns `false`, the data source view throws an exception.  
+ A data-bound control can request a total row count by adding the <xref:System.Web.UI.DataSourceCapabilities.RetrieveTotalRowCount?displayProperty=nameWithType> field to the <xref:System.Web.UI.DataSourceSelectArguments?displayProperty=nameWithType> object passed to the <xref:System.Web.UI.DataSourceView.ExecuteSelect%2A> method. If a data-bound control requests a total row count, but the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property returns `false`, the data source view throws an exception.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+        <altmember cref="F:System.Web.UI.DataSourceOperation.SelectCount" />
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -237,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.SortExpression" />
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -271,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceViewChanged">
@@ -293,7 +307,7 @@
 ## Remarks  
  The change to the data source view could be due to a change in the values of its properties, or to a change in the data due to a data operation performed by the data source view.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -330,6 +344,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -442,7 +458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Data-bound controls can determine whether the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> operation is supported by a data source control by retrieving the <xref:System.Web.UI.DataSourceView> object using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=fullName> method, and checking the <xref:System.Web.UI.DataSourceView.CanDelete%2A> property.  
+ Data-bound controls can determine whether the <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> operation is supported by a data source control by retrieving the <xref:System.Web.UI.DataSourceView> object using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=nameWithType> method, and checking the <xref:System.Web.UI.DataSourceView.CanDelete%2A> property.  
   
  The `keys` parameter represents the object or row keys of the data to delete. For data sources that represent relational data, such as the <xref:System.Web.UI.WebControls.SqlDataSource> control, the `keys` parameter is a collection of database primary keys. In other scenarios, the `keys` parameter is a collection of name/value pairs and is used to filter a list of data. Any data matching a name/value pair is deleted.  
   
@@ -460,6 +476,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanDelete" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteInsert">
@@ -503,6 +520,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanInsert" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -540,6 +558,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteUpdate">
@@ -569,7 +588,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Data-bound controls can determine whether the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> operation is supported by a data source control by using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=fullName> method to retrieve the <xref:System.Web.UI.DataSourceView> object and checking the value of the <xref:System.Web.UI.DataSourceView.CanUpdate%2A> property.  
+ Data-bound controls can determine whether the <xref:System.Web.UI.DataSourceView.ExecuteUpdate%2A> operation is supported by a data source control by using the <xref:System.Web.UI.DataSourceControl.GetView%2A?displayProperty=nameWithType> method to retrieve the <xref:System.Web.UI.DataSourceView> object and checking the value of the <xref:System.Web.UI.DataSourceView.CanUpdate%2A> property.  
   
  The `keys` parameter represents the object or row keys of the data to update. For data sources that represent relational data, such as the <xref:System.Web.UI.WebControls.SqlDataSource> control, the `keys` parameter is a collection of database primary keys. In other scenarios, the `keys` parameter is a collection of name/value pairs and is used to filter a list of data. Any data matching a name/value pair is updated with the values found in the `values` parameter, which is a set of name/value pairs that represents new values for existing fields or columns.  
   
@@ -587,6 +606,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" /> operation is not supported by the <see cref="T:System.Web.UI.DataSourceView" />.</exception>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanUpdate" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -618,6 +638,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -636,6 +658,8 @@
         <summary>Gets the name of the data source view.</summary>
         <value>The name of the <see cref="T:System.Web.UI.DataSourceView" />, if it has one. The default value is <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetView(System.String)" />
+        <altmember cref="M:System.Web.UI.DataSourceControl.GetViewNames" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -662,7 +686,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A> method notifies a data-bound control that the underlying data source has changed and that the control should rebind and perform any necessary work. Typically, the <xref:System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A> method is called when a property of the data source view has changed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.DataSourceView.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -731,6 +755,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewSelectCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewSelectCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -766,7 +792,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.DataSourceViewOperationCallback" /> supplied is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceViewOperationCallback" />
+        <altmember cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified command.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

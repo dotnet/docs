@@ -25,11 +25,13 @@
  [!code-csharp[TitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TitleFormat/CS/titleformat.cs#1)]
  [!code-vb[TitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TitleFormat/VB/titleformat.vb#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CalendarTitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleFormat/CS/calendartitleformatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarTitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleFormat/VB/calendartitleformatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarTitleFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarTitleFormat/CS/calendartitleformatcs.aspx#1)]
+ [!code-aspx-vb[CalendarTitleFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarTitleFormat/VB/calendartitleformatvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="P:System.Web.UI.WebControls.Calendar.TitleFormat" />
   </Docs>
   <Members>
     <Member MemberName="Month">

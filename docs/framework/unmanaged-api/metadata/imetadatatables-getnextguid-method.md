@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNextGuid"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNextGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextGuid method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataTables::GetNextGuid Method
 Gets the index of the next GUID value in the current table column.  
@@ -62,5 +62,5 @@ HRESULT GetNextGuid (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)   
+ [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
  [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

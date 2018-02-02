@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.Caching.AggregateCacheDependency> class monitors a collection of dependency objects so that when any of them change, the cached item is automatically removed. The objects in the array can be <xref:System.Web.Caching.CacheDependency> objects, <xref:System.Web.Caching.SqlCacheDependency> objects, custom objects derived from <xref:System.Web.Caching.CacheDependency>, or any combination of these.  
   
- The <xref:System.Web.Caching.AggregateCacheDependency> class differs from the <xref:System.Web.Caching.CacheDependency> class in that it allows you to associate multiple dependencies of different types with a single cached item. For example, if you create a page that imports data from a SQL Server database table and an XML file, you can create a <xref:System.Web.Caching.SqlCacheDependency> object to represent a dependency on the database table and a <xref:System.Web.Caching.CacheDependency> to represent the dependency on the XML file. Rather than making an <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=fullName> method call for each dependency, you can create an instance of the <xref:System.Web.Caching.AggregateCacheDependency> class with each dependency added to it. You can then use a single <xref:System.Web.Caching.Cache.Insert%2A> call to make the page dependent on the <xref:System.Web.Caching.AggregateCacheDependency> instance.  
+ The <xref:System.Web.Caching.AggregateCacheDependency> class differs from the <xref:System.Web.Caching.CacheDependency> class in that it allows you to associate multiple dependencies of different types with a single cached item. For example, if you create a page that imports data from a SQL Server database table and an XML file, you can create a <xref:System.Web.Caching.SqlCacheDependency> object to represent a dependency on the database table and a <xref:System.Web.Caching.CacheDependency> to represent the dependency on the XML file. Rather than making an <xref:System.Web.Caching.Cache.Insert%2A?displayProperty=nameWithType> method call for each dependency, you can create an instance of the <xref:System.Web.Caching.AggregateCacheDependency> class with each dependency added to it. You can then use a single <xref:System.Web.Caching.Cache.Insert%2A> call to make the page dependent on the <xref:System.Web.Caching.AggregateCacheDependency> instance.  
   
    
   
@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (System.Web.Caching.CacheDependency[] dependencies);" />
+      <MemberSignature Language="C#" Value="public void Add (params System.Web.Caching.CacheDependency[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Caching.CacheDependency[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.Add(System.Web.Caching.CacheDependency[])" />
       <MemberType>Method</MemberType>

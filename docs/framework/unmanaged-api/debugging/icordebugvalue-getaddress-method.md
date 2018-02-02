@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue::GetAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue::GetAddress method [.NET Framework debugging]"
   - "GetAddress method, ICorDebugValue interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugValue::GetAddress Method
 Gets the address of this "ICorDebugValue" object, which is in the process of being debugged.  

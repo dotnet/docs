@@ -44,7 +44,7 @@
   
  Except for AllowHexSpecifier, the individual field flags in the <xref:System.Globalization.NumberStyles.AllowHexSpecifier> enumeration define style elements that are used when parsing the string representation of a decimal number. None indicates that only digits can be present in the parsed string. The remaining individual field flags define style elements that may be, but do not have to be, present in the string representation of a decimal number for the parse operation to succeed. In contrast, the AllowHexSpecifier flag indicates that the string to be parsed is always interpreted as a hexadecimal value. The only individual field flags that can be used with AllowHexSpecifier are AllowLeadingWhite and AllowTrailingWhite. The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, HexNumber, that consists of all three flags.  
   
- The symbols (such as the currency symbol, the group separator, the decimal separator, and the positive and negative signs) that can appear in the string to be parsed are defined by the members of the <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> object that is passed either implicitly or explicitly to the `Parse` method. The members table in this topic provides a description of each individual flag and indicates its relationship to <xref:System.Globalization.NumberFormatInfo> properties.  
+ The symbols (such as the currency symbol, the group separator, the decimal separator, and the positive and negative signs) that can appear in the string to be parsed are defined by the members of the <xref:System.Globalization.NumberFormatInfo?displayProperty=nameWithType> object that is passed either implicitly or explicitly to the `Parse` method. The members table in this topic provides a description of each individual flag and indicates its relationship to <xref:System.Globalization.NumberFormatInfo> properties.  
   
  The following table lists the composite number styles and indicates which individual field flags they include. A "1" in a cell indicates that the composite number style includes the individual number style in that row. A "0" indicates that the composite number style does not include the individual number style.  
   
@@ -73,6 +73,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.NumberFormatInfo" />
   </Docs>
   <Members>
     <Member MemberName="AllowCurrencySymbol">

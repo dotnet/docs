@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.RowStyle> class represents the user interface (UI) characteristics of a row in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the rows in a <xref:System.Windows.Forms.TableLayoutPanel> are collected in the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.RowStyle> class represents the user interface (UI) characteristics of a row in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the rows in a <xref:System.Windows.Forms.TableLayoutPanel> are collected in the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A?displayProperty=nameWithType> property.  
   
  This simple class offers the <xref:System.Windows.Forms.RowStyle.Height%2A> and <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> for a row.  
   
@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.TableLayoutPanel.RowStyles" />
+    <altmember cref="T:System.Windows.Forms.TableLayoutRowStyleCollection" />
+    <altmember cref="T:System.Windows.Forms.ColumnStyle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ColumnStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Forms.ColumnStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,6 +113,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="height" /> is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.RowStyle.Height" />
+        <altmember cref="Overload:System.Windows.Forms.ColumnStyle.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -140,7 +147,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 0 when setting this property.</exception>
+        <altmember cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.RowStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

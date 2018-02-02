@@ -20,7 +20,7 @@
   
  If visual styles are enabled in the operating system and visual styles are applied to the current application, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the current visual style. Otherwise, <xref:System.Windows.Forms.GroupBoxRenderer.DrawGroupBox%2A> will draw the group box with the classic Windows style. This is useful if you are drawing a custom control that should automatically match the current visual style setting of the operating system.  
   
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.GroupBox?displayProperty=nameWithType> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
   
    
   
@@ -33,6 +33,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
+    <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
+    <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
     <Member MemberName="DrawGroupBox">
@@ -305,7 +309,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `true`, the <xref:System.Windows.Forms.GroupBoxRenderer> uses the setting from <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=fullName> to determine the rendering style. If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `false`, the renderer will always render using visual styles.  
+ If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `true`, the <xref:System.Windows.Forms.GroupBoxRenderer> uses the setting from <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A?displayProperty=nameWithType> to determine the rendering style. If <xref:System.Windows.Forms.GroupBoxRenderer.RenderMatchingApplicationState%2A> is `false`, the renderer will always render using visual styles.  
   
    
   
@@ -319,5 +323,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawGroupBox">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a group box control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

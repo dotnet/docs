@@ -22,21 +22,24 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.ServerValidateEventArgs>, see the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.ServerValidateEventArgs> to pass event data to a custom event handler for the <xref:System.Web.UI.WebControls.CustomValidator.ServerValidate> event. Notice that the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.Value%2A> property of the <xref:System.Web.UI.WebControls.ServerValidateEventArgs> is used to determine the value to validate, while the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid%2A> property is used to store the results of the validation.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate2/CS/customvalidatorservervalidate2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate2/VB/customvalidatorservervalidate2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate2/CS/customvalidatorservervalidate2cs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate2/VB/customvalidatorservervalidate2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.CustomValidator" />
+    <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -101,11 +106,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid%2A> property to store the results of the validation.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -134,11 +140,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.Value%2A> property to determine the value to validate.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
       </Docs>
     </Member>
   </Members>

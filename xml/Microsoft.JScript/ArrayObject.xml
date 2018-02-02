@@ -14,6 +14,8 @@
     <summary>Represents an array object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.ArrayPrototype" />
+    <altmember cref="T:Microsoft.JScript.ArrayConstructor" />
   </Docs>
   <Members>
     <Member MemberName="length">
@@ -33,6 +35,8 @@
         <value>The length of the array.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayPrototype" />
+        <altmember cref="T:Microsoft.JScript.ArrayConstructor" />
       </Docs>
     </Member>
     <Member MemberName="SpliceSlowly">
@@ -65,6 +69,8 @@
         <summary>Adds elements to and removes elements from an array, at the specified position in the array. You can add elements, remove elements, or both.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ArrayPrototype" />
+        <altmember cref="T:Microsoft.JScript.ArrayConstructor" />
       </Docs>
     </Member>
   </Members>

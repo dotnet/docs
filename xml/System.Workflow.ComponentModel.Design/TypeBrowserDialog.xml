@@ -191,7 +191,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.TypeBrowserDialog.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -252,7 +252,7 @@
 ## Remarks  
  If the property returns a valid value--anything other than a null reference (`Nothing` in Visual Basic)--the component is added to <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>.  
   
- This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Component?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
+ This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Component?displayProperty=nameWithType> always returns a null reference (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>
@@ -279,7 +279,7 @@
 ## Remarks  
  If <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Container> returns a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Component> has not bound an <xref:System.ComponentModel.IComponent> to the <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>.  
   
- This method is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Container?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
+ This method is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23Container?displayProperty=nameWithType> always returns a null reference (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>
@@ -305,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23DesignMode%2A?displayProperty=fullName> always returns `true`.  
+ This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System%23ComponentModel%23ISite%23DesignMode%2A?displayProperty=nameWithType> always returns `true`.  
   
  ]]></format>
         </remarks>
@@ -365,5 +365,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.TypeBrowserDialog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

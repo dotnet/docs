@@ -1,38 +1,20 @@
 ---
 title: "How Culture Affects Strings in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "locale, effect on strings"
+  - "locale [Visual Basic], effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How Culture Affects Strings in Visual Basic
 This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
@@ -62,7 +44,7 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
   
  When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
   
- Alternatively, you can get an instance of the *invariant culture* from the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The invariant culture is based on the English culture, but there are some differences. For example, the invariant culture specifies a 24-hour clock instead of a 12-hour clock.  
+ Alternatively, you can get an instance of the *invariant culture* from the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture is based on the English culture, but there are some differences. For example, the invariant culture specifies a 24-hour clock instead of a 12-hour clock.  
   
  To convert a date to the culture's string, pass the <xref:System.Globalization.CultureInfo> object to the date object's <xref:System.DateTime.ToString%28System.IFormatProvider%29> method. For example, the following code displays "07/04/2005 00:00:00", regardless of the application's culture settings.  
   
@@ -84,11 +66,11 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
   
  [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
   
- You can also use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=fullName> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
+ You can also use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=nameWithType> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
   
  [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
   
- For finer control over how the comparisons are performed, you can use additional overloads of the <xref:System.String.Compare%2A> method. With the <xref:System.String.Compare%2A?displayProperty=fullName> method, you can use the `comparisonType` argument to specify which type of comparison to use.  
+ For finer control over how the comparisons are performed, you can use additional overloads of the <xref:System.String.Compare%2A> method. With the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, you can use the `comparisonType` argument to specify which type of comparison to use.  
   
 |Value for `comparisonType` argument|Type of comparison|When to use|  
 |---|---|---|  
@@ -98,9 +80,9 @@ This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses cu
 |`InvariantCulture` or `InvariantCultureIgnoreCase`|Comparison based on the strings' interpretation in the invariant culture.<br /><br /> This is different than the `Ordinal` and `OrdinalIgnoreCase`, because the invariant culture treats characters outside its accepted range as equivalent invariant characters.|Use these values only when comparing persisting data or displaying linguistically-relevant data that requires a fixed sort order.|  
   
 ### Security Considerations  
- If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass `Ordinal` or `OrdinalIgnoreCase` for the `comparisonType` argument.  
+ If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass `Ordinal` or `OrdinalIgnoreCase` for the `comparisonType` argument.  
   
 ## See Also  
- <xref:System.Globalization.CultureInfo>   
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
+ <xref:System.Globalization.CultureInfo>  
+ [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
  [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

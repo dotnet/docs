@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Channels.BindingElement</BaseTypeName>
   </Base>
@@ -73,6 +79,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;</ReturnType>
       </ReturnValue>
@@ -111,6 +123,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;</ReturnType>
@@ -232,6 +250,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -894,6 +918,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityBindingElement</ReturnType>
       </ReturnValue>
@@ -958,7 +988,7 @@
  Otherwise, a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> is returned, with <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> set to `false`.  
   
 > [!NOTE]
->  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
+>  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
   
    
   
@@ -1011,7 +1041,7 @@
  Otherwise, a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> is returned, with <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> set to `false`.  
   
 > [!NOTE]
->  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
+>  When impersonation is required on [!INCLUDE[wxp](~/includes/wxp-md.md)], use a secure session without a security context token. When security context tokens are used with impersonation an <xref:System.InvalidOperationException> is thrown. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Unsupported Scenarios](~/docs/framework/wcf/feature-details/unsupported-scenarios.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] secure sessions, see [Secure Sessions](~/docs/framework/wcf/feature-details/secure-sessions.md).  
   
  ]]></format>
         </remarks>
@@ -1295,6 +1325,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.TransportSecurityBindingElement</ReturnType>
       </ReturnValue>
@@ -1376,6 +1412,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.SupportingTokenParameters</ReturnType>
       </ReturnValue>
@@ -1408,6 +1450,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1448,6 +1496,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1500,6 +1554,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.LocalClientSecuritySettings</ReturnType>
@@ -1571,6 +1631,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MessageSecurityVersion</ReturnType>
@@ -1706,6 +1772,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
       </ReturnValue>
@@ -1801,6 +1873,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1818,5 +1896,60 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSspiNegotiationOverTransportBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a security binding element that is configured for client authentication based on SOAP SSPI negotiation using the Negotiate authentication package. The binding element requires the transport to provide server authentication and message protection (for example, HTTPS).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSecureConversationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to establish a secure conversation between the client and service. The security context token issued at the end of the secure conversation handshake is used to secure the messages.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSslNegotiationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to do SOAP-level SSL negotiation between the client and server.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateUserNameForSslBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to require user name- and password-based client authentication and certificate-based server authentication. The client authenticates the server using the SOAP-level SSL protocol.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateSspiNegotiationBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that does SOAP SSPI negotiation based on the Negotiate authentication package.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateMutualCertificateDuplexBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an asymmetric security binding element that is configured to require certificate-based client authentication as well as certificate-based server authentication. This authentication mode can be used to secure duplex message-exchange patterns and requires the service to be configured with the client certificate out of band.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

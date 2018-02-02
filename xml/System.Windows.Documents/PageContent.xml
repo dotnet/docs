@@ -115,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.PageContent.Source" />
       </Docs>
     </Member>
     <Member MemberName="GetPageRoot">
@@ -144,7 +145,7 @@
  <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> performs synchronous loading and parsing of the <xref:System.Windows.Documents.FixedPage>.  
   
 > [!NOTE]
->  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A>instead of <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
+>  Use the <xref:System.Windows.Documents.PageContent.GetPageRootAsync%2A> instead of <xref:System.Windows.Documents.PageContent.GetPageRoot%2A> to avoid thread blocking while the <xref:System.Windows.Documents.FixedPage> loads.  
   
  ]]></format>
         </remarks>
@@ -187,6 +188,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRoot(System.Boolean)" />
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsyncCancel" />
+        <altmember cref="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventArgs" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetPageRootAsyncCancel">
@@ -212,6 +218,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsyncCancel" />
+        <altmember cref="E:System.Windows.Documents.PageContent.GetPageRootCompleted" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventArgs" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="GetPageRootCompleted">
@@ -236,6 +247,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsync(System.Boolean)" />
+        <altmember cref="M:System.Windows.Documents.PageContent.GetPageRootAsyncCancel" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventArgs" />
+        <altmember cref="T:System.Windows.Documents.GetPageRootCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="LinkTargets">
@@ -263,6 +278,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FixedPage.NavigateUri" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -342,6 +358,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Documents.PageContent.SourceProperty" />
       </Docs>
     </Member>
     <Member MemberName="SourceProperty">

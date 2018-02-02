@@ -30,11 +30,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the Help keyword for a class is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property value. For members, the Help keyword is given by the full name of the type that declared the property, plus the property name itself.  
+ By default, the Help keyword for a class is given by the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property value. For members, the Help keyword is given by the full name of the type that declared the property, plus the property name itself.  
   
- For example, consider the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property on the <xref:System.Windows.Forms.Button?displayProperty=fullName> control. The class keyword is "System.Windows.Forms.Button", but the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property keyword is "System.Windows.Forms.Control.Text", because the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Control?displayProperty=fullName> class, rather than the <xref:System.Windows.Forms.Button?displayProperty=fullName> class itself; the <xref:System.Windows.Forms.Button?displayProperty=fullName> class inherits the property.  
+ For example, consider the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType> property on the <xref:System.Windows.Forms.Button?displayProperty=nameWithType> control. The class keyword is "System.Windows.Forms.Button", but the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType> property keyword is "System.Windows.Forms.Control.Text", because the <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType> property is declared on the <xref:System.Windows.Forms.Control?displayProperty=nameWithType> class, rather than the <xref:System.Windows.Forms.Button?displayProperty=nameWithType> class itself; the <xref:System.Windows.Forms.Button?displayProperty=nameWithType> class inherits the property.  
   
- By contrast, the <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=fullName> property is declared on the <xref:System.Windows.Forms.Button?displayProperty=fullName> class, so its keyword is "System.Windows.Forms.Button.DialogResult".  
+ By contrast, the <xref:System.Windows.Forms.Button.DialogResult%2A?displayProperty=nameWithType> property is declared on the <xref:System.Windows.Forms.Button?displayProperty=nameWithType> class, so its keyword is "System.Windows.Forms.Button.DialogResult".  
   
  When the Help system gets the keywords, it will first look at <xref:System.ComponentModel.Design.HelpKeywordAttribute>. At the class level, it will return the string specified by the <xref:System.ComponentModel.Design.HelpKeywordAttribute>. This will not be used for members of the type in question, which will still reflect the declaring type's actual full name, plus the member name. This attribute supports strongly typed classes that have associated common documentation but distinct Help IDs.  
   
@@ -326,5 +326,15 @@ public class DemoComponent : Component
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

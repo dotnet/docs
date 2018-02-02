@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
   - "resource files, deploying"
@@ -32,12 +35,14 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Satellite Assemblies for Desktop Apps
 Resource files play a central role in localized applications. They enable an application to display strings, images, and other data in the user's own language and culture, and to provide alternate data if resources for the user's own language or culture are unavailable. The .NET Framework uses a hub-and-spoke model to locate and retrieve localized resources. The hub is the main assembly that contains the non-localizable executable code and the resources for a single culture, which is called the neutral or default culture. The default culture is the fallback culture for the application; it is used when no localized resources are available. You use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to designate the culture of the application's default culture. Each spoke connects to a satellite assembly that contains the resources for a single localized culture but does not contain any code. Because the satellite assemblies are not part of the main assembly, you can easily update or replace resources that correspond to a specific culture without replacing the main assembly for the application.  
   
 > [!NOTE]
->  The resources of an application's default culture can also be stored in a satellite assembly. To do this, you assign the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=fullName>.  
+>  The resources of an application's default culture can also be stored in a satellite assembly. To do this, you assign the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite?displayProperty=nameWithType>.  
   
 ## Satellite Assembly Name and Location  
  The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET Framework Resource Manager, represented by a <xref:System.Resources.ResourceManager> object, is used to automatically access localized resources. The Resource Manager requires the following:  
@@ -90,7 +95,7 @@ al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dl
   
 1.  Create a resource file named Greeting.resx or Greeting.txt to contain the resource for the default culture. Store a single string named `HelloString` whose value is "Hello world!" in this file.  
   
-2.  To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.  
+2.  To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.  
   
      [!code-csharp[Conceptual.Resources.Locating#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
      [!code-vb[Conceptual.Resources.Locating#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
@@ -117,7 +122,7 @@ al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dl
 5.  Compile the following source code along with the resources for the default culture into the application's main assembly:  
   
     > [!IMPORTANT]
-    >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to the following: `ResourceManager rm = new ResourceManager("Greetings",``typeof(Example).Assembly);`  
+    >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to the following: `ResourceManager rm = new ResourceManager("Greetings", typeof(Example).Assembly);`  
   
      [!code-csharp[Conceptual.Resources.Locating#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/program.cs#1)]
      [!code-vb[Conceptual.Resources.Locating#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/module1.vb#1)]  
@@ -219,7 +224,7 @@ gacutil /i:StringLibrary.resources.dll
   
 3.  Create a resource file named Strings.resx to contain the resource for the default culture. Store a single string named `Greeting` whose value is "How do you do?" in that file.  
   
-4.  To indicate that "en" is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly:  
+4.  To indicate that "en" is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly:  
   
      [!code-csharp[Conceptual.Resources.Satellites#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#2)]
      [!code-vb[Conceptual.Resources.Satellites#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#2)]  
@@ -243,7 +248,7 @@ gacutil /i:StringLibrary.resources.dll
 7.  Compile the following source code for StringLibrary.vb or StringLibrary.cs along with the resources for the default culture into a delay signed library assembly named StringLibrary.dll:  
   
     > [!IMPORTANT]
-    >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to         `ResourceManager rm = new ResourceManager("Strings",` `typeof(Example).Assembly);`.  
+    >  If you are using the command line rather than Visual Studio to create the example, you should modify the call to the <xref:System.Resources.ResourceManager> class constructor to `ResourceManager rm = new ResourceManager("Strings",` `typeof(Example).Assembly);`.  
   
      [!code-csharp[Conceptual.Resources.Satellites#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.satellites/cs/stringlibrary.cs#1)]
      [!code-vb[Conceptual.Resources.Satellites#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.satellites/vb/stringlibrary.vb#1)]  
@@ -310,9 +315,9 @@ gacutil /i:StringLibrary.resources.dll
 14. Run Example.exe.  
   
 ## See Also  
- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)   
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
- [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)   
- [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)   
+ [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
+ [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
+ [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
+ [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)  
+ [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)  
  [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "IObserver(Of T) interface"
   - "IObservable<T> interface"
@@ -19,33 +22,36 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Observer Design Pattern
-The observer design pattern enables a subscriber to register with and receive notifications from a provider. It is suitable for any scenario that requires push-based notification. The pattern defines a *provider* (also known as a *subject* or an *observable*) and zero, one, or more *observers*. Observers register with the provider, and whenever a predefined condition, event, or state change occurs, the provider automatically notifies all observers by calling one of their methods. In this method call, the provider can also provide current state information to observers. In the .NET Framework, the observer design pattern is applied by implementing the generic <xref:System.IObservable%601?displayProperty=fullName> and <xref:System.IObserver%601?displayProperty=fullName> interfaces. The generic type parameter represents the type that provides notification information.  
+The observer design pattern enables a subscriber to register with and receive notifications from a provider. It is suitable for any scenario that requires push-based notification. The pattern defines a *provider* (also known as a *subject* or an *observable*) and zero, one, or more *observers*. Observers register with the provider, and whenever a predefined condition, event, or state change occurs, the provider automatically notifies all observers by calling one of their methods. In this method call, the provider can also provide current state information to observers. In the .NET Framework, the observer design pattern is applied by implementing the generic <xref:System.IObservable%601?displayProperty=nameWithType> and <xref:System.IObserver%601?displayProperty=nameWithType> interfaces. The generic type parameter represents the type that provides notification information.  
   
 ## Applying the Pattern  
  The observer design pattern is suitable for distributed push-based notifications, because it supports a clean separation between two different components or application layers, such as a data source (business logic) layer and a user interface (display) layer. The pattern can be implemented whenever a provider uses callbacks to supply its clients with current information.  
   
  Implementing the pattern requires that you provide the following:  
   
--   A provider or subject, which is the object that sends notifications to observers. A provider is a class or structure that implements the <xref:System.IObservable%601> interface. The provider must implement a single method, <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName>, which is called by observers that wish to receive notifications from the provider.  
+-   A provider or subject, which is the object that sends notifications to observers. A provider is a class or structure that implements the <xref:System.IObservable%601> interface. The provider must implement a single method, <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType>, which is called by observers that wish to receive notifications from the provider.  
   
 -   An observer, which is an object that receives notifications from a provider. An observer is a class or structure that implements the <xref:System.IObserver%601> interface. The observer must implement three methods, all of which are called by the provider:  
   
-    -   <xref:System.IObserver%601.OnNext%2A?displayProperty=fullName>, which supplies the observer with new or current information.  
+    -   <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType>, which supplies the observer with new or current information.  
   
-    -   <xref:System.IObserver%601.OnError%2A?displayProperty=fullName>, which informs the observer that an error has occurred.  
+    -   <xref:System.IObserver%601.OnError%2A?displayProperty=nameWithType>, which informs the observer that an error has occurred.  
   
-    -   <xref:System.IObserver%601.OnCompleted%2A?displayProperty=fullName>, which indicates that the provider has finished sending notifications.  
+    -   <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType>, which indicates that the provider has finished sending notifications.  
   
--   A mechanism that allows the provider to keep track of observers. Typically, the provider uses a container object, such as a <xref:System.Collections.Generic.List%601?displayProperty=fullName> object, to hold references to the <xref:System.IObserver%601> implementations that have subscribed to notifications. Using a storage container for this purpose enables the provider to handle zero to an unlimited number of observers. The order in which observers receive notifications is not defined; the provider is free to use any method to determine the order.  
+-   A mechanism that allows the provider to keep track of observers. Typically, the provider uses a container object, such as a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, to hold references to the <xref:System.IObserver%601> implementations that have subscribed to notifications. Using a storage container for this purpose enables the provider to handle zero to an unlimited number of observers. The order in which observers receive notifications is not defined; the provider is free to use any method to determine the order.  
   
--   An <xref:System.IDisposable> implementation that enables the provider to remove observers when notification is complete. Observers receive a reference to the <xref:System.IDisposable> implementation from the <xref:System.IObservable%601.Subscribe%2A> method, so they can also call the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method to unsubscribe before the provider has finished sending notifications.  
+-   An <xref:System.IDisposable> implementation that enables the provider to remove observers when notification is complete. Observers receive a reference to the <xref:System.IDisposable> implementation from the <xref:System.IObservable%601.Subscribe%2A> method, so they can also call the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method to unsubscribe before the provider has finished sending notifications.  
   
 -   An object that contains the data that the provider sends to its observers. The type of this object corresponds to the generic type parameter of the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. Although this object can be the same as the <xref:System.IObservable%601> implementation, most commonly it is a separate type.  
   
 > [!NOTE]
->  In addition to implementing the observer design pattern, you may be interested in exploring libraries that are built using the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. For example, [Reactive Extensions for .NET (Rx)](http://go.microsoft.com/fwlink/?LinkId=186345) consist of a set of extension methods and LINQ standard sequence operators to support asynchronous programming.  
+>  In addition to implementing the observer design pattern, you may be interested in exploring libraries that are built using the <xref:System.IObservable%601> and <xref:System.IObserver%601> interfaces. For example, [Reactive Extensions for .NET (Rx)](https://msdn.microsoft.com/library/hh242985.aspx) consist of a set of extension methods and LINQ standard sequence operators to support asynchronous programming.  
   
 ## Implementing the Pattern  
  The following example uses the observer design pattern to implement an airport baggage claim information system. A `BaggageInfo` class provides information about arriving flights and the carousels where baggage from each flight is available for pickup. It is shown in the following example.  

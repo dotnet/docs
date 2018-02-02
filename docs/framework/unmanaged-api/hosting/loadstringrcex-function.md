@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LoadStringRCEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LoadStringRCEx function [.NET Framework hosting]"
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
@@ -28,6 +26,8 @@ caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  
@@ -87,6 +87,6 @@ HRESULT LoadStringRCEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=fullName>   
- [LoadStringRC Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)   
+ <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>  
+ [LoadStringRC Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)  
  [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

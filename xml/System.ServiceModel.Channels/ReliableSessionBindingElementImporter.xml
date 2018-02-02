@@ -26,7 +26,7 @@
   
 -   Implement the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface to search WSDL information exposed by a particular endpoint for custom policy assertions about endpoint capabilities or requirements.  
   
--   Implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a <xref:System.ServiceModel.Channels.BindingElement?displayProperty=fullName> object to write statements about endpoint capabilities or requirements into the WSDL information exposed by a particular endpoint.  
+-   Implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType> object to write statements about endpoint capabilities or requirements into the WSDL information exposed by a particular endpoint.  
   
  ]]></format>
     </remarks>

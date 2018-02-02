@@ -18,10 +18,10 @@
 ## Remarks  
  The <xref:System.Windows.SizeConverter> class supports conversion of <xref:System.String> values and base values that the <xref:System.ComponentModel.TypeConverter> class supports.  
   
-<a name="XAMLTextUsage_SizeConverter"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Size" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +62,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="sourceType" /> can be converted to an instance of <see cref="T:System.Windows.Size" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Size" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -87,6 +88,7 @@
         <returns>
           <see langword="true" /> if this instance of <see cref="T:System.Windows.Size" /> can be converted to the <paramref name="destinationType" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Size" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -113,6 +115,7 @@
         <summary>Attempts to convert a specified object to an instance of <see cref="T:System.Windows.Size" />.</summary>
         <returns>The instance of <see cref="T:System.Windows.Size" /> that is created from the converted <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Size" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">

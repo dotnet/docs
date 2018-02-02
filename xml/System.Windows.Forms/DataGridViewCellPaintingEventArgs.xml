@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.CellPainting> event is raised for each <xref:System.Windows.Forms.DataGridViewCell> that is visible on a <xref:System.Windows.Forms.DataGridView>. To improve performance, set the properties in a <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs> to change the appearance of the cell instead of directly accessing a cell in the <xref:System.Windows.Forms.DataGridView>. If you manually paint the cell, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. If you do not set <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> to `true`, the cell will paint over your customizations.  
+ The <xref:System.Windows.Forms.DataGridView.CellPainting> event is raised for each <xref:System.Windows.Forms.DataGridViewCell> that is visible on a <xref:System.Windows.Forms.DataGridView>. To improve performance, set the properties in a <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs> to change the appearance of the cell instead of directly accessing a cell in the <xref:System.Windows.Forms.DataGridView>. If you manually paint the cell, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> property to `true`. If you do not set <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=nameWithType> to `true`, the cell will paint over your customizations.  
   
    
   
@@ -28,6 +28,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Forms.DataGridView.CellPainting" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +85,12 @@
  <paramref name="cellStyle" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="paintParts" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="AdvancedBorderStyle">
@@ -108,15 +117,19 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CellBounds">
@@ -145,6 +158,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="CellStyle">
@@ -178,6 +194,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="ClipBounds">
@@ -204,15 +223,17 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="ColumnIndex">
@@ -246,6 +267,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -267,20 +290,25 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the current <xref:System.Windows.Forms.DataGridViewCell> is a row header cell, the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> property is the same as the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewRow>. When the current cell is a data cell, <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> is the same as the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.DataGridViewCell>.  
+ When the current <xref:System.Windows.Forms.DataGridViewCell> is a row header cell, the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> property is the same as the <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.DataGridViewRow>. When the current cell is a data cell, <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ErrorText%2A> is the same as the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=nameWithType> property of the <xref:System.Windows.Forms.DataGridViewCell>.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorText" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValue">
@@ -307,15 +335,19 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Graphics">
@@ -344,6 +376,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -373,6 +408,7 @@
  -or-  
   
  <see cref="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintBackground">
@@ -403,6 +439,7 @@
  -or-  
   
  <see cref="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintContent">
@@ -430,6 +467,7 @@
  -or-  
   
  <see cref="P:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex" /> is less than -1 or greater than or equal to the number of columns in the <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="PaintParts">
@@ -451,15 +489,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -493,6 +532,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -514,15 +555,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#302](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#302)]
  [!code-vb[System.Windows.Forms.EventExamples#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#302)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -556,6 +600,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
       </Docs>
     </Member>
   </Members>

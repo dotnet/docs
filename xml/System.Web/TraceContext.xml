@@ -20,10 +20,13 @@
   
  You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
- To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
+ To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.TraceContextEventArgs" />
+    <altmember cref="T:System.Web.TraceContextEventHandler" />
+    <altmember cref="T:System.Web.TraceContextRecord" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +45,7 @@
         <param name="context">An <see cref="T:System.Web.HttpContext" /> that contains information about the current Web request.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -108,11 +112,14 @@
 ## Examples  
  The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the delegate iterates through the trace messages and writes them to the response stream; however, you could write the same information to a database or a profiling tool consumer.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.TraceContextEventHandler" />
+        <altmember cref="T:System.Web.TraceContextEventArgs" />
+        <altmember cref="T:System.Web.TraceContextRecord" />
       </Docs>
     </Member>
     <Member MemberName="TraceMode">
@@ -141,12 +148,13 @@
 ## Examples  
  The following code example demonstrates how you can sort a page's trace statements alphabetically by the categories that you have assigned to the statements.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic TraceContext.TraceMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic TraceContext.TraceMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic TraceContext.TraceMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic TraceContext.TraceMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
     <Member MemberName="Warn">
@@ -240,11 +248,12 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -306,8 +315,8 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, the delegate iterates through the trace messages and writes them as an HTML table; however, you can write the same information to a database or a profiling tool consumer.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -346,12 +355,31 @@
 ## Examples  
  The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Warn">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log. Unlike <see cref="M:System.Web.TraceContext.Write(System.String)" />, all warnings appear in the log as red text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -18,22 +18,30 @@
 ## Remarks  
  You can use client application services to validate users by using Windows authentication. To enable Windows authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
- After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. The <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A> method.  
+ After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method. The <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method internally calls the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A> method.  
   
- The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
+ The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=nameWithType> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
   
- You can retrieve a reference to the current <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance through the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=fullName> property. You can use the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method directly. Additionally, you will need the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method, which is not available in the <xref:System.Web.Security.MembershipProvider> base class.  
+ You can retrieve a reference to the current <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance through the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=nameWithType> property. You can use the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=nameWithType> method directly. Additionally, you will need the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method, which is not available in the <xref:System.Web.Security.MembershipProvider> base class.  
   
    
   
 ## Examples  
- The following example code demonstrates how to use this method to authenticate a user by using Windows authentication. In this example, the value of the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=fullName> property is cast to a <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance. This makes sure that a <xref:System.NullReferenceException> will be thrown if you accidentally test this code by using another membership provider.  
+ The following example code demonstrates how to use this method to authenticate a user by using Windows authentication. In this example, the value of the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=nameWithType> property is cast to a <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> instance. This makes sure that a <xref:System.NullReferenceException> will be thrown if you accidentally test this code by using another membership provider.  
   
  [!code-csharp[ClientApplicationServices#309](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#309)]
  [!code-vb[ClientApplicationServices#309](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#309)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+    <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+    <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
+    <altmember cref="P:System.Web.Security.Membership.Provider" />
+    <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,7 +142,7 @@
     </Member>
     <Member MemberName="CreateUser">
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser CreateUser (string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, out System.Web.Security.MembershipCreateStatus status);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, valuetype System.Web.Security.MembershipCreateStatus status) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, [out] valuetype System.Web.Security.MembershipCreateStatus&amp; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -246,7 +254,7 @@
     </Member>
     <Member MemberName="FindUsersByEmail">
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByEmail (string emailToMatch, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -275,7 +283,7 @@
     </Member>
     <Member MemberName="FindUsersByName">
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByName (string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -304,7 +312,7 @@
     </Member>
     <Member MemberName="GetAllUsers">
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection GetAllUsers (int pageIndex, int pageSize, out int totalRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -466,7 +474,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For users authenticated through client application services, the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property is set to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that enables access to the configured role service. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method resets the <xref:System.Threading.Thread.CurrentPrincipal%2A> property to a <xref:System.Security.Principal.WindowsPrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. After you call this method, you can no longer retrieve roles for the user through the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. To reauthenticate the current user, call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method.  
+ For users authenticated through client application services, the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property is set to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that enables access to the configured role service. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout%2A> method resets the <xref:System.Threading.Thread.CurrentPrincipal%2A> property to a <xref:System.Security.Principal.WindowsPrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. After you call this method, you can no longer retrieve roles for the user through the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. To reauthenticate the current user, call the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -478,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -775,7 +784,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class, the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method will use this method for its implementation. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
+ When you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class, the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method will use this method for its implementation. The <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=nameWithType> method automatically authenticates the current user and sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to a <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
   
    
   
@@ -793,7 +802,22 @@
  -or-  
   
  <paramref name="password" /> is not <see cref="F:System.String.Empty" /> or <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.Security.Membership.ValidateUser(System.String,System.String)" />
+        <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+        <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
+        <altmember cref="T:System.Security.Principal.WindowsIdentity" />
+        <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
+        <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -20,6 +20,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlImage" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlLink" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.HasBody" />
       </Docs>
     </Member>
   </Members>

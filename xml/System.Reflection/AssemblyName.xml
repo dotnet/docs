@@ -91,11 +91,11 @@
   
  To ensure that the names are constructed correctly, use the following properties:  
   
--   <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>  
   
--   <xref:System.Reflection.AssemblyName.FullName%2A?displayProperty=fullName>  
+-   <xref:System.Reflection.AssemblyName.FullName%2A?displayProperty=nameWithType>  
   
--   <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>  
+-   <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType>  
   
  You can also get the name by using the `/l` option with the [Gacutil.exe (Global Assembly Cache Tool)](~/docs/framework/tools/gacutil-exe-gac-tool.md)  
   
@@ -140,6 +140,14 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Version" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKey" />
+    <altmember cref="M:System.Reflection.AssemblyName.GetPublicKeyToken" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKey(System.Byte[])" />
+    <altmember cref="M:System.Reflection.AssemblyName.SetPublicKeyToken(System.Byte[])" />
+    <altmember cref="P:System.Type.FullName" />
+    <altmember cref="M:System.Type.GetType" />
+    <altmember cref="P:System.Type.AssemblyQualifiedName" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -222,7 +230,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
    
   
 ## Examples  
- The following example creates an instance of <xref:System.Reflection.AssemblyName> from a display name. The individual elements of the display name are output to the console as properties of the <xref:System.Reflection.AssemblyName>object.  
+ The following example creates an instance of <xref:System.Reflection.AssemblyName> from a display name. The individual elements of the display name are output to the console as properties of the <xref:System.Reflection.AssemblyName> object.  
   
  [!code-cpp[AssemblyName_Constructor_2#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyName_Constructor_2/CPP/source.cpp#1)]
  [!code-csharp[AssemblyName_Constructor_2#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_Constructor_2/CS/source.cs#1)]
@@ -308,12 +316,12 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.CodeBase%2A?displayProperty=fullName> property.  
+ When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.CodeBase%2A?displayProperty=nameWithType> property.  
   
  If the assembly was loaded as a byte array, this property returns the location of the caller of the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%29> method overload, not the location of the loaded assembly.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
    
   
@@ -550,7 +558,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
   
  Writing your own code to parse display names is not recommended. Instead, pass the display name to the <xref:System.Reflection.AssemblyName.%23ctor%2A> constructor, which parses it and populates the appropriate fields of the new <xref:System.Reflection.AssemblyName>.  
   
- When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property.  
+ When an assembly is loaded, this value can also be obtained using the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -779,7 +787,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=fullName> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=fullName> in this situation.  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property of an <xref:System.Reflection.AssemblyName> object that is returned by the <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType> method is <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.None?displayProperty=nameWithType> if there is no hash algorithm for the referenced assembly, or if the hash algorithm of the referenced assembly is not identified by the <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm?displayProperty=nameWithType> enumeration. In previous versions of the .NET Framework, the <xref:System.Reflection.AssemblyName.HashAlgorithm%2A> property returned <xref:System.Configuration.Assemblies.AssemblyHashAlgorithm.SHA1?displayProperty=nameWithType> in this situation.  
   
    
   
@@ -916,6 +924,8 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
         <param name="sender">The source of the deserialization event.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and is called back by the deserialization event when deserialization is complete.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="M:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessorArchitecture">
@@ -951,10 +961,11 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture?displayProperty=fullName> for reference assemblies.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this property always returns <xref:System.Reflection.ProcessorArchitecture.None?displayProperty=nameWithType> for reference assemblies.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)" />
       </Docs>
     </Member>
     <Member MemberName="ReferenceMatchesDefinition">
@@ -1104,7 +1115,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
     </Member>
     <Member MemberName="System.Runtime.InteropServices._AssemblyName.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _AssemblyName.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1174,7 +1185,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
     </Member>
     <Member MemberName="System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _AssemblyName.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1203,7 +1214,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
     </Member>
     <Member MemberName="System.Runtime.InteropServices._AssemblyName.Invoke">
       <MemberSignature Language="C#" Value="void _AssemblyName.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._AssemblyName.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyName.System#Runtime#InteropServices#_AssemblyName#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1328,7 +1339,7 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All components of the version must be integers greater than or equal to zero. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=fullName> - 1. If a component exceeds this value, no error is thrown; however, in a dynamic assembly, that component is zero.  
+ All components of the version must be integers greater than or equal to zero. Metadata restricts the major, minor, build, and revision components for an assembly to a maximum value of <xref:System.UInt16.MaxValue?displayProperty=nameWithType> - 1. If a component exceeds this value, no error is thrown; however, in a dynamic assembly, that component is zero.  
   
    
   
@@ -1385,11 +1396,22 @@ mylib, Version=1.2.1900.0, Culture=neutral, PublicKeyToken=a14f3033def15840
 ## Remarks  
  <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> information indicates, for example, that the assembly cannot execute side-by-side with other versions due to conflicts over a device driver.  
   
- Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility?displayProperty=fullName>, and is not used by the loader. This property is reserved for a future feature.  
+ Currently, <xref:System.Reflection.AssemblyName.VersionCompatibility%2A> always returns <xref:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameMachine?displayProperty=nameWithType>, and is not used by the loader. This property is reserved for a future feature.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

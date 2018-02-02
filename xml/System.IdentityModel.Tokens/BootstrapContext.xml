@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=nameWithType> constructor was used; otherwise it is `null`.  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.IdentityModel.Tokens.SecurityToken%2CSystem.IdentityModel.Tokens.SecurityTokenHandler%29?displayProperty=nameWithType> constructor was used; otherwise it is `null`.  
   
  ]]></format>
         </remarks>
@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.String%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.String%29?displayProperty=nameWithType> constructor was used; otherwise it is `null`.  
   
  ]]></format>
         </remarks>
@@ -233,11 +233,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.Byte%5B%5D%29?displayProperty=fullName> constructor was used; otherwise it is `null`.  
+ This property is only set if the <xref:System.IdentityModel.Tokens.BootstrapContext.%23ctor%28System.Byte%5B%5D%29?displayProperty=nameWithType> constructor was used; otherwise it is `null`.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

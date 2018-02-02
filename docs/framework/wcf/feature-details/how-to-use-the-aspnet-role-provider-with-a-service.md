@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 88d33a81-8ac7-48de-978c-5c5b1257951e
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Use the ASP.NET Role Provider with a Service
 The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider (in conjunction with the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider) is a feature that enables [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] developers to create Web sites that allow users to create an account with a site and to be assigned roles for authorization purposes. With this feature, any user can establish an account with the site, and log in for exclusive access to the site and its services. This is in contrast to Windows security, which requires users to have accounts in a Windows domain. Instead, any user who supplies his or her credentials (the user name/password combination) can use the site and its services.  
@@ -73,5 +75,5 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider (in 
     ```  
   
 ## See Also  
- [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md)   
+ [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md)  
  [How to: Use the ASP.NET Membership Provider](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-membership-provider.md)

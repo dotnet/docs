@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; of &lt;namespaceTable&gt;
 Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.  
@@ -25,7 +27,7 @@ Represents a configuration element that contains a namespace to prefix mapping t
   
 ## Syntax  
   
-```vb  
+```xml  
    <routing>   <namespaceTable>  
      <add namespace="String" prefix="String" />    </namespaceTable></routing>  
 ```  
@@ -53,4 +55,4 @@ Represents a configuration element that contains a namespace to prefix mapping t
 |[\<namespaceTable>](../../../../../docs/framework/configure-apps/file-schema/wcf/namespacetable.md)|Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.|  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=fullName>    
+ <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>    

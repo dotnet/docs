@@ -40,6 +40,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Freezable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -208,6 +210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="ByProperty">
@@ -249,7 +253,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -272,6 +276,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.VectorAnimation" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -297,6 +302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
@@ -314,6 +320,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.VectorAnimation.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -379,6 +386,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.By" />
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="FromProperty">
@@ -431,6 +440,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.VectorAnimationBase.GetCurrentValueCore(System.Windows.Vector,System.Windows.Vector,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -490,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -555,6 +566,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.VectorAnimation.By" />
       </Docs>
     </Member>
     <Member MemberName="ToProperty">
@@ -574,5 +587,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.VectorAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

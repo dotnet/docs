@@ -31,11 +31,14 @@
 ## Examples  
  The following example shows how to programmatically access the <xref:System.Web.UI.HtmlControls.HtmlHead> control to dynamically add `title` and `style` elements to the `head` element of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/CS/htmlheadclasscs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlHeadClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadClass/VB/htmlheadclassvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.Page.Header" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlLink" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlMeta" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,11 +68,13 @@
 ## Examples  
  The following example shows how to programmatically add an <xref:System.Web.UI.HtmlControls.HtmlHead> control to a page and add `title` and `link` elements to it.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/CS/htmlheadcstrcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/VB/htmlheadcstrvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/CS/htmlheadcstrcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlHeadCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlHeadCstr/VB/htmlheadcstrvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.Header" />
+        <altmember cref="M:System.Web.UI.ControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,7 +148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this property, see the <xref:System.Web.UI.Page.MetaDescription%2A?displayProperty=fullName> property.  
+ For information about this property, see the <xref:System.Web.UI.Page.MetaDescription%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -168,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about this property, see the <xref:System.Web.UI.Page.MetaKeywords%2A?displayProperty=fullName> property.  
+ For information about this property, see the <xref:System.Web.UI.Page.MetaKeywords%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -271,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IStyleSheet" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -289,7 +295,17 @@
         <summary>Gets the page title.</summary>
         <value>The page title.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTitle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlHead" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

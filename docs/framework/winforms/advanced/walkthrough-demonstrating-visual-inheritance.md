@@ -10,11 +10,12 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "form inheritance, walkthroughs"
+  - "form inheritance [Windows Forms], walkthroughs"
   - "visual inheritance"
-  - "inheritance, walkthroughs"
+  - "inheritance [Windows Forms], walkthroughs"
   - "walkthroughs [Windows Forms], visual inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
@@ -22,6 +23,8 @@ caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Demonstrating Visual Inheritance
 Visual inheritance enables you to see the controls on the base form and to add new controls. In this walkthrough you will create a base form and compile it into a class library. You will import this class library into another project and create a new form that inherits from the base form. During this walkthrough, you will learn how to:  
@@ -37,7 +40,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
  Ultimately, this walkthrough will demonstrate the difference between private and protected controls on an inherited form.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!CAUTION]
 >  Not all controls support visual inheritance from a base form. The following controls do not support the scenario described in this walkthrough:  
@@ -169,6 +172,6 @@ Visual inheritance enables you to see the controls on the base form and to add n
  Inheritance for user controls works in much the same way. Open a new class library project and add a user control. Place constituent controls on it and compile the project. Open another new class library project and add a reference to the compiled class library. Also, try adding an inherited control (through the **Add New Items** dialog box) to the project and using the **Inheritance Picker**. Add a user control, and change the `Inherits` (`:` in [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]) statement. For more information, see [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md).  
   
 ## See Also  
- [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)   
- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)   
+ [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)  
+ [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)  
  [Windows Forms](../../../../docs/framework/winforms/index.md)

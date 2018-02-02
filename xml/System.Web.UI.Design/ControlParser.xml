@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Control" />
+    <altmember cref="T:System.Web.UI.ITemplate" />
+    <altmember cref="T:System.Web.UI.Design.ControlPersister" />
   </Docs>
   <Members>
     <Member MemberName="ParseControl">
@@ -156,6 +159,8 @@
  \- or -  
   
  <paramref name="controlText" /> is <see langword="null" /> or an empty string ("").</exception>
+        <altmember cref="Overload:System.Web.UI.Design.ControlParser.ParseControl" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -226,5 +231,23 @@
           <paramref name="designerHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ParseTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Web.UI.ITemplate" /> interface from the specified template markup.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a control from the specified markup.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

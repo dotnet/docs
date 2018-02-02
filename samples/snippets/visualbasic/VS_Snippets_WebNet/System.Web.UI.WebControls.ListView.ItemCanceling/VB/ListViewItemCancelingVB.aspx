@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page language="VB" %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -63,7 +63,7 @@
               <th runat="server">ID</th>
               <th runat="server">First Name</th>
               <th runat="server">Last Name</th>
-              <th runat="server">E-mail Address</th>
+              <th runat="server">Email Address</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>
@@ -160,4 +160,4 @@
     </form>
   </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

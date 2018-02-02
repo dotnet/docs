@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class provides a host application with settings to perform policy decisions in the host's implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method.  
+ This class provides a host application with settings to perform policy decisions in the host's implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is equal to the <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions?displayProperty=fullName> enumeration value, which is the only value in the enumeration.  
+ This property is equal to the <xref:System.IO.IsolatedStorage.IsolatedStorageSecurityOptions.IncreaseQuotaForApplication?displayProperty=nameWithType> enumeration value, which is the only value in the enumeration.  
   
  ]]></format>
         </remarks>

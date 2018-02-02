@@ -49,6 +49,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.GeometryGroup" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -163,7 +164,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -212,7 +213,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -432,10 +433,11 @@
   
  This method performs a linear search; therefore, the average execution time is proportional to the value of <xref:System.Windows.Media.Animation.DoubleKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is equal to <xref:System.Windows.Media.Animation.DoubleKeyFrameCollection.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -557,6 +559,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Geometry&gt;.GetEnumerator">
@@ -583,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -613,6 +617,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.CopyTo(System.Windows.Media.Geometry[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -690,6 +695,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -719,6 +725,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.Add(System.Windows.Media.Geometry)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -749,6 +756,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.Contains(System.Windows.Media.Geometry)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -778,6 +786,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.IndexOf(System.Windows.Media.Geometry)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -808,6 +817,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.Insert(System.Int32,System.Windows.Media.Geometry)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -834,6 +844,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsReadOnly">
@@ -860,6 +871,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Freezable.IsFrozen" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Item">
@@ -889,6 +901,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.GeometryCollection.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -917,7 +930,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeometryCollection.Remove(System.Windows.Media.Geometry)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeometryCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify a default cache policy for your application by using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or the application or machine configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ You can specify a default cache policy for your application by using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or the application or machine configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
  You can specify the cache policy for an individual request by using the <xref:System.Net.WebRequest.CachePolicy%2A> property.  
   
@@ -390,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
    
   
@@ -573,5 +573,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.HttpRequestCachePolicy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

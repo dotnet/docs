@@ -12,9 +12,11 @@ helpviewer_keywords:
   - "WF [WF], concepts"
 ms.assetid: 2a5c0ac2-813f-4a7b-83ac-9e5cb85e0640
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Conceptual Overview
 This section contains a set of topics discussing the larger concepts behind [!INCLUDE[wf](../../../includes/wf-md.md)].  

@@ -122,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -485,10 +486,20 @@
         <Parameter Name="managementObject" Type="System.Management.ManagementBaseObject" />
       </Parameters>
       <Docs>
-        <param name="managementObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="managementObject">The <see cref="T:System.Management.ManagementBaseObject" /> that references the requested WMI object.</param>
+        <summary>Provides the internal WMI object represented by a <see cref="T:System.Management.ManagementObject" />.</summary>
+        <returns>An <see cref="T:System.IntPtr" /> representing the internal WMI object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator is used internally by instrumentation code. It is not intended for direct use by regular client or instrumented applications.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">

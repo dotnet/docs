@@ -18,14 +18,21 @@
 ## Remarks  
  The `Command` event is raised when a <xref:System.Web.UI.WebControls.Button>, <xref:System.Web.UI.WebControls.ImageButton>, or <xref:System.Web.UI.WebControls.LinkButton> control button in a <xref:System.Web.UI.WebControls.DataPagerField> object is clicked.  
   
- The <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class is used internally by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> and the <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A?displayProperty=fullName> methods to access information about the event that was raised.  
+ The <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class is used internally by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=nameWithType> and the <xref:System.Web.UI.WebControls.TemplatePagerField.HandleEvent%2A?displayProperty=nameWithType> methods to access information about the event that was raised.  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> class, see the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs> constructor.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+    <altmember cref="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
+    <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageButton" />
+    <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
+    <altmember cref="M:System.Web.UI.WebControls.TemplatePagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,6 +90,7 @@
         <summary>Gets the control that raised the event.</summary>
         <value>The control that raised the event.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -104,10 +112,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataPagerFieldItem> object. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.PagerField%2A?displayProperty=fullName> property represents the pager field object that contains the control that raised the event. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A?displayProperty=fullName> property represents the <xref:System.Web.UI.WebControls.DataPager> control.  
+ Use the <xref:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.Item%2A> property to retrieve the <xref:System.Web.UI.WebControls.DataPagerFieldItem> object. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.PagerField%2A?displayProperty=nameWithType> property represents the pager field object that contains the control that raised the event. The <xref:System.Web.UI.WebControls.DataPagerFieldItem.Pager%2A?displayProperty=nameWithType> property represents the <xref:System.Web.UI.WebControls.DataPager> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldCommandEventArgs.CommandSource" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPager" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerField" />
+        <altmember cref="T:System.Web.UI.WebControls.DataPagerFieldItem" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldItem.PagerField" />
+        <altmember cref="P:System.Web.UI.WebControls.DataPagerFieldItem.Pager" />
       </Docs>
     </Member>
   </Members>

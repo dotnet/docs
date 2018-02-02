@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3266700b-904b-44e4-93a7-e06a1a445100
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # &lt;filter&gt;
@@ -63,6 +65,6 @@ None.
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=fullName>    
-<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=fullName>   
-<xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=fullName>   
+<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>    
+<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=nameWithType>   
+<xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=nameWithType>   

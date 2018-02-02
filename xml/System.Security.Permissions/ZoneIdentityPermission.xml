@@ -45,6 +45,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.ZoneIdentityPermissionAttribute" />
+    <altmember cref="T:System.Security.Policy.Zone" />
+    <altmember cref="T:System.Security.Policy.ZoneMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,7 +84,7 @@
    
   
 ## Examples  
- The following example shows the use of the <xref:System.Security.Permissions.ZoneIdentityPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=fullName> constructor.  
+ The following example shows the use of the <xref:System.Security.Permissions.ZoneIdentityPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=nameWithType> constructor.  
   
  [!code-csharp[System.Security.Permissions.ZoneIdentityPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ZoneIdentityPermission/CS/zoneidentity.cs#7)]
  [!code-vb[System.Security.Permissions.ZoneIdentityPermission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ZoneIdentityPermission/VB/zoneidentity.vb#7)]  
@@ -115,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows the use of the <xref:System.Security.Permissions.ZoneIdentityPermission.%23ctor%28System.Security.SecurityZone%29?displayProperty=fullName> constructor.  
+ The following example shows the use of the <xref:System.Security.Permissions.ZoneIdentityPermission.%23ctor%28System.Security.SecurityZone%29?displayProperty=nameWithType> constructor.  
   
  [!code-csharp[System.Security.Permissions.ZoneIdentityPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ZoneIdentityPermission/CS/zoneidentity.cs#8)]
  [!code-vb[System.Security.Permissions.ZoneIdentityPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ZoneIdentityPermission/VB/zoneidentity.vb#8)]  
@@ -338,7 +341,7 @@
 ## Remarks  
  The result of a call to <xref:System.Security.Permissions.ZoneIdentityPermission.Union%2A> is a permission that represents the security zone represented by both the current permission and the specified permission. Any demand that passes either permission passes their union. The union of two identical <xref:System.Security.Permissions.ZoneIdentityPermission> objects is the same permission. The union of a null permission and a <xref:System.Security.Permissions.ZoneIdentityPermission> permission is the permission that is not null.  
   
- Note that a<xref:System.Security.Permissions.ZoneIdentityPermission> object representing a <xref:System.Security.SecurityZone.NoZone> security zone is treated as a null permission and handled as a special case. The union of a <xref:System.Security.Permissions.ZoneIdentityPermission> object representing the <xref:System.Security.SecurityZone.NoZone> security zone and a null permission is null. The union of two different zone identity permissions results in an <xref:System.ArgumentException> exception being thrown when neither of the two permissions represents the <xref:System.Security.SecurityZone.NoZone> security zone.  
+ Note that a <xref:System.Security.Permissions.ZoneIdentityPermission> object representing a <xref:System.Security.SecurityZone.NoZone> security zone is treated as a null permission and handled as a special case. The union of a <xref:System.Security.Permissions.ZoneIdentityPermission> object representing the <xref:System.Security.SecurityZone.NoZone> security zone and a null permission is null. The union of two different zone identity permissions results in an <xref:System.ArgumentException> exception being thrown when neither of the two permissions represents the <xref:System.Security.SecurityZone.NoZone> security zone.  
   
  ]]></format>
         </remarks>
@@ -349,5 +352,15 @@
  The two permissions are not equal and the current permission does not represent the <see cref="F:System.Security.SecurityZone.NoZone" /> security zone.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ZoneIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Computer.Clock.GmtTime` property has the same behavior as the <xref:System.DateTime.UtcNow%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.GmtTime` property has the same behavior as the <xref:System.DateTime.UtcNow%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   
@@ -86,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Devices.Clock.LocalTime" />
+        <altmember cref="P:System.DateTime.UtcNow" />
       </Docs>
     </Member>
     <Member MemberName="LocalTime">
@@ -107,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Computer.Clock.LocalTime` property has the same behavior as the <xref:System.DateTime.Now%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.LocalTime` property has the same behavior as the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   
@@ -130,6 +133,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:Microsoft.VisualBasic.Devices.Clock.GmtTime" />
+        <altmember cref="P:System.DateTime.Now" />
       </Docs>
     </Member>
     <Member MemberName="TickCount">
@@ -164,7 +169,7 @@
   
  Use the <xref:Microsoft.VisualBasic.Devices.Clock.LocalTime%2A> property or <xref:Microsoft.VisualBasic.Devices.Clock.GmtTime%2A> property to obtain the current local date and time on this computer.  
   
- The `My.Computer.Clock.TickCount` property has the same behavior as the <xref:System.Environment.TickCount%2A?displayProperty=fullName> property.  
+ The `My.Computer.Clock.TickCount` property has the same behavior as the <xref:System.Environment.TickCount%2A?displayProperty=nameWithType> property.  
   
 ## Availability by Project Type  
   
@@ -187,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Environment.TickCount" />
       </Docs>
     </Member>
   </Members>

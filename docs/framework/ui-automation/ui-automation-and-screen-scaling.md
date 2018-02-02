@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "scaling, screens"
   - "screens, scaling"
@@ -19,6 +22,8 @@ caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation and Screen Scaling
 > [!NOTE]
@@ -41,7 +46,7 @@ manager: "markl"
   
  Suppose you design a dialog box with a button at coordinates (100, 48). When this dialog box is displayed at the default 96 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)], the button is located at physical coordinates of (100, 48). At 120 [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)], it is located at physical coordinates of (125, 60). But the logical coordinates are the same at any [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting: (100, 48).  
   
- Logical coordinates are important, because they make the behavior of the operating system and applications consistent regardless of the [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting. For example, <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=fullName> normally returns the logical coordinates. If you move the cursor over an element in a dialog box, the same coordinates are returned regardless of the [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting. If you draw a control at (100, 100), it is drawn to those logical coordinates, and will occupy the same relative position at any [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting.  
+ Logical coordinates are important, because they make the behavior of the operating system and applications consistent regardless of the [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting. For example, <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType> normally returns the logical coordinates. If you move the cursor over an element in a dialog box, the same coordinates are returned regardless of the [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting. If you draw a control at (100, 100), it is drawn to those logical coordinates, and will occupy the same relative position at any [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] setting.  
   
 <a name="Scaling_in_UI_Automation_Clients"></a>   
 ## Scaling in UI Automation Clients  
@@ -66,7 +71,7 @@ manager: "markl"
      [!code-csharp[Highlighter#101](../../../samples/snippets/csharp/VS_Snippets_Wpf/Highlighter/CSharp/NativeMethods.cs#101)]
      [!code-vb[Highlighter#101](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Highlighter/VisualBasic/NativeMethods.vb#101)]  
   
-     This function makes the entire process [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](http://msdn.microsoft.com/en-us/19ba4577-753e-4efd-92cc-c02ee67c1b69), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], not the logical coordinates. If the sample were not [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] environment.  
+     This function makes the entire process [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, meaning that all windows that belong to the process are unscaled. In the [Highlighter Sample](http://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69), for instance, the four windows that make up the highlight rectangle are located at the physical coordinates obtained from [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], not the logical coordinates. If the sample were not [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware, the highlight would be drawn at the logical coordinates on the desktop, which would result in incorrect placement in a non-96- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)] environment.  
   
 2.  To get cursor coordinates, call the [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] function `GetPhysicalCursorPos`. The following example shows how to declare and use this function.  
   
@@ -74,9 +79,9 @@ manager: "markl"
      [!code-vb[UIAClient_snip#185](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#185)]  
   
 > [!CAUTION]
->  Do not use <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=fullName>. The behavior of this property outside client windows in a scaled environment is undefined.  
+>  Do not use <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>. The behavior of this property outside client windows in a scaled environment is undefined.  
   
  If your application performs direct cross-process communication with non- [!INCLUDE[TLA2#tla_dpi](../../../includes/tla2sharptla-dpi-md.md)]-aware applications, you may have convert between logical and physical coordinates by using the [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)] functions `PhysicalToLogicalPoint` and `LogicalToPhysicalPoint`.  
   
 ## See Also  
- [Highlighter Sample](http://msdn.microsoft.com/en-us/19ba4577-753e-4efd-92cc-c02ee67c1b69)
+ [Highlighter Sample](http://msdn.microsoft.com/library/19ba4577-753e-4efd-92cc-c02ee67c1b69)

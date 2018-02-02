@@ -88,7 +88,7 @@
     </Member>
     <Member MemberName="OnDataChange">
       <MemberSignature Language="C#" Value="public void OnDataChange (ref System.Runtime.InteropServices.ComTypes.FORMATETC format, ref System.Runtime.InteropServices.ComTypes.STGMEDIUM stgmedium);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDataChange(valuetype System.Runtime.InteropServices.ComTypes.FORMATETC format, valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM stgmedium) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDataChange([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; format, [in]valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; stgmedium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnDataChange(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSourceServerModule::GetSourceServerData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedSourceServerModule::GetSourceServerData method [.NET Framework debugging]"
   - "GetSourceServerData method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedSourceServerModule::GetSourceServerData Method
 Returns the source server data for the module. The caller must free resources by using `CoTaskMemFree`.  

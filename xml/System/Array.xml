@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/array.cs#156e066ecc4ccedf). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Array> class is not part of the <xref:System.Collections> namespaces. However, it is still considered a collection because it is based on the <xref:System.Collections.IList> interface.  
   
  The <xref:System.Array> class is the base class for language implementations that support arrays. However, only the system and compilers can derive explicitly from the <xref:System.Array> class. Users should employ the array constructs provided by the language.  
@@ -61,13 +57,13 @@
   
  By default, the maximum size of an <xref:System.Array> is 2 gigabytes (GB). In a 64-bit environment, you can avoid the size restriction by setting the `enabled` attribute of the [gcAllowVeryLargeObjects](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment. However, the array will still be limited to a total of 4 billion elements, and to a maximum index of 0X7FEFFFFF in any given dimension (0X7FFFFFC7 for byte arrays and arrays of single-byte structures).  
   
- Single-dimensional arrays implement the <xref:System.Collections.Generic.IList%601?displayProperty=fullName>, <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>, <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName> and <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=fullName> generic interfaces. The implementations are provided to arrays at run time, and as a result, the generic interfaces do not appear in the declaration syntax for the <xref:System.Array> class. In addition,  there are no reference topics for interface members that are accessible only by casting an array to the generic interface type (explicit interface implementations). The key thing to be aware of when you cast an array to one of these interfaces is that members which add, insert, or remove elements throw <xref:System.NotSupportedException>.  
+ Single-dimensional arrays implement the <xref:System.Collections.Generic.IList%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.ICollection%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.IReadOnlyCollection%601?displayProperty=nameWithType> generic interfaces. The implementations are provided to arrays at run time, and as a result, the generic interfaces do not appear in the declaration syntax for the <xref:System.Array> class. In addition,  there are no reference topics for interface members that are accessible only by casting an array to the generic interface type (explicit interface implementations). The key thing to be aware of when you cast an array to one of these interfaces is that members which add, insert, or remove elements throw <xref:System.NotSupportedException>.  
   
  <xref:System.Type> objects provide information about array type declarations. <xref:System.Array> objects with the same array type share the same <xref:System.Type> object.  
   
- <xref:System.Type.IsArray%2A?displayProperty=fullName> and <xref:System.Type.GetElementType%2A?displayProperty=fullName> might not return the expected results with <xref:System.Array> because if an array is cast to the type <xref:System.Array>, the result is an object, not an array. That is, `typeof(System.Array).IsArray` returns `false`, and `typeof(System.Array).GetElementType` returns `null`.  
+ <xref:System.Type.IsArray%2A?displayProperty=nameWithType> and <xref:System.Type.GetElementType%2A?displayProperty=nameWithType> might not return the expected results with <xref:System.Array> because if an array is cast to the type <xref:System.Array>, the result is an object, not an array. That is, `typeof(System.Array).IsArray` returns `false`, and `typeof(System.Array).GetElementType` returns `null`.  
   
- The <xref:System.Array.Copy%2A?displayProperty=fullName> method copies elements not only between arrays of the same type but also between standard arrays of different types; it handles type casting automatically.  
+ The <xref:System.Array.Copy%2A?displayProperty=nameWithType> method copies elements not only between arrays of the same type but also between standard arrays of different types; it handles type casting automatically.  
   
  Some methods, such as <xref:System.Array.CreateInstance%2A>, <xref:System.Array.Copy%2A>, <xref:System.Array.CopyTo%2A>, <xref:System.Array.GetValue%2A>, and <xref:System.Array.SetValue%2A>, provide overloads that accept 64-bit integers as parameters to accommodate large capacity arrays. <xref:System.Array.LongLength%2A> and <xref:System.Array.GetLongLength%2A> return 64-bit integers indicating the length of the array.  
   
@@ -78,7 +74,7 @@
    
   
 ## Examples  
- The following code example shows how <xref:System.Array.Copy%2A?displayProperty=fullName> copies elements between an array of type integer and an array of type <xref:System.Object>.  
+ The following code example shows how <xref:System.Array.Copy%2A?displayProperty=nameWithType> copies elements between an array of type integer and an array of type <xref:System.Object>.  
   
  [!code-cpp[Classic Array Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Array Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Array Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Array Example/CS/source.cs#1)]
@@ -97,6 +93,8 @@
  This implementation does not provide a synchronized (thread safe) wrapper for an <see cref="T:System.Array" />; however, .NET Framework classes based on <see cref="T:System.Array" /> provide their own synchronized version of the collection using the <see cref="P:System.Array.SyncRoot" /> property.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.Object" />
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName="AsReadOnly&lt;T&gt;">
@@ -239,6 +237,8 @@
           <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> does not implement the <see cref="T:System.IComparable" /> interface, and the search encounters an element that does not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -294,7 +294,7 @@
   
  If the <xref:System.Array> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operator (~ in C#, `Not` in Visual Basic) to the negative result  to produce an index. If this index is one greater than the upper bound of the array, there are no elements larger than `value` in the array. Otherwise, it is the index of the first element that is larger than `value`.  
   
- The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName> as the comparer to perform case-insensitive string searches.  
+ The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType> as the comparer to perform case-insensitive string searches.  
   
  If `comparer` is not `null`, the elements of `array` are compared to the specified value using the specified <xref:System.Collections.IComparer> implementation. The elements of `array` must already be sorted in increasing value according to the sort order defined by `comparer`; otherwise, the result might be incorrect.  
   
@@ -322,6 +322,9 @@
           <paramref name="comparer" /> is <see langword="null" />, and <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, <paramref name="value" /> does not implement the <see cref="T:System.IComparable" /> interface, and the search encounters an element that does not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -409,6 +412,8 @@
  <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> does not implement the <see cref="T:System.IComparable" /> interface, and the search encounters an element that does not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -468,7 +473,7 @@
   
  If the <xref:System.Array> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operator (~ in C#, `Not` in Visual Basic) to the negative result  to produce an index. If this index is one greater than the upper bound of the array, there are no elements larger than `value` in the array. Otherwise, it is the index of the first element that is larger than `value`.  
   
- The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName> as the comparer to perform case-insensitive string searches.  
+ The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType> as the comparer to perform case-insensitive string searches.  
   
  If `comparer` is not `null`, the elements of `array` are compared to the specified value using the specified <xref:System.Collections.IComparer> implementation. The elements of `array` must already be sorted in increasing value according to the sort order defined by `comparer`; otherwise, the result might be incorrect.  
   
@@ -506,6 +511,9 @@
  <paramref name="comparer" /> is <see langword="null" />, and <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, <paramref name="value" /> does not implement the <see cref="T:System.IComparable" /> interface, and the search encounters an element that does not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -592,6 +600,8 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="T" /> does not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -651,7 +661,7 @@
   
  If the <xref:System.Array> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operator (~ in C#, `Not` in Visual Basic) to the negative result to produce an index. If this index is equal to the size of the array, there are no elements larger than `value` in the array. Otherwise, it is the index of the first element that is larger than `value`.  
   
- The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName> as the comparer to perform case-insensitive string searches.  
+ The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType> as the comparer to perform case-insensitive string searches.  
   
  If `comparer` is not `null`, the elements of `array` are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> generic interface implementation. The elements of `array` must already be sorted in increasing value according to the sort order defined by `comparer`; otherwise, the result might be incorrect.  
   
@@ -676,7 +686,7 @@
   
  The code example defines an alternative comparer for strings, named `ReverseCompare`, which implements the `IComparer<string>` (`IComparer(Of String)` in Visual Basic, `IComparer<String^>` in Visual C++) generic interface. The comparer calls the <xref:System.String.CompareTo%28System.String%29> method, reversing the order of the comparands so that the strings sort high-to-low instead of low-to-high.  
   
- The array is displayed, sorted, and displayed again. Arrays must be sorted in order to use the<xref:System.Array.BinarySearch%2A> method.  
+ The array is displayed, sorted, and displayed again. Arrays must be sorted in order to use the <xref:System.Array.BinarySearch%2A> method.  
   
 > [!NOTE]
 >  The calls to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> and <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic methods do not look any different from calls to their nongeneric counterparts, because Visual Basic, C#, and C++ infer the type of the generic type parameter from the type of the first argument. If you use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the Microsoft intermediate language (MSIL), you can see that the generic methods are being called.  
@@ -695,6 +705,9 @@
           <paramref name="comparer" /> is <see langword="null" />, and <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and <paramref name="T" /> does not implement the <see cref="T:System.IComparable`1" /> generic interface</exception>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -781,6 +794,8 @@
  <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="T" /> does not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -844,7 +859,7 @@
   
  If the array does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operator (~ in C#, `Not` in Visual Basic) to the negative result  to produce an index. If this index is equal to the size of the array, there are no elements larger than `value` in the array. Otherwise, it is the index of the first element that is larger than `value`.  
   
- The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName> as the comparer to perform case-insensitive string searches.  
+ The comparer customizes how the elements are compared. For example, you can use a <xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType> as the comparer to perform case-insensitive string searches.  
   
  If `comparer` is not `null`, the elements of `array` are compared to the specified value using the specified <xref:System.Collections.Generic.IComparer%601> generic interface implementation. The elements of `array` must already be sorted in increasing value according to the sort order defined by `comparer`; otherwise, the result might be incorrect.  
   
@@ -877,6 +892,9 @@
  <paramref name="comparer" /> is <see langword="null" />, and <paramref name="value" /> is of a type that is not compatible with the elements of <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" />, and <paramref name="T" /> does not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.Sort" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -929,7 +947,7 @@
 |----------|-----------|  
 |<xref:System.Boolean>|`false`|  
 |All integral and floating point numeric types|0 (zero)|  
-|<xref:System.DateTime>|<xref:System.DateTime.MinValue?displayProperty=fullName>|  
+|<xref:System.DateTime>|<xref:System.DateTime.MinValue?displayProperty=nameWithType>|  
 |Other value types|Default value of the type's fields|  
   
  The range of cleared elements wrap from row to row in a multi-dimensional array.  
@@ -946,7 +964,7 @@
  [!code-csharp[System.Array.Clear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.Clear/cs/example.cs#1)]
  [!code-vb[System.Array.Clear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Array.Clear/vb/example.vb#1)]  
   
- The following example defines a `TimeZoneTime` structure that includes a <xref:System.TimeZoneInfo> field and a <xref:System.DateTimeOffset> field. It then calls the <xref:System.Array.Clear%2A> method to clear one element in a two-element array of `TimeZoneTime` values. The method sets the value of the cleared element to the default value of a <xref:System.TimeZoneInfo> object, which is `null`, and the default value of a <xref:System.DateTimeOffset> object, which is <xref:System.DateTimeOffset.MinValue?displayProperty=fullName>.  
+ The following example defines a `TimeZoneTime` structure that includes a <xref:System.TimeZoneInfo> field and a <xref:System.DateTimeOffset> field. It then calls the <xref:System.Array.Clear%2A> method to clear one element in a two-element array of `TimeZoneTime` values. The method sets the value of the cleared element to the default value of a <xref:System.TimeZoneInfo> object, which is `null`, and the default value of a <xref:System.DateTimeOffset> object, which is <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Array.Clear#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.Clear/cs/clearstruct1.cs#2)]
  [!code-vb[System.Array.Clear#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Array.Clear/vb/clearstruct1.vb#2)]  
@@ -1011,7 +1029,7 @@
    
   
 ## Examples  
- The following code example clones a <xref:System.Globalization.CultureInfo?displayProperty=fullName> array and demonstrates the behavior of a shallow copy.  
+ The following code example clones a <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> array and demonstrates the behavior of a shallow copy.  
   
  [!code-cpp[System.Array.Clone#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Array.Clone/CPP/arrayclone.cpp#1)]
  [!code-csharp[System.Array.Clone#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.Clone/CS/arrayclone.cs#1)]
@@ -1019,6 +1037,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Array.Copy" />
+        <altmember cref="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ConstrainedCopy">
@@ -1113,6 +1133,10 @@
  -or-  
   
  <paramref name="length" /> is greater than the number of elements from <paramref name="destinationIndex" /> to the end of <paramref name="destinationArray" />.</exception>
+        <altmember cref="Overload:System.Array.Copy" />
+        <altmember cref="M:System.Array.Clone" />
+        <altmember cref="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" />
+        <altmember cref="T:System.Runtime.ConstrainedExecution.Cer" />
       </Docs>
     </Member>
     <Member MemberName="ConvertAll&lt;TInput,TOutput&gt;">
@@ -1178,6 +1202,7 @@
  -or-  
   
  <paramref name="converter" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Converter`2" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1281,6 +1306,8 @@
  -or-  
   
  <paramref name="length" /> is greater than the number of elements in <paramref name="destinationArray" />.</exception>
+        <altmember cref="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Array.Clone" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1380,6 +1407,8 @@
  -or-  
   
  <paramref name="length" /> is greater than the number of elements in <paramref name="destinationArray" />.</exception>
+        <altmember cref="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Array.Clone" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1504,6 +1533,8 @@
  -or-  
   
  <paramref name="length" /> is greater than the number of elements from <paramref name="destinationIndex" /> to the end of <paramref name="destinationArray" />.</exception>
+        <altmember cref="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Array.Clone" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -1566,7 +1597,7 @@
   
 -   When copying from a reference-type or value-type array to an <xref:System.Object> array, an <xref:System.Object> is created to hold each value or reference and then copied. When copying from an <xref:System.Object> array to a reference-type or value-type array and the assignment is not possible, an <xref:System.InvalidCastException> is thrown.  
   
--   If `sourceArray` and `destinationArray` are both reference-type arrays or are both arrays of type <xref:System.Object>, a shallow copy is performed. A shallow copy of an <xref:System.Array> is a new <xref:System.Array>containing references to the same elements as the original <xref:System.Array>. The elements themselves or anything referenced by the elements are not copied. In contrast, a deep copy of an <xref:System.Array> copies the elements and everything directly or indirectly referenced by the elements.  
+-   If `sourceArray` and `destinationArray` are both reference-type arrays or are both arrays of type <xref:System.Object>, a shallow copy is performed. A shallow copy of an <xref:System.Array> is a new <xref:System.Array> containing references to the same elements as the original <xref:System.Array>. The elements themselves or anything referenced by the elements are not copied. In contrast, a deep copy of an <xref:System.Array> copies the elements and everything directly or indirectly referenced by the elements.  
   
  An <xref:System.ArrayTypeMismatchException> is thrown if the arrays are of incompatible types. Type compatibility is defined as follows:  
   
@@ -1624,6 +1655,8 @@
  -or-  
   
  <paramref name="length" /> is greater than the number of elements from <paramref name="destinationIndex" /> to the end of <paramref name="destinationArray" />.</exception>
+        <altmember cref="M:System.Array.ConstrainedCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Array.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -1665,7 +1698,7 @@
 ## Remarks  
  This method copies all the elements of the current array instance to the `array` destination array, starting at index `index`. The `array` destination array must already have been dimensioned and must have a sufficient number of elements to accommodate the copied elements. Otherwise, the method throws an exception.  
   
- This method supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface. If implementing <xref:System.Collections.ICollection?displayProperty=fullName> is not explicitly required, use <xref:System.Array.Copy%2A> to avoid an extra indirection.  
+ This method supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface. If implementing <xref:System.Collections.ICollection?displayProperty=nameWithType> is not explicitly required, use <xref:System.Array.Copy%2A> to avoid an extra indirection.  
   
  If this method throws an exception while copying, the state of `array` is undefined.  
   
@@ -1701,6 +1734,8 @@
         <exception cref="T:System.ArrayTypeMismatchException">The type of the source <see cref="T:System.Array" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">The source array is multidimensional.</exception>
         <exception cref="T:System.InvalidCastException">At least one element in the source <see cref="T:System.Array" /> cannot be cast to the type of destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Array.Copy(System.Array,System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -1743,7 +1778,7 @@
 ## Remarks  
  This method copies all the elements of the current array instance to the `array` destination array, starting at index `index`. The `array` destination array must already have been dimensioned and must have a sufficient number of elements to accommodate the copied elements. Otherwise, the method throws an exception.  
   
- This method supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface. If implementing <xref:System.Collections.ICollection?displayProperty=fullName> is not explicitly required, use <xref:System.Array.Copy%2A> to avoid an extra indirection.  
+ This method supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface. If implementing <xref:System.Collections.ICollection?displayProperty=nameWithType> is not explicitly required, use <xref:System.Array.Copy%2A> to avoid an extra indirection.  
   
  If this method throws an exception while copying, the state of `array` is undefined.  
   
@@ -1779,6 +1814,8 @@
         <exception cref="T:System.ArrayTypeMismatchException">The type of the source <see cref="T:System.Array" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">The source <see cref="T:System.Array" /> is multidimensional.</exception>
         <exception cref="T:System.InvalidCastException">At least one element in the source <see cref="T:System.Array" /> cannot be cast to the type of destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="M:System.Array.Copy(System.Array,System.Array,System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1849,7 +1886,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, int[] lengths);" />
+      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, params int[] lengths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Array CreateInstance(class System.Type elementType, int32[] lengths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -1933,7 +1970,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, long[] lengths);" />
+      <MemberSignature Language="C#" Value="public static Array CreateInstance (Type elementType, params long[] lengths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Array CreateInstance(class System.Type elementType, int64[] lengths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.CreateInstance(System.Type,System.Int64[])" />
       <MemberType>Method</MemberType>
@@ -2048,7 +2085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike most classes, <xref:System.Array> provides the<xref:System.Array.CreateInstance%2A> method, instead of public constructors, to allow for late bound access.  
+ Unlike most classes, <xref:System.Array> provides the <xref:System.Array.CreateInstance%2A> method, instead of public constructors, to allow for late bound access.  
   
  Reference-type elements are initialized to `null`. Value-type elements are initialized to zero.  
   
@@ -2348,12 +2385,12 @@
    
   
 ## Examples  
- The following example specifies the match conditions for the <xref:System.Array.Exists%2A>method usinglambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
+ The following example specifies the match conditions for the <xref:System.Array.Exists%2A> method usinglambda expressions to check whether a planet starts with a given letter or whether the planet is found on the given array.  
   
  [!code-csharp[System.Array.Exists#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists3.cs#3)]
  [!code-vb[System.Array.Exists#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists3.vb#3)]  
   
- The following example uses the <xref:System.Array.Exists%2A> method to indicate whether any names in a string array begin with a specified character. The example instantiates a `StringSearcher` object by passing the string to search for to its class constructor. The `StringSearcher.StartsWith` method has same signature as the <xref:System.Predicate%601> delegate. When the<xref:System.Array.Exists%2A> method is called, each member of the array is passed to the delegate until it returns `true` or iterates all the elements in the array.  
+ The following example uses the <xref:System.Array.Exists%2A> method to indicate whether any names in a string array begin with a specified character. The example instantiates a `StringSearcher` object by passing the string to search for to its class constructor. The `StringSearcher.StartsWith` method has same signature as the <xref:System.Predicate%601> delegate. When the <xref:System.Array.Exists%2A> method is called, each member of the array is passed to the delegate until it returns `true` or iterates all the elements in the array.  
   
  [!code-csharp[System.Array.Exists#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.array.exists/cs/exists1.cs#1)]
  [!code-vb[System.Array.Exists#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.array.exists/vb/exists1.vb#1)]  
@@ -2371,6 +2408,14 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="M:System.Array.TrueForAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="Fill&lt;T&gt;">
@@ -2501,6 +2546,13 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindAll&lt;T&gt;">
@@ -2580,6 +2632,13 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex&lt;T&gt;">
@@ -2626,7 +2685,7 @@
 ## Remarks  
  The <xref:System.Array> is searched forward starting at the first element and ending at the last element.  
   
- The<xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of `array` are individually passed to the <xref:System.Predicate%601>.  
+ The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of `array` are individually passed to the <xref:System.Predicate%601>.  
   
  This method is an O(`n`) operation, where `n` is the <xref:System.Array.Length%2A> of `array`.  
   
@@ -2654,6 +2713,14 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex&lt;T&gt;">
@@ -2732,6 +2799,14 @@
  <paramref name="match" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindIndex&lt;T&gt;">
@@ -2820,6 +2895,14 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLast&lt;T&gt;">
@@ -2894,6 +2977,13 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex&lt;T&gt;">
@@ -2968,6 +3058,14 @@
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex&lt;T&gt;">
@@ -3046,6 +3144,14 @@
  <paramref name="match" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="FindLastIndex&lt;T&gt;">
@@ -3134,6 +3240,14 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.Find``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindLast``1(``0[],System.Predicate{``0})" />
+        <altmember cref="M:System.Array.FindAll``1(``0[],System.Predicate{``0})" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="Overload:System.Array.IndexOf" />
+        <altmember cref="Overload:System.Array.LastIndexOf" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;T&gt;">
@@ -3194,6 +3308,7 @@
  -or-  
   
  <paramref name="action" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Action`1" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -3317,6 +3432,10 @@
  -or-  
   
  <paramref name="dimension" /> is equal to or greater than <see cref="P:System.Array.Rank" />.</exception>
+        <altmember cref="P:System.Array.Length" />
+        <altmember cref="M:System.Array.GetLongLength(System.Int32)" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="GetLongLength">
@@ -3368,6 +3487,10 @@
  -or-  
   
  <paramref name="dimension" /> is equal to or greater than <see cref="P:System.Array.Rank" />.</exception>
+        <altmember cref="P:System.Array.Length" />
+        <altmember cref="M:System.Array.GetLength(System.Int32)" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="GetLowerBound">
@@ -3436,6 +3559,8 @@
  -or-  
   
  <paramref name="dimension" /> is equal to or greater than <see cref="P:System.Array.Rank" />.</exception>
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="GetUpperBound">
@@ -3500,6 +3625,8 @@
  -or-  
   
  <paramref name="dimension" /> is equal to or greater than <see cref="P:System.Array.Rank" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3554,10 +3681,13 @@
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly one dimension.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public object GetValue (int[] indices);" />
+      <MemberSignature Language="C#" Value="public object GetValue (params int[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(int32[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -3619,6 +3749,9 @@
           <paramref name="indices" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The number of dimensions in the current <see cref="T:System.Array" /> is not equal to the number of elements in <paramref name="indices" />.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Any element in <paramref name="indices" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3676,10 +3809,13 @@
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly one dimension.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public object GetValue (long[] indices);" />
+      <MemberSignature Language="C#" Value="public object GetValue (params long[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(int64[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.GetValue(System.Int64[])" />
       <MemberType>Method</MemberType>
@@ -3742,6 +3878,9 @@
           <paramref name="indices" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The number of dimensions in the current <see cref="T:System.Array" /> is not equal to the number of elements in <paramref name="indices" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Any element in <paramref name="indices" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3795,6 +3934,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly two dimensions.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Either <paramref name="index1" /> or <paramref name="index2" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3853,6 +3995,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly two dimensions.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Either <paramref name="index1" /> or <paramref name="index2" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3909,6 +4054,9 @@
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly three dimensions.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index1" /> or <paramref name="index2" /> or <paramref name="index3" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -3970,6 +4118,9 @@
         <exception cref="T:System.ArgumentException">The current <see cref="T:System.Array" /> does not have exactly three dimensions.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index1" /> or <paramref name="index2" /> or <paramref name="index3" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.SetValue" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -4015,16 +4166,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches all the elements of a one-dimensional arrayfor `value`. To determine whether `value` exists in `array`, the method performs an equality comparison by calling each element's `Equals` method until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, that override is called.  
+ This method searches all the elements of a one-dimensional arrayfor `value`. To determine whether `value` exists in `array`, the method performs an equality comparison by calling each element's `Equals` method until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, that override is called.  
   
- Because most arrays have a lower bound of zero, this method generally returns –1 if`value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName>(0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName> (0x7FFFFFFF).  
+ Because most arrays have a lower bound of zero, this method generally returns –1 if`value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType>(0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
   
  This method is an O(`n`) operation, where `n` is the <xref:System.Array.Length%2A> of `array`.  
   
    
   
 ## Examples  
- The example calls the following three overloads of the <xref:System.Array.IndexOf%2A>method to find the index of a string in a string array:  
+ The example calls the following three overloads of the <xref:System.Array.IndexOf%2A> method to find the index of a string in a string array:  
   
 -   <xref:System.Array.IndexOf%28System.Array%2CSystem.Object%29>, to determine the first occurrence of the string "the" in a string array.  
   
@@ -4042,6 +4193,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -4089,11 +4241,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches a one-dimensional array from the element at index `startIndex` to the last element. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method, that override is called.  
+ This method searches a one-dimensional array from the element at index `startIndex` to the last element. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method, that override is called.  
   
- Because most arrays have a lower bound of zero, this method generally returns –1 if `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName>(0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName> (0x7FFFFFFF).  
+ Because most arrays have a lower bound of zero, this method generally returns –1 if `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType>(0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
   
- If `startIndex` equals <xref:System.Array.Length%2A?displayProperty=fullName>,the method returns -1. If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=fullName>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
+ If `startIndex` equals <xref:System.Array.Length%2A?displayProperty=nameWithType>,the method returns -1. If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
  This method is an O(`n`) operation, where `n` is the number of elements from `startIndex` to the end of `array`.  
   
@@ -4120,6 +4272,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -4169,11 +4322,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method searches the elements of a one-dimensional arrayfrom `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method, that override is called.  
+ This method searches the elements of a one-dimensional arrayfrom `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `Equals` method of every element until it finds a match. This means that if the element overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, that override is called.  
   
- Becausemost arrays have a lower bound of zero, this method generally returns –1 when `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName> (0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName> (0x7FFFFFFF).  
+ Becausemost arrays have a lower bound of zero, this method generally returns –1 when `value` isn’t found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> (0x80000000) and `value` isn’t found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType> (0x7FFFFFFF).  
   
- If `startindex` equals <xref:System.Array.Length%2A?displayProperty=fullName>, the method returns -1. If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=fullName>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
+ If `startindex` equals <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method returns -1. If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
  This method is an O(`n`) operation, where `n` is `count`.  
   
@@ -4208,6 +4361,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
@@ -4269,6 +4423,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
@@ -4317,7 +4472,7 @@
 ## Remarks  
  This method searches a one-dimensional array from the element at `startIndex` to the end of the array. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `T.Equals` method on every element. This means that if `T` overrides the <xref:System.Object.Equals%2A> method, that override is called.  
   
- If `startIndex` equals <xref:System.Array.Length%2A>,the method returns -1.If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=fullName>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
+ If `startIndex` equals <xref:System.Array.Length%2A>,the method returns -1.If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
  This method is an O(`n`) operation, where `n` is the number of elements from `startIndex` to the end of `array`.  
   
@@ -4336,6 +4491,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
@@ -4386,14 +4542,14 @@
 ## Remarks  
  This method searchesthe elements of a one-dimensional array from `startIndex` to `startIndex` plus `count` minus 1, if `count` is greater than 0. To determine whether `value` exists in `array`, the method performs an equality comparison by calling the `T.Equals` method on every element. This means that if `T` overrides the <xref:System.Object.Equals%2A> method, that override is called.  
   
- If `startIndex` equals <xref:System.Array.Length%2A?displayProperty=fullName>, the method returns -1.  If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=fullName>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
+ If `startIndex` equals <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method returns -1.  If `startIndex` is greater than <xref:System.Array.Length%2A?displayProperty=nameWithType>, the method throws an <xref:System.ArgumentOutOfRangeException>.  
   
  This method is an O(`n`) operation, where `n` is `count`.  
   
    
   
 ## Examples  
- The following example demonstrates all three generic overloads of the <xref:System.Array.IndexOf%2A> method. An array of strings is created, with one entry that appears twice, at index location 0 and index location 5. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%29> method overload searches the array from the beginning, and finds the first occurrence of the string. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%29> method overload is used to search the array beginning with index location 3 and continuing to the end of the array, and finds the second occurrence of the string. Finally, the <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%2CSystem.Int32%29>method overload is used to search a range of two entries, beginning at index location two; it returns –1 because there are no instances of the search string in that range.  
+ The following example demonstrates all three generic overloads of the <xref:System.Array.IndexOf%2A> method. An array of strings is created, with one entry that appears twice, at index location 0 and index location 5. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%29> method overload searches the array from the beginning, and finds the first occurrence of the string. The <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%29> method overload is used to search the array beginning with index location 3 and continuing to the end of the array, and finds the second occurrence of the string. Finally, the <xref:System.Array.IndexOf%60%601%28%60%600%5B%5D%2C%60%600%2CSystem.Int32%2CSystem.Int32%29> method overload is used to search a range of two entries, beginning at index location two; it returns –1 because there are no instances of the search string in that range.  
   
  [!code-cpp[Array_IndexOf#1](~/samples/snippets/cpp/VS_Snippets_CLR/Array_IndexOf/cpp/source.cpp#1)]
  [!code-csharp[Array_IndexOf#1](~/samples/snippets/csharp/VS_Snippets_CLR/Array_IndexOf/cs/source.cs#1)]
@@ -4413,6 +4569,7 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
+        <altmember cref="Overload:System.Array.LastIndexOf" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -4490,7 +4647,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Array> implements the <xref:System.Array.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ <xref:System.Array> implements the <xref:System.Array.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
  An array with a fixed size does not allow the addition or removal of elements after the array is created, but it allows the modification of existing elements.  
   
@@ -4498,6 +4655,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.Collections.Generic.IList`1" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -4528,16 +4687,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Array> implements the <xref:System.Array.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=fullName> interface. An array that is read-only does not allow the addition, removal, or modification of elements after the array is created.  
+ <xref:System.Array> implements the <xref:System.Array.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IList?displayProperty=nameWithType> interface. An array that is read-only does not allow the addition, removal, or modification of elements after the array is created.  
   
- If you require a read-only collection, use a <xref:System.Collections> class that implements the <xref:System.Collections.IList?displayProperty=fullName> interface.  
+ If you require a read-only collection, use a <xref:System.Collections> class that implements the <xref:System.Collections.IList?displayProperty=nameWithType> interface.  
   
- If you cast or convert an array to an <xref:System.Collections.IList> interface object, the <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=fullName> property returns `false`. However, if you cast or convert an array to a <xref:System.Collections.Generic.IList%601> interface, the `IsReadOnly` property returns `true`.  
+ If you cast or convert an array to an <xref:System.Collections.IList> interface object, the <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=nameWithType> property returns `false`. However, if you cast or convert an array to a <xref:System.Collections.Generic.IList%601> interface, the `IsReadOnly` property returns `true`.  
   
  Retrieving the value of this property is an O(1) operation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="N:System.Collections" />
+        <altmember cref="T:System.Collections.Generic.IList`1" />
+        <altmember cref="N:System.Collections.Generic" />
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -4568,7 +4731,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Array> implements the <xref:System.Array.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ <xref:System.Array> implements the <xref:System.Array.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  .NET Framework classes based on <xref:System.Array> provide their own synchronized version of the collection using the <xref:System.Array.SyncRoot%2A> property.  
   
@@ -4581,7 +4744,7 @@
    
   
 ## Examples  
- The following code example shows how to lock an array during the entire enumeration by using the <xref:System.Array.SyncRoot%2A>property.  
+ The following code example shows how to lock an array during the entire enumeration by using the <xref:System.Array.SyncRoot%2A> property.  
   
  [!code-cpp[System.Array.SyncRoot#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Array.SyncRoot/cpp/source.cpp#1)]
  [!code-csharp[System.Array.SyncRoot#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Array.SyncRoot/cs/source.cs#1)]
@@ -4589,6 +4752,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Array.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -4636,9 +4801,9 @@
 ## Remarks  
  The one-dimensional <xref:System.Array> is searched backward starting at the last element and ending at the first element.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
   
- Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName>, which is `System.Int32.MinValue - 1`.  
+ Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType>, which is `System.Int32.MinValue - 1`.  
   
  This method is an O(`n`) operation, where `n` is the <xref:System.Array.Length%2A> of `array`.  
   
@@ -4661,6 +4826,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -4710,9 +4876,9 @@
 ## Remarks  
  The one-dimensional <xref:System.Array> is searched backward starting at `startIndex` and ending at the first element.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
   
- Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName>, which is `System.Int32.MinValue - 1`.  
+ Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType>, which is `System.Int32.MinValue - 1`.  
   
  This method is an O(`n`) operation, where `n` is the number of elements from the beginning of `array` to `startIndex`.  
   
@@ -4735,6 +4901,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -4786,9 +4953,9 @@
 ## Remarks  
  The one-dimensional <xref:System.Array> is searched backward starting at `startIndex` and ending at `startIndex` minus `count` plus 1, if `count` is greater than 0.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the`Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the`Equals` implementation of that type is used.  
   
- Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=fullName> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=fullName>, which is `System.Int32.MinValue - 1`.  
+ Since most arrays will have a lower bound of zero, this method would generally return –1 when `value` is not found. In the rare case that the lower bound of the array is equal to <xref:System.Int32.MinValue?displayProperty=nameWithType> and `value` is not found, this method returns <xref:System.Int32.MaxValue?displayProperty=nameWithType>, which is `System.Int32.MinValue - 1`.  
   
  This method is an O(`n`) operation, where `n` is `count`.  
   
@@ -4819,6 +4986,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf&lt;T&gt;">
@@ -4865,7 +5033,7 @@
 ## Remarks  
  The <xref:System.Array> is searched backward starting at the last element and ending at the first element.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
   
  This method is an O(`n`) operation, where `n` is the <xref:System.Array.Length%2A> of `array`.  
   
@@ -4882,6 +5050,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf&lt;T&gt;">
@@ -4930,7 +5099,7 @@
 ## Remarks  
  The <xref:System.Array> is searched backward starting at `startIndex` and ending at the first element.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
   
  This method is an O(`n`) operation, where `n` is the number of elements from the beginning of `array` to `startIndex`.  
   
@@ -4949,6 +5118,7 @@
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is outside the range of valid indexes for <paramref name="array" />.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf&lt;T&gt;">
@@ -4999,7 +5169,7 @@
 ## Remarks  
  The <xref:System.Array> is searched backward starting at `startIndex` and ending at `startIndex` minus `count` plus 1, if `count` is greater than 0.  
   
- The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=fullName> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
+ The elements are compared to the specified value using the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. If the element type is a nonintrinsic (user-defined) type, the `Equals` implementation of that type is used.  
   
  This method is an O(`n`) operation, where `n` is `count`.  
   
@@ -5026,6 +5196,7 @@
  -or-  
   
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in <paramref name="array" />.</exception>
+        <altmember cref="Overload:System.Array.IndexOf" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -5078,6 +5249,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The array is multidimensional and contains more than <see cref="F:System.Int32.MaxValue" /> elements.</exception>
+        <altmember cref="M:System.Array.GetLength(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="P:System.Array.LongLength" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="LongLength">
@@ -5120,6 +5297,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Array.GetLongLength(System.Int32)" />
+        <altmember cref="P:System.Array.Length" />
+        <altmember cref="P:System.Collections.ICollection.Count" />
+        <altmember cref="P:System.Array.Rank" />
       </Docs>
     </Member>
     <Member MemberName="Rank">
@@ -5187,11 +5368,15 @@ int[,,] TDArray = new int[1,1,1];
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Array.Length" />
+        <altmember cref="M:System.Array.GetLength(System.Int32)" />
+        <altmember cref="P:System.Array.LongLength" />
+        <altmember cref="M:System.Array.GetLongLength(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Resize&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static void Resize&lt;T&gt; (ref T[] array, int newSize);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Resize&lt;T&gt;(!!T[] array, int32 newSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Resize&lt;T&gt;(!!T[]&amp; array, int32 newSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.Resize``1(``0[]@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5375,7 +5560,7 @@ int[,,] TDArray = new int[1,1,1];
 ## Remarks  
  After a call to this method, the element at `myArray[i]`, where `i` is any index in the array, moves to `myArray[j]`, where `j` equals `(myArray.Length + myArray.GetLowerBound(0)) - (i - myArray.GetLowerBound(0)) - 1`.  
   
- The<xref:System.Array.Reverse%2A> method can be used to reverse a jagged array.  
+ The <xref:System.Array.Reverse%2A> method can be used to reverse a jagged array.  
   
  This method is an O(`n`) operation, where `n` is `length`.  
   
@@ -5518,10 +5703,13 @@ int[,,] TDArray = new int[1,1,1];
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
-      <MemberSignature Language="C#" Value="public void SetValue (object value, int[] indices);" />
+      <MemberSignature Language="C#" Value="public void SetValue (object value, params int[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object value, int32[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int32[])" />
       <MemberType>Method</MemberType>
@@ -5591,6 +5779,9 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.InvalidCastException">
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Any element in <paramref name="indices" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -5656,10 +5847,13 @@ int[,,] TDArray = new int[1,1,1];
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
-      <MemberSignature Language="C#" Value="public void SetValue (object value, long[] indices);" />
+      <MemberSignature Language="C#" Value="public void SetValue (object value, params long[] indices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object value, int64[] indices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Array.SetValue(System.Object,System.Int64[])" />
       <MemberType>Method</MemberType>
@@ -5730,6 +5924,9 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.InvalidCastException">
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Any element in <paramref name="indices" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -5791,6 +5988,9 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.InvalidCastException">
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Either <paramref name="index1" /> or <paramref name="index2" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -5857,6 +6057,9 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.InvalidCastException">
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Either <paramref name="index1" /> or <paramref name="index2" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -5921,6 +6124,9 @@ int[,,] TDArray = new int[1,1,1];
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index1" /> or <paramref name="index2" /> or <paramref name="index3" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -5990,6 +6196,9 @@ int[,,] TDArray = new int[1,1,1];
           <paramref name="value" /> cannot be cast to the element type of the current <see cref="T:System.Array" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index1" /> or <paramref name="index2" /> or <paramref name="index3" /> is outside the range of valid indexes for the corresponding dimension of the current <see cref="T:System.Array" />.</exception>
+        <altmember cref="M:System.Array.GetLowerBound(System.Int32)" />
+        <altmember cref="M:System.Array.GetUpperBound(System.Int32)" />
+        <altmember cref="Overload:System.Array.GetValue" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6064,6 +6273,8 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.RankException">
           <paramref name="array" /> is multidimensional.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in <paramref name="array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6151,6 +6362,9 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.ArgumentException">
           <paramref name="items" /> is not <see langword="null" />, and the length of <paramref name="keys" /> is greater than the length of <paramref name="items" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6219,10 +6433,10 @@ int[,,] TDArray = new int[1,1,1];
   
 |Implementation|Description|  
 |--------------------|-----------------|  
-|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
-|<xref:System.Collections.Comparer.Default?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the current culture.|  
-|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the invariant culture.|  
-|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>|Compares two objects of type `T` by using the type's default sort order.|  
+|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
+|<xref:System.Collections.Comparer.Default?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the current culture.|  
+|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the invariant culture.|  
+|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>|Compares two objects of type `T` by using the type's default sort order.|  
   
  You can also support custom comparisons by providing an instance of your own <xref:System.Collections.IComparer> implementation to the `comparer` parameter. The example does this by defining a `ReverseComparer` class that reverses the default sort order for instances of a type and performs case-insensitive string comparison.  
   
@@ -6247,6 +6461,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6311,10 +6528,10 @@ int[,,] TDArray = new int[1,1,1];
   
 |Implementation|Description|  
 |--------------------|-----------------|  
-|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
-|<xref:System.Collections.Comparer.Default?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the current culture.|  
-|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the invariant culture.|  
-|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>|Compares two objects of type `T` by using the type's default sort order.|  
+|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
+|<xref:System.Collections.Comparer.Default?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the current culture.|  
+|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the invariant culture.|  
+|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>|Compares two objects of type `T` by using the type's default sort order.|  
   
  You can also support custom comparisons by providing an instance of your own <xref:System.Collections.IComparer> implementation to the `comparer` parameter. The example does this by defining an <xref:System.Collections.IComparer> implementation that reverses the default sort order and performs case-insensitive string comparison.  
   
@@ -6359,6 +6576,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previouslythrew <see cref="T:System.ArgumentException" /> will not throw an exception, becausethe insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6445,6 +6665,8 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in <paramref name="array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6550,6 +6772,8 @@ int[,,] TDArray = new int[1,1,1];
   
  <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6610,10 +6834,10 @@ int[,,] TDArray = new int[1,1,1];
   
 |Implementation|Description|  
 |--------------------|-----------------|  
-|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
-|<xref:System.Collections.Comparer.Default?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the current culture.|  
-|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the invariant culture.|  
-|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>|Compares two objects of type `T` by using the type's default sort order.|  
+|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
+|<xref:System.Collections.Comparer.Default?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the current culture.|  
+|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the invariant culture.|  
+|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>|Compares two objects of type `T` by using the type's default sort order.|  
   
  You can also support custom comparisons by providing an instance of your own <xref:System.Collections.IComparer> implementation to the `comparer` parameter. The example does this by defining a `ReverseComparer` class that reverses the default sort order for instances of a type and performs case-insensitive string comparison.  
   
@@ -6661,6 +6885,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -6729,10 +6956,10 @@ int[,,] TDArray = new int[1,1,1];
   
 |Implementation|Description|  
 |--------------------|-----------------|  
-|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=fullName>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
-|<xref:System.Collections.Comparer.Default?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the current culture.|  
-|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=fullName>|Compares any two objects by using the sorting conventions of the invariant culture.|  
-|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName>|Compares two objects of type `T` by using the type's default sort order.|  
+|<xref:System.Collections.CaseInsensitiveComparer?displayProperty=nameWithType>|Compares any two objects, but performs a case-insensitive comparison of strings.|  
+|<xref:System.Collections.Comparer.Default?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the current culture.|  
+|<xref:System.Collections.Comparer.DefaultInvariant?displayProperty=nameWithType>|Compares any two objects by using the sorting conventions of the invariant culture.|  
+|<xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType>|Compares two objects of type `T` by using the type's default sort order.|  
   
  You can also support custom comparisons by providing an instance of your own <xref:System.Collections.IComparer> implementation to the `comparer` parameter. The example does this by defining a custom <xref:System.Collections.IComparer> implementation that reverses the default sort order and performs case-insensitive string comparison.  
   
@@ -6795,6 +7022,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;T&gt;">
@@ -6860,7 +7090,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following code example demonstrates the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%29> generic method overload and the<xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%29> generic method overload. An array of strings is created, in no particular order.  
+ The following code example demonstrates the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%29> generic method overload and the <xref:System.Array.BinarySearch%60%601%28%60%600%5B%5D%2C%60%600%29> generic method overload. An array of strings is created, in no particular order.  
   
  The array is displayed, sorted, and displayed again.  
   
@@ -6878,6 +7108,8 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.ArgumentNullException">
           <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in <paramref name="array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;T&gt;">
@@ -6970,6 +7202,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;T&gt;">
@@ -7052,6 +7287,8 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Comparison`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;T&gt;">
@@ -7147,6 +7384,8 @@ int[,,] TDArray = new int[1,1,1];
         <exception cref="T:System.ArgumentException">
           <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in <paramref name="array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;T&gt;">
@@ -7252,6 +7491,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;TKey,TValue&gt;">
@@ -7304,7 +7546,7 @@ int[,,] TDArray = new int[1,1,1];
   
  Each key in the `keys`<xref:System.Array> must implement the <xref:System.IComparable%601> generic interface to be capable of comparisons with every other key.  
   
- You can sort if there are more items than keys, but the items that have no corresponding keys will not be sorted. You cannot sort if there are more keys than items; doing this throws an<xref:System.ArgumentException>.  
+ You can sort if there are more items than keys, but the items that have no corresponding keys will not be sorted. You cannot sort if there are more keys than items; doing this throws an <xref:System.ArgumentException>.  
   
  If the sort is not successfully completed, the results are undefined.  
   
@@ -7355,6 +7597,9 @@ int[,,] TDArray = new int[1,1,1];
   
  <paramref name="items" /> is not <see langword="null" />, and the length of <paramref name="keys" /> is greater than the length of <paramref name="items" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;TKey,TValue&gt;">
@@ -7468,6 +7713,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;TKey,TValue&gt;">
@@ -7543,7 +7791,7 @@ int[,,] TDArray = new int[1,1,1];
    
   
 ## Examples  
- The following code example demonstrates the<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%29>, <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29>, [\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%29>, and <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overloads, for sorting pairs of arrays that represent keys and values.  
+ The following code example demonstrates the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%29>, <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29>, [\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%29>, and <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29> generic method overloads, for sorting pairs of arrays that represent keys and values.  
   
  The code example defines an alternative comparer for strings, named `ReverseCompare`, which implements the `IComparer<string>` (`IComparer(Of String)` in Visual Basic, `IComparer<String^>` in Visual C++) generic interface. The comparer calls the <xref:System.String.CompareTo%28System.String%29> method, reversing the order of the comparands so that the strings sort high-to-low instead of low-to-high.  
   
@@ -7589,6 +7837,8 @@ int[,,] TDArray = new int[1,1,1];
   
  <paramref name="items" /> is not <see langword="null" />, and <paramref name="index" /> and <paramref name="length" /> do not specify a valid range in the <paramref name="items" /><see cref="T:System.Array" />.</exception>
         <exception cref="T:System.InvalidOperationException">One or more elements in the <paramref name="keys" /><see cref="T:System.Array" /> do not implement the <see cref="T:System.IComparable`1" /> generic interface.</exception>
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="Sort&lt;TKey,TValue&gt;">
@@ -7720,6 +7970,9 @@ int[,,] TDArray = new int[1,1,1];
         <block subset="none" type="usage">
           <para>The .NET Framework 4 and earlier versions used only the Quicksort algorithm. Quicksort identifies invalid comparers in some situations in which the sorting operation throws an <see cref="T:System.IndexOutOfRangeException" /> exception, and throws an <see cref="T:System.ArgumentException" /> exception to the caller. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], it is possible that sorting operations that previously threw <see cref="T:System.ArgumentException" /> will not throw an exception, because the insertion sort and heapsort algorithms do not detect an invalid comparer. For the most part, this applies to arrays with fewer than 16 elements.</para>
         </block>
+        <altmember cref="T:System.Collections.Generic.IComparer`1" />
+        <altmember cref="T:System.IComparable`1" />
+        <altmember cref="Overload:System.Array.BinarySearch" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -7750,7 +8003,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property implements the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ This property implements the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  .NET Framework classes based on <xref:System.Array> provide their own synchronized version of the collection using the <xref:System.Array.SyncRoot%2A> property.  
   
@@ -7771,6 +8024,7 @@ int[,,] TDArray = new int[1,1,1];
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Array.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -7889,7 +8143,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Ordinarily, an <xref:System.Collections.IList.Add%2A?displayProperty=fullName> implementation adds a member to a collection. However, because arrays have a fixed size (the <xref:System.Array.IsFixedSize%2A> property always returns `true`), this method always throws a <xref:System.NotSupportedException> exception.  
+ Ordinarily, an <xref:System.Collections.IList.Add%2A?displayProperty=nameWithType> implementation adds a member to a collection. However, because arrays have a fixed size (the <xref:System.Array.IsFixedSize%2A> property always returns `true`), this method always throws a <xref:System.NotSupportedException> exception.  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IList> interface.  
   
@@ -8157,7 +8411,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IList> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IList> interface.  
   
  ]]></format>
         </remarks>
@@ -8364,7 +8618,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IStructuralEquatable>interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
  ]]></format>
         </remarks>
@@ -8406,7 +8660,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an<xref:System.Collections.IStructuralEquatable>interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Array> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface.  
   
  ]]></format>
         </remarks>
@@ -8485,7 +8739,159 @@ int[,,] TDArray = new int[1,1,1];
  -or-  
   
  <paramref name="match" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Array.Exists``1(``0[],System.Predicate{``0})" />
+        <altmember cref="T:System.Predicate`1" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Reverse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reverses the order of the elements in a one-dimensional <see cref="T:System.Array" /> or in a portion of the <see cref="T:System.Array" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Copy">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a range of elements in one <see cref="T:System.Array" /> to another <see cref="T:System.Array" /> and performs type casting and boxing as required.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of the last occurrence of a value in a one-dimensional <see cref="T:System.Array" /> or in a portion of the <see cref="T:System.Array" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all the elements of the current one-dimensional array to the specified one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindIndex&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for an element that matches the conditions defined by a specified predicate, and returns the zero-based index of the first occurrence within an <see cref="T:System.Array" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Array" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of the specified element in the current <see cref="T:System.Array" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BinarySearch">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches a one-dimensional sorted <see cref="T:System.Array" /> for a value, using a binary search algorithm.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the specified element in the current <see cref="T:System.Array" /> to the specified value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements in a one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for the specified object and returns the index of its first occurrence in a one-dimensional array or in a range of elements in the array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindLastIndex&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Searches for an element that matches the conditions defined by a specified predicate, and returns the zero-based index of the last occurrence within an <see cref="T:System.Array" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

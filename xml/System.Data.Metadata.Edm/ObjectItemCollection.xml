@@ -203,7 +203,7 @@
     </Member>
     <Member MemberName="TryGetClrType">
       <MemberSignature Language="C#" Value="public bool TryGetClrType (System.Data.Metadata.Edm.EnumType objectSpaceType, out Type clrType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClrType(class System.Data.Metadata.Edm.EnumType objectSpaceType, class System.Type clrType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClrType(class System.Data.Metadata.Edm.EnumType objectSpaceType, [out] class System.Type&amp; clrType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ObjectItemCollection.TryGetClrType(System.Data.Metadata.Edm.EnumType,System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -227,7 +227,7 @@
     </Member>
     <Member MemberName="TryGetClrType">
       <MemberSignature Language="C#" Value="public bool TryGetClrType (System.Data.Metadata.Edm.StructuralType objectSpaceType, out Type clrType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClrType(class System.Data.Metadata.Edm.StructuralType objectSpaceType, class System.Type clrType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClrType(class System.Data.Metadata.Edm.StructuralType objectSpaceType, [out] class System.Type&amp; clrType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ObjectItemCollection.TryGetClrType(System.Data.Metadata.Edm.StructuralType,System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -250,5 +250,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadFromAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads metadata from the given assembly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGetClrType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a CLR type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetClrType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the underlying CLR type for the specified OSpace type argument.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

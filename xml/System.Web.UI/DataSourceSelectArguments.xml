@@ -20,25 +20,26 @@
   
 |Capability|Related DataSourceSelectArguments properties|  
 |----------------|--------------------------------------------------|  
-|<xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName>|<xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A>|  
-|<xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName>|<xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A>, <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A>|  
-|<xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName>|<xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A>, <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A>|  
+|<xref:System.Web.UI.DataSourceCapabilities.Sort?displayProperty=nameWithType>|<xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A>|  
+|<xref:System.Web.UI.DataSourceCapabilities.Page?displayProperty=nameWithType>|<xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A>, <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A>|  
+|<xref:System.Web.UI.DataSourceCapabilities.RetrieveTotalRowCount?displayProperty=nameWithType>|<xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A>, <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A>|  
   
  Data-bound controls explicitly call the <xref:System.Web.UI.WebControls.DataBoundControl.PerformSelect%2A> method to bind data, which calls the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method of the data source control they are associated with. In this way, the data-bound control retrieves data from the data source control on demand. Because the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method accepts a <xref:System.Web.UI.DataSourceSelectArguments> parameter, the data-bound control is responsible for creating and managing a <xref:System.Web.UI.DataSourceSelectArguments> object and passing it to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method when it retrieves data from the data source control.  
   
  In some cases, data-bound controls might not need any additional data-related capabilities. In this case, data-bound controls pass an <xref:System.Web.UI.DataSourceSelectArguments.Empty%2A> arguments object to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
   
- For sorted result sets, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanSort%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a sorted result set from a data source control by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
+ For sorted result sets, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanSort%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities.Sort?displayProperty=nameWithType> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a sorted result set from a data source control by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
   
- For paging scenarios, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a subset of data from a data source control for paging by setting the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
+ For paging scenarios, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities.Page?displayProperty=nameWithType> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a subset of data from a data source control for paging by setting the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
   
- To retrieve a total row count for paging scenarios, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a total row count from a data source control for paging by setting the <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A> property on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method. When the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method returns, the total row count is contained by the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property.  
+ To retrieve a total row count for paging scenarios, data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities.RetrieveTotalRowCount?displayProperty=nameWithType> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method. As a separate operation, the data-bound control can request a total row count from a data source control for paging by setting the <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A> property on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method. When the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method returns, the total row count is contained by the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property.  
   
 > [!IMPORTANT]
->  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=fullName> method is called.  
+>  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,10 +58,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property initialized to <xref:System.String.Empty?displayProperty=fullName> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to zero.  
+ The default constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property initialized to <xref:System.String.Empty?displayProperty=nameWithType> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to zero.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments.%23ctor%28System.Int32%2CSystem.Int32%29> constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> initialized to <xref:System.String.Empty?displayProperty=fullName> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to the values provided for the `startRowIndex` and `maximumRows` parameters.  
+ The <xref:System.Web.UI.DataSourceSelectArguments.%23ctor%28System.Int32%2CSystem.Int32%29> constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> initialized to <xref:System.String.Empty?displayProperty=nameWithType> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to the values provided for the `startRowIndex` and `maximumRows` parameters.  
   
  ]]></format>
         </remarks>
@@ -163,6 +165,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -188,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.DataSourceSelectArguments.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -214,7 +218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments> class overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method to test equality using the various properties of the objects. If the <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A>, <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A>, <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A>, <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A>, and <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> properties are all equal in value, the <xref:System.Web.UI.DataSourceSelectArguments.Equals%28System.Object%29> method returns `true`.  
+ The <xref:System.Web.UI.DataSourceSelectArguments> class overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method to test equality using the various properties of the objects. If the <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A>, <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A>, <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A>, <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A>, and <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> properties are all equal in value, the <xref:System.Web.UI.DataSourceSelectArguments.Equals%28System.Object%29> method returns `true`.  
   
  ]]></format>
         </remarks>
@@ -258,15 +262,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> property supports paging scenarios. Data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method if the view supports paging. If the data-bound control fails to add the capability, and the paging properties are set on a <xref:System.Web.UI.DataSourceSelectArguments> object passed to the data source view during a data retrieval operation, an <xref:System.InvalidOperationException> exception might be thrown.  
+ The <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> property supports paging scenarios. Data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities.Page?displayProperty=nameWithType> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method if the view supports paging. If the data-bound control fails to add the capability, and the paging properties are set on a <xref:System.Web.UI.DataSourceSelectArguments> object passed to the data source view during a data retrieval operation, an <xref:System.InvalidOperationException> exception might be thrown.  
   
  The data-bound control can request a subset of data from a data source control for paging by setting the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29> method.  
   
 > [!IMPORTANT]
->  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=fullName> method is called.  
+>  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.StartRowIndex" />
       </Docs>
     </Member>
     <Member MemberName="RaiseUnsupportedCapabilitiesError">
@@ -294,11 +299,13 @@
  The <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29> method is used by data-bound controls to compare additional requested capabilities represented by the properties of the <xref:System.Web.UI.DataSourceSelectArguments> class, such as the ability to sort or page through a result set, with the capabilities supported by the data source view. The view calls its own <xref:System.Web.UI.DataSourceView.RaiseUnsupportedCapabilityError%28System.Web.UI.DataSourceCapabilities%29> method for each possible capability defined in the <xref:System.Web.UI.DataSourceCapabilities> enumeration.  
   
 > [!IMPORTANT]
->  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=fullName> method is called.  
+>  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The data source view does not support the data source capability specified.</exception>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+        <altmember cref="T:System.Web.UI.DataSourceView" />
       </Docs>
     </Member>
     <Member MemberName="RetrieveTotalRowCount">
@@ -321,13 +328,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A> property supports paging scenarios. Set this property to `true` to request a total row count from the data source control during the data-retrieval operation. Check the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A?displayProperty=fullName> property to determine whether a data source view supports retrieving a total row count. If the data source supports it, the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property is set by the data source control during the course of a data retrieval operation and the total data row count is returned in the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property, much as a value is returned in an output parameter of a method.  
+ The <xref:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount%2A> property supports paging scenarios. Set this property to `true` to request a total row count from the data source control during the data-retrieval operation. Check the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A?displayProperty=nameWithType> property to determine whether a data source view supports retrieving a total row count. If the data source supports it, the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property is set by the data source control during the course of a data retrieval operation and the total data row count is returned in the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property, much as a value is returned in an output parameter of a method.  
   
 > [!IMPORTANT]
->  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=fullName> method is called.  
+>  If any of the <xref:System.Web.UI.DataSourceSelectArguments> properties are set, but the currently bound data source control does not support the requested capability, an <xref:System.InvalidOperationException> exception is thrown when the <xref:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError%28System.Web.UI.DataSourceView%29?displayProperty=nameWithType> method is called.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.TotalRowCount" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -353,6 +362,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.DataSourceCapabilities.Sort" />
+        <altmember cref="P:System.Web.UI.DataSourceView.CanSort" />
       </Docs>
     </Member>
     <Member MemberName="StartRowIndex">
@@ -374,12 +385,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> property supports paging scenarios. Data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities?displayProperty=fullName> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method if the view supports paging. If the data-bound control fails to add the capability, and the paging properties are set on a <xref:System.Web.UI.DataSourceSelectArguments> object passed to the data source view during a data retrieval operation, an <xref:System.InvalidOperationException> exception might be thrown.  
+ The <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> property supports paging scenarios. Data-bound controls check a data source view's <xref:System.Web.UI.DataSourceView.CanPage%2A> property at run time, and add a <xref:System.Web.UI.DataSourceCapabilities.Page?displayProperty=nameWithType> capability using the <xref:System.Web.UI.DataSourceSelectArguments.AddSupportedCapabilities%28System.Web.UI.DataSourceCapabilities%29> method if the view supports paging. If the data-bound control fails to add the capability, and the paging properties are set on a <xref:System.Web.UI.DataSourceSelectArguments> object passed to the data source view during a data retrieval operation, an <xref:System.InvalidOperationException> exception might be thrown.  
   
- As a separate operation, the data-bound control can request a subset of data from a data source control by setting the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29?displayProperty=fullName> method.  
+ As a separate operation, the data-bound control can request a subset of data from a data source control by setting the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties on the <xref:System.Web.UI.DataSourceSelectArguments> object passed to the <xref:System.Web.UI.DataSourceView.Select%28System.Web.UI.DataSourceSelectArguments%2CSystem.Web.UI.DataSourceViewSelectCallback%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.MaximumRows" />
       </Docs>
     </Member>
     <Member MemberName="TotalRowCount">
@@ -401,11 +413,23 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property supports paging scenarios. Data source and data source view controls differ in their internal implementation for how to retrieve total row counts. Check the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A?displayProperty=fullName> property to determine whether a data source view supports retrieving a total row count during a data-retrieval operation. If the data source supports it, the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property is set by the data source control during the course of a data-retrieval operation, and the total data row count is returned in the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property, much as a value is returned in an output parameter of a method.  
+ The <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property supports paging scenarios. Data source and data source view controls differ in their internal implementation for how to retrieve total row counts. Check the <xref:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount%2A?displayProperty=nameWithType> property to determine whether a data source view supports retrieving a total row count during a data-retrieval operation. If the data source supports it, the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property is set by the data source control during the course of a data-retrieval operation, and the total data row count is returned in the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property, much as a value is returned in an output parameter of a method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.DataSourceView.CanRetrieveTotalRowCount" />
+        <altmember cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceSelectArguments" /> class.</summary>
+        <altmember cref="T:System.Web.UI.DataSourceCapabilities" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpListener&gt; Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
@@ -31,8 +28,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Syntax  
   
 ```xml  
-      <httpListener  
-  unescapeRequestUrl ="true|false"  
+<httpListener  
+  unescapeRequestUrl="true|false"  
 />  
 ```  
   
@@ -59,7 +56,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Remarks  
  The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
   
- When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=fullName> property.  
+ When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.  
   
  The `http.sys` service exposes two request URI strings:  
   
@@ -67,7 +64,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
 -   Converted URI  
   
- The raw URI is the <xref:System.Uri?displayProperty=fullName> provided in the request line of a HTTP request:  
+ The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:  
   
  `GET /path/`  
   
@@ -81,7 +78,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
  `http://www.contoso.com/path/`  
   
- The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=fullName> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=fullName> class also does the following:  
+ The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:  
   
 -   Un-escapes all percent encoded values.  
   
@@ -149,7 +146,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Can be Empty||  
   
 ## See Also  
- <xref:System.Net.Configuration.HttpListenerElement>   
- <xref:System.Net.HttpListener>   
- <xref:System.Net.HttpListenerRequest.Url%2A>   
+ <xref:System.Net.Configuration.HttpListenerElement>  
+ <xref:System.Net.HttpListener>  
+ <xref:System.Net.HttpListenerRequest.Url%2A>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

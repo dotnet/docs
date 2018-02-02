@@ -17,7 +17,7 @@ Partial Class ihd_1_aspx
     ' </Snippet3>
 
     ' <Snippet2>
-    ' Print out the the current data node, then iterate through its
+    ' Print out the current data node, then iterate through its
     ' children and do the same.
 
     Private Sub PrintFullChildNodeInfo(ByVal node As IHierarchyData)

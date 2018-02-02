@@ -1,40 +1,20 @@
 ---
 title: "Static (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Static"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "static modifier"
-  - "Static keyword"
+  - "Static keyword [Visual Basic]"
 ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Static (Visual Basic)
 Specifies that one or more declared local variables are to continue to exist and retain their latest values after termination of the procedure in which they are declared.  
@@ -69,10 +49,10 @@ Specifies that one or more declared local variables are to continue to exist and
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
 ## See Also  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)   
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)   
- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)   
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
+ [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
+ [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
+ [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
+ [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
+ [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

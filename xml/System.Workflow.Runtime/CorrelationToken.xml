@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
  [!code-csharp[WF_Samples#196](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#196)]
  [!code-vb[WF_Samples#196](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#196)]  
@@ -189,7 +189,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+ The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/library/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
   
  [!code-csharp[WF_Samples#197](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#197)]
  [!code-vb[WF_Samples#197](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#197)]  
@@ -284,5 +284,14 @@
           <paramref name="activity" /> or <paramref name="dataChangeListener" /> are null references (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

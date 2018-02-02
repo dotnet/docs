@@ -1,47 +1,28 @@
 ---
 title: "End Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.End"
   - "End"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "execution, ending"
-  - "files, closing"
-  - "End keyword, End statements"
-  - "programs, quitting"
+  - "execution [Visual Basic], ending"
+  - "files [Visual Basic], closing"
+  - "End keyword [Visual Basic], End statements"
+  - "programs [Visual Basic], quitting"
   - "code, exiting"
   - "program termination"
-  - "End statement"
-  - "execution, stopping"
+  - "End statement [Visual Basic]"
+  - "execution [Visual Basic], stopping"
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # End Statement
 Terminates execution immediately.  
@@ -78,6 +59,6 @@ End
  This statement is not supported.  
   
 ## See Also  
- <xref:System.Security.Permissions.SecurityPermissionFlag>   
- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)   
+ <xref:System.Security.Permissions.SecurityPermissionFlag>  
+ [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)  
  [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

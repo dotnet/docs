@@ -51,6 +51,7 @@
         <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrintingPermissionAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Permissions.SecurityAction" />
       </Docs>
     </Member>
     <Member MemberName="CreatePermission">

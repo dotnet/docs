@@ -51,6 +51,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
   </Docs>
   <Members>
     <Member MemberName="AppendChild">
@@ -91,7 +92,7 @@
 ## Remarks  
  If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
    
   
@@ -123,6 +124,7 @@ Display the modified XML...
         <block subset="none" type="overrides">
           <para>When overriding <see langword="AppendChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="AppendChild" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -249,7 +251,7 @@ Display the modified XML...
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
 |Document|#document|http://localhost/mydata.xml|  
-|DocumentType|Mydata|http://localhost/mydata.xml<br /><br /> The <xref:System.Xml.XmlDocumentType.SystemId%2A?displayProperty=fullName> or <xref:System.Xml.XmlDocumentType.PublicId%2A?displayProperty=fullName> properties can be used to identify where the DTD file was loaded from.|  
+|DocumentType|Mydata|http://localhost/mydata.xml<br /><br /> The <xref:System.Xml.XmlDocumentType.SystemId%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlDocumentType.PublicId%2A?displayProperty=nameWithType> properties can be used to identify where the DTD file was loaded from.|  
 |Element|baa|http://localhost/mydata.xml|  
 |Entity|xyz|http://localhost/doctype.dtd|  
 |EntityReference|xyz|http://localhost/mydata.xml|  
@@ -380,6 +382,7 @@ Display the modified XML...
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNode.CloneNode(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
@@ -485,7 +488,7 @@ Display the modified XML...
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `XPathNavigator` provides read-only, random access to data. Because it is optimized for XSLT transformations, it provides performance benefits when used as an input mechanism to the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=fullName> method.  
+ The `XPathNavigator` provides read-only, random access to data. Because it is optimized for XSLT transformations, it provides performance benefits when used as an input mechanism to the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=nameWithType> method.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -500,6 +503,7 @@ Display the modified XML...
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Xsl.XslTransform" />
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -914,7 +918,7 @@ d.</elem>
 ## Remarks  
  If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -940,6 +944,7 @@ d.</elem>
         <block subset="none" type="overrides">
           <para>When overriding <see langword="InsertAfter" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertAfter" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -982,7 +987,7 @@ d.</elem>
 ## Remarks  
  If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
    
   
@@ -1006,6 +1011,7 @@ d.</elem>
         <block subset="none" type="overrides">
           <para>When overriding <see langword="InsertBefore" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="InsertBefore" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -1290,6 +1296,8 @@ d.</elem>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlNode.Prefix" />
+        <altmember cref="P:System.Xml.XmlNode.Name" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1808,7 +1816,7 @@ d.</elem>
 ## Remarks  
  If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
- If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
+ If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be inserted into the current document.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -1832,6 +1840,7 @@ d.</elem>
         <block subset="none" type="overrides">
           <para>When overriding <see langword="PrependChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="PrependChild" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PreviousSibling">
@@ -2056,7 +2065,7 @@ d.</elem>
 ## Remarks  
  If the `newChild` is already in the tree, it is first removed.  
   
- If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be passed to the `ReplaceChild` method.  
+ If the `newChild` was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=nameWithType> to import the node to the current document. The imported node can then be passed to the `ReplaceChild` method.  
   
    
   
@@ -2080,6 +2089,7 @@ d.</elem>
         <block subset="none" type="overrides">
           <para>When overriding <see langword="ReplaceChild" /> in a derived class, in order for events to be raised correctly, you must call the <see langword="ReplaceChild" /> method of the base class.</para>
         </block>
+        <altmember cref="M:System.Xml.XmlDocument.ImportNode(System.Xml.XmlNode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SchemaInfo">
@@ -2214,7 +2224,8 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</exception>
+        <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
+        <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SelectNodes">
@@ -2243,7 +2254,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects a list of nodes matching the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a collection of nodes matching the XPath query.</returns>
@@ -2376,7 +2387,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         <Parameter Name="xpath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
         <remarks>
@@ -2425,6 +2436,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
+        <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -2453,7 +2465,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         <Parameter Name="nsmgr" Type="System.Xml.XmlNamespaceManager" />
       </Parameters>
       <Docs>
-        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/en-us/1431789e-c545-4765-8c09-3057e07d3041).</param>
+        <param name="xpath">The XPath expression. See [XPath Examples](http://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</param>
         <param name="nsmgr">An <see cref="T:System.Xml.XmlNamespaceManager" /> to use for resolving namespaces for prefixes in the XPath expression.</param>
         <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression. Any prefixes found in the XPath expression are resolved using the supplied <see cref="T:System.Xml.XmlNamespaceManager" />.</summary>
         <returns>The first <see langword="XmlNode" /> that matches the XPath query or <see langword="null" /> if no matching node is found.</returns>
@@ -2809,6 +2821,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XmlNode.WriteTo(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -2861,5 +2874,14 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified child element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

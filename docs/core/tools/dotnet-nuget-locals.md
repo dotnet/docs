@@ -1,22 +1,22 @@
 ---
-title: dotnet-nuget-locals command - .NET Core CLI
-description: The dotnet-nuget-locals command clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
-keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
+title: dotnet nuget locals command - .NET Core CLI
+description: The dotnet nuget locals command clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet nuget locals
 
-# dotnet-nuget locals
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-nuget locals` - Clears or lists local NuGet resources. 
+`dotnet nuget locals` - Clears or lists local NuGet resources.
 
 ## Synopsis
 
@@ -32,27 +32,16 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
 One of the following values:
 
-`all`
-
-Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, and the temporary cache.
-
-`http-cache`
-
-Indicates that the specified operation is applied only to the http-request cache. The other cache locations are not affected.
-
-`global-packages`
-
-Indicates that the specified operation is applied only to the global packages cache. The other cache locations are not affected.
-
-`temp`
-
-Indicates that the specified operation is applied only to the temporary cache. The other cache locations are not affected.
+* `all` - Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, and the temporary cache.
+* `http-cache` - Indicates that the specified operation is applied only to the http-request cache. The other cache locations are not affected.
+* `global-packages` - Indicates that the specified operation is applied only to the global packages cache. The other cache locations are not affected.
+* `temp` - Indicates that the specified operation is applied only to the temporary cache. The other cache locations are not affected.
 
 ## Options
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-c|--clear`
 

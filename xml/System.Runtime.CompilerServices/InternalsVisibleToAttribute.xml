@@ -41,7 +41,7 @@
  [!code-csharp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/cs/multiple1.cs#3)]
  [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/vb/multiple1.vb#3)]  
   
- They can also appear with separate<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> tags but a single `assembly` keyword, as the following example illustrates.  
+ They can also appear with separate <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> tags but a single `assembly` keyword, as the following example illustrates.  
   
  [!code-csharp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/cs/multiple2.cs#4)]
  [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/vb/multiple2.vb#4)]  

@@ -47,7 +47,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDictionaryWriter.WriteQualifiedName
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -567,7 +567,7 @@ manager: "wpickett"
 uid: System.Xml.XmlDictionaryWriter.WriteString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

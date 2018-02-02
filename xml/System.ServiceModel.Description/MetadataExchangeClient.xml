@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> to download metadata. Typically, a <xref:System.ServiceModel.Description.MetadataExchangeClient> is configured for a metadata request and then passed to the <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A?displayProperty=fullName> or <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A?displayProperty=fullName> method for the <xref:System.ServiceModel.Description.MetadataResolver> to use to download metadata.  
+ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> to download metadata. Typically, a <xref:System.ServiceModel.Description.MetadataExchangeClient> is configured for a metadata request and then passed to the <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A?displayProperty=nameWithType> method for the <xref:System.ServiceModel.Description.MetadataResolver> to use to download metadata.  
   
  However, you can use the <xref:System.ServiceModel.Description.MetadataExchangeClient> directly to retrieve metadata as a <xref:System.ServiceModel.Description.MetadataSet> that contains <xref:System.ServiceModel.Description.MetadataSection> objects.  
   
@@ -68,8 +68,8 @@
   
 |Scheme|Binding|  
 |------------|-------------|  
-|http|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
-|https|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
+|http|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode.None?displayProperty=nameWithType>)|  
+|https|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode.Transport?displayProperty=nameWithType>)|  
 |net.tcp|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.TcpTransportBindingElement>|  
 |net.pipe|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>|  
   
@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to specify the address and whether to use an HTTP GET request or WS-Transfer Get. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=fullName>.  
+ Use this constructor to specify the address and whether to use an HTTP GET request or WS-Transfer Get. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
   
    
   
@@ -609,9 +609,9 @@
 ## Remarks  
  The <xref:System.ServiceModel.Description.MetadataExchangeClient.GetWebRequest%2A> method is called:  
   
--   When there is an attempt to resolve a <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=fullName>.  
+-   When there is an attempt to resolve a <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType>.  
   
--   When <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=fullName> is used.  
+-   When <xref:System.ServiceModel.Description.MetadataExchangeClientMode.HttpGet?displayProperty=nameWithType> is used.  
   
  ]]></format>
         </remarks>
@@ -712,7 +712,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `false` to prevent the resolution of references to metadata. In this case, references are returned as <xref:System.ServiceModel.Description.MetadataReference?displayProperty=fullName> or <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=fullName> objects inside the <xref:System.ServiceModel.Description.MetadataSet?displayProperty=fullName>.  
+ Set the <xref:System.ServiceModel.Description.MetadataExchangeClient.ResolveMetadataReferences%2A> property to `false` to prevent the resolution of references to metadata. In this case, references are returned as <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> objects inside the <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -743,5 +743,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetadataAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an asynchronous metadata set.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

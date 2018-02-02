@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specifying Srmp or SrmpSecure when the UseActiveDirectory attribute is set to `true` will cause an exception because Message Queuing (MSMQ) does not provide for Active Directory addressing when using SRMP. UseActiveDirectory is an attribute on the [\&lt;netMsmqBinding\&gt;](~/docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) and the [\&lt;msmqIntegrationBinding\&gt;](~/docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).  
+ Specifying Srmp or SrmpSecure when the UseActiveDirectory attribute is set to `true` will cause an exception because Message Queuing (MSMQ) does not provide for Active Directory addressing when using SRMP. UseActiveDirectory is an attribute on the [&lt;netMsmqBinding&gt;](~/docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) and the [&lt;msmqIntegrationBinding&gt;](~/docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).  
   
  For more information about addressing queues, see [Service Endpoints and Queue Addressing](~/docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   

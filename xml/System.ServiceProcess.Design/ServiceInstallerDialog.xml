@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
+    <altmember cref="T:System.ServiceProcess.ServiceProcessInstaller" />
+    <altmember cref="T:System.ServiceProcess.ServiceAccount" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,12 +86,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to calling <xref:System.Windows.Forms.Application.Run%2A?displayProperty=fullName> on a new <xref:System.ServiceProcess.Design.ServiceInstallerDialog> form; it is typically used for testing purposes.  
+ This method is equivalent to calling <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> on a new <xref:System.ServiceProcess.Design.ServiceInstallerDialog> form; it is typically used for testing purposes.  
   
  Call <xref:System.Windows.Forms.Form.ShowDialog%2A> on the <xref:System.ServiceProcess.Design.ServiceInstallerDialog> form to display the dialog box in your application.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.ShowDialog" />
+        <altmember cref="M:System.Windows.Forms.Application.Run" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -139,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
       </Docs>
     </Member>
     <Member MemberName="Username">

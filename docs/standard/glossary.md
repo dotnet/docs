@@ -1,4 +1,4 @@
-﻿---
+---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
@@ -9,6 +9,9 @@ ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # .NET Glossary
@@ -25,33 +28,39 @@ Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code.
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. 
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations. 
 
-See [ASP.NET](/aspnet/#pivot=aspnet).
+See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
 ## ASP.NET Core
 
 A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
 
-See [ASP.NET Core](/aspnet/#pivot=core).
+See [ASP.NET Core documentation](/aspnet/#pivot=core).
+
+## assembly
+
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
+
+An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## CLR
 
-Common language runtime.
+Common Language Runtime.
 
 The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
-.NET Core common language runtime.
+.NET Core Common Language Runtime.
 
 This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
 ## CoreFX
 
-.NET Core framework.
+.NET Core Base Class Library (BCL)
 
-Also known as the .NET Core Base Class Library (BCL). A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level frarmework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
+A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
 
 ## CoreRT
 
@@ -71,7 +80,7 @@ The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its
 
 ## framework
 
-In general, a comprehensive library that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks.
+In general, a comprehensive collection of APIs that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks. See also [library](#library).
 
 The word "framework" has a more specific technical meaning in the following terms:
 * [.NET Framework](#net-framework)
@@ -117,9 +126,9 @@ Examples of .NET implementations:
 
 ## library
 
- A collection of APIs that can be called by apps or other libraries.
+A collection of APIs that can be called by apps or other libraries. A .NET library is composed of one or more [assemblies](#assembly).
 
-A .NET library is a collection of types. A library includes interfaces, classes, structures, enumerations, and delegates.
+The words library and [framework](#framework) are often used synonymously.
 
 ## metapackage
 
@@ -129,13 +138,15 @@ See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
-An open source alternative to the .NET Framework.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
 
-Mono started around the same time the .NET Framework was first released. Since the .NET Framework wasn't open source, Mono was forced to start from scratch and is thus a complete re-implementation of the .NET Framework with no shared code.
+It supports all of the currently published .NET Standard versions.
 
-When .NET Core was released under the MIT license, Microsoft also released [large chunks of the .NET Framework under the MIT license](https://github.com/microsoft/referencesource) as well. This enabled the Mono community to use the same code the .NET Framework uses in order to close gaps and avoid behavioral differences.
+Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
 
-Mono is primarily used to run .NET applications on Linux and macOS. There are ports of Mono to other platforms; see [Mono's Supported Platforms](http://www.mono-project.com/docs/about-mono/supported-platforms/). Mono has implementations (though not necessarily complete) of WinForms, ASP.NET, and `System.Drawing`.
+Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
+
+To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
 
 ## .NET
 
@@ -193,9 +204,9 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 ## package
 
-For a package-based target framework, a NuGet package that contains an assembly of the same name.
+A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The package is a *.zip* file wih  a *.nupkg* extension that may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple target frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

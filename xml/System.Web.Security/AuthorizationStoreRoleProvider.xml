@@ -139,15 +139,15 @@ msxml://<path to xml file>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.AuthorizationStoreRoleProvider.AddUsersToRoles%2A> method is called by the <xref:System.Web.Security.Roles> class to associate one or more users with one or more roles in the authorization-manager data store specified in the ASP.NET application's configuration file (Web.config). This method is called by the <xref:System.Web.Security.Roles.AddUserToRole%2A?displayProperty=fullName>, <xref:System.Web.Security.Roles.AddUserToRoles%2A?displayProperty=fullName>, <xref:System.Web.Security.Roles.AddUsersToRole%2A?displayProperty=fullName>, and <xref:System.Web.Security.Roles.AddUsersToRoles%2A?displayProperty=fullName> methods of the <xref:System.Web.Security.Roles> class.  
+ The <xref:System.Web.Security.AuthorizationStoreRoleProvider.AddUsersToRoles%2A> method is called by the <xref:System.Web.Security.Roles> class to associate one or more users with one or more roles in the authorization-manager data store specified in the ASP.NET application's configuration file (Web.config). This method is called by the <xref:System.Web.Security.Roles.AddUserToRole%2A?displayProperty=nameWithType>, <xref:System.Web.Security.Roles.AddUserToRoles%2A?displayProperty=nameWithType>, <xref:System.Web.Security.Roles.AddUsersToRole%2A?displayProperty=nameWithType>, and <xref:System.Web.Security.Roles.AddUsersToRoles%2A?displayProperty=nameWithType> methods of the <xref:System.Web.Security.Roles> class.  
   
    
   
 ## Examples  
  The following code example adds one or more users to a role or removes a user from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -211,10 +211,10 @@ msxml://<path to xml file>
 ## Remarks  
  The <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> is used by the <xref:System.Web.Security.AuthorizationStoreRoleProvider> to associate users and roles with different authorization-manager applications, which enables multiple ASP.NET applications to use the same authorization-manager policy store to store role information without running into conflicts between duplicate role names. Alternatively, multiple ASP.NET applications can use the same policy store by specifying the same value in the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property. The <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property can be set programmatically, or it can be set declaratively in the application's Web.config file by using the `applicationName` attribute.  
   
- If a value is not specified for the `applicationName` attribute in the Web.config file, then the <xref:System.Web.HttpRequest.ApplicationPath%2A?displayProperty=fullName> property value for the current <xref:System.Web.HttpContext.Request%2A?displayProperty=fullName> object is used.  
+ If a value is not specified for the `applicationName` attribute in the Web.config file, then the <xref:System.Web.HttpRequest.ApplicationPath%2A?displayProperty=nameWithType> property value for the current <xref:System.Web.HttpContext.Request%2A?displayProperty=nameWithType> object is used.  
   
 > [!NOTE]
->  Authorization-manager application names cannot contain the "/" character that is included in the <xref:System.Web.HttpRequest.ApplicationPath%2A?displayProperty=fullName> property. As a result, the default value for the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property cannot be used as an authorization-manager application name, and in the application's Web.config file, you must always specify an `applicationName` attribute in the `provider` element to configure your <xref:System.Web.Security.AuthorizationStoreRoleProvider> instance.  
+>  Authorization-manager application names cannot contain the "/" character that is included in the <xref:System.Web.HttpRequest.ApplicationPath%2A?displayProperty=nameWithType> property. As a result, the default value for the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property cannot be used as an authorization-manager application name, and in the application's Web.config file, you must always specify an `applicationName` attribute in the `provider` element to configure your <xref:System.Web.Security.AuthorizationStoreRoleProvider> instance.  
   
 > [!CAUTION]
 >  Because a single default role provider instance is used for all of the requests served by an <xref:System.Web.HttpApplication> object, you can have multiple requests executing concurrently and attempting to set the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property value. The <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property is not thread safe for multiple writes, and changing the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property value can result in unexpected behavior when there are multiple users of an application. We recommend that you avoid writing code that allows users to set the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property unless you must. An example of an application where setting the <xref:System.Web.Security.AuthorizationStoreRoleProvider.ApplicationName%2A> property may be required is an administrative application that manages role data for multiple applications. Such an application should be a single-user application and not a Web application.  
@@ -299,8 +299,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example creates a new role in the authorization-manager policy store. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -360,8 +360,8 @@ msxml://<path to xml file>
 ## Examples  
  The following example deletes a role from the authorization-manager policy store. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/deleterolecs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/deleterolevb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -441,10 +441,10 @@ msxml://<path to xml file>
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.Security.Roles.GetAllRoles%2A> method to get the list of roles for an application and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
+ The following code example uses the <xref:System.Web.Security.Roles.GetAllRoles%2A> method to get the list of roles for an application and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -489,10 +489,10 @@ msxml://<path to xml file>
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and binds them to a <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
+ The following code example uses the <xref:System.Web.Security.Roles.GetRolesForUser%2A> method to retrieve a list of roles for a specified user and binds them to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -543,10 +543,10 @@ msxml://<path to xml file>
    
   
 ## Examples  
- The following code example uses the <xref:System.Web.Security.Roles.GetUsersInRole%2A> method to get a list of the users in a particular role and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
+ The following code example uses the <xref:System.Web.Security.Roles.GetUsersInRole%2A> method to get a list of the users in a particular role and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=nameWithType> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -601,7 +601,7 @@ msxml://<path to xml file>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="config" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration section.  
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="connectionStringName" /> attribute is empty or does not exist in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration section.  
   
  -or-  
   
@@ -639,15 +639,15 @@ msxml://<path to xml file>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.AuthorizationStoreRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A?displayProperty=fullName> property to determine whether a user is associated with a role in the authorization-manager data store specified in the ASP.NET application's configuration file (Web.config).  
+ The <xref:System.Web.Security.AuthorizationStoreRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A?displayProperty=nameWithType> property to determine whether a user is associated with a role in the authorization-manager data store specified in the ASP.NET application's configuration file (Web.config).  
   
    
   
 ## Examples  
  The following code example programmatically checks to see whether the logged-on user is in the Administrators role before allowing the user to view user roles. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/ViewRolescs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/ViewRolesvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -711,8 +711,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example adds one or more users to a role or removes a user from a role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/adduserstorolecs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/adduserstorolevb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -786,8 +786,8 @@ msxml://<path to xml file>
 ## Examples  
  The following code example uses the <xref:System.Web.Security.Roles.RoleExists%2A> method to determine whether a role name already exists before creating the role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.AuthorizationStoreRoleProvider>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  
   
  ]]></format>
         </remarks>

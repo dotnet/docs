@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This specific fragment processes the <xref:System.Web.Services.Protocols.SoapClientMessage> passed into the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A?displayProperty=fullName> method of the SOAP extension by writing properties of the <xref:System.Web.Services.Protocols.SoapClientMessage> to the log file.  
+ The following code fragment is part of a SOAP extension that logs the SOAP messages sent and received by an XML Web service client. This specific fragment processes the <xref:System.Web.Services.Protocols.SoapClientMessage> passed into the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A?displayProperty=nameWithType> method of the SOAP extension by writing properties of the <xref:System.Web.Services.Protocols.SoapClientMessage> to the log file.  
   
  [!code-cpp[SoapClientMessage#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapClientMessage/CPP/SoapClientMessage.cpp#1)]
  [!code-csharp[SoapClientMessage#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapClientMessage/CS/soapclientmessage.cs#1)]
@@ -206,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay" />
       </Docs>
     </Member>
     <Member MemberName="SoapVersion">
@@ -233,10 +234,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When an XML Web service supports SOAP version 1.1,.NET Framework clients communicate with an XML Web service in that version by default. For details on how to change the version of the SOAP protocol, see the <xref:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion%2A?displayProperty=fullName> property.  
+ When an XML Web service supports SOAP version 1.1,.NET Framework clients communicate with an XML Web service in that version by default. For details on how to change the version of the SOAP protocol, see the <xref:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion" />
       </Docs>
     </Member>
     <Member MemberName="Url">

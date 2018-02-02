@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "expanding node"
-  - "TreeView control, about TreeView control"
-  - "Control class, TreeView"
+  - "expanding node [WPF]"
+  - "TreeView control [WPF], about TreeView control"
+  - "Control class [WPF], TreeView"
 ms.assetid: 62212512-5a5c-4864-949e-b6a6a3a52c02
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # TreeView Overview
 The <xref:System.Windows.Controls.TreeView> control provides a way to display information in a hierarchical structure by using collapsible nodes. This topic introduces the <xref:System.Windows.Controls.TreeView> and <xref:System.Windows.Controls.TreeViewItem> controls, and provides simple examples of their use.  
@@ -80,7 +82,7 @@ The <xref:System.Windows.Controls.TreeView> control provides a way to display in
  [!code-xaml[TreeViewDataBinding#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewDataBinding/CSharp/Window1.xaml#6)]  
   
 ## See Also  
- <xref:System.Windows.Controls.TreeView>   
- <xref:System.Windows.Controls.TreeViewItem>   
- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)   
+ <xref:System.Windows.Controls.TreeView>  
+ <xref:System.Windows.Controls.TreeViewItem>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)  
  [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)

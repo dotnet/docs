@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 79c14759-9f87-458a-b339-beec8300e339
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Persistence
 This section contains samples that demonstrate persisting workflows to a durable medium in [!INCLUDE[wf](../../../../includes/wf-md.md)].  

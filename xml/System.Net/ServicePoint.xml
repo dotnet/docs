@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Net.ServicePoint> class handles connections to an Internet resource based on the host information passed in the resource's Uniform Resource Identifier (URI). The initial connection to the resource determines the information that the <xref:System.Net.ServicePoint> object maintains, which is then shared by all subsequent requests to that resource.  
   
- <xref:System.Net.ServicePoint> objects are managed by the <xref:System.Net.ServicePointManager> class and are created, if necessary, by the <xref:System.Net.ServicePointManager.FindServicePoint%2A?displayProperty=fullName> method. <xref:System.Net.ServicePoint> objects are never created directly but are always created and managed by the <xref:System.Net.ServicePointManager> class. The maximum number of <xref:System.Net.ServicePoint> objects that can be created is set by the <xref:System.Net.ServicePointManager.MaxServicePoints%2A?displayProperty=fullName> property.  
+ <xref:System.Net.ServicePoint> objects are managed by the <xref:System.Net.ServicePointManager> class and are created, if necessary, by the <xref:System.Net.ServicePointManager.FindServicePoint%2A?displayProperty=nameWithType> method. <xref:System.Net.ServicePoint> objects are never created directly but are always created and managed by the <xref:System.Net.ServicePointManager> class. The maximum number of <xref:System.Net.ServicePoint> objects that can be created is set by the <xref:System.Net.ServicePointManager.MaxServicePoints%2A?displayProperty=nameWithType> property.  
   
- Each <xref:System.Net.ServicePoint> object maintains its connection to an Internet resource until it has been idle longer than the time specified in the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property. When a <xref:System.Net.ServicePoint> exceeds the <xref:System.Net.ServicePoint.MaxIdleTime%2A> value, it can be recycled to another connection. The default value of <xref:System.Net.ServicePoint.MaxIdleTime%2A> is set by the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=fullName> property.  
+ Each <xref:System.Net.ServicePoint> object maintains its connection to an Internet resource until it has been idle longer than the time specified in the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property. When a <xref:System.Net.ServicePoint> exceeds the <xref:System.Net.ServicePoint.MaxIdleTime%2A> value, it can be recycled to another connection. The default value of <xref:System.Net.ServicePoint.MaxIdleTime%2A> is set by the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=nameWithType> property.  
   
  When the <xref:System.Net.ServicePoint.ConnectionLeaseTimeout%2A> property is set to a value other than -1, and after the specified time elapses, an active <xref:System.Net.ServicePoint> connection is closed after it services the next request. This is useful for applications that do not require active connections that are opened indefinitely, as they are by default.  
   
@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some load balancing techniques require a client to use a specific local IP address and port number, rather than <xref:System.Net.IPAddress.Any?displayProperty=fullName> (or <xref:System.Net.IPAddress.IPv6Any?displayProperty=fullName> for Internet Protocol Version 6) and an ephemeral port. Your <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A> can satisfy this requirement.  
+ Some load balancing techniques require a client to use a specific local IP address and port number, rather than <xref:System.Net.IPAddress.Any?displayProperty=nameWithType> (or <xref:System.Net.IPAddress.IPv6Any?displayProperty=nameWithType> for Internet Protocol Version 6) and an ephemeral port. Your <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A> can satisfy this requirement.  
   
  ]]></format>
         </remarks>
@@ -296,6 +296,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is a negative number less than -1.</exception>
+        <altmember cref="P:System.Net.HttpWebRequest.KeepAlive" />
+        <altmember cref="P:System.Net.FtpWebRequest.KeepAlive" />
+        <altmember cref="P:System.Net.HttpListenerRequest.KeepAlive" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionLimit">
@@ -326,7 +329,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.ServicePoint.ConnectionLimit%2A> property sets the maximum number of connections that the <xref:System.Net.ServicePoint> object can make to an Internet resource. The value of the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property is set to the value of the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A?displayProperty=fullName> property when the <xref:System.Net.ServicePoint> object is created; subsequent changes to <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> have no effect on existing <xref:System.Net.ServicePoint> objects.  
+ The <xref:System.Net.ServicePoint.ConnectionLimit%2A> property sets the maximum number of connections that the <xref:System.Net.ServicePoint> object can make to an Internet resource. The value of the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property is set to the value of the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A?displayProperty=nameWithType> property when the <xref:System.Net.ServicePoint> object is created; subsequent changes to <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> have no effect on existing <xref:System.Net.ServicePoint> objects.  
   
    
   
@@ -551,9 +554,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set <xref:System.Net.ServicePoint.MaxIdleTime%2A> to <xref:System.Threading.Timeout.Infinite?displayProperty=fullName> to indicate that a connection associated with the <xref:System.Net.ServicePoint> object should never time out.  
+ You can set <xref:System.Net.ServicePoint.MaxIdleTime%2A> to <xref:System.Threading.Timeout.Infinite?displayProperty=nameWithType> to indicate that a connection associated with the <xref:System.Net.ServicePoint> object should never time out.  
   
- The default value of the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property is the value of the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=fullName> property when the <xref:System.Net.ServicePoint> object is created. Subsequent changes to the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A> property have no effect on existing <xref:System.Net.ServicePoint> objects.  
+ The default value of the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property is the value of the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=nameWithType> property when the <xref:System.Net.ServicePoint> object is created. Subsequent changes to the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A> property have no effect on existing <xref:System.Net.ServicePoint> objects.  
   
  When the <xref:System.Net.ServicePoint.MaxIdleTime%2A> for a connection associated with a <xref:System.Net.ServicePoint> is exceeded, the connection remains open until the application tries to use the connection. At that time, the Framework closes the connection and creates a new connection to the remote host.  
   

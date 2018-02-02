@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetUserState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetUserState method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetUserState method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetUserState Method
 Gets the current user state of this ICorDebugThread.  

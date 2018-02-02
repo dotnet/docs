@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Xps.Serialization.XpsPackagingPolicy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +103,7 @@
         <summary>When overridden in a derived class, acquires an <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with a specified resource [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)].</summary>
         <returns>The [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with the specified <paramref name="resourceID" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AcquireResourceStreamForXpsImage">
@@ -168,7 +170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the list to compose `LinkTarget` elements that can be inserted into the <xref:System.Windows.Documents.PageContent.LinkTargets%2A?displayProperty=fullName>element for the corresponding page. Wrap each string in the list in markup by using the following form:  
+ Use the list to compose `LinkTarget` elements that can be inserted into the <xref:System.Windows.Documents.PageContent.LinkTargets%2A?displayProperty=nameWithType> element for the corresponding page. Wrap each string in the list in markup by using the following form:  
   
  `<LinkTarget Name=\"` *target name* `\" />`, where *target name* is the string.  
   
@@ -176,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Xps.Packaging.IXpsFixedPageWriter.LinkTargetStream" />
       </Docs>
     </Member>
     <Member MemberName="AcquireXmlWriterForFixedDocument">
@@ -578,5 +581,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReleaseResourceStreamForXpsFont">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, releases the <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for the current <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcquireResourceStreamForXpsFont">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, acquires a resource stream for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

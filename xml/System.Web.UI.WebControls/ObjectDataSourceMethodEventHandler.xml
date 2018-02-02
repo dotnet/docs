@@ -26,7 +26,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSource.Selecting>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updating>, <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting>, or <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event of the <xref:System.Web.UI.WebControls.ObjectDataSource> control allows you to manipulate the parameters that are used to determine the method that is called by the <xref:System.Web.UI.WebControls.ObjectDataSource> control. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs>.  
   
- When you create an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ When you create an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -37,8 +37,8 @@
   
  In this example, the `UpdateEmployeeInfo` method is used to perform an insert; however, it requires a `NorthwindEmployee` parameter to insert the data. For this reason, the collection of strings that the <xref:System.Web.UI.WebControls.DetailsView> control passes automatically is not sufficient. The `NorthwindEmployeeInserting` delegate is an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> object that handles the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting> event and enables you to manipulate the input parameters before the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation proceeds. Because the `UpdateEmployeeInfo` method requires a `NorthwindEmployee` object as a parameter, one is created using the collection of strings and is added to the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> collection.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  
   
  The following code example provides the example middle-tier business object that the preceding code example uses. The code example consists of the following two basic classes and one additional class:  
   
@@ -55,5 +55,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler" />
+    <altmember cref="T:System.Web.UI.WebControls.ObjectDataSource" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting(System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting(System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs)" />
   </Docs>
 </Type>

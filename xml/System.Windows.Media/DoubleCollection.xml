@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,6 +80,7 @@
       <Docs>
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Media.DoubleCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -167,6 +171,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.DoubleCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -191,7 +196,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -240,7 +245,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -288,6 +293,7 @@
         <returns>
           <see langword="true" /> if <paramref name="value" />, the specified <see cref="T:System.Double" />, is in this <see cref="T:System.Windows.Media.DoubleCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -436,6 +442,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -458,6 +465,7 @@
         <summary>Gets the index of the first occurrence of the specified <see cref="T:System.Double" />.</summary>
         <returns>The index of <paramref name="value" /> if found in the <see cref="T:System.Windows.Media.DoubleCollection" />; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -484,7 +492,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -497,6 +505,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.DoubleCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -526,6 +535,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.DoubleCollection" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.Generic.IList`1.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -576,6 +586,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.DoubleCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -597,6 +608,7 @@
         <param name="index">The index of the item to remove.</param>
         <summary>Removes the <see cref="T:System.Double" /> at the specified index from this <see cref="T:System.Windows.Media.DoubleCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Double&gt;.IsReadOnly">
@@ -1065,5 +1077,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Windows.Media.DoubleCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.DoubleCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

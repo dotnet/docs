@@ -26,23 +26,23 @@
 ## Remarks  
  This delegate is used with the following attached events:  
   
--   <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=nameWithType>  
   
--   <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.DragDrop.PreviewQueryContinueDrag?displayProperty=nameWithType>  
   
  This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
   
--   <xref:System.Windows.UIElement.QueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.QueryContinueDrag?displayProperty=nameWithType>  
   
--   <xref:System.Windows.UIElement.PreviewQueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.UIElement.PreviewQueryContinueDrag?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.QueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.QueryContinueDrag?displayProperty=nameWithType>  
   
--   <xref:System.Windows.ContentElement.PreviewQueryContinueDrag?displayProperty=fullName>  
+-   <xref:System.Windows.ContentElement.PreviewQueryContinueDrag?displayProperty=nameWithType>  
   
  The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
- The <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=fullName> attached event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled.  
+ The <xref:System.Windows.DragDrop.QueryContinueDrag?displayProperty=nameWithType> attached event occurs during a drag-and-drop operation and allows the drag source to determine whether the drag-and-drop operation should be canceled.  
   
  ]]></format>
     </remarks>

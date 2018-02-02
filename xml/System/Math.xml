@@ -27,13 +27,6 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/math.cs#a4407e67b9a5afad). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
-   
-  
 ## Examples  
  The following example uses several mathematical and trigonometric functions from the <xref:System.Math> class to calculate the inner angles of a trapezoid.  
   
@@ -459,7 +452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -520,7 +513,7 @@
 ## Remarks  
  A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -581,7 +574,7 @@
 ## Remarks  
  A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
   
- Multiply the return value by 180/<xref:System.Math.PI?displayProperty=fullName> to convert from radians to degrees.  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
   
    
   
@@ -778,13 +771,15 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
+ The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
   
  [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -832,13 +827,15 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
+ The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
   
  [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1187,7 +1184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `d`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
  Acceptable values of `d` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside this range, the <xref:System.Math.Cos%2A> method returns `d` unchanged rather than throwing an exception.  
   
@@ -1244,7 +1241,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -1261,7 +1258,7 @@
     </Member>
     <Member MemberName="DivRem">
       <MemberSignature Language="C#" Value="public static int DivRem (int a, int b, out int result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DivRem(int32 a, int32 b, int32 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DivRem(int32 a, int32 b, [out] int32&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int32,System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1309,11 +1306,12 @@
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="b" /> is zero.</exception>
+        <altmember cref="M:System.Math.IEEERemainder(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="DivRem">
       <MemberSignature Language="C#" Value="public static long DivRem (long a, long b, out long result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 DivRem(int64 a, int64 b, int64 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 DivRem(int64 a, int64 b, [out] int64&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Math.DivRem(System.Int64,System.Int64,System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1361,6 +1359,7 @@
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="b" /> is zero.</exception>
+        <altmember cref="M:System.Math.IEEERemainder(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -1466,6 +1465,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Math.E" />
+        <altmember cref="M:System.Math.Pow(System.Double,System.Double)" />
+        <altmember cref="M:System.Math.Log(System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Floor">
@@ -1527,13 +1529,16 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
+ The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
   
  [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Floor">
@@ -1581,13 +1586,15 @@
    
   
 ## Examples  
- The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=fullName> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
+ The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
   
  [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="IEEERemainder">
@@ -1633,7 +1640,7 @@
 ## Remarks  
  This operation complies with the remainder operation defined in Section 5.1 of ANSI/IEEE Std 754-1985; IEEE Standard for Binary Floating-Point Arithmetic; Institute of Electrical and Electronics Engineers, Inc; 1985.  
   
- The<xref:System.Math.IEEERemainder%2A> method is not the same as the modulus operator. Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
+ The <xref:System.Math.IEEERemainder%2A> method is not the same as the modulus operator. Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.Math.IEEERemainder%2A> method is:  
   
 ```  
 IEEERemainder = dividend - (divisor * Math.Round(dividend / divisor))  
@@ -1723,6 +1730,8 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Math.E" />
+        <altmember cref="M:System.Math.Exp(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -3184,7 +3193,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, and <xref:System.Double?displayProperty=fullName>.  
+ The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 |Parameters|Return value|  
 |----------------|------------------|  
@@ -3215,6 +3224,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Sqrt(System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Round">
@@ -3288,7 +3298,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
 |`d`|<xref:System.Decimal>|A number to be rounded.|  
 |`a`<br /><br /> -or-<br /><br /> `value`|<xref:System.Double>|A double-precision floating-point number to be rounded.|  
 |`decimals`<br /><br /> -or-<br /><br /> `digits`|<xref:System.Int32>|The number of fractional digits in the return value. For <xref:System.Decimal> values, it can range from 0 to 28. For <xref:System.Double> values, it can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.<br /><br /> Default value: 0, which rounds to an integer|  
-|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding?displayProperty=fullName>|  
+|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>|  
   
 <a name="Returns"></a>   
 ## Return value  
@@ -3298,7 +3308,7 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 > [!WARNING]
 >  When rounding midpoint values, the rounding algorithm performs an equality test. Because of problems of binary representation and precision in the floating-point format, the value returned by the method can be unexpected. For more information, see [Rounding and precision](#Precision).  
   
- If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=fullName>, the method returns <xref:System.Double.NaN?displayProperty=fullName>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>, respectively.  
+ If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
   
 <a name="Exceptions"></a>   
 ## Exceptions  
@@ -3332,12 +3342,12 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
  The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
   
  **Rounding away from zero**  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
   
  Rounding away from zero is the most widely known form of rounding.  
   
  **Rounding to nearest, or banker's rounding**  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding?displayProperty=fullName> enumeration member.  
+ Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
   
  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
@@ -3472,6 +3482,10 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
+        <altmember cref="M:System.Math.Truncate(System.Decimal)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Round">
@@ -3516,6 +3530,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3570,6 +3587,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round2.cs#1)]
  [!code-vb[System.Math.Round#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round2.vb#1)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3618,6 +3638,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3666,6 +3689,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3719,6 +3745,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
  [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3772,6 +3801,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
  [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3824,6 +3856,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -3881,6 +3916,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
  [!code-csharp[System.Math.Round#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round4.cs#3)]
  [!code-vb[System.Math.Round#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round4.vb#3)]</para>
         </block>
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
+        <altmember cref="M:System.Decimal.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -4373,7 +4411,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
  Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
   
@@ -4430,7 +4468,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -4507,6 +4545,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Pow(System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -4549,7 +4588,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -4604,7 +4643,7 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
   
    
   
@@ -4685,6 +4724,9 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
+        <altmember cref="M:System.Math.Floor(System.Decimal)" />
       </Docs>
     </Member>
     <Member MemberName="Truncate">
@@ -4738,7 +4780,80 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Math.Round" />
+        <altmember cref="M:System.Math.Ceiling(System.Double)" />
+        <altmember cref="M:System.Math.Floor(System.Double)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Min">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the smaller of two numbers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Max">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the larger of two specified numbers.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DivRem">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the quotient of two numbers and also returns the remainder in an output parameter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sign">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer that indicates the sign of a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the logarithm of a specified number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Abs">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the absolute value of a specified number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

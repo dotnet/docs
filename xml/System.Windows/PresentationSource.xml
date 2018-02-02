@@ -14,6 +14,7 @@
     <summary>Provides an abstract base for classes that present content from another technology as part of an interoperation scenario. In addition, this class provides static methods for working with these sources, as well as the basic visual-layer presentation architecture.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.UIPermission">to derive from this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+    <altmember cref="T:System.Windows.Interop.HwndSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +119,7 @@
       <Docs>
         <summary>Sets the list of listeners for the <see cref="E:System.Windows.PresentationSource.ContentRendered" /> event to <see langword="null" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.PresentationSource.ContentRendered" />
       </Docs>
     </Member>
     <Member MemberName="CompositionTarget">
@@ -357,6 +359,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.PresentationSource.AddSourceChangedHandler(System.Windows.IInputElement,System.Windows.SourceChangedEventHandler)" />
       </Docs>
     </Member>
     <Member MemberName="RootChanged">

@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle> enumeration and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A?displayProperty=fullName> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle> enumeration and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A?displayProperty=nameWithType> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#2)]
@@ -29,6 +29,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.Windows.Forms.StatusBar.DrawItem" />
+    <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+    <altmember cref="T:System.Drawing.Graphics" />
+    <altmember cref="T:System.Drawing.Rectangle" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +61,11 @@
         <param name="panel">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to draw.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class without specifying a background and foreground color for the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DrawItemState" />
+        <altmember cref="T:System.Drawing.Font" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,7 +124,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle>, and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=nameWithType> property, the <xref:System.Windows.Forms.StatusBarDrawItemEventHandler> delegate, the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> class, the <xref:System.Windows.Forms.StatusBarPanelStyle>, and the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs.Panel%2A> property. To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or `Load` method.  
   
  [!code-cpp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CPP/form1.cpp#2)]
  [!code-csharp[System.Windows.Forms.StatusBarDrawItemEventHandler#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarDrawItemEventHandler/CS/form1.cs#2)]
@@ -123,7 +132,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
+        <altmember cref="E:System.Windows.Forms.StatusBar.DrawItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

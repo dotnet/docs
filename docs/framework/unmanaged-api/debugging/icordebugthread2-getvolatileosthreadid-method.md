@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread2::GetVolatileOSThreadID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVolatileOSThreadID method [.NET Framework debugging]"
   - "ICorDebugThread2::GetVolatileOSThreadID method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread2::GetVolatileOSThreadID Method
 Gets the operating system thread identifier for this ICorDebugThread2.  

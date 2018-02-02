@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetName method, IAssemblyName interface [.NET Framework debugging]"
   - "IAssemblyName::GetName method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyName::GetName Method
 Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object.  

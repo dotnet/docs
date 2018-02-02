@@ -16,13 +16,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is used to handle the [\&lt;parameter\&gt;](~/docs/framework/configure-apps/file-schema/wcf/parameter.md), specifically, to specify the generic parameter to use when adding a known type to a declared type.  
+ This class is used to handle the [&lt;parameter&gt;](~/docs/framework/configure-apps/file-schema/wcf/parameter.md), specifically, to specify the generic parameter to use when adding a known type to a declared type.  
   
- For an example of using configuration to add a type, see [\&lt;declaredTypes\&gt;](~/docs/framework/configure-apps/file-schema/wcf/declaredtypes.md).  
+ For an example of using configuration to add a type, see [&lt;declaredTypes&gt;](~/docs/framework/configure-apps/file-schema/wcf/declaredtypes.md).  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -214,5 +216,14 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,40 +1,21 @@
 ---
 title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc42026"
   - "BC42026"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42026"
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;
 A statement in the `Set` procedure of a property definition stores a value into the name of the property.  
@@ -86,6 +67,6 @@ End Class
 -   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   
 ## See Also  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
+ [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
  [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)

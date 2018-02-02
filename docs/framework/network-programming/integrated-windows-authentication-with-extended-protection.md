@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Integrated Windows Authentication with Extended Protection
 Enhancements were made that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream>, and related classes in the <xref:System.Net> and related namespaces. Support was added for extended protection to enhance security.  
@@ -118,7 +115,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
 ## Extended Protection for Client Applications  
  Extended protection support for most client applications happens automatically. The <xref:System.Net.HttpWebRequest> and <xref:System.Net.Mail.SmtpClient> classes support extended protection whenever the underlying version of Windows supports extended protection. An <xref:System.Net.HttpWebRequest> instance sends an SPN constructed from the <xref:System.Uri>. By default, an <xref:System.Net.Mail.SmtpClient> instance sends an SPN constructed from the host name of the SMTP mail server.  
   
- For custom authentication, client applications can use the <xref:System.Net.HttpWebRequest.EndGetRequestStream%28System.IAsyncResult%2CSystem.Net.TransportContext%40%29?displayProperty=fullName> or <xref:System.Net.HttpWebRequest.GetRequestStream%28System.Net.TransportContext%40%29?displayProperty=fullName> methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> and the CBT using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method.  
+ For custom authentication, client applications can use the <xref:System.Net.HttpWebRequest.EndGetRequestStream%28System.IAsyncResult%2CSystem.Net.TransportContext%40%29?displayProperty=nameWithType> or <xref:System.Net.HttpWebRequest.GetRequestStream%28System.Net.TransportContext%40%29?displayProperty=nameWithType> methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> and the CBT using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method.  
   
  The SPN to use for integrated Windows authentication sent by an <xref:System.Net.HttpWebRequest> instance to a given service can be overridden by setting the <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A> property.  
   
@@ -127,7 +124,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
 ## Extended Protection for Server Applications  
  <xref:System.Net.HttpListener> automatically provides mechanisms for validating service bindings when performing HTTP authentication.  
   
- The most secure scenario is to enable extended protection for HTTPS:// prefixes. In this case, set <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=fullName> to an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> or <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>, and <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> set to <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected> A value of  <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> puts <xref:System.Net.HttpListener> in partially hardened mode, while <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> corresponds to fully hardened mode.  
+ The most secure scenario is to enable extended protection for HTTPS:// prefixes. In this case, set <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> to an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> or <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>, and <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> set to <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected> A value of  <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> puts <xref:System.Net.HttpListener> in partially hardened mode, while <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> corresponds to fully hardened mode.  
   
  In this configuration when a request is made to the server through an outer secure channel, the outer channel is queried for a channel binding. This channel binding is passed to the authentication SSPI calls, which validate that the channel binding in the authentication blob matches. There are three possible outcomes:  
   
@@ -139,7 +136,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  If an application makes its own SSPI calls to perform authentication based on blobs passed back and forth within the body of an HTTP request and wishes to support channel binding, it needs to retrieve the expected channel binding from the outer secure channel using <xref:System.Net.HttpListener> in order to pass it to native Win32 [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function. To do this, use the <xref:System.Net.HttpListenerRequest.TransportContext%2A> property and call <xref:System.Net.TransportContext.GetChannelBinding%2A> method to retrieve the CBT. Only endpoint bindings are supported. If anything other <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint> is specified, a <xref:System.NotSupportedException> will be thrown. If the underlying operating system supports channel binding, the <xref:System.Net.TransportContext.GetChannelBinding%2A> method will return a <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding><xref:System.Runtime.InteropServices.SafeHandle> wrapping a pointer to a channel binding suitable for passing to [AcceptSecurityContext](http://go.microsoft.com/fwlink/?LinkId=147021) function as the pvBuffer member of a SecBuffer structure passed in the `pInput` parameter. The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding.Size%2A> property contains the length, in bytes, of the channel binding. If the underlying operating system does not support channel bindings, the function will return `null`.  
   
- Another possible scenario is to enable extended protection for HTTP:// prefixes when proxies are not used. In this case, set <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=fullName> to an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> or <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>, and <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> set to <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected> A value of  <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> puts <xref:System.Net.HttpListener> in partially hardened mode, while <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> corresponds to fully hardened mode.  
+ Another possible scenario is to enable extended protection for HTTP:// prefixes when proxies are not used. In this case, set <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> to an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> or <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>, and <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> set to <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected> A value of  <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> puts <xref:System.Net.HttpListener> in partially hardened mode, while <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> corresponds to fully hardened mode.  
   
  A default list of allowed service names is created based on the prefixes which have been registered with the <xref:System.Net.HttpListener>. This default list can be examined through the <xref:System.Net.HttpListener.DefaultServiceNames%2A> property. If this list is not comprehensive, an application can specify a custom service name collection in the constructor for the <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> class which will be used instead of the default service name list.  
   
@@ -158,5 +155,5 @@ Enhancements were made that affect how integrated Windows authentication is hand
  These extended protection features can also be used by server applications for authentication with other types of requests and when trusted proxies are used.  
   
 ## See Also  
- <xref:System.Security.Authentication.ExtendedProtection>   
+ <xref:System.Security.Authentication.ExtendedProtection>  
  <xref:System.Security.Authentication.ExtendedProtection.Configuration>

@@ -13,6 +13,8 @@
   <Docs>
     <summary>Contains information about an exception that is raised when there is a problem loading an assembly that contains client-side providers</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.ClientSettings" />
+    <altmember cref="M:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly(System.Reflection.AssemblyName)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -116,5 +118,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ProxyAssemblyNotLoadedException" /> class. Used internally.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

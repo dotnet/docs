@@ -19,11 +19,13 @@ caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Default Keyboard and Mouse Behavior in the DataGrid Control
 This topic describes how users can interact with the <xref:System.Windows.Controls.DataGrid> control by using the keyboard and mouse.  
   
- Typical interactions with the <xref:System.Windows.Controls.DataGrid> include navigation, selection, and editing. Selection behavior is affected by the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties. The default values that cause the behavior described in this topic are <xref:System.Windows.Controls.DataGridSelectionMode.Extended?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridSelectionUnit.FullRow?displayProperty=fullName>. Changing these values might cause behavior that is different from that described. When a cell is in edit mode, the editing control might override the standard keyboard behavior of the <xref:System.Windows.Controls.DataGrid>.  
+ Typical interactions with the <xref:System.Windows.Controls.DataGrid> include navigation, selection, and editing. Selection behavior is affected by the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties. The default values that cause the behavior described in this topic are <xref:System.Windows.Controls.DataGridSelectionMode.Extended?displayProperty=nameWithType> and <xref:System.Windows.Controls.DataGridSelectionUnit.FullRow?displayProperty=nameWithType>. Changing these values might cause behavior that is different from that described. When a cell is in edit mode, the editing control might override the standard keyboard behavior of the <xref:System.Windows.Controls.DataGrid>.  
   
 ## Default Keyboard Behavior  
  The following table lists the default keyboard behavior for the <xref:System.Windows.Controls.DataGrid>.  
@@ -48,7 +50,7 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
 |CTRL+END|Moves the focus to the last cell in the control.|  
 |CTRL+PAGE DOWN|Same as PAGE DOWN.|  
 |CTRL+PAGE UP|Same as PAGE UP.|  
-|F2|If the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=fullName> property is `false` and the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=fullName> property is `false` for the current column, puts the current cell into cell edit mode.|  
+|F2|If the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A?displayProperty=nameWithType> property is `false` and the <xref:System.Windows.Controls.DataGridColumn.IsReadOnly%2A?displayProperty=nameWithType> property is `false` for the current column, puts the current cell into cell edit mode.|  
 |ENTER|Commits any changes to the current cell and row and moves the focus to the cell directly below the current cell. If the focus is in the last row, commits any changes without moving the focus.|  
 |ESC|If the control is in edit mode, cancels the edit and reverts any changes that were made in the control. If the underlying data source implements <xref:System.ComponentModel.IEditableObject>, pressing ESC a second time cancels edit mode for the entire row.|  
 |BACKSPACE|Deletes the character before the cursor when editing a cell.|  
@@ -84,10 +86,10 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
 |------------------|-----------------|  
 |Click an unselected row|Makes the clicked row the current row, and the clicked cell the current cell.|  
 |Click the current cell|Puts the current cell into edit mode.|  
-|Drag a column header cell|If the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserReorder%2A?displayProperty=fullName> property is `true` for the current column, moves the column so that it can be dropped into a new position.|  
-|Drag a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property is `true` for the current column, resizes the column.|  
-|Double-click a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=fullName> property is `true` for the current column, auto-sizes the column using the <xref:System.Windows.Controls.DataGridLength.Auto%2A> sizing mode.|  
-|Click a column header cell|If the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=fullName> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserSort%2A?displayProperty=fullName> property is `true` for the current column, sorts the column.<br /><br /> Clicking the header of a column that is already sorted will reverse the sort direction of that column.<br /><br /> Pressing the SHIFT key while clicking multiple column headers will sort by multiple columns in the order clicked.|  
+|Drag a column header cell|If the <xref:System.Windows.Controls.DataGrid.CanUserReorderColumns%2A?displayProperty=nameWithType> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserReorder%2A?displayProperty=nameWithType> property is `true` for the current column, moves the column so that it can be dropped into a new position.|  
+|Drag a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=nameWithType> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=nameWithType> property is `true` for the current column, resizes the column.|  
+|Double-click a column header separator|If the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=nameWithType> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=nameWithType> property is `true` for the current column, auto-sizes the column using the <xref:System.Windows.Controls.DataGridLength.Auto%2A> sizing mode.|  
+|Click a column header cell|If the <xref:System.Windows.Controls.DataGrid.CanUserSortColumns%2A?displayProperty=nameWithType> property is `true` and the <xref:System.Windows.Controls.DataGridColumn.CanUserSort%2A?displayProperty=nameWithType> property is `true` for the current column, sorts the column.<br /><br /> Clicking the header of a column that is already sorted will reverse the sort direction of that column.<br /><br /> Pressing the SHIFT key while clicking multiple column headers will sort by multiple columns in the order clicked.|  
 |CTRL+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, modifies a non-contiguous multi-row selection.<br /><br /> If the row is already selected, deselects the row.|  
 |SHIFT+click a row|If <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is set to <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, modifies a contiguous multi-row selection.|  
 |Click a row group header|Expands or collapses the group.|  
@@ -103,5 +105,5 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
  CTRL+SHIFT can be combined to select non-adjacent ranges of adjacent rows. To do this, select the first range by using SHIFT+click as described earlier. After the first range of rows is selected, use CTRL+click to select the first row in the next range, and then click the last row in the next range while pressing CTRL+SHIFT.  
   
 ## See Also  
- <xref:System.Windows.Controls.DataGrid>   
+ <xref:System.Windows.Controls.DataGrid>  
  <xref:System.Windows.Controls.DataGrid.SelectionMode%2A>

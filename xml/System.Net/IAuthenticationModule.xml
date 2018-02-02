@@ -26,7 +26,7 @@
   
  Authentication modules conduct the entire authentication process with a server, responding to an authentication challenge as appropriate. This process may consist of requests to an authentication server separate from the resource server, as well as any other activities required to properly authenticate a request for a URI.  
   
- Custom authentication modules should implement the <xref:System.Net.IAuthenticationModule> interface and then register with the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method. Authentication modules are also registered at program initialization by reading the configuration file.  
+ Custom authentication modules should implement the <xref:System.Net.IAuthenticationModule> interface and then register with the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=nameWithType> method. Authentication modules are also registered at program initialization by reading the configuration file.  
   
    
   
@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.AuthenticationManager" />
   </Docs>
   <Members>
     <Member MemberName="Authenticate">
@@ -123,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property identifies the authentication type implemented by this authentication module. The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property is used by the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method to determine if the authentication module has been registered, and by the <xref:System.Net.AuthenticationManager.Unregister%2A?displayProperty=fullName> method to remove a registered authentication module.  
+ The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property identifies the authentication type implemented by this authentication module. The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property is used by the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=nameWithType> method to determine if the authentication module has been registered, and by the <xref:System.Net.AuthenticationManager.Unregister%2A?displayProperty=nameWithType> method to remove a registered authentication module.  
   
    
   

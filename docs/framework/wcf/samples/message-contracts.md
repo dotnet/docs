@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e3df7c11-c653-4796-be47-26b09c35b691
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Message Contracts
 This section contains samples that demonstrate message contracts in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

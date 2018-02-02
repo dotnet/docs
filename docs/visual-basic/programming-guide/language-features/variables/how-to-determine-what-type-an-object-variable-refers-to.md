@@ -1,7 +1,7 @@
 ---
 title: "How to: Determine What Type an Object Variable Refers To (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,45 +9,28 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "TypeOf operator [Visual Basic], determining object variable type"
   - "variables [Visual Basic], object"
-  - "object variables, determining type"
+  - "object variables [Visual Basic], determining type"
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Determine What Type an Object Variable Refers To (Visual Basic)
 An object variable contains a pointer to data that is stored elsewhere. The type of that data can change during run time. At any moment, you can use the <xref:System.Type.GetTypeCode%2A> method to determine the current run-time type, or the [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md) to find out if the current run-time type is compatible with a specified type.  
   
 ### To determine the exact type an object variable currently refers to  
   
-1.  On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=fullName> object.  
+1.  On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=nameWithType> object.  
   
     ```  
     Dim myObject As Object  
     myObject.GetType()  
     ```  
   
-2.  On the <xref:System.Type?displayProperty=fullName> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
+2.  On the <xref:System.Type?displayProperty=nameWithType> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
   
     ```  
     Dim myObject As Object  
@@ -75,10 +58,10 @@ An object variable contains a pointer to data that is stored elsewhere. The type
  Note that the specified type cannot be a variable or expression. It must be the name of a defined type, such as a class, structure, or interface. This includes intrinsic types such as `Integer` and `String`.  
   
 ## See Also  
- <xref:System.Object.GetType%2A>   
- <xref:System.Type?displayProperty=fullName>   
- <xref:System.Type.GetTypeCode%2A>   
- <xref:System.TypeCode>   
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)   
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)   
+ <xref:System.Object.GetType%2A>  
+ <xref:System.Type?displayProperty=nameWithType>  
+ <xref:System.Type.GetTypeCode%2A>  
+ <xref:System.TypeCode>  
+ [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
+ [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)

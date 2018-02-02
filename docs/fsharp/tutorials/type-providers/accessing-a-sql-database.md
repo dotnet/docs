@@ -53,7 +53,7 @@ On a server that's running SQL Server, create a database for testing purposes. Y
 
 #### To prepare a test database
 
-To run the MyDatabase Create Script, open the **View** menu, and then choose **SQL Server Object Explorer** or choose the Ctrl+\, Ctrl+S keys. In **SQL Server Object Explorer** window, open the shortcut menu for the appropriate instance, choose **New Query**, copy the script at the bottom of this page, and then paste the script into the editor. To run the SQL script, choose the toolbar icon with the triangular symbol, or choose the Ctrl+Q keys. For more information about **SQL Server Object Explorer**, see [Connected Database Development](http://go.microsoft.com/fwlink/?LinkId=237128).
+To run the MyDatabase Create Script, open the **View** menu, and then choose **SQL Server Object Explorer** or choose the Ctrl+\, Ctrl+S keys. In **SQL Server Object Explorer** window, open the shortcut menu for the appropriate instance, choose **New Query**, copy the script at the bottom of this page, and then paste the script into the editor. To run the SQL script, choose the toolbar icon with the triangular symbol, or choose the Ctrl+Q keys. For more information about **SQL Server Object Explorer**, see [Connected Database Development](https://msdn.microsoft.com/library/hh272679(VS.103).aspx).
 
 
 ## Creating the project
@@ -454,6 +454,6 @@ INSERT INTO Table3 (Id, Name, Data)
 
 [Query Expressions](../../language-reference/query-expressions.md)
 
-[LINQ to SQL](https://msdn.microsoft.com/library/bb386976)
+[LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)
 
 [SqlMetal.exe &#40;Code Generation Tool&#41;](https://msdn.microsoft.com/library/bb386987)

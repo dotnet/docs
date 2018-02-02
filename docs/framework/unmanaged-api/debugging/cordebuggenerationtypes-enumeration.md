@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugGenerationTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugGenerationTypes enumeration [.NET Framework debugging]"
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
@@ -28,6 +26,8 @@ caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugGenerationTypes Enumeration
 Specifies the generation of a region of memory on the managed heap.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataConverter::GetTypeLibFromMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTypeLibFromMetaData method [.NET Framework metadata]"
   - "IMetaDataConverter::GetTypeLibFromMetaData method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataConverter::GetTypeLibFromMetaData Method
 Gets a pointer to an `ITypeLib` instance that represents the type library that has the specified library and module names.  

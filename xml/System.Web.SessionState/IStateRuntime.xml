@@ -31,7 +31,7 @@
   <Members>
     <Member MemberName="ProcessRequest">
       <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest([in]native int tracker, [in]int32 verb, [in]string uri, [in]int32 exclusive, [in]int32 timeout, [in]int32 lockCookieExists, [in]int32 lockCookie, [in]int32 contentLength, [in]native int content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -77,7 +77,7 @@
     </Member>
     <Member MemberName="ProcessRequest">
       <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 extraFlags, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest([in]native int tracker, [in]int32 verb, [in]string uri, [in]int32 exclusive, [in]int32 extraFlags, [in]int32 timeout, [in]int32 lockCookieExists, [in]int32 lockCookie, [in]int32 contentLength, [in]native int content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -148,5 +148,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ProcessRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used by the ASP.NET state server to process session data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides access to get and set option values for a designer.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.DesignerOptions" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="EnableInSituEditing">
@@ -75,6 +77,7 @@
         <summary>Gets or sets a <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</summary>
         <value>A <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="ObjectBoundSmartTagAutoShow">
@@ -97,10 +100,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A component's smart tag panel is set to automatically open when the <xref:System.ComponentModel.Design.DesignerActionList.AutoShow%2A?displayProperty=fullName> property is `true`.  
+ A component's smart tag panel is set to automatically open when the <xref:System.ComponentModel.Design.DesignerActionList.AutoShow%2A?displayProperty=nameWithType> property is `true`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="ShowGrid">
@@ -120,6 +124,7 @@
         <value>
           <see langword="true" /> if the grid is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="SnapToGrid">
@@ -139,6 +144,7 @@
         <value>
           <see langword="true" /> if snapping is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="UseOptimizedCodeGeneration">
@@ -165,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="UseSmartTags">
@@ -191,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
       </Docs>
     </Member>
     <Member MemberName="UseSnapLines">
@@ -210,6 +218,8 @@
         <value>
           <see langword="true" /> if snaplines in the designer are enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
+        <altmember cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />
       </Docs>
     </Member>
   </Members>

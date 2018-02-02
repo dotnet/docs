@@ -34,12 +34,12 @@
   
 -   To indicate that an asynchronous task has completed, or to cancel a pending asynchronous task, call <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A>.  
   
- Your class should get an <xref:System.ComponentModel.AsyncOperation> object for each asynchronous task by calling <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=fullName> when each task starts. To allow the client to distinguish separate asynchronous tasks, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=fullName> takes a parameter for a unique client-provided token, which becomes the <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> property. It can then be used by client code to identify the particular asynchronous task that is raising progress or completion events.  
+ Your class should get an <xref:System.ComponentModel.AsyncOperation> object for each asynchronous task by calling <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=nameWithType> when each task starts. To allow the client to distinguish separate asynchronous tasks, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=nameWithType> takes a parameter for a unique client-provided token, which becomes the <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> property. It can then be used by client code to identify the particular asynchronous task that is raising progress or completion events.  
   
    
   
 ## Examples  
- The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> object to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> object to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
  For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
@@ -53,6 +53,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
     </block>
+    <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
   </Docs>
   <Members>
     <Member MemberName="Finalize">
@@ -156,12 +157,12 @@
   
  The `d` parameter wraps the delegate you want called when you want to post an update about the status of the asynchronous task. The <xref:System.ComponentModel.AsyncOperation> object will ensure that your delegate is invoked on the thread or context appropriate for the application model. Your method can optionally raise an event that notifies clients of a status change, progress update, or newly available incremental results.  
   
- The `arg` parameter should be used to pass state to the delegate wrapped by the `d` parameter. It might be a reference to an <xref:System.ComponentModel.AsyncOperation>, or it might be a <xref:System.ComponentModel.ProgressChangedEventArgs?displayProperty=fullName> object. It may be desirable to derive your own class from <xref:System.ComponentModel.ProgressChangedEventArgs?displayProperty=fullName> to provide additional state storage.  
+ The `arg` parameter should be used to pass state to the delegate wrapped by the `d` parameter. It might be a reference to an <xref:System.ComponentModel.AsyncOperation>, or it might be a <xref:System.ComponentModel.ProgressChangedEventArgs?displayProperty=nameWithType> object. It may be desirable to derive your own class from <xref:System.ComponentModel.ProgressChangedEventArgs?displayProperty=nameWithType> to provide additional state storage.  
   
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.AsyncOperation.Post%2A> method for reporting progress and incremental results of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using the <xref:System.ComponentModel.AsyncOperation.Post%2A> method for reporting progress and incremental results of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
   
 [!code-csharp[System.ComponentModel.AsyncOperationManager#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#5)]
@@ -182,6 +183,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
     <Member MemberName="PostOperationCompleted">
@@ -222,12 +224,12 @@
   
  The `d` parameter wraps the delegate you want your class to call when the task's lifetime ends due to completion, cancellation, or failure of the task. The <xref:System.ComponentModel.AsyncOperation> object will ensure that your delegate is invoked on the thread or context appropriate for the application model. Your delegate can optionally raise an event that notifies clients that the asynchronous task's lifetime has ended.  
   
- The `arg` parameter is used to pass state information to the completion delegate `d`. You can use an <xref:System.ComponentModel.AsyncOperation> object, or an <xref:System.ComponentModel.AsyncCompletedEventArgs?displayProperty=fullName> object as the parameter value. Alternatively, if you want to provide additional state storage, you can use an instance of a class you derive from the <xref:System.ComponentModel.AsyncCompletedEventArgs?displayProperty=fullName> class.  
+ The `arg` parameter is used to pass state information to the completion delegate `d`. You can use an <xref:System.ComponentModel.AsyncOperation> object, or an <xref:System.ComponentModel.AsyncCompletedEventArgs?displayProperty=nameWithType> object as the parameter value. Alternatively, if you want to provide additional state storage, you can use an instance of a class you derive from the <xref:System.ComponentModel.AsyncCompletedEventArgs?displayProperty=nameWithType> class.  
   
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> method to end the lifetime of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using the <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> method to end the lifetime of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
   
 [!code-csharp[System.ComponentModel.AsyncOperationManager#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#4)]
@@ -244,6 +246,7 @@
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
     <Member MemberName="SynchronizationContext">
@@ -303,7 +306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If your class supports multiple asynchronous methods or multiple invocations of a single asynchronous method, clients will need a way to determine which asynchronous task is raising events. Your `MethodNameAsync` method should take a parameter of type <xref:System.Object> that will act as a task ID. You will use this task ID when you call the <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=fullName>, method and this will associate the client's task ID with a particular invocation of your asynchronous operation. This task ID is made available to your implementation through the <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> property.  
+ If your class supports multiple asynchronous methods or multiple invocations of a single asynchronous method, clients will need a way to determine which asynchronous task is raising events. Your `MethodNameAsync` method should take a parameter of type <xref:System.Object> that will act as a task ID. You will use this task ID when you call the <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A?displayProperty=nameWithType>, method and this will associate the client's task ID with a particular invocation of your asynchronous operation. This task ID is made available to your implementation through the <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> property.  
   
 > [!CAUTION]
 >  Client code must be careful to provide a unique value for the <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> property. Non-unique task IDs may cause your implementation to report progress and other events incorrectly. Your code should check for a non-unique task ID and raise an <xref:System.ArgumentException> if one is detected.  
@@ -311,7 +314,7 @@
    
   
 ## Examples  
- The following code example demonstrates using <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
+ The following code example demonstrates using <xref:System.ComponentModel.AsyncOperation.UserSuppliedState%2A> to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=nameWithType> class.  
   
   
 [!code-csharp[System.ComponentModel.AsyncOperationManager#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#4)]
@@ -319,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.AsyncOperationManager" />
       </Docs>
     </Member>
   </Members>

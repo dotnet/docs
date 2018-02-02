@@ -18,7 +18,7 @@
 ## Remarks  
  The `My.Application.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md) and [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
- The `My.Application.Log` object is available only for client applications. For Web applications, use `My.Log`. For more information, see <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=fullName>.  
+ The `My.Application.Log` object is available only for client applications. For Web applications, use `My.Log`. For more information, see <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>.  
   
  The following table lists examples of tasks involving the `My.Application.Log` object.  
   
@@ -37,6 +37,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +61,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +94,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.Log" />
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
       </Docs>
     </Member>
     <Member MemberName="InitializeWithDefaultsSinceNoConfigExists">
@@ -122,7 +128,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Logging.AspLog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

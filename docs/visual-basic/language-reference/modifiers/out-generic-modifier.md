@@ -1,18 +1,12 @@
 ---
 title: "Out (Generic Modifier) (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceOut"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Out keyword [Visual Basic]"
   - "covariance, Out keyword [Visual Basic]"
@@ -20,21 +14,6 @@ ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Out (Generic Modifier) (Visual Basic)
 For generic type parameters, the `Out` keyword specifies that the type is covariant.  
@@ -42,7 +21,7 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
 ## Remarks  
  Covariance enables you to use a more derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement variant interfaces and implicit conversion of delegate types.  
   
- For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
+ For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
   
 ## Rules  
  You can use the `Out` keyword in generic interfaces and delegates.  
@@ -52,7 +31,7 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
 -   The type parameter is used only as a return type of interface methods and not used as a type of method arguments.  
   
     > [!NOTE]
-    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca) and [Using Variance for Func and Action Generic Delegates](http://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290).  
+    >  There is one exception to this rule. If in a covariant interface you have a contravariant generic delegate as a method parameter, you can use the covariant type as a generic type parameter for this delegate. For more information about covariant and contravariant generic delegates, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
   
 -   The type parameter is not used as a generic constraint for the interface methods.  
   
@@ -78,5 +57,5 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
  [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_2.vb)]  
   
 ## See Also  
- [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
+ [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)

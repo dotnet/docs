@@ -11,8 +11,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies constants that define primitive types found in metadata signatures.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -29,7 +30,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Boolean" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -46,7 +47,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Byte" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -63,7 +64,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Char" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -80,7 +81,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Double" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -97,7 +98,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Int16" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -114,7 +115,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Int32" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -131,7 +132,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Int64" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntPtr">
@@ -148,7 +149,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.IntPtr" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -165,7 +166,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="System.Object" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -182,7 +183,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="System.SByte" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -199,7 +200,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Single" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -216,7 +217,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An <see cref="System.Single" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="TypedReference">
@@ -233,7 +234,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A typed reference.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -250,7 +251,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.UInt16" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -267,7 +268,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.UInt32" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -284,7 +285,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.UInt64" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UIntPtr">
@@ -301,7 +302,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.UIntPtr" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Void">
@@ -318,7 +319,7 @@
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.Void" /> type.</summary>
       </Docs>
     </Member>
   </Members>

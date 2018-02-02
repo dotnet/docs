@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "proxy extensions [WCF]"
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Extending Clients
 In a calling application, the service model layer is responsible for translating method invocations in application code into outbound messages, pushing them to the underlying channels, translating results back into return values and out parameters in application code, and returning the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
@@ -40,7 +42,7 @@ In a calling application, the service model layer is responsible for translating
   
 -   Custom Message Transformations. Rather than modifying application code, the user may want to apply certain transformations to the message in the runtime (for example, for versioning). This can be accomplished, again, with the message interceptor interfaces.  
   
--   Custom Data Model. A user may want to have a data or serialization model other than those supported by default in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>, and <xref:System.ServiceModel.Channels.Message?displayProperty=fullName> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=fullName> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=fullName> property.  
+-   Custom Data Model. A user may want to have a data or serialization model other than those supported by default in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] (namely, <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>, <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType> objects). This can be done by implementing the message formatter interfaces. For more information, see <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter?displayProperty=nameWithType> and the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A?displayProperty=nameWithType> property.  
   
 -   Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md) or [Client Validation](../../../../docs/framework/wcf/samples/client-validation.md).  
   
@@ -121,7 +123,7 @@ In a calling application, the service model layer is responsible for translating
  For examples that demonstrate interception across a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Dispatcher.ClientRuntime>   
- <xref:System.ServiceModel.Dispatcher.ClientOperation>   
- [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)   
+ <xref:System.ServiceModel.Dispatcher.ClientRuntime>  
+ <xref:System.ServiceModel.Dispatcher.ClientOperation>  
+ [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)  
  [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)

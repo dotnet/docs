@@ -5,19 +5,20 @@ ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  dotnet-standard
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Script Blocks Using msxsl:script
 The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts using the `msxsl:script` element. When the style sheet is loaded, any defined functions are compiled to Microsoft intermediate language (MSIL) by the Code Document Object Model (CodeDOM) and are executed during run time. The assembly generated from the embedded script block is separate than the assembly generated for the style sheet.  
@@ -37,7 +38,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
   
  The `msxsl` prefix is bound to the `urn:schemas-microsoft-com:xslt` namespace URI. The style sheet must include the `xmlns:msxsl=urn:schemas-microsoft-com:xslt` namespace declaration.  
   
- The `language` attribute is optional. Its value is the code language of the embedded code block. The language is mapped to the appropriate CodeDOM compiler using the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A?displayProperty=fullName> method. The <xref:System.Xml.Xsl.XslCompiledTransform> class can support any Microsoft .NET language, assuming the appropriate provider is installed on the machine and is registered in the system.codedom section of the machine.config file. If a `language` attribute is not specified, the language defaults to JScript. The language name is not case-sensitive so 'JavaScript' and 'javascript' are equivalent.  
+ The `language` attribute is optional. Its value is the code language of the embedded code block. The language is mapped to the appropriate CodeDOM compiler using the <xref:System.CodeDom.Compiler.CodeDomProvider.CreateProvider%2A?displayProperty=nameWithType> method. The <xref:System.Xml.Xsl.XslCompiledTransform> class can support any Microsoft .NET language, assuming the appropriate provider is installed on the machine and is registered in the system.codedom section of the machine.config file. If a `language` attribute is not specified, the language defaults to JScript. The language name is not case-sensitive so 'JavaScript' and 'javascript' are equivalent.  
   
  The `implements-prefix` attribute is mandatory. This attribute is used to declare a namespace and associate it with the script block. The value of this attribute is the prefix that represents the namespace. This prefix can be defined somewhere in a style sheet.  
   
@@ -153,5 +154,5 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 ```  
   
 ## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)   
+ [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
  [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)

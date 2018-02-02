@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,6 +65,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationChanged">
@@ -89,6 +94,8 @@
         <summary>This event is raised whenever an application associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> has changed.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerApplication.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -115,6 +122,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerCollaboration.ContactManager" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="N:System.Security.Permissions" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -142,6 +152,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -220,6 +231,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -315,6 +329,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -459,6 +474,7 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetApplications">
@@ -506,6 +522,8 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
     <Member MemberName="GetApplications">
@@ -557,6 +575,9 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.Peer.Invite" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -584,6 +605,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.Equals" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerContact)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -614,6 +638,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.RegisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" />
       </Docs>
     </Member>
     <Member MemberName="GetObjects">
@@ -661,6 +688,8 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
       </Docs>
     </Member>
     <Member MemberName="GetObjects">
@@ -710,6 +739,8 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Invite">
@@ -727,6 +758,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Invite">
@@ -763,6 +797,9 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -808,6 +845,9 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -855,6 +895,9 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="Invite">
@@ -904,6 +947,8 @@
         <block subset="none" type="usage">
           <para>Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="Overload:System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <MemberGroup MemberName="InviteAsync">
@@ -926,6 +971,9 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
       </Docs>
     </MemberGroup>
     <Member MemberName="InviteAsync">
@@ -970,6 +1018,9 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -1017,6 +1068,10 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -1069,6 +1124,9 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="InviteAsync">
@@ -1122,6 +1180,9 @@
   
  Calling this method requires a <see cref="T:System.Security.Permissions.PermissionState" /> of <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />. This state is created when the peer collaboration session begins.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.InviteAsyncCancel(System.Object)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.Peer.OnInviteCompleted(System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" />
       </Docs>
     </Member>
     <Member MemberName="IsSubscribed">
@@ -1155,6 +1216,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
     <Member MemberName="Nickname">
@@ -1182,6 +1244,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
       </Docs>
     </Member>
     <Member MemberName="ObjectChanged">
@@ -1215,6 +1278,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.GetObjects(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Guid)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnApplicationChanged">
@@ -1248,6 +1314,8 @@
         <block subset="none" type="overrides">
           <para>In a derived class, be sure to call the base class implementation of this method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalApplicationChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnObjectChanged">
@@ -1269,6 +1337,11 @@
         <param name="objChangedArgs">Type of object change specified by <see cref="T:System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs" />.</param>
         <summary>Raises the <see cref="E:System.Net.PeerToPeer.Collaboration.PeerContact.ObjectChanged" /> event when a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> is added, updated or removed by a remote peer.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalSetObjects" />
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalObjectChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerObject.SynchronizingObject" />
       </Docs>
     </Member>
     <Member MemberName="OnPresenceChanged">
@@ -1297,6 +1370,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSubscribeCompleted">
@@ -1328,6 +1404,9 @@
         <block subset="none" type="overrides">
           <para>A derived class must call the base class implementation of this method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnApplicationChanged(System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnObjectChanged(System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoints">
@@ -1366,6 +1445,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
       </Docs>
     </Member>
     <Member MemberName="PeerName">
@@ -1393,6 +1474,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.NameChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="PresenceChanged">
@@ -1419,6 +1502,7 @@
         <summary>This event is raised whenever the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> has changed its presence status.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnPresenceChanged(System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Subscribe">
@@ -1451,6 +1535,9 @@
         <exception cref="T:System.InvalidOperationException">The calling peer is not signed in to People Near Me.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to complete <see cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe" /> operation. Failure may be due to an inability to establish a TCP connection to the peer.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Unsubscribe" />
       </Docs>
     </Member>
     <Member MemberName="SubscribeAllowed">
@@ -1473,7 +1560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed>means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
+ Setting this property to <xref:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed> means the remote peer specified by this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> can see the registered applications, objects and presence information for the user or application that owns the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> in which this <xref:System.Net.PeerToPeer.Collaboration.PeerContact> object resides.  
   
  This property has no effect on a <xref:System.Net.PeerToPeer.Collaboration.PeerContact> instance that represents the local or "Me" contact, since a contact is always subscribed to itself.  
   
@@ -1482,6 +1569,9 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />  
   
  object has been disposed.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" />
       </Docs>
     </Member>
     <Member MemberName="SubscribeAsync">
@@ -1517,6 +1607,9 @@
         <exception cref="T:System.InvalidOperationException">The calling peer is not signed in to People Near Me.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Duplicate <see cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAsync(System.Object)" /> identifier.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.Unsubscribe" />
       </Docs>
     </Member>
     <Member MemberName="SubscribeCompleted">
@@ -1544,6 +1637,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAsync(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1592,6 +1687,7 @@
         <returns>
           <see cref="T:System.String" /> representation of the <see cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.DisplayName" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.DisplayName" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -1617,6 +1713,9 @@
         <returns>An XML encoding of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to complete <see cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.ToXml" /> operation.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.FromXml(System.String)" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.ToString" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermission" />
       </Docs>
     </Member>
     <Member MemberName="Unsubscribe">
@@ -1645,7 +1744,22 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object has been disposed.</exception>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerContact.OnSubscribeCompleted(System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs)" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeAllowed" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.SubscriptionType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObjects">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the collection of peer objects from a local cache.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

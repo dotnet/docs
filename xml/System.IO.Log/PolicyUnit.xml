@@ -30,6 +30,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Log.LogPolicy" />
+    <altmember cref="T:System.IO.Log.PolicyUnitType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +66,8 @@
           <paramref name="value" /> or <paramref name="type" /> is not a valid value.</exception>
         <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <altmember cref="T:System.IO.Log.LogPolicy" />
+        <altmember cref="T:System.IO.Log.PolicyUnitType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -188,7 +192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for inequality. For both objects to not be equal, they must have different values for the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A>properties.  
+ Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for inequality. For both objects to not be equal, they must have different values for the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A> properties.  
   
  ]]></format>
         </remarks>

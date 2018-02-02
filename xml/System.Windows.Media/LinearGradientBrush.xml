@@ -37,6 +37,9 @@ A diagonal linear gradient with highlighted gradient stops
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.GradientStop" />
+    <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
+    <altmember cref="T:System.Windows.Media.GradientBrush" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -101,6 +104,7 @@ A diagonal linear gradient with highlighted gradient stops
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.GradientStop" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -241,7 +245,7 @@ A diagonal linear gradient with highlighted gradient stops
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -269,7 +273,7 @@ A diagonal linear gradient with highlighted gradient stops
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -335,6 +339,7 @@ A diagonal linear gradient
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="EndPointProperty">
@@ -395,6 +400,7 @@ A diagonal linear gradient
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.RadialGradientBrush" />
       </Docs>
     </Member>
     <Member MemberName="StartPointProperty">

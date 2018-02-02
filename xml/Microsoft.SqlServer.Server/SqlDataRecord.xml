@@ -47,7 +47,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SqlDataRecord (Microsoft.SqlServer.Server.SqlMetaData[] metaData);" />
+      <MemberSignature Language="C#" Value="public SqlDataRecord (params Microsoft.SqlServer.Server.SqlMetaData[] metaData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Server.SqlMetaData[] metaData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.#ctor(Microsoft.SqlServer.Server.SqlMetaData[])" />
       <MemberType>Constructor</MemberType>
@@ -1429,6 +1429,7 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
         <exception cref="T:System.InvalidCastException">There is a type mismatch.</exception>
+        <altmember cref="N:System.Data.SqlTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetSqlValues">
@@ -1473,6 +1474,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="values" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">There is a type mismatch.</exception>
+        <altmember cref="N:System.Data.SqlTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetSqlXml">
@@ -2945,7 +2947,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValues">
-      <MemberSignature Language="C#" Value="public virtual int SetValues (object[] values);" />
+      <MemberSignature Language="C#" Value="public virtual int SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlDataRecord.SetValues(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -3034,5 +3036,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="ordinal" /> is less than 0 or greater than the number of columns (that is, <see cref="P:Microsoft.SqlServer.Server.SqlDataRecord.FieldCount" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the common language runtime (CLR) type value for the column.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

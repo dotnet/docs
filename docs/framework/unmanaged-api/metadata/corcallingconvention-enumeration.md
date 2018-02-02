@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorCallingConvention"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorCallingConvention enumeration [.NET Framework metadata]"
 ms.assetid: 69156fbf-7219-43bf-b4b8-b13f1a2fcb86
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorCallingConvention Enumeration
 Contains values that describe the types of calling conventions that are made in managed code.  

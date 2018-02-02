@@ -261,5 +261,14 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

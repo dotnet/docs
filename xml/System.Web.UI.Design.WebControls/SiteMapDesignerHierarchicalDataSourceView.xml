@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides a design-time view of hierarchical data for the <see cref="T:System.Web.SiteMap" /> class.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.SiteMap" />
+    <altmember cref="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,7 +39,7 @@
     </Member>
     <Member MemberName="GetDesignTimeData">
       <MemberSignature Language="C#" Value="public override System.Web.UI.IHierarchicalEnumerable GetDesignTimeData (out bool isSampleData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData(bool isSampleData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData([out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

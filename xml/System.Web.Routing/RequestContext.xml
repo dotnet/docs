@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Web.Routing.RequestContext> class contains information about the HTTP request in the <xref:System.Web.Routing.RequestContext.HttpContext%2A> property. It contains information about the route that matched the current request in the <xref:System.Web.Routing.RequestContext.RouteData%2A> property.  
   
- When you construct a URL from a route, you pass an instance of the <xref:System.Web.Routing.RequestContext> class to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+ When you construct a URL from a route, you pass an instance of the <xref:System.Web.Routing.RequestContext> class to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
@@ -116,5 +116,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

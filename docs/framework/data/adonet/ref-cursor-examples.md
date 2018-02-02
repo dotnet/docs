@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40
 caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # REF CURSOR Examples
 The REF CURSOR examples are comprised of the following three Microsoft Visual Basic examples that demonstrate using REF CURSORs.  
@@ -86,5 +88,5 @@ END CURSPKG;
 ```  
   
 ## See Also  
- [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)   
+ [Oracle REF CURSORs](../../../../docs/framework/data/adonet/oracle-ref-cursors.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

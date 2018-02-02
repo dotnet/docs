@@ -31,16 +31,17 @@
 ## WPF Usage Notes  
  The following list references examples of WPF APIs where this attribute is applied:  
   
--   <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.DataTemplate.DataTemplateKey%2A?displayProperty=fullName>  
+-   <xref:System.Windows.DataTemplate.DataTemplateKey%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>  
   
  For more information about the WPF resource dictionary implications of <xref:System.Windows.Markup.DictionaryKeyPropertyAttribute>, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.ResourceDictionary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must inherit from this class to provide a class that includes a property that specifies the security-sensitive action to be performed. The <xref:System.Security.SecurityState> object that is instantiated from the derived class is passed to the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method to determine whether the host allows that action to be performed. The default implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method always returns `false`.  The method must be overridden to detect the actions that are allowed.  
+ You must inherit from this class to provide a class that includes a property that specifies the security-sensitive action to be performed. The <xref:System.Security.SecurityState> object that is instantiated from the derived class is passed to the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=nameWithType> method to determine whether the host allows that action to be performed. The default implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method always returns `false`.  The method must be overridden to detect the actions that are allowed.  
   
  For example, if you want to access a Web camera in your library code, you would create a `WebcamSecurityState` object and call the <xref:System.Security.SecurityState.EnsureState%2A> method to determine whether the host allows Web camera access, as shown in the following example.  (You can find the code for `WebcamSecurityState` in the "Example" section.)  
   
@@ -39,7 +39,7 @@ catch (ApplicationException e)
 }  
 ```  
   
- To process the call the <xref:System.AppDomainManager> must be made aware of `WebcamSecurityState` through an override of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method, as shown in the following example.  
+ To process the call the <xref:System.AppDomainManager> must be made aware of `WebcamSecurityState` through an override of the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=nameWithType> method, as shown in the following example.  
   
 ```  
 [SecurityCritical]  
@@ -192,7 +192,7 @@ public override void EnsureState()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.SecurityState.IsStateAvailable%2A> calls the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=fullName> method to determine whether the state that is represented by this class is available on the host.  
+ <xref:System.Security.SecurityState.IsStateAvailable%2A> calls the <xref:System.AppDomainManager.CheckSecuritySettings%2A?displayProperty=nameWithType> method to determine whether the state that is represented by this class is available on the host.  
   
  See the <xref:System.Security.SecurityState> class for an example implementation of the <xref:System.AppDomainManager.CheckSecuritySettings%2A> method.  
   

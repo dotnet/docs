@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=nameWithType> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
  This provider passes events to the <xref:System.Diagnostics.Trace> object. It passes events that derive from the <xref:System.Web.Management.WebBaseErrorEvent> class as trace errors and passes all other events as trace information.  
   
@@ -70,6 +70,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebEventProvider" />
+    <altmember cref="T:System.Web.Configuration.HealthMonitoringSection" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName="Flush">

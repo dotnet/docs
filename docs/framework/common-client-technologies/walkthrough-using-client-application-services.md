@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application services host [client application services]"
   - "client application services, walkthroughs"
@@ -17,6 +20,8 @@ caps.latest.revision: 47
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Using Client Application Services
 This topic describes how to create a Windows application that uses client application services to authenticate users and retrieve user roles and settings.  
@@ -183,7 +188,7 @@ This topic describes how to create a Windows application that uses client applic
     |**User Name**|`manager`|  
     |**Password**|`manager!`|  
     |**Confirm Password**|`manager!`|  
-    |**E-mail**|`manager@contoso.com`|  
+    |**Email**|`manager@contoso.com`|  
     |**Security Question**|`manager`|  
     |**Security Answer**|`manager`|  
   
@@ -192,7 +197,7 @@ This topic describes how to create a Windows application that uses client applic
      A success message appears.  
   
     > [!NOTE]
-    >  The **E-mail**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.  
+    >  The **Email**, **Security Question**, and **Security Answer** values are required by the form, but are not used in this example.  
   
 13. Click **Continue**.  
   
@@ -205,7 +210,7 @@ This topic describes how to create a Windows application that uses client applic
     |**User Name**|`employee`|  
     |**Password**|`employee!`|  
     |**Confirm Password**|`employee!`|  
-    |**E-mail**|`employee@contoso.com`|  
+    |**Email**|`employee@contoso.com`|  
     |**Security Question**|`Employee`|  
     |**Security Answer**|`employee`|  
   
@@ -249,7 +254,7 @@ This topic describes how to create a Windows application that uses client applic
   
 4.  In **Solution Explorer**, double-click Form1 to display the designer.  
   
-5.  In the designer, double-click the form surface to generate a <xref:System.Windows.Forms.Form.Load?displayProperty=fullName> event handler named `Form1_Load`.  
+5.  In the designer, double-click the form surface to generate a <xref:System.Windows.Forms.Form.Load?displayProperty=nameWithType> event handler named `Form1_Load`.  
   
      The code editor appears with the cursor in the `Form1_Load` method.  
   
@@ -257,7 +262,7 @@ This topic describes how to create a Windows application that uses client applic
   
      This code denies access to unauthenticated users by exiting the application. Alternatively, you could allow unauthenticated users access to the form, but deny access to specific functionality. Normally, you will not hard-code the user name and password like this, but it is useful for testing purposes. In the next section, you will replace this code with more robust code that displays a login dialog box and includes exception handling.  
   
-     Note that the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method is in the [!INCLUDE[dnprdnext](../../../includes/dnprdnext-md.md)]. This method delegates its work to the configured authentication provider, and returns `true` if authentication is successful. Your application does not require a direct reference to the client authentication provider.  
+     Note that the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method is in the [!INCLUDE[dnprdnext](../../../includes/dnprdnext-md.md)]. This method delegates its work to the configured authentication provider, and returns `true` if authentication is successful. Your application does not require a direct reference to the client authentication provider.  
   
      [!code-csharp[ClientApplicationServices#300](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#300)]
      [!code-vb[ClientApplicationServices#300](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#300)]  
@@ -295,7 +300,7 @@ This topic describes how to create a Windows application that uses client applic
   
 4.  Add the following method after the `Form1_Load` method.  
   
-     This method passes empty strings to the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which causes the Login dialog box to appear. If the authentication service is unavailable, the <xref:System.Web.Security.Membership.ValidateUser%2A> method will throw a <xref:System.Net.WebException>. In this case, the `ValidateUsingCredentialsProvider` method displays a warning message and asks if the user wants to try again in offline mode. This functionality requires the **Save password hash locally to enable offline login** feature described in [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md). This feature is enabled by default for new projects.  
+     This method passes empty strings to the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=nameWithType> method, which causes the Login dialog box to appear. If the authentication service is unavailable, the <xref:System.Web.Security.Membership.ValidateUser%2A> method will throw a <xref:System.Net.WebException>. In this case, the `ValidateUsingCredentialsProvider` method displays a warning message and asks if the user wants to try again in offline mode. This functionality requires the **Save password hash locally to enable offline login** feature described in [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md). This feature is enabled by default for new projects.  
   
      If the user is not validated, the `ValidateUsingCredentialsProvider` method displays an error message and exits the application. Finally, this method returns the result of the authentication attempt.  
   
@@ -382,17 +387,17 @@ This topic describes how to create a Windows application that uses client applic
   
 5.  Add the following method to the end of the Form1 class.  
   
-     This method calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly.  
+     This method calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly.  
   
      If the user is in the "manager" role, the `DisplayButtonForManagerRole` method sets the <xref:System.Windows.Forms.Control.Visible%2A> property of the `managerOnlyButton` to `true`. This method also displays an error message if a <xref:System.Net.WebException> is thrown, which indicates that the roles service is unavailable.  
   
     > [!NOTE]
-    >  The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication, as shown in the example code for this walkthrough. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=fullName> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+    >  The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A> method will always return `false` if the user login has expired. This will not occur if your application calls the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method one time shortly after authentication, as shown in the example code for this walkthrough. If your application must retrieve user roles at other times, you might want to add code to revalidate users whose login has expired. If all valid users are assigned to roles, you can determine whether the login has expired by calling the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A?displayProperty=nameWithType> method. If no roles are returned, the login has expired. For an example of this functionality, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method. This functionality is only necessary if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
      [!code-csharp[ClientApplicationServices#030](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#030)]
      [!code-vb[ClientApplicationServices#030](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#030)]  
   
- If authentication is successful, the client authentication provider sets the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to an instance of the <xref:System.Web.ClientServices.ClientRolePrincipal> class. This class implements the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method so that the work is delegated to the configured role provider. As before, your application code does not require a direct reference to the service provider.  
+ If authentication is successful, the client authentication provider sets the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to an instance of the <xref:System.Web.ClientServices.ClientRolePrincipal> class. This class implements the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method so that the work is delegated to the configured role provider. As before, your application code does not require a direct reference to the service provider.  
   
  You can now run the application and log in as employee to see that the button does not appear, and then log in as manager to see the button.  
   
@@ -447,7 +452,7 @@ This topic describes how to create a Windows application that uses client applic
   
 12. Replace the generated method with the following code.  
   
-     The <xref:System.Windows.Forms.Form.FormClosing> event handler calls the `SaveSettings` method, which is also used by the logout functionality that you will add in the next section. The `SaveSettings` method first confirms that the user has not logged out. It does this by checking the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A> property of the <xref:System.Security.Principal.IIdentity> returned by the current principal. The current principal is retrieved through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A> property. If the user has been authenticated for client application services, the authentication type will be "ClientForms". The `SaveSettings` method cannot just check the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=fullName> property because the user might have a valid Windows identity after logout.  
+     The <xref:System.Windows.Forms.Form.FormClosing> event handler calls the `SaveSettings` method, which is also used by the logout functionality that you will add in the next section. The `SaveSettings` method first confirms that the user has not logged out. It does this by checking the <xref:System.Security.Principal.IIdentity.AuthenticationType%2A> property of the <xref:System.Security.Principal.IIdentity> returned by the current principal. The current principal is retrieved through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A> property. If the user has been authenticated for client application services, the authentication type will be "ClientForms". The `SaveSettings` method cannot just check the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A?displayProperty=nameWithType> property because the user might have a valid Windows identity after logout.  
   
      If the user has not logged out, the `SaveSettings` method calls the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method of the `Settings` class generated earlier in this procedure. This method can throw a <xref:System.Net.WebException> if the authentication cookie has expired. This occurs only if you have selected **Require users to log on again whenever the server cookie expires** in your application configuration. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md). The `SaveSettings` method handles cookie expiration by calling <xref:System.Web.Security.Membership.ValidateUser%2A> to display the login dialog box. If the user logs in successfully, the `SaveSettings` method tries to save the settings again by calling itself.  
   
@@ -458,7 +463,7 @@ This topic describes how to create a Windows application that uses client applic
   
 13. Add the following method to the end of the Form1 class.  
   
-     This code handles the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved?displayProperty=fullName> event and displays a warning if any of the settings could not be saved. The <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved> event does not occur if the settings service is unavailable or if the authentication cookie has expired. One example of when the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved> event will occur is if the user has already logged out. You can test this event handler by adding logout code to the `SaveSettings` method directly before the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method call. Logout code that you can use is described in the next section.  
+     This code handles the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved?displayProperty=nameWithType> event and displays a warning if any of the settings could not be saved. The <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved> event does not occur if the settings service is unavailable or if the authentication cookie has expired. One example of when the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider.SettingsSaved> event will occur is if the user has already logged out. You can test this event handler by adding logout code to the `SaveSettings` method directly before the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method call. Logout code that you can use is described in the next section.  
   
      [!code-csharp[ClientApplicationServices#090](../../../samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#090)]
      [!code-vb[ClientApplicationServices#090](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#090)]  
@@ -484,7 +489,7 @@ This topic describes how to create a Windows application that uses client applic
   
 4.  Replace the generated `logoutButton_Click` method with the following code.  
   
-     This event handler first calls the `SaveSettings` method that you added in the previous section. Then, the event handler calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A?displayProperty=fullName> method. If the authentication service is unavailable, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A> method will throw a <xref:System.Net.WebException>. In this case, the `logoutButton_Click` method displays a warning message and switches temporarily to offline mode to log the user out. Offline mode is described in the next section.  
+     This event handler first calls the `SaveSettings` method that you added in the previous section. Then, the event handler calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A?displayProperty=nameWithType> method. If the authentication service is unavailable, the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A> method will throw a <xref:System.Net.WebException>. In this case, the `logoutButton_Click` method displays a warning message and switches temporarily to offline mode to log the user out. Offline mode is described in the next section.  
   
      Logout deletes the local authentication cookie so that login will be required when the application is restarted. After logout, the event handler restarts the application. When the application restarts, it displays the welcome message followed by the login dialog box. The welcome message makes it clear that the application has restarted. This prevents potential confusion if the user must log in to save settings, and then must log in again because the application has restarted.  
   
@@ -494,7 +499,7 @@ This topic describes how to create a Windows application that uses client applic
  To test the logout functionality, run the application and select **Remember me** on the Login dialog box. Next, close and restart the application to confirm that you no longer have to log in. Finally, restart the application by clicking Log out.  
   
 ## Enabling Offline Mode  
- In the following procedure, you add a check box to the form to enable the user to enter offline mode. Your application indicates offline mode by setting the `static` <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A?displayProperty=fullName> property to `true`. The offline status is stored on the local hard disk at the location indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=fullName> property. This means that the offline status is stored on a per-user, per-application basis.  
+ In the following procedure, you add a check box to the form to enable the user to enter offline mode. Your application indicates offline mode by setting the `static` <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A?displayProperty=nameWithType> property to `true`. The offline status is stored on the local hard disk at the location indicated by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> property. This means that the offline status is stored on a per-user, per-application basis.  
   
  In offline mode, all client application service requests retrieve data from the local cache instead of trying to access the services. In the default configuration, the local data includes an encrypted form of the user's password. This enables the user to log in while the application is in offline mode. For more information, see [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
@@ -512,7 +517,7 @@ This topic describes how to create a Windows application that uses client applic
   
 6.  Replace the generated method with the following code.  
   
-     This code updates the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> value and silently revalidates the user when they return to online mode. The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A?displayProperty=fullName> method uses the cached credentials so that the user does not have to explicitly log in. If the authentication service is unavailable, a warning message appears and the application stays offline.  
+     This code updates the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> value and silently revalidates the user when they return to online mode. The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A?displayProperty=nameWithType> method uses the cached credentials so that the user does not have to explicitly log in. If the authentication service is unavailable, a warning message appears and the application stays offline.  
   
     > [!NOTE]
     >  The <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A> method is for convenience only. Because it does not have a return value, it cannot indicate whether revalidation has failed. Revalidation can fail, for example, if the user credentials have changed on the server. In this case, you might want to include code that explicitly validates users after a service call fails. For more information, see the Accessing Web Settings section earlier in this walkthrough.  
@@ -538,9 +543,9 @@ This topic describes how to create a Windows application that uses client applic
  To increase the security of your application, make sure to thoroughly test the application and server before deployment.  
   
 ## See Also  
- [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
- [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
- [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)   
- [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)   
- [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)   
+ [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
+ [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)  
+ [How to: Configure Client Application Services](../../../docs/framework/common-client-technologies/how-to-configure-client-application-services.md)  
+ [ASP.NET Web Site Administration Tool](http://msdn.microsoft.com/library/100ddd8b-7d11-4df9-91ef-0bbbe92e5aec)  
+ [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)  
  [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb)

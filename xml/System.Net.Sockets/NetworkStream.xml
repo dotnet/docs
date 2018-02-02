@@ -47,6 +47,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Sockets.TcpClient" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -101,6 +102,7 @@
  -or-  
   
  The <paramref name="socket" /> parameter is in a nonblocking state.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,6 +159,7 @@
  -or-  
   
  the <paramref name="socket" /> parameter is in a nonblocking state.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -214,6 +217,12 @@
  -or-  
   
  the <paramref name="socket" /> parameter is in a nonblocking state.</exception>
+        <altmember cref="T:System.IO.FileAccess" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanRead" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanWrite" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -273,6 +282,12 @@
  -or-  
   
  The <paramref name="socket" /> parameter is in a nonblocking state.</exception>
+        <altmember cref="T:System.IO.FileAccess" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanRead" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanWrite" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Write(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="BeginRead">
@@ -363,6 +378,7 @@
   
  An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.NetworkStream" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.EndRead(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
@@ -451,6 +467,7 @@
   
  An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.NetworkStream" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.EndWrite(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -496,6 +513,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.NetworkStream.Readable" />
+        <altmember cref="T:System.IO.FileAccess" />
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -606,6 +625,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.NetworkStream.Writeable" />
+        <altmember cref="T:System.IO.FileAccess" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -694,6 +715,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.NetworkStream" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">The underlying <see cref="T:System.Net.Sockets.Socket" /> is closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">Use the <see cref="P:System.Net.Sockets.SocketException.ErrorCode" /> property to obtain the specific error code, and refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -739,7 +761,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -806,6 +828,7 @@
   
  An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.NetworkStream" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
@@ -872,6 +895,7 @@
   
  An error occurred when accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.NetworkStream" /> is closed.</exception>
+        <altmember cref="M:System.Net.Sockets.NetworkStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -903,9 +927,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=fullName>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method.  
+ This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
- For more information about using the Finalize method, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information about using the Finalize method, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -940,7 +964,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.NetworkStream.Flush%2A> method implements the <xref:System.IO.Stream.Flush%2A?displayProperty=fullName> method; however, because <xref:System.Net.Sockets.NetworkStream> is not buffered, it has no affect on network streams. Calling the <xref:System.Net.Sockets.NetworkStream.Flush%2A> method does not throw an exception.  
+ The <xref:System.Net.Sockets.NetworkStream.Flush%2A> method implements the <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType> method; however, because <xref:System.Net.Sockets.NetworkStream> is not buffered, it has no affect on network streams. Calling the <xref:System.Net.Sockets.NetworkStream.Flush%2A> method does not throw an exception.  
   
  ]]></format>
         </remarks>
@@ -1047,7 +1071,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int size);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 size) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.NetworkStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1125,6 +1149,9 @@
  -or-  
   
  There is a failure reading from the network.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.DataAvailable" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanRead" />
       </Docs>
     </Member>
     <Member MemberName="Readable">
@@ -1171,6 +1198,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanRead" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanWrite" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.Writeable" />
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -1397,7 +1427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.NetworkStream.Write%2A> method starts at the specified `offset` and sends `size` bytes from the contents of `buffer` to the network. The <xref:System.Net.Sockets.NetworkStream.Write%2A> method blocks until the requested number of bytes is sent or a <xref:System.Net.Sockets.SocketException> is thrown. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code, and refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ The <xref:System.Net.Sockets.NetworkStream.Write%2A> method starts at the specified `offset` and sends `size` bytes from the contents of `buffer` to the network. The <xref:System.Net.Sockets.NetworkStream.Write%2A> method blocks until the requested number of bytes is sent or a <xref:System.Net.Sockets.SocketException> is thrown. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code, and refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
 >  Check to see if the <xref:System.Net.Sockets.NetworkStream> is writable by accessing the <xref:System.Net.Sockets.NetworkStream.CanWrite%2A> property. If you attempt to write to a <xref:System.Net.Sockets.NetworkStream> that is not writable, you will get an <xref:System.IO.IOException>. If you receive an <xref:System.IO.IOException>, check the <xref:System.Exception.InnerException%2A> property to determine if it was caused by a <xref:System.Net.Sockets.SocketException>.  
@@ -1437,6 +1467,8 @@
  -or-  
   
  There was a failure reading from the network.</exception>
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanWrite" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.Writeable" />
       </Docs>
     </Member>
     <Member MemberName="Writeable">
@@ -1483,6 +1515,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.NetworkStream.CanWrite" />
+        <altmember cref="P:System.Net.Sockets.NetworkStream.Readable" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1561,5 +1595,15 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is less than or equal to zero and is not <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Sockets.NetworkStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

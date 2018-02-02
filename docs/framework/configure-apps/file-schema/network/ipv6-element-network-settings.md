@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/ipv6"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#ipv6"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<ipv6> element"
   - "ipv6 element"
@@ -25,6 +20,8 @@ caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;ipv6&gt; Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  
@@ -37,9 +34,9 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```xml  
-      <ipv6  
+<ipv6  
   enabled="true|false"  
-/ipv6>  
+/>  
 ```  
   
 ## Attributes and Elements  
@@ -61,7 +58,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 |[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
- This setting enables IPv6 support for the obsolete members of the <xref:System.Net.Dns> class: <xref:System.Net.Dns.BeginGetHostByName%2A>, <xref:System.Net.Dns.BeginResolve%2A>, <xref:System.Net.Dns.EndGetHostByName%2A>, <xref:System.Net.Dns.EndResolve%2A>, <xref:System.Net.Dns.GetHostByAddress%2A>, <xref:System.Net.Dns.GetHostByName%2A>, and <xref:System.Net.Dns.Resolve%2A>. For other members of the <xref:System.Net?displayProperty=fullName> namespace, IPv6 addresses may be returned if IPv6 is enabled in the operating system.  
+ This setting enables IPv6 support for the obsolete members of the <xref:System.Net.Dns> class: <xref:System.Net.Dns.BeginGetHostByName%2A>, <xref:System.Net.Dns.BeginResolve%2A>, <xref:System.Net.Dns.EndGetHostByName%2A>, <xref:System.Net.Dns.EndResolve%2A>, <xref:System.Net.Dns.GetHostByAddress%2A>, <xref:System.Net.Dns.GetHostByName%2A>, and <xref:System.Net.Dns.Resolve%2A>. For other members of the <xref:System.Net?displayProperty=nameWithType> namespace, IPv6 addresses may be returned if IPv6 is enabled in the operating system.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -80,7 +77,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ```  
   
 ## See Also  
- <xref:System.Net?displayProperty=fullName>   
- <xref:System.Net.Dns?displayProperty=fullName>   
- <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=fullName>   
+ <xref:System.Net?displayProperty=nameWithType>  
+ <xref:System.Net.Dns?displayProperty=nameWithType>  
+ <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

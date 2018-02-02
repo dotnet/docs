@@ -325,7 +325,7 @@ Ribbon gallery in a combo box
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=fullName> property.  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A?displayProperty=nameWithType> property.  
   
 <a name="dependencyPropertyInfo_CategoryStyle"></a>   
 ## Dependency Property Information  
@@ -380,7 +380,7 @@ Ribbon gallery in a combo box
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=fullName> property.  
+ If this property value is not `null`, it overrides the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A?displayProperty=nameWithType> property.  
   
 <a name="dependencyPropertyInfo_CategoryTemplate"></a>   
 ## Dependency Property Information  
@@ -473,6 +473,8 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MaxColumnCount" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.MinColumnCount" />
       </Docs>
     </Member>
     <Member MemberName="ColumnsStretchToFillProperty">
@@ -824,7 +826,7 @@ Ribbon gallery in a combo box
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the<xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
+ You use the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property to specify the visualization of the content. If you have more than one template defined and want to specify logic that selects a template to use, then you use this property. This property is ignored if the <xref:System.Windows.Controls.Ribbon.RibbonGallery.FilterItemTemplate%2A> property is set.  
   
 <a name="dependencyPropertyInfo_FilterItemTemplateSelector"></a>   
 ## Dependency Property Information  
@@ -1492,6 +1494,7 @@ Ribbon gallery in a combo box
         <param name="e">The event data.</param>
         <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.OnInitialized(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnIsKeyboardFocusWithinChanged">
@@ -1899,6 +1902,8 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemProperty">
@@ -1948,6 +1953,8 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValuePath" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePath">
@@ -1985,6 +1992,8 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedValue" />
+        <altmember cref="P:System.Windows.Controls.Ribbon.RibbonGallery.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValuePathProperty">
@@ -2159,7 +2168,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipDescription"></a>   
 ## Dependency Property Information  
@@ -2171,6 +2180,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipDescriptionProperty">
@@ -2211,7 +2221,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterDescription"></a>   
 ## Dependency Property Information  
@@ -2223,6 +2233,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterDescriptionProperty">
@@ -2263,7 +2274,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterImageSource"></a>   
 ## Dependency Property Information  
@@ -2275,6 +2286,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterImageSourceProperty">
@@ -2315,7 +2327,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipFooterTitle"></a>   
 ## Dependency Property Information  
@@ -2327,6 +2339,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipFooterTitleProperty">
@@ -2367,7 +2380,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipImageSource"></a>   
 ## Dependency Property Information  
@@ -2379,6 +2392,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipImageSourceProperty">
@@ -2419,7 +2433,7 @@ Ribbon gallery in a combo box
 ## Remarks  
   
 > [!WARNING]
->  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=fullName> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
+>  Each ribbon control inherits a <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property. If the <xref:System.Windows.FrameworkElement.ToolTip%2A?displayProperty=nameWithType> property is set, the ribbon’s enhanced ToolTip will not be shown; the standard ToolTip will be shown instead.  
   
 <a name="dependencyPropertyInfo_ToolTipTitle"></a>   
 ## Dependency Property Information  
@@ -2431,6 +2445,7 @@ Ribbon gallery in a combo box
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Ribbon.RibbonToolTip" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipTitleProperty">

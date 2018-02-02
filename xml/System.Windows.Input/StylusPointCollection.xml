@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following example overrides the <xref:System.Windows.Ink.Stroke.DrawCore%2A?displayProperty=fullName> method to draw a circle at each <xref:System.Windows.Input.StylusPoint> comprising a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property returns the stylus points.  
+ The following example overrides the <xref:System.Windows.Ink.Stroke.DrawCore%2A?displayProperty=nameWithType> method to draw a circle at each <xref:System.Windows.Input.StylusPoint> comprising a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property returns the stylus points.  
   
  [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
  [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
@@ -435,10 +435,18 @@
         <Parameter Name="stylusPoints" Type="System.Windows.Input.StylusPointCollection" />
       </Parameters>
       <Docs>
-        <param name="stylusPoints">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stylusPoints">The stylus point collection to convert to a point array.</param>
+        <summary>Converts a <see cref="T:System.Windows.Input.StylusPointCollection" /> into a point array.</summary>
+        <returns>A point array that contains points that correspond to each <see cref="T:System.Windows.Input.StylusPoint" /> in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[## Examples  
+ The following example demonstrates how to erase the strokes that are surrounded by a lasso. The example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#2)]
+ [!code-vb[StrokeCollectionMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reformat">
@@ -552,5 +560,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class provides the exception handler for the <xref:System.AppDomain.FirstChanceException?displayProperty=fullName> event with access to the exception.  
+ This class provides the exception handler for the <xref:System.AppDomain.FirstChanceException?displayProperty=nameWithType> event with access to the exception.  
   
    
   
@@ -46,6 +46,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.AppDomain.FirstChanceException" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method that handles the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event can examine the exception and perform appropriate logging or other notification services.  
+ The method that handles the <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> event can examine the exception and perform appropriate logging or other notification services.  
   
  For example code, see <xref:System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs>.  
   

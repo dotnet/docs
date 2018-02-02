@@ -82,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Maximum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Minimum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Step" />
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">
@@ -109,6 +112,7 @@
         <value>
           <see langword="true" /> if drag-and-drop operations are allowed in the control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AllowDrop" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -309,6 +313,7 @@
       <Docs>
         <summary>Creates a handle for the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -346,6 +351,7 @@
         <summary>Gets the default Input Method Editor (IME) mode supported by the control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.ImeMode" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultImeMode" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -494,6 +500,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Font" />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -617,6 +624,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ProgressBar.Style" /> property is set to <see cref="F:System.Windows.Forms.ProgressBarStyle.Marquee" /></exception>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Maximum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Minimum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Value" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Step" />
+        <altmember cref="M:System.Windows.Forms.ProgressBar.PerformStep" />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -823,6 +835,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Minimum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Value" />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -866,6 +880,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified for the property is less than 0.</exception>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Maximum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Value" />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1193,6 +1209,11 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.ProgressBar.Style" /> is set to <see cref="F:System.Windows.Forms.ProgressBarStyle.Marquee" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Maximum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Minimum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Step" />
+        <altmember cref="M:System.Windows.Forms.ProgressBar.PerformStep" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Value" />
       </Docs>
     </Member>
     <Member MemberName="ResetForeColor">
@@ -1282,7 +1303,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ProgressBar> named `ProgressBar1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ProgressBar.RightToLeftLayoutChanged> event.  
   
@@ -1330,6 +1351,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ProgressBar.PerformStep" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Value" />
+        <altmember cref="M:System.Windows.Forms.ProgressBar.Increment(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1447,6 +1471,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -1545,6 +1570,8 @@
  -or-  
   
  The value specified is less than the value of the <see cref="P:System.Windows.Forms.ProgressBar.Minimum" /> property.</exception>
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Maximum" />
+        <altmember cref="P:System.Windows.Forms.ProgressBar.Minimum" />
       </Docs>
     </Member>
   </Members>

@@ -35,16 +35,16 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.HtmlControls.HtmlForm.Enctype%2A> property of an <xref:System.Web.UI.HtmlControls.HtmlForm> control must be set to "multipart/form-data" for this control to work properly.  
   
- The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control does not have a built-in way to post back to the server. To upload the file to the server, use the <xref:System.Web.HttpPostedFile.SaveAs%2A> method of the <xref:System.Web.HttpPostedFile?displayProperty=fullName> object contained in the <xref:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile%2A> property. This operation is usually done in an event-handling method, such as for a button click.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control does not have a built-in way to post back to the server. To upload the file to the server, use the <xref:System.Web.HttpPostedFile.SaveAs%2A> method of the <xref:System.Web.HttpPostedFile?displayProperty=nameWithType> object contained in the <xref:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile%2A> property. This operation is usually done in an event-handling method, such as for a button click.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.HttpPostedFile.SaveAs%2A> method of the <xref:System.Web.HttpPostedFile> class, make sure to specify a rooted path (for example, "C:\MyFiles\Test.txt"). The behavior of the <xref:System.Web.HttpPostedFile.SaveAs%2A> method can be specified in the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) configuration section with the `requireRootedSaveAsPath` attribute. The default value of this attribute is `true`. If you set this attribute to `false`, then using the <xref:System.Web.HttpPostedFile.SaveAs%2A> method with no path specified will attempt to place the file in the `systemroot` \system32\inetsrv directory. By default, this directory is write-protected; therefore, the file can not be saved there. Make sure to provide write permission for the account used by ASP.NET for the directory where you want to store the file.  
+>  When you use the <xref:System.Web.HttpPostedFile.SaveAs%2A> method of the <xref:System.Web.HttpPostedFile> class, make sure to specify a rooted path (for example, "C:\MyFiles\Test.txt"). The behavior of the <xref:System.Web.HttpPostedFile.SaveAs%2A> method can be specified in the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) configuration section with the `requireRootedSaveAsPath` attribute. The default value of this attribute is `true`. If you set this attribute to `false`, then using the <xref:System.Web.HttpPostedFile.SaveAs%2A> method with no path specified will attempt to place the file in the `systemroot` \system32\inetsrv directory. By default, this directory is write-protected; therefore, the file can not be saved there. Make sure to provide write permission for the account used by ASP.NET for the directory where you want to store the file.  
   
- When uploading large files, use the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element to increase the maximum allowable file size. A DNS error is generated in the browser when the file exceeds the specified size. You might also receive the following error message when uploading large files:  
+ When uploading large files, use the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element to increase the maximum allowable file size. A DNS error is generated in the browser when the file exceeds the specified size. You might also receive the following error message when uploading large files:  
   
  aspnet_wp.exe (PID: 1520) was recycled because memory consumption exceeded 460 MB (60 percent of available RAM).  
   
- If you encounter this error message, increase the value of the `memoryLimit` attribute in the [processModel Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b8fe20e-74c8-4566-b72c-ce5f83c8e32d) element of the Machine.config file.  
+ If you encounter this error message, increase the value of the `memoryLimit` attribute in the [processModel Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b8fe20e-74c8-4566-b72c-ce5f83c8e32d) element of the Machine.config file.  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputFile>, see the <xref:System.Web.UI.HtmlControls.HtmlInputFile.%23ctor%2A> constructor.  
   
@@ -53,11 +53,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control to create a simple file upload scenario. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.HttpPostedFile" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,8 +93,8 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> class. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputFileCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileCtor/CS/htmlinputfilectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputFileCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileCtor/VB/htmlinputfilectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputFileCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileCtor/CS/htmlinputfilectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputFileCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileCtor/VB/htmlinputfilectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -133,8 +137,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Accept%2A> property to restrict the user from selecting any file other than an image file. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C. Because support for the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Accept%2A> property is browser-dependent, a server-side check is performed to ensure that only images are uploaded. An exception is thrown if the uploaded file can not be read as an <xref:System.Drawing.Image> type.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.Accept Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Accept Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -165,12 +169,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control implements the <xref:System.Web.UI.IPostBackDataHandler> interface, which has two methods: <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> and <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName>. The <xref:System.Web.UI.HtmlControls.HtmlInputFile.LoadPostData%2A> method is called by the <xref:System.Web.UI.HtmlControls.HtmlInputFile.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method and always returns `false`, indicating that the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control's state is not managed by the ASP.NET page framework.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control implements the <xref:System.Web.UI.IPostBackDataHandler> interface, which has two methods: <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> and <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=nameWithType>. The <xref:System.Web.UI.HtmlControls.HtmlInputFile.LoadPostData%2A> method is called by the <xref:System.Web.UI.HtmlControls.HtmlInputFile.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method and always returns `false`, indicating that the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control's state is not managed by the ASP.NET page framework.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlInputFile.LoadPostData%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputFile.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -207,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputFile.Size" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -238,14 +245,18 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputFile.OnPreRender%2A> method so that a `Title` attribute is always added to each custom <xref:System.Web.UI.HtmlControls.HtmlInputFile> control. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputFileOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputFileOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/CS/custom_htmlinputfile_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputFileOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputFileOnPreRender/VB/custom_htmlinputfile_onprerender.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlForm" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="PostedFile">
@@ -282,11 +293,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile%2A> property to initiate the utility that transfers the file to the server. Note that if the size of the uploaded file in bytes exceeds the value of the <xref:System.Web.HttpPostedFile.ContentLength%2A> property, the file is not uploaded. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.PostedFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.PostedFile Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpPostedFile" />
+        <altmember cref="P:System.Web.HttpPostedFile.ContentLength" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -308,12 +321,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control implements the <xref:System.Web.UI.IPostBackDataHandler> interface, which has two methods: <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> and <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName>. The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName> method does not participate in the processing of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control and is included to complete the interface implementation.  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputFile> control implements the <xref:System.Web.UI.IPostBackDataHandler> interface, which has two methods: <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> and <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=nameWithType>. The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method does not participate in the processing of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control and is included to complete the interface implementation.  
   
  The <xref:System.Web.UI.HtmlControls.HtmlInputFile.RaisePostDataChangedEvent%2A> method is used primarily by control developers to extend the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputFile> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputFile.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputFile.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -350,8 +366,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Size%2A> property to specify the width of the text box in which the user enters the file path. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputFile.Size Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputFile.Size Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic HtmlInputFile.Size Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic HtmlInputFile.Size Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputFile.Size Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -387,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -412,6 +429,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -441,19 +459,22 @@
  The <xref:System.Web.UI.HtmlControls.HtmlInputFile.Value%2A> property retrieves the full path of the file on the client's computer (for example "C:\MyFiles\Test.txt"). This is useful when you need to know where the file is stored on the computer submitting the file. This property is also commonly used to determine the original file name. To get the original file name, parse the value of this property.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlInputFile.Value%2A> property is read-only. If you attempt to assign a value to this property, a <xref:System.NotSupportedException?displayProperty=fullName> is thrown.  
+>  The <xref:System.Web.UI.HtmlControls.HtmlInputFile.Value%2A> property is read-only. If you attempt to assign a value to this property, a <xref:System.NotSupportedException?displayProperty=nameWithType> is thrown.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputFile.Value%2A> property to display the full path of the file on the client's computer. For this example to work properly, you need to create a directory called `Temp` on your computer's drive C.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputFileValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileValue/CS/htmlinputfilevaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputFileValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileValue/VB/htmlinputfilevaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputFileValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputFileValue/CS/htmlinputfilevaluecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputFileValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputFileValue/VB/htmlinputfilevaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputControl.Value" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputFile.PostedFile" />
+        <altmember cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
   </Members>

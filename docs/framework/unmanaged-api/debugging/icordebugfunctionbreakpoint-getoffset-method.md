@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunctionBreakpoint::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunctionBreakpoint::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugFunctionBreakpoint interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunctionBreakpoint::GetOffset Method
 Gets the offset of the breakpoint within the function.  

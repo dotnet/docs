@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "attached properties [WPF Designer]"
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
@@ -16,6 +19,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Attached Properties Overview
 An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any object. In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".  
@@ -27,13 +32,13 @@ An attached property is a concept defined by XAML. An attached property is inten
   
 <a name="attached_properties_usage"></a>   
 ## Why Use Attached Properties  
- One purpose of an attached property is to allow different child elements to specify unique values for a property that is actually defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel>, rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.  
+ One purpose of an attached property is to allow different child elements to specify unique values for a property that is actually defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel>, rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.  
   
 <a name="attached_properties_xaml"></a>   
 ## Attached Properties in XAML  
  In XAML, you set attached properties by using the syntax *AttachedPropertyProvider*.*PropertyName*  
   
- The following is an example of how you can set <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> in XAML:  
+ The following is an example of how you can set <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> in XAML:  
   
  [!code-xaml[PropertiesOvwSupport#APBasicUsage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]  
   
@@ -57,7 +62,7 @@ An attached property is a concept defined by XAML. An attached property is inten
 ### An Example of a Parent-Defined Attached Property  
  The most typical scenario where [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] defines an attached property is when a parent element supports a child element collection, and also implements a behavior where the specifics of the behavior are reported individually for each child element.  
   
- <xref:System.Windows.Controls.DockPanel> defines the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property, and <xref:System.Windows.Controls.DockPanel> has class-level code as part of its rendering logic (specifically, <xref:System.Windows.Controls.DockPanel.MeasureOverride%2A> and <xref:System.Windows.Controls.DockPanel.ArrangeOverride%2A>). A <xref:System.Windows.Controls.DockPanel> instance will always check to see whether any of its immediate child elements have set a value for <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName>. If so, those values become input for the rendering logic applied to that particular child element. Nested <xref:System.Windows.Controls.DockPanel> instances each treat their own immediate child element collections, but that behavior is implementation-specific to how <xref:System.Windows.Controls.DockPanel> processes <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> values. It is theoretically possible to have attached properties that influence elements beyond the immediate parent. If the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> attached property is set on an element that has no <xref:System.Windows.Controls.DockPanel> parent element to act upon it, no error or exception is raised. This simply means that a global property value was set, but it has no current <xref:System.Windows.Controls.DockPanel> parent that could consume the information.  
+ <xref:System.Windows.Controls.DockPanel> defines the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property, and <xref:System.Windows.Controls.DockPanel> has class-level code as part of its rendering logic (specifically, <xref:System.Windows.Controls.DockPanel.MeasureOverride%2A> and <xref:System.Windows.Controls.DockPanel.ArrangeOverride%2A>). A <xref:System.Windows.Controls.DockPanel> instance will always check to see whether any of its immediate child elements have set a value for <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType>. If so, those values become input for the rendering logic applied to that particular child element. Nested <xref:System.Windows.Controls.DockPanel> instances each treat their own immediate child element collections, but that behavior is implementation-specific to how <xref:System.Windows.Controls.DockPanel> processes <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> values. It is theoretically possible to have attached properties that influence elements beyond the immediate parent. If the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property is set on an element that has no <xref:System.Windows.Controls.DockPanel> parent element to act upon it, no error or exception is raised. This simply means that a global property value was set, but it has no current <xref:System.Windows.Controls.DockPanel> parent that could consume the information.  
   
 <a name="attached_properties_code"></a>   
 ## Attached Properties in Code  
@@ -68,7 +73,7 @@ An attached property is a concept defined by XAML. An attached property is inten
  [!code-csharp[PropertiesOvwSupport#APCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#apcode)]
  [!code-vb[PropertiesOvwSupport#APCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#apcode)]  
   
- Similar to the XAML case, if `myCheckBox` had not already been added as a child element of `myDockPanel` by the third line of code, the fourth line of code would not raise an exception, but the property value would not interact with a <xref:System.Windows.Controls.DockPanel> parent and thus would do nothing. Only a <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> value set on a child element combined with the presence of a <xref:System.Windows.Controls.DockPanel> parent element will cause an effective behavior in the rendered application. (In this case, you could set the attached property, then attach to the tree. Or you could attach to the tree then set the attached property. Either action order provides the same result.)  
+ Similar to the XAML case, if `myCheckBox` had not already been added as a child element of `myDockPanel` by the third line of code, the fourth line of code would not raise an exception, but the property value would not interact with a <xref:System.Windows.Controls.DockPanel> parent and thus would do nothing. Only a <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> value set on a child element combined with the presence of a <xref:System.Windows.Controls.DockPanel> parent element will cause an effective behavior in the rendered application. (In this case, you could set the attached property, then attach to the tree. Or you could attach to the tree then set the attached property. Either action order provides the same result.)  
   
 <a name="attached_properties_metadata"></a>   
 ## Attached Property Metadata  
@@ -81,7 +86,7 @@ An attached property is a concept defined by XAML. An attached property is inten
   
 <a name="create_attached_properties"></a>   
 ### When to Create an Attached Property  
- You might create an attached property when there is a reason to have a property setting mechanism available for classes other than the defining class. The most common scenario for this is layout. Examples of existing layout properties are <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Panel.ZIndex%2A?displayProperty=fullName>, and <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=fullName>. The scenario enabled here is that elements that exist as child elements to layout-controlling elements are able to express layout requirements to their layout parent elements individually, each setting a property value that the parent defined as an attached property.  
+ You might create an attached property when there is a reason to have a property setting mechanism available for classes other than the defining class. The most common scenario for this is layout. Examples of existing layout properties are <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Panel.ZIndex%2A?displayProperty=nameWithType>, and <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType>. The scenario enabled here is that elements that exist as child elements to layout-controlling elements are able to express layout requirements to their layout parent elements individually, each setting a property value that the parent defined as an attached property.  
   
  Another scenario for using an attached property is when your class represents a service, and you want classes to be able to integrate the service more transparently.  
   
@@ -103,7 +108,7 @@ An attached property is a concept defined by XAML. An attached property is inten
   
  `public static object Get` *PropertyName* `(object`  `target` `)`  
   
--   The `target` object can be specified as a more specific type in your implementation. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A?displayProperty=fullName> method types the parameter as <xref:System.Windows.UIElement>, because the attached property is only intended to be set on <xref:System.Windows.UIElement> instances.  
+-   The `target` object can be specified as a more specific type in your implementation. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A?displayProperty=nameWithType> method types the parameter as <xref:System.Windows.UIElement>, because the attached property is only intended to be set on <xref:System.Windows.UIElement> instances.  
   
 -   The return value can be specified as a more specific type in your implementation. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A> method types it as <xref:System.Windows.Controls.Dock>, because the value can only be set to that enumeration.  
   
@@ -139,11 +144,11 @@ An attached property is a concept defined by XAML. An attached property is inten
   
 -   For more advanced usage scenarios for dependency properties and attached properties, see [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md).  
   
--   You can also register a property as an attached property, and as a dependency property, but then still expose "wrapper" implementations. In this case, the property can be set either on that element, or on any element through the XAML attached property syntax. An example of a property with an appropriate scenario for both standard and attached usages is <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=fullName>.  
+-   You can also register a property as an attached property, and as a dependency property, but then still expose "wrapper" implementations. In this case, the property can be set either on that element, or on any element through the XAML attached property syntax. An example of a property with an appropriate scenario for both standard and attached usages is <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.Windows.DependencyProperty>   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ <xref:System.Windows.DependencyProperty>  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Register an Attached Property](../../../../docs/framework/wpf/advanced/how-to-register-an-attached-property.md)

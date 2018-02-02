@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::Stop method [.NET Framework hosting]"
   - "Stop method, ICLRRuntimeHost interface [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRRuntimeHost::Stop Method
 Stops the execution of code by the common language runtime (CLR).  

@@ -128,16 +128,16 @@
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
- The <xref:System.Web.UI.WebControls.GridView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, <xref:System.Collections.Generic.List%601?displayProperty=fullName>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.GridView> control to the appropriate data source type:  
+ The <xref:System.Web.UI.WebControls.GridView> control can be bound to a data source control (such as the <xref:System.Web.UI.WebControls.SqlDataSource> control or <xref:System.Web.UI.WebControls.ObjectDataSource> control) or to any data source collection that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, such as <xref:System.Data.DataView?displayProperty=nameWithType>, <xref:System.Collections.ArrayList?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, or other collection types. Use one of the following methods to bind the <xref:System.Web.UI.WebControls.GridView> control to the appropriate data source type:  
   
 -   To bind to a data source control, set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the <xref:System.Web.UI.Control.ID%2A> value of the data source control. The <xref:System.Web.UI.WebControls.GridView> control automatically binds to the specified data source control and can take advantage of the data source control's capabilities to perform sorting, updating, deleting, and paging. This is the preferred method to bind to data.  
   
--   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.GridView> control does not provide built-in sort, update, delete, and paging functionality. You need to provide this functionality by using the appropriate event.  
+-   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.GridView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.GridView> control does not provide built-in sort, update, delete, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
- For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information about data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/library/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
   
 > [!NOTE]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control (the <xref:System.Web.UI.WebControls.BoundField> class HTML-encodes values by default). ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control (the <xref:System.Web.UI.WebControls.BoundField> class HTML-encodes values by default). ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/library/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -549,18 +549,36 @@
   
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.GridView> control to display the values from the Customers table of the AdventureWorksLT sample database in Microsoft SQL Server. The values are retrieved using a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]
+ [!code-aspx-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView> control and a <xref:System.Web.UI.WebControls.LinqDataSource> control so that you can edit records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]
+ [!code-aspx-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  
   
  For an example demonstrating how to access values in cells, see <xref:System.Web.UI.WebControls.GridViewRow>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+    <altmember cref="T:System.Web.UI.WebControls.DetailsView" />
+    <altmember cref="T:System.Web.UI.WebControls.FormView" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageField" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSource" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+    <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+    <altmember cref="Overload:System.Web.HttpServerUtility.HtmlEncode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -579,18 +597,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridView> class. To dynamically add a <xref:System.Web.UI.WebControls.GridView> control to a page, create a new <xref:System.Web.UI.WebControls.GridView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridView> class. To dynamically add a <xref:System.Web.UI.WebControls.GridView> control to a page, create a new <xref:System.Web.UI.WebControls.GridView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as <xref:System.Web.UI.WebControls.PlaceHolder>.  
   
    
   
 ## Examples  
  The following example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.GridView> control to a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCtor/CS/gridviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCtor/VB/gridviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCtor/CS/gridviewctorcs.aspx#1)]
+ [!code-aspx-vb[GridViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCtor/VB/gridviewctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AllowCustomPaging">
@@ -651,7 +671,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Instead of displaying all the records in the data source at the same time, the <xref:System.Web.UI.WebControls.GridView> control can automatically break the records up into pages. If the data source supports the paging capability, the <xref:System.Web.UI.WebControls.GridView> control can take advantage of that and provide built-in paging functionality. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=fullName> interface or a data source that supports paging capability.  
+ Instead of displaying all the records in the data source at the same time, the <xref:System.Web.UI.WebControls.GridView> control can automatically break the records up into pages. If the data source supports the paging capability, the <xref:System.Web.UI.WebControls.GridView> control can take advantage of that and provide built-in paging functionality. The paging feature can be used with any data source object that supports the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface or a data source that supports paging capability.  
   
  To enable the paging feature, set the <xref:System.Web.UI.WebControls.GridView.AllowPaging%2A> property to `true`. By default, the <xref:System.Web.UI.WebControls.GridView> control displays 10 records on a page at a time. You can change the number of records displayed on a page by setting the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property. To determine the total number of pages required to display the data source contents, use the <xref:System.Web.UI.WebControls.GridView.PageCount%2A> property. You can determine the index of the currently displayed page by using the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property.  
   
@@ -683,11 +703,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AllowPaging%2A> property to declaratively enable the paging feature in the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageSize" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
@@ -739,16 +769,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AllowSorting%2A> property to enable sorting in a <xref:System.Web.UI.WebControls.GridView> control when automatically generated columns are used.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSorting/CS/gridviewallowsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSorting/VB/gridviewallowsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSorting/CS/gridviewallowsortingcs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSorting/VB/gridviewallowsortingvb.aspx#1)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AllowSorting%2A> property to enable sorting in a <xref:System.Web.UI.WebControls.GridView> control when a <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection is defined. An image is also programmatically added to the header of the column being sorted to indicate the sort direction. You must provide your own images for this sample to work.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowSortingColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSortingColumns/CS/GridViewAllowSortingColumnscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowSortingColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSortingColumns/VB/GridViewAllowSortingColumnsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowSortingColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSortingColumns/CS/GridViewAllowSortingColumnscs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowSortingColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSortingColumns/VB/GridViewAllowSortingColumnsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Web.UI.DataSourceView.CanSort" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingRowStyle">
@@ -794,11 +831,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AlternatingRowStyle%2A> property to declaratively define the style for alternating data rows in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowStyle/CS/gridviewrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowStyle/VB/gridviewrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowStyle/CS/gridviewrowstylecs.aspx#1)]
+ [!code-aspx-vb[GridViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowStyle/VB/gridviewrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateColumns">
@@ -847,11 +892,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> property to automatically create bound field columns in a <xref:System.Web.UI.WebControls.GridView> control for each field in the data source.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSimple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSimple/CS/displaycustomers.aspx#1)]
+ [!code-aspx-vb[GridViewSimple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSimple/VB/displaycustomers.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateDeleteButton">
@@ -901,11 +950,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton%2A> property to enable the automatic deleting feature of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]
+ [!code-aspx-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommand" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateEditButton">
@@ -963,11 +1017,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AutoGenerateEditButton%2A> property to enable the automatic editing feature of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]
+ [!code-aspx-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateSelectButton">
@@ -1014,11 +1080,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton%2A> property to enable the automatic selection feature of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedValue" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -1061,11 +1139,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.BackImageUrl%2A> property to display a custom image in the background of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewBackImageUrl/CS/gridviewbackimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewBackImageUrl/VB/gridviewbackimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewBackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewBackImageUrl/CS/gridviewbackimageurlcs.aspx#1)]
+ [!code-aspx-vb[GridViewBackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewBackImageUrl/VB/gridviewbackimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="BottomPagerRow">
@@ -1107,11 +1187,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.BottomPagerRow%2A> property to access the bottom pager row in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView.BottomPagerRow%2A> property is used to retrieve a <xref:System.Web.UI.WebControls.DropDownList> control from the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -1150,11 +1235,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Caption%2A> property to specify the caption for a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCaption/CS/gridviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCaption/VB/gridviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCaption/CS/gridviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[GridViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCaption/VB/gridviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowHeaderColumn" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.UseAccessibleHeader" />
       </Docs>
     </Member>
     <Member MemberName="CaptionAlign">
@@ -1203,12 +1291,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.CaptionAlign%2A> property to specify that the caption element for a <xref:System.Web.UI.WebControls.GridView> control is aligned with the top of the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCaption/CS/gridviewcaptioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCaption/VB/gridviewcaptionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCaption#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCaption/CS/gridviewcaptioncs.aspx#1)]
+ [!code-aspx-vb[GridViewCaption#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCaption/VB/gridviewcaptionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TableCaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Caption" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowHeaderColumn" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.UseAccessibleHeader" />
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -1244,11 +1336,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.CellPadding%2A> property to declaratively set the amount of space between the contents of a cell and the cell's border.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCellPadding/CS/gridviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCellPadding/VB/gridviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCellPadding/CS/gridviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[GridViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCellPadding/VB/gridviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CellSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -1285,11 +1379,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.CellSpacing%2A> property to declaratively set the amount of space between the cells of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCellPadding/CS/gridviewcellpaddingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCellPadding/VB/gridviewcellpaddingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCellPadding/CS/gridviewcellpaddingcs.aspx#1)]
+ [!code-aspx-vb[GridViewCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCellPadding/VB/gridviewcellpaddingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.GridLines" />
       </Docs>
     </Member>
     <Member MemberName="ClientIDRowSuffix">
@@ -1323,6 +1419,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientIDMode" />
       </Docs>
     </Member>
     <Member MemberName="ClientIDRowSuffixDataKeys">
@@ -1410,11 +1507,20 @@
 ## Examples  
  The following example demonstrates how to populate the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection declaratively.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewColumnFields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewColumnFields/CS/gridviewcolumnfieldscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewColumnFields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewColumnFields/VB/gridviewcolumnfieldsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewColumnFields#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewColumnFields/CS/gridviewcolumnfieldscs.aspx#1)]
+ [!code-aspx-vb[GridViewColumnFields#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewColumnFields/VB/gridviewcolumnfieldsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+        <altmember cref="T:System.Web.UI.WebControls.ButtonField" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlFieldCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageField" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
       </Docs>
     </Member>
     <Member MemberName="ColumnsGenerator">
@@ -1444,7 +1550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In order to use ASP.NET Dynamic Data features in a page, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page. This enables ASP.NET Dynamic Data features for data-bound controls in a page, such as <xref:System.Web.UI.WebControls.GridView> control. To enable an individual <xref:System.Web.UI.WebControls.GridView> control to use Dynamic Data features, you must associate it with the <xref:System.Web.DynamicData.DynamicDataManager> control by calling the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=fullName> method during the `Page_Init` event. This method automatically sets the <xref:System.Web.UI.WebControls.GridView.ColumnsGenerator%2A> property to the <xref:System.Web.DynamicData.DynamicDataManager> object.  
+ In order to use ASP.NET Dynamic Data features in a page, you must add a <xref:System.Web.DynamicData.DynamicDataManager> control to the page. This enables ASP.NET Dynamic Data features for data-bound controls in a page, such as <xref:System.Web.UI.WebControls.GridView> control. To enable an individual <xref:System.Web.UI.WebControls.GridView> control to use Dynamic Data features, you must associate it with the <xref:System.Web.DynamicData.DynamicDataManager> control by calling the <xref:System.Web.DynamicData.DynamicDataManager.RegisterControl%2A?displayProperty=nameWithType> method during the `Page_Init` event. This method automatically sets the <xref:System.Web.UI.WebControls.GridView.ColumnsGenerator%2A> property to the <xref:System.Web.DynamicData.DynamicDataManager> object.  
   
  ]]></format>
         </remarks>
@@ -1485,6 +1591,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AutoGeneratedFieldProperties" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -1534,6 +1642,7 @@
  -or-  
   
  <paramref name="dataSource" /> does not implement the <see cref="T:System.Collections.ICollection" /> interface and <paramref name="dataBinding" /> is set to <see langword="false" />.</exception>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="CreateChildTable">
@@ -1560,6 +1669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Table" />
       </Docs>
     </Member>
     <Member MemberName="CreateColumns">
@@ -1595,6 +1705,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateColumns" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Columns" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -1624,6 +1736,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="CreateDataSourceSelectArguments">
@@ -1653,6 +1766,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.GridView" /> class, you can override this method to specify your own values that are passed to the data source.</para>
         </block>
+        <altmember cref="T:System.Web.UI.DataSourceSelectArguments" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
       </Docs>
     </Member>
     <Member MemberName="CreateRow">
@@ -1691,6 +1806,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowType" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -1723,11 +1841,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.DataBind> method to bind a data source to a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataBind/CS/gridviewdatabindcs.aspx#1)]
+ [!code-aspx-vb[GridViewDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataBind/VB/gridviewdatabindvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" />
       </Docs>
     </Member>
     <Member MemberName="DataKeyNames">
@@ -1784,11 +1903,16 @@
   
 -   A LINQ-to-SQL data context class that is named `AdventureWorksLTDataClassesDataContext`. The data context must have a class for the SalesOrderDetails table. For information about how to create LINQ-to-SQL classes, see [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEdit/CS/editorders.aspx#1)]
+ [!code-aspx-vb[GridViewEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEdit/VB/editorders.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
       </Docs>
     </Member>
     <Member MemberName="DataKeys">
@@ -1828,11 +1952,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.DataKeys%2A> property to determine the data key value of the selected row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataKeys/CS/gridviewdatakeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataKeys/VB/gridviewdatakeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDataKeys/CS/gridviewdatakeyscs.aspx#1)]
+ [!code-aspx-vb[GridViewDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDataKeys/VB/gridviewdatakeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="T:System.Web.UI.WebControls.DataKeyArray" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedDataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedValue" />
       </Docs>
     </Member>
     <Member MemberName="DeleteMethod">
@@ -1899,13 +2029,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.DeleteRow%2A> method to programmatically delete a record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeleteRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteRow/CS/GridViewDeleteRowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeleteRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteRow/VB/GridViewDeleteRowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeleteRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeleteRow/CS/GridViewDeleteRowcs.aspx#1)]
+ [!code-aspx-vb[GridViewDeleteRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeleteRow/VB/GridViewDeleteRowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.WebControls.GridView" /> control is not bound to a data source control.</exception>
         <exception cref="T:System.NotSupportedException">The data source control that the <see cref="T:System.Web.UI.WebControls.GridView" /> control is bound to does not support delete operations, or there is no delete command defined for the data source.</exception>
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.UpdateRow(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="EditIndex">
@@ -1953,12 +2087,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.EditIndex%2A> property to determine which row was updated after it was edited in a <xref:System.Web.UI.WebControls.GridView> control. A message is displayed to indicate that the update was successful.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRows/CS/gridviewrowscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRows/VB/gridviewrowsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRows/CS/gridviewrowscs.aspx#1)]
+ [!code-aspx-vb[GridViewRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRows/VB/gridviewrowsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
       </Docs>
     </Member>
     <Member MemberName="EditRowStyle">
@@ -2004,11 +2144,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.EditRowStyle%2A> property to define a custom style for the row being edited in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEditRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEditRowStyle/CS/gridvieweditrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEditRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEditRowStyle/VB/gridvieweditrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEditRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewEditRowStyle/CS/gridvieweditrowstylecs.aspx#1)]
+ [!code-aspx-vb[GridViewEditRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewEditRowStyle/VB/gridvieweditrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataRowStyle">
@@ -2054,11 +2202,21 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.GridView.EmptyDataRowStyle%2A> property declaratively to specify a light blue background and a red font for the null row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewNullRowTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewNullRowTemplate/CS/gridviewnullrowtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewNullRowTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewNullRowTemplate/VB/gridviewnullrowtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewNullRowTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewNullRowTemplate/CS/gridviewnullrowtemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewNullRowTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewNullRowTemplate/VB/gridviewnullrowtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataTemplate">
@@ -2108,11 +2266,15 @@
 ## Examples  
  The following example demonstrates how to define a custom template for the empty data row displayed when a <xref:System.Web.UI.WebControls.GridView> control is bound to a data source that does not contain any records.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewNullRowTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewNullRowTemplate/CS/gridviewnullrowtemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewNullRowTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewNullRowTemplate/VB/gridviewnullrowtemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewNullRowTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewNullRowTemplate/CS/gridviewnullrowtemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewNullRowTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewNullRowTemplate/VB/gridviewnullrowtemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataText" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EmptyDataText">
@@ -2154,11 +2316,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.EmptyDataText%2A> property to specify the text to display in the empty data row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewemptydatatext/CS/gridviewemptydatatextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewemptydatatext/VB/gridviewemptydatatextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEmptyDataText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewemptydatatext/CS/gridviewemptydatatextcs.aspx#1)]
+ [!code-aspx-vb[GridViewEmptyDataText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewemptydatatext/VB/gridviewemptydatatextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataTemplate" />
       </Docs>
     </Member>
     <Member MemberName="EnableModelValidation">
@@ -2253,12 +2417,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.EnableSortingAndPagingCallbacks%2A> property to enable client-side callbacks for sorting and paging operations.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewEnableSortingAndPagingCallbacks#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewenablesortingandpagingcallbacks/CS/gridviewenablesortingandpagingcallbackscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewEnableSortingAndPagingCallbacks#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewenablesortingandpagingcallbacks/VB/gridviewenablesortingandpagingcallbacksvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewEnableSortingAndPagingCallbacks#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewenablesortingandpagingcallbacks/CS/gridviewenablesortingandpagingcallbackscs.aspx#1)]
+ [!code-aspx-vb[GridViewEnableSortingAndPagingCallbacks#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewenablesortingandpagingcallbacks/VB/gridviewenablesortingandpagingcallbacksvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.GridView.Columns" /> collection contains a column that does not support callbacks, such as <see cref="T:System.Web.UI.WebControls.TemplateField" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback" />
       </Docs>
     </Member>
     <Member MemberName="ExtractRowValues">
@@ -2298,6 +2465,8 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.GridView" /> class, you can override this method to create your own routine to retrieve the field values.</para>
         </block>
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FooterRow">
@@ -2339,11 +2508,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.FooterRow%2A> property to display the sort direction in the footer row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]
+ [!code-aspx-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowFooter" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -2392,11 +2566,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.FooterStyle%2A> property to define a custom style for the footer row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]
+ [!code-aspx-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackResult">
@@ -2454,6 +2636,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -2494,11 +2677,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.GridLines%2A> property to hide the gridlines in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]
+ [!code-aspx-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridLines" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CellPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CellSpacing" />
       </Docs>
     </Member>
     <Member MemberName="HeaderRow">
@@ -2540,11 +2726,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.HeaderRow%2A> property to programmatically change the font color of the header row based on the sort direction.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]
+ [!code-aspx-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.TopPagerRow" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -2593,11 +2784,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.HeaderStyle%2A> property to define a custom style for the header row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]
+ [!code-aspx-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -2642,11 +2841,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.HorizontalAlign%2A> property to align a <xref:System.Web.UI.WebControls.GridView> control on the right side of a page.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewHorizontalAlign/CS/gridviewhorizontalaligncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewHorizontalAlign/VB/gridviewhorizontalalignvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewHorizontalAlign/CS/gridviewhorizontalaligncs.aspx#1)]
+ [!code-aspx-vb[GridViewHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewHorizontalAlign/VB/gridviewhorizontalalignvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="InitializePager">
@@ -2682,6 +2882,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.PagedDataSource" />
       </Docs>
     </Member>
     <Member MemberName="InitializeRow">
@@ -2715,6 +2917,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlField" />
       </Docs>
     </Member>
     <Member MemberName="IsBindableType">
@@ -2743,40 +2947,41 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.IsBindableType%2A> method is a helper method that is commonly used by control developers to programmatically determine whether the specified data type can be bound to a column in a <xref:System.Web.UI.WebControls.GridView> control. The following data types can be bound to a column in a <xref:System.Web.UI.WebControls.GridView> control:  
   
--   <xref:System.Boolean?displayProperty=fullName>  
+-   <xref:System.Boolean?displayProperty=nameWithType>  
   
--   <xref:System.Byte?displayProperty=fullName>  
+-   <xref:System.Byte?displayProperty=nameWithType>  
   
--   <xref:System.Char?displayProperty=fullName>  
+-   <xref:System.Char?displayProperty=nameWithType>  
   
--   <xref:System.DateTime?displayProperty=fullName>  
+-   <xref:System.DateTime?displayProperty=nameWithType>  
   
--   <xref:System.Decimal?displayProperty=fullName>  
+-   <xref:System.Decimal?displayProperty=nameWithType>  
   
--   <xref:System.Double?displayProperty=fullName>  
+-   <xref:System.Double?displayProperty=nameWithType>  
   
--   <xref:System.Guid?displayProperty=fullName>  
+-   <xref:System.Guid?displayProperty=nameWithType>  
   
--   <xref:System.Int16?displayProperty=fullName>  
+-   <xref:System.Int16?displayProperty=nameWithType>  
   
--   <xref:System.Int32?displayProperty=fullName>  
+-   <xref:System.Int32?displayProperty=nameWithType>  
   
--   <xref:System.Int64?displayProperty=fullName>  
+-   <xref:System.Int64?displayProperty=nameWithType>  
   
--   <xref:System.SByte?displayProperty=fullName>  
+-   <xref:System.SByte?displayProperty=nameWithType>  
   
--   <xref:System.Single?displayProperty=fullName>  
+-   <xref:System.Single?displayProperty=nameWithType>  
   
--   <xref:System.String?displayProperty=fullName>  
+-   <xref:System.String?displayProperty=nameWithType>  
   
--   <xref:System.UInt16?displayProperty=fullName>  
+-   <xref:System.UInt16?displayProperty=nameWithType>  
   
--   <xref:System.UInt32?displayProperty=fullName>  
+-   <xref:System.UInt32?displayProperty=nameWithType>  
   
--   <xref:System.UInt64?displayProperty=fullName>  
+-   <xref:System.UInt64?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
@@ -2801,13 +3006,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to load the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to load the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -2836,6 +3042,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2864,7 +3071,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=fullName> method to pass events from child controls to the page hierarchy.  
+ The <xref:System.Web.UI.WebControls.GridView.OnBubbleEvent%2A> method implements the <xref:System.Web.UI.Control.OnBubbleEvent%2A?displayProperty=nameWithType> method to pass events from child controls to the page hierarchy.  
   
  ]]></format>
         </remarks>
@@ -2899,6 +3106,10 @@
         <block subset="none" type="overrides">
           <para>When extending the <see cref="T:System.Web.UI.WebControls.GridView" /> class, you can override this method to create your own routine to rebind the data.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnDataPropertyChanged" />
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -2927,7 +3138,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged%2A> method notifies a <xref:System.Web.UI.WebControls.GridView> control that the underlying data source has changed and that the control should rebind. Typically, the <xref:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged%2A> method is called when a property of the data source view has changed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2936,6 +3147,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2962,7 +3175,7 @@
 ## Remarks  
  When notified by this method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's View state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2997,7 +3210,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.PageIndexChanged> event is raised when one of the pager buttons is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the paging operation. This enables you to provide an event-handling method that performs a custom routine, such as a custom paging operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnPageIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3006,6 +3219,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPageIndexChanging">
@@ -3032,7 +3249,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event is raised when one of the pager buttons is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the paging operation. This enables you to provide an event-handling method that performs a custom routine, such as canceling the paging operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnPageIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3042,6 +3259,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewPageEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPagePreLoad">
@@ -3065,6 +3287,8 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Sets the initialized state of the data-bound control before the control is loaded.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseDataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -3091,7 +3315,7 @@
 ## Remarks  
  This method notifies the server control to perform any necessary pre-rendering steps prior to saving view state and rendering content.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3100,6 +3324,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnRowCancelingEdit">
@@ -3126,7 +3351,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event is raised when the Cancel button of a row in edit mode is clicked, but before the row exits edit mode. This enables you to provide an event-handling method that performs a custom routine, such as stopping the cancel operation if it would put the row in an undesired state, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowCancelingEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3136,6 +3361,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewCancelEditEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowCommand">
@@ -3162,7 +3396,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowCommand> event is raised when a button is clicked in the <xref:System.Web.UI.WebControls.GridView> control. This enables you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3173,14 +3407,16 @@
   
  The following example demonstrates how provide an event-handling method for the <xref:System.Web.UI.WebControls.GridView.RowCommand> event. When the Add button is clicked for a given row of the <xref:System.Web.UI.WebControls.GridView> control, the name of the selected customer is added to a <xref:System.Web.UI.WebControls.ListBox> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowCommand(System.Web.UI.WebControls.GridViewCommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowCommand(System.Web.UI.WebControls.GridViewCommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnRowCreated">
@@ -3207,7 +3443,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.GridView> control can be rendered, a <xref:System.Web.UI.WebControls.GridViewRow> object must be created for each row in the control. The <xref:System.Web.UI.WebControls.GridView.RowCreated> event is raised when each row in the <xref:System.Web.UI.WebControls.GridView> control is created. This enables you to provide an event-handling method that performs a custom routine, such as adding custom content to a row, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3216,14 +3452,18 @@
 ## Examples  
  The following example demonstrates how provide an event-handling method for the <xref:System.Web.UI.WebControls.GridView.RowCreated> event. When a row is being created, its index is stored in the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.LinkButton> control that is contained in the new row. This enables you to determine the index of the row when the user clicks the command button.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCreated/CS/gridviewrowcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCreated/VB/gridviewrowcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCreated/CS/gridviewrowcreatedcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCreated/VB/gridviewrowcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowDataBound">
@@ -3250,7 +3490,7 @@
 ## Remarks  
  Before the <xref:System.Web.UI.WebControls.GridView> control can be rendered, each row in the control must be bound to a record in the data source. The <xref:System.Web.UI.WebControls.GridView.RowDataBound> event is raised when a data row (represented by a <xref:System.Web.UI.WebControls.GridViewRow> object) is bound to data in the <xref:System.Web.UI.WebControls.GridView> control. This enables you to provide an event-handling method that performs a custom routine, such as modifying the values of the data bound to the row, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3261,6 +3501,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowDeleted">
@@ -3287,7 +3531,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowDeleted> event is raised when a row's Delete button is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control deletes the row. This enables you to provide an event-handling method that performs a custom routine, such as checking the results of the delete operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3296,6 +3540,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowDeleting">
@@ -3322,7 +3575,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowDeleting> event is raised when a row's Delete button is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control deletes the row. This enables you to provide an event-handling method that performs a custom routine, such as canceling the delete operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3332,6 +3585,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeleteEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowEditing">
@@ -3358,7 +3616,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowEditing> event is raised when a row's Edit button is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control enters edit mode. This enables you to provide an event-handling method that performs a custom routine, such as canceling the edit operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowEditing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3368,6 +3626,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">
@@ -3394,7 +3661,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowUpdated> event is raised when a row's Update button is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control updates the row. This enables you to provide an event-handling method that performs a custom routine, such as checking the results of the update operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3403,6 +3670,14 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdating">
@@ -3429,7 +3704,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.RowUpdating> event is raised when a row's Update button is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control updates the row. This enables you to provide an event-handling method that performs a custom routine, such as canceling the update operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnRowUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3439,6 +3714,15 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdateEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -3465,7 +3749,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanged> event is raised when a row's Select button is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the select operation. This enables you to provide an event-handling method that performs a custom routine, such as updating a status label with the currently selected row, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3474,14 +3758,18 @@
 ## Examples  
  The following example shows how create an event handler for the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanged> event. In this example, the selected row is persisted in the view state. So even after a sorting or a paging operation, only that row will be selected.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.GridView.OnSelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.GridView.OnSelectedIndexChanged/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.GridView.OnSelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.GridView.OnSelectedIndexChanged/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.GridView.OnSelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.GridView.OnSelectedIndexChanged/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.GridView.OnSelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.GridView.OnSelectedIndexChanged/VB/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanging">
@@ -3508,7 +3796,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event is raised when a row's Select button is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the select operation. This enables you to provide an event-handling method that performs a custom routine, such as canceling the selection operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3517,6 +3805,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSorted">
@@ -3543,7 +3836,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.Sorted> event is raised when the hyperlink to sort a column is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This enables you to provide an event-handling method that performs a custom routine, such as custom sorting, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnSorted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3552,6 +3845,11 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnSorting">
@@ -3578,7 +3876,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.Sorting> event is raised when the hyperlink to sort a column is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This enables you to provide an event-handling method that performs a custom routine, such as canceling the sorting operation, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnSorting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3588,6 +3886,12 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewSortEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -3624,11 +3928,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.PageCount%2A> property to determine the total number of pages displayed in the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageSize" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndex">
@@ -3665,12 +3979,22 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property to determine the index of the currently displayed page in the <xref:System.Web.UI.WebControls.GridView> control. The example also shows how the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property can be used to specify which page is displayed after the user selects a value from the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridView.PageIndex" /> property is set to a value less than 0.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageSize" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanged">
@@ -3695,18 +4019,22 @@
   
  To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.GridView.PageIndex%2A> property of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.PageIndexChanged> event to display the page number selected by the user from the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanged/CS/gridviewpageindexchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanged/VB/gridviewpageindexchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanged/CS/gridviewpageindexchangedcs.aspx#1)]
+ [!code-aspx-vb[GridViewPageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanged/VB/gridviewpageindexchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PageIndexChanging">
@@ -3734,18 +4062,23 @@
   
  A <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object is passed to the event-handling method, which enables you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.PageIndexChanging> event to cancel the paging operation if the user attempts to navigate to another page when a <xref:System.Web.UI.WebControls.GridView> control is in edit mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageIndexChanging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageIndexChanging/CS/gridviewpageindexchangingcs.aspx#1)]
+ [!code-aspx-vb[GridViewPageIndexChanging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageIndexChanging/VB/gridviewpageindexchangingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewPageEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanging(System.Web.UI.WebControls.GridViewPageEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnPageIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PagerSettings">
@@ -3791,11 +4124,21 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.GridView.PagerSettings%2A> property declaratively. It sets the font and background for the pager row to blue and light blue, respectively.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageSize" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PagerStyle">
@@ -3841,11 +4184,28 @@
 ## Examples  
  The following example demonstrates how to set the <xref:System.Web.UI.WebControls.GridView.PagerStyle%2A> property declaratively. It sets the font and background for the pager row to blue and light blue, respectively.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowPaging/CS/gridviewallowpagingcs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowPaging/VB/gridviewallowpagingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageSize" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="PagerTemplate">
@@ -3903,11 +4263,21 @@
 ## Examples  
  The following example demonstrates how to create a custom pager template that allows the user to navigate through a <xref:System.Web.UI.WebControls.GridView> control using a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPagerTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPagerTemplate/CS/gridviewpagertemplatecs.aspx#1)]
+ [!code-aspx-vb[GridViewPagerTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPagerTemplate/VB/gridviewpagertemplatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ITemplate" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.TopPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -3941,12 +4311,22 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.PageSize%2A> property to display 15 records at a time in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewPageSize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageSize/CS/gridviewpagesizecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewPageSize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageSize/VB/gridviewpagesizevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewPageSize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewPageSize/CS/gridviewpagesizecs.aspx#1)]
+ [!code-aspx-vb[GridViewPageSize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewPageSize/VB/gridviewpagesizevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridView.PageSize" /> property is set to a value less than 1.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.PagerSettings" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageCount" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PageIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerSettings" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerTemplate" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.PageIndexChanging" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -3978,6 +4358,7 @@
         <block subset="none" type="overrides">
           <para>Because the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method is sealed, you should override this method if you need to perform any additional tasks when binding data.</para>
         </block>
+        <altmember cref="T:System.Collections.IEnumerable" />
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
@@ -4034,6 +4415,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -4065,6 +4447,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -4089,13 +4474,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.GridView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.GridView.Render%2A> method is used to render the server control content to the client's browser using the specified <xref:System.Web.UI.HtmlTextWriter?displayProperty=nameWithType> object.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RowCancelingEdit">
@@ -4120,23 +4506,32 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the cancel operation should be stopped. To stop the cancel operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event to display a cancellation message when the user cancels the update operation of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCancelingEdit> event to cancel the update operation when the data source is set programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]
+ [!code-aspx-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewCancelEditEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowCommand">
@@ -4178,7 +4573,7 @@
 > [!NOTE]
 >  To determine the index of the row that raised the event, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property of the event argument that is passed to the event. The <xref:System.Web.UI.WebControls.ButtonField> class automatically populates the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property with the appropriate index value. For other command buttons, you must manually set the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property of the command button. For example, you can set the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> to `<%# Container.DataItemIndex %>` when the <xref:System.Web.UI.WebControls.GridView> control has no paging enabled.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -4187,16 +4582,18 @@
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCommand> event to add the name of a customer from a <xref:System.Web.UI.WebControls.GridView> control to a <xref:System.Web.UI.WebControls.ListBox> control when a row's Add button is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCommand> event to update the price of a product when a row's button is clicked. This example has the paging functionality enabled for the <xref:System.Web.UI.WebControls.GridView> control and sets the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property of the <xref:System.Web.UI.WebControls.Button> control to the appropriate row index.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCommmand#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommand2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCommmand#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommand2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[GridViewRowCommmand#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommand2cs.aspx#2)]
+ [!code-aspx-vb[GridViewRowCommmand#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommand2vb.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCommand(System.Web.UI.WebControls.GridViewCommandEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowCreated">
@@ -4221,18 +4618,22 @@
   
  A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which enables you to access the properties of the row being created. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object. You can determine which row type (header row, data row, and so on) is being created by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowCreated> event to store the index of the row being created in the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.LinkButton> control contained in the row. This enables you to determine the index of the row that contains the <xref:System.Web.UI.WebControls.LinkButton> control when the user clicked the button.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCreated/CS/gridviewrowcreatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCreated/VB/gridviewrowcreatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCreated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCreated/CS/gridviewrowcreatedcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCreated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCreated/VB/gridviewrowcreatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDataBound" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowDataBound">
@@ -4257,7 +4658,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which enables you to access the properties of the row being bound. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object contained in the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property of the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object. You can determine which row type (header row, data row, and so on) is being bound by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -4266,11 +4667,15 @@
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event to modify the value of a field in the data source before it is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDataBound(System.Web.UI.WebControls.GridViewRowEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCreated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCreated(System.Web.UI.WebControls.GridViewRowEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowDeleted">
@@ -4295,18 +4700,27 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs> object is passed to the event-handling method, which enables you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowDeleted> event to check the result of the delete operation. A message is displayed to indicate to the user whether the operation succeeded.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDeleted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleted/CS/gridviewrowdeletedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDeleted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleted/VB/gridviewrowdeletedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDeleted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleted/CS/gridviewrowdeletedcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowDeleted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleted/VB/gridviewrowdeletedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowDeleting">
@@ -4331,7 +4745,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the delete operation should be canceled. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs> object to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeleteEventArgs.Values%2A> collections, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -4344,11 +4758,16 @@
   
  For information about how to set up the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDeleting/CS/gridviewrowdeleting.aspx#1)]
+ [!code-aspx-vb[GridViewRowDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDeleting/VB/gridviewrowdeleting.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeleteEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowEditing">
@@ -4373,23 +4792,32 @@
   
  A <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object is passed to the event-handling method, which enables you to determine the index of the current row and to indicate that the edit operation should be canceled. To cancel the edit operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowEditing> event to put a row in edit mode when the data source is set programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]
+ [!code-aspx-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowEditing> event to cancel the editing operation if the user attempts to edit the record for a company in the United States.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderColumn">
@@ -4434,11 +4862,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowHeaderColumn%2A> property to display a header column in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowHeaderColumn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewrowheadercolumn/CS/GridViewRowHeaderColumncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowHeaderColumn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewrowheadercolumn/VB/GridViewRowHeaderColumnvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowHeaderColumn#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewrowheadercolumn/CS/GridViewRowHeaderColumncs.aspx#1)]
+ [!code-aspx-vb[GridViewRowHeaderColumn#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewrowheadercolumn/VB/GridViewRowHeaderColumnvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Caption" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.UseAccessibleHeader" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -4478,11 +4909,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection to access the row being edited in a <xref:System.Web.UI.WebControls.GridView> control. After a row is updated, a message is displayed to indicate that the update was successful.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRows/CS/gridviewrowscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRows/VB/gridviewrowsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRows/CS/gridviewrowscs.aspx#1)]
+ [!code-aspx-vb[GridViewRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRows/VB/gridviewrowsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewRowCollection" />
       </Docs>
     </Member>
     <Member MemberName="RowStyle">
@@ -4528,11 +4961,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowStyle%2A> property to declaratively define the style for the item rows in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowStyle/CS/gridviewrowstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowStyle/VB/gridviewrowstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowStyle/CS/gridviewrowstylecs.aspx#1)]
+ [!code-aspx-vb[GridViewRowStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowStyle/VB/gridviewrowstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="RowUpdated">
@@ -4557,18 +4998,31 @@
   
  A <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> object is passed to the event-handling method, which enables you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled%2A> property of the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowUpdated> event to check the result of the update operation. A message is displayed to indicate to the user whether the operation succeeded.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdated/CS/gridviewrowupdatedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdated/VB/gridviewrowupdatedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdated/CS/gridviewrowupdatedcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdated/VB/gridviewrowupdatedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleting(System.Web.UI.WebControls.GridViewDeleteEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdating" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RowUpdating">
@@ -4596,18 +5050,27 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.OldValues%2A> and <xref:System.Web.UI.WebControls.GridViewUpdateEventArgs.NewValues%2A> collections are automatically populated only when the <xref:System.Web.UI.WebControls.GridView> control is bound to data by using the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.RowUpdating> event to update the values in the data source object when the data source is set programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/GridViewRowEditing2CS.aspx#2)]
+ [!code-aspx-vb[GridViewRowEditing#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/GridViewRowEditing2VB.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdateEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateEditButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdating(System.Web.UI.WebControls.GridViewUpdateEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowCancelingEdit(System.Web.UI.WebControls.GridViewCancelEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowEditing(System.Web.UI.WebControls.GridViewEditEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowUpdated(System.Web.UI.WebControls.GridViewUpdatedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
@@ -4630,13 +5093,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property is set to `false`.  
+ This method is used to save the state of the properties in the <xref:System.Web.UI.WebControls.GridView> control that need to be persisted, even when the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=nameWithType> property is set to `false`.  
   
 > [!NOTE]
 >  This method is used primarily by control developers to extend the <xref:System.Web.UI.WebControls.GridView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.EnableViewState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -4697,17 +5161,21 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedDataKey%2A> property to determine the data key value of the selected row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedDataKey/CS/gridviewselecteddatakeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedDataKey/VB/gridviewselecteddatakeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelectedDataKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedDataKey/CS/gridviewselecteddatakeycs.aspx#1)]
+ [!code-aspx-vb[GridViewSelectedDataKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedDataKey/VB/gridviewselecteddatakeyvb.aspx#1)]  
   
  The following example demonstrates how to use the second key field as a parameter in a master/detail scenario. A <xref:System.Web.UI.WebControls.GridView> control is used to display records from the Order Details table of the Northwind database. When a record is selected in the <xref:System.Web.UI.WebControls.GridView> control, the details of the product from the Products table are displayed in a <xref:System.Web.UI.WebControls.DetailsView> control. ProductID is the second key name in the <xref:System.Web.UI.WebControls.GridView> control. To access the second key, the value of GridView1.SelectedDataKey[1] is used as the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> for the <xref:System.Web.UI.WebControls.ControlParameter> object of the <xref:System.Web.UI.WebControls.SqlDataSource> control of the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelectedDataKeyIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedDataKeyIndex/CS/gridviewselecteddatakeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelectedDataKeyIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedDataKeyIndex/VB/gridviewselecteddatakeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelectedDataKeyIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedDataKeyIndex/CS/gridviewselecteddatakeycs.aspx#1)]
+ [!code-aspx-vb[GridViewSelectedDataKeyIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedDataKeyIndex/VB/gridviewselecteddatakeyvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No data keys are specified in the <see cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" /> property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedValue" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -4744,12 +5212,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedIndex%2A> property to select the second row in a <xref:System.Web.UI.WebControls.GridView> control when the control is initially displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.GridView.SelectedIndex" /> property is set to a value less than -1.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedDataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedValue" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -4772,18 +5244,22 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanged> event is raised when a row's Select button is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the select operation. This enables you to provide an event-handling method that performs a custom routine, such as updating a status label with the currently selected row, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanged> event to display the name of the customer in the selected row of the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanging">
@@ -4811,18 +5287,23 @@
   
  A <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object is passed to the event-handling method, which enables you to determine the index of the row selected by the user and to indicate that the selection operation should be canceled. To cancel the selection operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event to cancel a select operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AutoGenerateSelectButton" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanging(System.Web.UI.WebControls.GridViewSelectEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanged" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSelectedIndexChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedPersistedDataKey">
@@ -4890,11 +5371,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedRow%2A> property to access the properties of the <xref:System.Web.UI.WebControls.GridViewRow> object that represents the selected row in the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedIndex" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedDataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedValue" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedRowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedRowStyle">
@@ -4940,11 +5425,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedRowStyle%2A> property to define a custom style for the selected row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]
+ [!code-aspx-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AlternatingRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EditRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.EmptyDataRowStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.PagerStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -4980,11 +5473,15 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SelectedValue%2A> property to determine the data key value of the selected row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedValue/CS/gridviewselectedvaluecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedValue/VB/gridviewselectedvaluevb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSelectedValue#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelectedValue/CS/gridviewselectedvaluecs.aspx#1)]
+ [!code-aspx-vb[GridViewSelectedValue#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelectedValue/VB/gridviewselectedvaluevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataKey" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeys" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SelectedDataKey" />
       </Docs>
     </Member>
     <Member MemberName="SelectRow">
@@ -5103,11 +5600,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.ShowFooter%2A> property to display the footer row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]
+ [!code-aspx-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowHeader" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -5142,11 +5641,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.ShowHeader%2A> property to display the header row in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewShowHeader/CS/gridviewshowheadercs.aspx#1)]
+ [!code-aspx-vb[GridViewShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewShowHeader/VB/gridviewshowheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.ShowFooter" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeaderWhenEmpty">
@@ -5204,12 +5705,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Sort%2A> method to programmatically sort the <xref:System.Web.UI.WebControls.GridView> control by multiple columns.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSort/CS/GridViewSortcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSort/VB/GridViewSortvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSort#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSort/CS/GridViewSortcs.aspx#1)]
+ [!code-aspx-vb[GridViewSort#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSort/VB/GridViewSortvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.WebControls.GridView" /> control is bound to a data source control, but the <see cref="T:System.Web.UI.DataSourceView" /> that is associated with the data source is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.DeleteRow(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.UpdateRow(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SortDirection">
@@ -5255,11 +5763,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SortDirection%2A> property to programmatically determine the sort direction of a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewFooterRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/gridviewfooterrow/CS/gridviewfooterrowcs.aspx#1)]
+ [!code-aspx-vb[GridViewFooterRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/gridviewfooterrow/VB/gridviewfooterrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SortDirection" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortExpression" />
       </Docs>
     </Member>
     <Member MemberName="Sorted">
@@ -5282,18 +5793,23 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.GridView.Sorted> event is raised when the hyperlink to sort a column is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This enables you to provide an event-handling method that performs a custom routine, such as custom sorting, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Sorted> event to display the name of the column being sorted.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]
+ [!code-aspx-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SortedAscendingCellStyle">
@@ -5483,11 +5999,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.SortExpression%2A> property to determine the name of the column being sorted.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewAllowSortingColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSortingColumns/CS/GridViewAllowSortingColumnscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewAllowSortingColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSortingColumns/VB/GridViewAllowSortingColumnsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewAllowSortingColumns#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewAllowSortingColumns/CS/GridViewAllowSortingColumnscs.aspx#1)]
+ [!code-aspx-vb[GridViewAllowSortingColumns#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewAllowSortingColumns/VB/GridViewAllowSortingColumnsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.SortDirection" />
       </Docs>
     </Member>
     <Member MemberName="Sorting">
@@ -5514,23 +6032,29 @@
   
  For information about how to programmatically initiate a sort operation, see the <xref:System.Web.UI.WebControls.GridView.Sort%2A> method.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Sorting> event to perform the sorting functionality when the <xref:System.Web.UI.WebControls.GridView> control is bound to a <xref:System.Data.DataTable> object by setting the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property programmatically.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsorting2cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsorting2vb.aspx#2)]  -->  
+ [!code-aspx-csharp[GridViewSorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsorting2cs.aspx#2)]
+ [!code-aspx-vb[GridViewSorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsorting2vb.aspx#2)]  
   
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.Sorting> event to cancel a sorting operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]
+ [!code-aspx-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewSortEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowSorting" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorting(System.Web.UI.WebControls.GridViewSortEventArgs)" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.Sorted" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnSorted(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.GetCallbackResult">
@@ -5585,6 +6109,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys">
@@ -5641,6 +6166,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
+        <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
+        <altmember cref="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript">
@@ -5672,6 +6200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.WebControls.IDataBoundControl.DataKeyNames">
@@ -6053,6 +6582,8 @@
         <block subset="none" type="overrides">
           <para>You can override this property to specify which <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value to use for your derived control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.TagKey" />
       </Docs>
     </Member>
     <Member MemberName="TopPagerRow">
@@ -6094,11 +6625,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.TopPagerRow%2A> property to access the top pager row in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView.TopPagerRow%2A> property is used to retrieve a <xref:System.Web.UI.WebControls.DropDownList> control from the pager row.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewTopPagerRow/CS/gridviewtoppagerrowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewTopPagerRow/VB/gridviewtoppagerrowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewTopPagerRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewTopPagerRow/CS/gridviewtoppagerrowcs.aspx#1)]
+ [!code-aspx-vb[GridViewTopPagerRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewTopPagerRow/VB/gridviewtoppagerrowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.AllowPaging" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.BottomPagerRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.FooterRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.HeaderRow" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -6124,6 +6660,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="UpdateMethod">
@@ -6189,7 +6727,7 @@
  Use the <xref:System.Web.UI.WebControls.GridView.UpdateRow%2A> method to programmatically update the record at the specified index in the data source. This method is commonly used when you need to update a record from outside of the <xref:System.Web.UI.WebControls.GridView> control, such as from a different control on the page.  
   
 > [!NOTE]
->  This method can be called only for the row that is currently in edit mode, or for a row that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+>  This method can be called only for the row that is currently in edit mode, or for a row that contains a two-way data-bound input control. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
  To specify whether page validation is performed before the update operation, use the `causesValidation` parameter. Calling this method also raises the <xref:System.Web.UI.WebControls.GridView.RowUpdated> and <xref:System.Web.UI.WebControls.GridView.RowUpdating> events.  
   
@@ -6198,12 +6736,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.UpdateRow%2A> method to programmatically update a record in a <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdateRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateRow/CS/GridViewUpdateRowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdateRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateRow/VB/GridViewUpdateRowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdateRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdateRow/CS/GridViewUpdateRowcs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdateRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdateRow/VB/GridViewUpdateRowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.WebControls.GridView" /> control is bound to a data source control, but the <see cref="T:System.Web.UI.DataSourceView" /> associated with the data source is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.GridView.DeleteRow(System.Int32)" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.Sort(System.String,System.Web.UI.WebControls.SortDirection)" />
       </Docs>
     </Member>
     <Member MemberName="UseAccessibleHeader">
@@ -6240,11 +6780,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridView.UseAccessibleHeader%2A> property to disable the accessible header.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUseAccessibleHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUseAccessibleHeader/CS/gridviewuseaccessibleheadercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUseAccessibleHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUseAccessibleHeader/VB/gridviewuseaccessibleheadervb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUseAccessibleHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUseAccessibleHeader/CS/gridviewuseaccessibleheadercs.aspx#1)]
+ [!code-aspx-vb[GridViewUseAccessibleHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUseAccessibleHeader/VB/gridviewuseaccessibleheadervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Caption" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.CaptionAlign" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.RowHeaderColumn" />
       </Docs>
     </Member>
     <Member MemberName="VirtualItemCount">

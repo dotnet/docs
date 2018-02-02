@@ -59,6 +59,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.UpDownBase" />
+    <altmember cref="T:System.Windows.Forms.NumericUpDown" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.UpDownBase" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -142,6 +145,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.UpButton" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -187,6 +191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.Items" />
+        <altmember cref="T:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -254,6 +260,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DomainUpDown.OnSelectedItemChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.DomainUpDown.OnSelectedItemChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.SelectedItem" />
+        <altmember cref="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextBoxKeyPress">
@@ -410,6 +418,7 @@
  -or-  
   
  The assigned value is greater than the <see cref="P:System.Windows.Forms.DomainUpDown.Items" /> count.</exception>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.SelectedItem" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -452,6 +461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.SelectedIndex" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItemChanged">
@@ -477,7 +487,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DomainUpDown.SelectedItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DomainUpDown.SelectedItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DomainUpDown> named `DomainUpDown1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DomainUpDown.SelectedItemChanged> event.  
   
@@ -486,6 +496,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DomainUpDown.SelectedItem" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.UpButton" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DownButton" />
       </Docs>
     </Member>
     <Member MemberName="Sorted">
@@ -577,6 +590,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DownButton" />
       </Docs>
     </Member>
     <Member MemberName="UpdateEditText">
@@ -595,6 +609,7 @@
       <Docs>
         <summary>Updates the text in the spin box (also known as an up-down control) to display the selected item.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.UpDownBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -638,6 +653,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.DownButton" />
+        <altmember cref="M:System.Windows.Forms.DomainUpDown.UpButton" />
       </Docs>
     </Member>
   </Members>

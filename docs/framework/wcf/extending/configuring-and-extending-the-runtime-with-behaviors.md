@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "attaching extensions using behaviors [WCF]"
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring and Extending the Runtime with Behaviors
 Behaviors enable you to modify default behavior and add custom extensions that inspect and validate service configuration or modify runtime behavior in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client and service applications. This topic describes the behavior interfaces, how to implement them, and how to add them to the service description (in a service application) or endpoint (in a client application) programmatically or in a configuration file. For more information about using system-provided behaviors, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md) and [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md).  
@@ -52,7 +54,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
 -   Operation behaviors (<xref:System.ServiceModel.Description.IOperationBehavior> types) enable the customization of the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes, again, on the client and service.  
   
- You can add these behaviors to the various description objects by implementing custom attributes, using application configuration files, or directly by adding them to the behaviors collection on the appropriate description object. The must, however, be added to a service description or service endpoint description object prior to calling <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> on the <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>.  
+ You can add these behaviors to the various description objects by implementing custom attributes, using application configuration files, or directly by adding them to the behaviors collection on the appropriate description object. The must, however, be added to a service description or service endpoint description object prior to calling <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>.  
   
 ### Behavior Scopes  
  There are four behavior types, each of which corresponds to a particular scope of runtime access.  
@@ -76,11 +78,11 @@ Behaviors enable you to modify default behavior and add custom extensions that i
 #### Contract Behaviors  
  Contract behaviors, which implement the <xref:System.ServiceModel.Description.IContractBehavior> interface, are used to extend both the client and service runtime across a contract.  
   
- There are two mechanisms for adding contract behaviors to a contract.  The first mechanism is to create a custom attribute to be used on the contract interface. When a contract interface is passed to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] examines the attributes on the interface. If any attributes are implementations of <xref:System.ServiceModel.Description.IContractBehavior>, those are added to the behaviors collection on the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=fullName> created for that interface.  
+ There are two mechanisms for adding contract behaviors to a contract.  The first mechanism is to create a custom attribute to be used on the contract interface. When a contract interface is passed to either a <xref:System.ServiceModel.ServiceHost> or a <xref:System.ServiceModel.ChannelFactory%601>, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] examines the attributes on the interface. If any attributes are implementations of <xref:System.ServiceModel.Description.IContractBehavior>, those are added to the behaviors collection on the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> created for that interface.  
   
- You can also implement the <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=fullName> on the custom contract behavior attribute. In this case, the behavior is as follows when applied to:  
+ You can also implement the <xref:System.ServiceModel.Description.IContractBehaviorAttribute?displayProperty=nameWithType> on the custom contract behavior attribute. In this case, the behavior is as follows when applied to:  
   
- •A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=fullName> property.  
+ •A contract interface. In this case, the behavior is applied to all contracts of that type in any endpoint and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ignores the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A?displayProperty=nameWithType> property.  
   
  •A service class. In this case, the behavior is applied only to endpoints the contract of which is the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property.  
   
@@ -88,7 +90,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
   
  The second mechanism is to add the behavior to the behaviors collection on a <xref:System.ServiceModel.Description.ContractDescription>.  
   
- Examples of contract behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include the <xref:System.ServiceModel.DeliveryRequirementsAttribute?displayProperty=fullName> attribute. For more information and an example, see the reference topic.  
+ Examples of contract behaviors in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] include the <xref:System.ServiceModel.DeliveryRequirementsAttribute?displayProperty=nameWithType> attribute. For more information and an example, see the reference topic.  
   
 #### Endpoint Behaviors  
  Endpoint behaviors, which implement <xref:System.ServiceModel.Description.IEndpointBehavior>, are the primary mechanism by which you modify the entire service or client run time for a specific endpoint.  
@@ -113,7 +115,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
  For more information and an example, see the reference topic.  
   
 ### Using Configuration to Create Behaviors  
- Service and endpoint, and contract behaviors can by designed to be specified in code or using attributes; only service and endpoint behaviors can be configured using application or Web configuration files. Exposing behaviors using attributes allows developers to specify a behavior at compilation-time that cannot be added, removed, or modified at runtime. This is often suitable for behaviors that are always required for the correct operation of a service (for example, the transaction-related parameters to the <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=fullName> attribute). Exposing behaviors using configuration allows developers to leave the specification and configuration of those behaviors to those who deploy the service. This is suitable for behaviors that are optional components or other deployment-specific configuration, such as whether metadata is exposed for the service or the particular authorization configuration for a service.  
+ Service and endpoint, and contract behaviors can by designed to be specified in code or using attributes; only service and endpoint behaviors can be configured using application or Web configuration files. Exposing behaviors using attributes allows developers to specify a behavior at compilation-time that cannot be added, removed, or modified at runtime. This is often suitable for behaviors that are always required for the correct operation of a service (for example, the transaction-related parameters to the <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=nameWithType> attribute). Exposing behaviors using configuration allows developers to leave the specification and configuration of those behaviors to those who deploy the service. This is suitable for behaviors that are optional components or other deployment-specific configuration, such as whether metadata is exposed for the service or the particular authorization configuration for a service.  
   
 > [!NOTE]
 >  You can also use behaviors that support configuration to enforce company application policies by inserting them into the machine.config configuration file and locking those items down. For a description and an example, see [How to: Lock Down Endpoints in the Enterprise](../../../../docs/framework/wcf/extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
@@ -190,7 +192,7 @@ Behaviors enable you to modify default behavior and add custom extensions that i
  Where `Microsoft.WCF.Documentation.EndpointBehaviorMessageInspector` is the behavior extension type and `HostApplication` is the name of the assembly into which that class has been compiled.  
   
 ### Evaluation Order  
- The <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> are responsible for building the runtime from the programming model and description. Behaviors, as previously described, contribute to that build process at the service, endpoint, contract, and operation.  
+ The <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> and the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> are responsible for building the runtime from the programming model and description. Behaviors, as previously described, contribute to that build process at the service, endpoint, contract, and operation.  
   
  The <xref:System.ServiceModel.ServiceHost> applies behaviors in the following order:  
   
@@ -215,11 +217,11 @@ Behaviors enable you to modify default behavior and add custom extensions that i
  Within any collection of behaviors, again, no order is guaranteed.  
   
 ### Adding Behaviors Programmatically  
- Properties of the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> in the service application must not be modified subsequent to the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=fullName> method on <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>. Some members, like the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A?displayProperty=fullName> property and the `AddServiceEndpoint` methods on <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>, throw an exception if modified past that point. Others permit you to modify them, but the result is undefined.  
+ Properties of the <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> in the service application must not be modified subsequent to the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=nameWithType> method on <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>. Some members, like the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A?displayProperty=nameWithType> property and the `AddServiceEndpoint` methods on <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>, throw an exception if modified past that point. Others permit you to modify them, but the result is undefined.  
   
- Similarly, on the client the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> values must not be modified after the call to <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A> on the <xref:System.ServiceModel.ChannelFactory?displayProperty=fullName>. The <xref:System.ServiceModel.ChannelFactory.Credentials%2A?displayProperty=fullName> property throws an exception if modified past that point, but the other client description values can be modified without error. The result, however, is undefined.  
+ Similarly, on the client the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> values must not be modified after the call to <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A> on the <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType>. The <xref:System.ServiceModel.ChannelFactory.Credentials%2A?displayProperty=nameWithType> property throws an exception if modified past that point, but the other client description values can be modified without error. The result, however, is undefined.  
   
- Whether for the service or client, it is recommended that you modify the description prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=fullName>.  
+ Whether for the service or client, it is recommended that you modify the description prior to calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType>.  
   
 ### Inheritance Rules for Behavior Attributes  
  All four types of behaviors can be populated using attributes – service behaviors and contract behaviors. Because attributes are defined on managed objects and members, and managed objects and members support inheritance, it is necessary to define how behavior attributes work in the context of inheritance.  

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Ink.StrokeCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,6 +134,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="propertyData" /> argument is not one of the allowed data types listed in the <see langword="Parameters" /> section.</exception>
+        <altmember cref="M:System.Windows.Ink.Stroke.ContainsPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.GetPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -199,6 +203,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.GetPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="Draw">
@@ -337,6 +344,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The set value is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Ink.Stroke.OnDrawingAttributesChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DrawingAttributesChanged">
@@ -369,6 +377,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Ink.Stroke.DrawingAttributes" />
+        <altmember cref="E:System.Windows.Ink.Stroke.DrawingAttributesReplaced" />
+        <altmember cref="M:System.Windows.Ink.Stroke.OnDrawingAttributesChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DrawingAttributesReplaced">
@@ -396,6 +407,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Ink.Stroke.DrawingAttributes" />
+        <altmember cref="M:System.Windows.Ink.Stroke.OnDrawingAttributesReplaced(System.Windows.Ink.DrawingAttributesReplacedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="GetBezierStylusPoints">
@@ -747,6 +760,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.Stroke" />.</exception>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.ContainsPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.GetPropertyDataIds" />
+        <altmember cref="M:System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyDataIds">
@@ -776,6 +793,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.ContainsPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.GetPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="HitTest">
@@ -793,17 +814,17 @@
   
  The following methods check whether the <xref:System.Windows.Ink.Stroke> is intersected.  
   
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%29?displayProperty=fullName>  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29?displayProperty=fullName>  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Windows.Ink.StylusShape%29?displayProperty=fullName>  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Windows.Ink.StylusShape%29?displayProperty=nameWithType>  
   
  The following methods check whether the <xref:System.Windows.Ink.Stroke> is surrounded.  
   
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Int32%29?displayProperty=fullName>  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Int32%29?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Rect%2CSystem.Int32%29?displayProperty=fullName>  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Rect%2CSystem.Int32%29?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -1231,6 +1252,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePropertyData">
@@ -1262,6 +1286,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.Stroke.AddPropertyData(System.Guid,System.Object)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.ContainsPropertyData(System.Guid)" />
+        <altmember cref="M:System.Windows.Ink.Stroke.GetPropertyData(System.Guid)" />
       </Docs>
     </Member>
     <Member MemberName="StylusPoints">
@@ -1393,5 +1420,50 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetClipResult">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns segments of the current <see cref="T:System.Windows.Ink.Stroke" /> that are within the specified area.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.Stroke" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Draw">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders the <see cref="T:System.Windows.Ink.Stroke" /> object based upon a <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.Geometry" /> of the current <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEraseResult">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the segments of the current <see cref="T:System.Windows.Ink.Stroke" /> after part of the <see cref="T:System.Windows.Ink.Stroke" /> is erased.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

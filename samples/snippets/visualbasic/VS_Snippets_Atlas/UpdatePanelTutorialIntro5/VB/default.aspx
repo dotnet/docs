@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="VB" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -24,9 +24,9 @@
             <ContentTemplate>
                 <fieldset>
                 <legend>Parent UpdatePanel</legend>
-                <%--<Snippet2>--%>
+                <!-- <Snippet2> -->
                 Last refresh <%=DateTime.Now.ToString() %> <br />
-                <%--</Snippet2>--%>
+                <!-- </Snippet2> -->
                 <asp:Button ID="Button1" runat="server" Text="Refresh Outer Panel" />
                 <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                     <ContentTemplate>
@@ -44,4 +44,4 @@
     </form>
 </body>
 </html>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

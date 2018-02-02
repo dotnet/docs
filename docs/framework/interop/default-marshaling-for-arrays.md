@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "interop marshaling, arrays"
   - "arrays, interop marshaling"
@@ -22,6 +20,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Default Marshaling for Arrays
 In an application consisting entirely of managed code, the common language runtime passes array types as In/Out parameters. In contrast, the interop marshaler passes an array as In parameters by default.  
@@ -40,7 +40,7 @@ In an application consisting entirely of managed code, the common language runti
   
 <a name="cpcondefaultmarshalingforarraysanchor1"></a>   
 ## Managed Arrays  
- Managed array types can vary; however, the <xref:System.Array?displayProperty=fullName> class is the base class of all array types. The **System.Array** class has properties for determining the rank, length, and lower and upper bounds of an array, as well as methods for accessing, sorting, searching, copying, and creating arrays.  
+ Managed array types can vary; however, the <xref:System.Array?displayProperty=nameWithType> class is the base class of all array types. The **System.Array** class has properties for determining the rank, length, and lower and upper bounds of an array, as well as methods for accessing, sorting, searching, copying, and creating arrays.  
   
  These array types are dynamic and do not have a corresponding static type defined in the base class library. It is convenient to think of each combination of element type and rank as a distinct type of array. Therefore, a one-dimensional array of integers is of a different type than a one-dimensional array of double types. Similarly a two-dimensional array of integers is different from a one-dimensional array of integers. The bounds of the array are not considered when comparing types.  
   
@@ -97,7 +97,7 @@ void New3([MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VT_BSTR)]
    ref String[] ar);  
 ```  
   
- Multidimensional, or nonzero-bound safe arrays, can be marshaled into managed code if the method signature produced by Tlbimp.exe is modified to indicate an element type of **ELEMENT_TYPE_ARRAY** instead of **ELEMENT_TYPE_SZARRAY**. Alternatively, you can use the **/sysarray** switch with Tlbimp.exe to import all arrays as <xref:System.Array?displayProperty=fullName> objects. In cases where the array being passed is known to be multidimensional, you can edit the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompile it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/en-us/4652beaf-77d0-4f37-9687-ca193288c0be).  
+ Multidimensional, or nonzero-bound safe arrays, can be marshaled into managed code if the method signature produced by Tlbimp.exe is modified to indicate an element type of **ELEMENT_TYPE_ARRAY** instead of **ELEMENT_TYPE_SZARRAY**. Alternatively, you can use the **/sysarray** switch with Tlbimp.exe to import all arrays as <xref:System.Array?displayProperty=nameWithType> objects. In cases where the array being passed is known to be multidimensional, you can edit the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompile it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be).  
   
 ### C-Style Arrays  
  When a C-style array is imported from a type library to a .NET assembly, the array is converted to **ELEMENT_TYPE_SZARRAY**.  
@@ -161,7 +161,7 @@ void New2(ref double ar);
 void New3(ref String ar);   
 ```  
   
- You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/en-us/4652beaf-77d0-4f37-9687-ca193288c0be). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
+ You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/library/4652beaf-77d0-4f37-9687-ca193288c0be). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
   
 -   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
   
@@ -204,7 +204,7 @@ void New3(ref String ar);
 |------------------------|-----------------|  
 |**ELEMENT_TYPE_SZARRAY** **\<** *type* **>**|<xref:System.Runtime.InteropServices.UnmanagedType> **.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type is provided in the signature. Rank is always 1, lower bound is always 0. Size is always known at run time.|  
 |**ELEMENT_TYPE_ARRAY** **\<** *type* **>** **\<** *rank* **>**[**\<** *bounds* **>**]|**UnmanagedType.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type, rank, bounds are provided in the signature. Size is always known at run time.|  
-|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=fullName>**>**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *type* **)**<br /><br /> Type, rank, bounds, and size are always known at run time.|  
+|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=nameWithType>**>**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *type* **)**<br /><br /> Type, rank, bounds, and size are always known at run time.|  
   
  There is a limitation in OLE Automation relating to arrays of structures that contain LPSTR or LPWSTR.  Therefore, **String** fields have to be marshaled as **UnmanagedType.BSTR**. Otherwise, an exception will be thrown.  
   
@@ -330,7 +330,7 @@ void New(long [][][] ar );
 ```  
   
 ### ELEMENT_TYPE_CLASS \<System.Array>  
- When a method containing a <xref:System.Array?displayProperty=fullName> parameter is exported from a .NET assembly to a type library, the array parameter is converted to an **_Array** interface. The contents of the managed array are accessible only through the methods and properties of the **_Array** interface. **System.Array** can also be marshaled as a **SAFEARRAY** by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute. When marshaled as a safe array, the array elements are marshaled as variants. For example:  
+ When a method containing a <xref:System.Array?displayProperty=nameWithType> parameter is exported from a .NET assembly to a type library, the array parameter is converted to an **_Array** interface. The contents of the managed array are accessible only through the methods and properties of the **_Array** interface. **System.Array** can also be marshaled as a **SAFEARRAY** by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute. When marshaled as a safe array, the array elements are marshaled as variants. For example:  
   
 #### Managed signature  
   
@@ -379,7 +379,7 @@ public struct MyStruct {
 ```  
   
 ## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)   
- [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)   
- [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2)   
+ [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)  
+ [Blittable and Non-Blittable Types](../../../docs/framework/interop/blittable-and-non-blittable-types.md)  
+ [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2)  
  [Copying and Pinning](../../../docs/framework/interop/copying-and-pinning.md)

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 37575ead-d820-4a67-8059-da11a2ab48e2
 caps.latest.revision: 19
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Service Versioning
 After initial deployment, and potentially several times during their lifetime, services (and the endpoints they expose) may need to be changed for a variety of reasons, such as changing business needs, information technology requirements, or to address other issues. Each change introduces a new version of the service. This topic explains how to consider versioning in [!INCLUDE[indigo1](../../../includes/indigo1-md.md)].  
@@ -163,14 +165,15 @@ public class PurchaseOrderV1 : IPurchaseOrderV1
 public interface IPurchaseOrderV2  
 {  
     DateTime OrderDate { get; set; }  
-}  
+}
+
 [DataContract(   
-Name = "PurchaseOrder ",  
+Name = "PurchaseOrder",  
 Namespace = "http://examples.microsoft.com/WCF/2006/02/PurchaseOrder")]  
 public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2  
 {  
     [DataMember(...)]  
-    public DateTime OrderId {...}  
+    public string OrderId {...}  
     [DataMember(...)]  
     public string CustomerId {...}  
     [DataMember(...)]  
@@ -181,15 +184,15 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
  The service contract would be updated to include new operations that are written in terms of `PurchaseOrderV2`. Existing business logic written in terms of `IPurchaseOrderV1` would continue to work for `PurchaseOrderV2` and new business logic that needs the `OrderDate` property would be written in terms of `IPurchaseOrderV2`.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Runtime.Serialization.DataContractAttribute>   
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>   
- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>   
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject>   
- <xref:System.Runtime.Serialization.ExtensionDataObject>   
- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>   
- <xref:System.Xml.Serialization.XmlSerializer>   
- [Data Contract Equivalence](../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)   
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Runtime.Serialization.DataContractAttribute>  
+ <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
+ <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
+ <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject>  
+ <xref:System.Runtime.Serialization.ExtensionDataObject>  
+ <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>  
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ [Data Contract Equivalence](../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
  [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

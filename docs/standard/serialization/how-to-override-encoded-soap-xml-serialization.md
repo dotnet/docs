@@ -7,19 +7,17 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "overriding XML serialization"
   - "SOAP, overriding encoded XML serialization"
 ms.assetid: d0791df8-04e3-46b4-a6be-fe0ed09267e8
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Override Encoded SOAP XML Serialization
 [Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  
@@ -288,9 +286,9 @@ public class Run
 ```  
   
 ## See Also  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)   
- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)   
- [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)   
- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)   
+ [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
+ [XML Serialization with XML Web Services](../../../docs/standard/serialization/xml-serialization-with-xml-web-services.md)  
+ [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+ [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
  [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)

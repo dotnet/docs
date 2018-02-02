@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies values that represent types of metadata constants.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A Boolean type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 1-byte integer.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -67,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A character type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An 8-byte floating point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 2-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -121,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 4-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -139,7 +140,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 8-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -157,7 +158,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An invalid type.</summary>
       </Docs>
     </Member>
     <Member MemberName="NullReference">
@@ -175,7 +176,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A null reference.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -193,7 +194,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A signed 1-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -211,7 +212,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A 4-byte floating point type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -229,7 +230,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A <see cref="System.String" /> type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -247,7 +248,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 2-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -265,7 +266,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 4-byte integer type.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -283,7 +284,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unsigned 8-byte integer type.</summary>
       </Docs>
     </Member>
   </Members>

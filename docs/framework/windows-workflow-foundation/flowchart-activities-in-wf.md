@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e80d9734-b43a-4d21-a250-74400330a4c0
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Flowchart Activities in WF
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides several system-provided activities for controlling execution and branching within a Flowchart.  

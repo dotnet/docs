@@ -19,11 +19,6 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>FSharp.Core</AssemblyName>
-    <AssemblyVersion>2.3.98.1</AssemblyVersion>
-    <AssemblyVersion>3.98.4.0</AssemblyVersion>
-  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Defines methods to support the comparison of objects for structural equality.</summary>
@@ -36,7 +31,7 @@
 > [!NOTE]
 >  The <xref:System.Collections.IStructuralEquatable> interface supports only custom comparisons for structural equality. The <xref:System.Collections.IStructuralComparable> interface supports custom structural comparisons for sorting and ordering.  
   
- The .NET Framework also provides default equality comparers, which are returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> and <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=fullName> properties. For more information, see the example.  
+ The .NET Framework also provides default equality comparers, which are returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> and <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=nameWithType> properties. For more information, see the example.  
   
  The generic tuple classes (<xref:System.Tuple%601>, <xref:System.Tuple%602>, <xref:System.Tuple%603>, and so on) and the <xref:System.Array> class provide explicit implementations of the <xref:System.Collections.IStructuralEquatable> interface. By casting (in C#) or converting (in Visual Basic) the current instance of an array or tuple to an <xref:System.Collections.IStructuralEquatable> interface value and providing your <xref:System.Collections.IEqualityComparer> implementation as an argument to the <xref:System.Collections.IStructuralEquatable.Equals%2A> method, you can define a custom equality comparison for the array or collection.  
   
@@ -48,13 +43,16 @@
  [!code-csharp[System.Collections.IStructuralEquatable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.istructuralequatable/cs/nanexample1.cs#1)]
  [!code-vb[System.Collections.IStructuralEquatable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.istructuralequatable/vb/nanexample1.vb#1)]  
   
- The following example creates two identical 3-tuple objects whose components consist of three <xref:System.Double> values. The value of the second component is <xref:System.Double.NaN?displayProperty=fullName>. The example then calls the <xref:System.Tuple%603.Equals%2A?displayProperty=fullName> method, and it calls the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=fullName> method three times. The first time, it passes the default equality comparer that is returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> property. The second time, it passes the default equality comparer that is returned by the <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=fullName> property. The third time, it passes the custom `NanComparer` object. As the output from the example shows, the first three method calls return `true`, whereas the fourth call returns `false`.  
+ The following example creates two identical 3-tuple objects whose components consist of three <xref:System.Double> values. The value of the second component is <xref:System.Double.NaN?displayProperty=nameWithType>. The example then calls the <xref:System.Tuple%603.Equals%2A?displayProperty=nameWithType> method, and it calls the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=nameWithType> method three times. The first time, it passes the default equality comparer that is returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> property. The second time, it passes the default equality comparer that is returned by the <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=nameWithType> property. The third time, it passes the custom `NanComparer` object. As the output from the example shows, the first three method calls return `true`, whereas the fourth call returns `false`.  
   
  [!code-csharp[System.Collections.IStructuralEquatable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.istructuralequatable/cs/nanexample1.cs#2)]
  [!code-vb[System.Collections.IStructuralEquatable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.istructuralequatable/vb/nanexample1.vb#2)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.IEqualityComparer" />
+    <altmember cref="T:System.Collections.IStructuralComparable" />
+    <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -79,11 +77,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
-      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -101,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.IStructuralEquatable.Equals%2A> method supports custom structural comparison of array and tuple objects. This method in turn calls the `comparer` object's <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> method to compare individual array elements or tuple components, starting with the first element or component. The individual calls to <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> end and the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=fullName> method returns a value either when a method call returns `false` or after all array elements or tuple components have been compared.  
+ The <xref:System.Collections.IStructuralEquatable.Equals%2A> method supports custom structural comparison of array and tuple objects. This method in turn calls the `comparer` object's <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> method to compare individual array elements or tuple components, starting with the first element or component. The individual calls to <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=nameWithType> end and the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=nameWithType> method returns a value either when a method call returns `false` or after all array elements or tuple components have been compared.  
   
    
   
@@ -111,13 +104,14 @@
  [!code-csharp[System.Collections.IStructuralEquatable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.istructuralequatable/cs/nanexample1.cs#1)]
  [!code-vb[System.Collections.IStructuralEquatable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.istructuralequatable/vb/nanexample1.vb#1)]  
   
- The following example creates two identical 3-tuple objects whose components consist of three <xref:System.Double> values. The value of the second component is <xref:System.Double.NaN?displayProperty=fullName>. The example then calls the <xref:System.Tuple%603.Equals%2A?displayProperty=fullName> method, and it calls the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=fullName> method three times. The first time, it passes the default equality comparer that is returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> property. The second time, it passes the default equality comparer that is returned by the <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=fullName> property. The third time, it passes the custom `NanComparer` object. As the output from the example shows, the first three method calls return `true`, whereas the fourth call returns `false`.  
+ The following example creates two identical 3-tuple objects whose components consist of three <xref:System.Double> values. The value of the second component is <xref:System.Double.NaN?displayProperty=nameWithType>. The example then calls the <xref:System.Tuple%603.Equals%2A?displayProperty=nameWithType> method, and it calls the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=nameWithType> method three times. The first time, it passes the default equality comparer that is returned by the <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> property. The second time, it passes the default equality comparer that is returned by the <xref:System.Collections.StructuralComparisons.StructuralEqualityComparer%2A?displayProperty=nameWithType> property. The third time, it passes the custom `NanComparer` object. As the output from the example shows, the first three method calls return `true`, whereas the fourth call returns `false`.  
   
  [!code-csharp[System.Collections.IStructuralEquatable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.istructuralequatable/cs/nanexample1.cs#2)]
  [!code-vb[System.Collections.IStructuralEquatable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.istructuralequatable/vb/nanexample1.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -141,11 +135,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

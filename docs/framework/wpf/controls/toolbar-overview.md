@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "controls, ToolBar"
-  - "ToolBar control"
+  - "controls [WPF], ToolBar"
+  - "ToolBar control [WPF]"
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ToolBar Overview
 <xref:System.Windows.Controls.ToolBar> controls are containers for a group of commands or controls which are typically related in their function. A <xref:System.Windows.Controls.ToolBar> usually contains buttons which invoke commands.  
@@ -39,7 +41,7 @@ manager: "wpickett"
  ![ToolBar with overflow](../../../../docs/framework/wpf/controls/media/toolbarwithoverflowitem.png "ToolbarWithOverflowItem")  
 Toolbar with Overflow Items  
   
- You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> attached property to <xref:System.Windows.Controls.OverflowMode.Always?displayProperty=fullName>, <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=fullName>, or <xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=fullName>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
+ You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=nameWithType> attached property to <xref:System.Windows.Controls.OverflowMode.Always?displayProperty=nameWithType>, <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=nameWithType>, or <xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=nameWithType>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
   
  [!code-xaml[ToolBarExample#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#3)]  
   
@@ -48,7 +50,7 @@ Toolbar with Overflow Items
  [ToolBar Styles and Templates](../../../../docs/framework/wpf/controls/toolbar-styles-and-templates.md).  
   
 ## See Also  
- <xref:System.Windows.Controls.Primitives.ToolBarPanel>   
- <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>   
- [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)   
+ <xref:System.Windows.Controls.Primitives.ToolBarPanel>  
+ <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>  
+ [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)  
  [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)

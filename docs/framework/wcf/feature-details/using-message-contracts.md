@@ -10,18 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "message contracts [WCF]"
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
 caps.latest.revision: 46
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Message Contracts
-Typically when building [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications, developers pay close attention to the data structures and serialization issues and do not need to concern themselves with the structure of the messages in which the data is carried. For these applications, creating data contracts for the parameters or return values is straightforward. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).)  
+Typically when building [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] applications, developers pay close attention to the data structures and serialization issues and do not need to concern themselves with the structure of the messages in which the data is carried. For these applications, creating data contracts for the parameters or return values is straightforward. ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).)  
   
  However, sometimes complete control over the structure of a SOAP message is just as important as control over its contents. This is especially true when interoperability is important or to specifically control security issues at the level of the message or message part. In these cases, you can create a *message contract* that enables you to specify the structure of the precise SOAP message required.  
   
@@ -118,7 +120,7 @@ public class BankingTransaction
   
  By default, the namespace is the same as the namespace of the service contract that the message is participating in, and the name is determined by the member name to which the <xref:System.ServiceModel.MessageHeaderAttribute> or the <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes are applied.  
   
- You can change these defaults by manipulating the <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A?displayProperty=fullName> and <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A?displayProperty=fullName> (on the parent class of the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes).  
+ You can change these defaults by manipulating the <xref:System.ServiceModel.MessageContractMemberAttribute.Name%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.MessageContractMemberAttribute.Namespace%2A?displayProperty=nameWithType> (on the parent class of the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes).  
   
  Consider the class in the following code example.  
   
@@ -160,7 +162,7 @@ public class BankingTransaction
 >  Having more than one message body part in messages that are not wrapped is not compliant with WS-I Basic Profile 1.1 and is not recommended when designing new message contracts. However, it may be necessary to have more than one unwrapped message body part in certain specific interoperability scenarios. If you are going to transmit more than one piece of data in a message body, it is recommended to use the default (wrapped) mode. Having more than one message header in unwrapped messages is completely acceptable.  
   
 ## Using Custom Types Inside Message Contracts  
- Each individual message header and message body part is serialized (turned into XML) using the chosen serialization engine for the service contract where the message is used. The default serialization engine, the `XmlFormatter`, can handle any type that has a data contract, either explicitly (by having the <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>) or implicitly (by being a primitive type, having the <xref:System.SerializableAttribute?displayProperty=fullName>, and so on). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+ Each individual message header and message body part is serialized (turned into XML) using the chosen serialization engine for the service contract where the message is used. The default serialization engine, the `XmlFormatter`, can handle any type that has a data contract, either explicitly (by having the <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>) or implicitly (by being a primitive type, having the <xref:System.SerializableAttribute?displayProperty=nameWithType>, and so on). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
  In the preceding example, the `Operation` and `BankingTransactionData` types must have a data contract, and `transactionDate` is serializable because <xref:System.DateTime> is a primitive (and so has an implicit data contract).  
   
@@ -219,7 +221,7 @@ public class BankingDepositLog
 ## Signing and Encrypting Parts of the Message  
  A message contract can indicate whether the headers and/or body of the message should be digitally signed and encrypted.  
   
- This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
+ This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  For these security features to work, you must properly configure the binding and behaviors. If you use these security features without the proper configuration (for example, attempting to sign a message without supplying your credentials), an exception is thrown at validation time.  
   
@@ -245,7 +247,7 @@ public class PatientRecord
  In this example, the `recordID` header is not protected, `patientName` is `signed`, and `SSN` is encrypted and signed. At least one body part, `medicalHistory`, has <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> applied, and thus the entire message body is encrypted and signed, even though the comments and diagnosis body parts specify lower protection levels.  
   
 ## SOAP Action  
- SOAP and related Web services standards define a property called `Action` that can be present for every SOAP message sent. The operation's <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName> properties control the value of this property.  
+ SOAP and related Web services standards define a property called `Action` that can be present for every SOAP message sent. The operation's <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=nameWithType> properties control the value of this property.  
   
 ## SOAP Header Attributes  
  The SOAP standard defines the following attributes that may exist on a header:  
@@ -258,7 +260,7 @@ public class PatientRecord
   
  The `Actor` or `Role` attribute specifies the Uniform Resource Identifier (URI) of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the node processing the header must understand it. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute, as specified in the "Message Contract Versioning" section later in this topic. However, it allows you to read and write these attributes as necessary, as in the following description.  
   
- When sending a message, these attributes are not emitted by default. You can change this in two ways. First, you may statically set the attributes to any desired values by changing the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A?displayProperty=fullName>, <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A?displayProperty=fullName>, and <xref:System.ServiceModel.MessageHeaderAttribute.Relay%2A?displayProperty=fullName> properties, as shown in the following code example. (Note that there is no `Role` property; setting the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A> property emits the `Role` attribute if you are using SOAP 1.2).  
+ When sending a message, these attributes are not emitted by default. You can change this in two ways. First, you may statically set the attributes to any desired values by changing the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.MessageHeaderAttribute.Relay%2A?displayProperty=nameWithType> properties, as shown in the following code example. (Note that there is no `Role` property; setting the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A> property emits the `Role` attribute if you are using SOAP 1.2).  
   
 ```csharp  
 [MessageContract]  
@@ -309,7 +311,7 @@ bt.documentApprover.MustUnderstand = false; // override the static default of 't
  When a message is received and then sent back, the SOAP attribute settings only go round-trip for headers of the <xref:System.ServiceModel.MessageHeader%601> type.  
   
 ## Order of SOAP Body Parts  
- In some circumstances, you may need to control the order of the body parts. The order of the body elements is alphabetical by default, but can be controlled by the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=fullName> property. This property has the same semantics as the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A?displayProperty=fullName> property, except for the behavior in inheritance scenarios (in message contracts, base type body members are not sorted before the derived type body members). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Member Order](../../../../docs/framework/wcf/feature-details/data-member-order.md).  
+ In some circumstances, you may need to control the order of the body parts. The order of the body elements is alphabetical by default, but can be controlled by the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=nameWithType> property. This property has the same semantics as the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A?displayProperty=nameWithType> property, except for the behavior in inheritance scenarios (in message contracts, base type body members are not sorted before the derived type body members). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Data Member Order](../../../../docs/framework/wcf/feature-details/data-member-order.md).  
   
  In the following example, `amount` would normally come first because it is first alphabetically. However, the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property puts it into the third position.  
   
@@ -342,7 +344,7 @@ public class BankingTransaction
   
 -   All of the message headers in the inheritance hierarchy are collected together to form the full set of headers for the message.  
   
--   All of the message body parts in the inheritance hierarchy are collected together to form the full message body. The body parts are ordered according to the usual ordering rules (by <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=fullName> property and then alphabetical), with no relevance to their place in the inheritance hierarchy. Using message contract inheritance where message body parts occur at multiple levels of the inheritance tree is strongly discouraged. If a base class and a derived class define a header or a body part with the same name, the member from the base-most class is used to store the value of that header or body part.  
+-   All of the message body parts in the inheritance hierarchy are collected together to form the full message body. The body parts are ordered according to the usual ordering rules (by <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=nameWithType> property and then alphabetical), with no relevance to their place in the inheritance hierarchy. Using message contract inheritance where message body parts occur at multiple levels of the inheritance tree is strongly discouraged. If a base class and a derived class define a header or a body part with the same name, the member from the base-most class is used to store the value of that header or body part.  
   
  Consider the classes in the following code example.  
   
@@ -376,7 +378,7 @@ public class PatientRecord : PersonRecord
 -   When using the same message contract in multiple operations, multiple message types are generated in the WSDL document. The names are made unique by adding the numbers "2", "3", and so on, for subsequent uses. When importing back the WSDL, multiple message contract types are created and are identical except for their names.  
   
 ## SOAP Encoding Considerations  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows you to use the legacy SOAP encoding style of XML, however, its use is not recommended. When using this style (by setting the `Use` property to `Encoded` on the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=fullName> applied to the service contract), the following additional considerations apply:  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows you to use the legacy SOAP encoding style of XML, however, its use is not recommended. When using this style (by setting the `Use` property to `Encoded` on the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=nameWithType> applied to the service contract), the following additional considerations apply:  
   
 -   The message headers are not supported; this means that the attribute <xref:System.ServiceModel.MessageHeaderAttribute> and the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute> are incompatible with SOAP encoding.  
   
@@ -454,5 +456,5 @@ public class OperationDetails
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the `/messageContract` command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  
   
 ## See Also  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)

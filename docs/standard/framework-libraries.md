@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Framework Libraries
@@ -26,33 +29,33 @@ The BCL provides the most foundational types and utility functionality and are t
 
 .NET includes a set of primitive types, which are used (to varying degrees) in all programs. These types contain data, such as numbers, strings, bytes and arbitrary objects. The C# language includes keywords for these types. A sample set of these types is listed below, with the matching C# keywords.
 
-* [System.Object](https://msdn.microsoft.com/library/system.object.aspx) ([object](https://msdn.microsoft.com/library/9kkx3h3c.aspx)) - The ultimate base class in the CLR type system. It is the root of the type hierarchy.
-* [System.Int16](https://msdn.microsoft.com/library/system.int16.aspx) ([short](https://msdn.microsoft.com/library/ybs77ex4.aspx)) - A 16-bit signed integer type. The unsigned [UInt16](https://msdn.microsoft.com/library/system.uint16.aspx) also exists.
-* [System.Int32](https://msdn.microsoft.com/library/system.int32.aspx) ([int](https://msdn.microsoft.com/library/5kzh1b5w.aspx)) - A 32-bit signed integer type. The unsigned [UInt32](https://msdn.microsoft.com/library/x0sksh43.aspx) also exists.
-* [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)) - A 32-bit floating-point type.
-* [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)) - A 128-bit decimal type.
-* [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)) - An unsigned 8-bit integer that represents a byte of memory.
-* [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)) - A boolean type that represents ‘true’ or ‘false’.
-* [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)) - A 16-bit numeric type that represents a Unicode character.
-* [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
+* <xref:System.Object?displayProperty=nameWithType> ([object](../csharp/language-reference/keywords/object.md)) - The ultimate base class in the CLR type system. It is the root of the type hierarchy.
+* <xref:System.Int16?displayProperty=nameWithType> ([short](../csharp/language-reference/keywords/short.md)) - A 16-bit signed integer type. The unsigned <xref:System.UInt16> also exists.
+* <xref:System.Int32?displayProperty=nameWithType> ([int](../csharp/language-reference/keywords/int.md)) - A 32-bit signed integer type. The unsigned [UInt32](../csharp/language-reference/keywords/uint.md) also exists.
+* <xref:System.Single?displayProperty=nameWithType> ([float](../csharp/language-reference/keywords/float.md)) - A 32-bit floating-point type.
+* <xref:System.Decimal?displayProperty=nameWithType> ([decimal](../csharp/language-reference/keywords/decimal.md)) - A 128-bit decimal type.
+* <xref:System.Byte?displayProperty=nameWithType> ([byte](../csharp/language-reference/keywords/byte.md)) - An unsigned 8-bit integer that represents a byte of memory.
+* <xref:System.Boolean?displayProperty=nameWithType> ([bool](../csharp/language-reference/keywords/bool.md)) - A boolean type that represents `true` or `false`.
+* <xref:System.Char?displayProperty=nameWithType> ([char](../csharp/language-reference/keywords/char.md)) - A 16-bit numeric type that represents a Unicode character.
+* <xref:System.String?displayProperty=nameWithType> ([string](../csharp/language-reference/keywords/string.md)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
 
 ## Data Structures
 
 .NET includes a set of data structures that are the workhorses of almost any .NET apps. These are mostly collections, but also include other types.
 
-*   [Array](https://msdn.microsoft.com/library/system.array.aspx) - Represents an array of strongly types objects that can be accessed by index. Has a fixed size, per its construction.
-*   [List](https://msdn.microsoft.com/library/6sh2ey19.aspx) - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
-*   [Dictionary](https://msdn.microsoft.com/library/xfhwa508.aspx) - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
-*   [Uri](https://msdn.microsoft.com/library/system.uri.aspx) - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
-*   [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) - Represents an instant in time, typically expressed as a date and time of day.
+*   <xref:System.Array> - Represents an array of strongly types objects that can be accessed by index. Has a fixed size, per its construction.
+*   <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
+*   <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
+*   <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
+*   <xref:System.DateTime> - Represents an instant in time, typically expressed as a date and time of day.
 
 ## Utility APIs
 
 .NET includes a set of utility APIs that provide functionality for many important tasks.
 
-*   [HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx) - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
-*   [XDocument](https://msdn.microsoft.com/library/system.xml.linq.xdocument.aspx) - An API for loading, and querying XML documents with LINQ.
-*   [StreamReader](https://msdn.microsoft.com/library/system.io.streamreader.aspx) - An API for reading files ([StreamWriter](https://msdn.microsoft.com/library/system.io.stringwriter.aspx)) Can be used to write files.
+*   <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
+*   <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
+*   <xref:System.IO.StreamReader> - An API for reading files (<xref:System.IO.StringWriter>) Can be used to write files.
 
 ## App-Model APIs
 

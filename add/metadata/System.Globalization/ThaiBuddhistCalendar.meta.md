@@ -38,14 +38,14 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.GetMonthsInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -61,14 +61,14 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -93,7 +93,7 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.GetDaysInYear
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -163,7 +163,7 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.GetLeapMonth
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -224,7 +224,7 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.ToDateTime
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -276,7 +276,7 @@ manager: "wpickett"
 uid: System.Globalization.ThaiBuddhistCalendar.IsLeapDay
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

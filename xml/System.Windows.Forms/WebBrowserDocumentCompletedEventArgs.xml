@@ -16,12 +16,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=fullName> event to receive notification when the new document finishes loading. The <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs> object passed to the event handler lets you retrieve the location of the new document through the <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs.Url%2A> property. When the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=fullName> event occurs, the new document is fully loaded, which means you can access its contents through the <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowser.DocumentText%2A?displayProperty=fullName>, or <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A?displayProperty=fullName> property.  
+ Handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType> event to receive notification when the new document finishes loading. The <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs> object passed to the event handler lets you retrieve the location of the new document through the <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs.Url%2A> property. When the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType> event occurs, the new document is fully loaded, which means you can access its contents through the <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.WebBrowser.DocumentText%2A?displayProperty=nameWithType>, or <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A?displayProperty=nameWithType> property.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event.  
   
@@ -30,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs.Url" />
+    <altmember cref="T:System.Windows.Forms.WebBrowser" />
+    <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,9 +72,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#645](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#645)]
  [!code-vb[System.Windows.Forms.EventExamples#645](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#645)]  

@@ -11,7 +11,7 @@
         <asp:WebPartZone ID="WebPartZone1" runat="server">
             <ZoneTemplate></ZoneTemplate>
         </asp:WebPartZone>
-        <%--<snippet1>--%>
+        <!-- <Snippet1> -->
         <asp:CatalogZone ID="CZ1" runat="server">
             <ZoneTemplate>
                 <asp:DeclarativeCatalogPart ID="DCP1" runat="server">
@@ -22,7 +22,7 @@
                 </asp:DeclarativeCatalogPart>
             </ZoneTemplate>
         </asp:CatalogZone>
-        <%--</snippet1>--%>
+        <!-- </Snippet1> -->
     </form>
 </body>
 </html>

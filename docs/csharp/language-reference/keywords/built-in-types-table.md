@@ -1,12 +1,10 @@
 ---
 title: "Built-In Types Table (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "types [C#], built-in"
   - "built-in C# types"
@@ -14,20 +12,6 @@ ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Built-In Types Table (C# Reference)
 The following table shows the keywords for built-in C# types, which are aliases of predefined types in the <xref:System> namespace.  
@@ -69,11 +53,11 @@ Console.WriteLine(myVariable.GetType());
  You can also use the [typeof](../../../csharp/language-reference/keywords/typeof.md) operator.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)   
- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+ [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
+ [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)

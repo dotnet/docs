@@ -10,17 +10,21 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "calendars, formatting display"
+  - "calendars [Windows Forms], formatting display"
   - "examples [Windows Forms], calendar controls"
-  - "calendars, multiple months"
+  - "calendars [Windows Forms], multiple months"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Display More than One Month in the Windows Forms MonthCalendar Control
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display up to 12 months at a time. By default, the control displays only one month, but you can specify how many months are displayed and how they are arranged within the control. When you change the calendar dimensions, the control is resized, so be sure there is enough room on the form for the new dimensions.  
@@ -42,6 +46,6 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     ```  
   
 ## See Also  
- [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)   
- [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)   
+ [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)  
+ [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)  
  [How to: Change the Windows Forms MonthCalendar Control's Appearance](../../../../docs/framework/winforms/controls/how-to-change-monthcalendar-control-appearance.md)

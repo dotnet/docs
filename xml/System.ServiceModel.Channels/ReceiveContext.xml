@@ -555,7 +555,7 @@ using (TransactionScope ts = new TransactionScope())
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.ReceiveContext property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.ReceiveContext property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.ReceiveContext&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.ReceiveContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -580,7 +580,7 @@ using (TransactionScope ts = new TransactionScope())
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.ReceiveContext property);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.ReceiveContext property) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.ReceiveContext&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.ReceiveContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -603,5 +603,41 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnBeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the state machine is transitioning to the abandoned state asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous abandon operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the state machine is transitioning to the abandoned state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the receive context.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

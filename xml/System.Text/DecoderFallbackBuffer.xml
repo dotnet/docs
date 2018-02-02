@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.DecoderFallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName>, <xref:System.Text.Encoding.GetString%2A?displayProperty=fullName>, and <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderFallbackBuffer.Fallback%2A> if they encounter an unknown input byte sequence that cannot be decoded. A return value of `true` indicates that the fallback buffer can process the input byte sequence, which causes the calling method to call the <xref:System.Text.DecoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer. Because it does not process individual bytes, the <xref:System.Text.DecoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
+ The <xref:System.Text.Encoding.GetChars%2A?displayProperty=nameWithType>, <xref:System.Text.Encoding.GetString%2A?displayProperty=nameWithType>, and <xref:System.Text.Decoder.Convert%2A?displayProperty=nameWithType> methods call <xref:System.Text.DecoderFallbackBuffer.Fallback%2A> if they encounter an unknown input byte sequence that cannot be decoded. A return value of `true` indicates that the fallback buffer can process the input byte sequence, which causes the calling method to call the <xref:System.Text.DecoderFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer. Because it does not process individual bytes, the <xref:System.Text.DecoderFallbackBuffer.Fallback%2A> method in an exception fallback handler throws an exception.  
   
  ]]></format>
         </remarks>

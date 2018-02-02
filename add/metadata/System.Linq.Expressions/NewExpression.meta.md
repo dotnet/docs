@@ -3,7 +3,7 @@ uid: System.Linq.Expressions.NewExpression
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -11,7 +11,7 @@ uid: System.Linq.Expressions.NewExpression.Type
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -52,7 +52,7 @@ manager: "wpickett"
 uid: System.Linq.Expressions.NewExpression.System#Linq#Expressions#IArgumentProvider#GetArgument(System.Int32)
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

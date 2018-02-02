@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ITypeName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName interface [.NET Framework hosting]"
 ms.assetid: 3be458bb-a519-4e22-b373-0b28f2c9cc3c
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeName Interface
 Provides methods for obtaining type name information.  

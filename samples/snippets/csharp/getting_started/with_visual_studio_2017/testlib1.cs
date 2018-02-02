@@ -7,7 +7,6 @@ namespace StringLibraryTest
     [TestClass]
     public class UnitTest1
     {
-// <Snippet1>
         [TestMethod]
         public void TestStartsWithUpper()
         {
@@ -50,6 +49,5 @@ namespace StringLibraryTest
                                      word == null ? "<null>" : word, result));
             }
         }
-        // </Snippet1>
     }
 }

@@ -329,7 +329,7 @@
     </Member>
     <Member MemberName="SupportsEscapingLikeArgument">
       <MemberSignature Language="C#" Value="public virtual bool SupportsEscapingLikeArgument (out char escapeCharacter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsEscapingLikeArgument(char escapeCharacter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsEscapingLikeArgument([out] char&amp; escapeCharacter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.SupportsEscapingLikeArgument(System.Char@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject%2A> method is similar to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A?displayProperty=fullName> method, but does not attempt to maintain the identity of the unmanaged object. For example, two calls with the same `IUnknown` to the current method return two different RCWs, but two calls to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method with the same `IUnknown` return the same RCW.  
+ The <xref:System.Runtime.Remoting.Services.EnterpriseServicesHelper.WrapIUnknownWithComObject%2A> method is similar to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A?displayProperty=nameWithType> method, but does not attempt to maintain the identity of the unmanaged object. For example, two calls with the same `IUnknown` to the current method return two different RCWs, but two calls to the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method with the same `IUnknown` return the same RCW.  
   
  ]]></format>
         </remarks>

@@ -57,6 +57,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
+    <altmember cref="T:System.Data.Odbc.OdbcConnection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -90,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcDataAdapter" />
+        <altmember cref="T:System.Data.Odbc.OdbcConnection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -316,6 +320,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.Connection" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
       </Docs>
     </Member>
     <Member MemberName="CommandTimeout">
@@ -396,6 +403,8 @@ SELECT * FROM Customers WHERE CustomerID = ?
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.UpdatedRowSource" />
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -436,6 +445,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> property was changed while a transaction was in progress.</exception>
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandText" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
+        <altmember cref="P:System.Data.Odbc.OdbcCommand.CommandType" />
       </Docs>
     </Member>
     <Member MemberName="CreateDbParameter">
@@ -755,7 +767,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
 > [!NOTE]
 >  The `SequentialAccess` value of <xref:System.Data.CommandBehavior> is not a limiting setting; it just means that you will have at least sequential access to the <xref:System.Data.Odbc.OdbcDataReader>. For example, when you use the SQL Server ODBC Driver in `SequentialAccess` mode, you can still move to the first column of an <xref:System.Data.Odbc.OdbcDataReader> row after having read through all the other columns sequentially.  
   
- While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until you call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A?displayProperty=fullName> method. If the <xref:System.Data.Odbc.OdbcDataReader> is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the <xref:System.Data.Odbc.OdbcDataReader> closes the connection automatically.  
+ While the <xref:System.Data.Odbc.OdbcDataReader> is used, the associated <xref:System.Data.Odbc.OdbcConnection> is busy serving the <xref:System.Data.Odbc.OdbcDataReader>. While in this state, no other operations can be performed on the <xref:System.Data.Odbc.OdbcConnection> other than closing it. This is the case until you call the <xref:System.Data.Odbc.OdbcDataReader.Close%2A?displayProperty=nameWithType> method. If the <xref:System.Data.Odbc.OdbcDataReader> is created with <xref:System.Data.CommandBehavior> set to `CloseConnection`, closing the <xref:System.Data.Odbc.OdbcDataReader> closes the connection automatically.  
   
  ]]></format>
         </remarks>
@@ -832,6 +844,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.Odbc.OdbcParameter" />
       </Docs>
     </Member>
     <Member MemberName="Prepare">
@@ -920,12 +933,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.ICloneable.Clone" />.</summary>
-        <returns>A new <see cref="T;System.Object" /> that is a copy of this instance.</returns>
+        <returns>A new <see cref="T:System.Object" /> that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:InterfaceName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:System.ICloneable> interface.  
   
  ]]></format>
         </remarks>
@@ -1004,5 +1017,23 @@ SELECT * FROM Customers WHERE CustomerID = ?
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.Odbc.OdbcCommand.CommandText" /> to the <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> and builds an <see cref="T:System.Data.Odbc.OdbcDataReader" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

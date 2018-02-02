@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerEndPoint.NameChanged" /> event occurs.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.NameChanged" />
+    <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerEndPoint.OnNameChanged(System.Net.PeerToPeer.Collaboration.NameChangedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName="Name">
@@ -38,6 +40,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Net.PeerToPeer.Collaboration.ContactManager.NameChanged" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerEndPoint.OnNameChanged(System.Net.PeerToPeer.Collaboration.NameChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PeerContact">
@@ -65,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.ContactManager" />
+        <altmember cref="P:System.Net.PeerToPeer.Collaboration.PeerEndPoint.Name" />
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerEndPoint.OnNameChanged(System.Net.PeerToPeer.Collaboration.NameChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PeerEndPoint">
@@ -93,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Collaboration.PeerEndPoint.OnNameChanged(System.Net.PeerToPeer.Collaboration.NameChangedEventArgs)" />
       </Docs>
     </Member>
   </Members>

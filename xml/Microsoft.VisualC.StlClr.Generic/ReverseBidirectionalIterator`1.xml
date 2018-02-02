@@ -76,8 +76,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to copy.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,9 +182,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> objects are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,15 +223,15 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to assign to the current object.</param>
+        <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to the current object.</summary>
+        <returns>The current object (<c>*this</c>).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -238,7 +239,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -251,8 +252,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -260,7 +261,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -300,7 +301,7 @@
         <returns>
           <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Equals(Microsoft.VisualC.StlClr. Gene ric.IInputIterator{`0})?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -325,10 +326,13 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -345,14 +349,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Converts a <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> to an <see cref="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1" />.</summary>
+        <returns>The current iterator as an <see cref="T:Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -360,7 +364,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -373,8 +377,8 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -382,7 +386,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
@@ -416,9 +420,7 @@
         <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.VisualC.StlClr.%2A> Gene ric.ReverseBidirectionalIterator`1.Compare(Microsoft.VisualC.StlClr. Gene ric.IInputIterator{`0})?qualifyHint=True&autoUpgrade=False]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -437,9 +439,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,9 +470,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,9 +500,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,5 +544,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Inequality">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two iterators are not the same object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Decrement">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrements the iterator by one element. Decrementing a reverse iterator is the same as incrementing a regular iterator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="equal_to">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two iterators are the same object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Equality">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two iterators are the same object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Increment">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Increments the iterator by one element. Incrementing a reverse iterator is the same as decrementing a regular iterator.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

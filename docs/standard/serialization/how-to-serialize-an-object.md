@@ -8,18 +8,19 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "serializing objects"
   - "objects, serializing steps"
 ms.assetid: a1207d05-32b2-4953-8582-959607991227
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Serialize an Object
 To serialize an object, first create the object that is to be serialized and set its public properties and fields. To do this, you must determine the transport format in which the XML stream is to be stored, either as a stream or as a file. For example, if the XML stream must be saved in a permanent form, create a <xref:System.IO.FileStream> object.  
@@ -57,5 +58,5 @@ To serialize an object, first create the object that is to be serialized and set
     ```  
   
 ## See Also  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
+ [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
  [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

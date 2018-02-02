@@ -35,7 +35,7 @@
   
 3.  <xref:System.Net.Http.HttpClientHandler> - A class that operates at the bottom of the handler chain that actually handles the HTTP transport operations.  
   
-4.  <xref:System.Net.Http.WebRequestHandler> - A specialty class that operates at the bottom of the handler chain class that handles HTTP transport operations with options that are specific to the <xref:System.Net.HttpWebRequest?displayProperty=fullName> object.  
+4.  <xref:System.Net.Http.WebRequestHandler> - A specialty class that operates at the bottom of the handler chain class that handles HTTP transport operations with options that are specific to the <xref:System.Net.HttpWebRequest?displayProperty=nameWithType> object.  
   
  If developers derive classes from <xref:System.Net.Http.HttpMessageHandler> and override the <xref:System.Net.Http.HttpMessageHandler.SendAsync%2A> method, they must make sure that <xref:System.Net.Http.HttpMessageHandler.SendAsync%2A> can get called concurrently by different threads.  
   
@@ -162,12 +162,24 @@
 ## Remarks  
  This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete once the entire response including content is read.  
   
- The <xref:System.Net.Http.HttpMessageHandler.SendAsync%2A> method is used primarily by the system. This method is called by the system one of the  <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=fullName> methods is called. Most apps will never call this method.  
+ The <xref:System.Net.Http.HttpMessageHandler.SendAsync%2A> method is used primarily by the system. This method is called by the system one of the  <xref:System.Net.Http.HttpClient.SendAsync%2A?displayProperty=nameWithType> methods is called. Most apps will never call this method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpMessageHandler" /> and optionally disposes of the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -37,7 +37,7 @@
   
  To display images next to the tree nodes, assign an <xref:System.Windows.Forms.ImageList> to the <xref:System.Windows.Forms.TreeView.ImageList%2A> property of the parent <xref:System.Windows.Forms.TreeView> control and assign an <xref:System.Drawing.Image> by referencing its index value in the <xref:System.Windows.Forms.ImageList> property. Set the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property to the index value of the <xref:System.Drawing.Image> you want to display when the <xref:System.Windows.Forms.TreeNode> is in an unselected state. Likewise, set the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property to the index value of the <xref:System.Drawing.Image> you want to display when the <xref:System.Windows.Forms.TreeNode> is selected.  
   
- Selecting specific tree nodes and iterating through the <xref:System.Windows.Forms.TreeView.Nodes%2A> collection can be achieved by using the following property values: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, <xref:System.Windows.Forms.TreeNode.NextVisibleNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevVisibleNode%2A>. Assign the <xref:System.Windows.Forms.TreeNode> returned by one of aforementioned properties to the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName> property to select that tree node in the <xref:System.Windows.Forms.TreeView> control.  
+ Selecting specific tree nodes and iterating through the <xref:System.Windows.Forms.TreeView.Nodes%2A> collection can be achieved by using the following property values: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, <xref:System.Windows.Forms.TreeNode.NextVisibleNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevVisibleNode%2A>. Assign the <xref:System.Windows.Forms.TreeNode> returned by one of aforementioned properties to the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=nameWithType> property to select that tree node in the <xref:System.Windows.Forms.TreeView> control.  
   
  Tree nodes can be expanded to display the next level of child tree nodes. The user can expand the <xref:System.Windows.Forms.TreeNode> by pressing the plus (+) button next to the <xref:System.Windows.Forms.TreeNode>, if one is displayed, or you can expand the <xref:System.Windows.Forms.TreeNode> by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A> method. To expand all child tree node levels in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection, call the <xref:System.Windows.Forms.TreeNode.ExpandAll%2A> method. You can collapse the child <xref:System.Windows.Forms.TreeNode> level by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method, or the user can press the minus (-) button next to the <xref:System.Windows.Forms.TreeNode>, if one is displayed. You can also call the <xref:System.Windows.Forms.TreeNode.Toggle%2A> method to alternate the <xref:System.Windows.Forms.TreeNode> between the expanded and collapsed states.  
   
@@ -54,6 +54,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -80,6 +82,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +118,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -170,6 +176,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property. The image referenced in the `imageIndex` property is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` property is displayed when the tree node is in a selected state.  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=nameWithType> property. The image referenced in the `imageIndex` property is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` property is displayed when the tree node is in a selected state.  
   
    
   
@@ -208,6 +216,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -235,7 +245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property. The image referenced in the `imageIndex` parameter is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` parameter is displayed when the tree node is in a selected state. The tree nodes that are contained in the `children` array are added to the <xref:System.Windows.Forms.TreeNodeCollection> that is stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property.  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=nameWithType> property. The image referenced in the `imageIndex` parameter is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` parameter is displayed when the tree node is in a selected state. The tree nodes that are contained in the `children` array are added to the <xref:System.Windows.Forms.TreeNodeCollection> that is stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property.  
   
    
   
@@ -248,6 +258,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -269,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color?displayProperty=fullName>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
+ If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color.Empty?displayProperty=nameWithType>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
   
    
   
@@ -282,6 +294,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="BeginEdit">
@@ -321,6 +334,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.TreeView.LabelEdit" /> is set to <see langword="false" />.</exception>
+        <altmember cref="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="Bounds">
@@ -395,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.CheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -432,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Remove" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -453,7 +470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TreeNode.Collapse%2A> method collapses the current <xref:System.Windows.Forms.TreeNode> and its child nodes. If you want to collapse only the current <xref:System.Windows.Forms.TreeNode>, use the <xref:System.Windows.Forms.TreeNode.Collapse%28System.Boolean%29?displayProperty=fullName> overload, passing `true` to ignore its child nodes.  
+ The <xref:System.Windows.Forms.TreeNode.Collapse%2A> method collapses the current <xref:System.Windows.Forms.TreeNode> and its child nodes. If you want to collapse only the current <xref:System.Windows.Forms.TreeNode>, use the <xref:System.Windows.Forms.TreeNode.Collapse%28System.Boolean%29?displayProperty=nameWithType> overload, passing `true` to ignore its child nodes.  
   
 > [!NOTE]
 >  The state of a <xref:System.Windows.Forms.TreeNode> is persisted. For example, if the next level of child nodes was not collapsed previously, when the <xref:System.Windows.Forms.TreeNode.Expand%2A> method is called, the child nodes appear in their previously expanded state.  
@@ -469,6 +486,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -614,6 +635,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="EnsureVisible">
@@ -638,7 +661,7 @@
  When the <xref:System.Windows.Forms.TreeNode.EnsureVisible%2A> method is called, the tree is expanded and scrolled to ensure that the current tree node is visible in the <xref:System.Windows.Forms.TreeView>. This method is useful if you are selecting a tree node in code based on certain criteria. By calling this method after you select the node, the user can see and interact with the selected node.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.TreeView.ItemHeight%2A?displayProperty=fullName> property is set to a value that is larger than the height of the tree view control, calling this method has unexpected results.  
+>  If the <xref:System.Windows.Forms.TreeView.ItemHeight%2A?displayProperty=nameWithType> property is set to a value that is larger than the height of the tree view control, calling this method has unexpected results.  
   
    
   
@@ -651,6 +674,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -688,6 +714,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -725,6 +755,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Toggle" />
       </Docs>
     </Member>
     <Member MemberName="FirstNode">
@@ -798,6 +832,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="FromHandle">
@@ -825,7 +860,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a node is added to the <xref:System.Windows.Forms.TreeView.Nodes%2A?displayProperty=fullName> collection, the <xref:System.Windows.Forms.TreeView> control sends an NM_CUSTOMDRAW notification before the node handle is available. If you override the <xref:System.Windows.Forms.Control.WndProc%2A> method of the <xref:System.Windows.Forms.TreeView> to provide custom drawing in response to this notification, you should always check the return value of this method for `null` before you attempt to access the node.  
+ When a node is added to the <xref:System.Windows.Forms.TreeView.Nodes%2A?displayProperty=nameWithType> collection, the <xref:System.Windows.Forms.TreeView> control sends an NM_CUSTOMDRAW notification before the node handle is available. If you override the <xref:System.Windows.Forms.Control.WndProc%2A> method of the <xref:System.Windows.Forms.TreeView> to provide custom drawing in response to this notification, you should always check the return value of this method for `null` before you attempt to access the node.  
   
    
   
@@ -838,6 +873,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.TreeView" />
+        <altmember cref="P:System.Windows.Forms.Control.Handle" />
       </Docs>
     </Member>
     <Member MemberName="FullPath">
@@ -878,6 +915,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The node is not contained in a <see cref="T:System.Windows.Forms.TreeView" />.</exception>
+        <altmember cref="P:System.Windows.Forms.TreeView.PathSeparator" />
       </Docs>
     </Member>
     <Member MemberName="GetNodeCount">
@@ -912,6 +950,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.Nodes" />
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -992,7 +1032,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The default value of the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property is the same as the <xref:System.Windows.Forms.TreeView.ImageIndex%2A> property of the <xref:System.Windows.Forms.TreeView> control that the <xref:System.Windows.Forms.TreeNode> is assigned to.  
@@ -1010,6 +1050,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="P:System.Windows.Forms.TreeView.ImageList" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.SelectedImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="ImageKey">
@@ -1080,7 +1123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
+ The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=nameWithType>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
   
  [!code-cpp[Windows.Forms.TreeNode#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#2)]
  [!code-csharp[Windows.Forms.TreeNode#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#2)]
@@ -1123,6 +1166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsExpanded">
@@ -1158,6 +1203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -1193,6 +1240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -1228,6 +1276,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="LastNode">
@@ -1267,6 +1317,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevNode" />
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -1361,6 +1414,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.LastNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
       </Docs>
     </Member>
     <Member MemberName="NextVisibleNode">
@@ -1400,6 +1456,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
       </Docs>
     </Member>
     <Member MemberName="NodeFont">
@@ -1445,6 +1503,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Font" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1479,7 +1539,7 @@
    
   
 ## Examples  
- The following code example removes the selected tree node from one <xref:System.Windows.Forms.TreeView> and adds it to another if both tree node collections are not read-only. When a <xref:System.Windows.Forms.Button> is clicked, the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName> is deleted from one <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method and added to the other <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Insert%2A> method. This example requires that you have two <xref:System.Windows.Forms.TreeView> controls named `treeView1` and `treeView2`, and a <xref:System.Windows.Forms.Button> on a <xref:System.Windows.Forms.Form>.  
+ The following code example removes the selected tree node from one <xref:System.Windows.Forms.TreeView> and adds it to another if both tree node collections are not read-only. When a <xref:System.Windows.Forms.Button> is clicked, the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=nameWithType> is deleted from one <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method and added to the other <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Insert%2A> method. This example requires that you have two <xref:System.Windows.Forms.TreeView> controls named `treeView1` and `treeView2`, and a <xref:System.Windows.Forms.Button> on a <xref:System.Windows.Forms.Form>.  
   
  [!code-cpp[TreeNodeCollection#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNodeCollection/CPP/treenodecollection.cpp#1)]
  [!code-csharp[TreeNodeCollection#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNodeCollection/CS/treenodecollection.cs#1)]
@@ -1487,6 +1547,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
+        <altmember cref="P:System.Windows.Forms.TreeView.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1518,7 +1580,7 @@
    
   
 ## Examples  
- The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
+ The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=nameWithType>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
   
  [!code-cpp[Windows.Forms.TreeNode#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#2)]
  [!code-csharp[Windows.Forms.TreeNode#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#2)]
@@ -1565,6 +1627,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.LastNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.FirstNode" />
       </Docs>
     </Member>
     <Member MemberName="PrevVisibleNode">
@@ -1604,6 +1669,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1638,6 +1705,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNodeCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.TreeNodeCollection.Remove(System.Windows.Forms.TreeNode)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedImageIndex">
@@ -1679,7 +1748,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property.  
+ The <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=nameWithType> property.  
   
 > [!NOTE]
 >  The default value of the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property is the same as the <xref:System.Windows.Forms.TreeView.SelectedImageIndex%2A> property of the <xref:System.Windows.Forms.TreeView> control that the <xref:System.Windows.Forms.TreeNode> is assigned to.  
@@ -1695,6 +1764,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="SelectedImageKey">
@@ -1814,6 +1884,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1 or greater than 14.</exception>
+        <altmember cref="P:System.Windows.Forms.TreeNode.StateImageKey" />
       </Docs>
     </Member>
     <Member MemberName="StateImageKey">
@@ -1863,6 +1934,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.StateImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -1938,6 +2010,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1979,6 +2052,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.LabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsEditing" />
       </Docs>
     </Member>
     <Member MemberName="Toggle">
@@ -2016,6 +2092,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.ExpandAll" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsExpanded" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipText">
@@ -2078,6 +2158,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TreeView">
@@ -2112,7 +2193,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Collapse">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

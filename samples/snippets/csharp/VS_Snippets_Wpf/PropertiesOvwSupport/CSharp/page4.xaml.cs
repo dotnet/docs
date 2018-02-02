@@ -23,16 +23,14 @@ namespace MyNamespace
       public static readonly DependencyProperty IsSpinningProperty = 
           DependencyProperty.Register(
           "IsSpinning", typeof(Boolean),
-          //</SnippetDPFormBasic>
           typeof(MyCode)
-          //<SnippetDPFormBasic2>
           );
       public bool IsSpinning
       {
           get { return (bool)GetValue(IsSpinningProperty); }
           set { SetValue(IsSpinningProperty, value); }
       }
-//</SnippetDPFormBasic2>
+//</SnippetDPFormBasic>
       void DoAqStuff()
       {
 //<SnippetCollectionProblemTestCode>

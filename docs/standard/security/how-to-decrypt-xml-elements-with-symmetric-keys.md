@@ -9,10 +9,8 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "symmetric keys"
   - "System.Security.Cryptography.EncryptedXml class"
@@ -25,6 +23,9 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # How to: Decrypt XML Elements with Symmetric Keys
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption allows you to store or transport sensitive XML, without worrying about the data being easily read.  This code example decrypts an XML element using the Advanced Encryption Standard (AES) algorithm, also known as Rijndael.  
@@ -86,5 +87,5 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
  When you are done using a symmetric cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  
   
 ## See Also  
- <xref:System.Security.Cryptography.Xml>   
+ <xref:System.Security.Cryptography.Xml>  
  [How to: Encrypt XML Elements with Symmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)

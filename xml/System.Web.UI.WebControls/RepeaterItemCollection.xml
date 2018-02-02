@@ -24,9 +24,9 @@
   
 -   Use the indexer to get a single <xref:System.Web.UI.WebControls.RepeaterItem> object from the collection using array notation.  
   
--   Use the <xref:System.Web.UI.WebControls.RepeaterItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=fullName> object, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.RepeaterItemCollection.CopyTo%2A> method to copy the contents of the collection to a <xref:System.Array?displayProperty=nameWithType> object, which can then be used to get items from the collection.  
   
--   Use the <xref:System.Web.UI.WebControls.RepeaterItemCollection.GetEnumerator%2A> method to create an <xref:System.Collections.IEnumerator?displayProperty=fullName> interface, which can then be used to get items from the collection.  
+-   Use the <xref:System.Web.UI.WebControls.RepeaterItemCollection.GetEnumerator%2A> method to create an <xref:System.Collections.IEnumerator?displayProperty=nameWithType> interface, which can then be used to get items from the collection.  
   
 -   Use `foreach` (C#) or `For Each` (Visual Basic) to iterate through the collection.  
   
@@ -40,6 +40,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="P:System.Web.UI.WebControls.Repeater.Items" />
+    <altmember cref="M:System.Web.UI.WebControls.RepeaterItemCollection.CopyTo(System.Array,System.Int32)" />
+    <altmember cref="M:System.Web.UI.WebControls.RepeaterItemCollection.GetEnumerator" />
+    <altmember cref="P:System.Web.UI.WebControls.RepeaterItemCollection.Count" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ArrayList" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -97,10 +104,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to copy the contents of the <xref:System.Web.UI.WebControls.RepeaterItemCollection> into the specified <xref:System.Array?displayProperty=fullName> object, starting at the specified index.  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.RepeaterItemCollection> into the specified <xref:System.Array?displayProperty=nameWithType> object, starting at the specified index.  
   
 > [!NOTE]
->  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName> object.  
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=nameWithType> object.  
   
    
   
@@ -112,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Array" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -145,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -167,16 +176,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> that can be used to iterate through each item in the <xref:System.Web.UI.WebControls.RepeaterItemCollection>.  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> that can be used to iterate through each item in the <xref:System.Web.UI.WebControls.RepeaterItemCollection>.  
   
- Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property to get the item currently pointed to in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method to move to the next item in the collection.  
   
- Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator back to the initial position.  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator back to the initial position.  
   
 > [!NOTE]
->  After you create a <xref:System.Collections.IEnumerator?displayProperty=fullName> object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+>  After you create a <xref:System.Collections.IEnumerator?displayProperty=nameWithType> object or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method to move the enumerator to the first item in the collection, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=nameWithType> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=nameWithType> property is undefined.  
   
    
   
@@ -188,6 +197,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -236,12 +247,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+ This property is derived from the <xref:System.Collections.ICollection?displayProperty=nameWithType> class and is overridden to always return `false`.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -279,6 +292,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -302,10 +316,13 @@
 ## Remarks  
  The object returned in this implementation is the <xref:System.Web.UI.WebControls.RepeaterItemCollection> object itself.  
   
- For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=nameWithType> property of the <xref:System.Collections.ICollection?displayProperty=nameWithType> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
+        <altmember cref="T:System.Collections.ICollection" />
       </Docs>
     </Member>
   </Members>

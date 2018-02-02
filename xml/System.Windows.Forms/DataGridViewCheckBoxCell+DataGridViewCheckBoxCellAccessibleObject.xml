@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +52,9 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -74,6 +80,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -105,6 +114,9 @@
   
  The <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" /> returned by the <see cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" /> property belongs to a shared row.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -124,6 +136,9 @@
         <summary>Gets the number of child accessible objects that belong to the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" />.</summary>
         <returns>The value –1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="State">

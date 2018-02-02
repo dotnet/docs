@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=fullName> method is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup extension.  
+ Because the <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=nameWithType> method is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup extension.  
   
  ]]></format>
     </remarks>
@@ -142,9 +142,9 @@
   
 3.  The resulting value is valid for the binding target (target) property.  
   
- If 1 and 2 return <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName>, the target property is set to the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available. If there is no <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, the default value of the target property is used.  
+ If 1 and 2 return <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType>, the target property is set to the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, if one is available. If there is no <xref:System.Windows.Data.BindingBase.FallbackValue%2A>, the default value of the target property is used.  
   
- The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> is not considered a successful return value.  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType> is not considered a successful return value.  
   
 <a name="xamlTextUsage_FallbackValue"></a>   
 ## XAML Text Usage  
@@ -170,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Data.IValueConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ProvideValue">
@@ -200,7 +201,7 @@
  The <xref:System.Windows.Data.BindingBase> class implementation of this method is expected to return an expression object that is the result of a binding. Binding a property works by targeting a given <xref:System.Windows.DependencyProperty> on a given <xref:System.Windows.DependencyObject>. These two pieces of information are transmitted by querying for an <xref:System.Windows.Markup.IProvideValueTarget> implementation on the `serviceProvider`, which the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] reader makes available during parsing of a binding. This base class implementation is responsible for checking for a valid <xref:System.Windows.DependencyProperty> and <xref:System.Windows.DependencyObject>. If these are found, the actual implementation of returning a binding expression falls to various derived classes, as implemented by having the base class call an internal abstract method. Otherwise, the extension returns the binding object itself. Returning the binding itself results in a type mismatch error, but this should not occur under normal circumstances.  
   
 > [!IMPORTANT]
->  Because the syntax for binding through [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] as implemented in this method relies on implementing an internal override, and because <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=fullName> itself is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] markup extension.  
+>  Because the syntax for binding through [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] as implemented in this method relies on implementing an internal override, and because <xref:System.Windows.Data.BindingBase.ProvideValue%2A?displayProperty=nameWithType> itself is sealed, a custom binding class that derives from <xref:System.Windows.Data.BindingBase> will not function correctly as a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] markup extension.  
   
  ]]></format>
         </remarks>

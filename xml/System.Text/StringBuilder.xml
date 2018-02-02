@@ -38,10 +38,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/stringbuilder.cs#adf60ee46ebd299f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  This class represents a string-like object whose value is a mutable sequence of characters.  
   
  In this section:  
@@ -74,7 +70,7 @@
 ## The String and StringBuilder types  
  Although <xref:System.Text.StringBuilder> and <xref:System.String> both represent sequences of characters, they are implemented differently. <xref:System.String> is an immutable type. That is, each operation that appears to modify a <xref:System.String> object actually creates a new string.  
   
- For example, the call to the <xref:System.String.Concat%2A?displayProperty=fullName> method in the following C# example appears to change the value of a string variable named `value`. In fact, the <xref:System.String.Concat%2A> method returns a `value` object that has a different value and address from the `value` object that was passed to the method. Note that the example must be compiled using the `/unsafe` compiler option.  
+ For example, the call to the <xref:System.String.Concat%2A?displayProperty=nameWithType> method in the following C# example appears to change the value of a string variable named `value`. In fact, the <xref:System.String.Concat%2A> method returns a `value` object that has a different value and address from the `value` object that was passed to the method. Note that the example must be compiled using the `/unsafe` compiler option.  
   
  [!code-csharp[System.Text.StringBuilder.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/immutability2.cs#1)]  
   
@@ -99,7 +95,7 @@
   
 <a name="HowWorks"></a>   
 ## How StringBuilder works  
- The <xref:System.Text.StringBuilder.Length%2A?displayProperty=fullName> property indicates the number of characters the <xref:System.Text.StringBuilder> object currently contains. If you add characters to the <xref:System.Text.StringBuilder> object, its length increases until it equals the size of the <xref:System.Text.StringBuilder.Capacity%2A?displayProperty=fullName> property, which defines the number of characters that the object can contain. If the number of added characters causes the length of the <xref:System.Text.StringBuilder> object to exceed its current capacity, new memory is allocated, the value of the <xref:System.Text.StringBuilder.Capacity%2A> property is doubled, new characters are added to the <xref:System.Text.StringBuilder> object, and its <xref:System.Text.StringBuilder.Length%2A> property is adjusted. Additional memory for the <xref:System.Text.StringBuilder> object is allocated dynamically until it reaches the value defined by the <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=fullName> property. When the maximum capacity is reached, no further memory can be allocated for the <xref:System.Text.StringBuilder> object, and trying to add characters or expand it beyond its maximum capacity throws either an <xref:System.ArgumentOutOfRangeException> or an <xref:System.OutOfMemoryException> exception.  
+ The <xref:System.Text.StringBuilder.Length%2A?displayProperty=nameWithType> property indicates the number of characters the <xref:System.Text.StringBuilder> object currently contains. If you add characters to the <xref:System.Text.StringBuilder> object, its length increases until it equals the size of the <xref:System.Text.StringBuilder.Capacity%2A?displayProperty=nameWithType> property, which defines the number of characters that the object can contain. If the number of added characters causes the length of the <xref:System.Text.StringBuilder> object to exceed its current capacity, new memory is allocated, the value of the <xref:System.Text.StringBuilder.Capacity%2A> property is doubled, new characters are added to the <xref:System.Text.StringBuilder> object, and its <xref:System.Text.StringBuilder.Length%2A> property is adjusted. Additional memory for the <xref:System.Text.StringBuilder> object is allocated dynamically until it reaches the value defined by the <xref:System.Text.StringBuilder.MaxCapacity%2A?displayProperty=nameWithType> property. When the maximum capacity is reached, no further memory can be allocated for the <xref:System.Text.StringBuilder> object, and trying to add characters or expand it beyond its maximum capacity throws either an <xref:System.ArgumentOutOfRangeException> or an <xref:System.OutOfMemoryException> exception.  
   
  The following example illustrates how a <xref:System.Text.StringBuilder> object allocates new memory and increases its capacity dynamically as the string assigned to the object expands. The code creates a <xref:System.Text.StringBuilder> object by calling its default (parameterless) constructor. The default capacity of this object is 16 characters, and its maximum capacity is more than 2 billion characters. Appending the string "This is a sentence." results in a new memory allocation because the string length (19 characters) exceeds the default capacity of the <xref:System.Text.StringBuilder> object. The capacity of the object doubles to 32 characters, the new string is added, and the length of the object now equals 19 characters. The code then appends the string "This is an additional sentence." to the value of the <xref:System.Text.StringBuilder> object 11 times. Whenever the append operation causes the length of the <xref:System.Text.StringBuilder> object to exceed its capacity, its existing capacity is doubled and the <xref:System.Text.StringBuilder.Append%2A> operation succeeds.  
   
@@ -108,15 +104,15 @@
   
 <a name="Memory"></a>   
 ## Memory allocation  
- The default capacity of a <xref:System.Text.StringBuilder> object is 16 characters, and its default maximum capacity is <xref:System.Int32.MaxValue?displayProperty=fullName>. These default values are used if you call the <xref:System.Text.StringBuilder.%23ctor> and <xref:System.Text.StringBuilder.%23ctor%28System.String%29> constructors.  
+ The default capacity of a <xref:System.Text.StringBuilder> object is 16 characters, and its default maximum capacity is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. These default values are used if you call the <xref:System.Text.StringBuilder.%23ctor> and <xref:System.Text.StringBuilder.%23ctor%28System.String%29> constructors.  
   
  You can explicitly define the initial capacity of a <xref:System.Text.StringBuilder> object in the following ways:  
   
 -   By calling any of the <xref:System.Text.StringBuilder> constructors that includes a `capacity` parameter when you create the object.  
   
--   By explicitly assigning a new value to the <xref:System.Text.StringBuilder.Capacity%2A?displayProperty=fullName> property to expand an existing <xref:System.Text.StringBuilder> object. Note that the property throws an exception if the new capacity is less than the existing capacity or greater than the <xref:System.Text.StringBuilder> object's maximum capacity.  
+-   By explicitly assigning a new value to the <xref:System.Text.StringBuilder.Capacity%2A?displayProperty=nameWithType> property to expand an existing <xref:System.Text.StringBuilder> object. Note that the property throws an exception if the new capacity is less than the existing capacity or greater than the <xref:System.Text.StringBuilder> object's maximum capacity.  
   
--   By calling the <xref:System.Text.StringBuilder.EnsureCapacity%2A?displayProperty=fullName> method with the new capacity. The new capacity must not be greater than the <xref:System.Text.StringBuilder> object's maximum capacity. However, unlike an assignment to the <xref:System.Text.StringBuilder.Capacity%2A> property, <xref:System.Text.StringBuilder.EnsureCapacity%2A> does not throw an exception if the desired new capacity is less than the existing capacity; in this case, the method call has no effect.  
+-   By calling the <xref:System.Text.StringBuilder.EnsureCapacity%2A?displayProperty=nameWithType> method with the new capacity. The new capacity must not be greater than the <xref:System.Text.StringBuilder> object's maximum capacity. However, unlike an assignment to the <xref:System.Text.StringBuilder.Capacity%2A> property, <xref:System.Text.StringBuilder.EnsureCapacity%2A> does not throw an exception if the desired new capacity is less than the existing capacity; in this case, the method call has no effect.  
   
  If the length of the string assigned to the <xref:System.Text.StringBuilder> object in the constructor call exceeds either the default capacity or the specified capacity, the <xref:System.Text.StringBuilder.Capacity%2A> property is set to the length of the string specified with the `value` parameter.  
   
@@ -128,19 +124,19 @@
   
 -   If the eventual size of the <xref:System.Text.StringBuilder> object is likely to grow exceedingly large, typically in excess of several megabytes. In this case, there may be some performance benefit from setting the initial <xref:System.Text.StringBuilder.Capacity%2A> property to a significantly high value to eliminate the need for too many memory reallocations.  
   
--   If your app is running on a system with limited memory. In this case, you may want to consider setting the <xref:System.Text.StringBuilder.MaxCapacity%2A> property to less than <xref:System.Int32.MaxValue?displayProperty=fullName> if your app is handling large strings that may cause it to execute in a memory-constrained environment.  
+-   If your app is running on a system with limited memory. In this case, you may want to consider setting the <xref:System.Text.StringBuilder.MaxCapacity%2A> property to less than <xref:System.Int32.MaxValue?displayProperty=nameWithType> if your app is handling large strings that may cause it to execute in a memory-constrained environment.  
   
 <a name="Instantiating"></a>   
 ## Instantiating a StringBuilder object  
- You instantiate a <xref:System.Text.StringBuilder> object by calling one of its six overloaded class constructors, which are listed in the following table. Three of the constructors instantiate a <xref:System.Text.StringBuilder> object whose value is an empty string, but set its <xref:System.Text.StringBuilder.Capacity%2A> and <xref:System.Text.StringBuilder.MaxCapacity%2A> values differently. The remaining three constructors define a <xref:System.Text.StringBuilder> object that has a specific string value and capacity. Two of the three constructors use the default maximum capacity of <xref:System.Int32.MaxValue?displayProperty=fullName>, whereas the third allows you to set the maximum capacity.  
+ You instantiate a <xref:System.Text.StringBuilder> object by calling one of its six overloaded class constructors, which are listed in the following table. Three of the constructors instantiate a <xref:System.Text.StringBuilder> object whose value is an empty string, but set its <xref:System.Text.StringBuilder.Capacity%2A> and <xref:System.Text.StringBuilder.MaxCapacity%2A> values differently. The remaining three constructors define a <xref:System.Text.StringBuilder> object that has a specific string value and capacity. Two of the three constructors use the default maximum capacity of <xref:System.Int32.MaxValue?displayProperty=nameWithType>, whereas the third allows you to set the maximum capacity.  
   
 |Constructor|String value|Capacity|Maximum capacity|  
 |-----------------|------------------|--------------|----------------------|  
-|<xref:System.Text.StringBuilder.%23ctor>|<xref:System.String.Empty?displayProperty=fullName>|16|<xref:System.Int32.MaxValue?displayProperty=fullName>|  
-|<xref:System.Text.StringBuilder.%23ctor%28System.Int32%29>|<xref:System.String.Empty?displayProperty=fullName>|Defined by the `capacity` parameter|<xref:System.Int32.MaxValue?displayProperty=fullName>|  
-|<xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29>|<xref:System.String.Empty?displayProperty=fullName>|Defined by the `capacity` parameter|Defined by the `maxCapacity` parameter|  
-|<xref:System.Text.StringBuilder.%23ctor%28System.String%29>|Defined by the `value` parameter|16 or `value`. <xref:System.String.Length%2A>, whichever is greater|<xref:System.Int32.MaxValue?displayProperty=fullName>|  
-|<xref:System.Text.StringBuilder.%23ctor%28System.String%2CSystem.Int32%29>|Defined by the `value` parameter|Defined by the `capacity` parameter or `value`. <xref:System.String.Length%2A>, whichever is greater.|<xref:System.Int32.MaxValue?displayProperty=fullName>|  
+|<xref:System.Text.StringBuilder.%23ctor>|<xref:System.String.Empty?displayProperty=nameWithType>|16|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|  
+|<xref:System.Text.StringBuilder.%23ctor%28System.Int32%29>|<xref:System.String.Empty?displayProperty=nameWithType>|Defined by the `capacity` parameter|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|  
+|<xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29>|<xref:System.String.Empty?displayProperty=nameWithType>|Defined by the `capacity` parameter|Defined by the `maxCapacity` parameter|  
+|<xref:System.Text.StringBuilder.%23ctor%28System.String%29>|Defined by the `value` parameter|16 or `value`. <xref:System.String.Length%2A>, whichever is greater|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|  
+|<xref:System.Text.StringBuilder.%23ctor%28System.String%2CSystem.Int32%29>|Defined by the `value` parameter|Defined by the `capacity` parameter or `value`. <xref:System.String.Length%2A>, whichever is greater.|<xref:System.Int32.MaxValue?displayProperty=nameWithType>|  
 |<xref:System.Text.StringBuilder.%23ctor%28System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29>|Defined by `value`. <xref:System.String.Substring%2A>(`startIndex`, `length`)|Defined by the `capacity` parameter or `value`. <xref:System.String.Length%2A>, whichever is greater.|Defined by the `maxCapacity` parameter|  
   
  The following example uses three of these constructor overloads to instantiate <xref:System.Text.StringBuilder> objects.  
@@ -168,12 +164,14 @@
   
 <a name="Iterating"></a>   
 ### Iterating StringBuilder characters  
- You can access the characters in a <xref:System.Text.StringBuilder> object by using the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=fullName> property. In C#, <xref:System.Text.StringBuilder.Chars%2A> is an indexer; in Visual Basic, it is the default property of the <xref:System.Text.StringBuilder> class. This enables you to set or retrieve individual characters by using their index only, without explicitly referencing the <xref:System.Text.StringBuilder.Chars%2A> property. Characters in a <xref:System.Text.StringBuilder> object begin at index 0 (zero) and continue to index <xref:System.Text.StringBuilder.Length%2A> - 1.  
+ You can access the characters in a <xref:System.Text.StringBuilder> object by using the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property. In C#, <xref:System.Text.StringBuilder.Chars%2A> is an indexer; in Visual Basic, it is the default property of the <xref:System.Text.StringBuilder> class. This enables you to set or retrieve individual characters by using their index only, without explicitly referencing the <xref:System.Text.StringBuilder.Chars%2A> property. Characters in a <xref:System.Text.StringBuilder> object begin at index 0 (zero) and continue to index <xref:System.Text.StringBuilder.Length%2A> - 1.  
   
- The following example illustrates the <xref:System.Text.StringBuilder.Chars%2A> property. It appends ten random numbers to a <xref:System.Text.StringBuilder> object, and then iterates each character. If the character's Unicode category is <xref:System.Globalization.UnicodeCategory?displayProperty=fullName>, it decreases the number by 1 (or changes the number to 9 if its value is 0). The example displays the contents of the <xref:System.Text.StringBuilder> object both before and after the values of individual characters were changed.  
+ The following example illustrates the <xref:System.Text.StringBuilder.Chars%2A> property. It appends ten random numbers to a <xref:System.Text.StringBuilder> object, and then iterates each character. If the character's Unicode category is <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, it decreases the number by 1 (or changes the number to 9 if its value is 0). The example displays the contents of the <xref:System.Text.StringBuilder> object both before and after the values of individual characters were changed.  
   
  [!code-csharp[System.Text.StringBuilder.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/chars1.cs#7)]
  [!code-vb[System.Text.StringBuilder.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/chars1.vb#7)]  
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
   
 <a name="Adding"></a>   
 ### Adding text to a StringBuilder object  
@@ -203,20 +201,20 @@
   
 <a name="Modifying"></a>   
 ### Modifying the text in a StringBuilder object  
- The <xref:System.Text.StringBuilder.Replace%2A?displayProperty=fullName> method replaces all occurrences of a character or a string in the entire <xref:System.Text.StringBuilder> object or in a particular character range. The following example uses the <xref:System.Text.StringBuilder.Replace%2A> method to replace all exclamation points (!) with question marks (?) in the <xref:System.Text.StringBuilder> object.  
+ The <xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType> method replaces all occurrences of a character or a string in the entire <xref:System.Text.StringBuilder> object or in a particular character range. The following example uses the <xref:System.Text.StringBuilder.Replace%2A> method to replace all exclamation points (!) with question marks (?) in the <xref:System.Text.StringBuilder> object.  
   
  [!code-csharp[System.Text.StringBuilder.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/replace1.cs#11)]
  [!code-vb[System.Text.StringBuilder.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/replace1.vb#11)]  
   
 <a name="Searching"></a>   
 ## Searching the text in a StringBuilder object  
- The <xref:System.Text.StringBuilder> class does not include methods similar to the <xref:System.String.Contains%2A?displayProperty=fullName>, <xref:System.String.IndexOf%2A?displayProperty=fullName>, and <xref:System.String.StartsWith%2A?displayProperty=fullName> methods provided by the <xref:System.String> class, which allow you to search the object for a particular character or a substring. Determining the presence or starting character position of a substring requires that you search a <xref:System.String> value by using either a string search method or a regular expression method. There are four ways to implement such searches, as the following table shows.  
+ The <xref:System.Text.StringBuilder> class does not include methods similar to the <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, and <xref:System.String.StartsWith%2A?displayProperty=nameWithType> methods provided by the <xref:System.String> class, which allow you to search the object for a particular character or a substring. Determining the presence or starting character position of a substring requires that you search a <xref:System.String> value by using either a string search method or a regular expression method. There are four ways to implement such searches, as the following table shows.  
   
 |Technique|Pros|Cons|  
 |---------------|----------|----------|  
 |Search string values before adding them to the <xref:System.Text.StringBuilder> object.|Useful for determining whether a substring exists.|Cannot be used when the index position of a substring is important.|  
 |Call <xref:System.Text.StringBuilder.ToString%2A> and search the returned <xref:System.String> object.|Easy to use if you assign all the text to a <xref:System.Text.StringBuilder> object, and then begin to modify it.|Cumbersome to repeatedly call <xref:System.Text.StringBuilder.ToString%2A> if you must make modifications before all text is added to the <xref:System.Text.StringBuilder> object.<br /><br /> You must remember to work from the end of the <xref:System.Text.StringBuilder> object's text if you're making changes.|  
-|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.|  
+|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.<br /><br />Results in very poor performance for objects that have grown very large through repeated method calls.  |  
 |Convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform modifications on the <xref:System.String> object.|Useful if the number of modifications is small.|Negates the performance benefit of the <xref:System.Text.StringBuilder> class if the number of modifications is large.|  
   
  Let's examine these techniques in greater detail.  
@@ -226,7 +224,7 @@
      [!code-csharp[System.Text.StringBuilder.Class#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern1.cs#12)]
      [!code-vb[System.Text.StringBuilder.Class#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern1.vb#12)]  
   
--   Call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=fullName> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object. You can search the string by using methods such as <xref:System.String.LastIndexOf%2A?displayProperty=fullName> or <xref:System.String.StartsWith%2A?displayProperty=fullName>, or you can use regular expressions and the <xref:System.Text.RegularExpressions.Regex> class to search for patterns. Because both <xref:System.Text.StringBuilder> and <xref:System.String> objects use UTF-16 encoding to store characters, the index positions of characters, substrings, and regular expression matches are the same in both objects. This enables you to use <xref:System.Text.StringBuilder> methods to make changes at the same position at which that text is found in the <xref:System.String> object.  
+-   Call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object. You can search the string by using methods such as <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> or <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, or you can use regular expressions and the <xref:System.Text.RegularExpressions.Regex> class to search for patterns. Because both <xref:System.Text.StringBuilder> and <xref:System.String> objects use UTF-16 encoding to store characters, the index positions of characters, substrings, and regular expression matches are the same in both objects. This enables you to use <xref:System.Text.StringBuilder> methods to make changes at the same position at which that text is found in the <xref:System.String> object.  
   
     > [!NOTE]
     >  If you adopt this approach, you should work from the end of the <xref:System.Text.StringBuilder> object to its beginning so that you don't have to repeatedly convert the <xref:System.Text.StringBuilder> object to a string.  
@@ -236,23 +234,23 @@
      [!code-csharp[System.Text.StringBuilder.Class#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern2.cs#13)]
      [!code-vb[System.Text.StringBuilder.Class#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern2.vb#13)]  
   
--   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=fullName> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex.  
+-   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property. 
   
      The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.  
   
      [!code-csharp[System.Text.StringBuilder.Class#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern3.cs#14)]
      [!code-vb[System.Text.StringBuilder.Class#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern3.vb#14)]  
   
--   Store all the unmodified text in the <xref:System.Text.StringBuilder> object, call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=fullName> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform the modifications on the <xref:System.String> object. You can use this approach if you have only a few modifications; otherwise, the cost of working with immutable strings may negate the performance benefits of using a <xref:System.Text.StringBuilder> object.  
+-   Store all the unmodified text in the <xref:System.Text.StringBuilder> object, call the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method to convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform the modifications on the <xref:System.String> object. You can use this approach if you have only a few modifications; otherwise, the cost of working with immutable strings may negate the performance benefits of using a <xref:System.Text.StringBuilder> object.  
   
-     The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=fullName> method uses a lambda expression to perform the replacement on each match.  
+     The following example is identical in functionality to the previous two examples but differs in implementation. It creates a <xref:System.Text.StringBuilder> object, converts it to a <xref:System.String> object, and then uses a regular expression to perform all remaining modifications on the string. The <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method uses a lambda expression to perform the replacement on each match.  
   
      [!code-csharp[System.Text.StringBuilder.Class#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern4.cs#15)]
      [!code-vb[System.Text.StringBuilder.Class#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern4.vb#15)]  
   
 <a name="Converting"></a>   
 ## Converting the StringBuilder object to a string  
- You must convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object before you can pass the string represented by the <xref:System.Text.StringBuilder> object to a method that has a <xref:System.String> parameter or display it in the user interface. You perform this conversion by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=fullName> method. For an illustration, see the previous example, which calls the <xref:System.Text.StringBuilder.ToString%2A> method to convert a <xref:System.Text.StringBuilder> object to a string so that it can be passed to a regular expression method.  
+ You must convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object before you can pass the string represented by the <xref:System.Text.StringBuilder> object to a method that has a <xref:System.String> parameter or display it in the user interface. You perform this conversion by calling the <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method. For an illustration, see the previous example, which calls the <xref:System.Text.StringBuilder.ToString%2A> method to convert a <xref:System.Text.StringBuilder> object to a string so that it can be passed to a regular expression method.  
   
    
   
@@ -268,6 +266,7 @@
     <block subset="none" type="usage">
       <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
     </block>
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -299,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string value of this instance is set to <xref:System.String.Empty?displayProperty=fullName>, and the capacity is set to the implementation-specific default capacity.  
+ The string value of this instance is set to <xref:System.String.Empty?displayProperty=nameWithType>, and the capacity is set to the implementation-specific default capacity.  
   
    
   
@@ -348,7 +347,7 @@
 ## Remarks  
  The `capacity` parameter defines the maximum number of characters that can be stored in the memory allocated by the current instance. Its value is assigned to the <xref:System.Text.StringBuilder.Capacity%2A> property. If the number of characters to be stored in the current instance exceeds this `capacity` value, the <xref:System.Text.StringBuilder> object allocates additional memory to store them.  
   
- The string value of this instance is set to <xref:System.String.Empty?displayProperty=fullName>. If `capacity` is zero, the implementation-specific default capacity is used.  
+ The string value of this instance is set to <xref:System.String.Empty?displayProperty=nameWithType>. If `capacity` is zero, the implementation-specific default capacity is used.  
   
    
   
@@ -363,6 +362,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -468,6 +468,8 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
+        <altmember cref="P:System.Text.StringBuilder.MaxCapacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -521,6 +523,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -587,6 +590,7 @@
  -or-  
   
  <paramref name="startIndex" /> plus <paramref name="length" /> is not a position within <paramref name="value" />.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -630,7 +634,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append2.cs#2)]
  [!code-vb[System.Text.StringBuilder.Append#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append2.vb#2)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Boolean%29> method calls the <xref:System.Boolean.ToString?displayProperty=fullName> method to get the string representation of `value`. The capacity of this instance is adjusted as needed.  
+ The <xref:System.Text.StringBuilder.Append%28System.Boolean%29> method calls the <xref:System.Boolean.ToString?displayProperty=nameWithType> method to get the string representation of `value`. The capacity of this instance is adjusted as needed.  
   
  ]]></format>
         </remarks>
@@ -638,6 +642,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -691,6 +696,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -742,6 +748,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -843,7 +850,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append2.cs#8)]
  [!code-vb[System.Text.StringBuilder.Append#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append2.vb#8)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Decimal%29> method calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Decimal%29> method calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -853,6 +860,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -896,7 +904,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append2.cs#9)]
  [!code-vb[System.Text.StringBuilder.Append#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append2.vb#9)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Double%29> method calls the <xref:System.Double.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Double%29> method calls the <xref:System.Double.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -906,6 +914,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -949,7 +958,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#10)]
  [!code-vb[System.Text.StringBuilder.Append#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#10)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Int16%29> method calls the <xref:System.Int16.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Int16%29> method calls the <xref:System.Int16.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -959,6 +968,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1002,7 +1012,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#11)]
  [!code-vb[System.Text.StringBuilder.Append#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#11)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Int32%29> method calls the <xref:System.Int32.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Int32%29> method calls the <xref:System.Int32.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1012,6 +1022,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1055,7 +1066,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#12)]
  [!code-vb[System.Text.StringBuilder.Append#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#12)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Int64%29> method calls the <xref:System.Int64.ToString%28System.IFormatProvider%29?displayProperty=fullName> to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Int64%29> method calls the <xref:System.Int64.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1065,6 +1076,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1108,7 +1120,7 @@
  [!code-csharp[System.Text.Stringbuilder.Append#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append4.cs#18)]
  [!code-vb[System.Text.Stringbuilder.Append#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append4.vb#18)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Object%29> method calls the <xref:System.Object.ToString%2A?displayProperty=fullName> method to get the string representation of `value`. If `value` is `null`, no changes are made to the <xref:System.Text.StringBuilder> object.  
+ The <xref:System.Text.StringBuilder.Append%28System.Object%29> method calls the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to get the string representation of `value`. If `value` is `null`, no changes are made to the <xref:System.Text.StringBuilder> object.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1118,6 +1130,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1166,7 +1179,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#13)]
  [!code-vb[System.Text.StringBuilder.Append#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#13)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.SByte%29> method calls the <xref:System.SByte.ToString%28System.IFormatProvider%29?displayProperty=fullName> method  to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.SByte%29> method calls the <xref:System.SByte.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method  to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1176,6 +1189,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1219,7 +1233,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#14)]
  [!code-vb[System.Text.StringBuilder.Append#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#14)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.Single%29> method calls the <xref:System.Single.ToString%2A?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.Single%29> method calls the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1229,6 +1243,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1287,6 +1302,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1335,7 +1351,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#15)]
  [!code-vb[System.Text.StringBuilder.Append#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#15)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.UInt16%29> method calls the <xref:System.UInt16.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value`. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.UInt16%29> method calls the <xref:System.UInt16.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value`. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1345,6 +1361,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1393,7 +1410,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#16)]
  [!code-vb[System.Text.StringBuilder.Append#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#16)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.UInt32%29> calls the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.UInt32%29> calls the <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1403,6 +1420,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1451,7 +1469,7 @@
  [!code-csharp[System.Text.StringBuilder.Append#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/cs/append3.cs#17)]
  [!code-vb[System.Text.StringBuilder.Append#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.StringBuilder.Append/vb/append3.vb#17)]  
   
- The <xref:System.Text.StringBuilder.Append%28System.UInt64%29> method calls the <xref:System.UInt64.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
+ The <xref:System.Text.StringBuilder.Append%28System.UInt64%29> method calls the <xref:System.UInt64.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to get the string representation of `value` for the current culture. To control the formatting of `value`, call the <xref:System.Text.StringBuilder.AppendFormat%2A> method.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -1461,6 +1479,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1520,6 +1539,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1663,6 +1683,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1740,6 +1761,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -1790,7 +1812,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -1827,7 +1849,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1882,7 +1904,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -1968,7 +1990,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. In this case, since the <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%29> method has a single argument in the argument list, the value of *index* must always be 0. If it is not, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. In this case, since the <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%29> method has a single argument in the argument list, the value of *index* must always be 0. If it is not, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2014,7 +2036,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2071,7 +2093,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2086,7 +2108,7 @@
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that provides culture-specific formatting information for date and time values in `args`.  
   
--   A custom <xref:System.IFormatProvider> implementation that provides formatting information for one or more of the objects in `args`. Typically, such an implementation also implements the <xref:System.ICustomFormatter> interface. The second example in the next section illustrates an <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method call with a custom <xref:System.IFormatProvider> implementation.  
+-   A custom <xref:System.IFormatProvider> implementation that provides formatting information for one or more of the objects in `args`. Typically, such an implementation also implements the <xref:System.ICustomFormatter> interface. The second example in the next section illustrates an <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method call with a custom <xref:System.IFormatProvider> implementation.  
   
  If the `provider` parameter is `null`, format provider information is obtained from the current culture.  
   
@@ -2101,7 +2123,7 @@
  [!code-csharp[stringbuilder.appendformat#1](~/samples/snippets/csharp/VS_Snippets_CLR/stringbuilder.appendformat/CS/appfmt.cs#1)]
  [!code-vb[stringbuilder.appendformat#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/stringbuilder.appendformat/VB/appfmt.vb#1)]  
   
- The following example defines a custom <xref:System.IFormatProvider> implementation named `CustomerFormatter` that formats a 10-digit customer number with hyphens after the fourth and seventh digits. It is passed to the <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method to create a string that includes the formatted customer number and customer name.  
+ The following example defines a custom <xref:System.IFormatProvider> implementation named `CustomerFormatter` that formats a 10-digit customer number with hyphens after the fourth and seventh digits. It is passed to the <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method to create a string that includes the formatted customer number and customer name.  
   
  [!code-csharp[System.Text.StringBuilder.AppendFormat#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.appendformat/cs/customernumberformatter1.cs#1)]
  [!code-vb[System.Text.StringBuilder.AppendFormat#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.appendformat/vb/customernumberformatter1.vb#1)]  
@@ -2172,7 +2194,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2260,7 +2282,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2357,7 +2379,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2447,7 +2469,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=fullName>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|*index*|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
@@ -2493,7 +2515,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2523,7 +2545,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2553,7 +2575,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2583,7 +2605,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2706,7 +2728,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default line terminator is the current value of the <xref:System.Environment.NewLine%2A?displayProperty=fullName> property.  
+ The default line terminator is the current value of the <xref:System.Environment.NewLine%2A?displayProperty=nameWithType> property.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -2725,6 +2747,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="AppendLine">
@@ -2768,7 +2791,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default line terminator is the current value of the <xref:System.Environment.NewLine%2A?displayProperty=fullName> property.  
+ The default line terminator is the current value of the <xref:System.Environment.NewLine%2A?displayProperty=nameWithType> property.  
   
  The capacity of this instance is adjusted as needed.  
   
@@ -2778,6 +2801,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -2876,13 +2900,18 @@
   
  [!code-csharp[System.Text.StringBuilder.Chars#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.chars/cs/chars1.cs#1)]
  [!code-vb[System.Text.StringBuilder.Chars#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.chars/vb/chars1.vb#1)]  
-  
+
+### Performance and character-based indexing
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the bounds of this instance while setting a character.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is outside the bounds of this instance while getting a character.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -3156,7 +3185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Boolean.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity is adjusted as needed.  
+ <xref:System.Boolean.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity is adjusted as needed.  
   
    
   
@@ -3175,6 +3204,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3215,7 +3245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Byte.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Byte.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3234,6 +3264,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3279,7 +3310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Char.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Char.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3298,6 +3329,7 @@
  -or-  
   
  Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3399,7 +3431,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Decimal.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Decimal.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3418,6 +3450,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3458,7 +3491,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Double.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Double.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3477,6 +3510,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3517,7 +3551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Int16.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Int16.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3536,6 +3570,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3576,7 +3611,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Int32.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Int32.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3595,6 +3630,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3635,7 +3671,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Int64.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Int64.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3654,6 +3690,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3694,7 +3731,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Object.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Object.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
  If `value` is `null`, the value of this instance is unchanged.  
   
@@ -3715,6 +3752,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3760,7 +3798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.SByte.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity is adjusted as needed.  
+ <xref:System.SByte.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity is adjusted as needed.  
   
    
   
@@ -3779,6 +3817,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3819,7 +3858,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Single.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.Single.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3838,6 +3877,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3904,6 +3944,7 @@
  -or-  
   
  The current length of this <see cref="T:System.Text.StringBuilder" /> object plus the length of <paramref name="value" /> exceeds <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3949,7 +3990,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.UInt16.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.UInt16.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -3968,6 +4009,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4013,7 +4055,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.UInt32.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.UInt32.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -4032,6 +4074,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4077,7 +4120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.UInt64.ToString%2A?displayProperty=fullName> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
+ <xref:System.UInt64.ToString%2A?displayProperty=nameWithType> is used to get a string representation of `value`. Existing characters are shifted to make room for the new text. The capacity of this instance is adjusted as needed.  
   
    
   
@@ -4096,6 +4139,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4165,6 +4209,7 @@
   
  <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.OutOfMemoryException">The current length of this <see cref="T:System.Text.StringBuilder" /> object plus the length of <paramref name="value" /> times <paramref name="count" /> exceeds <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4279,7 +4324,7 @@
 ## Remarks  
  The length of a <xref:System.Text.StringBuilder> object is defined by its number of <xref:System.Char> objects.  
   
- Like the<xref:System.String.Length%2A?displayProperty=fullName> property, the <xref:System.Text.StringBuilder.Length%2A> property indicates the length of the current string object. Unlike the <xref:System.String.Length%2A?displayProperty=fullName> property, which is read-only, the <xref:System.Text.StringBuilder.Length%2A> property allows you to modify the length of the string stored to the <xref:System.Text.StringBuilder> object.  
+ Like the <xref:System.String.Length%2A?displayProperty=nameWithType> property, the <xref:System.Text.StringBuilder.Length%2A> property indicates the length of the current string object. Unlike the <xref:System.String.Length%2A?displayProperty=nameWithType> property, which is read-only, the <xref:System.Text.StringBuilder.Length%2A> property allows you to modify the length of the string stored to the <xref:System.Text.StringBuilder> object.  
   
  If the specified length is less than the current length, the current <xref:System.Text.StringBuilder> object is truncated to the specified length. If the specified length is greater than the current length, the end of the string value of the current <xref:System.Text.StringBuilder> object is padded with the Unicode NULL character (U+0000).  
   
@@ -4331,7 +4376,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The maximum capacity for this implementation is <xref:System.Int32?displayProperty=fullName>. However, this value is implementation-specific and might be different in other or later implementations. You can explicitly set the maximum capacity of a <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
+ The maximum capacity for this implementation is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. However, this value is implementation-specific and might be different in other or later implementations. You can explicitly set the maximum capacity of a <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
   
  In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor, both the length and the capacity of the <xref:System.Text.StringBuilder> instance can grow beyond the value of its <xref:System.Text.StringBuilder.MaxCapacity%2A> property. This can occur particularly when you call the <xref:System.Text.StringBuilder.Append%2A> and <xref:System.Text.StringBuilder.AppendFormat%2A> methods to append small strings.  
   
@@ -4394,6 +4439,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="startIndex" /> or <paramref name="length" /> is less than zero, or <paramref name="startIndex" /> + <paramref name="length" /> is greater than the length of this instance.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -4487,7 +4533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the current instance. If `newValue` is `null` or <xref:System.String?displayProperty=fullName>, all occurrences of `oldValue` are removed.  
+ This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the current instance. If `newValue` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
   
    
   
@@ -4504,6 +4550,7 @@
           <paramref name="oldValue" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="oldValue" /> is zero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -4611,7 +4658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the specified substring. If `newValue` is `null` or <xref:System.String?displayProperty=fullName>, all occurrences of `oldValue` are removed.  
+ This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the specified substring. If `newValue` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
   
    
   
@@ -4637,6 +4684,7 @@
  -or-  
   
  Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -4679,7 +4727,7 @@
 ## Remarks  
  The `context` parameter is reserved for future use and does not participate in this operation.  
   
- For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%28System.String%2CSystem.Object%2CSystem.Type%29?displayProperty=fullName> method.  
+ For more information, see the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%28System.String%2CSystem.Object%2CSystem.Type%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -4796,5 +4844,94 @@
  The sum of <paramref name="startIndex" /> and <paramref name="length" /> is greater than the length of the current instance.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts the string representation of a specified object into this instance at a specified character position.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendFormat">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding object argument.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all occurrences of a specified character or string in this instance with another specified character or string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string representation of a specified object to this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the default line terminator, or a copy of a specified string and the default line terminator, to the end of this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a <see cref="T:System.Text.StringBuilder" /> to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

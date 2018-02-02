@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TextEffectResolver" />
+    <altmember cref="T:System.Windows.Media.TextEffect" />
   </Docs>
   <Members>
     <Member MemberName="Disable">
@@ -57,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextEffectTarget.Enable" />
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -111,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextEffectTarget.Disable" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">

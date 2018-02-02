@@ -262,7 +262,7 @@
 ## Remarks  
  In implementing the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method, you should set the <xref:System.Web.SessionState.ISessionStateItemCollection.Dirty%2A> property to `true` to indicatevalues in the <xref:System.Web.SessionState.ISessionStateItemCollection> implementation have been modified.  
   
- Your implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method should throw an <xref:System.ArgumentOutOfRangeException> exception if `index` is less than zero or is equal to or greater than <xref:System.Collections.ICollection.Count%2A?displayProperty=fullName>.  
+ Your implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection.RemoveAt%2A> method should throw an <xref:System.ArgumentOutOfRangeException> exception if `index` is less than zero or is equal to or greater than <xref:System.Collections.ICollection.Count%2A?displayProperty=nameWithType>.  
   
    
   
@@ -276,5 +276,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a value in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

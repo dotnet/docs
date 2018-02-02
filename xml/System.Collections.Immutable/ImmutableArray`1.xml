@@ -50,7 +50,7 @@
     <typeparam name="T">The type of element stored by the array.</typeparam>
     <summary>Represents an array that is immutable; meaning it cannot be changed once it is created.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -259,7 +259,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Covariant upcasts from this method may be reversed by calling the             <xref:System.Collections.Immutable.ImmutableArray%601.As%2A> or <xref:System.Collections.Immutable.ImmutableArray%601.CastArray%2A>method.  
+ Covariant upcasts from this method may be reversed by calling the <xref:System.Collections.Immutable.ImmutableArray%601.As%2A> or <xref:System.Collections.Immutable.ImmutableArray%601.CastArray%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1589,7 +1589,7 @@
       <Docs>
         <param name="item">The object to remove from the array.</param>
         <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
-        <returns>Throws <see cref="T:System.NotSupportedException" />in all cases.</returns>
+        <returns>Throws <see cref="T:System.NotSupportedException" /> in all cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1982,7 +1982,7 @@
       <Docs>
         <param name="index">Index that indicates where to insert the item.</param>
         <param name="value">The value to insert.</param>
-        <summary>Throws <see cref="T:System.NotSupportedException" />in all cases.</summary>
+        <summary>Throws <see cref="T:System.NotSupportedException" /> in all cases.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

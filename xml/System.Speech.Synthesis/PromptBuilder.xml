@@ -26,7 +26,7 @@
   
  To generate speech from a <xref:System.Speech.Synthesis.PromptBuilder> object, you can pass it as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
   
- For more information, see [Constructing a Complex Prompt](http://msdn.microsoft.com/en-us/552cb356-7344-473e-b0f2-7a9983f8c1a4).  
+ For more information, see [Constructing a Complex Prompt](http://msdn.microsoft.com/library/552cb356-7344-473e-b0f2-7a9983f8c1a4).  
   
  ]]></format>
     </remarks>
@@ -2144,6 +2144,7 @@ namespace SampleSynthesis
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Synthesis.PromptBuilder.StartVoice(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge)" />
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -2222,5 +2223,59 @@ namespace SampleSynthesis
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendTextWithHint">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends text to the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object and specifies the content type of the text.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendSsml">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends an SSML file to a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendBreak">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a break (pause) in the content of a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendText">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends text to the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendAudio">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a specified audio file to a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

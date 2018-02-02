@@ -146,6 +146,7 @@
         <returns>
           <see langword="true" /> if the specified <see langword="Object" /> is equal to the current <see langword="Object" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Family">
@@ -181,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.AddressFamily" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -210,6 +212,7 @@
         <summary>Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -253,6 +256,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The specified index does not exist in the buffer.</exception>
+        <altmember cref="P:System.Net.SocketAddress.Size" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -326,5 +330,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.SocketAddress" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

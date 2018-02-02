@@ -18,6 +18,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:FactoryMethod Directive
 Specifies a method other than a constructor that a XAML processor should use to initialize an object after resolving its backing type.  

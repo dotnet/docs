@@ -47,7 +47,7 @@
 ## Remarks  
  The `ExpandoObject` class enables you to add and delete members of its instances at run time and also to set and get values of these members. This class supports dynamic binding, which enables you to use standard syntax like `sampleObject.sampleMember` instead of more complex syntax like `sampleObject.GetAttribute("sampleMember")`.  
   
- The `ExpandoObject` class implements the standard Dynamic Language Runtime (DLR) interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `ExpandoObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `ExpandoObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md) documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site, and [Introducing the ExpandoObject](http://go.microsoft.com/fwlink/?LinkID=169157) on the C# Frequently Asked Questions Web site.  
+ The `ExpandoObject` class implements the standard Dynamic Language Runtime (DLR) interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `ExpandoObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `ExpandoObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md) and [Introducing the ExpandoObject](http://go.microsoft.com/fwlink/?LinkID=169157) on the C# Frequently Asked Questions Web site.  
   
  The `ExpandoObject` class is an implementation of the dynamic object concept that enables getting, setting, and invoking members. If you want to define types that have their own dynamic dispatch semantics, use the <xref:System.Dynamic.DynamicObject> class. If you want to define how dynamic objects participate in the interoperability protocol and manage DLR fast dynamic dispatch caching, create your own implementation of the <xref:System.Dynamic.IDynamicMetaObjectProvider> interface.  
   
@@ -601,7 +601,7 @@ End Module
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.TryGetValue">
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,object&gt;.TryGetValue (string key, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

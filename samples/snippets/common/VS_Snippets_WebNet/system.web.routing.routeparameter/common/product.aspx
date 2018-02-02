@@ -1,4 +1,4 @@
-﻿<%--<Snippet3>--%>
+﻿<!-- <Snippet3> -->
 <%@ Page %>
 
 <!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
@@ -39,4 +39,4 @@
     </form>
 </body>
 </html>
-<%--</Snippet3>--%>
+<!-- </Snippet3> -->

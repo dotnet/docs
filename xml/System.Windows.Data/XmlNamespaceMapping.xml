@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.XmlNamespaceMappingCollection" />
+    <altmember cref="T:System.Windows.Data.XmlDataProvider" />
+    <altmember cref="P:System.Windows.Data.Binding.XmlNamespaceManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -126,7 +129,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects are the same; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Data.XmlNamespaceMapping.Equals*?displayProperty=fullName>. ]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Data.XmlNamespaceMapping.Equals*?displayProperty=nameWithType>. ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -153,7 +156,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects are not the same; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Data.XmlNamespaceMapping.Equals%2A?displayProperty=fullName>. ]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Data.XmlNamespaceMapping.Equals%2A?displayProperty=nameWithType>. ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -173,6 +176,7 @@
         <summary>Gets or sets the prefix to use in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].</summary>
         <value>The prefix to associate with the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)]. The default is an empty string("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -227,7 +231,17 @@
         <summary>Gets or sets the <see cref="T:System.Uri" /> of the namespace for which to create a mapping.</summary>
         <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the namespace. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

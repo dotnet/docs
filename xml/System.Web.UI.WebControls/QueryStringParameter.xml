@@ -35,16 +35,21 @@
 ## Examples  
  The following example shows how to create a <xref:System.Web.UI.WebControls.QueryStringParameter> object to use as a filter when you display data in a <xref:System.Web.UI.WebControls.GridView> control. You add the <xref:System.Web.UI.WebControls.QueryStringParameter> object to the <xref:System.Web.UI.WebControls.AccessDataSource> control's <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. The parameter object binds the value of the query-string field named `country` to its <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> string. Because no <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is specified for the parameter, if no field named `country` is passed with the query string, the <xref:System.Web.UI.WebControls.AccessDataSource> control throws a <xref:System.NullReferenceException> exception. If a field named `country` is passed but has no value, the <xref:System.Web.UI.WebControls.GridView> control displays no data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_4/CS/qsp4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_4/VB/qsp4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_4/CS/qsp4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_4/VB/qsp4vb.aspx#1)]  
   
  The following example shows how to create a <xref:System.Web.UI.WebControls.QueryStringParameter> object to display data from an Access database by using a parameterized SQL query. The <xref:System.Web.UI.WebControls.AccessDataSource> object retrieves records that are then displayed in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> control is also editable, and lets users update the status of orders in the Northwind Traders Orders table.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/CS/sql22cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_22sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_22sql/VB/sql22vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ControlParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.CookieParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.FormParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.ProfileParameter" />
+    <altmember cref="T:System.Web.UI.WebControls.SessionParameter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,7 +74,7 @@
   
 -   <xref:System.Web.UI.WebControls.Parameter.Name%2A> is initialized to an empty string ("").  
   
--   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is initialized to <xref:System.TypeCode?displayProperty=fullName>.  
+-   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is initialized to <xref:System.TypeCode.Object?displayProperty=nameWithType>.  
   
 -   <xref:System.Web.UI.WebControls.Parameter.Direction%2A> is initialized to <xref:System.Data.ParameterDirection.Input>.  
   
@@ -85,8 +90,8 @@
   
  The <xref:System.Web.UI.WebControls.QueryStringParameter> object is added to the <xref:System.Web.UI.WebControls.AccessDataSource> control and is declared in an ASP.NET Web page. The <xref:System.Web.UI.WebControls.ListBox> control uses the <xref:System.Web.UI.WebControls.AccessDataSource> control to bind and display data whenever the page is requested with a query string that contains a field that is named `empId` and that has a corresponding value.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/CS/querystrparam1cs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/VB/querystrparam1vb.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/CS/querystrparam1cs.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/VB/querystrparam1vb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -115,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.QueryStringParameter.Clone" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,11 +151,13 @@
 ## Examples  
  The following example shows how to create two <xref:System.Web.UI.WebControls.QueryStringParameter> objects by using the <xref:System.Web.UI.WebControls.QueryStringParameter.%23ctor%2A> constructor and add them to an <xref:System.Web.UI.WebControls.AccessDataSource> control's <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. A <xref:System.Web.UI.WebControls.GridView> control displays data if the `employee` and `country` query-string fields are passed with the request and if they have valid values.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_2/CS/qsp2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_2/VB/qsp2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_2/CS/qsp2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_2/VB/qsp2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -204,11 +212,13 @@
 ## Examples  
  The following example shows how to create a <xref:System.Web.UI.WebControls.QueryStringParameter> object by using the <xref:System.Web.UI.WebControls.QueryStringParameter.%23ctor%2A> constructor and add it to an <xref:System.Web.UI.WebControls.AccessDataSource> control's <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. A <xref:System.Web.UI.WebControls.GridView> control displays data if the `employee` and `country` query-string fields are passed with the request and if they have valid values.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_3/CS/qsp3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_3/VB/qsp3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_3/CS/qsp3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_3/VB/qsp3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Parameter.Name" />
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -235,6 +245,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.QueryStringParameter.#ctor(System.Web.UI.WebControls.QueryStringParameter)" />
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -270,6 +281,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.QueryStringParameter.QueryStringField" />
       </Docs>
     </Member>
     <Member MemberName="QueryStringField">
@@ -303,13 +315,13 @@
 ## Examples  
  The following example shows how to use a <xref:System.Web.UI.WebControls.QueryStringParameter> object together with a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.ListBox> control. The <xref:System.Web.UI.WebControls.QueryStringParameter.QueryStringField%2A> property is set to the name of the expected query-string field, and the parameter is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. A <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property is provided in case the name/value pair is not passed with the query string.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.QueryStringParameter_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/CS/querystrparam1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.QueryStringParameter_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/VB/querystrparam1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.QueryStringParameter_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/CS/querystrparam1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.QueryStringParameter_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.QueryStringParameter_1/VB/querystrparam1vb.aspx#1)]  
   
  The following example shows how to use a <xref:System.Web.UI.WebControls.QueryStringParameter> object together with a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.QueryStringParameter> object is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection, together with other parameter objects that are used for the output parameter and return value. To retrieve data, handle the values that are returned from the stored procedure. This code example is part of a larger example that is provided for the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> class.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/CS/sql21cs.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceStatusEventArgs_1/VB/sql21vb.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -346,5 +358,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.QueryStringParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

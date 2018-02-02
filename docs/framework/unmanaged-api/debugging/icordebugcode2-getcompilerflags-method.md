@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode2::GetCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCompilerFlags method [.NET Framework debugging]"
   - "ICorDebugCode2::GetCompilerFlags method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugCode2::GetCompilerFlags Method
 Gets the flags that specify the conditions under which this code object was either just-in-time (JIT) compiled or generated using the native image generator (Ngen.exe).  

@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Point" />
+    <altmember cref="T:System.Windows.Rect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,7 +70,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -96,7 +98,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -241,7 +243,7 @@
     </Member>
     <Member MemberName="TryTransform">
       <MemberSignature Language="C#" Value="public abstract bool TryTransform (System.Windows.Point inPoint, out System.Windows.Point result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTransform(valuetype System.Windows.Point inPoint, valuetype System.Windows.Point result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTransform(valuetype System.Windows.Point inPoint, [out] valuetype System.Windows.Point&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -271,5 +273,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

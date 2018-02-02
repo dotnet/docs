@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A configuration control can be displayed when a transformer requires a user to configure it. The configuration control provides a user interface (UI) that allows the user to select which values will be transformed. It is rendered in a connections zone. The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A?displayProperty=fullName> method returns a configuration control.  
+ A configuration control can be displayed when a transformer requires a user to configure it. The configuration control provides a user interface (UI) that allows the user to select which values will be transformed. It is rendered in a connections zone. The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A?displayProperty=nameWithType> method returns a configuration control.  
   
  You can override the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A> method when your transformer requires a customized UI. The configuration control must implement the <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl> interface, which includes the <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Cancelled> and <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Succeeded> events. These events occur when a transformer control was either not configured or configured successfully, respectively.  
   

@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Slider" />
+    <altmember cref="T:System.Windows.Controls.Primitives.Track" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,6 +143,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.DragCompletedEventArgs" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Thumb.IsDragging" />
+        <altmember cref="M:System.Windows.Controls.Primitives.Thumb.CancelDrag" />
       </Docs>
     </Member>
     <Member MemberName="DragCompletedEvent">
@@ -206,6 +214,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.Thumb.IsDragging" />
+        <altmember cref="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+        <altmember cref="M:System.Windows.Controls.Primitives.Thumb.CancelDrag" />
       </Docs>
     </Member>
     <Member MemberName="DragDeltaEvent">
@@ -271,6 +284,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.DragStartedEventArgs" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+        <altmember cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+        <altmember cref="P:System.Windows.Controls.Primitives.Thumb.IsDragging" />
+        <altmember cref="M:System.Windows.Controls.Primitives.Thumb.CancelDrag" />
       </Docs>
     </Member>
     <Member MemberName="DragStartedEvent">
@@ -335,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.Thumb.OnDraggingChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="IsDraggingProperty">

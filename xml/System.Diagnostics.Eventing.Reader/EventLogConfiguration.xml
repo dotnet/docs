@@ -25,7 +25,7 @@
    
   
 ## Examples  
- For example code using this class, see [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
+ For example code using this class, see [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/library/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
   
  ]]></format>
     </remarks>
@@ -510,5 +510,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogConfiguration" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

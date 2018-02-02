@@ -54,7 +54,7 @@ function ValidationFunctionName(source, arguments)
  Like server-side validation, the string from the input control to validate is accessed by using the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.Value%2A> property of the `arguments` parameter. Return the result of the validation by setting the <xref:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid%2A> property of the `arguments` parameter.  
   
 > [!CAUTION]
->  When using validator controls, you should always check the results of server-side validation before performing any processing. After a postback but before your event methods are called, the page calls the validator controls and aggregates their results into the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=fullName> property. (You can also call the validator controls explicitly using the `Validate` method.) In your own code, you should check that the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=fullName> property returns `true` before processing input. Even though script-enabled browsers might prevent a postback from occurring on the client if a validation check has failed, you should always also check <xref:System.Web.UI.Page.IsValid%2A?displayProperty=fullName> in server code before processing validated data.  
+>  When using validator controls, you should always check the results of server-side validation before performing any processing. After a postback but before your event methods are called, the page calls the validator controls and aggregates their results into the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> property. (You can also call the validator controls explicitly using the `Validate` method.) In your own code, you should check that the <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> property returns `true` before processing input. Even though script-enabled browsers might prevent a postback from occurring on the client if a validation check has failed, you should always also check <xref:System.Web.UI.Page.IsValid%2A?displayProperty=nameWithType> in server code before processing validated data.  
   
  Multiple validation controls can be used with an individual input control to validate different criteria. For example, you can apply multiple validation controls on a <xref:System.Web.UI.WebControls.TextBox> control that allows the user to enter the quantity of items to add to a shopping cart. You can use a <xref:System.Web.UI.WebControls.CustomValidator> control to ensure that the value specified is less than the amount in inventory and a <xref:System.Web.UI.WebControls.RequiredFieldValidator> control to ensure that the user enters a value into the <xref:System.Web.UI.WebControls.TextBox> control.  
   
@@ -89,16 +89,24 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
  The following code example demonstrates how to create a client-side <xref:System.Web.UI.WebControls.CustomValidator> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorClient/CS/customvalidatorclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorClient/VB/customvalidatorclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorClient/CS/customvalidatorclientcs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorClient/VB/customvalidatorclientvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="P:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
+    <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
+    <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+    <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
+    <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +122,14 @@ void ServerValidation (object source, ServerValidateEventArgs args)
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CustomValidator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+        <altmember cref="P:System.Web.UI.WebControls.CustomValidator.ClientValidationFunction" />
+        <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
+        <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.Value" />
+        <altmember cref="P:System.Web.UI.WebControls.ServerValidateEventArgs.IsValid" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -143,8 +159,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/CS/custom_customvalidator_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/VB/custom_customvalidator_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/CS/custom_customvalidator_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomCustomValidatorAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/VB/custom_customvalidator_addattributestorendervb.aspx#1)]  
 [!code-csharp[CustomCustomValidatorAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/CS/custom_customvalidator_addattributestorender.cs#2)]
 [!code-vb[CustomCustomValidatorAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorAddAttributesToRender/VB/custom_customvalidator_addattributestorender.vb#2)]  
   
@@ -198,11 +214,12 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorClient/CS/customvalidatorclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorClient/VB/customvalidatorclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorClient/CS/customvalidatorclientcs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorClient/VB/customvalidatorclientvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -228,8 +245,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.CustomValidator.ControlPropertiesValid%2A> method in a custom server control so that it always returns the value of the visible property, as long as the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property of the <xref:System.Web.UI.WebControls.CustomValidator> control is on the page and contains validation properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCustomValidatorControlPropertiesValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/CS/custom_customvalidator_controlpropertiesvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCustomValidatorControlPropertiesValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/VB/custom_customvalidator_controlpropertiesvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCustomValidatorControlPropertiesValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/CS/custom_customvalidator_controlpropertiesvalidcs.aspx#1)]
+ [!code-aspx-vb[CustomCustomValidatorControlPropertiesValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/VB/custom_customvalidator_controlpropertiesvalidvb.aspx#1)]  
 [!code-csharp[CustomCustomValidatorControlPropertiesValid#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/CS/custom_customvalidator_controlpropertiesvalid.cs#2)]
 [!code-vb[CustomCustomValidatorControlPropertiesValid#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorControlPropertiesValid/VB/custom_customvalidator_controlpropertiesvalid.vb#2)]  
   
@@ -263,8 +280,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/CS/custom_customvalidator_evaluateisvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/VB/custom_customvalidator_evaluateisvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/CS/custom_customvalidator_evaluateisvalidcs.aspx#1)]
+ [!code-aspx-vb[CustomCustomValidatorEvaluateIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/VB/custom_customvalidator_evaluateisvalidvb.aspx#1)]  
 [!code-csharp[CustomCustomValidatorEvaluateIsValid#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/CS/custom_customvalidator_evaluateisvalid.cs#2)]
 [!code-vb[CustomCustomValidatorEvaluateIsValid#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomCustomValidatorEvaluateIsValid/VB/custom_customvalidator_evaluateisvalid.vb#2)]  
   
@@ -298,7 +315,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CustomValidator.ServerValidate> event is raised when validation is performed on the server.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  The <xref:System.Web.UI.WebControls.CustomValidator.OnServerValidate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -310,14 +327,15 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.CustomValidator.ServerValidate" />
       </Docs>
     </Member>
     <Member MemberName="ServerValidate">
@@ -340,7 +358,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 ## Remarks  
  The <xref:System.Web.UI.WebControls.CustomValidator.ServerValidate> event is raised when validation is performed on the server. This event is used to provide a custom validation routine for an input control, such as a <xref:System.Web.UI.WebControls.TextBox> control.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -350,11 +368,13 @@ void ServerValidation (object source, ServerValidateEventArgs args)
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomValidatorServerValidate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomValidatorServerValidate/CS/customvalidatorservervalidatecs.aspx#1)]
+ [!code-aspx-vb[CustomValidatorServerValidate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomValidatorServerValidate/VB/customvalidatorservervalidatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CustomValidator.OnServerValidate(System.String)" />
+        <altmember cref="T:System.Web.UI.WebControls.ServerValidateEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ValidateEmptyText">
@@ -385,7 +405,7 @@ void ServerValidation (object source, ServerValidateEventArgs args)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each validator can be associated with a targeted control. In previous versions of the .NET Framework, if the targeted control had an empty string value, such as a  <xref:System.Web.UI.WebControls.TextBox.Text%2A> property having a value of <xref:System.String.Empty?displayProperty=fullName>, the validator (except for the <xref:System.Web.UI.WebControls.RequiredFieldValidator> validator) would not evaluate the targeted control and would simply return that the validation passed.  
+ Each validator can be associated with a targeted control. In previous versions of the .NET Framework, if the targeted control had an empty string value, such as a  <xref:System.Web.UI.WebControls.TextBox.Text%2A> property having a value of <xref:System.String.Empty?displayProperty=nameWithType>, the validator (except for the <xref:System.Web.UI.WebControls.RequiredFieldValidator> validator) would not evaluate the targeted control and would simply return that the validation passed.  
   
  The <xref:System.Web.UI.WebControls.CustomValidator.ValidateEmptyText%2A> property is new for the .NET Framework version 2.0.  If <xref:System.Web.UI.WebControls.CustomValidator.ValidateEmptyText%2A> is set to `true`, the validator evaluates the control's value (using the criteria specified to the <xref:System.Web.UI.WebControls.CustomValidator> control) and returns the validation results. This property allows developers to evaluate the results of a <xref:System.Web.UI.WebControls.CustomValidator> control regardless of the value of the targeted control.  
   
@@ -393,6 +413,8 @@ void ServerValidation (object source, ServerValidateEventArgs args)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BaseValidator" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

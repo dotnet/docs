@@ -56,7 +56,7 @@
 ## Remarks  
  If a name is `null`, a default parameter name is used.  
   
- This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>
@@ -95,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+ This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter?displayProperty=nameWithType> specified.  
   
  ]]></format>
         </remarks>

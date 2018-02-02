@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySource2::SetNotifyFilter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySource2::SetNotifyFilter method [.NET Framework debugging]"
   - "SetNotifyFilter method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # INotifySource2::SetNotifyFilter Method
 Assigns a notification filter for use with this source.  
@@ -57,6 +57,6 @@ HRESULT SetNotifyFilter
  **Header:** ProtocolNotify2.idl  
   
 ## See Also  
- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)   
- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)   
+ [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)  
+ [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)  
  [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)

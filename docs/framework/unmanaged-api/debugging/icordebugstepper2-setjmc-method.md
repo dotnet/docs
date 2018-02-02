@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper2::SetJMC"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper2::SetJMC method [.NET Framework debugging]"
   - "SetJMC method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepper2::SetJMC Method
 Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer. This process is also known as just my code (JMC) debugging.  

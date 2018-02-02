@@ -33,16 +33,18 @@
 ## Examples  
  The following code example demonstrates how to use the `<input type=submit>` HTML control declaratively on a Web Forms page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInput_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_1/CS/htmlinputcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInput_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_1/VB/htmlinputvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInput_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_1/CS/htmlinputcs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInput_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_1/VB/htmlinputvb.aspx#1)]  
   
  The following code example demonstrates how to add the same HTML control programmatically during a call to the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/CS/htmlinput2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/VB/htmlinput2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/CS/htmlinput2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/VB/htmlinput2vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlButton" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputReset" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,15 +67,15 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The "submit" literal string.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The "submit" literal string.|  
   
    
   
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputPassword>, and <xref:System.Web.UI.HtmlControls.HtmlInputSubmit> controls to a Web Forms page using default constructors to create a simple login screen.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/CS/htmlinput2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/VB/htmlinput2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/CS/htmlinput2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInput_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_2/VB/htmlinput2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -102,19 +104,28 @@
   
 |Property|Value|  
 |--------------|-----------|  
-|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=fullName>|The value of the `type` parameter.|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A?displayProperty=nameWithType>|The value of the `type` parameter.|  
   
    
   
 ## Examples  
  The following code example demonstrates how to programmatically add <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputPassword>, and <xref:System.Web.UI.HtmlControls.HtmlInputSubmit> controls to a Web Forms page to create a simple login screen. This example demonstrates how you can pass various values for the `type` parameter, which overrides the intrinsic type of the HTML control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.HtmlControls.HtmlInput_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_3/CS/htmlinput3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.HtmlControls.HtmlInput_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_3/VB/htmlinput3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.HtmlControls.HtmlInput_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_3/CS/htmlinput3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.HtmlControls.HtmlInput_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlControls.HtmlInput_3/VB/htmlinput3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputSubmit" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

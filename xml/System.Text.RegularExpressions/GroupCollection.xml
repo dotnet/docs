@@ -33,11 +33,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.GroupCollection> class is a zero-based collection class that consists of one or more <xref:System.Text.RegularExpressions.Group> objects that provide information about captured groups in a regular expression match. The collection is immutable (read-only) and has no public constructor. A <xref:System.Text.RegularExpressions.GroupCollection> object is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property.  
+ The <xref:System.Text.RegularExpressions.GroupCollection> class is a zero-based collection class that consists of one or more <xref:System.Text.RegularExpressions.Group> objects that provide information about captured groups in a regular expression match. The collection is immutable (read-only) and has no public constructor. A <xref:System.Text.RegularExpressions.GroupCollection> object is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property.  
   
- The collection contains one or more <xref:System.Text.RegularExpressions.Group?displayProperty=fullName> objects. If the match is successful, the first element in the collection contains the <xref:System.Text.RegularExpressions.Group> object that corresponds to the entire match. Each subsequent element represents a captured group, if the regular expression includes capturing groups. Matches from numbered (unnamed) capturing groups appear in numeric order before matches from named capturing groups. If the match is unsuccessful, the collection contains a single <xref:System.Text.RegularExpressions.Group?displayProperty=fullName> object whose <xref:System.Text.RegularExpressions.Group.Success%2A> property is `false` and whose <xref:System.Text.RegularExpressions.Capture.Value%2A> property equals <xref:System.String.Empty?displayProperty=fullName>. For more information, see the "Grouping Constructs and Regular Expression Objects" section in the [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md) article.  
+ The collection contains one or more <xref:System.Text.RegularExpressions.Group?displayProperty=nameWithType> objects. If the match is successful, the first element in the collection contains the <xref:System.Text.RegularExpressions.Group> object that corresponds to the entire match. Each subsequent element represents a captured group, if the regular expression includes capturing groups. Matches from numbered (unnamed) capturing groups appear in numeric order before matches from named capturing groups. If the match is unsuccessful, the collection contains a single <xref:System.Text.RegularExpressions.Group?displayProperty=nameWithType> object whose <xref:System.Text.RegularExpressions.Group.Success%2A> property is `false` and whose <xref:System.Text.RegularExpressions.Capture.Value%2A> property equals <xref:System.String.Empty?displayProperty=nameWithType>. For more information, see the "Grouping Constructs and Regular Expression Objects" section in the [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md) article.  
   
- To iterate through the members of the collection, you should use the collection iteration construct provided by your language (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) instead of retrieving the enumerator that is returned by the <xref:System.Text.RegularExpressions.GroupCollection.GetEnumerator%2A> method. In addition, you can access individual numbered captured groups from the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property (the indexer in C#), and you can access individual named captured groups from the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property. Note that you can retrieve an array that contains the numbers and names of all capturing groups by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=fullName> methods, respectively. Both are instance methods and require that you instantiate a <xref:System.Text.RegularExpressions.Regex> object that represents the regular expression to be matched.  
+ To iterate through the members of the collection, you should use the collection iteration construct provided by your language (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) instead of retrieving the enumerator that is returned by the <xref:System.Text.RegularExpressions.GroupCollection.GetEnumerator%2A> method. In addition, you can access individual numbered captured groups from the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property (the indexer in C#), and you can access individual named captured groups from the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property. Note that you can retrieve an array that contains the numbers and names of all capturing groups by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=nameWithType> methods, respectively. Both are instance methods and require that you instantiate a <xref:System.Text.RegularExpressions.Regex> object that represents the regular expression to be matched.  
   
    
   
@@ -57,6 +57,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.Group" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -95,7 +96,7 @@
  Because the entire collection is copied into the array starting at the given index, the destination array must be at least as large as the collection.  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=fullName> method instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=nameWithType> method instead.  
   
    
   
@@ -180,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.GroupCollection> object always has at least one member. If a match is unsuccessful, the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains a single member.  
+ The <xref:System.Text.RegularExpressions.GroupCollection> object always has at least one member. If a match is unsuccessful, the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains a single member.  
   
  ]]></format>
         </remarks>
@@ -284,10 +285,11 @@
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.GroupCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -328,13 +330,13 @@
 ## Remarks  
  The <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29> property is the index (in C#) or the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.GroupCollection> class. It allows you to enumerate the members of the collection by using a `foreach` statement in C# or a `For Each` statement in Visual Basic.  
   
- You can also use this property to retrieve individual captured groups by their index number. You can retrieve an array that contains the numbers of all capturing groups in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> method. You can also map named capturing groups to their numbers by calling the instance <xref:System.Text.RegularExpressions.Regex.GroupNumberFromName%2A?displayProperty=fullName> method.  
+ You can also use this property to retrieve individual captured groups by their index number. You can retrieve an array that contains the numbers of all capturing groups in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=nameWithType> method. You can also map named capturing groups to their numbers by calling the instance <xref:System.Text.RegularExpressions.Regex.GroupNumberFromName%2A?displayProperty=nameWithType> method.  
   
  You can determine the number of items in the collection by retrieving the value of the <xref:System.Text.RegularExpressions.GroupCollection.Count%2A> property. Valid values for the `groupnum` parameter range from 0 to one less than the number of items in the collection.  
   
- The <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property always has at least one member. If the regular expression engine cannot find any matches in a particular input string, the single <xref:System.Text.RegularExpressions.Group> object in the collection has its <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property set to `false` and its `Group.Value` property set to <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property always has at least one member. If the regular expression engine cannot find any matches in a particular input string, the single <xref:System.Text.RegularExpressions.Group> object in the collection has its <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=nameWithType> property set to `false` and its `Group.Value` property set to <xref:System.String.Empty?displayProperty=nameWithType>.  
   
- If `groupnum` is not the index of a member of the collection, or if `groupnum` is the index of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+ If `groupnum` is not the index of a member of the collection, or if `groupnum` is the index of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=nameWithType> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -392,9 +394,9 @@
 ## Remarks  
  `groupName` can be either the name of a capturing group that is defined by the `(?<`*name*`>)` element in a regular expression, or the string representation of the number of a capturing group that is defined by a grouping construct. For more information about groups in regular expressions, see [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
- You can retrieve the names of all the captured groups in a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=fullName> method. You can also map the numbers of capturing groups in a regular expression to their names by calling the <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A?displayProperty=fullName> method. Individual names from the array can then be passed to the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property to retrieve the captured string.  
+ You can retrieve the names of all the captured groups in a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.GetGroupNames%2A?displayProperty=nameWithType> method. You can also map the numbers of capturing groups in a regular expression to their names by calling the <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A?displayProperty=nameWithType> method. Individual names from the array can then be passed to the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29> property to retrieve the captured string.  
   
- If `groupname` is not the name of a capturing group in the collection, or if `groupname` is the name of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=fullName> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+ If `groupname` is not the name of a capturing group in the collection, or if `groupname` is the name of a capturing group that has not been matched in the input string, the method returns a <xref:System.Text.RegularExpressions.Group> object whose <xref:System.Text.RegularExpressions.Group.Success%2A?displayProperty=nameWithType> property is `false` and whose `Group.Value` property is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -444,10 +446,11 @@
 ## Remarks  
   
 > [!WARNING]
->  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=fullName> property instead.  
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.GroupCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=nameWithType> property instead.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.GroupCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Group&gt;.Add">
@@ -897,5 +900,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables access to a single member of the collection by integer or string index.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

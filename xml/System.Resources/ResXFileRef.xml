@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Resources.ResXFileRef> class is used to include references to files in an XML resource (.resx) file. A <xref:System.Resources.ResXFileRef> object represents a link to an external resource in an XML resource (.resx) file. You add the <xref:System.Resources.ResXFileRef> object to a .resx file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%28System.Resources.ResXDataNode%29?displayProperty=fullName> method.  
+ The <xref:System.Resources.ResXFileRef> class is used to include references to files in an XML resource (.resx) file. A <xref:System.Resources.ResXFileRef> object represents a link to an external resource in an XML resource (.resx) file. You add the <xref:System.Resources.ResXFileRef> object to a .resx file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%28System.Resources.ResXDataNode%29?displayProperty=nameWithType> method.  
   
  In a data entry in a .resx file, the type is <xref:System.Resources.ResXFileRef>, and the value is the path location on disk. When the resource manager deserializes the object, the <xref:System.Resources.ResXFileRef> performs the I/O to get the file. The following is an example of a .resx file.  
   
@@ -37,7 +37,7 @@
 </data>  
 ```  
   
- To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=fullName> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
+ To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=nameWithType> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.  
   
  When you compile a .resx file with [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md), the resources specified in the .resx file are embedded in the resulting document resource file.  
   
@@ -160,6 +160,7 @@
         <summary>Gets the text representation of the current <see cref="T:System.Resources.ResXFileRef" /> object.</summary>
         <returns>A string that consists of the concatenated text representations of the parameters specified in the current <see cref="Overload:System.Resources.ResXFileRef.#ctor" /> constructor.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.Resources.ResXFileRef.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -180,5 +181,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

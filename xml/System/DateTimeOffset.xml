@@ -53,11 +53,11 @@
  The time component of a <xref:System.DateTimeOffset> value is measured in 100-nanosecond units called ticks, and a particular date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) in the <xref:System.Globalization.GregorianCalendar> calendar. A <xref:System.DateTimeOffset> value is always expressed in the context of an explicit or default calendar. Ticks that are attributable to leap seconds are not included in the total number of ticks.  
   
 > [!NOTE]
->  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=fullName>, <xref:System.TimeSpan.TicksPerHour?displayProperty=fullName>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=fullName>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=fullName>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=fullName> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTimeOffset.Second%2A> component of a <xref:System.DateTimeOffset> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
+>  If you are working with a ticks value that you want to convert to some other time interval, such as minutes or seconds, you should use the <xref:System.TimeSpan.TicksPerDay?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerHour?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerMinute?displayProperty=nameWithType>, <xref:System.TimeSpan.TicksPerSecond?displayProperty=nameWithType>, or <xref:System.TimeSpan.TicksPerMillisecond?displayProperty=nameWithType> constant to perform the conversion. For example, to add the number of seconds represented by a specified number of ticks to the <xref:System.DateTimeOffset.Second%2A> component of a <xref:System.DateTimeOffset> value, you can use the expression `dateValue.Second + nTicks/Timespan.TicksPerSecond`.  
   
  Although a <xref:System.DateTimeOffset> value includes an offset, it is not a fully time zone-aware data structure. While an offset from UTC is one characteristic of a time zone, it does not unambiguously identify a time zone. Not only do multiple time zones share the same offset from UTC, but the offset of a single time zone changes if it observes daylight saving time. This means that, as soon as a <xref:System.DateTimeOffset> value is disassociated from its time zone, it can no longer be unambiguously linked back to its original time zone.  
   
- Because <xref:System.DateTimeOffset> is a structure, a <xref:System.DateTimeOffset> object that has been declared but not otherwise initialized contains the default values for each of its member fields. This means that its <xref:System.DateTimeOffset.DateTime%2A> property is set to <xref:System.DateTimeOffset.MinValue?displayProperty=fullName> and its <xref:System.DateTimeOffset.Offset%2A> property is set to <xref:System.TimeSpan.Zero?displayProperty=fullName>.  
+ Because <xref:System.DateTimeOffset> is a structure, a <xref:System.DateTimeOffset> object that has been declared but not otherwise initialized contains the default values for each of its member fields. This means that its <xref:System.DateTimeOffset.DateTime%2A> property is set to <xref:System.DateTimeOffset.MinValue?displayProperty=nameWithType> and its <xref:System.DateTimeOffset.Offset%2A> property is set to <xref:System.TimeSpan.Zero?displayProperty=nameWithType>.  
   
  You can create a new <xref:System.DateTimeOffset> value by calling any of the overloads of its constructor, which are similar to the overloaded constructors for the <xref:System.DateTime> structure. You can also create a new <xref:System.DateTimeOffset> value by assigning it a <xref:System.DateTime> value. This is an implicit conversion; it does not require a casting operator (in C#) or call to a conversion method (in Visual Basic). You can also initialize a <xref:System.DateTimeOffset> value from the string representation of a date and time by calling a number of static string parsing methods, which include <xref:System.DateTimeOffset.Parse%2A>, <xref:System.DateTimeOffset.ParseExact%2A>, <xref:System.DateTimeOffset.TryParse%2A>, and <xref:System.DateTimeOffset.TryParseExact%2A>.  
   
@@ -65,7 +65,7 @@
   
 -   Date and time arithmetic.  
   
-     You can add or subtract either dates or time intervals from a particular <xref:System.DateTimeOffset> value. Arithmetic operations with <xref:System.DateTimeOffset> values, unlike those with <xref:System.DateTime> values, adjust for differences in time offsets when returning a result. For example, the following code uses <xref:System.DateTime> variables to subtract the current local time from the current UTC time. The code then uses <xref:System.DateTimeOffset> variables to perform the same operation. The subtraction with <xref:System.DateTime> values returns the local time zone's difference from UTC, while the subtraction with <xref:System.DateTimeOffset> values returns <xref:System.TimeSpan.Zero?displayProperty=fullName>.  
+     You can add or subtract either dates or time intervals from a particular <xref:System.DateTimeOffset> value. Arithmetic operations with <xref:System.DateTimeOffset> values, unlike those with <xref:System.DateTime> values, adjust for differences in time offsets when returning a result. For example, the following code uses <xref:System.DateTime> variables to subtract the current local time from the current UTC time. The code then uses <xref:System.DateTimeOffset> variables to perform the same operation. The subtraction with <xref:System.DateTime> values returns the local time zone's difference from UTC, while the subtraction with <xref:System.DateTimeOffset> values returns <xref:System.TimeSpan.Zero?displayProperty=nameWithType>.  
   
      [!code-csharp[System.DateTimeOffset.Type#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Type/cs/Type.cs#1)]
      [!code-vb[System.DateTimeOffset.Type#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Type/vb/Type.vb#1)]  
@@ -122,16 +122,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor's behavior depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` parameter:  
+ This constructor's behavior depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the `dateTime` parameter:  
   
--   If the value of <xref:System.DateTime.Kind%2A?displayProperty=fullName> is <xref:System.DateTimeKind?displayProperty=fullName>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to <xref:System.TimeSpan.Zero>.  
+-   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to <xref:System.TimeSpan.Zero>.  
   
--   If the value of <xref:System.DateTime.Kind%2A?displayProperty=fullName> is <xref:System.DateTimeKind?displayProperty=fullName> or <xref:System.DateTimeKind?displayProperty=fullName>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
+-   If the value of <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> or <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the <xref:System.DateTimeOffset.DateTime%2A> property of the new instance is set equal to `dateTime`, and the <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
   
    
   
 ## Examples  
- The following example illustrates how the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` parameter affects the date and time value that is returned by this constructor.  
+ The following example illustrates how the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the `dateTime` parameter affects the date and time value that is returned by this constructor.  
   
  [!code-csharp[System.DateTimeOffset.Constructors#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/cs/Constructors.cs#1)]
  [!code-vb[System.DateTimeOffset.Constructors#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/vb/Constructors.vb#1)]  
@@ -181,11 +181,11 @@
 ## Remarks  
  This constructor's behavior depends in part on the value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter:  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=fullName>, the value of the `offset` parameter must be 0 or an <xref:System.ArgumentException> is thrown.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>, the value of the `offset` parameter must be 0 or an <xref:System.ArgumentException> is thrown.  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=fullName>, the value of the `offset` parameter must be equal to the local time zone's offset from Coordinated Universal Time (UTC) for that particular date or an <xref:System.ArgumentException> is thrown.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Local?displayProperty=nameWithType>, the value of the `offset` parameter must be equal to the local time zone's offset from Coordinated Universal Time (UTC) for that particular date or an <xref:System.ArgumentException> is thrown.  
   
--   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind?displayProperty=fullName>, the `offset` parameter can have any valid value.  
+-   If the value of <xref:System.DateTime.Kind%2A> is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, the `offset` parameter can have any valid value.  
   
    
   
@@ -326,7 +326,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.DateTimeOffset> object by using the <xref:System.DateTimeOffset.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.TimeSpan%29?displayProperty=fullName> constructor overload.  
+ The following example instantiates a <xref:System.DateTimeOffset> object by using the <xref:System.DateTimeOffset.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor overload.  
   
  [!code-csharp[System.DateTimeOffset.Constructors#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/cs/Constructors.cs#5)]
  [!code-vb[System.DateTimeOffset.Constructors#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/vb/Constructors.vb#5)]  
@@ -418,7 +418,7 @@
    
   
 ## Examples  
- The following example instantiates a <xref:System.DateTimeOffset> object by using the <xref:System.DateTimeOffset.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.TimeSpan%29?displayProperty=fullName> constructor overload.  
+ The following example instantiates a <xref:System.DateTimeOffset> object by using the <xref:System.DateTimeOffset.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor overload.  
   
  [!code-csharp[System.DateTimeOffset.Constructors#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/cs/Constructors.cs#7)]
  [!code-vb[System.DateTimeOffset.Constructors#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Constructors/vb/Constructors.vb#7)]  
@@ -625,6 +625,7 @@
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -1275,7 +1276,7 @@
 ## Remarks  
  This property removes any significant part of the time component from a <xref:System.DateTimeOffset> object and returns only its significant date component. For example, if the <xref:System.DateTimeOffset> object has a date and time value of "1/12/07 4:01pm +7:30", the property returns a <xref:System.DateTime> value of "1/12/07 12:00:00 AM". The <xref:System.DateTime> value can then be displayed by using any of the standard or custom format specifiers that display dates only. (See the Example section for an illustration.)  
   
- The value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the returned <xref:System.DateTime> object is always <xref:System.DateTimeKind?displayProperty=fullName>. It is not affected by the value of the <xref:System.DateTimeOffset.Offset%2A> property.  
+ The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is always <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. It is not affected by the value of the <xref:System.DateTimeOffset.Offset%2A> property.  
   
  To display a date without its time component, you can also use the "D" or "d" format specifiers; for an illustration, see the Example section.  
   
@@ -1327,7 +1328,7 @@
   
  This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for performing <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. For example, if the <xref:System.DateTimeOffset> object has a date and time value of "1/12/07 4:01pm + 7:30", the property returns a date of "1/12/07 4:01pm".  
   
- The value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
    
   
@@ -1339,6 +1340,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.LocalDateTime" />
       </Docs>
     </Member>
     <Member MemberName="Day">
@@ -1427,7 +1429,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek?displayProperty=fullName> to <xref:System.DayOfWeek?displayProperty=fullName>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek?displayProperty=fullName>) to six (which indicates <xref:System.DayOfWeek?displayProperty=fullName>).  
+ The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek.Sunday?displayProperty=nameWithType> to <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek.Sunday?displayProperty=nameWithType>) to six (which indicates <xref:System.DayOfWeek.Saturday?displayProperty=nameWithType>).  
   
  You can also display the weekday name of a particular date by using the "D" format specifier or the "dddd" custom format specifier. For example:  
   
@@ -1528,7 +1530,7 @@
   
  A <xref:System.DateTimeOffset> object that is not `null` is considered to be later (or greater) than one that is `null`.  
   
- This overload of the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%29> method implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method. It offers slightly better performance than the <xref:System.DateTimeOffset.Equals%28System.Object%29?displayProperty=fullName> overload because the `other` parameter does not have to be converted from an object.  
+ This overload of the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%29> method implements the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method. It offers slightly better performance than the <xref:System.DateTimeOffset.Equals%28System.Object%29?displayProperty=nameWithType> overload because the `other` parameter does not have to be converted from an object.  
   
    
   
@@ -1540,6 +1542,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.EqualsExact(System.DateTimeOffset)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1584,7 +1587,7 @@
  [!code-csharp[System.DateTimeOffset.Syntax#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/cs/Syntax.cs#3)]
  [!code-vb[System.DateTimeOffset.Syntax#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/vb/Syntax.vb#3)]  
   
- In other words, the <xref:System.DateTimeOffset.Equals%28System.Object%29?displayProperty=fullName> method determines whether the current <xref:System.DateTimeOffset> object and a specified object represent a single point in time. It directly compares neither dates and times nor offsets. To determine whether two <xref:System.DateTimeOffset> objects represent the same time and have the same offset value, use the <xref:System.DateTimeOffset.EqualsExact%2A> method.  
+ In other words, the <xref:System.DateTimeOffset.Equals%28System.Object%29?displayProperty=nameWithType> method determines whether the current <xref:System.DateTimeOffset> object and a specified object represent a single point in time. It directly compares neither dates and times nor offsets. To determine whether two <xref:System.DateTimeOffset> objects represent the same time and have the same offset value, use the <xref:System.DateTimeOffset.EqualsExact%2A> method.  
   
  If `obj` is `null`, or if the run-time type of `obj` is not <xref:System.DateTimeOffset>, the method returns `false`.  
   
@@ -1598,6 +1601,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.EqualsExact(System.DateTimeOffset)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1656,6 +1660,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.EqualsExact(System.DateTimeOffset)" />
       </Docs>
     </Member>
     <Member MemberName="EqualsExact">
@@ -1709,6 +1714,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.DateTimeOffset.Equals" />
       </Docs>
     </Member>
     <Member MemberName="FromFileTime">
@@ -1751,7 +1757,7 @@
   
  A Windows file time is directly accessible through the Windows API by calling the `GetFileTime` function, which returns a `FILETIME` structure. The single function parameter is the handle of the file whose file time information is to be retrieved. The file handle is retrieved by calling the `CreateFile` function. The `FILETIME` structure's `dwHighDateTime` member contains the four high-order bytes of the file time, and its `dwLowDateTime` member contains the four low-order bytes. The example that follows illustrates how to retrieve Windows file time values and convert them to <xref:System.DateTimeOffset> values.  
   
- Windows file time values can also be created from <xref:System.DateTime> values by calling the <xref:System.DateTime.ToFileTime%2A?displayProperty=fullName> and <xref:System.DateTime.ToFileTimeUtc%2A?displayProperty=fullName> methods, and from <xref:System.DateTimeOffset> values by calling the <xref:System.DateTimeOffset.ToFileTime%2A?displayProperty=fullName> method.  
+ Windows file time values can also be created from <xref:System.DateTime> values by calling the <xref:System.DateTime.ToFileTime%2A?displayProperty=nameWithType> and <xref:System.DateTime.ToFileTimeUtc%2A?displayProperty=nameWithType> methods, and from <xref:System.DateTimeOffset> values by calling the <xref:System.DateTimeOffset.ToFileTime%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -1805,7 +1811,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.Offset%2A> property value of the returned <xref:System.DateTimeOffset> instance is <xref:System.TimeSpan.Zero?displayProperty=fullName>, which represents Coordinated Universal Time. You can convert it to the time in a specific time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method.  
+ The <xref:System.DateTimeOffset.Offset%2A> property value of the returned <xref:System.DateTimeOffset> instance is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, which represents Coordinated Universal Time. You can convert it to the time in a specific time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1815,6 +1821,8 @@
  -or-  
   
  <paramref name="milliseconds" /> is greater than 253,402,300,799,999.</exception>
+        <altmember cref="M:System.DateTimeOffset.FromUnixTimeSeconds(System.Int64)" />
+        <altmember cref="M:System.DateTimeOffset.ToUnixTimeMilliseconds" />
       </Docs>
     </Member>
     <Member MemberName="FromUnixTimeSeconds">
@@ -1851,7 +1859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.Offset%2A> property value of the returned <xref:System.DateTimeOffset> instance is <xref:System.TimeSpan.Zero?displayProperty=fullName>, which represents Coordinated Universal Time. You can convert it to the time in a specific time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method.  
+ The <xref:System.DateTimeOffset.Offset%2A> property value of the returned <xref:System.DateTimeOffset> instance is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, which represents Coordinated Universal Time. You can convert it to the time in a specific time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1861,6 +1869,8 @@
  -or-  
   
  <paramref name="seconds" /> is greater than 253,402,300,799.</exception>
+        <altmember cref="M:System.DateTimeOffset.FromUnixTimeMilliseconds(System.Int64)" />
+        <altmember cref="M:System.DateTimeOffset.ToUnixTimeSeconds" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1989,7 +1999,7 @@
   
  There are no invalid times and ambiguous times are mapped to the local zone's standard time. (However, the conversion can create an anomaly: if a <xref:System.DateTimeOffset> value that is derived from the local computer reflects an ambiguous date and time, that value can be converted to UTC and then back to a local time that differs from the original time.)  The property applies any adjustment rules in the local time zone when it performs this conversion.  
   
- This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. In addition to performing any necessary time conversion, this property differs from the <xref:System.DateTimeOffset.DateTime%2A> property by setting the value of the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object to <xref:System.DateTimeKind?displayProperty=fullName>.  
+ This property returns both the date and the time component of a <xref:System.DateTimeOffset> object, which makes it useful for <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. In addition to performing any necessary time conversion, this property differs from the <xref:System.DateTimeOffset.DateTime%2A> property by setting the value of the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object to <xref:System.DateTimeKind.Local?displayProperty=nameWithType>.  
   
    
   
@@ -2001,6 +2011,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.DateTime" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -2038,7 +2049,7 @@
   
  The <xref:System.DateTimeOffset.MaxValue> property is used to determine whether the value of a new <xref:System.DateTimeOffset> object or the <xref:System.DateTimeOffset> value returned by an arithmetic operation is the same as or earlier than this maximum range value. If it is not, the method throws an <xref:System.ArgumentOutOfRangeException>. Any <xref:System.DateTimeOffset> value is converted to Coordinated Universal Time (UTC) before the method compares it with <xref:System.DateTimeOffset.MaxValue>.  This means that a <xref:System.DateTimeOffset> value whose date and time are close to the maximum range, but whose offset is negative, may throw an exception. For example, the value 12/31/9999 11:00 PM -02:00 is out of range because it is one hour later than <xref:System.DateTimeOffset.MaxValue> when it is converted to UTC.  
   
- Some calendars, such as the <xref:System.Globalization.UmAlQuraCalendar>, support an upper date range that is earlier than <xref:System.DateTime.MaxValue>. In these cases, trying to access <xref:System.DateTime.MaxValue> in variable assignments or formatting and parsing operations can throw an <xref:System.ArgumentOutOfRangeException>. Instead of retrieving the value of <xref:System.DateTime.MaxValue?displayProperty=fullName>, you can retrieve the value of the specified culture's latest valid date value from the <xref:System.Globalization.Calendar.MaxSupportedDateTime%2A?displayProperty=fullName> property.  
+ Some calendars, such as the <xref:System.Globalization.UmAlQuraCalendar>, support an upper date range that is earlier than <xref:System.DateTime.MaxValue>. In these cases, trying to access <xref:System.DateTime.MaxValue> in variable assignments or formatting and parsing operations can throw an <xref:System.ArgumentOutOfRangeException>. Instead of retrieving the value of <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, you can retrieve the value of the specified culture's latest valid date value from the <xref:System.Globalization.Calendar.MaxSupportedDateTime%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -2185,6 +2196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.DateTimeOffset.ParseExact" />
       </Docs>
     </Member>
     <Member MemberName="Month">
@@ -2290,6 +2302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.UtcNow" />
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -2385,13 +2398,14 @@
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Add%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Add%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Add%28System.TimeSpan%29?displayProperty=nameWithType>.]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTimeOffset" /> value is less than <see cref="F:System.DateTimeOffset.MinValue" />.  
   
  -or-  
   
  The resulting <see cref="T:System.DateTimeOffset" /> value is greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTimeOffset.Add(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -2445,8 +2459,9 @@
   
  In other words, the <xref:System.DateTimeOffset.op_Equality%2A> method determines whether the two <xref:System.DateTimeOffset> objects represent a single point in time. It directly compares neither dates and times nor offsets. To determine whether two <xref:System.DateTimeOffset> objects represent the same time and have the same offset value, use the <xref:System.DateTimeOffset.EqualsExact%2A> method.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="Overload:System.DateTimeOffset.Equals" />
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -2502,7 +2517,7 @@
  [!code-csharp[System.DateTimeOffset.Syntax#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/cs/Syntax.cs#5)]
  [!code-vb[System.DateTimeOffset.Syntax#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/vb/Syntax.vb#5)]  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2559,7 +2574,7 @@
  [!code-csharp[System.DateTimeOffset.Syntax#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/cs/Syntax.cs#6)]
  [!code-vb[System.DateTimeOffset.Syntax#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/vb/Syntax.vb#6)]  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2592,10 +2607,31 @@
         <Parameter Name="dateTime" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="dateTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="dateTime">The object to convert.</param>
+        <summary>Defines an implicit conversion of a <see cref="T:System.DateTime" /> object to a <see cref="T:System.DateTimeOffset" /> object.</summary>
+        <returns>The converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DateTimeOffset.op_Implicit%2A> method enables the compiler to automatically convert a <xref:System.DateTime> object to a <xref:System.DateTimeOffset> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). It defines a widening conversion that does not involve data loss and does not throw an <xref:System.OverflowException>. The <xref:System.DateTimeOffset.op_Implicit%2A> method makes code such as the following possible:  
+  
+ [!code-csharp[System.DateTimeOffset.Operators#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/cs/Operators.cs#7)]
+ [!code-vb[System.DateTimeOffset.Operators#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#7)]  
+  
+ This method is equivalent to the <xref:System.DateTimeOffset.%23ctor%2A> constructor. The offset of the resulting <xref:System.DateTimeOffset> object depends on the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property of the `dateTime` parameter:  
+  
+-   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property is <xref:System.DateTimeKind.Utc?displayProperty=fullName>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to 0.  
+  
+-   If the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property is <xref:System.DateTimeKind.Local?displayProperty=fullName> or <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>, the date and time of the <xref:System.DateTimeOffset> object is set equal to `dateTime`, and its <xref:System.DateTimeOffset.Offset%2A> property is set equal to the offset of the local system's current time zone.  
+  
+ The equivalent method for this operator is <xref:System.DateTimeOffset.%23ctor%28System.DateTime%29?displayProperty=fullName>]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The Coordinated Universal Time (UTC) date and time that results from applying the offset is earlier than <see cref="F:System.DateTimeOffset.MinValue" />.  
+  
+ -or-  
+  
+ The UTC date and time that results from applying the offset is later than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2653,7 +2689,7 @@
   
  [!code-vb[System.DateTimeOffset.Operators#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#9)]  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2710,7 +2746,7 @@
   
  [!code-vb[System.DateTimeOffset.Operators#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#11)]  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2767,7 +2803,7 @@
  [!code-csharp[System.DateTimeOffset.Syntax#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/cs/Syntax.cs#9)]
  [!code-vb[System.DateTimeOffset.Syntax#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Syntax/vb/Syntax.vb#9)]  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Compare%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2814,10 +2850,11 @@
  [!code-csharp[System.DateTimeOffset.Operators#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/cs/Operators.cs#14)]
  [!code-vb[System.DateTimeOffset.Operators#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#14)]  
   
- Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.DateTimeOffset%29?displayProperty=fullName> method instead.  
+ Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.DateTimeOffset%29?displayProperty=nameWithType> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=nameWithType>.]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.Subtract(System.DateTimeOffset)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -2863,11 +2900,12 @@
  [!code-csharp[System.DateTimeOffset.Operators#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/cs/Operators.cs#15)]
  [!code-vb[System.DateTimeOffset.Operators#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Operators/vb/Operators.vb#15)]  
   
- Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName> method instead.  
+ Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=nameWithType> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=nameWithType>.]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTimeOffset" /> value is less than <see cref="F:System.DateTimeOffset.MinValue" /> or greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
+        <altmember cref="M:System.DateTimeOffset.Subtract(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2914,7 +2952,7 @@
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Time> is missing, its default value is 12:00:00 AM. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the current culture's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. If \<Offset> is missing, its default value is the offset of the local time zone. \<Offset> can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Time> is missing, its default value is 12:00:00 AM. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the current culture's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Offset> is missing, its default value is the offset of the local time zone. \<Offset> can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
   
  The `input` string is parsed by using the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is initialized for the current culture. To parse a string that contains designated formatting that does not necessarily correspond to the formatting of the current culture, use the <xref:System.DateTimeOffset.ParseExact%2A> method and provide a format specifier.  
   
@@ -2937,6 +2975,8 @@
  -or-  
   
  <paramref name="input" /> contains the string representation of an offset value without a date or time.</exception>
+        <altmember cref="Overload:System.DateTimeOffset.TryParse" />
+        <altmember cref="Overload:System.DateTimeOffset.ParseExact" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -2985,11 +3025,11 @@
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone. \<Offset> can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone. \<Offset> can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
   
  The format of these three elements is defined by the `formatProvider` parameter, which can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in the `input` parameter. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the formatting used in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in the `input` parameter. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting used in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -3016,6 +3056,8 @@
  -or-  
   
  <paramref name="input" /> contains the string representation of an offset value without a date or time.</exception>
+        <altmember cref="Overload:System.DateTimeOffset.TryParse" />
+        <altmember cref="Overload:System.DateTimeOffset.ParseExact" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -3066,11 +3108,11 @@
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero?displayProperty=fullName> if either the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> or <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> value is specified in the `styles` parameter. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero?displayProperty=nameWithType> if either the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> value is specified in the `styles` parameter. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol.  
   
  The format of these three elements is defined by the `formatProvider` parameter, which can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in the `input` parameter. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the formatting used in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in the `input` parameter. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting used in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -3080,26 +3122,26 @@
   
  The positive or negative sign used in \<Offset> must be either + or -. It is not defined by the <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A> or <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the `formatProvider` parameter.  
   
- The following table shows the members of the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> enumeration that are supported.  
+ The following table shows the members of the <xref:System.Globalization.DateTimeStyles?displayProperty=nameWithType> enumeration that are supported.  
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses the string represented by `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=fullName> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses the string represented by `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is permitted in the \<Date> and \<Time> elements.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is permitted in front of each component in the parsed string.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is permitted in front of each component in the parsed string.|  
-|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the offset of the local time zone should be provided. This is the default behavior of the <xref:System.DateTimeOffset.Parse%2A> method.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the UTC offset (00:00) should be provided.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored and has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Because the <xref:System.DateTimeOffset> structure does not include a `Kind` property, this value has no effect.|  
   
- Only the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
+ Only the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
   
    
   
 ## Examples  
- The following example illustrates the effect of passing the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>, <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>, and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> values to the `styles` parameter of the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method.  
+ The following example illustrates the effect of passing the <xref:System.Globalization.DateTimeStyles.AssumeLocal?displayProperty=nameWithType>, <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType>, and <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> values to the `styles` parameter of the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method.  
   
  [!code-csharp[System.DateTimeOffset.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Parse/cs/ParseExamples.cs#3)]
  [!code-vb[System.DateTimeOffset.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Parse/vb/ParseExamples.vb#3)]  
@@ -3127,6 +3169,8 @@
  -or-  
   
  <paramref name="input" /> contains the string representation of an offset value without a date or time.</exception>
+        <altmember cref="Overload:System.DateTimeOffset.TryParse" />
+        <altmember cref="Overload:System.DateTimeOffset.ParseExact" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3169,7 +3213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time appear in the order specified by `format`. If the `input` string does not match this `format` parameter, the method throws a <xref:System.FormatException>.  In contrast, the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. <xref:System.DateTimeOffset.Parse%2A> also allows the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time to appear in any order.  
+ The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time appear in the order specified by `format`. If the `input` string does not match this `format` parameter, the method throws a <xref:System.FormatException>.  In contrast, the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. <xref:System.DateTimeOffset.Parse%2A> also allows the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time to appear in any order.  
   
  The `format` parameter is a string that contains either a single standard format specifier or one or more custom format specifiers that define the required format of the `input` parameter. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If `format` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the method throws a <xref:System.FormatException>.  
   
@@ -3186,7 +3230,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method with standard and custom format specifiers and the invariant culture to parse several date and time strings.  
+ The following example uses the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method with standard and custom format specifiers and the invariant culture to parse several date and time strings.  
   
  [!code-csharp[System.DateTimeOffset.ParseExact#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/cs/ParseExact.cs#1)]
  [!code-vb[System.DateTimeOffset.ParseExact#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/vb/ParseExact.vb#1)]  
@@ -3217,6 +3261,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3261,7 +3306,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time appear in the order specified by `format`. If the `input` string does not match the pattern of the `format` parameter, with any variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>.  In contrast, the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. <xref:System.DateTimeOffset.Parse%2A> also allows the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time to appear in any order.  
+ The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date, which must be in the format defined by the `format` parameter. It also requires that the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time appear in the order specified by `format`. If the `input` string does not match the pattern of the `format` parameter, with any variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>.  In contrast, the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date in any one of the formats recognized by the format provider's <xref:System.Globalization.DateTimeFormatInfo> object. <xref:System.DateTimeOffset.Parse%2A> also allows the \<Date>, \<Time>, and \<Offset> elements of the string representation of a date and time to appear in any order.  
   
  The `format` parameter is a string that contains either a single standard format specifier or one or more custom format specifiers that define the required pattern of the `input` parameter. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If `format` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the method throws a <xref:System.FormatException>.  
   
@@ -3269,7 +3314,7 @@
   
  The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise format of `input`, if `format` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the symbols and formatting in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and formatting in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -3279,7 +3324,7 @@
   
 |`DateTimeStyles` member|Behavior|  
 |-----------------------------|--------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=fullName> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default value.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by `format`. Extra white space can appear between date and time components and within individual components, and is ignored when parsing the string.|  
@@ -3292,7 +3337,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method with standard and custom format specifiers, the invariant culture, and various <xref:System.Globalization.DateTimeStyles> values to parse several date and time strings.  
+ The following example uses the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method with standard and custom format specifiers, the invariant culture, and various <xref:System.Globalization.DateTimeStyles> values to parse several date and time strings.  
   
  [!code-csharp[System.DateTimeOffset.ParseExact#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/cs/ParseExact.cs#2)]
  [!code-vb[System.DateTimeOffset.ParseExact#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/vb/ParseExact.vb#2)]  
@@ -3331,6 +3376,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -3375,7 +3421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. If the `input` string does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `input` to multiple formatting patterns, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method.  
+ The <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` parameter. If the `input` string does not match any one of these patterns with any of the variations defined by the `styles` parameter, the method throws a <xref:System.FormatException>. Aside from comparing `input` to multiple formatting patterns, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method.  
   
  The `formats` parameter is a string array whose elements contain either a single standard format specifier or one or more custom format specifiers that define the possible pattern of the `input` parameter. When the method is called, `input` must match one of these patterns. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If the matched element in `formats` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the method throws a <xref:System.FormatException>.  
   
@@ -3386,7 +3432,7 @@
   
  The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise format of `input`, if the matching element of `formats` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the symbols and formatting in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and formatting in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -3396,7 +3442,7 @@
   
 |`DateTimeStyles` member|Behavior|  
 |-----------------------------|--------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=fullName> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default value.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by `format`. Extra white space can appear between date and time components and within individual components (except the offset), and is ignored when parsing the string.|  
@@ -3409,7 +3455,7 @@
    
   
 ## Examples  
- The following example defines multiple input formats for the string representation of a date and time and offset value, and then passes the string that is entered by the user to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method.  
+ The following example defines multiple input formats for the string representation of a date and time and offset value, and then passes the string that is entered by the user to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method.  
   
  [!code-csharp[System.DateTimeOffset.ParseExact#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/cs/ParseExact.cs#3)]
  [!code-vb[System.DateTimeOffset.ParseExact#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.ParseExact/vb/ParseExact.vb#3)]  
@@ -3444,6 +3490,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.ParseExact" /> method throws a <see cref="T:System.FormatException" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTimeOffset.TryParseExact" />
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -3787,6 +3834,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.UtcDateTime" />
       </Docs>
     </Member>
     <Member MemberName="TimeOfDay">
@@ -3823,7 +3871,7 @@
 ## Remarks  
  The <xref:System.DateTimeOffset.TimeOfDay%2A> property is not affected by the value of the <xref:System.DateTimeOffset.Offset%2A> property.  
   
- The <xref:System.DateTimeOffset.TimeOfDay%2A> property returns the time component of a <xref:System.DateTimeOffset> object in the form of a <xref:System.TimeSpan> object. It is equivalent to the <xref:System.DateTime.TimeOfDay%2A?displayProperty=fullName> property.  
+ The <xref:System.DateTimeOffset.TimeOfDay%2A> property returns the time component of a <xref:System.DateTimeOffset> object in the form of a <xref:System.TimeSpan> object. It is equivalent to the <xref:System.DateTime.TimeOfDay%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -3885,6 +3933,7 @@ Me.ToUtcDateTime().ToFileTime()
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting file time would represent a date and time before midnight on January 1, 1601 C.E. Coordinated Universal Time (UTC).</exception>
+        <altmember cref="M:System.DateTimeOffset.FromFileTime(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="ToLocalTime">
@@ -3922,7 +3971,7 @@ Me.ToUtcDateTime().ToFileTime()
 ## Remarks  
  In performing the conversion to local time, the method first converts the current <xref:System.DateTimeOffset> object's date and time to Coordinated Universal Time (UTC) by subtracting the offset from the time. It then converts the UTC date and time to local time by adding the local time zone offset. In doing this, it takes account of any adjustment rules for the local time zone.  
   
- Both the value of the current <xref:System.DateTimeOffset> object and the value of the <xref:System.DateTimeOffset> object returned by the method call represent the same point in time. That is, if both are passed to the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName> method, the method will return `true`.  
+ Both the value of the current <xref:System.DateTimeOffset> object and the value of the <xref:System.DateTimeOffset> object returned by the method call represent the same point in time. That is, if both are passed to the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType> method, the method will return `true`.  
   
  If the conversion causes a time that is out of range of the <xref:System.DateTimeOffset> type, the <xref:System.DateTimeOffset.ToLocalTime%2A> method returns a <xref:System.DateTimeOffset> object that has the date and time set to either <xref:System.DateTimeOffset.MaxValue> or <xref:System.DateTimeOffset.MinValue> and the offset set to the local time zone offset.  
   
@@ -3936,6 +3985,7 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.ToUniversalTime" />
       </Docs>
     </Member>
     <Member MemberName="ToOffset">
@@ -3974,7 +4024,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.ToOffset%2A> method is an alternative to calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method. It can be useful for performing simple conversions from one time zone to another when the time zones' offsets from Coordinated Universal Time (UTC) are known. However, because neither the original <xref:System.DateTimeOffset> object nor the new <xref:System.DateTimeOffset> object returned by the method call are unambiguously related to a particular time zone, the method does not apply any time zone adjustment rules in the conversion.  
+ The <xref:System.DateTimeOffset.ToOffset%2A> method is an alternative to calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTimeOffset%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method. It can be useful for performing simple conversions from one time zone to another when the time zones' offsets from Coordinated Universal Time (UTC) are known. However, because neither the original <xref:System.DateTimeOffset> object nor the new <xref:System.DateTimeOffset> object returned by the method call are unambiguously related to a particular time zone, the method does not apply any time zone adjustment rules in the conversion.  
   
    
   
@@ -4032,7 +4082,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value of this method is identical to that of the <xref:System.DateTime.ToString?displayProperty=fullName> method, except that it includes a space followed by the offset appended at the end of the string. In other words, it formats output using the short date pattern, the long time pattern, and the `zzz` custom format string, with each element separated from the previous element by a space. For example, if <xref:System.DateTime.ToString?displayProperty=fullName> returns a value of 1/12/2008 6:15:50 PM, <xref:System.DateTimeOffset.ToString> returns a value of 1/12/2008 6:15:50 PM -08:00 for a time that is eight hours behind Coordinated Universal Time (UTC).  
+ The return value of this method is identical to that of the <xref:System.DateTime.ToString?displayProperty=nameWithType> method, except that it includes a space followed by the offset appended at the end of the string. In other words, it formats output using the short date pattern, the long time pattern, and the `zzz` custom format string, with each element separated from the previous element by a space. For example, if <xref:System.DateTime.ToString?displayProperty=nameWithType> returns a value of 1/12/2008 6:15:50 PM, <xref:System.DateTimeOffset.ToString> returns a value of 1/12/2008 6:15:50 PM -08:00 for a time that is eight hours behind Coordinated Universal Time (UTC).  
   
  This method uses formatting information derived from the current culture. For more information, see <xref:System.Globalization.CultureInfo.CurrentCulture%2A>. Other overloads of the <xref:System.DateTimeOffset.ToString%2A> method enable you to specify the culture whose formatting to use, and to define the output pattern of the <xref:System.DateTimeOffset> value.  
   
@@ -4091,11 +4141,11 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value of this method is identical to that of its equivalent overload of the <xref:System.DateTime.ToString%2A?displayProperty=fullName> method, except that it includes a space followed by the offset appended at the end of the string. In other words, it formats output using the short date pattern, the long time pattern, and the `zzz` custom format string, with each element separated from the previous element by a space.  
+ The return value of this method is identical to that of its equivalent overload of the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> method, except that it includes a space followed by the offset appended at the end of the string. In other words, it formats output using the short date pattern, the long time pattern, and the `zzz` custom format string, with each element separated from the previous element by a space.  
   
  The format of these three elements is defined by the `formatProvider` parameter. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are applied to the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the formatting of the returned string.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting conventions are applied to the returned string. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting of the returned string.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -4248,7 +4298,7 @@ Me.ToUtcDateTime().ToFileTime()
   
  The pattern that corresponds to standard format specifiers, as well as the symbols and names of date and time components, is defined by the `formatProvider` parameter. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in `input`. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the formatting used in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in `input`. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the formatting used in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -4313,7 +4363,7 @@ Me.ToUtcDateTime().ToFileTime()
 ## Remarks  
  This method returns a <xref:System.DateTimeOffset> object whose <xref:System.DateTimeOffset.Offset%2A> property is set to zero.  
   
- Both the value of the current <xref:System.DateTimeOffset> object and the value of the <xref:System.DateTimeOffset> object returned by the method call represent the same point in time. That is, if both are passed to the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName> method, the method will return `true`.  
+ Both the value of the current <xref:System.DateTimeOffset> object and the value of the <xref:System.DateTimeOffset> object returned by the method call represent the same point in time. That is, if both are passed to the <xref:System.DateTimeOffset.Equals%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=nameWithType> method, the method will return `true`.  
   
    
   
@@ -4325,6 +4375,8 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.ToLocalTime" />
+        <altmember cref="M:System.DateTimeOffset.ToOffset(System.TimeSpan)" />
       </Docs>
     </Member>
     <Member MemberName="ToUnixTimeMilliseconds">
@@ -4364,6 +4416,8 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.ToUnixTimeSeconds" />
+        <altmember cref="M:System.DateTimeOffset.FromUnixTimeMilliseconds(System.Int64)" />
       </Docs>
     </Member>
     <Member MemberName="ToUnixTimeSeconds">
@@ -4411,11 +4465,13 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.DateTimeOffset.FromUnixTimeSeconds(System.Int64)" />
+        <altmember cref="M:System.DateTimeOffset.ToUnixTimeMilliseconds" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParse(System.String,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4452,7 +4508,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.Parse%28System.String%29?displayProperty=fullName> method, except that it does not throw an exception if the conversion fails. It parses a string with three elements that can appear in any order and are delimited by white space. These three elements are shown in the following table.  
+ This overload of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.Parse%28System.String%29?displayProperty=nameWithType> method, except that it does not throw an exception if the conversion fails. It parses a string with three elements that can appear in any order and are delimited by white space. These three elements are shown in the following table.  
   
 |Element|Example|  
 |-------------|-------------|  
@@ -4460,7 +4516,7 @@ Me.ToUtcDateTime().ToFileTime()
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the current culture's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the current culture's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
   
  The `input` string is parsed by using the formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object initialized for the current culture. To parse a string that contains designated formatting that does not necessarily correspond to that of the current culture, use the <xref:System.DateTimeOffset.TryParseExact%2A> method and provide a format specifier.  
   
@@ -4474,11 +4530,12 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.DateTimeOffset.Parse" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4519,7 +4576,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, except that it does not throw an exception if the conversion fails. The method parses a string with three elements that can appear in any order and are delimited by white space. These three elements are shown in the following table.  
+ This overload of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, except that it does not throw an exception if the conversion fails. The method parses a string with three elements that can appear in any order and are delimited by white space. These three elements are shown in the following table.  
   
 |Element|Example|  
 |-------------|-------------|  
@@ -4527,11 +4584,11 @@ Me.ToUtcDateTime().ToFileTime()
 |\<Time>|"1:02:03 PM"|  
 |\<Offset>|"-7:30"|  
   
- Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero> if either the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> or <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> value is specified in `styles`. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
+ Although each of these elements is optional, \<Offset> cannot appear by itself. It must be provided together with either \<Date> or \<Time>. If \<Date> is missing, its default value is the current day. If \<Date> is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=nameWithType> property. If \<Time> is missing, its default value is 12:00:00 AM. If \<Offset> is missing, its default value is the offset of the local time zone, or <xref:System.TimeSpan.Zero> if either the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeStyles.AssumeUniversal?displayProperty=nameWithType> value is specified in `styles`. If \<Offset> is present, it can represent either a negative or a positive offset from Coordinated Universal Time (UTC). In either case, \<Offset> must include a sign symbol or the method returns `false`.  
   
  The `input` string is parsed by using the culture-specific formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object supplied by the `formatProvider` parameter. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in `input`. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the format that is used in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting is used in `input`. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the format that is used in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -4549,13 +4606,13 @@ Me.ToUtcDateTime().ToFileTime()
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is allowed in the \<Date> and \<Time> components.|  
 |<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is allowed in front of each component in the parsed string.|  
 |<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is allowed in front of each component in the parsed string.|  
-|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value, such as <xref:System.Globalization.DateTimeStyles.None?displayProperty=nameWithType>.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the offset of the local time zone should be provided. This is the default behavior of the <xref:System.DateTimeOffset.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Indicates that, if the `input` parameter lacks an \<Offset> element, the UTC offset (00:00) should be provided.|  
 |<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored and has no effect.|  
 |<xref:System.Globalization.DateTimeStyles.RoundtripKind>|Because the <xref:System.DateTimeOffset> structure does not include a `Kind` property, this value has no effect.|  
   
- Only the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
+ Only the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault?displayProperty=nameWithType> value is not supported. An <xref:System.ArgumentException> is thrown if this value is included in the `styles` parameter.  
   
    
   
@@ -4577,11 +4634,12 @@ Me.ToUtcDateTime().ToFileTime()
  -or-  
   
  <paramref name="styles" /> includes mutually exclusive <see cref="T:System.Globalization.DateTimeStyles" /> values.</exception>
+        <altmember cref="Overload:System.DateTimeOffset.Parse" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4624,7 +4682,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload of the <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, except that this method does not throw an exception if the conversion fails. It parses the string representation of a date and time that must exactly match the pattern specified by the `format` parameter. If the `input` string does not match this pattern, with some possible variations in white space defined by the `styles` parameter, the parsing operation fails and the method returns `false`.  
+ This overload of the <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method is like the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method, except that this method does not throw an exception if the conversion fails. It parses the string representation of a date and time that must exactly match the pattern specified by the `format` parameter. If the `input` string does not match this pattern, with some possible variations in white space defined by the `styles` parameter, the parsing operation fails and the method returns `false`.  
   
  The `format` parameter is a string that contains either a single standard format specifier or one or more custom format specifiers that define the required pattern of `input`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If `format` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the parsing operation fails and the method returns `false`.  
   
@@ -4632,7 +4690,7 @@ Me.ToUtcDateTime().ToFileTime()
   
  The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise pattern of `input` if `format` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the symbols and standard formats allowed in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and standard formats allowed in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -4642,7 +4700,7 @@ Me.ToUtcDateTime().ToFileTime()
   
 |`DateTimeStyles` member|Behavior|  
 |-----------------------------|--------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=fullName> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default behavior.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If `format` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by format. Extra white space can appear between date and time components and within individual components, other than the offset, and is ignored when parsing the string.|  
@@ -4675,11 +4733,12 @@ Me.ToUtcDateTime().ToFileTime()
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the <see cref="Overload:System.DateTimeOffset.TryParseExact" /> returns <see langword="false" /> if the string to be parsed contains an hour component and an AM/PM designator that are not in agreement. In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, the AM/PM designator is ignored.</para>
         </block>
+        <altmember cref="Overload:System.DateTimeOffset.ParseExact" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string[] formats, IFormatProvider formatProvider, System.Globalization.DateTimeStyles styles, out DateTimeOffset result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, valuetype System.DateTimeOffset result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string[] formats, class System.IFormatProvider formatProvider, valuetype System.Globalization.DateTimeStyles styles, [out] valuetype System.DateTimeOffset&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4722,7 +4781,7 @@ Me.ToUtcDateTime().ToFileTime()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` array. If the `input` string does not match any one of these patterns with any variations defined by the `styles` parameter, the parsing operation fails and the method returns `false`. Aside from comparing `input` to multiple strings that contain format specifiers, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method.  
+ The <xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29> method parses the string representation of a date that matches any one of the patterns assigned to the `formats` array. If the `input` string does not match any one of these patterns with any variations defined by the `styles` parameter, the parsing operation fails and the method returns `false`. Aside from comparing `input` to multiple strings that contain format specifiers, this overload behaves identically to the <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> method.  
   
  The `formats` parameter is a string array whose elements contain either a single standard format specifier or one or more custom format specifiers that define the possible pattern of `input`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). If the matched element in `formats` includes the `z`, `zz`, or `zzz` custom format specifiers to indicate that an offset must be present in `input`, that offset must include either a negative sign or a positive sign. If the sign is missing, the parse operation fails and the method returns `false`.  
   
@@ -4733,7 +4792,7 @@ Me.ToUtcDateTime().ToFileTime()
   
  The particular date and time symbols and strings used in `input` are defined by the `formatProvider` parameter. The same is true for the precise pattern of `input` if the matching element of `formats` is a standard format specifier string. The `formatProvider` parameter can be either of the following:  
   
--   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property defines the symbols and formatting in `input`.  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture based on which `input` is interpreted. The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property defines the symbols and formatting in `input`.  
   
 -   A <xref:System.Globalization.DateTimeFormatInfo> object that defines the format of date and time data.  
   
@@ -4743,7 +4802,7 @@ Me.ToUtcDateTime().ToFileTime()
   
 |`DateTimeStyles` member|Behavior|  
 |-----------------------------|--------------|  
-|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=fullName> method of the returned <xref:System.DateTimeOffset> object.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `input` and, if necessary, converts it to UTC. It is equivalent to parsing a string, and then calling the <xref:System.DateTimeOffset.ToUniversalTime%2A?displayProperty=nameWithType> method of the returned <xref:System.DateTimeOffset> object.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeLocal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the offset of the local time zone. This is the default value.|  
 |<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|If the matched element in `formats` does not require that `input` contain an offset value, the returned <xref:System.DateTimeOffset> object is given the UTC offset (+00:00).|  
 |<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Allows `input` to include inner white space not specified by the elements in `formats`. Extra white space can appear between date and time components and within individual components (except for the offset) and is ignored when parsing the string.|  
@@ -4816,9 +4875,9 @@ Me.ToUtcDateTime().ToFileTime()
   
 -   It converts the <xref:System.DateTimeOffset> value to a <xref:System.DateTime> value.  
   
- The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTimeOffset.DateTime%2A> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTimeOffset.DateTime%2A> value is set to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.  
   
- Retrieving the value of the <xref:System.DateTimeOffset.UtcDateTime%2A> property is equivalent to calling the current <xref:System.DateTimeOffset> object's `ToUniversalTime.DateTime` property, except that the <xref:System.DateTime.Kind%2A> property of the latter <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=fullName>.  
+ Retrieving the value of the <xref:System.DateTimeOffset.UtcDateTime%2A> property is equivalent to calling the current <xref:System.DateTimeOffset> object's `ToUniversalTime.DateTime` property, except that the <xref:System.DateTime.Kind%2A> property of the latter <xref:System.DateTime> value is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>.  
   
    
   
@@ -4878,6 +4937,7 @@ Me.ToUtcDateTime().ToFileTime()
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTimeOffset.Now" />
       </Docs>
     </Member>
     <Member MemberName="UtcTicks">
@@ -4974,5 +5034,122 @@ Me.ToUtcDateTime().ToFileTime()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.DateTimeOffset" /> objects are equal, or a <see cref="T:System.DateTimeOffset" /> object is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Subtraction">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a specified <see cref="T:System.DateTimeOffset" /> or <see cref="T:System.TimeSpan" /> object from a <see cref="T:System.DateTimeOffset" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.DateTimeOffset" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ParseExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTimeOffset" /> equivalent. The format of the string representation must match a specified format exactly.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Subtracts a specified time or duration from the current <see cref="T:System.DateTimeOffset" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DateTimeOffset" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

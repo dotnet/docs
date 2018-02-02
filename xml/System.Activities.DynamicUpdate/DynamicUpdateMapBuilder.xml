@@ -76,7 +76,7 @@
     </Member>
     <Member MemberName="CreateMap">
       <MemberSignature Language="C#" Value="public System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap (out System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap(class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.DynamicUpdate.DynamicUpdateMap CreateMap([out] class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp; activitiesBlockingUpdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -241,5 +241,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMap">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates map for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateMapBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

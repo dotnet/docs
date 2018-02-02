@@ -128,11 +128,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Button" />
+    <altmember cref="T:System.Web.UI.WebControls.Image" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -197,8 +199,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of this code sample must be copied into an empty text file that has an .aspx extension. The second part must be saved as a code file (either .cs for C# or .vb for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorendercs.aspx#1)]
+ [!code-aspx-vb[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorendervb.aspx#1)]  
 [!code-csharp[CustomImageButtonAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorender.cs#2)]
 [!code-vb[CustomImageButtonAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorender.vb#2)]  
   
@@ -252,11 +254,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButtonCausesValidation/CS/imagebuttoncausesvalidationcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButtonCausesValidation/VB/imagebuttoncausesvalidationvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButtonCausesValidation/CS/imagebuttoncausesvalidationcs.aspx#1)]
+ [!code-aspx-vb[ImageButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButtonCausesValidation/VB/imagebuttoncausesvalidationvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.ValidationGroup" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -292,11 +296,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" />
+        <altmember cref="T:System.Web.UI.ImageClickEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -335,11 +341,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="CommandArgument">
@@ -384,11 +392,15 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandName" />
+        <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+        <altmember cref="T:System.Web.UI.WebControls.Button" />
+        <altmember cref="T:System.Web.UI.WebControls.Image" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -432,11 +444,13 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.CommandName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.CommandName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
+        <altmember cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -483,8 +497,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageButton.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.Enabled/CS/imagebutton.enabledcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageButton.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.Enabled/VB/imagebutton.enabledvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageButton.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.Enabled/CS/imagebutton.enabledcs.aspx#1)]
+ [!code-aspx-vb[ImageButton.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.Enabled/VB/imagebutton.enabledvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -533,6 +547,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
       </Docs>
     </Member>
     <Member MemberName="GetPostBackOptions">
@@ -555,7 +570,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.ImageButton.GetPostBackOptions%2A> method creates a <xref:System.Web.UI.PostBackOptions> object that represents the <xref:System.Web.UI.WebControls.ImageButton> control's postback behavior. The <xref:System.Web.UI.PostBackOptions> object is then typically passed to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%29?displayProperty=fullName> method, which is used to obtain a reference to a client-side script function that, when invoked, causes the server to postback to the page.  
+ The <xref:System.Web.UI.WebControls.ImageButton.GetPostBackOptions%2A> method creates a <xref:System.Web.UI.PostBackOptions> object that represents the <xref:System.Web.UI.WebControls.ImageButton> control's postback behavior. The <xref:System.Web.UI.PostBackOptions> object is then typically passed to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%29?displayProperty=nameWithType> method, which is used to obtain a reference to a client-side script function that, when invoked, causes the server to postback to the page.  
   
  This method is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.ImageButton> class.  
   
@@ -564,6 +579,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method in your derived class to modify the postback options for the button control, or to call client-side script when the button is clicked. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method so that the standard postback options are set.</para>
         </block>
+        <altmember cref="T:System.Web.UI.PostBackOptions" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -597,6 +613,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -635,14 +652,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
+        <altmember cref="T:System.Web.UI.ImageClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnClientClick">
@@ -678,6 +697,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
       </Docs>
     </Member>
     <Member MemberName="OnCommand">
@@ -719,14 +739,16 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.ImageButton.Command" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -761,8 +783,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomImageButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomImageButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomImageButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerendervb.aspx#1)]  
 [!code-csharp[CustomImageButtonOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerender.cs#2)]
 [!code-vb[CustomImageButtonOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerender.vb#2)]  
   
@@ -827,19 +849,20 @@ End Sub
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property to perform a cross-page post. When the user clicks the <xref:System.Web.UI.WebControls.ImageButton> control, the page posts the value entered in the text box to the target page specified by the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property. To run this sample, you must also create a file for the target page in the same directory as this code example. The code for the target page is provided in the next example.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageButton.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/CS/imagebutton.postbackurlpropertycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageButton.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/VB/imagebutton.postbackurlpropertyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageButton.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/CS/imagebutton.postbackurlpropertycs.aspx#1)]
+ [!code-aspx-vb[ImageButton.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/VB/imagebutton.postbackurlpropertyvb.aspx#1)]  
   
- The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=fullName> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=nameWithType> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageButton.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/CS/imagebutton.postbackurlpage2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageButton.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/VB/imagebutton.postbackurlpage2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageButton.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/CS/imagebutton.postbackurlpage2cs.aspx#1)]
+ [!code-aspx-vb[ImageButton.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/VB/imagebutton.postbackurlpage2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.PreviousPage" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -870,6 +893,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandName" />
+        <altmember cref="E:System.Web.UI.WebControls.ImageButton.Click" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -919,10 +944,13 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -951,10 +979,11 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -976,10 +1005,11 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+ The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IPostBackDataHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -1004,7 +1034,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
+ The <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A?displayProperty=nameWithType> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
   
  ]]></format>
         </remarks>
@@ -1074,13 +1104,14 @@ End Sub
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkeycs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomImageButtonTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkeyvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomImageButtonTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkeycs.aspx#1)]
+ [!code-aspx-vb[CustomImageButtonTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkeyvb.aspx#1)]  
 [!code-csharp[CustomImageButtonTagKey#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkey.cs#2)]
 [!code-vb[CustomImageButtonTagKey#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkey.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1106,6 +1137,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Image.AlternateText" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1144,11 +1176,13 @@ End Sub
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.WebControls.ImageButton> control posts back to the server. The page contains three text boxes to capture data from the user and three <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls for the first two text boxes are in the `PersonalInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the third text box is in the `LocationInfoGroup` validation group. When `ImageButton1` is clicked, only the controls in validation group `PersonalInfoGroup` are validated. When `ImageButton2` is clicked, only the control in validation group `LocationInfoGroup` is validated.  
   
- <!-- TODO: review snippet reference [!code-csharp[ImageButton.ValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.ValidationGroup/CS/imagebutton.validationgroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ImageButton.ValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.ValidationGroup/VB/imagebutton.validationgroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ImageButton.ValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.ValidationGroup/CS/imagebutton.validationgroupcs.aspx#1)]
+ [!code-aspx-vb[ImageButton.ValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.ValidationGroup/VB/imagebutton.validationgroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CausesValidation" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
       </Docs>
     </Member>
   </Members>

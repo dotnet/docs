@@ -47,7 +47,7 @@
 </configuration>  
 ```  
   
- This configuration section defines a <xref:System.Diagnostics.TraceSwitch> with the <xref:System.Diagnostics.Switch.DisplayName%2A> set to `mySwitch`, and the <xref:System.Diagnostics.TraceSwitch.Level%2A> set to 1, which corresponds to the enumeration value <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ This configuration section defines a <xref:System.Diagnostics.TraceSwitch> with the <xref:System.Diagnostics.Switch.DisplayName%2A> set to `mySwitch`, and the <xref:System.Diagnostics.TraceSwitch.Level%2A> set to 1, which corresponds to the enumeration value <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value, such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Error" />` is equivalent to `<add name="mySwitch" value="1" />`.  
@@ -58,7 +58,7 @@
  [!code-csharp[Classic TraceSwitch.TraceError Example#3](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/remarks.cs#3)]
  [!code-vb[Classic TraceSwitch.TraceError Example#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/VB/remarks.vb#3)]  
   
- By default, the switch <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set using the value specified in the configuration file. If the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> of the new switch defaults to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ By default, the switch <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set using the value specified in the configuration file. If the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> of the new switch defaults to <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>.  
   
  You must enable tracing or debugging to use a switch. The following syntax is compiler specific. If you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
   
@@ -77,7 +77,7 @@
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/source.cs#1)]
@@ -85,6 +85,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.Switch" />
+    <altmember cref="T:System.Diagnostics.BooleanSwitch" />
+    <altmember cref="T:System.Diagnostics.TraceLevel" />
+    <altmember cref="T:System.Diagnostics.Debug" />
+    <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,7 +144,7 @@
  [!code-csharp[Classic TraceSwitch.TraceError Example#3](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/remarks.cs#3)]
  [!code-vb[Classic TraceSwitch.TraceError Example#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/VB/remarks.vb#3)]  
   
- When the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> property of the new switch is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ When the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> property of the new switch is set to <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>.  
   
  The <xref:System.Diagnostics.TraceSwitch> class provides the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties to test the <xref:System.Diagnostics.TraceSwitch.Level%2A> of the switch. The <xref:System.Diagnostics.TraceSwitch.Level%2A> property gets or sets the switch's <xref:System.Diagnostics.TraceLevel>.  
   
@@ -149,7 +154,7 @@
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/source.cs#1)]
@@ -157,6 +162,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -245,14 +255,14 @@
 > [!NOTE]
 >  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value, such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Error" />` is equivalent to `<add name="mySwitch" value="1" />`.  
   
- When the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> property of the new switch is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ When the <xref:System.Diagnostics.TraceSwitch.%23ctor%2A> constructor cannot find initial switch settings in the configuration file, the <xref:System.Diagnostics.TraceSwitch.Level%2A> property of the new switch is set to <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>.  
   
  Setting this property updates the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties to reflect the new value.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to print error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.Level Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.Level Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.Level Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.Level Example/CS/source.cs#1)]
@@ -263,6 +273,11 @@
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Diagnostics.TraceSwitch.Level" /> is set to a value that is not one of the <see cref="T:System.Diagnostics.TraceLevel" /> values.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnSwitchSettingChanged">
@@ -300,6 +315,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="OnValueChanged">
@@ -370,12 +389,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to the highest importance, <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, <xref:System.Diagnostics.TraceLevel.Error> ,  only error-handling messages are emitted.  
+ You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to the highest importance, <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType>, <xref:System.Diagnostics.TraceLevel.Error> ,  only error-handling messages are emitted.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Error?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/source.cs#1)]
@@ -383,6 +402,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceInfo">
@@ -415,12 +439,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, informational messages, warnings, and error-handling messages are emitted.  
+ You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Warning?displayProperty=nameWithType>, informational messages, warnings, and error-handling messages are emitted.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Info?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceInfo Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceInfo Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceInfo Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceInfo Example/CS/source.cs#1)]
@@ -428,6 +452,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceVerbose">
@@ -460,12 +489,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, all debugging and tracing messages are transmitted.  
+ You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>, all debugging and tracing messages are transmitted.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes both error messages when the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes both error messages when the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceError Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceError Example/CS/source.cs#1)]
@@ -473,6 +502,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
     <Member MemberName="TraceWarning">
@@ -505,12 +539,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>, warnings and error-handling messages are emitted.  
+ You can use the <xref:System.Diagnostics.TraceSwitch.TraceError%2A>, <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A>, <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A>, and <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A> properties in conjunction with the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes to emit all messages with a specified importance or greater. When the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Warning?displayProperty=nameWithType>, warnings and error-handling messages are emitted.  
   
    
   
 ## Examples  
- The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel?displayProperty=fullName> or higher. However, `MyMethod` does not write the second error message when the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>.  
+ The following code example creates a new <xref:System.Diagnostics.TraceSwitch> and uses the switch to determine whether to emit error messages. The switch is created at the class level. `MyMethod` writes the first error message if the <xref:System.Diagnostics.TraceSwitch.Level%2A> property is set to <xref:System.Diagnostics.TraceLevel.Warning?displayProperty=nameWithType> or higher. However, `MyMethod` does not write the second error message when the <xref:System.Diagnostics.TraceSwitch.Level%2A> is less than <xref:System.Diagnostics.TraceLevel.Verbose?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic TraceSwitch.TraceWarning Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceWarning Example/CPP/source.cpp#1)]
  [!code-csharp[Classic TraceSwitch.TraceWarning Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TraceSwitch.TraceWarning Example/CS/source.cs#1)]
@@ -518,7 +552,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.TraceSwitch" />
+        <altmember cref="T:System.Diagnostics.Switch" />
+        <altmember cref="T:System.Diagnostics.TraceLevel" />
+        <altmember cref="T:System.Diagnostics.Debug" />
+        <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TraceSwitch" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::GetProperty"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyName::GetProperty method [.NET Framework fusion]"
   - "GetProperty method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyName::GetProperty Method
 Gets a pointer to the property referenced by the specified property identifier.  

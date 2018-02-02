@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "properties, UI Automation clients"
   - "UI Automation, client properties"
@@ -17,6 +20,8 @@ caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Properties for Clients
 > [!NOTE]
@@ -36,7 +41,7 @@ manager: "markl"
 ## Property IDs  
  Property [!INCLUDE[TLA#tla_id#plural](../../../includes/tlasharptla-idsharpplural-md.md)] are unique, constant values that are encapsulated in <xref:System.Windows.Automation.AutomationProperty> objects. UI Automation client applications get these [!INCLUDE[TLA2#tla_id#plural](../../../includes/tla2sharptla-idsharpplural-md.md)] from the <xref:System.Windows.Automation.AutomationElement> class or from the appropriate control pattern class, such as <xref:System.Windows.Automation.ScrollPattern>. UI Automation providers get them from <xref:System.Windows.Automation.AutomationElementIdentifiers> or from one of the control pattern identifiers classes, such as <xref:System.Windows.Automation.ScrollPatternIdentifiers>.  
   
- The numeric <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationProperty> is used by providers to identify properties that are being queried for in the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=fullName> method. In general, client applications do not need to examine the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>. The <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is used only for debugging and diagnostic purposes.  
+ The numeric <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationProperty> is used by providers to identify properties that are being queried for in the <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A?displayProperty=nameWithType> method. In general, client applications do not need to examine the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A>. The <xref:System.Windows.Automation.AutomationIdentifier.ProgrammaticName%2A> is used only for debugging and diagnostic purposes.  
   
 <a name="Property_Conditions"></a>   
 ## Property Conditions  
@@ -80,7 +85,7 @@ manager: "markl"
 ## Default Property Values  
  If a UI Automation provider does not implement a property, the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] system is able to supply a default value. For example, if the provider for a control does not support the property identified by <xref:System.Windows.Automation.AutomationElement.HelpTextProperty>, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] returns an empty string. Similarly, if the provider does not support the property identified by <xref:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty>, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] returns `false`.  
   
- You can change this behavior by using the <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=fullName> and <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=fullName> method overloads. When you specify `true` as the second parameter, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] does not return a default value, but instead returns the special value <xref:System.Windows.Automation.AutomationElement.NotSupported>.  
+ You can change this behavior by using the <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> and <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> method overloads. When you specify `true` as the second parameter, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] does not return a default value, but instead returns the special value <xref:System.Windows.Automation.AutomationElement.NotSupported>.  
   
  The following example code attempts to retrieve a property from an element, and if the property is not supported, an application-defined value is used instead.  
   
@@ -107,6 +112,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|  
   
 ## See Also  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)   
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)   
+ [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)  
+ [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
  [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)

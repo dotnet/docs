@@ -41,6 +41,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateLocalSideOfTrustRelationship">
@@ -74,7 +75,7 @@
   
  The `trustPassword` parameter associates a password with the created trust. When the other side of the trust is created, the same password is provided and the two local trusts are then bound to each other.  
   
- To programmatically create both sides of a trust relationship in a single method call, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship%2A?displayProperty=fullName> method.  
+ To programmatically create both sides of a trust relationship in a single method call, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -89,6 +90,8 @@
           <paramref name="direction" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="CreateTrustRelationship">
@@ -116,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates both sides of a trust relationship with a single method call. The <xref:System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship%2A?displayProperty=fullName> method is used to create only one side of a trust.  
+ This method creates both sides of a trust relationship with a single method call. The <xref:System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship%2A?displayProperty=nameWithType> method is used to create only one side of a trust.  
   
  ]]></format>
         </remarks>
@@ -129,6 +132,8 @@
           <paramref name="direction" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="DeleteLocalSideOfTrustRelationship">
@@ -156,7 +161,7 @@
 ## Remarks  
  When one side of a trust relationship is deleted, the trust is no longer established.  
   
- To delete both sides of a trust relationship with one method call, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.DeleteTrustRelationship%2A?displayProperty=fullName> method.  
+ To delete both sides of a trust relationship with one method call, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.DeleteTrustRelationship%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -169,6 +174,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteTrustRelationship">
@@ -194,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To delete only one side of a trust relationship, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.DeleteLocalSideOfTrustRelationship%2A?displayProperty=fullName> method.  
+ To delete only one side of a trust relationship, use the <xref:System.DirectoryServices.ActiveDirectory.Forest.DeleteLocalSideOfTrustRelationship%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -205,6 +211,7 @@
           <paramref name="targetForest" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.DeleteLocalSideOfTrustRelationship(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -268,6 +275,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableGlobalCatalogs">
@@ -297,6 +306,7 @@
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableGlobalCatalogs">
@@ -335,6 +345,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllGlobalCatalogs">
@@ -357,6 +368,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllGlobalCatalogs">
@@ -386,6 +398,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindGlobalCatalog">
@@ -409,6 +422,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A global catalog cannot be located.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
       </Docs>
     </Member>
     <Member MemberName="FindGlobalCatalog">
@@ -435,6 +449,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A global catalog cannot be located.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="FindGlobalCatalog">
@@ -465,6 +481,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
       </Docs>
     </Member>
     <Member MemberName="FindGlobalCatalog">
@@ -497,6 +514,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.GlobalCatalog" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="ForestMode">
@@ -519,6 +538,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestMode" />
       </Docs>
     </Member>
     <Member MemberName="ForestModeLevel">
@@ -562,6 +582,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentForest">
@@ -612,6 +634,7 @@
           <paramref name="context" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectiveAuthenticationStatus">
@@ -654,6 +677,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.SetSelectiveAuthenticationStatus(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetSidFilteringStatus">
@@ -687,6 +711,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.SetSidFilteringStatus(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetTrustRelationship">
@@ -719,6 +744,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" />
       </Docs>
     </Member>
     <Member MemberName="GlobalCatalogs">
@@ -782,6 +808,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="RaiseForestFunctionality">
@@ -828,6 +855,7 @@
           <paramref name="forestMode" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ForestMode" /> enumeration value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ForestMode" />
       </Docs>
     </Member>
     <Member MemberName="RaiseForestFunctionalityLevel">
@@ -899,6 +927,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> object that represents the first domain that was created in this <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -943,6 +972,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="SetSelectiveAuthenticationStatus">
@@ -977,6 +1007,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.GetSelectiveAuthenticationStatus(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetSidFilteringStatus">
@@ -1017,6 +1048,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.GetSidFilteringStatus(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Sites">
@@ -1039,6 +1071,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1128,6 +1162,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="newTrustDirection" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="UpdateTrustRelationship">
@@ -1161,6 +1196,7 @@
           <paramref name="newTrustDirection" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="VerifyOutboundTrustRelationship">
@@ -1192,6 +1228,7 @@
           <paramref name="targetForestName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
       </Docs>
     </Member>
     <Member MemberName="VerifyTrustRelationship">
@@ -1231,7 +1268,58 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="direction" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateLocalSideOfTrustRelationship">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the password for the local side of a trust relationship.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllDiscoverableGlobalCatalogs">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all of the discoverable global catalogs in this forest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are held by the object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindGlobalCatalog">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a single global catalog in this forest.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllGlobalCatalogs">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all the global catalogs in this forest.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "netPeerBinding element"
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;netPeerTcpBinding&gt;
 Defines a binding for peer channel specific TCP messaging.  
@@ -79,7 +81,7 @@ Defines a binding for peer channel specific TCP messaging.
  This binding provides support for the creation of peer-to-peer or multiparty applications using peer transport over TCP. Each peer node can host multiple peer channels defined with this binding type.  
   
 ## Example  
- The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](http://msdn.microsoft.com/en-us/31f4db66-edb2-40a6-b92a-14098e92acae).  
+ The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](http://msdn.microsoft.com/library/31f4db66-edb2-40a6-b92a-14098e92acae).  
   
 ```xml  
 <configuration>  
@@ -108,11 +110,11 @@ Defines a binding for peer channel specific TCP messaging.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.NetPeerTcpBinding>   
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
- [\<binding>](../../../../../docs/framework/misc/binding.md)   
- [Net Peer TCP](http://msdn.microsoft.com/en-us/31f4db66-edb2-40a6-b92a-14098e92acae)   
+ <xref:System.ServiceModel.NetPeerTcpBinding>  
+ <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [\<binding>](../../../../../docs/framework/misc/binding.md)  
+ [Net Peer TCP](http://msdn.microsoft.com/library/31f4db66-edb2-40a6-b92a-14098e92acae)  
  [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)

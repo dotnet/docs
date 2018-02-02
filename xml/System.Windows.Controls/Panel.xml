@@ -102,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Brush" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundProperty">
@@ -119,6 +120,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Panel.Background" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Panel.Background" />
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -161,6 +163,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.UIElement" />
       </Docs>
     </Member>
     <Member MemberName="CreateUIElementCollection">
@@ -212,6 +215,7 @@
         <summary>Gets a <see cref="T:System.Windows.Media.Visual" /> child of this <see cref="T:System.Windows.Controls.Panel" /> at the specified index position.</summary>
         <returns>A <see cref="T:System.Windows.Media.Visual" /> child of the parent <see cref="T:System.Windows.Controls.Panel" /> element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Visual" />
       </Docs>
     </Member>
     <Member MemberName="GetZIndex">
@@ -235,6 +239,7 @@
         <returns>The <see cref="P:System.Windows.Controls.Panel.ZIndex" /> position of the element.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The element is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Controls.Panel.ZIndex" />
       </Docs>
     </Member>
     <Member MemberName="HasLogicalOrientation">
@@ -261,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="HasLogicalOrientationPublic">
@@ -361,12 +367,13 @@
   
  [!code-xaml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]   
   
- Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=fullName> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
+ Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=nameWithType> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
   
  [!code-xaml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]   
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ItemsControl" />
       </Docs>
     </Member>
     <Member MemberName="IsItemsHostProperty">
@@ -384,6 +391,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Panel.IsItemsHost" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -402,6 +410,7 @@
         <summary>Gets an enumerator that can iterate the logical child elements of this <see cref="T:System.Windows.Controls.Panel" /> element.</summary>
         <value>An <see cref="T:System.Collections.IEnumerator" />. This property has no default value.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="LogicalOrientation">
@@ -427,6 +436,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="LogicalOrientationPublic">
@@ -475,6 +485,7 @@
         <param name="newIsItemsHost">The new property value.</param>
         <summary>Indicates that the <see cref="P:System.Windows.Controls.Panel.IsItemsHost" /> property value has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.Panel.IsItemsHost" />
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -526,6 +537,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Visual" />
+        <altmember cref="M:System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="SetZIndex">

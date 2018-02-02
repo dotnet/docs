@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-bcl"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], attributes"
   - "assembly binding, attributes"
@@ -18,6 +22,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Setting Assembly Attributes
 Assembly attributes are values that provide information about an assembly. The attributes are divided into the following sets of information:  
@@ -39,7 +45,7 @@ Assembly attributes are values that provide information about an assembly. The a
 |---------------------------------|-----------------|  
 |<xref:System.Reflection.AssemblyCultureAttribute>|Enumerated field indicating the culture that the assembly supports. An assembly can also specify culture independence, indicating that it contains the resources for the default culture. **Note:**  The runtime treats any assembly that does not have the culture attribute set to null as a satellite assembly. Such assemblies are subject to satellite assembly binding rules. For more information, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).|  
 |<xref:System.Reflection.AssemblyFlagsAttribute>|Value that sets assembly attributes, such as whether the assembly can be run side by side.|  
-|<xref:System.Reflection.AssemblyVersionAttribute>|Numeric value in the format *major*.*minor*.*build*.*revision* (for example, 2.4.0.0). The common language runtime uses this value to perform binding operations in strong-named assemblies. **Note:**  If the <xref:System.Reflection.AssemblyInformationalVersionAttribute> attribute is not applied to an assembly, the version number specified by the <xref:System.Reflection.AssemblyVersionAttribute> attribute is used by the <xref:System.Windows.Forms.Application.ProductVersion%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Application.UserAppDataRegistry%2A?displayProperty=fullName> properties.|  
+|<xref:System.Reflection.AssemblyVersionAttribute>|Numeric value in the format *major*.*minor*.*build*.*revision* (for example, 2.4.0.0). The common language runtime uses this value to perform binding operations in strong-named assemblies. **Note:**  If the <xref:System.Reflection.AssemblyInformationalVersionAttribute> attribute is not applied to an assembly, the version number specified by the <xref:System.Reflection.AssemblyVersionAttribute> attribute is used by the <xref:System.Windows.Forms.Application.ProductVersion%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Application.UserAppDataRegistry%2A?displayProperty=nameWithType> properties.|  
   
  The following code example shows how to apply the version and culture attributes to an assembly.  
   
@@ -55,7 +61,7 @@ Assembly attributes are values that provide information about an assembly. The a
 |<xref:System.Reflection.AssemblyCompanyAttribute>|String value specifying a company name.|  
 |<xref:System.Reflection.AssemblyCopyrightAttribute>|String value specifying copyright information.|  
 |<xref:System.Reflection.AssemblyFileVersionAttribute>|String value specifying the Win32 file version number. This normally defaults to the assembly version.|  
-|<xref:System.Reflection.AssemblyInformationalVersionAttribute>|String value specifying version information that is not used by the common language runtime, such as a full product version number. **Note:**  If this attribute is applied to an assembly, the string it specifies can be obtained at run time by using the <xref:System.Windows.Forms.Application.ProductVersion%2A?displayProperty=fullName> property. The string is also used in the path and registry key provided by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Application.UserAppDataRegistry%2A?displayProperty=fullName> properties.|  
+|<xref:System.Reflection.AssemblyInformationalVersionAttribute>|String value specifying version information that is not used by the common language runtime, such as a full product version number. **Note:**  If this attribute is applied to an assembly, the string it specifies can be obtained at run time by using the <xref:System.Windows.Forms.Application.ProductVersion%2A?displayProperty=nameWithType> property. The string is also used in the path and registry key provided by the <xref:System.Windows.Forms.Application.UserAppDataPath%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Application.UserAppDataRegistry%2A?displayProperty=nameWithType> properties.|  
 |<xref:System.Reflection.AssemblyProductAttribute>|String value specifying product information.|  
 |<xref:System.Reflection.AssemblyTrademarkAttribute>|String value specifying trademark information.|  
   
@@ -87,5 +93,5 @@ Assembly attributes are values that provide information about an assembly. The a
  [!code-vb[AssemblyDelaySignAttribute#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source2.vb#4)]  
   
 ## See Also  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)   
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies type codes used to encode the types of values in a <see cref="T:System.Reflection.Metadata.CustomAttributeValue`1" /> blob.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Boolean" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Byte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -67,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Char" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Double" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enum">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attribute argument is an Enum instance.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -121,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Int16" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int32">
@@ -139,7 +140,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Int32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Int64">
@@ -157,7 +158,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Int64" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Invalid">
@@ -175,7 +176,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Invalid" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -193,7 +194,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.SByte" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">
@@ -211,7 +212,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.Single" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -229,7 +230,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.String" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="SZArray">
@@ -247,7 +248,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.SZArray" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="TaggedObject">
@@ -265,7 +266,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attribute argument is "boxed" (passed to a parameter, field, or property of type object) and carries type information in the attribute blob.</summary>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -283,7 +284,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attribute argument is a <see cref="System.Type" /> instance.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">
@@ -301,7 +302,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt16" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt32">
@@ -319,7 +320,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt32" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt64">
@@ -337,7 +338,7 @@
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A value equivalent to <see cref="SignatureTypeCode.UInt64" />.</summary>
       </Docs>
     </Member>
   </Members>

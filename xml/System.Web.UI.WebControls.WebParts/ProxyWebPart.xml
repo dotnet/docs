@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, this property contains the value from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ID%2A?displayProperty=fullName> property.  
+ When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, this property contains the value from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ID%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -179,7 +179,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState%2A> method overrides <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> to prevent loading the control state. The method does not load the control state or perform any other action.  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState%2A> method overrides <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=nameWithType> to prevent loading the control state. The method does not load the control state or perform any other action.  
   
  ]]></format>
         </remarks>
@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState%2A> method overrides <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> to prevent loading the view state. The method does not load the view state or perform any other action.  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState%2A> method overrides <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=nameWithType> to prevent loading the view state. The method does not load the view state or perform any other action.  
   
  ]]></format>
         </remarks>
@@ -232,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property contains the <xref:System.Web.UI.Control.ID%2A> of the replaced control. If the replaced control is a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object, this property contains the ID from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A?displayProperty=fullName> property.  
+ When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property contains the <xref:System.Web.UI.Control.ID%2A> of the replaced control. If the replaced control is a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object, this property contains the ID from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -298,6 +298,7 @@
         <summary>Saves any server control state changes that have occurred since the time the page was posted back to the server.</summary>
         <returns>Returns the server control's current state. If there is no state associated with the control, this method returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.Control.SaveControlState" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -317,7 +318,17 @@
         <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
         <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

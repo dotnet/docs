@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: 5b863961-1750-4cf9-9607-acea5054d15a
 ---
 # Store the results of a query in memory
@@ -27,7 +26,7 @@ A query is basically a set of instructions for how to retrieve and organize data
  We recommend that when you store the query results, you assign the returned collection object to a new variable as shown in the following example:  
   
 ## Example  
- [!code-cs[csProgGuideLINQ#25](../../../samples/snippets/csharp/concepts/linq/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
+ [!code-csharp[csProgGuideLINQ#25](../../../samples/snippets/csharp/concepts/linq/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
   
 
 ## See Also  

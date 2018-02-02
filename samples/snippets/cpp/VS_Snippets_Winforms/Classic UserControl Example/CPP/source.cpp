@@ -122,13 +122,13 @@ namespace UserControls
          {
             throw gcnew Exception( "Email address is a required field." );
          }
-         // Confirm that there is a "." and an "@" in the e-mail address.
+         // Confirm that there is a "." and an "@" in the email address.
          else
 
-         // Confirm that there is a "." and an "@" in the e-mail address.
+         // Confirm that there is a "." and an "@" in the email address.
          if ( textEmail->Text->IndexOf( "." ) == -1 || textEmail->Text->IndexOf( "@" ) == -1 )
          {
-            throw gcnew Exception( "Email address must be valid e-mail address format.\nFor example: 'someone@example.com'" );
+            throw gcnew Exception( "Email address must be valid email address format.\nFor example: 'someone@example.com'" );
          }
       }
 

@@ -132,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AsyncContentLoadedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AutomationFocusChangedEvent">
@@ -156,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationFocusChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AutomationIdProperty">
@@ -206,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElement.RuntimeIdProperty" />
       </Docs>
     </Member>
     <Member MemberName="AutomationPropertyChangedEvent">
@@ -230,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationPropertyChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="BoundingRectangleProperty">
@@ -465,6 +469,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
+        <altmember cref="M:System.Windows.Automation.AutomationElement.GetClickablePoint" />
       </Docs>
     </Member>
     <Member MemberName="ControlTypeProperty">
@@ -612,6 +618,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.op_Equality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+        <altmember cref="M:System.Windows.Automation.Automation.Compare(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -673,6 +681,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.FindFirst(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
       </Docs>
     </Member>
     <Member MemberName="FindFirst">
@@ -716,6 +725,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.FindAll(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
       </Docs>
     </Member>
     <Member MemberName="FocusedElement">
@@ -799,6 +809,7 @@
         <summary>Retrieves a new <see cref="T:System.Windows.Automation.AutomationElement" /> object for the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item referenced by the specified window handle.</summary>
         <returns>An <see cref="T:System.Windows.Automation.AutomationElement" /> for the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] item identified by <paramref name="hwnd" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.FromPoint(System.Windows.Point)" />
       </Docs>
     </Member>
     <Member MemberName="FromLocalProvider">
@@ -869,6 +880,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.FromHandle(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="GetCachedPattern">
@@ -927,6 +939,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.Cached" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCachedPropertyValue">
@@ -999,7 +1012,7 @@
 ## Remarks  
  <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache for the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
   
- Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=nameWithType>.  
   
  If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
@@ -1067,6 +1080,7 @@
         </remarks>
         <exception cref="T:System.Windows.Automation.NoClickablePointException">There is no clickable point.</exception>
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentPattern">
@@ -1130,6 +1144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Automation.AutomationElement.Current" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCurrentPropertyValue">
@@ -1199,7 +1214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=nameWithType>.  
   
  If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
@@ -1503,6 +1518,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="IsControlElementProperty">
@@ -1546,6 +1562,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.Automation.ControlViewCondition" />
       </Docs>
     </Member>
     <Member MemberName="IsDockPatternAvailableProperty">
@@ -2547,6 +2564,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="LocalizedControlTypeProperty">
@@ -2614,6 +2632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MenuOpenedEvent">
@@ -2638,6 +2657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NameProperty">
@@ -2784,6 +2804,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.op_Inequality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+        <altmember cref="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
+        <altmember cref="M:System.Windows.Automation.Automation.Compare(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2809,6 +2832,9 @@
         <returns>
           <see langword="true" /> if the two objects refer to different [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.op_Equality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+        <altmember cref="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
+        <altmember cref="M:System.Windows.Automation.Automation.Compare(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       </Docs>
     </Member>
     <Member MemberName="OrientationProperty">
@@ -2884,7 +2910,7 @@
  [!code-csharp[UIAClient_snip#167](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#167)]
  [!code-vb[UIAClient_snip#167](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#167)]  
   
- The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported>is to be returned instead of a default value.  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
   
  [!code-csharp[UIAClient_snip#168](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#168)]
  [!code-vb[UIAClient_snip#168](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#168)]  
@@ -2962,6 +2988,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.GetRuntimeId" />
+        <altmember cref="M:System.Windows.Automation.WindowClosedEventArgs.GetRuntimeId" />
+        <altmember cref="M:System.Windows.Automation.StructureChangedEventArgs.GetRuntimeId" />
+        <altmember cref="F:System.Windows.Automation.AutomationElement.AutomationIdProperty" />
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -3012,6 +3042,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipClosedEvent">
@@ -3036,6 +3067,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipOpenedEvent">
@@ -3062,11 +3094,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.AutomationEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="TryGetCachedPattern">
       <MemberSignature Language="C#" Value="public bool TryGetCachedPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCachedPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCachedPattern(class System.Windows.Automation.AutomationPattern pattern, [out] object&amp; patternObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCachedPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3097,11 +3130,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.GetCachedPattern(System.Windows.Automation.AutomationPattern)" />
+        <altmember cref="M:System.Windows.Automation.AutomationElement.TryGetCurrentPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       </Docs>
     </Member>
     <Member MemberName="TryGetClickablePoint">
       <MemberSignature Language="C#" Value="public bool TryGetClickablePoint (out System.Windows.Point pt);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClickablePoint(valuetype System.Windows.Point pt) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClickablePoint([out] valuetype System.Windows.Point&amp; pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3135,11 +3170,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.GetClickablePoint" />
       </Docs>
     </Member>
     <Member MemberName="TryGetCurrentPattern">
       <MemberSignature Language="C#" Value="public bool TryGetCurrentPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern, [out] object&amp; patternObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCurrentPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3175,6 +3211,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Automation.AutomationElement.GetCurrentPattern(System.Windows.Automation.AutomationPattern)" />
+        <altmember cref="M:System.Windows.Automation.AutomationElement.TryGetCachedPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
       </Docs>
     </Member>
   </Members>

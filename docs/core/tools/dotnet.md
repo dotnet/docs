@@ -1,18 +1,18 @@
 ---
 title: dotnet command - .NET Core CLI
-description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
-keywords: dotnet, CLI, CLI commands, .NET Core
-author: blackdwarf
+description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/20/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
+ms.workload: 
+  - dotnetcore
 ---
-
 # dotnet command
+
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
@@ -20,7 +20,15 @@ ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 
 ## Synopsis
 
-`dotnet [command] [arguments] [--version] [--info] [-d|--diagnostics] [-v|--verbose] [--fx-version] [--additionalprobingpath] [-h|--help]`
+# [.NET Core 2.x](#tab/netcore2x)
+```
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbose] [--version]
+```
+# [.NET Core 1.x](#tab/netcore1x)
+```
+dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [-v|--verbose] [--version]
+```
+---
 
 ## Description
 
@@ -32,9 +40,15 @@ The only time `dotnet` is used as a command on its own is to run [framework-depe
 
 ## Options
 
-`-v|--verbose`
+# [.NET Core 2.x](#tab/netcore2x)
 
-Enables verbose output.
+`--additional-deps <PATH>`
+
+Path to additional *deps.json* file.
+
+`--additionalprobingpath <PATH>`
+
+Path containing probing policy and assemblies to probe.
 
 `-d|--diagnostics`
 
@@ -42,64 +56,122 @@ Enables diagnostic output.
 
 `--fx-version <VERSION>`
 
-Version of the installed Shared Framework to use to run the application.
-
-`--additionalprobingpath <PATH>`
-
-Path containing probing policy and assemblies to probe.
-
-`--version`
-
-Prints out the version of the CLI tooling.
-
-`--info`
-
-Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+Version of the installed .NET Core runtime to use to run the application.
 
 `-h|--help`
 
 Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
 
+`--info`
+
+Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+
+`--roll-forward-on-no-candidate-fx`
+
+ Rolls forward on no candidate shared framework.
+
+`-v|--verbose`
+
+Enables verbose output.
+
+`--version`
+
+Prints out the version of the .NET Core SDK in use.
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+`--additionalprobingpath <PATH>`
+
+Path containing probing policy and assemblies to probe.
+
+`-d|--diagnostics`
+
+Enables diagnostic output.
+
+`--fx-version <VERSION>`
+
+Version of the installed .NET Core runtime to use to run the application.
+
+`-h|--help`
+
+Prints out a short help for the command. If using with `dotnet`, it also prints a list of the available commands.
+
+`--info`
+
+Prints out detailed information about the CLI tooling and the environment, such as the current operating system, commit SHA for the version, and other information.
+
+`-v|--verbose`
+
+Enables verbose output.
+
+`--version`
+
+Prints out the version of the .NET Core SDK in use.
+
+---
+
 ## dotnet commands
 
 ### General
 
-Command | Function
---- | ---
-[dotnet-build](dotnet-build.md) | Builds a .NET Core application.
-[dotnet-clean](dotnet-clean.md) | Clean build output(s).
-[dotnet-migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.
-[dotnet-msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.
-[dotnet-new](dotnet-new.md) | Initializes a C# or F# project for a given template.
-[dotnet-pack](dotnet-pack.md) | Creates a NuGet package of your code.
-[dotnet-publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application.
-[dotnet-restore](dotnet-restore.md) | Restores the dependencies for a given application.
-[dotnet-run](dotnet-run.md) | Runs the application from source.
-[dotnet-sln](dotnet-sln.md) | Options to add, remove, and list projects in a solution file.
-[dotnet-test](dotnet-test.md) | Runs tests using a test runner.
+# [.NET Core 2.x](#tab/netcore2x)
+
+| Command                             | Function                                                            |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| [dotnet build](dotnet-build.md)     | Builds a .NET Core application.                                     |
+| [dotnet clean](dotnet-clean.md)     | Clean build outputs.                                              |
+| [dotnet help](dotnet-help.md)       | Shows more detailed documentation online for the command.           |
+| [dotnet migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
+| [dotnet msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
+| [dotnet new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
+| [dotnet pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
+| [dotnet publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application. |
+| [dotnet restore](dotnet-restore.md) | Restores the dependencies for a given application.                  |
+| [dotnet run](dotnet-run.md)         | Runs the application from source.                                   |
+| [dotnet sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
+| [dotnet store](dotnet-store.md)     | Stores assemblies in the runtime package store.                     |
+| [dotnet test](dotnet-test.md)       | Runs tests using a test runner.                                     |
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+| Command                             | Function                                                            |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| [dotnet build](dotnet-build.md)     | Builds a .NET Core application.                                     |
+| [dotnet clean](dotnet-clean.md)     | Clean build outputs.                                              |
+| [dotnet migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
+| [dotnet msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
+| [dotnet new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
+| [dotnet pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
+| [dotnet publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application. |
+| [dotnet restore](dotnet-restore.md) | Restores the dependencies for a given application.                  |
+| [dotnet run](dotnet-run.md)         | Runs the application from source.                                   |
+| [dotnet sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
+| [dotnet test](dotnet-test.md)       | Runs tests using a test runner.                                     |
+
+---
 
 ### Project references
 
 Command | Function
 --- | ---
-[dotnet-add reference](dotnet-add-reference.md) | Add a project reference.
-[dotnet-list reference](dotnet-list-reference.md) | List project references.
-[dotnet-remove reference](dotnet-remove-reference.md) | Remove a project reference.
+[dotnet add reference](dotnet-add-reference.md) | Add a project reference.
+[dotnet list reference](dotnet-list-reference.md) | List project references.
+[dotnet remove reference](dotnet-remove-reference.md) | Remove a project reference.
 
 ### NuGet packages
 
 Command | Function
 --- | ---
-[dotnet-add package](dotnet-add-package.md) | Add a NuGet package.
-[dotnet-remove package](dotnet-remove-package.md) | Remove a NuGet package.
+[dotnet add package](dotnet-add-package.md) | Add a NuGet package.
+[dotnet remove package](dotnet-remove-package.md) | Remove a NuGet package.
 
 ### NuGet commands
 
 Command | Function
 --- | ---
-[dotnet-nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.
-[dotnet-nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
-[dotnet-nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
+[dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.
+[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
+[dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
 
 ## Examples
 
@@ -110,6 +182,8 @@ Initialize a sample .NET Core console application that can be compiled and run:
 Restore dependencies for a given application:
 
 `dotnet restore`
+
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
 Build a project and its dependencies in a given directory:
 

@@ -24,7 +24,7 @@
 ## Remarks  
  The <xref:System.Reflection.Emit.DynamicILInfo> class allows developers to write their own MSIL generators instead of using <xref:System.Reflection.Emit.ILGenerator>.  
   
- To create instances of other types, call methods, and so on, the MSIL you generate must include tokens for those entities. The <xref:System.Reflection.Emit.DynamicILInfo> class provides several overloads of the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method, which return tokens valid in the scope of the current <xref:System.Reflection.Emit.DynamicILInfo>. For example, if you need to call an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method, you can obtain a <xref:System.RuntimeMethodHandle> for that overload and pass it to the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method to obtain a token to embed in your MSIL.  
+ To create instances of other types, call methods, and so on, the MSIL you generate must include tokens for those entities. The <xref:System.Reflection.Emit.DynamicILInfo> class provides several overloads of the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method, which return tokens valid in the scope of the current <xref:System.Reflection.Emit.DynamicILInfo>. For example, if you need to call an overload of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, you can obtain a <xref:System.RuntimeMethodHandle> for that overload and pass it to the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%2A> method to obtain a token to embed in your MSIL.  
   
  Once you have created <xref:System.Byte> arrays for your local variable signature, exceptions, and code body, you can use the <xref:System.Reflection.Emit.DynamicILInfo.SetCode%2A>, <xref:System.Reflection.Emit.DynamicILInfo.SetExceptions%2A>, and <xref:System.Reflection.Emit.DynamicILInfo.SetLocalSignature%2A> methods to insert them into the <xref:System.Reflection.Emit.DynamicMethod> associated with your <xref:System.Reflection.Emit.DynamicILInfo> object.  
   
@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must obtain a token for any field that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetField%2A?displayProperty=fullName> method to get a <xref:System.Reflection.FieldInfo> for the field you want to access, then use the <xref:System.Reflection.FieldInfo.FieldHandle%2A> property to get the <xref:System.RuntimeFieldHandle>.  
+ You must obtain a token for any field that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetField%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.FieldInfo> for the field you want to access, then use the <xref:System.Reflection.FieldInfo.FieldHandle%2A> property to get the <xref:System.RuntimeFieldHandle>.  
   
  ]]></format>
         </remarks>
@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must obtain a token for any method that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetMethod%2A?displayProperty=fullName> method to get a <xref:System.Reflection.MethodInfo> for the method you want to access, and then use the <xref:System.Reflection.MethodBase.MethodHandle%2A> property to get the <xref:System.RuntimeMethodHandle>.  
+ You must obtain a token for any method that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.MethodInfo> for the method you want to access, and then use the <xref:System.Reflection.MethodBase.MethodHandle%2A> property to get the <xref:System.RuntimeMethodHandle>.  
   
 > [!NOTE]
 >  For a method that belongs to a generic type, use the <xref:System.Reflection.Emit.DynamicILInfo.GetTokenFor%28System.RuntimeMethodHandle%2CSystem.RuntimeTypeHandle%29> method overload and specify a <xref:System.RuntimeTypeHandle> for the generic type.  
@@ -212,7 +212,7 @@
 ## Remarks  
  The token returned by this method overload allows you to define a local variable type, and emit MSIL to create an instance of a type in the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object.  
   
- To get a <xref:System.RuntimeTypeHandle> representing a type, use the <xref:System.Type.TypeHandle%2A?displayProperty=fullName> property.  
+ To get a <xref:System.RuntimeTypeHandle> representing a type, use the <xref:System.Type.TypeHandle%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must obtain a token for any field that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetField%2A?displayProperty=fullName> method to get a <xref:System.Reflection.FieldInfo> for the field you want to access, and then use the <xref:System.Reflection.FieldInfo.FieldHandle%2A> property to get the <xref:System.RuntimeFieldHandle>.  
+ You must obtain a token for any field that will be accessed by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetField%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.FieldInfo> for the field you want to access, and then use the <xref:System.Reflection.FieldInfo.FieldHandle%2A> property to get the <xref:System.RuntimeFieldHandle>.  
   
  ]]></format>
         </remarks>
@@ -299,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must obtain a token for any method that will be called by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetMethod%2A?displayProperty=fullName> method to get a <xref:System.Reflection.MethodInfo> for the method you want to call, and then use the <xref:System.Reflection.MethodBase.MethodHandle%2A> property to get the <xref:System.RuntimeMethodHandle>.  
+ You must obtain a token for any method that will be called by the dynamic method associated with the current <xref:System.Reflection.Emit.DynamicILInfo> object. Use the <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.MethodInfo> for the method you want to call, and then use the <xref:System.Reflection.MethodBase.MethodHandle%2A> property to get the <xref:System.RuntimeMethodHandle>.  
   
  ]]></format>
         </remarks>
@@ -482,7 +482,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The local variable signature describes the layout of a method's local variables. To simplify construction of the local variable signature, use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper%2A?displayProperty=fullName> method to get a <xref:System.Reflection.Emit.SignatureHelper> for the local signature.  
+ The local variable signature describes the layout of a method's local variables. To simplify construction of the local variable signature, use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.Emit.SignatureHelper> for the local signature.  
   
  For information on local variable signatures, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
@@ -520,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The local variable signature describes the layout of a method's local variables. To simplify construction of the local variable signature, use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper%2A?displayProperty=fullName> method to get a <xref:System.Reflection.Emit.SignatureHelper> for the local signature.  
+ The local variable signature describes the layout of a method's local variables. To simplify construction of the local variable signature, use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper%2A?displayProperty=nameWithType> method to get a <xref:System.Reflection.Emit.SignatureHelper> for the local signature.  
   
  For information on local variable signatures, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
@@ -534,5 +534,45 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCode">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the code body of the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetExceptions">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the exception metadata for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTokenFor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a token, valid in the scope of the current <see cref="T:System.Reflection.Emit.DynamicILInfo" />, representing a string, field, method, type, or signature in the MSIL stream for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetLocalSignature">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the local variable signature that describes the layout of local variables for the associated dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

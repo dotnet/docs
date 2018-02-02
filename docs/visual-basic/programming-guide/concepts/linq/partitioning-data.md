@@ -1,7 +1,7 @@
 ---
 title: "Partitioning Data (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,18 +9,10 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Partitioning Data (Visual Basic)
 Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.  
@@ -35,10 +27,10 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
   
 |Operator Name|Description|Visual Basic Query Expression Syntax|More Information|  
 |-------------------|-----------------|------------------------------------------|----------------------|  
-|Skip|Skips elements up to a specified position in a sequence.|`Skip`|<xref:System.Linq.Enumerable.Skip%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Skip%2A?displayProperty=fullName>|  
-|SkipWhile|Skips elements based on a predicate function until an element does not satisfy the condition.|`Skip While`|<xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=fullName>|  
-|Take|Takes elements up to a specified position in a sequence.|`Take`|<xref:System.Linq.Enumerable.Take%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.Take%2A?displayProperty=fullName>|  
-|TakeWhile|Takes elements based on a predicate function until an element does not satisfy the condition.|`Take While`|<xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=fullName><br /><br /> <xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=fullName>|  
+|Skip|Skips elements up to a specified position in a sequence.|`Skip`|<xref:System.Linq.Enumerable.Skip%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Skip%2A?displayProperty=nameWithType>|  
+|SkipWhile|Skips elements based on a predicate function until an element does not satisfy the condition.|`Skip While`|<xref:System.Linq.Enumerable.SkipWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SkipWhile%2A?displayProperty=nameWithType>|  
+|Take|Takes elements up to a specified position in a sequence.|`Take`|<xref:System.Linq.Enumerable.Take%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Take%2A?displayProperty=nameWithType>|  
+|TakeWhile|Takes elements based on a predicate function until an element does not satisfy the condition.|`Take While`|<xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Examples  
   
@@ -63,9 +55,9 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
  [!code-vb[CsLINQPartitioning#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/partitioning-data_4.vb)]  
   
 ## See Also  
- <xref:System.Linq>   
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)   
- [Skip Clause](../../../../visual-basic/language-reference/queries/skip-clause.md)   
- [Skip While Clause](../../../../visual-basic/language-reference/queries/skip-while-clause.md)   
- [Take Clause](../../../../visual-basic/language-reference/queries/take-clause.md)   
+ <xref:System.Linq>  
+ [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+ [Skip Clause](../../../../visual-basic/language-reference/queries/skip-clause.md)  
+ [Skip While Clause](../../../../visual-basic/language-reference/queries/skip-while-clause.md)  
+ [Take Clause](../../../../visual-basic/language-reference/queries/take-clause.md)  
  [Take While Clause](../../../../visual-basic/language-reference/queries/take-while-clause.md)

@@ -10,16 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], getting current cell"
   - "DataGridView control [Windows Forms], setting current cell"
-  - "cells, getting and setting current"
+  - "cells [Windows Forms], getting and setting current"
 ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Get and Set the Current Cell in the Windows Forms DataGridView Control
 Interaction with the <xref:System.Windows.Forms.DataGridView> often requires that you programmatically discover which cell is currently active. You may also need to change the current cell. You can perform these tasks with the <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property.  
@@ -50,10 +53,10 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
   
 -   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   
--   References to the <xref:System?displayProperty=fullName> and <xref:System.Windows.Forms?displayProperty=fullName> assemblies.  
+-   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See Also  
- <xref:System.Windows.Forms.DataGridView>   
- <xref:System.Windows.Forms.DataGridView.CurrentCell%2A?displayProperty=fullName>   
- [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)   
+ <xref:System.Windows.Forms.DataGridView>  
+ <xref:System.Windows.Forms.DataGridView.CurrentCell%2A?displayProperty=nameWithType>  
+ [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
  [Selection Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-modes-in-the-windows-forms-datagridview-control.md)

@@ -99,6 +99,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -133,6 +134,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +167,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.ContentInfo" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -304,11 +309,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method should be called before <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt?displayProperty=fullName> or any other EnvelopedCms.Decrypt method.  
+ This method should be called before <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt?displayProperty=nameWithType> or any other EnvelopedCms.Decrypt method.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode" />
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -336,16 +342,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode%2A?displayProperty=fullName> should be called before <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt?displayProperty=fullName> or any other <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt%2A> method.  
+ <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode%2A?displayProperty=nameWithType> should be called before <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt?displayProperty=nameWithType> or any other <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt%2A> method.  
   
  The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt> method does not search the computer My store if it is inaccessible.  
   
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -385,9 +391,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -428,9 +434,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -473,9 +479,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the decryption key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -512,13 +518,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt?displayProperty=fullName> or another <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%2A> method must be called before this method.  
+ <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt?displayProperty=nameWithType> or another <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%2A> method must be called before this method.  
   
- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode%2A> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode%2A> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=nameWithType> property to be populated.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -541,16 +548,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method displays a user interface in which you choose the recipients for whom to encrypt the message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ This method displays a user interface in which you choose the recipients for whom to encrypt the message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=nameWithType> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
   
  The user interface will only present certificates that are within their validity period and that have key encipherment or key agreement included in their key usage.  
   
- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=nameWithType> property to be populated.  
   
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -585,7 +592,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%28System.Security.Cryptography.Pkcs.CmsRecipient%29> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%28System.Security.Cryptography.Pkcs.CmsRecipient%29> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=nameWithType> property to be populated.  
   
  ]]></format>
         </remarks>
@@ -621,7 +628,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%28System.Security.Cryptography.Pkcs.CmsRecipientCollection%29> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=fullName> property to be populated.  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt%28System.Security.Cryptography.Pkcs.CmsRecipientCollection%29> method does not cause the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A?displayProperty=nameWithType> property to be populated.  
   
  ]]></format>
         </remarks>
@@ -656,7 +663,7 @@
 ## Remarks  
  Although this property is read-only, a modification to the <xref:System.Security.Cryptography.Pkcs.RecipientInfo> objects in the <xref:System.Security.Cryptography.Pkcs.RecipientInfoCollection> can be done by using their properties.  
   
- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A> property is not populated as a result of calling the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode%2A?displayProperty=fullName> method nor any of the overloaded EnvelopedCms.Encrypt methods.  
+ The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos%2A> property is not populated as a result of calling the <xref:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode%2A?displayProperty=nameWithType> method nor any of the overloaded EnvelopedCms.Encrypt methods.  
   
  ]]></format>
         </remarks>
@@ -717,5 +724,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Decrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrypts the contents of the decoded enveloped CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Encrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encrypts the contents of the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

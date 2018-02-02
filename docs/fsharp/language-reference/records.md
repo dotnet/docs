@@ -116,11 +116,15 @@ Like union and structure types, records have structural equality semantics. Clas
 
 If you write the same code with classes, the two class objects would be unequal because the two values would represent two objects on the heap and only the addresses would be compared (unless the class type overrides the `System.Object.Equals` method).
 
+If you need reference equality for records, add the attribute `[<ReferenceEquality>]` above the record.
+
 ## See Also
 [F# Types](fsharp-types.md)
 
 [Classes](classes.md)
 
 [F# Language Reference](index.md)
+
+[Reference-Equality](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
 
 [Pattern Matching](pattern-matching.md)

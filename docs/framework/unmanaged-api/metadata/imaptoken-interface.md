@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMapToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMapToken interface [.NET Framework metadata]"
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMapToken Interface
 Provides mapping capabilities between assemblies.  

@@ -73,7 +73,7 @@
             OnNextButtonClick="CreateUserWizard1_NextButtonClick"
             OnCreatedUser="CreateUserWizard1_CreatedUser" ContinueDestinationPageUrl="~/Default.aspx">
             <WizardSteps>
-               <%-- <Snippet5> --%>
+               <!-- <Snippet5> -->
                <asp:WizardStep ID="CreateUserWizardStep0" runat="server">
                     <table border="0" style="font-size: 100%; font-family: Verdana" id="TABLE1" >
                          <tr>
@@ -90,8 +90,8 @@
                          </tr>
                      </table>
                 </asp:WizardStep>
-                <%-- </Snippet5> --%>
-                <%-- <Snippet3> --%>
+                <!-- </Snippet5> -->
+                <!-- <Snippet3> -->
                 <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
                     <ContentTemplate>
                         <table border="0" style="font-size: 100%; font-family: Verdana">
@@ -133,11 +133,11 @@
                             <tr>
                                 <td align="right">
                                     <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">
-                                        E-mail:</asp:Label></td>
+                                        Email:</asp:Label></td>
                                 <td>
                                     <asp:TextBox ID="Email" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email"
-                                        ErrorMessage="E-mail is required." ToolTip="E-mail is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
+                                        ErrorMessage="Email is required." ToolTip="Email is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>
@@ -180,8 +180,8 @@
                         <asp:CheckBox ID="ShareInfoCheckBox" runat="server" Checked="True" Text="Share my information with partner sites." />
                     </ContentTemplate>
                 </asp:CreateUserWizardStep>
-                <%-- </Snippet3> --%>
-                <%-- <Snippet4> --%>
+                <!-- </Snippet3> -->
+                <!-- <Snippet4> -->
                 <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
                     <ContentTemplate>
                         <table border="0" style="font-size: 100%; font-family: Verdana" id="TABLE1" >
@@ -207,7 +207,7 @@
                         </table>
                     </ContentTemplate>
                 </asp:CompleteWizardStep>
-                <%-- </Snippet4> --%>
+                <!-- </Snippet4> -->
             </WizardSteps>
             <SideBarStyle BackColor="#5D7B9D" BorderWidth="0px" Font-Size="0.9em" VerticalAlign="Top" />
             <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

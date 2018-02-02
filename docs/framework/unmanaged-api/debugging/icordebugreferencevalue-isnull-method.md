@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::IsNull"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsNull method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::IsNull method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugReferenceValue::IsNull Method
 Gets a value that indicates whether this ICorDebugReferenceValue is a null value, in which case the `ICorDebugReferenceValue` does not point to an object.  

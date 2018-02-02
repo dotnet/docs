@@ -60,6 +60,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Resources.IResourceWriter" />
+    <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -178,7 +180,7 @@
 ## Remarks  
  The resource is not written until <xref:System.Resources.ResourceWriter.Generate%2A> is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Byte%5B%5D%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -229,9 +231,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=fullName> property for `value`.  
+ You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=nameWithType> property for `value`.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -291,7 +293,7 @@
   
  The resource is not written until the <xref:System.Resources.ResourceWriter.Generate%2A> method is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Object%29> method by calling the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.Object%29> method by calling the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -347,7 +349,7 @@
 ## Remarks  
  The resource is not written until <xref:System.Resources.ResourceWriter.Generate%2A> is called.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.String%29> method by calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.String%29> method by calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -402,9 +404,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=fullName> property for `value`.  
+ You can specify any stream that supports the <xref:System.IO.Stream.Length%2A?displayProperty=nameWithType> property for `value`.  
   
- You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%2CSystem.Boolean%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=fullName> method.  
+ You can retrieve the resources written by the <xref:System.Resources.ResourceWriter.AddResource%28System.String%2CSystem.IO.Stream%2CSystem.Boolean%29> method by calling the <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -478,7 +480,7 @@
   
      `Extensions.Person, Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null`  
   
- A parallel method for reading resource data written with the <xref:System.Resources.ResourceWriter.AddResourceData%2A> method is <xref:System.Resources.ResourceReader.GetResourceData%2A?displayProperty=fullName>.  
+ A parallel method for reading resource data written with the <xref:System.Resources.ResourceWriter.AddResourceData%2A> method is <xref:System.Resources.ResourceReader.GetResourceData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -495,6 +497,9 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> (or a name that varies only by capitalization) has already been added to this <see cref="T:System.Resources.ResourceWriter" /> object.</exception>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Resources.ResourceWriter" /> object is not initialized. The probable cause is that the <see cref="T:System.Resources.ResourceWriter" /> object is closed.</exception>
+        <altmember cref="Overload:System.Resources.ResourceWriter.#ctor" />
+        <altmember cref="M:System.Resources.ResourceWriter.Close" />
+        <altmember cref="M:System.Resources.ResourceWriter.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -587,6 +592,7 @@
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error has occurred.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">An error has occurred during serialization of the object.</exception>
+        <altmember cref="T:System.IDisposable" />
       </Docs>
     </Member>
     <Member MemberName="Generate">
@@ -680,5 +686,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddResource">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a resource to the list of resources to be written.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.Writer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::EmitString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmitString method [.NET Framework metadata]"
   - "ICeeGen::EmitString method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::EmitString Method
 Emits the specified string into the code base.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugJITCompilerFlagsDeprecated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugJITCompilerFlagsDeprecated enumeration [.NET Framework debugging]"
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
@@ -28,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugJITCompilerFlagsDeprecated Enumeration
 This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration instead.  

@@ -32,6 +32,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <altmember cref="T:System.Xml.Serialization.XmlSerializationReader" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -4022,5 +4024,195 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteElementStringRaw">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteElementQualifiedName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an XML element with a specified qualified name in its body.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEmptyTag">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an XML element whose body is empty.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStartElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an opening element tag, including any attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteSerializable">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an object that uses custom XML formatting as an XML element.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteNullableStringLiteralRaw">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlNode" /> inserts an <see langword="xsi:nil='true' " />attribute if the string's value is <see langword="null" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteNullTagLiteral">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteNullTagEncoded">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteReferencingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef" /> element for a given object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateUnknownTypeException">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates that a type being serialized is not being used in a valid manner or is unexpectedly encountered.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteElementString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInvalidAnyTypeException">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEndElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see langword="&amp;lt;closing&amp;gt;" /> element tag.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromXmlQualifiedName">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Produces an XML qualified name, with invalid characters replaced by escape sequences.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteNullableStringEncodedRaw">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlNode" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXmlAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an XML attribute.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WritePotentiallyReferencingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&amp;lt;multiRef&amp;gt;" /> XML element for a given object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs an <see cref="T:System.Xml.XmlNode" /> object to write an XML attribute that has no namespace specified for its name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write the specified value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

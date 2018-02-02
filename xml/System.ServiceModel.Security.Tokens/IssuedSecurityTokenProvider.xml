@@ -823,5 +823,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously begins opening the provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens the provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Closes the provider.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously begins closing the provider.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

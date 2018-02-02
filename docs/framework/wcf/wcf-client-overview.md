@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "clients [WCF], architecture"
 ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
 caps.latest.revision: 17
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Client Overview
 This section describes what client applications do, how to configure, create, and use a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] client, and how to secure client applications.  
@@ -80,9 +85,9 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  For example, a generated configuration file for an `ISampleService` used in the preceding examples contains the following endpoint information.  
   
- [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]   
+ [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]  
   
- This configuration file specifies a target endpoint in the `<client>` element. [!INCLUDE[crabout](../../../includes/crabout-md.md)] using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase%601.%23ctor%2A?displayProperty=fullName> or the <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A?displayProperty=fullName> constructors.  
+ This configuration file specifies a target endpoint in the `<client>` element. [!INCLUDE[crabout](../../../includes/crabout-md.md)] using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase%601.%23ctor%2A?displayProperty=nameWithType> or the <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A?displayProperty=nameWithType> constructors.  
   
 ## Calling Operations  
  Once you have a client object created and configured, create a try/catch block, call operations in the same way that you would if the object were local, and close the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object. When the client application calls the first operation, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] automatically opens the underlying channel, and the underlying channel is closed when the object is recycled. (Alternatively, you can also explicitly open and close the channel prior to or subsequent to calling other operations.)  
@@ -130,12 +135,12 @@ Namespace Microsoft.ServiceModel.Samples
 End Interface  
 ```  
   
- You can call operations by creating a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object and calling its methods, as the following code example demonstrates. Note that the opening, calling, and closing of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object occurs within a single try/catch block. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+ You can call operations by creating a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object and calling its methods, as the following code example demonstrates. Note that the opening, calling, and closing of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client object occurs within a single try/catch block. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
   
  [!code-csharp[C_GeneratedCodeFiles#20](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#20)]  
   
 ## Handling Errors  
- Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=fullName> and <xref:System.ServiceModel.CommunicationException?displayProperty=fullName> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=fullName> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=fullName> where the type parameter is the detail type of the SOAP fault. [!INCLUDE[crabout](../../../includes/crabout-md.md)] handling error conditions in a client application, see [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md).  
+ Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. [!INCLUDE[crabout](../../../includes/crabout-md.md)] handling error conditions in a client application, see [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md).  
   
 ## Configuring and Securing Clients  
  Configuring a client starts with the required loading of target endpoint information for the client or channel object, usually from a configuration file, although you can also load this information programmatically using the client constructors and properties. However, additional configuration steps are required to enable certain client behavior and for many security scenarios.  
@@ -151,15 +156,15 @@ End Interface
   
 -   Implement a callback contract class.  
   
--   Create an instance of the callback contract implementation class and use it to create the <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> object that you pass to the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client constructor.  
+-   Create an instance of the callback contract implementation class and use it to create the <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object that you pass to the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client constructor.  
   
 -   Invoke operations and handle operation callbacks.  
   
  Duplex [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client objects function like their nonduplex counterparts, with the exception that they expose the functionality necessary to support callbacks, including the configuration of the callback service.  
   
- For example, you can control various aspects of callback object runtime behavior by using properties of the <xref:System.ServiceModel.CallbackBehaviorAttribute?displayProperty=fullName> attribute on the callback class. Another example is the use of the <xref:System.ServiceModel.Description.CallbackDebugBehavior?displayProperty=fullName> class to enable the return of exception information to services that call the callback object. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md). For a complete sample, see [Duplex](../../../docs/framework/wcf/samples/duplex.md).  
+ For example, you can control various aspects of callback object runtime behavior by using properties of the <xref:System.ServiceModel.CallbackBehaviorAttribute?displayProperty=nameWithType> attribute on the callback class. Another example is the use of the <xref:System.ServiceModel.Description.CallbackDebugBehavior?displayProperty=nameWithType> class to enable the return of exception information to services that call the callback object. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md). For a complete sample, see [Duplex](../../../docs/framework/wcf/samples/duplex.md).  
   
- On Windows XP computers running Internet Information Services (IIS) 5.1, duplex clients must specify a client base address using the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=fullName> class or an exception is thrown. The following code example shows how to do this in code.  
+ On Windows XP computers running Internet Information Services (IIS) 5.1, duplex clients must specify a client base address using the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType> class or an exception is thrown. The following code example shows how to do this in code.  
   
  [!code-csharp[S_DualHttp#8](../../../samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs/program.cs#8)]
  [!code-vb[S_DualHttp#8](../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_dualhttp/vb/module1.vb#8)]  
@@ -169,11 +174,11 @@ End Interface
  [!code-csharp[S_DualHttp#134](../../../samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs/program.cs#134)]  
   
 ## Calling Services Asynchronously  
- How operations are called is entirely up to the client developer. This is because the messages that make up an operation can be mapped to either synchronous or asynchronous methods when expressed in managed code. Therefore, if you want to build a client that calls operations asynchronously, you can use Svcutil.exe to generate asynchronous client code using the `/async` option. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Call Service Operations Asynchronously](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md).  
+ How operations are called is entirely up to the client developer. This is because the messages that make up an operation can be mapped to either synchronous or asynchronous methods when expressed in managed code. Therefore, if you want to build a client that calls operations asynchronously, you can use Svcutil.exe to generate asynchronous client code using the `/async` option. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Call Service Operations Asynchronously](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md).  
   
 ## Calling Services Using WCF Client Channels  
- [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=fullName> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> class. For details, see [WCF Client Architecture](../../../docs/framework/wcf/feature-details/client-architecture.md).  
+ [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](../../../docs/framework/wcf/feature-details/client-architecture.md).  
   
 ## See Also  
- <xref:System.ServiceModel.ClientBase%601?displayProperty=fullName>   
- <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName>
+ <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  
+ <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>

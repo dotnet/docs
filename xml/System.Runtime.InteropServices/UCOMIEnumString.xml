@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.UCOMIEnumString ppenum);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone(class System.Runtime.InteropServices.UCOMIEnumString ppenum) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.UCOMIEnumString&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumString.Clone(System.Runtime.InteropServices.UCOMIEnumString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -62,7 +62,7 @@
     </Member>
     <Member MemberName="Next">
       <MemberSignature Language="C#" Value="public int Next (int celt, string[] rgelt, out int pceltFetched);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, string[] rgelt, int32 pceltFetched) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] string[] rgelt, [out] int32&amp; pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumString.Next(System.Int32,System.String[],System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

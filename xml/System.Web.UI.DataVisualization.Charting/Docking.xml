@@ -17,7 +17,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataVisualization.Charting.Docking> enumeration represents the location on the <xref:System.Web.UI.DataVisualization.Charting.Chart> control where a chart element will be docked.  
   
- Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea>object. The chart area is specified in the `DockedToChartArea` property of the chart element.  
+ Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object. The chart area is specified in the `DockedToChartArea` property of the chart element.  
   
  ]]></format>
     </remarks>

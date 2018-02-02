@@ -36,6 +36,7 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.UI.MobileControls.MobileControl" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +71,7 @@
         <summary>Determines whether white space literals are permitted in the content between a control's opening and closing tags. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
     <Member MemberName="GetChildControlType">
@@ -94,6 +96,7 @@
         <summary>Obtains the <see cref="T:System.Type" /> of the control type corresponding to a child tag. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>The <see cref="T:System.Type" /> of the specified control's child.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       </Docs>
     </Member>
   </Members>

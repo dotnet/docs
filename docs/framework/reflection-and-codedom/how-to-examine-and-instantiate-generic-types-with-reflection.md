@@ -9,6 +9,10 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "reflection, generic types"
   - "generics [.NET Framework], reflection"
@@ -17,6 +21,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Examine and Instantiate Generic Types with Reflection
 Information about generic types is obtained in the same way as information about other types: by examining a <xref:System.Type> object that represents the generic type. The principle difference is that a generic type has a list of <xref:System.Type> objects representing its generic type parameters. The first procedure in this section examines generic types.  
@@ -67,7 +73,7 @@ Information about generic types is obtained in the same way as information about
      [!code-csharp[HowToGeneric#8](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS/ur.cs#8)]
      [!code-vb[HowToGeneric#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#8)]  
   
-8.  The special constraint attributes are flags, and the same flag (<xref:System.Reflection.GenericParameterAttributes.None?displayProperty=fullName>) that represents no special constraints also represents no covariance or contravariance. Thus, to test for either of these conditions you must use the appropriate mask. In this case, use <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=fullName> to isolate the special constraint flags.  
+8.  The special constraint attributes are flags, and the same flag (<xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>) that represents no special constraints also represents no covariance or contravariance. Thus, to test for either of these conditions you must use the appropriate mask. In this case, use <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> to isolate the special constraint flags.  
   
      [!code-cpp[HowToGeneric#9](../../../samples/snippets/cpp/VS_Snippets_CLR/HowToGeneric/cpp/ur.cpp#9)]
      [!code-csharp[HowToGeneric#9](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS/ur.cs#9)]
@@ -78,7 +84,7 @@ Information about generic types is obtained in the same way as information about
   
 #### To construct an instance of a generic type  
   
-1.  Get a <xref:System.Type> object that represents the generic type. The following code gets the generic type <xref:System.Collections.Generic.Dictionary%602> in two different ways: by using the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload with a string describing the type, and by calling the <xref:System.Type.GetGenericTypeDefinition%2A> method on the constructed type `Dictionary\<String, Example>` (`Dictionary(Of String, Example)` in Visual Basic). The <xref:System.Type.MakeGenericType%2A> method requires a generic type definition.  
+1.  Get a <xref:System.Type> object that represents the generic type. The following code gets the generic type <xref:System.Collections.Generic.Dictionary%602> in two different ways: by using the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload with a string describing the type, and by calling the <xref:System.Type.GetGenericTypeDefinition%2A> method on the constructed type `Dictionary\<String, Example>` (`Dictionary(Of String, Example)` in Visual Basic). The <xref:System.Type.MakeGenericType%2A> method requires a generic type definition.  
   
      [!code-cpp[HowToGeneric#10](../../../samples/snippets/cpp/VS_Snippets_CLR/HowToGeneric/cpp/ur.cpp#10)]
      [!code-csharp[HowToGeneric#10](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS/ur.cs#10)]
@@ -124,8 +130,8 @@ Information about generic types is obtained in the same way as information about
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See Also  
- <xref:System.Type>   
- <xref:System.Reflection.MethodInfo>   
- [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)   
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)   
+ <xref:System.Type>  
+ <xref:System.Reflection.MethodInfo>  
+ [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)  
+ [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
  [Generics](../../../docs/standard/generics/index.md)

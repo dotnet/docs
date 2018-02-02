@@ -43,7 +43,7 @@
 ## Remarks  
  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Reflection.TypeInfo> class is included in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] subset for use in creating Windows Store apps. <xref:System.Reflection.TypeInfo> is available in the full .NET Framework as well. For more information about reflection for Windows Store apps, see [System.Reflection namespaces](http://msdn.microsoft.com/library/windows/apps/hh441595\(v=vs.110\).aspx) in the Windows Dev Center and [Reflection in the .NET Framework for Windows Store Apps](~/docs/framework/reflection-and-codedom/reflection-for-windows-store-apps.md) in the MSDN Library.  
   
- <xref:System.Reflection.TypeInfo> contains many of the members available in the <xref:System.Type> class, and many of the reflection properties in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IntrospectionExtensions.GetTypeInfo%28System.Type%29?displayProperty=fullName> extension method.  
+ <xref:System.Reflection.TypeInfo> contains many of the members available in the <xref:System.Type> class, and many of the reflection properties in the [!INCLUDE[net_win8_profile](~/includes/net-win8-profile-md.md)] return collections of <xref:System.Reflection.TypeInfo> objects. To get a <xref:System.Reflection.TypeInfo> object from a <xref:System.Type> object, use the <xref:System.Reflection.IntrospectionExtensions.GetTypeInfo%28System.Type%29?displayProperty=nameWithType> extension method.  
   
  A <xref:System.Reflection.TypeInfo> object represents the type definition itself, whereas a <xref:System.Type> object represents a reference to the type definition. Getting a <xref:System.Reflection.TypeInfo> object forces the assembly that contains that type to load. In comparison, you can manipulate <xref:System.Type> objects without necessarily requiring the runtime to load the assembly they reference.  
   
@@ -2904,7 +2904,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeGenericType">
-      <MemberSignature Language="C#" Value="public abstract Type MakeGenericType (Type[] typeArguments);" />
+      <MemberSignature Language="C#" Value="public abstract Type MakeGenericType (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeGenericType(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakeGenericType(System.Type[])" />
       <MemberType>Method</MemberType>

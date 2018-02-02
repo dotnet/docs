@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML 2.0 specification defines a set of SAML statement types and one of them is represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class. When specified in a SAML 2.0 assertion in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=fullName> property, a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject of the assertion to a specified resource. The subject of the SAML 2.0 assertion is specified by the <xref:System.IdentityModel.Tokens.Saml2Assertion.Subject%2A?displayProperty=fullName> property. The following table summarizes the properties that are associated with the authorization decision.  
+ <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML 2.0 specification defines a set of SAML statement types and one of them is represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class. When specified in a SAML 2.0 assertion in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=nameWithType> property, a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject of the assertion to a specified resource. The subject of the SAML 2.0 assertion is specified by the <xref:System.IdentityModel.Tokens.Saml2Assertion.Subject%2A?displayProperty=nameWithType> property. The following table summarizes the properties that are associated with the authorization decision.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -221,5 +221,14 @@
         <exception cref="T:System.ArgumentException">An attempt to set a value that is not an absolute URI or is not an empty relative URI occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> class with the specified decision on the specified resource.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

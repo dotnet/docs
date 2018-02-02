@@ -1,44 +1,45 @@
 ---
-# required metadata
+# required/recommended metadata
 
-title: [ARTICLE TITLE | SERVICE NAME]
+title: [ARTICLE TITLE]
 description:
-keywords:
 author: [GITHUB USERNAME]
-
-ms.date: [CREATION/UPDATE DATE]
-ms.topic: article
-ms.prod: .net-core
-
-ms.assetid: [GET ONE FROM guidgenerator.com]
+ms.author: [MICROSOFT ALIAS OF INTERNAL OWNER]
+ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
+ms.topic: [TOPIC TYPE]
+ms.prod: [PRODUCT VALUE]
+helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]
 
 # optional metadata
 
 #ROBOTS:
-#audience:
-#ms.devlang: dotnet
-#ms.reviewer: [ALIAS]
+#ms.technology:
+#keywords:
+#ms.devlang: [LANGUAGES]
+#manager: [MICROSOFT ALIAS]
 
 ---
-
 # Metadata and Markdown Template
 
 This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
-
 ## Metadata 
 
 The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
 
 - You **must** have a space between the colon (:) and the value for a metadata element.
-- If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
+- If an optional metadata element doesn't have a value, comment out the element with a # or remove it (don't leave it blank or use "na"). If you're adding a value to an element that was commented out, be sure to remove the #.
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | .NET Core`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-- **author**, **manager**, **ms.reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.reviewer" fields, on the other hand, should contain Microsoft aliases. ms.reviewer specifies the name of the PM/dev associated with the article or feature.
-- **ms.devlang** defines the technology. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb and xml.
-- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
+- **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.  
+- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases. 
+- **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
+- **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb, powershell and xml.
+- **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
+- **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
+- **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -124,25 +125,37 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ### Links to APIs
 
-The build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
-When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
+The build system has some extensions that allow us to link to .NET APIs without having to use external links.  
+When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code. 
+
+The UID equates to the fully qualified class and member name. If you add a \* after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_).
 
 You can use one of the following syntax:
 
-1. Markdown link: `[link_text](xref:UID)`
-2. Auto link: `<xref:UID>`
-3. Shorthand form: `@UID`
+1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=nameWithType>`
 
-- Example: `@System.String`
-- Example: `[String class](xref:System.String)` 
+ The `displayProperty` query parameter produces a fully qualified link text. By default, link text shows only the member or type name.
+ 
+2. Markdown link: `[link text](xref:UID)`
+
+ Use when you want to customize the link text displayed. 
+
+Examples:
+- `<xref:System.String>` renders as [String](https://docs.microsoft.com/dotnet/api/system.string)
+- `<xref:System.String?displayProperty=nameWithType>` renders as [System.String](https://docs.microsoft.com/dotnet/api/system.string)
+- `[String class](xref:System.String)` renders as [String class](https://docs.microsoft.com/dotnet/api/system.string)
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in [the `xml` directory of this repo](../xml), then looking at the DocId signature and ignoring its first two characters (letter and colon). We're working on having a better system in the future.
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value. Individual overload values are not shown in the source. We're working on having a better system in the future.
 
-When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
-- Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
-- Example: @System.Exception.\#ctor becomes `@System.Exception.%23ctor`
+When the UID contains the special characters \`, \# or \*, the UID value needs to be HTML encoded as `%60`, `%23` and `%2A` respectively. You'll sometimes see parentheses encoded but it's not a requirement.
+
+Examples:
+- System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`
+- System.Exception.\#ctor becomes `System.Exception.%23ctor`
+- System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
+
 
 ## Lists
 
@@ -209,44 +222,33 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 The best way to include code is to include snippets from a working sample. Create your
 sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
 
-You can include the code using include syntax:
-
-```
-[!code-csharp[<title>](<pathToFile>#<RegionName)]
-```
-
-The example above shows C# syntax, but other languages are supported.
-Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
-Other languages that are supported are:
-* C++: `code-cpp`
-* HTML: `code-html`
-* JavaScript: `code-javascript`
-* Powershell: `code-ps`
-* SQL: `code-sql`
-* XML: `code-xml`
-
-
-
-The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
-is the path to the source file. The `<RegionName>` should be a region in your source
-code that should be included. Use the `#region` and `#endregion` preprocessor syntax
-to specify the region of code to include.
-
-For cases where regions don't work, you can specify the start and end of a snippet
-using an XML element name in a single line comment. For example, you could write this in C#:
-
-```csharp
-// <CodeToInclude>
-int j = 5;
-int i ; 10;
-int sum = i + j;
-// </CodeToInclude>
+You can include the code using the following syntax:
+```markdown
+[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-In other languages, use the comment syntax for that language.
-Finally, you can use line
-numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
-because they are very brittle.
+* `-<language>` (*optional* but *recommended*)
+  * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
+
+* `<name>` (*optional*) 
+  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source. 
+
+* `<pathToFile>` (*mandatory*) 
+  * Relative path in the file system that indicates the code snippet file to reference.
+  
+* `<queryoption>` and `<queryoptionvalue>` (*optional*)
+ * Used together to specify how the code should be retrieved from the file:
+  * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+   We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
+  * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+  * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+  * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+
+We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
+```
+[!code-csharp[csrefKeyword#1](../../../../samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs#1)]
+```
+And you can see how the snippet tags are structured in [this source file](https://github.com/dotnet/docs/blob/master/samples/snippets/csharp/language-reference/keywords/throw/throw-1.cs). For details about tag name representation in code snippet source files by language, see the [DocFX guidelines](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
 system. However, if you need to show something that causes compile time or
@@ -256,14 +258,17 @@ runtime errors, you can use inline code blocks.
 
 Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID. 
 
-#### Supported Languages
-|Name|Markdown Label|
+#### Supported languages
+|Name|Markdown label|
 |-----|-------|
+|ASP.NET with C#|aspx-csharp|
+|ASP.NET with VB|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
 |C++|cpp|
 |C#|csharp|
 |F#|fsharp|
+|Java|java|
 |JavaScript|javascript|
 |JSON|json|
 |NodeJS|nodejs|
@@ -272,13 +277,11 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |PowerShell|powershell|
 |Python|python|
 |Ruby|ruby|
-|SQL / T-SQL|sql|
+|SQL|sql|
 |Swift|swift|
 |VB|vb|
 |XAML|xaml|
 |XML|xml| 
- 
- 
 
 The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
@@ -347,13 +350,33 @@ function fancyAlert(arg) {
 
 ## Videos
 
+Currently, you can embed both Channel 9 and YouTube videos with the following syntax:
+
 ### Channel 9
 
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+```markdown
+> [!VIDEO <channel9_video_link>]
+```
+
+To get the video's correct URL, select the **Embed** tab below the video frame, and copy the URL from the `<iframe>` element. For example:
+
+```markdown
+> [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
+```
 
 ### YouTube
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
+To get the video's correct URL, right-click on the video, select **Copy Embed Code**, and copy the URL from the `<iframe>` element.
+
+```markdown
+> [!VIDEO <youtube_video_link>]
+```
+
+For example:
+
+```markdown
+> [!VIDEO https://www.youtube.com/embed/Q2mMbjw6cLA]
+```
 
 ## docs.microsoft extensions
 
@@ -397,15 +420,15 @@ You can embed the Markdown of one file into another using an include.
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
+You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio). 
 
 ### Selectors
 
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/csharp/getting-started/with-visual-studio.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
 
-You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+You can see an example of selectors in action at the [Azure docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 
 ### Step-By-Steps
 
@@ -413,4 +436,4 @@ You can see an example of selectors in action at the [Intune docs](https://docs.
 [Pre](../docs/csharp/expression-trees-interpreting.md)
 [Next](../docs/csharp/expression-trees-translating.md)
 
-You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
+You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

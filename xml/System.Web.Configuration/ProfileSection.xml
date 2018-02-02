@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.ProfileSection> class provides a way to programmatically access and modify the content of the configuration file `profile` section. The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `profile` section of the configuration file. The class allows you to access and modify the values for individual profiles. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=fullName> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ The <xref:System.Web.Configuration.ProfileSection> class provides a way to programmatically access and modify the content of the configuration file `profile` section. The `profile` section of the configuration file specifies a schema for user profiles. At run time, the ASP.NET compilation system uses the information specified in the `profile` section to generate a class called `ProfileCommon`, which is derived from <xref:System.Web.Profile.ProfileBase>. The `ProfileCommon` class definition is based on the properties defined in the `profile` section of the configuration file. The class allows you to access and modify the values for individual profiles. An instance of this class is created for each user profile, and you can access the individual profile values in your code through the <xref:System.Web.HttpContext.Profile%2A?displayProperty=nameWithType> property. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
   
    
   
@@ -67,6 +67,8 @@ local Microsoft SQL Server database" />
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Web.Profile.ProfileModule" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +99,7 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
       </Docs>
     </Member>
     <Member MemberName="AutomaticSaveEnabled">
@@ -136,6 +139,8 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
+        <altmember cref="E:System.Web.Profile.ProfileModule.ProfileAutoSaving" />
       </Docs>
     </Member>
     <Member MemberName="DefaultProvider">
@@ -177,6 +182,8 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Configuration.ProfileSection.Providers" />
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -218,6 +225,7 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
       </Docs>
     </Member>
     <Member MemberName="Inherits">
@@ -261,6 +269,8 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
+        <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -317,6 +327,10 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
+        <altmember cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" />
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -355,6 +369,9 @@ local Microsoft SQL Server database" />
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ProviderSettingsCollection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.DefaultProvider" />
+        <altmember cref="T:System.Web.Profile.ProfileModule" />
       </Docs>
     </Member>
   </Members>

@@ -2,15 +2,14 @@
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 keywords: .NET, .NET Core, getting started, news
-author: richlander
+author: mairaw
 ms.author: mairaw
-ms.date: 07/03/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 ---
-
 # Welcome to .NET
 
 See [Getting Started with .NET Core](core/get-started.md) to learn how to create .NET Core apps.
@@ -19,12 +18,15 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 ## News
 
+- [.NET Core 2.0 Released!](https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released)
+- [Announcing .NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/)
+- [Announcing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/)
+- [Announcing ASP.NET Core 2.0](https://blogs.msdn.microsoft.com/webdev/2017/08/14/announcing-asp-net-core-2-0/)
+- [Announcing Entity Framework Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/)
+- [New for Visual Basic: .NET Standard Class Libraries and the dotnet CLI!](https://blogs.msdn.microsoft.com/vbteam/2017/08/14/new-for-visual-basic-net-standard-class-libraries-and-the-dotnet-cli/)
+- [Visual Studio 2017 Version 15.3 Released](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/visual-studio-2017-version-15-3-released/)
 - [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
-- [Announcing .NET Core 2.0 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2017/06/28/announcing-net-core-2-0-preview-2/)
-- [Introducing ASP.NET Core 2.0 Preview 2](https://blogs.msdn.microsoft.com/webdev/2017/06/28/introducing-asp-net-core-2-0-preview-2/)
-- [A fresh update to Visual Studio 2017 and the next preview](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/update-to-visual-studio-2017-and-next-preview/)
 - [Visual Studio for Mac: now generally available](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/visual-studio-for-mac-now-generally-available/)
-- [Announcing .NET Core Tools 1.0 (.NET Core 1.0.4, .NET Core 1.1.1, .NET Core SDK 1.0.1)](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)
 - [Announcing Visual Studio 2017 General Availability](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/)
 - [What's new for .NET Core and Visual Studio 2017 (video)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T108)
 - [Announcing the .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/)
@@ -38,7 +40,7 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 This documentation covers the breadth of .NET across platforms and languages.  You can get started with .NET and its languages in any of the following sections:
 
-- [.NET Platform Guide](standard/index.md)
+- [.NET Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Framework Guide](framework/index.md)
 - [C# Guide](csharp/index.md)
@@ -49,7 +51,7 @@ Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 
-This documentation is completely [open source](https://github.com/dotnet/docs).  You can contribute in any way you like, from creating Issues to writing documentation.  Additionally, much of .NET itself is open source:
+This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation.  Additionally, much of .NET itself is open source:
 
 - [.NET Core Home](https://github.com/dotnet/core)
 - [.NET Libraries](https://github.com/dotnet/corefx)

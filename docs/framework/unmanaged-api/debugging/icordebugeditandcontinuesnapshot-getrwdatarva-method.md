@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetRwDataRVA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRwDataRVA method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::GetRwDataRVA method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method
 `GetRwDataRVA` is obsolete. Do not call this method.  

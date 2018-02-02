@@ -20,10 +20,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.MobileControls.FontSize> enumeration is a subset of <xref:System.Web.UI.WebControls.FontSize?displayProperty=fullName>, and represents the size of a font in a container. For example, if you have a <xref:System.Web.UI.MobileControls.List> control inside of a <xref:System.Web.UI.MobileControls.Panel> control, with the <xref:System.Web.UI.MobileControls.Panel> control's font size set to Normal, you can specify a small font size for the <xref:System.Web.UI.MobileControls.List> control.  
+ The <xref:System.Web.UI.MobileControls.FontSize> enumeration is a subset of <xref:System.Web.UI.WebControls.FontSize?displayProperty=nameWithType>, and represents the size of a font in a container. For example, if you have a <xref:System.Web.UI.MobileControls.List> control inside of a <xref:System.Web.UI.MobileControls.Panel> control, with the <xref:System.Web.UI.MobileControls.Panel> control's font size set to Normal, you can specify a small font size for the <xref:System.Web.UI.MobileControls.List> control.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.FontSize" />
   </Docs>
   <Members>
     <Member MemberName="Large">

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
 caps.latest.revision: 7
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;oneWay&gt;
 Enables packet routing and the use of one-way methods for a custom binding.  
@@ -64,10 +66,10 @@ Enables packet routing and the use of one-way methods for a custom binding.
  To enable packet routing, a one-way conversion layer is required, which this element provides. A user can create a custom binding that layers this binding over a session-aware or request-reply transport to make it packet routable. This element is also useful when you want to expose one-way methods in a more native fashion. More transformations can be applied over this layer, such as Composite Duplex and Reliable Messaging.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.OneWayBindingElement>   
- <xref:System.ServiceModel.Configuration.OneWayElement>   
- <xref:System.ServiceModel.Channels.CustomBinding>   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
+ <xref:System.ServiceModel.Channels.OneWayBindingElement>  
+ <xref:System.ServiceModel.Configuration.OneWayElement>  
+ <xref:System.ServiceModel.Channels.CustomBinding>  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
+ [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
  [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

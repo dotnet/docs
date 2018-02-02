@@ -23,7 +23,7 @@
   <Members>
     <Member MemberName="ManagedInstall">
       <MemberSignature Language="C#" Value="public int ManagedInstall (string commandLine, int hInstall);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ManagedInstall(string commandLine, int32 hInstall) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ManagedInstall([in]string commandLine, [in]int32 hInstall) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

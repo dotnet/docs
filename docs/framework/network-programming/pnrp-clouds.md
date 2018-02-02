@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: a82e2bf1-62ab-4c2d-83f3-3217a6aead2e
 caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # PNRP Clouds
 A PNRP "cloud" represents a set of nodes that can communicate with each other through the network. The term "cloud" is synonymous with "peer mesh" and "peer-to-peer graph".  
@@ -41,5 +38,5 @@ A PNRP "cloud" represents a set of nodes that can communicate with each other th
  Once a Cloud instance is created or obtained, peer names can be registered with it to create a mesh of known peers.  
   
 ## See Also  
- <xref:System.Net.PeerToPeer.Cloud>   
+ <xref:System.Net.PeerToPeer.Cloud>  
  [Peer Name Resolution Protocol](../../../docs/framework/network-programming/peer-name-resolution-protocol.md)

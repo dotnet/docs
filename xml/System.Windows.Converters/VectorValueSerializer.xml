@@ -18,8 +18,6 @@
 ## Remarks  
  This class is typically only utilized by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization purposes.  
   
-<a name="xamlTextUsage_Int32RectValueSerializer"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
   </Docs>
@@ -113,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation uses <xref:System.Windows.Vector.Parse%2A?displayProperty=fullName> internally.  
+ This implementation uses <xref:System.Windows.Vector.Parse%2A?displayProperty=nameWithType> internally.  
   
  ]]></format>
         </remarks>

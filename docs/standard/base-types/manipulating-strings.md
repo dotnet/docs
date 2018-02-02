@@ -16,6 +16,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Manipulating Strings in .NET
 .NET provides an extensive set of routines that enable you to efficiently create, compare, and modify strings as well as rapidly parse large amounts of text and data to search for, remove, and replace text patterns.  
@@ -28,7 +31,7 @@ manager: "wpickett"
  Provides detailed information about .NET regular expressions, including language elements, regular expression behavior, and examples.  
   
  [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
- Describes string operations provided by the <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.  
+ Describes string operations provided by the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes, including creating new strings from arrays of bytes, comparing string values, and modifying existing strings.  
   
 ## Related Sections  
  [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)  

@@ -31,6 +31,23 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
+    <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleName" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDescription" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleDefaultActionDescription" />
+    <altmember cref="P:System.Windows.Forms.Control.AccessibleRole" />
+    <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+    <altmember cref="T:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewRowHeaderCell.CreateAccessibilityInstance" />
+    <altmember cref="T:System.Windows.Forms.AccessibleRole" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +66,8 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -67,6 +86,9 @@
         <summary>Gets a <see cref="T:System.String" /> that represents the default action of the <see cref="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" />.</summary>
         <value>The <see cref="T:System.String" /> "Press" if the <see cref="P:System.Windows.Forms.DataGridViewCell.ReadOnly" /> property is set to <see langword="false" />; otherwise, an empty <see cref="T:System.String" /> ("").</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -97,6 +119,8 @@
  -or-  
   
  The <see cref="T:System.Windows.Forms.DataGridViewButtonCell" /> returned by the <see cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" /> property belongs to a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
       </Docs>
     </Member>
     <Member MemberName="GetChildCount">
@@ -116,6 +140,8 @@
         <summary>Gets the number of child accessible objects that belong to the <see cref="T:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject" />.</summary>
         <returns>The value –1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewButtonCell" />
       </Docs>
     </Member>
   </Members>

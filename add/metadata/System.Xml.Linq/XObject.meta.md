@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XObject.Annotation
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -43,7 +43,7 @@ manager: "wpickett"
 uid: System.Xml.Linq.XObject.Annotations
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -165,5 +165,5 @@ manager: "wpickett"
 uid: System.Xml.Linq.XObject.RemoveAnnotations
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---

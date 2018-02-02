@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.Permissions.PublisherIdentityPermissionAttribute" />
+    <altmember cref="T:System.Security.Policy.Publisher" />
+    <altmember cref="T:System.Security.Policy.PublisherMembershipCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -107,7 +110,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Security.Permissions.PublisherIdentityPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=fullName> constructor.  
+ The following example shows how to use the <xref:System.Security.Permissions.PublisherIdentityPermission.%23ctor%28System.Security.Permissions.PermissionState%29?displayProperty=nameWithType> constructor.  
   
  [!code-cpp[System.Security.Permissions.PublisherIdentityPermission#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.PublisherIdentityPermission/CPP/publisheridentitypermission.cpp#7)]
  [!code-csharp[System.Security.Permissions.PublisherIdentityPermission#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.PublisherIdentityPermission/CS/publisheridentitypermission.cs#7)]
@@ -347,5 +350,15 @@
  The two permissions are not equal.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PublisherIdentityPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

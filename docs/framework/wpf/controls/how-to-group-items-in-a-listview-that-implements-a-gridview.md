@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ListView controls, grouping items with GridViews"
-  - "grouping items in ListViews implementing GridViews"
-  - "GridView controls, grouping items"
+  - "ListView controls [WPF], grouping items with GridViews"
+  - "grouping items in ListViews implementing GridViews [WPF]"
+  - "GridView controls [WPF], grouping items"
 ms.assetid: eebef25b-ddc6-424e-a66d-ea228d1bf33d
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Group Items in a ListView That Implements a GridView
 This example shows how to display groups of items in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control.  
@@ -33,8 +35,8 @@ This example shows how to display groups of items in the <xref:System.Windows.Co
 [!code-xaml[GridViewWithGroups#ListViewEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridViewWithGroups/CS/Window1.xaml#listviewend)]  
   
 ## See Also  
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

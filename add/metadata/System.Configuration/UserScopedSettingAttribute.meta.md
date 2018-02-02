@@ -2,8 +2,8 @@
 uid: System.Configuration.UserScopedSettingAttribute
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---
 
@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Configuration.UserScopedSettingAttribute.#ctor
 ms.technology: 
   - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
 manager: "wpickett"
 ---

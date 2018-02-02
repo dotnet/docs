@@ -51,6 +51,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -128,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to add a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -139,6 +142,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -165,6 +169,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is read-only.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -189,7 +194,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -238,7 +243,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -288,7 +293,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- <xref:System.Collections.Generic.ICollection%601.Contains%2A?displayProperty=fullName>  
+ <xref:System.Collections.Generic.ICollection%601.Contains%2A?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -325,6 +330,7 @@
  -or-  
   
  The number of items in the source <see cref="T:System.Windows.Media.GeneralTransformCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -445,6 +451,7 @@
         <summary>Returns an enumerator that can iterate through the collection.</summary>
         <returns>An enumerator that can iterate the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -467,6 +474,7 @@
         <summary>Searches for the specified <see cref="T:System.Windows.Media.GeneralTransform" /> object within a <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
         <returns>The zero-based index position of <paramref name="value" />, if found; otherwise -1;</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -493,7 +501,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -506,6 +514,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -531,7 +540,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a **null** (**Nothing**) reference.  
   
  ]]></format>
         </remarks>
@@ -544,6 +553,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+        <altmember cref="P:System.Collections.Generic.IList`1.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -571,6 +581,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.GeneralTransformCollection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -592,6 +603,7 @@
         <param name="index">The zero-based index position to remove the object.</param>
         <summary>Deletes a <see cref="T:System.Windows.Media.GeneralTransform" /> object from the <see cref="T:System.Windows.Media.GeneralTransformCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Media.GeneralTransform&gt;.IsReadOnly">
@@ -980,5 +992,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Media.GeneralTransformCollection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

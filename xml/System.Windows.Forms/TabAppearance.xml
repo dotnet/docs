@@ -15,12 +15,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName>.  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.TabControl.Alignment%2A?displayProperty=fullName> and <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName> properties and the <xref:System.Windows.Forms.TabAlignment> and <xref:System.Windows.Forms.TabAppearance> enumerations. To run the example, paste the following codein a form containing a <xref:System.Windows.Forms.TabControl> called TabControl1. Call the ChangeTheLookOfTheTabControl method in the form's constructor or Load method.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TabControl.Alignment%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=nameWithType> properties and the <xref:System.Windows.Forms.TabAlignment> and <xref:System.Windows.Forms.TabAppearance> enumerations. To run the example, paste the following codein a form containing a <xref:System.Windows.Forms.TabControl> called TabControl1. Call the ChangeTheLookOfTheTabControl method in the form's constructor or Load method.  
   
  [!code-cpp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CPP/form1.cpp#1)]
  [!code-csharp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CS/form1.cs#1)]
@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TabControl" />
   </Docs>
   <Members>
     <Member MemberName="Buttons">

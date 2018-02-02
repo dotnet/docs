@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDomain method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
@@ -29,9 +27,11 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorRuntimeHost::CreateDomain Method
-Creates an application domain. The caller receives an interface pointer of type <xref:System._AppDomain> to an instance of type <xref:System.AppDomain?displayProperty=fullName>.  
+Creates an application domain. The caller receives an interface pointer of type <xref:System._AppDomain> to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>.  
   
 ## Syntax  
   
@@ -51,7 +51,7 @@ HRESULT CreateDomain (
  [in] An optional array of pointers to `IIdentity` instances that represent evidence mapped through security policy to establish a  permission set. An `IIdentity` object can be obtained by calling the [CreateEvidence](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createevidence-method.md) method.  
   
  `pAppDomain`  
- [out] An interface pointer of type <xref:System._AppDomain> to an instance of <xref:System.AppDomain?displayProperty=fullName> that can be used to further control the domain.  
+ [out] An interface pointer of type <xref:System._AppDomain> to an instance of <xref:System.AppDomain?displayProperty=nameWithType> that can be used to further control the domain.  
   
 ## Return Value  
   
@@ -72,6 +72,6 @@ HRESULT CreateDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See Also  
- <xref:System._AppDomain>   
- <xref:System.AppDomain>   
+ <xref:System._AppDomain>  
+ <xref:System.AppDomain>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

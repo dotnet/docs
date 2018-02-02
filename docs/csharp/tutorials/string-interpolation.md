@@ -47,7 +47,11 @@ dotnet new console
 
 This command will create a barebones .NET core project with a project file, *interpolated.csproj*, and a source code file, *Program.cs*. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
 To execute the program, use `dotnet run`. You should see "Hello, World" output to the console.
+
+
 
 ## Intro to String Interpolation
 
@@ -77,7 +81,7 @@ This is line number 5
 
 ## How string interpolation works
 
-Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx).
+Behind the scenes, this string interpolation syntax is translated into String.Format by the compiler. So, you can do the [same type of stuff you've done before with String.Format](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx).
 
 For instance, you can add padding and numeric formatting:
 

@@ -53,7 +53,7 @@
   
  If the time-out interval expires and the lock request has not been granted, the method returns control to the calling thread by throwing an <xref:System.ApplicationException>. A thread can catch this exception and determine what action to take next.  
   
- Time-outs are expressed in milliseconds. If you use a <xref:System.TimeSpan?displayProperty=fullName> to specify the time-out, the value used is the total number of whole milliseconds represented by the <xref:System.TimeSpan>. The following table shows the valid time-out values in milliseconds.  
+ Time-outs are expressed in milliseconds. If you use a <xref:System.TimeSpan?displayProperty=nameWithType> to specify the time-out, the value used is the total number of whole milliseconds represented by the <xref:System.TimeSpan>. The following table shows the valid time-out values in milliseconds.  
   
 |Value|Description|  
 |-----------|-----------------|  
@@ -411,7 +411,7 @@
     </Member>
     <Member MemberName="DowngradeFromWriterLock">
       <MemberSignature Language="C#" Value="public void DowngradeFromWriterLock (ref System.Threading.LockCookie lockCookie);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DowngradeFromWriterLock(valuetype System.Threading.LockCookie lockCookie) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DowngradeFromWriterLock(valuetype System.Threading.LockCookie&amp; lockCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.DowngradeFromWriterLock(System.Threading.LockCookie@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -762,7 +762,7 @@
     </Member>
     <Member MemberName="RestoreLock">
       <MemberSignature Language="C#" Value="public void RestoreLock (ref System.Threading.LockCookie lockCookie);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RestoreLock(valuetype System.Threading.LockCookie lockCookie) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RestoreLock(valuetype System.Threading.LockCookie&amp; lockCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ReaderWriterLock.RestoreLock(System.Threading.LockCookie@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -994,5 +994,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpgradeToWriterLock">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Upgrades a reader lock to the writer lock.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcquireWriterLock">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the writer lock.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcquireReaderLock">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires a reader lock.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

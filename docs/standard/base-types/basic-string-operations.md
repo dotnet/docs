@@ -16,9 +16,12 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Basic String Operations in .NET
-Applications often respond to users by constructing messages based on user input. For example, it is not uncommon for Web sites to respond to a newly logged-on user with a specialized greeting that includes the user's name. Several methods in the <xref:System.String?displayProperty=fullName> and <xref:System.Text.StringBuilder?displayProperty=fullName> classes allow you to dynamically construct custom strings to display in your user interface. These methods also help you perform a number of basic string operations like creating new strings from arrays of bytes, comparing the values of strings, and modifying existing strings.  
+Applications often respond to users by constructing messages based on user input. For example, it is not uncommon for Web sites to respond to a newly logged-on user with a specialized greeting that includes the user's name. Several methods in the <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> classes allow you to dynamically construct custom strings to display in your user interface. These methods also help you perform a number of basic string operations like creating new strings from arrays of bytes, comparing the values of strings, and modifying existing strings.  
   
 ## In This Section  
  [Creating New Strings](../../../docs/standard/base-types/creating-new.md)  

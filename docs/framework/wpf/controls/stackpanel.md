@@ -20,6 +20,8 @@ caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # StackPanel
 The <xref:System.Windows.Controls.StackPanel> element is used to stack child elements horizontally or vertically.  

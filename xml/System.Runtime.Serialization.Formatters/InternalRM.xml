@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The trace message is printed during serialization, remoting, and when running [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ The trace message is printed during serialization, remoting, and when running [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/library/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
   
  ]]></format>
     </remarks>
@@ -50,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName="InfoSoap">
-      <MemberSignature Language="C#" Value="public static void InfoSoap (object[] messages);" />
+      <MemberSignature Language="C#" Value="public static void InfoSoap (params object[] messages);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InfoSoap(object[] messages) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.InternalRM.InfoSoap(System.Object[])" />
       <MemberType>Method</MemberType>

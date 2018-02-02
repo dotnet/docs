@@ -35,7 +35,7 @@
   
 -   <xref:System.Drawing.SizeF.op_Addition%2A>  
   
--   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=fullName>  
+-   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Drawing.SolidBrush>  
   
@@ -137,7 +137,7 @@
   
 -   <xref:System.Drawing.SizeF.op_Addition%2A>  
   
--   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=fullName>  
+-   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Drawing.SolidBrush>  
   
@@ -182,6 +182,7 @@
         <summary>Adds the width and height of one <see cref="T:System.Drawing.SizeF" /> structure to the width and height of another <see cref="T:System.Drawing.SizeF" /> structure.</summary>
         <returns>A <see cref="T:System.Drawing.SizeF" /> structure that is the result of the addition operation.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.SizeF.op_Addition(System.Drawing.SizeF,System.Drawing.SizeF)" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -390,7 +391,7 @@
   
 -   <xref:System.Drawing.SizeF.op_Addition%2A>  
   
--   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=fullName>  
+-   <xref:System.Drawing.PointF.op_Addition%2A?displayProperty=nameWithType>  
   
 -   <xref:System.Drawing.SolidBrush>  
   
@@ -462,9 +463,9 @@
         <Parameter Name="size" Type="System.Drawing.SizeF" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The <see cref="T:System.Drawing.SizeF" /> structure to be converted</param>
+        <summary>Converts the specified <see cref="T:System.Drawing.SizeF" /> structure to a <see cref="T:System.Drawing.PointF" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.PointF" /> structure to which this operator converts.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,6 +566,7 @@
         <summary>Subtracts the width and height of one <see cref="T:System.Drawing.SizeF" /> structure from the width and height of another <see cref="T:System.Drawing.SizeF" /> structure.</summary>
         <returns>A <see cref="T:System.Drawing.SizeF" /> structure that is a result of the subtraction operation.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Drawing.SizeF.op_Subtraction(System.Drawing.SizeF,System.Drawing.SizeF)" />
       </Docs>
     </Member>
     <Member MemberName="ToPointF">
@@ -692,5 +694,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.SizeF" /> structure from the specified existing <see cref="T:System.Drawing.SizeF" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

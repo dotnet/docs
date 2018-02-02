@@ -15,9 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TType">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TType">The attribute type.</typeparam>
+    <summary>Represents a custom atttribute of the type specified by <paramref name="TType" />.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,10 +36,11 @@
         <Parameter Name="namedArguments" Type="System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="fixedArguments">To be added.</param>
-        <param name="namedArguments">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fixedArguments">The fixed arguments.</param>
+        <param name="namedArguments">The named arguments.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeValue`1" /> structure using the specified fixed arguments and named arguments.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedArguments">
@@ -55,9 +57,10 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the fixed arguments for the custom attribute.</summary>
+        <value>An immutable array of arguments.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NamedArguments">
@@ -74,9 +77,10 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the named arguments for the custom attribute value.</summary>
+        <value>An immutable array of arguments.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

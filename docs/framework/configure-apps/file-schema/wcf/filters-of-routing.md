@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 
 # &lt;filters&gt; of &lt;routing&gt;
@@ -61,4 +63,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=fullName>
+<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=nameWithType>

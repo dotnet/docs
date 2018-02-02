@@ -60,6 +60,7 @@
         <summary>Returns a <see cref="T:System.Windows.FrameworkElement" /> that has been converted from an <see cref="T:System.AddIn.Contract.INativeHandleContract" />.</summary>
         <returns>A <see cref="T:System.Windows.FrameworkElement" /> that will be displayed from either the host application or add-in, depending on the direction in which the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is passed between the two.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter(System.Windows.FrameworkElement)" />
       </Docs>
     </Member>
     <Member MemberName="ViewToContractAdapter">
@@ -89,6 +90,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="root" /> is not the root element of a tree of elements.</exception>
+        <altmember cref="M:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter(System.AddIn.Contract.INativeHandleContract)" />
       </Docs>
     </Member>
   </Members>

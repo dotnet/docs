@@ -20,7 +20,7 @@
   
  If you create a class that inherits from <xref:System.Windows.UIElement3D>, you may want to provide an automation peer to support the functionality of your class. Override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetClassNameCore%2A> method to return a string that represents the type of the element associated with the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer>. For example, if you create a class called `My3DElement` and an automation peer called `My3DElementAutomationPeer`, override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetClassNameCore%2A> method to return the string "My3DElement".  
   
- If your class matches one of the known control types, override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationControlTypeCore%2A> method to return that <xref:System.Windows.Automation.ControlType>. Note that although the existing <xref:System.Windows.Automation.ControlType> values are generally associated with 2D controls, the <xref:System.Windows.Automation.ControlType> indicates a control's functionality, not its appearance.  So if your <xref:System.Windows.UIElement3D> invokes an action when the user clicks it, you probably want <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> to return <xref:System.Windows.Automation.ControlType.Button?displayProperty=fullName>.  
+ If your class matches one of the known control types, override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationControlTypeCore%2A> method to return that <xref:System.Windows.Automation.ControlType>. Note that although the existing <xref:System.Windows.Automation.ControlType> values are generally associated with 2D controls, the <xref:System.Windows.Automation.ControlType> indicates a control's functionality, not its appearance.  So if your <xref:System.Windows.UIElement3D> invokes an action when the user clicks it, you probably want <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> to return <xref:System.Windows.Automation.ControlType.Button?displayProperty=nameWithType>.  
   
  The behavior of your custom <xref:System.Windows.UIElement3D> determines what other methods you should override. Each method topic in the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> describes how the method is used and when it is appropriate to override it.  
   
@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAcceleratorKey%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAcceleratorKey%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AcceleratorKey%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAcceleratorKeyCore%2A> and add logic to provide the accelerator key in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAcceleratorKey%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAcceleratorKey%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AcceleratorKey%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAcceleratorKeyCore%2A> and add logic to provide the accelerator key in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -165,12 +165,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAccessKey%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAccessKey%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AccessKey%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAccessKeyCore%2A> and add logic to provide the access key in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAccessKey%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAccessKey%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AccessKey%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAccessKeyCore%2A> and add logic to provide the access key in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.AccessKeyManager" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -194,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If your class matches one of the known control types, override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationControlTypeCore%2A> method to return that <xref:System.Windows.Automation.ControlType>. Note that although the existing <xref:System.Windows.Automation.ControlType> values are generally associated with 2D controls, the <xref:System.Windows.Automation.ControlType> indicates a control's functionality, not its appearance.  So if your <xref:System.Windows.UIElement3D> invokes an action when the user clicks it, you probably want <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> to return <xref:System.Windows.Automation.ControlType.Button?displayProperty=fullName>.  
+ If your class matches one of the known control types, override the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationControlTypeCore%2A> method to return that <xref:System.Windows.Automation.ControlType>. Note that although the existing <xref:System.Windows.Automation.ControlType> values are generally associated with 2D controls, the <xref:System.Windows.Automation.ControlType> indicates a control's functionality, not its appearance.  So if your <xref:System.Windows.UIElement3D> invokes an action when the user clicks it, you probably want <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> to return <xref:System.Windows.Automation.ControlType.Button?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -222,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAutomationId%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAutomationId%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationIdCore%2A> and add logic to provide an identifier in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetAutomationId%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetAutomationId%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetAutomationIdCore%2A> and add logic to provide an identifier in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -250,7 +251,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the element is not both a <xref:System.Windows.Interop.HwndSource> and a <xref:System.Windows.PresentationSource>, this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=fullName>.  
+ If the element is not both a <xref:System.Windows.Interop.HwndSource> and a <xref:System.Windows.PresentationSource>, this method returns <xref:System.Windows.Rect.Empty%2A?displayProperty=nameWithType>.  
   
  Classes that inherit from <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> typically do not need to override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetBoundingRectangleCore%2A>.  
   
@@ -365,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> method returns a string that is the same text that the control provides in the tooltip. This method calls the <xref:System.Windows.Automation.AutomationProperties.GetHelpText%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetHelpText%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.HelpText%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> and add logic to provide the help text in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ Typically, the <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> method returns a string that is the same text that the control provides in the tooltip. This method calls the <xref:System.Windows.Automation.AutomationProperties.GetHelpText%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetHelpText%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.HelpText%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetHelpTextCore%2A> and add logic to provide the help text in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -395,7 +396,7 @@
 ## Remarks  
  Return a string that indicates whether the <xref:System.Windows.UIElement3D> is conveying status about an item. For example, an item associated with a contact in a messaging application might be "Busy" or "Connected".  
   
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetItemStatus%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetItemStatus%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.ItemStatus%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetItemStatusCore%2A> and add logic to provide the item status in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetItemStatus%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetItemStatus%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.ItemStatus%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetItemStatusCore%2A> and add logic to provide the item status in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -423,7 +424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetItemType%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetItemType%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.ItemType%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetItemTypeCore%2A> and add logic to provide the item type in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetItemType%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetItemType%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.ItemType%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetItemTypeCore%2A> and add logic to provide the item type in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -451,12 +452,31 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetLabeledBy%2A> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetLabeledBy%2A> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.LabeledBy%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetLabeledByCore%2A> and add logic to provide the <xref:System.Windows.Automation.Peers.AutomationPeer> in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetLabeledBy%2A> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetLabeledBy%2A> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.LabeledBy%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetLabeledByCore%2A> and add logic to provide the <xref:System.Windows.Automation.Peers.AutomationPeer> in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the notification characteristics of the live region of the <see cref="T:System.Windows.UIElement3D" /> object that is associated with this <see cref="T:System.Windows.Automation.Peers.UIElement3DAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLiveSetting" />.</summary>
+        <returns>The notification characteristics of the live region.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -481,7 +501,7 @@
 ## Remarks  
  You can think of the name property as what users use to explain the control they are referring to. Be sure to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
   
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetName%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetName%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.Name%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetNameCore%2A> and add logic to provide a name in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetName%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetName%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.Name%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.GetNameCore%2A> and add logic to provide a name in a way that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -775,7 +795,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm%2A?displayProperty=fullName> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm%2A?displayProperty=fullName> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.IsRequiredForForm%2A?displayProperty=fullName> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.IsRequiredForFormCore%2A> and add logic to provide a value that makes sense for your <xref:System.Windows.UIElement3D>.  
+ This method calls the <xref:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm%2A?displayProperty=nameWithType> method to get the value. <xref:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm%2A?displayProperty=nameWithType> returns a value only when the <xref:System.Windows.Automation.AutomationProperties.IsRequiredForForm%2A?displayProperty=nameWithType> property is set. You can override <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer.IsRequiredForFormCore%2A> and add logic to provide a value that makes sense for your <xref:System.Windows.UIElement3D>.  
   
  <xref:System.Windows.Automation.Peers.UIElement3DAutomationPeer> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

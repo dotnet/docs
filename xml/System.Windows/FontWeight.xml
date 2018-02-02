@@ -53,6 +53,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.FontStretch" />
+    <altmember cref="T:System.Windows.FontStyle" />
+    <altmember cref="T:System.Windows.FontWeights" />
+    <altmember cref="T:System.Windows.Media.FontFamily" />
   </Docs>
   <Members>
     <Member MemberName="Compare">
@@ -403,6 +407,7 @@
         <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>A <see cref="T:System.String" /> containing the value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FontWeight.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ToOpenTypeWeight">
@@ -450,5 +455,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a <see cref="T:System.Windows.FontWeight" /> object is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

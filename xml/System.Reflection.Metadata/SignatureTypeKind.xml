@@ -11,8 +11,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the type definition of the signature.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Class">
@@ -29,7 +30,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type definition or reference refers to a class.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -46,7 +47,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>It isn't known in the current context if the type reference or definition is a class or value type.</summary>
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -63,7 +64,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureTypeKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The type definition or reference refers to a value type.</summary>
       </Docs>
     </Member>
   </Members>

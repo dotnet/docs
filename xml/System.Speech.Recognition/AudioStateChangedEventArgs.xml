@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property gets a new instance of the <xref:System.Speech.Recognition.AudioState> enumeration when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> or a <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> event is raised.  
+ The <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property gets a new instance of the <xref:System.Speech.Recognition.AudioState> enumeration when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=nameWithType> or a <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=nameWithType> event is raised.  
   
  You can obtain the current state of the audio input using the `AudioState` property of the <xref:System.Speech.Recognition.SpeechRecognizer> or <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
   
@@ -52,6 +52,11 @@ void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.AudioState" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged" />
+    <altmember cref="E:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged" />
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioState" />
+    <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioState" />
   </Docs>
   <Members>
     <Member MemberName="AudioState">
@@ -77,6 +82,7 @@ void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioState" />
       </Docs>
     </Member>
   </Members>

@@ -1,17 +1,11 @@
 ---
-title: "How to: Chunk Serialized Data"
-ms.custom: ""
+title: "How to: chunk serialized data"
 ms.date: "03/30/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "chunking serialized data"
   - "data chunking"
@@ -22,11 +16,17 @@ helpviewer_keywords:
   - "binary serialization, examples"
 ms.assetid: 22f1b818-7e0d-428a-8680-f17d6ebdd185
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# How to: Chunk Serialized Data
+# How to: chunk serialized data
+
+[!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
+
 Two issues that occur when sending large data sets in Web service messages are:  
   
 1.  A large working set (memory) due to buffering by the serialization engine.  
@@ -43,23 +43,23 @@ Two issues that occur when sending large data sets in Web service messages are:
   
 ### To implement client-side processing  
   
-1.  Alter the Web method on the client proxy to return the type that implements <xref:System.Xml.Serialization.IXmlSerializable>. You can use a <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> to do this automatically, but this is not shown here.  
+1.  Alter the Web method on the client proxy to return the type that implements <xref:System.Xml.Serialization.IXmlSerializable>. You can use a <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension> to do this automatically, but this isn't shown here.  
   
 2.  Implement the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> method to read the chunked data stream and write the bytes to disk. This implementation also raises progress events that can be used by a graphic control, such as a progress bar.  
   
 ## Example  
- The following code example shows the Web method on the client that turns off ASP.NET buffering. It also shows the client-side implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface that chunks the data in the <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> method.  
+The following code example shows the Web method on the client that turns off ASP.NET buffering. It also shows the client-side implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface that chunks the data in the <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> method.  
   
- [!code-csharp[HowToChunkSerializedData#1](../../../samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS/SerializationChunk.cs#1)]
- [!code-vb[HowToChunkSerializedData#1](../../../samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB/SerializationChunk.vb#1)]  
+[!code-csharp[HowToChunkSerializedData#1](../../../samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS/SerializationChunk.cs#1)]
+[!code-vb[HowToChunkSerializedData#1](../../../samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB/SerializationChunk.vb#1)]  
 [!code-csharp[HowToChunkSerializedData#2](../../../samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS/SerializationChunk.cs#2)]
 [!code-vb[HowToChunkSerializedData#2](../../../samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB/SerializationChunk.vb#2)]  
 [!code-csharp[HowToChunkSerializedData#3](../../../samples/snippets/csharp/VS_Snippets_Remoting/HowToChunkSerializedData/CS/SerializationChunk.cs#3)]
 [!code-vb[HowToChunkSerializedData#3](../../../samples/snippets/visualbasic/VS_Snippets_Remoting/HowToChunkSerializedData/VB/SerializationChunk.vb#3)]  
   
-## Compiling the Code  
+## Compiling the code  
   
 -   The code uses the following namespaces: <xref:System>, <xref:System.Runtime.Serialization>, <xref:System.Web.Services>, <xref:System.Web.Services.Protocols>, <xref:System.Xml>, <xref:System.Xml.Serialization>, and <xref:System.Xml.Schema>.  
   
-## See Also  
- [Custom Serialization](../../../docs/standard/serialization/custom-serialization.md)
+## See also  
+ [Custom Serialization](custom-serialization.md)

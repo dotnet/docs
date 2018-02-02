@@ -34,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataObject" />
+    <altmember cref="T:System.Windows.Forms.DataFormats" />
   </Docs>
   <Members>
     <Member MemberName="GetData">
@@ -66,7 +68,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -79,6 +81,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -111,7 +120,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -124,6 +133,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -161,7 +177,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -174,6 +190,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -205,7 +228,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -218,6 +241,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -249,7 +275,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -262,6 +288,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetDataPresent">
@@ -308,7 +337,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetDataPresent%2A?displayProperty=nameWithType>.  
   
    
   
@@ -321,6 +350,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -348,7 +381,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=nameWithType>.  
   
    
   
@@ -361,6 +394,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormats">
@@ -392,7 +427,7 @@
 > [!NOTE]
 >  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.GetFormats%2A?displayProperty=nameWithType>.  
   
    
   
@@ -405,6 +440,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -433,7 +470,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -446,6 +483,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -476,7 +516,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -489,6 +529,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -519,7 +562,7 @@
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -532,6 +575,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
+        <altmember cref="T:System.Windows.Forms.DataFormats" />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -563,7 +610,7 @@
 ## Remarks  
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
- For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=fullName>.  
+ For an implementation of this method, see <xref:System.Windows.Forms.DataObject.SetData%2A?displayProperty=nameWithType>.  
   
    
   
@@ -576,7 +623,46 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+        <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the data associated with the specified data format.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores the specified data and its associated format in this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFormats">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of all formats that data stored in this instance is associated with or can be converted to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDataPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether data stored in this instance is associated with the specified format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

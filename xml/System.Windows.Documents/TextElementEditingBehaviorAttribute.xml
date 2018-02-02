@@ -29,7 +29,7 @@
   
 -   The user cannot insert a line break in the custom element.  
   
- When you create a custom element, use the <xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method and set `preserveTextElements` to `true` to preserve the custom element and property values when you serialize it to the disk or clipboard.  
+ When you create a custom element, use the <xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29?displayProperty=nameWithType> method and set `preserveTextElements` to `true` to preserve the custom element and property values when you serialize it to the disk or clipboard.  
   
  <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

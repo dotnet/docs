@@ -64,7 +64,7 @@
   
 -   [Floating-point functionality](#Functionality)  
   
- <xref:System.Single?displayProperty=fullName> provides methods to compare instances of this type, to convert the value of an instance to its string representation, and to convert the string representation of a number to an instance of this type. For information about how format specification codes control the string representation of value types, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+ <xref:System.Single?displayProperty=nameWithType> provides methods to compare instances of this type, to convert the value of an instance to its string representation, and to convert the string representation of a number to an instance of this type. For information about how format specification codes control the string representation of value types, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
 <a name="Precision"></a>   
 ## Floating-point representation and precision  
@@ -76,14 +76,14 @@
 |Exponent|23-30|  
 |Sign (0 = positive, 1 = negative)|31|  
   
- Just as decimal fractions are unable to precisely represent some fractional values (such as 1/3 or <xref:System.Math.PI?displayProperty=fullName>), binary fractions are unable to represent some fractional values. For example, 2/10, which is represented precisely by .2 as a decimal fraction, is represented by .0011111001001100 as a binary fraction, with the pattern "1100" repeating to infinity. In this case, the floating-point value provides an imprecise representation of the number that it represents. Performing additional mathematical operations on the original floating-point value often increases its lack of precision. For example, if you compare the results of multiplying .3 by 10 and adding .3 to .3 nine times, you will see that addition produces the less precise result, because it involves eight more operations than multiplication. Note that this disparity is apparent only if you display the two <xref:System.Single> values by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md), which, if necessary, displays all 9 digits of precision supported by the <xref:System.Single> type.  
+ Just as decimal fractions are unable to precisely represent some fractional values (such as 1/3 or <xref:System.Math.PI?displayProperty=nameWithType>), binary fractions are unable to represent some fractional values. For example, 2/10, which is represented precisely by .2 as a decimal fraction, is represented by .0011111001001100 as a binary fraction, with the pattern "1100" repeating to infinity. In this case, the floating-point value provides an imprecise representation of the number that it represents. Performing additional mathematical operations on the original floating-point value often increases its lack of precision. For example, if you compare the results of multiplying .3 by 10 and adding .3 to .3 nine times, you will see that addition produces the less precise result, because it involves eight more operations than multiplication. Note that this disparity is apparent only if you display the two <xref:System.Single> values by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md), which, if necessary, displays all 9 digits of precision supported by the <xref:System.Single> type.  
   
  [!code-csharp[System.Single.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/representation1.cs#3)]
  [!code-vb[System.Single.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/representation1.vb#3)]  
   
  Because some numbers cannot be represented exactly as fractional binary values, floating-point numbers can only approximate real numbers.  
   
- All floating-point numbers have a limited number of significant digits, which also determines how accurately a floating-point value approximates a real number. A <xref:System.Single> value has up to 7 decimal digits of precision, although a maximum of 9 digits is maintained internally. This means that some floating-point operations may lack the precision to change a floating-point value. The following example defines a large single-precision floating-point value, and then adds the product of <xref:System.Single.Epsilon?displayProperty=fullName> and one quadrillion to it. However, the product is too small to modify the original floating-point value. Its least significant digit is thousandths, whereas the most significant digit in the product is 1<sup>-312</sup>.  
+ All floating-point numbers have a limited number of significant digits, which also determines how accurately a floating-point value approximates a real number. A <xref:System.Single> value has up to 7 decimal digits of precision, although a maximum of 9 digits is maintained internally. This means that some floating-point operations may lack the precision to change a floating-point value. The following example defines a large single-precision floating-point value, and then adds the product of <xref:System.Single.Epsilon?displayProperty=nameWithType> and one quadrillion to it. However, the product is too small to modify the original floating-point value. Its least significant digit is thousandths, whereas the most significant digit in the product is 1<sup>-312</sup>.  
   
  [!code-csharp[System.Single.Structure#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/representation2.cs#4)]
  [!code-vb[System.Single.Structure#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/representation2.vb#4)]  
@@ -95,7 +95,7 @@
      [!code-csharp[System.Single.Structure#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/precisionlist3.cs#6)]
      [!code-vb[System.Single.Structure#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/precisionlist3.vb#6)]  
   
-     If you change the format items in the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%2CSystem.Object%29?displayProperty=fullName> statement from `{0}` and `{1}` to `{0:R}` and `{1:R}` to display all significant digits of the two <xref:System.Single> values, it is clear that the two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29?displayProperty=fullName> method to round the <xref:System.Single> values to the desired precision before performing the comparison.  
+     If you change the format items in the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%2CSystem.Object%29?displayProperty=nameWithType> statement from `{0}` and `{1}` to `{0:R}` and `{1:R}` to display all significant digits of the two <xref:System.Single> values, it is clear that the two values are unequal because of a loss of precision during the addition operations. In this case, the issue can be resolved by calling the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29?displayProperty=nameWithType> method to round the <xref:System.Single> values to the desired precision before performing the comparison.  
   
 -   A mathematical or comparison operation that uses a floating-point number might not yield the same result if a decimal number is used, because the binary floating-point number might not equal the decimal number. A previous example illustrated this by displaying the result of multiplying .3 by 10 and adding .3 to .3 nine times.  
   
@@ -106,7 +106,7 @@
      [!code-csharp[System.Single.Structure#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/precisionlist4a.cs#17)]
      [!code-vb[System.Single.Structure#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList4a.vb#17)]  
   
-     In this case, the values can be successfully round-tripped by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
+     In this case, the values can be successfully round-tripped by using the "G9" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
   
      [!code-csharp[System.Single.Structure#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/PrecisionList5a.cs#18)]
      [!code-vb[System.Single.Structure#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList5a.vb#18)]  
@@ -125,24 +125,24 @@
  [!code-csharp[System.Single.Structure#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison1.cs#9)]
  [!code-vb[System.Single.Structure#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison1.vb#9)]  
   
- Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "R" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.  
+ Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "G9" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.  
   
  [!code-csharp[System.Single.Structure#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison2.cs#10)]
  [!code-vb[System.Single.Structure#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison2.vb#10)]  
   
  In cases where a loss of precision is likely to affect the result of a comparison, you can use the following techniques instead of calling the <xref:System.Single.Equals%2A> or <xref:System.Single.CompareTo%2A> method:  
   
--   Call the <xref:System.Math.Round%2A?displayProperty=fullName> method to ensure that both values have the same precision. The following example modifies a previous example to use this approach so that two fractional values are equivalent.  
+-   Call the <xref:System.Math.Round%2A?displayProperty=nameWithType> method to ensure that both values have the same precision. The following example modifies a previous example to use this approach so that two fractional values are equivalent.  
   
      [!code-csharp[System.Single.Structure#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/comparison3.cs#11)]
      [!code-vb[System.Single.Structure#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/comparison3.vb#11)]  
   
-     Note that the problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=fullName> method.  
+     Note that the problem of precision still applies to rounding of midpoint values. For more information, see the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29?displayProperty=nameWithType> method.  
   
 -   Test for approximate equality instead of equality. This technique requires that you define either an absolute amount by which the two values can differ but still be equal, or that you define a relative amount by which the smaller value can diverge from the larger value.  
   
     > [!WARNING]
-    >  <xref:System.Single.Epsilon?displayProperty=fullName> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality.  However, <xref:System.Single.Epsilon?displayProperty=fullName> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=fullName> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.  
+    >  <xref:System.Single.Epsilon?displayProperty=nameWithType> is sometimes used as an absolute measure of the distance between two <xref:System.Single> values when testing for equality.  However, <xref:System.Single.Epsilon?displayProperty=nameWithType> measures the smallest possible value that can be added to, or subtracted from, a <xref:System.Single> whose value is zero. For most positive and negative <xref:System.Single> values, the value of <xref:System.Single.Epsilon?displayProperty=nameWithType> is too small to be detected. Therefore, except for values that are zero, we do not recommend its use in tests for equality.  
   
      The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.  
   
@@ -158,7 +158,7 @@
      [!code-csharp[System.Single.Structure#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/exceptional1.cs#1)]
      [!code-vb[System.Single.Structure#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/exceptional1.vb#1)]  
   
--   If the magnitude of the result of a floating-point operation exceeds the range of the destination format, the result of the operation is <xref:System.Single.PositiveInfinity> or <xref:System.Single.NegativeInfinity>, as appropriate for the sign of the result. The result of an operation that overflows <xref:System.Single.MaxValue?displayProperty=fullName> is <xref:System.Single.PositiveInfinity>, and the result of an operation that overflows <xref:System.Single.MinValue?displayProperty=fullName> is <xref:System.Single.NegativeInfinity>, as the following example shows.  
+-   If the magnitude of the result of a floating-point operation exceeds the range of the destination format, the result of the operation is <xref:System.Single.PositiveInfinity> or <xref:System.Single.NegativeInfinity>, as appropriate for the sign of the result. The result of an operation that overflows <xref:System.Single.MaxValue?displayProperty=nameWithType> is <xref:System.Single.PositiveInfinity>, and the result of an operation that overflows <xref:System.Single.MinValue?displayProperty=nameWithType> is <xref:System.Single.NegativeInfinity>, as the following example shows.  
   
      [!code-csharp[System.Single.Structure#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/exceptional2.cs#2)]
      [!code-vb[System.Single.Structure#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/exceptional2.vb#2)]  
@@ -171,7 +171,7 @@
   
     -   Any floating-point operation with invalid input. For example, attempting to find the square root of a negative value returns <xref:System.Single.NaN>.  
   
-    -   Any operation with an argument whose value is <xref:System.Single.NaN?displayProperty=fullName>.  
+    -   Any operation with an argument whose value is <xref:System.Single.NaN?displayProperty=nameWithType>.  
   
 <a name="Conversion"></a>   
 ## Type conversions and the Single structure  
@@ -183,7 +183,7 @@
 |---------------------|-------------------------|--------------------------------|  
 |<xref:System.Byte>|Widening|No|  
 |<xref:System.Decimal>|Widening<br /><br /> Note that C# requires a cast operator.|Yes. <xref:System.Decimal> supports 29 decimal digits of precision; <xref:System.Single> supports 9.|  
-|<xref:System.Double>|Narrowing; out-of-range values are converted to <xref:System.Double.NegativeInfinity?displayProperty=fullName> or <xref:System.Double.PositiveInfinity?displayProperty=fullName>.|Yes. <xref:System.Double> supports 17 decimal digits of precision; <xref:System.Single> supports 9.|  
+|<xref:System.Double>|Narrowing; out-of-range values are converted to <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> or <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.|Yes. <xref:System.Double> supports 17 decimal digits of precision; <xref:System.Single> supports 9.|  
 |<xref:System.Int16>|Widening|No|  
 |<xref:System.Int32>|Widening|Yes. <xref:System.Int32> supports 10 decimal digits of precision; <xref:System.Single> supports 9.|  
 |<xref:System.Int64>|Widening|Yes. <xref:System.Int64> supports 19 decimal digits of precision; <xref:System.Single> supports 9.|  
@@ -197,7 +197,7 @@
  [!code-csharp[System.Single.Structure#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/convert1.cs#20)]
  [!code-vb[System.Single.Structure#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/convert1.vb#20)]  
   
- In addition, the <xref:System.Double> values <xref:System.Double.NaN?displayProperty=fullName>, <xref:System.Double.PositiveInfinity?displayProperty=fullName>, and <xref:System.Double.NegativeInfinity?displayProperty=fullName> covert to <xref:System.Single.NaN?displayProperty=fullName>, <xref:System.Single.PositiveInfinity?displayProperty=fullName>, and <xref:System.Single.NegativeInfinity?displayProperty=fullName>, respectively.  
+ In addition, the <xref:System.Double> values <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> covert to <xref:System.Single.NaN?displayProperty=nameWithType>, <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, respectively.  
   
  Note that the conversion of the value of some numeric types to a <xref:System.Single> value can involve a loss of precision. As the example illustrates, a loss of precision is possible when converting <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt32>, and <xref:System.UInt64> values to <xref:System.Single> values.  
   
@@ -210,9 +210,9 @@
 |Any integral type|An <xref:System.OverflowException> exception if the conversion occurs in a checked context.<br /><br /> If the conversion occurs in an unchecked context (the default in C#), the conversion operation succeeds but the value overflows.|  
 |<xref:System.Decimal>|An <xref:System.OverflowException> exception,|  
   
- In addition, <xref:System.Single.NaN?displayProperty=fullName>, <xref:System.Single.PositiveInfinity?displayProperty=fullName>, and <xref:System.Single.NegativeInfinity?displayProperty=fullName> throw an <xref:System.OverflowException> for conversions to integers in a checked context, but these values overflow when converted to integers in an unchecked context. For conversions to <xref:System.Decimal>, they always throw an <xref:System.OverflowException>. For conversions to <xref:System.Double>, they convert to <xref:System.Double.NaN?displayProperty=fullName>, <xref:System.Double.PositiveInfinity?displayProperty=fullName>, and <xref:System.Double.NegativeInfinity?displayProperty=fullName>, respectively.  
+ In addition, <xref:System.Single.NaN?displayProperty=nameWithType>, <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> throw an <xref:System.OverflowException> for conversions to integers in a checked context, but these values overflow when converted to integers in an unchecked context. For conversions to <xref:System.Decimal>, they always throw an <xref:System.OverflowException>. For conversions to <xref:System.Double>, they convert to <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, and <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
   
- Note that a loss of precision may result from converting a <xref:System.Single> value to another numeric type. In the case of converting non-integral <xref:System.Double> values, as the output from the example shows, the fractional component is lost when the <xref:System.Single> value is either rounded (as in Visual Basic) or truncated (as in C#). For conversions to <xref:System.Decimal> and <xref:System.Single> values, the <xref:System.Double> value may not have a precise representation in the target data type.  
+ Note that a loss of precision may result from converting a <xref:System.Single> value to another numeric type. In the case of converting non-integral <xref:System.Single> values, as the output from the example shows, the fractional component is lost when the <xref:System.Single> value is either rounded (as in Visual Basic) or truncated (as in C#). For conversions to <xref:System.Decimal> and <xref:System.Double> values, the <xref:System.Single> value may not have a precise representation in the target data type.  
   
  The following example converts a number of <xref:System.Single> values to several other numeric types. The conversions occur in a checked context in Visual Basic (the default) and in C# (because of the [checked](~/docs/csharp/language-reference/keywords/checked.md) keyword). The output from the example shows the result for conversions in both a checked an unchecked context. You can perform conversions in an unchecked context in Visual Basic by compiling with the `/removeintchecks+` compiler switch and in C# by commenting out the `checked` statement.  
   
@@ -236,11 +236,11 @@
   
 -   **Mathematical operations**. Common arithmetic operations such as addition, subtraction, multiplication, and division are implemented by language compilers and Common Intermediate Language (CIL) instructions rather than by <xref:System.Single> methods. If the other operand in a mathematical operation is a <xref:System.Double>, the <xref:System.Single> is converted to a <xref:System.Double> before performing the operation, and the result of the operation is also a <xref:System.Double> value. If the other operand is an integral type, it is converted to a <xref:System.Single> before performing the operation, and the result of the operation is also a <xref:System.Single> value.  
   
-     You can perform other mathematical operations by calling `static` (`Shared` in Visual Basic) methods in the <xref:System.Math?displayProperty=fullName> class. These include additional methods commonly used for arithmetic (such as <xref:System.Math.Abs%2A?displayProperty=fullName>, <xref:System.Math.Sign%2A?displayProperty=fullName>, and <xref:System.Math.Sqrt%2A?displayProperty=fullName>), geometry (such as <xref:System.Math.Cos%2A?displayProperty=fullName> and <xref:System.Math.Sin%2A?displayProperty=fullName>), and calculus (such as <xref:System.Math.Log%2A?displayProperty=fullName>).  In all cases, the <xref:System.Single> value is converted to a <xref:System.Double>.  
+     You can perform other mathematical operations by calling `static` (`Shared` in Visual Basic) methods in the <xref:System.Math?displayProperty=nameWithType> class. These include additional methods commonly used for arithmetic (such as <xref:System.Math.Abs%2A?displayProperty=nameWithType>, <xref:System.Math.Sign%2A?displayProperty=nameWithType>, and <xref:System.Math.Sqrt%2A?displayProperty=nameWithType>), geometry (such as <xref:System.Math.Cos%2A?displayProperty=nameWithType> and <xref:System.Math.Sin%2A?displayProperty=nameWithType>), and calculus (such as <xref:System.Math.Log%2A?displayProperty=nameWithType>).  In all cases, the <xref:System.Single> value is converted to a <xref:System.Double>.  
   
-     You can also manipulate the individual bits in a <xref:System.Single> value. The <xref:System.BitConverter.GetBytes%28System.Single%29?displayProperty=fullName> method returns its bit pattern in a byte array.  By passing that byte array to the <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> method, you can also preserve the <xref:System.Single> value's bit pattern in a 32-bit integer.  
+     You can also manipulate the individual bits in a <xref:System.Single> value. The <xref:System.BitConverter.GetBytes%28System.Single%29?displayProperty=nameWithType> method returns its bit pattern in a byte array.  By passing that byte array to the <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> method, you can also preserve the <xref:System.Single> value's bit pattern in a 32-bit integer.  
   
--   **Rounding**. Rounding is often used as a technique for reducing the impact of differences between values caused by problems of floating-point representation and precision. You can round a <xref:System.Single> value by calling the <xref:System.Math.Round%2A?displayProperty=fullName> method. However, note  that the <xref:System.Single> value is converted to a <xref:System.Double> before the method is called, and the conversion can involve a loss of precision.  
+-   **Rounding**. Rounding is often used as a technique for reducing the impact of differences between values caused by problems of floating-point representation and precision. You can round a <xref:System.Single> value by calling the <xref:System.Math.Round%2A?displayProperty=nameWithType> method. However, note  that the <xref:System.Single> value is converted to a <xref:System.Double> before the method is called, and the conversion can involve a loss of precision.  
   
 -   **Formatting**. You can convert a <xref:System.Single> value to its string representation by calling the <xref:System.Single.ToString%2A> method or by using the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature. For information about how format strings control the string representation of floating-point values, see the [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md) topics.  
   
@@ -265,6 +265,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.Decimal" />
+    <altmember cref="T:System.Double" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -358,6 +360,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Single" />.</exception>
+        <altmember cref="M:System.Single.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -431,14 +434,14 @@
  [!code-csharp[System.Single.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto2.cs#1)]
  [!code-vb[System.Single.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.compareto/vb/compareto2.vb#1)]  
   
- This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Single.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to an object.  
+ This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Single.CompareTo%2A?displayProperty=nameWithType> method because it does not have to convert the `value` parameter to an object.  
   
  Note that, although an object whose value is <xref:System.Single.NaN> is not considered equal to another object whose value is <xref:System.Single.NaN> (even itself), the <xref:System.IComparable%601> interface requires that `A.CompareTo(A)` return zero.  
   
 ## Widening Conversions  
  Depending on your programming language, it might be possible to code a <xref:System.Single.CompareTo%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
   
- For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, then generates a <xref:System.Single.CompareTo%28System.Single%29?displayProperty=fullName> method that compares the values of the instance and the widened representation of the parameter.  
+ For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, then generates a <xref:System.Single.CompareTo%28System.Single%29?displayProperty=nameWithType> method that compares the values of the instance and the widened representation of the parameter.  
   
  Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
@@ -456,6 +459,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Epsilon">
@@ -495,7 +499,7 @@
  [!code-csharp[System.Single.Epsilon#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.Epsilon/cs/epsilon.cs#5)]
  [!code-vb[System.Single.Epsilon#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.Epsilon/vb/epsilon.vb#5)]  
   
- More precisely, the single-precision floating-point format consists of a sign, a 23-bit mantissa or significand, and an 8-bit exponent. As the following example shows, zero has an exponent of -126 and a mantissa of 0. <xref:System.Single.Epsilon> has an exponent of -126 and a mantissa of 1. This means that <xref:System.Single.Epsilon?displayProperty=fullName> is the smallest positive <xref:System.Single> value that is greater than zero and represents the smallest possible value and the smallest possible increment for a <xref:System.Single> whose exponent is -126.  
+ More precisely, the single-precision floating-point format consists of a sign, a 23-bit mantissa or significand, and an 8-bit exponent. As the following example shows, zero has an exponent of -126 and a mantissa of 0. <xref:System.Single.Epsilon> has an exponent of -126 and a mantissa of 1. This means that <xref:System.Single.Epsilon?displayProperty=nameWithType> is the smallest positive <xref:System.Single> value that is greater than zero and represents the smallest possible value and the smallest possible increment for a <xref:System.Single> whose exponent is -126.  
   
  [!code-csharp[System.Single.Epsilon#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.Epsilon/cs/epsilon1.cs#6)]
  [!code-vb[System.Single.Epsilon#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.Epsilon/vb/epsilon1.vb#6)]  
@@ -553,7 +557,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Single.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Single> value .3333 and the <xref:System.Single> returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Single.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Single> value .3333 and the <xref:System.Single> returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Single.Epsilon#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.Epsilon/cs/SingleEquals_25051.cs#3)]
  [!code-vb[System.Single.Epsilon#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.Epsilon/vb/SingleEquals_25051.vb#3)]  
@@ -587,6 +591,7 @@
  [!code-csharp[System.Single.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Single.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Single.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -626,17 +631,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.IEquatable%601?displayProperty=fullName> interface, and performs slightly better than <xref:System.Single.Equals%2A> because it does not have to convert the `obj` parameter to an object.  
+ This method implements the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, and performs slightly better than <xref:System.Single.Equals%2A> because it does not have to convert the `obj` parameter to an object.  
   
 ## Widening Conversions  
  Depending on your programming language, it might be possible to code an <xref:System.Single.Equals%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
   
- For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, and then generates a <xref:System.Single.Equals%28System.Single%29?displayProperty=fullName> method that compares the values of the instance and the widened representation of the parameter.  
+ For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, and then generates a <xref:System.Single.Equals%28System.Single%29?displayProperty=nameWithType> method that compares the values of the instance and the widened representation of the parameter.  
   
  Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
 ## Precision in Comparisons  
- The<xref:System.Single.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal because of the differing precision of the two values. The following example reports that the <xref:System.Single> value .3333 and the <xref:System.Single> returned by dividing 1 by 3 are unequal.  
+ The <xref:System.Single.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal because of the differing precision of the two values. The following example reports that the <xref:System.Single> value .3333 and the <xref:System.Single> returned by dividing 1 by 3 are unequal.  
   
  [!code-csharp[System.Single.Epsilon#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.Epsilon/cs/SingleEquals_25051.cs#1)]
  [!code-vb[System.Single.Epsilon#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.Epsilon/vb/SingleEquals_25051.vb#1)]  
@@ -651,7 +656,7 @@
 > [!NOTE]
 >  Because <xref:System.Single.Epsilon> defines the minimum expression of a positive value whose range is near zero, the margin of difference must be greater than <xref:System.Single.Epsilon>. Typically, it is many times greater than <xref:System.Single.Epsilon>. Because of this, we recommend that you do not use <xref:System.Double.Epsilon> when comparing <xref:System.Double> values for equality.  
   
- A second technique that avoids the problems associated with comparing for equality involves comparing the difference between two floating-point numbers with some absolute value. If the difference is less than or equal to that absolute value, the numbers are equal. If it is greater, the numbers are not equal. One way to do this is to arbitrarily select an absolute value. However, this is problematic, because an acceptable margin of difference depends on the magnitude of the <xref:System.Single> values. A second way takes advantage of a design feature of the floating-point format: The difference between the mantissa components in the integer representations of two floating-point values indicates the number of possible floating-point values that separates the two values. For example, the difference between 0.0 and <xref:System.Single.Epsilon> is 1, because <xref:System.Single.Epsilon> is the smallest representable value when working with a <xref:System.Single> whose value is zero. The following example uses this technique to compare .33333 and 1/3, which are the two <xref:System.Double> values that the previous code example with the <xref:System.Single.Equals%28System.Single%29> method found to be unequal. Note that the example uses the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> and <xref:System.BitConverter.ToInt32%2A?displayProperty=fullName> methods to convert a single-precision floating-point value to its integer representation.  
+ A second technique that avoids the problems associated with comparing for equality involves comparing the difference between two floating-point numbers with some absolute value. If the difference is less than or equal to that absolute value, the numbers are equal. If it is greater, the numbers are not equal. One way to do this is to arbitrarily select an absolute value. However, this is problematic, because an acceptable margin of difference depends on the magnitude of the <xref:System.Single> values. A second way takes advantage of a design feature of the floating-point format: The difference between the mantissa components in the integer representations of two floating-point values indicates the number of possible floating-point values that separates the two values. For example, the difference between 0.0 and <xref:System.Single.Epsilon> is 1, because <xref:System.Single.Epsilon> is the smallest representable value when working with a <xref:System.Single> whose value is zero. The following example uses this technique to compare .33333 and 1/3, which are the two <xref:System.Double> values that the previous code example with the <xref:System.Single.Equals%28System.Single%29> method found to be unequal. Note that the example uses the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> and <xref:System.BitConverter.ToInt32%2A?displayProperty=nameWithType> methods to convert a single-precision floating-point value to its integer representation.  
   
  [!code-csharp[System.Single.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.equals/cs/equalsabs1.cs#1)]
  [!code-vb[System.Single.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.equals/vb/equalsabs1.vb#1)]  
@@ -666,6 +671,8 @@
  [!code-csharp[System.Single.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.equals/cs/equalsoverl.cs#2)]
  [!code-vb[System.Single.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.equals/vb/equalsoverl.vb#2)]</para>
         </block>
+        <altmember cref="M:System.Single.Equals(System.Object)" />
+        <altmember cref="Overload:System.Single.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -731,6 +738,7 @@
         <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Single" />.</summary>
         <returns>The enumerated constant, <see cref="F:System.TypeCode.Single" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.TypeCode" />
       </Docs>
     </Member>
     <Member MemberName="IsInfinity">
@@ -788,6 +796,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsPositiveInfinity(System.Single)" />
+        <altmember cref="M:System.Single.IsNegativeInfinity(System.Single)" />
+        <altmember cref="F:System.Single.PositiveInfinity" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="IsNaN">
@@ -851,6 +863,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Single.NaN" />
       </Docs>
     </Member>
     <Member MemberName="IsNegativeInfinity">
@@ -908,6 +921,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsInfinity(System.Single)" />
+        <altmember cref="M:System.Single.IsPositiveInfinity(System.Single)" />
+        <altmember cref="F:System.Single.PositiveInfinity" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="IsPositiveInfinity">
@@ -965,6 +982,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsInfinity(System.Single)" />
+        <altmember cref="M:System.Single.IsNegativeInfinity(System.Single)" />
+        <altmember cref="F:System.Single.PositiveInfinity" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -1001,7 +1022,7 @@
 ## Remarks  
  The value of this constant is positive 3.40282347E+38.  
   
- The result of an operation that exceeds <xref:System.Single.MaxValue?displayProperty=fullName> is <xref:System.Single?displayProperty=fullName>. In the following example, <xref:System.Single?displayProperty=fullName> results from addition, multiplication, and exponentiation operations when the result exceeds <xref:System.Single.MaxValue?displayProperty=fullName>.  
+ The result of an operation that exceeds <xref:System.Single.MaxValue?displayProperty=nameWithType> is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>. In the following example, <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> results from addition, multiplication, and exponentiation operations when the result exceeds <xref:System.Single.MaxValue?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Single.MaxValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.maxvalue/cs/maxvalueex.cs#1)]
  [!code-vb[System.Single.MaxValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.maxvalue/vb/maxvalueex.vb#1)]  
@@ -1017,6 +1038,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Single.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -1053,7 +1075,7 @@
 ## Remarks  
  The value of this constant is negative 3.402823e38.  
   
- The result of an operation that is less than <xref:System.Single.MinValue?displayProperty=fullName> is <xref:System.Single?displayProperty=fullName>. In the following example, <xref:System.Single?displayProperty=fullName> results from subtraction and multiplication operations when the result is less than <xref:System.Single.MinValue?displayProperty=fullName>.  
+ The result of an operation that is less than <xref:System.Single.MinValue?displayProperty=nameWithType> is <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>. In the following example, <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> results from subtraction and multiplication operations when the result is less than <xref:System.Single.MinValue?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Single.MinValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.minvalue/cs/minvalueex.cs#1)]
  [!code-vb[System.Single.MinValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.minvalue/vb/minvalueex.vb#1)]  
@@ -1069,6 +1091,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Single.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="NaN">
@@ -1113,7 +1136,7 @@
  [!code-csharp[System.Single.NaN#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.nan/cs/nan1.cs#2)]
  [!code-vb[System.Single.NaN#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.nan/vb/nan1.vb#2)]  
   
- Use the <xref:System.Single.IsNaN%2A> method to determine whether a value is not a number. In general, <xref:System.Single> operators cannot be used to compare <xref:System.Single.NaN?displayProperty=fullName> with other <xref:System.Single> values, although comparison methods (such as <xref:System.Single.Equals%2A> and <xref:System.Single.CompareTo%2A>) can. The following example illustrates the difference in behavior between <xref:System.Single> comparison operators and methods.  
+ Use the <xref:System.Single.IsNaN%2A> method to determine whether a value is not a number. In general, <xref:System.Single> operators cannot be used to compare <xref:System.Single.NaN?displayProperty=nameWithType> with other <xref:System.Single> values, although comparison methods (such as <xref:System.Single.Equals%2A> and <xref:System.Single.CompareTo%2A>) can. The following example illustrates the difference in behavior between <xref:System.Single> comparison operators and methods.  
   
  [!code-csharp[System.Single.NaN#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.nan/cs/single.nan4.cs#4)]
  [!code-vb[System.Single.NaN#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.nan/vb/single.nan4.vb#4)]  
@@ -1129,6 +1152,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsNaN(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="NegativeInfinity">
@@ -1180,6 +1204,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsNegativeInfinity(System.Single)" />
+        <altmember cref="M:System.Single.IsInfinity(System.Single)" />
+        <altmember cref="F:System.Single.PositiveInfinity" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1497,7 +1524,7 @@
 |Element|Description|  
 |-------------|-----------------|  
 |*ws*|A series of white space characters.|  
-|*sign*|A negative sign symbol or a positive sign symbol. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> properties of the current culture. Only a leading sign can be used.|  
+|*sign*|A negative sign symbol or a positive sign symbol. Valid sign characters are determined by the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=nameWithType> properties of the current culture. Only a leading sign can be used.|  
 |*integral-digits*|A series of digits ranging from 0 to 9 that specify the integral part of the number. Runs of *integral-digits* can be partitioned by a group-separator symbol. For example, in some cultures a comma (,) separates groups of thousands. The *integral-digits* element can be absent if the string contains the *fractional-digits* element.|  
 |*,*|A culture-specific thousands separator symbol.|  
 |*.*|A culture-specific decimal point symbol.|  
@@ -1505,7 +1532,7 @@
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
- The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName> flags. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Single.Parse%28System.String%2CSystem.Globalization.NumberStyles%29> method overload.  
+ The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flags. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Single.Parse%28System.String%2CSystem.Globalization.NumberStyles%29> method overload.  
   
  The `s` parameter is parsed by using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string by using the formatting information of a specific culture, use the <xref:System.Single.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.Single.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29> method.  
   
@@ -1529,6 +1556,7 @@
           <paramref name="s" /> does not represent a number in a valid format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
+        <altmember cref="M:System.Single.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1582,33 +1610,33 @@
  Elements in square brackets ([ and ]) are optional. The following table describes each element.  
   
  *ws*  
- A series of white-space characters. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ A series of white-space characters. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.  
   
  $  
- A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.  
   
  *sign*  
- A negative sign symbol (-) or a positive sign symbol (+). The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ A negative sign symbol (-) or a positive sign symbol (+). The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.  
   
  *integral-digits*  
  A series of digits ranging from 0 to 9 that specify the integral part of the number. The *integral-digits* element can be absent if the string contains the *fractional-digits* element.  
   
  ,  
- A culture-specific group separator. The current culture's group separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag  
+ A culture-specific group separator. The current culture's group separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag  
   
  .  
- A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.  
   
  *fractional-digits*  
- A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.  
   
  E  
- The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.  
+ The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.  
   
  *exponential-digits*  
  A series of digits ranging from 0 to 9 that specify an exponent.  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=fullName> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in `s` in addition to digits|  
 |------------------------|-----------------------------------------------------|  
@@ -1657,6 +1685,8 @@
  -or-  
   
  <paramref name="style" /> includes the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="M:System.Single.ToString" />
+        <altmember cref="Overload:System.Single.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1699,7 +1729,7 @@
 ## Remarks  
  This overload is typically used to convert text that can be formatted in a variety of ways to a <xref:System.Single> value. For example, it can be used to convert the text entered by a user into an HTML text box to a numeric value.  
   
- The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName> flags. The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A?displayProperty=fullName>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A?displayProperty=fullName>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A?displayProperty=fullName> for the culture specified by `provider`, or it can contain a string of the form:  
+ The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flags. The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A?displayProperty=nameWithType>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A?displayProperty=nameWithType> for the culture specified by `provider`, or it can contain a string of the form:  
   
  [*ws*][*sign*]*integral-digits*[*.*[*fractional-digits*]][E[*sign*]*exponential-digits*][*ws*]  
   
@@ -1734,7 +1764,7 @@
    
   
 ## Examples  
- The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=fullName> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.Single.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.Single> value.  
+ The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.Single.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to a <xref:System.Single> value.  
   
  [!code-csharp[ParseMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR/ParseMethod/cs/Default.aspx.cs#1)]
  [!code-vb[ParseMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParseMethod/vb/Default.aspx.vb#1)]  
@@ -1747,6 +1777,8 @@
           <paramref name="s" /> does not represent a number in a valid format.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
+        <altmember cref="M:System.Single.ToString" />
+        <altmember cref="Overload:System.Single.TryParse" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1795,7 +1827,7 @@
   
 -   <xref:System.Globalization.NumberStyles.HexNumber>  
   
- The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A?displayProperty=fullName>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A?displayProperty=fullName>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A?displayProperty=fullName> for the culture specified by `provider`. Depending on the value of `style`, it can also take the form:  
+ The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A?displayProperty=nameWithType>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A?displayProperty=nameWithType>, or <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A?displayProperty=nameWithType> for the culture specified by `provider`. Depending on the value of `style`, it can also take the form:  
   
  [*ws*] [*$*] [*sign*][*integral-digits*,]*integral-digits*[.[*fractional-digits*]][E[*sign*]*exponential-digits*][*ws*]  
   
@@ -1803,17 +1835,17 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|A series of white-space characters. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|$|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|A negative sign symbol (-) or a positive sign symbol (+). The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|A series of white-space characters. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|$|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|A negative sign symbol (-) or a positive sign symbol (+). The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*integral-digits*|A series of digits ranging from 0 to 9 that specify the integral part of the number. The *integral-digits* element can be absent if the string contains the *fractional-digits* element.|  
-|,|A culture-specific group separator. The current culture's group separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag|  
-|.|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional-digits*|A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|,|A culture-specific group separator. The current culture's group separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag|  
+|.|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=fullName> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in `s` in addition to digits|  
 |------------------------|-----------------------------------------------------|  
@@ -1866,6 +1898,7 @@
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="s" /> represents a number that is less than <see cref="F:System.Single.MinValue" /> or greater than <see cref="F:System.Single.MaxValue" />.</exception>
+        <altmember cref="M:System.Single.ToString" />
       </Docs>
     </Member>
     <Member MemberName="PositiveInfinity">
@@ -1917,6 +1950,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.IsPositiveInfinity(System.Single)" />
+        <altmember cref="M:System.Single.IsInfinity(System.Single)" />
+        <altmember cref="F:System.Single.NegativeInfinity" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1999,7 +2035,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2039,7 +2075,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToByte%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToByte%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2147,7 +2183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2187,7 +2223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2227,7 +2263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2267,7 +2303,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2307,7 +2343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt64%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt64%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2347,7 +2383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2429,7 +2465,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2469,7 +2505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2509,7 +2545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2549,7 +2585,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt64%28System.Single%29?displayProperty=fullName> method.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Single> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt64%28System.Single%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2627,7 +2663,7 @@
    
   
 ## Examples  
- The following example uses the default <xref:System.Single.ToString%2A?displayProperty=fullName> method to display the string representations of a number of <xref:System.Single> values.  
+ The following example uses the default <xref:System.Single.ToString%2A?displayProperty=nameWithType> method to display the string representations of a number of <xref:System.Single> values.  
   
  [!code-csharp[System.Single.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.ToString/CS/ToString1.cs#1)]
  [!code-vb[System.Single.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.ToString/VB/ToString1.vb#1)]  
@@ -2640,6 +2676,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2716,7 +2754,7 @@
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the return value is formatted using the <xref:System.Globalization.NumberFormatInfo> data for the current culture.  
   
- To convert a <xref:System.Single> value to its string representation using a specified culture and a specific format string, call the <xref:System.Single.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+ To convert a <xref:System.Single> value to its string representation using a specified culture and a specific format string, call the <xref:System.Single.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method.  
   
    
   
@@ -2728,6 +2766,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2808,6 +2848,8 @@
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is invalid.</exception>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2885,11 +2927,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out float result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, float32 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] float32&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.String,System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2926,7 +2970,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload differs from the <xref:System.Single.Parse%28System.String%29?displayProperty=fullName> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
+ This overload differs from the <xref:System.Single.Parse%28System.String%29?displayProperty=nameWithType> method by returning a Boolean value that indicates whether the parse operation succeeded instead of returning the parsed numeric value. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
   
  The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> (the string comparison is case-sensitive), or a string of the form:  
   
@@ -2945,11 +2989,11 @@
 |*E*|An uppercase or lowercase character 'e', that indicates exponential (scientific) notation.|  
 |*exponential-digits*|A series of numeric characters ranging from 0 to 9 that specify an exponent.|  
   
- The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName> flags. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29> method overload.  
+ The `s` parameter is interpreted using a combination of the <xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flags. This means that white space and thousands separators are allowed but currency symbols are not. To explicitly define the elements (such as currency symbols, thousands separators, and white space) that can be present in `s`, use the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29> method overload.  
   
- The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>. To parse a string using the formatting information of some other specified culture, use the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29> method overload.  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>. To parse a string using the formatting information of some other specified culture, use the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29> method overload.  
   
- Ordinarily, if you pass the <xref:System.Single.TryParse%2A?displayProperty=fullName> method a string that is created by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method, the original <xref:System.Single> value is returned. However, because of a loss of precision, the values may not be equal.  
+ Ordinarily, if you pass the <xref:System.Single.TryParse%2A?displayProperty=nameWithType> method a string that is created by calling the <xref:System.Single.ToString%2A?displayProperty=nameWithType> method, the original <xref:System.Single> value is returned. However, because of a loss of precision, the values may not be equal.  
   
  If a separator is encountered in the `s` parameter during a parse operation, and the applicable currency or number decimal and group separators are the same, the parse operation assumes that the separator is a decimal separator rather than a group separator. For more information about separators, see <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, and <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>.  
   
@@ -2963,11 +3007,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="M:System.Single.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out float result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, float32 result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, [out] float32&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3012,9 +3058,9 @@
   
  The `style` parameter defines the allowable format of the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. The following <xref:System.Globalization.NumberStyles> members are not supported:  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>  
   
--   <xref:System.Globalization.NumberStyles?displayProperty=fullName>  
+-   <xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>  
   
  The `s` parameter can contain <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A>, <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A> for the culture indicated by `provider`. In addition, depending on the value of `style`, the `s` parameter may include the following elements:  
   
@@ -3024,17 +3070,17 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType> flag. It can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=nameWithType> properties of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowLeadingSign?displayProperty=nameWithType> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowTrailingSign?displayProperty=nameWithType> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles.AllowParentheses?displayProperty=nameWithType> flag.|  
 |*integral-digits*|A series of digits ranging from 0 to 9 that specify the integral part of the number. Integral-digits can be absent if there are fractional-digits.|  
-|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*fractional-digits*|A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
-|*e*|The e or E character, which indicates that `s` can represent a number using exponential notation. The `s` parameter can represent a number in exponential notation if style includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*fractional-digits*|A series of digits ranging from 0 to 9 that specify the fractional part of the number. Fractional digits can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles.AllowDecimalPoint?displayProperty=nameWithType> flag.|  
+|*e*|The e or E character, which indicates that `s` can represent a number using exponential notation. The `s` parameter can represent a number in exponential notation if style includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
- A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=fullName> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. The remaining <xref:System.Globalization.NumberStyles?displayProperty=nameWithType> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> flags affect the elements that may be present in `s`.  
   
 |NumberStyles value|Elements permitted in s in addition to digits|  
 |------------------------|---------------------------------------------------|  
@@ -3068,7 +3114,7 @@
    
   
 ## Examples  
- The following example demonstrates the use of the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29?displayProperty=fullName> method to parse the string representation of numbers that have a particular style and are formatted using the conventions of a particular culture.  
+ The following example demonstrates the use of the <xref:System.Single.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Single%40%29?displayProperty=nameWithType> method to parse the string representation of numbers that have a particular style and are formatted using the conventions of a particular culture.  
   
  [!code-csharp[System.Single.TryParse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.tryparse/cs/tryparse1.cs#2)]
  [!code-vb[System.Single.TryParse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.tryparse/vb/tryparse1.vb#2)]  
@@ -3081,7 +3127,73 @@
  -or-  
   
  <paramref name="style" /> is the <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> value.</exception>
+        <altmember cref="M:System.Single.Parse(System.String)" />
+        <altmember cref="M:System.Single.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its single-precision floating-point number equivalent.</summary>
+        <altmember cref="Overload:System.Single.TryParse" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether two instances of <see cref="T:System.Single" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or to another <see cref="T:System.Single" /> instance and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified object or the other <see cref="T:System.Single" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a number to its single-precision floating-point number equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <altmember cref="Overload:System.Single.Parse" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

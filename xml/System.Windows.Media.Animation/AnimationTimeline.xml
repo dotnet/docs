@@ -105,7 +105,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -131,10 +131,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method shadows the inherited <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A?displayProperty=fullName> method with a type-safe implementation.  
+ This method shadows the inherited <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A?displayProperty=nameWithType> method with a type-safe implementation.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.MediaTimeline.CreateClock" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValue">
@@ -245,6 +246,7 @@
         <summary>Gets a value that indicates whether this animation uses the *defaultDestinationValue* parameter of the <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> method as its destination value.</summary>
         <value>**true** if the *defaultDesintationValue* parameter of the <see cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" /> method is the value of this animation when reaches the end of its simple duration (its clock has a <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> of 1); otherwise, **false**. The default implementation always returns **false**.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="TargetPropertyType">

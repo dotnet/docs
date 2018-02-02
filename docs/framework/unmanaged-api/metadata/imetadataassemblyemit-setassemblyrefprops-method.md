@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAssemblyRefProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::SetAssemblyRefProps Method
 Modifies the specified `AssemblyRef` metadata structure.  

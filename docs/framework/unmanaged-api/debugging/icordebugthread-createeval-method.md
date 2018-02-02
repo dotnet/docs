@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::CreateEval"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateEval method [.NET Framework debugging]"
   - "ICorDebugThread::CreateEval method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::CreateEval Method
 Creates an ICorDebugEval object that collects and exposes the functionality of this ICorDebugThread.  

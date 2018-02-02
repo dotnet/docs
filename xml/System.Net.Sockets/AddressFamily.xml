@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Net.Sockets.Socket> using the InterNetwork<xref:System.Net.Sockets.AddressFamily>.  
+ The following example creates a <xref:System.Net.Sockets.Socket> using the InterNetwork <xref:System.Net.Sockets.AddressFamily>.  
   
  [!code-cpp[Socket_Send_Recieve#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#1)]
  [!code-csharp[Socket_Send_Recieve#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#1)]
@@ -38,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.IPAddress" />
+    <altmember cref="T:System.Net.EndPoint" />
   </Docs>
   <Members>
     <Member MemberName="AppleTalk">

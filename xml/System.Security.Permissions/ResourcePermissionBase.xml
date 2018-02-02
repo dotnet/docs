@@ -127,6 +127,7 @@
  -or-  
   
  The <see cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" /> is already included in the permission.</exception>
+        <altmember cref="M:System.Security.Permissions.ResourcePermissionBase.RemovePermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
       </Docs>
     </Member>
     <Member MemberName="Any">
@@ -273,6 +274,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Security.Permissions.ResourcePermissionBase.AddPermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
+        <altmember cref="M:System.Security.Permissions.ResourcePermissionBase.RemovePermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
+        <altmember cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -460,6 +464,7 @@
  -or-  
   
  The <see cref="T:System.Security.Permissions.ResourcePermissionBaseEntry" /> is not in the permission.</exception>
+        <altmember cref="M:System.Security.Permissions.ResourcePermissionBase.AddPermissionAccess(System.Security.Permissions.ResourcePermissionBaseEntry)" />
       </Docs>
     </Member>
     <Member MemberName="TagNames">
@@ -546,5 +551,14 @@
         <exception cref="T:System.ArgumentException">The <paramref name="target" /> permission object is not of the same type as the current permission object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.ResourcePermissionBase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -190,6 +190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNodeIterator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -314,6 +315,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.XPath.XPathNodeIterator.MoveNext" />
+        <altmember cref="M:System.Xml.XPath.XPathNavigator.Clone" />
+        <altmember cref="Overload:System.Xml.XPath.XPathNavigator.SelectAncestors" />
+        <altmember cref="Overload:System.Xml.XPath.XPathNavigator.SelectDescendants" />
+        <altmember cref="Overload:System.Xml.XPath.XPathNavigator.SelectChildren" />
+        <altmember cref="P:System.Xml.XPath.XPathNodeIterator.Count" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPosition">
@@ -407,6 +414,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -505,6 +513,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XPath.XPathNodeIterator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">

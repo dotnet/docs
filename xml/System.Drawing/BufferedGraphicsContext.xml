@@ -27,7 +27,7 @@
   
  The <xref:System.Drawing.BufferedGraphicsContext> class provides methods for creating and configuring a graphics buffer. The <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method creates a <xref:System.Drawing.BufferedGraphics>, which is a wrapper for a graphics buffer that also provides methods you can use to write to the buffer and render its contents to an output device.  
   
- You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property. For graphically intensive applications such as animation, you can create a dedicated <xref:System.Drawing.BufferedGraphicsContext> using the constructor, but for most applications the <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property will be sufficient.  
+ You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property. For graphically intensive applications such as animation, you can create a dedicated <xref:System.Drawing.BufferedGraphicsContext> using the constructor, but for most applications the <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=nameWithType> property will be sufficient.  
   
  For more information on drawing buffered graphics and custom buffering implementations, see [Double Buffered Graphics](~/docs/framework/winforms/advanced/double-buffered-graphics.md) and [How to: Manually Manage Buffered Graphics](~/docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md).  
   
@@ -42,6 +42,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.BufferedGraphics" />
+    <altmember cref="T:System.Drawing.BufferedGraphicsManager" />
+    <altmember cref="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Allocate">
@@ -150,6 +156,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
+        <altmember cref="T:System.IntPtr" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -259,5 +268,14 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for allowing user access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Allocate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a graphics buffer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

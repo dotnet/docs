@@ -11,7 +11,7 @@ manager: "wpickett"
 uid: System.Diagnostics.Design.LogConverter.GetStandardValues
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -27,7 +27,7 @@ manager: "wpickett"
 uid: System.Diagnostics.Design.LogConverter.GetStandardValuesSupported
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -61,14 +61,14 @@ manager: "wpickett"
 uid: System.Diagnostics.Design.LogConverter.ConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Diagnostics.Design.LogConverter.CanConvertFrom
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

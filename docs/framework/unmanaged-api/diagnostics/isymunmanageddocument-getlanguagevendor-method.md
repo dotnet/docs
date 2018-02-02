@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetLanguageVendor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLanguageVendor method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetLanguageVendor method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedDocument::GetLanguageVendor Method
 Gets the language vendor of this document.  

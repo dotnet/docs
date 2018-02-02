@@ -10,6 +10,9 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Get Started
@@ -24,7 +27,7 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 * The [Visual Basic Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio.
 
-## Get started using .NET core
+## Get started using .NET Core
 
 * [Getting Started with .NET Core](../core/get-started.md) provides an overview of articles which show how to get started with .NET Core on different operating systems and using different tools.
 

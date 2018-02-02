@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DateTimeOffset structure"
   - "TimeZoneInfo class"
@@ -20,6 +23,9 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 
 # Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
@@ -47,7 +53,7 @@ manager: "wpickett"
 
 ## The DateTime structure
 
-A <xref:System.DateTime> value defines a particular date and time. It includes a <xref:System.DateTime.Kind%2A> property that provides limited information about the time zone to which that date and time belongs. The <xref:System.DateTimeKind> value returned by the <xref:System.DateTime.Kind%2A> property indicates whether the <xref:System.DateTime> value represents the local time (<xref:System.DateTimeKind.Local?displayProperty=fullName>), Coordinated Universal Time (UTC) (<xref:System.DateTimeKind.Utc?displayProperty=fullName>), or an unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=fullName>).
+A <xref:System.DateTime> value defines a particular date and time. It includes a <xref:System.DateTime.Kind%2A> property that provides limited information about the time zone to which that date and time belongs. The <xref:System.DateTimeKind> value returned by the <xref:System.DateTime.Kind%2A> property indicates whether the <xref:System.DateTime> value represents the local time (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>), Coordinated Universal Time (UTC) (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), or an unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>).
 
 The <xref:System.DateTime> structure is suitable for applications that do the following:
 
@@ -65,16 +71,16 @@ The <xref:System.DateTime> structure is suitable for applications that do the fo
 
 * Perform date and time arithmetic, but are concerned with general results. For example, in an addition operation that adds six months to a particular date and time, it is often not important whether the result is adjusted for daylight saving time.
 
-Unless a particular <xref:System.DateTime> value represents UTC, that date and time value is often ambiguous or limited in its portability. For example, if a <xref:System.DateTime> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time). Outside the local time zone, that <xref:System.DateTime> value can have multiple interpretations. If the value's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized. Only if a <xref:System.DateTime> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.
+Unless a particular <xref:System.DateTime> value represents UTC, that date and time value is often ambiguous or limited in its portability. For example, if a <xref:System.DateTime> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time). Outside the local time zone, that <xref:System.DateTime> value can have multiple interpretations. If the value's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized. Only if a <xref:System.DateTime> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.
 
 > [!IMPORTANT]
-> When saving or sharing <xref:System.DateTime> data, UTC should be used and the <xref:System.DateTime> value's <xref:System.DateTime.Kind%2A> property should be set to <xref:System.DateTimeKind.Utc?displayProperty=fullName>.
+> When saving or sharing <xref:System.DateTime> data, UTC should be used and the <xref:System.DateTime> value's <xref:System.DateTime.Kind%2A> property should be set to <xref:System.DateTimeKind.Utc?displayProperty=nameWithType>.
 
 ## The DateTimeOffset structure
 
 The <xref:System.DateTimeOffset> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC. Thus, the value always unambiguously identifies a single point in time.
 
-The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it is suitable for applications that do the following:
+The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it suitable for applications that do the following:
 
 * Uniquely and unambiguously identify a single point in time. The <xref:System.DateTimeOffset> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.
 
@@ -98,9 +104,9 @@ The <xref:System.TimeSpan> structure represents a time interval. Its two typical
 
 * Reflecting the time interval between two date and time values. For example, subtracting one <xref:System.DateTime> value from another returns a <xref:System.TimeSpan> value.
 
-* Measuring elapsed time. For example, the <xref:System.Diagnostics.Stopwatch.Elapsed%2A?displayProperty=fullName> property returns a <xref:System.TimeSpan> value that reflects the time interval that has elapsed since the call to one of the <xref:System.Diagnostics.Stopwatch> methods that begins to measure elapsed time.
+* Measuring elapsed time. For example, the <xref:System.Diagnostics.Stopwatch.Elapsed%2A?displayProperty=nameWithType> property returns a <xref:System.TimeSpan> value that reflects the time interval that has elapsed since the call to one of the <xref:System.Diagnostics.Stopwatch> methods that begins to measure elapsed time.
 
-A <xref:System.TimeSpan> value can also be used as a replacement for a <xref:System.DateTime> value when that value reflects a time without reference to a particular time of day. This usage is similar to the <xref:System.DateTime.TimeOfDay%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.TimeOfDay%2A?displayProperty=fullName> properties, which return a <xref:System.TimeSpan> value that represents the time without reference to a date. For example, the <xref:System.TimeSpan> structure can be used to reflect a store's daily opening or closing time, or it can be used to represent the time at which any regular event occurs.
+A <xref:System.TimeSpan> value can also be used as a replacement for a <xref:System.DateTime> value when that value reflects a time without reference to a particular time of day. This usage is similar to the <xref:System.DateTime.TimeOfDay%2A?displayProperty=nameWithType> and <xref:System.DateTimeOffset.TimeOfDay%2A?displayProperty=nameWithType> properties, which return a <xref:System.TimeSpan> value that represents the time without reference to a date. For example, the <xref:System.TimeSpan> structure can be used to reflect a store's daily opening or closing time, or it can be used to represent the time at which any regular event occurs.
 
 The following example defines a `StoreInfo` structure that includes <xref:System.TimeSpan> objects for store opening and closing times, as well as a <xref:System.TimeZoneInfo> object that represents the store's time zone. The structure also includes two methods, `IsOpenNow` and `IsOpenAt`, that indicates whether the store is open at a time specified by the user, who is assumed to be in the local time zone.
 

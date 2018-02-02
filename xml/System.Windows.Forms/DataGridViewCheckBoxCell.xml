@@ -22,13 +22,13 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCheckBoxCell> class is a specialized type of <xref:System.Windows.Forms.DataGridViewCell> used to display binary or ternary information presented through a check box UI. In the default binary mode, the cells can hold values of `true` or `false`. In ternary mode, the cells take on one of the <xref:System.Windows.Forms.CheckState> values. The <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property determines whether binary or ternary mode is in effect.  
   
- The <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A?displayProperty=fullName> is initialized to a new <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
+ The <xref:System.Windows.Forms.DataGridViewCheckBoxColumn> is the column type specialized to hold cells of this type. By default, the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A?displayProperty=nameWithType> is initialized to a new <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. To pattern the cells within a column after an existing <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, set the column's <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate%2A> property to the cell to use as a pattern.  
   
  The cell-related properties of the column are wrappers for the similarly-named properties of the template cell. Changing the property values of the template cell will affect only cells based on the template that are added after the change. Changing the cell-related property values of the column, however, will update the template cell and all other cells in the column, and refresh the column display if necessary.  
   
- When the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property is always `true`.  
+ When the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=nameWithType> property is always `true`.  
   
- Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
+ Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=nameWithType> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=nameWithType> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=nameWithType> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
    
   
@@ -44,6 +44,10 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +70,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,6 +98,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -121,6 +129,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ContentClickUnsharesRow">
@@ -153,6 +162,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ContentDoubleClickUnsharesRow">
@@ -185,6 +196,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -214,6 +227,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="EditingCellFormattedValue">
@@ -242,6 +258,9 @@
   
  The assigned value is not of type <see cref="T:System.Boolean" /> nor of type <see cref="T:System.Windows.Forms.CheckState" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" /> property value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.GetEditingCellFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       </Docs>
     </Member>
     <Member MemberName="EditingCellValueChanged">
@@ -268,6 +287,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.IDataGridViewEditingCell.EditingCellValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -293,6 +315,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="FalseValue">
@@ -334,6 +358,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -367,7 +395,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A?displayProperty=nameWithType> property, which is similar to this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> class overview topic.  
   
  [!code-cpp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CPP/employees.cpp#20)]
  [!code-csharp[System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewColumn_AllColumns_Bound_Employees/CS/employees.cs#20)]
@@ -376,6 +404,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.FlatStyle" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -402,13 +433,17 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=fullName> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=fullName> event.  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property to determine the type of the cell contents. In this example, the <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A?displayProperty=nameWithType> property is used to determine whether the cell contains a <xref:System.String> before attempting to convert the value. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.SelectionChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSelectionSum#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectionSum/VB/form1.vb#10)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -465,6 +500,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" /> property value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -491,11 +529,12 @@
         <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormattedValue">
       <MemberSignature Language="C#" Value="protected override object GetFormattedValue (object value, int rowIndex, ref System.Windows.Forms.DataGridViewCellStyle cellStyle, System.ComponentModel.TypeConverter valueTypeConverter, System.ComponentModel.TypeConverter formattedValueTypeConverter, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle&amp; cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -530,16 +569,29 @@
   
  This method first attempts to convert `value` to a <xref:System.Boolean> or <xref:System.Windows.Forms.CheckState> value using the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue%2A>, <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue%2A>, and <xref:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue%2A> properties if they have been set.  
   
- If the conversion is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
+ If the conversion is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, an exception is thrown.  
   
- If the conversion is successful or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> event occurs.  
+ If the conversion is successful or there is a handler for the <xref:System.Windows.Forms.DataGridView.DataError> event and it does not set the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=nameWithType> property to `true`, the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event occurs.  
   
- A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
+ A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=nameWithType> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
  If formatting is successful and the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns the <xref:System.String> version of the formatted value for copying to the Clipboard. Otherwise, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Windows.Forms.CheckState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -568,6 +620,7 @@
         <summary>Calculates the preferred size, in pixels, of the cell.</summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="IndeterminateValue">
@@ -609,6 +662,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
       </Docs>
     </Member>
     <Member MemberName="KeyDownUnsharesRow">
@@ -643,6 +700,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="KeyUpUnsharesRow">
@@ -677,6 +736,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MouseDownUnsharesRow">
@@ -710,6 +771,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnterUnsharesRow">
@@ -742,6 +805,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeaveUnsharesRow">
@@ -774,6 +839,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MouseUpUnsharesRow">
@@ -807,6 +875,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnContentClick">
@@ -828,6 +898,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Called when the cell's contents are clicked.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnContentDoubleClick">
@@ -849,6 +920,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
         <summary>Called when the cell's contents are double-clicked.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -877,10 +949,14 @@
 ## Remarks  
  When activated by the space key, this method causes the cell's user interface (UI) to be updated.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.KeyDownUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -907,12 +983,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When activated by the SPACEBAR key (equivalent to the <xref:System.Windows.Forms.Keys?displayProperty=fullName> value), this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> event on the owning <xref:System.Windows.Forms.DataGridView>.  
+ When activated by the SPACEBAR key (equivalent to the <xref:System.Windows.Forms.Keys.Space?displayProperty=nameWithType> value), this method updates the cell's user interface (UI) and raises the <xref:System.Windows.Forms.DataGridView.OnCellClick%2A> event on the owning <xref:System.Windows.Forms.DataGridView>.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnKeyUp%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.KeyUp?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.KeyUpUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -942,10 +1022,13 @@
 ## Remarks  
  If the button is in a pushed state, this method updates the cell's user interface (UI).  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnLeave%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.Leave?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -972,10 +1055,14 @@
 ## Remarks  
  This method causes the cell's user interface (UI) to be updated.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -1006,6 +1093,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.MouseLeaveUnsharesRow(System.Int32)" />
+        <altmember cref="T:System.Windows.Forms.ButtonState" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -1032,10 +1124,13 @@
 ## Remarks  
  This method causes the cell's user interface (UI) to be updated.  
   
- This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is raised, but it does not actually raise the event.  
+ This method is similar to the <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=nameWithType> method. It is called in the same circumstances in which a <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event is raised, but it does not actually raise the event.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1066,6 +1161,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1153,6 +1252,12 @@
  \- or -  
   
  The type of <paramref name="formattedValue" /> does not match the type indicated by the <see cref="P:System.Windows.Forms.DataGridViewCell.FormattedValueType" /> property.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
       </Docs>
     </Member>
     <Member MemberName="PrepareEditingCellForEdit">
@@ -1181,6 +1286,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ThreeState">
@@ -1225,6 +1331,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCheckBoxCell.#ctor(System.Boolean)" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1251,6 +1361,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ColumnIndex" />
       </Docs>
     </Member>
     <Member MemberName="TrueValue">
@@ -1292,6 +1405,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.IndeterminateValue" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.FalseValue" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -1321,7 +1438,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.ValueType" />
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Windows.Forms.CheckState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxCell" /> class.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

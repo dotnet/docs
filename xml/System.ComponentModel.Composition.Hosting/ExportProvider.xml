@@ -816,7 +816,7 @@
     </Member>
     <Member MemberName="TryGetExports">
       <MemberSignature Language="C#" Value="public bool TryGetExports (System.ComponentModel.Composition.Primitives.ImportDefinition definition, System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition, out System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.Export&gt; exports);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt; exports) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExports(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition, [out] class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt;&amp; exports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ExportProvider.TryGetExports(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition,System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.Export}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -844,5 +844,55 @@
           <paramref name="definition" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetExport&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified export.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetExportedValues&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets one or more exported objects.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetExportedValue&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an exported object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetExportedValueOrDefault&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a specified exported object or a default value if it is unavailable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetExports">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all the exports matching the specified conditions.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

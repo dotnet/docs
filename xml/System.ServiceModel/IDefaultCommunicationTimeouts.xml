@@ -7,6 +7,12 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Defines the interface for specifying communication timeouts used by channels, channel managers such as channel listeners and channel factories, and service hosts.</summary>
@@ -14,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface has four read-only properties that provide default timeout values for the open, send, receive, and close methods that can be called on a communication object. Each implementation is responsible for obtaining the default values in whatever manner is appropriate for the implementation. This interface is implemented by <xref:System.ServiceModel.Channels.ChannelBase>, the base implementation for writing custom channels, and the <xref:System.ServiceModel.Channels.ChannelManagerBase>, the base implementation for writing custom channel managers which derive from<xref:System.ServiceModel.Channels.ChannelFactoryBase> and <xref:System.ServiceModel.Channels.ChannelListenerBase>. The interface is also implemented by the <xref:System.ServiceModel.Channels.Binding> class and then inherited from there by <xref:System.ServiceModel.Channels.CustomBinding> and the system-provided bindings, such as <xref:System.ServiceModel.BasicHttpBinding>.  
+ This interface has four read-only properties that provide default timeout values for the open, send, receive, and close methods that can be called on a communication object. Each implementation is responsible for obtaining the default values in whatever manner is appropriate for the implementation. This interface is implemented by <xref:System.ServiceModel.Channels.ChannelBase>, the base implementation for writing custom channels, and the <xref:System.ServiceModel.Channels.ChannelManagerBase>, the base implementation for writing custom channel managers which derive from <xref:System.ServiceModel.Channels.ChannelFactoryBase> and <xref:System.ServiceModel.Channels.ChannelListenerBase>. The interface is also implemented by the <xref:System.ServiceModel.Channels.Binding> class and then inherited from there by <xref:System.ServiceModel.Channels.CustomBinding> and the system-provided bindings, such as <xref:System.ServiceModel.BasicHttpBinding>.  
   
  When you use channels directly, you have the ability to explicitly specify timeouts on a per-channel or per-operation-basis, or on any other custom basis. When using the channel model, timeouts are quite accessible when you want to control them.  
   
@@ -33,6 +39,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -60,6 +72,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -86,6 +104,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -111,6 +135,12 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>

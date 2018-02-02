@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a configuration element that defines a binding that supports WS-Federation.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.ServiceModel.WSFederationHttpBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -198,5 +199,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSFederationHttpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

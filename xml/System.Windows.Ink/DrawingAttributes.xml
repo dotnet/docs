@@ -67,8 +67,8 @@
 |<xref:System.Windows.Ink.DrawingAttributes.Height%2A>|2 device independent pixels (DIP)|  
 |<xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>|`false`|  
 |<xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>|`false`|  
-|<xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>|<xref:System.Windows.Ink.StylusTip?displayProperty=fullName>|  
-|<xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>|<xref:System.Windows.Media.Matrix.Identity%2A?displayProperty=fullName>|  
+|<xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>|<xref:System.Windows.Ink.StylusTip.Ellipse?displayProperty=nameWithType>|  
+|<xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>|<xref:System.Windows.Media.Matrix.Identity%2A?displayProperty=nameWithType>|  
 |<xref:System.Windows.Ink.DrawingAttributes.Width%2A>|2 DIP|  
   
  ]]></format>
@@ -180,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -308,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FitToCurve">
@@ -364,6 +366,7 @@
         <summary>Serves as a hash function for a particular type.</summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyData">
@@ -403,6 +406,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyDataIds">
@@ -437,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -824,7 +829,7 @@
 > [!NOTE]
 >  The <xref:System.Windows.Ink.DrawingAttributes.op_Equality%2A> method does not check the custom properties for equality.  
   
- The equivalent method for this operator is <xref:System.Windows.Ink.DrawingAttributes.Equals%2A?displayProperty=fullName>.  
+ The equivalent method for this operator is <xref:System.Windows.Ink.DrawingAttributes.Equals%2A?displayProperty=nameWithType>.  
   
 ## Examples  
  The following example compares two <xref:System.Windows.Ink.DrawingAttributes> objects for equality. Because the <xref:System.Windows.Ink.DrawingAttributes.Color%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, and <xref:System.Windows.Ink.DrawingAttributes.Width%2A> properties on `attributes1` and `attributes2` are set to the same values, the "The DrawingAttributes are equal" message appears.  
@@ -885,7 +890,7 @@
 > [!NOTE]
 >  The <xref:System.Windows.Ink.DrawingAttributes.op_Inequality%2A> method does not check the custom properties for equality.  
   
- The equivalent method for this operator is the negation of <xref:System.Windows.Ink.DrawingAttributes.Equals%2A?displayProperty=fullName>.  
+ The equivalent method for this operator is the negation of <xref:System.Windows.Ink.DrawingAttributes.Equals%2A?displayProperty=nameWithType>.  
   
 ## Examples  
  The following example compares two <xref:System.Windows.Ink.DrawingAttributes> objects for inequality. Because the <xref:System.Windows.Ink.DrawingAttributes.Color%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, and <xref:System.Windows.Ink.DrawingAttributes.Width%2A> properties on `attributes1` and `attributes2` are set to the same values, the "The DrawingAttributes are equal" message appears.  
@@ -957,6 +962,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+        <altmember cref="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StylusTip">

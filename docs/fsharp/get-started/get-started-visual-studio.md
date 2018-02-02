@@ -1,5 +1,5 @@
 ---
-title: Getting Started with F# in Visual Studio
+title: Get started with F# in Visual Studio
 description: Learn how to use F# with Visual Studio.
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -12,26 +12,27 @@ ms.devlang: fsharp
 ms.assetid: 8db75596-19a9-4eda-b20d-a12d517c8cc1 
 ---
 
-# Getting started with F# in Visual Studio
+# Get started with F# in Visual Studio
 
 F# and the Visual F# tooling are supported in the Visual Studio IDE.  To begin, you should [download Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs), if you haven't already.  This article uses the Visual Studio 2017 Community Edition, but you can use F# with the version of your choice.
 
 ## Installing F# #
 
-If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer.  If you already have it installed, click **Modify**.
+If you're downloading Visual Studio for the first time, it will first install the Visual Studio installer.  Install any version of Visual Studio 2017 from the installer. If you already have it installed, click **Modify**.
 
-You'll next see a list of Workloads.  You can install F# through any of the following workloads:
+You'll next see a list of Workloads. You can install F# through any of the following workloads:
 
 |Workload|Action|
 |--------|------|
-|.NET desktop development|Select **F# language support** from the right-hand side|
-|ASP.NET and web development|Select **F# language support** from the right-hand side|
-|Data storage and processing|Select **F# language support** from the right-hand side|
-|Mobile development with .NET|No action - F# is installed by default|
+| .NET Core cross-platform development | No action - F# is installed by default |
+| ASP.NET and web development | No action - F# is installed by default |
+| Azure development | No action - F# is installed by default |
+| Mobile development with .NET | No action - F# is installed by default |
+| Data science and analytical applications | No action - F# is installed by default |
+| .NET desktop development | Select **F# desktop language support** from the right-hand side |
+| Data storage and processing | Select **F# desktop language support** from the right-hand side |
 
-Alternatively, you can select **Individual components** and install **F# language support** from there.  Feel free to select as many Workloads or Individual Components as you like.
-
-Finally, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
+Next, click **Modify** in the lower right-hand side.  This will install everything you have selected.  You can then open Visual Studio 2017 with F# language support by clicking **Launch**.
 
 ## Creating a console application
 
@@ -40,6 +41,8 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 1. On the **File** menu, point to **New**, and then choose **Project**.
 
 2.  In the New Project dialog, under **Templates**, you should see **Visual F#**.  Choose this to show the F# templates.
+
+3. Select either **.NET Core Console app** or **Console app**.
 
 3. Choose the **Okay** button to create the F# project!  You should now see an F# project in the Solution Explorer.
 
@@ -107,7 +110,7 @@ val isOdd : x:int -> bool
 val it : bool = false
 ```
 
-The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd!  You can call this function to see what it returns with different inputs.  You can call functions within function calls:
+The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd! You can call this function to see what it returns with different inputs.  You can call functions within function calls:
 
 ```
 > isOdd (square 15);;
@@ -123,20 +126,15 @@ val it : bool = true
 
 The pipe-forward operator, and more, are covered in later tutorials.
 
-This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](tutorials/fsharp-interactive/index.md).
+This is only a glimpse into what you can do with F# Interactive. To learn more, check out [Interactive Programming with F#](../tutorials/fsharp-interactive/index.md).
 
 ## Next steps
 
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
-
-[Visual F#](index.md)
-
-[Tour of F#](../tour.md)
-
-[F# language reference](../language-reference/index.md)
-
-[Type inference](../language-reference/type-inference.md)
-
-[Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)
+ [Visual F#](index.md)  
+ [Tour of F#](../tour.md)  
+ [F# language reference](../language-reference/index.md)  
+ [Type inference](../language-reference/type-inference.md)  
+ [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  

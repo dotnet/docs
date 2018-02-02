@@ -73,6 +73,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="N:System.Globalization" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Asc">
@@ -114,6 +120,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="N:System.Globalization" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="AscW">
@@ -155,6 +167,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="N:System.Globalization" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="AscW">
@@ -196,6 +214,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="N:System.Globalization" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.TextInfo.ANSICodePage" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Chr">
@@ -223,7 +247,7 @@
 ## Remarks  
  The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
   
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=nameWithType> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
   
  The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
   
@@ -245,6 +269,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="CharCode" /> &lt; 0 or &gt; 255 for <see langword="Chr" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Asc" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.AscW" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="ChrW">
@@ -272,7 +302,7 @@
 ## Remarks  
  The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
   
- `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=nameWithType> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
   
  The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
   
@@ -294,6 +324,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="CharCode" /> &lt; -32768 or &gt; 65535 for <see langword="ChrW" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Asc" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.AscW" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -354,6 +390,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -413,6 +451,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -440,7 +480,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.Format%2A?displayProperty=fullName> method also provides similar functionality.  
+ The <xref:System.String.Format%2A?displayProperty=nameWithType> method also provides similar functionality.  
   
  If you are formatting a nonlocalized numeric string, you should use a user-defined numeric format to ensure that you get the look you want.  
   
@@ -608,6 +648,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.Format(System.String,System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="FormatCurrency">
@@ -667,6 +709,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Number of digits after decimal point is greater than 99.</exception>
         <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.InvalidCastException" />
       </Docs>
     </Member>
     <Member MemberName="FormatDateTime">
@@ -720,6 +769,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="NamedFormat" /> setting is not valid.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
       </Docs>
     </Member>
     <Member MemberName="FormatNumber">
@@ -776,6 +831,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="T:System.InvalidCastException" />
       </Docs>
     </Member>
     <Member MemberName="FormatPercent">
@@ -832,6 +892,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+        <altmember cref="T:Microsoft.VisualBasic.TriState" />
+        <altmember cref="T:System.InvalidCastException" />
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -873,6 +939,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="str" /> is <see langword="Nothing" />, <paramref name="Index" /> &lt; 1, or <paramref name="Index" /> is greater than index of last character of <paramref name="str" />.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="InStr">
@@ -976,6 +1044,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="InStr">
@@ -1084,6 +1155,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Start" /> &lt; 1.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="InStrRev">
@@ -1193,6 +1267,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Start" /> = 0 or <paramref name="Start" /> &lt; -1.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.InStr" />
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1233,6 +1308,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="SourceArray" /> is not one dimensional.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1273,6 +1350,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="SourceArray" /> is not one dimensional.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="LCase">
@@ -1303,7 +1382,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -1314,6 +1393,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.UCase" />
       </Docs>
     </Member>
     <Member MemberName="LCase">
@@ -1344,7 +1424,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -1355,6 +1435,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.UCase" />
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1398,6 +1479,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Length" /> &lt; 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1445,6 +1530,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1492,6 +1580,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1539,6 +1630,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1586,6 +1680,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1633,6 +1730,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1680,6 +1780,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1727,6 +1830,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1774,6 +1880,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1821,6 +1930,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1873,6 +1985,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1926,6 +2041,9 @@
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Byte)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -1973,6 +2091,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2020,6 +2141,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2073,6 +2197,9 @@
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int16)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2126,6 +2253,9 @@
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="Len">
@@ -2179,6 +2309,9 @@
  ]]></format>
         </remarks>
         <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int64)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
+        <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
       </Docs>
     </Member>
     <Member MemberName="LSet">
@@ -2217,6 +2350,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.RSet(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LTrim">
@@ -2253,6 +2387,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Mid">
@@ -2298,6 +2437,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Start" /> &lt;= 0 or <paramref name="Length" /> &lt; 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Mid">
@@ -2345,6 +2491,13 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Start" /> &lt;= 0 or <paramref name="Length" /> &lt; 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -2421,6 +2574,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Count" /> &lt; -1 or <paramref name="Start" /> &lt;= 0.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Filter" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -2464,6 +2619,10 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Length" /> &lt; 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="RSet">
@@ -2502,6 +2661,7 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.LSet(System.String,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RTrim">
@@ -2538,6 +2698,11 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -2576,6 +2741,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Number" /> &lt; 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -2651,6 +2818,8 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.Join" />
+        <altmember cref="T:Microsoft.VisualBasic.CompareMethod" />
       </Docs>
     </Member>
     <Member MemberName="StrComp">
@@ -2718,6 +2887,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Compare" /> value is not valid.</exception>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.InStr" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="StrConv">
@@ -2752,7 +2923,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
  The `Conversion` argument settings are:  
   
@@ -2763,7 +2934,7 @@ Dim aString As String = Replace(TestString, "o", "i")
 |`VbStrConv.UpperCase`|Converts the string to uppercase characters.|  
 |`VbStrConv.LowerCase`|Converts the string to lowercase characters.|  
 |`VbStrConv.ProperCase`|Converts the first letter of every word in string to uppercase.|  
-|`VbStrConv.Wide` <sup>*</sup>|Converts narrow (half-width) characters in the string to wide (full-width) characters.|  
+|`VbStrConv.Wide` <sup>*</sup>|Converts narrow (half-width) characters in the string to wide (full-width) characters. [!INCLUDE[vbstrconv-wide](~/includes/vbstrconv-wide-md.md)]|  
 |`VbStrConv.Narrow` <sup>*</sup>|Converts wide (full-width) characters in the string to narrow (half-width) characters.|  
 |`VbStrConv.Katakana` <sup>**</sup>|Converts Hiragana characters in the string to Katakana characters.|  
 |`VbStrConv.Hiragana` <sup>**</sup>|Converts Katakana characters in the string to Hiragana characters.|  
@@ -2789,6 +2960,10 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Unsupported <paramref name="LocaleID" />, <paramref name="Conversion" /> &lt; 0 or &gt; 2048, or unsupported conversion for specified locale.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -2831,6 +3006,9 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -2873,6 +3051,9 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -2915,6 +3096,9 @@ Dim aString As String = Replace(TestString, "o", "i")
           <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.ArgumentNullException" />
       </Docs>
     </Member>
     <Member MemberName="StrReverse">
@@ -2949,6 +3133,7 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
       </Docs>
     </Member>
     <Member MemberName="Trim">
@@ -2985,6 +3170,11 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+        <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="UCase">
@@ -3015,7 +3205,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -3026,6 +3216,7 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
       </Docs>
     </Member>
     <Member MemberName="UCase">
@@ -3056,7 +3247,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -3067,7 +3258,98 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Mid">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that contains characters from a specified string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Len">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AscW">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LCase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string or character converted to lowercase.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Filter">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InStr">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer specifying the start position of the first occurrence of one string within another.  The integer is a one-based index if a match is found.  If no match is found, the function returns zero.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Join">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Asc">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="StrDup">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UCase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string or character containing the specified string converted to uppercase.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

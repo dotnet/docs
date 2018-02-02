@@ -12,7 +12,7 @@ uid: System.Linq.ILookup`2.Contains(`0)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,5 +29,5 @@ uid: System.Linq.ILookup`2.Count
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---

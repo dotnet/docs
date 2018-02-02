@@ -16,7 +16,7 @@ class Program
          s = s + Format("   Radius: {0:N2}\n", c.Radius);
          s = s + Format("   Diameter: {0:N2}\n", c.Diameter);
          s = s + Format("   Circumference: {0:N2}\n", c.Circumference);
-         s = s + Format("   Area: {0:N2}\n", c.Radius);
+         s = s + Format("   Area: {0:N2}\n", c.Area);
          WriteLine(s);
       }
       else {
@@ -39,12 +39,12 @@ public class Circle
       get { return 2 * Radius; }
    }
 
-   public double Area
+   public double Circumference
    {
       get { return 2 * Radius * PI; }      
    }
 
-   public double Circumference
+   public double Area
    {
       get { return PI * Pow(Radius, 2); }
    }
@@ -55,6 +55,5 @@ public class Circle
 //       Information about the circle:
 //          Radius: 12.45
 //          Diameter: 24.90
-//          Circumference: 486.95
-//          Area: 12.45
-   
+//          Circumference: 78.23
+//          Area: 486.95

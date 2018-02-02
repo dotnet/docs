@@ -200,6 +200,7 @@
         <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" /> state.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />, or if the underlying <see cref="T:System.Threading.Tasks.Task`1" /> has already been disposed.</exception>
+        <altmember cref="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
       </Docs>
     </Member>
     <Member MemberName="SetException">
@@ -420,11 +421,11 @@
 ## Remarks  
  The method returns false if the underlying <xref:System.Threading.Tasks.Task%601> object is already in one of the following three final states.  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>  
+-   <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType>  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>  
+-   <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType>  
   
--   <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>  
+-   <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>  
   
  This method also returns `false` if the underlying <xref:System.Threading.Tasks.Task%601> object has already been disposed.  
   
@@ -563,5 +564,49 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrySetException">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TrySetCanceled">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" /> state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetException">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

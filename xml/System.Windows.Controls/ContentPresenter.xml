@@ -56,6 +56,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.TemplateBindingExtension" />
+    <altmember cref="T:System.Windows.Controls.ItemsPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +95,7 @@
         <summary>Positions the single child element and determines the content of a <see cref="T:System.Windows.Controls.ContentPresenter" /> object.</summary>
         <returns>The actual size needed by the element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ChooseTemplate">
@@ -398,6 +401,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.DataTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="ContentTemplateSelectorProperty">
@@ -437,6 +441,7 @@
         <summary>Determines the size of the <see cref="T:System.Windows.Controls.ContentPresenter" /> object based on the sizing properties, margin, and requested size of the child content.</summary>
         <returns>The size that is required to arrange child content.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.MeasureOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnContentStringFormatChanged">
@@ -571,6 +576,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.AccessText" />
       </Docs>
     </Member>
     <Member MemberName="RecognizesAccessKeyProperty">

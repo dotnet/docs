@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
 caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XmlSchemaSet for Schema Compilation
 Describes the <xref:System.Xml.Schema.XmlSchemaSet>, a cache where XML Schema definition language (XSD) schemas can be stored and validated.  
@@ -25,7 +26,7 @@ Describes the <xref:System.Xml.Schema.XmlSchemaSet>, a cache where XML Schema de
 ## The XmlSchemaSet Class  
  The <xref:System.Xml.Schema.XmlSchemaSet> is a cache where XML Schema definition language (XSD) schemas can be stored and validated.  
   
- In <xref:System.Xml?displayProperty=fullName> version 1.0, XML schemas were loaded into an <xref:System.Xml.Schema.XmlSchemaCollection> class as a library of schemas. In <xref:System.Xml?displayProperty=fullName> version 2.0, the <xref:System.Xml.XmlValidatingReader> and the <xref:System.Xml.Schema.XmlSchemaCollection> classes are obsolete, and have been replaced by the <xref:System.Xml.XmlReader.Create%2A> methods, and the <xref:System.Xml.Schema.XmlSchemaSet> class respectively.  
+ In <xref:System.Xml?displayProperty=nameWithType> version 1.0, XML schemas were loaded into an <xref:System.Xml.Schema.XmlSchemaCollection> class as a library of schemas. In <xref:System.Xml?displayProperty=nameWithType> version 2.0, the <xref:System.Xml.XmlValidatingReader> and the <xref:System.Xml.Schema.XmlSchemaCollection> classes are obsolete, and have been replaced by the <xref:System.Xml.XmlReader.Create%2A> methods, and the <xref:System.Xml.Schema.XmlSchemaSet> class respectively.  
   
  The <xref:System.Xml.Schema.XmlSchemaSet> has been introduced to fix a number of issues including standards compatibility, performance, and the obsolete Microsoft XML-Data Reduced (XDR) schema format.  
   
@@ -256,12 +257,12 @@ foreach (XmlSchema schema in schemaSet.Schemas())
  For more information about validating XML documents using an <xref:System.Xml.Schema.XmlSchemaSet>, see [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md).  
   
 ## See Also  
- <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>   
- <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>   
- [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)   
+ <xref:System.Xml.Schema.XmlSchemaSet.Add%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.Reprocess%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.Remove%2A>  
+ <xref:System.Xml.Schema.XmlSchemaSet.RemoveRecursive%2A>  
+ [XmlSchemaSet as a Schema Cache](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
  [XML Schema (XSD) Validation with XmlSchemaSet](../../../../docs/standard/data/xml/xml-schema-xsd-validation-with-xmlschemaset.md)

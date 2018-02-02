@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Peer Resolvers
 In order to connect to a mesh, a peer node requires the IP addresses of other nodes. IP addresses are obtained by contacting a resolver service, which takes the mesh ID and returns a list of addresses corresponding to nodes registered with that particular mesh ID. The resolver keeps a list of registered addresses, which it creates by having each node in the mesh register with the service.  
@@ -38,12 +40,12 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
 > [!NOTE]
 >  When using local and impromptu networks with a custom resolver, it is strongly advised that applications using or supporting link-local or impromptu networks include logic that selects a single link-local address to use when connecting. This prevents any confusion potentially caused by computers with multiple link-local addresses. In accordance with this, Peer Channel only supports using a single link-local address at any one time. You may specify this address with the `ListenIpAddress` property on the <xref:System.ServiceModel.NetPeerTcpBinding>.  
   
- For a demonstration of how to implement a custom resolver, see [Peer Channel Custom Peer Resolver](http://msdn.microsoft.com/en-us/5b75a2bb-7ff1-4a14-abe7-3debf0537d23).  
+ For a demonstration of how to implement a custom resolver, see [Peer Channel Custom Peer Resolver](http://msdn.microsoft.com/library/5b75a2bb-7ff1-4a14-abe7-3debf0537d23).  
   
 ## In This Section  
  [Inside the CustomPeerResolverService: Client Registrations](../../../../docs/framework/wcf/feature-details/inside-the-custompeerresolverservice-client-registrations.md)  
   
 ## See Also  
- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)   
- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)   
+ [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)  
+ [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
  [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

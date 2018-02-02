@@ -27,9 +27,9 @@
 > [!NOTE]
 >  The computer's System account is not the same as the Administrator account.  
   
- Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=fullName> and <xref:System.ServiceProcess.ServiceInstaller.Install%2A?displayProperty=fullName> methods during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> (or <xref:System.ServiceProcess.ServiceInstaller.Rollback%2A?displayProperty=fullName>) on all previously installed components.  
+ Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=nameWithType> and <xref:System.ServiceProcess.ServiceInstaller.Install%2A?displayProperty=nameWithType> methods during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> (or <xref:System.ServiceProcess.ServiceInstaller.Rollback%2A?displayProperty=nameWithType>) on all previously installed components.  
   
- An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName>. This state information is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
+ An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType>. This state information is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
   
  Instantiating a <xref:System.ServiceProcess.ServiceProcessInstaller> causes the base class constructor, <xref:System.Configuration.Install.ComponentInstaller.%23ctor%2A>, to be called.  
   
@@ -38,7 +38,7 @@
 ## Examples  
  The following example creates a project installer called MyProjectInstaller, which inherits from <xref:System.Configuration.Install.Installer>. It is assumed there is a service executable that contains two services, "Hello-World Service 1" and "Hello-World Service 2". Within the constructor for MyProjectInstaller (which would be called by the install utility), <xref:System.ServiceProcess.ServiceInstaller> objects are created for each service, and a <xref:System.ServiceProcess.ServiceProcessInstaller> is created for the executable. For the install utility to recognize MyProjectInstaller as a valid installer, the <xref:System.ComponentModel.RunInstallerAttribute> attribute is set to `true`.  
   
- Optional properties are set on the process installer and the service installers before the installers are added to the <xref:System.Configuration.Install.Installer.Installers%2A> collection. When the install utility accesses MyProjectInstaller, the objects added to the <xref:System.Configuration.Install.Installer.Installers%2A> collection through a call to <xref:System.Configuration.Install.InstallerCollection.Add%2A?displayProperty=fullName> will be installed in turn. During the process, the installer maintains state information indicating which objects have been installed, so each object can be backed out in turn in case of an installation failure.  
+ Optional properties are set on the process installer and the service installers before the installers are added to the <xref:System.Configuration.Install.Installer.Installers%2A> collection. When the install utility accesses MyProjectInstaller, the objects added to the <xref:System.Configuration.Install.Installer.Installers%2A> collection through a call to <xref:System.Configuration.Install.InstallerCollection.Add%2A?displayProperty=nameWithType> will be installed in turn. During the process, the installer maintains state information indicating which objects have been installed, so each object can be backed out in turn in case of an installation failure.  
   
  Normally, you would not instantiate your project installer class explicitly. You would create it and add the <xref:System.ComponentModel.RunInstallerAttribute>, but the install utility actually calls, and therefore instantiates, the class.  
   
@@ -48,6 +48,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceInstaller" />
+    <altmember cref="T:System.ServiceProcess.ServiceBase" />
+    <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
+    <altmember cref="P:System.Configuration.Install.Installer.Installers" />
+    <altmember cref="T:System.ServiceProcess.ServiceAccount" />
+    <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +106,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
+        <altmember cref="T:System.ServiceProcess.ServiceAccount" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -128,6 +138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Rollback(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -153,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -177,17 +191,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceProcessInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=fullName> method during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> on all previously installed components. This method passes the installation to the base class <xref:System.Configuration.Install.Installer.Install%2A?displayProperty=fullName> method.  
+ Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceProcessInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=nameWithType> method during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> on all previously installed components. This method passes the installation to the base class <xref:System.Configuration.Install.Installer.Install%2A?displayProperty=nameWithType> method.  
   
- Normally, you will not call the methods on <xref:System.ServiceProcess.ServiceInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=fullName> and <xref:System.ServiceProcess.ServiceInstaller.Install%2A?displayProperty=fullName> methods during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> (or <xref:System.ServiceProcess.ServiceInstaller.Rollback%2A?displayProperty=fullName>) on all previously installed components  
+ Normally, you will not call the methods on <xref:System.ServiceProcess.ServiceInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=nameWithType> and <xref:System.ServiceProcess.ServiceInstaller.Install%2A?displayProperty=nameWithType> methods during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> (or <xref:System.ServiceProcess.ServiceInstaller.Rollback%2A?displayProperty=nameWithType>) on all previously installed components  
   
- An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName>. This state information, passed into <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A> as the `stateSaver` parameter, is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
+ An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType>. This state information, passed into <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A> as the `stateSaver` parameter, is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
   
  <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A> passes to the calling method any exceptions thrown by base class methods or <xref:System.Configuration.Install.Installer.BeforeInstall> / <xref:System.Configuration.Install.Installer.AfterInstall> event handlers.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="stateSaver" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -216,7 +233,7 @@
 ## Remarks  
  The <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> pair allows the service to run under an account other than the system account. This can, for example, allow the service to start automatically at reboot, when no user is logged on.  
   
- <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> are handled in a secure manner in that they are never serialized or saved to the install state (the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName>) or other location with public access.  
+ <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> are handled in a secure manner in that they are never serialized or saved to the install state (the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType>) or other location with public access.  
   
  Setting the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> allows an account to be associated automatically with the service at install time. If you leave either the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> or <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> empty and set <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to `User`, you will be prompted for a valid user name and password at installation.  
   
@@ -226,6 +243,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -250,9 +270,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceProcessInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=fullName> method during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> on the object that generated the exception.  
+ Normally, you do not call the methods on <xref:System.ServiceProcess.ServiceProcessInstaller> within your code; they are generally called only by the install utility. The install utility automatically calls the <xref:System.ServiceProcess.ServiceProcessInstaller.Install%2A?displayProperty=nameWithType> method during the installation process. It backs out failures, if necessary, by calling <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> on the object that generated the exception.  
   
- An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName>. This state information, passed into <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> as the `savedState` parameter, is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
+ An application's install routine maintains information automatically about the components already installed, using the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType>. This state information, passed into <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> as the `savedState` parameter, is continuously updated as the <xref:System.ServiceProcess.ServiceProcessInstaller> instance and each <xref:System.ServiceProcess.ServiceInstaller> instance is installed by the utility. It is usually unnecessary for your code to modify this state information explicitly.  
   
  <xref:System.ServiceProcess.ServiceProcessInstaller.Rollback%2A> passes to the calling method any exceptions thrown by base class methods or <xref:System.Configuration.Install.Installer.BeforeInstall> / <xref:System.Configuration.Install.Installer.AfterInstall> event handlers.  
   
@@ -263,6 +283,8 @@
  -or-  
   
  The <paramref name="savedState" /> is corrupted or non-existent.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
       </Docs>
     </Member>
     <Member MemberName="Username">
@@ -294,7 +316,7 @@
 ## Remarks  
  The <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> pair allows the service to run under an account other than the system account. This can, for example, allow the service to start automatically at reboot, when no user is logged on.  
   
- <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> are handled in a secure manner in that they are never serialized or saved to the install state (the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName>) or other location with public access.  
+ <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> are handled in a secure manner in that they are never serialized or saved to the install state (the project installer's <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType>) or other location with public access.  
   
  Setting the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> and <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> allows an account to be associated automatically with the service at install time. If you leave either the <xref:System.ServiceProcess.ServiceProcessInstaller.Username%2A> or <xref:System.ServiceProcess.ServiceProcessInstaller.Password%2A> empty and set <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to `User`, you will be prompted for a valid user name and password at installation.  
   
@@ -304,6 +326,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
   </Members>

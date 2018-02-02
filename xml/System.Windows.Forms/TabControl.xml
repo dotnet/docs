@@ -57,11 +57,11 @@
   
 -   <xref:System.Windows.Forms.TabControl.Selected>  
   
- The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl>, but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection.  
+ The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl>, but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection.  
   
  In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
   
- The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection: <xref:System.Windows.Forms.Control.Click?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseHover?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=fullName> and <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the <xref:System.Windows.Forms.Control.ClientRectangle%2A> of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
+ The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=nameWithType> collection: <xref:System.Windows.Forms.Control.Click?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseHover?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=nameWithType>, <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the <xref:System.Windows.Forms.Control.ClientRectangle%2A> of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
   
  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
   
@@ -163,6 +163,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAlignment" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.Appearance" />
+        <altmember cref="P:System.Windows.Forms.TabControl.Multiline" />
+        <altmember cref="T:System.Windows.Forms.TabAlignment" />
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -211,6 +214,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAppearance" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.TabControl.Alignment" />
+        <altmember cref="T:System.Windows.Forms.TabAppearance" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -489,7 +494,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselected> event.  
   
@@ -498,6 +503,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="Deselecting">
@@ -535,7 +548,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselecting> event.  
   
@@ -544,6 +557,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -574,6 +595,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -608,6 +637,14 @@
  -or-  
   
  <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DeselectTab">
@@ -644,6 +681,14 @@
  <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tabPage" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -675,6 +720,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -759,6 +805,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DrawItemEventHandler" />
+        <altmember cref="M:System.Windows.Forms.TabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="DrawMode">
@@ -803,6 +851,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabDrawMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TabDrawMode" />
+        <altmember cref="E:System.Windows.Forms.TabControl.DrawItem" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1075,6 +1125,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1147,6 +1198,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Size" /> is less than 0.</exception>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="Multiline">
@@ -1191,6 +1243,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="OnDeselected">
@@ -1224,6 +1277,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
       </Docs>
     </Member>
     <Member MemberName="OnDeselecting">
@@ -1257,6 +1311,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
       </Docs>
     </Member>
     <Member MemberName="OnDrawItem">
@@ -1325,6 +1380,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Enter" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1412,6 +1468,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.HandleDestroyed" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1482,6 +1540,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Leave" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -1541,6 +1600,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnSelected">
@@ -1574,6 +1634,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedIndexChanged">
@@ -1640,6 +1701,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="OnStyleChanged">
@@ -1698,6 +1760,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Point" /> is less than 0.</exception>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1727,7 +1790,7 @@
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1809,6 +1872,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
+        <altmember cref="Overload:System.Windows.Forms.Control.PerformLayout" />
+        <altmember cref="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftLayoutChanged">
@@ -1834,7 +1900,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event.  
   
@@ -1843,6 +1909,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.RightToLeftLayout" />
       </Docs>
     </Member>
     <Member MemberName="RowCount">
@@ -1915,6 +1982,7 @@
         <param name="dy">The vertical scaling factor.</param>
         <summary>This member overrides <see cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1952,7 +2020,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected> event.  
   
@@ -1961,6 +2029,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndex">
@@ -2001,6 +2077,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than -1.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndexChanged">
@@ -2021,14 +2105,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this event occurs, you can check the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property to determine its new value. Alternatively, you can handle the <xref:System.Windows.Forms.TabControl.Selected> event and use the <xref:System.Windows.Forms.TabControlEventArgs.TabPageIndex%2A?displayProperty=fullName> property to determine the index of the selected tab page.  
+ When this event occurs, you can check the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property to determine its new value. Alternatively, you can handle the <xref:System.Windows.Forms.TabControl.Selected> event and use the <xref:System.Windows.Forms.TabControlEventArgs.TabPageIndex%2A?displayProperty=nameWithType> property to determine the index of the selected tab page.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event.  
   
@@ -2081,6 +2165,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="Selecting">
@@ -2118,7 +2211,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selecting> event.  
   
@@ -2127,6 +2220,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2157,6 +2258,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2191,6 +2300,14 @@
  -or-  
   
  <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="SelectTab">
@@ -2227,6 +2344,14 @@
  <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tabPage" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
       </Docs>
     </Member>
     <Member MemberName="ShowToolTips">
@@ -2272,6 +2397,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ToolTip" />
       </Docs>
     </Member>
     <Member MemberName="SizeMode">
@@ -2312,6 +2438,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabSizeMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TabSizeMode" />
       </Docs>
     </Member>
     <Member MemberName="TabCount">
@@ -2398,6 +2525,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TabControl.TabPageCollection" />
+        <altmember cref="T:System.Windows.Forms.TabPage" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -2518,7 +2647,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2537,5 +2666,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectTab">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the specified tab the current tab.</summary>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.DeselectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DeselectTab">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Makes the tab following the specified tab the current tab.</summary>
+        <altmember cref="T:System.Windows.Forms.TabPage" />
+        <altmember cref="Overload:System.Windows.Forms.TabControl.SelectTab" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedIndex" />
+        <altmember cref="P:System.Windows.Forms.TabControl.SelectedTab" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Deselected" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selecting" />
+        <altmember cref="E:System.Windows.Forms.TabControl.Selected" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItems">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

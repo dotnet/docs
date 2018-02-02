@@ -9,16 +9,21 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controls, GridView"
-  - "controls, ListView"
-  - "ListView controls, sorting GridView columns"
-  - "GridView controls, ListView control"
+  - "controls [WPF], GridView"
+  - "controls [WPF], ListView"
+  - "ListView controls [WPF], sorting GridView columns"
+  - "GridView controls [WPF], ListView control"
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Sort a GridView Column When a Header Is Clicked
 This example shows how to create a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> view mode and sorts the data content when a user clicks a column header.  
@@ -97,8 +102,7 @@ public partial class Window1 : Window
     void GridViewColumnHeaderClickedHandler(object sender,  
                                             RoutedEventArgs e)  
     {  
-        GridViewColumnHeader headerClicked =  
-              e.OriginalSource as GridViewColumnHeader;  
+        var headerClicked = e.OriginalSource as GridViewColumnHeader;  
         ListSortDirection direction;  
   
         if (headerClicked != null)  
@@ -121,8 +125,10 @@ public partial class Window1 : Window
                     }  
                 }  
   
-                string header = headerClicked.Column.Header as string;  
-                Sort(header, direction);  
+                var columnBinding = headerClicked.Column.DisplayMemberBinding as Binding;
+                var sortBy = columnBinding?.Path.Path ?? headerClicked.Column.Header as string;
+
+                Sort(sortBy, direction);
   
                 if (direction == ListSortDirection.Ascending)  
                 {  
@@ -145,54 +151,58 @@ public partial class Window1 : Window
                 _lastDirection = direction;  
             }  
         }  
-    }  
+    }
+}
 ```  
   
 ```vb  
 Partial Public Class Window1  
-		Inherits Window  
-		Public Sub New()  
-			InitializeComponent()  
-		End Sub  
+	Inherits Window
+	Public Sub New()  
+		InitializeComponent()  
+	End Sub  
   
-		Private _lastHeaderClicked As GridViewColumnHeader = Nothing  
-		Private _lastDirection As ListSortDirection = ListSortDirection.Ascending  
+	Private _lastHeaderClicked As GridViewColumnHeader = Nothing  
+	Private _lastDirection As ListSortDirection = ListSortDirection.Ascending  
   
-		Private Sub GridViewColumnHeaderClickedHandler(ByVal sender As Object, ByVal e As RoutedEventArgs)  
-			Dim headerClicked As GridViewColumnHeader = TryCast(e.OriginalSource, GridViewColumnHeader)  
-			Dim direction As ListSortDirection  
+	Private Sub GridViewColumnHeaderClickedHandler(ByVal sender As Object, ByVal e As RoutedEventArgs)  
+		Dim headerClicked = TryCast(e.OriginalSource, GridViewColumnHeader)  
+		Dim direction As ListSortDirection  
   
-			If headerClicked IsNot Nothing Then  
-				If headerClicked.Role <> GridViewColumnHeaderRole.Padding Then  
-					If headerClicked IsNot _lastHeaderClicked Then  
+		If headerClicked IsNot Nothing Then  
+			If headerClicked.Role <> GridViewColumnHeaderRole.Padding Then  
+				If headerClicked IsNot _lastHeaderClicked Then  
+					direction = ListSortDirection.Ascending  
+				Else  
+					If _lastDirection = ListSortDirection.Ascending Then  
+						direction = ListSortDirection.Descending  
+					Else  
 						direction = ListSortDirection.Ascending  
-					Else  
-						If _lastDirection = ListSortDirection.Ascending Then  
-							direction = ListSortDirection.Descending  
-						Else  
-							direction = ListSortDirection.Ascending  
-						End If  
 					End If  
-  
-					Dim header As String = TryCast(headerClicked.Column.Header, String)  
-					Sort(header, direction)  
-  
-					If direction = ListSortDirection.Ascending Then  
-						headerClicked.Column.HeaderTemplate = TryCast(Resources("HeaderTemplateArrowUp"), DataTemplate)  
-					Else  
-						headerClicked.Column.HeaderTemplate = TryCast(Resources("HeaderTemplateArrowDown"), DataTemplate)  
-					End If  
-  
-					' Remove arrow from previously sorted header  
-					If _lastHeaderClicked IsNot Nothing AndAlso _lastHeaderClicked IsNot headerClicked Then  
-						_lastHeaderClicked.Column.HeaderTemplate = Nothing  
-					End If  
-  
-					_lastHeaderClicked = headerClicked  
-					_lastDirection = direction  
 				End If  
+
+				Dim columnBinding = TryCast(headerClicked.Column.DisplayMemberBinding, Binding)
+				Dim sortBy = If(columnBinding?.Path.Path, TryCast(headerClicked.Column.Header, String))
+
+				Sort(sortBy, direction)  
+
+				If direction = ListSortDirection.Ascending Then
+					headerClicked.Column.HeaderTemplate = TryCast(Resources("HeaderTemplateArrowUp"), DataTemplate)  
+				Else  
+					headerClicked.Column.HeaderTemplate = TryCast(Resources("HeaderTemplateArrowDown"), DataTemplate)  
+				End If  
+  
+				' Remove arrow from previously sorted header  
+				If _lastHeaderClicked IsNot Nothing AndAlso _lastHeaderClicked IsNot headerClicked Then  
+					_lastHeaderClicked.Column.HeaderTemplate = Nothing  
+				End If  
+  
+				_lastHeaderClicked = headerClicked  
+				_lastDirection = direction  
 			End If  
-		End Sub  
+		End If  
+	End Sub
+End Class
 ```  
   
  The following example shows the sorting algorithm that is called by the event handler to sort the data. The sort is performed by creating a new <xref:System.ComponentModel.SortDescription> structure.  
@@ -212,18 +222,18 @@ private void Sort(string sortBy, ListSortDirection direction)
   
 ```vb  
 Private Sub Sort(ByVal sortBy As String, ByVal direction As ListSortDirection)  
-			Dim dataView As ICollectionView = CollectionViewSource.GetDefaultView(lv.ItemsSource)  
+	Dim dataView As ICollectionView = CollectionViewSource.GetDefaultView(lv.ItemsSource)  
   
-			dataView.SortDescriptions.Clear()  
-			Dim sd As New SortDescription(sortBy, direction)  
-			dataView.SortDescriptions.Add(sd)  
-			dataView.Refresh()  
-		End Sub  
+	dataView.SortDescriptions.Clear()  
+	Dim sd As New SortDescription(sortBy, direction)  
+	dataView.SortDescriptions.Add(sd)  
+	dataView.Refresh()  
+End Sub  
 ```  
   
 ## See Also  
- <xref:System.Windows.Controls.ListView>   
- <xref:System.Windows.Controls.GridView>   
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)   
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)   
+ <xref:System.Windows.Controls.ListView>  
+ <xref:System.Windows.Controls.GridView>  
+ [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
+ [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

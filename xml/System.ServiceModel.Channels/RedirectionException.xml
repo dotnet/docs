@@ -36,7 +36,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, System.ServiceModel.Channels.RedirectionLocation[] locations);" />
+      <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionLocation[])" />
       <MemberType>Constructor</MemberType>
@@ -66,7 +66,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, System.ServiceModel.Channels.RedirectionLocation[] locations);" />
+      <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.Exception innerException, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.Exception,System.ServiceModel.Channels.RedirectionLocation[])" />
       <MemberType>Constructor</MemberType>
@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, System.ServiceModel.Channels.RedirectionLocation[] locations);" />
+      <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.String,System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionLocation[])" />
       <MemberType>Constructor</MemberType>
@@ -130,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, System.ServiceModel.Channels.RedirectionLocation[] locations);" />
+      <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.Exception innerException, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.String,System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.Exception,System.ServiceModel.Channels.RedirectionLocation[])" />
       <MemberType>Constructor</MemberType>
@@ -263,5 +263,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

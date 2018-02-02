@@ -51,7 +51,7 @@
   
  The <xref:System.Windows.Controls.ComboBox.IsReadOnly%2A> property has an effect only if <xref:System.Windows.Controls.ComboBox.IsEditable%2A> is `true`.  
   
- The <xref:System.Windows.Controls.ComboBox> is an <xref:System.Windows.Controls.ItemsControl>, so it can display content other than simple strings.  For example, you can create a <xref:System.Windows.Controls.ComboBox> that contains a list of images. When you have content other than strings in the <xref:System.Windows.Controls.ComboBox>, a nonsensical string might appear in the <xref:System.Windows.Controls.ComboBox> when the drop-down list is hidden. To display a string in the <xref:System.Windows.Controls.ComboBox> when it contains non-string items, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=fullName> or <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName>attached property.  
+ The <xref:System.Windows.Controls.ComboBox> is an <xref:System.Windows.Controls.ItemsControl>, so it can display content other than simple strings.  For example, you can create a <xref:System.Windows.Controls.ComboBox> that contains a list of images. When you have content other than strings in the <xref:System.Windows.Controls.ComboBox>, a nonsensical string might appear in the <xref:System.Windows.Controls.ComboBox> when the drop-down list is hidden. To display a string in the <xref:System.Windows.Controls.ComboBox> when it contains non-string items, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=nameWithType> attached property.  
   
 ## Customizing the ComboBox Control  
  To apply the same property settings to multiple <xref:System.Windows.Controls.ComboBox> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ComboBox>, see [ComboBox Styles and Templates](~/docs/framework/wpf/controls/combobox-styles-and-templates.md).  
@@ -75,6 +75,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ComboBoxItem" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -332,7 +333,7 @@
    
   
 ## Examples  
- The following examples create <xref:System.Windows.Controls.ComboBox> controls that contain images as items instead of text. If the <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is set to `true`, the <xref:System.Windows.Controls.TextBox> displays the value returned by the image's <xref:System.Object.ToString%2A> method. To avoid a <xref:System.Windows.Controls.TextBox> with unexpected text, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=fullName> and <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=fullName> properties to assign text to be displayed.  
+ The following examples create <xref:System.Windows.Controls.ComboBox> controls that contain images as items instead of text. If the <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is set to `true`, the <xref:System.Windows.Controls.TextBox> displays the value returned by the image's <xref:System.Object.ToString%2A> method. To avoid a <xref:System.Windows.Controls.TextBox> with unexpected text, use the <xref:System.Windows.Controls.TextSearch.Text%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.TextSearch.TextPath%2A?displayProperty=nameWithType> properties to assign text to be displayed.  
   
  [!code-xaml[ComboBoxProps_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#1)]  
   
@@ -845,7 +846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.ComboBox> uses this property to show the selected item in the <xref:System.Windows.Controls.ComboBox>.  To get the selected item of the <xref:System.Windows.Controls.ComboBox> outside of the <xref:System.Windows.Controls.ControlTemplate>, use the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A?displayProperty=fullName> property instead of this property.  
+ The <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.ComboBox> uses this property to show the selected item in the <xref:System.Windows.Controls.ComboBox>.  To get the selected item of the <xref:System.Windows.Controls.ComboBox> outside of the <xref:System.Windows.Controls.ControlTemplate>, use the <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A?displayProperty=nameWithType> property instead of this property.  
   
 <a name="xamlAttributeUsage_SelectionBoxItem"></a>   
 ## XAML Attribute Usage  

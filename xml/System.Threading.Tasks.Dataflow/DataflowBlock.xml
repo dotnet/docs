@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+[!INCLUDE [tpl-install-instructions](~/includes/tpl-install-instructions.md)]
   
  ]]></format>
     </remarks>
@@ -582,7 +582,7 @@ batchBlock.Complete();
         <param name="source">The source to monitor.</param>
         <param name="cancellationToken">The cancellation token with which to cancel the asynchronous operation.</param>
         <summary>Provides a  <see cref="T:System.Threading.Tasks.Task`1" /> that asynchronously monitors the source for available output.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data). If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available. If it returns false, more output is not and will never be available, due to the source completing prior to output being available.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data). If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1000,7 +1000,7 @@ batchBlock.Complete();
     </Member>
     <Member MemberName="TryReceive&lt;TOutput&gt;">
       <MemberSignature Language="C#" Value="public static bool TryReceive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt; source, out TOutput item);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReceive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!!TOutput&gt; source, !!TOutput item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReceive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!!TOutput&gt; source, [out] !!TOutput&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

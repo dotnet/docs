@@ -1365,5 +1365,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StoreOriginalValues">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores the original values from the Select operation in the control's view state.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

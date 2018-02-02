@@ -27,7 +27,7 @@
   </Docs>
   <Members>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static FormattableString Create (string format, object[] arguments);" />
+      <MemberSignature Language="C#" Value="public static FormattableString Create (string format, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.FormattableString Create(string format, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.FormattableStringFactory.Create(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

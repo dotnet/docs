@@ -2077,7 +2077,7 @@
   
  The arguments are placed on the stack in left-to-right order. That is, the first argument is computed and placed on the stack, then the second argument, then the third, until all necessary arguments are atop the stack in descending order. The instance reference `obj` (always required for `callvirt`) must be pushed before any of the user-visible arguments. The signature (carried in the metadata token) need not contain an entry in the parameter list for the this pointer.  
   
- Note that a virtual method can also be called using the<xref:System.Reflection.Emit.OpCodes.Call> instruction.  
+ Note that a virtual method can also be called using the <xref:System.Reflection.Emit.OpCodes.Call> instruction.  
   
  <xref:System.MissingMethodException> is thrown if a non-static method with the indicated name and signature could not be found in the class associated with `obj` or any of its base classes. This is typically detected when Microsoft Intermediate Language (MSIL) instructions are converted to native code, rather than at runtime.  
   
@@ -2555,7 +2555,7 @@
   
 -   If `thisType` is a value type and `thisType` does not implement `method` then `ptr` is dereferenced, boxed, and passed as the 'this' pointer to the `callvirt` `method` instruction.  
   
- This last case can occur only when `method` was defined on <xref:System.Object>, <xref:System.ValueType>, or<xref:System.Enum> and not overridden by `thisType`. In this case, the boxing causes a copy of the original object to be made. However, because none of the methods of <xref:System.Object>, <xref:System.ValueType>, and <xref:System.Enum> modify the state of the object, this fact cannot be detected.  
+ This last case can occur only when `method` was defined on <xref:System.Object>, <xref:System.ValueType>, or <xref:System.Enum> and not overridden by `thisType`. In this case, the boxing causes a copy of the original object to be made. However, because none of the methods of <xref:System.Object>, <xref:System.ValueType>, and <xref:System.Enum> modify the state of the object, this fact cannot be detected.  
   
  The `constrained` prefix supports IL generators that create generic code. Normally the `callvirt` instruction is not valid on value types. Instead it is required that IL compilers effectively perform the 'this' transformation outlined above at compile time, depending on the type of `ptr` and the method being called. However, when `ptr` is a generic type that is unknown at compile time, it is not possible to make this transformation at compile time.  
   
@@ -4495,7 +4495,7 @@
   
  `cpblk` assumes that both the source and destination addressed are aligned to the natural size of the machine. The `cpblk` instruction can be immediately preceded by the `unaligned.<prefix>` instruction to indicate that either the source or the destination is unaligned.  
   
- The operation of the `cpblk` instruction can be altered by an immediately preceding <xref:System.Reflection.Emit.OpCodes.Volatile> or <xref:System.Reflection.Emit.OpCodes.Unaligned>prefix instruction.  
+ The operation of the `cpblk` instruction can be altered by an immediately preceding <xref:System.Reflection.Emit.OpCodes.Volatile> or <xref:System.Reflection.Emit.OpCodes.Unaligned> prefix instruction.  
   
  <xref:System.NullReferenceException> may be thrown if an invalid address is detected.  
   
@@ -7385,7 +7385,7 @@
   
  Correctly-formed Microsoft Intermediate Language (MSIL) ensures that the `ldind` instructions are used in a manner consistent with the type of the pointer.  
   
- The address initially pushed onto the stack must be aligned to the natural size of objects on the machine or a <xref:System.NullReferenceException> can occur (see the <xref:System.Reflection.Emit.OpCodes.Unaligned> prefix instruction for preventative measures). The results of all MSIL instructions that return addresses (for example, <xref:System.Reflection.Emit.OpCodes.Ldloca>and <xref:System.Reflection.Emit.OpCodes.Ldarga>) are safely aligned. For datatypes larger than 1 byte, the byte ordering is dependent on the target CPU. Code that depends on byte ordering might not run on all platforms.  
+ The address initially pushed onto the stack must be aligned to the natural size of objects on the machine or a <xref:System.NullReferenceException> can occur (see the <xref:System.Reflection.Emit.OpCodes.Unaligned> prefix instruction for preventative measures). The results of all MSIL instructions that return addresses (for example, <xref:System.Reflection.Emit.OpCodes.Ldloca> and <xref:System.Reflection.Emit.OpCodes.Ldarga>) are safely aligned. For datatypes larger than 1 byte, the byte ordering is dependent on the target CPU. Code that depends on byte ordering might not run on all platforms.  
   
  <xref:System.NullReferenceException> can be thrown if an invalid address is detected.  
   
@@ -10346,6 +10346,7 @@ callvirt m
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Runtime.InteropServices.Marshal.SizeOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Starg">
@@ -10446,7 +10447,7 @@ callvirt m
   
  Performing a store into arguments that hold an integer value smaller than 4 bytes long truncates the value as it moves from the stack to the argument. Floating-point values are rounded from their native size (type `F`) to the size associated with the argument.  
   
- The following <xref:System.Reflection.Emit.ILGenerator.Emit%2A>method overload can use the `starg.s` opcode:  
+ The following <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method overload can use the `starg.s` opcode:  
   
 -   ILGenerator.Emit(OpCode, byte)  
   
@@ -11226,7 +11227,7 @@ callvirt m
   
  The `stind.i2` instruction stores an `int16` value at the supplied address (type `native int`, `*`, or `&`).  
   
- Type safe operation requires that the `stind.2i` instruction be used in a manner consistent with the type of the pointer. The operation of the `stind.i2` instruction can be altered by an immediately preceding <xref:System.Reflection.Emit.OpCodes.Volatile> or <xref:System.Reflection.Emit.OpCodes.Unaligned>prefix instruction.  
+ Type safe operation requires that the `stind.2i` instruction be used in a manner consistent with the type of the pointer. The operation of the `stind.i2` instruction can be altered by an immediately preceding <xref:System.Reflection.Emit.OpCodes.Volatile> or <xref:System.Reflection.Emit.OpCodes.Unaligned> prefix instruction.  
   
  <xref:System.NullReferenceException> is thrown if `addr` is not naturally aligned for the argument type implied by the instruction suffix.  
   

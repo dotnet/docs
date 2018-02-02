@@ -1,26 +1,17 @@
 ---
 title: "Iterators (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Iterators (Visual Basic)
 An *iterator* can be used to step through collections such as lists and arrays.  
@@ -444,7 +435,7 @@ End Class
   
  On each successive iteration of the `For Each…Next` loop (or the direct call to `IEnumerator.MoveNext`), the next iterator code body resumes after the previous `Yield` statement. It then continues to the next `Yield` statement until the end of the iterator body is reached, or until an `Exit Function` or `Return` statement is encountered.  
   
- Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
+ Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To re-iterate from the start, you must obtain a new iterator.  
   
  For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).  
   
@@ -458,8 +449,8 @@ End Class
 -   Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
   
 ## See Also  
- <xref:System.Collections.Generic>   
- <xref:System.Collections.Generic.IEnumerable%601>   
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)   
+ <xref:System.Collections.Generic>  
+ <xref:System.Collections.Generic.IEnumerable%601>  
+ [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)  
  [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)

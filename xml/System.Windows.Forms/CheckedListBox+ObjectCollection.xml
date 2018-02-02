@@ -82,7 +82,7 @@
    
   
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=fullName> property of the control.  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=nameWithType> property of the control.  
   
  To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named CheckedListBox1 and call the `InitializeCheckListBox` method from the form's constructor or `Load` method.  
   
@@ -126,5 +126,14 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="check" /> parameter is not one of the valid <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

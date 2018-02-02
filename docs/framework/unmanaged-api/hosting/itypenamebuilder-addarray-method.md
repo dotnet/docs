@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddArray method [.NET Framework hosting]"
   - "AddArray method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeNameBuilder::AddArray Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

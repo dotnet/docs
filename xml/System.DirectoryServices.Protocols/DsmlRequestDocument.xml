@@ -17,6 +17,8 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> class enables you to build a DSML request payload, such as <see cref="T:System.DirectoryServices.Protocols.AddRequest" />, <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" />, or <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />.  It contains zero or more <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> derived objects. The user may add, delete, modify, and enumerate the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> before sending to the server. <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> can be used with any DSML Binding classes to transport the document, such as <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Collections.ICollection" />
+    <altmember cref="T:System.Collections.IList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

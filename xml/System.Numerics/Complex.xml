@@ -48,13 +48,13 @@
   
 -   By passing two <xref:System.Double> values to its constructor. The first value represents the real part of the complex number, and the second value represents its imaginary part. These values represent the position of the complex number in the two-dimensional Cartesian coordinate system.  
   
--   By calling the static (`Shared` in Visual Basic) <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName> method to create a complex number from its polar coordinates.  
+-   By calling the static (`Shared` in Visual Basic) <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=nameWithType> method to create a complex number from its polar coordinates.  
   
 -   By assigning a <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>, <xref:System.Single>, or <xref:System.Double> value to a <xref:System.Numerics.Complex> object. The value becomes the real part of the complex number, and its imaginary part equals 0.  
   
 -   By casting (in C#) or converting (in Visual Basic) a <xref:System.Decimal> or <xref:System.Numerics.BigInteger> value to a <xref:System.Numerics.Complex> object. The value becomes the real part of the complex number, and its imaginary part equals 0.  
   
--   By assigning the complex number that is returned by a method or operator to a <xref:System.Numerics.Complex> object. For example, <xref:System.Numerics.Complex.Add%2A?displayProperty=fullName> is a static method that returns a complex number that is the sum of two complex numbers, and the <xref:System.Numerics.Complex.op_Addition%2A?displayProperty=fullName> operator adds two complex numbers and returns the result.  
+-   By assigning the complex number that is returned by a method or operator to a <xref:System.Numerics.Complex> object. For example, <xref:System.Numerics.Complex.Add%2A?displayProperty=nameWithType> is a static method that returns a complex number that is the sum of two complex numbers, and the <xref:System.Numerics.Complex.op_Addition%2A?displayProperty=nameWithType> operator adds two complex numbers and returns the result.  
   
  The following example demonstrates each of these five ways of assigning a value to a complex number.  
   
@@ -88,33 +88,33 @@
  [!code-vb[System.Numerics.Complex.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.class/vb/precision1.vb#6)]  
   
 ## Complex Numbers, Infinity, and NaN  
- The real and imaginary parts of a complex number are represented by <xref:System.Double> values. In addition to ranging from <xref:System.Double.MinValue?displayProperty=fullName> to <xref:System.Double.MaxValue?displayProperty=fullName>, the real or imaginary part of a complex number can have a value of <xref:System.Double.PositiveInfinity?displayProperty=fullName>, <xref:System.Double.NegativeInfinity?displayProperty=fullName>, or <xref:System.Double.NaN?displayProperty=fullName>. <xref:System.Double.PositiveInfinity?displayProperty=fullName>, <xref:System.Double.NegativeInfinity?displayProperty=fullName>, and <xref:System.Double.NaN?displayProperty=fullName> all propagate in any arithmetic or trigonometric operation.  
+ The real and imaginary parts of a complex number are represented by <xref:System.Double> values. In addition to ranging from <xref:System.Double.MinValue?displayProperty=nameWithType> to <xref:System.Double.MaxValue?displayProperty=nameWithType>, the real or imaginary part of a complex number can have a value of <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, or <xref:System.Double.NaN?displayProperty=nameWithType>. <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.NaN?displayProperty=nameWithType> all propagate in any arithmetic or trigonometric operation.  
   
- In the following example, division by <xref:System.Numerics.Complex.Zero> produces a complex number whose real and imaginary parts are both <xref:System.Double.NaN?displayProperty=fullName>. As a result, performing multiplication with this value also produces a complex number whose real and imaginary parts are <xref:System.Double.NaN?displayProperty=fullName>. Similarly, performing a multiplication that overflows the range of the <xref:System.Double> type produces a complex number whose real part is <xref:System.Double.NaN?displayProperty=fullName> and whose imaginary part is <xref:System.Double.PositiveInfinity?displayProperty=fullName>. Subsequently performing division with this complex number returns a complex number whose real part is <xref:System.Double.NaN?displayProperty=fullName> and whose imaginary part is <xref:System.Double.PositiveInfinity?displayProperty=fullName>.  
+ In the following example, division by <xref:System.Numerics.Complex.Zero> produces a complex number whose real and imaginary parts are both <xref:System.Double.NaN?displayProperty=nameWithType>. As a result, performing multiplication with this value also produces a complex number whose real and imaginary parts are <xref:System.Double.NaN?displayProperty=nameWithType>. Similarly, performing a multiplication that overflows the range of the <xref:System.Double> type produces a complex number whose real part is <xref:System.Double.NaN?displayProperty=nameWithType> and whose imaginary part is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. Subsequently performing division with this complex number returns a complex number whose real part is <xref:System.Double.NaN?displayProperty=nameWithType> and whose imaginary part is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Numerics.Complex.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.class/cs/nan1.cs#3)]
  [!code-vb[System.Numerics.Complex.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.class/vb/nan1.vb#3)]  
   
- Mathematical operations with complex numbers that are invalid or that overflow the range of the <xref:System.Double> data type do not throw an exception. Instead, they return a <xref:System.Double.PositiveInfinity?displayProperty=fullName>, <xref:System.Double.NegativeInfinity?displayProperty=fullName>, or <xref:System.Double.NaN?displayProperty=fullName> under the following conditions:  
+ Mathematical operations with complex numbers that are invalid or that overflow the range of the <xref:System.Double> data type do not throw an exception. Instead, they return a <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, or <xref:System.Double.NaN?displayProperty=nameWithType> under the following conditions:  
   
--   The division of a positive number by zero returns <xref:System.Double.PositiveInfinity?displayProperty=fullName>.  
+-   The division of a positive number by zero returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
   
--   Any operation that overflows the upper bound of the <xref:System.Double> data type returns <xref:System.Double.PositiveInfinity?displayProperty=fullName>.  
+-   Any operation that overflows the upper bound of the <xref:System.Double> data type returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
   
--   The division of a negative number by zero returns <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+-   The division of a negative number by zero returns <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
--   Any operation that overflows the lower bound of the <xref:System.Double> data type returns <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+-   Any operation that overflows the lower bound of the <xref:System.Double> data type returns <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
--   The division of a zero by zero returns <xref:System.Double.NaN?displayProperty=fullName>.  
+-   The division of a zero by zero returns <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
--   Any operation that is performed on operands whose values are <xref:System.Double.PositiveInfinity?displayProperty=fullName>, <xref:System.Double.NegativeInfinity?displayProperty=fullName>, or <xref:System.Double.NaN?displayProperty=fullName> returns <xref:System.Double.PositiveInfinity?displayProperty=fullName>, <xref:System.Double.NegativeInfinity?displayProperty=fullName>, or <xref:System.Double.NaN?displayProperty=fullName>, depending on the specific operation.  
+-   Any operation that is performed on operands whose values are <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, or <xref:System.Double.NaN?displayProperty=nameWithType> returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, or <xref:System.Double.NaN?displayProperty=nameWithType>, depending on the specific operation.  
   
- Note that this applies to any intermediate calculations performed by a method. For example, the multiplication of `new Complex(9e308, 9e308) and new Complex(2.5, 3.5)` uses the formula (ac - bd) + (ad + bc)i. The calculation of the real component that results from the multiplication evaluates the expression 9e308 * 2.5 - 9e308 * 3.5. Each intermediate multiplication in this expression returns <xref:System.Double.PositiveInfinity?displayProperty=fullName>, and the attempt to subtract <xref:System.Double.PositiveInfinity?displayProperty=fullName> from <xref:System.Double.PositiveInfinity?displayProperty=fullName> returns <xref:System.Double.NaN?displayProperty=fullName>.  
+ Note that this applies to any intermediate calculations performed by a method. For example, the multiplication of `new Complex(9e308, 9e308) and new Complex(2.5, 3.5)` uses the formula (ac - bd) + (ad + bc)i. The calculation of the real component that results from the multiplication evaluates the expression 9e308 * 2.5 - 9e308 * 3.5. Each intermediate multiplication in this expression returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>, and the attempt to subtract <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> from <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> returns <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
 ## Formatting a Complex Number  
  By default, the string representation of a complex number takes the form `(`*real*`,` *imaginary*`)`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
   
- One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method.  
+ One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method.  
   
  The following example defines a `ComplexFormatter` class that represents a complex number as a string in the form of either a + bi or a + bj.  
   
@@ -212,11 +212,11 @@
   
 -   If b = 0, the result is 0.  
   
--   If a > b, the result is a *<xref:System.Math.Sqrt%2A?displayProperty=fullName>(1 + b<sup>2</sup>/a<sup>2</sup>).  
+-   If a > b, the result is a *<xref:System.Math.Sqrt%2A?displayProperty=nameWithType>(1 + b<sup>2</sup>/a<sup>2</sup>).  
   
--   If b > a, the result is b * <xref:System.Math.Sqrt%2A?displayProperty=fullName>(1 + a<sup>2</sup>/b<sup>2</sup>).  
+-   If b > a, the result is b * <xref:System.Math.Sqrt%2A?displayProperty=nameWithType>(1 + a<sup>2</sup>/b<sup>2</sup>).  
   
- If the calculation of the absolute value results in an overflow, the method returns either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>. If either the <xref:System.Numerics.Complex.Real%2A> or <xref:System.Numerics.Complex.Imaginary%2A> property is <xref:System.Double.NaN?displayProperty=fullName> and the other property is neither <xref:System.Double.PositiveInfinity?displayProperty=fullName> nor <xref:System.Double.NegativeInfinity?displayProperty=fullName>, the method returns <xref:System.Double.NaN?displayProperty=fullName>.  
+ If the calculation of the absolute value results in an overflow, the method returns either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>. If either the <xref:System.Numerics.Complex.Real%2A> or <xref:System.Numerics.Complex.Imaginary%2A> property is <xref:System.Double.NaN?displayProperty=nameWithType> and the other property is neither <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> nor <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
    
   
@@ -228,6 +228,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
       </Docs>
     </Member>
     <Member MemberName="Acos">
@@ -263,7 +264,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Acos%2A> method for complex numbers corresponds to the <xref:System.Math.Acos%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Acos%2A> method for complex numbers corresponds to the <xref:System.Math.Acos%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Acos%2A> method uses the following formula:  
   
@@ -279,6 +280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Cos(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Acos(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -320,7 +323,7 @@
   
  (a + c) + (b + d)i.  
   
- If the method call results in an overflow in either the real or imaginary component, the value of the component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the method call results in an overflow in either the real or imaginary component, the value of the component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  Languages that do not support custom operators can use the <xref:System.Numerics.Complex.Add%2A> method to perform addition with complex numbers.  
   
@@ -334,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Addition(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -369,7 +373,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Asin%2A> method for complex numbers corresponds to the <xref:System.Math.Asin%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Asin%2A> method for complex numbers corresponds to the <xref:System.Math.Asin%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Asin%2A> method uses the following formula:  
   
@@ -385,6 +389,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Sin(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Asin(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -420,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Atan%2A> method for complex numbers corresponds to the <xref:System.Math.Atan%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Atan%2A> method for complex numbers corresponds to the <xref:System.Math.Atan%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Atan%2A> method uses the following formula:  
   
@@ -436,6 +442,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Tan(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Atan(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Conjugate">
@@ -518,7 +526,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Cos%2A> method for complex numbers corresponds to the <xref:System.Math.Cos%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Cos%2A> method for complex numbers corresponds to the <xref:System.Math.Cos%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Cos%2A> method uses the following formula to calculate the cosine of the complex number a + bi:  
   
@@ -534,6 +542,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Acos(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Cos(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Cosh">
@@ -569,7 +579,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Cosh%2A> method for complex numbers corresponds to the <xref:System.Math.Cosh%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Cosh%2A> method for complex numbers corresponds to the <xref:System.Math.Cosh%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Cosh%2A> method uses the following formula to calculate the hyperbolic cosine of the complex number a + bi:  
   
@@ -577,6 +587,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Cosh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -618,7 +629,7 @@
   
  ((ac + bd) / (c<sup>2</sup> + d<sup>2</sup>)) + ((bc - ad) / (c<sup>2</sup> + d<sup>2</sup>)i  
   
- If the calculation of the quotient results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the calculation of the quotient results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  The <xref:System.Numerics.Complex.Divide%2A> method can be used by languages that do not support custom operators. Its behavior is identical to division using the division operator.  
   
@@ -632,6 +643,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -688,6 +700,7 @@
  [!code-csharp[System.Numerics.Complex.Equals#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.equals/cs/precision1.cs#5)]
  [!code-vb[System.Numerics.Complex.Equals#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.equals/vb/precision1.vb#5)]</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -784,7 +797,7 @@
 ## Remarks  
  Use the <xref:System.Numerics.Complex.Pow%2A> method to calculate the powers of other bases.  
   
- The <xref:System.Numerics.Complex.Exp%2A> method for complex numbers corresponds to the <xref:System.Math.Exp%2A?displayProperty=fullName> method for real numbers. <xref:System.Numerics.Complex.Exp%2A> is the inverse of <xref:System.Numerics.Complex.Log%2A>.  
+ The <xref:System.Numerics.Complex.Exp%2A> method for complex numbers corresponds to the <xref:System.Math.Exp%2A?displayProperty=nameWithType> method for real numbers. <xref:System.Numerics.Complex.Exp%2A> is the inverse of <xref:System.Numerics.Complex.Log%2A>.  
   
    
   
@@ -796,6 +809,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Exp(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="FromPolarCoordinates">
@@ -837,7 +851,7 @@
   
  Because there are multiple representations of a point on a complex plane, the return value of the <xref:System.Numerics.Complex.FromPolarCoordinates%2A> method is normalized. The magnitude is normalized to a positive number, and the phase is normalized to a value in the range of -<xref:System.Math.PI> to <xref:System.Math.PI>. As a result, the values of the <xref:System.Numerics.Complex.Phase%2A> and <xref:System.Numerics.Complex.Magnitude%2A> properties of the resulting complex number may not equal the original values of the `magnitude` and `phase` parameters.  
   
- To convert a value from degrees to radians for the `phase` parameter, multiply it by <xref:System.Math.PI?displayProperty=fullName>/180.  
+ To convert a value from degrees to radians for the `phase` parameter, multiply it by <xref:System.Math.PI?displayProperty=nameWithType>/180.  
   
    
   
@@ -849,6 +863,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
+        <altmember cref="P:System.Numerics.Complex.Phase" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -921,6 +937,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Real" />
       </Docs>
     </Member>
     <Member MemberName="ImaginaryOne">
@@ -958,6 +975,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.One" />
+        <altmember cref="F:System.Numerics.Complex.Zero" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -993,7 +1012,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Log%28System.Numerics.Complex%29> method for complex numbers corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Log%28System.Numerics.Complex%29> method for complex numbers corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=nameWithType> method for real numbers.  
   
    
   
@@ -1005,6 +1024,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Log(System.Double)" />
+        <altmember cref="M:System.Numerics.Complex.Exp(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -1042,7 +1063,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Log%28System.Numerics.Complex%2CSystem.Double%29> method for complex numbers corresponds to the <xref:System.Math.Log%28System.Double%2CSystem.Double%29?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Log%28System.Numerics.Complex%2CSystem.Double%29> method for complex numbers corresponds to the <xref:System.Math.Log%28System.Double%2CSystem.Double%29?displayProperty=nameWithType> method for real numbers.  
   
  ]]></format>
         </remarks>
@@ -1081,7 +1102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Log10%2A> method for complex numbers corresponds to the <xref:System.Math.Log10%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Log10%2A> method for complex numbers corresponds to the <xref:System.Math.Log10%2A?displayProperty=nameWithType> method for real numbers.  
   
  ]]></format>
         </remarks>
@@ -1118,9 +1139,9 @@
 ## Remarks  
  The <xref:System.Numerics.Complex.Magnitude%2A> property is equivalent to the absolute value of a complex number. It specifies the distance from the origin (the intersection of the x-axis and the y-axis in the Cartesian coordinate system) to the two-dimensional point represented by a complex number. The absolute value is calculated as follows:  
   
- &#124; a + bi &#124; = <xref:System.Math.Sqrt%2A?displayProperty=fullName>(a * a + b * b)  
+ &#124; a + bi &#124; = <xref:System.Math.Sqrt%2A?displayProperty=nameWithType>(a * a + b * b)  
   
- If the calculation of the absolute value results in an overflow, this property returns either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the calculation of the absolute value results in an overflow, this property returns either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  The <xref:System.Numerics.Complex.Magnitude%2A> and the <xref:System.Numerics.Complex.Phase%2A> properties define the position of a point that represents a complex number in the polar coordinate system.  
   
@@ -1136,6 +1157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Abs(System.Numerics.Complex)" />
+        <altmember cref="P:System.Numerics.Complex.Phase" />
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -1177,7 +1200,7 @@
   
  (ac - bd) + (ad + bc)i  
   
- If the multiplication results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the multiplication results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  The <xref:System.Numerics.Complex.Multiply%2A> method is implemented for languages that do not support custom operators. Its behavior is identical to multiplication using the multiplication operator.  
   
@@ -1191,6 +1214,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Negate">
@@ -1240,6 +1264,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_UnaryNegation(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -1277,6 +1302,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.ImaginaryOne" />
+        <altmember cref="F:System.Numerics.Complex.Zero" />
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
@@ -1323,11 +1350,11 @@
   
  (a + c) + (b + d)i  
   
- If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  Languages that do not support custom operators can call the <xref:System.Numerics.Complex.Add%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Add%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=fullName>  
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Add%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>  
   
 ## Examples  
  The following example illustrates addition with complex numbers.  
@@ -1337,6 +1364,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Add(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -1383,12 +1411,13 @@
   
  ((ac + bd) / (c<sup>2</sup> + d<sup>2</sup>)) + ((bc - ad) / (c<sup>2</sup> + d<sup>2</sup>)i  
   
- If the division results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the division results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.Numerics.Complex.Divide%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Divide%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Divide%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Divide(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1441,7 +1470,7 @@
   
  Note that, because of differences in precision, two complex numbers that are apparently equivalent can be considered unequal. For more information and a possible workaround, see the <xref:System.Numerics.Complex.Equals%28System.Numerics.Complex%29> method.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Equals%2A?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Equals%2A?displayProperty=nameWithType>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2060,6 +2089,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Equality(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -2106,12 +2136,13 @@ This API is not CLS-compliant.</summary>
   
  (ac - bd) + (ad + bc)i  
   
- If the multiplication results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the multiplication results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  Languages that do not support custom operators can call the <xref:System.Numerics.Complex.Multiply%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Multiply%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Multiply%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -2154,7 +2185,7 @@ This API is not CLS-compliant.</summary>
  [!code-csharp[System.Numerics.Complex.Subtract#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.subtract/cs/subtract2.cs#2)]
  [!code-vb[System.Numerics.Complex.Subtract#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.subtract/vb/subtract2.vb#2)]  
   
- If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  The subtraction of a complex number, c + di, from another complex number, a + bi, takes the following form:  
   
@@ -2162,8 +2193,9 @@ This API is not CLS-compliant.</summary>
   
  Languages that do not support custom operators can call the <xref:System.Numerics.Complex.Subtract%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Subtract%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Subtract%28System.Numerics.Complex%2CSystem.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Subtract(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -2206,8 +2238,9 @@ This API is not CLS-compliant.</summary>
   
  The resulting complex number produces a value of <xref:System.Numerics.Complex> 0 (zero) when it is added to the original complex number. Languages that do not support custom operators can call the <xref:System.Numerics.Complex.Negate%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.Complex.Negate%28System.Numerics.Complex%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.Complex.Negate%28System.Numerics.Complex%29?displayProperty=nameWithType>]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Negate(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Phase">
@@ -2239,13 +2272,13 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a complex number a + bi, the phase is computed as <xref:System.Math.Atan2%2A?displayProperty=fullName>(b, a).  
+ For a complex number a + bi, the phase is computed as <xref:System.Math.Atan2%2A?displayProperty=nameWithType>(b, a).  
   
  You can identify a complex number by its Cartesian coordinates on the complex plane or by its polar coordinates. The phase (argument) of a complex number is the angle to the real axis of a line drawn from the point of origin (the intersection of the x-axis and the y-axis) to the point represented by the complex number. The magnitude (represented by the <xref:System.Numerics.Complex.Magnitude%2A> property) is the distance from the point of origin to the point that is represented by the complex number.  
   
  You can instantiate a complex number based on its polar coordinates instead of its Cartesian coordinates by calling the <xref:System.Numerics.Complex.FromPolarCoordinates%2A> method.  
   
- To convert the phase from radians to degrees, multiply it by 180/<xref:System.Math.PI?displayProperty=fullName>.  
+ To convert the phase from radians to degrees, multiply it by 180/<xref:System.Math.PI?displayProperty=nameWithType>.  
   
    
   
@@ -2257,6 +2290,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Magnitude" />
       </Docs>
     </Member>
     <Member MemberName="Pow">
@@ -2294,9 +2328,9 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is <xref:System.Numerics.Complex?displayProperty=fullName>, the method returns <xref:System.Numerics.Complex?displayProperty=fullName>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex?displayProperty=fullName>, and if `power` is 1, it returns `value`.  
+ If `value` is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. For other values, if `power` is 0, the method returns <xref:System.Numerics.Complex.One?displayProperty=nameWithType>, and if `power` is 1, it returns `value`.  
   
- This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=fullName> method for primitive numeric types.  
+ This method corresponds to the <xref:System.Math.Pow%2A?displayProperty=nameWithType> method for primitive numeric types.  
   
    
   
@@ -2385,6 +2419,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Numerics.Complex.Imaginary" />
       </Docs>
     </Member>
     <Member MemberName="Reciprocal">
@@ -2420,14 +2455,14 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex?displayProperty=fullName> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
+ The reciprocal, or multiplicative inverse, of a number *x* is a number *y* where *x* multiplied by *y* yields 1. The reciprocal of a complex number is the complex number that produces <xref:System.Numerics.Complex.One?displayProperty=nameWithType> when the two numbers are multiplied. If a complex number is represented by a +bi, its reciprocal is represented by the expression a/(a<sup>2</sup>+b<sup>2</sup>) + -b/(a<sup>2</sup> + b<sup>2</sup>).  
   
- If value is <xref:System.Numerics.Complex?displayProperty=fullName>, the method returns <xref:System.Numerics.Complex?displayProperty=fullName>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex?displayProperty=fullName>/`value`.  
+ If value is <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>, the method returns <xref:System.Numerics.Complex.Zero?displayProperty=nameWithType>. Otherwise, it returns the result of the expression <xref:System.Numerics.Complex.One?displayProperty=nameWithType>/`value`.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex?displayProperty=fullName>.  
+ The following example uses the <xref:System.Numerics.Complex.Reciprocal%2A> method to calculate the reciprocal values of several complex numbers. It also demonstrates that the result of multiplying a complex number by its reciprocal is <xref:System.Numerics.Complex.One?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/cs/reciprocal1.cs#1)]
  [!code-vb[System.Numerics.Complex.Reciprocal#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.reciprocal/vb/reciprocal1.vb#1)]  
@@ -2469,7 +2504,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Sin%2A> method for complex numbers corresponds to the <xref:System.Math.Sin%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Sin%2A> method for complex numbers corresponds to the <xref:System.Math.Sin%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Sin%2A> method uses the following formula to calculate the sine of the complex number a + bi:  
   
@@ -2485,6 +2520,8 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Asin(System.Double)" />
+        <altmember cref="M:System.Numerics.Complex.Sin(System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Sinh">
@@ -2520,7 +2557,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Sinh%2A> method for complex numbers corresponds to the <xref:System.Math.Sinh%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Sinh%2A> method for complex numbers corresponds to the <xref:System.Math.Sinh%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Sinh%2A> method uses the following formula to calculate the hyperbolic sine of the complex number a + bi:  
   
@@ -2528,6 +2565,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Sinh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Sqrt">
@@ -2565,9 +2603,9 @@ This API is not CLS-compliant.</summary>
 ## Remarks  
  The square root of the complex number `value` is calculated by using the following formula:  
   
- <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName>(<xref:System.Math.Sqrt%2A?displayProperty=fullName>(`value`.<xref:System.Numerics.Complex.Magnitude%2A>), `value`.<xref:System.Numerics.Complex.Phase%2A>/2.0)   
+ <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=nameWithType>(<xref:System.Math.Sqrt%2A?displayProperty=nameWithType>(`value`.<xref:System.Numerics.Complex.Magnitude%2A>), `value`.<xref:System.Numerics.Complex.Phase%2A>/2.0)   
   
- The <xref:System.Numerics.Complex.Sqrt%2A> method for complex numbers corresponds to the <xref:System.Math.Sqrt%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Sqrt%2A> method for complex numbers corresponds to the <xref:System.Math.Sqrt%2A?displayProperty=nameWithType> method for real numbers.  
   
  ]]></format>
         </remarks>
@@ -2612,7 +2650,7 @@ This API is not CLS-compliant.</summary>
   
  (a - c) + (b - d)i  
   
- If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=fullName> or <xref:System.Double.NegativeInfinity?displayProperty=fullName>.  
+ If the method call results in an overflow in either the real or imaginary component, the value of that component is either <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
  Languages that do not support custom operators can use the <xref:System.Numerics.Complex.Subtract%2A> method to perform subtraction using complex numbers.  
   
@@ -2626,6 +2664,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.op_Subtraction(System.Numerics.Complex,System.Numerics.Complex)" />
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -2661,7 +2700,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Tan%2A> method for complex numbers corresponds to the <xref:System.Math.Tan%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Tan%2A> method for complex numbers corresponds to the <xref:System.Math.Tan%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Tan%2A> method uses the following formula to calculate the tangent of the complex number `value`:  
   
@@ -2677,6 +2716,8 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Numerics.Complex.Atan(System.Numerics.Complex)" />
+        <altmember cref="M:System.Math.Tan(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="Tanh">
@@ -2712,7 +2753,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Numerics.Complex.Tanh%2A> method for complex numbers corresponds to the <xref:System.Math.Tanh%2A?displayProperty=fullName> method for real numbers.  
+ The <xref:System.Numerics.Complex.Tanh%2A> method for complex numbers corresponds to the <xref:System.Math.Tanh%2A?displayProperty=nameWithType> method for real numbers.  
   
  The <xref:System.Numerics.Complex.Tanh%2A> method uses the following formula to calculate the hyperbolic tangent of the complex number `value`:  
   
@@ -2720,6 +2761,7 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Math.Tanh(System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2856,7 +2898,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=fullName> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
@@ -2915,7 +2957,7 @@ This API is not CLS-compliant.</summary>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String?displayProperty=fullName> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The string representation of the complex number returned by this method displays the number using its Cartesian coordinates in the form `(`*a*`,` *b*`)`, where *a* is the real part of the complex number, and *b* is its imaginary part. Both *a* and *b* are formatted using the format string specified by `format`. The `format` parameter can be any valid standard numeric format specifier, or any combination of custom numeric format specifiers. If `format` is equal to <xref:System.String.Empty?displayProperty=nameWithType> or is `null`, the real and imaginary parts of the complex number are formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
@@ -2987,7 +3029,70 @@ This API is not CLS-compliant.</summary>
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Numerics.Complex.ImaginaryOne" />
+        <altmember cref="F:System.Numerics.Complex.One" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Pow">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specified complex number raised to a specified power.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an explicit conversion between a <see cref="T:System.Numerics.Complex" /> object and another type.</summary>
+        <altmember cref="Overload:System.Numerics.Complex.op_Implicit" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two complex numbers are equal.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a complex number to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an implicit conversion between a <see cref="T:System.Numerics.Complex" /> object and another type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the logarithm of a complex number.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

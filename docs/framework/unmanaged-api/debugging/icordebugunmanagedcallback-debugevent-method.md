@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugUnmanagedCallback::DebugEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebugEvent method [.NET Framework debugging]"
   - "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugUnmanagedCallback::DebugEvent Method
 Notifies the debugger that a native event has been fired.  

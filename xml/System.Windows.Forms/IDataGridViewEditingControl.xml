@@ -41,6 +41,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.IDataGridViewEditingCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxCell" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCell.EditType" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
   </Docs>
   <Members>
     <Member MemberName="ApplyCellStyleToEditingControl">
@@ -77,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlDataGridView">
@@ -95,6 +105,7 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the cell.</summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridView" /> that contains the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that is being edited; <see langword="null" /> if there is no associated <see cref="T:System.Windows.Forms.DataGridView" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlFormattedValue">
@@ -128,6 +139,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlRowIndex">
@@ -149,10 +163,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.IDataGridViewEditingControl> interface does not define a corresponding `ColumnIndex` property. You can use the <xref:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView%2A> property to retrieve the parent <xref:System.Windows.Forms.DataGridView> control and use the <xref:System.Windows.Forms.DataGridView.CurrentCellAddress%2A?displayProperty=fullName> property to determine the row and column indexes of the active cell.  
+ The <xref:System.Windows.Forms.IDataGridViewEditingControl> interface does not define a corresponding `ColumnIndex` property. You can use the <xref:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView%2A> property to retrieve the parent <xref:System.Windows.Forms.DataGridView> control and use the <xref:System.Windows.Forms.DataGridView.CurrentCellAddress%2A?displayProperty=nameWithType> property to determine the row and column indexes of the active cell.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlValueChanged">
@@ -182,6 +199,9 @@
         <block subset="none" type="overrides">
           <para>Returning <see langword="true" /> in your implementation of this property does not automatically change the displayed value. When the value changes in the editing control, you must notify the <see cref="T:System.Windows.Forms.DataGridView" /> of the change by passing <see langword="true" /> to the <see cref="M:System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue" />
+        <altmember cref="M:System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
       </Docs>
     </Member>
     <Member MemberName="EditingControlWantsInputKey">
@@ -225,6 +245,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="EditingPanelCursor">
@@ -258,6 +279,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.Panel" />
+        <altmember cref="P:System.Windows.Forms.Control.Cursor" />
+        <altmember cref="M:System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetEditingControlFormattedValue">
@@ -292,6 +317,9 @@
         <block subset="none" type="overrides">
           <para>Changing the return value in your implementation of this method does not automatically change the displayed value. When the value changes in the editing control, you must notify the <see cref="T:System.Windows.Forms.DataGridView" /> of the change by passing <see langword="true" /> to the <see cref="M:System.Windows.Forms.DataGridView.NotifyCurrentCellDirty(System.Boolean)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue" />
+        <altmember cref="P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged" />
       </Docs>
     </Member>
     <Member MemberName="PrepareEditingControlForEdit">
@@ -321,6 +349,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="RepositionEditingControlOnValueChange">
@@ -347,6 +376,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
   </Members>

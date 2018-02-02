@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event to notify the runtime tracking infrastructure that new instances of a particular workflow <xref:System.Type> should no longer be tracked. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> to provide the workflow <xref:System.Type> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved?displayProperty=fullName> event. After a tracking service raises the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event, the runtime tracking infrastructure will no longer associate a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> with the specified workflow <xref:System.Type> for that tracking service.  
+ A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event to notify the runtime tracking infrastructure that new instances of a particular workflow <xref:System.Type> should no longer be tracked. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> to provide the workflow <xref:System.Type> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved?displayProperty=nameWithType> event. After a tracking service raises the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event, the runtime tracking infrastructure will no longer associate a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> with the specified workflow <xref:System.Type> for that tracking service.  
   
  ]]></format>
     </remarks>
@@ -103,5 +103,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

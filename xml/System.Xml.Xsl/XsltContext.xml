@@ -111,7 +111,7 @@
         <param name="baseUri">The base URI of the first document to compare.</param>
         <param name="nextbaseUri">The base URI of the second document to compare.</param>
         <summary>When overridden in a derived class, compares the base Uniform Resource Identifiers (URIs) of two documents based upon the order the documents were loaded by the XSLT processor (that is, the <see cref="T:System.Xml.Xsl.XslTransform" /> class).</summary>
-        <returns>An integer value describing the relative order of the two base URIs: <see langword="-" />1 if <paramref name="baseUri" /> occurs before <paramref name="nextbaseUri" />; 0 if the two base URIs are identical; and 1 if <paramref name="baseUri" /> occurs after <paramref name="nextbaseUri" />.</returns>
+        <returns>An integer value describing the relative order of the two base URIs: -1 if <paramref name="baseUri" /> occurs before <paramref name="nextbaseUri" />; 0 if the two base URIs are identical; and 1 if <paramref name="baseUri" /> occurs after <paramref name="nextbaseUri" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -259,5 +259,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

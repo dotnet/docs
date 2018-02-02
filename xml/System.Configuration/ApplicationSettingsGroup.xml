@@ -17,6 +17,10 @@
   <Docs>
     <summary>Represents a grouping of related application settings sections within a configuration file. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSectionGroup" />
+    <altmember cref="T:System.Configuration.ConfigurationSectionCollection" />
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <altmember cref="T:System.Configuration.UserSettingsGroup" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

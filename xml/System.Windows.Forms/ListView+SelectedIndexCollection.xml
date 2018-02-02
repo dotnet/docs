@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method will return 0 if  the handle has not been created for the owning <xref:System.Windows.Forms.ListView>. (You can determine whether the <xref:System.Windows.Forms.ListView> has an associated handle by using the <xref:System.Windows.Forms.Control.IsHandleCreated%2A?displayProperty=fullName> property.) This method will return -1 if the handle has not been created for a virtual <xref:System.Windows.Forms.ListView>.  
+ This method will return 0 if  the handle has not been created for the owning <xref:System.Windows.Forms.ListView>. (You can determine whether the <xref:System.Windows.Forms.ListView> has an associated handle by using the <xref:System.Windows.Forms.Control.IsHandleCreated%2A?displayProperty=nameWithType> property.) This method will return -1 if the handle has not been created for a virtual <xref:System.Windows.Forms.ListView>.  
   
  ]]></format>
         </remarks>
@@ -175,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.SelectedIndexCollection.IndexOf(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -283,6 +284,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.SelectedIndexCollection.Contains(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -364,7 +366,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.ListView> is in virtual mode and the handle for the owner <xref:System.Windows.Forms.ListView> has not been created (you can check this using the <xref:System.Windows.Forms.Control.IsHandleCreated%2A?displayProperty=fullName> property), calling the <xref:System.Windows.Forms.ListView.SelectedIndexCollection.Remove%2A> method will have no effect on the <xref:System.Windows.Forms.ListView.SelectedIndexCollection>.  
+ If the <xref:System.Windows.Forms.ListView> is in virtual mode and the handle for the owner <xref:System.Windows.Forms.ListView> has not been created (you can check this using the <xref:System.Windows.Forms.Control.IsHandleCreated%2A?displayProperty=nameWithType> property), calling the <xref:System.Windows.Forms.ListView.SelectedIndexCollection.Remove%2A> method will have no effect on the <xref:System.Windows.Forms.ListView.SelectedIndexCollection>.  
   
  ]]></format>
         </remarks>

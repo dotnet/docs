@@ -42,12 +42,12 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method.  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method.  
   
  The example uses the <xref:System.Reflection.MethodBody.LocalVariables%2A> property to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects and then displays their types and index order. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of exception-handling clauses.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=fullName> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  [!code-cpp[MethodBody#1](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#1)]
  [!code-csharp[MethodBody#1](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#1)]
@@ -124,10 +124,10 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays information about its exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects.  
+ The following code example defines a test method named `MethodBodyExample` and displays information about its exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects.  
   
 > [!NOTE]
->  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=fullName> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions.Filter?displayProperty=nameWithType> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
   
  This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
   
@@ -146,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ExceptionHandlingClause" />
+        <altmember cref="T:System.Reflection.ExceptionHandlingClauseOptions" />
       </Docs>
     </Member>
     <Member MemberName="GetILAsByteArray">
@@ -184,6 +186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])" />
+        <altmember cref="M:System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])" />
       </Docs>
     </Member>
     <Member MemberName="InitLocals">
@@ -222,7 +226,7 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
   
  This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
   
@@ -307,7 +311,7 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays its local variable information. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is used to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects.  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is used to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects.  
   
  This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
   
@@ -326,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.LocalVariableInfo" />
       </Docs>
     </Member>
     <Member MemberName="MaxStackSize">
@@ -361,7 +366,7 @@
    
   
 ## Examples  
- The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=nameWithType> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
   
  This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
   

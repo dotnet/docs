@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Specialized.StringCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -291,7 +292,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns `true` if the collection is marked as read-only. This is useful for protecting the element at run time, as opposed to design time. For more information, see the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method on the <xref:System.Configuration.ConfigurationElement?displayProperty=fullName> class.  
+ This property returns `true` if the collection is marked as read-only. This is useful for protecting the element at run time, as opposed to design time. For more information, see the <xref:System.Configuration.ConfigurationElement.IsReadOnly%2A> method on the <xref:System.Configuration.ConfigurationElement?displayProperty=nameWithType> class.  
   
    
   

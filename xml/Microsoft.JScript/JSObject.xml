@@ -37,6 +37,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSObject" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="AddField">
@@ -60,6 +64,9 @@
         <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="F:Microsoft.JScript.JSObject.field_table" />
       </Docs>
     </Member>
     <Member MemberName="field_table">
@@ -78,6 +85,8 @@
         <summary>Stores a list of fields that are dynamically added and removed from the object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -103,6 +112,8 @@
         <returns>An array of members that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -126,6 +137,8 @@
         <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="SetMemberValue2">
@@ -150,6 +163,9 @@
         <summary>Sets the value of a field that was dynamically added to the object and stored in <see cref="F:Microsoft.JScript.JSObject.field_table" />.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -170,6 +186,10 @@
         <returns>An enumerator object that is used to iterate through the members of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="F:Microsoft.JScript.JSObject.field_table" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddMethod">
@@ -195,6 +215,9 @@
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="F:Microsoft.JScript.JSObject.field_table" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddProperty">
@@ -218,6 +241,9 @@
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="F:Microsoft.JScript.JSObject.field_table" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.RemoveMember">
@@ -240,6 +266,9 @@
         <summary>Removes the specified member from the object.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
+        <altmember cref="F:Microsoft.JScript.JSObject.field_table" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -260,6 +289,10 @@
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.ScriptObject" />
+        <altmember cref="T:System.Collections.IEnumerable" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Runtime.InteropServices.Expando.IExpando" />
       </Docs>
     </Member>
   </Members>

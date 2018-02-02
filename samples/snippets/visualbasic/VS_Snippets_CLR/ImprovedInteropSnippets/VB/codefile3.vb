@@ -13,7 +13,7 @@ Module A
 			Dim imptlb As ImportedFromTypeLibAttribute = AsmAttributes(0)
 			Dim strImportedFrom As String = imptlb.Value
 
-			' Print out the the name of the DLL from which the assembly is imported.
+			' Print out the name of the DLL from which the assembly is imported.
 			Console.WriteLine("Assembly " + a.FullName + " is imported from " + strImportedFrom)
 
 			Return True

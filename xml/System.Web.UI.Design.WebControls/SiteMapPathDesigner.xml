@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SiteMapPathDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SiteMapPath" />
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -108,6 +110,7 @@
         <param name="component">An <see cref="T:System.ComponentModel.IComponent" /> that can be cast as a <see cref="T:System.Web.UI.WebControls.SiteMapPath" />.</param>
         <summary>Prepares the designer to view, edit, and design the associated <see cref="T:System.Web.UI.WebControls.SiteMapPath" /> control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IComponent" />
       </Docs>
     </Member>
     <Member MemberName="TemplateGroups">

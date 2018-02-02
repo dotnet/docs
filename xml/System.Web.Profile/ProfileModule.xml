@@ -30,7 +30,7 @@
   
 -   The <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event, to control how the user profile is saved when the <xref:System.Web.Profile.ProfileManager.AutomaticSaveEnabled%2A> property is set to `true`.  
   
- For information about enabling the user profile, see [profile Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd).  
+ For information about enabling the user profile, see [profile Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/ccb9bf3a-a044-464d-b89b-5cb5a3d389dd).  
   
    
   
@@ -223,9 +223,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.ProfileModule.Personalize> event is raised during the <xref:System.Web.HttpApplication.AcquireRequestState?displayProperty=fullName> event. You can access the <xref:System.Web.Profile.ProfileModule.Personalize> event of the <xref:System.Web.Profile.ProfileModule> class in the Global.asax file for your ASP.NET application using the `Profile_Personalize` global event as shown in the example for this topic.  
+ The <xref:System.Web.Profile.ProfileModule.Personalize> event is raised during the <xref:System.Web.HttpApplication.AcquireRequestState?displayProperty=nameWithType> event. You can access the <xref:System.Web.Profile.ProfileModule.Personalize> event of the <xref:System.Web.Profile.ProfileModule> class in the Global.asax file for your ASP.NET application using the `Profile_Personalize` global event as shown in the example for this topic.  
   
- You can use the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=fullName> property value specified for the <xref:System.Web.Profile.ProfileEventHandler> event handler for the <xref:System.Web.Profile.ProfileModule.Personalize> event is set to a value that is not `null` when the <xref:System.Web.Profile.ProfileModule.Personalize> event ends, then the <xref:System.Web.Profile.ProfileModule> will use the specified value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=fullName> property as the value of the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext>.  
+ You can use the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=nameWithType> property value specified for the <xref:System.Web.Profile.ProfileEventHandler> event handler for the <xref:System.Web.Profile.ProfileModule.Personalize> event is set to a value that is not `null` when the <xref:System.Web.Profile.ProfileModule.Personalize> event ends, then the <xref:System.Web.Profile.ProfileModule> will use the specified value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=nameWithType> property as the value of the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext>.  
   
    
   
@@ -257,9 +257,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event is raised at the end of page execution if the <xref:System.Web.Profile.ProfileManager.AutomaticSaveEnabled%2A?displayProperty=fullName> property is `true`. You can access the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event of the <xref:System.Web.Profile.ProfileModule> class in the Global.asax file for your ASP.NET application using the `Profile_ProfileAutoSaving` global event, as shown in the example for this topic.  
+ The <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event is raised at the end of page execution if the <xref:System.Web.Profile.ProfileManager.AutomaticSaveEnabled%2A?displayProperty=nameWithType> property is `true`. You can access the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event of the <xref:System.Web.Profile.ProfileModule> class in the Global.asax file for your ASP.NET application using the `Profile_ProfileAutoSaving` global event, as shown in the example for this topic.  
   
- The <xref:System.Configuration.SettingsBase.Save%2A?displayProperty=fullName> method checks the <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property value for each <xref:System.Configuration.SettingsPropertyValue> in the user profile to determine whether properties that are made up of primitive types, strings, or <xref:System.DateTime> objects have been changed. The <xref:System.Configuration.SettingsBase.Save%2A> method cannot explicitly determine whether a custom class has changed. You can use the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event to determine whether a custom object has been changed and then either to continue with the automatic save for modified objects or to cancel the automatic save if no objects have been modified.  
+ The <xref:System.Configuration.SettingsBase.Save%2A?displayProperty=nameWithType> method checks the <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property value for each <xref:System.Configuration.SettingsPropertyValue> in the user profile to determine whether properties that are made up of primitive types, strings, or <xref:System.DateTime> objects have been changed. The <xref:System.Configuration.SettingsBase.Save%2A> method cannot explicitly determine whether a custom class has changed. You can use the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event to determine whether a custom object has been changed and then either to continue with the automatic save for modified objects or to cancel the automatic save if no objects have been modified.  
   
  To cancel the automatic profile save operation, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `false` in the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event; otherwise, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `true`.  
   

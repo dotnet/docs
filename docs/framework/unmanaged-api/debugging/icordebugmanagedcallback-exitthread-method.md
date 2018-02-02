@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::ExitThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExitThread method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::ExitThread method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::ExitThread Method
 Notifies the debugger that a thread that was executing managed code has exited.  

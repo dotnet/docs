@@ -45,11 +45,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputText> control to get user input.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTextArea" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,11 +81,12 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputTextCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextCtor/CS/htmlinputtextctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputTextCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextCtor/VB/htmlinputtextctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputTextCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextCtor/CS/htmlinputtextctorcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputTextCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextCtor/VB/htmlinputtextctorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,11 +122,12 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputTextCtor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextCtor2/CS/htmlinputtextctor2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputTextCtor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextCtor2/VB/htmlinputtextctor2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputTextCtor2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextCtor2/CS/htmlinputtextctor2cs.aspx#1)]
+ [!code-aspx-vb[HtmlInputTextCtor2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextCtor2/VB/htmlinputtextctor2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -194,11 +198,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputText.MaxLength%2A> property to specify the maximum number of characters that can be entered in the text box.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputText.Size" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -230,8 +235,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputText.OnPreRender%2A> method so that it sets the <xref:System.Web.UI.HtmlControls.HtmlInputText.MaxLength%2A> property to 30 characters in a custom <xref:System.Web.UI.HtmlControls.HtmlInputText> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputTextOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/CS/custom_htmlinputtext_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputTextOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/VB/custom_htmlinputtext_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlInputTextOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/CS/custom_htmlinputtext_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlInputTextOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/VB/custom_htmlinputtext_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlInputTextOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/CS/custom_htmlinputtext_onprerender.cs#2)]
  [!code-vb[CustomHtmlInputTextOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputTextOnPreRender/VB/custom_htmlinputtext_onprerender.vb#2)]  
@@ -267,7 +272,7 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputText.ServerChange> event to work correctly.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -276,14 +281,15 @@
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputText.ServerChange> event. The custom event handler updates a label on the Web page to display the value of the text entered into the `<input type=text>` HTML element.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputTextServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextServerChange/CS/htmlinputtextserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputTextServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextServerChange/VB/htmlinputtextserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputTextServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextServerChange/CS/htmlinputtextserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputTextServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextServerChange/VB/htmlinputtextserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlInputText.ServerChange" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -312,6 +318,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.RaisePostDataChangedEvent" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputText.RaisePostDataChangedEvent" /> method so that the <see cref="E:System.Web.UI.HtmlControls.HtmlInputText.ServerChange" /> event is correctly raised.</para>
         </block>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -358,18 +366,19 @@
 > [!NOTE]
 >  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputText.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputText.ServerChange> event. The custom event handler updates a label on the Web page to display the value of the text entered into the `<input type=text>` HTML element.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputTextServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextServerChange/CS/htmlinputtextserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputTextServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextServerChange/VB/htmlinputtextserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputTextServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputTextServerChange/CS/htmlinputtextserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlInputTextServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputTextServerChange/VB/htmlinputtextserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -406,11 +415,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputText.Size%2A> property to specify the width of the text box.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputText.MaxLength" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -485,12 +495,22 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputText.Value%2A> property to programmatically determine the text entered by the user in the text box.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]
+ [!code-aspx-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputPassword" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputText" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

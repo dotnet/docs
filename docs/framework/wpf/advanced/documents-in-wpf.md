@@ -10,20 +10,20 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "documents, packaging"
-  - "documents, text layout"
-  - "documents, XPS"
-  - "XPS documents"
-  - "packaging documents"
-  - "documents, controls"
-  - "documents, types of"
-  - "documents, browser-viewable"
-  - "browser-viewable documents"
+  - "documents [WPF], packaging"
+  - "documents [WPF], text layout"
+  - "documents [WPF], XPS"
+  - "XPS documents [WPF], , "
+  - "documents [WPF], controls"
+  - "documents [WPF], types of"
+  - "documents [WPF], browser-viewable"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Documents in WPF
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
@@ -66,7 +66,7 @@ manager: "wpickett"
   
 <a name="packaging"></a>   
 ## Document Packaging  
- The<xref:System.IO.Packaging> [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] packaging [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support [!INCLUDE[TLA#tla_rm](../../../../includes/tlasharptla-rm-md.md)].  
+ The <xref:System.IO.Packaging> [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] packaging [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support [!INCLUDE[TLA#tla_rm](../../../../includes/tlasharptla-rm-md.md)].  
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
   
@@ -143,14 +143,14 @@ manager: "wpickett"
 -   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
 ## See Also  
- <xref:System.Windows.Documents.FixedDocument>   
- <xref:System.Windows.Documents.FlowDocument>   
- <xref:System.Windows.Xps.Packaging.XpsDocument>   
- <xref:System.IO.Packaging.ZipPackage>   
- <xref:System.IO.Packaging.ZipPackagePart>   
- <xref:System.IO.Packaging.PackageRelationship>   
- <xref:System.Windows.Controls.DocumentViewer>   
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)   
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)   
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)   
+ <xref:System.Windows.Documents.FixedDocument>  
+ <xref:System.Windows.Documents.FlowDocument>  
+ <xref:System.Windows.Xps.Packaging.XpsDocument>  
+ <xref:System.IO.Packaging.ZipPackage>  
+ <xref:System.IO.Packaging.ZipPackagePart>  
+ <xref:System.IO.Packaging.PackageRelationship>  
+ <xref:System.Windows.Controls.DocumentViewer>  
+ [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
+ [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
+ [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
  [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)

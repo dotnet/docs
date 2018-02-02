@@ -60,11 +60,12 @@
   
  The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Notice that many of the various <xref:System.Web.UI.WebControls.WebParts.WebPart> properties can be assigned declaratively to the custom control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,8 +98,8 @@
   
  The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. After you load the page in a browser, if you click the verbs menu in the title bar of the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the close verb is now disabled, which prevents users from closing the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -162,11 +163,13 @@
   
  The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Note that in the `<aspSample:TextDisplayWebPart>` element that references the control, you could also change the value of the property set by the control's constructor. To allow the control to be closed, simply add an `AllowClose="true"` attribute to the element in the declarative markup.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]
+ [!code-aspx-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
       </Docs>
     </Member>
     <Member MemberName="AllowConnect">
@@ -207,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts" />
       </Docs>
     </Member>
     <Member MemberName="AllowEdit">
@@ -260,13 +264,13 @@
   
  The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowEdit#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowEdit#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowEdit#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_AllowEdit#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/displaymodemenuvb.ascx#5)]  
   
  In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowEdit="false"` attribute. Although `true` is the default, the attribute has been set to `false` for the purposes of this example. Load the page in a browser and use the **Display Modes** drop-down list control to change the display mode to edit mode. Next, click the verbs menu in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and note that the edit verb is missing, because you disabled editing on the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/alloweditCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/alloweditVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/alloweditCS.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_AllowEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/alloweditVB.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -318,16 +322,17 @@
   
  The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowHide#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowHide#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowHide#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_AllowHide#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/displaymodemenuvb.ascx#5)]  
   
  In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowHide="false"` attribute, which prevents a user who is editing the control from being able to hide it. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to edit mode. Next, click the verbs menu in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control and click the edit verb. As the edit user interface (UI) is displayed, you can see that the UI to edit the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property is now disabled, which occurred because you set the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property value to `false`.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowHide#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/allowhidecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowHide#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/allowhidevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowHide#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/allowhidecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_AllowHide#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/allowhidevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
       </Docs>
     </Member>
     <Member MemberName="AllowMinimize">
@@ -376,8 +381,8 @@
   
  In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowMinimize="false"` attribute, which hides the minimize verb in the <xref:System.Web.UI.WebControls.WebParts.WebPart> control's verbs menu, and prevents a user from being able to minimize the control. Load the page in a browser, and click the verbs menu on the <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The minimize verb, which would normally be present on the verbs menu, is hidden because you disabled it in the declarative markup for the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/CS/allowminimizecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/VB/allowminimizevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/CS/allowminimizecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/VB/allowminimizevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -427,13 +432,13 @@
   
  The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/displaymodemenuvb.ascx#5)]  
   
  In the declarative markup for the Web Page, on the second `<aspSample:TextDisplayWebPart>` element, note the `AllowZoneChange="false"` attribute. At run time, an end user could drag the first control into **WebPartZone2**, but could not do the same with the second control. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to design mode. Try to drag each of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls into another zone, and note the different behavior based on the values of their <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> properties.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/allowzonechangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/allowzonechangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/allowzonechangecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/allowzonechangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -487,8 +492,8 @@
 > [!NOTE]
 >  Note that controls that do not have any value assigned to the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property are added as well, because they are assumed not to be part of a filtering scenario. This would be a common approach in a filtering scenario: some controls would be filtered, and others would not be, because they are presumed to be available for all users.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/CS/AuthorizeWebPartCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/VB/AuthorizeWebPartVB.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/CS/AuthorizeWebPartCS.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/VB/AuthorizeWebPartVB.aspx#1)]  
   
  Because setting up users in roles is beyond the scope of this topic, this code example does not check user roles in the filtering. However, the scenario of filtering controls according to user roles is likely to be one of the most common uses of this filtering feature. If you have roles on your site, and you want to check user roles in this method to filter controls, the method would resemble the following code block (versus the simpler approach in the preceding code example that does not use roles).  
   
@@ -511,6 +516,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <block subset="none" type="overrides">
           <para>To use this property, you must create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, and override either its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method or its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Web.UI.WebControls.WebParts.WebPart)" /> method to handle the check for the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" /> property.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart" />
       </Docs>
     </Member>
     <Member MemberName="CatalogIconImageUrl">
@@ -555,13 +561,13 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/displaymodemenuvb.ascx#5)]  
   
  In the declarative markup of the Web page, note the `<asp:CatalogZone>` element. Nested within it are several elements, including an `<aspSample:TextDisplayWebPart>` element. This set of elements enables the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to appear in a catalog. In the markup for the `<aspSample:TextDisplayWebPart>` element, notice that the `CatalogIconImageUrl` attribute is assigned a string that contains the URL to an image file. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to catalog mode. Then use the catalog user interface (UI) to add the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/catalogiconimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/catalogiconimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/catalogiconimageurlcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/catalogiconimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -599,6 +605,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeState" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeState" />
       </Docs>
     </Member>
     <Member MemberName="ChromeType">
@@ -634,6 +641,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" />
       </Docs>
     </Member>
     <Member MemberName="ConnectErrorMessage">
@@ -698,6 +706,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -732,6 +742,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -762,6 +773,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Panel.Direction" />
       </Docs>
     </Member>
     <Member MemberName="DisplayTitle">
@@ -799,6 +811,9 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Description" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
       </Docs>
     </Member>
     <Member MemberName="ExportMode">
@@ -858,8 +873,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All>, meaning that even properties with sensitive values will be exported.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_ExportMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/CS/exportmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_ExportMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/VB/exportmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_ExportMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/CS/exportmodecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_ExportMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/VB/exportmodevb.aspx#1)]  
   
  Load the Web page in a browser, and on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control, click the export verb and follow the instructions to export a description file containing the control's state and property data.  
   
@@ -867,6 +882,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" /> values.</exception>
         <exception cref="T:System.InvalidOperationException">The control is already loaded and the personalization scope of the control is set to the <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizableAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="HasSharedData">
@@ -976,8 +993,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  Note that the zone's orientation is set to horizontal, and that the height of the zone and the controls within it is not set explicitly.  The result is that in the <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, the shorter <xref:System.Web.UI.WebControls.WebParts.WebPart> control does not stretch to the height of the zone upon rendering.  However, if you remove the `DOCTYPE` declaration from the page and run the page again, the issue does not occur, because now the browser will not render the page in standards mode.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Height#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Height/CS/Defaultcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Height#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Height/VB/Defaultvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Height#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Height/CS/Defaultcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Height#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Height/VB/Defaultvb.aspx#1)]  
   
  To see how the workaround (described in the Remarks section) works, try adding a `height` attribute to the `<asp:webpartzone>` element, while keeping the `DOCTYPE` declaration in the page.  You can use the following code to add the attribute to the tag:  
   
@@ -989,6 +1006,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
       </Docs>
     </Member>
     <Member MemberName="HelpMode">
@@ -1056,12 +1074,13 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate>, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" /> values.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
       </Docs>
     </Member>
     <Member MemberName="HelpUrl">
@@ -1129,12 +1148,13 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate>, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.HelpMode" />
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -1183,11 +1203,12 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  Notice that in the Web page, in the declarative markup for the `<aspSample:TextDisplayWebPart>` element, the `Hidden` attribute value is set to `true`. The `TextDisplayWebPart` control will not appear if the page is loaded in a browser. However, the control is still present on the page and in its zone, and it still could participate in connections with other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls if you created those connections.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Hidden#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Hidden/CS/hiddencs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Hidden#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Hidden/VB/hiddenvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Hidden#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Hidden/CS/hiddencs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Hidden#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Hidden/VB/hiddenvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
       </Docs>
     </Member>
     <Member MemberName="ImportErrorMessage">
@@ -1227,6 +1248,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -1260,6 +1283,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -1303,11 +1328,12 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  When you load the Web page in a browser and click the **Check Sharing** button, the code checks the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property on the `TextDisplayWebPart` control, and the value of the property is `true`, because the control is referenced as a static control in the declarative markup of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_IsShared#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_IsShared/CS/issharedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_IsShared#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_IsShared/VB/issharedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_IsShared#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_IsShared/CS/issharedcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_IsShared#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_IsShared/VB/issharedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
       </Docs>
     </Member>
     <Member MemberName="IsStandalone">
@@ -1335,6 +1361,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <value>
           <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is not contained in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1396,6 +1423,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
       </Docs>
     </Member>
     <Member MemberName="OnConnectModeChanged">
@@ -1544,7 +1573,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method has the same purpose as the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty?displayProperty=fullName> method, which is to set a flag indicating that control state data has been changed (personalized) on a server control during an HTTP `GET` request. The difference between these methods is that the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method is used for server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, but are placed within <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones to participate in Web Parts applications.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=nameWithType> method has the same purpose as the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty?displayProperty=nameWithType> method, which is to set a flag indicating that control state data has been changed (personalized) on a server control during an HTTP `GET` request. The difference between these methods is that the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=nameWithType> method is used for server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, but are placed within <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones to participate in Web Parts applications.  
   
  ]]></format>
         </remarks>
@@ -1601,14 +1630,15 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The second part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. After you load the page in a browser, the control's title bar text includes the title assigned to the control in the declarative markup, a hyphen separator, and the value of the custom subtitle from the `TextDisplayWebPart` control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Subtitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/CS/subtitlecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Subtitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/VB/subtitlevb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Subtitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/CS/subtitlecs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Subtitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/VB/subtitlevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>To supply a subtitle for instances of a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, you must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" /> property.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1645,6 +1675,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
       </Docs>
     </Member>
     <Member MemberName="TitleIconImageUrl">
@@ -1689,8 +1720,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  In the declarative markup of the Web page, note the `<aspSample:TextDisplayWebPart>` element. Its `TitleIconImageUrl` attribute is assigned a string that contains the URL to an image file. Load the page in a browser, and if you provided a legitimate URL to an image, the image appears in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/CS/titleiconimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/VB/titleiconimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/CS/titleiconimageurlcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/VB/titleiconimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1746,8 +1777,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  Notice that the `<aspSample:TextDisplayWebPart>` element contains the `TitleUrl` attribute with a fictitious URL. If you load the page in a browser, the title of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control is now a link to the resource pointed to by the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_TitleUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/CS/titleurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_TitleUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/VB/titleurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_TitleUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/CS/titleurlcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_TitleUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/VB/titleurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1770,6 +1801,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
       <Docs>
         <summary>Causes the control to track changes to its view state so they can be stored in the object's <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -1818,14 +1850,15 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  Load the Web page in a browser. When you click the **Display Verb Count** button, it accesses the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property to get the count of custom verbs for the `TextDisplayWebPart` control, and displays the count in a label. Because no custom verbs have been added to the control in this case, the count is zero.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Verbs/CS/verbscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Verbs/VB/verbsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Verbs/CS/verbscs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Verbs/VB/verbsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>Derived classes can override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" /> property to allow users to add custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects to the verb collection for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
       </Docs>
     </Member>
     <Member MemberName="WebBrowsableObject">
@@ -1861,6 +1894,8 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject" />
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1888,6 +1923,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1911,6 +1947,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
         <summary>Gets or sets the width of the Web server control.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the width of the control. The default is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Width" />
       </Docs>
     </Member>
     <Member MemberName="Zone">
@@ -1949,16 +1986,19 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. There are two `<asp:webpartzone>` elements on the page, each representing a Web Parts zone. The first zone contains a standard <xref:System.Web.UI.WebControls.Calendar> control, which acts like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because it is in a zone. The second zone contains the `TextDisplayWebPart` control. When a user clicks the **Zone Information** button, the `Label1` control displays the values of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property for the control, and the <xref:System.Web.UI.Control.ID%2A> property of the zone that currently contains the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
       </Docs>
     </Member>
     <Member MemberName="ZoneIndex">
@@ -2000,17 +2040,29 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]
+ [!code-aspx-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  
   
  The second part of the code example is the Web page. There are two `<asp:webpartzone>` elements on the page, each representing a Web Parts zone. The first zone contains a standard <xref:System.Web.UI.WebControls.Calendar> control, which acts like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because it is in a zone. The second zone contains the `TextDisplayWebPart` control. When a user clicks the **Zone Information** button, the `Label1` control displays the values of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property for the control, and the <xref:System.Web.UI.Control.ID%2A> property of the zone that currently contains the control.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetPersonalizationDirty">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a flag indicating that personalization data has changed for a Web Parts control or a server control placed in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

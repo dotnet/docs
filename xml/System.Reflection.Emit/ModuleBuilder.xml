@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get an instance of <xref:System.Reflection.Emit.ModuleBuilder>, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A?displayProperty=fullName> method.  
+ To get an instance of <xref:System.Reflection.Emit.ModuleBuilder>, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -126,7 +126,7 @@
  This method should be called when the user is done with defining all the global functions within this dynamic module. After calling this function, no more new global functions or new global data are allowed.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -233,7 +233,7 @@
 >  In the .NET Framework versions 1.0 and 1.1, it is necessary to define enumerations using <xref:System.Reflection.Emit.TypeBuilder> because <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements are of type <xref:System.Int32> instead of the enumeration type. In the .NET Framework version 2.0, <xref:System.Reflection.Emit.EnumBuilder> emits enumerations whose elements have the correct type.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -300,7 +300,7 @@
  The global method that this method defines is not usable until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -368,7 +368,7 @@
  You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -442,7 +442,7 @@
  You cannot use the global method that this method defines until you call <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A>.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -494,7 +494,7 @@
  The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -549,13 +549,13 @@
   
 -   This method allows you to embed a manifest resource BLOB into a dynamic assembly.  
   
--   To embed a managed resource into the manifest module of a dynamic assembly or into a satellite module, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the resource.  
+-   To embed a managed resource into the manifest module of a dynamic assembly or into a satellite module, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineResource%2A?displayProperty=nameWithType> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=nameWithType> method to add the resource.  
   
--   To link a managed resource into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A?displayProperty=fullName> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=fullName> method to add the linked resource.  
+-   To link a managed resource into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.DefineResource%2A?displayProperty=nameWithType> method to get a resource writer, and use the <xref:System.Resources.ResourceWriter.AddResource%2A?displayProperty=nameWithType> method to add the linked resource.  
   
--   To link a manifest resource BLOB into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.AddResourceFile%2A?displayProperty=fullName> method to add the linked resource.  
+-   To link a manifest resource BLOB into a dynamic assembly, use the <xref:System.Reflection.Emit.AssemblyBuilder.AddResourceFile%2A?displayProperty=nameWithType> method to add the linked resource.  
   
- In addition, a single Win32 resource can be attached to an assembly by using the <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method or the <xref:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource%2A?displayProperty=fullName> method. This resource does not appear in the assembly manifest.  
+ In addition, a single Win32 resource can be attached to an assembly by using the <xref:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource%2A?displayProperty=nameWithType> method or the <xref:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource%2A?displayProperty=nameWithType> method. This resource does not appear in the assembly manifest.  
   
    
   
@@ -583,6 +583,12 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is a zero-length string.</exception>
         <exception cref="T:System.InvalidOperationException">The dynamic assembly that contains the current module is transient; that is, no file name was specified when <see cref="M:System.Reflection.Emit.AssemblyBuilder.DefineDynamicModule(System.String,System.String)" /> was called.</exception>
+        <altmember cref="M:System.Reflection.Emit.ModuleBuilder.DefineResource(System.String,System.String)" />
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.DefineResource(System.String,System.String,System.String,System.Reflection.ResourceAttributes)" />
+        <altmember cref="M:System.Resources.ResourceWriter.AddResource(System.String,System.String)" />
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.AddResourceFile(System.String,System.String)" />
+        <altmember cref="M:System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource(System.String)" />
+        <altmember cref="M:System.Reflection.Emit.ModuleBuilder.DefineUnmanagedResource(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="DefinePInvokeMethod">
@@ -626,7 +632,7 @@
  Some DLL import attributes (see the description of System.Runtime.InteropServices.DllImportAttribute) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -634,7 +640,7 @@
  The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
   
 > [!IMPORTANT]
->  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
+>  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
   
  [!code-cpp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CPP/modulebuilder_definepinvokemethod1.cpp#1)]
  [!code-csharp[ModuleBuilder_DefinePInvokeMethod1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ModuleBuilder_DefinePInvokeMethod1/CS/modulebuilder_definepinvokemethod1.cs#1)]
@@ -699,7 +705,7 @@
  Some DLL import attributes (see the description of <xref:System.Runtime.InteropServices.DllImportAttribute>) cannot be specified as arguments to this method. Such attributes should be set by emitting a custom attribute for the method. For example, the DLL import attribute `PreserveSig` is set by emitting a custom attribute.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -707,7 +713,7 @@
  The following example illustrates the use of the `DefinePInvokeMethod` method to create a <xref:System.Reflection.Emit.MethodBuilder> for an external unmanaged method, `MessageBoxA`, in the Win32 API. The example displays a message box with **Retry** and **Cancel** buttons, and displays the return value from the message box.  
   
 > [!IMPORTANT]
->  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes?displayProperty=fullName> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=fullName> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=fullName> methods.  
+>  To get a non-zero return value, you must add <xref:System.Reflection.MethodImplAttributes.PreserveSig?displayProperty=nameWithType> to the method implementation flags after you create the <xref:System.Reflection.Emit.MethodBuilder>, by using the <xref:System.Reflection.Emit.MethodBuilder.GetMethodImplementationFlags%2A?displayProperty=nameWithType> and <xref:System.Reflection.Emit.MethodBuilder.SetImplementationFlags%2A?displayProperty=nameWithType> methods.  
   
  This example uses a different overload of the <xref:System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod%2A> method, but the technique is the same.  
   
@@ -754,7 +760,7 @@
  Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -775,6 +781,7 @@
  -or-  
   
  The containing assembly is not persistable.</exception>
+        <altmember cref="M:System.Reflection.Emit.ModuleBuilder.DefineManifestResource(System.String,System.IO.Stream,System.Reflection.ResourceAttributes)" />
       </Docs>
     </Member>
     <Member MemberName="DefineResource">
@@ -810,7 +817,7 @@
  Use this method to embed a managed resource. To embed a manifest resource blob, use the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method. For a summary of embedding and linking managed resources and manifest resource blobs, see the <xref:System.Reflection.Emit.ModuleBuilder.DefineManifestResource%2A> method.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -831,6 +838,7 @@
  -or-  
   
  The containing assembly is not persistable.</exception>
+        <altmember cref="M:System.Reflection.Emit.ModuleBuilder.DefineManifestResource(System.String,System.IO.Stream,System.Reflection.ResourceAttributes)" />
       </Docs>
     </Member>
     <Member MemberName="DefineType">
@@ -865,7 +873,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -921,7 +929,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -979,7 +987,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1039,7 +1047,7 @@
  Type names must be unique within an assembly. It is forbidden to have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1099,7 +1107,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1164,7 +1172,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1226,7 +1234,7 @@
  Type names must be unique within an assembly. You cannot have two types with the same name in two different modules of an assembly.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
    
   
@@ -1286,7 +1294,7 @@
  The data defined by this method is not created until the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method is called.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -1327,7 +1335,7 @@
  An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -1362,7 +1370,7 @@
  An assembly can be associated with only one unmanaged resource. This means that calling `DefineVersionInfoResource` or `DefineUnmanagedResource` after either one of the methods was called previously throws <xref:System.ArgumentException>. Multiple unmanaged resources need to be merged with a tool such as the Microsoft ResMerge utility (not supplied with the common language runtime).  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -1685,7 +1693,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and for example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  ]]></format>
         </remarks>
@@ -1845,7 +1853,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method provides the implementation for all overloads of the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method. Use the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=fullName> method to get methods that have been declared at the module level. Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
+ This method provides the implementation for all overloads of the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=nameWithType> method. Use the inherited <xref:System.Reflection.Module.GetMethod%2A?displayProperty=nameWithType> method to get methods that have been declared at the module level. Module-level methods are defined in emitted code by using the <xref:System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod%2A> method.  
   
 > [!IMPORTANT]
 >  Module-level methods cannot be retrieved until after the <xref:System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions%2A> method has been called for the module.  
@@ -1854,6 +1862,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />, <paramref name="types" /> is <see langword="null" />, or an element of <paramref name="types" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.ParameterModifier" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -1945,7 +1956,7 @@
     </Member>
     <Member MemberName="GetPEKind">
       <MemberSignature Language="C#" Value="public override void GetPEKind (out System.Reflection.PortableExecutableKinds peKind, out System.Reflection.ImageFileMachine machine);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetPEKind(valuetype System.Reflection.PortableExecutableKinds peKind, valuetype System.Reflection.ImageFileMachine machine) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetPEKind([out] valuetype System.Reflection.PortableExecutableKinds&amp; peKind, [out] valuetype System.Reflection.ImageFileMachine&amp; machine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1967,7 +1978,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For dynamic modules, `peKind` is always <xref:System.Reflection.PortableExecutableKinds?displayProperty=fullName> and `machine` is always 0 (zero).  
+ For dynamic modules, `peKind` is always <xref:System.Reflection.PortableExecutableKinds.NotAPortableExecutableImage?displayProperty=nameWithType> and `machine` is always 0 (zero).  
   
  ]]></format>
         </remarks>
@@ -2106,7 +2117,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2141,10 +2152,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=nameWithType> methods instead.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2187,10 +2198,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=nameWithType> methods instead.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2237,10 +2248,10 @@
 ## Remarks  
  The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
   
- Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=fullName> methods instead.  
+ Do not use this method to generate array types, pointer types, or byref types. Use the <xref:System.Reflection.Emit.TypeBuilder.MakeArrayType%2A?displayProperty=nameWithType>, <xref:System.Reflection.Emit.TypeBuilder.MakePointerType%2A?displayProperty=nameWithType>, and <xref:System.Reflection.Emit.TypeBuilder.MakeByRefType%2A?displayProperty=nameWithType> methods instead.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2279,12 +2290,13 @@
  For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Reflection.ReflectionTypeLoadException">One or more classes in a module could not be loaded.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <altmember cref="T:System.Reflection.ReflectionTypeLoadException" />
       </Docs>
     </Member>
     <Member MemberName="GetTypeToken">
@@ -2484,7 +2496,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
@@ -2581,12 +2593,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2628,12 +2640,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2679,12 +2691,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericMethodArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2798,12 +2810,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=fullName> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=fullName> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
+ Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method on the type where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. Use the <xref:System.Reflection.MethodInfo.GetGenericArguments%2A?displayProperty=nameWithType> method on the method where `metadataToken` is in scope to obtain an array of generic type arguments for `genericTypeArguments`. It is always safe to provide these arguments, even when they are not needed.  
   
 > [!NOTE]
 >  Information about metadata tokens can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the ECMA Web site.  
   
- For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=fullName> method.  
+ For code that demonstrates token resolution using the generic context (that is, the generic type parameters of the generic type and/or the generic method in which the token is embedded) see the <xref:System.Reflection.Module.ResolveMethod%28System.Int32%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -2866,7 +2878,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2912,7 +2924,7 @@
  For more information about how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2948,7 +2960,7 @@
  This method does nothing.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2982,7 +2994,7 @@
  The compiler might generate a startup stub before calling user main. The startup stub will be the entry point. While the user main will be the user entry point so that debugger will not step into the compiler entry point.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -2997,7 +3009,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _ModuleBuilder.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.System#Runtime#InteropServices#_ModuleBuilder#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3073,7 +3085,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _ModuleBuilder.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.System#Runtime#InteropServices#_ModuleBuilder#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3105,7 +3117,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ModuleBuilder.Invoke">
       <MemberSignature Language="C#" Value="void _ModuleBuilder.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ModuleBuilder.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ModuleBuilder.System#Runtime#InteropServices#_ModuleBuilder#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3149,5 +3161,125 @@
         <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypeToken">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a type token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetConstructorToken">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the token used to identify the specified constructor within this module.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineGlobalMethod">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a global method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies a custom attribute to this module.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSignatureToken">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a signature token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefinePInvokeMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a <see langword="PInvoke" /> method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineType">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs a <see langword="TypeBuilder" />. To define a value type, define a type that derives from <see cref="T:System.ValueType" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineResource">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a managed embedded resource to be stored in this module.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMethodToken">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the token used to identify the specified method within this module.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DefineUnmanagedResource">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines an unmanaged resource in this module. The binary large object (BLOB) must have the right format for a Win32 resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the named type defined in the module.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes that are applied to the current <see cref="T:System.Reflection.Emit.ModuleBuilder" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

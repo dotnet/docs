@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MissingInteropDataException Class (.NET Native)
 **.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
@@ -41,15 +46,15 @@ manager: "wpickett"
   
 |Property|Description|  
 |--------------|-----------------|  
-|`public IDictionary Data { get; }`|Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string HelpLink { get; set; }`|Gets or sets a link to the help file associated with this exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public int HResult { get; protected set; }`|Gets or sets the `HRESULT`, which is a coded numeric value that is assigned to a specific exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public Exception InnerException { get; }`|Gets the exception that caused the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string Message { get; }`|Gets a message that describes the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public IDictionary Data { get; }`|Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string HelpLink { get; set; }`|Gets or sets a link to the help file associated with this exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public int HResult { get; protected set; }`|Gets or sets the `HRESULT`, which is a coded numeric value that is assigned to a specific exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public Exception InnerException { get; }`|Gets the exception that caused the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string Message { get; }`|Gets a message that describes the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
 |`public Type MissingType { get; private set; }`|Gets or sets the type whose data is missing.|  
-|`public string Source { get; set; }`|Gets or sets the name of the app or object that caused the error. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public string StackTrace { get; }`|Gets a string representation of the immediate frames on the call stack. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public MethodBase TargetSite { get; }`|Gets the method that threw the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public string Source { get; set; }`|Gets or sets the name of the app or object that caused the error. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public string StackTrace { get; }`|Gets a string representation of the immediate frames on the call stack. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public MethodBase TargetSite { get; }`|Gets the method that threw the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Methods  
   
@@ -57,18 +62,18 @@ manager: "wpickett"
 |------------|-----------------|  
 |`public bool Equals(Object obj)`|Determines whether the specified object is equal to the current object.  (Inherited from <xref:System.Object>.)|  
 |`protected void Finalize()`|Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from <xref:System.Object>.)|  
-|`public Exception GetBaseException()`|Returns the exception that is the root cause of one or more subsequent exceptions. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public Exception GetBaseException()`|Returns the exception that is the root cause of one or more subsequent exceptions. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
 |`public int GetHashCode()`|Returns a hash code for a `MissingInteropDataException` instance.   (Inherited from <xref:System.Object>.)|  
-|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
-|`public Type GetType()`|Gets the runtime type of the current instance. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public void GetObjectData(SerializationInfo info, StreamingContext context)`|Sets a <xref:System.Runtime.Serialization.SerializationInfo> object with information about the exception.  (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
+|`public Type GetType()`|Gets the runtime type of the current instance. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
 |`protected Object MemberwiseClone()`|Creates a shallow copy of the current object. (Inherited from <xref:System.Object>.)|  
-|`public string ToString()`|Returns the string representation of the current exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`public string ToString()`|Returns the string representation of the current exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Events  
   
 |Event|Description|  
 |-----------|-----------------|  
-|`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from <xref:System.Exception?displayProperty=fullName>.)|  
+|`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Usage Details  
  The `MissingInteropDataException` exception is thrown when a method call to a COM or Windows Runtime component cannot be made successfully because type information isn't available.  
@@ -78,9 +83,9 @@ manager: "wpickett"
 > [!IMPORTANT]
 >  Because this exception indicates that metadata needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by adding the appropriate entry to a runtime directives file.  
   
- The `MissingInteropDataException` class contains a single unique member, the `MissingType` property, that indicates the type whose metadata is needed for a successful method call. All remaining members are inherited from the base class, <xref:System.Exception?displayProperty=fullName>.  
+ The `MissingInteropDataException` class contains a single unique member, the `MissingType` property, that indicates the type whose metadata is needed for a successful method call. All remaining members are inherited from the base class, <xref:System.Exception?displayProperty=nameWithType>.  
   
 ## See Also  
- <xref:System.Exception?displayProperty=fullName>   
- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)   
+ <xref:System.Exception?displayProperty=nameWithType>  
+ [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)  
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "duplex contracts [WCF]"
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Access Services with a Duplex Contract
 One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client in a client class that implements the callback interface.  
@@ -95,8 +97,8 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
 ## .NET Framework Security  
   
 ## See Also  
- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)   
- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)   
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
- [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)   
+ [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)  
+ [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)  
+ [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
+ [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
  [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)

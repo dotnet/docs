@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetRequestedRuntimeInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRequestedRuntimeInfo function [.NET Framework hosting]"
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
@@ -29,6 +27,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetRequestedRuntimeInfo Function
 Gets version and directory information about the common language runtime (CLR) requested by an application.  
@@ -130,6 +130,6 @@ HRESULT GetRequestedRuntimeInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See Also  
- [GetRequestedRuntimeVersion Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeversion-function.md)   
- [GetVersionFromProcess Function](../../../../docs/framework/unmanaged-api/hosting/getversionfromprocess-function.md)   
+ [GetRequestedRuntimeVersion Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeversion-function.md)  
+ [GetVersionFromProcess Function](../../../../docs/framework/unmanaged-api/hosting/getversionfromprocess-function.md)  
  [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

@@ -482,18 +482,18 @@
   
  The following code example demonstrates how to set up the frames for the following code example.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewFrameSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFrameSet/CS/framecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewFrameSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFrameSet/VB/framevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewFrameSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFrameSet/CS/framecs.aspx#1)]
+ [!code-aspx-vb[TreeViewFrameSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFrameSet/VB/framevb.aspx#1)]  
   
  The following code example demonstrates how to use declarative syntax to display static data in the <xref:System.Web.UI.WebControls.TreeView> control. This example is used within the frame set of the preceding example to display a table of contents.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewFrameExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFrameExample/CS/treeviewframecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewFrameExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFrameExample/VB/treeviewframevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewFrameExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFrameExample/CS/treeviewframecs.aspx#1)]
+ [!code-aspx-vb[TreeViewFrameExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFrameExample/VB/treeviewframevb.aspx#1)]  
   
  The following code example demonstrates how to bind the <xref:System.Web.UI.WebControls.TreeView> control to an XML data source. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]
+ [!code-aspx-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding example.  
   
@@ -514,8 +514,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView> control for site navigation by binding it to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. For this example to work correctly, you must copy the sample site map data, provided after this code example, to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewAutoGenerateBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/CS/treeviewautogeneratebindingscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewAutoGenerateBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/VB/treeviewautogeneratebindingsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewAutoGenerateBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/CS/treeviewautogeneratebindingscs.aspx#1)]
+ [!code-aspx-vb[TreeViewAutoGenerateBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/VB/treeviewautogeneratebindingsvb.aspx#1)]  
   
  The following code example provides sample site map data for the preceding code example.  
   
@@ -532,11 +532,28 @@
   
  The following code example demonstrates how to populate the nodes in the <xref:System.Web.UI.WebControls.TreeView> control from the client. When client-side node population is enabled, nodes are populated dynamically on the client, without the need to post back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewPopulateNodesFromClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/CS/treeviewpopulatenodesfromclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewPopulateNodesFromClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/VB/treeviewpopulatenodesfromclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewPopulateNodesFromClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/CS/treeviewpopulatenodesfromclientcs.aspx#1)]
+ [!code-aspx-vb[TreeViewPopulateNodesFromClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/VB/treeviewpopulatenodesfromclientvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.EnableClientScript" />
+    <altmember cref="T:System.Web.UI.IHierarchicalDataSource" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.Nodes" />
+    <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.TreeNodeCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.SelectedNodeChanged" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+    <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -555,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.TreeView.%23ctor%2A> constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeView> class. To add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically, create a new <xref:System.Web.UI.WebControls.TreeView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a container control, such as the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
+ Use the <xref:System.Web.UI.WebControls.TreeView.%23ctor%2A> constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TreeView> class. To add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically, create a new <xref:System.Web.UI.WebControls.TreeView> object, set its properties, and then add it to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=nameWithType> collection of a container control, such as the <xref:System.Web.UI.WebControls.PlaceHolder> control.  
   
    
   
@@ -564,8 +581,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.%23ctor%2A> constructor to add a <xref:System.Web.UI.WebControls.TreeView> control to a page dynamically. For this example to work correctly, you must copy the sample XML data provided after this code example, to a file named Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCtor/CS/treeviewctorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCtor/VB/treeviewctorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCtor/CS/treeviewctorcs.aspx#1)]
+ [!code-aspx-vb[TreeViewCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCtor/VB/treeviewctorvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding example.  
   
@@ -586,6 +603,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.Controls" />
+        <altmember cref="T:System.Web.UI.WebControls.PlaceHolder" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -614,6 +633,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="AutoGenerateDataBindings">
@@ -660,8 +680,8 @@
   
  The following code example demonstrates how to disable automatic tree node binding generation by setting the <xref:System.Web.UI.WebControls.TreeView.AutoGenerateDataBindings%2A> property to `false`. A <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection is then defined to establish the relationship between the data items in a <xref:System.Web.UI.WebControls.SiteMapDataSource> control and the nodes of the <xref:System.Web.UI.WebControls.TreeView> control. For this example to work correctly, you must copy the sample site map data, provided after this code example, to a file named Web.sitemap.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewAutoGenerateBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/CS/treeviewautogeneratebindingscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewAutoGenerateBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/VB/treeviewautogeneratebindingsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewAutoGenerateBindings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/CS/treeviewautogeneratebindingscs.aspx#1)]
+ [!code-aspx-vb[TreeViewAutoGenerateBindings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewAutoGenerateBindings/VB/treeviewautogeneratebindingsvb.aspx#1)]  
   
  The following code example provides sample site map data for the preceding example.  
   
@@ -678,6 +698,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.DataBindings" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />
       </Docs>
     </Member>
     <Member MemberName="CheckedNodes">
@@ -719,11 +742,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.CheckedNodes%2A> property to determine which nodes have a selected check box in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]
+ [!code-aspx-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="CollapseAll">
@@ -752,11 +778,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.CollapseAll%2A> method to collapse all the nodes in the <xref:System.Web.UI.WebControls.TreeView> control at the same time.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewExpandAll#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewExpandAll/CS/treeviewexpandallcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewExpandAll#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewExpandAll/VB/treeviewexpandallvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewExpandAll#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewExpandAll/CS/treeviewexpandallcs.aspx#1)]
+ [!code-aspx-vb[TreeViewExpandAll#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewExpandAll/VB/treeviewexpandallvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="CollapseImageToolTip">
@@ -794,11 +821,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.CollapseImageToolTip%2A> property to specify a ToolTip for an image that is displayed for the collapsible node indicator.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]
+ [!code-aspx-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
       </Docs>
     </Member>
     <Member MemberName="CollapseImageUrl">
@@ -847,11 +878,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A> property to specify a custom image for the collapsible node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]
+ [!code-aspx-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowExpandCollapse" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeViewImageSet" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NoExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageToolTip" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -874,10 +911,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TreeView> control does not support embedding of child controls. This method has been overridden to prevent the addition of child controls and always returns an <xref:System.Web.UI.EmptyControlCollection?displayProperty=fullName> object.  
+ The <xref:System.Web.UI.WebControls.TreeView> control does not support embedding of child controls. This method has been overridden to prevent the addition of child controls and always returns an <xref:System.Web.UI.EmptyControlCollection?displayProperty=nameWithType> object.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.EmptyControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateNode">
@@ -931,6 +969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.PerformDataBinding" />
       </Docs>
     </Member>
     <Member MemberName="DataBindings">
@@ -995,8 +1034,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A> collection to define the relationship between a data item and the node that it is binding to. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml. This example specifies only the <xref:System.Web.UI.WebControls.TreeNodeBinding.DataMember%2A> property of the binding. A slight performance gain could be added by also specifying the <xref:System.Web.UI.WebControls.TreeNodeBinding.Depth%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewXml#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewXml/CS/treeviewxmlcs.aspx#1)]
+ [!code-aspx-vb[TreeViewXml#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewXml/VB/treeviewxmlvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding example.  
   
@@ -1017,6 +1056,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBinding" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -1065,8 +1106,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> property to render client-side script that is used to expand and collapse nodes on compatible browsers. Notice that a post to the server is required to expand and collapse a node when the <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> property is set to `false`. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewEnableClientScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewEnableClientScript/CS/treeviewenableclientscriptcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewEnableClientScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewEnableClientScript/VB/treeviewenableclientscriptvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewEnableClientScript#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewEnableClientScript/CS/treeviewenableclientscriptcs.aspx#1)]
+ [!code-aspx-vb[TreeViewEnableClientScript#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewEnableClientScript/VB/treeviewenableclientscriptvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding code example.  
   
@@ -1087,6 +1128,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -1115,11 +1158,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ExpandAll%2A> method to expand all the nodes in the <xref:System.Web.UI.WebControls.TreeView> control at the same time.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewExpandAll#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewExpandAll/CS/treeviewexpandallcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewExpandAll#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewExpandAll/VB/treeviewexpandallvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewExpandAll#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewExpandAll/CS/treeviewexpandallcs.aspx#1)]
+ [!code-aspx-vb[TreeViewExpandAll#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewExpandAll/VB/treeviewexpandallvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="ExpandDepth">
@@ -1153,6 +1197,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.ExpandAll" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="ExpandImageToolTip">
@@ -1190,11 +1237,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ExpandImageToolTip%2A> property to specify a ToolTip for an image that is displayed for the expandable node indicator.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]
+ [!code-aspx-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageToolTip" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
       </Docs>
     </Member>
     <Member MemberName="ExpandImageUrl">
@@ -1245,11 +1296,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A> property to specify a custom image for the expandable node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]
+ [!code-aspx-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowExpandCollapse" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeViewImageSet" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NoExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageToolTip" />
       </Docs>
     </Member>
     <Member MemberName="FindNode">
@@ -1285,11 +1342,14 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewFindNode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFindNode/CS/treeviewfindnodecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewFindNode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFindNode/VB/treeviewfindnodevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewFindNode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFindNode/CS/treeviewfindnodecs.aspx#1)]
+ [!code-aspx-vb[TreeViewFindNode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFindNode/VB/treeviewfindnodevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PathSeparator" />
       </Docs>
     </Member>
     <Member MemberName="GetCallbackResult">
@@ -1378,11 +1438,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> property to control the appearance of a node when the mouse pointer is positioned over it. For this example to work, you must include a `<head>` element with a `runat="server"` attribute.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewHoverNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewHoverNodeStyle/CS/treeviewhovernodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewHoverNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewHoverNodeStyle/VB/treeviewhovernodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewHoverNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewHoverNodeStyle/CS/treeviewhovernodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewHoverNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewHoverNodeStyle/VB/treeviewhovernodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
       </Docs>
     </Member>
     <Member MemberName="ImageSet">
@@ -1427,7 +1494,7 @@
 |`TreeViewImageSet.Custom`|A user-defined image set.|  
 |`TreeViewImageSet.Events`|A predefined image set that uses event log-styled images.|  
 |`TreeViewImageSet.Faq`|A predefined image set that uses FAQ-styled images.|  
-|`TreeViewImageSet.Inbox`|A predefined image set that uses e-mail-styled images.|  
+|`TreeViewImageSet.Inbox`|A predefined image set that uses email-styled images.|  
 |`TreeViewImageSet.News`|A predefined image set that uses newsgroup-styled images.|  
 |`TreeViewImageSet.Simple`|A predefined image set that uses simple shape outlines.|  
 |`TreeViewImageSet.Simple2`|A predefined image set that uses simple filled shapes.|  
@@ -1451,12 +1518,18 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to display the Windows Explorer set of images in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewImageSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewImageSet/CS/treeviewimagesetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewImageSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewImageSet/VB/treeviewimagesetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewImageSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewImageSet/CS/treeviewimagesetcs.aspx#1)]
+ [!code-aspx-vb[TreeViewImageSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewImageSet/VB/treeviewimagesetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified image set is not one of the <see cref="T:System.Web.UI.WebControls.TreeViewImageSet" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeViewImageSet" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NoExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LineImagesFolder" />
       </Docs>
     </Member>
     <Member MemberName="LeafNodeStyle">
@@ -1509,11 +1582,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.LeafNodeStyle%2A> property to control the appearance of the leaf nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewLeafNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLeafNodeStyle/CS/treeviewleafnodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewLeafNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLeafNodeStyle/VB/treeviewleafnodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewLeafNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLeafNodeStyle/CS/treeviewleafnodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewLeafNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLeafNodeStyle/VB/treeviewleafnodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="LevelStyles">
@@ -1563,11 +1642,20 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.LevelStyles%2A> property to create a navigation menu. The control is always fully expanded, with the expansion node indicators and images hidden. Also, the <xref:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding%2A> property is used to control the spacing of the node levels.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewLevelStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLevelStyles/CS/treeviewlevelstylescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewLevelStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLevelStyles/VB/treeviewlevelstylesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewLevelStyles#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLevelStyles/CS/treeviewlevelstylescs.aspx#1)]
+ [!code-aspx-vb[TreeViewLevelStyles#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLevelStyles/VB/treeviewlevelstylesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.StyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="LineImagesFolder">
@@ -1629,11 +1717,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A> property to specify the folder that contains the line images to display in the <xref:System.Web.UI.WebControls.TreeView> control. To work with this example, use the Line Designer tool beforehand to create a set of line images. Place them in a folder named LineImages within the directory for the sample application.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewLineImagesFolderUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/CS/treeviewlineimagesfolderurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewLineImagesFolderUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/VB/treeviewlineimagesfolderurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewLineImagesFolderUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/CS/treeviewlineimagesfolderurlcs.aspx#1)]
+ [!code-aspx-vb[TreeViewLineImagesFolderUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/VB/treeviewlineimagesfolderurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowLines" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeViewImageSet" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NoExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -1666,6 +1760,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -1727,8 +1822,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.MaxDataBindDepth%2A> property to bind only the first two node levels (depths 0 and 1) to the <xref:System.Web.UI.WebControls.TreeView> control. All node levels in the data source are ignored. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewMaxDataBindDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewMaxDataBindDepth/CS/treeviewmaxdatabinddepthcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewMaxDataBindDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewMaxDataBindDepth/VB/treeviewmaxdatabinddepthvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewMaxDataBindDepth#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewMaxDataBindDepth/CS/treeviewmaxdatabinddepthcs.aspx#1)]
+ [!code-aspx-vb[TreeViewMaxDataBindDepth#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewMaxDataBindDepth/VB/treeviewmaxdatabinddepthvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding code example.  
   
@@ -1750,6 +1845,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than <see langword="-1" />.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandDepth" />
       </Docs>
     </Member>
     <Member MemberName="NodeIndent">
@@ -1788,11 +1884,19 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.NodeIndent%2A> property to control the indentation of child nodes.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewNodeIndent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeIndent/CS/treeviewnodeindentcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewNodeIndent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeIndent/VB/treeviewnodeindentvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewNodeIndent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeIndent/CS/treeviewnodeindentcs.aspx#1)]
+ [!code-aspx-vb[TreeViewNodeIndent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeIndent/VB/treeviewnodeindentvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding" />
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1842,11 +1946,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property to traverse the tree.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCount/CS/treenodecollectioncountcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCount/VB/treenodecollectioncountvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeNodeCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCount/CS/treenodecollectioncountcs.aspx#1)]
+ [!code-aspx-vb[TreeNodeCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCount/VB/treenodecollectioncountvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ChildNodes" />
       </Docs>
     </Member>
     <Member MemberName="NodeStyle">
@@ -1902,11 +2009,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.NodeStyle%2A> property to control the appearance of nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeStyle/CS/treeviewnodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeStyle/VB/treeviewnodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeStyle/CS/treeviewnodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeStyle/VB/treeviewnodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="NodeWrap">
@@ -1943,11 +2056,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.NodeWrap%2A> property to wrap the text of the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewNodeWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeWrap/CS/treeviewnodewrapcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewNodeWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeWrap/VB/treeviewnodewrapvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewNodeWrap#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewNodeWrap/CS/treeviewnodewrapcs.aspx#1)]
+ [!code-aspx-vb[TreeViewNodeWrap#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewNodeWrap/VB/treeviewnodewrapvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.Font" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeIndent" />
       </Docs>
     </Member>
     <Member MemberName="NoExpandImageUrl">
@@ -1994,11 +2109,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A> property to specify a custom image for the non-expandable node indicator. For the code example to display and the image to appear in the control, you must provide your own image and the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property must be set to `TreeNodeImageSet.Custom`.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCustomImage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCustomImage/CS/treeviewcustomimagecs.aspx#1)]
+ [!code-aspx-vb[TreeViewCustomImage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCustomImage/VB/treeviewcustomimagevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowExpandCollapse" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />
+        <altmember cref="T:System.Web.UI.WebControls.TreeViewImageSet" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2025,7 +2145,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.OnInit%2A> method is called by the <xref:System.Web.UI.WebControls.TreeView> control to raise the <xref:System.Web.UI.Control.Init> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.TreeView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2034,6 +2154,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnInit(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnInit(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -2060,7 +2181,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method is overridden to register for postback. If client script is enabled, it also renders the necessary script and hidden fields.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2069,6 +2190,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnPreRender(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="OnSelectedNodeChanged">
@@ -2100,7 +2222,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2109,6 +2231,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged(System.EventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.SelectedNodeChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeCheckChanged">
@@ -2135,7 +2258,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is raised when a check box in the <xref:System.Web.UI.WebControls.TreeView> control changes state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2144,6 +2267,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged(System.Web.UI.WebControls.TreeNodeEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeCollapsed">
@@ -2170,7 +2294,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2179,6 +2303,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed" />
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeDataBound">
@@ -2205,7 +2330,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2214,6 +2339,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeDataBound" />
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodeExpanded">
@@ -2243,7 +2369,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2252,6 +2378,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
       </Docs>
     </Member>
     <Member MemberName="OnTreeNodePopulate">
@@ -2285,7 +2413,7 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node on the client dynamically when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2294,6 +2422,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate(System.Web.UI.WebControls.TreeNodeEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.EnableClientScript" />
       </Docs>
     </Member>
     <Member MemberName="ParentNodeStyle">
@@ -2346,11 +2477,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ParentNodeStyle%2A> property to control the appearance of the parent nodes in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewParentNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewParentNodeStyle/CS/treeviewparentnodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewParentNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewParentNodeStyle/VB/treeviewparentnodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewParentNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewParentNodeStyle/CS/treeviewparentnodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewParentNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewParentNodeStyle/VB/treeviewparentnodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -2388,11 +2525,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.PathSeparator%2A> property to specify the delimiter character for the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property of a node. This value is then used to parse the <xref:System.Web.UI.WebControls.TreeNode.ValuePath%2A> property for the individual values.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewPathSeparator2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPathSeparator2/CS/treeviewpathseparatorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewPathSeparator2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPathSeparator2/VB/treeviewpathseparatorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewPathSeparator2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPathSeparator2/CS/treeviewpathseparatorcs.aspx#1)]
+ [!code-aspx-vb[TreeViewPathSeparator2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPathSeparator2/VB/treeviewpathseparatorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.ValuePath" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -2470,11 +2608,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A> property to enable client-side population of the nodes in the <xref:System.Web.UI.WebControls.TreeView> control. Notice that when client-side node population is enabled, nodes are populated dynamically on the client, without the need to post back to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewPopulateNodesFromClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/CS/treeviewpopulatenodesfromclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewPopulateNodesFromClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/VB/treeviewpopulatenodesfromclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewPopulateNodesFromClient#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/CS/treeviewpopulatenodesfromclientcs.aspx#1)]
+ [!code-aspx-vb[TreeViewPopulateNodesFromClient#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewPopulateNodesFromClient/VB/treeviewpopulatenodesfromclientvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.EnableClientScript" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodePopulate" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
       </Docs>
     </Member>
     <Member MemberName="RaiseCallbackEvent">
@@ -2503,6 +2644,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -2527,12 +2669,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The page passes the value of the `eventArgument` parameter to the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler?displayProperty=fullName> interface. This <xref:System.Web.UI.WebControls.TreeView> control also renders the HTML element that causes the postback event to occur. If the control renders client-side script to post back to the server, the argument from the script is passed in the `eventArgument` parameter. If the postback event is caused by a simple submit to the server, the `eventArgument` parameter is `null`.  
+ The page passes the value of the `eventArgument` parameter to the <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method of the control that implements the <xref:System.Web.UI.IPostBackEventHandler?displayProperty=nameWithType> interface. This <xref:System.Web.UI.WebControls.TreeView> control also renders the HTML element that causes the postback event to occur. If the control renders client-side script to post back to the server, the argument from the script is passed in the `eventArgument` parameter. If the postback event is caused by a simple submit to the server, the `eventArgument` parameter is `null`.  
   
  The <xref:System.Web.UI.WebControls.TreeView.RaisePostBackEvent%2A> method provides the functionality for many events that are implemented by HTML and Web server controls.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.System#Web#UI#ICallbackEventHandler#RaiseCallbackEvent(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -2558,6 +2701,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginTag">
@@ -2586,6 +2730,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -2614,6 +2760,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -2642,6 +2789,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RootNodeStyle">
@@ -2694,11 +2843,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.RootNodeStyle%2A> property to control the appearance of the root node in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewRootNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewRootNodeStyle/CS/treeviewrootnodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewRootNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewRootNodeStyle/VB/treeviewrootnodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewRootNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewRootNodeStyle/CS/treeviewrootnodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewRootNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewRootNodeStyle/VB/treeviewrootnodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -2771,11 +2926,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property to determine the value of the selected node in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNode" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ShowCheckBoxes" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.SelectedNodeChanged" />
+        <altmember cref="E:System.Web.UI.WebControls.TreeView.TreeNodeExpanded" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNodeBinding.SelectAction" />
       </Docs>
     </Member>
     <Member MemberName="SelectedNodeChanged">
@@ -2812,18 +2973,19 @@
   
  The <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event is fired only on post back when a user clicks a node. The event is not fired if the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property is changed programmatically.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event to update a <xref:System.Web.UI.WebControls.Label> control when a node is selected in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="SelectedNodeStyle">
@@ -2874,11 +3036,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.SelectedNodeStyle%2A> property to control the appearance of the selected node in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewSelectedNodeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/CS/treeviewselectednodestylecs.aspx#1)]
+ [!code-aspx-vb[TreeViewSelectedNodeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewSelectedNodeStyle/VB/treeviewselectednodestylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LeafNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.HoverNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ParentNodeStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.RootNodeStyle" />
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -2915,6 +3083,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataBound">
@@ -2949,6 +3118,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataBound(System.Web.UI.WebControls.TreeNode,System.Boolean)" /> method is provided to allow a control that is derived from the <see cref="T:System.Web.UI.WebControls.TreeView" /> control to set the <see cref="P:System.Web.UI.WebControls.TreeNode.DataBound" /> property on a node.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataItem(System.Web.UI.WebControls.TreeNode,System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataPath(System.Web.UI.WebControls.TreeNode,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataItem">
@@ -2979,6 +3150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataBound(System.Web.UI.WebControls.TreeNode,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataPath(System.Web.UI.WebControls.TreeNode,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetNodeDataPath">
@@ -3009,6 +3182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataBound(System.Web.UI.WebControls.TreeNode,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.SetNodeDataItem(System.Web.UI.WebControls.TreeNode,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ShowCheckBoxes">
@@ -3061,12 +3236,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property to show and hide the check boxes for the different node types.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]
+ [!code-aspx-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The bitwise combination value is outside the range of the <see cref="T:System.Web.UI.WebControls.TreeNodeTypes" /> enumeration.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeTypes" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="ShowExpandCollapse">
@@ -3105,11 +3282,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ShowExpandCollapse%2A> property to show and hide the expansion node icons.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewShowExpandCollapse#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowExpandCollapse/CS/treeviewshowexpandcollapsecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewShowExpandCollapse#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowExpandCollapse/VB/treeviewshowexpandcollapsevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewShowExpandCollapse#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowExpandCollapse/CS/treeviewshowexpandcollapsecs.aspx#1)]
+ [!code-aspx-vb[TreeViewShowExpandCollapse#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowExpandCollapse/VB/treeviewshowexpandcollapsevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.NoExpandImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.CollapseImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.ExpandImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="ShowLines">
@@ -3149,11 +3329,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.ShowLines%2A> property to display lines connecting nodes in the <xref:System.Web.UI.WebControls.TreeView> control. Be sure to use the Line Designer tool to create a set of line images and place them in a folder named LineImages within the directory for the sample application.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewLineImagesFolderUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/CS/treeviewlineimagesfolderurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewLineImagesFolderUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/VB/treeviewlineimagesfolderurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewLineImagesFolderUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/CS/treeviewlineimagesfolderurlcs.aspx#1)]
+ [!code-aspx-vb[TreeViewLineImagesFolderUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewLineImagesFolderUrl/VB/treeviewlineimagesfolderurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LineImagesFolder" />
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3192,6 +3373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.ICallbackEventHandler.GetCallbackResult">
@@ -3246,6 +3428,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -3278,6 +3461,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
@@ -3303,6 +3487,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -3359,6 +3544,7 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.WebControls.TreeView.TagKey" /> property to specify which <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value to use for your derived control.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -3420,11 +3606,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to display the Web content that is linked to a node in a new window when that node is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTarget/CS/treeviewtargetcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTarget/VB/treeviewtargetvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTarget/CS/treeviewtargetcs.aspx#1)]
+ [!code-aspx-vb[TreeViewTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTarget/VB/treeviewtargetvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.Target" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3450,6 +3637,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
+        <altmember cref="P:System.Web.UI.Control.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="TreeNodeCheckChanged">
@@ -3474,18 +3663,19 @@
   
  Even though the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is fired on post back, changing a check box does not cause a post back.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event to update a <xref:System.Web.UI.WebControls.Label> control when the check boxes of the <xref:System.Web.UI.WebControls.TreeView> control change state between posts to the server.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewCheckChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCheckChanged/CS/treeviewcheckchangedcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewCheckChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCheckChanged/VB/treeviewcheckchangedvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewCheckChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewCheckChanged/CS/treeviewcheckchangedcs.aspx#1)]
+ [!code-aspx-vb[TreeViewCheckChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewCheckChanged/VB/treeviewcheckchangedvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged(System.Web.UI.WebControls.TreeNodeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TreeNodeCollapsed">
@@ -3508,18 +3698,19 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event to update the content of a <xref:System.Web.UI.WebControls.Label> control when the user collapses a node in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTreeNodeExpand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeExpand/CS/treeviewtreenodeexpandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTreeNodeExpand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeExpand/VB/treeviewtreenodeexpandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTreeNodeExpand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeExpand/CS/treeviewtreenodeexpandcs.aspx#1)]
+ [!code-aspx-vb[TreeViewTreeNodeExpand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeExpand/VB/treeviewtreenodeexpandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed(System.Web.UI.WebControls.TreeNodeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TreeNodeDataBound">
@@ -3542,7 +3733,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3551,8 +3742,8 @@
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event to change the image for a node when some condition is met. For this example to work correctly, you must copy the sample XML data, provided after this code example, to a file named Book.xml. Also be sure to provide your own images for this example to display.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTreeNodeDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeDataBound/CS/treeviewtreenodedataboundcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTreeNodeDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeDataBound/VB/treeviewtreenodedataboundvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTreeNodeDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeDataBound/CS/treeviewtreenodedataboundcs.aspx#1)]
+ [!code-aspx-vb[TreeViewTreeNodeDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeDataBound/VB/treeviewtreenodedataboundvb.aspx#1)]  
   
  The following code example provides sample XML data for the preceding code example.  
   
@@ -3573,6 +3764,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound(System.Web.UI.WebControls.TreeNodeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="TreeNodeExpanded">
@@ -3598,18 +3790,20 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to `TreeNodeSelectAction.Expand` or `TreeNodeSelectAction.SelectExpand`, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event to update the content of a <xref:System.Web.UI.WebControls.Label> control when the user expands a node in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTreeNodeExpand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeExpand/CS/treeviewtreenodeexpandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTreeNodeExpand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeExpand/VB/treeviewtreenodeexpandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTreeNodeExpand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodeExpand/CS/treeviewtreenodeexpandcs.aspx#1)]
+ [!code-aspx-vb[TreeViewTreeNodeExpand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodeExpand/VB/treeviewtreenodeexpandvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded(System.Web.UI.WebControls.TreeNodeEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.SelectAction" />
       </Docs>
     </Member>
     <Member MemberName="TreeNodePopulate">
@@ -3639,18 +3833,21 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node dynamically on the client when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.TreeNodePopulate> event to populate the nodes in the <xref:System.Web.UI.WebControls.TreeView> control dynamically on the server. Notice that the <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> property is set to `false` to prevent expanding-node events from being handled on the client.  
   
- <!-- TODO: review snippet reference [!code-csharp[TreeViewTreeNodePopulate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodePopulate/CS/treeviewtreenodepopulatecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TreeViewTreeNodePopulate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodePopulate/VB/treeviewtreenodepopulatevb.aspx#1)]  -->  
+ [!code-aspx-csharp[TreeViewTreeNodePopulate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewTreeNodePopulate/CS/treeviewtreenodepopulatecs.aspx#1)]
+ [!code-aspx-vb[TreeViewTreeNodePopulate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewTreeNodePopulate/VB/treeviewtreenodepopulatevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate(System.Web.UI.WebControls.TreeNodeEventArgs)" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeNode.PopulateOnDemand" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -3677,6 +3874,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TreeView" />
       </Docs>
     </Member>
   </Members>

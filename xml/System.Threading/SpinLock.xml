@@ -154,7 +154,7 @@ End Class
     </Member>
     <Member MemberName="Enter">
       <MemberSignature Language="C#" Value="public void Enter (ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enter(bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enter(bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.Enter(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -398,7 +398,7 @@ End Class
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public void TryEnter (ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -439,7 +439,7 @@ End Class
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public void TryEnter (int millisecondsTimeout, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(int32 millisecondsTimeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(int32 millisecondsTimeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.Int32,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -484,7 +484,7 @@ End Class
     </Member>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public void TryEnter (TimeSpan timeout, ref bool lockTaken);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(valuetype System.TimeSpan timeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TryEnter(valuetype System.TimeSpan timeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinLock.TryEnter(System.TimeSpan,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -527,5 +527,27 @@ End Class
         <exception cref="T:System.Threading.LockRecursionException">Thread ownership tracking is enabled, and the current thread has already acquired this lock.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Exit">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the lock.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryEnter">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to acquire the lock in a reliable manner, such that even if an exception occurs within the method call, <paramref name="lockTaken" /> can be examined reliably to determine whether the lock was acquired.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

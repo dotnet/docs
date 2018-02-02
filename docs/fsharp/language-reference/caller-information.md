@@ -1,5 +1,5 @@
 ---
-title: Caller Information (F#)
+title: Caller information (F#)
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -74,9 +74,6 @@ The following chart shows the member names that are returned when you use the Ca
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|
 
 ## See also
-
-[Attributes](attributes.md)
-
-[Named Arguments](parameters-and-arguments.md#named-arguments)
-
-[Optional Arguments](parameters-and-arguments.md#optional-arguments)
+ [Attributes](attributes.md)  
+ [Named arguments](parameters-and-arguments.md#named-arguments)  
+ [Optional parameters](parameters-and-arguments.md#optional-parameters)  

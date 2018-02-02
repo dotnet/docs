@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="InvokeTransacted">
       <MemberSignature Language="C#" Value="public static void InvokeTransacted (System.Web.Util.TransactedCallback callback, System.EnterpriseServices.TransactionOption mode, ref bool transactionAborted);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransacted(class System.Web.Util.TransactedCallback callback, valuetype System.EnterpriseServices.TransactionOption mode, bool transactionAborted) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransacted(class System.Web.Util.TransactedCallback callback, valuetype System.EnterpriseServices.TransactionOption mode, bool&amp; transactionAborted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -89,5 +89,14 @@
         <exception cref="T:System.Web.HttpException">The transacted code cannot be executed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeTransacted">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Wraps a specified transaction support around a callback method.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

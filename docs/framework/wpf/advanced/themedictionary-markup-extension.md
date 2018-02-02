@@ -13,13 +13,15 @@ f1_keywords:
   - "ThemeDictionaryExtension"
   - "ThemeDictionary"
 helpviewer_keywords: 
-  - "ThemeDictionary markup extension"
-  - "XAML, ThemeDictionary markup extension"
+  - "ThemeDictionary markup extension [WPF]"
+  - "XAML [WPF], ThemeDictionary markup extension"
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ThemeDictionary Markup Extension
 Provides a way for custom control authors or applications that integrate third-party controls to load theme-specific resource dictionaries to use in styling the control.  
@@ -47,7 +49,7 @@ Provides a way for custom control authors or applications that integrate third-p
 |`assemblyUri`|The [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] of the assembly that contains theme information. Typically, this is a pack URI that references an assembly in the larger package. Assembly resources and pack URIs simplify deployment issues. For more information see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).|  
   
 ## Remarks  
- This extension is intended to fill only one specific property value: a value for <xref:System.Windows.ResourceDictionary.Source%2A?displayProperty=fullName>.  
+ This extension is intended to fill only one specific property value: a value for <xref:System.Windows.ResourceDictionary.Source%2A?displayProperty=nameWithType>.  
   
  By using this extension, you can specify a single resources-only assembly that contains some styles to use only when the [!INCLUDE[TLA#tla_aero](../../../../includes/tlasharptla-aero-md.md)] theme is applied to the user's system, other styles when Luna theme is active, and so on. By using this extension, the contents of a control-specific resource dictionary can be automatically invalidated and reloaded to be specific for another theme when required.  
   
@@ -70,7 +72,7 @@ Provides a way for custom control authors or applications that integrate third-p
  `ThemeDictionary` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
 ## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)   
+ [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

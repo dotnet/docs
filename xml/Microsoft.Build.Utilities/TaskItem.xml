@@ -385,10 +385,12 @@
         <Parameter Name="taskItemToCast" Type="Microsoft.Build.Utilities.TaskItem" />
       </Parameters>
       <Docs>
-        <param name="taskItemToCast">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="taskItemToCast">The item to operate on.</param>
+        <summary>Allows an explicit type cast from a <see cref="T:Microsoft.Build.Utilities.TaskItem" /> to a <see cref="T:System.String" />, and returns the <see cref="P:Microsoft.Build.Utilities.TaskItem.ItemSpec" /> for that item.</summary>
+        <returns>The <see cref="P:Microsoft.Build.Utilities.TaskItem.ItemSpec" /> for the item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Microsoft.Build.Utilities.TaskItem.ToString?displayProperty=fullName>]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveMetadata">
@@ -454,5 +456,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.TaskItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

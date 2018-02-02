@@ -68,7 +68,7 @@
 > [!NOTE]
 >  <xref:System.Collections.Concurrent.ConcurrentDictionary%602> implements the <xref:System.Collections.Generic.IReadOnlyCollection%601> and <xref:System.Collections.Generic.IReadOnlyDictionary%602> interfaces starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Collections.Concurrent.ConcurrentDictionary%602> class did not implement these interfaces.  
   
- Like the <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> class, <xref:System.Collections.Concurrent.ConcurrentDictionary%602> implements the <xref:System.Collections.Generic.IDictionary%602> interface. In addition, <xref:System.Collections.Concurrent.ConcurrentDictionary%602> provides several methods for adding or updating key/value pairs in the dictionary, as described in the following table.  
+ Like the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> class, <xref:System.Collections.Concurrent.ConcurrentDictionary%602> implements the <xref:System.Collections.Generic.IDictionary%602> interface. In addition, <xref:System.Collections.Concurrent.ConcurrentDictionary%602> provides several methods for adding or updating key/value pairs in the dictionary, as described in the following table.  
   
 |To do this|Use this method|Usage notes|  
 |----------------|---------------------|-----------------|  
@@ -581,7 +581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has snapshot semantics and represents the number of items in the <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName> at the moment when the property was accessed.  
+ This property has snapshot semantics and represents the number of items in the <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> at the moment when the property was accessed.  
   
  ]]></format>
         </remarks>
@@ -1660,7 +1660,7 @@
    
   
 ## Examples  
- The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.TryAdd%2A?displayProperty=fullName>method:  
+ The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.TryAdd%2A?displayProperty=nameWithType> method:  
   
  [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#2)]
  [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#2)]  
@@ -1674,7 +1674,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1712,7 +1712,7 @@
     </Member>
     <Member MemberName="TryRemove">
       <MemberSignature Language="C#" Value="public bool TryRemove (TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRemove(!TKey key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryRemove(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1747,7 +1747,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.TryRemove%2A?displayProperty=fullName> method:  
+ The following example shows how to call the <xref:System.Collections.Concurrent.ConcurrentDictionary%602.TryRemove%2A?displayProperty=nameWithType> method:  
   
  [!code-csharp[System.Collections.Concurrent.ConcurrentDictionary#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/cs/concdictionary.cs#2)]
  [!code-vb[System.Collections.Concurrent.ConcurrentDictionary#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.concurrentdictionary/vb/concdictionary.vb#2)]  
@@ -1837,5 +1837,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

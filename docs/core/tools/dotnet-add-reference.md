@@ -1,22 +1,22 @@
 ---
 title: dotnet-add reference command - .NET Core CLI
-description: The dotnet-add reference command provides a convenient option to add project to project references.
-keywords: dotnet-add, CLI, CLI command, .NET Core
-author: spboyer
+description: The dotnet add reference command provides a convenient option to add project to project references.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
+ms.workload: 
+  - dotnetcore
 ---
-
 # dotnet-add reference
+
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-add reference` - Adds project-to-project (P2P) references.
+`dotnet add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
@@ -38,7 +38,7 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 `PROJECT`
 
-Specifies the project file. If not specified, the command will search the current directory for one.
+Specifies the project file. If not specified, the command searches the current directory for one.
 
 `PROJECT_REFERENCES`
 
@@ -60,7 +60,7 @@ Add a project reference:
 
 `dotnet add app/app.csproj reference lib/lib.csproj`
 
-Add multiple project references:
+Add multiple project references to the project in the current directory:
 
 `dotnet add reference lib1/lib1.csproj lib2/lib2.csproj`
 

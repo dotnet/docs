@@ -15,12 +15,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DockingBehavior> enumeration is used by the <xref:System.Windows.Forms.DockingAttribute?displayProperty=fullName> class.  
+ The <xref:System.Windows.Forms.DockingBehavior> enumeration is used by the <xref:System.Windows.Forms.DockingAttribute?displayProperty=nameWithType> class.  
   
  The <xref:System.Windows.Forms.SplitContainer> and <xref:System.Windows.Forms.WebBrowser> controls are set to AutoDock. The <xref:System.Windows.Forms.DataGridView> control is set to Ask.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DockingAttribute" />
   </Docs>
   <Members>
     <Member MemberName="Ask">

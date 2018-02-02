@@ -9,11 +9,9 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "drawing, owner"
-  - "drawing, custom"
+  - "drawing [Windows Forms], owner"
+  - "drawing [Windows Forms], custom"
   - "controls [Windows Forms], changing appearance"
   - "custom drawing"
   - "owner drawing"
@@ -22,6 +20,8 @@ caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Controls with Built-In Owner-Drawing Support
 Owner drawing in Windows Forms, which is also known as custom drawing, is a technique for changing the visual appearance of certain controls.  
@@ -82,17 +82,17 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following topics:  
   
--   <xref:System.Windows.Forms.ListBox.DrawMode%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListBox.DrawMode%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ListBox.MeasureItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListBox.MeasureItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ComboBox.MeasureItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ComboBox.MeasureItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ComboBox.DrawItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ComboBox.DrawItem?displayProperty=nameWithType>  
   
 -   [How to: Create Variable Sized Text in a ComboBox Control](../../../../docs/framework/winforms/controls/how-to-create-variable-sized-text-in-a-combobox-control.md)  
   
@@ -103,11 +103,11 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following reference topics:  
   
--   <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.MenuItem.OwnerDraw%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.MenuItem.DrawItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.MenuItem.DrawItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.MenuItem.MeasureItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.MenuItem.MeasureItem?displayProperty=nameWithType>  
   
 ### TabControl Control  
  The <xref:System.Windows.Forms.TabControl> control enables you to draw individual tabs in the control. Owner drawing affects only the tabs; the <xref:System.Windows.Forms.TabPage> contents are not affected.  
@@ -116,9 +116,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following reference topics:  
   
--   <xref:System.Windows.Forms.TabControl.DrawMode%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.TabControl.DrawMode%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.TabControl.DrawItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.TabControl.DrawItem?displayProperty=nameWithType>  
   
 ### ToolTip Component  
  The <xref:System.Windows.Forms.ToolTip> component enables you to draw the entire ToolTip when it is displayed.  
@@ -127,11 +127,11 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following reference topics:  
   
--   <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ToolTip.OwnerDraw%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ToolTip.Draw?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ToolTip.Draw?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType>  
   
 ### ListView Control  
  The <xref:System.Windows.Forms.ListView> control enables you to draw individual items, subitems, and column headers in the control.  
@@ -144,13 +144,13 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following reference topics:  
   
--   <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=nameWithType>  
   
 ### TreeView Control  
  The <xref:System.Windows.Forms.TreeView> control enables you to draw individual nodes in the control.  
@@ -161,9 +161,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  For more information, including code examples, see the following reference topics:  
   
--   <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=nameWithType>  
   
--   <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName>  
+-   <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType>  
   
 ### DataGridView Control  
  The <xref:System.Windows.Forms.DataGridView> control enables you to draw individual cells and rows in the control.  

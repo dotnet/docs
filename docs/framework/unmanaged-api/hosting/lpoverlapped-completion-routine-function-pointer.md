@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE function pointer [.NET Framework hosting]"
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer
 Points to a function that notifies the host when an overlapped (that is, asynchronous) I/O to a device has completed.  

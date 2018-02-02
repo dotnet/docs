@@ -13,6 +13,9 @@
   <Docs>
     <summary>Handles the XML elements used to configure serialization by the <see cref="T:System.Runtime.Serialization.NetDataContractSerializer" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
+    <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

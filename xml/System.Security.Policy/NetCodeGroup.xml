@@ -368,7 +368,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In each dictionary entry, the <xref:System.Collections.DictionaryEntry.Key%2A> property value is the origin scheme, and the <xref:System.Collections.DictionaryEntry.Value%2A> property value is the array of associated <xref:System.Security.Policy.CodeConnectAccess> objects. If there are no associated <xref:System.Security.Policy.CodeConnectAccess> objects, <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> returns an empty array.  
+ In each dictionary entry, the <xref:System.Collections.DictionaryEntry.Key%2A> property value is the origin scheme, and the <xref:System.Collections.DictionaryEntry.Value%2A> property value is the array of associated <xref:System.Security.Policy.CodeConnectAccess> objects. If there are no associated <xref:System.Security.Policy.CodeConnectAccess> objects, <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> returns an empty array.  
   
    
   
@@ -404,6 +404,7 @@
         <summary>Gets the hash code of the current code group.</summary>
         <returns>The hash code of the current code group.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Policy.CodeGroup.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="MergeLogic">

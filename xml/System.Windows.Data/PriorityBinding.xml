@@ -35,7 +35,7 @@
   
 3.  The resulting value is valid for the target property.  
   
- The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> is not considered a successful return value.  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=nameWithType> is not considered a successful return value.  
   
  The priority of the bindings is determined by their order in the list. The binding that appears first in the list has the highest priority.  
   
@@ -45,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.PriorityBindingExpression" />
+    <altmember cref="T:System.Windows.Data.IValueConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

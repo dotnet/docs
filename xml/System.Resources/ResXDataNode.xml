@@ -22,19 +22,19 @@
 ## Remarks  
  The <xref:System.Resources.ResXDataNode> class supports the representation of rich data types within a resource file. It can support the storage of any object in a resource file, so long as the object supports serialization and type editors.  
   
- You can create a <xref:System.Resources.ResXDataNode> object by calling one of its overloaded class constructors. You can then add the resource item or element to a resource file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
+ You can create a <xref:System.Resources.ResXDataNode> object by calling one of its overloaded class constructors. You can then add the resource item or element to a resource file by calling the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.  
   
- To retrieve an existing <xref:System.Resources.ResXDataNode> object, you must enumerate the <xref:System.Resources.ResXDataNode> objects in an XML resource file by instantiating a <xref:System.Resources.ResXResourceReader> object, setting the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A?displayProperty=fullName> property to `true`, and calling the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=fullName> method to get an enumerator. The example provides an illustration.  
+ To retrieve an existing <xref:System.Resources.ResXDataNode> object, you must enumerate the <xref:System.Resources.ResXDataNode> objects in an XML resource file by instantiating a <xref:System.Resources.ResXResourceReader> object, setting the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A?displayProperty=nameWithType> property to `true`, and calling the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method to get an enumerator. The example provides an illustration.  
   
    
   
 ## Examples  
- The following example uses the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=fullName> method to obtain an <xref:System.Collections.IDictionaryEnumerator> object that is used to enumerate the <xref:System.Resources.ResXDataNode> objects in a .resx file. The example includes a `CreateResourceFile` routine that creates the necessary XML resource file.  
+ The following example uses the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method to obtain an <xref:System.Collections.IDictionaryEnumerator> object that is used to enumerate the <xref:System.Resources.ResXDataNode> objects in a .resx file. The example includes a `CreateResourceFile` routine that creates the necessary XML resource file.  
   
  [!code-csharp[System.Resources.ResXDataNode.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resxdatanode.class/cs/resxresourcereader2.cs#1)]
  [!code-vb[System.Resources.ResXDataNode.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resxdatanode.class/vb/resxresourcereader2.vb#1)]  
   
- Because the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property is `true`, the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=fullName> property is a <xref:System.Resources.ResXDataNode> object rather than the resource value. This makes a resource item's comment available from the <xref:System.Resources.ResXDataNode.Comment%2A?displayProperty=fullName> property.  
+ Because the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A> property is `true`, the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=nameWithType> property is a <xref:System.Resources.ResXDataNode> object rather than the resource value. This makes a resource item's comment available from the <xref:System.Resources.ResXDataNode.Comment%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -166,9 +166,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a comment has not been assigned to the resource item, the value of the <xref:System.Resources.ResXDataNode.Comment%2A> property is <xref:System.String?displayProperty=fullName>.  
+ If a comment has not been assigned to the resource item, the value of the <xref:System.Resources.ResXDataNode.Comment%2A> property is <xref:System.String.Empty?displayProperty=nameWithType>.  
   
- You access the <xref:System.Resources.ResXDataNode.Comment%2A> property of an data node in an existing XML resource file by instantiating a <xref:System.Resources.ResXResourceReader> object, setting the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A?displayProperty=fullName> property to `true`, and calling the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=fullName> method to retrieve an <xref:System.Collections.IDictionaryEnumerator> object that you use to enumerate the items in the XML resource file. The <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=fullName> property returns the <xref:System.Resources.ResXDataNode> object.  
+ You access the <xref:System.Resources.ResXDataNode.Comment%2A> property of an data node in an existing XML resource file by instantiating a <xref:System.Resources.ResXResourceReader> object, setting the <xref:System.Resources.ResXResourceReader.UseResXDataNodes%2A?displayProperty=nameWithType> property to `true`, and calling the <xref:System.Resources.ResXResourceReader.GetEnumerator%2A?displayProperty=nameWithType> method to retrieve an <xref:System.Collections.IDictionaryEnumerator> object that you use to enumerate the items in the XML resource file. The <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=nameWithType> property returns the <xref:System.Resources.ResXDataNode> object.  
   
    
   
@@ -372,5 +372,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the object that is stored by this node.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXDataNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetValueTypeName">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the type name for the value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5
 caps.latest.revision: 18
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;transport&gt; of &lt;basicHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  
@@ -124,12 +126,12 @@ Defines properties that control authentication parameters for the HTTP transport
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>   
- <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A>   
- <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>   
- <xref:System.ServiceModel.HttpTransportSecurity>   
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Bindings](../../../../../docs/framework/wcf/bindings.md)   
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>  
+ <xref:System.ServiceModel.BasicHttpSecurity.Transport%2A>  
+ <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>  
+ <xref:System.ServiceModel.HttpTransportSecurity>  
+ [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Bindings](../../../../../docs/framework/wcf/bindings.md)  
+ [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

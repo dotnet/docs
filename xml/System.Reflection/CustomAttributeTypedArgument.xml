@@ -36,11 +36,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=fullName>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
+ Code that is being examined in the reflection-only context cannot be executed, so it is not always possible to examine custom attributes by creating instances of them and then examining their properties, using methods like <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>, <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>, and so on. If the code for the attribute type itself is loaded into the reflection-only context, it cannot be executed.  
   
  The <xref:System.Reflection.CustomAttributeNamedArgument> structure is used by the <xref:System.Reflection.CustomAttributeData> class to provide access to the type and value of a positional argument specified for a custom attribute instance, without executing the attribute constructor. It also provides access to the type and value of a named argument without executing the code of the corresponding property of the custom attribute type.  
   
- The types and values of all the positional and named arguments of an attribute instance are provided by <xref:System.Reflection.CustomAttributeTypedArgument> structures. The positional attributes returned by the <xref:System.Reflection.CustomAttributeData.ConstructorArguments%2A?displayProperty=fullName> property are directly represented by <xref:System.Reflection.CustomAttributeTypedArgument> structures, but the named arguments returned by the <xref:System.Reflection.CustomAttributeData.NamedArguments%2A?displayProperty=fullName> property are represented by <xref:System.Reflection.CustomAttributeNamedArgument> structures; to get the <xref:System.Reflection.CustomAttributeTypedArgument> structure for a named argument, use the <xref:System.Reflection.CustomAttributeNamedArgument.TypedValue%2A?displayProperty=fullName> property.  
+ The types and values of all the positional and named arguments of an attribute instance are provided by <xref:System.Reflection.CustomAttributeTypedArgument> structures. The positional attributes returned by the <xref:System.Reflection.CustomAttributeData.ConstructorArguments%2A?displayProperty=nameWithType> property are directly represented by <xref:System.Reflection.CustomAttributeTypedArgument> structures, but the named arguments returned by the <xref:System.Reflection.CustomAttributeData.NamedArguments%2A?displayProperty=nameWithType> property are represented by <xref:System.Reflection.CustomAttributeNamedArgument> structures; to get the <xref:System.Reflection.CustomAttributeTypedArgument> structure for a named argument, use the <xref:System.Reflection.CustomAttributeNamedArgument.TypedValue%2A?displayProperty=nameWithType> property.  
   
  If an argument is an array of values, the <xref:System.Reflection.CustomAttributeTypedArgument.Value%2A> property of the <xref:System.Reflection.CustomAttributeTypedArgument> that represents the argument returns a generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Reflection.CustomAttributeTypedArgument> objects. Each <xref:System.Reflection.CustomAttributeTypedArgument> object in the collection represents the corresponding element of the array.  
   
@@ -61,6 +61,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.CustomAttributeData" />
+    <altmember cref="T:System.Reflection.CustomAttributeNamedArgument" />
+    <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -192,6 +195,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.CustomAttributeTypedArgument.Value" />
+        <altmember cref="Overload:System.Reflection.Assembly.ReflectionOnlyLoad" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -228,6 +233,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -260,6 +266,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -298,7 +305,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -338,7 +345,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -433,5 +440,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

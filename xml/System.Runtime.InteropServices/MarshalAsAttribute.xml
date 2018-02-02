@@ -71,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="ArraySubType">
@@ -183,10 +186,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set this parameter to a value from the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration to specify the type of the array's elements. If a type is not specified, the default unmanaged type corresponding to the managed array's element type is used. For example, the `ArraySubType` for a `LPWStr` array in COM is <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ You can set this parameter to a value from the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration to specify the type of the array's elements. If a type is not specified, the default unmanaged type corresponding to the managed array's element type is used. For example, the `ArraySubType` for a `LPWStr` array in COM is <xref:System.Runtime.InteropServices.UnmanagedType.LPWStr?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="IidParameterIndex">
@@ -297,10 +301,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef?displayProperty=fullName> field specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field enables you to specify a string representing the fully qualified name of a custom marshaler. It is useful for late-bound references, but is less preferred than <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> for specifying a custom marshaler. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+ You can use either the <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> or <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef?displayProperty=nameWithType> field specify a custom marshaler type for the attributed parameter, field, or return type. The <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType> field enables you to specify a string representing the fully qualified name of a custom marshaler. It is useful for late-bound references, but is less preferred than <xref:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef> for specifying a custom marshaler. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/library/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalTypeRef" />
       </Docs>
     </Member>
     <Member MemberName="MarshalTypeRef">
@@ -350,10 +355,11 @@
 [MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(NameSpace.TypeName)]  
 ```  
   
- You can set a <xref:System.Type> object using `typeof` in C#, `GetType` in Visual Basic, or `typeid` in C++. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/en-us/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
+ You can set a <xref:System.Type> object using `typeof` in C#, `GetType` in Visual Basic, or `typeid` in C++. For additional information about creating and using custom marshalers, see [Custom Marshaling](http://msdn.microsoft.com/library/49f9ac47-1619-4d6e-9da6-bf06bba12079).  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.MarshalType" />
       </Docs>
     </Member>
     <Member MemberName="SafeArraySubType">
@@ -388,10 +394,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set this field to a value from the <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName> enumeration to specify the type of the safe array's elements. If a type is not specified, the managed element type's default type (if passed as a VARIANT) is used. For example, the `SafeArraySubType` for an `int` array in COM is <xref:System.Runtime.InteropServices.VarEnum.VT_I4>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ You can set this field to a value from the <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType> enumeration to specify the type of the safe array's elements. If a type is not specified, the managed element type's default type (if passed as a VARIANT) is used. For example, the `SafeArraySubType` for an `int` array in COM is <xref:System.Runtime.InteropServices.VarEnum.VT_I4>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />
+        <altmember cref="T:System.Runtime.InteropServices.VarEnum" />
       </Docs>
     </Member>
     <Member MemberName="SafeArrayUserDefinedSubType">
@@ -426,10 +434,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Initialize this field with your custom type to enable the elements of the `SAFEARRAY` to be marshaled successfully. This field is only needed when the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=fullName> is either <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>, <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>, or <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ Initialize this field with your custom type to enable the elements of the `SAFEARRAY` to be marshaled successfully. This field is only needed when the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> is either <xref:System.Runtime.InteropServices.VarEnum.VT_UNKNOWN?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.VarEnum.VT_DISPATCH?displayProperty=nameWithType>, or <xref:System.Runtime.InteropServices.VarEnum.VT_RECORD?displayProperty=nameWithType>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.SafeArray" />
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType" />
       </Docs>
     </Member>
     <Member MemberName="SizeConst">
@@ -464,12 +474,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is required for the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray> and <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr> members of the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration. Because the compressed format of the metadata is limited to 0x1FFFFFFF, the range of allowed values for <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst> are (>= 0 and <= 0x1FFFFFFF).  
+ This field is required for the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray> and <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr> members of the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=nameWithType> enumeration. Because the compressed format of the metadata is limited to 0x1FFFFFFF, the range of allowed values for <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst> are (>= 0 and <= 0x1FFFFFFF).  
   
  For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.InteropServices.UnmanagedType" />
       </Docs>
     </Member>
     <Member MemberName="SizeParamIndex">
@@ -516,7 +527,7 @@
   
  The zero-based index of the array size parameter is defined by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> field.  
   
- If you specify both <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=fullName> with a <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> field, the sum of the fields' values produces a size total.  
+ If you specify both <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeParamIndex> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> with a <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> field, the sum of the fields' values produces a size total.  
   
  For more information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
@@ -529,6 +540,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" />
+        <altmember cref="F:System.Runtime.InteropServices.UnmanagedType.LPArray" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -570,5 +583,19 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.MarshalAsAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -18,6 +18,8 @@ caps.latest.revision: 28
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Services
 Security of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service consists of two primary requirements: transfer security and authorization. (A third requirement, auditing of security events, is described in [Auditing](../../../docs/framework/wcf/feature-details/auditing-security-events.md).) In brief, transfer security includes authentication (verifying the identity of both the service and the client), confidentiality (message encryption), and integrity (digital signing to detect tampering). Authorization is the control of access to resources, for example, allowing only privileged users to read a file. Using features of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], the two primary requirements are easily implemented.  
@@ -47,7 +49,7 @@ Security of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service consi
  To secure an application that runs exclusively on a Windows domain, you can use the default security settings of either the <xref:System.ServiceModel.WSHttpBinding> or the <xref:System.ServiceModel.NetTcpBinding> binding. By default, anyone on the same Windows domain can access [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services. Because those users have logged on to the network, they are trusted. The messages between a service and a client are encrypted for confidentiality and signed for integrity. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to create a service that uses Windows security, see [How to: Secure a Service with Windows Credentials](../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
   
 ### Authorization Using the PrincipalPermissionAttribute Class  
- If you need to restrict the access of resources on a computer, the easiest way is to use the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class. This attribute enables you to restrict the invocation of service operations by demanding that the user be in a specified Windows group or role, or to be a specific user. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md).  
+ If you need to restrict the access of resources on a computer, the easiest way is to use the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class. This attribute enables you to restrict the invocation of service operations by demanding that the user be in a specified Windows group or role, or to be a specific user. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md).  
   
 ### Impersonation  
  Impersonation is another mechanism that you can use to control access to resources. By default, a service hosted by IIS will run under the identity of the ASPNET account. The ASPNET account can access only the resources for which it has permission. However, it is possible to set the ACL for a folder to exclude the ASPNET service account, but allow certain other identities to access the folder. The question then becomes how to allow those users to access the folder if the ASPNET account is not allowed to do so. The answer is to use impersonation, whereby the service is allowed to use the credentials of the client to access a particular resource. Another example is when accessing a SQL Server database to which only certain users have permission. [!INCLUDE[crabout](../../../includes/crabout-md.md)] using impersonation, see [How to: Impersonate a Client on a Service](../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md) and [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
@@ -64,7 +66,7 @@ Security of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service consi
 ### Credentials Used by IIS  
  Unlike a Windows domain backed by a Kerberos controller, the Internet is an environment without a single controller to manage the millions of users logging on at any time. Instead, credentials on the Internet most often are in the form of X.509 certificates (also known as Secure Sockets Layer, or SSL, certificates). These certificates are typically issued by a *certification authority*, which can be a third-party company that vouches for the authenticity of the certificate and the person it has been issued to. To expose your service on the Internet, you must also supply such a trusted certificate to authenticate your service.  
   
- The question arises at this point, how do you get such a certificate? One approach is to go to a third-party certification authority, such as Authenticode or VeriSign, when you are ready to deploy your service, and purchase a certificate for your service. However, if you are in the development phase with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] and not yet ready to commit to purchasing a certificate, tools and techniques exist for creating X.509 certificates that you can use to simulate a production deployment. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ The question arises at this point, how do you get such a certificate? One approach is to go to a third-party certification authority, such as Authenticode or VeriSign, when you are ready to deploy your service, and purchase a certificate for your service. However, if you are in the development phase with [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] and not yet ready to commit to purchasing a certificate, tools and techniques exist for creating X.509 certificates that you can use to simulate a production deployment. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
 ## Security Modes  
  Programming [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] security entails a few critical decision points. One of the most basic is the choice of *security mode*. The two major security modes are *transport mode* and *message mode*.  
@@ -97,28 +99,28 @@ Security of a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service consi
  A *credential value* is the actual credential the service uses. Once you have specified a credential type, you may also need to configure your service with the actual credentials. If you have selected Windows (and the service will run on a Windows domain), then you do not specify an actual credential value.  
   
 ## Identity  
- In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], the term *identity* has different meanings to the server and the client. In brief, when running a service, an identity is assigned to the security context after authentication. To view the actual identity, check the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> and <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> properties of the <xref:System.ServiceModel.ServiceSecurityContext> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Examine the Security Context](../../../docs/framework/wcf/how-to-examine-the-security-context.md).  
+ In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], the term *identity* has different meanings to the server and the client. In brief, when running a service, an identity is assigned to the security context after authentication. To view the actual identity, check the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> and <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> properties of the <xref:System.ServiceModel.ServiceSecurityContext> class. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Examine the Security Context](../../../docs/framework/wcf/how-to-examine-the-security-context.md).  
   
- In contrast, on the client, identity is used to validate the service. At design time, a client developer can set the [\<identity>](../../../docs/framework/configure-apps/file-schema/wcf/identity.md) element to a value obtained from the service. At run time, the client checks the value of the element against the actual identity of the service. If the check fails, the client terminates the communication. The value can be a user principal name (UPN) if the service runs under a particular user's identity or a service principal name (SPN) if the service runs under a machine account. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md). The credential could also be a certificate, or a field found on a certificate that identifies the certificate.  
+ In contrast, on the client, identity is used to validate the service. At design time, a client developer can set the [\<identity>](../../../docs/framework/configure-apps/file-schema/wcf/identity.md) element to a value obtained from the service. At run time, the client checks the value of the element against the actual identity of the service. If the check fails, the client terminates the communication. The value can be a user principal name (UPN) if the service runs under a particular user's identity or a service principal name (SPN) if the service runs under a machine account. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md). The credential could also be a certificate, or a field found on a certificate that identifies the certificate.  
   
 ## Protection Levels  
  The `ProtectionLevel` property occurs on several attribute classes (such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes). The protection level is a value that specifies whether the messages (or message parts) that support a service are signed, signed and encrypted, or sent without signatures or encryption. [!INCLUDE[crabout](../../../includes/crabout-md.md)] the property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md), and for programming examples, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md). [!INCLUDE[crabout](../../../includes/crabout-md.md)] designing a service contract with the `ProtectionLevel` in context, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md).  
   
 ## See Also  
- <xref:System.ServiceModel>   
- <xref:System.ServiceModel.Description.ServiceCredentials>   
- <xref:System.ServiceModel.ServiceContractAttribute>   
- <xref:System.ServiceModel.OperationContractAttribute>   
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)   
- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)   
- [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)   
- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)   
- [Security](../../../docs/framework/wcf/feature-details/security.md)   
- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)   
- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)   
- [How to: Secure a Service with Windows Credentials](../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)   
- [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md)   
- [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)   
- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)   
- [How to: Impersonate a Client on a Service](../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)   
+ <xref:System.ServiceModel>  
+ <xref:System.ServiceModel.Description.ServiceCredentials>  
+ <xref:System.ServiceModel.ServiceContractAttribute>  
+ <xref:System.ServiceModel.OperationContractAttribute>  
+ [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
+ [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)  
+ [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
+ [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)  
+ [Security](../../../docs/framework/wcf/feature-details/security.md)  
+ [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)  
+ [How to: Secure a Service with Windows Credentials](../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)  
+ [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md)  
+ [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)  
+ [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
+ [How to: Impersonate a Client on a Service](../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)  
  [How to: Examine the Security Context](../../../docs/framework/wcf/how-to-examine-the-security-context.md)

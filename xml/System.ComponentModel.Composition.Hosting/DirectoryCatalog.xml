@@ -29,7 +29,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object to parse the contents of a designated directory. Any attributed parts contained in dynamic link library (DLL) files are extracted and made available through the catalog.To restrict parsing to specific DLLs, you can specify a search pattern by using the same syntax as the <xref:System.IO.Directory.GetFiles%2A?displayProperty=fullName> method.  
+ You can use a <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> object to parse the contents of a designated directory. Any attributed parts contained in dynamic link library (DLL) files are extracted and made available through the catalog.To restrict parsing to specific DLLs, you can specify a search pattern by using the same syntax as the <xref:System.IO.Directory.GetFiles%2A?displayProperty=nameWithType> method.  
   
 > [!WARNING]
 >  The designated directory should not allow access to non-administrators. For example, using a folder that contains temporary Internet files could create vulnerabilities in your application.  
@@ -640,5 +640,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.DirectoryCatalog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

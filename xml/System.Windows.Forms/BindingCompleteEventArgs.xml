@@ -191,6 +191,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+        <altmember cref="E:System.Windows.Forms.BindingSource.BindingComplete" />
       </Docs>
     </Member>
     <Member MemberName="BindingCompleteContext">
@@ -245,9 +247,9 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Binding> named `Binding1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Binding> named `Binding1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#77](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#77)]
  [!code-vb[System.Windows.Forms.EventExamples#77](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#77)]  
@@ -275,14 +277,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns an empty string if no error occurred in the binding operation. It returns the value of the <xref:System.Exception.Message%2A?displayProperty=fullName> property when an exception occurs.  
+ This property returns an empty string if no error occurred in the binding operation. It returns the value of the <xref:System.Exception.Message%2A?displayProperty=nameWithType> property when an exception occurs.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Binding> named `Binding1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Binding> named `Binding1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Binding.BindingComplete?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#77](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#77)]
  [!code-vb[System.Windows.Forms.EventExamples#77](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#77)]  
@@ -324,5 +326,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

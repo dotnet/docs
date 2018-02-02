@@ -221,6 +221,10 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" /> property retrieves the certificates associated with the encoded CMS/PKCS #7 message.</summary>
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> collection that represents the set of certificates for the encoded CMS/PKCS #7 message.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
       </Docs>
     </Member>
     <Member MemberName="CheckHash">
@@ -247,6 +251,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsSigner" />
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignerInfo.CheckHash" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierType" />
       </Docs>
     </Member>
     <Member MemberName="CheckSignature">
@@ -366,7 +373,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=fullName> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
+ This method displays a user interface in which you choose signers for this message. This requires that the current process is running in *user interactive mode*, meaning that the <xref:System.Environment.UserInteractive%2A?displayProperty=nameWithType> property is set to `true`. A process is normally in user interactive mode unless it is a service process or running inside a Web application.  
   
  Signers whose certificates meet the following conditions will be displayed in the list:  
   
@@ -381,13 +388,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
    
   
@@ -434,9 +441,9 @@
 ## .NET Framework Security  
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
    
   
@@ -486,13 +493,13 @@
 ## .NET Framework Security  
  The following permissions are required to display the user interface:  
   
--   <xref:System.Security.Permissions.UIPermissionWindow?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows?displayProperty=nameWithType>  
   
  The following permissions are required to access the signature key:  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Open?displayProperty=nameWithType>  
   
--   <xref:System.Security.Permissions.KeyContainerPermissionFlags?displayProperty=fullName>  
+-   <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign?displayProperty=nameWithType>  
   
  ]]></format>
         </remarks>
@@ -517,6 +524,10 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" /> property retrieves the inner contents of the encoded CMS/PKCS #7 message.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.ContentInfo" /> object that represents the contents of the encoded CMS/PKCS #7 message.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
       </Docs>
     </Member>
     <Member MemberName="Decode">
@@ -560,6 +571,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">A null reference was passed to a method that does not accept it as a valid argument.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.Encode" />
       </Docs>
     </Member>
     <Member MemberName="Detached">
@@ -578,6 +590,10 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" /> property retrieves whether the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> object is for a detached signature.</summary>
         <value>A <see cref="T:System.Boolean" /> value that specifies whether the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> object is for a detached signature. If this property is <see langword="true" />, the signature is detached. If this property is <see langword="false" />, the signature is not detached.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -599,6 +615,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">A cryptographic operation could not be completed.</exception>
         <exception cref="T:System.InvalidOperationException">A method call was invalid for the object's current state.</exception>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.SignedCms.Decode(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSignature">
@@ -674,6 +691,10 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" /> property retrieves the <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> collection associated with the CMS/PKCS #7 message.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.SignerInfoCollection" /> object that represents the signer information for the CMS/PKCS #7 message.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Version" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -699,7 +720,47 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Certificates" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.ContentInfo" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.Detached" />
+        <altmember cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a signature, and adds the signature to the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified signature from the <see cref="P:System.Security.Cryptography.Pkcs.SignedCms.SignerInfos" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.SignedCms" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies the digital signatures on the signed CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

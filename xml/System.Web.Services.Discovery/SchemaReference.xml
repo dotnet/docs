@@ -35,6 +35,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Schema.XmlSchema" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryReference" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" />
+    <altmember cref="T:System.Web.Services.Discovery.ContractReference" />
+    <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -186,6 +191,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
       </Docs>
     </Member>
     <Member MemberName="Ref">
@@ -292,6 +300,7 @@
  -or-  
   
  An error occurred during the download or resolution of the XSD schema using <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" />.</exception>
+        <altmember cref="T:System.Xml.Schema.XmlSchema" />
       </Docs>
     </Member>
     <Member MemberName="TargetNamespace">
@@ -399,7 +408,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.Schema.XmlSchema" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" />
+        <altmember cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.SchemaReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A?displayProperty=fullName> to serialize <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects into valid XML documents and to deserialize valid XML documents into <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> performs validation during both serialization and deserialization and, if necessary, throws an appropriate exception.  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses the tracking profile XSD contained in <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Schema%2A?displayProperty=nameWithType> to serialize <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects into valid XML documents and to deserialize valid XML documents into <xref:System.Workflow.Runtime.Tracking.TrackingProfile> objects. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> performs validation during both serialization and deserialization and, if necessary, throws an appropriate exception.  
   
  An XML document provides a convenient format in which to store a tracking profile. It also provides a non-programmatic way of authoring tracking profiles. The out-of-box <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> to serialize and deserialize the tracking profiles that are stored in its database.  
   
@@ -34,7 +34,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
@@ -61,7 +61,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  
@@ -162,7 +162,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> using the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.%23ctor%2A> constructor to serialize a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The code also uses the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer.Serialize%2A> method.  
   
- This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/en-us/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
+ This code example is part of the Query using SQLTrackingService SDK sample from the Program.cs file. For more information, see [Query Using SQLTrackingService](http://msdn.microsoft.com/library/a81e48bb-12f4-4e2b-9176-ea4e6b6e3d21).  
   
  [!code-csharp[WF_Samples#291](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#291)]
  [!code-vb[WF_Samples#291](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#291)]  

@@ -18,7 +18,7 @@
 ## Remarks  
  By default, the <xref:System.ServiceModel.Security.WSTrustServiceHost> class provides the following:  
   
--   It adds WS-Trust endpoints to the <xref:System.ServiceModel.ServiceHost> based on the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TrustEndpoints%2A> property.  
+-   It adds WS-Trust endpoints to the <xref:System.ServiceModel.ServiceHost>.  
   
 -   It enables metadata over the base addresses if the <xref:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.DisableWsdl%2A> property is set to `false`.  
   
@@ -33,7 +33,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration, Uri[] baseAddresses);" />
+      <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.IdentityModel.Configuration.SecurityTokenServiceConfiguration,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -68,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.ServiceModel.Security.WSTrustServiceContract serviceContract, Uri[] baseAddresses);" />
+      <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.ServiceModel.Security.WSTrustServiceContract serviceContract, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.WSTrustServiceContract serviceContract, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.ServiceModel.Security.WSTrustServiceContract,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -180,7 +180,7 @@
         <ReturnType>System.IdentityModel.Configuration.SecurityTokenServiceConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the security token service (STS) configuration for this this instance.</summary>
+        <summary>Gets the security token service (STS) configuration for this instance.</summary>
         <value>The STS configuration.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,5 +221,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

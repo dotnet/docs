@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - ".NET Framework regular expressions, best practices"
   - "regular expressions, best practices"
@@ -16,6 +19,9 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Best Practices for Regular Expressions in .NET
 <a name="top"></a> The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be very slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.  
@@ -66,26 +72,26 @@ manager: "wpickett"
   
 -   When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#Backtracking) section.  
   
--   Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](http://go.microsoft.com/fwlink/?LinkId=210756), which is a regular expression exploration tool from Microsoft Research.  
+-   Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/en-us/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.  
   
  [Back to top](#top)  
   
 <a name="ObjectInstantiation"></a>   
 ## Handle Object Instantiation Appropriately  
- At the heart of .NET’s regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.  
+ At the heart of .NET’s regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.  
   
 > [!NOTE]
->  For a more detailed discussion of the performance implications of using interpreted and compiled regular expressions, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](http://go.microsoft.com/fwlink/?LinkId=211566) in the BCL Team blog.  
+>  For a more detailed discussion of the performance implications of using interpreted and compiled regular expressions, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](https://blogs.msdn.microsoft.com/bclteam/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha/) in the BCL Team blog.  
   
  You can couple the regular expression engine with a particular regular expression pattern and then use the engine to match text in several ways:  
   
--   You can call a static pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=fullName>. This does not require instantiation of a regular expression object.  
+-   You can call a static pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=nameWithType>. This does not require instantiation of a regular expression object.  
   
 -   You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression. This is the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
   
 -   You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a compiled regular expression. Regular expression objects represent compiled patterns when a <xref:System.Text.RegularExpressions.Regex> object is instantiated with an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
   
--   You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that is tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You do this by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method.  
+-   You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that is tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You do this by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.  
   
  The particular way in which you call regular expression matching methods can have a significant impact on your application. The following sections discuss when to use static method calls, interpreted regular expressions, and compiled regular expressions to improve your application's performance.  
   
@@ -105,12 +111,12 @@ manager: "wpickett"
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/static1.cs#3)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/static1.vb#3)]  
   
- You should replace this inefficient code with a call to the static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%29?displayProperty=fullName> method. This eliminates the need to instantiate a <xref:System.Text.RegularExpressions.Regex> object each time you want to call a pattern-matching method, and enables the regular expression engine to retrieve a compiled version of the regular expression from its cache.  
+ You should replace this inefficient code with a call to the static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%29?displayProperty=nameWithType> method. This eliminates the need to instantiate a <xref:System.Text.RegularExpressions.Regex> object each time you want to call a pattern-matching method, and enables the regular expression engine to retrieve a compiled version of the regular expression from its cache.  
   
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/static2.cs#4)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/static2.vb#4)]  
   
- By default, the last 15 most recently used static regular expression patterns are cached. For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <xref:System.Text.RegularExpressions.Regex.CacheSize%2A?displayProperty=fullName> property.  
+ By default, the last 15 most recently used static regular expression patterns are cached. For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <xref:System.Text.RegularExpressions.Regex.CacheSize%2A?displayProperty=nameWithType> property.  
   
  The regular expression `\p{Sc}+\s*\d+` that is used in this example verifies that the input string consists of a currency symbol and at least one decimal digit. The pattern is defined as shown in the following table.  
   
@@ -147,7 +153,7 @@ manager: "wpickett"
 ### Regular Expressions: Compiled to an Assembly  
  .NET also enables you to create an assembly that contains compiled regular expressions. This moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work: You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly’s regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.  
   
- To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=fullName> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects that represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.  
+ To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=nameWithType> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects that represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.  
   
  We recommend that you compile regular expressions to an assembly in the following situations:  
   
@@ -174,7 +180,7 @@ manager: "wpickett"
  Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern. However, when indeterminate quantifiers such as `*`, `+`, and `?` are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern. This process is known as backtracking.  
   
 > [!NOTE]
->  For more information on backtracking, see [Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md) and [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md). For a detailed discussion of backtracking, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](http://go.microsoft.com/fwlink/?LinkId=211567) in the BCL Team blog.  
+>  For more information on backtracking, see [Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md) and [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md). For a detailed discussion of backtracking, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](https://blogs.msdn.microsoft.com/bclteam/2010/08/03/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha/) in the BCL Team blog.  
   
  Support for backtracking gives regular expressions power and flexibility. It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers. Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance. In a worst-case scenario, execution time can double for each additional character in the input string. In fact, by using backtracking excessively, it is easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern; the regular expression engine may take hours or even days to process a relatively short input string.  
   
@@ -232,13 +238,13 @@ manager: "wpickett"
 ## Use Time-out Values  
  If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.  
   
- The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, which means that the regular expression will not time out. You can override this value and define a time-out interval as follows:  
+ The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, which means that the regular expression will not time out. You can override this value and define a time-out interval as follows:  
   
--   By providing a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor.  
+-   By providing a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor.  
   
--   By calling a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName>, that includes a `matchTimeout` parameter.  
+-   By calling a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.  
   
--   For compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method, by calling the constructor that has a parameter of type <xref:System.TimeSpan>.  
+-   For compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, by calling the constructor that has a parameter of type <xref:System.TimeSpan>.  
   
  If you have defined a time-out interval and a match is not found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there is no match, or abandon the match attempt and log the exception information for future analysis.  
   
@@ -253,9 +259,9 @@ manager: "wpickett"
 ## Capture Only When Necessary  
  Regular expressions in .NET support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.  
   
- However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property to be populated with the most recent unnamed or named captures, and if a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.  
+ However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property to be populated with the most recent unnamed or named captures, and if a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.  
   
- Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them, and the groups captured by these subexpressions are not subsequently used. For example, the regular expression `\b(\w+[;,]?\s?)+[.?!]` is designed to capture an entire sentence. The following table describes the language elements in this regular expression pattern and their effect on the <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> collections.  
+ Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them, and the groups captured by these subexpressions are not subsequently used. For example, the regular expression `\b(\w+[;,]?\s?)+[.?!]` is designed to capture an entire sentence. The following table describes the language elements in this regular expression pattern and their effect on the <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collections.  
   
 |Pattern|Description|  
 |-------------|-----------------|  

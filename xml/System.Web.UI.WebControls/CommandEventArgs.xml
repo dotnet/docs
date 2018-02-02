@@ -22,23 +22,26 @@
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.CommandEventArgs>, see the <xref:System.Web.UI.WebControls.CommandEventArgs.%23ctor%2A> constructor.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to access the properties in <xref:System.Web.UI.WebControls.CommandEventArgs> to determine the command to perform. This example specifies the event handler declaratively, using the <xref:System.Web.UI.WebControls.Button.OnClick%2A> property of the <xref:System.Web.UI.WebControls.Button> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  The following code example demonstrates how to specify the event handler and programmatically add it to the event in the `Page_Load` method.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]
+ [!code-aspx-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.CommandEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.Button.Command" />
+    <altmember cref="E:System.Web.UI.WebControls.ImageButton.Command" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -149,11 +152,13 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property to determine supplemental information for the command to perform.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandArgument" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandArgument" />
       </Docs>
     </Member>
     <Member MemberName="CommandName">
@@ -182,12 +187,23 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property to programmatically determine the command to perform.  
   
- <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]
+ [!code-aspx-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.Button.CommandName" />
+        <altmember cref="P:System.Web.UI.WebControls.ImageButton.CommandName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

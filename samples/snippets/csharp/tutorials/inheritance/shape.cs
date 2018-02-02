@@ -64,7 +64,7 @@ public class Circle : Shape
       Radius = radius;
    } 
 
-   public override double Area => Math.Round(Math.Pow(Math.PI * Radius, 2), 2); 
+   public override double Area => Math.Round(Math.PI * Math.Pow(Radius, 2), 2); 
 
    public override double Perimeter => Math.Round(Math.PI * 2 * Radius, 2); 
 
@@ -112,6 +112,6 @@ public class Example
 //            Is Square: False, Diagonal: 15.62
 //         Square: area, 25; perimeter, 20
 //            Diagonal: 7.07
-//         Circle: area, 88.83; perimeter, 18.85
+//         Circle: area, 28.27; perimeter, 18.85
 // </Snippet3>
 } // Namespace definition.

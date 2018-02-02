@@ -41,6 +41,9 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.MenuCommand" />
+    <altmember cref="T:System.ComponentModel.Design.CommandID" />
+    <altmember cref="T:System.ComponentModel.Design.IMenuCommandService" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

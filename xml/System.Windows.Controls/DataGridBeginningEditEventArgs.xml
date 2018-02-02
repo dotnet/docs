@@ -13,6 +13,8 @@
   <Docs>
     <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.BeginningEdit" /> event.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Controls.DataGrid" />
+    <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,8 @@
         <param name="editingEventArgs">Information about the user gesture that caused the cell to enter edit mode.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridBeginningEditEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -54,6 +58,8 @@
         <value>
           <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -72,6 +78,8 @@
         <summary>Gets the column that contains the cell to be edited.</summary>
         <value>The column that contains the cell to be edited.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
       </Docs>
     </Member>
     <Member MemberName="EditingEventArgs">
@@ -90,6 +98,8 @@
         <summary>Gets information about the user gesture that caused the cell to enter edit mode.</summary>
         <value>Information about the user gesture that caused the cell to enter edit mode.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -108,6 +118,8 @@
         <summary>Gets the row that contains the cell to be edited.</summary>
         <value>The row that contains the cell to be edited.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Controls.DataGrid" />
+        <altmember cref="E:System.Windows.Controls.DataGrid.BeginningEdit" />
       </Docs>
     </Member>
   </Members>

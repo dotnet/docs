@@ -129,8 +129,8 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Control.AddedControl%2A?displayProperty=fullName> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form> or a <xref:System.Web.UI.UserControl> before it calls the base method. If the control is a `Form` or a `UserControl` object, the <xref:System.Web.UI.MobileControls.MobilePage.Forms%2A> property is set to `null`.  
+ This member overrides the <xref:System.Web.UI.Control.AddedControl%2A?displayProperty=nameWithType> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form> or a <xref:System.Web.UI.UserControl> before it calls the base method. If the control is a `Form` or a `UserControl` object, the <xref:System.Web.UI.MobileControls.MobilePage.Forms%2A> property is set to `null`.  
   
  ]]></format>
         </remarks>
@@ -220,7 +220,7 @@
 ## Remarks  
  Unless you override it, this method automatically adds <xref:System.Web.UI.LiteralControl> objects to the server control's <xref:System.Web.UI.ControlCollection> object. This collection can be accessed through the <xref:System.Web.UI.Control.Controls%2A> property.  
   
- This member overrides the <xref:System.Web.UI.Control.AddParsedSubObject%2A?displayProperty=fullName> method to determine whether the object is a <xref:System.Web.UI.MobileControls.StyleSheet> before it calls the base method. If the object is of type `StyleSheet`, the <xref:System.Web.UI.MobileControls.MobilePage.StyleSheet%2A> property is set to the `o` parameter.  
+ This member overrides the <xref:System.Web.UI.Control.AddParsedSubObject%2A?displayProperty=nameWithType> method to determine whether the object is a <xref:System.Web.UI.MobileControls.StyleSheet> before it calls the base method. If the object is of type `StyleSheet`, the <xref:System.Web.UI.MobileControls.MobilePage.StyleSheet%2A> property is set to the `o` parameter.  
   
  ]]></format>
         </remarks>
@@ -271,11 +271,12 @@
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if you copy it directly into a code-behind file. You must copy this code sample into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileMobilePageSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileMobilePageSample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileMobilePageSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileMobilePageSample/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
       </Docs>
     </Member>
     <Member MemberName="ClientViewState">
@@ -332,10 +333,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](http://msdn.microsoft.com/en-us/8437a6a5-855c-4637-8654-75a87b293847).  
+ The type of writer created is determined by the adapter associated with the current mobile device. For more information about how to map adapters to devices, see [Adapter Mappings](http://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847).  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -391,7 +396,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.DeterminePostBackMode%2A?displayProperty=fullName> method to determine whether the page was requested because of a transfer or a redirect. If so, `null` is returned. Otherwise, the `DeterminePostBackMode` method of the adapter is called.  
+ This member overrides the <xref:System.Web.UI.Page.DeterminePostBackMode%2A?displayProperty=nameWithType> method to determine whether the page was requested because of a transfer or a redirect. If so, `null` is returned. Otherwise, the `DeterminePostBackMode` method of the adapter is called.  
   
  ]]></format>
         </remarks>
@@ -431,6 +436,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
       </Docs>
     </Member>
     <Member MemberName="EnableEventValidation">
@@ -583,6 +590,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The requested form was not found.</exception>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
       </Docs>
     </Member>
     <Member MemberName="GetPrivateViewState">
@@ -680,6 +688,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
+        <altmember cref="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
       </Docs>
     </Member>
     <Member MemberName="HiddenVariablePrefix">
@@ -747,10 +757,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides <xref:System.Web.UI.Page.IdSeparator%2A?displayProperty=fullName> to return a colon (:) if the adapter is a <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> or <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter>. Otherwise, it returns the default character.  
+ This member overrides <xref:System.Web.UI.Page.IdSeparator%2A?displayProperty=nameWithType> to return a colon (:) if the adapter is a <xref:System.Web.UI.MobileControls.Adapters.WmlPageAdapter> or <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter>. Otherwise, it returns the default character.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.ID" />
       </Docs>
     </Member>
     <MemberGroup MemberName="InitOutputCache">
@@ -800,7 +811,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to add more `VaryByHeader` keywords to provide correct caching of page output for different markup devices.  
+ This member overrides the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to add more `VaryByHeader` keywords to provide correct caching of page output for different markup devices.  
   
  ]]></format>
         </remarks>
@@ -838,7 +849,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=fullName> method to add more `VaryByHeader` keywords to provide correct caching of page output for different markup devices.  
+ This member overrides the <xref:System.Web.UI.Page.InitOutputCache%2A?displayProperty=nameWithType> method to add more `VaryByHeader` keywords to provide correct caching of page output for different markup devices.  
   
  ]]></format>
         </remarks>
@@ -864,10 +875,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.LoadPageStateFromPersistenceMedium%2A?displayProperty=fullName> method and optimizes the state data for mobile devices.  
+ This member overrides the <xref:System.Web.UI.Page.LoadPageStateFromPersistenceMedium%2A?displayProperty=nameWithType> method and optimizes the state data for mobile devices.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -894,10 +906,11 @@
 ## Remarks  
  This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
   
- This member overrides the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> method and saves any existing adapter state with the view state in an object array.  
+ This member overrides the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=nameWithType> method and saves any existing adapter state with the view state in an object array.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="MakePathAbsolute">
@@ -963,7 +976,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides <xref:System.Web.UI.Page.MasterPageFile%2A?displayProperty=fullName> to prevent master pages from being used. This is because master pages are not supported on ASP.NET mobile Web Forms pages.  
+ This member overrides <xref:System.Web.UI.Page.MasterPageFile%2A?displayProperty=nameWithType> to prevent master pages from being used. This is because master pages are not supported on ASP.NET mobile Web Forms pages.  
   
  ]]></format>
         </remarks>
@@ -1020,7 +1033,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.TemplateControl.OnError%2A?displayProperty=fullName> method to allow the adapter to handle the error.  
+ This method overrides the <xref:System.Web.UI.TemplateControl.OnError%2A?displayProperty=nameWithType> method to allow the adapter to handle the error.  
   
  ]]></format>
         </remarks>
@@ -1048,7 +1061,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Page.OnInit%2A?displayProperty=fullName> method to customize the event data for the adapter.  
+ This method overrides the <xref:System.Web.UI.Page.OnInit%2A?displayProperty=nameWithType> method to customize the event data for the adapter.  
   
  ]]></format>
         </remarks>
@@ -1076,7 +1089,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Control.OnLoad%2A?displayProperty=fullName> method to customize the event data for the adapter.  
+ This method overrides the <xref:System.Web.UI.Control.OnLoad%2A?displayProperty=nameWithType> method to customize the event data for the adapter.  
   
  ]]></format>
         </remarks>
@@ -1104,7 +1117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Page.OnPreInit%2A?displayProperty=fullName> method to customize the event data for the adapter.  
+ This method overrides the <xref:System.Web.UI.Page.OnPreInit%2A?displayProperty=nameWithType> method to customize the event data for the adapter.  
   
  ]]></format>
         </remarks>
@@ -1132,7 +1145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Page.OnPreRenderComplete%2A?displayProperty=fullName> method to customize the event data for the adapter.  
+ This method overrides the <xref:System.Web.UI.Page.OnPreRenderComplete%2A?displayProperty=nameWithType> method to customize the event data for the adapter.  
   
  ]]></format>
         </remarks>
@@ -1160,7 +1173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Control.OnUnload%2A?displayProperty=fullName> method to customize the event data for the adapter.  
+ This method overrides the <xref:System.Web.UI.Control.OnUnload%2A?displayProperty=nameWithType> method to customize the event data for the adapter.  
   
  ]]></format>
         </remarks>
@@ -1284,7 +1297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.RaisePostBackEvent%2A?displayProperty=fullName> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form>. In that case, the method attempts to locate and call the default event handler from the active mobile Web Form. Otherwise, the base method is called.  
+ This member overrides the <xref:System.Web.UI.Page.RaisePostBackEvent%2A?displayProperty=nameWithType> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form>. In that case, the method attempts to locate and call the default event handler from the active mobile Web Form. Otherwise, the base method is called.  
   
  ]]></format>
         </remarks>
@@ -1332,6 +1345,7 @@
         <param name="endResponse">Specifies whether the response should be ended at that point. The default of the first form of the method is <see langword="true" />.</param>
         <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RelativeFilePath">
@@ -1379,10 +1393,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Control.RemovedControl%2A?displayProperty=fullName> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form> or a <xref:System.Web.UI.UserControl> before calling the base method. If the control is a `Form` or a `UserControl`, the <xref:System.Web.UI.MobileControls.MobilePage.Forms%2A> property is set to `null`.  
+ This member overrides the <xref:System.Web.UI.Control.RemovedControl%2A?displayProperty=nameWithType> method to determine whether the control is a <xref:System.Web.UI.MobileControls.Form> or a <xref:System.Web.UI.UserControl> before calling the base method. If the control is a `Form` or a `UserControl`, the <xref:System.Web.UI.MobileControls.MobilePage.Forms%2A> property is set to `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Form" />
+        <altmember cref="P:System.Web.UI.MobileControls.MobilePage.Forms" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1407,7 +1423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method to call the `Render` method of the control adapter.  
+ This member overrides the <xref:System.Web.UI.Control.Render%2A?displayProperty=nameWithType> method to call the `Render` method of the control adapter.  
   
  ]]></format>
         </remarks>
@@ -1435,7 +1451,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=fullName> method to call the `RenderControl` method of the default control adapter.  
+ This member overrides the <xref:System.Web.UI.Control.RenderControl%2A?displayProperty=nameWithType> method to call the `RenderControl` method of the default control adapter.  
   
  ]]></format>
         </remarks>
@@ -1463,11 +1479,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Page.SavePageStateToPersistenceMedium%2A?displayProperty=fullName> method to optimize the state data.  
+ This member overrides the <xref:System.Web.UI.Page.SavePageStateToPersistenceMedium%2A?displayProperty=nameWithType> method to optimize the state data.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">Session state is disabled or read-only.</exception>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1490,10 +1507,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides the <xref:System.Web.UI.Control.SaveViewState%2A?displayProperty=fullName> method to save any existing adapter state with view state in an object array. If there is no view state associated with the control, this method returns `null`.  
+ This member overrides the <xref:System.Web.UI.Control.SaveViewState%2A?displayProperty=nameWithType> method to save any existing adapter state with view state in an object array. If there is no view state associated with the control, this method returns `null`.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="StyleSheet">
@@ -1557,7 +1575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides <xref:System.Web.UI.Page.StyleSheetTheme%2A?displayProperty=fullName> to prevent themes from being changed from the default. This is because themes are not supported on ASP.NET Mobile Web Forms pages.  
+ This member overrides <xref:System.Web.UI.Page.StyleSheetTheme%2A?displayProperty=nameWithType> to prevent themes from being changed from the default. This is because themes are not supported on ASP.NET Mobile Web Forms pages.  
   
  ]]></format>
         </remarks>
@@ -1588,7 +1606,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member overrides <xref:System.Web.UI.Page.Theme%2A?displayProperty=fullName> to prevent themes from being enabled. This is because themes are not supported on ASP.NET mobile Web Forms pages.  
+ This member overrides <xref:System.Web.UI.Page.Theme%2A?displayProperty=nameWithType> to prevent themes from being enabled. This is because themes are not supported on ASP.NET mobile Web Forms pages.  
   
  ]]></format>
         </remarks>
@@ -1700,7 +1718,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A?displayProperty=fullName> method to throw an exception if the control is not in a <xref:System.Web.UI.MobileControls.Form> at run time.  
+ This method overrides the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A?displayProperty=nameWithType> method to throw an exception if the control is not in a <xref:System.Web.UI.MobileControls.Form> at run time.  
   
  ]]></format>
         </remarks>
@@ -1732,5 +1750,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RedirectToMobilePage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

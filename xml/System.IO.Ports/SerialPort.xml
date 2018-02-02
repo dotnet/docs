@@ -25,10 +25,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/sys/system/io/ports/SerialPort.cs#ae0a3218c6c9f7fe). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use this class to control a serial port file resource. This class provides synchronous and event-driven I/O, access to pin and break states, and access to serial driver properties. Additionally, the functionality of this class can be wrapped in an internal <xref:System.IO.Stream> object, accessible through the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property, and passed to classes that wrap or use streams.  
   
  The <xref:System.IO.Ports.SerialPort> class supports the following encodings: <xref:System.Text.ASCIIEncoding>, <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, <xref:System.Text.UTF32Encoding>, and any encoding defined in mscorlib.dll where the code page is less than 50000 or the code page is 54936.  You can use alternate encodings, but you must use the <xref:System.IO.Ports.SerialPort.ReadByte%2A> or <xref:System.IO.Ports.SerialPort.Write%2A> method and perform the encoding yourself.  
@@ -584,7 +580,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method closes the <xref:System.IO.Ports.SerialPort> object and clears both the receive and transmit buffers. This method calls the <xref:System.ComponentModel.Component.Dispose?displayProperty=fullName> method, which invokes the protected <xref:System.IO.Ports.SerialPort.Dispose%28System.Boolean%29?displayProperty=fullName> method with the `disposing` parameter set to `true`.  
+ Calling this method closes the <xref:System.IO.Ports.SerialPort> object and clears both the receive and transmit buffers. This method calls the <xref:System.ComponentModel.Component.Dispose?displayProperty=nameWithType> method, which invokes the protected <xref:System.IO.Ports.SerialPort.Dispose%28System.Boolean%29?displayProperty=nameWithType> method with the `disposing` parameter set to `true`.  
   
  The best practice for any application is to wait for some amount of time after calling the <xref:System.IO.Ports.SerialPort.Close%2A> method before attempting to call the <xref:System.IO.Ports.SerialPort.Open%2A> method, as the port may not be closed instantly.  
   
@@ -1820,7 +1816,7 @@
  If it is necessary to switch between reading text and reading binary data from the stream, select a protocol that carefully defines the boundary between text and binary data, such as manually reading bytes and decoding the data.  
   
 > [!NOTE]
->  The <xref:System.IO.Ports.SerialPort> class buffers data, but the stream object contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A?displayProperty=fullName> property does not. Therefore, the <xref:System.IO.Ports.SerialPort> object and the stream object might differ on the number of bytes that are available to read. When bytes are buffered to the <xref:System.IO.Ports.SerialPort> object, the <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property includes these bytes in its value; however, these bytes might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property.  
+>  The <xref:System.IO.Ports.SerialPort> class buffers data, but the stream object contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A?displayProperty=nameWithType> property does not. Therefore, the <xref:System.IO.Ports.SerialPort> object and the stream object might differ on the number of bytes that are available to read. When bytes are buffered to the <xref:System.IO.Ports.SerialPort> object, the <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property includes these bytes in its value; however, these bytes might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property.  
   
  ]]></format>
         </remarks>
@@ -2108,7 +2104,7 @@
 ## Remarks  
  The default value for <xref:System.IO.Ports.SerialPort.StopBits%2A> is <xref:System.IO.Ports.StopBits.One>.  
   
- The <xref:System.IO.Ports.StopBits?displayProperty=fullName> value is not supported.  
+ The <xref:System.IO.Ports.StopBits.None?displayProperty=nameWithType> value is not supported.  
   
    
   
@@ -2416,5 +2412,32 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.IO.Ports.SerialPort.WriteTimeout" /> value is less than zero and not equal to <see cref="F:System.IO.Ports.SerialPort.InfiniteTimeout" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Ports.SerialPort" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads from the <see cref="T:System.IO.Ports.SerialPort" /> input buffer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the serial port output buffer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -66,7 +66,11 @@
 -   Their fields are mutable rather than read-only.  
   
  The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%604> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.  
-  
+
+### Serialization and value tuples
+
+The <xref:System.ValueTuple%604> type is not serializable in .NET Core 1.x or in the .NET Framework 4.7 and earlier versions. In addition, .NET Standard, including .NET Standard 2.0, does not mandate serialization of <xref:System.ValueTuple%604> instances; whether or not a <xref:System.ValueTuple%604> instance is serializable depends on the individual .NET Standard implementation. To determine whether a <xref:System.ValueTuple%604> type is serializable on a particular .NET implementation, get a <xref:System.Type> object that represents the <xref:System.ValueTuple%604> type and retrieve the value of its <xref:System.Type.IsSerializable%2A> property. For a list of serializable types in .NET Core and the .NET Framework, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).
+    
  ]]></format>
     </remarks>
   </Docs>
@@ -139,7 +143,7 @@
       <Docs>
         <param name="other">The tuple to compare with this instance.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`4" /> instance to a specified <see cref="T:System.ValueTuple`4" /> instance.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and                      <paramref name="other" /> in the sort order, as shown in the following table.  
   
  <list type="table"><listheader><term> Vaue  
   
@@ -442,7 +446,7 @@
         <param name="other">The object to compare with the current instance.</param>
         <param name="comparer">An object that provides custom rules for comparison.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple`4" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
-        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following table.  
   
  <list type="table"><listheader><term> Vaue  
   
@@ -599,6 +603,10 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -606,10 +614,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the specified <see langword="ValueTuple" /> element. <c>index</c> can range from 0 to 3.</param>
+        <summary>Gets the value of the specified <see langword="ValueTuple" /> element.</summary>
+        <value>The value of the <see langword="ValueTuple" /> element at the specified position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%604.System%23Runtime%23CompilerServices%23ITuple%23Item%2A?displayProperty=fullName> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%604> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than 3.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -621,13 +638,24 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the <see langword="ValueTuple" />.</summary>
+        <value>4, the number of elements in a <see cref="T:System.ValueTuple`4" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%604.System%23Runtime%23CompilerServices%23ITuple%23Length%2A?displayProperty=fullName> property is an explicit interface implementation. To call it, you must cast or convert the <xref:System.ValueTuple%604> object to an <xref:System.Runtime.CompilerServices.ITuple> interface object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -663,11 +691,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, where *Item1*, *Item2*, *Item3*, and *Item4* represent the values of the <xref:System.ValueTuple%604.Item1>, <xref:System.ValueTuple%604.Item2>, <xref:System.ValueTuple%604.Item3>, and <xref:System.ValueTuple%604.Item4> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, where *Item1*, *Item2*, *Item3*, and *Item4* represent the values of the <xref:System.ValueTuple%604.Item1>, <xref:System.ValueTuple%604.Item2>, <xref:System.ValueTuple%604.Item3>, and <xref:System.ValueTuple%604.Item4> fields. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`4" /> instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

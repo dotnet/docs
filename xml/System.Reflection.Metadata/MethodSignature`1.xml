@@ -15,9 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TType">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TType">The method type.</typeparam>
+    <summary>Represents a method (definition, reference, or standalone) or property signature. In the case of properties, the signature matches that of a getter with a distinguishing <see cref="T:System.Reflection.Metadata.SignatureHeader" />.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,13 +39,14 @@
         <Parameter Name="parameterTypes" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <param name="returnType">To be added.</param>
-        <param name="requiredParameterCount">To be added.</param>
-        <param name="genericParameterCount">To be added.</param>
-        <param name="parameterTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="header">The information in the leading byte of the signature (kind, calling convention, flags).</param>
+        <param name="returnType">The return type of the method.</param>
+        <param name="requiredParameterCount">The number of required parameters.</param>
+        <param name="genericParameterCount">The number of generic type parameters.</param>
+        <param name="parameterTypes">The parameter types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MethodSignature`1" /> structure using the specified header, return type, and parameter information.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterCount">
@@ -61,9 +63,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of generic type parameters for the method.</summary>
+        <value>The number of generic type parameters, or 0 for non-generic methods.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -80,9 +83,10 @@
         <ReturnType>System.Reflection.Metadata.SignatureHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the information in the leading byte of the signature (kind, calling convention, flags).</summary>
+        <value>The header signature.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterTypes">
@@ -99,9 +103,10 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the method's parameter types.</summary>
+        <value>An immutable collection of parameter types.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiredParameterCount">
@@ -118,9 +123,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of parameters that are required for the method.</summary>
+        <value>The number of required parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is equal to the length of the <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> property, unless this method signature represents the standalone call site of a `vararg` method, in which case, the extra entries in <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> are the types used for the optional parameters.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -137,9 +149,10 @@
         <ReturnType>TType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the return type of the method.</summary>
+        <value>The return type.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

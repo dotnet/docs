@@ -27,9 +27,9 @@
 ## Remarks  
  The <xref:System.Data.ReadOnlyException> is thrown when you invoke the following methods or properties when you are trying to change the value of a read-only column.  
   
--   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>
@@ -113,6 +113,8 @@
         <param name="context">Description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.ReadOnlyException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,5 +146,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.ReadOnlyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -25,6 +25,11 @@
             "redirect_url": "/dotnet/core/deploying/index"
         },
         {
+            "source_path": "docs/core/docker/visual-studio-tools-for-docker.md",
+            "redirect_url": "/aspnet/core/publishing/visual-studio-tools-for-docker",
+            "redirect_document_id": true
+        },        
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -177,11 +182,16 @@
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/csharp/getting-started/with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        
+        {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
@@ -225,7 +235,7 @@
         },
         {
             "source_path": "docs/core/tutorials/using-on-windows.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
             "source_path": "docs/csharp/csharp-6.md",
@@ -246,6 +256,10 @@
             "redirect_url": "/dotnet/csharp/programming-guide/generics/index"
         },
         {
+            "source_path": "docs/csharp/getting-started/additional-resources.md",
+            "redirect_url": "/dotnet/csharp/getting-started/index"
+        },
+        {
             "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
             "redirect_url": "https://msdn.microsoft.com/library/hh678682(v=vs.120)"
         },
@@ -256,7 +270,11 @@
         },
         {
             "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/debugging-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
         },
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
@@ -265,17 +283,28 @@
         },
         {
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/publishing-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
         },
+        
+        {
+            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
+        },
+        
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
             "redirect_url": "/dotnet/csharp/whats-new/index"
         },
         {
             "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
             "redirect_document_id": true
         },
+        {        
+            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
+            "redirect_document_id": true
+        },        
         {
             "source_path": "docs/csharp/interactive.md",
             "redirect_url": "/dotnet/csharp/index"
@@ -406,6 +435,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/deployment/repair.md",
+            "redirect_url": "/dotnet/framework/install/repair"
+        },
+        {
             "source_path": "docs/framework/deployment/windows/index.md",
             "redirect_url": "/dotnet/framework/install/"
         },
@@ -439,6 +472,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
+        },
+        {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
@@ -469,6 +506,50 @@
         {
             "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
+            "redirect_url": "/dotnet/framework/migration-guide//retargeting/4.6.1-4.6.2"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-dispatcher-operations-in-wpf-apps.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-default-authorizationcontext.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtimef/4.5-4.5.1"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-horizontal-scrolling-and-virtualization.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-long-path-support.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-memberdescriptor-equals.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
+        },
+        {  
+            "source_path": "docs/framework/migration-guide/migration-guide/mitigation-minfreememorypercentagetoactiveservice-configuration-setting.md",
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
@@ -517,6 +598,14 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
+            "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/windows-communication-foundation.md",
+            "redirect_url": "/dotnet/framework/wcf/index"
         },
         {
             "source_path": "docs/framework/whats-new/whats-new.md",
@@ -824,6 +913,24 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
+            "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
+            "redirect_document_id": true
+        },  
+        {
+            "source_path": "docs/standard/serialization/marshal-by-value.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
+            "source_path": "docs/standard/serialization/persistent-storage.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
             "redirect_url": "/dotnet/csharp/tutorials/microservices"
         },
@@ -834,6 +941,11 @@
         {
             "source_path": "docs/tutorials/index.md",
             "redirect_url": "/dotnet/samples-and-tutorials/"
+        },        
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",
+            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/covariance-contravariance/index",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/visual-basic/developing-apps/debugging.md",
@@ -867,30 +979,115 @@
             "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md",
             "redirect_url": "/dotnet/visual-basic/getting-started/breaking-changes-in-visual-studio"
         },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531402(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-intellisense.md",
+            "redirect_url": "https://msdn.microsoft.com/library/bb531325(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-to-schema-wizard.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc443041(v=vs.120).aspx"
+        },        
+        {
+            "source_path": "docs/visual-basic/reference/vb6-support.md",
+            "redirect_url": "/visualstudio/vb6/vb6-support",
+            "redirect_document_id": true
+        },
         {        
-            "source_path": "fsharp/tutorials/getting-started/getting-started-visual-studio.md",
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
             "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
             "redirect_document_id": true
         },
         {        
-            "source_path": "fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
             "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studoi-for-mac",
             "redirect_document_id": true
         },
         {        
-            "source_path": "fsharp/tutorials/getting-started/getting-started-vscode.md",
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
             "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
             "redirect_document_id": true
         },
         {        
-            "source_path": "fsharp/tutorials/getting-started/getting-started-command-line.md",
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
             "redirect_document_id": true
         },
-        {        
-            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
-            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
+        {
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/testing-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
+            "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
             "redirect_document_id": true
-        }
+        },
+        {
+            "source_path": "docs/csharp/csharp.md",
+            "redirect_url": "/dotnet/csharp"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
+            "redirect_url": "/dotnet/csharp/getting-started"
+        },
+        {
+            "source_path": "docs/core/porting/nuget-packages.md",
+            "redirect_url": "/dotnet/core/packages"
+        },
+        {
+            "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
+            "source_path": "docs/core/versions/servicing.md",
+            "redirect_url": "/dotnet/core/versions"
+        },
+        {
+            "source_path": "docs/csharp/reflection.md",
+            "redirect_url": "/dotnet/framework/reflection-and-codedom"
+        },
+        {
+            "source_path": "docs/csharp/roslyn/index.md",
+            "redirect_url": "/dotnet/csharp/roslyn-sdk/" 
+        },        
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc165448(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
+            "redirect_url": "https://msdn.microsoft.com/library/cc488002(v=vs.120).aspx"
+        },
+        {
+            "source_path": "docs/csharp/parallel.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/index.md"
+        },
+        {
+            "source_path": "docs/csharp/methods-lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
+            "redirect_url": "docs/csharp/how-to/parse-strings-using-string-split.md"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/how-to-concatenate-multiple-strings.md"
+        }    
     ]
 }

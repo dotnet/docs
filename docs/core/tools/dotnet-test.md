@@ -1,26 +1,40 @@
 ---
-title: dotnet-test command - .NET Core CLI
-description: The `dotnet test` command is used to execute unit tests in a given project.
-keywords: dotnet-test, CLI, CLI command, .NET Core
-author: blackdwarf
+title: dotnet test command - .NET Core CLI
+description: The dotnet test command is used to execute unit tests in a given project.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/25/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet test
 
-#dotnet-test
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-test` - .NET test driver used to execute unit tests.
+`dotnet test` - .NET test driver used to execute unit tests.
 
 ## Synopsis
 
-`dotnet test [<PROJECT>] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity] [-h|--help]`
+# [.NET Core 2.x](#tab/netcore2x)
+
+
+```
+dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
+dotnet test [-h|--help]
+```
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+```
+dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [-o|--output] [-s|--settings] [-t|--list-tests]  [-v|--verbosity]
+dotnet test [-h|--help]
+```
+---
 
 ## Description
 
@@ -30,65 +44,133 @@ Test projects also must specify the test runner. This is specified using an ordi
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
-## Options
+## Arguments
 
 `PROJECT`
-    
+
 Specifies a path to the test project. If omitted, it defaults to current directory.
 
-`-h|--help`
+## Options
 
-Prints out a short help for the command.
-
-`-s|--settings <SETTINGS_FILE>`
-
-Settings to use when running tests. 
-
-`-t|--list-tests`
-
-List all of the discovered tests in the current project. 
-
-`--filter <EXPRESSION>`
-
-Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+# [.NET Core 2.x](#tab/netcore2x)
 
 `-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
-Use the custom test adapters from the specified path in the test run. 
+Use the custom test adapters from the specified path in the test run.
 
-`-l|--logger <LoggerUri/FriendlyName>`
+`-c|--configuration {Debug|Release}`
 
-Specifies a logger for test results. 
+Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
-`-c|--configuration <CONFIGURATION>`
+`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`
 
-Configuration under which to build. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+
+Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
 
 `-f|--framework <FRAMEWORK>`
 
 Looks for test binaries for a specific [framework](../../standard/frameworks.md).
 
+`--filter <EXPRESSION>`
+
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`-l|--logger <LoggerUri/FriendlyName>`
+
+Specifies a logger for test results.
+
+`--no-build`
+
+Does not build the test project prior to running it.
+
+`--no-restore`
+
+Doesn't perform an implicit restore when running the command.
+
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Directory in which to find the binaries to run.
 
-`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+`-r|--results-directory <PATH>`
 
-Enables diagnostic mode for the test platform and write diagnostic messages to the specified file. 
+The directory where the test results are going to be placed. The specified directory will be created if it doesn't exist.
 
-`--no-build` 
+`-s|--settings <SETTINGS_FILE>`
 
-Does not build the test project prior to running it.
+Settings to use when running tests.
+
+`-t|--list-tests`
+
+List all of the discovered tests in the current project.
 
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
+# [.NET Core 1.x](#tab/netcore1x)
+
+`-a|--test-adapter-path <PATH_TO_ADAPTER>`
+
+Use the custom test adapters from the specified path in the test run.
+
+`-c|--configuration {Debug|Release}`
+
+Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+
+Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
+
+`-f|--framework <FRAMEWORK>`
+
+Looks for test binaries for a specific [framework](../../standard/frameworks.md).
+
+`--filter <EXPRESSION>`
+
+Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`-l|--logger <LoggerUri/FriendlyName>`
+
+Specifies a logger for test results.
+
+`--no-build`
+
+Does not build the test project prior to running it.
+
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Directory in which to find the binaries to run.
+
+`-s|--settings <SETTINGS_FILE>`
+
+Settings to use when running tests.
+
+`-t|--list-tests`
+
+List all of the discovered tests in the current project.
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+---
+
 ## Examples
 
 Run the tests in the project in the current directory:
 
-`dotnet test` 
+`dotnet test`
 
 Run the tests in the `test1` project:
 
@@ -126,11 +208,11 @@ Expressions can be joined with conditional operators:
 | <code>&#124;</code>      | OR       |
 | `&`      | AND      |
 
-You can enclose expressions in paranthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
+You can enclose expressions in parenthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
 For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 ## See also
 
-[Frameworks and Targets](../../standard/frameworks.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+ [Frameworks and Targets](../../standard/frameworks.md)  
+ [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

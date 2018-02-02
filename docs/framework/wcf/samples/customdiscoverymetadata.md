@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c42455fd-3652-4b7e-b698-ab3a2bb52e48
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CustomDiscoveryMetadata
 This sample shows how to insert custom XML metadata into the discovery metadata for a discoverable endpoint exposed by a service. The sample then shows how a client can search for the service and extract this custom data. This sample consists of two projects, service and client.  

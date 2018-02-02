@@ -22,7 +22,7 @@
 ## Remarks  
  An <xref:System.AddIn.Hosting.AddInToken> object represents an add-in, and its associated pipeline segments, that can be activated. The token contains the name, assembly name, description, publisher, and version of the add-in that it represents.  
   
- Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIns%2A?displayProperty=fullName> method to get a collection of tokens that represent add-ins whose pipelines match a specified host view. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=fullName> method to get a collection of tokens that represent all the pipelines for a specified add-in that match a specified host view.  
+ Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIns%2A?displayProperty=nameWithType> method to get a collection of tokens that represent add-ins whose pipelines match a specified host view. Use the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A?displayProperty=nameWithType> method to get a collection of tokens that represent all the pipelines for a specified add-in that match a specified host view.  
   
  To activate an add-in, pass the token that represents the desired add-in to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method. This method returns an instance of the type that represents the host view of the add-in.  
   
@@ -360,12 +360,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property obtains the full name of the add-in as it would be returned by the <xref:System.Type.FullName%2A?displayProperty=fullName> property. This value is always available on an instance of an <xref:System.AddIn.Hosting.AddInToken> object.  
+ This property obtains the full name of the add-in as it would be returned by the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property. This value is always available on an instance of an <xref:System.AddIn.Hosting.AddInToken> object.  
   
    
   
 ## Examples  
- The following example displays the value of the <xref:System.AddIn.Hosting.AddInToken.Name%2A>, <xref:System.AddIn.Hosting.AddInToken.AddInFullName%2A>, <xref:System.AddIn.Hosting.AddInToken.Description%2A>, <xref:System.AddIn.Hosting.AddInToken.AssemblyName%2A>, <xref:System.AddIn.Hosting.AddInToken.Publisher%2A>, and <xref:System.AddIn.Hosting.AddInToken.Version%2A> properties to the console. This code example is part of a larger example provided for the <xref:System.AddIn.Hosting.AddInToken>class.  
+ The following example displays the value of the <xref:System.AddIn.Hosting.AddInToken.Name%2A>, <xref:System.AddIn.Hosting.AddInToken.AddInFullName%2A>, <xref:System.AddIn.Hosting.AddInToken.Description%2A>, <xref:System.AddIn.Hosting.AddInToken.AssemblyName%2A>, <xref:System.AddIn.Hosting.AddInToken.Publisher%2A>, and <xref:System.AddIn.Hosting.AddInToken.Version%2A> properties to the console. This code example is part of a larger example provided for the <xref:System.AddIn.Hosting.AddInToken> class.  
   
  [!code-csharp[AddInP3Host#7](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#7)]
  [!code-vb[AddInP3Host#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#7)]  
@@ -393,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property obtains the display name of the assembly that contains the add-in, as it would be returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property. This value is always available on an instance of an <xref:System.AddIn.Hosting.AddInToken> object.  
+ This property obtains the display name of the assembly that contains the add-in, as it would be returned by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property. This value is always available on an instance of an <xref:System.AddIn.Hosting.AddInToken> object.  
   
    
   
@@ -524,7 +524,7 @@
  Use the enumerator returned by this method to iterate through the qualification data items of the pipeline segments associated with the current token. Each item of qualification data is a <xref:System.AddIn.Hosting.QualificationDataItem> structure that identifies the pipeline segment and contains a name/value pair from a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute applied to that segment.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=fullName>.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType>.  
   
  Alternatively, you can use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property to get a nested set of dictionaries that contain the qualification data of the pipeline segments.  
   
@@ -646,12 +646,12 @@
 ## Remarks  
  Use this property to obtain data that has been applied to pipeline segments with the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute. You can use this data to identify and work with the types that compose your pipelines.  
   
- This property returns a dictionary of dictionaries. The top dictionary always has six keys. Each key is an <xref:System.AddIn.Hosting.AddInSegmentType> value for a segment in the pipeline. Each value is a generic <xref:System.Collections.Generic.IDictionary%602>of strings with string keys that contains the segment's qualification data.  
+ This property returns a dictionary of dictionaries. The top dictionary always has six keys. Each key is an <xref:System.AddIn.Hosting.AddInSegmentType> value for a segment in the pipeline. Each value is a generic <xref:System.Collections.Generic.IDictionary%602> of strings with string keys that contains the segment's qualification data.  
   
  The keys and values of these inner dictionaries are the names and values specified in the <xref:System.AddIn.Pipeline.QualificationDataAttribute> attributes for the segments. If no qualification data has been applied to a segment, its dictionary is empty.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, the dictionary for <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=fullName> is always empty.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, the dictionary for <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType> is always empty.  
   
  Alternatively, you can obtain qualification data by enumerating an <xref:System.AddIn.Hosting.AddInToken> as if it were a collection of <xref:System.AddIn.Hosting.QualificationDataItem> structures, using a `foreach` statement (`For Each` in Visual Basic, `for each` in Visual C++). See the example provided for the <xref:System.AddIn.Hosting.QualificationDataItem> structure.  
   
@@ -692,7 +692,7 @@
  Use the enumerator returned by this method to iterate through the qualification data items of the pipeline segments associated with the current token. Each item of qualification data is a <xref:System.AddIn.Hosting.QualificationDataItem> structure that identifies the pipeline segment and contains the name/value pair from a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute applied to that segment.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType?displayProperty=fullName>.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn?displayProperty=nameWithType>.  
   
  Alternatively, you can use the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property to get a nested set of dictionaries containing the qualification data of the pipeline segments.  
   
@@ -752,5 +752,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Activate&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Activates an add-in.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

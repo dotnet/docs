@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Reflection.Module" />
   </Docs>
   <Members>
     <Member MemberName="EmptyHandle">
@@ -162,6 +163,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ValueType.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeFieldHandleFromMetadataToken">
@@ -325,7 +327,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.ModuleHandle" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -361,7 +363,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.ModuleHandle" /> structures are unequal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%29?displayProperty=fullName>.]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ModuleHandle.Equals%28System.ModuleHandle%29?displayProperty=nameWithType>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -692,5 +694,45 @@
           <paramref name="typeToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveTypeHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime type handle for a type identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specified <see cref="T:System.ModuleHandle" /> structure is equal to the current <see cref="T:System.ModuleHandle" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResolveMethodHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime method handle for a method or constructor identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResolveFieldHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a runtime field handle for a field identified by a metadata token.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

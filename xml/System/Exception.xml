@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/exception.cs#f092fb2b893a0162). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  This class is the base class for all exceptions. When an error occurs, either the system or the currently executing application reports it by throwing an exception that contains information about the error. After an exception is thrown, it is handled by the application or by the default exception handler.  
   
  In this section:  
@@ -68,25 +64,25 @@
 ## Errors and exceptions  
  Run-time errors can occur for a variety of reasons. However, not all errors should be handled as exceptions in your code. Here are some categories of errors that can occur at run time and the appropriate ways to respond to them.  
   
--   **Usage errors.** A usage error represents an error in program logic that can result in an exception. However, the error should be addressed not through exception handling but by modifying the faulty code. For example, the override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method in the following example assumes that the `obj` argument must always be non-null.  
+-   **Usage errors.** A usage error represents an error in program logic that can result in an exception. However, the error should be addressed not through exception handling but by modifying the faulty code. For example, the override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method in the following example assumes that the `obj` argument must always be non-null.  
   
      [!code-csharp[System.Exception.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/usageerrors1.cs#4)]
      [!code-vb[System.Exception.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/usageerrors1.vb#4)]  
   
-     The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals%2A?displayProperty=fullName> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.  
+     The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.  
   
      [!code-csharp[System.Exception.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/usageerrors2.cs#5)]
      [!code-vb[System.Exception.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/usageerrors2.vb#5)]  
   
-     Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1).  
+     Instead of using exception handling for usage errors, you can use the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method to identify usage errors in debug builds, and the <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=nameWithType> method to identify usage errors in both debug and release builds. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code).  
   
 -   **Program errors.** A program error is a run-time error that cannot necessarily be avoided by writing bug-free code.  
   
-     In some cases, a program error may reflect an expected or routine error condition. In this case, you may want to avoid using exception handling to deal with the program error and instead retry the operation. For example, if the user is expected to input a date in a particular format, you can parse the date string by calling the <xref:System.DateTime.TryParseExact%2A?displayProperty=fullName> method, which returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded, instead of using the <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> method, which throws a <xref:System.FormatException> exception if the date string cannot be converted to a <xref:System.DateTime> value. Similarly, if a user tries to open a file that does not exist, you can first call the <xref:System.IO.File.Exists%2A?displayProperty=fullName> method to check whether the file exists and, if it does not, prompt the user whether he or she wants to create it.  
+     In some cases, a program error may reflect an expected or routine error condition. In this case, you may want to avoid using exception handling to deal with the program error and instead retry the operation. For example, if the user is expected to input a date in a particular format, you can parse the date string by calling the <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType> method, which returns a <xref:System.Boolean> value that indicates whether the parse operation succeeded, instead of using the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method, which throws a <xref:System.FormatException> exception if the date string cannot be converted to a <xref:System.DateTime> value. Similarly, if a user tries to open a file that does not exist, you can first call the <xref:System.IO.File.Exists%2A?displayProperty=nameWithType> method to check whether the file exists and, if it does not, prompt the user whether he or she wants to create it.  
   
      In other cases, a program error reflects an unexpected error condition that can be handled in your code. For example, even if you've checked to ensure that a file exists, it may be deleted before you can open it, or it may be corrupted. In that case, trying to open the file by instantiating a <xref:System.IO.StreamReader> object or calling the <xref:System.IO.File.Open%2A> method may throw a <xref:System.IO.FileNotFoundException> exception. In these cases, you should use exception handling to recover from the error.  
   
--   **System failures.** A system failure is a run-time error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=fullName> and call the <xref:System.Environment.FailFast%2A?displayProperty=fullName> method to log exception information and notify the user of the failure before the application terminates.  
+-   **System failures.** A system failure is a run-time error that cannot be handled programmatically in a meaningful way. For example, any method can throw an <xref:System.OutOfMemoryException> exception if the common language runtime is unable to allocate additional memory. Ordinarily, system failures are not handled by using exception handling. Instead, you may be able to use an event such as <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType> and call the <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method to log exception information and notify the user of the failure before the application terminates.  
   
 <a name="TryCatch"></a>   
 ## Try/catch blocks  
@@ -122,7 +118,7 @@
   
 <a name="Performance"></a>   
 ## Performance considerations  
- Throwing or handling an exception consumes a significant amount of system resources and execution time. Throw exceptions only to handle truly extraordinary conditions, not to handle predictable events or flow control. For example, in some cases, such as when you're developing a class library, it's reasonable to throw an exception if a method argument is invalid, because you expect your method to be called with valid parameters. An invalid method argument, if it is not the result of a usage error, means that something extraordinary has occurred. Conversely, do not throw an exception if user input is invalid, because you can expect users to occasionally enter invalid data. Instead, provide a retry mechanism so users can enter valid input. Nor should you use exceptions to handle usage errors. Instead, use [assertions](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1) to identify and correct usage errors.  
+ Throwing or handling an exception consumes a significant amount of system resources and execution time. Throw exceptions only to handle truly extraordinary conditions, not to handle predictable events or flow control. For example, in some cases, such as when you're developing a class library, it's reasonable to throw an exception if a method argument is invalid, because you expect your method to be called with valid parameters. An invalid method argument, if it is not the result of a usage error, means that something extraordinary has occurred. Conversely, do not throw an exception if user input is invalid, because you can expect users to occasionally enter invalid data. Instead, provide a retry mechanism so users can enter valid input. Nor should you use exceptions to handle usage errors. Instead, use [assertions](/visualstudio/debugger/assertions-in-managed-code) to identify and correct usage errors.  
   
  In addition, do not throw an exception when a return code is sufficient; do not convert a return code to an exception; and do not routinely catch an exception, ignore it, and then continue processing.  
   
@@ -134,12 +130,12 @@
   
 -   An application or library that encounters a fatal exception. The exception handler can log the exception and then re-throw the exception.  
   
- The recommended way to re-throw an exception is to simply use the [throw](~/docs/csharp/language-reference/keywords/throw.md) statement in C# and the [Throw](~/docs/visual-basic/language-reference/statements/throw-statement.md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=fullName> without validating its arguments beforehand.  
+ The recommended way to re-throw an exception is to simply use the [throw](~/docs/csharp/language-reference/keywords/throw.md) statement in C# and the [Throw](~/docs/visual-basic/language-reference/statements/throw-statement.md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> without validating its arguments beforehand.  
   
  [!code-csharp[System.Exception.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/rethrow1.cs#6)]
  [!code-vb[System.Exception.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/rethrow1.vb#6)]  
   
- A caller then calls `FindOccurrences` twice. In the second call to `FindOccurrences`, the caller passes a `null` as the search string, which cases the <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=fullName> method to throw an <xref:System.ArgumentNullException> exception. This exception is handled by the `FindOccurrences` method and passed back to the caller. Because the throw statement is used with no expression, the output from the example shows that the call stack is preserved.  
+ A caller then calls `FindOccurrences` twice. In the second call to `FindOccurrences`, the caller passes a `null` as the search string, which cases the <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=nameWithType> method to throw an <xref:System.ArgumentNullException> exception. This exception is handled by the `FindOccurrences` method and passed back to the caller. Because the throw statement is used with no expression, the output from the example shows that the call stack is preserved.  
   
  [!code-csharp[System.Exception.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/rethrow1.cs#7)]
  [!code-vb[System.Exception.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/rethrow1.vb#7)]  
@@ -428,6 +424,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -523,7 +521,7 @@ Stack Trace:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Collections.IDictionary?displayProperty=fullName> object returned by the <xref:System.Exception.Data%2A> property to store and retrieve supplementary information relevant to the exception. The information is in the form of an arbitrary number of user-defined key/value pairs. The key component of each key/value pair is typically an identifying string, whereas the value component of the pair can be any type of object.  
+ Use the <xref:System.Collections.IDictionary?displayProperty=nameWithType> object returned by the <xref:System.Exception.Data%2A> property to store and retrieve supplementary information relevant to the exception. The information is in the form of an arbitrary number of user-defined key/value pairs. The key component of each key/value pair is typically an identifying string, whereas the value component of the pair can be any type of object.  
   
 ## Key/Value Pair Security  
  The key/value pairs stored in the collection returned by the <xref:System.Exception.Data%2A> property are not secure. If your application calls a nested series of routines, and each routine contains exception handlers, the resulting call stack contains a hierarchy of those exception handlers. If a lower-level routine throws an exception, any upper-level exception handler in the call stack hierarchy can read and/or modify the key/value pairs stored in the collection by any other exception handler. This means you must guarantee that the information in the key/value pairs is not confidential and that your application will operate correctly if the information in the key/value pairs is corrupted.  
@@ -554,6 +552,7 @@ Stack Trace:
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.DictionaryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetBaseException">
@@ -664,6 +663,8 @@ Stack Trace:
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -695,10 +696,12 @@ Stack Trace:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Exception.GetType%2A> method exists to support the .NET Framework infrastructure, and internally invokes the fundamental method, <xref:System.Object.GetType%2A?displayProperty=fullName>.  
+ The <xref:System.Exception.GetType%2A> method exists to support the .NET Framework infrastructure, and internally invokes the fundamental method, <xref:System.Object.GetType%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -899,7 +902,7 @@ Stack Trace:
    
   
 ## Examples  
- The following code example throws and then catches an <xref:System.Exception>Exception and displays the exception's text message using the <xref:System.Exception.Message%2A> property.  
+ The following code example throws and then catches an <xref:System.Exception> Exception and displays the exception's text message using the <xref:System.Exception.Message%2A> property.  
   
  [!code-cpp[System.Exception.Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Exception.Properties/CPP/properties.cpp#1)]
  [!code-csharp[System.Exception.Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Exception.Properties/CS/properties.cs#1)]
@@ -952,7 +955,7 @@ Stack Trace:
   
  If the <xref:System.Exception.SerializeObjectState> event is not subscribed to, deserialization occurs as usual using the <xref:System.Exception.%23ctor%2A> constructor.  
   
- Typically, a handler for the <xref:System.Exception.SerializeObjectState> event is added in the exception's constructor to provide for its serialization. But because the constructor is not executed when the <xref:System.Exception.SerializeObjectState> event handler executes, serializing a deserialized exception can throw a <xref:System.Runtime.Serialization.SerializationException> exception when you try to deserialize the exception. To avoid this, you should also add the handler for the <xref:System.Exception.SerializeObjectState> event in the <xref:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization%2A?displayProperty=fullName> method. See the Examples section for an illustration.  
+ Typically, a handler for the <xref:System.Exception.SerializeObjectState> event is added in the exception's constructor to provide for its serialization. But because the constructor is not executed when the <xref:System.Exception.SerializeObjectState> event handler executes, serializing a deserialized exception can throw a <xref:System.Runtime.Serialization.SerializationException> exception when you try to deserialize the exception. To avoid this, you should also add the handler for the <xref:System.Exception.SerializeObjectState> event in the <xref:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization%2A?displayProperty=nameWithType> method. See the Examples section for an illustration.  
   
    
   
@@ -962,7 +965,7 @@ Stack Trace:
  [!code-csharp[System.Exception.SerializeObjectState#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.serializeobjectstate/cs/example2.cs#1)]
  [!code-vb[System.Exception.SerializeObjectState#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.serializeobjectstate/vb/example2.vb#1)]  
   
- The `BadDivisionException` exception is thrown when a floating-point division by zero occurs. During the first division by zero, the example instantiates a `BadDivisionException` object, serializes it, and throws the exception. When subsequent divisions by zero occur, the example deserializes the  previously serialized object, reserializes it, and throws the exception. To provide for object serialization, deserialization, reserialization, and deserialization, the example adds the <xref:System.Exception.SerializeObjectState> event handler both in the `BadDivisionException` class constructor and in the <xref:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization%2A?displayProperty=fullName> implementation.  
+ The `BadDivisionException` exception is thrown when a floating-point division by zero occurs. During the first division by zero, the example instantiates a `BadDivisionException` object, serializes it, and throws the exception. When subsequent divisions by zero occur, the example deserializes the  previously serialized object, reserializes it, and throws the exception. To provide for object serialization, deserialization, reserialization, and deserialization, the example adds the <xref:System.Exception.SerializeObjectState> event handler both in the `BadDivisionException` class constructor and in the <xref:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization%2A?displayProperty=nameWithType> implementation.  
   
  ]]></format>
         </remarks>
@@ -1053,7 +1056,7 @@ Stack Trace:
 ## Remarks  
  The execution stack keeps track of all the methods that are in execution at a given instant. A trace of the method calls is called a stack trace. The stack trace listing provides a way to follow the call stack to the line number in the method where the exception occurs.  
   
- The <xref:System.Exception.StackTrace%2A> property returns the frames of the call stack that originate at the location where the exception was thrown. You can obtain information about additional frames in the call stack by creating a new instance of the <xref:System.Diagnostics.StackTrace?displayProperty=fullName> class and using its <xref:System.Diagnostics.StackTrace.ToString%2A?displayProperty=fullName> method.  
+ The <xref:System.Exception.StackTrace%2A> property returns the frames of the call stack that originate at the location where the exception was thrown. You can obtain information about additional frames in the call stack by creating a new instance of the <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType> class and using its <xref:System.Diagnostics.StackTrace.ToString%2A?displayProperty=nameWithType> method.  
   
  The common language runtime (CLR) updates the stack trace whenever an exception is thrown in application code (by using the `throw` keyword). If the exception was rethrown in a method that is different than the method where it was originally thrown, the stack trace contains both the location in the method where the exception was originally thrown, and the location in the method where the exception was rethrown. If the exception is thrown, and later rethrown, in the same method, the stack trace only contains the location where the exception was rethrown and does not include the location where the exception was originally thrown.  
   
@@ -1075,6 +1078,7 @@ Stack Trace:
   
  By default, the stack trace is captured immediately before an exception object is thrown. Use <see cref="P:System.Environment.StackTrace" /> to get stack trace information when no exception is being thrown.</para>
         </block>
+        <altmember cref="P:System.Environment.StackTrace" />
       </Docs>
     </Member>
     <Member MemberName="TargetSite">
@@ -1163,16 +1167,16 @@ Stack Trace:
 ## Remarks  
  <xref:System.Exception.ToString%2A> returns a representation of the current exception that is intended to be understood by humans. Where the exception contains culture-sensitive data, the string representation returned by `ToString` is required to take into account the current system culture. Although there are no exact requirements for the format of the returned string, it should attempt to reflect the value of the object as perceived by the user.  
   
- The default implementation of <xref:System.Exception.ToString%2A> obtains the name of the class that threw the current exception, the message, the result of calling <xref:System.Exception.ToString%2A> on the inner exception, and the result of calling <xref:System.Environment.StackTrace%2A?displayProperty=fullName>. If any of these members is `null`, its value is not included in the returned string.  
+ The default implementation of <xref:System.Exception.ToString%2A> obtains the name of the class that threw the current exception, the message, the result of calling <xref:System.Exception.ToString%2A> on the inner exception, and the result of calling <xref:System.Environment.StackTrace%2A?displayProperty=nameWithType>. If any of these members is `null`, its value is not included in the returned string.  
   
  If there is no error message or if it is an empty string (""), then no error message is returned. The name of the inner exception and the stack trace are returned only if they are not `null`.  
   
- This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example causes an exception and displays the result of calling <xref:System.Exception.ToString%2A> on that exception. Note that the <xref:System.Exception.ToString%2A?displayProperty=fullName> method is called implicitly when the Exception class instance appears in the argument list of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+ The following example causes an exception and displays the result of calling <xref:System.Exception.ToString%2A> on that exception. Note that the <xref:System.Exception.ToString%2A?displayProperty=nameWithType> method is called implicitly when the Exception class instance appears in the argument list of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method.  
   
  [!code-cpp[System.Exception.ToString#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.exception.tostring/cpp/ToStringEx1.cpp#1)]
  [!code-csharp[System.Exception.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.tostring/cs/ToStringEx1.cs#1)]
@@ -1182,5 +1186,18 @@ Stack Trace:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Exception" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

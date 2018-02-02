@@ -23,6 +23,8 @@
     <block subset="none" type="overrides">
       <para>To create a custom control builder for a <see cref="T:System.Web.UI.WebControls.Label" /> derived control, you need to inherit from this class.</para>
     </block>
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LabelControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -61,10 +64,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.Label> control.  
+ This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=nameWithType> property to ignore white space in the <xref:System.Web.UI.WebControls.Label> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
   </Members>

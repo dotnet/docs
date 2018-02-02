@@ -36,8 +36,8 @@
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -59,12 +59,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of the <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method when the user is not created.  
+ An instance of the <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method when the user is not created.  
   
    
   
 ## Examples  
- The following code example calls the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method to create a new membership user. If the user creation fails, a <xref:System.Web.Security.MembershipCreateUserException> is thrown.  
+ The following code example calls the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method to create a new membership user. If the user creation fails, a <xref:System.Web.Security.MembershipCreateUserException> is thrown.  
   
  [!code-csharp[System.Web.Security.MembershipCreateUserException#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipCreateUserException/CS/createuser3cs.aspx#3)]
  [!code-vb[System.Web.Security.MembershipCreateUserException#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipCreateUserException/VB/createuser3vb.aspx#3)]  
@@ -92,14 +92,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method when the user is not created.  
+ The <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method when the user is not created.  
   
  You can use the `message` parameter to set the <xref:System.Exception.Message%2A> property of the exception to a meaningful description of the reason for the exception.  
   
    
   
 ## Examples  
- The following code example calls the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method to create a new membership user. If the user creation fails, a <xref:System.Web.Security.MembershipCreateUserException> is thrown with a message based on the <xref:System.Web.Security.MembershipCreateUserException.StatusCode%2A> returned by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
+ The following code example calls the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method to create a new membership user. If the user creation fails, a <xref:System.Web.Security.MembershipCreateUserException> is thrown with a message based on the <xref:System.Web.Security.MembershipCreateUserException.StatusCode%2A> returned by the <xref:System.Web.Security.Membership.CreateUser%2A> method.  
   
  [!code-csharp[System.Web.Security.MembershipCreateUserException#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipCreateUserException/CS/createuser2cs.aspx#2)]
  [!code-vb[System.Web.Security.MembershipCreateUserException#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipCreateUserException/VB/createuser2vb.aspx#2)]  
@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method when the user is not created.  
+ The <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method when the user is not created.  
   
  The `statusCode` parameter enables you to indicate why the <xref:System.Web.Security.MembershipCreateUserException> was thrown. The `statusCode` parameter value is exposed by the <xref:System.Web.Security.MembershipCreateUserException.StatusCode%2A> property.  
   
@@ -199,7 +199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An instance of the <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=fullName> method when the user is not created.  
+ An instance of the <xref:System.Web.Security.MembershipCreateUserException> class is thrown by the <xref:System.Web.Security.Membership.CreateUser%2A?displayProperty=nameWithType> method when the user is not created.  
   
  You can use this overload of the <xref:System.Web.Security.MembershipCreateUserException> constructor to supply information regarding a caught exception that occurred while the user was being created.  
   
@@ -243,6 +243,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -271,12 +273,22 @@
 ## Examples  
  The following code example creates a new user for an ASP.NET application configured to use forms authentication and ASP.NET membership. If the user is not created successfully, the code catches the <xref:System.Web.Security.MembershipCreateUserException> and displays the message specified in the <xref:System.Web.Security.MembershipCreateUserException.StatusCode%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Security.Membership#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Membership/CS/createuser1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.Membership#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Membership/VB/createuser1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipCreateUserException" /> class.</summary>
+        <altmember cref="T:System.Web.Security.MembershipCreateUserException" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

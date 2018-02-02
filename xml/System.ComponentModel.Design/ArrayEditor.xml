@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code example demonstrates applying the <xref:System.ComponentModel.EditorAttribute?displayProperty=fullName> to a property.  
+ The following code example demonstrates applying the <xref:System.ComponentModel.EditorAttribute?displayProperty=nameWithType> to a property.  
   
  [!code-cpp[ArrayEditorExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ArrayEditorExample/CPP/class1.cpp#1)]
  [!code-csharp[ArrayEditorExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ArrayEditorExample/CS/class1.cs#1)]
@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

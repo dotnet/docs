@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetFunctionToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFrame::GetFunctionToken method [.NET Framework debugging]"
   - "GetFunctionToken method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrame::GetFunctionToken Method
 Gets the metadata token for the function that contains the code associated with this stack frame.  

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
+    <altmember cref="T:System.Web.UI.ControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableCellControlBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AllowWhitespaceLiterals">
@@ -58,10 +61,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TableCellControlBuilder.AllowWhitespaceLiterals%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to ignore white space in the <xref:System.Web.UI.WebControls.TableCell> control.  
+ The <xref:System.Web.UI.WebControls.TableCellControlBuilder.AllowWhitespaceLiterals%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=nameWithType> method to ignore white space in the <xref:System.Web.UI.WebControls.TableCell> control.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RootReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RootReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::RootReferences method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::RootReferences Method
 Notifies the profiler with information about root references after garbage collection.  

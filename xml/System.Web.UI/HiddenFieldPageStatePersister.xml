@@ -27,8 +27,8 @@
 ## Examples  
  The following code example demonstrates how to bind a <xref:System.Web.UI.WebControls.ListBox> control to data in a database with a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  
   
  When the example page is viewed, any view state is stored by the <xref:System.Web.UI.HiddenFieldPageStatePersister> class in a `<hidden>` HTML element named "__VIEWSTATE".  
   
@@ -58,6 +58,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.SessionPageStatePersister" />
+    <altmember cref="M:System.Web.UI.Page.LoadPageStateFromPersistenceMedium" />
+    <altmember cref="M:System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)" />
+    <altmember cref="P:System.Web.UI.Page.MaxPageStateFieldLength" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -102,6 +106,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.HiddenFieldPageStatePersister.Load" /> method could not successfully deserialize the state information contained in the request to the Web server.</exception>
+        <altmember cref="M:System.Web.UI.HiddenFieldPageStatePersister.Save" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -127,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HiddenFieldPageStatePersister.Load" />
       </Docs>
     </Member>
   </Members>

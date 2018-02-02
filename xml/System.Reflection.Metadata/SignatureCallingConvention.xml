@@ -12,8 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies how arguments in a given signature are passed from the caller to the callee. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CDecl">
@@ -31,7 +32,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unmanaged C/C++ style calling convention where the call stack is cleaned by the caller.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -49,7 +50,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A managed calling convention with a fixed-length argument list.</summary>
       </Docs>
     </Member>
     <Member MemberName="FastCall">
@@ -67,7 +68,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unmanaged calling convention where arguments are passed in registers when possible.</summary>
       </Docs>
     </Member>
     <Member MemberName="StdCall">
@@ -85,7 +86,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unmanaged calling convention where the call stack is cleaned up by the callee.</summary>
       </Docs>
     </Member>
     <Member MemberName="ThisCall">
@@ -103,7 +104,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unmanaged C++ style calling convention for calling instance member functions with a fixed argument list.</summary>
       </Docs>
     </Member>
     <Member MemberName="VarArgs">
@@ -121,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.SignatureCallingConvention</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A managed calling convention for passing extra arguments.</summary>
       </Docs>
     </Member>
   </Members>

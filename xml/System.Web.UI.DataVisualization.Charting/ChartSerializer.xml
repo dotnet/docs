@@ -484,7 +484,7 @@
   
  When you use this definition, the format must be XML; the format can be set with the <xref:System.Web.UI.DataVisualization.Charting.ChartSerializer.Format%2A> property.  
   
- If the <xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control is used to persist state, this method can be used to save the serialized data to an object derived from <xref:System.IO.TextWriter>, which is then used to write the data to the <xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A>property.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control is used to persist state, this method can be used to save the serialized data to an object derived from <xref:System.IO.TextWriter>, which is then used to write the data to the <xref:System.Web.UI.DataVisualization.Charting.Chart.ViewStateData%2A> property.  
   
  ]]></format>
         </remarks>
@@ -602,5 +602,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads serialized data into the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves chart properties that have non-default values. All chart properties can be serialized; this includes data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -13,6 +13,9 @@
   <Docs>
     <summary>Specifies the event args provided to the <see cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="Overload:System.IO.Packaging.PackageDigitalSignature.Verify" />
+    <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+    <altmember cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" />
   </Docs>
   <Members>
     <Member MemberName="Signature">
@@ -31,6 +34,10 @@
         <summary>Gets the digital signature being verified.</summary>
         <value>The digital signature being verified.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.IO.Packaging.PackageDigitalSignature.Verify" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+        <altmember cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" />
+        <altmember cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="VerifyResult">
@@ -49,6 +56,10 @@
         <summary>Gets the signature verification error.</summary>
         <value>The signature verification error.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.IO.Packaging.PackageDigitalSignature.Verify" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
+        <altmember cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" />
+        <altmember cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />
       </Docs>
     </Member>
   </Members>

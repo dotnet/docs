@@ -35,6 +35,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceControl" />
+    <altmember cref="T:System.Web.UI.WebControls.HiddenField" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor.  
+ A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor.  
   
    
   
@@ -65,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.NonVisualControlAttribute.NonVisual" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.NonVisualControlAttribute.Visual" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -146,6 +152,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -165,6 +172,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -224,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field is equivalent to creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor and passing `true` as the parameter value.  
+ The <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field is equivalent to creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor and passing `true` as the parameter value.  
   
  ]]></format>
         </remarks>
@@ -248,11 +256,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.NonVisualControlAttribute.Visual> field is equivalent to creating an instance of the attribute using the default <xref:System.Web.UI.NonVisualControlAttribute.%23ctor?displayProperty=fullName> constructor, or creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor and passing `false` as the parameter value.  
+ The <xref:System.Web.UI.NonVisualControlAttribute.Visual> field is equivalent to creating an instance of the attribute using the default <xref:System.Web.UI.NonVisualControlAttribute.%23ctor?displayProperty=nameWithType> constructor, or creating an instance of the attribute using the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor and passing `false` as the parameter value.  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Web.UI.NonVisualControlAttribute.Default" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.NonVisualControlAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

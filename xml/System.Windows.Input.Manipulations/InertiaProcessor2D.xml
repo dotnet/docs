@@ -70,7 +70,7 @@
    
   
 ## Examples  
- In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=fullName> event checks to see if inertia processing is running and if so, stops it by calling the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Complete%2A> method.  
+ In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=nameWithType> event checks to see if inertia processing is running and if so, stops it by calling the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Complete%2A> method.  
   
  [!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
   
@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta?displayProperty=fullName> event and the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=fullName> event are the same type. Typically, you can use the same event handler for both events.  
+ The <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta?displayProperty=nameWithType> event and the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=nameWithType> event are the same type. Typically, you can use the same event handler for both events.  
   
    
   
@@ -218,7 +218,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=fullName> event checks to see if inertia processing is running and, if so, stops it by calling the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed> method.  
+ In the following example, an event handler for the <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Started?displayProperty=nameWithType> event checks to see if inertia processing is running and, if so, stops it by calling the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Completed> method.  
   
  [!code-csharp[ManipulationAPI#_ManipulationItem_OnManipulationStarted](~/samples/snippets/csharp/VS_Snippets_Misc/manipulationapi/cs/manipulationitem.xaml.cs#_manipulationitem_onmanipulationstarted)]  
   

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.PixelShader" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -65,6 +67,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -110,10 +114,11 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -213,6 +218,7 @@
       <Docs>
         <summary>Occurs when the render thread cannot process the pixel shader.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="SetStreamSource">
@@ -236,6 +242,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="ShaderRenderMode">
@@ -267,6 +274,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
+        <altmember cref="T:System.Windows.Media.Effects.ShaderRenderMode" />
       </Docs>
     </Member>
     <Member MemberName="ShaderRenderModeProperty">
@@ -284,6 +293,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.PixelShader.ShaderRenderMode" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="UriSource">
@@ -318,6 +328,7 @@ pack://application:,,,/myEffects;component/sepiaShader.fx.ps
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
     <Member MemberName="UriSourceProperty">
@@ -335,6 +346,7 @@ pack://application:,,,/myEffects;component/sepiaShader.fx.ps
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Effects.PixelShader.UriSource" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Effects.ShaderEffect" />
       </Docs>
     </Member>
   </Members>

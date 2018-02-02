@@ -58,6 +58,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.User" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.Right" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +95,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.User" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.Right" />
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -145,6 +153,7 @@
         <summary>Gets the starting date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> begins.</summary>
         <value>The start date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> begins, or <see cref="T:System.DateTime" />.<see cref="F:System.DateTime.MinValue" /> if there is there is no starting limitation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
       </Docs>
     </Member>
     <Member MemberName="ValidUntil">
@@ -163,7 +172,21 @@
         <summary>Gets the ending date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> expires.</summary>
         <value>The end date and time that the granted <see cref="P:System.Security.RightsManagement.ContentGrant.Right" /> expires, or <see cref="T:System.DateTime" />.<see cref="F:System.DateTime.MaxValue" /> if there is no ending limitation.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.ContentGrant" /> class.</summary>
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidFrom" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.ValidUntil" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.User" />
+        <altmember cref="P:System.Security.RightsManagement.ContentGrant.Right" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

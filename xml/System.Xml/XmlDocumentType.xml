@@ -25,10 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=fullName> method to create an <xref:System.Xml.XmlDocumentType> object.  
+ The <xref:System.Xml.XmlDocumentType> class can be used to return information about a document type declaration. Use the <xref:System.Xml.XmlDocument.CreateDocumentType%2A?displayProperty=nameWithType> method to create an <xref:System.Xml.XmlDocumentType> object.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Xml.XmlDocument.CreateDocumentType(System.String,System.String,System.String,System.String)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,7 +109,7 @@
 ## Remarks  
  This method serves as a copy constructor for nodes. The cloned node has no parent (<xref:System.Xml.XmlNode.ParentNode%2A> returns `null`).  
   
- To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=fullName>.  
+ To see how this method behaves with other node types, see <xref:System.Xml.XmlNode.CloneNode%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -339,6 +340,7 @@
         <summary>Gets the type of the current node.</summary>
         <value>For DocumentType nodes, this value is XmlNodeType.DocumentType.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="Notations">
@@ -386,6 +388,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNotation" />
+        <altmember cref="T:System.Xml.XmlNamedNodeMap" />
       </Docs>
     </Member>
     <Member MemberName="PublicId">

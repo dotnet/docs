@@ -19,6 +19,8 @@ caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Image
 The <xref:System.Windows.Controls.Image> element is used to display bitmap images in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
@@ -34,5 +36,5 @@ The <xref:System.Windows.Controls.Image> element is used to display bitmap image
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See Also  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)   
+ [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)

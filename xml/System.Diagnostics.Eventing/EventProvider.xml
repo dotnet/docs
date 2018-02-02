@@ -302,7 +302,7 @@
     </Member>
     <Member MemberName="SetActivityId">
       <MemberSignature Language="C#" Value="public static void SetActivityId (ref Guid id);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetActivityId(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetActivityId(valuetype System.Guid&amp; id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -355,8 +355,8 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteEvent">
-      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload) cil managed" />
+      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, params object[] eventPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor&amp; eventDescriptor, object[] eventPayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -389,7 +389,7 @@
 ## Remarks  
  If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
   
- If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=fullName> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
+ If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=nameWithType> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
   
    
   
@@ -441,7 +441,7 @@ enum Level
     </Member>
     <Member MemberName="WriteEvent">
       <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, string data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, string data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor&amp; eventDescriptor, string data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -504,7 +504,7 @@ provider.Close();
     </Member>
     <Member MemberName="WriteEvent">
       <MemberSignature Language="C#" Value="protected bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, int dataCount, IntPtr data);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, int32 dataCount, native int data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor&amp; eventDescriptor, int32 dataCount, native int data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -652,8 +652,8 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
       </Docs>
     </Member>
     <Member MemberName="WriteTransferEvent">
-      <MemberSignature Language="C#" Value="public bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, object[] eventPayload);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, valuetype System.Guid relatedActivityId, object[] eventPayload) cil managed" />
+      <MemberSignature Language="C#" Value="public bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, params object[] eventPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor&amp; eventDescriptor, valuetype System.Guid relatedActivityId, object[] eventPayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Object[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -700,7 +700,7 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
     </Member>
     <Member MemberName="WriteTransferEvent">
       <MemberSignature Language="C#" Value="protected bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, int dataCount, IntPtr data);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, valuetype System.Guid relatedActivityId, int32 dataCount, native int data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor&amp; eventDescriptor, valuetype System.Guid relatedActivityId, int32 dataCount, native int data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Int32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -738,5 +738,23 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteTransferEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Links events together when tracing events in an end-to-end scenario.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsEnabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a session enabled the provider.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

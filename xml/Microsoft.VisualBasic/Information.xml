@@ -81,6 +81,8 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ErrObject" />
+        <altmember cref="M:Microsoft.VisualBasic.Conversion.ErrorToString" />
       </Docs>
     </Member>
     <Member MemberName="Err">
@@ -158,6 +160,14 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsDate">
@@ -198,6 +208,15 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsDBNull">
@@ -225,7 +244,7 @@ testVbName = VbTypeName(sysBadName)
 ## Remarks  
  `IsDBNull` returns `True` if the data type of `Expression` evaluates to the <xref:System.DBNull> type; otherwise, `IsDBNull` returns `False`.  
   
- The <xref:System.DBNull?displayProperty=fullName> value indicates that the `Object` represents missing or nonexistent data. `DBNull` is not the same as `Nothing`, which indicates that a variable has not yet been initialized. `DBNull` is also not the same as a zero-length string (`""`), which is sometimes referred to as a null string.  
+ The <xref:System.DBNull?displayProperty=nameWithType> value indicates that the `Object` represents missing or nonexistent data. `DBNull` is not the same as `Nothing`, which indicates that a variable has not yet been initialized. `DBNull` is also not the same as a zero-length string (`""`), which is sometimes referred to as a null string.  
   
    
   
@@ -236,6 +255,15 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.DBNull" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsError">
@@ -263,7 +291,7 @@ testVbName = VbTypeName(sysBadName)
 ## Remarks  
  `IsError` returns `True` if the expression represents an `Object` variable that derives from the <xref:System.Exception> class in the <xref:System> namespace.  
   
- An exception that derives from <xref:System.Exception?displayProperty=fullName> can be caught with the `Try...Catch...Finally` statements.  
+ An exception that derives from <xref:System.Exception?displayProperty=nameWithType> can be caught with the `Try...Catch...Finally` statements.  
   
    
   
@@ -274,6 +302,14 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsNothing">
@@ -312,6 +348,14 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsNumeric">
@@ -350,6 +394,14 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsReference">
@@ -390,6 +442,14 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="T:System.Object" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="LBound">
@@ -445,6 +505,9 @@ Dim a(100, 5, 4) As Byte
           <paramref name="Array" /> is <see langword="Nothing" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="Rank" /> less than 1, or <paramref name="Rank" /> is greater than the rank of <paramref name="Array" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.UBound(System.Array,System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.RankException" />
       </Docs>
     </Member>
     <Member MemberName="QBColor">
@@ -496,6 +559,8 @@ Dim a(100, 5, 4) As Byte
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Color" /> is outside of range 0 to 15, inclusive.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.RGB(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="RGB">
@@ -553,6 +618,8 @@ Dim a(100, 5, 4) As Byte
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Green" />, <paramref name="Blue" />, or <paramref name="Red" /> is outside of range 0 to 255, inclusive.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.QBColor(System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="SystemTypeName">
@@ -589,6 +656,8 @@ Dim a(100, 5, 4) As Byte
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.VbTypeName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -640,7 +709,7 @@ Dim a(100, 5, 4) As Byte
   
  If `VarName` is an array, the returned string can be any one of the strings in the preceding table with empty parentheses appended. For example, if `VarName` points to an array of integers, `TypeName` returns "Integer()".  
   
- When `TypeName` returns the name of a reference type such as a class, it returns only the name itself, not the qualified name. For example, if `VarName` points to an object of class <xref:System.Drawing.Printing.PaperSource?displayProperty=fullName>, `TypeName` returns "PaperSource". Note that if the variable is declared to be of a certain class type but does not have an object assigned to it, `TypeName` returns "Nothing".  
+ When `TypeName` returns the name of a reference type such as a class, it returns only the name itself, not the qualified name. For example, if `VarName` points to an object of class <xref:System.Drawing.Printing.PaperSource?displayProperty=nameWithType>, `TypeName` returns "PaperSource". Note that if the variable is declared to be of a certain class type but does not have an object assigned to it, `TypeName` returns "Nothing".  
   
    
   
@@ -651,6 +720,13 @@ Dim a(100, 5, 4) As Byte
   
  ]]></format>
         </remarks>
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsArray(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDate(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsDBNull(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsError(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="UBound">
@@ -715,6 +791,9 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
           <paramref name="Array" /> is <see langword="Nothing" />.</exception>
         <exception cref="T:System.RankException">
           <paramref name="Rank" /> is less than 1, or <paramref name="Rank" /> is greater than the rank of <paramref name="Array" />.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Information.LBound(System.Array,System.Int32)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.RankException" />
       </Docs>
     </Member>
     <Member MemberName="VarType">
@@ -751,7 +830,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
 |Enumeration|Underlying data type (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, or `ULong`)|  
 |Array|Bitwise OR of array element type and `VariantType.Array`|  
 |Array of arrays|Bitwise OR of `VariantType.Object` and `VariantType.Array`|  
-|Structure (<xref:System.ValueType?displayProperty=fullName>)|`VariantType.UserDefinedType`|  
+|Structure (<xref:System.ValueType?displayProperty=nameWithType>)|`VariantType.UserDefinedType`|  
 |<xref:System.Exception>|`VariantType.Error`|  
 |Unknown|`VariantType.Object`|  
   
@@ -764,6 +843,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:Microsoft.VisualBasic.VariantType" />
       </Docs>
     </Member>
     <Member MemberName="VbTypeName">
@@ -802,6 +883,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.String" />
+        <altmember cref="M:Microsoft.VisualBasic.Information.SystemTypeName(System.String)" />
       </Docs>
     </Member>
   </Members>

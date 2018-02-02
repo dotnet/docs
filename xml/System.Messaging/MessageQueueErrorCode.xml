@@ -31,6 +31,10 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Messaging.MessageQueueException" />
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.MessageEnumerator" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName="AccessDenied">
@@ -51,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=fullName> topics.  
+ Message Queuing returns this error if access to the specified queue or computer is denied. If this error is returned, verify that you have access rights for the operation, such as creating, deleting, or setting properties for a queue. For information about changing access rights for a queue, see the <xref:System.Messaging.MessageQueueAccessRights> and <xref:System.Messaging.MessageQueue.SetPermissions%2A?displayProperty=nameWithType> topics.  
   
  ]]></format>
         </remarks>
@@ -337,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=fullName> topics.  
+ For information about cryptographic providers, see the <xref:System.Messaging.CryptographicProviderType> and <xref:System.Messaging.Message.AuthenticationProviderType%2A?displayProperty=nameWithType> topics.  
   
  ]]></format>
         </remarks>
@@ -412,7 +416,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=fullName> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=fullName> topics.  
+ Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see the <xref:System.Messaging.MessageQueue.EncryptionRequired%2A?displayProperty=nameWithType> and <xref:System.Messaging.Message.EncryptionAlgorithm%2A?displayProperty=nameWithType> topics.  
   
  ]]></format>
         </remarks>
@@ -1329,7 +1333,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
+ Message Queuing returns this error if the time-out specified in a call to <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=nameWithType> or <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=nameWithType> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.  
   
  ]]></format>
         </remarks>
@@ -1413,7 +1417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=fullName> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=fullName>.  
+ Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <xref:System.Messaging.MessageEnumerator> class, such as the instance returned through a call to <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A?displayProperty=nameWithType> or <xref:System.Messaging.MessageQueue.GetEnumerator%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

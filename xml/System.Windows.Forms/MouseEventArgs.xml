@@ -49,6 +49,15 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+    <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+    <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseDown" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseUp" />
+    <altmember cref="E:System.Windows.Forms.NotifyIcon.MouseMove" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +84,8 @@
         <param name="delta">A signed count of the number of detents the wheel has rotated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MouseEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
       </Docs>
     </Member>
     <Member MemberName="Button">
@@ -103,6 +114,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.MouseButtons" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Clicks" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
     <Member MemberName="Clicks">
@@ -129,15 +144,17 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#54](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#54)]
  [!code-vb[System.Windows.Forms.EventExamples#54](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#54)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Delta" />
       </Docs>
     </Member>
     <Member MemberName="Delta">
@@ -166,15 +183,17 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event. This report helps you learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.MouseClick?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#54](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#54)]
  [!code-vb[System.Windows.Forms.EventExamples#54](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#54)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Clicks" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -203,6 +222,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Y" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.X" />
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -224,7 +246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The mouse coordinates vary based on the event being raised. For example, when the <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is handled, the mouse coordinate values are relative to the coordinates of the control that raised the event. Some events related to drag-and-drop operations have associated mouse-coordinate values that are relative to the form origin or the screen origin.  
+ The mouse coordinates vary based on the event being raised. For example, when the <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event is handled, the mouse coordinate values are relative to the coordinates of the control that raised the event. Some events related to drag-and-drop operations have associated mouse-coordinate values that are relative to the form origin or the screen origin.  
   
    
   
@@ -236,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Y" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -257,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The mouse coordinates vary based on the event being raised. For example, when the <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event is handled, the mouse coordinate values are relative to the coordinates of the control that raised the event. Some events related to drag-and-drop operations have associated mouse coordinate values that are relative to the form origin or the screen origin.  
+ The mouse coordinates vary based on the event being raised. For example, when the <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event is handled, the mouse coordinate values are relative to the coordinates of the control that raised the event. Some events related to drag-and-drop operations have associated mouse coordinate values that are relative to the form origin or the screen origin.  
   
    
   
@@ -269,6 +294,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Button" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.X" />
+        <altmember cref="P:System.Windows.Forms.MouseEventArgs.Location" />
       </Docs>
     </Member>
   </Members>

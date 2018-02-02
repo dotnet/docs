@@ -34,6 +34,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
+    <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+    <altmember cref="T:System.Web.Compilation.BuildProvider" />
   </Docs>
   <Members>
     <Member MemberName="CodeDomProviderType">
@@ -61,6 +64,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
+        <altmember cref="T:System.Web.Compilation.BuildProvider" />
       </Docs>
     </Member>
     <Member MemberName="CompilerParameters">
@@ -86,6 +91,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -112,12 +118,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.CompilerType.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.Compilation.CompilerType.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method.  
   
- <xref:System.Web.Compilation.CompilerType.Equals%2A> compares two instances based on their <xref:System.Web.Compilation.CompilerType.CodeDomProviderType%2A>, <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=fullName>, <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=fullName>, and <xref:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation%2A?displayProperty=fullName> properties.  
+ <xref:System.Web.Compilation.CompilerType.Equals%2A> compares two instances based on their <xref:System.Web.Compilation.CompilerType.CodeDomProviderType%2A>, <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A?displayProperty=nameWithType>, <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A?displayProperty=nameWithType>, and <xref:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
+        <altmember cref="T:System.CodeDom.Compiler.CompilerParameters" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -140,12 +148,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+ The <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method.  
   
  <xref:System.Web.Compilation.CompilerType.GetHashCode%2A> generates the same hash code for two objects that are equal according to the <xref:System.Web.Compilation.CompilerType.Equals%2A> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Web.Compilation.CompilerType.Equals(System.Object)" />
       </Docs>
     </Member>
   </Members>

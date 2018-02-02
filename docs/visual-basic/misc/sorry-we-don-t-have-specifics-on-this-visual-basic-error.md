@@ -1,6 +1,6 @@
 ---
 title: "Sorry, we don&#39;t have specifics on this Visual Basic error"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-visual-basic"
@@ -3048,28 +3048,10 @@ f1_keywords:
   - "bc31432"
   - "bc30233"
   - "bc30829"
-dev_langs: 
-  - "VB"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Sorry, we don&#39;t have specifics on this Visual Basic error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
@@ -3093,5 +3075,5 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  
   
 ## See Also  
- [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)   
+ [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)  
  [Visual Basic Reference](../../visual-basic/reference/index.md)

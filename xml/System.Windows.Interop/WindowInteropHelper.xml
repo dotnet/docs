@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Window" />
+    <altmember cref="T:System.Windows.Interop.HwndSource" />
+    <altmember cref="M:System.Windows.Interop.HwndSource.AddHook(System.Windows.Interop.HwndSourceHook)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -120,6 +123,7 @@
         <value>The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] window handle (HWND).</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to obtain a window handle. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Window" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -154,6 +158,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">to get or set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Window" />
       </Docs>
     </Member>
   </Members>

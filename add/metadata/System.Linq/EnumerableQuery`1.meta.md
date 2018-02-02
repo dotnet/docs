@@ -3,7 +3,7 @@ uid: System.Linq.EnumerableQuery`1
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -29,7 +29,7 @@ uid: System.Linq.EnumerableQuery`1.System#Collections#Generic#IEnumerable{T}#Get
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -53,7 +53,7 @@ uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery``1(Sys
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -67,7 +67,7 @@ manager: "wpickett"
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#CreateQuery
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -108,7 +108,7 @@ manager: "wpickett"
 uid: System.Linq.EnumerableQuery`1.System#Linq#IQueryProvider#Execute
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

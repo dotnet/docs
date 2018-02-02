@@ -74,7 +74,7 @@ fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground"));
 SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgText", fgOrbgChoice);  
 ```  
   
- For more information about using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c) and [Using a SemanticResultKey to Extract a SemanticResultValue](http://msdn.microsoft.com/en-us/198e29b8-845f-4cec-a25e-f55c0eaf46aa) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043).  
+ For more information about using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/library/0fea1236-5261-4608-89b3-9ce9ffc22a1c) and [Using a SemanticResultKey to Extract a SemanticResultValue](http://msdn.microsoft.com/library/198e29b8-845f-4cec-a25e-f55c0eaf46aa) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043).  
   
    
   

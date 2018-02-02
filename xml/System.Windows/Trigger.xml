@@ -37,7 +37,7 @@
   
  Note that you must specify both the <xref:System.Windows.Trigger.Property%2A> and <xref:System.Windows.Trigger.Value%2A> properties on a <xref:System.Windows.Trigger> for the trigger to be meaningful. If one or both of the properties are not set, an exception is thrown.  
   
- The <xref:System.Windows.Trigger.Setters%2A> property of a <xref:System.Windows.Trigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.Trigger.Setters%2A> property of a <xref:System.Windows.Trigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
  There are other types of triggers. <xref:System.Windows.MultiTrigger> allows you to apply changes based on the state of multiple properties. <xref:System.Windows.EventTrigger> allows you to apply changes when an event occurs. <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> are for data-bound properties.  
   
@@ -111,6 +111,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">A <see cref="T:System.Windows.Style" /> cannot contain a <see cref="T:System.Windows.Trigger" /> that refers to the <see cref="T:System.Windows.Style" /> property.</exception>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Trigger" /> is in use, it cannot be modified.</exception>
+        <altmember cref="P:System.Windows.Trigger.Value" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTypeConverter">
@@ -141,6 +142,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
+        <altmember cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Setters">
@@ -188,7 +191,7 @@
   
  If the same property is set more than once, the last property value will be applied.  
   
- The <xref:System.Windows.Trigger.Setters%2A> property of a <xref:System.Windows.Trigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects.  
+ The <xref:System.Windows.Trigger.Setters%2A> property of a <xref:System.Windows.Trigger> object can only consist of <xref:System.Windows.Setter> objects. Adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. <xref:System.Windows.EventSetter> objects are not supported; only <xref:System.Windows.Style.Setters%2A?displayProperty=nameWithType> supports <xref:System.Windows.EventSetter> objects.  
   
    
   
@@ -409,6 +412,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Expressions such as bindings are not supported.</exception>
         <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Trigger" /> is in use, it cannot be modified.</exception>
+        <altmember cref="P:System.Windows.Trigger.Property" />
+        <altmember cref="P:System.Windows.Trigger.Setters" />
       </Docs>
     </Member>
   </Members>

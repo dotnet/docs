@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=fullName> event and the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta?displayProperty=fullName> event are the same type. Typically, you can use the same event handler for both events.  
+ The <xref:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta?displayProperty=nameWithType> event and the <xref:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta?displayProperty=nameWithType> event are the same type. Typically, you can use the same event handler for both events.  
   
    
   
@@ -305,5 +305,14 @@
  enumeration values.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Input.Manipulations.ManipulationProcessor2D" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

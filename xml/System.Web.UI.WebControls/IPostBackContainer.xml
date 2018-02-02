@@ -21,6 +21,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.PostBackOptions" />
+    <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions)" />
+    <altmember cref="T:System.Web.UI.IPostBackEventHandler" />
   </Docs>
   <Members>
     <Member MemberName="GetPostBackOptions">
@@ -50,6 +53,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackEventReference(System.Web.UI.PostBackOptions)" />
       </Docs>
     </Member>
   </Members>

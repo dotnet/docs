@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::GetFieldValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectValue::GetFieldValue method [.NET Framework debugging]"
   - "GetFieldValue method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectValue::GetFieldValue Method
 Gets the value of the specified field of the specified class for this object value.  

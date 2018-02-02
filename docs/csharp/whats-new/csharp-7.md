@@ -6,7 +6,7 @@ author: BillWagner
 ms.author: wiwagn
 ms.date: 12/21/2016
 ms.topic: article
-ms.prod: visual-studio-dev-15
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
@@ -15,12 +15,12 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7
 
 C# 7 adds a number of new features to the C# language:
-* [`out` variables](#out-variables):
+* [`out` variables](#out-variables)
     - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
     - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
 * [Discards](#discards)
-    Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They are particularly useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
+    - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They are particularly useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
@@ -85,7 +85,7 @@ return result;
 ## Tuples
 
 > [!NOTE]
-> The new tuples features require the @System.ValueTuple types.
+> The new tuples features require the <xref:System.ValueTuple> types.
 > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
 > on platforms that do not include the types.
 >
@@ -121,7 +121,7 @@ You can create a tuple by assigning each member to a value:
 [!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
-which you can use in the same way as @System.Tuple
+which you can use in the same way as <xref:System.Tuple>
 You can change the syntax to create a tuple that provides semantic
 names to each of the members of the tuple:
 
@@ -208,9 +208,9 @@ Discards are supported in the following scenarios:
 
 * When deconstructing tuples or user-defined types.
 
-* When calling methods with [out](..\language-reference\keywords\out.md) parameters.
+* When calling methods with [out](../language-reference/keywords/out.md) parameters.
 
-* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](language-reference\keywords\switch.md) statements.
+* In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 
 * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
@@ -248,7 +248,7 @@ of a number of die rolls:
 [!code-csharp[SumDieRolls](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#14_SumDieRolls "Sum die rolls")]
 
 You might quickly find that you need to find the sum of die rolls where
-some of the rolls are made with more than one die. Part of the input
+some of the rolls are made with multiple dice (dice is the plural of die). Part of the input
 sequence may be multiple results instead of a single number:
 
 [!code-csharp[SumDieRollsWithGroups](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#15_SumDieRollsWithGroups "Sum die rolls with groups")]
@@ -304,9 +304,9 @@ use percentile dice to represent larger ranges of numbers.
 > together and you can get every number from 0 through 99.
 
 To add this kind of die to your collection, first define a type to represent
-the percentile die:
+the percentile dice. The `TensDigit` property stores values `0`, `10`, `20`, up to `90`:
 
-[!code-csharp[18_PercentileDie](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#18_PercentileDie "Percentile Die type")]
+[!code-csharp[18_PercentileDice](../../../samples/snippets/csharp/new-in-7/patternmatch.cs#18_PercentileDice "Percentile Die type")]
 
 Then, add a `case` match expression for the new type:
 
@@ -498,7 +498,7 @@ and *indexers*. The following code shows examples of each:
 > to demonstrate the syntax. You should not implement a
 > finalizer in your class unless it is necessary to  release
 > unmanaged resources. You should also consider using the
-> @System.Runtime.InteropServices.SafeHandle class instead
+> <xref:System.Runtime.InteropServices.SafeHandle> class instead
 > of managing unmanaged resources directly.
 
 These new locations for expression-bodied members represent

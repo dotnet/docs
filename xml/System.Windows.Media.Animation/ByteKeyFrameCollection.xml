@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.ByteKeyFrame" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,10 +120,11 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.Clone" />
       </Docs>
     </Member>
     <Member MemberName="CloneCore">
@@ -149,10 +151,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CloneCurrentValueCore">
@@ -179,10 +182,11 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -211,10 +215,11 @@
 ## Remarks  
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.ByteKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.ByteKeyFrameCollection.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -275,6 +280,7 @@
         <summary>Creates a new, frozen instance of <see cref="T:System.Windows.Media.Animation.ByteKeyFrameCollection" />.</summary>
         <returns>A frozen instance of <see cref="T:System.Windows.Media.Animation.ByteKeyFrameCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -344,10 +350,11 @@
   
  This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
   
- For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValue" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentValueAsFrozenCore">
@@ -374,7 +381,7 @@
 ## Remarks  
  This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
   
- For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+ For more information see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -443,10 +450,11 @@
   
  This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Windows.Media.Animation.ByteKeyFrameCollection.Count%2A>. That is, this method is an O(*n*) operation, where *n* is <xref:System.Windows.Media.Animation.ByteKeyFrameCollection.Count%2A>.  
   
- This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+ This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
     <Member MemberName="Insert">

@@ -1,57 +1,37 @@
 ---
 title: "For...Next Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Step"
   - "vb.Next"
   - "vb.To"
   - "vb.for"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "infinite loops"
-  - "Next keyword, For...Next statements"
+  - "Next keyword [Visual Basic], For...Next statements"
   - "For keyword [Visual Basic], For...Next statements"
-  - "Step keyword, For...Next statements"
+  - "Step keyword [Visual Basic], For...Next statements"
   - "operator overloading, For...Next statement"
-  - "To keyword, For...Next statements"
+  - "To keyword [Visual Basic], For...Next statements"
   - "endless loops"
   - "loops, endless"
   - "instructions, repeating"
-  - "Next statement, For...Next"
+  - "Next statement [Visual Basic], For...Next"
   - "For...Next statements"
-  - "loop structures, For...Next"
+  - "loop structures [Visual Basic], For...Next"
   - "loops, infinite"
-  - "Exit statement, For...Next statements"
-  - "For statement"
+  - "Exit statement [Visual Basic], For...Next statements"
+  - "For statement [Visual Basic]"
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # For...Next Statement (Visual Basic)
 Repeats a group of statements a specified number of times.  
@@ -196,10 +176,10 @@ Next [ counter ]
  [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
   
 ## See Also  
- <xref:System.Collections.Generic.List%601>   
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)   
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)
+ <xref:System.Collections.Generic.List%601>  
+ [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
+ [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
+ [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
+ [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
+ [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
+ [Collections](../../programming-guide/concepts/collections.md)

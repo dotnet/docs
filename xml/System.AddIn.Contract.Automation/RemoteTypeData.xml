@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The assembly-qualified name of a type includes the name of the assembly from which the type was loaded. For more information about the format of an assembly-qualified name, see the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> property.  
+ The assembly-qualified name of a type includes the name of the assembly from which the type was loaded. For more information about the format of an assembly-qualified name, see the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
         </remarks>
@@ -259,7 +259,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the remote type is an <xref:System.AddIn.Contract.IContract>, the value of this field is <xref:System.TypeCode?displayProperty=fullName>.  
+ If the remote type is an <xref:System.AddIn.Contract.IContract>, the value of this field is <xref:System.TypeCode.Object?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>

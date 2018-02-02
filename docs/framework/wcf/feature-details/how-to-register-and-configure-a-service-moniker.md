@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "COM [WCF], configure service monikers"
   - "COM [WCF], register service monikers"
 ms.assetid: e5e16c80-8a8e-4eef-af53-564933b651ef
 caps.latest.revision: 20
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Register and Configure a Service Moniker
 Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service moniker within a COM application with a typed contract, you must register the required attributed types with COM, and configure the COM application and the moniker with the required binding configuration.  
@@ -34,7 +33,7 @@ Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service
     [assembly: ComVisible(true)]  
     ```  
   
-3.  Compile the managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client as a strong-named assembly. This requires signing with a cryptographic key pair. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Signing an Assembly with a Strong Name](http://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
+3.  Compile the managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client as a strong-named assembly. This requires signing with a cryptographic key pair. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Signing an Assembly with a Strong Name](http://go.microsoft.com/fwlink/?LinkId=94874) in the .NET Developer's Guide.  
   
 4.  Use the Assembly Registration (Regasm.exe) tool with the `/tlb` option to register the types in the assembly with COM.  
   

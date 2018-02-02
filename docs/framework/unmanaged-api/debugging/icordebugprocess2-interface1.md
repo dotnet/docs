@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess2 interface [.NET Framework debugging]"
 ms.assetid: 73332138-5fea-441f-b893-61af87d45a42
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcess2 Interface1
 A logical extension of the ICorDebugProcess interface, which represents a process running managed code.  

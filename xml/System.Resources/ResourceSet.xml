@@ -41,7 +41,7 @@
 ## Remarks  
  The <xref:System.Resources.ResourceSet> class enumerates over an <xref:System.Resources.IResourceReader>, loading every name and value, and storing them in a <xref:System.Collections.Hashtable>. A custom <xref:System.Resources.IResourceReader> can be used.  
   
- You can instantiate a <xref:System.Resources.ResourceSet> object that represents the resources of a specific culture by calling the <xref:System.Resources.ResourceManager.GetResourceSet%2A?displayProperty=fullName> method.  
+ You can instantiate a <xref:System.Resources.ResourceSet> object that represents the resources of a specific culture by calling the <xref:System.Resources.ResourceManager.GetResourceSet%2A?displayProperty=nameWithType> method.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
@@ -266,7 +266,7 @@
  Call <xref:System.Resources.ResourceSet.Dispose%2A> when you are finished using the <xref:System.Resources.ResourceSet>. The <xref:System.Resources.ResourceSet.Dispose%2A> method leaves the <xref:System.Resources.ResourceSet> in an unusable state. After calling <xref:System.Resources.ResourceSet.Dispose%2A>, you must release all references to the <xref:System.Resources.ResourceSet> so the memory it was occupying can be reclaimed by garbage collection.  
   
 > [!NOTE]
->  The current method is the implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>. This implementation calls <xref:System.Resources.ResourceSet.Dispose%2A> (`true`).  
+>  The current method is the implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>. This implementation calls <xref:System.Resources.ResourceSet.Dispose%2A> (`true`).  
   
  ]]></format>
         </remarks>
@@ -338,6 +338,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>
         </block>
+        <altmember cref="T:System.Resources.IResourceReader" />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultWriter">
@@ -369,6 +370,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>
         </block>
+        <altmember cref="T:System.Resources.IResourceWriter" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -415,7 +417,7 @@
   
  An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> will return the element that it is set to, even if the enumerator is already invalidated.  
   
- You can use the <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=fullName> property to access the value stored in the current element. Use the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=fullName> property to access the key of the current element. Use the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=fullName> property to access the value of the current element.  
+ You can use the <xref:System.Collections.IDictionaryEnumerator.Entry%2A?displayProperty=nameWithType> property to access the value stored in the current element. Use the <xref:System.Collections.IDictionaryEnumerator.Key%2A?displayProperty=nameWithType> property to access the key of the current element. Use the <xref:System.Collections.IDictionaryEnumerator.Value%2A?displayProperty=nameWithType> property to access the value of the current element.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
   
@@ -507,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the `ignoreCase` parameter is `true`, a resource with the name "Resource" is equivalent to the resource with the name "resource". Note, however, that this method always performs case-insensitive string comparisons using <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>. The advantage is that results of case-insensitive string comparisons performed by this method are the same on all computers regardless of culture. The disadvantage is that the results are not consistent with the casing rules of all cultures.  
+ If the value of the `ignoreCase` parameter is `true`, a resource with the name "Resource" is equivalent to the resource with the name "resource". Note, however, that this method always performs case-insensitive string comparisons using <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>. The advantage is that results of case-insensitive string comparisons performed by this method are the same on all computers regardless of culture. The disadvantage is that the results are not consistent with the casing rules of all cultures.  
   
  For example, the Turkish alphabet has two versions of the character I: one with a dot and one without a dot. In Turkish, the character I (Unicode 0049) is considered the uppercase version of a different character ı (Unicode 0131). The character i (Unicode 0069) is considered the lowercase version of yet another character İ (Unicode 0130). According to these casing rules, a case-insensitive string comparison of the characters i (Unicode 0069) and I (Unicode 0049) should fail for the culture "tr-TR" (Turkish in Turkey). Using the `GetObject` method with `ignoreCase` set to `true`, this comparison succeeds.  
   
@@ -585,7 +587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the `ignoreCase` parameter is `true`, a resource with the name "Resource" is equivalent to the resource with the name "resource". Note, however, that this method always performs case-insensitive string comparisons using <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>. The advantage is that results of case-insensitive string comparisons performed by this method are the same on all computers regardless of culture. The disadvantage is that the results are not consistent with the casing rules of all cultures.  
+ If the value of the `ignoreCase` parameter is `true`, a resource with the name "Resource" is equivalent to the resource with the name "resource". Note, however, that this method always performs case-insensitive string comparisons using <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>. The advantage is that results of case-insensitive string comparisons performed by this method are the same on all computers regardless of culture. The disadvantage is that the results are not consistent with the casing rules of all cultures.  
   
  For example, the Turkish alphabet has two versions of the character I: one with a dot and one without a dot. In Turkish, the character I (Unicode 0049) is considered the uppercase version of a different character ı (Unicode 0131). The character i (Unicode 0069) is considered the lowercase version of yet another character İ (Unicode 0130). According to these casing rules, a case-insensitive string comparison of the characters i (Unicode 0069) and I (Unicode 0049) should fail for the culture "tr-TR" (Turkish in Turkey). Using the `GetString` method with `ignoreCase` set to `true`, this comparison succeeds.  
   
@@ -612,6 +614,7 @@
       <Docs>
         <summary>Indicates the <see cref="T:System.Resources.IResourceReader" /> used to read the resources.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Resources.IResourceReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadResources">
@@ -688,7 +691,48 @@
       <Docs>
         <summary>The <see cref="T:System.Collections.Hashtable" /> in which the resources are stored.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Collections.Hashtable" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Resources.ResourceSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a resource object with the specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> resource with a specified name.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current <see cref="T:System.Resources.ResourceSet" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

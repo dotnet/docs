@@ -49,10 +49,14 @@
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
- Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=nameWithType> are not synchronized.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.Dictionary`2.Enumerator" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2.ValueCollection.Enumerator" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerator`1" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -98,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -130,10 +136,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the <xref:System.Object.Finalize%2A?displayProperty=fullName> method.  
+ This method is called by the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IDisposable.Dispose" />
+        <altmember cref="M:System.Object.Finalize" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -177,6 +185,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.Current" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -220,6 +229,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">
@@ -259,6 +272,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+        <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
+        <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
   </Members>

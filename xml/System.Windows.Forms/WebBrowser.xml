@@ -68,7 +68,7 @@
  The <xref:System.Windows.Forms.WebBrowser> control is a managed wrapper for the ActiveX [WebBrowser control](http://go.microsoft.com/fwlink/?LinkId=198812), and uses whichever version of the control is installed on the user's computer.  
   
 > [!NOTE]
->  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.WebBrowser> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
@@ -86,7 +86,7 @@
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for derived classes to inherit this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for derived classes to inherit this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,7 +118,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Forms.WebBrowser" /> control is hosted inside Internet Explorer.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="AllowNavigation">
@@ -150,7 +150,7 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="AllowWebBrowserDrop">
@@ -183,7 +183,7 @@
  You can disable other standard browser features by setting the <xref:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled%2A> and <xref:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled%2A> properties to `false`.  
   
 > [!NOTE]
->  This property is not related to the <xref:System.Windows.Forms.Control.AllowDrop%2A?displayProperty=fullName> property and does not cause drag-and-drop events such as the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> event to occur for the control.  
+>  This property is not related to the <xref:System.Windows.Forms.Control.AllowDrop%2A?displayProperty=nameWithType> property and does not cause drag-and-drop events such as the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> event to occur for the control.  
   
    
   
@@ -197,7 +197,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
       </Docs>
     </Member>
     <Member MemberName="AttachInterfaces">
@@ -219,7 +221,7 @@
         <param name="nativeActiveXObject">An object that represents the underlying ActiveX control.</param>
         <summary>Called by the control when the underlying ActiveX control is created.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to cast the underlying ActiveX object to an appropriate interface and cache it in a member variable. This value must then be released in an override of the <see cref="M:System.Windows.Forms.WebBrowserBase.DetachInterfaces" /> method.</para>
         </block>
@@ -270,7 +272,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBackChanged">
@@ -313,7 +317,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoBack" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForward">
@@ -363,7 +371,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForwardChanged">
@@ -406,7 +416,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoForward" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CreateSink">
@@ -440,7 +454,8 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.DetachSink" />
       </Docs>
     </Member>
     <Member MemberName="CreateWebBrowserSiteBase">
@@ -472,7 +487,8 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -509,7 +525,7 @@
       <Docs>
         <summary>Called by the control when the underlying ActiveX control is discarded.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to release a reference to the underlying ActiveX object that was cached in an override of the <see cref="M:System.Windows.Forms.WebBrowserBase.AttachInterfaces(System.Object)" /> method.</para>
         </block>
@@ -548,7 +564,8 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.CreateSink" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -602,7 +619,7 @@
 ## Remarks  
  Use this property when you want to access the contents of a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control through the HTML document object model (DOM). This is useful, for example, when you want to use Web-based controls in your Windows Forms application.  
   
- You can use this property, in combination with the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property, to implement two-way communication between a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control and your application. Use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=fullName> method to call script methods implemented in a Web page from your client application code. Your scripting code can access your application through the `window.external` object, which is a built-in DOM object provided for host access, and which maps to an object that you specify for the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property.  
+ You can use this property, in combination with the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property, to implement two-way communication between a Web page displayed in the <xref:System.Windows.Forms.WebBrowser> control and your application. Use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=nameWithType> method to call script methods implemented in a Web page from your client application code. Your scripting code can access your application through the `window.external` object, which is a built-in DOM object provided for host access, and which maps to an object that you specify for the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property.  
   
  To access the contents of a Web page as a string, use the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property. To access the contents of a Web page as a <xref:System.IO.Stream>, use the <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> property.  
   
@@ -620,7 +637,12 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
+        <altmember cref="T:System.Windows.Forms.HtmlDocument" />
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.InvokeScript(System.String,System.Object[])" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.ObjectForScripting" />
       </Docs>
     </Member>
     <Member MemberName="DocumentCompleted">
@@ -675,7 +697,19 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigated" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Url" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="DocumentStream">
@@ -716,7 +750,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
+        <altmember cref="T:System.IO.Stream" />
       </Docs>
     </Member>
     <Member MemberName="DocumentText">
@@ -749,7 +786,7 @@
  Use this property when you want to manipulate the contents of an HTML page displayed in the <xref:System.Windows.Forms.WebBrowser> control using string processing tools. You can use this property, for example, to load pages from a database or to analyze pages using regular expressions. When you set this property, the <xref:System.Windows.Forms.WebBrowser> control automatically navigates to the about:blank URL before loading the specified text. This means that the <xref:System.Windows.Forms.WebBrowser.Navigating>, <xref:System.Windows.Forms.WebBrowser.Navigated>, and <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> events occur when you set this property, and the value of the <xref:System.Windows.Forms.WebBrowser.Url%2A> property is no longer meaningful.  
   
 > [!NOTE]
->  This property contains the text of the current document, even if another document has been requested. If you set the value of this property and then immediately retrieve it again, the value retrieved may be different than the value set if the <xref:System.Windows.Forms.WebBrowser> control has not had time to load the new content. You can retrieve the new value in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler. Alternatively, you can block the thread until the document is loaded by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method in a loop until the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property returns the value that you originally set it to.  
+>  This property contains the text of the current document, even if another document has been requested. If you set the value of this property and then immediately retrieve it again, the value retrieved may be different than the value set if the <xref:System.Windows.Forms.WebBrowser> control has not had time to load the new content. You can retrieve the new value in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler. Alternatively, you can block the thread until the document is loaded by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method in a loop until the <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> property returns the value that you originally set it to.  
   
  To access the contents of a Web page as a <xref:System.IO.Stream>, use the <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> property. You can also access the page contents using the HTML document object model (DOM) through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
   
@@ -765,7 +802,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
       </Docs>
     </Member>
     <Member MemberName="DocumentTitle">
@@ -814,7 +854,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" />
       </Docs>
     </Member>
     <Member MemberName="DocumentTitleChanged">
@@ -857,7 +898,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentTitle" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -893,7 +937,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="EncryptionLevel">
@@ -923,13 +967,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event to implement an indicator in the user interface of your application similar to the lock icon in Internet Explorer. When the current document is not encrypted, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. When the <xref:System.Windows.Forms.WebBrowser> control displays a Web page containing multiple frames with content of different encryption levels, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. When the encryption level is unknown, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel?displayProperty=fullName>. Other values indicate the type of encryption present. To mimic the behavior of the lock icon in Internet Explorer, display the encryption type in a ToolTip that appears when the mouse pointer hovers over the indicator.  
+ You can use this property with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event to implement an indicator in the user interface of your application similar to the lock icon in Internet Explorer. When the current document is not encrypted, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel.Insecure?displayProperty=nameWithType>. When the <xref:System.Windows.Forms.WebBrowser> control displays a Web page containing multiple frames with content of different encryption levels, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel.Mixed?displayProperty=nameWithType>. When the encryption level is unknown, the value of this property is <xref:System.Windows.Forms.WebBrowserEncryptionLevel.Unknown?displayProperty=nameWithType>. Other values indicate the type of encryption present. To mimic the behavior of the lock icon in Internet Explorer, display the encryption type in a ToolTip that appears when the mouse pointer hovers over the indicator.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserEncryptionLevel" />
       </Docs>
     </Member>
     <Member MemberName="EncryptionLevelChanged">
@@ -962,7 +1008,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.EncryptionLevelChanged> event.  
   
@@ -971,7 +1017,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.EncryptionLevel" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="FileDownload">
@@ -997,7 +1046,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.FileDownload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.FileDownload> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.FileDownload> event.  
   
@@ -1006,7 +1055,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+        <altmember cref="T:System.ComponentModel.CancelEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -1026,7 +1077,7 @@
         <value>
           <see langword="true" /> if the control or any of its child windows has input focus; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="P:System.Windows.Forms.WebBrowser.Focused" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.WebBrowser.Focused" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
         </block>
@@ -1070,7 +1121,14 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoBack" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -1111,7 +1169,14 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoForward" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="GoHome">
@@ -1150,7 +1215,12 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="GoSearch">
@@ -1191,7 +1261,14 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Url" />
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -1222,13 +1299,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property is `true`, you can use the <xref:System.Windows.Forms.WebBrowser.Stop%2A> method to halt the current navigation before the new document is fully loaded. Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to determine the exact navigation state of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property value is false when the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property value is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>.  
+ If this property is `true`, you can use the <xref:System.Windows.Forms.WebBrowser.Stop%2A> method to halt the current navigation before the new document is fully loaded. Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to determine the exact navigation state of the <xref:System.Windows.Forms.WebBrowser> control. The <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property value is false when the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property value is <xref:System.Windows.Forms.WebBrowserReadyState.Complete?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.ReadyState" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="IsOffline">
@@ -1265,7 +1344,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="IsWebBrowserContextMenuEnabled">
@@ -1307,7 +1386,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.WebBrowserShortcutsEnabled" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1342,7 +1423,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1389,7 +1473,10 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="url" /> parameter value does not represent an absolute URI. For more information, see <see cref="P:System.Uri.IsAbsoluteUri" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1425,7 +1512,11 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.NewWindow" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1462,7 +1553,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1499,7 +1593,11 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="url" /> parameter value does not represent an absolute URI. For more information, see <see cref="P:System.Uri.IsAbsoluteUri" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.NewWindow" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1537,7 +1635,10 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="url" /> parameter value does not represent an absolute URI. For more information, see <see cref="P:System.Uri.IsAbsoluteUri" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1578,7 +1679,10 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1620,7 +1724,10 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="url" /> parameter value does not represent an absolute URI. For more information, see <see cref="P:System.Uri.IsAbsoluteUri" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -1678,7 +1785,19 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Url" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -1717,7 +1836,7 @@
   
 -   <xref:System.Windows.Forms.WebBrowser.GoSearch%2A>  
   
- You can handle the <xref:System.Windows.Forms.WebBrowser.Navigating> event to cancel navigation if certain conditions have not been met, for example, when the user has not completely filled out a form. To cancel navigation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the URL of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A?displayProperty=fullName> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A?displayProperty=fullName> property.  
+ You can handle the <xref:System.Windows.Forms.WebBrowser.Navigating> event to cancel navigation if certain conditions have not been met, for example, when the user has not completely filled out a form. To cancel navigation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the URL of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A?displayProperty=nameWithType> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A?displayProperty=nameWithType> property.  
   
  Handle the <xref:System.Windows.Forms.WebBrowser.Navigated> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes navigation and has begun loading the document at the new location. Handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event to receive notification when the <xref:System.Windows.Forms.WebBrowser> control finishes loading the new document.  
   
@@ -1737,7 +1856,19 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentStream" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentText" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigated" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Url" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatingEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="NewWindow">
@@ -1767,7 +1898,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.NewWindow> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.NewWindow> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.NewWindow> event.  
   
@@ -1776,7 +1907,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.ComponentModel.CancelEventArgs" />
+        <altmember cref="T:System.ComponentModel.CancelEventHandler" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled" />
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
       </Docs>
     </Member>
     <Member MemberName="ObjectForScripting">
@@ -1810,7 +1945,7 @@
   
  You can set this property to any COM-visible object for which you want its public properties and methods available to scripting code. You can make a class COM-visible by marking it with the <xref:System.Runtime.InteropServices.ComVisibleAttribute>.  
   
- To call functions defined in your Web page from your client application code, use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=fullName> method of the <xref:System.Windows.Forms.HtmlDocument> object you can retrieve from the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
+ To call functions defined in your Web page from your client application code, use the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.HtmlDocument> object you can retrieve from the <xref:System.Windows.Forms.WebBrowser.Document%2A> property.  
   
    
   
@@ -1827,7 +1962,9 @@
  -or-  
   
  The specified value when setting this property is an instance of a type that is not COM-visible. For more information, see <see cref="M:System.Runtime.InteropServices.Marshal.IsTypeVisibleFromCom(System.Type)" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
+        <altmember cref="M:System.Windows.Forms.HtmlDocument.InvokeScript(System.String,System.Object[])" />
       </Docs>
     </Member>
     <Member MemberName="OnCanGoBackChanged">
@@ -1858,10 +1995,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnCanGoBackChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnCanGoBackChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoBack" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnCanGoForwardChanged">
@@ -1892,10 +2031,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnCanGoForwardChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnCanGoForwardChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.CanGoForward" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnDocumentCompleted">
@@ -1928,10 +2069,12 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnDocumentCompleted(System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnDocumentCompleted(System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDocumentTitleChanged">
@@ -1962,10 +2105,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnDocumentTitleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnDocumentTitleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.DocumentTitle" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnEncryptionLevelChanged">
@@ -1996,10 +2141,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnEncryptionLevelChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnEncryptionLevelChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.EncryptionLevel" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnFileDownload">
@@ -2030,10 +2177,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnFileDownload(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnFileDownload(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.FileDownload" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigated">
@@ -2064,10 +2212,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnNavigated(System.Windows.Forms.WebBrowserNavigatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnNavigated(System.Windows.Forms.WebBrowserNavigatedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigated" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnNavigating">
@@ -2098,10 +2248,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnNavigating(System.Windows.Forms.WebBrowserNavigatingEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnNavigating(System.Windows.Forms.WebBrowserNavigatingEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnNewWindow">
@@ -2132,10 +2284,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnNewWindow(System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnNewWindow(System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.NewWindow" />
       </Docs>
     </Member>
     <Member MemberName="OnProgressChanged">
@@ -2166,10 +2319,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnProgressChanged(System.Windows.Forms.WebBrowserProgressChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnProgressChanged(System.Windows.Forms.WebBrowserProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnStatusTextChanged">
@@ -2200,10 +2355,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.WebBrowser.OnStatusTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowser.OnStatusTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.StatusText" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.StatusTextChanged" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -2235,7 +2392,7 @@
           <see cref="F:System.Windows.Forms.Padding.Empty" />
         </value>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="PaddingChanged">
@@ -2271,7 +2428,8 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Padding" />
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -2306,8 +2464,11 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to access the printer through this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPageSetupDialog" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintDialog" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintPreviewDialog" />
       </Docs>
     </Member>
     <Member MemberName="ProgressChanged">
@@ -2328,14 +2489,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use a handler for this event to implement a navigation progress bar similar to the one in Internet Explorer. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress%2A?displayProperty=fullName> property to determine the number of bytes that have been downloaded successfully. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress%2A?displayProperty=fullName> property to determine the total number of bytes available for downloading.  
+ You can use a handler for this event to implement a navigation progress bar similar to the one in Internet Explorer. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.CurrentProgress%2A?displayProperty=nameWithType> property to determine the number of bytes that have been downloaded successfully. Use the <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs.MaximumProgress%2A?displayProperty=nameWithType> property to determine the total number of bytes available for downloading.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.ProgressChanged> event.  
   
@@ -2344,7 +2505,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserProgressChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ReadyState">
@@ -2376,13 +2539,15 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.WebBrowser.ReadyState%2A> property to retrieve the specific state of the <xref:System.Windows.Forms.WebBrowser> control when you need more information than the <xref:System.Windows.Forms.WebBrowser.IsBusy%2A> property provides.  
   
- When the <xref:System.Windows.Forms.WebBrowser> control does not contain a document, the value of this property is <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>. Other values indicate the control state when it navigates to a new document. These values include <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>, and <xref:System.Windows.Forms.WebBrowserReadyState?displayProperty=fullName>.  
+ When the <xref:System.Windows.Forms.WebBrowser> control does not contain a document, the value of this property is <xref:System.Windows.Forms.WebBrowserReadyState.Uninitialized?displayProperty=nameWithType>. Other values indicate the control state when it navigates to a new document. These values include <xref:System.Windows.Forms.WebBrowserReadyState.Loading?displayProperty=nameWithType>, <xref:System.Windows.Forms.WebBrowserReadyState.Loaded?displayProperty=nameWithType>, <xref:System.Windows.Forms.WebBrowserReadyState.Interactive?displayProperty=nameWithType>, and <xref:System.Windows.Forms.WebBrowserReadyState.Complete?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.IsBusy" />
+        <altmember cref="T:System.Windows.Forms.WebBrowserReadyState" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2422,7 +2587,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -2447,14 +2617,19 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.WebBrowser> control stores recently visited Web pages in a cache on the local hard disk. Each page can specify an expiration date indicating how long it will remain in the cache. When the control navigates to a page, it saves time by displaying a cached version, if one is available, rather than downloading the page again. The <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method forces the <xref:System.Windows.Forms.WebBrowser> control to reload the current page. The type of reload depends on the <xref:System.Windows.Forms.WebBrowserRefreshOption> value specified. If you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method with the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the latest version of the document is downloaded. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the latest version is downloaded only if the current document has expired. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption?displayProperty=fullName> value, the server sends a copy of the document stored in its own cache.  
+ The <xref:System.Windows.Forms.WebBrowser> control stores recently visited Web pages in a cache on the local hard disk. Each page can specify an expiration date indicating how long it will remain in the cache. When the control navigates to a page, it saves time by displaying a cached version, if one is available, rather than downloading the page again. The <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method forces the <xref:System.Windows.Forms.WebBrowser> control to reload the current page. The type of reload depends on the <xref:System.Windows.Forms.WebBrowserRefreshOption> value specified. If you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method with the <xref:System.Windows.Forms.WebBrowserRefreshOption.Completely?displayProperty=nameWithType> value, the latest version of the document is downloaded. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption.IfExpired?displayProperty=nameWithType> value, the latest version is downloaded only if the current document has expired. If you use the <xref:System.Windows.Forms.WebBrowserRefreshOption.Normal?displayProperty=nameWithType> value, the server sends a copy of the document stored in its own cache.  
   
 > [!NOTE]
 >  A document refresh simply reloads the current page, so the <xref:System.Windows.Forms.WebBrowser.Navigating>, <xref:System.Windows.Forms.WebBrowser.Navigated>, and <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> events do not occur when you call the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method.  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Stop" />
       </Docs>
     </Member>
     <Member MemberName="ScriptErrorsSuppressed">
@@ -2485,12 +2660,12 @@
  Set this property to `false` to debug Web pages that you display in the <xref:System.Windows.Forms.WebBrowser> control. This is useful when you use the control to add Web-based controls and scripting code to your application. It is less useful when you use the control as a generic browser. When you have finished debugging your application, set this property to `true` to suppress script errors.  
   
 > [!NOTE]
->  When <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> is set to `true`, the <xref:System.Windows.Forms.WebBrowser> control hides all its dialog boxes that originate from the underlying ActiveX control, not just script errors. Occasionally you might need to suppress script errors while displaying dialog boxes such as those used for browser security settings and user login. In this case, set <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> to `false` and suppress script errors in a handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=fullName> event. For more information, see the code example in this topic.  
+>  When <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> is set to `true`, the <xref:System.Windows.Forms.WebBrowser> control hides all its dialog boxes that originate from the underlying ActiveX control, not just script errors. Occasionally you might need to suppress script errors while displaying dialog boxes such as those used for browser security settings and user login. In this case, set <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> to `false` and suppress script errors in a handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=nameWithType> event. For more information, see the code example in this topic.  
   
    
   
 ## Examples  
- The following code example demonstrates how to suppress script errors without suppressing other dialog boxes. In the example, the <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> property is set to `false` to ensure that dialog boxes are displayed. A handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=fullName> event suppresses the error. This event is only accessible when a document is finished loading, so the handler is attached in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler.  
+ The following code example demonstrates how to suppress script errors without suppressing other dialog boxes. In the example, the <xref:System.Windows.Forms.WebBrowser.ScriptErrorsSuppressed%2A> property is set to `false` to ensure that dialog boxes are displayed. A handler for the <xref:System.Windows.Forms.HtmlWindow.Error?displayProperty=nameWithType> event suppresses the error. This event is only accessible when a document is finished loading, so the handler is attached in a <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event handler.  
   
  [!code-csharp[WebBrowserMisc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#40)]
  [!code-vb[WebBrowserMisc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#40)]  
@@ -2499,7 +2674,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the [IWebBrowser2 interface](http://go.microsoft.com/fwlink/?LinkId=151479) could not be retrieved from the underlying ActiveX [WebBrowser control](http://go.microsoft.com/fwlink/?LinkId=151478).</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ScrollBarsEnabled">
@@ -2531,7 +2706,7 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ShowPageSetupDialog">
@@ -2566,8 +2741,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to access the printer through this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintDialog" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintPreviewDialog" />
       </Docs>
     </Member>
     <Member MemberName="ShowPrintDialog">
@@ -2602,8 +2779,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to access the printer through this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPageSetupDialog" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintPreviewDialog" />
       </Docs>
     </Member>
     <Member MemberName="ShowPrintPreviewDialog">
@@ -2640,8 +2819,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to access the printer through this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPageSetupDialog" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.ShowPrintDialog" />
       </Docs>
     </Member>
     <Member MemberName="ShowPropertiesDialog">
@@ -2676,7 +2857,7 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ShowSaveAsDialog">
@@ -2714,8 +2895,9 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
         <permission cref="T:System.Drawing.Printing.PrintingPermission">to access the printer through this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.Document" />
       </Docs>
     </Member>
     <Member MemberName="StatusText">
@@ -2762,7 +2944,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="E:System.Windows.Forms.WebBrowser.StatusTextChanged" />
       </Docs>
     </Member>
     <Member MemberName="StatusTextChanged">
@@ -2805,7 +2988,10 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.StatusText" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -2842,7 +3028,12 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoBack" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoForward" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoHome" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.GoSearch" />
+        <altmember cref="M:System.Windows.Forms.WebBrowser.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -2898,7 +3089,9 @@
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Windows.Forms.WebBrowser" /> instance is no longer valid.</exception>
         <exception cref="T:System.InvalidOperationException">A reference to an implementation of the <see langword="IWebBrowser2" /> interface could not be retrieved from the underlying ActiveX <see langword="WebBrowser" /> control.</exception>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is not an absolute URI. For more information, see <see cref="P:System.Uri.IsAbsoluteUri" />.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="Overload:System.Windows.Forms.WebBrowser.Navigate" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -2932,7 +3125,8 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="T:System.Version" />
       </Docs>
     </Member>
     <Member MemberName="WebBrowserShortcutsEnabled">
@@ -2974,12 +3168,14 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <altmember cref="P:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop" />
+        <altmember cref="P:System.Windows.Forms.WebBrowser.IsWebBrowserContextMenuEnabled" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowser.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2996,7 +3192,26 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.WebBrowserBase.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the document at the specified location into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reloads the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

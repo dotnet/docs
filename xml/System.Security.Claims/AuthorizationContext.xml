@@ -121,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Claims.AuthorizationContext.Action%2A> property is initialized to contain a name claim (<xref:System.Security.Claims.ClaimTypes.Name?displayProperty=fullName>) that has the value specified by the `action` parameter. The <xref:System.Security.Claims.AuthorizationContext.Resource%2A> property is initialized to contain a name claim that has the value specified by the `resource` parameter.  
+ The <xref:System.Security.Claims.AuthorizationContext.Action%2A> property is initialized to contain a name claim (<xref:System.Security.Claims.ClaimTypes.Name?displayProperty=nameWithType>) that has the value specified by the `action` parameter. The <xref:System.Security.Claims.AuthorizationContext.Resource%2A> property is initialized to contain a name claim that has the value specified by the `resource` parameter.  
   
  ]]></format>
         </remarks>
@@ -205,5 +205,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.AuthorizationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

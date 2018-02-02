@@ -33,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.EntityClient.EntityConnection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -399,7 +400,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -430,5 +431,14 @@
           <paramref name="keyword" /> contains a null value (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

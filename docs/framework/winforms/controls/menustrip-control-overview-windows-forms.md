@@ -11,16 +11,16 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MenuStrip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], about MenuStrip control"
-  - "menus, creating"
+  - "menus [Windows Forms], creating"
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # MenuStrip Control Overview (Windows Forms)
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  
@@ -45,9 +45,9 @@ Menus expose functionality to your users by holding commands that are grouped by
 |Property|Description|  
 |--------------|-----------------|  
 |<xref:System.Windows.Forms.MenuStrip.MdiWindowListItem%2A>|Gets or sets the <xref:System.Windows.Forms.ToolStripMenuItem> that is used to display a list of MDI child forms.|  
-|<xref:System.Windows.Forms.ToolStripItem.MergeAction%2A?displayProperty=fullName>|Gets or sets how child menus are merged with parent menus in MDI applications.|  
-|<xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A?displayProperty=fullName>|Gets or sets the position of a merged item within a menu in MDI applications.|  
-|<xref:System.Windows.Forms.Form.IsMdiContainer%2A?displayProperty=fullName>|Gets or sets a value indicating whether the form is a container for MDI child forms.|  
+|<xref:System.Windows.Forms.ToolStripItem.MergeAction%2A?displayProperty=nameWithType>|Gets or sets how child menus are merged with parent menus in MDI applications.|  
+|<xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A?displayProperty=nameWithType>|Gets or sets the position of a merged item within a menu in MDI applications.|  
+|<xref:System.Windows.Forms.Form.IsMdiContainer%2A?displayProperty=nameWithType>|Gets or sets a value indicating whether the form is a container for MDI child forms.|  
 |<xref:System.Windows.Forms.MenuStrip.ShowItemToolTips%2A>|Gets or sets a value indicating whether tool tips are shown for the <xref:System.Windows.Forms.MenuStrip>.|  
 |<xref:System.Windows.Forms.MenuStrip.CanOverflow%2A>|Gets or sets a value indicating whether the <xref:System.Windows.Forms.MenuStrip> supports overflow functionality.|  
 |<xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A>|Gets or sets the shortcut keys associated with the <xref:System.Windows.Forms.ToolStripMenuItem>.|  
@@ -63,9 +63,9 @@ Menus expose functionality to your users by holding commands that are grouped by
 |<xref:System.Windows.Forms.ToolStripDropDownItem>|Provides basic functionality for controls derived from <xref:System.Windows.Forms.ToolStripItem> that display drop-down items when clicked.|  
   
 ## See Also  
- <xref:System.Windows.Forms.ToolStrip>   
- <xref:System.Windows.Forms.MenuStrip>   
- <xref:System.Windows.Forms.ContextMenuStrip>   
- <xref:System.Windows.Forms.StatusStrip>   
- <xref:System.Windows.Forms.ToolStripItem>   
+ <xref:System.Windows.Forms.ToolStrip>  
+ <xref:System.Windows.Forms.MenuStrip>  
+ <xref:System.Windows.Forms.ContextMenuStrip>  
+ <xref:System.Windows.Forms.StatusStrip>  
+ <xref:System.Windows.Forms.ToolStripItem>  
  <xref:System.Windows.Forms.ToolStripDropDown>

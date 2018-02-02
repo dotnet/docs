@@ -9,19 +9,19 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "interoperability, WPF and Windows Forms"
-  - "WPF content, hosting in Windows Forms"
+  - "interoperability [Windows Forms], WPF and Windows Forms"
+  - "WPF content [Windows Forms], hosting in Windows Forms"
   - "hosting WPF content in Windows Forms"
   - "ElementHost control"
-  - "WPF user control, hosting in Windows Forms"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Creating New WPF Content on Windows Forms at Design Time
 This topic shows you how to create a Windows Presentation Foundation (WPF) control for use in your Windows Forms-based applications.  
@@ -35,7 +35,7 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
 -   Add the new WPF control to a Windows Form. The WPF control is hosted in an <xref:System.Windows.Forms.Integration.ElementHost> control.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -56,7 +56,7 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
  Creating a new WPF control and adding it to your project is as easy as adding any other item to your project. The Windows Forms Designer works with a particular kind of control named *composite control*, or *user control*. For more information about WPF user controls, see <xref:System.Windows.Controls.UserControl>.  
   
 > [!NOTE]
->  The <xref:System.Windows.Controls.UserControl?displayProperty=fullName> type for WPF is distinct from the user control type provided by Windows Forms, which is also named <xref:System.Windows.Forms.UserControl?displayProperty=fullName>.  
+>  The <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> type for WPF is distinct from the user control type provided by Windows Forms, which is also named <xref:System.Windows.Forms.UserControl?displayProperty=nameWithType>.  
   
 #### To create a new WPF control  
   
@@ -72,16 +72,16 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
   
     -   File UserControl1.xaml opens in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)].  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](http://msdn.microsoft.com/en-us/54cb70b6-b35b-46e4-a0cc-65189399c474).  
+2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](http://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).  
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  From the **Toolbox**, drag a <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control onto the design surface.  
+4.  From the **Toolbox**, drag a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control onto the design surface.  
   
 5.  In the **Properties** window, set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
   
     > [!NOTE]
-    >  In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=fullName> control is used here for illustrative purposes only.  
+    >  In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.  
   
 6.  Build the project.  
   
@@ -118,8 +118,8 @@ This topic shows you how to create a Windows Presentation Foundation (WPF) contr
 -   Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](../../../../docs/framework/winforms/advanced/walkthrough-styling-wpf-content.md).  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
+ [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)

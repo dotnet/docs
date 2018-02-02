@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "debugging enumerations [.NET Framework]"
   - "unmanaged enumerations [.NET Framework], debugging"
@@ -20,6 +18,8 @@ caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Enumerations
 This section describes the unmanaged enumerations that the debugging API uses.  

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Contains wrapping and alignment information for <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <param name="wrapping">The wrapping of the layout.</param>
         <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -85,6 +88,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Compare">
@@ -115,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -140,7 +145,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

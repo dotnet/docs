@@ -74,7 +74,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.ComAwareEventInfo.GetRemoveMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -90,14 +90,14 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.ComAwareEventInfo.GetAddMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Runtime.InteropServices.ComAwareEventInfo.GetRaiseMethod
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

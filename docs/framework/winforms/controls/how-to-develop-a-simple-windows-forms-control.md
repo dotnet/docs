@@ -10,23 +10,26 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "controls [Windows Forms]"
   - "custom controls [Windows Forms], creating simple controls using code"
-  - "Control class, Windows Forms"
+  - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Develop a Simple Windows Forms Control
 This section walks you through the key steps for authoring a custom Windows Forms control. The simple control developed in this walkthrough allows the alignment of its <xref:System.Windows.Forms.Control.Text%2A> property to be changed. It does not raise or handle events.  
   
 ### To create a simple custom control  
   
-1.  Define a class that derives from <xref:System.Windows.Forms.Control?displayProperty=fullName>.  
+1.  Define a class that derives from <xref:System.Windows.Forms.Control?displayProperty=nameWithType>.  
   
     ```vb  
     Public Class FirstControl  
@@ -74,7 +77,7 @@ This section walks you through the key steps for authoring a custom Windows Form
   
          The `/t:library` compiler option tells the compiler that the assembly you are creating is a library (and not an executable). The `/out` option specifies the path and name of the assembly. The`/r` option provides the name of the assemblies that are referenced by your code. In this example, you create a private assembly that only your applications can use. Hence, you have to save it in your application's directory. For more information about packaging and deploying a control for distribution, see [Deployment](../../../../docs/framework/deployment/index.md).  
   
- The following sample shows the code for `FirstControl`. The control is enclosed in the namespace `CustomWinControls`. A namespace provides a logical grouping of related types. You can create your control in a new or existing namespace. In C#, the `using` declaration (in Visual Basic, `Imports`) allows types to be accessed from a namespace without using the fully qualified name of the type. In the following example, the `using` declaration allows code to access the class <xref:System.Windows.Forms.Control> from <xref:System.Windows.Forms?displayProperty=fullName> as simply <xref:System.Windows.Forms.Control> instead of having to use the fully qualified name <xref:System.Windows.Forms.Control?displayProperty=fullName>.  
+ The following sample shows the code for `FirstControl`. The control is enclosed in the namespace `CustomWinControls`. A namespace provides a logical grouping of related types. You can create your control in a new or existing namespace. In C#, the `using` declaration (in Visual Basic, `Imports`) allows types to be accessed from a namespace without using the fully qualified name of the type. In the following example, the `using` declaration allows code to access the class <xref:System.Windows.Forms.Control> from <xref:System.Windows.Forms?displayProperty=nameWithType> as simply <xref:System.Windows.Forms.Control> instead of having to use the fully qualified name <xref:System.Windows.Forms.Control?displayProperty=nameWithType>.  
   
  [!code-csharp[System.Windows.Forms.FirstControl#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/CS/FirstControl.cs#1)]
  [!code-vb[System.Windows.Forms.FirstControl#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/FirstControl.vb#1)]  
@@ -108,5 +111,5 @@ This section walks you through the key steps for authoring a custom Windows Form
  [!code-vb[System.Windows.Forms.FirstControl#10](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FirstControl/VB/SimpleForm.vb#10)]  
   
 ## See Also  
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)   
+ [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
  [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)

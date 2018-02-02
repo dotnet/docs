@@ -27,12 +27,12 @@
   <Docs>
     <summary>Enumerates the contents of a binary tree.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This structure should be kept synchronized with the other two binary tree enumerators: <xref:System.Collections.Immutable.ImmutableList%601.Enumerator?displayProperty=fullName> and <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Enumerator?displayProperty=fullName>.  
+ This structure should be kept synchronized with the other two binary tree enumerators: <xref:System.Collections.Immutable.ImmutableList%601.Enumerator?displayProperty=nameWithType> and <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Enumerator?displayProperty=nameWithType>.  
   
 > [!CAUTION]
 >  When this enumerator is used as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption or exceptions.  
@@ -59,7 +59,7 @@
       <Docs>
         <summary>Gets the element at the current position of the enumerator.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
         <value>The element at the current position of the enumerator.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +82,7 @@
       <Docs>
         <summary>Releases the resources used by the current instance of the <see cref="T:System.Collections.Immutable.ImmutableSortedSet`1.Enumerator" /> class.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
       <Docs>
         <summary>Advances the enumerator to the next element of the immutable sorted set.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
         <returns>
           <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the sorted set.</returns>
         <remarks>To be added.</remarks>
@@ -128,7 +128,7 @@
       <Docs>
         <summary>Sets the enumerator to its initial position, which is before the first element in the immutable sorted set.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

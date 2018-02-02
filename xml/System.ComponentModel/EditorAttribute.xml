@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> format.  
+ The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> format.  
   
  The <xref:System.Type> represented by the `typeName` parameter must either derive from or implement the base class.  
   
@@ -151,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> format.  
+ The `typeName` parameter must be in the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> format.  
   
  The <xref:System.Type> represented by the `typeName` must either derive from or implement the base class.  
   
@@ -318,6 +318,7 @@
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="TypeId">
@@ -354,5 +355,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

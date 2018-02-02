@@ -54,8 +54,8 @@
 ## Examples  
  The following code example demonstrates how to use <xref:System.Web.UI.WebControls.BoundField> and <xref:System.Web.UI.WebControls.ButtonField> objects, which are derived from <xref:System.Web.UI.WebControls.DataControlField>, to display rows in a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.DetailsView> control has the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> property set to `false`, which enables it to display a subset of the data returned by the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  
   
  The following code example demonstrates how to extend the <xref:System.Web.UI.WebControls.BoundField> class to create a custom bound field that can be used in a <xref:System.Web.UI.WebControls.GridView> control. Similar to the <xref:System.Web.UI.WebControls.CheckBoxField> class, the `RadioButtonField` class represents a column of `true` or `false` data. However, although the data that the <xref:System.Web.UI.WebControls.CheckBoxField> class is bound to can be any set of `true` or `false` values, the set of data that the `RadioButtonField` class is bound to can have only one `true` value at any given time. This example demonstrates how to implement the <xref:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell%2A> and <xref:System.Web.UI.WebControls.DataControlField.InitializeCell%2A> methods, two important methods of all classes derived from <xref:System.Web.UI.WebControls.DataControlField>.  
   
@@ -64,11 +64,18 @@
   
  The following code example demonstrates how to use the `RadioButtonField` class, which is provided in the previous example, in a <xref:System.Web.UI.WebControls.GridView> control. In this example, the <xref:System.Web.UI.WebControls.GridView> control displays data for a sports team. The player data is maintained in a data table that includes an ID column, columns for the player names, and a true or false column that identifies the captain of the team. The `RadioButtonField` class is used to display which team member is the current team captain. The <xref:System.Web.UI.WebControls.GridView> control can be edited to choose a new team captain or to change other player information.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_4/CS/datacontrolfield4cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_4/VB/datacontrolfield4vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_4/CS/datacontrolfield4cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_4/VB/datacontrolfield4vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+    <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+    <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+    <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+    <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+    <altmember cref="T:System.Web.UI.WebControls.ImageField" />
+    <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -91,6 +98,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.BoundField" />
+        <altmember cref="T:System.Web.UI.WebControls.ButtonFieldBase" />
+        <altmember cref="T:System.Web.UI.WebControls.CheckBoxField" />
+        <altmember cref="T:System.Web.UI.WebControls.CommandField" />
+        <altmember cref="T:System.Web.UI.WebControls.HyperLinkField" />
+        <altmember cref="T:System.Web.UI.WebControls.ImageField" />
+        <altmember cref="T:System.Web.UI.WebControls.TemplateField" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleHeaderText">
@@ -154,6 +168,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlFieldCollection.CloneFields" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -179,6 +196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.Initialize(System.Boolean,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="ControlStyle">
@@ -220,11 +238,12 @@
 ## Examples  
  The following code example demonstrates how to use <xref:System.Web.UI.WebControls.BoundField> and <xref:System.Web.UI.WebControls.ButtonField> objects, which are derived from <xref:System.Web.UI.WebControls.DataControlField>, to display rows in a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.DataControlField.ControlStyle%2A> property of the <xref:System.Web.UI.WebControls.ButtonField> object is set and governs how the <xref:System.Web.UI.WebControls.LinkButton> control contained by the field is displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/CS/datacontrolfield2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/VB/datacontrolfield2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/CS/datacontrolfield2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/VB/datacontrolfield2vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="CopyProperties">
@@ -253,6 +272,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CreateField" />
       </Docs>
     </Member>
     <Member MemberName="CreateField">
@@ -279,6 +300,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CloneField" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -301,7 +324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.DataControlField.DesignMode%2A> property exposes the <xref:System.Web.UI.Control.DesignMode%2A?displayProperty=fullName> property. The <xref:System.Web.UI.Control> instance that is passed to the <xref:System.Web.UI.WebControls.DataControlField.Initialize%2A> method is used.  
+ The <xref:System.Web.UI.WebControls.DataControlField.DesignMode%2A> property exposes the <xref:System.Web.UI.Control.DesignMode%2A?displayProperty=nameWithType> property. The <xref:System.Web.UI.Control> instance that is passed to the <xref:System.Web.UI.WebControls.DataControlField.Initialize%2A> method is used.  
   
  ]]></format>
         </remarks>
@@ -350,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -389,6 +413,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.FooterText" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -427,6 +452,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.FooterStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderImageUrl">
@@ -469,11 +495,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> column, which displays an image in the <xref:System.Web.UI.WebControls.GridView> control's column header instead of header text.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/CS/datacontrolfield3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/VB/datacontrolfield3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/CS/datacontrolfield3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/VB/datacontrolfield3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -513,11 +541,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.DataControlField.HeaderStyle%2A> property of a <xref:System.Web.UI.WebControls.HyperLinkField> column, which displays a yellow background color for the column header in the <xref:System.Web.UI.WebControls.GridView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/CS/datacontrolfield3cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/VB/datacontrolfield3vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/CS/datacontrolfield3cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_3/VB/datacontrolfield3vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -559,11 +589,13 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A> properties of <xref:System.Web.UI.WebControls.BoundField> columns to display text in the column headers of a <xref:System.Web.UI.WebControls.GridView> control. This code example demonstrates a master-details scenario in which a <xref:System.Web.UI.WebControls.GridView> control is used to display a subset of data while the <xref:System.Web.UI.WebControls.DetailsView> control is used to display a larger set of data and insert new records. The example uses two <xref:System.Web.UI.WebControls.SqlDataSource> controls: one to populate the <xref:System.Web.UI.WebControls.GridView> control and one to populate the <xref:System.Web.UI.WebControls.DetailsView> control and insert data.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -641,6 +673,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="InsertVisible">
@@ -668,7 +701,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data-bound control is in insert mode when the state of the current display row is <xref:System.Web.UI.WebControls.DataControlRowState?displayProperty=fullName>.  
+ A data-bound control is in insert mode when the state of the current display row is <xref:System.Web.UI.WebControls.DataControlRowState.Insert?displayProperty=nameWithType>.  
   
  The <xref:System.Web.UI.WebControls.DetailsView> control checks the value of this property before it renders a set of fields. If the <xref:System.Web.UI.WebControls.DataControlField.InsertVisible%2A> property is `false`, the <xref:System.Web.UI.Control.Visible%2A> property of the <xref:System.Web.UI.WebControls.DetailsViewRow> object is set to `false`.  
   
@@ -676,6 +709,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DetailsViewRow" />
+        <altmember cref="T:System.Web.UI.WebControls.DataControlRowState" />
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -695,6 +730,10 @@
         <value>
           <see langword="true" /> if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ItemStyle">
@@ -734,11 +773,12 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.DataControlField.ItemStyle%2A> property on the <xref:System.Web.UI.WebControls.BoundField> objects used to display `FirstName` and `LastName` data in a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.DetailsView> control has the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> property set to `false`, which enables it to display a subset of the data returned by the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ControlStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -769,6 +809,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="OnFieldChanged">
@@ -792,7 +836,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataControlField.OnFieldChanged%2A> method raises an event signaling that the <xref:System.Web.UI.WebControls.DataControlField> object's state has changed. Changes to the following properties cause this event to be raised: <xref:System.Web.UI.WebControls.DataControlField.FooterText%2A>, <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A>, <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A>, <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A>, <xref:System.Web.UI.WebControls.DataControlField.SortExpression%2A>, and <xref:System.Web.UI.WebControls.DataControlField.Visible%2A>. Derived type properties also raise this event when state changes occur. Web server controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> typically call the `DataBind` method in response to a field change event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.DataControlField.OnFieldChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -831,6 +875,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.TrackViewState" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.ViewState" />
       </Docs>
     </Member>
     <Member MemberName="ShowHeader">
@@ -862,6 +910,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderImageUrl" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -900,8 +951,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlField.SortExpression%2A> property to assign a sort expression to a data control field.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/CS/datacontrolfield1cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_1/VB/datacontrolfield1vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -942,6 +993,7 @@
         <value>
           <see langword="true" /> to indicate that the <see cref="T:System.Web.UI.WebControls.DataControlField" /> is saving changes to its view state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.IsTrackingViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
@@ -963,6 +1015,7 @@
         <param name="state">An <see cref="T:System.Object" /> that contains the saved view state values for the control.</param>
         <summary>Restores the data control field's previously saved view state.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.LoadViewState(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -982,6 +1035,7 @@
         <summary>Saves the changes made to the <see cref="T:System.Web.UI.WebControls.DataControlField" /> view state since the time the page was posted back to the server.</summary>
         <returns>An <see cref="T:System.Object" /> that contains the saved view state values for the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -1000,6 +1054,7 @@
       <Docs>
         <summary>Causes the <see cref="T:System.Web.UI.WebControls.DataControlField" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.WebControls.DataControlField.ViewState" /> property and persisted across requests for the same page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1026,6 +1081,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -1044,6 +1100,9 @@
       <Docs>
         <summary>Causes the <see cref="T:System.Web.UI.WebControls.DataControlField" /> object to track changes to its view state so they can be stored in the control's <see cref="P:System.Web.UI.WebControls.DataControlField.ViewState" /> property and persisted across requests for the same page.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.SaveViewState" />
       </Docs>
     </Member>
     <Member MemberName="ValidateRequestMode">
@@ -1095,6 +1154,14 @@
         <block subset="none" type="overrides">
           <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.DataControlField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
         </block>
+        <altmember cref="M:System.Web.UI.WebControls.AutoGeneratedField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.BoundField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.ButtonField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.CheckBoxField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.CommandField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.ImageField.ValidateSupportsCallback" />
+        <altmember cref="M:System.Web.UI.WebControls.TemplateField.ValidateSupportsCallback" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -1124,6 +1191,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataControlField.IsTrackingViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.LoadViewState(System.Object)" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.SaveViewState" />
+        <altmember cref="M:System.Web.UI.WebControls.DataControlField.TrackViewState" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1153,15 +1224,15 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to show or hide <xref:System.Web.UI.WebControls.DataControlField> objects in a data-bound control.  
   
- If the the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
+ If the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property is `false`, the data values are not displayed and do not make a round-trip to the client. If you want to round-trip the data for a field that is not visible, add the field name to the `DataKeyNames` property of the data-bound control.  
   
    
   
 ## Examples  
  The following code example demonstrates how to use <xref:System.Web.UI.WebControls.BoundField> and <xref:System.Web.UI.WebControls.ButtonField> objects, which are derived from <xref:System.Web.UI.WebControls.DataControlField>, to display rows in a <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property of the <xref:System.Web.UI.WebControls.BoundField> object that displays the `EmployeeID` column is set to `false`, and the column is not rendered by the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/CS/datacontrolfield2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/VB/datacontrolfield2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/CS/datacontrolfield2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.DataControlField_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataControlField_2/VB/datacontrolfield2vb.aspx#1)]  
   
  ]]></format>
         </remarks>

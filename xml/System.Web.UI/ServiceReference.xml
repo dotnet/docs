@@ -44,15 +44,15 @@
   
  You might use the <xref:System.Web.UI.ServiceReference.InlineScript%2A> property to indicate whether the proxy generation script is included in the page as an inline script block or is obtained by a separate request.  
   
- You can also programmatically add a <xref:System.Web.UI.ServiceReference> object through the <xref:System.Web.UI.ScriptManager.Services%2A?displayProperty=fullName> or <xref:System.Web.UI.ScriptManagerProxy.Services%2A?displayProperty=fullName> collection by using the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method of the <xref:System.Web.UI.ServiceReferenceCollection> class.  
+ You can also programmatically add a <xref:System.Web.UI.ServiceReference> object through the <xref:System.Web.UI.ScriptManager.Services%2A?displayProperty=nameWithType> or <xref:System.Web.UI.ScriptManagerProxy.Services%2A?displayProperty=nameWithType> collection by using the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method of the <xref:System.Web.UI.ServiceReferenceCollection> class.  
   
    
   
 ## Examples  
  The following example demonstrates how to add a reference to a Web service in the page markup to call the Web service methods from script.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/CS/Default.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/VB/Default.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/CS/Default.aspx#5)]
+ [!code-aspx-vb[System.Web.Script.Services.ScriptMethodAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Services.ScriptMethodAttribute/VB/Default.aspx#5)]  
   
  ]]></format>
     </remarks>
@@ -248,5 +248,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ServiceReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

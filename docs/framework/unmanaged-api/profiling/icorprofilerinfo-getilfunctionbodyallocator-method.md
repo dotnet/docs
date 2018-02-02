@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILFunctionBodyAllocator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILFunctionBodyAllocator method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBodyAllocator method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetILFunctionBodyAllocator Method
 Gets an interface that provides a method to allocate memory to be used for swapping out the body of a method in Microsoft intermediate language (MSIL) code.  

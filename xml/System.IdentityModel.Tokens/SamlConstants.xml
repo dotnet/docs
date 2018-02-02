@@ -20,6 +20,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlAssertion" />
+    <altmember cref="T:System.IdentityModel.Tokens.SamlSubject" />
   </Docs>
   <Members>
     <Member MemberName="EmailName">
@@ -35,8 +38,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the attribute used to specify that the subject of a SAML assertion is specified as an e-mail address. This field is constant.</summary>
-        <value>The name of the attribute used to specify that the subject of a SAML assertion is specified as an e-mail address. This field is constant.</value>
+        <summary>Gets the name of the attribute used to specify that the subject of a SAML assertion is specified as an email address. This field is constant.</summary>
+        <value>The name of the attribute used to specify that the subject of a SAML assertion is specified as an email address. This field is constant.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -60,13 +63,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a URI that states the subject of a SAML assertion is specified as an e-mail address. This field is constant.</summary>
-        <value>A URI that states the subject of a SAML assertion is specified as an e-mail address.</value>
+        <summary>Gets a URI that states the subject of a SAML assertion is specified as an email address. This field is constant.</summary>
+        <value>A URI that states the subject of a SAML assertion is specified as an email address.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A> property to set the <xref:System.IdentityModel.Tokens.SamlSubject.NameFormat%2A> property when the subject is specified as an e-mail address.  
+ Use the <xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A> property to set the <xref:System.IdentityModel.Tokens.SamlSubject.NameFormat%2A> property when the subject is specified as an email address.  
   
  ]]></format>
         </remarks>
@@ -120,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" />
       </Docs>
     </Member>
     <Member MemberName="MinorVersionValue">
@@ -140,6 +144,7 @@
   
  The combination of the <see cref="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" /> and <see cref="P:System.IdentityModel.Tokens.SamlConstants.MinorVersionValue" /> properties comprises the version of the SAML specification that <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security tokens conform to.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.IdentityModel.Tokens.SamlConstants.MajorVersionValue" />
       </Docs>
     </Member>
     <Member MemberName="Namespace">

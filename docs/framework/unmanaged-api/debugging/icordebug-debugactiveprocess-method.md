@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::DebugActiveProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebugActiveProcess method [.NET Framework debugging]"
   - "ICorDebug::DebugActiveProcess method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::DebugActiveProcess Method
 Attaches the debugger to an existing process.  

@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection> contains <xref:System.Drawing.Printing.PrinterResolution> instances that represents the printer resolutions supported through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=fullName> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
+ The <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection> contains <xref:System.Drawing.Printing.PrinterResolution> instances that represents the printer resolutions supported through the <xref:System.Drawing.Printing.PrinterResolution.Kind%2A?displayProperty=nameWithType> property, which contains one of the <xref:System.Drawing.Printing.PrinterResolutionKind> values.  
   
- Typically, you set the printer's resolution through the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=fullName> property to a valid <xref:System.Drawing.Printing.PrinterResolution> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A> collection.  
+ Typically, you set the printer's resolution through the <xref:System.Drawing.Printing.PageSettings.PrinterResolution%2A?displayProperty=nameWithType> property to a valid <xref:System.Drawing.Printing.PrinterResolution> instance available through the <xref:System.Drawing.Printing.PrinterSettings.PrinterResolutions%2A> collection.  
   
  If <xref:System.Drawing.Printing.PrinterResolutionKind> is `Custom`, then use the <xref:System.Drawing.Printing.PrinterResolution.X%2A> and <xref:System.Drawing.Printing.PrinterResolution.Y%2A> properties to determine the custom printer resolution in the horizontal and vertical directions, respectively.  
   
@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+    <altmember cref="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +60,7 @@
         <param name="array">An array of type <see cref="T:System.Drawing.Printing.PrinterResolution" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -164,6 +170,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -197,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterResolution" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

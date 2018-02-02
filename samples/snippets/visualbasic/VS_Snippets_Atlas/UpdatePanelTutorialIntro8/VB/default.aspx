@@ -1,4 +1,4 @@
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
 <%@ Page Language="VB" MasterPageFile="MasterPage.master" Title="UpdatePanel in Master Pages" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     Content Page<br />
@@ -11,4 +11,4 @@
         </contenttemplate>
     </asp:UpdatePanel>
 </asp:Content>
-<%-- </Snippet1> --%>
+<!-- </Snippet1> -->

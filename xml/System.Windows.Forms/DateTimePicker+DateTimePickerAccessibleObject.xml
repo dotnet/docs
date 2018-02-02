@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.State%2A> will return <xref:System.Windows.Forms.AccessibleStates?displayProperty=fullName> if the <xref:System.Windows.Forms.DateTimePicker.ShowCheckBox%2A> and <xref:System.Windows.Forms.DateTimePicker.Checked%2A> properties are `true.`  
+ <xref:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject.State%2A> will return <xref:System.Windows.Forms.AccessibleStates.Checked?displayProperty=nameWithType> if the <xref:System.Windows.Forms.DateTimePicker.ShowCheckBox%2A> and <xref:System.Windows.Forms.DateTimePicker.Checked%2A> properties are `true.`  
   
  ]]></format>
         </remarks>
@@ -132,6 +132,7 @@
         <value>The value of an accessible object, or <see langword="null" /> if the object has no value set.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="P:System.Windows.Forms.AccessibleObject.Value" />
       </Docs>
     </Member>
   </Members>

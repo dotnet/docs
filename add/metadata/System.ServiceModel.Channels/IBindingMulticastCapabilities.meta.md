@@ -2,16 +2,16 @@
 uid: System.ServiceModel.Channels.IBindingMulticastCapabilities
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---
 
 ---
 uid: System.ServiceModel.Channels.IBindingMulticastCapabilities.IsMulticast
 ms.technology: 
   - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
 ---

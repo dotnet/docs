@@ -7,6 +7,10 @@ ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
+ms.topic: article
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Resiliency and high availability in microservices
 
@@ -40,11 +44,11 @@ A microservice-based application should not try to store the output stream of ev
 
 When you create a microservice-based application, you need to deal with complexity. Of course, a single microservice is simple to deal with, but dozens or hundreds of types and thousands of instances of microservices is a complex problem. It is not just about building your microservice architecture—you also need high availability, addressability, resiliency, health, and diagnostics if you intend to have a stable and cohesive system.
 
-![](./media/image21.png)
+![](./media/image22.png)
 
-**Figure 4-21**. A Microservice Platform is fundamental for an application’s health management
+**Figure 4-22**. A Microservice Platform is fundamental for an application’s health management
 
-The complex problems shown in Figure 4-21 are very hard to solve by yourself. Development teams should focus on solving business problems and building custom applications with microservice-based approaches. They should not focus on solving complex infrastructure problems; if they did, the cost of any microservice-based application would be huge. Therefore, there are microservice-oriented platforms, referred to as orchestrators or microservice clusters, that try to solve the hard problems of building and running a service and using infrastructure resources efficiently. This reduces the complexities of building applications that use a microservices approach.
+The complex problems shown in Figure 4-22 are very hard to solve by yourself. Development teams should focus on solving business problems and building custom applications with microservice-based approaches. They should not focus on solving complex infrastructure problems; if they did, the cost of any microservice-based application would be huge. Therefore, there are microservice-oriented platforms, referred to as orchestrators or microservice clusters, that try to solve the hard problems of building and running a service and using infrastructure resources efficiently. This reduces the complexities of building applications that use a microservices approach.
 
 Different orchestrators might sound similar, but the diagnostics and health checks offered by each of them differ in features and state of maturity, sometimes depending on the OS platform, as explained in the next section.
 
@@ -64,13 +68,13 @@ Different orchestrators might sound similar, but the diagnostics and health chec
     [*https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
 -   **Logging What You Mean: Using the Semantic Logging Application Block**
-    [*https://msdn.microsoft.com/en-us/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/en-us/library/dn440729(v=pandp.60).aspx)
+    [*https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/library/dn440729(v=pandp.60).aspx)
 
 -   **Splunk.** Official site.
     [*http://www.splunk.com*](http://www.splunk.com)
 
 -   **EventSource Class**. API for events tracing for Windows (ETW)
-    [*https://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource(v=vs.110).aspx*](https://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource(v=vs.110).aspx)
+    [*https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource*](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource)
 
 
 

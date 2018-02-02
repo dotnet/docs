@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Collections.Generic.Dictionary%602.Enumerator.Current%2A?displayProperty=fullName> property returns an instance of this type.  
+ The <xref:System.Collections.Generic.Dictionary%602.Enumerator.Current%2A?displayProperty=nameWithType> property returns an instance of this type.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of a collection based on <xref:System.Collections.Generic.IDictionary%602> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>. For example:  
   
@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IDictionary`2" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2.Enumerator" />
+    <altmember cref="T:System.Collections.DictionaryEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,7 +98,7 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] !TKey&amp; key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyValuePair`2.Deconstruct(`0@,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -148,7 +151,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the key in the key/value pair.</summary>
-        <value>A <paramref name="TKey" /> that is the key of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <value>A <typeparamref name="TKey" /> that is the key of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,7 +242,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value in the key/value pair.</summary>
-        <value>A <paramref name="TValue" /> that is the value of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <value>A <typeparamref name="TValue" /> that is the value of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

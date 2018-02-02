@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugHeapEnum interface [.NET Framework debugging]"
 ms.assetid: 99cbc1eb-d539-4f76-a0d8-b93348112f14
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugHeapEnum Interface
 Provides an enumerator for objects on the managed heap. This interface is a subclass of the ICorDebugEnum interface.  

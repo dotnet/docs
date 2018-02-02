@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishAppDomainEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Next method, ICorPublishAppDomainEnum interface [.NET Framework debugging]"
   - "ICorPublishAppDomainEnum::Next method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishAppDomainEnum::Next Method
 Gets the specified number of application domains that currently exist in the process, starting at the current position.  

@@ -1,7 +1,7 @@
 ---
-title: Deconstructing tuples and other types | Microsoft Docs
-description: Learn how to deconstruct tuples and other types
-keywords: .NET, .NET Core, C#0
+title: Deconstructing tuples and other types
+description: Learn how to deconstruct tuples and other types.
+keywords: .NET,.NET Core,C#
 author: rpetrusha
 ms-author: ronpet
 ms.date: 07/18/2016
@@ -11,7 +11,6 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
 ---
-
 # Deconstructing tuples and other types #
 
 A tuple provides a light-weight way to retrieve multiple values from a method call. But once you retrieve the tuple, you have to handle its individual elements. Doing this on an element-by-element basis is cumbersome, as the following example shows. The `QueryCityData` method returns a 3-tuple, and each of its elements is assigned to a variable in a separate operation.
@@ -30,7 +29,7 @@ C# features built-in support for deconstructing tuples, which lets you unpackage
 var (name, address, city, zip) = contact.GetAddressInfo();
 ```
 
-There are two ways to deconstruct a tuple:
+There are three ways to deconstruct a tuple:
 
 - You can explicitly declare the type of each field inside parentheses. The following example uses this approach to deconstruct the 3-tuple returned by the `QueryCityData` method.
 
@@ -38,22 +37,28 @@ There are two ways to deconstruct a tuple:
 
 - You can use the `var` keyword so that C# infers the type of each variable. You place the `var` keyword outside of the parentheses. The following example uses type inference when deconstructing the 3-tuple returned by the `QueryCityData` method.
  
-      [!code-csharp[Deconstruction-Infer](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple3.cs#1)]
+    [!code-csharp[Deconstruction-Infer](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple3.cs#1)]
 
     You can also use the `var` keyword individually with any or all of the variable declarations inside the parentheses. 
 
-      [!code-csharp[Deconstruction-Infer-Some](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple4.cs#1)]
+    [!code-csharp[Deconstruction-Infer-Some](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple4.cs#1)]
 
     This is cumbersome and is not recommended.
 
+- Lastly, you may deconstruct the tuple into variables that have already been declared.
+
+    [!code-csharp[Deconstruction-Declared](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple5.cs#1)]
+
 Note that you cannot specify a specific type outside the parentheses even if every field in the tuple has the
-same type. This generates compiler error CS8136, "`var (...)` form disallows a specific type for `var`.
+same type. This generates compiler error CS8136, "Deconstruction 'var (...)' form disallows a specific type for 'var'.".
 
 Note that you must also assign each element of the tuple to a variable. If you omit any elements, the compiler generates error CS8132, "Cannot deconstruct a tuple of 'x' elements into 'y' variables."
 
+Note that you cannot mix declarations and assignments to existing variables on the left-hand side of a deconstruction. The compiler generates error CS8184, "a deconstruction cannot mix declarations and expressions on the left-hand-side." when the members include newly declared and existing variables.
+
 ## Deconstructing tuple elements with discards
 
-Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is designated by an underscore character ("_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
+Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is designated by an underscore character ("\_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
 
 The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a 6-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
 
@@ -85,7 +90,7 @@ The overloaded `Deconstruct` method in the following example illustrates one pos
 
 ## Deconstructing a user-defined type with discards
 
-Just as you do with [tuples](#deconstructing-tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "_", and a single deconstruction operation can include multiple discards.
+Just as you do with [tuples](#deconstructing-tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "\_", and a single deconstruction operation can include multiple discards.
 
 The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state) but discards the last name and the state.
 
@@ -95,7 +100,7 @@ The following example deconstructs a `Person` object into four strings (the firs
 
 If you didn't author a class, struct, or interface, you can still deconstruct objects of that type by implementing one or more `Deconstruct` [extension methods](programming-guide/classes-and-structs/extension-methods.md) to return the values in which you're interested. 
 
-The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there is only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the accessaccessibility is indicated by the `getAccess` and `setAccess` variables.
+The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there is only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the accessaccessibility is indicated by the `getAccess` and `setAccess` variables.
 
 [!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
  

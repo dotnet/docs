@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "WCF Data Services, learn more"
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Data Services Resources
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  
@@ -29,7 +31,7 @@ manager: "erikre"
  [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
  Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds.  
   
- [Visual Studio and .NET Framework Glossary](http://msdn.microsoft.com/en-us/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
+ [Visual Studio and .NET Framework Glossary](http://msdn.microsoft.com/library/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
  Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] documentation.  
   
 ## External Resources  

@@ -48,6 +48,7 @@
     <block subset="none" type="overrides">
       <para>When you override this class, you can introduce methods in the derived class which are specific to a particular type of XML Web service. The methods capture the parameters and call the base class to do the work of communicating with the XML Web service. If the introduced methods are asynchronous, call the <see cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)" /> method and the <see cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)" /> method. If the introduced methods are synchronous, call the <see cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" /> method. The overridden constructor typically sets the <see cref="P:System.Web.Services.Protocols.WebClientProtocol.Url" /> property to the URL of the XML Web service method.</para>
     </block>
+    <altmember cref="T:System.Web.Services.Protocols.HttpSimpleClientProtocol" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -124,6 +125,11 @@
         <exception cref="T:System.Web.Services.Protocols.SoapException">The request reached the server computer, but was not processed successfully.</exception>
         <exception cref="T:System.InvalidOperationException">The request was not valid for the object's current state.</exception>
         <exception cref="T:System.Net.WebException">An error occurred while accessing the network.</exception>
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)" />
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
       </Docs>
     </Member>
     <Member MemberName="Discover">
@@ -170,6 +176,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The proxy class does not have a binding defined.</exception>
+        <altmember cref="T:System.Web.Services.WebServiceBindingAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EndInvoke">
@@ -222,6 +229,9 @@
         <exception cref="T:System.Web.Services.Protocols.SoapException">The request reached the server computer, but was not processed successfully.</exception>
         <exception cref="T:System.InvalidOperationException">The request was not valid for the object's current state.</exception>
         <exception cref="T:System.Net.WebException">An error occurred while accessing the network.</exception>
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
       </Docs>
     </Member>
     <Member MemberName="GetReaderForMessage">
@@ -278,6 +288,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <paramref name="uri" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Net.WebRequest" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
+        <altmember cref="M:System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
+        <altmember cref="T:System.Net.HttpWebRequest" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
     <Member MemberName="GetWriterForMessage">
@@ -355,6 +370,8 @@
         <exception cref="T:System.Web.Services.Protocols.SoapException">The request reached the server computer, but was not processed successfully.</exception>
         <exception cref="T:System.InvalidOperationException">The request was not valid for the object's current state.</exception>
         <exception cref="T:System.Net.WebException">An error occurred while accessing the network.</exception>
+        <altmember cref="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
+        <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
       </Docs>
     </Member>
     <Member MemberName="InvokeAsync">
@@ -446,12 +463,24 @@
 ## Examples  
  The following code example sets the version of the protocol used to communicate with an XML Web service to SOAP 1.2.  
   
- <!-- TODO: review snippet reference [!code-csharp[SoapHttpClientProtocol.SoapVersion#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHttpClientProtocol.SoapVersion/CS/serverusageclientcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SoapHttpClientProtocol.SoapVersion#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHttpClientProtocol.SoapVersion/VB/serverusageclientvb.aspx#1)]  -->  
+ [!code-aspx-csharp[SoapHttpClientProtocol.SoapVersion#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHttpClientProtocol.SoapVersion/CS/serverusageclientcs.aspx#1)]
+ [!code-aspx-vb[SoapHttpClientProtocol.SoapVersion#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHttpClientProtocol.SoapVersion/VB/serverusageclientvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapProtocolVersion" />
+        <altmember cref="P:System.Web.HttpContext.Items" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the specified method asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

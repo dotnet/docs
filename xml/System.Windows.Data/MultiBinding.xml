@@ -27,12 +27,13 @@
 ## Remarks  
  You can specify multiple bindings in a <xref:System.Windows.Data.MultiBinding> object. When you use the <xref:System.Windows.Data.MultiBinding> object with a converter, it produces a final value for the binding target based on the values of those bindings. For example, color might be computed from red, blue, and green values, which can be values from the same or different binding source objects. When a value moves from the target to the sources, the target property value is translated to a set of values that are fed back into the bindings.  
   
- The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=fullName> properties.  
+ The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=nameWithType> properties.  
   
  <xref:System.Windows.Data.MultiBinding> currently supports only objects of type <xref:System.Windows.Data.Binding> and not <xref:System.Windows.Data.MultiBinding> or <xref:System.Windows.Data.PriorityBinding>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -177,7 +178,7 @@
 <a name="xamlValues_ConverterCulture"></a>   
 ## XAML Values  
  *ietfLanguageTag*  
- A string used to set the <xref:System.Globalization.CultureInfo>. This string is used to internally call. <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A>. For details on the string format, see <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A?displayProperty=fullName>.  
+ A string used to set the <xref:System.Globalization.CultureInfo>. This string is used to internally call. <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A>. For details on the string format, see <xref:System.Globalization.CultureInfo.GetCultureInfoByIetfLanguageTag%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -233,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.IMultiValueConverter" />
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -261,7 +263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=fullName> properties.  
+ The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
         </remarks>
@@ -289,6 +291,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.FrameworkElement.SourceUpdated" /> event will be raised when the binding source value is updated; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.NotifyOnSourceUpdated" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnTargetUpdated">
@@ -313,6 +316,7 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.FrameworkElement.TargetUpdated" /> event will be raised when the binding target value is updated; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.NotifyOnTargetUpdated" />
       </Docs>
     </Member>
     <Member MemberName="NotifyOnValidationError">
@@ -337,6 +341,8 @@
         <value>
           <see langword="true" /> if the <see cref="E:System.Windows.Controls.Validation.Error" /> attached event will be raised on the bound element when there is a validation error during source updates; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Data.Binding.NotifyOnValidationError" />
+        <altmember cref="P:System.Windows.Data.MultiBinding.ValidationRules" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeBindings">
@@ -471,7 +477,7 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ExceptionValidationRule> class represents a built-in validation rule that checks for exceptions that are thrown during the update of the binding source properties. If you have associated the <xref:System.Windows.Controls.ExceptionValidationRule> object with your <xref:System.Windows.Data.MultiBinding> object, you can use this property to set a handler to provide custom logic for handling these exceptions.  
   
- For an example, see <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A?displayProperty=fullName>.  
+ For an example, see <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A?displayProperty=nameWithType>.  
   
  For more information about the validation process for <xref:System.Windows.Data.MultiBinding> objects, see the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> property.  
   
@@ -505,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=fullName> properties.  
+ The values of the <xref:System.Windows.Data.MultiBinding.Mode%2A> and <xref:System.Windows.Data.MultiBinding.UpdateSourceTrigger%2A> properties determine the functionality of the <xref:System.Windows.Data.MultiBinding> and are used as the default values for all the bindings in the collection unless an individual binding overrides these properties. For example, if the <xref:System.Windows.Data.MultiBinding.Mode%2A> property on the <xref:System.Windows.Data.MultiBinding> object is set to <xref:System.Windows.Data.BindingMode.TwoWay>, then all the bindings in the collection are considered <xref:System.Windows.Data.BindingMode.TwoWay> unless you set a different <xref:System.Windows.Data.MultiBinding.Mode%2A> value on one of the bindings explicitly. For more information, see the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=nameWithType> properties.  
   
  ]]></format>
         </remarks>
@@ -536,7 +542,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property provides an alternative to using the <xref:System.Windows.Controls.DataErrorValidationRule> element explicitly. The <xref:System.Windows.Controls.DataErrorValidationRule> is a built-in validation rule that checks for errors that are raised by the <xref:System.ComponentModel.IDataErrorInfo> implementation of the source object. If an error is raised, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the error and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
+ Setting this property provides an alternative to using the <xref:System.Windows.Controls.DataErrorValidationRule> element explicitly. The <xref:System.Windows.Controls.DataErrorValidationRule> is a built-in validation rule that checks for errors that are raised by the <xref:System.ComponentModel.IDataErrorInfo> implementation of the source object. If an error is raised, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the error and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
  For more information about the validation process for <xref:System.Windows.Data.MultiBinding> objects, see the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> property.  
   
@@ -544,6 +550,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.MultiBinding.ValidatesOnExceptions" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnExceptions">
@@ -571,7 +578,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property provides an alternative to using the <xref:System.Windows.Controls.ExceptionValidationRule> element explicitly. The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions that are thrown during the update of the source property. If an exception is thrown, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
+ Setting this property provides an alternative to using the <xref:System.Windows.Controls.ExceptionValidationRule> element explicitly. The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions that are thrown during the update of the source property. If an exception is thrown, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=nameWithType> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
  For more information about the validation process for <xref:System.Windows.Data.MultiBinding> objects, see the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> property.  
   
@@ -579,6 +586,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.MultiBinding.ValidatesOnDataErrors" />
       </Docs>
     </Member>
     <Member MemberName="ValidatesOnNotifyDataErrors">

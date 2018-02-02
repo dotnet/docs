@@ -1,40 +1,19 @@
 ---
 title: "Interface Statement (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Interface"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "interface statement [Visual Basic]"
-  - "interfaces, interface definition"
+  - "interfaces [Visual Basic], interface definition"
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Interface Statement (Visual Basic)
 Declares the name of an interface and introduces the definitions of the members that the interface comprises.  
@@ -135,14 +114,14 @@ End Interface
  Note that the `Property` and `Function` statements do not introduce blocks ending with `End Property` and `End Function` within the interface. The interface defines only the signatures of its members. The full `Property` and `Function` blocks appear in a class that implements `thisInterface`.  
   
 ## See Also  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
+ [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
+ [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
+ [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

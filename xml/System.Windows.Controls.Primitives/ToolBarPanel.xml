@@ -16,10 +16,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.ToolBarPanel> determines which <xref:System.Windows.Controls.ToolBar> items will fit inside a <xref:System.Windows.Controls.ToolBar> and which must be put in the overflow area. The <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> property determines how items should be distributed between the <xref:System.Windows.Controls.Primitives.ToolBarPanel> and the <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>.  
+ A <xref:System.Windows.Controls.Primitives.ToolBarPanel> determines which <xref:System.Windows.Controls.ToolBar> items will fit inside a <xref:System.Windows.Controls.ToolBar> and which must be put in the overflow area. The <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=nameWithType> property determines how items should be distributed between the <xref:System.Windows.Controls.Primitives.ToolBarPanel> and the <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.Primitives.ToolBarOverflowPanel" />
+    <altmember cref="T:System.Windows.Controls.Primitives.ToolBarPanel" />
+    <altmember cref="T:System.Windows.Controls.ToolBarTray" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

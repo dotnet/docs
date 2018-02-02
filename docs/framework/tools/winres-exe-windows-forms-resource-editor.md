@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "Winres.exe"
   - "Windows Forms Resource Editor"
@@ -27,6 +22,8 @@ caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Winres.exe (Windows Forms Resource Editor)
 The Windows Forms Resource Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../../../docs/framework/resources/index.md).  
@@ -140,14 +137,14 @@ winres /?
   
 4.  To save the localized version of the .resx or .resources file, click the **Save** icon or the same command on the **File** menu. The tool displays the **Select Culture** window.  
   
-5.  Select the appropriate culture and file mode then click **OK**. The tool saves the file, using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the [CultureInfo Class](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx).  
+5.  Select the appropriate culture and file mode then click **OK**. The tool saves the file, using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.  
   
 ## See Also  
- <xref:System.ComponentModel.LocalizableAttribute>   
- <xref:System.Globalization.CultureInfo>   
- <xref:System.Resources.ResourceManager>   
- <xref:System.Resources.ResourceReader>   
- <xref:System.Resources.ResourceWriter>   
- [Tools](../../../docs/framework/tools/index.md)   
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
+ <xref:System.ComponentModel.LocalizableAttribute>  
+ <xref:System.Globalization.CultureInfo>  
+ <xref:System.Resources.ResourceManager>  
+ <xref:System.Resources.ResourceReader>  
+ <xref:System.Resources.ResourceWriter>  
+ [Tools](../../../docs/framework/tools/index.md)  
+ [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
  [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

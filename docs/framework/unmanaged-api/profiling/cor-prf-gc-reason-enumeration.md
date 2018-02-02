@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_GC_REASON"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_GC_REASON enumeration [.NET Framework profiling]"
 ms.assetid: 72822b95-a7fb-485e-9d55-1cb016d9a458
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_GC_REASON Enumeration
 Indicates the reason that garbage collection is occurring.  

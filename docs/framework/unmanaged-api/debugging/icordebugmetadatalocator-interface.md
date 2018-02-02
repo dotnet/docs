@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMetaDataLocator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMetaDataLocator interface [.NET Framework debugging]"
 ms.assetid: 287f5ecd-863f-4090-a615-077859f0257b
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugMetaDataLocator Interface
 Provides metadata information to the debugger.  
@@ -53,5 +53,5 @@ Provides metadata information to the debugger.
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

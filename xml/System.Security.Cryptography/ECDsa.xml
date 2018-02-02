@@ -125,6 +125,7 @@
         <summary>Creates a new instance of the default implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA) with a newly generated key over the specified curve.</summary>
         <returns>A new instance of the default implementation (<see cref="T:System.Security.Cryptography.ECDsaCng" />) of this class.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.ECDsa.GenerateKey(System.Security.Cryptography.ECCurve)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -157,6 +158,7 @@
         <summary>Creates a new instance of the default implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA) using the specified parameters as the key.</summary>
         <returns>A new instance of the default implementation (<see cref="T:System.Security.Cryptography.ECDsaCng" />) of this class.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.ECDsa.ImportParameters(System.Security.Cryptography.ECParameters)" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -240,6 +242,8 @@
         <returns>The parameters representing the point on the curve for this key, using the explicit curve format.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A derived class must override this method.</exception>
+        <altmember cref="T:System.Security.Cryptography.ECCurve" />
+        <altmember cref="T:System.Security.Cryptography.ECParameters" />
       </Docs>
     </Member>
     <Member MemberName="ExportParameters">
@@ -274,6 +278,9 @@
         <returns>The parameters representing the point on the curve for this key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A derived class must override this method.</exception>
+        <altmember cref="T:System.Security.Cryptography.ECCurve" />
+        <altmember cref="T:System.Security.Cryptography.ECParameters" />
+        <altmember cref="F:System.Security.Cryptography.ECParameters.Curve" />
       </Docs>
     </Member>
     <Member MemberName="FromXmlString">
@@ -882,5 +889,48 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifyData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies that a digital signature is valid.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of an implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SignData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of the specified data and signs it.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HashData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of binary data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

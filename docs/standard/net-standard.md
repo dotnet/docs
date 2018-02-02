@@ -1,17 +1,19 @@
 ---
-title: .NET Standard | Microsoft Docs
-description: Learn about .NET Standard, its versions and the .NET implementations that support it.   
+title: .NET Standard
+description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 keywords: .NET Standard, PCL, .NET
-author: richlander
+author: mairaw
 ms.author: mairaw
-ms.date: 03/17/2017
+ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-
 # .NET Standard
 
 The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there is no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations. 
@@ -20,9 +22,9 @@ The .NET Standard enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET implementations to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
-- Reduces and hopefully eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
+- Reduces or even eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.1 implements .NET Standard 1.5, while .NET Core 1.0 implements .NET Standard 1.6.
+The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
 
 ## .NET implementation support
 
@@ -56,7 +58,7 @@ There are two primary versioning rules:
 
 ## Comparison to Portable Class Libraries
 
-.NET Standard can be thought of as the next generation of [Portable Class Libraries (PCL)](https://msdn.microsoft.com/library/gg597391.aspx). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
+.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
 
 .NET Standard and PCL profiles were created for similar purposes but also differ in key ways.
 
@@ -76,7 +78,7 @@ The .NET Standard specification is a standardized set of APIs. The specification
 
 ### Official artifacts
 
-The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) for each [component](https://github.com/dotnet/corefx/tree/master/src) defines the .NET Standard APIs. While the ref artifacts reside in the [CoreFX repo](https://github.com/dotnet/corefx), they are not .NET Core specific.
+The official specification is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/standard/tree/master/netstandard/ref) in the [dotnet/standard repository](https://github.com/dotnet/standard) defines the .NET Standard APIs.
 
 The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard versions.
 

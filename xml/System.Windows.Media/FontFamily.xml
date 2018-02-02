@@ -138,6 +138,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Fonts" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -552,5 +553,14 @@ Example of typefaces that are members of the "Times New Roman" font family
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.FontFamily" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

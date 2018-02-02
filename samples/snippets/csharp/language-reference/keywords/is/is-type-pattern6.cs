@@ -9,7 +9,7 @@ public class Employee : IComparable
     public int CompareTo(Object o)
     {
         var e = o as Employee;
-        if (o == null)
+        if (e == null)
         {
            throw new ArgumentException("o is not an Employee object.");
         }

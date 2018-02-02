@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This interface is implemented by types whose values can be ordered or sorted and provides a strongly typed comparison method for ordering members of a generic collection object. For example, one number can be larger than a second number, and one string can appear in alphabetical order before another. It requires that implementing types define a single method, <xref:System.IComparable%601.CompareTo%28%600%29>, that indicates whether the position of the current instance in the sort order is before, after, or the same as a second object of the same type. Typically, the method is not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+ This interface is implemented by types whose values can be ordered or sorted and provides a strongly typed comparison method for ordering members of a generic collection object. For example, one number can be larger than a second number, and one string can appear in alphabetical order before another. It requires that implementing types define a single method, <xref:System.IComparable%601.CompareTo%28%600%29>, that indicates whether the position of the current instance in the sort order is before, after, or the same as a second object of the same type. Typically, the method is not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
   
  Typically, types that provide an <xref:System.IComparable%601> implementation also implement the <xref:System.IEquatable%601> interface. The <xref:System.IEquatable%601> interface defines the <xref:System.IEquatable%601.Equals%2A> method, which determines the equality of instances of the implementing type.  
   
@@ -64,6 +64,8 @@
   
  If you implement <see cref="T:System.IComparable`1" />, you should overload the <see langword="op_GreaterThan" />, <see langword="op_GreaterThanOrEqual" />, <see langword="op_LessThan" />, and <see langword="op_LessThanOrEqual" /> operators to return values that are consistent with <see cref="M:System.IComparable`1.CompareTo(`0)" />. In addition, you should also implement <see cref="T:System.IEquatable`1" />. See the <see cref="T:System.IEquatable`1" /> article for complete information.</para>
     </block>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.IEquatable`1" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -120,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IComparable%601.CompareTo%2A> provides a strongly typed comparison method for ordering members of a generic collection object. Because of this, it is usually not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+ <xref:System.IComparable%601.CompareTo%2A> provides a strongly typed comparison method for ordering members of a generic collection object. Because of this, it is usually not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=nameWithType> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
   
  This method is only a definition and must be implemented by a specific class or value type to have effect. The meaning of the comparisons specified in the Return Values section ("precedes", "occurs in the same position as", and "follows) depends on the particular implementation.  
   
@@ -153,6 +155,8 @@
         <block subset="none" type="usage">
           <para>Use the <see cref="M:System.IComparable`1.CompareTo(`0)" /> method to determine the ordering of instances of a class.</para>
         </block>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.IComparable" />
       </Docs>
     </Member>
   </Members>

@@ -23,6 +23,8 @@
   <Docs>
     <summary>The <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" /> class provides enumeration functionality for the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection. <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" /> implements the <see cref="T:System.Collections.IEnumerator" /> interface.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" />
+    <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" />
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -47,6 +49,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Current" /> property retrieves the current <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object from the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object that represents the current recipient in the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -73,6 +77,7 @@
         <returns>
           <see langword="true" /> if the enumeration successfully moved to the next <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object; <see langword="false" /> if the enumeration moved past the last item in the enumeration.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -97,6 +102,7 @@
       <Docs>
         <summary>The <see cref="M:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Reset" /> method resets the enumeration to the first <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object in the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.MoveNext" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -121,6 +127,8 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.System#Collections#IEnumerator#Current" /> property retrieves the current <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object from the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</summary>
         <value>A <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" /> object that represents the current recipient in the <see cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" /> collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipient" />
+        <altmember cref="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection" />
       </Docs>
     </Member>
   </Members>

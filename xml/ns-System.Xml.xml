@@ -32,17 +32,17 @@
   
 <a name="async"></a>   
 ## Processing XML asynchronously  
- The <xref:System.Xml.XmlReader?displayProperty=fullName> and <xref:System.Xml.XmlWriter?displayProperty=fullName> classes include a number of asynchronous methods that are based on the . These methods can be identified by the string "Async" at the end of their names. With these methods, you can write asynchronous code that's similar to your synchronous code, and you can migrate your existing synchronous code to asynchronous code easily.  
+ The <xref:System.Xml.XmlReader?displayProperty=nameWithType> and <xref:System.Xml.XmlWriter?displayProperty=nameWithType> classes include a number of asynchronous methods that are based on the . These methods can be identified by the string "Async" at the end of their names. With these methods, you can write asynchronous code that's similar to your synchronous code, and you can migrate your existing synchronous code to asynchronous code easily.  
   
 -   Use the asynchronous methods in apps where there is significant network stream latency. Avoid using the asynchronous APIs for memory stream or local file stream read/write operations. The input stream, <xref:System.Xml.XmlTextReader>, and <xref:System.Xml.XmlTextWriter> should support asynchronous operations as well. Otherwise, threads will still be blocked by I/O operations.  
   
 -   We don't recommend mixing synchronous and asynchronous function calls, because you might forget to use the `await` keyword or use a synchronous API where an asynchronous one is necessary.  
   
--   Do not set the <xref:System.Xml.XmlReaderSettings.Async%2A?displayProperty=fullName> or <xref:System.Xml.XmlWriterSettings.Async%2A?displayProperty=fullName> flag to `true` if you don't intend to use an asynchronous method.  
+-   Do not set the <xref:System.Xml.XmlReaderSettings.Async%2A?displayProperty=nameWithType> or <xref:System.Xml.XmlWriterSettings.Async%2A?displayProperty=nameWithType> flag to `true` if you don't intend to use an asynchronous method.  
   
 -   If you forget to specify the `await` keyword when you call an asynchronous method, the results are non-deterministic: You might receive the result you expected or an exception.  
   
--   When an <xref:System.Xml.XmlReader> object is reading a large text node, it might cache only a partial text value and return the text node, so retrieving the <xref:System.Xml.XmlReader.Value%2A?displayProperty=fullName> property might be blocked by an I/O operation. Use the <xref:System.Xml.XmlReader.GetValueAsync%2A> method to get the text value in asynchronous mode, or use the <xref:System.Xml.XmlReader.ReadValueChunkAsync%2A> method to read a large text block in chunks.  
+-   When an <xref:System.Xml.XmlReader> object is reading a large text node, it might cache only a partial text value and return the text node, so retrieving the <xref:System.Xml.XmlReader.Value%2A?displayProperty=nameWithType> property might be blocked by an I/O operation. Use the <xref:System.Xml.XmlReader.GetValueAsync%2A> method to get the text value in asynchronous mode, or use the <xref:System.Xml.XmlReader.ReadValueChunkAsync%2A> method to read a large text block in chunks.  
   
 -   When you use an <xref:System.Xml.XmlWriter> object, call the <xref:System.Xml.XmlWriter.FlushAsync%2A> method before calling <xref:System.Xml.XmlWriter.Close%2A> to avoid blocking an I/O operation.  
   
@@ -208,7 +208,7 @@
  If you are concerned about denial of service issues or if you are dealing with untrusted sources, do not enable DTD processing. This is disabled by default on <xref:System.Xml.XmlReader> objects that the <xref:System.Xml.XmlReader.Create%2A> method creates.  
   
 > [!NOTE]
->  The <xref:System.Xml.XmlTextReader> allows DTD processing by default. Use the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=fullName> property to disable this feature.  
+>  The <xref:System.Xml.XmlTextReader> allows DTD processing by default. Use the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=nameWithType> property to disable this feature.  
   
  If you have DTD processing enabled, you can use the <xref:System.Xml.XmlSecureResolver> class to restrict the resources that the <xref:System.Xml.XmlReader> can access. You can also design your app so that the XML processing is memory and time constrained. For example, you can configure timeout limits in your ASP.NET app.  
   
@@ -240,5 +240,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="N:System.Xml.Xsl" />
+    <altmember cref="N:System.Xml.Schema" />
+    <altmember cref="N:System.Xml.Linq" />
   </Docs>
 </Namespace>

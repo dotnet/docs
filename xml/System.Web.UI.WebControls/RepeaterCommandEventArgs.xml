@@ -16,18 +16,20 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs>, see the <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs.%23ctor%2A> constructor. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs>, see the <xref:System.Web.UI.WebControls.RepeaterCommandEventArgs.%23ctor%2A> constructor. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example illustrates a way to handle an <xref:System.Web.UI.WebControls.Repeater.ItemCommand> event of the <xref:System.Web.UI.WebControls.Repeater>. Information about the button is displayed whenever a <xref:System.Web.UI.WebControls.Button> control within the <xref:System.Web.UI.WebControls.Repeater> is clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic RepeaterCommandEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RepeaterCommandEventArgs Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Repeater" />
+    <altmember cref="T:System.Web.UI.WebControls.RepeaterCommandEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
     <Member MemberName="CommandSource">
@@ -128,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.RepeaterItem" />
       </Docs>
     </Member>
   </Members>

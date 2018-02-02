@@ -1196,7 +1196,7 @@
       </Docs>
     </Member>
     <Member MemberName="ArrayAccess">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression ArrayAccess (System.Linq.Expressions.Expression array, System.Linq.Expressions.Expression[] indexes);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression ArrayAccess (System.Linq.Expressions.Expression array, params System.Linq.Expressions.Expression[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression ArrayAccess(class System.Linq.Expressions.Expression array, class System.Linq.Expressions.Expression[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ArrayAccess(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1379,7 +1379,7 @@
       </Docs>
     </Member>
     <Member MemberName="ArrayIndex">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression ArrayIndex (System.Linq.Expressions.Expression array, System.Linq.Expressions.Expression[] indexes);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression ArrayIndex (System.Linq.Expressions.Expression array, params System.Linq.Expressions.Expression[] indexes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression ArrayIndex(class System.Linq.Expressions.Expression array, class System.Linq.Expressions.Expression[] indexes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ArrayIndex(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1423,7 +1423,7 @@
 ## Remarks  
  Each element of `indexes` must have <xref:System.Linq.Expressions.Expression.Type%2A> equal to <xref:System.Int32>. The <xref:System.Linq.Expressions.Expression.Type%2A> property of `array` must represent an array type whose rank matches the number of elements in `indexes`.  
   
- If the rank of `array`.Type is 1, this method returns a <xref:System.Linq.Expressions.BinaryExpression>. The <xref:System.Linq.Expressions.BinaryExpression.Left%2A> property is set to `array` and the <xref:System.Linq.Expressions.BinaryExpression.Right%2A> property is set to the single element of `indexes`. The <xref:System.Linq.Expressions.Expression.Type%2A> property of the<xref:System.Linq.Expressions.BinaryExpression> represents the element type of `array`.Type.  
+ If the rank of `array`.Type is 1, this method returns a <xref:System.Linq.Expressions.BinaryExpression>. The <xref:System.Linq.Expressions.BinaryExpression.Left%2A> property is set to `array` and the <xref:System.Linq.Expressions.BinaryExpression.Right%2A> property is set to the single element of `indexes`. The <xref:System.Linq.Expressions.Expression.Type%2A> property of the <xref:System.Linq.Expressions.BinaryExpression> represents the element type of `array`.Type.  
   
  If the rank of `array`.Type is more than one, this method returns a <xref:System.Linq.Expressions.MethodCallExpression>. The <xref:System.Linq.Expressions.MethodCallExpression.Method%2A> property is set to the <xref:System.Reflection.MethodInfo> that describes the public instance method `Get` on the type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of `array`.  
   
@@ -1701,7 +1701,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1807,7 +1807,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.ParameterExpression&gt; variables, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -1935,7 +1935,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Type type, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2060,7 +2060,7 @@
       </Docs>
     </Member>
     <Member MemberName="Block">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, System.Linq.Expressions.Expression[] expressions);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.BlockExpression Block (Type type, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.ParameterExpression&gt; variables, params System.Linq.Expressions.Expression[] expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.BlockExpression Block(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.ParameterExpression&gt; variables, class System.Linq.Expressions.Expression[] expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Block(System.Type,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2501,7 +2501,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Reflection.MethodInfo method, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Reflection.MethodInfo method, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Reflection.MethodInfo method, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2636,7 +2636,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, System.Reflection.MethodInfo method, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, System.Reflection.MethodInfo method, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Linq.Expressions.Expression instance, class System.Reflection.MethodInfo method, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2808,7 +2808,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, string methodName, Type[] typeArguments, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (System.Linq.Expressions.Expression instance, string methodName, Type[] typeArguments, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Linq.Expressions.Expression instance, string methodName, class System.Type[] typeArguments, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Linq.Expressions.Expression,System.String,System.Type[],System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -2910,7 +2910,7 @@
       </Docs>
     </Member>
     <Member MemberName="Call">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (Type type, string methodName, Type[] typeArguments, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MethodCallExpression Call (Type type, string methodName, Type[] typeArguments, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MethodCallExpression Call(class System.Type type, string methodName, class System.Type[] typeArguments, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Call(System.Type,System.String,System.Type[],System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -3508,6 +3508,8 @@
  -or-  
   
  <paramref name="ifTrue" />.Type is not equal to <paramref name="ifFalse" />.Type.</exception>
+        <altmember cref="M:System.Linq.Expressions.Expression.IfThen(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
+        <altmember cref="M:System.Linq.Expressions.Expression.IfThenElse(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)" />
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -4605,7 +4607,7 @@
       </Docs>
     </Member>
     <Member MemberName="Dynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression Dynamic (System.Runtime.CompilerServices.CallSiteBinder binder, Type returnType, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression Dynamic(class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Type returnType, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Dynamic(System.Runtime.CompilerServices.CallSiteBinder,System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -4860,7 +4862,7 @@
       </Docs>
     </Member>
     <Member MemberName="ElementInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ElementInit ElementInit (System.Reflection.MethodInfo addMethod, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ElementInit ElementInit (System.Reflection.MethodInfo addMethod, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ElementInit ElementInit(class System.Reflection.MethodInfo addMethod, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ElementInit(System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -5557,7 +5559,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetActionType">
-      <MemberSignature Language="C#" Value="public static Type GetActionType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetActionType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetActionType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetActionType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -5608,7 +5610,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetDelegateType">
-      <MemberSignature Language="C#" Value="public static Type GetDelegateType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetDelegateType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetDelegateType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetDelegateType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -5657,7 +5659,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetFuncType">
-      <MemberSignature Language="C#" Value="public static Type GetFuncType (Type[] typeArgs);" />
+      <MemberSignature Language="C#" Value="public static Type GetFuncType (params Type[] typeArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetFuncType(class System.Type[] typeArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.GetFuncType(System.Type[])" />
       <MemberType>Method</MemberType>
@@ -6440,7 +6442,7 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.InvocationExpression Invoke (System.Linq.Expressions.Expression expression, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.InvocationExpression Invoke (System.Linq.Expressions.Expression expression, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.InvocationExpression Invoke(class System.Linq.Expressions.Expression expression, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Invoke(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -6913,7 +6915,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7012,7 +7014,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7173,7 +7175,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Type delegateType, class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7330,7 +7332,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.LambdaExpression Lambda (Type delegateType, System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.LambdaExpression Lambda(class System.Type delegateType, class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda(System.Type,System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7529,7 +7531,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda&lt;TDelegate&gt;">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression`1&lt;!!TDelegate&gt; Lambda&lt;TDelegate&gt;(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda``1(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -7648,7 +7650,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lambda&lt;TDelegate&gt;">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, bool tailCall, System.Linq.Expressions.ParameterExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.Expression&lt;TDelegate&gt; Lambda&lt;TDelegate&gt; (System.Linq.Expressions.Expression body, bool tailCall, params System.Linq.Expressions.ParameterExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.Expression`1&lt;!!TDelegate&gt; Lambda&lt;TDelegate&gt;(class System.Linq.Expressions.Expression body, bool tailCall, class System.Linq.Expressions.ParameterExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Lambda``1(System.Linq.Expressions.Expression,System.Boolean,System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -8419,7 +8421,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MemberInfo member, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MemberInfo member, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberListBinding ListBind(class System.Reflection.MemberInfo member, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListBind(System.Reflection.MemberInfo,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8521,7 +8523,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MethodInfo propertyAccessor, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberListBinding ListBind (System.Reflection.MethodInfo propertyAccessor, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberListBinding ListBind(class System.Reflection.MethodInfo propertyAccessor, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListBind(System.Reflection.MethodInfo,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8706,7 +8708,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.ElementInit[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.ElementInit[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.ElementInit[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.ElementInit[])" />
       <MemberType>Method</MemberType>
@@ -8755,7 +8757,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression>that represents the initialization of a new dictionary instance with two key-value pairs.  
+ The following example demonstrates how to use the <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.ElementInit%5B%5D%29> method to create a <xref:System.Linq.Expressions.ListInitExpression> that represents the initialization of a new dictionary instance with two key-value pairs.  
   
  [!code-csharp[System.Linq.Expressions.Expression#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/CS/Expression.cs#7)]
  [!code-vb[System.Linq.Expressions.Expression#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.Expressions.Expression/VB/Expression.vb#7)]  
@@ -8773,7 +8775,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -8819,7 +8821,7 @@
   
  In order to use this overload of <xref:System.Linq.Expressions.Expression.ListInit%28System.Linq.Expressions.NewExpression%2CSystem.Linq.Expressions.Expression%5B%5D%29>, `newExpression`.Type or its base type must declare a single method named "Add" (case insensitive) that takes exactly one argument. The type of the argument must be assignable from the type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of the first element of `initializers`.  
   
- The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression>contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> represents the add method that was discovered on `newExpression`.Type or its base type.  
+ The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression> contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> represents the add method that was discovered on `newExpression`.Type or its base type.  
   
  The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.ListInitExpression> is equal to `newExpression`.Type.  
   
@@ -8918,7 +8920,7 @@
       </Docs>
     </Member>
     <Member MemberName="ListInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Reflection.MethodInfo addMethod, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.ListInitExpression ListInit (System.Linq.Expressions.NewExpression newExpression, System.Reflection.MethodInfo addMethod, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.ListInitExpression ListInit(class System.Linq.Expressions.NewExpression newExpression, class System.Reflection.MethodInfo addMethod, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.ListInit(System.Linq.Expressions.NewExpression,System.Reflection.MethodInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -8966,7 +8968,7 @@
   
  If `addMethod` is `null`, `newExpression`.Type or its base type must declare a single method named "Add" (case insensitive) that takes exactly one argument. If `addMethod` is not `null`, it must represent an instance method named "Add" (case insensitive) that has exactly one parameter. The type represented by the <xref:System.Linq.Expressions.Expression.Type%2A> property of each element of `initializers` must be assignable to the argument type of the add method.  
   
- The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression>contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is equal to `addMethod`.  
+ The <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> property of the returned <xref:System.Linq.Expressions.ListInitExpression> contains one element of type <xref:System.Linq.Expressions.ElementInit> for each element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.Arguments%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is a singleton collection that contains the corresponding element of `initializers`. The <xref:System.Linq.Expressions.ElementInit.AddMethod%2A> property of each element of <xref:System.Linq.Expressions.ListInitExpression.Initializers%2A> is equal to `addMethod`.  
   
  The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.ListInitExpression> is equal to `newExpression`.Type.  
   
@@ -9395,7 +9397,7 @@
       </Docs>
     </Member>
     <Member MemberName="MakeDynamic">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.DynamicExpression MakeDynamic (Type delegateType, System.Runtime.CompilerServices.CallSiteBinder binder, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.DynamicExpression MakeDynamic(class System.Type delegateType, class System.Runtime.CompilerServices.CallSiteBinder binder, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MakeDynamic(System.Type,System.Runtime.CompilerServices.CallSiteBinder,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -9871,7 +9873,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MemberInfo member, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MemberInfo member, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberMemberBinding MemberBind(class System.Reflection.MemberInfo member, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberBind(System.Reflection.MemberInfo,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -9972,7 +9974,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberBind">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MethodInfo propertyAccessor, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberMemberBinding MemberBind (System.Reflection.MethodInfo propertyAccessor, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberMemberBinding MemberBind(class System.Reflection.MethodInfo propertyAccessor, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberBind(System.Reflection.MethodInfo,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -10076,7 +10078,7 @@
       </Docs>
     </Member>
     <Member MemberName="MemberInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberInitExpression MemberInit (System.Linq.Expressions.NewExpression newExpression, System.Linq.Expressions.MemberBinding[] bindings);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.MemberInitExpression MemberInit (System.Linq.Expressions.NewExpression newExpression, params System.Linq.Expressions.MemberBinding[] bindings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.MemberInitExpression MemberInit(class System.Linq.Expressions.NewExpression newExpression, class System.Linq.Expressions.MemberBinding[] bindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.MemberInit(System.Linq.Expressions.NewExpression,System.Linq.Expressions.MemberBinding[])" />
       <MemberType>Method</MemberType>
@@ -11379,7 +11381,7 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewExpression New(class System.Reflection.ConstructorInfo constructor, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.New(System.Reflection.ConstructorInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -11513,7 +11515,7 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; arguments, System.Reflection.MemberInfo[] members);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewExpression New (System.Reflection.ConstructorInfo constructor, System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; arguments, params System.Reflection.MemberInfo[] members);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewExpression New(class System.Reflection.ConstructorInfo constructor, class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; arguments, class System.Reflection.MemberInfo[] members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.New(System.Reflection.ConstructorInfo,System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Reflection.MemberInfo[])" />
       <MemberType>Method</MemberType>
@@ -11651,7 +11653,7 @@
       </Docs>
     </Member>
     <Member MemberName="NewArrayBounds">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayBounds (Type type, System.Linq.Expressions.Expression[] bounds);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayBounds (Type type, params System.Linq.Expressions.Expression[] bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewArrayExpression NewArrayBounds(class System.Type type, class System.Linq.Expressions.Expression[] bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.NewArrayBounds(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -11780,7 +11782,7 @@
       </Docs>
     </Member>
     <Member MemberName="NewArrayInit">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayInit (Type type, System.Linq.Expressions.Expression[] initializers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.NewArrayExpression NewArrayInit (Type type, params System.Linq.Expressions.Expression[] initializers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.NewArrayExpression NewArrayInit(class System.Type type, class System.Linq.Expressions.Expression[] initializers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.NewArrayInit(System.Type,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -12659,7 +12661,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting <xref:System.Linq.Expressions.BinaryExpression> has the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type%2A> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted%2A> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A>property is `null`.  
+ The resulting <xref:System.Linq.Expressions.BinaryExpression> has the <xref:System.Linq.Expressions.BinaryExpression.Method%2A> property set to the implementing method. The <xref:System.Linq.Expressions.Expression.Type%2A> property is set to the type of the node. If the node is lifted, the <xref:System.Linq.Expressions.BinaryExpression.IsLifted%2A> and <xref:System.Linq.Expressions.BinaryExpression.IsLiftedToNull%2A> properties are both `true`. Otherwise, they are `false`. The <xref:System.Linq.Expressions.BinaryExpression.Conversion%2A> property is `null`.  
   
  The following information describes the implementing method, the node type, and whether a node is lifted.  
   
@@ -13476,7 +13478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.MemberExpression>is equal to the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property of the <xref:System.Reflection.PropertyInfo> that represents the property denoted by `propertyName`.  
+ The <xref:System.Linq.Expressions.Expression.Type%2A> property of the resulting <xref:System.Linq.Expressions.MemberExpression> is equal to the <xref:System.Reflection.PropertyInfo.PropertyType%2A> property of the <xref:System.Reflection.PropertyInfo> that represents the property denoted by `propertyName`.  
   
  This method searches `expression`.Type and its base types for a property that has the name `propertyName`. Public properties are given preference over non-public properties. If a matching property is found, this method passes `expression` and the <xref:System.Reflection.PropertyInfo> that represents that property to <xref:System.Linq.Expressions.Expression.Property%2A>.  
   
@@ -13534,7 +13536,7 @@
       </Docs>
     </Member>
     <Member MemberName="Property">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, System.Reflection.PropertyInfo indexer, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, System.Reflection.PropertyInfo indexer, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression Property(class System.Linq.Expressions.Expression instance, class System.Reflection.PropertyInfo indexer, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Expression,System.Reflection.PropertyInfo,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -13578,7 +13580,7 @@
       </Docs>
     </Member>
     <Member MemberName="Property">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, string propertyName, System.Linq.Expressions.Expression[] arguments);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.IndexExpression Property (System.Linq.Expressions.Expression instance, string propertyName, params System.Linq.Expressions.Expression[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.IndexExpression Property(class System.Linq.Expressions.Expression instance, string propertyName, class System.Linq.Expressions.Expression[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Property(System.Linq.Expressions.Expression,System.String,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -14449,7 +14451,7 @@
       </Docs>
     </Member>
     <Member MemberName="RuntimeVariables">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables (System.Linq.Expressions.ParameterExpression[] variables);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables (params System.Linq.Expressions.ParameterExpression[] variables);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.RuntimeVariablesExpression RuntimeVariables(class System.Linq.Expressions.ParameterExpression[] variables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.RuntimeVariables(System.Linq.Expressions.ParameterExpression[])" />
       <MemberType>Method</MemberType>
@@ -15027,7 +15029,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15088,7 +15090,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15191,7 +15193,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Reflection.MethodInfo comparison, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15279,7 +15281,7 @@
       </Docs>
     </Member>
     <Member MemberName="Switch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (Type type, System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, System.Linq.Expressions.SwitchCase[] cases);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchExpression Switch (Type type, System.Linq.Expressions.Expression switchValue, System.Linq.Expressions.Expression defaultBody, System.Reflection.MethodInfo comparison, params System.Linq.Expressions.SwitchCase[] cases);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchExpression Switch(class System.Type type, class System.Linq.Expressions.Expression switchValue, class System.Linq.Expressions.Expression defaultBody, class System.Reflection.MethodInfo comparison, class System.Linq.Expressions.SwitchCase[] cases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.Switch(System.Type,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Reflection.MethodInfo,System.Linq.Expressions.SwitchCase[])" />
       <MemberType>Method</MemberType>
@@ -15380,7 +15382,7 @@
       </Docs>
     </Member>
     <Member MemberName="SwitchCase">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchCase SwitchCase (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression[] testValues);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.SwitchCase SwitchCase (System.Linq.Expressions.Expression body, params System.Linq.Expressions.Expression[] testValues);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.SwitchCase SwitchCase(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.Expression[] testValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.SwitchCase(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression[])" />
       <MemberType>Method</MemberType>
@@ -15681,7 +15683,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryCatch">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatch (System.Linq.Expressions.Expression body, System.Linq.Expressions.CatchBlock[] handlers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatch (System.Linq.Expressions.Expression body, params System.Linq.Expressions.CatchBlock[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.TryExpression TryCatch(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.CatchBlock[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryCatch(System.Linq.Expressions.Expression,System.Linq.Expressions.CatchBlock[])" />
       <MemberType>Method</MemberType>
@@ -15733,7 +15735,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryCatchFinally">
-      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatchFinally (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression finally, System.Linq.Expressions.CatchBlock[] handlers);" />
+      <MemberSignature Language="C#" Value="public static System.Linq.Expressions.TryExpression TryCatchFinally (System.Linq.Expressions.Expression body, System.Linq.Expressions.Expression finally, params System.Linq.Expressions.CatchBlock[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.Expressions.TryExpression TryCatchFinally(class System.Linq.Expressions.Expression body, class System.Linq.Expressions.Expression finally, class System.Linq.Expressions.CatchBlock[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryCatchFinally(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.CatchBlock[])" />
       <MemberType>Method</MemberType>
@@ -15860,7 +15862,7 @@
     </Member>
     <Member MemberName="TryGetActionType">
       <MemberSignature Language="C#" Value="public static bool TryGetActionType (Type[] typeArgs, out Type actionType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetActionType(class System.Type[] typeArgs, class System.Type actionType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetActionType(class System.Type[] typeArgs, [out] class System.Type&amp; actionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryGetActionType(System.Type[],System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -15896,7 +15898,7 @@
     </Member>
     <Member MemberName="TryGetFuncType">
       <MemberSignature Language="C#" Value="public static bool TryGetFuncType (Type[] typeArgs, out Type funcType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFuncType(class System.Type[] typeArgs, class System.Type funcType) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFuncType(class System.Type[] typeArgs, [out] class System.Type&amp; funcType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.Expression.TryGetFuncType(System.Type[],System.Type@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -16398,5 +16400,1093 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PostIncrementAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents the assignment of the expression followed by a subsequent increment by 1 of the original expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ElementInit">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Linq.Expressions.ElementInit" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equal">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an equality comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Or">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise <see langword="OR" /> operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Decrement">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents the decrementing of the expression by 1.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OnesComplement">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the expression representing the ones complement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a type conversion operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> by calling the appropriate factory method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dynamic">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SubtractAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a subtraction assignment operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Continue">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.GotoExpression" /> representing a continue statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Property">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PreDecrementAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that decrements the expression by 1 and assigns the result back to the expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic addition operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Parameter">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.ParameterExpression" /> node that can be used to identify a parameter or a variable in an expression tree.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MemberBind">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MemberMemberBinding" /> that represents the recursive initialization of members of a member.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PostDecrementAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents the assignment of the expression followed by a subsequent decrement by 1 of the original expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UnaryPlus">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a unary plus operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Rethrow">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a rethrowing of an exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic multiplication operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic addition operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SubtractChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic subtraction operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExclusiveOr">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise <see langword="XOR" /> operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Block">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BlockExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RuntimeVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Linq.Expressions.RuntimeVariablesExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SwitchCase">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchCase" /> object to be used in a <see cref="T:System.Linq.Expressions.SwitchExpression" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RightShift">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise right-shift operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Condition">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.ConditionalExpression" /> that represents a conditional statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DivideAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a division assignment operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Loop">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.LoopExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NewArrayBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.NewArrayExpression" /> that represents creating an array that has a specified rank.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Bind">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MemberAssignment" /> that represents the initialization of a member.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ListBind">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MemberListBinding" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Constant">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.ConstantExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Field">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MemberExpression" /> that represents accessing a field.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SymbolDocument">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Linq.Expressions.SymbolDocumentInfo" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a conversion operation that throws an exception if the target type is overflowed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RightShiftAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise right-shift assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Call">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.MethodCallExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Increment">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents the incrementing of the expression value by 1.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ArrayIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Linq.Expressions.Expression" /> that represents applying an array index operator.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GreaterThanOrEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a "greater than or equal" numeric comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Linq.Expressions.InvocationExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Switch">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.SwitchExpression" /> that represents a <see langword="switch" /> statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Divide">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic division operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsFalse">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the expression evaluates to false.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MemberInit">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Represents an expression that creates a new object and initializes a property of the object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Goto">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.GotoExpression" /> representing a "go to" statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeDynamic">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.DynamicExpression" /> that represents a dynamic operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Throw">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a throwing of an exception.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NewArrayInit">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.NewArrayExpression" /> that represents creating a one-dimensional array and initializing it from a list of elements.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="And">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise <see langword="AND" /> operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PreIncrementAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that increments the expression by 1 and assigns the result back to the expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Lambda">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an expression tree that represents a lambda expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GreaterThan">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a "greater than" numeric comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise OR assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Subtract">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic subtraction operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Return">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.GotoExpression" /> representing a return statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Coalesce">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a coalescing operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsTrue">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the expression evaluates to true.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs a new instance of <see cref="T:System.Linq.Expressions.Expression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Modulo">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic remainder operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Negate">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents an arithmetic negation operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AndAlso">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a conditional <see langword="AND" /> operation that evaluates the second operand only if the first operand evaluates to <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Variable">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.ParameterExpression" /> node that can be used to identify a parameter or a variable in an expression tree.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LessThanOrEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a " less than or equal" numeric comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an addition assignment operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Catch">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.CatchBlock" /> representing a catch statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AndAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise AND assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Break">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.GotoExpression" /> representing a break statement.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LeftShiftAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise left-shift assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MultiplyAssignChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a multiplication assignment operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OrElse">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a conditional <see langword="OR" /> operation that evaluates the second operand only if the first operator evaluates to <see langword="false" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ModuloAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a remainder assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MultiplyAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a multiplication assignment operation that does not have overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NegateChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents an arithmetic negation operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LeftShift">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise left-shift operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Power">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents raising a number to a power.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LessThan">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a "less than" numeric comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NotEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an inequality comparison.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddAssignChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an addition assignment operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="PowerAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents raising an expression to a power and assigning the result back to the expression.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Not">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> that represents a bitwise complement operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MakeUnary">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.UnaryExpression" /> by calling the appropriate factory method.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExclusiveOrAssign">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a bitwise XOR assignment operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="New">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.NewExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ListInit">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.ListInitExpression" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MultiplyChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents an arithmetic multiplication operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SubtractAssignChecked">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.BinaryExpression" /> that represents a subtraction assignment operation that has overflow checking.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ArrayAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Linq.Expressions.IndexExpression" /> to access an array.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Label">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Linq.Expressions.LabelTarget" /> representing a label.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -78,7 +78,7 @@
   
 -   Any leading or trailing white space in the *identifier* component is removed and the resulting string is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property.  
   
--   Any leading or trailing white space and the initial "v" or "V", if present, are removed from the `versionNumber`. The returned string is then passed to the <xref:System.Version.%23ctor%28System.String%29?displayProperty=fullName> constructor, and the resulting <xref:System.Version?displayProperty=fullName> object is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property.  
+-   Any leading or trailing white space and the initial "v" or "V", if present, are removed from the `versionNumber`. The returned string is then passed to the <xref:System.Version.%23ctor%28System.String%29?displayProperty=nameWithType> constructor, and the resulting <xref:System.Version?displayProperty=nameWithType> object is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property.  
   
 -   Any leading or trailing white space in the `profileName` component is removed and the resulting string is assigned to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property.  
   
@@ -243,7 +243,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method converts `obj` to a <xref:System.Runtime.Versioning.FrameworkName> object and calls the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> overload to test for equality. If the conversion does not succeed or if `obj` is `null`, the method returns `false`.  
+ The method converts `obj` to a <xref:System.Runtime.Versioning.FrameworkName> object and calls the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=nameWithType> overload to test for equality. If the conversion does not succeed or if `obj` is `null`, the method returns `false`.  
   
  ]]></format>
         </remarks>
@@ -290,7 +290,7 @@
   
 -   An ordinal comparison of the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property values of the current instance and `other`.  
   
--   A comparison of the version properties by calling the <xref:System.Version.Equals%2A?displayProperty=fullName> method.  
+-   A comparison of the version properties by calling the <xref:System.Version.Equals%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -330,7 +330,7 @@
   
  *identifier*, Version=*version*[, Profile=*profile*]  
   
- where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the string.  
+ where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=nameWithType> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the string.  
   
  The value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property is identical to the string returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method.  
   
@@ -443,7 +443,7 @@
 ## Remarks  
  The <xref:System.Runtime.Versioning.FrameworkName.op_Equality%2A> method defines the operation of the equality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
   
- Languages that do not support custom operators can call the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method instead.  
+ Languages that do not support custom operators can call the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=nameWithType> method instead.  
   
    
   
@@ -496,7 +496,7 @@
 ## Remarks  
  The <xref:System.Runtime.Versioning.FrameworkName.op_Inequality%2A> method defines the operation of the inequality operator for <xref:System.Runtime.Versioning.FrameworkName> objects.  
   
- Languages that do not support custom operators can test for inequality by calling the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=fullName> method and reversing its value.  
+ Languages that do not support custom operators can test for inequality by calling the <xref:System.Runtime.Versioning.FrameworkName.Equals%28System.Runtime.Versioning.FrameworkName%29?displayProperty=nameWithType> method and reversing its value.  
   
    
   
@@ -581,7 +581,7 @@
   
  *identifier*, Version=*version*[, Profile=*profile*]  
   
- where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=fullName> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the returned string.  
+ where *identifier* corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Identifier%2A> property, `version` is equivalent to calling <xref:System.Version.ToString%2A?displayProperty=nameWithType> on the value of the <xref:System.Runtime.Versioning.FrameworkName.Version%2A> property, and `profile` corresponds to the <xref:System.Runtime.Versioning.FrameworkName.Profile%2A> property. If a profile has not been assigned to the <xref:System.Runtime.Versioning.FrameworkName> object, the profile component is not included in the returned string.  
   
  The value returned by the <xref:System.Runtime.Versioning.FrameworkName.ToString%2A> method is identical to the value of the <xref:System.Runtime.Versioning.FrameworkName.FullName%2A> property.  
   
@@ -625,5 +625,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.FrameworkName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Runtime.Versioning.FrameworkName" /> instance represents the same Framework version as a specified object or <see cref="T:System.Runtime.Versioning.FrameworkName" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

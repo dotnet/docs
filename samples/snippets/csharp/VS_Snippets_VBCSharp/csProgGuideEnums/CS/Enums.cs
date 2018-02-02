@@ -6,13 +6,13 @@ using System.Text;
 namespace Enums
 {
     //<snippet1>
-    enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
-    enum Months : byte { Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec }; 
+    enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+    enum Month : byte { Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec }; 
     //</snippet1>
 
     //<snippet2>
     [Flags]
-    enum Days2
+    enum Days
     {
         None = 0x0,
         Sunday = 0x1,
@@ -25,7 +25,7 @@ namespace Enums
     }
     class MyClass
     {
-        Days2 meetingDays = Days2.Tuesday | Days2.Thursday;
+        Days meetingDays = Days.Tuesday | Days.Thursday;
     }
     //</snippet2>
 
@@ -43,52 +43,52 @@ namespace Enums
         static void Main(string[] args)
         {
             //<snippet4>
-            Days meetingDay = Days.Monday;
+            Day meetingDay = Day.Monday;
             //...
-            meetingDay = Days.Friday;
+            meetingDay = Day.Friday;
             //</snippet4>
             Console.WriteLine("Meeting day is {0}", meetingDay);
 
             Console.WriteLine("Meeting day is {0}", (int) meetingDay);
 
-            meetingDay = (Days)42;
+            meetingDay = (Day)42;
             Console.WriteLine("Meeting day is {0}", meetingDay);
 
-            Days2 meetingDays = Days2.Tuesday | Days2.Thursday;
+            Days meetingDays = Days.Tuesday | Days.Thursday;
             Console.WriteLine(meetingDays);
 
             //<snippet5>
-            string s = Enum.GetName(typeof(Days), 4);
+            string s = Enum.GetName(typeof(Day), 4);
             Console.WriteLine(s);
 
-            Console.WriteLine("The values of the Days Enum are:");
-            foreach (int i in Enum.GetValues(typeof(Days)))
+            Console.WriteLine("The values of the Day Enum are:");
+            foreach (int i in Enum.GetValues(typeof(Day)))
                 Console.WriteLine(i);
 
-            Console.WriteLine("The names of the Days Enum are:");
-            foreach (string str in Enum.GetNames(typeof(Days)))
+            Console.WriteLine("The names of the Day Enum are:");
+            foreach (string str in Enum.GetNames(typeof(Day)))
                 Console.WriteLine(str);
             //</snippet5>
 
             //<snippet6>
             // Initialize with two flags using bitwise OR.
-            meetingDays = Days2.Tuesday | Days2.Thursday;
+            meetingDays = Days.Tuesday | Days.Thursday;
 
             // Set an additional flag using bitwise OR.
-            meetingDays = meetingDays | Days2.Friday;
+            meetingDays = meetingDays | Days.Friday;
 
             Console.WriteLine("Meeting days are {0}", meetingDays);
             // Output: Meeting days are Tuesday, Thursday, Friday
 
             // Remove a flag using bitwise XOR.
-            meetingDays = meetingDays ^ Days2.Tuesday;
+            meetingDays = meetingDays ^ Days.Tuesday;
             Console.WriteLine("Meeting days are {0}", meetingDays);
             // Output: Meeting days are Thursday, Friday
             //</snippet6>
 
             //<snippet7>
             // Test value of flags using bitwise AND.
-            bool test = (meetingDays & Days2.Thursday) == Days2.Thursday;
+            bool test = (meetingDays & Days.Thursday) == Days.Thursday;
             Console.WriteLine("Thursday {0} a meeting day.", test == true ? "is" : "is not");
             // Output: Thursday is a meeting day.
             //</snippet7>

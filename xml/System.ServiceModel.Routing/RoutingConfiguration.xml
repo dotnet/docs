@@ -133,7 +133,7 @@
   
  By default, the <xref:System.ServiceModel.Routing.RoutingBehavior> creates and attaches a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with <xref:System.ServiceModel.Routing.SoapProcessingBehavior.ProcessMessages%2A> set to `true` for each client endpoint. If you do not want to use the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on a specific endpoint, create a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with this value set to `false` and then attach it to the endpoint on which you do not want processing to occur. If the <xref:System.ServiceModel.Routing.RoutingBehavior> observes that a client already has a <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, it does not attempt to attach another.  
   
- To disable the application of <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on any endpoint, disable SOAP processing on the <xref:System.ServiceModel.Routing.RoutingBehavior>and the <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
+ To disable the application of <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on any endpoint, disable SOAP processing on the <xref:System.ServiceModel.Routing.RoutingBehavior> and the <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
   
  If <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> is `true`, the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> is added to the client endpoint <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> collection.  
   
@@ -141,5 +141,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.RoutingConfiguration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

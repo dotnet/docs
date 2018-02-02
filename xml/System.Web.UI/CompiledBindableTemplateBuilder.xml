@@ -22,11 +22,13 @@
 ## Remarks  
  ASP.NET uses the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class whenever it parses declarative two-way data-binding within the templated content of an ASP.NET control such as <xref:System.Web.UI.WebControls.FormView>. It is not meant to be used directly in your code.  
   
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Web.UI.IBindableTemplate" />
+    <altmember cref="T:System.Web.UI.ExtractTemplateValuesMethod" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,11 +75,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%28System.Web.UI.Control%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ExtractTemplateValuesMethod" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="InstantiateIn">
@@ -102,11 +106,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%28System.Web.UI.Control%29?displayProperty=fullName> method.  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%28System.Web.UI.Control%29?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
   </Members>

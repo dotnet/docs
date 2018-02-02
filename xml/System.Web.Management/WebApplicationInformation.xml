@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=nameWithType> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
   
  Instances of the <xref:System.Web.Management.WebApplicationInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
   
@@ -74,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.WebHeartbeatEvent" />
   </Docs>
   <Members>
     <Member MemberName="ApplicationDomain">

@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.AnimationTimeline" />
+    <altmember cref="T:System.Windows.Media.Animation.Clock" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,7 @@
         <summary>Gets the current output value of the <see cref="T:System.Windows.Media.Animation.AnimationClock" />.</summary>
         <returns>The current value of this <see cref="T:System.Windows.Media.Animation.AnimationClock" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.Animation.AnimationTimeline.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="Timeline">
@@ -80,6 +83,7 @@
         <summary>Gets the <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that describes this clock's behavior.</summary>
         <value>The animation that describes this clock's behavior.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.Clock" />
       </Docs>
     </Member>
   </Members>

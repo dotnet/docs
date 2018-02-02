@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.UrlEncoder Create (System.Text.Unicode.UnicodeRange[] allowedRanges);" />
+      <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.UrlEncoder Create (params System.Text.Unicode.UnicodeRange[] allowedRanges);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encodings.Web.UrlEncoder Create(class System.Text.Unicode.UnicodeRange[] allowedRanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.UrlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
       <MemberType>Method</MemberType>
@@ -103,7 +103,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="allowedRanges" />is <see langword="null" />.</exception>
+          <paramref name="allowedRanges" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Default">

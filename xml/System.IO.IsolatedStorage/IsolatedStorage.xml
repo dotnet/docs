@@ -164,7 +164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace%2A?displayProperty=fullName> property overrides this property.  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.AvailableFreeSpace%2A?displayProperty=nameWithType> property overrides this property.  
   
  ]]></format>
         </remarks>
@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property represents the total usage of all storage resources within the isolated storage scope. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A?displayProperty=fullName> implements this property. In the case of <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects, this value is in bytes. In the case of implementations of other storage objects, such as a database, this value might be in other units of storage.  
+ This property represents the total usage of all storage resources within the isolated storage scope. <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A?displayProperty=nameWithType> implements this property. In the case of <xref:System.IO.IsolatedStorage.IsolatedStorageFile> objects, this value is in bytes. In the case of implementations of other storage objects, such as a database, this value might be in other units of storage.  
   
  ]]></format>
         </remarks>
@@ -312,7 +312,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A?displayProperty=fullName> method overrides this method.  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.IncreaseQuotaTo%2A?displayProperty=nameWithType> method overrides this method.  
   
  ]]></format>
         </remarks>
@@ -462,9 +462,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default implementation of the <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A> property returns the value of <xref:System.Security.Permissions.IsolatedStoragePermission.UserQuota%2A?displayProperty=fullName>, which is expressed in bytes. Derived classes can express the value in other units of measure. A potential example of such an implementation is an isolated storage database.  
+ The default implementation of the <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A> property returns the value of <xref:System.Security.Permissions.IsolatedStoragePermission.UserQuota%2A?displayProperty=nameWithType>, which is expressed in bytes. Derived classes can express the value in other units of measure. A potential example of such an implementation is an isolated storage database.  
   
- You cannot set <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A>, but the quota is configured in the security policy, and can be set. Code receives a quota of space on the basis of its evidence, so the same code can receive a different quota if it is run with different evidence (for example, the same application run locally and from a share on an intranet can receive different quotas). <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A?displayProperty=fullName> implements this property.  
+ You cannot set <xref:System.IO.IsolatedStorage.IsolatedStorage.MaximumSize%2A>, but the quota is configured in the security policy, and can be set. Code receives a quota of space on the basis of its evidence, so the same code can receive a different quota if it is run with different evidence (for example, the same application run locally and from a share on an intranet can receive different quotas). <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A?displayProperty=nameWithType> implements this property.  
   
  ]]></format>
         </remarks>
@@ -504,7 +504,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Quota%2A?displayProperty=fullName> property overrides this property.  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Quota%2A?displayProperty=nameWithType> property overrides this property.  
   
  ]]></format>
         </remarks>
@@ -539,7 +539,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=fullName> implements this method.  
+ <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> implements this method.  
   
  ]]></format>
         </remarks>
@@ -686,12 +686,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize%2A?displayProperty=fullName> property overrides this property.  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.UsedSize%2A?displayProperty=nameWithType> property overrides this property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An operation was performed that requires access to <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.UsedSize" />, but that property is not defined for this store. Stores that are obtained by using enumerations do not have a well-defined <see cref="P:System.IO.IsolatedStorage.IsolatedStorage.UsedSize" /> property, because partial evidence is used to open the store.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InitStore">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.IO.IsolatedStorage.IsolatedStorage" /> object using either domain or application evidence.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

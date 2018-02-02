@@ -20,7 +20,7 @@
   
  There are two ways to provide notification of event completion: event notification and callbacks. <xref:System.Messaging.ReceiveCompletedEventArgs> is used only with event notification. For information comparing callbacks and event notification, see "Events vs. Callbacks" on MSDN.  
   
- <xref:System.Messaging.ReceiveCompletedEventArgs> provides access to the message that initiated the end of the asynchronous receive operation, through the <xref:System.Messaging.ReceiveCompletedEventArgs.Message%2A> member. This is an alternate access to the message, and behaves much the same as a call to <xref:System.Messaging.MessageQueue.EndReceive%2A?displayProperty=fullName>.  
+ <xref:System.Messaging.ReceiveCompletedEventArgs> provides access to the message that initiated the end of the asynchronous receive operation, through the <xref:System.Messaging.ReceiveCompletedEventArgs.Message%2A> member. This is an alternate access to the message, and behaves much the same as a call to <xref:System.Messaging.MessageQueue.EndReceive%2A?displayProperty=nameWithType>.  
   
    
   
@@ -33,6 +33,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.MessageQueue" />
+    <altmember cref="T:System.Messaging.ReceiveCompletedEventHandler" />
+    <altmember cref="E:System.Messaging.MessageQueue.ReceiveCompleted" />
+    <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+    <altmember cref="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
+    <altmember cref="T:System.Messaging.Message" />
   </Docs>
   <Members>
     <Member MemberName="AsyncResult">
@@ -60,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Messaging.MessageQueue.BeginReceive" />
+        <altmember cref="M:System.Messaging.MessageQueue.EndReceive(System.IAsyncResult)" />
+        <altmember cref="T:System.IAsyncResult" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -83,7 +92,7 @@
 ## Remarks  
  The <xref:System.Messaging.ReceiveCompletedEventArgs.Message%2A> property provides a means for retrieving the message that initiated the end of the asynchronous receive operation.  
   
- <xref:System.Messaging.MessageQueue.EndReceive%2A?displayProperty=fullName> is called the first time the <xref:System.Messaging.ReceiveCompletedEventArgs.Message%2A> property is read, so it is not necessary to call <xref:System.Messaging.MessageQueue.EndReceive%2A> prior to getting the value of this property.  
+ <xref:System.Messaging.MessageQueue.EndReceive%2A?displayProperty=nameWithType> is called the first time the <xref:System.Messaging.ReceiveCompletedEventArgs.Message%2A> property is read, so it is not necessary to call <xref:System.Messaging.MessageQueue.EndReceive%2A> prior to getting the value of this property.  
   
  ]]></format>
         </remarks>

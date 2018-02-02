@@ -22,12 +22,17 @@
   
  Developers can create custom event handler methods for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> events, and in those methods, they can use the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class to access details of a connection. For example, a developer can declare the `OnWebPartsConnected` attribute on the `<asp:webpartmanager>` element, and assign to it a custom method name that will handle the event. In the custom handler method, developers can access the details of a connection by using the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> object that is passed to the method as a parameter.  
   
- The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class has two overloads of the constructor. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%29?displayProperty=fullName> constructor is the default; it initializes the property values for the class. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPartConnection%29?displayProperty=fullName> constructor calls the default constructor, and then it also initializes the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Connection%2A> property.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class has two overloads of the constructor. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%29?displayProperty=nameWithType> constructor is the default; it initializes the property values for the class. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPartConnection%29?displayProperty=nameWithType> constructor calls the default constructor, and then it also initializes the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Connection%2A> property.  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> class has several properties, all of which refer to the essential aspects of a Web Parts connection. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Connection%2A> property refers to the associated <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object that represents the entire connection. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Provider%2A> property references a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control acting as the provider in the connection, and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.Consumer%2A> property references a <xref:System.Web.UI.WebControls.WebParts.WebPart> or server control acting as the consumer. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ProviderConnectionPoint%2A> property references the connection's <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object, while the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs.ConsumerConnectionPoint%2A> property references the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" />
+    <altmember cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" />
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
+    <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected(System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -119,6 +124,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
       </Docs>
     </Member>
     <Member MemberName="Consumer">
@@ -146,6 +153,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
       </Docs>
     </Member>
     <Member MemberName="ConsumerConnectionPoint">
@@ -173,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -200,6 +211,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
       </Docs>
     </Member>
     <Member MemberName="ProviderConnectionPoint">
@@ -227,7 +240,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+        <altmember cref="T:System.Web.UI.WebControls.WebParts.ConnectionPoint" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

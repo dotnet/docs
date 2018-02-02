@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.EventTrigger" />
+    <altmember cref="T:System.Windows.Trigger" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,27 +84,27 @@
  Items in square brackets (`[` and `]`) are optional.  
   
  *days*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value greater than or equal to 0 that describes the number of days spanned by this offset.  
   
  *hours*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 23 that represents the number of hours spanned by this offset.  
   
  *minutes*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of minutes spanned by this offset.  
   
  *seconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value between 0 and 59 that represents the number of seconds spanned by this offset.  
   
  *fractionalSeconds*  
- <xref:System.Int32?displayProperty=fullName>  
+ <xref:System.Int32?displayProperty=nameWithType>  
   
  A value consisting of 1 to 7 digits that represents fractional seconds.  
   
@@ -110,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -133,6 +136,7 @@
         <summary>Gets or sets the position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied.</summary>
         <value>The position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied. The default value is <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeOffset">

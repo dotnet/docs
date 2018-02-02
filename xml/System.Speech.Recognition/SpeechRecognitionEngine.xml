@@ -100,6 +100,8 @@ namespace SpeechRecognitionApp
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.Grammar" />
+    <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -555,6 +557,8 @@ static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recogn
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioFormat" />
       </Docs>
     </Member>
     <Member MemberName="AudioLevel">
@@ -580,6 +584,8 @@ static void DisplayAudioDeviceFormat(Label label, SpeechRecognitionEngine recogn
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevelUpdated" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioLevel" />
       </Docs>
     </Member>
     <Member MemberName="AudioLevelUpdated">
@@ -636,6 +642,8 @@ void recognizer_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioLevelUpdatedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioLevel" />
       </Docs>
     </Member>
     <Member MemberName="AudioPosition">
@@ -736,6 +744,8 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="AudioSignalProblemOccurred">
@@ -799,6 +809,8 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioSignalProblem" />
+        <altmember cref="T:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="AudioState">
@@ -824,6 +836,9 @@ void recognizer_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccu
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioState" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognizer.AudioState" />
       </Docs>
     </Member>
     <Member MemberName="AudioStateChanged">
@@ -934,6 +949,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.AudioState" />
+        <altmember cref="T:System.Speech.Recognition.AudioStateChangedEventArgs" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioState" />
       </Docs>
     </Member>
     <Member MemberName="BabbleTimeout">
@@ -962,7 +980,7 @@ namespace SampleRecognition
 ## Remarks  
  Each speech recognizer has an algorithm to distinguish between silence and speech. The recognizer classifies as background noise any non-silence input that does not match the initial rule of any of the recognizer's loaded and enabled speech recognition grammars. If the recognizer receives only background noise and silence within the babble timeout interval, then the recognizer finalizes that recognition operation.  
   
--   For asynchronous recognition operations, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
+-   For asynchronous recognition operations, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout%2A?displayProperty=nameWithType> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=nameWithType> property is `null`.  
   
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
   
@@ -1083,6 +1101,13 @@ namespace SpeechRecognitionApp
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds.</exception>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1365,6 +1390,12 @@ namespace Sre_EmulateRecognize
           <paramref name="inputText" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="inputText" /> is the empty string ("").</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognize">
@@ -1405,6 +1436,12 @@ namespace Sre_EmulateRecognize
           <paramref name="wordUnits" /> contains one or more <see langword="null" /> elements.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="compareOptions" /> contains the <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, or <see cref="F:System.Globalization.CompareOptions.StringSort" /> flag.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognize">
@@ -1445,6 +1482,12 @@ namespace Sre_EmulateRecognize
           <paramref name="inputText" /> is the empty string ("").</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="compareOptions" /> contains the <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, or <see cref="F:System.Globalization.CompareOptions.StringSort" /> flag.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <MemberGroup MemberName="EmulateRecognizeAsync">
@@ -1727,6 +1770,13 @@ namespace SreEmulateRecognizeAsync
           <paramref name="inputText" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="inputText" /> is the empty string ("").</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeAsync">
@@ -1766,6 +1816,13 @@ namespace SreEmulateRecognizeAsync
           <paramref name="wordUnits" /> contains one or more <see langword="null" /> elements.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="compareOptions" /> contains the <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, or <see cref="F:System.Globalization.CompareOptions.StringSort" /> flag.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeAsync">
@@ -1805,6 +1862,13 @@ namespace SreEmulateRecognizeAsync
           <paramref name="inputText" /> is the empty string ("").</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="compareOptions" /> contains the <see cref="F:System.Globalization.CompareOptions.IgnoreNonSpace" />, <see cref="F:System.Globalization.CompareOptions.IgnoreSymbols" />, or <see cref="F:System.Globalization.CompareOptions.StringSort" /> flag.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="EmulateRecognizeCompleted">
@@ -1946,6 +2010,12 @@ namespace InProcessRecognizer
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.EmulateRecognizeCompletedEventArgs" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="EndSilenceTimeout">
@@ -1981,6 +2051,13 @@ namespace InProcessRecognizer
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds or greater than 10 seconds.</exception>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
       </Docs>
     </Member>
     <Member MemberName="EndSilenceTimeoutAmbiguous">
@@ -2016,6 +2093,13 @@ namespace InProcessRecognizer
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds or greater than 10 seconds.</exception>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
       </Docs>
     </Member>
     <Member MemberName="Grammars">
@@ -2060,6 +2144,7 @@ private static void ListGrammars(SpeechRecognitionEngine recognizer)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
       </Docs>
     </Member>
     <Member MemberName="InitialSilenceTimeout">
@@ -2088,7 +2173,7 @@ private static void ListGrammars(SpeechRecognitionEngine recognizer)
 ## Remarks  
  Each speech recognizer has an algorithm to distinguish between silence and speech. If the recognizer input is silence during the initial silence timeout period, then the recognizer finalizes that recognition operation.  
   
--   For asynchronous recognition operations and emulation, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A?displayProperty=fullName> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=fullName> property is `null`.  
+-   For asynchronous recognition operations and emulation, the recognizer raises the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> event, where the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout%2A?displayProperty=nameWithType> property is `true`, and the <xref:System.Speech.Recognition.RecognizeCompletedEventArgs.Result%2A?displayProperty=nameWithType> property is `null`.  
   
 -   For synchronous recognition operations and emulation, the recognizer returns `null`, instead of a valid <xref:System.Speech.Recognition.RecognitionResult>.  
   
@@ -2209,6 +2294,13 @@ namespace SpeechRecognitionApp
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">This property is set to less than 0 seconds.</exception>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)" />
       </Docs>
     </Member>
     <Member MemberName="InstalledRecognizers">
@@ -2298,6 +2390,8 @@ namespace SpeechRecognitionApp
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.#ctor(System.Speech.Recognition.RecognizerInfo)" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerInfo" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammar">
@@ -2390,6 +2484,10 @@ namespace SpeechRecognitionApp
           <paramref name="Grammar" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="Grammar" /> is not in a valid state.</exception>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammarAsync">
@@ -2429,6 +2527,11 @@ namespace SpeechRecognitionApp
         <exception cref="T:System.InvalidOperationException">
           <paramref name="Grammar" /> is not in a valid state.</exception>
         <exception cref="T:System.OperationCanceledException">The asynchronous operation was canceled.</exception>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="LoadGrammarCompleted">
@@ -2549,6 +2652,11 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.LoadGrammarCompletedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.Grammars" />
       </Docs>
     </Member>
     <Member MemberName="MaxAlternates">
@@ -2578,6 +2686,10 @@ namespace SampleRecognition
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <see cref="P:System.Speech.Recognition.SpeechRecognitionEngine.MaxAlternates" /> is set to a value less than 0.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
       </Docs>
     </Member>
     <Member MemberName="QueryRecognizerSetting">
@@ -2690,6 +2802,9 @@ namespace RecognizerSettings
         <exception cref="T:System.ArgumentException">
           <paramref name="settingName" /> is the empty string ("").</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The recognizer does not have a setting by that name.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting(System.String,System.Int32)" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Recognize">
@@ -2829,6 +2944,16 @@ namespace SynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Recognize">
@@ -2926,6 +3051,16 @@ namespace SynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RecognizeAsync">
@@ -3197,6 +3332,17 @@ namespace AsynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync">
@@ -3439,6 +3585,17 @@ namespace AsynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeout" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.EndSilenceTimeoutAmbiguous" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsyncCancel">
@@ -3655,6 +3812,11 @@ namespace AsynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncStop" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsyncStop">
@@ -3872,6 +4034,11 @@ namespace AsynchronousRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="RecognizeCompleted">
@@ -4016,6 +4183,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizeCompletedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerAudioPosition">
@@ -4043,6 +4213,7 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerInfo">
@@ -4100,6 +4271,8 @@ namespace RecognitionEngine
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.#ctor(System.Speech.Recognition.RecognizerInfo)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.InstalledRecognizers" />
       </Docs>
     </Member>
     <Member MemberName="RecognizerUpdateReached">
@@ -4237,6 +4410,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizerUpdateReachedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate" />
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RequestRecognizerUpdate">
@@ -4409,6 +4585,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RequestRecognizerUpdate">
@@ -4439,6 +4618,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="RequestRecognizerUpdate">
@@ -4471,6 +4653,9 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerUpdateReached" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition" />
+        <altmember cref="P:System.Speech.Recognition.SpeechRecognitionEngine.AudioPosition" />
       </Docs>
     </Member>
     <Member MemberName="SetInputToAudioStream">
@@ -4615,6 +4800,11 @@ namespace InputExamples
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream(System.IO.Stream)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="SetInputToDefaultAudioDevice">
@@ -4728,6 +4918,11 @@ namespace DefaultInput
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream(System.IO.Stream)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="SetInputToNull">
@@ -4753,6 +4948,10 @@ namespace DefaultInput
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="SetInputToWaveFile">
@@ -4875,6 +5074,11 @@ recognizer.SetInputToWaveFile(@"c:\temp\SampleWAVInput.wav");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveStream(System.IO.Stream)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="SetInputToWaveStream">
@@ -4903,6 +5107,11 @@ recognizer.SetInputToWaveFile(@"c:\temp\SampleWAVInput.wav");
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToNull" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" />
       </Docs>
     </Member>
     <Member MemberName="SpeechDetected">
@@ -5008,6 +5217,14 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="SpeechHypothesized">
@@ -5122,6 +5339,17 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="SpeechRecognitionRejected">
@@ -5239,6 +5467,14 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized" />
       </Docs>
     </Member>
     <Member MemberName="SpeechRecognized">
@@ -5358,6 +5594,17 @@ namespace SampleRecognition
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.Recognize" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize(System.String)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync(System.String)" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechHypothesized" />
+        <altmember cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognitionRejected" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="UnloadAllGrammars">
@@ -5480,6 +5727,9 @@ namespace UnloadGrammars
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadGrammar(System.Speech.Recognition.Grammar)" />
       </Docs>
     </Member>
     <Member MemberName="UnloadGrammar">
@@ -5606,6 +5856,9 @@ namespace UnloadGrammars
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Grammar" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The grammar is not loaded in this recognizer, or this recognizer is currently loading the grammar asynchronously.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammar(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.LoadGrammarAsync(System.Speech.Recognition.Grammar)" />
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.UnloadAllGrammars" />
       </Docs>
     </Member>
     <MemberGroup MemberName="UpdateRecognizerSetting">
@@ -5765,6 +6018,7 @@ namespace RecognizerSettings
         <exception cref="T:System.ArgumentException">
           <paramref name="settingName" /> is the empty string ("").</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The recognizer does not have a setting by that name.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.QueryRecognizerSetting(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateRecognizerSetting">
@@ -5800,7 +6054,17 @@ namespace RecognizerSettings
         <exception cref="T:System.ArgumentException">
           <paramref name="settingName" /> is the empty string ("").</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The recognizer does not have a setting by that name.</exception>
+        <altmember cref="M:System.Speech.Recognition.SpeechRecognitionEngine.QueryRecognizerSetting(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Disposes the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

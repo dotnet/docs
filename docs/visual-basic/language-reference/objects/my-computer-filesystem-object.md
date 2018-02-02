@@ -1,16 +1,11 @@
 ---
 title: "My.Computer.FileSystem Object"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "FileSystem module"
   - "FileClose function"
@@ -25,21 +20,6 @@ ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # My.Computer.FileSystem Object
 Provides properties and methods for working with drives, files, and directories.  
@@ -50,7 +30,7 @@ Provides properties and methods for working with drives, files, and directories.
  For more information, see [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
 > [!NOTE]
->  You can also use classes in the <xref:System.IO?displayProperty=fullName> namespace to work with drives, files, and directories.  
+>  You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.MyServices>  
@@ -60,5 +40,5 @@ Provides properties and methods for working with drives, files, and directories.
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See Also  
- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)   
+ [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -62,6 +62,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,6 +142,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.Int32Collection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -164,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -188,7 +193,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -237,7 +242,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -285,6 +290,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Int32" /> is found in the <see cref="T:System.Windows.Media.Int32Collection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -316,6 +322,7 @@
  -or-  
   
  The number of items in the source <see cref="T:System.Windows.Media.Int32Collection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -414,6 +421,7 @@
         <summary>Returns an <see cref="T:System.Windows.Media.Int32Collection.Enumerator" /> that can iterate through the collection.</summary>
         <returns>An <see cref="T:System.Windows.Media.Int32Collection.Enumerator" /> that can iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -436,6 +444,7 @@
         <summary>Searches for the specified <see cref="T:System.Int32" /> and returns the zero-based index of the first occurrence within the entire collection.</summary>
         <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire collection, if found; otherwise, <c>-1</c>.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -466,6 +475,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.Int32Collection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -544,6 +554,7 @@
  \- or -  
   
  The <see cref="T:System.Windows.Media.Int32Collection" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -565,6 +576,7 @@
         <param name="index">Index position of the <see cref="T:System.Int32" /> to be removed.</param>
         <summary>Removes the <see cref="T:System.Int32" /> at the specified index position from the collection.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Int32&gt;.IsReadOnly">
@@ -1033,5 +1045,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the current value of a <see cref="T:System.Windows.Media.Int32Collection" /> to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Int32Collection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

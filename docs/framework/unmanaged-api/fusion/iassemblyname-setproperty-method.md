@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::SetProperty"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyName::SetProperty method [.NET Framework fusion]"
   - "SetProperty method [.NET Framework fusion]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IAssemblyName::SetProperty Method
 Sets the value of the property referenced by the specified property identifier.  

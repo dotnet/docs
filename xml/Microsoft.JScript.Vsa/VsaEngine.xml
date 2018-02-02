@@ -322,7 +322,7 @@
     </Member>
     <Member MemberName="DoSaveCompiledState">
       <MemberSignature Language="C#" Value="protected override void DoSaveCompiledState (out byte[] pe, out byte[] pdb);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveCompiledState(unsigned int8[] pe, unsigned int8[] pdb) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; pdb) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoSaveCompiledState(System.Byte[]@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -942,5 +942,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

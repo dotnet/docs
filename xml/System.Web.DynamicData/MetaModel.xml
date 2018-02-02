@@ -36,8 +36,8 @@
  The example consists of a page and its code-behind file.  
   
  [!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PlaceHolder.cs#1)]
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx#1)]  -->
+ [!code-aspx-csharp[System.Web.DynamicData.MetaModel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx#1)]
+ [!code-aspx-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PathModel.aspx#1)]
  [!code-vb[System.Web.DynamicData.MetaModel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/PlaceHolder.vb#1)]  
   
  [!code-csharp[System.Web.DynamicData.MetaModel#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/PathModel.aspx.cs#2)]
@@ -145,6 +145,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
+        <altmember cref="T:System.Web.DynamicData.ModelProviders.TableProvider" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -166,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=fullName> method.  
+ This property provides a simple way to reference the default data-model instance. If the application uses multiple models, you must provide your own way to store references to the additional data models. To find a specific data model, call the <xref:System.Web.DynamicData.MetaModel.GetModel%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -376,14 +378,15 @@
   
  The example consists of a page and its code-behind file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
+ [!code-aspx-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
+ [!code-aspx-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
   
  [!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
  [!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </MemberGroup>
     <Member MemberName="GetTable">
@@ -422,6 +425,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The name was not found in the data model.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -455,6 +459,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The type was not found in the data model.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -492,6 +497,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="tablename" /> or <paramref name="contextType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The context is not registered or the table does not exist in the data context.</exception>
+        <altmember cref="T:System.Web.DynamicData.MetaTable" />
       </Docs>
     </Member>
     <MemberGroup MemberName="RegisterContext">
@@ -742,8 +748,8 @@
   
  The example consists of a page and its code-behind file.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx#5)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx#5)]  -->  
+ [!code-aspx-csharp[System.Web.DynamicData.MetaModel#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx#5)]
+ [!code-aspx-vb[System.Web.DynamicData.MetaModel#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx#5)]  
   
  [!code-csharp[System.Web.DynamicData.MetaModel#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/TablesMenu.aspx.cs#6)]
  [!code-vb[System.Web.DynamicData.MetaModel#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/TablesMenu.aspx.vb#6)]  
@@ -754,7 +760,7 @@
     </Member>
     <Member MemberName="TryGetTable">
       <MemberSignature Language="C#" Value="public bool TryGetTable (string uniqueTableName, out System.Web.DynamicData.MetaTable table);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTable(string uniqueTableName, class System.Web.DynamicData.MetaTable table) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTable(string uniqueTableName, [out] class System.Web.DynamicData.MetaTable&amp; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaModel.TryGetTable(System.String,System.Web.DynamicData.MetaTable@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -788,7 +794,7 @@
     </Member>
     <Member MemberName="TryGetTable">
       <MemberSignature Language="C#" Value="public bool TryGetTable (Type entityType, out System.Web.DynamicData.MetaTable table);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTable(class System.Type entityType, class System.Web.DynamicData.MetaTable table) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTable(class System.Type entityType, [out] class System.Web.DynamicData.MetaTable&amp; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaModel.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -848,5 +854,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the metadata that is associated with the specified table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instantiates a new instance of the <see cref="T:System.Web.DynamicData.MetaModel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -13,10 +13,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create a new <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> column with special properties, you must first inherit from the <xref:System.Windows.Forms.DataGridColumnStyle> class. The <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService> interface is provided to notify the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> when a column is being edited.  
+ To create a new <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> column with special properties, you must first inherit from the <xref:System.Windows.Forms.DataGridColumnStyle> class. The <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService> interface is provided to notify the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> when a column is being edited.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGrid" />
+    <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
   </Docs>
   <Members>
     <Member MemberName="ColumnStartedEditing">
@@ -41,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header indicating the row is being edited.  
+ When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType> control to show a pencil in the row header indicating the row is being edited.  
   
  ]]></format>
         </remarks>

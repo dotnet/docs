@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorTypeAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorTypeAttr enumeration [.NET Framework metadata]"
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorTypeAttr Enumeration
 Contains values that indicate type metadata.  

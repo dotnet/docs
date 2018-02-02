@@ -33,10 +33,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token is set to `true`.  
+ If the task that was canceled had an associated cancellation token, it is returned by the <xref:System.OperationCanceledException.CancellationToken%2A> property, and the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property of the token is set to `true`.  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -166,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -250,6 +254,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -296,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -346,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
     <Member MemberName="CancellationToken">
@@ -378,11 +385,22 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=fullName> property of the token returns `true`.  
+ If the token is associated with a canceled operation, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property of the token returns `true`.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.OperationCanceledException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

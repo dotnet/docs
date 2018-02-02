@@ -9,17 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Windows Communication Foundation, COM+ integration"
   - "WCF, COM+ integration"
 ms.assetid: 7717c6c2-85fc-418b-a8ed-bad8e61cec5c
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COM+ Service Model Configuration Tool (ComSvcConfig.exe)
 The COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) enables you to configure COM+ interfaces to be exposed as Web services.  
@@ -53,11 +52,11 @@ ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | Ap
   
 |Option|Description|  
 |------------|-----------------|  
-|`/application:<` *ApplicationID*  `&#124;`  *ApplicationName* `>`|Specifies the COM+ application to configure.<br /><br /> Short form `/a`.|  
-|`/contract:<` *ClassID*  `&#124;`  *ProgID*  `&#124; *,` *InterfaceID*  `&#124;`  *InterfaceName*  `&#124; *` `>`|Specifies the COM+ component and interface that will be configured as the contract for the service.<br /><br /> Short form `/c`.<br /><br /> While the wildcard character (*) can be used when you specify the component and interface names, we recommend that you do not use it, because you might expose interfaces that you did not intend to.|  
-|`/hosting:<` *complus*  `&#124;`  *was* `>`|Specifies whether to use the COM+ hosting mode or the Web hosting mode.<br /><br /> Short form `/h`.<br /><br /> Using the COM+ hosting mode requires explicit activation of the COM+ application. Using the Web hosting mode allows the COM+ application to be automatically activated as required. If the COM+ application is a library application, it runs in the Internet Information Services (IIS) process. If the COM+ application is a server application, it runs in the Dllhost.exe process.|  
-|`/webSite:<` *WebsiteName* `>`|Specifies the Web site for hosting when Web hosting mode is used (see the `/hosting` flag).<br /><br /> Short form `/w`.<br /><br /> If no Web site is specified, the default Web site is used.|  
-|`/webDirectory:<` *WebDirectoryName* `>`|Specifies the virtual directory for hosting when Web hosting is used (see the `/hosting` flag).<br /><br /> Short form `/d`.|  
+|`/application:` \<*ApplicationID* &#124; *ApplicationName*\>|Specifies the COM+ application to configure.<br /><br /> Short form `/a`.|  
+|`/contract:` \<*ClassID*  &#124; *ProgID*  &#124; \*,*InterfaceID* &#124; *InterfaceName* &#124; \*\>|Specifies the COM+ component and interface that will be configured as the contract for the service.<br /><br /> Short form `/c`.<br /><br /> While the wildcard character (\*) can be used when you specify the component and interface names, we recommend that you do not use it, because you might expose interfaces that you did not intend to.|  
+|`/hosting:` \<*complus*  &#124; *was*\>|Specifies whether to use the COM+ hosting mode or the Web hosting mode.<br /><br /> Short form `/h`.<br /><br /> Using the COM+ hosting mode requires explicit activation of the COM+ application. Using the Web hosting mode allows the COM+ application to be automatically activated as required. If the COM+ application is a library application, it runs in the Internet Information Services (IIS) process. If the COM+ application is a server application, it runs in the Dllhost.exe process.|  
+|`/webSite:` \<*WebsiteName*\>|Specifies the Web site for hosting when Web hosting mode is used (see the `/hosting` flag).<br /><br /> Short form `/w`.<br /><br /> If no Web site is specified, the default Web site is used.|  
+|`/webDirectory:` \<*WebDirectoryName*\>|Specifies the virtual directory for hosting when Web hosting is used (see the `/hosting` flag).<br /><br /> Short form `/d`.|  
 |`/mex`|Adds a Metadata Exchange (MEX) service endpoint to the default service configuration to support clients that want to retrieve a contract definition from the service.<br /><br /> Short form `/x`.|  
 |`/id`|Displays the application, component, and interface information as IDs.<br /><br /> Short form `/k`.|  
 |`/nologo`|Prevents ComSvcConfig.exe from displaying its logo.<br /><br /> Short form `/n`.|  

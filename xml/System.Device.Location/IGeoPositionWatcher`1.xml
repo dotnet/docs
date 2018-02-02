@@ -21,6 +21,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
   </Docs>
   <Members>
     <Member MemberName="Position">
@@ -39,6 +40,7 @@
         <summary>Gets the location data.</summary>
         <value>The <see cref="T:System.Device.Location.GeoPosition`1" /> containing the location data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
       </Docs>
     </Member>
     <Member MemberName="PositionChanged">
@@ -56,6 +58,7 @@
       <Docs>
         <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Position" /> property has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -115,6 +118,7 @@
         <summary>Gets the status of location data.</summary>
         <value>The status of location data.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
       </Docs>
     </Member>
     <Member MemberName="StatusChanged">
@@ -132,6 +136,7 @@
       <Docs>
         <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Status" /> property changes.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Device.Location.GeoCoordinateWatcher" />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -179,5 +184,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiate the acquisition of location data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -59,7 +59,7 @@
  The main parts of this structure are:  
   
  The <`CanonicalizationMethod`> element  
- Specifies the rules for rewriting the `Signature` element from XML/text into bytes for signature validation. The default value in the .NET Framework is http://www.w3.org/TR/2001/REC-xml-c14n-20010315, which identifies a trustworthy algorithm. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A?displayProperty=fullName> property.  
+ Specifies the rules for rewriting the `Signature` element from XML/text into bytes for signature validation. The default value in the .NET Framework is http://www.w3.org/TR/2001/REC-xml-c14n-20010315, which identifies a trustworthy algorithm. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A?displayProperty=nameWithType> property.  
   
  The <`SignatureMethod`> element  
  Specifies the algorithm used for signature generation and validation, which was applied to the <`Signature`> element to produce the value in <`SignatureValue`>. In the example above, the value http://www.w3.org/2000/09/xmldsig#rsa-sha1 identifies an RSA PKCS1 SHA-1 signature. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedXml.SignatureMethod%2A> property.  
@@ -68,9 +68,9 @@
  Specifies the cryptographic signature for the <`Signature`> element. If this signature does not verify, then some portion of the <`Signature`> block was tampered with, and the document is considered invalid. As long as the <`CanonicalizationMethod`> value is trustworthy, this value is highly resistant to tampering. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedXml.SignatureValue%2A> property.  
   
  The `URI` attribute of the <`Reference`> element  
- Specifies a data object using a URI reference. This attribute is represented by the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A?displayProperty=fullName> property.  
+ Specifies a data object using a URI reference. This attribute is represented by the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A?displayProperty=nameWithType> property.  
   
--   Not specifying the `URI` attribute, that is, setting the  <xref:System.Security.Cryptography.Xml.Reference.Uri%2A?displayProperty=fullName> property to `null`, means that the receiving application is expected to know the identity of the object. In most cases, a `null` URI will result in an exception being thrown. Do not use a `null` URI, unless your application is interoperating with a protocol which requires it.  
+-   Not specifying the `URI` attribute, that is, setting the  <xref:System.Security.Cryptography.Xml.Reference.Uri%2A?displayProperty=nameWithType> property to `null`, means that the receiving application is expected to know the identity of the object. In most cases, a `null` URI will result in an exception being thrown. Do not use a `null` URI, unless your application is interoperating with a protocol which requires it.  
   
 -   Setting the `URI` attribute to an empty string indicates that the root element of the document is being signed, a form of enveloped signature.  
   
@@ -90,7 +90,7 @@
 -   A value of http://www.w3.org/2000/09/xmldsig#enveloped-signature for the transform algorithm encodes a rule which is interpreted as remove the <`Signature`> element from the document. Otherwise, a verifier of an enveloped signature will digest the document, including the signature, but the signer would have digested the document before the signature was applied, leading to different answers.  
   
  The <`DigestMethod`> element  
- Identifies the digest (cryptographic hash) method to apply on the transformed content identified by the `URI` attribute of the <`Reference`> element. This is represented by the <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A?displayProperty=fullName> property.  
+ Identifies the digest (cryptographic hash) method to apply on the transformed content identified by the `URI` attribute of the <`Reference`> element. This is represented by the <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A?displayProperty=nameWithType> property.  
   
 ## Choosing a canonicalization method  
  Unless interoperating with a specification which requires the use of a different value, we recommend that you use the default canonicalization method in the .NET Framework which is the XML-C14N 1.0 algorithm, whose value is http://www.w3.org/TR/2001/REC-xml-c14n-20010315. The XML-C14N 1.0 algorithm is required to be supported by all implementations of XMLDSIG, particularly as it is an implicit final transform to apply.  
@@ -604,8 +604,8 @@
 ## Examples  
  The following code example uses an X.509 certificate from a certificate store to sign and verify an XML document.  
   
- [!code-csharp[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)/cs/sample.cs#1)]
- [!code-vb[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)/vb/sample.vb#1)]  
+ [!code-csharp[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/csharp/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature/cs/sample.cs#1)]
+ [!code-vb[Security.Cryptography.Xml.SignedXml.CheckSignature(X509Certificate2,Boolean)#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Security.Cryptography.Xml.SignedXml.CheckSignature/vb/sample.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -615,7 +615,7 @@
     </Member>
     <Member MemberName="CheckSignatureReturningKey">
       <MemberSignature Language="C#" Value="public bool CheckSignatureReturningKey (out System.Security.Cryptography.AsymmetricAlgorithm signingKey);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignatureReturningKey(class System.Security.Cryptography.AsymmetricAlgorithm signingKey) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckSignatureReturningKey([out] class System.Security.Cryptography.AsymmetricAlgorithm&amp; signingKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2205,5 +2205,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the <see cref="P:System.Security.Cryptography.Xml.SignedXml.Signature" /> property verifies.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.SignedXml" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ComputeSignature">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes an XML digital signature.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

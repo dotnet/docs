@@ -19,7 +19,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the outcome of sending e-mail by using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
+    <summary>Specifies the outcome of sending email by using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -312,7 +312,7 @@
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SMTP service cannot complete the request. This error can occur if the client's IP address cannot be resolved (that is, a reverse lookup failed). You can also receive this error if the client domain has been identified as an open relay or source for unsolicited e-mail (spam). For details, see RFC 2505, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
+        <summary>The SMTP service cannot complete the request. This error can occur if the client's IP address cannot be resolved (that is, a reverse lookup failed). You can also receive this error if the client domain has been identified as an open relay or source for unsolicited email (spam). For details, see RFC 2505, which is available at [http://www.ietf.org](http://www.ietf.org/).</summary>
       </Docs>
     </Member>
     <Member MemberName="MailboxBusy">
@@ -537,7 +537,7 @@
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The SMTP service is ready to receive the e-mail content.</summary>
+        <summary>The SMTP service is ready to receive the email content.</summary>
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -662,7 +662,7 @@
         <ReturnType>System.Net.Mail.SmtpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The user mailbox is not located on the receiving server; the server forwards the e-mail.</summary>
+        <summary>The user mailbox is not located on the receiving server; the server forwards the email.</summary>
       </Docs>
     </Member>
   </Members>

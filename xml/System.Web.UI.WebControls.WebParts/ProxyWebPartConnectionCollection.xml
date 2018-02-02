@@ -27,6 +27,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+    <altmember cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPartManager" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Add(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -101,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -131,6 +136,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Array.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -160,6 +166,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -190,6 +197,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -238,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -267,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ComponentCollection.Item(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -401,11 +411,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to remove the specified <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object from the collection. All items that follow the specified item are then moved up in the collection to fill in the vacant position. The indexes of the moved items are also updated. For more information, see <xref:System.Collections.IList.Remove%2A?displayProperty=fullName>.  
+ Use this method to remove the specified <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object from the collection. All items that follow the specified item are then moved up in the collection to fill in the vacant position. The indexes of the moved items are also updated. For more information, see <xref:System.Collections.IList.Remove%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables specific connection members to be added to or retrieved from the collection, according to an index or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

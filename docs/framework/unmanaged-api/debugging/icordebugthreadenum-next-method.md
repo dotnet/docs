@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThreadEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThreadEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugThreadEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThreadEnum::Next Method
 Gets the number of specified ICorDebugThread instances from the enumeration, starting at the current position.  

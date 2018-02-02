@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "sending data, best practices"
   - "requesting data from Internet, best practices"
@@ -25,6 +20,8 @@ caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  
@@ -33,7 +30,7 @@ The following recommendations will help you use the classes contained in <xref:S
   
 -   When writing ASP.NET applications that run on a server using the **System.Net** classes, it is often better, from a performance standpoint, to use the asynchronous methods for <xref:System.Net.WebRequest.GetResponse%2A> and <xref:System.Net.WebResponse.GetResponseStream%2A>.  
   
--   The number of connections opened to an Internet resource can have a significant impact on network performance and throughput. **System.Net** uses two connections per application per host by default. Setting the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property in the <xref:System.Net.ServicePoint> for your application can increase this number for a particular host. Setting the <xref:System.Net.ServicePointManager.DefaultPersistentConnectionLimit?displayProperty=fullName> property can increase this default for all hosts.  
+-   The number of connections opened to an Internet resource can have a significant impact on network performance and throughput. **System.Net** uses two connections per application per host by default. Setting the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property in the <xref:System.Net.ServicePoint> for your application can increase this number for a particular host. Setting the <xref:System.Net.ServicePointManager.DefaultPersistentConnectionLimit?displayProperty=nameWithType> property can increase this default for all hosts.  
   
 -   When writing socket-level protocols, try to use <xref:System.Net.Sockets.TcpClient> or <xref:System.Net.Sockets.UdpClient> whenever possible instead of writing directly to a <xref:System.Net.Sockets.Socket>. These two client classes encapsulate the creation of TCP and UDP sockets without requiring you to handle the details of the connection.  
   

@@ -53,6 +53,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IList`1" />
+    <altmember cref="T:System.Collections.Generic.ICollection`1" />
+    <altmember cref="T:System.Collections.Generic.IEnumerable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -151,7 +154,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to add `null`.  
+ Unlike typical implementations of <xref:System.Collections.Generic.ICollection%601.Add%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to add `null`.  
   
  <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Add%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -164,6 +167,7 @@
  \- or -  
   
  The collection has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -216,7 +220,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=nameWithType>.  
   
  When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
   
@@ -269,7 +273,7 @@
 ## Remarks  
  This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
   
- For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.CloneCurrentValue%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -326,6 +330,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -366,6 +371,7 @@
  -or-  
   
  The number of items in the source collection is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -500,6 +506,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -529,6 +536,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.IndexOf(`0)" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -555,7 +563,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null`.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Insert%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert `null`.  
   
  <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Insert%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -570,6 +578,7 @@
  \- or -  
   
  The collection has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -595,7 +604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=fullName>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a `null` reference.  
+ Unlike typical implementations of <xref:System.Collections.Generic.IList%601.Item%2A?displayProperty=nameWithType>, this implementation throws an <xref:System.ArgumentException> if you attempt to insert a `null` reference.  
   
  <xref:System.Windows.Media.Media3D.GeneralTransform3DCollection.Item%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -645,6 +654,7 @@
  \- or -  
   
  The collection has a fixed size.</exception>
+        <altmember cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -673,6 +683,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Windows.Media.Media3D.GeneralTransform3D&gt;.IsReadOnly">
@@ -1089,5 +1100,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.GeneralTransform3DCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

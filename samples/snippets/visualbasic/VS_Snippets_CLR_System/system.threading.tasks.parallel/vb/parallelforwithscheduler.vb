@@ -16,8 +16,8 @@ Module SchedulerDemo
     '   A task is internally created for each thread of the task scheduler (plus an aditional internal task).
     '	Thus a scheduler thread may execute multiple iterations.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskscheduler(VS.100).aspx
-    '   http://msdn.microsoft.com/en-us/library/dd997413(VS.100).aspx
+    '   http://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(VS.100).aspx
+    '   http://msdn.microsoft.com/library/dd997413(VS.100).aspx
     ' More information:
     '   http://blogs.msdn.com/pfxteam/archive/2009/09/22/9898090.aspx
     Sub Main()

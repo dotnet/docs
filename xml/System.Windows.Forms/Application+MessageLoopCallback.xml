@@ -26,9 +26,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This delegate is used with the <xref:System.Windows.Forms.Application.RegisterMessageLoop%2A?displayProperty=fullName> method.  
+ This delegate is used with the <xref:System.Windows.Forms.Application.RegisterMessageLoop%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Windows.Forms.Application.RegisterMessageLoop(System.Windows.Forms.Application.MessageLoopCallback)" />
   </Docs>
 </Type>

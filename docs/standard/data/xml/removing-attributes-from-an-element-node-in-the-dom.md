@@ -8,16 +8,14 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Removing Attributes from an Element Node in the DOM
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  

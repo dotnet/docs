@@ -5,6 +5,9 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Windows Service applications, walkthroughs"
   - "Windows Service applications, creating"
@@ -13,15 +16,17 @@ caps.latest.revision: 57
 author: "ghogen"
 ms.author: "ghogen"
 manager: "douge"
+ms.workload: 
+  - "dotnet"
 ---
 # Walkthrough: Creating a Windows Service Application in the Component Designer
 This article demonstrates how to create a simple Windows Service application in Visual Studio that writes messages to an event log. Here are the basic steps that you perform to create and use your service:  
   
-1.  [Creating a Service](#BK_CreateProject) by using the **Windows Service** project template, and configure it. This template creates a class for you that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName> and writes much of the basic service code, such as the code to start the service.  
+1.  [Creating a Service](#BK_CreateProject) by using the **Windows Service** project template, and configure it. This template creates a class for you that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> and writes much of the basic service code, such as the code to start the service.  
   
 2.  [Adding Features to the Service](#BK_WriteCode) for the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> procedures, and override any other methods that you want to redefine.  
   
-3.  [Setting Service Status](#BK_SetStatus). By default, services created with <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName> implement only a subset of the available status flags. If your service takes a long time to start up, pause, or stop, you can implement status values such as Start Pending or Stop Pending to indicate that it's working on an operation.  
+3.  [Setting Service Status](#BK_SetStatus). By default, services created with <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> implement only a subset of the available status flags. If your service takes a long time to start up, pause, or stop, you can implement status values such as Start Pending or Stop Pending to indicate that it's working on an operation.  
   
 4.  [Adding Installers to the Service](#BK_AddInstallers) for your service application.  
   
@@ -52,7 +57,7 @@ This article demonstrates how to create a simple Windows Service application in 
   
 2.  In the list of Visual Basic or Visual C# project templates, choose **Windows Service**, and name the project **MyNewService**. Choose **OK**.  
   
-     The project template automatically adds a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName>.  
+     The project template automatically adds a component class named `Service1` that inherits from <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>.  
   
 3.  On the **Edit** menu, choose **Find and Replace**, **Find in Files** (Keyboard: Ctrl+Shift+F). Change all occurrences of `Service1` to `MyNewService`. You’ll find instances in Service1.cs, Program.cs, and Service1.Designer.cs (or their .vb equivalents).  
   
@@ -89,7 +94,7 @@ This article demonstrates how to create a simple Windows Service application in 
      [!code-csharp[VbRadconService#3](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#3)]
      [!code-vb[VbRadconService#3](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#3)]  
   
-     A service application is designed to be long-running, so it usually polls or monitors something in the system. The monitoring is set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. However, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> doesn’t actually do the monitoring. The <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method must return to the operating system after the service's operation has begun. It must not loop forever or block. To set up a simple polling mechanism, you can use the <xref:System.Timers.Timer?displayProperty=fullName> component as follows: In the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, set parameters on the component, and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`. The timer raises events in your code periodically, at which time your service could do its monitoring. You can use the following code to do this:  
+     A service application is designed to be long-running, so it usually polls or monitors something in the system. The monitoring is set up in the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method. However, <xref:System.ServiceProcess.ServiceBase.OnStart%2A> doesn’t actually do the monitoring. The <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method must return to the operating system after the service's operation has begun. It must not loop forever or block. To set up a simple polling mechanism, you can use the <xref:System.Timers.Timer?displayProperty=nameWithType> component as follows: In the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method, set parameters on the component, and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`. The timer raises events in your code periodically, at which time your service could do its monitoring. You can use the following code to do this:  
   
     ```csharp  
     // Set up a timer to trigger every minute.  
@@ -106,7 +111,16 @@ This article demonstrates how to create a simple Windows Service application in 
     AddHandler timer.Elapsed, AddressOf Me.OnTimer  
     timer.Start()  
     ```  
-  
+     Add a member variable to the class. It will contain the identifier of the next event to write into the event log.
+
+    ```csharp
+    private int eventId = 1;
+    ```
+
+    ```vb
+    Private eventId As Integer = 1
+    ```
+
      Add code to handle the timer event:  
   
     ```csharp  
@@ -125,7 +139,7 @@ This article demonstrates how to create a simple Windows Service application in 
     End Sub  
     ```  
   
-     You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For an example of this, see the <xref:System.ServiceProcess.ServiceBase?displayProperty=fullName> reference page.  
+     You might want to perform tasks by using background worker threads instead of running all your work on the main thread. For an example of this, see the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> reference page.  
   
 #### To define what occurs when the service is stopped  
   
@@ -153,7 +167,7 @@ This article demonstrates how to create a simple Windows Service application in 
   
 #### To implement service pending status  
   
-1.  Add a `using` statement or `Imports` declaration to the <xref:System.Runtime.InteropServices?displayProperty=fullName> namespace in the MyNewService.cs or MyNewService.vb file:  
+1.  Add a `using` statement or `Imports` declaration to the <xref:System.Runtime.InteropServices?displayProperty=nameWithType> namespace in the MyNewService.cs or MyNewService.vb file:  
   
     ```csharp  
     using System.Runtime.InteropServices;  
@@ -180,13 +194,13 @@ This article demonstrates how to create a simple Windows Service application in 
       [StructLayout(LayoutKind.Sequential)]  
       public struct ServiceStatus  
       {  
-          public long dwServiceType;  
+          public int dwServiceType;  
           public ServiceState dwCurrentState;  
-          public long dwControlsAccepted;  
-          public long dwWin32ExitCode;  
-          public long dwServiceSpecificExitCode;  
-          public long dwCheckPoint;  
-          public long dwWaitHint;  
+          public int dwControlsAccepted;  
+          public int dwWin32ExitCode;  
+          public int dwServiceSpecificExitCode;  
+          public int dwCheckPoint;  
+          public int dwWaitHint;  
       };  
     ```  
   
@@ -472,7 +486,7 @@ This code modifies the **ImagePath** registry key, which typically contains the 
  You can use an installer to create an event log when the application is installed instead of creating the event log when the application runs. Additionally, the event log will be deleted by the installer when the application is uninstalled. For more information, see the <xref:System.Diagnostics.EventLogInstaller> reference page.  
   
 ## See Also  
- [Windows Service Applications](../../../docs/framework/windows-services/index.md)   
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)   
- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)   
+ [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
+ [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
+ [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)  
  [Services (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms685141.aspx)

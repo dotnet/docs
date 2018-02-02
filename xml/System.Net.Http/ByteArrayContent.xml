@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation will not block. The returned <xref:System.Threading.Tasks.Task%601>object will complete after all of the content stream has been created.  
+ This operation will not block. The returned <xref:System.Threading.Tasks.Task%601> object will complete after all of the content stream has been created.  
   
  ]]></format>
         </remarks>
@@ -171,7 +171,7 @@
     </Member>
     <Member MemberName="TryComputeLength">
       <MemberSignature Language="C#" Value="protected override bool TryComputeLength (out long length);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength(int64 length) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength([out] int64&amp; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,5 +208,17 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.ByteArrayContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

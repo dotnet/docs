@@ -17,18 +17,21 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Threads and Threading
 Operating systems use processes to separate the different applications that they are executing. Threads are the basic unit to which an operating system allocates processor time, and more than one thread can be executing code inside that process. Each thread maintains exception handlers, a scheduling priority, and a set of structures the system uses to save the thread context until it is scheduled. The thread context includes all the information the thread needs to seamlessly resume execution, including the thread's set of CPU registers and stack, in the address space of the thread's host process.  
   
- The .NET Framework further subdivides an operating system process into lightweight managed subprocesses, called application domains, represented by <xref:System.AppDomain?displayProperty=fullName>. One or more managed threads (represented by <xref:System.Threading.Thread?displayProperty=fullName>) can run in one or any number of application domains within the same managed process. Although each application domain is started with a single thread, code in that application domain can create additional application domains and additional threads. The result is that a managed thread can move freely between application domains inside the same managed process; you might have only one thread moving among several application domains.  
+ The .NET Framework further subdivides an operating system process into lightweight managed subprocesses, called application domains, represented by <xref:System.AppDomain?displayProperty=nameWithType>. One or more managed threads (represented by <xref:System.Threading.Thread?displayProperty=nameWithType>) can run in one or any number of application domains within the same managed process. Although each application domain is started with a single thread, code in that application domain can create additional application domains and additional threads. The result is that a managed thread can move freely between application domains inside the same managed process; you might have only one thread moving among several application domains.  
   
  An operating system that supports preemptive multitasking creates the effect of simultaneous execution of multiple threads from multiple processes. It does this by dividing the available processor time among the threads that need it, allocating a processor time slice to each thread one after another. The currently executing thread is suspended when its time slice elapses, and another thread resumes running. When the system switches from one thread to another, it saves the thread context of the preempted thread and reloads the saved thread context of the next thread in the thread queue.  
   
  The length of the time slice depends on the operating system and the processor. Because each time slice is small, multiple threads appear to be executing at the same time, even if there is only one processor. This is actually the case on multiprocessor systems, where the executable threads are distributed among the available processors.  
   
 ## When To Use Multiple Threads  
- Software that requires user interaction must react to the user's activities as rapidly as possible to provide a rich user experience. At the same time, however, it must do the calculations necessary to present data to the user as fast as possible. If your application uses only one thread of execution, you can combine [asynchronous programming](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) with[.NET Framework remoting](http://msdn.microsoft.com/en-us/eccb1d31-0a22-417a-97fd-f4f1f3aa4462) or [XML Web services](http://msdn.microsoft.com/en-us/1e64af78-d705-4384-b08d-591a45f4379c) created using ASP.NET to use the processing time of other computers in addition to that of your own to increase responsiveness to the user and decrease the data processing time of your application. If you are doing intensive input/output work, you can also use I/O completion ports to increase your application's responsiveness.  
+ Software that requires user interaction must react to the user's activities as rapidly as possible to provide a rich user experience. At the same time, however, it must do the calculations necessary to present data to the user as fast as possible. If your application uses only one thread of execution, you can combine [asynchronous programming](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) with[.NET Framework remoting](http://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462) or [XML Web services](http://msdn.microsoft.com/library/1e64af78-d705-4384-b08d-591a45f4379c) created using ASP.NET to use the processing time of other computers in addition to that of your own to increase responsiveness to the user and decrease the data processing time of your application. If you are doing intensive input/output work, you can also use I/O completion ports to increase your application's responsiveness.  
   
 ### Advantages of Multiple Threads  
  Using more than one thread, however, is the most powerful technique available to increase responsiveness to the user and process the data necessary to get the job done at almost the same time. On a computer with one processor, multiple threads can create this effect, taking advantage of the small periods of time in between user events to process the data in the background. For example, a user can edit a spreadsheet while another thread is recalculating other parts of the spreadsheet within the same application.  
@@ -92,7 +95,7 @@ Operating systems use processes to separate the different applications that they
 >  In the .NET Framework versions 1.0 and 1.1, the common language runtime silently traps some exceptions, for example in thread pool threads. This may corrupt application state and eventually cause applications to hang, which might be very difficult to debug.  
   
 ## See Also  
- <xref:System.Threading.ThreadPool>   
- <xref:System.ComponentModel.BackgroundWorker>   
- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)   
+ <xref:System.Threading.ThreadPool>  
+ <xref:System.ComponentModel.BackgroundWorker>  
+ [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
  [The Managed Thread Pool](../../../docs/standard/threading/the-managed-thread-pool.md)

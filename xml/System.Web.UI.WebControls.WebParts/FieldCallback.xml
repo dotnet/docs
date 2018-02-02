@@ -24,7 +24,7 @@
 ## Remarks  
  When a Web Parts control provides data through the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface, the consumer or transformer must retrieve and process the field data from the provider. The <xref:System.Web.UI.WebControls.WebParts.FieldCallback> delegate represents the method to call for processing the provider data.  
   
- The <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A?displayProperty=fullName> method contains a <xref:System.Web.UI.WebControls.WebParts.FieldCallback> delegate parameter.  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A?displayProperty=nameWithType> method contains a <xref:System.Web.UI.WebControls.WebParts.FieldCallback> delegate parameter.  
   
  ]]></format>
     </remarks>

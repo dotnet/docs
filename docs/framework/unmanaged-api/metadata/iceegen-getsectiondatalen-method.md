@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetSectionDataLen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICeeGen::GetSectionDataLen method [.NET Framework metadata]"
   - "GetSectionDataLen method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetSectionDataLen Method
 Gets the length of the specified section.  

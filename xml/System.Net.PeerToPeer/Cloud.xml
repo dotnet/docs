@@ -31,6 +31,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Net.PeerToPeer.Cloud.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+    <altmember cref="T:System.Net.PeerToPeer.Cloud" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +60,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
+        <altmember cref="P:System.Net.PeerToPeer.PeerNameRecord.PeerName" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="AllLinkLocal">
@@ -82,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -107,6 +114,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -137,6 +146,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -169,6 +180,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.GetAvailableClouds" />
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.GetCloudByName(System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="GetAvailableClouds">
@@ -197,6 +212,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermission" />
+        <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="GetCloudByName">
@@ -231,6 +249,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Net.PeerToPeer.Cloud" /> name is not known.</exception>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
+        <altmember cref="Overload:System.Net.PeerToPeer.Cloud.Equals" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -257,6 +278,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.CloudCollection" />
+        <altmember cref="Overload:System.Net.PeerToPeer.Cloud.Equals" />
+        <altmember cref="M:System.Net.PeerToPeer.CloudCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Cloud)" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -280,6 +305,8 @@
         <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.Cloud" /> object.</param>
         <summary>Populates a <see cref="N:System.Runtime.Serialization" /> information object with the data needed to serialize the <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Global">
@@ -299,6 +326,8 @@
         <value>
           <see cref="T:System.Net.PeerToPeer.Cloud" /> which contains the peers that will communicate via the global network scope.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -324,6 +353,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.PeerToPeer.Cloud.Equals" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -350,6 +381,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PnrpScope" />
+        <altmember cref="P:System.Net.PeerToPeer.Cloud.ScopeId" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="ScopeId">
@@ -375,6 +409,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -429,7 +465,22 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.PeerToPeer.Cloud.Equals" />
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.GetCloudByName(System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the content of this <see cref="T:System.Net.PeerToPeer.Cloud" /> object is equivalent to the content of another object.</summary>
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.GetAvailableClouds" />
+        <altmember cref="M:System.Net.PeerToPeer.Cloud.GetCloudByName(System.String)" />
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

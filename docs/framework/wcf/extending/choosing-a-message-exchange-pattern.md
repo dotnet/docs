@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Message Exchange Pattern
 The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
@@ -36,7 +38,7 @@ The first step in writing a custom transport is to decide which *message exchang
  ![Choosing a message exchange pattern](../../../../docs/framework/wcf/extending/media/wcfc-basicthreemepsc.gif "wcfc_BasicThreeMEPsc")  
 The three basic message exchange patterns. Top to bottom: datagram, request-response, and duplex.  
   
- Each of these MEPs can also support *sessions*. A session (and implementation of <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=fullName> of type <xref:System.ServiceModel.Channels.ISession?displayProperty=fullName>) correlates all messages sent and received on a channel. The request-response pattern is a stand-alone two-message session, as the request and reply are correlated. In contrast, the request-response pattern that supports sessions implies that all request/response pairs on that channel are correlated with each other. This gives you a total of six MEPs to choose from:  
+ Each of these MEPs can also support *sessions*. A session (and implementation of <xref:System.ServiceModel.Channels.ISessionChannel%601?displayProperty=nameWithType> of type <xref:System.ServiceModel.Channels.ISession?displayProperty=nameWithType>) correlates all messages sent and received on a channel. The request-response pattern is a stand-alone two-message session, as the request and reply are correlated. In contrast, the request-response pattern that supports sessions implies that all request/response pairs on that channel are correlated with each other. This gives you a total of six MEPs to choose from:  
   
 -   Datagram  
   
@@ -71,9 +73,9 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
   
  The exception to this is <xref:System.ServiceModel.Channels.IDuplexSessionChannel> which is used for both sending and receiving messages in a duplex, sessionful communication pattern. It is possible that one side will want to stop sending messages but continue to receive messages therefore when using <xref:System.ServiceModel.Channels.IDuplexSessionChannel> there is a mechanism that lets you close the output session indicating you will not send any more messages but keep the input session opened allowing you to continue to receive messages.  
   
- In general, sessions are closed on the outgoing side and not on the incoming side. That is, sessionful output channels can be closed, thereby cleanly terminating the session. Closing a sessionful output channel causes the corresponding sessionful input channel to return null to the application calling <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=fullName> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel>.  
+ In general, sessions are closed on the outgoing side and not on the incoming side. That is, sessionful output channels can be closed, thereby cleanly terminating the session. Closing a sessionful output channel causes the corresponding sessionful input channel to return null to the application calling <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel>.  
   
- However sessionful input channels should not be closed unless <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=fullName> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> returns null, indicating that the session is already closed. If <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=fullName> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> has not returned null, closing a sessionful input channel may throw an exception because it may receive unexpected messages while closing. If a receiver wishes to terminate a session before the sender does, it should call <xref:System.ServiceModel.ICommunicationObject.Abort%2A> on the input channel, which abruptly terminates the session.  
+ However sessionful input channels should not be closed unless <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> returns null, indicating that the session is already closed. If <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> has not returned null, closing a sessionful input channel may throw an exception because it may receive unexpected messages while closing. If a receiver wishes to terminate a session before the sender does, it should call <xref:System.ServiceModel.ICommunicationObject.Abort%2A> on the input channel, which abruptly terminates the session.  
   
 ## Writing Sessionful Channels  
  As a sessionful channel author, there are a few things your channel must do to provide sessions. On the send side, your channel needs to:  
@@ -84,13 +86,13 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
   
 -   For each message sent using this channel, you need to provide the delivery guarantees mentioned above. If you are relying on the channel below you to provide the session, that channel will also provide the delivery guarantees. If you’re providing the session yourself, you need to implement those guarantees as part of your protocol. In general, if you are writing a protocol channel that assumes WCF on both sides you may require the TCP transport or the Reliable Messaging channel and rely on either one to provide a session.  
   
--   When <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=fullName> is called on your channel, perform the necessary work to close the session using either the specified timeout or the default one. This can be as simple as calling <xref:System.ServiceModel.ICommunicationObject.Close%2A> on the channel below you (if you just obtained the session from it) or sending a special SOAP message or closing a transport connection.  
+-   When <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=nameWithType> is called on your channel, perform the necessary work to close the session using either the specified timeout or the default one. This can be as simple as calling <xref:System.ServiceModel.ICommunicationObject.Close%2A> on the channel below you (if you just obtained the session from it) or sending a special SOAP message or closing a transport connection.  
   
 -   When <xref:System.ServiceModel.ICommunicationObject.Abort%2A> is called on your channel, terminate the session abruptly without performing I/O. This may mean doing nothing or may involve aborting a network connection or some other resource.  
   
  On the receive side, your channel needs to:  
   
--   For each incoming message, the channel listener must detect the session it belongs to. If this is the first message in the session, the channel listener must create a new channel and return it from the call to <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%2A?displayProperty=fullName>. Otherwise the channel listener must find the existing channel that corresponds to the session and deliver the message through that channel.  
+-   For each incoming message, the channel listener must detect the session it belongs to. If this is the first message in the session, the channel listener must create a new channel and return it from the call to <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%2A?displayProperty=nameWithType>. Otherwise the channel listener must find the existing channel that corresponds to the session and deliver the message through that channel.  
   
 -   If your channel is providing the session (along with the required delivery guarantees) the receive side may be required to perform some actions such as re-order messages or send acknowledgements.  
   

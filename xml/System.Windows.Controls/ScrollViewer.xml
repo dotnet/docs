@@ -162,6 +162,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.CanContentScroll" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.CanContentScroll" />
       </Docs>
     </Member>
     <Member MemberName="ComputedHorizontalScrollBarVisibility">
@@ -194,6 +195,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="ComputedHorizontalScrollBarVisibilityProperty">
@@ -211,6 +213,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="ComputedVerticalScrollBarVisibility">
@@ -243,6 +246,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.ScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="ComputedVerticalScrollBarVisibilityProperty">
@@ -260,6 +264,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="ContentHorizontalOffset">
@@ -405,6 +410,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ExtentHeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ExtentHeight" />
       </Docs>
     </Member>
     <Member MemberName="ExtentWidth">
@@ -462,6 +468,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ExtentWidth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ExtentWidth" />
       </Docs>
     </Member>
     <Member MemberName="GetCanContentScroll">
@@ -729,6 +736,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.HorizontalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.HorizontalOffset" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibility">
@@ -787,6 +795,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="InvalidateScrollInfo">
@@ -812,6 +821,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.Primitives.IScrollInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsDeferredScrollingEnabled">
@@ -1012,6 +1022,7 @@
       <Docs>
         <summary>Called when an internal process or application calls <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />, which is used to build the current template's visual tree.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ApplyTemplate" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateAutomationPeer">
@@ -1031,6 +1042,7 @@
         <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] automation infrastructure.</summary>
         <returns>The appropriate <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation for this control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.AutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -1075,6 +1087,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.KeyDown" />
       </Docs>
     </Member>
     <Member MemberName="OnManipulationCompleted">
@@ -1454,9 +1467,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
+ The <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both. The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  
   
- <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> can be either set directly on a <xref:System.Windows.Controls.ScrollViewer> or used as an attached property.  When a control contains a <xref:System.Windows.Controls.ScrollViewer> in its <xref:System.Windows.Controls.ControlTemplate>, use <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property to specify the behavior of the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate>. When you use a <xref:System.Windows.Controls.ScrollViewer> outside of a <xref:System.Windows.Controls.ControlTemplate>, set <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> directly on the <xref:System.Windows.Controls.ScrollViewer>.  
+ <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> can be either set directly on a <xref:System.Windows.Controls.ScrollViewer> or used as an attached property.  When a control contains a <xref:System.Windows.Controls.ScrollViewer> in its <xref:System.Windows.Controls.ControlTemplate>, use <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=nameWithType> as an attached property to specify the behavior of the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate>. When you use a <xref:System.Windows.Controls.ScrollViewer> outside of a <xref:System.Windows.Controls.ControlTemplate>, set <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> directly on the <xref:System.Windows.Controls.ScrollViewer>.  
   
    
   
@@ -1465,7 +1478,7 @@
   
  [!code-xaml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodedirect)]   
   
- The following example creates a <xref:System.Windows.Controls.TextBox> and uses <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property. By default the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.TextBox> has its <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.VerticalFirst>.  This is so that when the user moves a finger horizontally before moving it vertically, the user highlights text.  The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode.VerticalOnly> so that the user cannot select text by using a finger.  Note that setting <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.Both> also prevents the user from selecting text.  The example sets the <xref:System.Windows.TextWrapping> property to <xref:System.Windows.TextWrapping.Wrap>, so horizontal scrolling is not necessary.  
+ The following example creates a <xref:System.Windows.Controls.TextBox> and uses <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=nameWithType> as an attached property. By default the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.TextBox> has its <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.VerticalFirst>.  This is so that when the user moves a finger horizontally before moving it vertically, the user highlights text.  The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode.VerticalOnly> so that the user cannot select text by using a finger.  Note that setting <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.Both> also prevents the user from selecting text.  The example sets the <xref:System.Windows.TextWrapping> property to <xref:System.Windows.TextWrapping.Wrap>, so horizontal scrolling is not necessary.  
   
  [!code-xaml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodeattached)]   
   
@@ -1580,6 +1593,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ScrollableHeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ScrollableHeight" />
       </Docs>
     </Member>
     <Member MemberName="ScrollableWidth">
@@ -1629,6 +1643,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ScrollableWidth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ScrollableWidth" />
       </Docs>
     </Member>
     <Member MemberName="ScrollChanged">
@@ -1666,6 +1681,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ScrollChangedEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="ScrollChangedEvent">
@@ -1683,6 +1699,7 @@
       <Docs>
         <summary>Identifies the <see cref="E:System.Windows.Controls.ScrollViewer.ScrollChanged" /> routed event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="E:System.Windows.Controls.ScrollViewer.ScrollChanged" />
       </Docs>
     </Member>
     <Member MemberName="ScrollInfo">
@@ -2132,6 +2149,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.VerticalOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.VerticalOffset" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibility">
@@ -2172,6 +2190,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibilityProperty">
@@ -2189,6 +2208,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="ViewportHeight">
@@ -2248,6 +2268,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportHeight" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ViewportHeight" />
       </Docs>
     </Member>
     <Member MemberName="ViewportWidth">
@@ -2303,6 +2324,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportWidth" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ScrollViewer.ViewportWidth" />
       </Docs>
     </Member>
   </Members>

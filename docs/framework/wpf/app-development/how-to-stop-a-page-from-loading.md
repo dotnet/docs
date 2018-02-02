@@ -9,18 +9,23 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "pages, stopping from loading"
-  - "methods, Stoploading"
-  - "events, NavigationStopped"
-  - "NavigationStopped event"
-  - "stopping pages from loading"
-  - "loading, stopping"
+  - "pages [WPF], stopping from loading"
+  - "methods [WPF], Stoploading"
+  - "events [WPF], NavigationStopped"
+  - "NavigationStopped properties [WPF]"
+  - "stopping pages from loading [WPF]"
+  - "loading [WPF], stopping"
 ms.assetid: e2b695b0-517e-462c-8ccf-90cc8d6ba864
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Stop a Page from Loading
 This example shows how to call the <xref:System.Windows.Navigation.NavigationWindow.StopLoading%2A> method to stop navigation to content before it has finished being downloaded.  

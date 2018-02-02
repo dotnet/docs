@@ -1007,5 +1007,15 @@
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified column.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -78,6 +78,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.Security.NegotiateStream" />
+    <altmember cref="T:System.Net.Security.AuthenticatedStream" />
+    <altmember cref="T:System.IO.IOException" />
+    <altmember cref="T:System.IO.Stream" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -126,9 +130,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -179,9 +183,9 @@
 ## Remarks  
  When you specify `true` for the `leaveStreamOpen` parameter, closing the <xref:System.Net.Security.SslStream> has no effect on the `innerStream` stream; you must explicitly close `innerStream` when you no longer need it.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
    
   
@@ -246,9 +250,9 @@
   
  The security protocol and cryptographic algorithms are already selected when the `userCertificateValidationCallback` delegate's method is invoked. You can use the method to determine whether the selected cryptographic algorithms and strengths are sufficient for your application. If not, the method should return `false` to prevent the <xref:System.Net.Security.SslStream> from being created.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  The Framework caches SSL sessions as they are created and attempts to reuse a cached session for a new request, if possible. When attempting to reuse an SSL session, the Framework uses the first element of <xref:System.Net.HttpWebRequest.ClientCertificates%2A> (if there is one), or tries to reuse an anonymous sessions if <xref:System.Net.HttpWebRequest.ClientCertificates%2A> is empty.  
@@ -323,9 +327,9 @@
   
  The `userCertificateSelectionCallback` delegate is useful when your application has multiple certificates and must dynamically choose a certificate. Certificates in the "MY" store are passed to the method invoked by the delegate.  
   
- If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
+ If a value is not specified in the configuration file for encryptionpolicy, the <xref:System.Net.Security.EncryptionPolicy> defaults to <xref:System.Net.Security.EncryptionPolicy.RequireEncryption?displayProperty=nameWithType> for the <xref:System.Net.Security.SslStream> instance that is constructed.  
   
- The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the encryption policy is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
 > [!NOTE]
 >  The Framework caches SSL sessions as they are created and attempts to reuse a cached session for a new request, if possible. When attempting to reuse an SSL session, the Framework uses the first element of P:System.Net.HttpWebRequest.ClientCertificates (if there is one), or tries to reuse an anonymous sessions if P:System.Net.HttpWebRequest.ClientCertificates is empty.  
@@ -396,7 +400,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The use of the Null cipher is required when the `encryptionPolicy` parameter is set to <xref:System.Net.Security.EncryptionPolicy?displayProperty=fullName>.  
+ The use of the Null cipher is required when the `encryptionPolicy` parameter is set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -449,7 +453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. No client certificates are used in the authentication. The certificate revocation list is not checked during authentication. The value specified for `targetHost` must match the name on the server's certificate.  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)] No client certificates are used in the authentication. The certificate revocation list is not checked during authentication. The value specified for `targetHost` must match the name on the server's certificate.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -502,6 +506,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -550,6 +556,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -596,7 +604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. No client certificates are used in the authentication. The certificate revocation list is not checked during authentication. The value specified for `targetHost` must match the name on the server's certificate.  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)] No client certificates are used in the authentication. The certificate revocation list is not checked during authentication. The value specified for `targetHost` must match the name on the server's certificate.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -650,6 +658,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -702,6 +712,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  When authentication succeeds, you must check the <xref:System.Net.Security.SslStream.IsEncrypted%2A> and <xref:System.Net.Security.SslStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.SslStream>. Check the <xref:System.Net.Security.SslStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -744,7 +756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. The certificate revocation list is not checked during authentication. The client is not required to provide a certificate for authentication.  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)] The certificate revocation list is not checked during authentication. The client is not required to provide a certificate for authentication.  
   
  This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.SslStream.BeginAuthenticateAsServer%2A> method overloads.  
   
@@ -798,6 +810,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.SslStream.BeginAuthenticateAsServer%2A> method overloads.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -857,6 +871,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  This method blocks until the operation completes. To prevent blocking until the operation completes, use one of the <xref:System.Net.Security.SslStream.BeginAuthenticateAsServer%2A> method overloads.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -916,6 +932,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. The certificate revocation list is not checked during authentication. The client is not required to provide a certificate for authentication.  
   
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
@@ -969,6 +987,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
   
  ]]></format>
@@ -1016,6 +1036,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  If the authentication fails, you receive a <xref:System.Security.Authentication.AuthenticationException>, and this <xref:System.Net.Security.SslStream> is no longer useable. You should close this object and remove all references to it so that it can be collected by the garbage collector.  
   
  ]]></format>
@@ -1076,7 +1098,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. No client certificates are used in the authentication. The certificate revocation list is not checked during authentication.  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)] No client certificates are used in the authentication. The certificate revocation list is not checked during authentication.  
   
  The value specified for `targetHost` must match the name on the server's certificate.  
   
@@ -1140,6 +1162,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  The value specified for `targetHost` must match the name on the server's certificate.  
   
  The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.SslStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
@@ -1212,6 +1236,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  The value specified for `targetHost` must match the name on the server's certificate.  
   
  The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.SslStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
@@ -1298,7 +1324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method authenticates using <xref:System.Security.Authentication.SslProtocols.Default>. The certificate revocation list is not checked during authentication. The client is not required to provide a certificate for authentication.  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)] The certificate revocation list is not checked during authentication. The client is not required to provide a certificate for authentication.  
   
  The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.SslStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
@@ -1361,6 +1387,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.SslStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
  This method does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.SslStream.AuthenticateAsServer%2A> method overloads.  
@@ -1429,6 +1457,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+ [!INCLUDE[sslprotocols-none](~/includes/sslprotocols-none-md.md)]
+ 
  The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.SslStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate.  
   
  This method does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.SslStream.AuthenticateAsServer%2A> method overloads.  
@@ -1693,6 +1723,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Stream.CanSeek" />
+        <altmember cref="P:System.Net.Security.SslStream.Position" />
       </Docs>
     </Member>
     <Member MemberName="CanTimeout">
@@ -1980,7 +2012,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -2471,6 +2503,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Net.Security.SslStream.AuthenticateAsServer" />
+        <altmember cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsServer" />
       </Docs>
     </Member>
     <Member MemberName="IsServer">
@@ -3009,7 +3043,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method invokes <xref:System.IO.Stream.SetLength%2A?displayProperty=fullName> on the underlying stream specified when this <xref:System.Net.Security.SslStream> was created.  
+ This method invokes <xref:System.IO.Stream.SetLength%2A?displayProperty=nameWithType> on the underlying stream specified when this <xref:System.Net.Security.SslStream> was created.  
   
  ]]></format>
         </remarks>
@@ -3107,6 +3141,7 @@
         <summary>Gets the <see cref="T:System.Net.TransportContext" /> used for authentication using extended protection.</summary>
         <value>The <see cref="T:System.Net.TransportContext" /> object that contains the channel binding token (CBT) used for extended protection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -3272,5 +3307,55 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthenticateAsClient">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Authenticate the client side of a client-server connection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to this stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsServer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsClientAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Authenticate the client side of a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AuthenticateAsServerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

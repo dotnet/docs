@@ -34,15 +34,16 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
  [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.IBindingList" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -81,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -117,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +182,7 @@
         <param name="oldIndex">The old index of the item that was moved.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListChangedEventArgs" /> class given the type of change and the old and new index of the item that was moved.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="ListChangedType">
@@ -209,15 +213,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
  [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="NewIndex">
@@ -253,15 +258,16 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
  [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="OldIndex">
@@ -292,15 +298,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
  [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
     <Member MemberName="PropertyDescriptor">
@@ -331,16 +338,27 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.BindingSource> named `BindingSource1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingSource.ListChanged?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#134](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#134)]
  [!code-vb[System.Windows.Forms.EventExamples#134](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#134)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.IBindingList" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListChangedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

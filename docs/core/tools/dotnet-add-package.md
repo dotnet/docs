@@ -1,46 +1,43 @@
 ---
-title: dotnet-add package command - .NET Core CLI
-description: The dotnet-add package command provides a convenient option to add NuGet package reference to a project.
-keywords: dotnet-add, CLI, CLI command, .NET Core
-author: spboyer
+title: dotnet add package command - .NET Core CLI
+description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
+author: mairaw
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet add package
 
-# dotnet-add package
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-add package` - Adds a package reference to a project file.
+`dotnet add package` - Adds a package reference to a project file.
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-v|--version] [-f|--framework] [-n|--no-restore] [-s|--source] [--package-directory] [-h|--help]`
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-v|--version] [-f|--framework] [-n|--no-restore] [-s|--source] [--package-directory]`
 
 ## Description
 
 The `dotnet add package` command provides a convenient option to add a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a `<PackageReference>` element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
 
-For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following:
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+
+For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
 
 ```
-Microsoft (R) Build Engine version 15.1.545.13942
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Writing /var/folders/gj/1mgg_4jx7mbdqbhw1kgcpcjr0000gn/T/tmpm0kTMD.tmp
-info : Adding PackageReference for package 'Newtonsoft.Json' into project 'ToDo.csproj'.
-log  : Restoring packages for ToDo.csproj...
+  Writing C:\Users\mairaw\AppData\Local\Temp\tmp95A8.tmp
+info : Adding PackageReference for package 'Newtonsoft.Json' into project 'C:\projects\ToDo\ToDo.csproj'.
+log  : Restoring packages for C:\projects\ToDo\ToDo.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json
-info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 119ms
-info :   GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg
-info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg 27ms
-info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'ToDo.csproj'.
-info : PackageReference for package 'Newtonsoft.Json' version '9.0.1' added to file 'ToDo.csproj'.
+info :   OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json 235ms
+info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'C:\projects\ToDo\ToDo.csproj'.
+info : PackageReference for package 'Newtonsoft.Json' version '10.0.3' added to file 'C:\projects\ToDo\ToDo.csproj'.
 ```
 
 The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) element for the referenced package.

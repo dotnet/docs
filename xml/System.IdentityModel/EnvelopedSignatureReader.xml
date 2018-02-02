@@ -36,7 +36,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.EnvelopedSignatureReader.%23ctor%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor is invoked with the following additional parameters:  
+ The <xref:System.IdentityModel.EnvelopedSignatureReader.%23ctor%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor is invoked with the following additional parameters:  
   
 |Parameter Name|Value|  
 |--------------------|-----------|  
@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.EnvelopedSignatureReader.%23ctor%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor is invoked with the following additional parameters:  
+ The <xref:System.IdentityModel.EnvelopedSignatureReader.%23ctor%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType> constructor is invoked with the following additional parameters:  
   
 |Parameter Name|Value|  
 |--------------------|-----------|  
@@ -220,11 +220,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the reader is currently positioned on a `<Signature>` element, invokes the <xref:System.IdentityModel.EnvelopedSignatureReader.Read%2A>method to read the signature.  
+ If the reader is currently positioned on a `<Signature>` element, invokes the <xref:System.IdentityModel.EnvelopedSignatureReader.Read%2A> method to read the signature.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.EnvelopedSignatureReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

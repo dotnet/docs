@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the List Control Type
 > [!NOTE]
@@ -66,7 +68,7 @@ manager: "markl"
 |------------------------------------------------------------------------------------|-----------|-----------|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationIdProperty>|See notes.|The value of this property needs to be unique across all controls in an application.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>|See notes.|The outermost rectangle that contains the whole control.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|See notes.|If the list control has a clickable point (a point that can be clicked to cause the list to take focus), then that point must be exposed through this property.<br /><br /> If the value of the `IsOffScreen` property is true, then the <xref:System.Windows.Automation.NoClickablePointException>will be raised.|  
+|<xref:System.Windows.Automation.AutomationElementIdentifiers.ClickablePointProperty>|See notes.|If the list control has a clickable point (a point that can be clicked to cause the list to take focus), then that point must be exposed through this property.<br /><br /> If the value of the `IsOffScreen` property is true, then the <xref:System.Windows.Automation.NoClickablePointException> will be raised.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty>|See notes.|If the control can receive keyboard focus, it must support this property.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The value of a list control's Name property should convey the category of options that the user is being asked to select from. This property typically gets its name from a static text label. If there is not a static text label the application developer must expose a value for the Name property.<br /><br /> The only time this property is not required for list controls is if the control is used within the subtree of another control.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LabeledByProperty>|See notes.|If there is a static text label then this property must expose a reference to that control.|  
@@ -113,6 +115,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See Also  
- <xref:System.Windows.Automation.ControlType.List>   
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)   
+ <xref:System.Windows.Automation.ControlType.List>  
+ [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
  [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

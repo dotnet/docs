@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetFunctionFromIP2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo4::GetFunctionFromIP2 method [.NET Framework profiling]"
   - "GetFunctionFromIP2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo4::GetFunctionFromIP2 Method
 Maps a managed code instruction pointer to the JIT-recompiled version of a function.  

@@ -14,6 +14,7 @@
   <Docs>
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" /> class is a read-only collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
   </Docs>
   <Members>
     <Member MemberName="Contains">
@@ -40,6 +41,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="site" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -68,6 +71,8 @@
         <exception cref="T:System.ArgumentException">The destination array is not large enough, based on the source collection size and the <paramref name="index" /> specified.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="sites" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -94,6 +99,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="site" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -118,6 +125,8 @@
         <value>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the collection.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
   </Members>

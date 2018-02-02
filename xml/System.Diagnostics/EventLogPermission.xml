@@ -23,7 +23,7 @@
  Do not grant <xref:System.Diagnostics.EventLogPermission> to partially trusted code. The ability to read and write the event log enables code to perform actions such as issuing event log messages in the name of another application.  
   
 > [!NOTE]
->  If the event source that is specified by the <xref:System.Diagnostics.EventLog.Source%2A?displayProperty=fullName> property for the event log does not exist, a new event source is created. To create an event source in Windows Vista and later versions of Windows, or Windows Server 2003, you must have administrative privileges.  
+>  If the event source that is specified by the <xref:System.Diagnostics.EventLog.Source%2A?displayProperty=nameWithType> property for the event log does not exist, a new event source is created. To create an event source in Windows Vista and later versions of Windows, or Windows Server 2003, you must have administrative privileges.  
 >   
 >  The reason for this requirement is that all event logs, including security, must be searched to determine whether the event source is unique. Starting with Windows Vista, users do not have permission to access the security log; therefore, a <xref:System.Security.SecurityException> is thrown.  
 >   
@@ -31,6 +31,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionAccess" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionAttribute" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntry" />
+    <altmember cref="T:System.Diagnostics.EventLogPermissionEntryCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -97,6 +102,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermission" /> class with the specified permission state.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+        <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,5 +151,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

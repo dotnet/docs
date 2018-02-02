@@ -1,43 +1,25 @@
 ---
 title: "Lifetime in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "static variables, lifetime"
-  - "static variables, Visual Basic"
-  - "declared elements, lifetime"
-  - "Shared variable lifetime"
-  - "lifetime, declared elements"
-  - "lifetime, Visual Basic"
-  - "lifetime"
+  - "static variables [Visual Basic], lifetime"
+  - "static variables [Visual Basic], Visual Basic"
+  - "declared elements [Visual Basic], lifetime"
+  - "Shared variable lifetime [Visual Basic]"
+  - "lifetime [Visual Basic], declared elements"
+  - "lifetime [Visual Basic], Visual Basic"
+  - "lifetime [Visual Basic]"
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Lifetime in Visual Basic
 The *lifetime* of a declared element is the period of time during which it is available for use. Variables are the only elements that have lifetime. For this purpose, the compiler treats procedure parameters and function returns as special cases of variables. The lifetime of a variable represents the period of time during which it can hold a value. Its value can change over its lifetime, but it always holds some value.  
@@ -94,13 +76,13 @@ The *lifetime* of a declared element is the period of time during which it is av
  In the preceding example, you can produce the same lifetime by declaring `applesSold` at module level. If you changed the scope of a variable this way, however, the procedure would no longer have exclusive access to it. Because other procedures could access `applesSold` and change its value, the running total could be unreliable and the code could be more difficult to maintain.  
   
 ## See Also  
- [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)   
- [Nothing](../../../../visual-basic/language-reference/nothing.md)   
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)   
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)   
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)  
+ [Nothing](../../../../visual-basic/language-reference/nothing.md)  
+ [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
+ [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
+ [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
+ [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
+ [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
+ [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
+ [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [Static](../../../../visual-basic/language-reference/modifiers/static.md)

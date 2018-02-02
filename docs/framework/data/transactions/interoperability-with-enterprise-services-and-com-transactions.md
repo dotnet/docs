@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d0fd0d26-fe86-443b-b208-4d57d39fa4aa
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Interoperability with Enterprise Services and COM+ Transactions
 The <xref:System.Transactions> namespace supports interoperability between transaction objects created using this namespace and transactions created through COM+.  

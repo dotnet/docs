@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: e40f17c5-dd12-4c62-9dbf-00ab491382dc
 caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Upload Files with FTP
 This sample shows how to upload a file to an FTP server.  
@@ -57,7 +54,6 @@ namespace Examples.System.Net
             Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);  
   
             response.Close();  
-            }  
         }  
     }  
 }  

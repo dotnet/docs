@@ -28,12 +28,12 @@
 ## Remarks  
  The <xref:Microsoft.Win32.RegistryValueKind> enumeration defines the set of supported registry data types and the value that is used for unsupported types (Unknown). Starting in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can specify not to use a data type with the None value.  
   
- Use the <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=fullName> method to determine the data type of a registry key value before retrieving the value. When you set a registry key value, use the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> method to specify the registry data type explicitly.  
+ Use the <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=nameWithType> method to determine the data type of a registry key value before retrieving the value. When you set a registry key value, use the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> method to specify the registry data type explicitly.  
   
    
   
 ## Examples  
- The following code example creates a registry key and sets several values for that key, using <xref:Microsoft.Win32.RegistryValueKind> to specify the registry data types. The example then uses <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=fullName> to check the registry data types, in order to retrieve the values and display them.  
+ The following code example creates a registry key and sets several values for that key, using <xref:Microsoft.Win32.RegistryValueKind> to specify the registry data types. The example then uses <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=nameWithType> to check the registry data types, in order to retrieve the values and display them.  
   
  [!code-cpp[Microsoft.Win32.RegistryValueKind#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.RegistryValueKind/CPP/source.cpp#1)]
  [!code-csharp[Microsoft.Win32.RegistryValueKind#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.RegistryValueKind/CS/source.cs#1)]
@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:Microsoft.Win32.RegistryKey.GetValueKind(System.String)" />
+    <altmember cref="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" />
   </Docs>
   <Members>
     <Member MemberName="Binary">

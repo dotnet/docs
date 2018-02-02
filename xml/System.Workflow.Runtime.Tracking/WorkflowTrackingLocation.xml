@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- Whenever the status of the workflow instance changes, the workflow instance emits a workflow status event based on one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to the runtime tracking infrastructure. A <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> expresses an interest in locations of the workflow instance where specific types of workflow status events occur. Add <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events%2A> to specify the workflow status events to be matched. A single <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> may refer to more than one actual location in the potential execution path of a workflow instance. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A?displayProperty=fullName> in order to define the match parameters for a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>.  
+ Whenever the status of the workflow instance changes, the workflow instance emits a workflow status event based on one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to the runtime tracking infrastructure. A <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> expresses an interest in locations of the workflow instance where specific types of workflow status events occur. Add <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events%2A> to specify the workflow status events to be matched. A single <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> may refer to more than one actual location in the potential execution path of a workflow instance. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A?displayProperty=nameWithType> in order to define the match parameters for a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>.  
   
  ]]></format>
     </remarks>
@@ -96,5 +96,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

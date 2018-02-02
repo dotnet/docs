@@ -20,10 +20,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceStartMode> is used by the service installer to indicate whether the new service should be disabled at system startup, whether the system should start the service automatically at system startup, or whether the service should be started manually by a user or application. It is also used by the <xref:System.ServiceProcess.ServiceController.StartType%2A?displayProperty=fullName> property to indicate how a particular service starts.  
+ The <xref:System.ServiceProcess.ServiceStartMode> is used by the service installer to indicate whether the new service should be disabled at system startup, whether the system should start the service automatically at system startup, or whether the service should be started manually by a user or application. It is also used by the <xref:System.ServiceProcess.ServiceController.StartType%2A?displayProperty=nameWithType> property to indicate how a particular service starts.  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ServiceProcess.ServiceInstaller.StartType" />
+    <altmember cref="T:System.ServiceProcess.ServiceInstaller" />
   </Docs>
   <Members>
     <Member MemberName="Automatic">

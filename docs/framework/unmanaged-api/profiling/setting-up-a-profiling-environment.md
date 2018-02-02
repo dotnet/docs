@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "environment variables, profiling API"
   - "profiling API [.NET Framework], setting up environment"
@@ -24,6 +22,8 @@ caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]

@@ -38,6 +38,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.Windows.Forms.Design.ComponentEditorForm" />
+    <altmember cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -208,6 +210,7 @@
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Windows.Forms.Control" />
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -399,7 +402,7 @@
     </Member>
     <Member MemberName="IsPageMessage">
       <MemberSignature Language="C#" Value="public virtual bool IsPageMessage (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPageMessage(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPageMessage(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsPageMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

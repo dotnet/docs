@@ -16,18 +16,23 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event occurs before the <xref:System.Windows.Forms.WebBrowser> control navigates to a new document. You can handle this event to cancel navigation before it begins if certain conditions have not been met, for example, when the user has not completely filled out a form. To do this, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the location of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A> property.  
+ The <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event occurs before the <xref:System.Windows.Forms.WebBrowser> control navigates to a new document. You can handle this event to cancel navigation before it begins if certain conditions have not been met, for example, when the user has not completely filled out a form. To do this, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs> object passed to the event handler to `true`. You can also use this object to retrieve the location of the new document through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url%2A> property. If the new document will be displayed in a Web page frame, you can retrieve the name of the frame through the <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName%2A> property.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
   
  [!code-csharp[WebBrowserMisc#30](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#30)]
  [!code-vb[WebBrowserMisc#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#30)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+    <altmember cref="P:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName" />
+    <altmember cref="P:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url" />
+    <altmember cref="T:System.Windows.Forms.WebBrowser" />
+    <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +53,8 @@
         <param name="targetFrameName">The name of the Web page frame in which the new document will be loaded.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameName">
@@ -69,9 +76,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=nameWithType> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
- To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event.  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.WebBrowser> named `WebBrowser1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event.  
   
  [!code-csharp[System.Windows.Forms.EventExamples#650](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#650)]
  [!code-vb[System.Windows.Forms.EventExamples#650](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#650)]  
@@ -79,6 +86,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing the current URL. Associated enumerations: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -100,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=nameWithType> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
   
  [!code-csharp[WebBrowserMisc#30](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#30)]
  [!code-vb[WebBrowserMisc#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#30)]  
@@ -108,6 +117,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Net.WebPermission">for accessing the current URL. Associated enumerations: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <altmember cref="T:System.Windows.Forms.WebBrowser" />
+        <altmember cref="E:System.Windows.Forms.WebBrowser.Navigating" />
+        <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
   </Members>

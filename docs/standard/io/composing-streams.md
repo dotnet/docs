@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "streams, base streams"
   - "I/O [.NET Framework], composing streams"
@@ -19,6 +23,9 @@ caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Composing Streams
 A backing store is a storage medium, such as a disk or memory. Each different backing store implements its own stream as an implementation of the <xref:System.IO.Stream> class. Each stream type reads and writes bytes from and to its given backing store. Streams that connect to backing stores are called base streams. Base streams have constructors that have the parameters necessary to connect the stream to the backing store. For example, <xref:System.IO.FileStream> has constructors that specify a path parameter, which specifies how the file will be shared by processes, and so on.  
@@ -38,10 +45,10 @@ A backing store is a storage medium, such as a disk or memory. Each different ba
  [!code-vb[System.IO.StreamReader#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/source3.vb#21)]  
   
 ## See Also  
- <xref:System.IO.StreamReader>   
- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName>   
- <xref:System.IO.StreamReader.Peek%2A?displayProperty=fullName>   
- <xref:System.IO.FileStream>   
- <xref:System.IO.BinaryReader>   
- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=fullName>   
- <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=fullName>
+ <xref:System.IO.StreamReader>  
+ <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
+ <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>  
+ <xref:System.IO.FileStream>  
+ <xref:System.IO.BinaryReader>  
+ <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>  
+ <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>

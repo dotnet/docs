@@ -130,7 +130,7 @@
 ## Remarks  
  This method utilizes the <xref:System.Reflection.ParameterInfo.AttrsImpl> method.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
    
   
@@ -143,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.ParameterAttributes" />
       </Docs>
     </Member>
     <Member MemberName="AttrsImpl">
@@ -288,7 +289,7 @@
   
  This method utilizes the <xref:System.Reflection.ParameterInfo.DefaultValueImpl> method.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -361,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -413,7 +414,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -452,7 +453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=fullName> and <xref:System.Reflection.ParameterInfo.GetCustomAttributes%2A?displayProperty=fullName> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
+ Use this method to examine the custom attributes of code in the reflection-only context, in cases where the custom attributes themselves are defined in code that is loaded into the reflection-only context. Methods such as <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Reflection.ParameterInfo.GetCustomAttributes%2A?displayProperty=nameWithType> cannot be used in such cases, because they create instances of the attributes. Code in the reflection-only context cannot be executed. For more information and example code, see the <xref:System.Reflection.CustomAttributeData> class.  
   
  ]]></format>
         </remarks>
@@ -529,7 +530,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method implements the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A?displayProperty=fullName> method.  
+ This method implements the <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -645,7 +646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=fullName> method.  
+ This method ignores the `inherit` parameter. To search the inheritance chain for attributes on parameters, use the appropriate overloads of the <xref:System.Attribute.IsDefined%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -705,20 +706,20 @@
   
  This method utilizes the `In` flag of the `ParameterAttributes` enumerator.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
--   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
+-   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
  After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
   
@@ -763,7 +764,7 @@
   
  This method utilizes the `Lcid` flag of the `ParameterAttributes` enumerator.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -808,20 +809,20 @@
   
  This method utilizes the `Optional` flag of the `ParameterAttributes` enumerator.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
--   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
+-   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
  After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
   
@@ -872,20 +873,20 @@
   
  This method utilizes the `Out` flag of the `ParameterAttributes` enumerator.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
    
   
 ## Examples  
- The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and <xref:System.Reflection.ParameterAttributes?displayProperty=fullName> attributes.  
+ The following example shows how to test method parameters for the <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType> attributes.  
   
  The example contains a `DefineMethod` method that does the following:  
   
 -   Creates a dynamic assembly containing a `MyType` type.  
   
--   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, the second with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>, and the third with <xref:System.Reflection.ParameterAttributes?displayProperty=fullName>.  
+-   Adds a `MyMethod` method to `MyType`. `MyMethod` has three parameters. The first parameter is defined with <xref:System.Reflection.ParameterAttributes.In?displayProperty=nameWithType>, the second with <xref:System.Reflection.ParameterAttributes.Out?displayProperty=nameWithType>, and the third with <xref:System.Reflection.ParameterAttributes.Optional?displayProperty=nameWithType>.  
   
--   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=fullName> to complete the type.  
+-   Calls <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> to complete the type.  
   
  After executing `DefineMethod`, the example searches the assemblies that are currently loaded until it finds the dynamic assembly. It loads `MyType` from the assembly, gets a <xref:System.Reflection.MethodInfo> object for the `MyMethod` method, and examines the parameters. The example uses the <xref:System.Reflection.ParameterInfo.IsIn%2A>, <xref:System.Reflection.ParameterInfo.IsOut%2A>, and <xref:System.Reflection.ParameterInfo.IsOptional%2A> properties to display information about the parameters.  
   
@@ -936,7 +937,7 @@
   
  This method utilizes the `Retval` flag of the `ParameterAttributes` enumerator.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
@@ -1040,7 +1041,7 @@
 ## Remarks  
  To get the module, use the <xref:System.Reflection.MemberInfo.Module%2A> property of the member that defines this parameter.  
   
- The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged Reflection API. For more information, please see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
  ]]></format>
         </remarks>
@@ -1082,10 +1083,10 @@
 ## Remarks  
  This property utilizes the protected <xref:System.Reflection.ParameterInfo.NameImpl> field, and depends on an optional metadata flag that might not be available in all compilers.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType> method.  
   
 > [!WARNING]
->  If this <xref:System.Reflection.ParameterInfo> represents a return value (that is, if it was obtained by using the <xref:System.Reflection.MethodInfo.ReturnParameter%2A?displayProperty=fullName> property), this property will be `null`.  
+>  If this <xref:System.Reflection.ParameterInfo> represents a return value (that is, if it was obtained by using the <xref:System.Reflection.MethodInfo.ReturnParameter%2A?displayProperty=nameWithType> property), this property will be `null`.  
   
    
   
@@ -1171,7 +1172,7 @@
 ## Remarks  
  This method depends on an optional metadata and might not be available in all compilers.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
    
   
@@ -1224,10 +1225,11 @@
   
  This method utilizes the <xref:System.Reflection.ParameterInfo.PositionImpl> method.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName>.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.ParameterInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="PositionImpl">
@@ -1301,7 +1303,7 @@
   
  The default value is used when an actual value is not specified in the method call. A parameter can have a default value that is `null`. This is distinct from the case where a default value is not defined.  
   
- To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=fullName> method.  
+ To get the <xref:System.Reflection.ParameterInfo> array, first get the method or the constructor and then call the <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1379,7 +1381,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterInfo.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _ParameterInfo.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ParameterInfo.System#Runtime#InteropServices#_ParameterInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1449,7 +1451,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterInfo.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _ParameterInfo.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ParameterInfo.System#Runtime#InteropServices#_ParameterInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1478,7 +1480,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._ParameterInfo.Invoke">
       <MemberSignature Language="C#" Value="void _ParameterInfo.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ParameterInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ParameterInfo.System#Runtime#InteropServices#_ParameterInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1547,5 +1549,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the custom attributes applied to this parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

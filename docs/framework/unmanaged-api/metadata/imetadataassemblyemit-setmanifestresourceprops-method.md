@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetManifestResourceProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetManifestResourceProps method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyEmit::SetManifestResourceProps Method
 Modifies the specified `ManifestResource` metadata structure.  

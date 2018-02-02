@@ -1,22 +1,22 @@
 ---
-title: dotnet-nuget-delete command - .NET Core CLI
-description: The dotnet-nuget-delete command deletes or unlists a package from the server. 
-keywords: dotnet-nuget-delete, CLI, CLI command, .NET Core
+title: dotnet nuget delete command - .NET Core CLI
+description: The dotnet-nuget-delete command deletes or unlists a package from the server.
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet nuget delete
 
-# dotnet-nuget delete
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-nuget-delete` - Deletes or unlists a package from the server.
+`dotnet nuget delete` - Deletes or unlists a package from the server.
 
 ## Synopsis
 
@@ -40,7 +40,7 @@ Version of the package to delete.
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-s|--source <SOURCE>`
 

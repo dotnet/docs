@@ -27,6 +27,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Caching.Cache" />
+    <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
+    <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
   </Docs>
   <Members>
     <Member MemberName="DependencyChanged">

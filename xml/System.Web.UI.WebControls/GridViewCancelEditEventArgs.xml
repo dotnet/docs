@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row containing the Cancel button that raised the event and to indicate that the cancel operation should be stopped. To stop the cancel operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs.%23ctor%2A> constructor.  
   
@@ -29,11 +29,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object passed to the event-handling method to determine the index of the row containing the Cancel button clicked by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewCancelEditEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowCancelingEdit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewCancelEditEventArgs.RowIndex" />
       </Docs>
     </Member>
     <Member MemberName="RowIndex">
@@ -96,11 +100,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs.RowIndex%2A> property to determine the index of the row containing the Cancel button clicked by the user.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowCancellingEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCancellingEdit/CS/gridviewrowcancellingeditcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowCancellingEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCancellingEdit/VB/gridviewrowcancellingeditvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
   </Members>

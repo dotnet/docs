@@ -40,10 +40,10 @@
   
 |Member|BOM|Error detection|  
 |------------|---------|---------------------|  
-|<xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName>|Yes|No (Replacement fallback)|  
-|<xref:System.Text.UTF8Encoding.%23ctor?displayProperty=fullName>|No|No (Replacement fallback)|  
-|<xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%29?displayProperty=fullName>|Configurable|No (Replacement fallback)|  
-|<xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=fullName>|Configurable|Configurable|  
+|<xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType>|Yes|No (Replacement fallback)|  
+|<xref:System.Text.UTF8Encoding.%23ctor?displayProperty=nameWithType>|No|No (Replacement fallback)|  
+|<xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%29?displayProperty=nameWithType>|Configurable|No (Replacement fallback)|  
+|<xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29?displayProperty=nameWithType>|Configurable|Configurable|  
   
  The <xref:System.Text.UTF8Encoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.UTF8Encoding.GetBytes%2A> method performs the actual encoding.  
   
@@ -77,6 +77,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Decoder" />
+    <altmember cref="T:System.Text.Encoder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -211,7 +215,7 @@
 ## Remarks  
  The `encoderShouldEmitUTF8Identifier` parameter controls the operation of the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method. If `true`, the method returns a byte array containing the Unicode byte order mark (BOM) in UTF-8 format.  If `false`, it returns a zero-length byte array. However, setting `encoderShouldEmitUTF8Identifier` to `true` does not cause the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to prefix the BOM at the beginning of the byte array, nor does it cause the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method to include the number of bytes in the BOM in the byte count.  
   
- If `throwOnInvalidBytes` is `true`, a method that detects an invalid byte sequence throws an <xref:System.ArgumentException?displayProperty=fullName> exception. Otherwise, the method does not throw an exception, and the invalid sequence is ignored.  
+ If `throwOnInvalidBytes` is `true`, a method that detects an invalid byte sequence throws an <xref:System.ArgumentException?displayProperty=nameWithType> exception. Otherwise, the method does not throw an exception, and the invalid sequence is ignored.  
   
 > [!NOTE]
 >  For security reasons, you should enable error detection by calling a constructor that includes a `throwOnInvalidBytes` parameter and setting that parameter to `true`.  
@@ -227,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -283,6 +288,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.UTF8Encoding.#ctor" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -349,6 +356,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -420,6 +430,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -499,6 +512,9 @@
  -and-  
   
  The <see cref="P:System.Text.Encoding.EncoderFallback" /> property is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -580,6 +596,9 @@
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -674,6 +693,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -768,6 +790,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -837,6 +862,9 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Text.UTF8Encoding.GetChars" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -915,6 +943,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.UTF8Encoding.GetChars" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -971,7 +1002,7 @@
   
  With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
- If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=fullName> method.  
+ If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> object provided by the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method, respectively.  
   
@@ -996,6 +1027,10 @@
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -1049,7 +1084,7 @@
   
  With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
- If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=fullName> method.  
+ If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method, respectively.  
   
@@ -1090,6 +1125,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDecoder">
@@ -1123,7 +1162,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF8Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF8Encoding.GetDecoder%2A> and <xref:System.Text.UTF8Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Decoder.GetChars%2A?displayProperty=nameWithType> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.UTF8Encoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.UTF8Encoding.GetDecoder%2A> and <xref:System.Text.UTF8Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
  If error detection is enabled, that is, the `throwOnInvalidCharacters` parameter of the constructor is set to `true`, error detection is also enabled in the <xref:System.Text.Decoder> returned by this method. If error detection is enabled and an invalid sequence is encountered, the state of the decoder is undefined and processing must stop.  
   
@@ -1138,6 +1177,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Decoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1171,7 +1215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method converts sequential blocks of characters into sequential blocks of bytes, in a manner similar to the <xref:System.Text.UTF8Encoding.GetBytes%2A> method. However, a <xref:System.Text.Encoder> maintains state information between calls so it can correctly encode character sequences that span blocks. The <xref:System.Text.Encoder> also preserves trailing characters at the end of data blocks and uses the trailing characters in the next encoding operation. For example, a data block might end with an unmatched high surrogate, and the matching low surrogate might be in the next data block. Therefore, <xref:System.Text.UTF8Encoding.GetDecoder%2A> and <xref:System.Text.UTF8Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+ The <xref:System.Text.Encoder.GetBytes%2A?displayProperty=nameWithType> method converts sequential blocks of characters into sequential blocks of bytes, in a manner similar to the <xref:System.Text.UTF8Encoding.GetBytes%2A> method. However, a <xref:System.Text.Encoder> maintains state information between calls so it can correctly encode character sequences that span blocks. The <xref:System.Text.Encoder> also preserves trailing characters at the end of data blocks and uses the trailing characters in the next encoding operation. For example, a data block might end with an unmatched high surrogate, and the matching low surrogate might be in the next data block. Therefore, <xref:System.Text.UTF8Encoding.GetDecoder%2A> and <xref:System.Text.UTF8Encoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
   
  If error detection is enabled, that is, the `throwOnInvalidCharacters` parameter of the constructor is set to `true`, error detection is also enabled in the <xref:System.Text.Encoder> returned by this method. If error detection is enabled and an invalid sequence is encountered, the state of the encoder is undefined and processing must stop.  
   
@@ -1186,6 +1230,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1227,6 +1275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxByteCount">
@@ -1267,7 +1316,7 @@
   
  <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> can return large values.  
   
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF8Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>. For example, text in English and many other languages often needs only one UTF-8 byte to represent a character, but the number returned by <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> has to allow for the possibility that the string to be converted will consist entirely of characters that each require four bytes.  
+ In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded. You might also want to consider a different approach using <xref:System.Text.UTF8Encoding.GetByteCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType>. For example, text in English and many other languages often needs only one UTF-8 byte to represent a character, but the number returned by <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> has to allow for the possibility that the string to be converted will consist entirely of characters that each require four bytes.  
   
  <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> has no relation to <xref:System.Text.UTF8Encoding.GetChars%2A>. If your application needs a similar function to use with <xref:System.Text.UTF8Encoding.GetChars%2A>, it should use <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A>.  
   
@@ -1296,6 +1345,9 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxCharCount">
@@ -1336,7 +1388,7 @@
   
  <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a fallback is chosen with a potentially large string, <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> can return large values.  
   
- In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded.  You might also want to consider a different approach using <xref:System.Text.UTF8Encoding.GetCharCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=fullName>.  
+ In most cases, this method returns reasonable numbers for small strings. For large strings, you might have to choose between using very large buffers and catching errors in the rare case that a more reasonable buffer is exceeded.  You might also want to consider a different approach using <xref:System.Text.UTF8Encoding.GetCharCount%2A> or <xref:System.Text.Encoder.Convert%2A?displayProperty=nameWithType>.  
   
  <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.UTF8Encoding.GetBytes%2A>. If your application needs a similar function to use with <xref:System.Text.UTF8Encoding.GetBytes%2A>, it should use <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A>.  
   
@@ -1365,6 +1417,10 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetPreamble">
@@ -1402,7 +1458,7 @@
   
  You can instantiate a <xref:System.Text.UTF8Encoding> object whose <xref:System.Text.UTF8Encoding.GetPreamble%2A> method returns a valid BOM in the following ways:  
   
--   By retrieving the <xref:System.Text.UTF8Encoding> object returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName> property.  
+-   By retrieving the <xref:System.Text.UTF8Encoding> object returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property.  
   
 -   By calling a <xref:System.Text.UTF8Encoding> constructor with a `encoderShouldEmitUTF8Identifier` parameter and setting its value set to `true`.  
   
@@ -1487,7 +1543,7 @@
 ## Remarks  
  With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
- If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=fullName> method.  
+ If the range of bytes to be decoded includes the byte order mark (BOM) and the byte array was returned by a method of a non-BOM aware type, the character U+FFFE is included in the character array returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method, respectively.  
   
@@ -1499,7 +1555,7 @@
  [!code-csharp[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/cs/getstring1.cs#1)]
  [!code-vb[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/vb/getstring1.vb#1)]  
   
- Note that in this case the decoded string differs from the original string, since it begins with a 16-bit byte order mark U+FFFD. This means that the two strings will compare as unequal, and that if the string is output, the BOM will be displayed as the replacement character "?". To remove the BOM at the beginning of the string, you can call the <xref:System.String.TrimStart%2A?displayProperty=fullName> method.  
+ Note that in this case the decoded string differs from the original string, since it begins with a 16-bit byte order mark U+FFFD. This means that the two strings will compare as unequal, and that if the string is output, the BOM will be displayed as the replacement character "?". To remove the BOM at the beginning of the string, you can call the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
         </remarks>
@@ -1517,7 +1573,63 @@
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.UTF8Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.UTF8Encoding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

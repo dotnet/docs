@@ -14,6 +14,8 @@ caps.latest.revision: 3
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How To: Service Data Partitioning
 This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or "Gold" customers may need to be processed at a higher priority than messages from a standard customer.  

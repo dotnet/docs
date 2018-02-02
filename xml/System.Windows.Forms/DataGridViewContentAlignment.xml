@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A?displayProperty=fullName> property.  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A?displayProperty=nameWithType> property.  
   
    
   
@@ -27,6 +27,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
   </Docs>
   <Members>
     <Member MemberName="BottomCenter">

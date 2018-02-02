@@ -38,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="E:System.AppDomain.TypeResolve" />
+    <altmember cref="E:System.AppDomain.ResourceResolve" />
+    <altmember cref="E:System.AppDomain.ReflectionOnlyAssemblyResolve" />
+    <altmember cref="E:System.AppDomain.AssemblyResolve" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -167,19 +171,33 @@
 ## Remarks  
  The assembly that is returned by this property is an assembly that was unable to resolve the item specified by the <xref:System.ResolveEventArgs.Name%2A> property, because the item did not exist in that assembly, in any of its loaded dependencies, or in any dependencies the loader could find through probing.  
   
- For example, suppose the current assembly uses the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName> method to load assembly A from a directory outside the probing path, in order to use class CA. Suppose further that class CA uses class CB, in assembly B, and that assembly A has a compile-time reference to assembly B, also located outside the probing path. When the current assembly attempts to instantiate CA, the loader attempts to resolve the reference to assembly B. However, because assembly A was loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName> method, the loader cannot resolve the dependency. If there is a handler for the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event, the event is raised, and the <xref:System.ResolveEventArgs.RequestingAssembly%2A> property of the resulting <xref:System.ResolveEventArgs> object contains assembly A, because assembly A is the assembly that is missing a dependency.  
+ For example, suppose the current assembly uses the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType> method to load assembly A from a directory outside the probing path, in order to use class CA. Suppose further that class CA uses class CB, in assembly B, and that assembly A has a compile-time reference to assembly B, also located outside the probing path. When the current assembly attempts to instantiate CA, the loader attempts to resolve the reference to assembly B. However, because assembly A was loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType> method, the loader cannot resolve the dependency. If there is a handler for the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event, the event is raised, and the <xref:System.ResolveEventArgs.RequestingAssembly%2A> property of the resulting <xref:System.ResolveEventArgs> object contains assembly A, because assembly A is the assembly that is missing a dependency.  
   
  The semantics of the <xref:System.ResolveEventArgs.RequestingAssembly%2A> property vary, depending on how the requesting assembly was loaded:  
   
--   Load context: The value of the property might be `null`. The load context is load-order independent, and the identity of the requesting assembly is not necessarily meaningful. A non-null example occurs when the <xref:System.Type.GetType%2A?displayProperty=fullName> method is called and the specified type is not known to the requesting assembly or any of its dependencies.  
+-   Load context: The value of the property might be `null`. The load context is load-order independent, and the identity of the requesting assembly is not necessarily meaningful. A non-null example occurs when the <xref:System.Type.GetType%2A?displayProperty=nameWithType> method is called and the specified type is not known to the requesting assembly or any of its dependencies.  
   
 -   Load-from context: The property can be used as a probing hint, but the event handler should not get more than one request for a given assembly name.  
   
--   No context (that is, the requesting assembly was loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName> method, or as a byte stream, or in mixed mode): The handler can use the <xref:System.ResolveEventArgs.RequestingAssembly%2A> property to load different implementations of the same assembly based on the identity of the requesting assembly.  
+-   No context (that is, the requesting assembly was loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=nameWithType> method, or as a byte stream, or in mixed mode): The handler can use the <xref:System.ResolveEventArgs.RequestingAssembly%2A> property to load different implementations of the same assembly based on the identity of the requesting assembly.  
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.AppDomain.TypeResolve" />
+        <altmember cref="E:System.AppDomain.ResourceResolve" />
+        <altmember cref="E:System.AppDomain.ReflectionOnlyAssemblyResolve" />
+        <altmember cref="E:System.AppDomain.AssemblyResolve" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ResolveEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

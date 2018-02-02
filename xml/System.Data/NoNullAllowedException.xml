@@ -27,13 +27,13 @@
 ## Remarks  
  The <xref:System.Data.NoNullAllowedException> is thrown when invoking the following methods or properties when you try to insert a null value into a column where <xref:System.Data.DataColumn.AllowDBNull%2A> is set to `false`.  
   
--   <xref:System.Data.DataRowCollection.Add%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRowCollection.Add%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.EndEdit%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataRow.ItemArray%2A?displayProperty=nameWithType>  
   
--   <xref:System.Data.DataTable.LoadDataRow%2A?displayProperty=fullName>  
+-   <xref:System.Data.DataTable.LoadDataRow%2A?displayProperty=nameWithType>  
   
  ]]></format>
     </remarks>
@@ -117,6 +117,8 @@
         <param name="context">Description of the source and destination of the specified serialized stream.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.NoNullAllowedException" /> class with serialization information.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,5 +150,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.NoNullAllowedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

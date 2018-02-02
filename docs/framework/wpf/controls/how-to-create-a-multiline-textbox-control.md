@@ -10,12 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "TextBox control, multiple lines of text"
+  - "TextBox control [WPF], multiple lines of text"
 ms.assetid: 05914a93-d0ea-4a9a-b693-09df7d4e2ac2
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Multiline TextBox Control
 This example shows how to use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] to define a <xref:System.Windows.Controls.TextBox> control that will automatically expand to accommodate multiple lines of text.  
@@ -30,6 +32,6 @@ This example shows how to use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlash
  [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
   
 ## See Also  
- <xref:System.Windows.TextWrapping>   
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   
+ <xref:System.Windows.TextWrapping>  
+ [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

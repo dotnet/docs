@@ -14,6 +14,8 @@
     <summary>Represents a parameter of a method of a hosted ActiveX control.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Reflection.ParameterInfo" />
+    <altmember cref="T:System.Windows.Forms.AxHost" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +35,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -54,6 +57,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information and whether to ignore by reference parameters.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,6 +123,7 @@
         <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -144,6 +149,7 @@
         <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.Reflection.ParameterInfo" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -163,6 +169,7 @@
         <value>A <see cref="T:System.CodeDom.FieldDirection" /> indicating the direction of assignment fields.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.CodeDom.FieldDirection" />
       </Docs>
     </Member>
     <Member MemberName="IsByRef">
@@ -302,5 +309,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified parameter information to an <see cref="T:System.Windows.Forms.Design.AxParameterData" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified name and type name.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

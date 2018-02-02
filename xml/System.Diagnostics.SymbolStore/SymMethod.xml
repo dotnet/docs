@@ -401,5 +401,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>ISymWrapper</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

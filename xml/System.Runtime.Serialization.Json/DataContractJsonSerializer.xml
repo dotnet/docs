@@ -27,8 +27,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serializes objects to the JavaScript Object Notation (JSON) and deserializes JSON data to objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> class to serialize instances of a type into a JSON document and to deserialize a JSON document into an instance of a type. For example, you can create a type named `Person` with properties that contain essential data, such as a name and address. You can then create and manipulate an instance of the `Person` class and write all of its property values in a JSON document for later retrieval. This JSON document can later be deserialized into the `Person` class or another class with an equivalent data contract.  
+  
+ If an error occurs during the serialization of an outgoing reply on the server or the reply operation throws an exception for some other reason, it may not get returned to the client as a fault.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,8 +63,8 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +92,9 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type, with a collection of known types that may be present in the object graph.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,9 +122,9 @@
         <Parameter Name="settings" Type="System.Runtime.Serialization.Json.DataContractJsonSerializerSettings" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="settings">The serializer settings for the JSON serializer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type and serializer settings.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,9 +151,9 @@
         <Parameter Name="rootName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of a specified type using the XML root element specified by a parameter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,9 +180,9 @@
         <Parameter Name="rootName" Type="System.Xml.XmlDictionaryString" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of a specified type using the XML root element specified by a parameter of type <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,10 +210,10 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize. The default is "root".</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of a specified type using the XML root element specified by a parameter, with a collection of known types that may be present in the object graph.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,10 +241,10 @@
         <Parameter Name="knownTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of a specified type using the XML root element specified by a parameter of type <see cref="T:System.Xml.XmlDictionaryString" />, with a collection of known types that may be present in the object graph.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,13 +267,15 @@
         <Parameter Name="alwaysEmitTypeInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <param name="maxItemsInObjectGraph">To be added.</param>
-        <param name="ignoreExtensionDataObject">To be added.</param>
-        <param name="dataContractSurrogate">To be added.</param>
-        <param name="alwaysEmitTypeInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="knownTypes">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <param name="maxItemsInObjectGraph">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the <see cref="T:System.Runtime.Serialization.IExtensibleDataObject" /> interface upon serialization and ignore unexpected data upon deserialization; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="alwaysEmitTypeInformation">
+          <see langword="true" /> to emit type information; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies a list of known types that may be present in the object graph, the maximum number of graph items to serialize or deserialize, whether to ignore unexpected data or emit type information, and a surrogate for custom serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,14 +299,16 @@
         <Parameter Name="alwaysEmitTypeInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <param name="maxItemsInObjectGraph">To be added.</param>
-        <param name="ignoreExtensionDataObject">To be added.</param>
-        <param name="dataContractSurrogate">To be added.</param>
-        <param name="alwaysEmitTypeInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that is serialized or deserialized.</param>
+        <param name="rootName">The name of the XML element that encloses the content to serialize or deserialize. The default is "root".</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize. The default is the value returned by the <see cref="F:System.Int32.MaxValue" /> property.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the <see cref="T:System.Runtime.Serialization.IExtensibleDataObject" /> interface upon serialization and ignore unexpected data upon deserialization; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="alwaysEmitTypeInformation">
+          <see langword="true" /> to emit type information; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root name of the XML element, a list of known types that may be present in the object graph, the maximum number of graph items to serialize or deserialize, whether to ignore unexpected data or emit type information, and a surrogate for custom serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,14 +332,16 @@
         <Parameter Name="alwaysEmitTypeInformation" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="rootName">To be added.</param>
-        <param name="knownTypes">To be added.</param>
-        <param name="maxItemsInObjectGraph">To be added.</param>
-        <param name="ignoreExtensionDataObject">To be added.</param>
-        <param name="dataContractSurrogate">To be added.</param>
-        <param name="alwaysEmitTypeInformation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">The type of the instances that are serialized or deserialized.</param>
+        <param name="rootName">An <see cref="T:System.Xml.XmlDictionaryString" /> that contains the root element name of the content.</param>
+        <param name="knownTypes">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Type" /> that contains the known types that may be present in the object graph.</param>
+        <param name="maxItemsInObjectGraph">The maximum number of items in the graph to serialize or deserialize. The default is the value returned by the <see cref="F:System.Int32.MaxValue" /> property.</param>
+        <param name="ignoreExtensionDataObject">
+          <see langword="true" /> to ignore the <see cref="T:System.Runtime.Serialization.IExtensibleDataObject" /> interface upon serialization and ignore unexpected data upon deserialization; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <param name="dataContractSurrogate">An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> to customize the serialization process.</param>
+        <param name="alwaysEmitTypeInformation">
+          <see langword="true" /> to emit type information; otherwise, <see langword="false" />. The default is <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class to serialize or deserialize an object of the specified type. This method also specifies the root name of the XML element, a list of known types that may be present in the object graph, the maximum number of graph items to serialize or deserialize, whether to ignore unexpected data or emit type information, and a surrogate for custom serialization.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,9 +359,16 @@
         <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a surrogate type that is currently active for a given <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> instance. Surrogates can extend the serialization or deserialization process.</summary>
+        <value>An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.IDataContractSurrogate> can be used to customize how instances of a type are serialized and deserialized. For example, it can be used to enable serialization of legacy types that are not serializable, that is, types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has not been applied.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DateTimeFormat">
@@ -372,8 +394,8 @@
         <ReturnType>System.Runtime.Serialization.DateTimeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the format of the date and time type items in object graph.</summary>
+        <value>The format of the date and time type items in object graph.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,8 +422,8 @@
         <ReturnType>System.Runtime.Serialization.EmitTypeInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the data contract JSON serializer settings to emit type information.</summary>
+        <value>The data contract JSON serializer settings to emit type information.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,9 +449,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that specifies whether unknown data is ignored on deserialization and whether the <see cref="T:System.Runtime.Serialization.IExtensibleDataObject" /> interface is ignored on serialization.</summary>
+        <value>
+          <see langword="true" /> to ignore unknown data and <see cref="T:System.Runtime.Serialization.IExtensibleDataObject" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.IgnoreExtensionDataObject%2A> property affects types to which a <xref:System.Runtime.Serialization.DataContractAttribute> attribute has been applied and that also implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case when <xref:System.Runtime.Serialization.IExtensibleDataObject> is `true`, data added in future versions of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsStartObject">
@@ -438,7 +468,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Gets a value that specifies whether the serializer can read the object.</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="IsStartObject">
       <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
@@ -465,10 +498,20 @@
         <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream mapped from JSON.</param>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned over an XML element that represents an object the serializer can deserialize from.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned correctly; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject%2A> determines whether it can read a object by checking that it is positioned on an XML element. It also examines the name and namespace of the XML element that the reader is positioned at and compares the values to the expected name and namespace. The expected name can be set with the `rootName` value passed into the constructor (if present), or is "root" if absent. The expected namespace is the empty string.  
+  
+ Note that this method is intended for advanced scenarios when working with XML mapped from JSON.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsStartObject">
@@ -496,10 +539,18 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> used to read the XML stream.</param>
+        <summary>Determines whether the <see cref="T:System.Xml.XmlReader" /> is positioned on an object that can be deserialized.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned correctly; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks whether the reader is positioned on an element that can be deserialized, and returns `true` if it is. To return `true`, the found element must have the expected name.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KnownTypes">
@@ -525,8 +576,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of types that may be present in the object graph serialized using this instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" />.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the expected types passed in as known types to the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> constructor.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,9 +603,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum number of items in an object graph that the serializer serializes or deserializes in one read or write call.</summary>
+        <value>The maximum number of items to serialize or deserialize.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set using a constructor. For a list, see <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.%23ctor%2A>.  
+  
+ The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject%2A> or <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject%2A> method call. The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects. The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation, so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadObject">
@@ -562,7 +623,10 @@
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Deserializes JSON (JavaScript Object Notation) data and returns the deserialized object.</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="ReadObject">
       <MemberSignature Language="C#" Value="public override object ReadObject (System.IO.Stream stream);" />
@@ -590,9 +654,9 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to be read.</param>
+        <summary>Reads a document stream in the JSON (JavaScript Object Notation) format and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -621,9 +685,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML document mapped from JSON.</param>
+        <summary>Reads the XML document mapped from JSON (JavaScript Object Notation) with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -652,9 +716,9 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read the XML document mapped from JSON.</param>
+        <summary>Reads the XML document mapped from JSON (JavaScript Object Notation) with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -684,10 +748,11 @@
         <Parameter Name="verifyObjectName" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="verifyObjectName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML document mapped from JSON.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the expected name and namespace; otherwise, <see langword="false" /> to skip the verification. The default is <see langword="true" />.</param>
+        <summary>Reads the XML document mapped from JSON with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object; it also enables you to specify whether the serializer should verify that it is positioned on an appropriate element before attempting to deserialize.</summary>
+        <returns>The deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,10 +782,11 @@
         <Parameter Name="verifyObjectName" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="verifyObjectName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read the XML document mapped from JSON.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the expected name and namespace; otherwise, <see langword="false" />, which skips the verification. The default is <see langword="true" />.</param>
+        <summary>Reads an XML document mapped from JSON with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object; it also enables you to specify whether the serializer should verify that it is positioned on an appropriate element before attempting to deserialize.</summary>
+        <returns>The deserialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,8 +813,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether to serialize read only types.</summary>
+        <value>
+          <see langword="true" /> to serialize read only types; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -775,8 +842,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether to use a simple dictionary format.</summary>
+        <value>
+          <see langword="true" /> to use a simple dictionary format; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -786,7 +854,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Writes the closing XML element to an XML document that can be mapped to JavaScript Object Notation (JSON).</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteEndObject">
       <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
@@ -813,9 +884,16 @@
         <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document to map to JSON.</param>
+        <summary>Writes the closing XML element to an XML document, using an <see cref="T:System.Xml.XmlDictionaryWriter" />, which can be mapped to JavaScript Object Notation (JSON).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this method is intended for advanced scenarios when working with XML mapped from JSON.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteEndObject">
@@ -843,8 +921,8 @@
         <Parameter Name="writer" Type="System.Xml.XmlWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document mapped to JSON.</param>
+        <summary>Writes the closing XML element to an XML document, using an <see cref="T:System.Xml.XmlWriter" />, which can be mapped to JavaScript Object Notation (JSON).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -853,7 +931,10 @@
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Serializes an object to a JavaScript Object Notation (JSON) document.</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteObject">
       <MemberSignature Language="C#" Value="public override void WriteObject (System.IO.Stream stream, object graph);" />
@@ -882,10 +963,13 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> that is written to.</param>
+        <param name="graph">The object that contains the data to write to the stream.</param>
+        <summary>Serializes a specified object to JavaScript Object Notation (JSON) data and writes the resulting JSON to a stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteObject">
@@ -914,10 +998,13 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document or stream to map to JSON.</param>
+        <param name="graph">The object that contains the data to write.</param>
+        <summary>Serializes an object to XML that may be mapped to JavaScript Object Notation (JSON). Writes all the object data, including the starting XML element, content, and closing element, with an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteObject">
@@ -946,10 +1033,13 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML document to map to JSON.</param>
+        <param name="graph">The object that contains the data to write.</param>
+        <summary>Serializes an object to XML that may be mapped to JavaScript Object Notation (JSON). Writes all the object data, including the starting XML element, content, and closing element, with an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteObjectContent">
@@ -958,7 +1048,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Writes the content of an object to XML that may be mapped to JavaScript Object Notation (JSON)., without writing the wrapping element.</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteObjectContent">
       <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
@@ -986,10 +1079,13 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> to write to.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the XML content that can be mapped to JavaScript Object Notation (JSON) using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteObjectContent">
@@ -1018,10 +1114,13 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write to.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the XML content that can be mapped to JavaScript Object Notation (JSON) using an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">There is a problem with the instance being written.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">The maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartObject">
@@ -1030,7 +1129,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <remarks />
+        <summary>Writes the opening XML element for serializing an object to XML that can be mapped to JavaScript Object Notation (JSON).</summary>
+      </Docs>
     </MemberGroup>
     <Member MemberName="WriteStartObject">
       <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
@@ -1058,9 +1160,9 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML start element.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the opening XML element for serializing an object to XML that can be mapped to JavaScript Object Notation (JSON) using an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1090,11 +1192,22 @@
         <Parameter Name="graph" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="graph">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> used to write the XML start element.</param>
+        <param name="graph">The object to write.</param>
+        <summary>Writes the opening XML element for serializing an object to XML that can be mapped to JavaScript Object Notation (JSON) using an <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">At least one of the types being serialized or deserialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,17 +1,11 @@
 ---
-title: "Version Tolerant Serialization"
-ms.custom: ""
-ms.date: "03/30/2017"
+title: "Version tolerant serialization"
+ms.date: "08/08/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "version tolerant serialization"
   - "serialization, custom serialization"
@@ -22,11 +16,14 @@ helpviewer_keywords:
   - "serialization, attributes"
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
-# Version Tolerant Serialization
+# Version tolerant serialization
 In version 1.0 and 1.1 of the .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:  
   
 -   Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.  
@@ -35,9 +32,11 @@ In version 1.0 and 1.1 of the .NET Framework, creating serializable types that w
   
  Version Tolerant Serialization (VTS) is a set of features introduced in .NET Framework 2.0 that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](../../../docs/standard/serialization/version-tolerant-serialization-technology-sample.md).  
   
- The VTS features are enabled when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Additionally, all features except extraneous data tolerance are also enabled when using the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. For more information about using these classes for serialization, see [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md).  
+ The VTS features are enabled when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Additionally, all features except extraneous data tolerance are also enabled when using the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. For more information about using these classes for serialization, see [Binary Serialization](binary-serialization.md).  
   
-## Feature List  
+[!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
+
+## Feature list  
  The set of features includes the following:  
   
 -   Tolerance of extraneous or unexpected data. This enables newer versions of the type to send data to older versions.  
@@ -50,7 +49,7 @@ In version 1.0 and 1.1 of the .NET Framework, creating serializable types that w
   
  These features are discussed in greater detail below.  
   
-## Tolerance of Extraneous or Unexpected Data  
+## Tolerance of extraneous or unexpected data  
  In the past, during deserialization, any extraneous or unexpected data caused exceptions to be thrown. With VTS, in the same situation, any extraneous or unexpected data is ignored instead of causing exceptions to be thrown. This enables applications that use newer versions of a type (that is, a version that includes more fields) to send information to applications that expect older versions of the same type.  
   
  In the following example, the extra data contained in the `CountryField` of version 2.0 of the `Address` class is ignored when an older application deserializes the newer version.  
@@ -92,7 +91,7 @@ Public Class Address
 End Class  
 ```  
   
-## Tolerance of Missing Data  
+## Tolerance of missing data  
  Fields can be marked as optional by applying the <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute to them. During deserialization, if the optional data is missing, the serialization engine ignores the absence and does not throw an exception. Thus, applications that expect older versions of a type can send data to applications that expect newer versions of the same type.  
   
  The following example shows version 2.0 of the `Address` class with the `CountryField` field marked as optional. If an older application sends version 1 to a newer application that expects version 2.0, the absence of the data is ignored.  
@@ -120,7 +119,7 @@ Public Class Address
 End Class  
 ```  
   
-## Serialization Callbacks  
+## Serialization callbacks  
  Serialization callbacks are a mechanism that provides hooks into the serialization/deserialization process at four points.  
   
 |Attribute|When the Associated Method is Called|Typical Use|  
@@ -132,7 +131,7 @@ End Class
   
  \* This callback is invoked before the deserialization constructor, if one is present.  
   
-### Using Callbacks  
+### Using callbacks  
  To use callbacks, apply the appropriate attribute to a method that accepts a <xref:System.Runtime.Serialization.StreamingContext> parameter. Only one method per class can be marked with each of these attributes. For example:  
   
 ```csharp  
@@ -186,8 +185,8 @@ Public Class Address
 End Class  
 ```  
   
-## The VersionAdded Property  
- The **OptionalFieldAttribute** has the **VersionAdded** property. In version 2.0 of the .NET Framework, this is not used. However, it is important to set this property correctly to ensure that the type will be compatible with future serialization engines.  
+## The VersionAdded property  
+ The **OptionalFieldAttribute** has the **VersionAdded** property. In version 2.0 of the .NET Framework, this isn't used. However, it's important to set this property correctly to ensure that the type will be compatible with future serialization engines.  
   
  The property indicates which version of a type a given field has been added. It should be incremented by exactly one (starting at 2) every time the type is modified, as shown in the following example:  
   
@@ -261,9 +260,9 @@ End Class
 ```  
   
 ## SerializationBinder  
- Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization.  To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Controlling Serialization and Deserialization with SerializationBinder](../../../docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).  
+ Some users may need to control which class to serialize and deserialize because a different version of the class is required on the server and client. <xref:System.Runtime.Serialization.SerializationBinder> is an abstract class used to control the actual types used during serialization and deserialization.  To use this class, derive a class from <xref:System.Runtime.Serialization.SerializationBinder> and override the <xref:System.Runtime.Serialization.SerializationBinder.BindToName%2A> and <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> methods. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Controlling Serialization and Deserialization with SerializationBinder](../../../docs/framework/wcf/feature-details/controlling-serialization-and-deserialization-with-serializationbinder.md).  
   
-## Best Practices  
+## Best practices  
  To ensure proper versioning behavior, follow these rules when modifying a type from version to version:  
   
 -   Never remove a serialized field.  
@@ -284,16 +283,16 @@ End Class
   
 -   Avoid branched versioning.  
   
-## See Also  
- <xref:System.SerializableAttribute>   
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>   
- <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A>   
- <xref:System.Runtime.Serialization.OptionalFieldAttribute>   
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
- <xref:System.Runtime.Serialization.OnDeserializedAttribute>   
- <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
- <xref:System.Runtime.Serialization.OnSerializedAttribute>   
- <xref:System.Runtime.Serialization.StreamingContext>   
- <xref:System.NonSerializedAttribute>   
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)
+## See also  
+ <xref:System.SerializableAttribute>  
+ <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+ <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>  
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A>  
+ <xref:System.Runtime.Serialization.OptionalFieldAttribute>  
+ <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
+ <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
+ <xref:System.Runtime.Serialization.OnDeserializingAttribute>  
+ <xref:System.Runtime.Serialization.OnSerializedAttribute>  
+ <xref:System.Runtime.Serialization.StreamingContext>  
+ <xref:System.NonSerializedAttribute>  
+ [Binary Serialization](binary-serialization.md)

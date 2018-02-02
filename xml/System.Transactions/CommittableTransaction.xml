@@ -38,9 +38,9 @@
  The <xref:System.Transactions.CommittableTransaction> class provides an explicit way for applications to use a transaction, as opposed to using the <xref:System.Transactions.TransactionScope> class implicitly. Unlike the <xref:System.Transactions.TransactionScope> class, the application writer needs to specifically call the <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.Transaction.Rollback%2A> methods in order to commit or abort the transaction. However, only the creator of a transaction can commit the transaction. Therefore, copies of a committable transaction, obtained through the <xref:System.Transactions.Transaction.Clone%2A> method are not committable.  
   
 > [!NOTE]
->  It is recommended that you create implicit transactions using the <xref:System.Transactions.TransactionScope> class, so that the ambient transaction context is automatically managed for you. You should also use the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.DependentTransaction> class for applications that require the use of the same transaction across multiple function calls or multiple thread calls. For more information on this model, see the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic.  
+>  We recommend that you create implicit transactions using the <xref:System.Transactions.TransactionScope> class, so that the ambient transaction context is automatically managed for you. You should also use the <xref:System.Transactions.TransactionScope> and <xref:System.Transactions.DependentTransaction> class for applications that require the use of the same transaction across multiple function calls or multiple thread calls. For more information on this model, see the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic.  
   
- Creating a <xref:System.Transactions.CommittableTransaction> does not automatically set the ambient transaction, which is the transaction your code executes in. You can get or set the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A> property of the global <xref:System.Transactions.Transaction> object. For more information on ambient transactions, see the " Managing Transaction Flow using TransactionScopeOption" section of the [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199) topic. If the ambient transaction is not set, any operation on a resource manager is not part of that transaction. You need to explicitly set and reset the ambient transaction, to ensure that resource managers operate under the right transaction context.  
+ Creating a <xref:System.Transactions.CommittableTransaction> does not automatically set the ambient transaction, which is the transaction your code executes in. You can get or set the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> property of the global <xref:System.Transactions.Transaction> object. For more information on ambient transactions, see the " Managing Transaction Flow using TransactionScopeOption" section of the [Implementing An Implicit Transaction Using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic. If the ambient transaction is not set, any operation on a resource manager is not part of that transaction. You need to explicitly set and reset the ambient transaction to ensure that resource managers operate under the right transaction context.  
   
  Until a <xref:System.Transactions.CommittableTransaction> has been committed, all the resources involved with the transaction are still locked.  
   
@@ -201,6 +201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="Commit">
@@ -423,5 +424,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Transactions.CommittableTransaction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

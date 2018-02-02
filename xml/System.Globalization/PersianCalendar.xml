@@ -58,12 +58,12 @@
 ## Using the PersianCalendar class  
  Applications use a <xref:System.Globalization.PersianCalendar> object to calculate dates in the Persian calendar or convert Persian dates to and from Gregorian dates.  
   
- You cannot use a <xref:System.Globalization.PersianCalendar> object as the default calendar for a culture. The default calendar is specified by the <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=fullName> property and must be one of the calendars returned by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> property. Currently, the <xref:System.Globalization.PersianCalendar> class is not an optional calendar for any culture supported by the <xref:System.Globalization.CultureInfo> class and consequently cannot be a default calendar.  
+ You cannot use a <xref:System.Globalization.PersianCalendar> object as the default calendar for a culture. The default calendar is specified by the <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=nameWithType> property and must be one of the calendars returned by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=nameWithType> property. Currently, the <xref:System.Globalization.PersianCalendar> class is not an optional calendar for any culture supported by the <xref:System.Globalization.CultureInfo> class and consequently cannot be a default calendar.  
   
    
   
 ## Examples  
- The following example instantiates <xref:System.DateTime> objects by using the <xref:System.DateTime.Now%2A?displayProperty=fullName> property, a <xref:System.DateTime> constructor, and the Persian calendar's <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29> method. It then displays these dates in both the Gregorian and Persian calendars. It also displays the date range of the Persian calendar.  
+ The following example instantiates <xref:System.DateTime> objects by using the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property, a <xref:System.DateTime> constructor, and the Persian calendar's <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29> method. It then displays these dates in both the Gregorian and Persian calendars. It also displays the date range of the Persian calendar.  
   
  [!code-csharp[sys.glob.PersianCal#3](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.persianCal/cs/calendar2.cs#3)]
  [!code-vb[sys.glob.PersianCal#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.persianCal/vb/calendar2.vb#3)]  
@@ -75,6 +75,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
+    <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
  [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
@@ -171,6 +174,8 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="months" /> is less than -120,000 or greater than 120,000.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.PersianCalendar.AddYears(System.DateTime,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -211,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+ The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
  [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
  [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
@@ -229,6 +234,8 @@
         <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="years" /> is less than -10,000 or greater than 10,000.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Globalization.PersianCalendar.AddMonths(System.DateTime,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="AlgorithmType">
@@ -312,6 +319,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.PersianCalendar.PersianEra" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfMonth">
@@ -358,6 +367,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="time" /> parameter represents a date less than <see cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" /> or greater than <see cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />.</exception>
+        <altmember cref="P:System.DateTime.Day" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfWeek(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfWeek">
@@ -403,6 +416,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.DateTime.DayOfWeek" />
+        <altmember cref="T:System.DayOfWeek" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfMonth(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDayOfYear">
@@ -449,6 +467,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="time" /> parameter represents a date less than <see cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" /> or greater than <see cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />.</exception>
+        <altmember cref="P:System.DateTime.DayOfYear" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfMonth(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfWeek(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInMonth">
@@ -500,6 +523,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" />, <paramref name="month" />, or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetDaysInYear">
@@ -549,6 +574,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetEra">
@@ -595,6 +622,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="time" /> parameter represents a date less than <see cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" /> or greater than <see cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.PersianCalendar.PersianEra" />
+        <altmember cref="P:System.Globalization.PersianCalendar.Eras" />
       </Docs>
     </Member>
     <Member MemberName="GetLeapMonth">
@@ -690,6 +720,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="time" /> parameter represents a date less than <see cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" /> or greater than <see cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />.</exception>
+        <altmember cref="P:System.DateTime.Month" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetYear(System.DateTime)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfMonth(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetMonthsInYear">
@@ -739,6 +772,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonth(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="GetYear">
@@ -785,6 +819,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="time" /> parameter represents a date less than <see cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" /> or greater than <see cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />.</exception>
+        <altmember cref="P:System.DateTime.Year" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDayOfYear(System.DateTime)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapDay">
@@ -844,6 +880,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapMonth">
@@ -895,6 +934,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" />, <paramref name="month" />, or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsLeapYear">
@@ -950,6 +991,10 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="F:System.Globalization.PersianCalendar.PersianEra" />
+        <altmember cref="P:System.Globalization.PersianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="MaxSupportedDateTime">
@@ -998,6 +1043,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.PersianCalendar.MinSupportedDateTime" />
       </Docs>
     </Member>
     <Member MemberName="MinSupportedDateTime">
@@ -1046,6 +1092,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.PersianCalendar.MaxSupportedDateTime" />
       </Docs>
     </Member>
     <Member MemberName="PersianEra">
@@ -1153,6 +1200,12 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" />, <paramref name="second" />, <paramref name="millisecond" />, or <paramref name="era" /> is outside the range supported by this calendar.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="F:System.Globalization.Calendar.CurrentEra" />
+        <altmember cref="F:System.Globalization.PersianCalendar.PersianEra" />
+        <altmember cref="P:System.Globalization.PersianCalendar.Eras" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
+        <altmember cref="M:System.Globalization.PersianCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToFourDigitYear">
@@ -1207,6 +1260,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="year" /> is less than 0 or greater than 9378.</exception>
+        <altmember cref="P:System.Globalization.PersianCalendar.TwoDigitYearMax" />
       </Docs>
     </Member>
     <Member MemberName="TwoDigitYearMax">
@@ -1259,6 +1313,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This calendar is read-only.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The value in a set operation is less than 100 or greater than 9378.</exception>
+        <altmember cref="M:System.Globalization.PersianCalendar.ToFourDigitYear(System.Int32)" />
       </Docs>
     </Member>
   </Members>

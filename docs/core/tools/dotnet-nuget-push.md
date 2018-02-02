@@ -1,22 +1,22 @@
 ---
-title: dotnet-nuget-push command - .NET Core CLI
-description: The dotnet-nuget-push command pushes a package to the server and publishes it. 
-keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
+title: dotnet nuget push command - .NET Core CLI
+description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
+ms.workload: 
+  - dotnetcore
 ---
+# dotnet nuget push
 
-# dotnet-nuget push
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
-`dotnet-nuget push` - Pushes a package to the server and publishes it.
+`dotnet nuget push` - Pushes a package to the server and publishes it.
 
 ## Synopsis
 
@@ -36,13 +36,13 @@ Specify the path to the package and your API key to push the package to the serv
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-s|--source <SOURCE>`
 
 Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
-`--symbols-source <SOURCE>`
+`--symbol-source <SOURCE>`
 
 Specifies the symbol server URL.
 
@@ -78,11 +78,11 @@ Pushes *foo.nupkg* to the default push source, providing an API key:
 
 Push *foo.nupkg* to the custom push source `http://customsource`, providing an API key:
 
-`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/` 
+`dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s http://customsource/`
 
 Pushes *foo.nupkg* to the default push source:
 
-`dotnet nuget push foo.nupkg` 
+`dotnet nuget push foo.nupkg`
 
 Pushes *foo.symbols.nupkg* to the default symbols source:
 
@@ -99,7 +99,3 @@ Pushes all *.nupkg* files in the current directory to the default push source:
 Pushes all *.nupkg* files in the current directory to the default push source, specifying a custom config file *./config/My.Config*:
 
 `dotnet nuget push *.nupkg --config-file ./config/My.Config`
-
-Push all *.nupkg* files in the current directory to the default push source with maximum verbosity:
-
-`dotnet nuget push *.nupkg --verbosity detailed`

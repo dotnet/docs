@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SecurityKeyIdentifier (System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] identifiers);" />
+      <MemberSignature Language="C#" Value="public SecurityKeyIdentifier (params System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] identifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause[] identifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])" />
       <MemberType>Constructor</MemberType>
@@ -330,7 +330,7 @@
     </Member>
     <Member MemberName="TryFind&lt;TClause&gt;">
       <MemberSignature Language="C#" Value="public bool TryFind&lt;TClause&gt; (out TClause result) where TClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFind&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) TClause&gt;(!!TClause result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFind&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) TClause&gt;([out] !!TClause&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityKeyIdentifier.TryFind``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -366,5 +366,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

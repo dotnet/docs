@@ -16,7 +16,7 @@ ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The `Main` method is the entry point for every C# application and it is called by the common language runtime (CLR) when the program is started.
 
 > [!NOTE]
-> This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](https://msdn.microsoft.com/library/bb882516.aspx).
+> This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](programming-guide/statements-expressions-operators/anonymous-functions.md).
 
 This topic contains the following sections:
 
@@ -82,11 +82,11 @@ You can invoke a method using both positional arguments and named arguments. How
  <a name="inherited"></a>
  ##Inherited and overridden methods ##
 
-In addition to the members that are explicitly defined in a type, a type inherits members defined in its base classes. Since all types in the managed type system inherit directly or indirectly from the @System.Object class, all types inherit its members, such as @System.Object.Equals(System.Object), @System.Object.GetType, and @System.Object.ToString. The following example defines a `Person` class, instantiates two `Person` objects, and calls the `Person.Equals` method to determine whether the two objects are equal. The `Equals` method, however, is not defined in the `Person` class; it is inherited from @System.Object.
+In addition to the members that are explicitly defined in a type, a type inherits members defined in its base classes. Since all types in the managed type system inherit directly or indirectly from the <xref:System.Object> class, all types inherit its members, such as <xref:System.Object.Equals(System.Object)>, <xref:System.Object.GetType>, and <xref:System.Object.ToString>. The following example defines a `Person` class, instantiates two `Person` objects, and calls the `Person.Equals` method to determine whether the two objects are equal. The `Equals` method, however, is not defined in the `Person` class; it is inherited from <xref:System.Object>.
 
 [!code-csharp[csSnippets.Methods#104](../../samples/snippets/csharp/concepts/methods/inherited1.cs#104)]
 
-Types can override inherited members by using the `override` keyword and providing an implementation for the overridden method. The method signature must be the same as that of the overriden method. The following example is like the previous one, except that it overrides the @Object.Equals(System.Object) method. (It also overrides the @Object.GetHashCode method, since the two methods are intended to provide consistent results.)
+Types can override inherited members by using the `override` keyword and providing an implementation for the overridden method. The method signature must be the same as that of the overridden method. The following example is like the previous one, except that it overrides the <xref:System.Object.Equals(System.Object)> method. (It also overrides the <xref:System.Object.GetHashCode> method, since the two methods are intended to provide consistent results.)
 
 [!code-csharp[csSnippets.Methods#105](../../samples/snippets/csharp/concepts/methods/overridden1.cs#105)]
 
@@ -190,7 +190,7 @@ To use a value returned from a method, the calling method can use the method cal
 
 Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.
 
-Sometimes, you want your method to return more than a single value. Starting with C# 7.0, you can do this easily by using *tuple types* and *tuple literals*. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In teh following example, `(string, string, string, int)` defines the tuple type that is returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and last name, along with the age, of a `PersonInfo` object.
+Sometimes, you want your method to return more than a single value. Starting with C# 7.0, you can do this easily by using *tuple types* and *tuple literals*. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In the following example, `(string, string, string, int)` defines the tuple type that is returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and last name, along with the age, of a `PersonInfo` object.
 
 ```csharp
 public (string, string, string, int) GetPersonalInfo(string id)
@@ -246,27 +246,27 @@ Ordinarily, there are two ways to add a method to an existing type:
 
 Extension methods let you "add" a method to an existing type without modifying the type itself or implementing the new method in an inherited type. The extension method also does not have to reside in the same assembly as the type it extends. You call an extension method as if it were a defined member of a type.
 
-For more information, see [Extension Methods](https://msdn.microsoft.com/library/bb383977.aspx).
+For more information, see [Extension Methods](programming-guide/classes-and-structs/extension-methods.md).
 
 <a name="async"></a>
 ## Async Methods ##
 
 By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions.
 
-If you mark a method with the [async](https://msdn.microsoft.com/library/hh156513.aspx) modifier, you can use the [await](https://msdn.microsoft.com/library/hh156528.aspx) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller if the awaited task is not completed, and progress in the method with the `await` keyword is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
+If you mark a method with the [async](language-reference/keywords/async.md) modifier, you can use the [await](language-reference/keywords/await.md) operator in the method. When control reaches an `await` expression in the async method, control returns to the caller if the awaited task is not completed, and progress in the method with the `await` keyword is suspended until the awaited task completes. When the task is complete, execution can resume in the method.
 
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.
 
-An async method can have a return type of @System.Threading.Tasks.Task<TResult>, @System.Threading.Tasks.Task, or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. C# 7, when it is released, will ease this restriction to allow an async method [to return any task-like type](https://github.com/ljw1004/roslyn/blob/features/async-return/docs/specs/feature%20-%20arbitrary%20async%20returns.md).
+An async method can have a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, or `void`. The `void` return type is used primarily to define event handlers, where a `void` return type is required. An async method that returns `void` can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws. C# 7, when it is released, will ease this restriction to allow an async method [to return any task-like type](https://github.com/ljw1004/roslyn/blob/features/async-return/docs/specs/feature%20-%20arbitrary%20async%20returns.md).
 
 In the following example, `DelayAsync` is an async method that has a return statement that returns an integer. Because it is an async method, its method declaration must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer, as the following `int result = await delayTask` statement demonstrates.
 
 [!code-csharp[csSnippets.Methods#102](../../samples/snippets/csharp/concepts/methods/async1.cs#102)]
 
-An async method can't declare any [ref](https://msdn.microsoft.com/library/14akc2c7.aspx) or [out](https://msdn.microsoft.com/library/t3c3bfhx.aspx) parameters, but it can call methods that have such parameters.
+An async method can't declare any [ref](language-reference/keywords/ref.md) or [out](language-reference/keywords/out.md) parameters, but it can call methods that have such parameters.
 
- For more information about async methods, see [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/library/mt674882.aspx), [Control Flow in Async Programs](https://msdn.microsoft.com/library/mt674892.aspx), and [Async Return Types](https://msdn.microsoft.com/library/mt674893.aspx).
+ For more information about async methods, see [Asynchronous Programming with Async and Await](async.md), [Control Flow in Async Programs](programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](programming-guide/concepts/async/async-return-types.md).
 
 <a name="expr"></a>
 ## Expression-bodied members ##
@@ -287,19 +287,19 @@ If the method returns `void` or is an async method, the body of the method must 
 <a name="iterators"></a>
 ## Iterators ##
 
-An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](https://msdn.microsoft.com/library/9k7k7cf0.aspx) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
+An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](language-reference/keywords/yield.md) statement to return each element one at a time. When a `yield return` statement is reached, the current location is remembered so that the caller can request the next element in the sequence.
 
-The return type of an iterator can be @System.Collections.IEnumerable, @System.Collections.Generic.IEnumerable%601, @System.Collections.IEnumerator, or @System.Collections.Generic.IEnumerator%601.
+The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
 
-For more information, see [Iterators](https://msdn.microsoft.com/library/mt639331.aspx).
+For more information, see [Iterators](programming-guide/concepts/iterators.md).
 
 ## See also ##
 
-[Access Modifiers](https://msdn.microsoft.com/library/wxh6fsc7.aspx)   
-[Static Classes and Static Class Members](https://msdn.microsoft.com/library/79b3xss3.aspx)   
-[Inheritance](https://msdn.microsoft.com/library/ms173149.aspx)   
-[Abstract and Sealed Classes and Class Members](https://msdn.microsoft.com/library/ms173150.aspx)   
-[params](https://msdn.microsoft.com/library/w5zay9db.aspx)   
-[out](https://msdn.microsoft.com/library/t3c3bfhx.aspx)   
-[ref](https://msdn.microsoft.com/library/14akc2c7.aspx)   
-[Passing Parameters](https://msdn.microsoft.com/library/0f66670z.aspx)
+[Access Modifiers](language-reference/keywords/access-modifiers.md)   
+[Static Classes and Static Class Members](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
+[Inheritance](programming-guide/classes-and-structs/inheritance.md)   
+[Abstract and Sealed Classes and Class Members](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)   
+[params](language-reference/keywords/params.md)   
+[out](language-reference/keywords/out.md)   
+[ref](language-reference/keywords/ref.md)   
+[Passing Parameters](programming-guide/classes-and-structs/passing-parameters.md)

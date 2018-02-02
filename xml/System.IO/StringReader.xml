@@ -47,11 +47,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -65,6 +65,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.TextReader" />
+    <altmember cref="T:System.IO.StringWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,11 +110,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -160,7 +162,7 @@
 ## Remarks  
  For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
   
- This method overrides the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method.  
   
  This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%2A> method passing a `true` value.  
   
@@ -257,7 +259,7 @@
 ## Remarks  
  The <xref:System.IO.StringReader.Peek%2A> method returns an integer value in order to determine whether the end of the file, or another error has occurred. This allows a user to first check if the returned value is -1 before casting it to a <xref:System.Char> type.  
   
- This method overrides the <xref:System.IO.TextReader.Peek%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.TextReader.Peek%2A?displayProperty=nameWithType> method.  
   
  The current position of the `StringReader` is not changed by this operation.  
   
@@ -268,7 +270,7 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
   
  ]]></format>
         </remarks>
@@ -310,7 +312,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.TextReader.Read%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.TextReader.Read%2A?displayProperty=nameWithType> method.  
   
  The following table lists examples of other typical or related I/O tasks.  
   
@@ -319,11 +321,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -343,7 +345,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (char[] buffer, int index, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -383,7 +385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=fullName>.  
+ This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=nameWithType>.  
   
  The method will read up to `count` characters from the <xref:System.IO.StringReader> into the `buffer` character array starting at position `index`. Returns the actual number of characters read, or zero if the end of the string has been reached and no characters are read.  
   
@@ -394,11 +396,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -575,7 +577,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.TextReader.ReadLine%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.TextReader.ReadLine%2A?displayProperty=nameWithType> method.  
   
  A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), or a carriage return immediately followed by a line feed ("\r\n"). The string that is returned does not contain the terminating carriage return or line feed. The returned value is `null` if the end of the string has been reached.  
   
@@ -588,11 +590,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -698,7 +700,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=fullName> method.  
+ This method overrides the <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=nameWithType> method.  
   
  If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying string is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StringReader.ReadToEnd%2A> buffer are discarded. Because the position of the reader in the string cannot be changed, the characters already read are unrecoverable, and can be accessed only by reinitializing the <xref:System.IO.StringReader>. To avoid such a situation, use the <xref:System.IO.StringReader.Read%2A> method and store the read characters in a preallocated buffer.  
   
@@ -709,11 +711,11 @@
 |Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
 |Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
-|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
-|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
-|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
-|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=nameWithType>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=nameWithType>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=nameWithType>|  
 |Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
 |Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
@@ -784,5 +786,16 @@
         <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next character or next set of characters from the input string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

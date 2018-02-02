@@ -48,8 +48,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]
+ [!code-aspx-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -222,6 +222,7 @@
         <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.MobileControl.OnLoad(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="StyleReference">
@@ -245,6 +246,7 @@
         <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>A reference to the style properties for a control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.MobileControls.MobileControl.StyleReference" />
       </Docs>
     </Member>
   </Members>

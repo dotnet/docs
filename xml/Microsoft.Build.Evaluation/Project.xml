@@ -2403,5 +2403,68 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadataValueEscaped">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the escaped value of the metadatum with the provided name on the provided item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the project to the file system, if modified, using the default character encoding.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Build">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds this project, using the default targets.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddItem">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs an empty project using the global project collection global properties and default tools version.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvaluatedItemIncludeEscaped">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets evaluated, escaped value of the Include attribute of the provided items.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddItemFast">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item with no metadata to the project.  Makes no effort to see if an existing wildcard would already match the new item, unless it is the first item in an item group.  Makes no effort to locate the new item near similar items.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

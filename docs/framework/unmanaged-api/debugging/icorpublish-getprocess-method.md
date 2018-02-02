@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish::GetProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish::GetProcess method [.NET Framework debugging]"
   - "GetProcess method, ICorPublish interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublish::GetProcess Method
 Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) instance that represents the process with the specified identifier.  

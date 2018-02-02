@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetStackValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStackValue method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetStackValue method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::GetStackValue Method
 This method has not been implemented.  

@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "member design guidelines [.NET Framework], parameters"
   - "members [.NET Framework], parameters"
@@ -24,6 +19,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Parameter Design
 This section provides broad guidelines on parameter design, including sections with guidelines for checking arguments. In addition, you should refer to the guidelines described in [Naming Parameters](../../../docs/standard/design-guidelines/naming-parameters.md).  
@@ -58,7 +56,7 @@ This section provides broad guidelines on parameter design, including sections w
  **✓ CONSIDER** using Booleans for constructor parameters that are truly two-state values and are simply used to initialize Boolean properties.  
   
 ### Validating Arguments  
- **✓ DO** validate arguments passed to public, protected, or explicitly implemented members. Throw <xref:System.ArgumentException?displayProperty=fullName>, or one of its subclasses, if the validation fails.  
+ **✓ DO** validate arguments passed to public, protected, or explicitly implemented members. Throw <xref:System.ArgumentException?displayProperty=nameWithType>, or one of its subclasses, if the validation fails.  
   
  Note that the actual validation does not necessarily have to happen in the public or protected member itself. It could happen at a lower level in some private or internal routine. The main point is that the entire surface area that is exposed to the end users checks the arguments.  
   
@@ -68,7 +66,7 @@ This section provides broad guidelines on parameter design, including sections w
   
  Do not assume enum arguments will be in the range defined by the enum. The CLR allows casting any integer value into an enum value even if the value is not defined in the enum.  
   
- **X DO NOT** use <xref:System.Enum.IsDefined%2A?displayProperty=fullName> for enum range checks.  
+ **X DO NOT** use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> for enum range checks.  
   
  **✓ DO** be aware that mutable arguments might have changed after they were validated.  
   
@@ -100,7 +98,7 @@ public class String {
 }  
 ```  
   
- A user can then call the <xref:System.String.Format%2A?displayProperty=fullName> method, as follows:  
+ A user can then call the <xref:System.String.Format%2A?displayProperty=nameWithType> method, as follows:  
   
  `String.Format("File {0} not found in {1}",new object[]{filename,directory});`  
   
@@ -164,5 +162,5 @@ public class String {
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)   
+ [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

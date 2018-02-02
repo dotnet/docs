@@ -8,10 +8,8 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "synchronous server sockets"
   - "sockets, code examples"
@@ -21,6 +19,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Synchronous Server Socket Example
 The following example program creates a server that receives connection requests from clients. The server is built with a synchronous socket, so execution of the server application is suspended while it waits for a connection from a client. The application receives a string from the client, displays the string on the console, and then echoes the string back to the client. The string from the client must contain the string "\<EOF>" to signal the end of the message.  
@@ -44,12 +44,12 @@ Public Class SynchronousSocketListener
         ' Establish the local endpoint for the socket.  
         ' Dns.GetHostName returns the name of the   
         ' host running the application.  
-        Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+        Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
         Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
         Dim localEndPoint As New IPEndPoint(ipAddress, 11000)  
   
         ' Create a TCP/IP socket.  
-        Dim listener As New Socket(AddressFamily.InterNetwork, _  
+        Dim listener As New Socket(ipAddress.AddressFamily, _  
             SocketType.Stream, ProtocolType.Tcp)  
   
         ' Bind the socket to the local endpoint and   
@@ -105,12 +105,12 @@ public class SynchronousSocketListener {
         // Establish the local endpoint for the socket.  
         // Dns.GetHostName returns the name of the   
         // host running the application.  
-        IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
+        IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
         IPAddress ipAddress = ipHostInfo.AddressList[0];  
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);  
   
         // Create a TCP/IP socket.  
-        Socket listener = new Socket(AddressFamily.InterNetwork,  
+        Socket listener = new Socket(ipAddress.AddressFamily,  
             SocketType.Stream, ProtocolType.Tcp );  
   
         // Bind the socket to the local endpoint and   
@@ -164,6 +164,6 @@ public class SynchronousSocketListener {
 ```  
   
 ## See Also  
- [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)   
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)   
+ [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)  
+ [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
  [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)

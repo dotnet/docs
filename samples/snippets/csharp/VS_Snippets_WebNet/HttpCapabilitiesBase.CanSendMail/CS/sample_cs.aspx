@@ -15,11 +15,11 @@
         System.Web.HttpBrowserCapabilities myBrowserCaps = Request.Browser;
         if (((System.Web.Configuration.HttpCapabilitiesBase)myBrowserCaps).CanSendMail)
         {
-            labelText = "Browser can send e-mail.";
+            labelText = "Browser can send email.";
         }
         else
         {
-            labelText = "Browser cannot send e-mail.";
+            labelText = "Browser cannot send email.";
         }
         Label1.Text = labelText;
     }

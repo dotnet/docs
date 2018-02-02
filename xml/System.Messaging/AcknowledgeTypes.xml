@@ -39,6 +39,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Messaging.Message" />
+    <altmember cref="P:System.Messaging.Message.AdministrationQueue" />
+    <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
+    <altmember cref="P:System.Messaging.Message.Acknowledgment" />
   </Docs>
   <Members>
     <Member MemberName="FullReachQueue">
@@ -91,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> method does not remove a message from the queue, so this acknowledgment type could be returned even if you did peek the message. Only the <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> method (or the related asynchronous <xref:System.Messaging.MessageQueue.BeginReceive%2A?displayProperty=fullName> method) removes a message from the queue.  
+ Using the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=nameWithType> method does not remove a message from the queue, so this acknowledgment type could be returned even if you did peek the message. Only the <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=nameWithType> method (or the related asynchronous <xref:System.Messaging.MessageQueue.BeginReceive%2A?displayProperty=nameWithType> method) removes a message from the queue.  
   
  ]]></format>
         </remarks>

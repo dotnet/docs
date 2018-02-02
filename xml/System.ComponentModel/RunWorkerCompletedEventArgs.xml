@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class provides a *MethodName*`Completed` event. *MethodName* is a placeholder for the first part of the method's name. <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A?displayProperty=fullName> is an example of the name of such a method. If you add an instance of the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> parameter of the corresponding event handler.  
+ If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class provides a *MethodName*`Completed` event. *MethodName* is a placeholder for the first part of the method's name. <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A?displayProperty=nameWithType> is an example of the name of such a method. If you add an instance of the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs> parameter of the corresponding event handler.  
   
 > [!NOTE]
 >  The <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied to this class has the following <xref:System.Security.Permissions.HostProtectionAttribute.Resources%2A> property value: <xref:System.Security.Permissions.HostProtectionResource.SharedState>. The <xref:System.Security.Permissions.HostProtectionAttribute> does not affect desktop applications (which are typically started by double-clicking an icon, typing a command, or entering a URL in a browser). For more information, see the <xref:System.Security.Permissions.HostProtectionAttribute> class or [SQL Server Programming and Host Protection Attributes](~/docs/framework/performance/sql-server-programming-and-host-protection-attributes.md).  
@@ -42,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.BackgroundWorker" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -74,6 +75,7 @@
         <param name="cancelled">A value indicating whether the asynchronous operation was canceled.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RunWorkerCompletedEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -122,6 +124,7 @@
           <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> is not <see langword="null" />. The <see cref="P:System.Exception.InnerException" /> property holds a reference to <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Cancelled" /> is <see langword="true" />.</exception>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
     <Member MemberName="UserState">
@@ -158,6 +161,7 @@
         <summary>Gets a value that represents the user state.</summary>
         <value>An <see cref="T:System.Object" /> representing the user state.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.ComponentModel.BackgroundWorker" />
       </Docs>
     </Member>
   </Members>

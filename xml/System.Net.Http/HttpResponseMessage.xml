@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A common way to get an <xref:System.Net.Http.HttpResponseMessage> is from one of the <xref:System.Net.Http.HttpClient.SendAsync%28System.Net.Http.HttpRequestMessage%29?displayProperty=fullName> methods.  
+ A common way to get an <xref:System.Net.Http.HttpResponseMessage> is from one of the <xref:System.Net.Http.HttpClient.SendAsync%28System.Net.Http.HttpRequestMessage%29?displayProperty=nameWithType> methods.  
   
  ]]></format>
     </remarks>
@@ -46,7 +46,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A common way to get an <xref:System.Net.Http.HttpResponseMessage> is from one of the <xref:System.Net.Http.HttpClient.SendAsync%28System.Net.Http.HttpRequestMessage%29?displayProperty=fullName> methods.  
+ A common way to get an <xref:System.Net.Http.HttpResponseMessage> is from one of the <xref:System.Net.Http.HttpClient.SendAsync%28System.Net.Http.HttpRequestMessage%29?displayProperty=nameWithType> methods.  
   
  ]]></format>
         </remarks>
@@ -223,6 +223,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.Net.Http.HttpRequestException">
+            The HTTP response is unsuccessful. </exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -408,5 +410,17 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpResponseMessage" /> and optionally disposes of the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

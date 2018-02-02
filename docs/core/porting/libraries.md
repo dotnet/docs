@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
+ms.workload: 
+  - dotnetcore
 ---
 
 # Porting to .NET Core - Libraries
@@ -19,7 +21,8 @@ This article discusses porting library code to .NET Core so that it runs cross-p
 
 This article assumes that you:
 
-- Are using Visual Studio 2017 or later. .NET Core isn't supported on earlier versions of Visual Studio.
+- Are using Visual Studio 2017 or later.
+  - .NET Core isn't supported on earlier versions of Visual Studio
 - Understand the [recommended porting process](index.md).
 - Have resolved any issues with [third-party dependencies](third-party-deps.md).
 
@@ -50,7 +53,7 @@ Just because an API or technology isn't currently implemented doesn't imply it's
 
 AppDomains isolate apps from one another. AppDomains require runtime support and are generally quite expensive. They're not implemented in .NET Core. We don't plan on adding this capability in future. For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class.
 
-To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the API functions normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/corefx/blob/master/src/System.Runtime.Extensions/src/System/AppDomain.cs) in the [dotnet/corefx GitHub repository](https://github.com/dotnet/corefx) making sure to select the branch that matches your implemented version.
+To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the API functions normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/corefx/blob/master/src/System.Runtime.Extensions/src/System/AppDomain.cs) in the [dotnet/corefx GitHub repository](https://github.com/dotnet/corefx) making sure to select the branch that matches your implemented version.
 
 ### Remoting
 
@@ -117,7 +120,7 @@ Because your projects now target .NET Framework 4.6.2, use that version of the .
 
 The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report for analysis.
 
-Make sure you understand the [API Portability Analyzer (ApiPort)](~/docs/standard/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing steps of these approaches depending on how your code is structured.
+Make sure you understand the [API Portability Analyzer (ApiPort)](../../standard/analyzers/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing steps of these approaches depending on how your code is structured.
 
 ### Dealing primarily with the compiler
 

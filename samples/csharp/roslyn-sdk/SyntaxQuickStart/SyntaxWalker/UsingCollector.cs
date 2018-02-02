@@ -25,6 +25,5 @@ namespace SyntaxWalker
             }
         }
         // </Snippet5>
-
     }
 }

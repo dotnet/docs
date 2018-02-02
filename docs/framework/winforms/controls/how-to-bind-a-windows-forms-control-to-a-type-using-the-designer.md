@@ -28,7 +28,7 @@ When you are building controls that interact with data, you sometimes need to bi
   
 1.  Create a Windows Forms project.  
   
-     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
 2.  In **Design** view, drag a <xref:System.Windows.Forms.BindingSource> component onto the form.  
   

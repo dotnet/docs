@@ -70,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  For more information on single phase and two phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+ It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  For more information on single phase and two phase commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/library/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
   
  Therefore, on this enlistment of the resource manager, either the <xref:System.Transactions.ISinglePhaseNotification.SinglePhaseCommit%2A> method is called, or the two phase commit methods defined in ther <xref:System.Transactions.IEnlistmentNotification> interface are called.  
   

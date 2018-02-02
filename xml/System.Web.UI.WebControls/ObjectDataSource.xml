@@ -79,7 +79,7 @@
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control retrieves data whenever the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method is called. This method provides programmatic access to the method that is specified by <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. The method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property is called automatically by controls that are bound to the <xref:System.Web.UI.WebControls.ObjectDataSource> when their `DataBind` method is called. If you set the `DataSourceID` property of a data-bound control, the control automatically binds to data from the data source, as needed. Setting the `DataSourceID` property is the recommended method for binding an <xref:System.Web.UI.WebControls.ObjectDataSource> control to a data-bound control. Alternatively, you can set the `DataSource` property, but then you must explicitly call the `DataBind` method of the data-bound control. You can call the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method programmatically at any time to retrieve data.  
   
- For more information about binding data-bound controls to data source controls, see [Binding to Data Using a Data Source Control](http://msdn.microsoft.com/en-us/e41adfff-8fb8-449e-9cd1-9bd49788c5f7).  
+ For more information about binding data-bound controls to data source controls, see [Binding to Data Using a Data Source Control](http://msdn.microsoft.com/library/e41adfff-8fb8-449e-9cd1-9bd49788c5f7).  
   
 <a name="performing_data_operations"></a>   
 ## Performing Data Operations  
@@ -117,7 +117,7 @@
   
 <a name="using_linq_to_sql"></a>   
 ## Using LINQ to SQL  
- You can use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class. To do so, you set the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property to the name of the data-context class. You also set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> methods to the methods in the data-context class that perform the corresponding operations. You must create an event handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event in order to cancel disposing of the data-context class. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation. For more information about how to create LINQ to SQL classes, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081). For an example of how to cancel the disposing of a data context class, see the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event.  
+ You can use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class. To do so, you set the <xref:System.Web.UI.WebControls.ObjectDataSource.TypeName%2A> property to the name of the data-context class. You also set the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> methods to the methods in the data-context class that perform the corresponding operations. You must create an event handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event in order to cancel disposing of the data-context class. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation. For more information about how to create LINQ to SQL classes, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081). For an example of how to cancel the disposing of a data context class, see the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event.  
   
 ## Using the Entity Framework  
  You can also use the <xref:System.Web.UI.WebControls.ObjectDataSource> control with the Entity Framework. For more information, see [Using the Entity Framework and the ObjectDataSource Control](http://go.microsoft.com/fwlink/?LinkId=209117).  
@@ -805,7 +805,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx.cs#4)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx.vb#4)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -993,7 +993,7 @@
   
  You can use the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object to return the number of rows that were deleted from the <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A> method. To do this, set the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.AffectedRows%2A> property. If you return the number of deleted rows from the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property, the value is available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.ReturnValue%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1178,7 +1178,7 @@
   
  You can cancel the delete operation by setting the <xref:Microsoft.Win32.SessionEndingEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1251,7 +1251,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default2.aspx.cs#4)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default2.aspx.vb#4)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and the Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -1309,7 +1309,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -1416,7 +1416,7 @@
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -1618,7 +1618,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserted> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -1648,7 +1648,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting> event to perform additional initialization that is specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the insert operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1909,7 +1909,7 @@
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -1944,7 +1944,7 @@
   
  If the method that is identified to perform the data operation is `static` (`Shared` in Visual Basic), the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> and <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated> events are never raised.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -1974,7 +1974,7 @@
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically calls the default constructor of a business object to create an instance of it using reflection. Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to explicitly call another constructor, and set the instance of the object that results to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2026,7 +2026,7 @@
   
  When you use a <xref:System.Web.UI.WebControls.ObjectDataSource> control with a LINQ to SQL class, you must cancel the disposing of the data-context class in an handler for the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event. This step is necessary because LINQ to SQL supports deferred execution, whereas the <xref:System.Web.UI.WebControls.ObjectDataSource> control tries to dispose the data context after the Select operation.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2126,7 +2126,7 @@ public void ExampleObjectDisposing(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSource.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2283,7 +2283,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -2316,7 +2316,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Selected> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after a <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2333,7 +2333,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -2368,7 +2368,7 @@ public void ExampleObjectDisposing(object sender,
   
  This event can be fired twice for a single call to the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method, if the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property is set. The <xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs.ExecutingSelectCount%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs> object is used to determine if select was called to retrieve data or retrieve the count.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -2664,7 +2664,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/Default3.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/Default3.aspx.vb#2)]  
   
- The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that retrieves data from the Customers table. It includes a method named `GetSubsetOfEmployees`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The example also includes a method named `GetEmployeeCount`, which is assigned to the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectCountMethod%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The class uses LINQ to query the Customers table. The example requires a LINQ to SQL class that represents the Northwind database and Customers table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/CS/App_Code/CustomerLogic.cs#3)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_17#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_17/VB/App_Code/CustomerLogic.vb#3)]  
@@ -2827,7 +2827,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Updated> event to examine the values of a return value or output parameters, or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  ]]></format>
         </remarks>
@@ -2904,7 +2904,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  
@@ -3001,7 +3001,7 @@ public void ExampleObjectDisposing(object sender,
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Updating> event to perform additional initialization that is specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the update operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -3018,7 +3018,7 @@ public void ExampleObjectDisposing(object sender,
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/Default.aspx.cs#2)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/Default.aspx.vb#2)]  
   
- The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/en-us/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
+ The third example shows the data access class that interacts with the Northwind database. The class uses LINQ to query and update the Employees table. The example requires a LINQ to SQL class that represents the Northwind database and Employees table. For more information, see [How to: Create LINQ to SQL Classes in a Web Project](http://msdn.microsoft.com/library/20bf925f-2a6d-410d-8f65-7b5b8f555081).  
   
  [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/CS/App_Code/EmployeeLogic.cs#5)]
  [!code-vb[System.Web.UI.WebControls.ObjectDataSource_18#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_18/VB/App_Code/EmployeeLogic.vb#5)]  

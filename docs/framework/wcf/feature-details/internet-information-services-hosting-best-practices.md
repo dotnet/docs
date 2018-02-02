@@ -90,5 +90,5 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
 ```  
   
 ## See Also  
- [Service Hosting Samples](http://msdn.microsoft.com/en-us/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
+ [Service Hosting Samples](http://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

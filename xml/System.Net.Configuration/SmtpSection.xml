@@ -57,10 +57,10 @@
         <ReturnType>System.Net.Mail.SmtpDeliveryFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the delivery format to use for sending outgoing e-mail using the Simple Mail Transport Protocol (SMTP).</summary>
+        <summary>Gets or sets the delivery format to use for sending outgoing email using the Simple Mail Transport Protocol (SMTP).</summary>
         <value>Returns <see cref="T:System.Net.Mail.SmtpDeliveryFormat" />.  
   
- The delivery format to use for sending outgoing e-mail using SMTP.</value>
+ The delivery format to use for sending outgoing email using SMTP.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.Mail.SmtpClient" />
         <altmember cref="T:System.Net.Mail.SmtpDeliveryFormat" />

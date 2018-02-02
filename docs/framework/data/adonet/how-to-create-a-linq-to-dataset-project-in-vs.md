@@ -59,4 +59,4 @@ The different types of [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md
   
 ## See Also  
  [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)  
- [Getting Started with LINQ](http://msdn.microsoft.com/en-us/6cc9af04-950a-4cc3-83d4-2aeb4abe4de9)
+ [Getting Started with LINQ](http://msdn.microsoft.com/library/6cc9af04-950a-4cc3-83d4-2aeb4abe4de9)

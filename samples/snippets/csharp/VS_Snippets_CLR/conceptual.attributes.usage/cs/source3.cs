@@ -43,7 +43,7 @@ class GetAttribTest1
         DeveloperAttribute[] MyAttributes =
             (DeveloperAttribute[]) Attribute.GetCustomAttributes(t, typeof (DeveloperAttribute));
 
-        if (MyAttributes == null)
+        if (MyAttributes.Length == 0)
         {
             Console.WriteLine("The attribute was not found.");
         }

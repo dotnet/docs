@@ -26,4 +26,4 @@ This example shows how you can use operator overloading to create a complex numb
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Operators](../../../csharp/language-reference/operators/index.md)  
  [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
- [Why are overloaded operators always static in C#?](http://go.microsoft.com/fwlink/?LinkId=112383)
+ [Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

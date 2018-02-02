@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides enumerated values for e-mail encoding. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <summary>Provides enumerated values for email encoding. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the e-mail message uses Base64 encoding.</summary>
+        <summary>Specifies that the email message uses Base64 encoding.</summary>
       </Docs>
     </Member>
     <Member MemberName="UUEncode">
@@ -48,7 +48,7 @@
         <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the e-mail message uses UUEncode encoding.</summary>
+        <summary>Specifies that the email message uses UUEncode encoding.</summary>
       </Docs>
     </Member>
   </Members>

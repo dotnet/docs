@@ -29,7 +29,7 @@ This topic shows how to add a startup window, or *splash screen*, to a Windows P
   
 1.  Create or find an image that you want to use for the splash screen. You can use any image format that is supported by the Windows Imaging Component (WIC). For example, you can use the BMP, GIF, JPEG, PNG, or TIFF format.  
   
-2.  Add the image file to the WPF Application project. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
+2.  Add the image file to the WPF Application project. For more information, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
   
 3.  In Solution Explorer, select the image.  
   
@@ -58,4 +58,4 @@ This topic shows how to add a startup window, or *splash screen*, to a Windows P
   
 ## See Also  
  <xref:System.Windows.SplashScreen>  
- [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3)
+ [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/library/15f4cfb7-78ab-457f-9f14-099a25a6a2d3)

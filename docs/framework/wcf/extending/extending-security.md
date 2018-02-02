@@ -23,7 +23,7 @@ ms.workload:
 To accommodate new claim types and custom tokens, you can extend the security infrastructure of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. The topics in this section show you how this is done.  
   
 ## In This Section  
- [Security Architecture](http://msdn.microsoft.com/en-us/16593476-d36a-408d-808c-ae6fd483e28f)  
+ [Security Architecture](http://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)  
  Walks through the architecture of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security system.  
   
  [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md)  

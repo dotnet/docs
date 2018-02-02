@@ -3394,7 +3394,7 @@ If you used an escaped string to construct this instance (for example, "http://[
 |http|The resource is accessed through HTTP.|  
 |https|The resource is accessed through SSL-encrypted HTTP.|  
 |ldap|The resource is accessed through the LDAP protocol.|  
-|mailto|The resource is an e-mail address and accessed through the SMTP protocol.|  
+|mailto|The resource is an email address and accessed through the SMTP protocol.|  
 |net.pipe|The resource is accessed through a named pipe.|  
 |net.tcp|The resource is accessed from TCP endpoint.|  
 |news|The resource is accessed through the NNTP protocol.|  
@@ -4053,7 +4053,7 @@ If you used an escaped string to construct this instance (for example, "http://[
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the URI is an e-mail address and is accessed through the Simple Mail Transport Protocol (SMTP). This field is read-only.</summary>
+        <summary>Specifies that the URI is an email address and is accessed through the Simple Mail Transport Protocol (SMTP). This field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

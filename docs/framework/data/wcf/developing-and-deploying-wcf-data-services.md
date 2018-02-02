@@ -60,7 +60,7 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
   
     -   This server can only be accessed on the local computer.  
   
-    -   This server listens on `localhost` and on a specific port, not on port 80, which is the default port for HTTP messages. For more information, see [Web Servers in Visual Studio for ASP.NET Web Projects](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+    -   This server listens on `localhost` and on a specific port, not on port 80, which is the default port for HTTP messages. For more information, see [Web Servers in Visual Studio for ASP.NET Web Projects](http://msdn.microsoft.com/library/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
     -   This server runs the data service in the context of your current user account. For example, if you are running as an administrator-level user, a data service running in the [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] Development Server will have administrator-level privileges. This can cause the data service to be able to access resources that it does not have the rights to access when deployed to an IIS server.  
   
@@ -86,7 +86,7 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
   
 -   When debugging a data service, you may may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the post [Debugging WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=201868). You can also enable tracing in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
   
--   A data service is usually developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application project, but you can also create you data service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site project in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For information about the differences between the two types of projects, see [NIB: Web Application Projects versus Web Site Projects in Visual Studio](http://msdn.microsoft.com/en-us/2861815e-f5a2-4378-a2f8-b8a86dc012f5).  
+-   A data service is usually developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application project, but you can also create you data service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site project in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For information about the differences between the two types of projects, see [NIB: Web Application Projects versus Web Site Projects in Visual Studio](http://msdn.microsoft.com/library/2861815e-f5a2-4378-a2f8-b8a86dc012f5).  
   
 -   When you create a data service by using the **Add New Item** dialog box in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)], the data service is hosted by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] in IIS. While [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and IIS is the default host for a data service, other hosting options are supported. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md).  
   
@@ -99,9 +99,9 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
   
     -   **Deployment Technologies for ASP.NET Web Applications**  
   
-        -   [Web Deployment Package](http://msdn.microsoft.com/en-us/1f9713c8-9540-494c-b80d-9893b970ad6f)  
+        -   [Web Deployment Package](http://msdn.microsoft.com/library/1f9713c8-9540-494c-b80d-9893b970ad6f)  
   
-        -   [One-Click Publishing](http://msdn.microsoft.com/en-us/59226246-99ad-4aec-975d-7c61e8a8911c)  
+        -   [One-Click Publishing](http://msdn.microsoft.com/library/59226246-99ad-4aec-975d-7c61e8a8911c)  
   
     -   **Deployment Technologies for ASP.NET Web Sites**  
   
@@ -111,7 +111,7 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
   
         -   [XCopy](http://msdn.microsoft.com/library/4312c651-2119-49be-bbeb-ee28bdbfe71e)  
   
-     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the deployment options for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, see [Web Deployment Overview for Visual Studio and ASP.NET](http://msdn.microsoft.com/en-us/99bd1927-b59f-4e02-87b4-55c6ba2adbc3).  
+     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the deployment options for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, see [Web Deployment Overview for Visual Studio and ASP.NET](http://msdn.microsoft.com/library/99bd1927-b59f-4e02-87b4-55c6ba2adbc3).  
   
     > [!TIP]
     >  Before you attempt to deploy the data service to IIS, make sure that you have tested the deployment to a Web server that is running IIS. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).  
@@ -123,7 +123,7 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
 ### Deployment Considerations  
  You should consider the following when deploying a data service:  
   
--   When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [NIB: How to: Deploy a Database With a Web Application Project](http://msdn.microsoft.com/en-us/683b33f1-8a3d-45cf-af6e-61ab50fc518b). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For more information, see [Deploying a Database by Using the Database Publishing Wizard](http://msdn.microsoft.com/library/1e3682e7-8b57-4da6-a393-af9640ccf8b7).  
+-   When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [NIB: How to: Deploy a Database With a Web Application Project](http://msdn.microsoft.com/library/683b33f1-8a3d-45cf-af6e-61ab50fc518b). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For more information, see [Deploying a Database by Using the Database Publishing Wizard](http://msdn.microsoft.com/library/1e3682e7-8b57-4da6-a393-af9640ccf8b7).  
   
 -   Because [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=202005).  
   

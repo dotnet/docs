@@ -36,10 +36,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/timer.cs#051a39d380760b26). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Use a <xref:System.Threading.TimerCallback> delegate to specify the method you want the <xref:System.Threading.Timer> to execute. The signature of the <xref:System.Threading.TimerCallback> delegate is:  
   
 ```csharp  

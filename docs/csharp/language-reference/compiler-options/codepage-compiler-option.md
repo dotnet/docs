@@ -16,13 +16,13 @@ caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /codepage (C# Compiler Options)
+# -codepage (C# Compiler Options)
 This option specifies which codepage to use during compilation if the required page is not the current default codepage for the system.  
   
 ## Syntax  
   
 ```console  
-/codepage:id  
+-codepage:id  
 ```  
   
 ## Arguments  
@@ -30,9 +30,9 @@ This option specifies which codepage to use during compilation if the required p
  The id of the code page to use for all source code files in the compilation.  
   
 ## Remarks  
- If you compile one or more source code files that were not created to use the default code page on your computer, you can use the **/codepage** option to specify which code page should be used. **/codepage** applies to all source code files in your compilation.  
+ If you compile one or more source code files that were not created to use the default code page on your computer, you can use the **-codepage** option to specify which code page should be used. **-codepage** applies to all source code files in your compilation.  
   
- If the source code files were created with the same codepage that is in effect on your computer or if the source code files were created with UNICODE or UTF-8, you need not use **/codepage**.  
+ If the source code files were created with the same codepage that is in effect on your computer or if the source code files were created with UNICODE or UTF-8, you need not use **-codepage**.  
   
  See [GetCPInfo](https://msdn.microsoft.com/library/dd318078(VS.85).aspx) for information on how to find which code pages are supported on your system.  
   

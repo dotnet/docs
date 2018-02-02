@@ -22,7 +22,7 @@
   
  The <xref:System.Web.Configuration.ClientTarget> class contains two properties identifying a client browser, also named user agent. One property is the alias associated with the client browser identified by the second property. ASP.NET uses this information to render server controls in a page.  
   
- For information about how the user agent or its alias is used programmatically, see the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=nameWithType> property. For information about how the user agent or its alias is used declaratively, see [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4).  
+ For information about how the user agent or its alias is used programmatically, see the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=nameWithType> property. For information about how the user agent or its alias is used declaratively, see [@ Page](http://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4).  
   
  If the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=nameWithType> property is not set, the <xref:System.Web.HttpBrowserCapabilities> object that is associated with the <xref:System.Web.UI.Page.Request%2A?displayProperty=nameWithType> property reflects the capabilities of the client browser. (It reflects the capabilities of the browser type, but not necessarily the settings in a specific instance of that browser.) If the property is set, the client browser detection is disabled and the page uses browser capabilities that are associated with the user agent string that you define. You can set this property to any valid user agent string.  
   

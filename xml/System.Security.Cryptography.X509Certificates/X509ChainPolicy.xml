@@ -92,7 +92,7 @@
         <ReturnType>System.Security.Cryptography.OidCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of object identifiers (OIDs) specifying which application policies or enhanced key usages (EKUs) the certificate supports.</summary>
+        <summary>Gets a collection of object identifiers (OIDs) specifying which application policies or enhanced key usages (EKUs) the certificate must support.</summary>
         <value>An <see cref="T:System.Security.Cryptography.OidCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,15 +141,13 @@
         <ReturnType>System.Security.Cryptography.OidCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of object identifiers (OIDs) specifying which certificate policies the certificate supports.</summary>
+        <summary>Gets a collection of object identifiers (OIDs) specifying which certificate policies the certificate must support.</summary>
         <value>An <see cref="T:System.Security.Cryptography.OidCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, this collection is empty. This property is only supported on Windows XP and later operating systems.  
-  
-   
+ By default, this collection is empty.
   
 ## Examples  
  The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
@@ -186,7 +184,7 @@
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2Collection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents an additional collection of certificates that can be searched by the chaining engine when validating a certificate chain.</summary>
+        <summary>Gets an object that represents an additional collection of certificates that can be searched by the chaining engine when validating a certificate chain.</summary>
         <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -350,7 +348,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time span that elapsed during online revocation verification or downloading the certificate revocation list (CRL).</summary>
+        <summary>Gets or sets the maximum amount of time to be spent during online revocation verification or downloading the certificate revocation list (CRL). A value of <see cref="F:System.TimeSpan.Zero" /> means there are no limits.</summary>
         <value>A <see cref="T:System.TimeSpan" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -432,17 +430,23 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The time that the certificate was verified expressed in local time.</summary>
+        <summary>Gets or sets the time for which the chain is to be validated.</summary>
         <value>A <see cref="T:System.DateTime" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a value indicating the time the certificate was validated, expressed in local time. This is important when validating signed messages, since the signature must have been valid at the time of signing, not at the time of validation.  
-  
-   
-  
-## Examples  
+This property represents the time parameter for chain validation. This property returns a value indicating the time the chain is to be validated, either as local time or UTC, depending on the value of the <xref:System.DateTime.Kind?displayProperty=nameWithType> property. 
+This property is important when validating signed messages, since the signature must have been valid at the time of signing, not at the time of validation. 
+Every certificate in the chain must have a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotBefore?displayProperty=nameWithType> time no later than this property's value and a 
+<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter?displayProperty=nameWithType> time no earlier than this property's value. Otherwise, the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid?displayProperty=nameWithType> flag is asserted. 
+This property may also be used to determine the revocation status of a certificate.
+
+The default constructor for the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> class sets the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> property to the time the constructor is called.
+Calling the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset> method replaces the value of <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> with the current system time, 
+not with the time that the object was constructed.
+
+## Examples
  The following example opens the current user's personal certificate store, allows the user to select a certificate, then writes certificate and certificate chain information to the console. The output depends on the certificate you select.  
   
  [!code-cpp[x509chaintest#3](~/samples/snippets/cpp/VS_Snippets_CLR/x509chaintest/CPP/x509chaintest.cpp#3)]

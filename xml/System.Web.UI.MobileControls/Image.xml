@@ -48,7 +48,7 @@
    
   
 ## Examples  
- The following code sample code shows how to use a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within an Image control to specify different images for different devices. If you have available a file named Sunshine.gif, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
+ The following code sample code shows how to use a [\<DeviceSpecific>](http://msdn.microsoft.com/library/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within an Image control to specify different images for different devices. If you have available a file named Sunshine.gif, it will appear in Internet Explorer. If you view the page on a WML device such as an OpenWave phone or a CHTML device, it will appear as a sun icon. The page also displays the name of the browser and the resolved name of the image.  
   
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because various devices provide a set of built-in pictures, such as images for a heart, sunshine, a book, a right arrow, and so on, by using a [\<DeviceSpecific>](http://msdn.microsoft.com/en-us/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within the <xref:System.Web.UI.MobileControls.Image> control, you can provide a wide variety of graphics that can be integrated into the devices themselves, as well as standard Web graphics.  
+ Because various devices provide a set of built-in pictures, such as images for a heart, sunshine, a book, a right arrow, and so on, by using a [\<DeviceSpecific>](http://msdn.microsoft.com/library/6dca8eb9-d6f6-479a-abac-20fc9d485cc8) control within the <xref:System.Web.UI.MobileControls.Image> control, you can provide a wide variety of graphics that can be integrated into the devices themselves, as well as standard Web graphics.  
   
  For example, you can specify `symbol:63726` as the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property value for all devices that require WML markup, and Sunshine.gif as the <xref:System.Web.UI.MobileControls.Image.ImageUrl%2A> property value for HTML devices.  
   

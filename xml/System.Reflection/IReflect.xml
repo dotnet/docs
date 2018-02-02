@@ -25,12 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Interoperates with the [IDispatch interface](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</summary>
+    <summary>Interoperates with the [IDispatch interface](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.IReflect> interface is used to interoperate with the [IDispatch interface](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5). <xref:System.Reflection.IReflect> defines a subset of the <xref:System.Type> reflection methods. Implementing this interface enables a type to customize its behavior when the object is being accessed from COM as an `IDispatch` object. The <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler> class can be used to marshal an object that implements <xref:System.Reflection.IReflect> or <xref:System.Runtime.InteropServices.Expando.IExpando> as a COM `IDispatch` object, and vice versa.  
+ The <xref:System.Reflection.IReflect> interface is used to interoperate with the [IDispatch interface](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5). <xref:System.Reflection.IReflect> defines a subset of the <xref:System.Type> reflection methods. Implementing this interface enables a type to customize its behavior when the object is being accessed from COM as an `IDispatch` object. The <xref:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler> class can be used to marshal an object that implements <xref:System.Reflection.IReflect> or <xref:System.Runtime.InteropServices.Expando.IExpando> as a COM `IDispatch` object, and vice versa.  
   
  ]]></format>
     </remarks>

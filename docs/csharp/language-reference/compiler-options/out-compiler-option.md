@@ -16,13 +16,13 @@ caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /out (C# Compiler Options)
-The **/out** option specifies the name of the output file.  
+# -out (C# Compiler Options)
+The **-out** option specifies the name of the output file.  
   
 ## Syntax  
   
 ```console  
-/out:filename  
+-out:filename  
 ```  
   
 ## Arguments  
@@ -30,7 +30,7 @@ The **/out** option specifies the name of the output file.
  The name of the output file created by the compiler.  
   
 ## Remarks  
- On the command line, it is possible to specify multiple output files for your compilation. The compiler expects to find one or more source code files following the **/out** option. Then, all source code files will be compiled into the output file specified by that **/out** option.  
+ On the command line, it is possible to specify multiple output files for your compilation. The compiler expects to find one or more source code files following the **-out** option. Then, all source code files will be compiled into the output file specified by that **-out** option.  
   
  Specify the full name and extension of the file you want to create.  
   
@@ -42,11 +42,11 @@ The **/out** option specifies the name of the output file.
   
  A source code file used to compile one output file cannot be used in the same compilation for the compilation of another output file.  
   
- When producing multiple output files in a command-line compilation, keep in mind that only one of the output files can be an assembly and that only the first output file specified (implicitly or explicitly with **/out**) can be the assembly.  
+ When producing multiple output files in a command-line compilation, keep in mind that only one of the output files can be an assembly and that only the first output file specified (implicitly or explicitly with **-out**) can be the assembly.  
   
  Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](../../../framework/tools/ildasm-exe-il-disassembler.md) to view the assembly manifest to see the associated files.  
   
- The /out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
+ The -out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -62,7 +62,7 @@ The **/out** option specifies the name of the output file.
  Compile `t.cs` and create output file `t.exe`, as well as build `t2.cs` and create module output file `mymodule.netmodule`:  
   
 ```console  
-csc t.cs /out:mymodule.netmodule /target:module t2.cs  
+csc t.cs -out:mymodule.netmodule -target:module t2.cs  
 ```  
   
 ## See Also  

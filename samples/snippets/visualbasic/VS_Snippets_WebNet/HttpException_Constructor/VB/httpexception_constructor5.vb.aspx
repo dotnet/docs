@@ -13,7 +13,7 @@
             Try
                If Textbox1.Text.Length = 0 Or Textbox2.Text.Length = 0 Then
                   ' Raise an Exception if the username or emailid field is empty.
-                  Throw New HttpException(901, "User name or e-mail ID not provided", 333)
+                  Throw New HttpException(901, "User name or email ID not provided", 333)
                Else
                   MyLabel.Text = "Hello " & Textbox1.Text & "<br />"
                   MyLabel.Text += "The Weekly newsletter is mailed to :" & Textbox2.Text & "<br />"
@@ -34,12 +34,12 @@
    <body>
       <form runat="server" id="Form1">
          <h3>HttpException Example</h3>
-         Enter User name and E-mail
+         Enter User name and Email
          <br /><br />
          User Name:
          <asp:TextBox ID="Textbox1" Runat="server"></asp:TextBox>
          <br />
-         E-mail ID:
+         Email ID:
          <asp:TextBox ID="Textbox2" Runat="server"></asp:TextBox>
          <asp:Button ID="Button1" Text="Submit" OnClick="SubmitButton_Click" runat="server"/>
          <br />

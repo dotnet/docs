@@ -49,6 +49,8 @@
 
 ## Quick links to example code
 
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
 This article includes several examples that use the `DateTime` type:
 
 **Initialization Examples**      
@@ -83,7 +85,7 @@ This article includes several examples that use the `DateTime` type:
 
 **Persistence**  
  [Persisting date and time values as strings in the local time zone](#persistence-01)     
- [Persisting date and time values as strings in a culture and and time invariant format](#persistence-02)     
+ [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)     
  [Persisting date and time values as integers](#persistence-03)     
  [Persisting date and time values using the `XmlSerializer`](#persistence-04)     
  [Persisting date and time values using the `BinaryFormatter`](#persistence-05)     

@@ -15,27 +15,24 @@ ms.author: "wiwagn"
 # Access Modifiers (C# Reference)
 Access modifiers are keywords used to specify the declared accessibility of a member or a type. This section introduces the four access modifiers:  
   
--   [public](../../../csharp/language-reference/keywords/public.md)  
-  
--   [protected](../../../csharp/language-reference/keywords/protected.md)  
-  
--   [internal](../../../csharp/language-reference/keywords/internal.md)  
-  
--   [private](../../../csharp/language-reference/keywords/private.md)  
+-   `public`
+-   `protected`
+-   `internal`
+-   `private`
   
  The following six accessibility levels can be specified using the access modifiers:  
   
- `public`: Access is not restricted.  
+- [`public`](public.md): Access is not restricted.  
   
- `protected`: Access is limited to the containing class or types derived from the containing class.  
+- [`protected`](protected.md): Access is limited to the containing class or types derived from the containing class.  
   
- `internal`: Access is limited to the current assembly.  
+- [`internal`](internal.md): Access is limited to the current assembly.  
   
- [`protected internal`](../../../csharp/language-reference/keywords/protected-internal.md): Access is limited to the current assembly or types derived from the containing class.  
+- [`protected internal`](protected-internal.md): Access is limited to the current assembly or types derived from the containing class.  
   
- `private`: Access is limited to the containing type.  
+- [`private`](private.md): Access is limited to the containing type.  
 
- [`private protected`](../../../csharp/language-reference/keywords/private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.  
+- [`private protected`](private-protected.md): Access is limited to the containing class or types derived from the containing class within the current assembly.  
   
  This section also introduces the following:  
   

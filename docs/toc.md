@@ -1,4 +1,4 @@
-# [Welcome](welcome.md)
+﻿# [Welcome](welcome.md)
 
 <!-- Start of .NET Guide -->
 # [.NET Guide](standard/index.md)
@@ -25,7 +25,9 @@
 ### [Class Library Overview](standard/class-library-overview.md)
 ### [Base Types](standard/base-types/)
 ## [.NET Class libraries](standard/class-libraries.md)
-## [Portability Analyzer](standard/portability-analyzer.md)
+## Analyzers
+### [API Analyzer](standard/analyzers/api-analyzer.md) 
+### [Portability Analyzer](standard/analyzers/portability-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [.NET Assembly File Format](standard/assembly-format.md)
 ## [Garbage Collection](standard/garbage-collection/)
@@ -151,6 +153,9 @@
 ##### [dotnet add package](core/tools/dotnet-add-package.md)
 ##### [dotnet remove package](core/tools/dotnet-remove-package.md)
 ### [global.json](core/tools/global-json.md)
+## [.NET Core Additional Tools](core/additional-tools/index.md)
+### [WCF Web Service Reference Provider](core/additional-tools/wcf-web-service-reference-guide.md)
+### [XML Serializer Generator](core/additional-tools/xml-serializer-generator.md)
 ## [Porting from .NET Framework](core/porting/index.md)
 ### [Organizing projects for .NET Core](core/porting/project-structure.md)
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
@@ -204,7 +209,7 @@
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
 ## [Get Started](csharp/getting-started/)
-## [Quick Starts](csharp/quick-starts/)
+## [Quickstarts](csharp/quick-starts/)
 ## [Tutorials](csharp/tutorials/)
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
@@ -259,6 +264,7 @@
 ### [Versioning](csharp/versioning.md)
 ## [How To C# Topics](csharp/how-to/index.md)
 ### [How to parse strings using `String.Split`](csharp/how-to/parse-strings-using-split.md)
+### [How to concatenate strings](csharp/how-to/concatenate-multiple-strings.md)
 <!-- End of C# Concepts section -->
 ## [The .NET Compiler Platform SDK (Roslyn APIs)](csharp/roslyn-sdk/)
 ## [C# Programming Guide](csharp/programming-guide/)
@@ -278,7 +284,6 @@
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
-#### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
 #### [Accessing a SQL Database by Using Type Providers](fsharp/tutorials/type-providers/accessing-a-sql-database.md)
 #### [Accessing a SQL Database by Using Type Providers and Entities](fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md)
@@ -404,6 +409,7 @@
 ### [Fixed keyword](fsharp/language-reference/fixed.md)
 ### [Compiler Directives](fsharp/language-reference/compiler-directives.md)
 ### [Compiler Options](fsharp/language-reference/compiler-options.md)
+### [F# Interactive Options](fsharp/language-reference/fsharp-interactive-options.md)
 ### [Source Line, File, and Path Identifiers](fsharp/language-reference/source-line-file-path-identifiers.md)
 ### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)

@@ -37,10 +37,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/timers/system/timers/Timer.cs#897683f27faba082). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Timers.Timer> component is a server-based timer that raises an <xref:System.Timers.Timer.Elapsed> event in your application after the number of milliseconds in the <xref:System.Timers.Timer.Interval%2A> property has elapsed. You can configure the <xref:System.Timers.Timer> object to raise the event just once or repeatedly using the <xref:System.Timers.Timer.AutoReset%2A> property. Typically, a <xref:System.Timers.Timer> object is declared at the class level so that it stays in scope as long as it is needed. You can then handle its <xref:System.Timers.Timer.Elapsed> event to provide regular processing. For example, suppose you have a critical server that must be kept running 24 hours a day, 7 days a week. You could create a service that uses a <xref:System.Timers.Timer> object to periodically check the server and ensure that the system is up and running. If the system is not responding, the service could attempt to restart the server or notify an administrator.  
   
 > [!IMPORTANT]

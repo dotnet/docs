@@ -33,7 +33,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -72,7 +72,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/library/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
  ]]></format>
         </remarks>

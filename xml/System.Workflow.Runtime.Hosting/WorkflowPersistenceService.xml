@@ -55,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates creating an instance of the `SqlWorkflowPersistenceService` class (derived from `WorkflowPersistenceService`). This example is from the Nested Exception Handlers SDK sample, from the Program.cs class.  For more information, see the [Nested Exception Handlers Sample](http://msdn.microsoft.com/en-us/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
+ The following example demonstrates creating an instance of the `SqlWorkflowPersistenceService` class (derived from `WorkflowPersistenceService`). This example is from the Nested Exception Handlers SDK sample, from the Program.cs class.  For more information, see the [Nested Exception Handlers Sample](http://msdn.microsoft.com/library/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
   
  [!code-csharp[WF_Samples#161](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#161)]
  [!code-vb[WF_Samples#161](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#161)]  
@@ -185,7 +185,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `LoadCompletedContextActivity` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `LoadCompletedContextActivity` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#269](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#269)]
  [!code-vb[WF_Samples#269](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#269)]  
@@ -224,7 +224,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `LoadWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `LoadWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#266](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#266)]
  [!code-vb[WF_Samples#266](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#266)]  
@@ -258,7 +258,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates an implementation of the `RestoreFromDefaultSerializedForm` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `RestoreFromDefaultSerializedForm` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#269](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#269)]
  [!code-vb[WF_Samples#269](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#269)]  
@@ -302,7 +302,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `SaveCompletedContextActivity` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `SaveCompletedContextActivity` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#268](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#268)]
  [!code-vb[WF_Samples#268](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#268)]  
@@ -349,7 +349,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `SaveWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `SaveWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#264](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#264)]
  [!code-vb[WF_Samples#264](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#264)]  
@@ -381,7 +381,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates an implementation of the `UnloadOnIdle` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `UnloadOnIdle` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#270](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#270)]
  [!code-vb[WF_Samples#270](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#270)]  
@@ -419,7 +419,7 @@
    
   
 ## Examples  
- The following example demonstrates an implementation of the `UnlockWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/en-us/869dfadf-5298-4551-bc80-f4cf7918729d).  
+ The following example demonstrates an implementation of the `UnlockWorkflowInstanceState` method. This example is from the Custom Persistence Service sample, from the FilePersistenceService.cs file. For more information, see [Custom Persistence Service Sample](http://msdn.microsoft.com/library/869dfadf-5298-4551-bc80-f4cf7918729d).  
   
  [!code-csharp[WF_Samples#267](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#267)]
  [!code-vb[WF_Samples#267](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#267)]  

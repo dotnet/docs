@@ -20,14 +20,14 @@ caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /help, /? (C# Compiler Options)
+# -help, -? (C# Compiler Options)
 This option sends a listing of compiler options, and a brief description of each option, to stdout.  
   
 ## Syntax  
   
 ```console  
-/help  
-/?  
+-help  
+-?  
 ```  
   
 ## Remarks  

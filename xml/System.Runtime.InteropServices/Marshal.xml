@@ -1536,7 +1536,7 @@
   
  Both the `t` and `o` parameters must be classes whose signatures are attributed with <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType>. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/en-us/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
+ Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Since `t` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the coclass interface.  
   
 > [!NOTE]
 >  You lose the identity of the input COM object because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
@@ -1604,7 +1604,7 @@
   
  Both the `T` generic type parameter and the `o` parameter must be classes whose signatures are attributed with the <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=nameWithType> attribute. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool applies this attribute for you when it imports a type library. If you create the RCW manually in source code, you should apply this attribute to the managed signature that represents the original coclass to signify its COM origins.  
   
- Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/en-us/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
+ Tlbimp.exe imports a COM [coclass](http://msdn.microsoft.com/library/333d0904-ffa2-4d25-878d-7422bcd40582) as a managed class and an interface. The coclass interface has the same name as the original coclass, and the managed class has the original coclass name appended with "Class". For example, a coclass called `MyCoclass` becomes a coclass interface called `MyCoclass` and a managed class called `MyCoclassClass`. Because`T` must be a class, not an interface, be sure to specify the managed class (`MyCoclassClass`) and not the `coclass` interface.  
   
 > [!NOTE]
 >  You lose the identity of the input COM object, because a new RCW instance wraps the [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) pointer exposed by the original RCW.  
@@ -2117,7 +2117,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2257,7 +2257,7 @@
   
  The <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%60%602%28%60%600%29> method overload allows query interface customization by default. To specify whether to apply query interface customization, use the <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29> method overload.  
   
- For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
+ For additional information, see the [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md), [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md), and [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024) topics.  
   
  ]]></format>
         </remarks>
@@ -2401,9 +2401,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The zero-based slot number returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
+ The zero-based slot number returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType>.  
   
- You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ You can use this method to retrieve slot numbers for members of interfaces that are not visible from COM and for members of private interfaces. The slot numbers returned correspond to the v-table numbers that would be reserved if the type was exposed to COM. COM-invisible members actually occupy a slot in an exposed v-table, even though the COM client cannot use the slot. You cannot use <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A> on a class interface by passing <xref:System.Reflection.MemberInfo> from a class. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -2569,7 +2569,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based, v-table number for an interface or a class. When used on a class, the slot number returned refers to the class interface for the class. If the class interface is auto-dual, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -2658,7 +2658,7 @@
 ## Remarks  
  Use the <xref:System.Runtime.InteropServices.Marshal.GetExceptionForHR%2A> method to get an <xref:System.Exception> based on an HRESULT without having to call the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method and catch the exception.  
   
- The current [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
+ The current [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface is used to construct the exception.  
   
  For the mapping from each HRESULT to its comparable exception class in the .NET Framework, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   
@@ -2701,7 +2701,7 @@
       <Docs>
         <param name="errorCode">The HRESULT to be converted.</param>
         <param name="errorInfo">A pointer to the <see langword="IErrorInfo" /> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see langword="IErrorInfo" /> interface, or <c>IntPtr(-1)</c> to ignore the current <see langword="IErrorInfo" /> interface and construct the exception just from the error code.</param>
-        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
+        <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](http://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
         <returns>An object that represents the converted HRESULT and information obtained from <paramref name="errorInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3013,7 +3013,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface from a managed object.</summary>
+        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface from a managed object.</summary>
         <returns>The <see langword="IDispatch" /> pointer for the <paramref name="o" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3050,7 +3050,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object whose <see langword="IDispatch" /> interface is requested.</param>
-        <summary>Returns an [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface pointer from a managed object, if the caller is in the same context as that object.</summary>
+        <summary>Returns an [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) interface pointer from a managed object, if the caller is in the same context as that object.</summary>
         <returns>The <see langword="IDispatch" /> interface pointer for the specified object, or <see langword="null" /> if the caller is not in the same context as the specified object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3342,7 +3342,7 @@
 ## Remarks  
  The return value may be a <xref:System.Reflection.FieldInfo>, <xref:System.Reflection.MethodInfo>, or <xref:System.Reflection.PropertyInfo> object. The return value depends on the type of managed member that exists in the given COM slot (hence the generalized return type <xref:System.Reflection.MemberInfo> from which all three derive).  
   
- The zero-based slot number that is returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
+ The zero-based slot number that is returned by this method accounts for three [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) and possibly four [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) methods, making the value of the first available slot either 3 or 7. <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> provides the opposite functionality of <xref:System.Runtime.InteropServices.Marshal.GetComSlotForMethodInfo%2A?displayProperty=nameWithType>. You can use <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A> to pass slots within a specified range.  
   
  The `memberType` parameter is important only on return. It contains the type of the COM member (a regular method or a property accessor) that corresponds to the returned <xref:System.Reflection.MemberInfo> object.  
   
@@ -3755,12 +3755,12 @@
       <Docs>
         <param name="t">A type that represents an interface.</param>
         <summary>Gets the first slot in the virtual function table (v-table or VTBL) that contains user-defined methods.</summary>
-        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
+        <returns>The first VTBL slot that contains user-defined methods. The first slot is 3 if the interface is based on [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), and 7 if the interface is based on [IDispatch](http://msdn.microsoft.com/library/ebbff4bc-36b2-4861-9efa-ffa45e013eb5).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+ This method returns the zero-based v-table number for an interface or a class. When used on a class, the slot number that is returned refers to the class interface for the class. If the class interface is auto-dispatch, this method always returns -1 to indicate that the dispatch-only interface does not expose a v-table to managed clients. You can use <xref:System.Runtime.InteropServices.Marshal.GetStartComSlot%2A> and <xref:System.Runtime.InteropServices.Marshal.GetEndComSlot%2A?displayProperty=nameWithType> in conjunction with <xref:System.Runtime.InteropServices.Marshal.GetMethodInfoForComSlot%2A?displayProperty=nameWithType> to pass slots within a specified range. For additional information, see [Introducing the Class Interface](http://msdn.microsoft.com/library/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
  ]]></format>
         </remarks>
@@ -3839,7 +3839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](http://msdn.microsoft.com/en-us/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
+ The `t` parameter must be either a COM-imported type or a subtype of a COM-imported type. In addition, `t` must be a type whose metadata was imported by the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool. This type must be a class and not an associated coclass interface, which carries the name of the COM class. For example, if Tlbimp.exe imports `Myclass` as a class called `MyclassClass` and as a coclass interface called `Myclass`, you must use `MyclassClass` (not `Myclass`) with this method. For additional information about imported classes and coclass interfaces, see [Imported Type Conversion](http://msdn.microsoft.com/library/cb1ee67d-8ef0-4e40-b2a5-13714b9f33c3).  
   
  If an object has already been obtained for the `pUnk` parameter, `t` is ignored and the existing object is returned. `pUnk` represents an[IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003) interface pointer; however, because all COM interfaces derive directly or indirectly from `IUnknown`, you can pass any COM interface to this method. The object returned by <xref:System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown%2A> is a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW), which the common language runtime manages as it does any other managed object.  
   
@@ -3873,7 +3873,7 @@
       </Parameters>
       <Docs>
         <param name="piTypeInfo">The <see langword="ITypeInfo" /> interface to marshal.</param>
-        <summary>Converts an unmanaged [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
+        <summary>Converts an unmanaged [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object into a managed <see cref="T:System.Type" /> object.</summary>
         <returns>A managed type that represents the unmanaged <see langword="ITypeInfo" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3956,7 +3956,7 @@
       </Parameters>
       <Docs>
         <param name="typeInfo">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="typeInfo" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3994,7 +3994,7 @@
       </Parameters>
       <Docs>
         <param name="pTI">An object that represents an <see langword="ITypeInfo" /> pointer.</param>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
         <returns>The name of the type that the <paramref name="pTI" /> parameter points to.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4034,7 +4034,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
@@ -4074,7 +4074,7 @@
 ## Remarks  
  <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> extracts the LIBID directly from an existing type library. This action differs from that of the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A?displayProperty=nameWithType> method, which calculates what the LIBID should be based on the current assembly.  
   
- For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
+ For more information about library identifiers, see [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86).  
   
  ]]></format>
         </remarks>
@@ -4109,7 +4109,7 @@
 ## Remarks  
  When assemblies are exported to type libraries, the type library is assigned a LIBID. You can set the LIBID explicitly by applying the <xref:System.Runtime.InteropServices.GuidAttribute?displayProperty=nameWithType> at the assembly level, or it can be generated automatically. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool calculates a LIBID value based on the identity of the assembly. <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> returns the LIBID that is associated with the <xref:System.Runtime.InteropServices.GuidAttribute>, if the attribute is applied. Otherwise, <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuidForAssembly%2A> returns the calculated value. Alternatively, you can use the <xref:System.Runtime.InteropServices.Marshal.GetTypeLibGuid%2A> method to extract the actual LIBID from an existing type library.  
   
- See the [Exported Assembly Conversion](http://msdn.microsoft.com/en-us/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
+ See the [Exported Assembly Conversion](http://msdn.microsoft.com/library/3fffd8db-240f-4fde-a558-a5bcc01e1a86) topic for more information about library identifiers.  
   
  ]]></format>
         </remarks>
@@ -4529,7 +4529,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `t` parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
@@ -4583,7 +4583,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/en-us/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
+ <xref:System.Runtime.InteropServices.Marshal.OffsetOf%60%601%28System.String%29> provides the offset in terms of the unmanaged structure layout, which does not necessarily correspond to the offset of the managed structure layout. Marshaling the structure can transform the layout and alter the offset. The `T` generic type parameter can be a value type or a formatted reference type (with either a sequential or explicit layout). You can obtain the size of the entire layout by using the <xref:System.Runtime.InteropServices.Marshal.SizeOf%60%601%28%60%600%29> method. For additional information, see [Default Marshaling for Value Types](http://msdn.microsoft.com/library/4d9a876c-e05a-40ba-bd85-bd22877f984a).  
   
 > [!NOTE]
 >  Beginning with the .NET Framework version 2.0, <xref:System.Runtime.InteropServices.Marshal.OffsetOf%2A> may expose private fields.  
@@ -9625,7 +9625,7 @@ public static void ThrowExceptionForHR(interrorCode,IntPtrerrorInfo)
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/en-us/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
+        <summary>Retrieves the name of the type represented by an [ITypeInfo](http://msdn.microsoft.com/library/f3356463-3373-4279-bae1-953378aa2680) object.</summary>
       </Docs>
     </MemberGroup>
   </Members>

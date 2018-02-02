@@ -156,9 +156,9 @@ Namespace UserControls
          If textEmail.Text.Length = 0 Then
             Throw New Exception("Email address is a required field")
          Else
-            ' Confirm that there is a "." and an "@" in the e-mail address.
+            ' Confirm that there is a "." and an "@" in the email address.
             If textEmail.Text.IndexOf(".") = - 1 Or textEmail.Text.IndexOf("@") = - 1 Then
-               Throw New Exception("Email address must be valid e-mail address format." + _
+               Throw New Exception("Email address must be valid email address format." + _
                  Microsoft.VisualBasic.ControlChars.Cr + "For example 'someone@example.com'")
             End If
          End If

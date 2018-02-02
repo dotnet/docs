@@ -40,7 +40,7 @@
 ## Remarks  
  You can apply this attribute to classes.  
   
- You apply this attribute to a managed class to identify the event interfaces that the class exposes as COM connection points. An event interface contains methods that map to the event members of the class. The class event name and the interface method name must be the same. This attribute can accommodate up to four source interfaces for a class by passing the type of the source interface to the appropriate constructor, which take between one and four type arguments. For classes that want to expose more than four source interfaces, the string version of the constructor can be used. For additional information about exposing.NET events to COM clients, see [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/en-us/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd).  
+ You apply this attribute to a managed class to identify the event interfaces that the class exposes as COM connection points. An event interface contains methods that map to the event members of the class. The class event name and the interface method name must be the same. This attribute can accommodate up to four source interfaces for a class by passing the type of the source interface to the appropriate constructor, which take between one and four type arguments. For classes that want to expose more than four source interfaces, the string version of the constructor can be used. For additional information about exposing.NET events to COM clients, see [How to: Raise Events Handled by a COM Sink](http://msdn.microsoft.com/library/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd).  
   
    
   

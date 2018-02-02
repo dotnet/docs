@@ -111,7 +111,7 @@ Public Class Dummy
    
            rwLock.ExitReadLock()
            ' When we exit the read lock, the other threads will enter and 
-           ' and exit like lightning.
+           ' exit like lightning.
            Console.WriteLine("Test is done; check the event log for 4 events.")
            Console.ReadLine()
         End Using

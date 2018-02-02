@@ -50,10 +50,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/int32.cs#225942ed7b7a3252). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  <xref:System.Int32> is an immutable value type that represents signed integers with values that range from negative 2,147,483,648 (which is represented by the <xref:System.Int32.MinValue?displayProperty=nameWithType> constant) through positive 2,147,483,647 (which is represented by the <xref:System.Int32.MaxValue?displayProperty=nameWithType> constant. The .NET Framework also includes an unsigned 32-bit integer value type, <xref:System.UInt32>, which represents values that range from 0 to 4,294,967,295.  
   
 ## Instantiating an Int32 Value  

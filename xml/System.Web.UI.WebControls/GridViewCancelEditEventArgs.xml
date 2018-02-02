@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row containing the Cancel button that raised the event and to indicate that the cancel operation should be stopped. To stop the cancel operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewCancelEditEventArgs.%23ctor%2A> constructor.  
   

@@ -913,6 +913,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
             "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
             "redirect_document_id": true
@@ -1062,11 +1067,11 @@
         },        
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc165448(v=vs.120).aspx"
+            "redirect_url": "https://msdn.microsoft.com/library/cc165448(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
-            "redirect_url": "https://msdn.microsoft.com/en-us/library/cc488002(v=vs.120).aspx"
+            "redirect_url": "https://msdn.microsoft.com/library/cc488002(v=vs.120).aspx"
         },
         {
             "source_path": "docs/csharp/parallel.md",
@@ -1079,6 +1084,10 @@
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
             "redirect_url": "docs/csharp/how-to/parse-strings-using-string-split.md"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/how-to-concatenate-multiple-strings.md"
         }    
     ]
 }

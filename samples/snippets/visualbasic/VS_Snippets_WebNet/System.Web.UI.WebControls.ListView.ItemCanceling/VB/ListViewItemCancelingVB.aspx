@@ -63,7 +63,7 @@
               <th runat="server">ID</th>
               <th runat="server">First Name</th>
               <th runat="server">Last Name</th>
-              <th runat="server">E-mail Address</th>
+              <th runat="server">Email Address</th>
             </tr>
             <tr runat="server" id="itemPlaceholder" />
           </table>

@@ -23,7 +23,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the button control that raised the event by using the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCommandEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.%23ctor%2A> constructor.  
   

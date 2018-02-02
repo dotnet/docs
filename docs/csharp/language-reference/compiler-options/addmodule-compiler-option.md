@@ -16,13 +16,13 @@ caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /addmodule (C# Compiler Options)
+# -addmodule (C# Compiler Options)
 This option adds a module that was created with the target:module switch to the current compilation.  
   
 ## Syntax  
   
 ```console  
-/addmodule:file[;file2]  
+-addmodule:file[;file2]  
 ```  
   
 ## Arguments  
@@ -30,11 +30,11 @@ This option adds a module that was created with the target:module switch to the 
  An output file that contains metadata. The file cannot contain an assembly manifest. To import more than one file, separate file names with either a comma or a semicolon.  
   
 ## Remarks  
- All modules added with **/addmodule** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module is not in the application directory at run time, you will get a <xref:System.TypeLoadException>.  
+ All modules added with **-addmodule** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module is not in the application directory at run time, you will get a <xref:System.TypeLoadException>.  
   
- `file` cannot contain an assembly. For example, if the output file was created with [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), its metadata can be imported with **/addmodule**.  
+ `file` cannot contain an assembly. For example, if the output file was created with [-target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), its metadata can be imported with **-addmodule**.  
   
- If the output file was created with a **/target** option other than **/target:module**, its metadata cannot be imported with **/addmodule** but can be imported with [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md).  
+ If the output file was created with a **-target** option other than **-target:module**, its metadata cannot be imported with **-addmodule** but can be imported with [-reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md).  
   
  This compiler option is unavailable in Visual Studio; a project cannot reference a module. In addition, this compiler option cannot be changed programmatically.  
   
@@ -42,7 +42,7 @@ This option adds a module that was created with the target:module switch to the 
  Compile source file `input.cs` and add metadata from `metad1.netmodule` and `metad2.netmodule` to produce `out.exe`:  
   
 ```console  
-csc /addmodule:metad1.netmodule;metad2.netmodule /out:out.exe input.cs  
+csc -addmodule:metad1.netmodule;metad2.netmodule -out:out.exe input.cs  
 ```  
   
 ## See Also  

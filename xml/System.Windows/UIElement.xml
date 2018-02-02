@@ -240,7 +240,7 @@
    
   
 ## Examples  
- The following markup example sets the <xref:System.Windows.UIElement.AllowDrop%2A> property `true` using an attribute on a <xref:System.Windows.Controls.TextBox>, as well as setting some other related properties that in aggregate enable that <xref:System.Windows.Controls.TextBox> to be the target of a multiline text data object when it is dragged in. For the complete sample, see [Load a Dropped File Sample](http://msdn.microsoft.com/en-us/be90d645-dd61-4f53-93bb-87902d086ef7).  
+ The following markup example sets the <xref:System.Windows.UIElement.AllowDrop%2A> property `true` using an attribute on a <xref:System.Windows.Controls.TextBox>, as well as setting some other related properties that in aggregate enable that <xref:System.Windows.Controls.TextBox> to be the target of a multiline text data object when it is dragged in. For the complete sample, see [Load a Dropped File Sample](http://msdn.microsoft.com/library/be90d645-dd61-4f53-93bb-87902d086ef7).  
   
  [!code-xaml[DragDrop_DropOpenTextFile#UIElementAllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DropOpenTextFile/CS/window1.xaml#uielementallowdrop)]  
   
@@ -999,7 +999,7 @@ Image with an Elliptical Clip Region
   
  [!code-xaml[ClipPathExample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#5)]  
   
- For the full sample, see the [Clip Region Sample](http://msdn.microsoft.com/en-us/83043a0b-f824-445f-9675-103280c5ca67).  
+ For the full sample, see the [Clip Region Sample](http://msdn.microsoft.com/library/83043a0b-f824-445f-9675-103280c5ca67).  
   
  ]]></format>
         </remarks>
@@ -2611,7 +2611,7 @@ Image with an Elliptical Clip Region
   
  [!code-csharp[PopupSimple#IsFocused](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml.cs#isfocused)]  
   
- Another common way to achieve this same effect is to place a <xref:System.Windows.Trigger> in the <xref:System.Windows.Style> of a control; this approach does not require handling specific events with code-behind and allows designers greater access to the interactive and graphical nature of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. For an example, see [How to: Create an Outer Glow Effect](http://msdn.microsoft.com/en-us/a2ccf19a-d0dc-4e3c-88e3-95d7f7d765b1).  
+ Another common way to achieve this same effect is to place a <xref:System.Windows.Trigger> in the <xref:System.Windows.Style> of a control; this approach does not require handling specific events with code-behind and allows designers greater access to the interactive and graphical nature of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. For an example, see [How to: Create an Outer Glow Effect](http://msdn.microsoft.com/library/a2ccf19a-d0dc-4e3c-88e3-95d7f7d765b1).  
   
  ]]></format>
         </remarks>
@@ -3383,7 +3383,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/library/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptureWithin"></a>   
 ## Dependency Property Information  
@@ -9766,7 +9766,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=nameWithType> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/library/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonDown"></a>   
 ## Routed Event Information  

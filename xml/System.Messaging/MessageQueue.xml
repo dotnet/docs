@@ -4348,7 +4348,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  <xref:System.Messaging.MessageQueue.EndPeek%28System.IAsyncResult%29> is used to complete the operation initiated by a call to <xref:System.Messaging.MessageQueue.BeginPeek%2A> and peek the message when the <xref:System.Messaging.MessageQueue.PeekCompleted> event is raised.  
   
- When you create a <xref:System.Messaging.PeekCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Messaging.PeekCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   
@@ -6142,7 +6142,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  <xref:System.Messaging.MessageQueue.EndReceive%28System.IAsyncResult%29> is used to complete the operation initiated by a call to <xref:System.Messaging.MessageQueue.BeginReceive%2A> and peek the message when the <xref:System.Messaging.MessageQueue.ReceiveCompleted> event is raised.  
   
- When you create a <xref:System.Messaging.ReceiveCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ When you create a <xref:System.Messaging.ReceiveCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
    
   

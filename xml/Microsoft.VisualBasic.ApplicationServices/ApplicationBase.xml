@@ -165,7 +165,7 @@
   
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
- For this example to work, your application must have a string named `Message` in the application's resource file, and the application should have the French-culture version of that resource file, `Resources.fr-FR.resx`. For more information, see [How to: Add or Remove Resources](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d).  
+ For this example to work, your application must have a string named `Message` in the application's resource file, and the application should have the French-culture version of that resource file, `Resources.fr-FR.resx`. For more information, see [How to: Add or Remove Resources](http://msdn.microsoft.com/library/7b77bc06-3952-4799-b029-def3f8f7f88d).  
   
  If the application does not have the French-culture version of that resource file, the `My.Resources` object retrieves the resource from the default-culture resource file.  
   
@@ -384,7 +384,7 @@
   
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
- For this example to work, your application must have a string named `Message` in the application's resource file, and the application should have the French-culture version of that resource file, `Resources.fr-FR.resx`. For more information, see [How to: Add or Remove Resources](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d).  
+ For this example to work, your application must have a string named `Message` in the application's resource file, and the application should have the French-culture version of that resource file, `Resources.fr-FR.resx`. For more information, see [How to: Add or Remove Resources](http://msdn.microsoft.com/library/7b77bc06-3952-4799-b029-def3f8f7f88d).  
   
  If the application does not have the French-culture version of that resource file, the `My.Resources` object retrieves the resource from the default-culture resource file.  
   

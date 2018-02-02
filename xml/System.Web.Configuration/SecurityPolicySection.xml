@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default values for the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property are `Full`, `High`, `Medium`, `Low`, and `Minimal`. The items of the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> collection each specify a security-level name and an associated policy file. You can extend the security system by providing your own named trust-level element mapped to a file specified by the `policyFile` attribute. For information about creating trust-level elements, see [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/729ab04c-03da-4ee5-86b1-be9d08a09369).  
+ The default values for the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> property are `Full`, `High`, `Medium`, `Low`, and `Minimal`. The items of the <xref:System.Web.Configuration.SecurityPolicySection.TrustLevels%2A> collection each specify a security-level name and an associated policy file. You can extend the security system by providing your own named trust-level element mapped to a file specified by the `policyFile` attribute. For information about creating trust-level elements, see [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/729ab04c-03da-4ee5-86b1-be9d08a09369).  
   
    
   

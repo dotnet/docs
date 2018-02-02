@@ -7,6 +7,7 @@ namespace HowToStrings
         static void Main(string[] args)
         {
             ParseStringsUsingSplit.Examples();
+            Concatenate.Examples();
         }
     }
 }

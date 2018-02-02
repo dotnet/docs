@@ -50,9 +50,9 @@ namespace AsyncExample_MultipleTasks
             Task<int> download1 = 
                 ProcessURLAsync("http://msdn.microsoft.com", client);
             Task<int> download2 = 
-                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client);
+                ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);
             Task<int> download3 = 
-                ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client);
+                ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client);
 
             // Await each task.
             int length1 = await download1;

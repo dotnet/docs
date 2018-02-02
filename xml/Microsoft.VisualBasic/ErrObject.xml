@@ -306,7 +306,7 @@ End If
 > [!NOTE]
 >  The <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A> property is protected by <xref:System.Security.Permissions.SecurityAction.LinkDemand>, which helps prevent it from being accessed from untrusted code. However, <xref:System.Security.Permissions.SecurityAction.LinkDemand> requires only the immediate caller to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> permission. If your code can be called from partially trusted code, exposing the value of <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A> without validation is a security risk.  
 >   
->  For important limitations about how to use the <xref:System.Security.Permissions.SecurityAction.LinkDemand> member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5). For more information about permissions, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  For important limitations about how to use the <xref:System.Security.Permissions.SecurityAction.LinkDemand> member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/library/1ab877f2-70f4-4e0d-8116-943999dfe8f5). For more information about permissions, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  Note   For smart devices this property always returns zero.  
   

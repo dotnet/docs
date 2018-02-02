@@ -53,10 +53,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/hashtable.cs#10fefb6e0ae510dd). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
   
  The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods and interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class (or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation) with the <xref:System.Collections.CaseInsensitiveComparer> class (or any case-insensitive <xref:System.Collections.IComparer> implementation).  

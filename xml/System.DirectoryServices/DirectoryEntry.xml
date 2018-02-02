@@ -537,7 +537,7 @@ int main()
   
  When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this <xref:System.DirectoryServices.DirectoryEntry> object references. This method invokes the <xref:System.ComponentModel.Component.Dispose%2A> method of each referenced object.  
   
- For more information about the <xref:System.ComponentModel.Component.Dispose%2A> and <xref:System.Object.Finalize%2A> methods, see [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information about the <xref:System.ComponentModel.Component.Dispose%2A> and <xref:System.Object.Finalize%2A> methods, see [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>

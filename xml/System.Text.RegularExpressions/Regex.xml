@@ -33,10 +33,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/regex/system/text/regularexpressions/Regex.cs#bbe3b2eb80ae5526). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Text.RegularExpressions.Regex> class represents the .NET Framework's regular expression engine. It can be used to quickly parse large amounts of text to find specific character patterns; to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection to generate a report.  
   
 > [!NOTE]
@@ -743,7 +739,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile1.cs#1)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile1.vb#1)]  
@@ -827,7 +823,7 @@
    
   
 ## Examples  
- The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an e-mail address.  
+ The following example creates an assembly named RegexLib.dll and applies the <xref:System.Reflection.AssemblyTitleAttribute> attribute to it. The assembly includes two compiled regular expressions. The first, `Utilities.RegularExpressions.DuplicatedString`, matches two identical contiguous words. The second, `Utilities.RegularExpressions.EmailAddress`, checks whether a string has the correct format to be an email address.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/cs/Compile3.cs#3)]
  [!code-vb[System.Text.RegularExpressions.Regex.CompileToAssembly#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.Regex.CompileToAssembly/vb/Compile3.vb#3)]  

@@ -17,13 +17,13 @@ caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"
 ---
-# /win32res (C# Compiler Options)
-The **/win32res** option inserts a Win32 resource in the output file.  
+# -win32res (C# Compiler Options)
+The **-win32res** option inserts a Win32 resource in the output file.  
   
 ## Syntax  
   
 ```console  
-/win32res:filename  
+-win32res:filename  
 ```  
   
 ## Arguments  
@@ -33,9 +33,9 @@ The **/win32res** option inserts a Win32 resource in the output file.
 ## Remarks  
  A Win32 resource file can be created with the [Resource Compiler](../../language-reference/compiler-options/resource-compiler-option.md). The Resource Compiler is invoked when you compile a Visual C++ program; a .res file is created from the .rc file.  
   
- A Win32 resource can contain version or bitmap (icon) information that would help identify your application in the File Explorer. If you do not specify **/win32res**, the compiler will generate version information based on the assembly version.  
+ A Win32 resource can contain version or bitmap (icon) information that would help identify your application in the File Explorer. If you do not specify **-win32res**, the compiler will generate version information based on the assembly version.  
   
- See [/linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [/resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file.  
+ See [-linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -49,7 +49,7 @@ The **/win32res** option inserts a Win32 resource in the output file.
  Compile `in.cs` and attach a Win32 resource file `rf.res` to produce `in.exe`:  
   
 ```console  
-csc /win32res:rf.res in.cs  
+csc -win32res:rf.res in.cs  
 ```  
   
 ## See Also  

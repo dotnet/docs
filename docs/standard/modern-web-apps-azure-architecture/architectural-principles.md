@@ -10,7 +10,7 @@ ms.workload:
   - "dotnet"
   - "dotnetcore"
 ---
-#Architectural Principles
+# Architectural Principles
 
 > "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization."  
 > _\- Gerald Weinberg_

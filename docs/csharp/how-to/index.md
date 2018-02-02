@@ -57,7 +57,7 @@ Strings are the fundamental data type used to display or manipulate text. These 
 - [Modify the contents of a string](../programming-guide/strings/how-to-modify-string-contents.md).
 - [Determine if a string represents a number](../programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md).
 - [Use `String.Split` to separate strings](parse-strings-using-split.md).
-- [Combine multiple strings into one](../programming-guide/strings/how-to-concatenate-multiple-strings.md).
+- [Combine multiple strings into one](concatenate-multiple-strings.md).
 - [Search for text in a string](../programming-guide/strings/how-to-search-strings-using-string-methods.md).
 - [Search strings using regular expressions](../programming-guide/strings/how-to-search-strings-using-regular-expressions.md).
 

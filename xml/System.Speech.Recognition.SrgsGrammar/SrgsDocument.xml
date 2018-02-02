@@ -20,7 +20,7 @@
   
  After the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object is created, it can be loaded into a <xref:System.Speech.Recognition.Grammar> object or compiled by <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>, enabling it to be read by a <xref:System.Speech.Recognition.Grammar> object.  
   
- See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/en-us/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+ See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/library/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/library/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
   
  ]]></format>
     </remarks>
@@ -509,7 +509,7 @@ if (File.Exists(srgsDocumentFile))
   
  In System.Speech, you can use any of three phonetic alphabets to specify custom pronunciations: International Phone Alphabet (IPA), Universal Phone Set (UPS), or the SAPI phone set. The specified phonetic alphabet determines which phone set will be used to define inline pronunciations for <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> objects. The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> must match the phonetic alphabet specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet%2A>.  
   
- See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/library/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
   
  ]]></format>
         </remarks>

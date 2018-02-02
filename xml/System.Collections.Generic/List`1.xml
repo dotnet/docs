@@ -58,10 +58,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs#cf7f4095e4de7646). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Collections.Generic.List%601> class is the generic equivalent of the <xref:System.Collections.ArrayList> class. It implements the <xref:System.Collections.Generic.IList%601> generic interface by using an array whose size is dynamically increased as required.  
   
  You can add items to a <xref:System.Collections.Generic.List%601> by using the <xref:System.Collections.Generic.List%601.Add%2A> or <xref:System.Collections.Generic.List%601.AddRange%2A> methods.  
@@ -905,7 +901,7 @@
    
   
 ## Examples  
- The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List`1.ConvertAll``1*> method. The <xref:System.Collections.Generic.List`1.ConvertAll``1*> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
+ The following example defines a method named `PointFToPoint` that converts a <xref:System.Drawing.PointF> structure to a <xref:System.Drawing.Point> structure. The example then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Drawing.PointF> structures, creates a `Converter\<PointF, Point>` delegate (`Converter(Of PointF, Point)` in Visual Basic) to represent the `PointFToPoint` method, and passes the delegate to the <xref:System.Collections.Generic.List%601.ConvertAll%2A> method. The <xref:System.Collections.Generic.List%601.ConvertAll%2A> method passes each element of the input list to the `PointFToPoint` method and puts the converted elements into a new list of <xref:System.Drawing.Point> structures. Both lists are displayed.  
   
  [!code-cpp[List\`1_ConvertAll#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_ConvertAll/cpp/source.cpp#1)]
  [!code-csharp[List\`1_ConvertAll#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_ConvertAll/cs/source.cs#1)]

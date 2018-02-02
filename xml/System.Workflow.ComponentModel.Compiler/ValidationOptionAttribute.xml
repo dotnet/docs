@@ -30,7 +30,7 @@
   
  This attribute should only be used as dependency property option. Attributes are ignored if declared on a .NET property.  
   
- The <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> is intended to be used on Meta-properties only. It will be ignored for instance properties. For more information, see [Using Activity Properties](http://msdn.microsoft.com/en-us/974353d4-28f9-4202-890d-b36981876148) for more details.  
+ The <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> is intended to be used on Meta-properties only. It will be ignored for instance properties. For more information, see [Using Activity Properties](http://msdn.microsoft.com/library/974353d4-28f9-4202-890d-b36981876148) for more details.  
   
  If the <xref:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute> is not specified, the behavior defaults to <xref:System.Workflow.ComponentModel.Compiler.ValidationOption.Optional?displayProperty=nameWithType>.  
   

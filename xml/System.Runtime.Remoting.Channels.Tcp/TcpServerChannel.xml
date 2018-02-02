@@ -31,7 +31,7 @@
   
  The <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> instance accepts messages serialized in either binary or SOAP format.  
   
- A <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ A <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
 > [!NOTE]
 >  If the server computer is running Windows 95/98/Me, the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> cannot be specified as secure.  
@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
 > [!NOTE]
 >  If the server computer is running Windows 95/98/Me, the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> cannot be specified as secure.  
@@ -187,7 +187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/en-us/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
   
 > [!NOTE]
 >  If the server computer is running Windows 95/98/Me, the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> cannot be specified as secure.  

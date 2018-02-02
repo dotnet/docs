@@ -24,7 +24,7 @@
 ## Remarks  
  This class specifies that the incoming data will be in the format"name=value&name=value", encoded from an HTML form, regardless of whether the value of the `Method` attribute of the form is `POST` or `GET`.  
   
- Note that this encoding is derived from a feature of HTML and is not specific to the <xref:System.Web.UI.HtmlControls.HtmlForm> class, although the `HtmlForm` class does support it. For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ Note that this encoding is derived from a feature of HTML and is not specific to the <xref:System.Web.UI.HtmlControls.HtmlForm> class, although the `HtmlForm` class does support it. For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/library/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
   
  ]]></format>
     </remarks>

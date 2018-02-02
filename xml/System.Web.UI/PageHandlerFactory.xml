@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.PageHandlerFactory> class implements the <xref:System.Web.IHttpHandlerFactory> interface to provide the default HTTP handler for ASP.NET files. The <xref:System.Web.UI.PageHandlerFactory> calls the ASP.NET compilation system to compile, if necessary, and return the exact type corresponding to the URL, and then creates an instance of that type. The page type inherits from the <xref:System.Web.UI.Page> class and implements the <xref:System.Web.IHttpHandler> interface.  
   
- To build a custom page handler factory, implement the <xref:System.Web.IHttpHandlerFactory> and register the custom <xref:System.Web.UI.PageHandlerFactory> class in the Web.config file for the application in the [httpHandlers Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/24ca01f3-7141-4fdc-acac-71c0733cf6c2) configuration section.  
+ To build a custom page handler factory, implement the <xref:System.Web.IHttpHandlerFactory> and register the custom <xref:System.Web.UI.PageHandlerFactory> class in the Web.config file for the application in the [httpHandlers Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/24ca01f3-7141-4fdc-acac-71c0733cf6c2) configuration section.  
   
  ]]></format>
     </remarks>

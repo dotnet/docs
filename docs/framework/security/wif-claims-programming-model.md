@@ -26,9 +26,9 @@ ASP.NET and Windows Communication Foundation (WCF) developers ordinarily use the
   
  A claim is represented by <xref:System.Security.Claims.Claim> class. This class has the following important properties:  
   
--   <xref:System.Security.Claims.Claim.Type%2A> represents the type of claim and is typically a URI. For example, the e-mail address claim is represented as `http://schemas.microsoft.com/ws/2008/06/identity/claims/email`.  
+-   <xref:System.Security.Claims.Claim.Type%2A> represents the type of claim and is typically a URI. For example, the email address claim is represented as `http://schemas.microsoft.com/ws/2008/06/identity/claims/email`.  
   
--   <xref:System.Security.Claims.Claim.Value%2A> contains the value of the claim and is represented as a string. For example, the e-mail address can be represented as "someone@contoso.com".  
+-   <xref:System.Security.Claims.Claim.Value%2A> contains the value of the claim and is represented as a string. For example, the email address can be represented as "someone@contoso.com".  
   
 -   <xref:System.Security.Claims.Claim.ValueType%2A> represents the type of the claim value and is typically a URI. For example, the string type is represented as `http://www.w3.org/2001/XMLSchema#string`. The value type must be a QName according to the XML schema. The value should be of the format `namespace#format` to enable WIF to output a valid QName value. If the namespace is not a well-defined namespace, the generated XML probably cannot be schema validated, because there will not be a published XSD file for that namespace. The default value type is `http://www.w3.org/2001/XMLSchema#string`. Please see [http://www.w3.org/2001/XMLSchema](http://go.microsoft.com/fwlink/?LinkId=209155) for well-known value types that you can use safely.  
   

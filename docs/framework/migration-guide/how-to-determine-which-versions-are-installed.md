@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.date: "10/17/2017"
+ms.date: "01/24/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -84,6 +84,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
      The value of the `Release` DWORD indicates which version of the .NET Framework is installed.
 
+    [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
+
     |Value of the Release DWORD|Version|
     |--------------------------------|-------------|
     |378389|.NET Framework 4.5|
@@ -125,6 +127,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
 1. The existence of the `Release` DWORD indicates that the .NET Framework 4.5 or later has been installed on a computer. The value of the keyword indicates the installed version. To check this keyword, use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> methods of the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the Software\Microsoft\NET Framework Setup\NDP\v4\Full subkey under HKEY_LOCAL_MACHINE in the Windows registry.
 
 2. Check the value of the `Release` keyword to determine the installed version. To be forward-compatible, you can check for a value greater than or equal to the values listed in the table. Here are the .NET Framework versions and associated `Release` keywords.
+
+    [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
     |Version|Value of the Release DWORD|
     |-------------|--------------------------------|

@@ -52,7 +52,7 @@
   
  <xref:System.Workflow.Activities.SetStateActivity> is always the last activity in the run path of a <xref:System.Workflow.Activities.EventDrivenActivity> activity.  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e) sample.  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e) sample.  
   
  ]]></format>
     </remarks>
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[WF_Samples#310](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#310)]  
   
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class and use it implement a simple state machine to transition between 3 states, and set the value of the <xref:System.Workflow.Activities.SetStateActivity.TargetStateName%2A> property. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.SetStateActivity> class and use it implement a simple state machine to transition between 3 states, and set the value of the <xref:System.Workflow.Activities.SetStateActivity.TargetStateName%2A> property. This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[WF_Samples#183](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#183)]
  [!code-vb[WF_Samples#183](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#183)]  

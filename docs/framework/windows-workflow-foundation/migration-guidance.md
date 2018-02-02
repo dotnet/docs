@@ -41,7 +41,7 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  [WF Guidance: State Machine](http://go.microsoft.com/fwlink/?LinkId=153855)  
  Discusses WF4 control flow modeling in the absence of a State-Machine activity.  
   
- Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. [!INCLUDE[crabout](../../../includes/crabout-md.md)] state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](http://msdn.microsoft.com/en-us/de3297bd-c3e1-4126-95be-2ed7fe2a98fc) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
+ Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. [!INCLUDE[crabout](../../../includes/crabout-md.md)] state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](http://msdn.microsoft.com/library/de3297bd-c3e1-4126-95be-2ed7fe2a98fc) and [State Machine Workflows](../../../docs/framework/windows-workflow-foundation/state-machine-workflows.md).  
   
  [WF Migration Cookbook: Custom Activities](http://go.microsoft.com/fwlink/?LinkId=153856)  
  Provides examples and instructions for redesigning WF3 custom activities on WF4.  

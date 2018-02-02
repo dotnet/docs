@@ -119,7 +119,7 @@
  By default, the hook procedure centers the dialog box on the screen in response to a WM_INITDIALOG message.  
   
 > [!NOTE]
->  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+>  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/library/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
   
  This property also uses the <xref:System.Security.Permissions.SecurityAction.InheritanceDemand?displayProperty=nameWithType> security attribute; to override this member, the derived class must have the `CustomPermission` permission.  
   

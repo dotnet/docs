@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.CodeActivity> class.  The example code also creates new instances of the <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.ConditionedActivityGroup> classes. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.Activities.CodeActivity> class.  The example code also creates new instances of the <xref:System.Workflow.Activities.CodeCondition> and <xref:System.Workflow.Activities.ConditionedActivityGroup> classes. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. For more information, see [Using ConditionedActivityGroup](http://msdn.microsoft.com/library/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
   
 ```csharp  
 private ConditionedActivityGroup BookingCAG;  
@@ -146,7 +146,7 @@ this.Airline = new CodeActivity();
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code demonstrates how to use the <xref:System.Workflow.Activities.CodeActivity.ExecuteCode> event. This code example is part of the Compensation SDK sample from the PurchaseOrder.cs file. For more information, see [Using Compensation](http://msdn.microsoft.com/en-us/c847a694-9978-46af-aa80-5bd1833f813b).  
+ The following code demonstrates how to use the <xref:System.Workflow.Activities.CodeActivity.ExecuteCode> event. This code example is part of the Compensation SDK sample from the PurchaseOrder.cs file. For more information, see [Using Compensation](http://msdn.microsoft.com/library/c847a694-9978-46af-aa80-5bd1833f813b).  
   
  [!code-csharp[WF_Samples#155](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#155)]
  [!code-vb[WF_Samples#155](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#155)]  

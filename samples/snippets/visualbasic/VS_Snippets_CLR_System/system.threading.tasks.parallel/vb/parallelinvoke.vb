@@ -11,7 +11,7 @@ Module InvokeDemo
     '   The thread assignments may be different in different executions.
     '   The tasks may get executed in any order.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/dd783942(VS.100).aspx
+    '   http://msdn.microsoft.com/library/dd783942(VS.100).aspx
     Private Sub Main()
         Try
             ' Param #0 - static method

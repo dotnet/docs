@@ -4309,7 +4309,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
       <Docs>
         <summary>Converts the value of objects to strings based on the formats specified and inserts them into another string.  
   
- If you are new to the `String.Format` method, see the [Getting started with the String.Format method](#Starting) section for a quick overview.  
+ If you are new to the `String.Format` method, see the [Get started with the String.Format method](#Starting) section for a quick overview.  
   
  See the [Remarks](#remarks-top) section for general documentation for the `String.Format` method.</summary>
         <remarks>
@@ -4322,7 +4322,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  
  In this section:  
   
- [Getting started with the String.Format method](#Starting)   
+ [Get started with the String.Format method](#Starting)   
  [Which method do I call?](#FTaskList)   
  [The Format method in brief](#Format_Brief)   
  [The Format item](#FormatItem)   
@@ -4333,7 +4333,7 @@ In .NET Core, sorting and comparison operations are based on [Version 8.0.0 of t
  [String.Format Q & A](#QA)  
   
 <a name="Starting"></a>   
-## Getting started with the String.Format method  
+## Get started with the String.Format method  
  Use <xref:System.String.Format%2A?displayProperty=nameWithType> if you need to insert the value of an object, variable, or expression into another string. For example, you can insert the value of a <xref:System.Decimal> value into a string to display it to the user as a single string:  
   
  [!code-cpp[System.String.Format#35](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#35)]
@@ -4621,7 +4621,13 @@ In contrast, the use of interpolated strings in the following example produce mu
 
 ## Examples
 
-Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks) section of this article. The C# examples are runnable from your browser; just select the **Run** button. The following are some of the examples included in the article:
+Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks) section of this article.  
+
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
+You can also download a complete set of `String.Format` examples, which are included a [.NET Core 2.0 project for C#](https://github.com/dotnet/docs/raw/master/samples/snippets/csharp/downloads/api/System/String.Format.zip) and a [.NET Core 2.0 project for Visual Basic](https://github.com/dotnet/docs/raw/master/samples/snippets/visualbasic/downloads/api/System/String.Format.zip), from the [dotnet/docs GitHub repository](https://github.com/dotnet/docs).
+
+The following are some of the examples included in the article:
 
 ### Create a format string
 

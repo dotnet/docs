@@ -95,7 +95,7 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is a set of t
  The following topics enable you to learn more about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
   
  [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- Provide information about how to get up and running quickly using the [Quickstart](http://msdn.microsoft.com/en-us/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+ Provide information about how to get up and running quickly using the [Quickstart](http://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
   
  [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)  
  Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.  

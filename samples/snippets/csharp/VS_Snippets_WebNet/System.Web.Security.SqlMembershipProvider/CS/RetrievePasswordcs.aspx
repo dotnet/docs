@@ -51,7 +51,7 @@ public void VerifyUsername()
 
 public void EmailPassword_OnClick(object sender, EventArgs args)
 {
-  // Note: Returning a password in clear text using e-mail is not recommended for
+  // Note: Returning a password in clear text using email is not recommended for
   // sites that require a high level of security.
 
   try
@@ -59,7 +59,7 @@ public void EmailPassword_OnClick(object sender, EventArgs args)
     string password = Membership.Provider.GetPassword(UsernameTextBox.Text, AnswerTextBox.Text);
     MembershipUser u = Membership.GetUser(UsernameTextBox.Text);
     EmailPassword(u.Email, password);
-    Msg.Text = "Your password was sent via e-mail.";
+    Msg.Text = "Your password was sent via email.";
   }
   catch (MembershipPasswordException e)
   {

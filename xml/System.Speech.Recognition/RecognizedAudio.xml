@@ -103,7 +103,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+ This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the `RecognizerAudioPosition` property of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> and <xref:System.Speech.Recognition.SpeechRecognizer> classes reference the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/library/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
   
  The <xref:System.Speech.Recognition.RecognizedAudio.StartTime%2A> property gets the system time at the start of the recognition operation.  
   

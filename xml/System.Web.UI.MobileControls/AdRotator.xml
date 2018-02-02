@@ -48,7 +48,7 @@
 ## Examples  
  The following code example consists of two parts: an ASP.NET mobile Web Forms page in an `.aspx` file and an XML file. The `.aspx` file uses a file named `ads.xml` to rotate through various advertisements based on the <xref:System.Web.UI.MobileControls.AdRotator.KeywordFilter%2A> property. If you provide the images for the example, they will be displayed; otherwise, the <xref:System.Web.UI.MobileControls.AdRotator> control displays the value of the <xref:System.Web.UI.MobileControls.Image.AlternateText%2A> property for the advertisements. When the user refreshes the mobile Web Forms page, the page displays the next randomly selected advertisement, based on the <xref:System.Web.UI.MobileControls.AdRotator.KeywordFilter%2A>.  
   
- The example also shows how to use a [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element to override the properties if the user's browser requires WML markup, and how to map the image's `src` and `href` attributes to the data in the XML file using the <xref:System.Web.UI.MobileControls.AdRotator.ImageKey%2A> and <xref:System.Web.UI.MobileControls.AdRotator.NavigateUrlKey%2A> properties, respectively.  
+ The example also shows how to use a [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element to override the properties if the user's browser requires WML markup, and how to map the image's `src` and `href` attributes to the data in the XML file using the <xref:System.Web.UI.MobileControls.AdRotator.ImageKey%2A> and <xref:System.Web.UI.MobileControls.AdRotator.NavigateUrlKey%2A> properties, respectively.  
   
  Although the example uses a function to determine whether the browser requires WML (`isWML11`), you can instead use a Web.config file to define a <xref:System.Web.UI.MobileControls.DeviceSpecific> element that the .NET Framework automatically uses to make the determination for you:  
   
@@ -237,12 +237,12 @@
 ## Remarks  
  You can create elements in the source XML file for a variety of purposes. For example, you may want to use the same XML file for both mobile pages and Web pages, but want a different image file for each one. Use the <xref:System.Web.UI.MobileControls.AdRotator.ImageKey%2A> property to specify which element in your XML file you want to use for the image URL.  
   
- You can also use separate [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements to override this setting to show alternate images for the advertisement.  
+ You can also use separate [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements to override this setting to show alternate images for the advertisement.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.ImageKey%2A> property to select a specific item from a record in the XML file. This .aspx file specifies that the value for the image URL can be obtained from the `<MobileImageSrc>` element of the XML file, and uses a [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) element to select a different image URL if the user's browser requires WML markup.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.AdRotator.ImageKey%2A> property to select a specific item from a record in the XML file. This .aspx file specifies that the value for the image URL can be obtained from the `<MobileImageSrc>` element of the XML file, and uses a [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element to select a different image URL if the user's browser requires WML markup.  
   
  The `.aspx` file:  
   
@@ -330,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use [\<Choice>](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements to override this setting to show alternate URLs for the advertisement.  
+ You can use [\<Choice>](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements to override this setting to show alternate URLs for the advertisement.  
   
    
   

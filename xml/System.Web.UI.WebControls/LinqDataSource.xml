@@ -967,7 +967,7 @@
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/en-us/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/en-us/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
   
    
   
@@ -1570,7 +1570,7 @@ End Sub
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/en-us/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/en-us/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [NIB: LinqDataSource Web Server Control Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](http://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
   
  When you group data, you can include `Key` and `It`, which are dynamically created properties, in the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property. The `Key` property refers to the values in the property or properties that were used to group the data. For example, if you group by a property named `Category`, the `Key` property will contain each unique value in the `Category` property. The `It` property refers to a collection of individual records in a grouping of data. You can iterate over the `It` property to retrieve the individual records that have been consolidated in the grouping operation. For example, if you group by a property named `Category`, the `It` property contains all the individual records that share a common value in the `Category` property.  
   
@@ -1784,7 +1784,7 @@ protected void LinqDataSource_Selecting(object sender,
   
  Storing the original values in view state can cause the page size to become unnecessarily large and can expose sensitive data to a malicious user. You can disable storing values in view state by setting the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`. If you do this, you must provide your own way to make sure that the data has not changed. If you set the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`, the original values are not persisted in view state for the data-bound control. In that case, LINQ to SQL cannot verify the integrity of the data. LINQ to SQL will throw an exception that indicates a data conflict even if the data in the data source has not actually changed.  
   
- If the underlying data source contains a timestamp field that is automatically updated during an update, you can store only that value in view state. In that case, the timestamp property in the entity class is set to `IsVersion=true` and all the properties are set to `UpdateCheck.Never`. Because a timestamp field is automatically updated by the database every time that data in that record changes, LINQ to SQL determines from that value if data has changed. This helps reduce the size of view state, and no sensitive data is exposed. LINQ to SQL will check for data consistency by comparing the timestamp value in view state with the timestamp value in the database. For more information, see [Walkthrough: Using a Timestamp with the LinqDataSource Control to Check Data Integrity](http://msdn.microsoft.com/en-us/e7700162-4f05-4130-81f7-3be1361027fa).  
+ If the underlying data source contains a timestamp field that is automatically updated during an update, you can store only that value in view state. In that case, the timestamp property in the entity class is set to `IsVersion=true` and all the properties are set to `UpdateCheck.Never`. Because a timestamp field is automatically updated by the database every time that data in that record changes, LINQ to SQL determines from that value if data has changed. This helps reduce the size of view state, and no sensitive data is exposed. LINQ to SQL will check for data consistency by comparing the timestamp value in view state with the timestamp value in the database. For more information, see [Walkthrough: Using a Timestamp with the LinqDataSource Control to Check Data Integrity](http://msdn.microsoft.com/library/e7700162-4f05-4130-81f7-3be1361027fa).  
   
  ]]></format>
         </remarks>
@@ -2171,7 +2171,7 @@ LinqDataSource1.Where = "Category = \"Sports\"";
   
  Alternatively, you can set the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> property to `true` and define the parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection. When the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> property is `true`, you do not have to include the named parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property. Instead, the <xref:System.Web.UI.WebControls.LinqDataSource> control automatically generates the Where clause from the parameters in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> property.  
   
- For more information about how to filter data, see [Walkthrough: Selecting and Filtering a Subset of Data with the LinqDataSource and GridView Controls](http://msdn.microsoft.com/en-us/c1cca3e8-86e4-4e69-a29f-1c05b91f2205).  
+ For more information about how to filter data, see [Walkthrough: Selecting and Filtering a Subset of Data with the LinqDataSource and GridView Controls](http://msdn.microsoft.com/library/c1cca3e8-86e4-4e69-a29f-1c05b91f2205).  
   
    
   

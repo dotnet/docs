@@ -15,7 +15,7 @@
 ## Remarks  
  Implement the <xref:System.Web.IPartitionResolver> interface and the <xref:System.Web.IPartitionResolver.Initialize%2A> and <xref:System.Web.IPartitionResolver.ResolvePartition%2A> methods, if you are providing custom partition resolution for session-state data across multiple backend nodes when in SQL or state-server mode.  
   
- The session-state management information can be configured in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) of the configuration file with the `partitionResolverType` attribute. If a value is specified for the `partitionResolverType` attribute, the `sqlConnectionString` and `stateConnectionString` attributes are ignored.  
+ The session-state management information can be configured in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) of the configuration file with the `partitionResolverType` attribute. If a value is specified for the `partitionResolverType` attribute, the `sqlConnectionString` and `stateConnectionString` attributes are ignored.  
   
  The partition resolution configuration can also be set programmatically using the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property. If the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property is specified, the <xref:System.Web.Configuration.SessionStateSection.SqlConnectionString%2A> and <xref:System.Web.Configuration.SessionStateSection.StateConnectionString%2A> properties are ignored.  
   

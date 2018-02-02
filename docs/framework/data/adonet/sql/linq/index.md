@@ -49,14 +49,14 @@ ms.workload:
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] users.  
   
- [LINQ to ADO.NET](http://msdn.microsoft.com/en-us/be3297b9-1b54-4d4c-82a8-add0d79c2006)  
+ [LINQ to ADO.NET](http://msdn.microsoft.com/library/be3297b9-1b54-4d4c-82a8-add0d79c2006)  
  Links to the [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] portal.  
   
- [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/en-us/308e66ac-f704-4e00-9b4e-7af0045a2374)  
+ [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)  
  Lists walkthroughs available for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
  Describes how to download sample databases used in the documentation.  
   
- [LinqDataSource Technology Overview](http://msdn.microsoft.com/en-us/104cfc3f-7385-47d3-8a51-830dfa791136)  
+ [LinqDataSource Technology Overview](http://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
  Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes [!INCLUDE[vbteclinqext](../../../../../../includes/vbteclinqext-md.md)] to Web developers through the [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] data-source control architecture.

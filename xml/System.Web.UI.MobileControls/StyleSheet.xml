@@ -38,7 +38,7 @@
 ## Remarks  
  A <xref:System.Web.UI.MobileControls.StyleSheet> control can contain any number of style objects, or more specialized style objects that inherit from the <xref:System.Web.UI.MobileControls.Style> class. These should have unique name properties. You can then refer to other controls on the same page by their <xref:System.Web.UI.MobileControls.Style.Name%2A> property. This class has no visual representation.  
   
- A page can also use an external style sheet, and several pages can share the same external style sheet. For more information about styles, refer to the [\<style>](http://msdn.microsoft.com/en-us/0048ce21-2c92-4377-a211-9aca9efdf748) element and the <xref:System.Web.UI.MobileControls.StyleSheet.Styles%2A> topic.  
+ A page can also use an external style sheet, and several pages can share the same external style sheet. For more information about styles, refer to the [\<style>](http://msdn.microsoft.com/library/0048ce21-2c92-4377-a211-9aca9efdf748) element and the <xref:System.Web.UI.MobileControls.StyleSheet.Styles%2A> topic.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.MobileControls.StyleSheet> control ignores its own style attributes; setting a style attribute on the <xref:System.Web.UI.MobileControls.StyleSheet> itself has no effect on the styles contained as children within the <xref:System.Web.UI.MobileControls.StyleSheet> control.  

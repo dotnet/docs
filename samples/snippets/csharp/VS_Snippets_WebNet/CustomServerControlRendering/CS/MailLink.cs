@@ -25,7 +25,7 @@ namespace Samples.AspNet.CS.Controls
         Bindable(true),
         Category("Appearance"),
         DefaultValue(""),
-        Description("The e-mail address.")
+        Description("The email address.")
         ]
         public virtual string Email
         {

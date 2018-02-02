@@ -45,7 +45,7 @@
   
  Combining the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> is particularly useful when applied to arrays and formatted, non-blittable types. Callers see the changes a callee makes to these types only when you apply both attributes. Since these types require copying during marshaling, you can use <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> to reduce unnecessary copies.  
   
- For more information on the effect of <xref:System.Runtime.InteropServices.OutAttribute> on marshaling behavior, see [Directional Attributes](http://msdn.microsoft.com/en-us/241ac5b5-928e-4969-8f58-1dbc048f9ea2).  
+ For more information on the effect of <xref:System.Runtime.InteropServices.OutAttribute> on marshaling behavior, see [Directional Attributes](http://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2).  
   
    
   

@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate whether the update operation should be canceled. To determine the value of the command argument, use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument%2A> property. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you need to access the original key field values for the record being updated, use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property. The original non-key field values can be accessed by using the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.OldValues%2A> property. Updated values (which include updated key field values, if you allow the user to edit key fields) are accessed using the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.%23ctor%2A> constructor.  
   

@@ -58,12 +58,12 @@ MailMessage to@contoso.com from@contoso.com test hello
       </Parameters>
       <Docs>
         <param name="message">The <see cref="T:System.Web.Mail.MailMessage" /> to send.</param>
-        <summary>Sends an e-mail message using arguments supplied in the properties of the <see cref="T:System.Web.Mail.MailMessage" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Sends an email message using arguments supplied in the properties of the <see cref="T:System.Web.Mail.MailMessage" /> class. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use <xref:System.Web.Mail.MailMessage> to send an e-mail message using <xref:System.Web.Mail.SmtpMail>.  
+ The following example shows how to use <xref:System.Web.Mail.MailMessage> to send an email message using <xref:System.Web.Mail.SmtpMail>.  
   
  [!code-csharp[Classic SmtpMail.Send Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic SmtpMail.Send Example/CS/smtpmailsend.cs#1)]
  [!code-vb[Classic SmtpMail.Send Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic SmtpMail.Send Example/VB/smtpmailsend.vb#1)]  
@@ -93,11 +93,11 @@ MailMessage to@contoso.com from@contoso.com test hello
         <Parameter Name="messageText" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="from">The address of the e-mail sender.</param>
-        <param name="to">The address of the e-mail recipient.</param>
-        <param name="subject">The subject line of the e-mail message.</param>
-        <param name="messageText">The body of the e-mail message.</param>
-        <summary>Sends an e-mail message using the specified destination parameters. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <param name="from">The address of the email sender.</param>
+        <param name="to">The address of the email recipient.</param>
+        <param name="subject">The subject line of the email message.</param>
+        <param name="messageText">The body of the email message.</param>
+        <summary>Sends an email message using the specified destination parameters. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -125,15 +125,15 @@ MailMessage to@contoso.com from@contoso.com test hello
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the SMTP relay mail server to use to send e-mail messages. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
-        <value>The name of the e-mail relay server.</value>
+        <summary>Gets or sets the name of the SMTP relay mail server to use to send email messages. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <value>The name of the email relay server.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If your local SMTP server (included with Windows 2000 and Windows Server 2003) is behind a firewall that blocks any direct SMTP traffic (through port 25), you will need to find out if there is a smart host available on your network that is allowed to relay SMTP messages to the Internet.  
   
- A smart host is an SMTP server with the permissions to relay outgoing e-mail messages directly to the Internet from internal SMTP servers. A smart host should be able to simultaneously connect to both the internal network and the Internet in order to work as the e-mail gateway.  
+ A smart host is an SMTP server with the permissions to relay outgoing email messages directly to the Internet from internal SMTP servers. A smart host should be able to simultaneously connect to both the internal network and the Internet in order to work as the email gateway.  
   
    
   
@@ -151,7 +151,7 @@ MailMessage to@contoso.com from@contoso.com test hello
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Sends an e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+        <summary>Sends an email message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
       </Docs>
     </MemberGroup>
   </Members>

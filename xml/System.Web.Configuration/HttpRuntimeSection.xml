@@ -466,7 +466,7 @@
 ## Remarks  
  ASP.NET uses the <xref:System.Web.Util.HttpEncoder> type as the default handler for HTML and URL encoding tasks.  
   
- To customize encoding behavior, you can create a class that inherits from the <xref:System.Web.Util.HttpEncoder> type. In the configuration file for an application, you then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To customize encoding behavior, you can create a class that inherits from the <xref:System.Web.Util.HttpEncoder> type. In the configuration file for an application, you then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -574,7 +574,7 @@
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
   
- You can set this value in a configuration file by setting the `maxQueryStringLength` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the `maxQueryStringLength` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
 > [!NOTE]
 >  There is also an IIS setting that controls query string length. See the `maxQueryString` attribute in [Request Limits \<requestLimits>](http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits).  
@@ -661,7 +661,7 @@
   
  If the length of the request URL (which is the value of the <xref:System.Web.HttpRequest.Path%2A> property) exceeds the configured size limit, ASP.NET returns an HTTP 400 (Bad Request) status code  
   
- You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -841,7 +841,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> property determines how the URL in an incoming HTTP request will be validated. If this property is `false`, the URL is validated by using the same rules that determine whether a Windows file system path is valid.  
   
- You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ You can set this value in a configuration file by setting the <xref:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping%2A> attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -915,7 +915,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To set this value in a configuration file, you can assign a comma-separated string of characters to the `requestPathInvalidCharacters` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To set this value in a configuration file, you can assign a comma-separated string of characters to the `requestPathInvalidCharacters` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -958,7 +958,7 @@
   
  The value that you assign to this property is not validated to match a specific version of ASP.NET. Any numeric value smaller than `4.0` (for example, `3.7`, `2.9`, or `2.0`) is interpreted as `2.0`. Any number larger than `4.5` is interpreted as `4.5`.  
   
- To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>
@@ -991,7 +991,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To customize ASP.NET request validation behavior, you can create a class that inherits from the <xref:System.Web.Util.RequestValidator> type. In the configuration file for an application, you then set the `requestValidationType` attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
+ To customize ASP.NET request validation behavior, you can create a class that inherits from the <xref:System.Web.Util.RequestValidator> type. In the configuration file for an application, you then set the `requestValidationType` attribute of the `httpRuntime` element to the fully qualified string name of the custom type. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
  ]]></format>
         </remarks>

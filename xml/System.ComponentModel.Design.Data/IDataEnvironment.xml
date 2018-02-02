@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A> method writes a connection to the application's configuration file. The connection string and provider name are written to the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration element named according to the `name` parameter. The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.Name%2A> property of the `connection` parameter is ignored.  
+ The <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A> method writes a connection to the application's configuration file. The connection string and provider name are written to the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration element named according to the `name` parameter. The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.Name%2A> property of the `connection` parameter is ignored.  
   
  Implementations of the <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A> method should throw the following exceptions.  
   
@@ -132,7 +132,7 @@
 |<xref:System.IO.FileNotFoundException>, <xref:System.UnauthorizedAccessException>, or other appropriate file IO exception.|The application's configuration file cannot be updated. Your <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A> method implementation should throw an appropriate exception.|  
 |<xref:System.ComponentModel.Design.CheckoutException>|The application's configuration file cannot be checked out from the source control system.|  
   
- Consider using the configuration-management APIs in the <xref:System.Configuration> namespace to read and write the application's configuration file. The <xref:System.Configuration.ConnectionStringsSection> class will read and write the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration element.  
+ Consider using the configuration-management APIs in the <xref:System.Configuration> namespace to read and write the application's configuration file. The <xref:System.Configuration.ConnectionStringsSection> class will read and write the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration element.  
   
  ]]></format>
         </remarks>

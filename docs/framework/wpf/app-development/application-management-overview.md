@@ -379,5 +379,5 @@ All applications tend to share a common set of functionality that applies to app
  [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)  
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [Application Model: How-to Topics](http://msdn.microsoft.com/en-us/76771b09-3688-4d1c-8818-9b3f4cf39a30)  
+ [Application Model: How-to Topics](http://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)  
  [Application Development](../../../../docs/framework/wpf/app-development/index.md)

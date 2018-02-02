@@ -33,12 +33,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.SendCompletedEventHandler> delegate is used to handle events that occur when the <xref:System.Net.Mail.SmtpClient> class finishes asynchronously sending an e-mail message using the <xref:System.Net.Mail.SmtpClient.SendAsync%2A> method.  
+ The <xref:System.Net.Mail.SendCompletedEventHandler> delegate is used to handle events that occur when the <xref:System.Net.Mail.SmtpClient> class finishes asynchronously sending an email message using the <xref:System.Net.Mail.SmtpClient.SendAsync%2A> method.  
   
    
   
 ## Examples  
- The following code example demonstrates sending an e-mail message asynchronously. It uses a <xref:System.Net.Mail.SendCompletedEventHandler> to invoke the `SendCompletedCallback` method to handle <xref:System.Net.Mail.SmtpClient.SendCompleted> events.  
+ The following code example demonstrates sending an email message asynchronously. It uses a <xref:System.Net.Mail.SendCompletedEventHandler> to invoke the `SendCompletedCallback` method to handle <xref:System.Net.Mail.SmtpClient.SendCompleted> events.  
   
  [!code-cpp[NclMailASync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailASync/cpp/mailasync.cpp#1)]
  [!code-csharp[NclMailASync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailASync/CS/mailasync.cs#1)]

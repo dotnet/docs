@@ -1881,7 +1881,7 @@ These data point properties are:
       </Docs>
     </Member>
     <Member MemberName="HitTest">
-      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, System.Windows.Forms.DataVisualization.Charting.ChartElementType[] requestedElement);" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, params System.Windows.Forms.DataVisualization.Charting.ChartElementType[] requestedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataVisualization.Charting.HitTestResult[] HitTest(int32 x, int32 y, bool ignoreTransparent, valuetype System.Windows.Forms.DataVisualization.Charting.ChartElementType[] requestedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Windows.Forms.DataVisualization.Charting.ChartElementType[])" />
       <MemberType>Method</MemberType>
@@ -3118,5 +3118,59 @@ These data point properties are:
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the image to the specifed target.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the entire surface of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> and causes the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control to be redrawn.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AlignDataPointsByAxisLabel">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aligns data points using their axis labels.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Automatically creates and binds series data to the specified data table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a template into the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control from a specified source.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindCrossTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds a chart to the table, with one series created per unique value in a given column.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

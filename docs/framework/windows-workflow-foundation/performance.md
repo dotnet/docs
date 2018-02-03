@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 caps.latest.revision: 9
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow Foundation 4 Performance
 Dustin Metzgar  
@@ -29,7 +31,7 @@ Dustin Metzgar
   
  [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] is Microsoft’s unified programming model for building service-oriented applications. It was first introduced as part of .Net 3.0 together with WF3 and now is one of the key components of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
   
- Windows Server AppFabric is a set of integrated technologies that make it easier to build, scale and manage Web and composite applications that run on IIS. It provides tools for monitoring and managing services and workflows. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Windows Server AppFabric](http://msdn.microsoft.com/windowsserver/ee695849.aspx)  
+ Windows Server AppFabric is a set of integrated technologies that make it easier to build, scale and manage Web and composite applications that run on IIS. It provides tools for monitoring and managing services and workflows. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Windows Server AppFabric](http://msdn.microsoft.com/windowsserver/ee695849.aspx)  
   
 ## Goals  
  The goal of this topic is to show the performance characteristics of WF4 with data measured for different scenarios. It also provides detailed comparisons between WF4 and WF3, and thus shows the great improvements that have been made in this new revision. The scenarios and data presented in this article quantify the underlying cost of different aspects of WF4 and WF3. This data is useful in understanding the performance characteristics of WF4 and can be helpful in planning migrations from WF3 to WF4 or using WF4 in application development. However, care should be taken in the conclusions drawn from the data presented in this article. The performance of a composite workflow application is highly dependent on how the workflow is implemented and how different components are integrated. One must measure each application to determine the performance characteristics of that application.  
@@ -60,7 +62,7 @@ Dustin Metzgar
 ### Messaging  
  Initially WF3 had very limited messaging support through external events or web services invocations. In .Net 3.5, workflows could be implemented as [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] clients or exposed as [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services through <xref:System.Workflow.Activities.SendActivity> and <xref:System.Workflow.Activities.ReceiveActivity>. In WF4, the concept of workflow-based messaging programming has been further strengthened through the tight integration of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] messaging logic into WF.  
   
- The unified message processing pipeline provided in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Changing the Cache Sharing Levels for Send Activities](../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
+ The unified message processing pipeline provided in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] in .Net 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Changing the Cache Sharing Levels for Send Activities](../../../docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
   
 ### Declarative Programming  
  WF4 provides a clean and simple declarative programming framework to model business processes and services. The programming model supports fully declarative composition of activities, with no code-beside, greatly simplifying workflow authoring. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the XAML-based declarative programming framework has been unified into the single assembly System.Xaml.dll to support both WPF and WF.  
@@ -307,7 +309,7 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
  One of the clear trends to notice in this graph is that nesting has relatively minimal impact on memory usage in both WF3 and WF4.  The most significant memory impact comes from the number of activities in a given workflow.  Given the data from the sequence 1000, complex depth 5 sequence 5, and complex depth 7 sequence 1 variations, it is clear that as the number of activities enters the thousands, the memory usage increase becomes more noticeable.  In the extreme case (depth 7 sequence 1) where there are ~29K activities, WF4 is using almost 79% less memory than WF3.  
   
 ### Multiple Workflow Definitions Test  
- Measuring memory per workflow definition is divided into two different tests because of the available options for hosting workflows in WF3 and WF4.  The tests are run in a different manner than the workflow complexity test in that a given workflow is instanced and executed only once per definition.  This is because the workflow definition and its host remain in memory for the lifetime of the AppDomain.  The memory used by running a given workflow instance should be cleaned up during garbage collection.  The migration guidance for WF4 contains more detailed information on the hosting options. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][WF Migration Cookbook: Workflow Hosting](http://go.microsoft.com/fwlink/?LinkID=153313).  
+ Measuring memory per workflow definition is divided into two different tests because of the available options for hosting workflows in WF3 and WF4.  The tests are run in a different manner than the workflow complexity test in that a given workflow is instanced and executed only once per definition.  This is because the workflow definition and its host remain in memory for the lifetime of the AppDomain.  The memory used by running a given workflow instance should be cleaned up during garbage collection.  The migration guidance for WF4 contains more detailed information on the hosting options. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [WF Migration Cookbook: Workflow Hosting](http://go.microsoft.com/fwlink/?LinkID=153313).  
   
  Creating many workflow definitions for a workflow definition test can be done in several ways.  For instance, one could use code generation to create a set of 1000 workflows that are identical except in name and save each of those workflows into separate files.  This approach was taken for the console-hosted test.  In WF3, the <xref:System.Workflow.Runtime.WorkflowRuntime> class was used to run the workflow definitions.  WF4 can either use <xref:System.Activities.WorkflowApplication> to create a single workflow instance or directly use <xref:System.Activities.WorkflowInvoker> to run the activity as if it were a method call.  <xref:System.Activities.WorkflowApplication> is a host of a single workflow instance and has closer feature parity to <xref:System.Workflow.Runtime.WorkflowRuntime> so that was used in this test.  
   

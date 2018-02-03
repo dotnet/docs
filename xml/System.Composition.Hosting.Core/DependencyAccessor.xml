@@ -124,7 +124,7 @@
     </Member>
     <Member MemberName="TryResolveOptionalDependency">
       <MemberSignature Language="C#" Value="public bool TryResolveOptionalDependency (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, out System.Composition.Hosting.Core.CompositionDependency dependency);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveOptionalDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, class System.Composition.Hosting.Core.CompositionDependency dependency) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveOptionalDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, [out] class System.Composition.Hosting.Core.CompositionDependency&amp; dependency) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.TryResolveOptionalDependency(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean,System.Composition.Hosting.Core.CompositionDependency@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

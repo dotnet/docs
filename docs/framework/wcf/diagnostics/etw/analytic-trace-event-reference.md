@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "analytic tracing [WCF]. reference"
 ms.assetid: e44540cf-44a1-4efc-b965-7fbfd2131d73
 caps.latest.revision: 50
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Analytic Trace Event Reference
 The following table defines the event levels, identifiers, and messages associated with the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] Analytic Tracing.  

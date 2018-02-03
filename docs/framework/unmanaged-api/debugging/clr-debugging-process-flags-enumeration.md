@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAG"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAGS enumeration [.NET Framework debugging]"
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
@@ -28,6 +26,8 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR_DEBUGGING_PROCESS_FLAGS Enumeration
 Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md) method.  
@@ -64,5 +64,5 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)   
+ [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

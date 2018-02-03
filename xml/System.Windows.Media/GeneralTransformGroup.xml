@@ -218,7 +218,7 @@
     </Member>
     <Member MemberName="TryTransform">
       <MemberSignature Language="C#" Value="public override bool TryTransform (System.Windows.Point inPoint, out System.Windows.Point result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Point inPoint, valuetype System.Windows.Point result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Point inPoint, [out] valuetype System.Windows.Point&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransformGroup.TryTransform(System.Windows.Point,System.Windows.Point@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -238,6 +238,8 @@
         <summary>Attempts to transform the specified point.</summary>
         <returns>**true** if <paramref name="inPoint" /> was transformed; otherwise, **false**.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.GeneralTransform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
+        <altmember cref="M:System.Windows.Media.GeneralTransform.Transform(System.Windows.Point)" />
       </Docs>
     </Member>
   </Members>

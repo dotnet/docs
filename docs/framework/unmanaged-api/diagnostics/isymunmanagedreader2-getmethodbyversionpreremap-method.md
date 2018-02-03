@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodByVersionPreRemap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodByVersionPreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetMethodByVersionPreRemap method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader2::GetMethodByVersionPreRemap Method
 Gets a symbol reader method, given a method token and an edit-and-continue version number. Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-continue operation.  

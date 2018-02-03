@@ -32,6 +32,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
+    <altmember cref="T:System.Windows.Input.CanExecuteRoutedEventArgs" />
   </Docs>
   <Members>
     <Member MemberName="Command">
@@ -65,6 +68,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="InvokeEventHandler">
@@ -125,6 +130,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.ExecutedRoutedEventHandler" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
   </Members>

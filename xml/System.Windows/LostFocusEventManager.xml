@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.WeakEventManager" />
+    <altmember cref="T:System.Windows.IWeakEventListener" />
   </Docs>
   <Members>
     <Member MemberName="AddHandler">
@@ -77,6 +79,8 @@
         <param name="listener">The object to add as a listener.</param>
         <summary>Adds the provided listener to the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.WeakEventManager" />
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="NewListenerList">
@@ -144,6 +148,8 @@
         <param name="listener">The listener to remove.</param>
         <summary>Removes the specified listener from the list of listeners on the provided source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.WeakEventManager" />
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -172,6 +178,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.UIElement.LostFocus" />
+        <altmember cref="E:System.Windows.ContentElement.LostFocus" />
+        <altmember cref="T:System.Windows.WeakEventManager" />
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -193,6 +203,8 @@
         <param name="source">The source object on which to stop listening for <see cref="E:System.Windows.UIElement.LostFocus" />.</param>
         <summary>Stops listening for the <see cref="E:System.Windows.UIElement.LostFocus" /> event on the given source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.WeakEventManager" />
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
   </Members>

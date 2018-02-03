@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.WebProxy" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.WebProxy" />
+        <altmember cref="T:System.Net.IWebProxy" />
       </Docs>
     </Member>
     <Member MemberName="Properties">

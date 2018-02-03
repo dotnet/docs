@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDebuggingInterfaceFromVersion function"
   - "debugging API [Silverlight]"
@@ -22,6 +20,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateDebuggingInterfaceFromVersion Function for Silverlight
 Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](../../../../docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)).  

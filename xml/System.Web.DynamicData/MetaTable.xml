@@ -253,7 +253,7 @@ End Class
  The following example shows how to use the <xref:System.Web.DynamicData.MetaTable.Columns%2A> property. In the example, the Dynamic Data page templates have been copied to the \DynamicData\CustomPages\ProductDescriptions folder to provide a custom display for the ProductDescription table of the AdventureWorksLT database. The markup of the Insert.aspx file is changed to add an `OnDataBound` event handler named `DetailsView1_DataBound`. In the event handler, the <xref:System.Web.DynamicData.DynamicDataExtensions.FindMetaTable%2A> method is used to find the meta table. The <xref:System.Web.DynamicData.MetaTable.Columns%2A> property is used to display the number of columns in the table.  
   
  [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx.cs#1)]  
-<!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  -->  
+[!code-aspx-csharp[System.Web.DynamicData.DynamicDataExtensions#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicDataExtensions/cs/Insert.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1443,7 +1443,7 @@ End Sub
     </Member>
     <Member MemberName="TryGetColumn">
       <MemberSignature Language="C#" Value="public bool TryGetColumn (string columnName, out System.Web.DynamicData.MetaColumn column);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetColumn(string columnName, class System.Web.DynamicData.MetaColumn column) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetColumn(string columnName, [out] class System.Web.DynamicData.MetaColumn&amp; column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetColumn(System.String,System.Web.DynamicData.MetaColumn@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1475,7 +1475,7 @@ End Sub
     </Member>
     <Member MemberName="TryGetTable">
       <MemberSignature Language="C#" Value="public static bool TryGetTable (Type entityType, out System.Web.DynamicData.MetaTable table);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTable(class System.Type entityType, class System.Web.DynamicData.MetaTable table) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTable(class System.Type entityType, [out] class System.Web.DynamicData.MetaTable&amp; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaTable.TryGetTable(System.Type,System.Web.DynamicData.MetaTable@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1499,5 +1499,32 @@ End Sub
           <paramref name="entityType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Web.DynamicData.MetaTable" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPrimaryKeyString">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a list of values that represent the primary key for the specified row.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetQuery">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Linq.IQueryable" /> instance for the entity type that represents the table.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

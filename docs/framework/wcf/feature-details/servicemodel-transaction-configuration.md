@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "transactions [WCF], ServiceModel configuration"
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ServiceModel Transaction Configuration
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides three attributes for configuring transactions for a service: `transactionFlow`, `transactionProtocol`, and `transactionTimeout`.  
@@ -69,5 +71,5 @@ manager: "erikre"
  Note that the time-out value used is the smaller value between this `transactionTimeout` configuration setting and any <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> property.  
   
 ## See Also  
- [\<binding>](../../../../docs/framework/misc/binding.md)   
+ [\<binding>](../../../../docs/framework/misc/binding.md)  
  [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md)

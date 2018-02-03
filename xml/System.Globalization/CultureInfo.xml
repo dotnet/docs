@@ -42,10 +42,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/globalization/cultureinfo.cs#e319c6636909012f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Globalization.CultureInfo> class provides culture-specific information, such as the language, sublanguage, country/region, calendar, and conventions associated with a particular culture. This class also provides access to culture-specific instances of the <xref:System.Globalization.DateTimeFormatInfo>, <xref:System.Globalization.NumberFormatInfo>, <xref:System.Globalization.CompareInfo>, and <xref:System.Globalization.TextInfo> objects. These objects contain the information required for culture-specific operations, such as casing, formatting dates and numbers, and comparing strings. The <xref:System.Globalization.CultureInfo> class is used either directly or indirectly by classes that format, parse, or manipulate culture-specific data, such as <xref:System.String>, <xref:System.DateTime>, <xref:System.DateTimeOffset>, and the numeric types.  
   
  In this section:  
@@ -326,6 +322,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.CultureAndRegionInfoBuilder" />
+    <altmember cref="T:System.Globalization.RegionInfo" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -388,6 +386,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="culture" /> is not a valid culture identifier. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this constructor throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="culture" /> from the operating system; if the operating system does not support that culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.LCID" />
+        <altmember cref="P:System.Globalization.CultureInfo.UseUserOverride" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -425,7 +425,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
 ## Remarks  
  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
- If `name` is <xref:System.String?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+ If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
  The user might choose to override some of the values associated with the current culture of Windows through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture. If the culture identifier associated with `name` matches the culture identifier of the current Windows culture, this constructor creates a <xref:System.Globalization.CultureInfo> object that uses those overrides, including user settings for the properties of the <xref:System.Globalization.DateTimeFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property, and the properties of the <xref:System.Globalization.NumberFormatInfo> instance returned by the <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo>, for example, if the selected calendar is not one of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A>, the results of the methods and the values of the properties are undefined.  
   
@@ -460,6 +460,9 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> is not a valid culture name. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this constructor throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="name" /> from the operating system; if the operating system does not support that culture, and if <paramref name="name" /> is not the name of a supplementary or replacement culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.LCID" />
+        <altmember cref="P:System.Globalization.CultureInfo.UseUserOverride" />
+        <altmember cref="M:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -532,6 +535,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="culture" /> is not a valid culture identifier. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this constructor throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="culture" /> from the operating system; if the operating system does not support that culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.LCID" />
+        <altmember cref="P:System.Globalization.CultureInfo.UseUserOverride" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -566,7 +571,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
 ## Remarks  
  For a list of predefined culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center. In addition, starting with Windows 10, `name` can be any valid BCP-47 language tag.  
   
- If `name` is <xref:System.String?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
+ If `name` is <xref:System.String.Empty?displayProperty=nameWithType>, the constructor creates an instance of the invariant culture; this is equivalent to retrieving the value of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> property.  
   
  The user might choose to override some of the values associated with the current Windows culture through the regional and language options portion of Control Panel. For example, the user might choose to display the date in a different format or to use a currency other than the default for the culture.  
   
@@ -601,6 +606,9 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> is not a valid culture name. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this constructor throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="name" /> from the operating system; if the operating system does not support that culture, and if <paramref name="name" /> is not the name of a supplementary or replacement culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.LCID" />
+        <altmember cref="P:System.Globalization.CultureInfo.UseUserOverride" />
+        <altmember cref="M:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Calendar">
@@ -646,6 +654,9 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.Calendar" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="ClearCachedData">
@@ -737,6 +748,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CompareInfo">
@@ -789,6 +801,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CompareInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateSpecificCulture">
@@ -870,6 +883,8 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> is not a valid culture name. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this method throws a <see cref="T:System.Globalization.CultureNotFoundException" />.</para>
         </block>
+        <altmember cref="Overload:System.Globalization.CultureInfo.#ctor" />
+        <altmember cref="P:System.Globalization.CultureInfo.Parent" />
       </Docs>
     </Member>
     <Member MemberName="CultureTypes">
@@ -913,6 +928,7 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureTypes" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCulture">
@@ -1046,6 +1062,14 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is set to <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for setting the current culture. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" /></permission>
+        <altmember cref="P:System.Globalization.CultureInfo.DefaultThreadCurrentCulture" />
+        <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InstalledUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.Parent" />
+        <altmember cref="T:System.Security.Permissions.SecurityPermission" />
+        <altmember cref="T:System.Security.Permissions.SecurityPermissionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CurrentUICulture">
@@ -1166,6 +1190,11 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
         <exception cref="T:System.ArgumentNullException">The property is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The property is set to a culture name that cannot be used to locate a resource file. Resource filenames can include only letters, numbers, hyphens, or underscores.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for setting the current UI culture. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" /></permission>
+        <altmember cref="T:System.Resources.ResourceManager" />
+        <altmember cref="P:System.Threading.Thread.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InstalledUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture" />
       </Docs>
     </Member>
     <Member MemberName="DateTimeFormat">
@@ -1225,6 +1254,9 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
         <block subset="none" type="usage">
           <para>If <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> is the <see cref="T:System.Globalization.TaiwanCalendar" /> but the <see cref="P:System.Threading.Thread.CurrentCulture" /> is not set to Chinese (Taiwan), named zh-TW, then <see cref="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />, <see cref="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />, and <see cref="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" /> return an empty string ("").</para>
         </block>
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="M:System.Globalization.CultureInfo.GetFormat(System.Type)" />
+        <altmember cref="P:System.Globalization.CultureInfo.NumberFormat" />
       </Docs>
     </Member>
     <Member MemberName="DefaultThreadCurrentCulture">
@@ -1288,6 +1320,8 @@ In .NET Framework and .NET Core apps, the current UI culture is a per-thread set
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture" />
       </Docs>
     </Member>
     <Member MemberName="DefaultThreadCurrentUICulture">
@@ -1400,6 +1434,8 @@ csc /resource:GreetingStrings.resources Example1.cs
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">In a set operation, the <see cref="P:System.Globalization.CultureInfo.Name" /> property value is invalid.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.DefaultThreadCurrentCulture" />
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -1455,6 +1491,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="EnglishName">
@@ -1508,6 +1550,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1554,6 +1602,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetConsoleFallbackUICulture">
@@ -1742,6 +1791,8 @@ csc /resource:GreetingStrings.resources Example1.cs
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="culture" /> is not a valid culture identifier. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this method throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="culture" /> from the operating system; if the operating system does not support that culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" />.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.LCID" />
+        <altmember cref="M:System.Globalization.CultureInfo.ClearCachedData" />
       </Docs>
     </Member>
     <Member MemberName="GetCultureInfo">
@@ -1793,6 +1844,7 @@ csc /resource:GreetingStrings.resources Example1.cs
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> is not a valid culture name. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this method throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="name" /> from the operating system; if the operating system does not support that culture, and if <paramref name="name" /> is not the name of a supplementary or replacement culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" />.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="GetCultureInfo">
@@ -1844,6 +1896,8 @@ csc /resource:GreetingStrings.resources Example1.cs
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> or <paramref name="altName" /> is not a valid culture name. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this method throws a <see cref="T:System.Globalization.CultureNotFoundException" />. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="name" /> from the operating system; if the operating system does not support that culture, and if <paramref name="name" /> is not the name of a supplementary or replacement culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception. Starting with apps that run under the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later on Windows 7 or later, the method attempts to retrieve a <see cref="T:System.Globalization.CultureInfo" /> object whose identifier is <paramref name="name" /> from the operating system; if the operating system does not support that culture, and if <paramref name="name" /> is not the name of a supplementary or replacement culture, the method throws a <see cref="T:System.Globalization.CultureNotFoundException" /> exception.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="M:System.Globalization.CultureInfo.ClearCachedData" />
       </Docs>
     </Member>
     <Member MemberName="GetCultureInfoByIetfLanguageTag">
@@ -1899,6 +1953,9 @@ csc /resource:GreetingStrings.resources Example1.cs
         <block subset="none" type="usage">
           <para>The [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] and earlier versions throw an <see cref="T:System.ArgumentException" /> if <paramref name="name" /> does not correspond to the name of a supported culture. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this method throws a <see cref="T:System.Globalization.CultureNotFoundException" />.</para>
         </block>
+        <altmember cref="P:System.Globalization.CultureInfo.TextInfo" />
+        <altmember cref="T:System.Globalization.CultureAndRegionInfoBuilder" />
+        <altmember cref="M:System.Globalization.CultureInfo.ClearCachedData" />
       </Docs>
     </Member>
     <Member MemberName="GetCultures">
@@ -1962,6 +2019,7 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="types" /> specifies an invalid combination of <see cref="T:System.Globalization.CultureTypes" /> values.</exception>
+        <altmember cref="T:System.Globalization.CultureTypes" />
       </Docs>
     </Member>
     <Member MemberName="GetFormat">
@@ -2015,6 +2073,11 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.NumberFormat" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -2057,6 +2120,9 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="M:System.Globalization.CultureInfo.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IetfLanguageTag">
@@ -2104,6 +2170,8 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.TextInfo" />
+        <altmember cref="T:System.Globalization.CultureAndRegionInfoBuilder" />
       </Docs>
     </Member>
     <Member MemberName="InstalledUICulture">
@@ -2138,6 +2206,11 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Resources.ResourceManager" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.Parent" />
       </Docs>
     </Member>
     <Member MemberName="InvariantCulture">
@@ -2191,10 +2264,15 @@ csc /resource:GreetingStrings.resources Example1.cs
  [!code-vb[System.Globalization.CultureInfo.InvariantCulture#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.invariantculture/vb/persist1.vb#1)]  
   
 ## Security Decisions  
- If you are making a security decision (such as whether to allow access to a system resource) based on the result of a string comparison or a case change, you should not use the invariant culture. Instead, you should perform a case-sensitive or case-insensitive ordinal comparison by calling a method that includes a <xref:System.StringComparison> parameter and supplying either <xref:System.StringComparison?displayProperty=nameWithType> or <xref:System.StringComparison?displayProperty=nameWithType> as an argument. Code that performs culture-sensitive string operations can cause security vulnerabilities if the current culture is changed or if the culture on the computer that is running the code differs from the culture that is used to test the code. In contrast, an ordinal comparison depends solely on the binary value of the compared characters.  
+ If you are making a security decision (such as whether to allow access to a system resource) based on the result of a string comparison or a case change, you should not use the invariant culture. Instead, you should perform a case-sensitive or case-insensitive ordinal comparison by calling a method that includes a <xref:System.StringComparison> parameter and supplying either <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> as an argument. Code that performs culture-sensitive string operations can cause security vulnerabilities if the current culture is changed or if the culture on the computer that is running the code differs from the culture that is used to test the code. In contrast, an ordinal comparison depends solely on the binary value of the compared characters.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InstalledUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.Parent" />
+        <altmember cref="P:System.Globalization.CultureInfo.IsNeutralCulture" />
       </Docs>
     </Member>
     <Member MemberName="IsNeutralCulture">
@@ -2249,6 +2327,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -2298,6 +2377,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.CultureInfo.ReadOnly(System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="KeyboardLayoutId">
@@ -2437,6 +2517,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="NativeName">
@@ -2476,6 +2562,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -2532,6 +2624,9 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is set to null.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Globalization.CultureInfo.NumberFormat" /> property or any of the <see cref="T:System.Globalization.NumberFormatInfo" /> properties is set, and the <see cref="T:System.Globalization.CultureInfo" /> is read-only.</exception>
+        <altmember cref="T:System.Globalization.NumberFormatInfo" />
+        <altmember cref="M:System.Globalization.CultureInfo.GetFormat(System.Type)" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
       </Docs>
     </Member>
     <Member MemberName="OptionalCalendars">
@@ -2580,6 +2675,9 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.Calendar" />
+        <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
+        <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2633,6 +2731,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Globalization.CultureInfo.#ctor" />
+        <altmember cref="M:System.Globalization.CultureInfo.CreateSpecificCulture(System.String)" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InstalledUICulture" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2687,6 +2791,7 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ci" /> is null.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="TextInfo">
@@ -2735,6 +2840,7 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.TextInfo" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterISOLanguageName">
@@ -2784,6 +2890,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="ThreeLetterWindowsLanguageName">
@@ -2833,6 +2945,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.TwoLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2875,6 +2993,8 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Object.ToString" />
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
       </Docs>
     </Member>
     <Member MemberName="TwoLetterISOLanguageName">
@@ -2927,6 +3047,12 @@ csc /resource:GreetingStrings.resources Example1.cs
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.CultureInfo.Name" />
+        <altmember cref="P:System.Globalization.CultureInfo.DisplayName" />
+        <altmember cref="P:System.Globalization.CultureInfo.NativeName" />
+        <altmember cref="P:System.Globalization.CultureInfo.EnglishName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterISOLanguageName" />
+        <altmember cref="P:System.Globalization.CultureInfo.ThreeLetterWindowsLanguageName" />
       </Docs>
     </Member>
     <Member MemberName="UseUserOverride">
@@ -2968,5 +3094,25 @@ csc /resource:GreetingStrings.resources Example1.cs
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.CultureInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCultureInfo">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a cached, read-only instance of a culture.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

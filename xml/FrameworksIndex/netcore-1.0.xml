@@ -1147,6 +1147,58 @@
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.Current" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator.System#Collections#IEnumerator#Current" />
     </Type>
+    <Type Name="System.ServiceModel.ClientBase`1/BeginOperationDelegate" Id="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />
+    <Type Name="System.ServiceModel.ClientBase`1/ChannelBase`1" Id="T:System.ServiceModel.ClientBase`1.ChannelBase`1">
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.#ctor(System.ServiceModel.ClientBase{`1})" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.EndInvoke(System.String,System.Object[],System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#IDisposable#Dispose" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IChannel#GetProperty``1" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#BeginSend(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#BeginSend(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#EndSend(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#Send(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#Send(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#BeginRequest(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#BeginRequest(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#EndRequest(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#Request(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#Request(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#BeginDisplayInitializationUI(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#DisplayInitializationUI" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#EndDisplayInitializationUI(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Abort" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Close" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Open" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#RemoteAddress" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#Via" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#RemoteAddress" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IRequestChannel#Via" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#AllowInitializationUI" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#DidInteractiveInitialization" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#Via" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#State" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#AllowOutputBatching" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#InputSession" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#LocalAddress" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#OperationTimeout" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#OutputSession" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#RemoteAddress" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IContextChannel#SessionId" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IExtensibleObject&lt;System#ServiceModel#IContextChannel&gt;#Extensions" />
+    </Type>
+    <Type Name="System.ServiceModel.ClientBase`1/EndOperationDelegate" Id="T:System.ServiceModel.ClientBase`1.EndOperationDelegate" />
+    <Type Name="System.ServiceModel.ClientBase`1/InvokeAsyncCompletedEventArgs" Id="T:System.ServiceModel.ClientBase`1.InvokeAsyncCompletedEventArgs">
+      <Member Id="P:System.ServiceModel.ClientBase`1.InvokeAsyncCompletedEventArgs.Results" />
+    </Type>
   </Namespace>
   <Namespace Name="Microsoft.Win32">
     <Type Name="Microsoft.Win32.Registry" Id="T:Microsoft.Win32.Registry">
@@ -11039,6 +11091,12 @@
       <Member Id="F:System.Globalization.UnicodeCategory.Surrogate" />
       <Member Id="F:System.Globalization.UnicodeCategory.TitlecaseLetter" />
       <Member Id="F:System.Globalization.UnicodeCategory.UppercaseLetter" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.IdentityModel.Selectors">
+    <Type Name="System.IdentityModel.Selectors.X509CertificateValidator" Id="T:System.IdentityModel.Selectors.X509CertificateValidator">
+      <Member Id="M:System.IdentityModel.Selectors.X509CertificateValidator.#ctor" />
+      <Member Id="M:System.IdentityModel.Selectors.X509CertificateValidator.Validate(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
     </Type>
   </Namespace>
   <Namespace Name="System.IO">
@@ -24314,6 +24372,1564 @@
       <Member Id="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)" />
       <Member Id="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.String)" />
       <Member Id="P:System.Security.Principal.WindowsPrincipal.Identity" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel">
+    <Type Name="System.ServiceModel.ActionNotSupportedException" Id="T:System.ServiceModel.ActionNotSupportedException">
+      <Member Id="M:System.ServiceModel.ActionNotSupportedException.#ctor" />
+      <Member Id="M:System.ServiceModel.ActionNotSupportedException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ActionNotSupportedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpBinding" Id="T:System.ServiceModel.BasicHttpBinding">
+      <Member Id="M:System.ServiceModel.BasicHttpBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.BasicHttpBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)" />
+      <Member Id="M:System.ServiceModel.BasicHttpBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.BasicHttpBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.BasicHttpBinding.Security" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpMessageCredentialType" Id="T:System.ServiceModel.BasicHttpMessageCredentialType">
+      <Member Id="F:System.ServiceModel.BasicHttpMessageCredentialType.Certificate" />
+      <Member Id="F:System.ServiceModel.BasicHttpMessageCredentialType.UserName" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpsBinding" Id="T:System.ServiceModel.BasicHttpsBinding">
+      <Member Id="M:System.ServiceModel.BasicHttpsBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.BasicHttpsBinding.#ctor(System.ServiceModel.BasicHttpsSecurityMode)" />
+      <Member Id="M:System.ServiceModel.BasicHttpsBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.BasicHttpsBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.BasicHttpsBinding.Security" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpSecurity" Id="T:System.ServiceModel.BasicHttpSecurity">
+      <Member Id="P:System.ServiceModel.BasicHttpSecurity.Mode" />
+      <Member Id="P:System.ServiceModel.BasicHttpSecurity.Transport" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpSecurityMode" Id="T:System.ServiceModel.BasicHttpSecurityMode">
+      <Member Id="F:System.ServiceModel.BasicHttpSecurityMode.Message" />
+      <Member Id="F:System.ServiceModel.BasicHttpSecurityMode.None" />
+      <Member Id="F:System.ServiceModel.BasicHttpSecurityMode.Transport" />
+      <Member Id="F:System.ServiceModel.BasicHttpSecurityMode.TransportCredentialOnly" />
+      <Member Id="F:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpsSecurity" Id="T:System.ServiceModel.BasicHttpsSecurity">
+      <Member Id="P:System.ServiceModel.BasicHttpsSecurity.Mode" />
+      <Member Id="P:System.ServiceModel.BasicHttpsSecurity.Transport" />
+    </Type>
+    <Type Name="System.ServiceModel.BasicHttpsSecurityMode" Id="T:System.ServiceModel.BasicHttpsSecurityMode">
+      <Member Id="F:System.ServiceModel.BasicHttpsSecurityMode.Transport" />
+      <Member Id="F:System.ServiceModel.BasicHttpsSecurityMode.TransportWithMessageCredential" />
+    </Type>
+    <Type Name="System.ServiceModel.CallbackBehaviorAttribute" Id="T:System.ServiceModel.CallbackBehaviorAttribute">
+      <Member Id="M:System.ServiceModel.CallbackBehaviorAttribute.#ctor" />
+      <Member Id="M:System.ServiceModel.CallbackBehaviorAttribute.System#ServiceModel#Description#IEndpointBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.CallbackBehaviorAttribute.System#ServiceModel#Description#IEndpointBehavior#ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <Member Id="M:System.ServiceModel.CallbackBehaviorAttribute.System#ServiceModel#Description#IEndpointBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
+      <Member Id="M:System.ServiceModel.CallbackBehaviorAttribute.System#ServiceModel#Description#IEndpointBehavior#Validate(System.ServiceModel.Description.ServiceEndpoint)" />
+      <Member Id="P:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown" />
+      <Member Id="P:System.ServiceModel.CallbackBehaviorAttribute.UseSynchronizationContext" />
+    </Type>
+    <Type Name="System.ServiceModel.ChannelFactory" Id="T:System.ServiceModel.ChannelFactory">
+      <Member Id="M:System.ServiceModel.ChannelFactory.#ctor" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.ApplyConfiguration(System.String)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.CreateDescription" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.CreateFactory" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.EnsureOpened" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.GetProperty``1" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.String,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnAbort" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnClose(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnEndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnEndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnOpen(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnOpened" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.OnOpening" />
+      <Member Id="M:System.ServiceModel.ChannelFactory.System#IDisposable#Dispose" />
+      <Member Id="P:System.ServiceModel.ChannelFactory.Credentials" />
+      <Member Id="P:System.ServiceModel.ChannelFactory.DefaultCloseTimeout" />
+      <Member Id="P:System.ServiceModel.ChannelFactory.DefaultOpenTimeout" />
+      <Member Id="P:System.ServiceModel.ChannelFactory.Endpoint" />
+    </Type>
+    <Type Name="System.ServiceModel.ChannelFactory`1" Id="T:System.ServiceModel.ChannelFactory`1">
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.#ctor(System.Type)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.CreateChannel" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <Member Id="M:System.ServiceModel.ChannelFactory`1.CreateDescription" />
+    </Type>
+    <Type Name="System.ServiceModel.ClientBase`1" Id="T:System.ServiceModel.ClientBase`1">
+      <Member Id="M:System.ServiceModel.ClientBase`1.#ctor" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.Abort" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.CreateChannel" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.GetDefaultValueForInitialization``1" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase`1.BeginOperationDelegate{`0},System.Object[],System.ServiceModel.ClientBase`1.EndOperationDelegate{`0},System.Threading.SendOrPostCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open" />
+      <Member Id="M:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.Channel" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ChannelFactory" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.ClientCredentials" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.Endpoint" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.InnerChannel" />
+      <Member Id="P:System.ServiceModel.ClientBase`1.State" />
+    </Type>
+    <Type Name="System.ServiceModel.CommunicationException" Id="T:System.ServiceModel.CommunicationException">
+      <Member Id="M:System.ServiceModel.CommunicationException.#ctor" />
+      <Member Id="M:System.ServiceModel.CommunicationException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.CommunicationException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.CommunicationObjectAbortedException" Id="T:System.ServiceModel.CommunicationObjectAbortedException">
+      <Member Id="M:System.ServiceModel.CommunicationObjectAbortedException.#ctor" />
+      <Member Id="M:System.ServiceModel.CommunicationObjectAbortedException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.CommunicationObjectAbortedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.CommunicationObjectFaultedException" Id="T:System.ServiceModel.CommunicationObjectFaultedException">
+      <Member Id="M:System.ServiceModel.CommunicationObjectFaultedException.#ctor" />
+      <Member Id="M:System.ServiceModel.CommunicationObjectFaultedException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.CommunicationObjectFaultedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.CommunicationState" Id="T:System.ServiceModel.CommunicationState">
+      <Member Id="F:System.ServiceModel.CommunicationState.Closed" />
+      <Member Id="F:System.ServiceModel.CommunicationState.Closing" />
+      <Member Id="F:System.ServiceModel.CommunicationState.Created" />
+      <Member Id="F:System.ServiceModel.CommunicationState.Faulted" />
+      <Member Id="F:System.ServiceModel.CommunicationState.Opened" />
+      <Member Id="F:System.ServiceModel.CommunicationState.Opening" />
+    </Type>
+    <Type Name="System.ServiceModel.DataContractFormatAttribute" Id="T:System.ServiceModel.DataContractFormatAttribute">
+      <Member Id="M:System.ServiceModel.DataContractFormatAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.DataContractFormatAttribute.Style" />
+    </Type>
+    <Type Name="System.ServiceModel.DnsEndpointIdentity" Id="T:System.ServiceModel.DnsEndpointIdentity">
+      <Member Id="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.DuplexChannelFactory`1" Id="T:System.ServiceModel.DuplexChannelFactory`1">
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.String)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.DuplexChannelFactory`1.CreateChannel(System.ServiceModel.InstanceContext,System.ServiceModel.EndpointAddress,System.Uri)" />
+    </Type>
+    <Type Name="System.ServiceModel.DuplexClientBase`1" Id="T:System.ServiceModel.DuplexClientBase`1">
+      <Member Id="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
+      <Member Id="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
+      <Member Id="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.EndpointAddress" Id="T:System.ServiceModel.EndpointAddress">
+      <Member Id="M:System.ServiceModel.EndpointAddress.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.Channels.AddressHeader[])" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.EndpointIdentity,System.ServiceModel.Channels.AddressHeader[])" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.ApplyTo(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.Equals(System.Object)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.GetHashCode" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.op_Equality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.op_Inequality(System.ServiceModel.EndpointAddress,System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.ReadFrom(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryReader)" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.ToString" />
+      <Member Id="M:System.ServiceModel.EndpointAddress.WriteContentsTo(System.ServiceModel.Channels.AddressingVersion,System.Xml.XmlDictionaryWriter)" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.AnonymousUri" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.Headers" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.Identity" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.IsAnonymous" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.IsNone" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.NoneUri" />
+      <Member Id="P:System.ServiceModel.EndpointAddress.Uri" />
+    </Type>
+    <Type Name="System.ServiceModel.EndpointAddressBuilder" Id="T:System.ServiceModel.EndpointAddressBuilder">
+      <Member Id="M:System.ServiceModel.EndpointAddressBuilder.#ctor" />
+      <Member Id="M:System.ServiceModel.EndpointAddressBuilder.#ctor(System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.EndpointAddressBuilder.ToEndpointAddress" />
+      <Member Id="P:System.ServiceModel.EndpointAddressBuilder.Headers" />
+      <Member Id="P:System.ServiceModel.EndpointAddressBuilder.Identity" />
+      <Member Id="P:System.ServiceModel.EndpointAddressBuilder.Uri" />
+    </Type>
+    <Type Name="System.ServiceModel.EndpointIdentity" Id="T:System.ServiceModel.EndpointIdentity">
+      <Member Id="M:System.ServiceModel.EndpointIdentity.#ctor" />
+      <Member Id="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" />
+      <Member Id="M:System.ServiceModel.EndpointIdentity.GetHashCode" />
+      <Member Id="M:System.ServiceModel.EndpointIdentity.ToString" />
+    </Type>
+    <Type Name="System.ServiceModel.EndpointNotFoundException" Id="T:System.ServiceModel.EndpointNotFoundException">
+      <Member Id="M:System.ServiceModel.EndpointNotFoundException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.EndpointNotFoundException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.EnvelopeVersion" Id="T:System.ServiceModel.EnvelopeVersion">
+      <Member Id="M:System.ServiceModel.EnvelopeVersion.GetUltimateDestinationActorValues" />
+      <Member Id="M:System.ServiceModel.EnvelopeVersion.ToString" />
+      <Member Id="P:System.ServiceModel.EnvelopeVersion.NextDestinationActorValue" />
+      <Member Id="P:System.ServiceModel.EnvelopeVersion.None" />
+      <Member Id="P:System.ServiceModel.EnvelopeVersion.Soap11" />
+      <Member Id="P:System.ServiceModel.EnvelopeVersion.Soap12" />
+    </Type>
+    <Type Name="System.ServiceModel.ExceptionDetail" Id="T:System.ServiceModel.ExceptionDetail">
+      <Member Id="M:System.ServiceModel.ExceptionDetail.#ctor(System.Exception)" />
+      <Member Id="M:System.ServiceModel.ExceptionDetail.ToString" />
+      <Member Id="P:System.ServiceModel.ExceptionDetail.HelpLink" />
+      <Member Id="P:System.ServiceModel.ExceptionDetail.InnerException" />
+      <Member Id="P:System.ServiceModel.ExceptionDetail.Message" />
+      <Member Id="P:System.ServiceModel.ExceptionDetail.StackTrace" />
+      <Member Id="P:System.ServiceModel.ExceptionDetail.Type" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultCode" Id="T:System.ServiceModel.FaultCode">
+      <Member Id="M:System.ServiceModel.FaultCode.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.FaultCode.#ctor(System.String,System.ServiceModel.FaultCode)" />
+      <Member Id="M:System.ServiceModel.FaultCode.#ctor(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.FaultCode.#ctor(System.String,System.String,System.ServiceModel.FaultCode)" />
+      <Member Id="M:System.ServiceModel.FaultCode.CreateSenderFaultCode(System.ServiceModel.FaultCode)" />
+      <Member Id="P:System.ServiceModel.FaultCode.IsPredefinedFault" />
+      <Member Id="P:System.ServiceModel.FaultCode.IsReceiverFault" />
+      <Member Id="P:System.ServiceModel.FaultCode.IsSenderFault" />
+      <Member Id="P:System.ServiceModel.FaultCode.Name" />
+      <Member Id="P:System.ServiceModel.FaultCode.Namespace" />
+      <Member Id="P:System.ServiceModel.FaultCode.SubCode" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultContractAttribute" Id="T:System.ServiceModel.FaultContractAttribute">
+      <Member Id="M:System.ServiceModel.FaultContractAttribute.#ctor(System.Type)" />
+      <Member Id="P:System.ServiceModel.FaultContractAttribute.Action" />
+      <Member Id="P:System.ServiceModel.FaultContractAttribute.DetailType" />
+      <Member Id="P:System.ServiceModel.FaultContractAttribute.Name" />
+      <Member Id="P:System.ServiceModel.FaultContractAttribute.Namespace" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultException" Id="T:System.ServiceModel.FaultException">
+      <Member Id="M:System.ServiceModel.FaultException.#ctor" />
+      <Member Id="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.Channels.MessageFault,System.String)" />
+      <Member Id="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason,System.ServiceModel.FaultCode,System.String)" />
+      <Member Id="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.String,System.Type[])" />
+      <Member Id="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.Type[])" />
+      <Member Id="M:System.ServiceModel.FaultException.CreateMessageFault" />
+      <Member Id="P:System.ServiceModel.FaultException.Action" />
+      <Member Id="P:System.ServiceModel.FaultException.Code" />
+      <Member Id="P:System.ServiceModel.FaultException.Message" />
+      <Member Id="P:System.ServiceModel.FaultException.Reason" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultException`1" Id="T:System.ServiceModel.FaultException`1">
+      <Member Id="M:System.ServiceModel.FaultException`1.#ctor(`0,System.ServiceModel.FaultReason,System.ServiceModel.FaultCode,System.String)" />
+      <Member Id="M:System.ServiceModel.FaultException`1.CreateMessageFault" />
+      <Member Id="M:System.ServiceModel.FaultException`1.ToString" />
+      <Member Id="P:System.ServiceModel.FaultException`1.Detail" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultReason" Id="T:System.ServiceModel.FaultReason">
+      <Member Id="M:System.ServiceModel.FaultReason.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.FaultReasonText})" />
+      <Member Id="M:System.ServiceModel.FaultReason.#ctor(System.ServiceModel.FaultReasonText)" />
+      <Member Id="M:System.ServiceModel.FaultReason.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.FaultReason.GetMatchingTranslation" />
+      <Member Id="M:System.ServiceModel.FaultReason.GetMatchingTranslation(System.Globalization.CultureInfo)" />
+      <Member Id="M:System.ServiceModel.FaultReason.ToString" />
+    </Type>
+    <Type Name="System.ServiceModel.FaultReasonText" Id="T:System.ServiceModel.FaultReasonText">
+      <Member Id="M:System.ServiceModel.FaultReasonText.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.FaultReasonText.#ctor(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.FaultReasonText.Matches(System.Globalization.CultureInfo)" />
+      <Member Id="P:System.ServiceModel.FaultReasonText.Text" />
+      <Member Id="P:System.ServiceModel.FaultReasonText.XmlLang" />
+    </Type>
+    <Type Name="System.ServiceModel.HttpBindingBase" Id="T:System.ServiceModel.HttpBindingBase">
+      <Member Id="P:System.ServiceModel.HttpBindingBase.AllowCookies" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.EnvelopeVersion" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.MaxBufferPoolSize" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.MaxBufferSize" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.ReaderQuotas" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.Scheme" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.TextEncoding" />
+      <Member Id="P:System.ServiceModel.HttpBindingBase.TransferMode" />
+    </Type>
+    <Type Name="System.ServiceModel.HttpClientCredentialType" Id="T:System.ServiceModel.HttpClientCredentialType">
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.Basic" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.Certificate" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.Digest" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.InheritedFromHost" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.None" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.Ntlm" />
+      <Member Id="F:System.ServiceModel.HttpClientCredentialType.Windows" />
+    </Type>
+    <Type Name="System.ServiceModel.HttpTransportSecurity" Id="T:System.ServiceModel.HttpTransportSecurity">
+      <Member Id="M:System.ServiceModel.HttpTransportSecurity.#ctor" />
+      <Member Id="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />
+    </Type>
+    <Type Name="System.ServiceModel.IClientChannel" Id="T:System.ServiceModel.IClientChannel">
+      <Member Id="E:System.ServiceModel.IClientChannel.UnknownMessageReceived" />
+      <Member Id="M:System.ServiceModel.IClientChannel.BeginDisplayInitializationUI(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.IClientChannel.DisplayInitializationUI" />
+      <Member Id="M:System.ServiceModel.IClientChannel.EndDisplayInitializationUI(System.IAsyncResult)" />
+      <Member Id="P:System.ServiceModel.IClientChannel.AllowInitializationUI" />
+      <Member Id="P:System.ServiceModel.IClientChannel.DidInteractiveInitialization" />
+      <Member Id="P:System.ServiceModel.IClientChannel.Via" />
+    </Type>
+    <Type Name="System.ServiceModel.ICommunicationObject" Id="T:System.ServiceModel.ICommunicationObject">
+      <Member Id="E:System.ServiceModel.ICommunicationObject.Closed" />
+      <Member Id="E:System.ServiceModel.ICommunicationObject.Closing" />
+      <Member Id="E:System.ServiceModel.ICommunicationObject.Faulted" />
+      <Member Id="E:System.ServiceModel.ICommunicationObject.Opened" />
+      <Member Id="E:System.ServiceModel.ICommunicationObject.Opening" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.Abort" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.Close" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.Open" />
+      <Member Id="M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.ICommunicationObject.State" />
+    </Type>
+    <Type Name="System.ServiceModel.IContextChannel" Id="T:System.ServiceModel.IContextChannel">
+      <Member Id="P:System.ServiceModel.IContextChannel.AllowOutputBatching" />
+      <Member Id="P:System.ServiceModel.IContextChannel.InputSession" />
+      <Member Id="P:System.ServiceModel.IContextChannel.LocalAddress" />
+      <Member Id="P:System.ServiceModel.IContextChannel.OperationTimeout" />
+      <Member Id="P:System.ServiceModel.IContextChannel.OutputSession" />
+      <Member Id="P:System.ServiceModel.IContextChannel.RemoteAddress" />
+      <Member Id="P:System.ServiceModel.IContextChannel.SessionId" />
+    </Type>
+    <Type Name="System.ServiceModel.IDefaultCommunicationTimeouts" Id="T:System.ServiceModel.IDefaultCommunicationTimeouts">
+      <Member Id="P:System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
+      <Member Id="P:System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
+      <Member Id="P:System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
+    </Type>
+    <Type Name="System.ServiceModel.IExtensibleObject`1" Id="T:System.ServiceModel.IExtensibleObject`1">
+      <Member Id="P:System.ServiceModel.IExtensibleObject`1.Extensions" />
+    </Type>
+    <Type Name="System.ServiceModel.IExtension`1" Id="T:System.ServiceModel.IExtension`1">
+      <Member Id="M:System.ServiceModel.IExtension`1.Attach(`0)" />
+      <Member Id="M:System.ServiceModel.IExtension`1.Detach(`0)" />
+    </Type>
+    <Type Name="System.ServiceModel.IExtensionCollection`1" Id="T:System.ServiceModel.IExtensionCollection`1">
+      <Member Id="M:System.ServiceModel.IExtensionCollection`1.Find``1" />
+      <Member Id="M:System.ServiceModel.IExtensionCollection`1.FindAll``1" />
+    </Type>
+    <Type Name="System.ServiceModel.InstanceContext" Id="T:System.ServiceModel.InstanceContext">
+      <Member Id="M:System.ServiceModel.InstanceContext.#ctor(System.Object)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.GetServiceInstance(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnAbort" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnClose(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnClosed" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnEndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnEndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnFaulted" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnOpen(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnOpened" />
+      <Member Id="M:System.ServiceModel.InstanceContext.OnOpening" />
+      <Member Id="P:System.ServiceModel.InstanceContext.DefaultCloseTimeout" />
+      <Member Id="P:System.ServiceModel.InstanceContext.DefaultOpenTimeout" />
+      <Member Id="P:System.ServiceModel.InstanceContext.SynchronizationContext" />
+      <Member Id="P:System.ServiceModel.InstanceContext.System#ServiceModel#IExtensibleObject&lt;System#ServiceModel#InstanceContext&gt;#Extensions" />
+    </Type>
+    <Type Name="System.ServiceModel.InvalidMessageContractException" Id="T:System.ServiceModel.InvalidMessageContractException">
+      <Member Id="M:System.ServiceModel.InvalidMessageContractException.#ctor" />
+      <Member Id="M:System.ServiceModel.InvalidMessageContractException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.InvalidMessageContractException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageBodyMemberAttribute" Id="T:System.ServiceModel.MessageBodyMemberAttribute">
+      <Member Id="M:System.ServiceModel.MessageBodyMemberAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageBodyMemberAttribute.Order" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageContractAttribute" Id="T:System.ServiceModel.MessageContractAttribute">
+      <Member Id="M:System.ServiceModel.MessageContractAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageContractAttribute.IsWrapped" />
+      <Member Id="P:System.ServiceModel.MessageContractAttribute.WrapperName" />
+      <Member Id="P:System.ServiceModel.MessageContractAttribute.WrapperNamespace" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageContractMemberAttribute" Id="T:System.ServiceModel.MessageContractMemberAttribute">
+      <Member Id="M:System.ServiceModel.MessageContractMemberAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageContractMemberAttribute.Name" />
+      <Member Id="P:System.ServiceModel.MessageContractMemberAttribute.Namespace" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageCredentialType" Id="T:System.ServiceModel.MessageCredentialType">
+      <Member Id="F:System.ServiceModel.MessageCredentialType.Certificate" />
+      <Member Id="F:System.ServiceModel.MessageCredentialType.IssuedToken" />
+      <Member Id="F:System.ServiceModel.MessageCredentialType.None" />
+      <Member Id="F:System.ServiceModel.MessageCredentialType.UserName" />
+      <Member Id="F:System.ServiceModel.MessageCredentialType.Windows" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageHeader`1" Id="T:System.ServiceModel.MessageHeader`1">
+      <Member Id="M:System.ServiceModel.MessageHeader`1.#ctor" />
+      <Member Id="M:System.ServiceModel.MessageHeader`1.#ctor(`0)" />
+      <Member Id="M:System.ServiceModel.MessageHeader`1.#ctor(`0,System.Boolean,System.String,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.MessageHeader`1.GetUntypedHeader(System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.MessageHeader`1.Actor" />
+      <Member Id="P:System.ServiceModel.MessageHeader`1.Content" />
+      <Member Id="P:System.ServiceModel.MessageHeader`1.MustUnderstand" />
+      <Member Id="P:System.ServiceModel.MessageHeader`1.Relay" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageHeaderAttribute" Id="T:System.ServiceModel.MessageHeaderAttribute">
+      <Member Id="M:System.ServiceModel.MessageHeaderAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageHeaderAttribute.MustUnderstand" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageHeaderException" Id="T:System.ServiceModel.MessageHeaderException">
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.String,System.String,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.String,System.String,System.Boolean,System.Exception)" />
+      <Member Id="M:System.ServiceModel.MessageHeaderException.#ctor(System.String,System.String,System.String,System.Exception)" />
+      <Member Id="P:System.ServiceModel.MessageHeaderException.HeaderName" />
+      <Member Id="P:System.ServiceModel.MessageHeaderException.HeaderNamespace" />
+      <Member Id="P:System.ServiceModel.MessageHeaderException.IsDuplicate" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageParameterAttribute" Id="T:System.ServiceModel.MessageParameterAttribute">
+      <Member Id="M:System.ServiceModel.MessageParameterAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageParameterAttribute.Name" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageSecurityOverTcp" Id="T:System.ServiceModel.MessageSecurityOverTcp">
+      <Member Id="M:System.ServiceModel.MessageSecurityOverTcp.#ctor" />
+      <Member Id="P:System.ServiceModel.MessageSecurityOverTcp.ClientCredentialType" />
+    </Type>
+    <Type Name="System.ServiceModel.MessageSecurityVersion" Id="T:System.ServiceModel.MessageSecurityVersion">
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.BasicSecurityProfileVersion" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.SecureConversationVersion" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.SecurityPolicyVersion" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.SecurityVersion" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.TrustVersion" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11" />
+      <Member Id="P:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10" />
+    </Type>
+    <Type Name="System.ServiceModel.NetHttpBinding" Id="T:System.ServiceModel.NetHttpBinding">
+      <Member Id="M:System.ServiceModel.NetHttpBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.NetHttpBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)" />
+      <Member Id="M:System.ServiceModel.NetHttpBinding.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.NetHttpBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.NetHttpBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.NetHttpBinding.MessageEncoding" />
+      <Member Id="P:System.ServiceModel.NetHttpBinding.Security" />
+      <Member Id="P:System.ServiceModel.NetHttpBinding.WebSocketSettings" />
+    </Type>
+    <Type Name="System.ServiceModel.NetHttpMessageEncoding" Id="T:System.ServiceModel.NetHttpMessageEncoding">
+      <Member Id="F:System.ServiceModel.NetHttpMessageEncoding.Binary" />
+      <Member Id="F:System.ServiceModel.NetHttpMessageEncoding.Mtom" />
+      <Member Id="F:System.ServiceModel.NetHttpMessageEncoding.Text" />
+    </Type>
+    <Type Name="System.ServiceModel.NetHttpsBinding" Id="T:System.ServiceModel.NetHttpsBinding">
+      <Member Id="M:System.ServiceModel.NetHttpsBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.NetHttpsBinding.#ctor(System.ServiceModel.BasicHttpsSecurityMode)" />
+      <Member Id="M:System.ServiceModel.NetHttpsBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.NetHttpsBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.NetHttpsBinding.MessageEncoding" />
+      <Member Id="P:System.ServiceModel.NetHttpsBinding.Security" />
+      <Member Id="P:System.ServiceModel.NetHttpsBinding.WebSocketSettings" />
+    </Type>
+    <Type Name="System.ServiceModel.NetTcpBinding" Id="T:System.ServiceModel.NetTcpBinding">
+      <Member Id="M:System.ServiceModel.NetTcpBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.NetTcpBinding.#ctor(System.ServiceModel.SecurityMode)" />
+      <Member Id="M:System.ServiceModel.NetTcpBinding.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.NetTcpBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.EnvelopeVersion" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.MaxBufferPoolSize" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.MaxBufferSize" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.ReaderQuotas" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.Scheme" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.Security" />
+      <Member Id="P:System.ServiceModel.NetTcpBinding.TransferMode" />
+    </Type>
+    <Type Name="System.ServiceModel.NetTcpSecurity" Id="T:System.ServiceModel.NetTcpSecurity">
+      <Member Id="M:System.ServiceModel.NetTcpSecurity.#ctor" />
+      <Member Id="P:System.ServiceModel.NetTcpSecurity.Message" />
+      <Member Id="P:System.ServiceModel.NetTcpSecurity.Mode" />
+      <Member Id="P:System.ServiceModel.NetTcpSecurity.Transport" />
+    </Type>
+    <Type Name="System.ServiceModel.OperationContext" Id="T:System.ServiceModel.OperationContext">
+      <Member Id="E:System.ServiceModel.OperationContext.OperationCompleted" />
+      <Member Id="M:System.ServiceModel.OperationContext.#ctor(System.ServiceModel.IContextChannel)" />
+      <Member Id="P:System.ServiceModel.OperationContext.Current" />
+      <Member Id="P:System.ServiceModel.OperationContext.Extensions" />
+      <Member Id="P:System.ServiceModel.OperationContext.IncomingMessageHeaders" />
+      <Member Id="P:System.ServiceModel.OperationContext.IncomingMessageProperties" />
+      <Member Id="P:System.ServiceModel.OperationContext.IncomingMessageVersion" />
+      <Member Id="P:System.ServiceModel.OperationContext.IsUserContext" />
+      <Member Id="P:System.ServiceModel.OperationContext.OutgoingMessageHeaders" />
+      <Member Id="P:System.ServiceModel.OperationContext.OutgoingMessageProperties" />
+      <Member Id="P:System.ServiceModel.OperationContext.RequestContext" />
+    </Type>
+    <Type Name="System.ServiceModel.OperationContextScope" Id="T:System.ServiceModel.OperationContextScope">
+      <Member Id="M:System.ServiceModel.OperationContextScope.#ctor(System.ServiceModel.IContextChannel)" />
+      <Member Id="M:System.ServiceModel.OperationContextScope.#ctor(System.ServiceModel.OperationContext)" />
+      <Member Id="M:System.ServiceModel.OperationContextScope.Dispose" />
+    </Type>
+    <Type Name="System.ServiceModel.OperationContractAttribute" Id="T:System.ServiceModel.OperationContractAttribute">
+      <Member Id="M:System.ServiceModel.OperationContractAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.OperationContractAttribute.Action" />
+      <Member Id="P:System.ServiceModel.OperationContractAttribute.AsyncPattern" />
+      <Member Id="P:System.ServiceModel.OperationContractAttribute.IsOneWay" />
+      <Member Id="P:System.ServiceModel.OperationContractAttribute.Name" />
+      <Member Id="P:System.ServiceModel.OperationContractAttribute.ReplyAction" />
+    </Type>
+    <Type Name="System.ServiceModel.OperationFormatStyle" Id="T:System.ServiceModel.OperationFormatStyle">
+      <Member Id="F:System.ServiceModel.OperationFormatStyle.Document" />
+      <Member Id="F:System.ServiceModel.OperationFormatStyle.Rpc" />
+    </Type>
+    <Type Name="System.ServiceModel.ProtocolException" Id="T:System.ServiceModel.ProtocolException">
+      <Member Id="M:System.ServiceModel.ProtocolException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ProtocolException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.QuotaExceededException" Id="T:System.ServiceModel.QuotaExceededException">
+      <Member Id="M:System.ServiceModel.QuotaExceededException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.QuotaExceededException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.SecurityMode" Id="T:System.ServiceModel.SecurityMode">
+      <Member Id="F:System.ServiceModel.SecurityMode.Message" />
+      <Member Id="F:System.ServiceModel.SecurityMode.None" />
+      <Member Id="F:System.ServiceModel.SecurityMode.Transport" />
+      <Member Id="F:System.ServiceModel.SecurityMode.TransportWithMessageCredential" />
+    </Type>
+    <Type Name="System.ServiceModel.ServerTooBusyException" Id="T:System.ServiceModel.ServerTooBusyException">
+      <Member Id="M:System.ServiceModel.ServerTooBusyException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ServerTooBusyException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.ServiceActivationException" Id="T:System.ServiceModel.ServiceActivationException">
+      <Member Id="M:System.ServiceModel.ServiceActivationException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ServiceActivationException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.ServiceContractAttribute" Id="T:System.ServiceModel.ServiceContractAttribute">
+      <Member Id="M:System.ServiceModel.ServiceContractAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
+      <Member Id="P:System.ServiceModel.ServiceContractAttribute.ConfigurationName" />
+      <Member Id="P:System.ServiceModel.ServiceContractAttribute.Name" />
+      <Member Id="P:System.ServiceModel.ServiceContractAttribute.Namespace" />
+    </Type>
+    <Type Name="System.ServiceModel.ServiceKnownTypeAttribute" Id="T:System.ServiceModel.ServiceKnownTypeAttribute">
+      <Member Id="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String,System.Type)" />
+      <Member Id="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.Type)" />
+      <Member Id="P:System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
+      <Member Id="P:System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
+      <Member Id="P:System.ServiceModel.ServiceKnownTypeAttribute.Type" />
+    </Type>
+    <Type Name="System.ServiceModel.SpnEndpointIdentity" Id="T:System.ServiceModel.SpnEndpointIdentity">
+      <Member Id="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.String)" />
+      <Member Id="P:System.ServiceModel.SpnEndpointIdentity.SpnLookupTime" />
+    </Type>
+    <Type Name="System.ServiceModel.TcpClientCredentialType" Id="T:System.ServiceModel.TcpClientCredentialType">
+      <Member Id="F:System.ServiceModel.TcpClientCredentialType.Certificate" />
+      <Member Id="F:System.ServiceModel.TcpClientCredentialType.None" />
+      <Member Id="F:System.ServiceModel.TcpClientCredentialType.Windows" />
+    </Type>
+    <Type Name="System.ServiceModel.TcpTransportSecurity" Id="T:System.ServiceModel.TcpTransportSecurity">
+      <Member Id="M:System.ServiceModel.TcpTransportSecurity.#ctor" />
+      <Member Id="P:System.ServiceModel.TcpTransportSecurity.ClientCredentialType" />
+      <Member Id="P:System.ServiceModel.TcpTransportSecurity.SslProtocols" />
+    </Type>
+    <Type Name="System.ServiceModel.TransferMode" Id="T:System.ServiceModel.TransferMode">
+      <Member Id="F:System.ServiceModel.TransferMode.Buffered" />
+      <Member Id="F:System.ServiceModel.TransferMode.Streamed" />
+      <Member Id="F:System.ServiceModel.TransferMode.StreamedRequest" />
+      <Member Id="F:System.ServiceModel.TransferMode.StreamedResponse" />
+    </Type>
+    <Type Name="System.ServiceModel.UnknownMessageReceivedEventArgs" Id="T:System.ServiceModel.UnknownMessageReceivedEventArgs">
+      <Member Id="P:System.ServiceModel.UnknownMessageReceivedEventArgs.Message" />
+    </Type>
+    <Type Name="System.ServiceModel.UpnEndpointIdentity" Id="T:System.ServiceModel.UpnEndpointIdentity">
+      <Member Id="M:System.ServiceModel.UpnEndpointIdentity.#ctor(System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.XmlSerializerFormatAttribute" Id="T:System.ServiceModel.XmlSerializerFormatAttribute">
+      <Member Id="M:System.ServiceModel.XmlSerializerFormatAttribute.#ctor" />
+      <Member Id="P:System.ServiceModel.XmlSerializerFormatAttribute.Style" />
+      <Member Id="P:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel.Channels">
+    <Type Name="System.ServiceModel.Channels.AddressHeader" Id="T:System.ServiceModel.Channels.AddressHeader">
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.Equals(System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.GetAddressHeaderReader" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.GetHashCode" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.GetValue``1" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.GetValue``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.OnWriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.OnWriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.ToMessageHeader" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeader(System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.WriteAddressHeaderContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeader.WriteStartAddressHeader(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="P:System.ServiceModel.Channels.AddressHeader.Name" />
+      <Member Id="P:System.ServiceModel.Channels.AddressHeader.Namespace" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.AddressHeaderCollection" Id="T:System.ServiceModel.Channels.AddressHeaderCollection">
+      <Member Id="M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeaderCollection.AddHeadersTo(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeaderCollection.FindAll(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.AddressHeaderCollection.FindHeader(System.String,System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.AddressingVersion" Id="T:System.ServiceModel.Channels.AddressingVersion">
+      <Member Id="M:System.ServiceModel.Channels.AddressingVersion.ToString" />
+      <Member Id="P:System.ServiceModel.Channels.AddressingVersion.None" />
+      <Member Id="P:System.ServiceModel.Channels.AddressingVersion.WSAddressing10" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement" Id="T:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CreateMessageEncoderFactory" />
+      <Member Id="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat" />
+      <Member Id="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize" />
+      <Member Id="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MessageVersion" />
+      <Member Id="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.ReaderQuotas" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.Binding" Id="T:System.ServiceModel.Channels.Binding">
+      <Member Id="M:System.ServiceModel.Channels.Binding.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.#ctor(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.BuildChannelFactory``1(System.Object[])" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.CanBuildChannelFactory``1(System.Object[])" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.CreateBindingElements" />
+      <Member Id="M:System.ServiceModel.Channels.Binding.GetProperty``1(System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.CloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.MessageVersion" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.Name" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.Namespace" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.OpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.ReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.Scheme" />
+      <Member Id="P:System.ServiceModel.Channels.Binding.SendTimeout" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BindingContext" Id="T:System.ServiceModel.Channels.BindingContext">
+      <Member Id="M:System.ServiceModel.Channels.BindingContext.#ctor(System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelFactory``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelFactory``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingContext.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.BindingContext.GetInnerProperty``1" />
+      <Member Id="P:System.ServiceModel.Channels.BindingContext.Binding" />
+      <Member Id="P:System.ServiceModel.Channels.BindingContext.BindingParameters" />
+      <Member Id="P:System.ServiceModel.Channels.BindingContext.RemainingBindingElements" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BindingElement" Id="T:System.ServiceModel.Channels.BindingElement">
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.#ctor(System.ServiceModel.Channels.BindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BindingElementCollection" Id="T:System.ServiceModel.Channels.BindingElementCollection">
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.#ctor(System.ServiceModel.Channels.BindingElement[])" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.AddRange(System.ServiceModel.Channels.BindingElement[])" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.Contains(System.Type)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.Find``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.FindAll``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.InsertItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.Remove``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.RemoveAll``1" />
+      <Member Id="M:System.ServiceModel.Channels.BindingElementCollection.SetItem(System.Int32,System.ServiceModel.Channels.BindingElement)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BindingParameterCollection" Id="T:System.ServiceModel.Channels.BindingParameterCollection">
+      <Member Id="M:System.ServiceModel.Channels.BindingParameterCollection.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.BindingParameterCollection.GetKeyForItem(System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingParameterCollection.InsertItem(System.Int32,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.BindingParameterCollection.SetItem(System.Int32,System.Object)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BodyWriter" Id="T:System.ServiceModel.Channels.BodyWriter">
+      <Member Id="M:System.ServiceModel.Channels.BodyWriter.#ctor(System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.BodyWriter.CreateBufferedCopy(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.BodyWriter.OnCreateBufferedCopy(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.BodyWriter.WriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="P:System.ServiceModel.Channels.BodyWriter.IsBuffered" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.BufferManager" Id="T:System.ServiceModel.Channels.BufferManager">
+      <Member Id="M:System.ServiceModel.Channels.BufferManager.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.BufferManager.Clear" />
+      <Member Id="M:System.ServiceModel.Channels.BufferManager.CreateBufferManager(System.Int64,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.BufferManager.ReturnBuffer(System.Byte[])" />
+      <Member Id="M:System.ServiceModel.Channels.BufferManager.TakeBuffer(System.Int32)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ChannelBase" Id="T:System.ServiceModel.Channels.ChannelBase">
+      <Member Id="M:System.ServiceModel.Channels.ChannelBase.#ctor(System.ServiceModel.Channels.ChannelManagerBase)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelBase.GetProperty``1" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelBase.OnClosed" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.DefaultCloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.DefaultOpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.DefaultReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.Manager" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ChannelFactoryBase" Id="T:System.ServiceModel.Channels.ChannelFactoryBase">
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty``1" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.OnAbort" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.OnClose(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase.OnEndClose(System.IAsyncResult)" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ChannelFactoryBase`1" Id="T:System.ServiceModel.Channels.ChannelFactoryBase`1">
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnAbort" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnClose(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnCreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.OnEndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelFactoryBase`1.ValidateCreateChannel" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ChannelManagerBase" Id="T:System.ServiceModel.Channels.ChannelManagerBase">
+      <Member Id="M:System.ServiceModel.Channels.ChannelManagerBase.#ctor" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.DefaultReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.DefaultSendTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ChannelParameterCollection" Id="T:System.ServiceModel.Channels.ChannelParameterCollection">
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.#ctor(System.ServiceModel.Channels.IChannel)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.ClearItems" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.InsertItem(System.Int32,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.PropagateChannelParameters(System.ServiceModel.Channels.IChannel)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.RemoveItem(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.ChannelParameterCollection.SetItem(System.Int32,System.Object)" />
+      <Member Id="P:System.ServiceModel.Channels.ChannelParameterCollection.Channel" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.CommunicationObject" Id="T:System.ServiceModel.Channels.CommunicationObject">
+      <Member Id="E:System.ServiceModel.Channels.CommunicationObject.Closed" />
+      <Member Id="E:System.ServiceModel.Channels.CommunicationObject.Closing" />
+      <Member Id="E:System.ServiceModel.Channels.CommunicationObject.Faulted" />
+      <Member Id="E:System.ServiceModel.Channels.CommunicationObject.Opened" />
+      <Member Id="E:System.ServiceModel.Channels.CommunicationObject.Opening" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.#ctor(System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Abort" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.BeginClose(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.BeginOpen(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Close" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Close(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.EndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.EndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Fault" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.GetCommunicationObjectType" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnAbort" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnClose(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnClosed" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnClosing" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnEndClose(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnEndOpen(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnFaulted" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnOpen(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnOpened" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.OnOpening" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Open" />
+      <Member Id="M:System.ServiceModel.Channels.CommunicationObject.Open(System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.CommunicationObject.IsDisposed" />
+      <Member Id="P:System.ServiceModel.Channels.CommunicationObject.State" />
+      <Member Id="P:System.ServiceModel.Channels.CommunicationObject.ThisLock" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.CompressionFormat" Id="T:System.ServiceModel.Channels.CompressionFormat">
+      <Member Id="F:System.ServiceModel.Channels.CompressionFormat.Deflate" />
+      <Member Id="F:System.ServiceModel.Channels.CompressionFormat.GZip" />
+      <Member Id="F:System.ServiceModel.Channels.CompressionFormat.None" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement" Id="T:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ConnectionBufferSize" />
+      <Member Id="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxBufferSize" />
+      <Member Id="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.TransferMode" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.CustomBinding" Id="T:System.ServiceModel.Channels.CustomBinding">
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})" />
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.Binding)" />
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.BindingElement[])" />
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.String,System.String,System.ServiceModel.Channels.BindingElement[])" />
+      <Member Id="M:System.ServiceModel.Channels.CustomBinding.CreateBindingElements" />
+      <Member Id="P:System.ServiceModel.Channels.CustomBinding.Elements" />
+      <Member Id="P:System.ServiceModel.Channels.CustomBinding.Scheme" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.FaultConverter" Id="T:System.ServiceModel.Channels.FaultConverter">
+      <Member Id="M:System.ServiceModel.Channels.FaultConverter.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter(System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" />
+      <Member Id="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateFaultMessage(System.Exception,System.ServiceModel.Channels.Message@)" />
+      <Member Id="M:System.ServiceModel.Channels.FaultConverter.TryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.HttpRequestMessageProperty" Id="T:System.ServiceModel.Channels.HttpRequestMessageProperty">
+      <Member Id="M:System.ServiceModel.Channels.HttpRequestMessageProperty.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.HttpRequestMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
+      <Member Id="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Headers" />
+      <Member Id="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Method" />
+      <Member Id="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Name" />
+      <Member Id="P:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString" />
+      <Member Id="P:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.HttpResponseMessageProperty" Id="T:System.ServiceModel.Channels.HttpResponseMessageProperty">
+      <Member Id="M:System.ServiceModel.Channels.HttpResponseMessageProperty.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.HttpResponseMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
+      <Member Id="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
+      <Member Id="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
+      <Member Id="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
+      <Member Id="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.HttpsTransportBindingElement" Id="T:System.ServiceModel.Channels.HttpsTransportBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.HttpsTransportBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.HttpsTransportBindingElement.#ctor(System.ServiceModel.Channels.HttpsTransportBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.HttpsTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.HttpsTransportBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.HttpsTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.HttpsTransportBindingElement.RequireClientCertificate" />
+      <Member Id="P:System.ServiceModel.Channels.HttpsTransportBindingElement.Scheme" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.HttpTransportBindingElement" Id="T:System.ServiceModel.Channels.HttpTransportBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.#ctor(System.ServiceModel.Channels.HttpTransportBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.HttpTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.AllowCookies" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.AuthenticationScheme" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.Scheme" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.TransferMode" />
+      <Member Id="P:System.ServiceModel.Channels.HttpTransportBindingElement.WebSocketSettings" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IChannel" Id="T:System.ServiceModel.Channels.IChannel">
+      <Member Id="M:System.ServiceModel.Channels.IChannel.GetProperty``1" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IChannelFactory" Id="T:System.ServiceModel.Channels.IChannelFactory">
+      <Member Id="M:System.ServiceModel.Channels.IChannelFactory.GetProperty``1" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IChannelFactory`1" Id="T:System.ServiceModel.Channels.IChannelFactory`1">
+      <Member Id="M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)" />
+      <Member Id="M:System.ServiceModel.Channels.IChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IDuplexChannel" Id="T:System.ServiceModel.Channels.IDuplexChannel" />
+    <Type Name="System.ServiceModel.Channels.IDuplexSession" Id="T:System.ServiceModel.Channels.IDuplexSession">
+      <Member Id="M:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession" />
+      <Member Id="M:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.IDuplexSession.EndCloseOutputSession(System.IAsyncResult)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IDuplexSessionChannel" Id="T:System.ServiceModel.Channels.IDuplexSessionChannel" />
+    <Type Name="System.ServiceModel.Channels.IHttpCookieContainerManager" Id="T:System.ServiceModel.Channels.IHttpCookieContainerManager">
+      <Member Id="P:System.ServiceModel.Channels.IHttpCookieContainerManager.CookieContainer" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IInputChannel" Id="T:System.ServiceModel.Channels.IInputChannel">
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.EndReceive(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.EndTryReceive(System.IAsyncResult,System.ServiceModel.Channels.Message@)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.EndWaitForMessage(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.Receive" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.Receive(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.TryReceive(System.TimeSpan,System.ServiceModel.Channels.Message@)" />
+      <Member Id="M:System.ServiceModel.Channels.IInputChannel.WaitForMessage(System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.Channels.IInputChannel.LocalAddress" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IInputSession" Id="T:System.ServiceModel.Channels.IInputSession" />
+    <Type Name="System.ServiceModel.Channels.IInputSessionChannel" Id="T:System.ServiceModel.Channels.IInputSessionChannel" />
+    <Type Name="System.ServiceModel.Channels.IMessageProperty" Id="T:System.ServiceModel.Channels.IMessageProperty">
+      <Member Id="M:System.ServiceModel.Channels.IMessageProperty.CreateCopy" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IOutputChannel" Id="T:System.ServiceModel.Channels.IOutputChannel">
+      <Member Id="M:System.ServiceModel.Channels.IOutputChannel.BeginSend(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IOutputChannel.BeginSend(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IOutputChannel.EndSend(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.IOutputChannel.Send(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.Channels.IOutputChannel.Send(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.Channels.IOutputChannel.RemoteAddress" />
+      <Member Id="P:System.ServiceModel.Channels.IOutputChannel.Via" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IOutputSession" Id="T:System.ServiceModel.Channels.IOutputSession" />
+    <Type Name="System.ServiceModel.Channels.IOutputSessionChannel" Id="T:System.ServiceModel.Channels.IOutputSessionChannel" />
+    <Type Name="System.ServiceModel.Channels.IRequestChannel" Id="T:System.ServiceModel.Channels.IRequestChannel">
+      <Member Id="M:System.ServiceModel.Channels.IRequestChannel.BeginRequest(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IRequestChannel.BeginRequest(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.IRequestChannel.EndRequest(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.IRequestChannel.Request(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.Channels.IRequestChannel.Request(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <Member Id="P:System.ServiceModel.Channels.IRequestChannel.RemoteAddress" />
+      <Member Id="P:System.ServiceModel.Channels.IRequestChannel.Via" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.IRequestSessionChannel" Id="T:System.ServiceModel.Channels.IRequestSessionChannel" />
+    <Type Name="System.ServiceModel.Channels.ISession" Id="T:System.ServiceModel.Channels.ISession">
+      <Member Id="P:System.ServiceModel.Channels.ISession.Id" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.ISessionChannel`1" Id="T:System.ServiceModel.Channels.ISessionChannel`1">
+      <Member Id="P:System.ServiceModel.Channels.ISessionChannel`1.Session" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.LocalClientSecuritySettings" Id="T:System.ServiceModel.Channels.LocalClientSecuritySettings">
+      <Member Id="M:System.ServiceModel.Channels.LocalClientSecuritySettings.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.LocalClientSecuritySettings.Clone" />
+      <Member Id="P:System.ServiceModel.Channels.LocalClientSecuritySettings.MaxClockSkew" />
+      <Member Id="P:System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayWindow" />
+      <Member Id="P:System.ServiceModel.Channels.LocalClientSecuritySettings.TimestampValidityDuration" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.Message" Id="T:System.ServiceModel.Channels.Message">
+      <Member Id="M:System.ServiceModel.Channels.Message.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.Message.Close" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateBufferedCopy(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.ServiceModel.Channels.BodyWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Xml.XmlDictionaryReader)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Xml.XmlReader)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.Xml.XmlDictionaryReader,System.Int32,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.CreateMessage(System.Xml.XmlReader,System.Int32,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.GetBody``1" />
+      <Member Id="M:System.ServiceModel.Channels.Message.GetBody``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.GetBodyAttribute(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.GetReaderAtBodyContents" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnBodyToString(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnClose" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnCreateBufferedCopy(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnGetBody``1(System.Xml.XmlDictionaryReader)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnGetBodyAttribute(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnWriteMessage(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnWriteStartBody(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnWriteStartEnvelope(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.OnWriteStartHeaders(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.System#IDisposable#Dispose" />
+      <Member Id="M:System.ServiceModel.Channels.Message.ToString" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteBody(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteBody(System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteMessage(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteMessage(System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteStartBody(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteStartBody(System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.Message.WriteStartEnvelope(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="P:System.ServiceModel.Channels.Message.Headers" />
+      <Member Id="P:System.ServiceModel.Channels.Message.IsDisposed" />
+      <Member Id="P:System.ServiceModel.Channels.Message.IsEmpty" />
+      <Member Id="P:System.ServiceModel.Channels.Message.IsFault" />
+      <Member Id="P:System.ServiceModel.Channels.Message.Properties" />
+      <Member Id="P:System.ServiceModel.Channels.Message.State" />
+      <Member Id="P:System.ServiceModel.Channels.Message.Version" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageBuffer" Id="T:System.ServiceModel.Channels.MessageBuffer">
+      <Member Id="M:System.ServiceModel.Channels.MessageBuffer.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageBuffer.Close" />
+      <Member Id="M:System.ServiceModel.Channels.MessageBuffer.CreateMessage" />
+      <Member Id="M:System.ServiceModel.Channels.MessageBuffer.System#IDisposable#Dispose" />
+      <Member Id="M:System.ServiceModel.Channels.MessageBuffer.WriteMessage(System.IO.Stream)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageBuffer.BufferSize" />
+      <Member Id="P:System.ServiceModel.Channels.MessageBuffer.MessageContentType" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageEncoder" Id="T:System.ServiceModel.Channels.MessageEncoder">
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.GetProperty``1" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.IsContentTypeSupported(System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.IO.Stream,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.IO.Stream,System.Int32,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.ToString" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.Int32,System.ServiceModel.Channels.BufferManager)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.Int32,System.ServiceModel.Channels.BufferManager,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.IO.Stream)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncoder.ContentType" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncoder.MediaType" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncoder.MessageVersion" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageEncoderFactory" Id="T:System.ServiceModel.Channels.MessageEncoderFactory">
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoderFactory.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncoderFactory.CreateSessionEncoder" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncoderFactory.Encoder" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncoderFactory.MessageVersion" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageEncodingBindingElement" Id="T:System.ServiceModel.Channels.MessageEncodingBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor(System.ServiceModel.Channels.MessageEncodingBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory" />
+      <Member Id="M:System.ServiceModel.Channels.MessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageFault" Id="T:System.ServiceModel.Channels.MessageFault">
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.CreateFault(System.ServiceModel.Channels.Message,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.GetDetail``1" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.GetDetail``1(System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.GetReaderAtDetailContents" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.OnGetReaderAtDetailContents" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.OnWriteDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.OnWriteDetailContents(System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageFault.OnWriteStartDetail(System.Xml.XmlDictionaryWriter,System.ServiceModel.EnvelopeVersion)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageFault.Actor" />
+      <Member Id="P:System.ServiceModel.Channels.MessageFault.Code" />
+      <Member Id="P:System.ServiceModel.Channels.MessageFault.HasDetail" />
+      <Member Id="P:System.ServiceModel.Channels.MessageFault.Node" />
+      <Member Id="P:System.ServiceModel.Channels.MessageFault.Reason" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageHeader" Id="T:System.ServiceModel.Channels.MessageHeader">
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Boolean,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Boolean,System.String,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.Boolean,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.CreateHeader(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer,System.Boolean,System.String,System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.IsMessageVersionSupported(System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.OnWriteHeaderContents(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.OnWriteStartHeader(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.ToString" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.WriteHeader(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.WriteHeader(System.Xml.XmlWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.WriteHeaderAttributes(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.WriteHeaderContents(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeader.WriteStartHeader(System.Xml.XmlDictionaryWriter,System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeader.Actor" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeader.IsReferenceParameter" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeader.MustUnderstand" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeader.Relay" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageHeaderInfo" Id="T:System.ServiceModel.Channels.MessageHeaderInfo">
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaderInfo.#ctor" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.Actor" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.IsReferenceParameter" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.MustUnderstand" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.Name" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.Namespace" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaderInfo.Relay" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageHeaders" Id="T:System.ServiceModel.Channels.MessageHeaders">
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageHeaders)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.#ctor(System.ServiceModel.Channels.MessageVersion,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.Add(System.ServiceModel.Channels.MessageHeader)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.Clear" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.CopyHeaderFrom(System.ServiceModel.Channels.Message,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.CopyHeaderFrom(System.ServiceModel.Channels.MessageHeaders,System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.CopyHeadersFrom(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.CopyHeadersFrom(System.ServiceModel.Channels.MessageHeaders)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.CopyTo(System.ServiceModel.Channels.MessageHeaderInfo[],System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.FindHeader(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.FindHeader(System.String,System.String,System.String[])" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetEnumerator" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.Int32,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetHeader``1(System.String,System.String,System.String[])" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood(System.String[])" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.Insert(System.Int32,System.ServiceModel.Channels.MessageHeader)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.RemoveAll(System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.RemoveAt(System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.SetAction(System.Xml.XmlDictionaryString)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteHeader(System.Int32,System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteHeader(System.Int32,System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteHeaderContents(System.Int32,System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteHeaderContents(System.Int32,System.Xml.XmlWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteStartHeader(System.Int32,System.Xml.XmlDictionaryWriter)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageHeaders.WriteStartHeader(System.Int32,System.Xml.XmlWriter)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.Action" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.Count" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.FaultTo" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.From" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.Item(System.Int32)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.MessageId" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.MessageVersion" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.RelatesTo" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.ReplyTo" />
+      <Member Id="P:System.ServiceModel.Channels.MessageHeaders.To" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageProperties" Id="T:System.ServiceModel.Channels.MessageProperties">
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.#ctor(System.ServiceModel.Channels.MessageProperties)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.Add(System.String,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.Clear" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.ContainsKey(System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.CopyProperties(System.ServiceModel.Channels.MessageProperties)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.Dispose" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.Remove(System.String)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:System.ServiceModel.Channels.MessageProperties.TryGetValue(System.String,System.Object@)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.AllowOutputBatching" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Count" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Encoder" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.IsFixedSize" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Item(System.String)" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Keys" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#IsReadOnly" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Values" />
+      <Member Id="P:System.ServiceModel.Channels.MessageProperties.Via" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageState" Id="T:System.ServiceModel.Channels.MessageState">
+      <Member Id="F:System.ServiceModel.Channels.MessageState.Closed" />
+      <Member Id="F:System.ServiceModel.Channels.MessageState.Copied" />
+      <Member Id="F:System.ServiceModel.Channels.MessageState.Created" />
+      <Member Id="F:System.ServiceModel.Channels.MessageState.Read" />
+      <Member Id="F:System.ServiceModel.Channels.MessageState.Written" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.MessageVersion" Id="T:System.ServiceModel.Channels.MessageVersion">
+      <Member Id="M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion,System.ServiceModel.Channels.AddressingVersion)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageVersion.Equals(System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.MessageVersion.GetHashCode" />
+      <Member Id="M:System.ServiceModel.Channels.MessageVersion.ToString" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.Addressing" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.Default" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.Envelope" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.None" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.Soap11" />
+      <Member Id="P:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressing10" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.RequestContext" Id="T:System.ServiceModel.Channels.RequestContext">
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Abort" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.BeginReply(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.BeginReply(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Close" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Close(System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Dispose(System.Boolean)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.EndReply(System.IAsyncResult)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Reply(System.ServiceModel.Channels.Message)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.Reply(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <Member Id="M:System.ServiceModel.Channels.RequestContext.System#IDisposable#Dispose" />
+      <Member Id="P:System.ServiceModel.Channels.RequestContext.RequestMessage" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.SecurityBindingElement" Id="T:System.ServiceModel.Channels.SecurityBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.BuildChannelFactoryCore``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement(System.ServiceModel.Channels.SecurityBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameOverTransportBindingElement" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SecurityBindingElement.ToString" />
+      <Member Id="P:System.ServiceModel.Channels.SecurityBindingElement.EndpointSupportingTokenParameters" />
+      <Member Id="P:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp" />
+      <Member Id="P:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings" />
+      <Member Id="P:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion" />
+      <Member Id="P:System.ServiceModel.Channels.SecurityBindingElement.SecurityHeaderLayout" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.SecurityHeaderLayout" Id="T:System.ServiceModel.Channels.SecurityHeaderLayout">
+      <Member Id="F:System.ServiceModel.Channels.SecurityHeaderLayout.Lax" />
+      <Member Id="F:System.ServiceModel.Channels.SecurityHeaderLayout.Strict" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.SslStreamSecurityBindingElement" Id="T:System.ServiceModel.Channels.SslStreamSecurityBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.TcpConnectionPoolSettings" Id="T:System.ServiceModel.Channels.TcpConnectionPoolSettings">
+      <Member Id="P:System.ServiceModel.Channels.TcpConnectionPoolSettings.GroupName" />
+      <Member Id="P:System.ServiceModel.Channels.TcpConnectionPoolSettings.IdleTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.TcpConnectionPoolSettings.LeaseTimeout" />
+      <Member Id="P:System.ServiceModel.Channels.TcpConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.TcpTransportBindingElement" Id="T:System.ServiceModel.Channels.TcpTransportBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.TcpTransportBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.TcpTransportBindingElement.#ctor(System.ServiceModel.Channels.TcpTransportBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.TcpTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.TcpTransportBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.TcpTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.TcpTransportBindingElement.ConnectionPoolSettings" />
+      <Member Id="P:System.ServiceModel.Channels.TcpTransportBindingElement.Scheme" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.TextMessageEncodingBindingElement" Id="T:System.ServiceModel.Channels.TextMessageEncodingBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.#ctor(System.ServiceModel.Channels.MessageVersion,System.Text.Encoding)" />
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.CreateMessageEncoderFactory" />
+      <Member Id="M:System.ServiceModel.Channels.TextMessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.TextMessageEncodingBindingElement.MessageVersion" />
+      <Member Id="P:System.ServiceModel.Channels.TextMessageEncodingBindingElement.ReaderQuotas" />
+      <Member Id="P:System.ServiceModel.Channels.TextMessageEncodingBindingElement.WriteEncoding" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.TransportBindingElement" Id="T:System.ServiceModel.Channels.TransportBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.TransportBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.TransportBindingElement.#ctor(System.ServiceModel.Channels.TransportBindingElement)" />
+      <Member Id="M:System.ServiceModel.Channels.TransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="P:System.ServiceModel.Channels.TransportBindingElement.ManualAddressing" />
+      <Member Id="P:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize" />
+      <Member Id="P:System.ServiceModel.Channels.TransportBindingElement.Scheme" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.TransportSecurityBindingElement" Id="T:System.ServiceModel.Channels.TransportSecurityBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.TransportSecurityBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.TransportSecurityBindingElement.BuildChannelFactoryCore``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.TransportSecurityBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.TransportSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.WebSocketTransportSettings" Id="T:System.ServiceModel.Channels.WebSocketTransportSettings">
+      <Member Id="F:System.ServiceModel.Channels.WebSocketTransportSettings.BinaryMessageReceivedAction" />
+      <Member Id="F:System.ServiceModel.Channels.WebSocketTransportSettings.TextMessageReceivedAction" />
+      <Member Id="M:System.ServiceModel.Channels.WebSocketTransportSettings.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.WebSocketTransportSettings.Equals(System.Object)" />
+      <Member Id="M:System.ServiceModel.Channels.WebSocketTransportSettings.Equals(System.ServiceModel.Channels.WebSocketTransportSettings)" />
+      <Member Id="M:System.ServiceModel.Channels.WebSocketTransportSettings.GetHashCode" />
+      <Member Id="P:System.ServiceModel.Channels.WebSocketTransportSettings.DisablePayloadMasking" />
+      <Member Id="P:System.ServiceModel.Channels.WebSocketTransportSettings.KeepAliveInterval" />
+      <Member Id="P:System.ServiceModel.Channels.WebSocketTransportSettings.SubProtocol" />
+      <Member Id="P:System.ServiceModel.Channels.WebSocketTransportSettings.TransportUsage" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.WebSocketTransportUsage" Id="T:System.ServiceModel.Channels.WebSocketTransportUsage">
+      <Member Id="F:System.ServiceModel.Channels.WebSocketTransportUsage.Always" />
+      <Member Id="F:System.ServiceModel.Channels.WebSocketTransportUsage.Never" />
+      <Member Id="F:System.ServiceModel.Channels.WebSocketTransportUsage.WhenDuplex" />
+    </Type>
+    <Type Name="System.ServiceModel.Channels.WindowsStreamSecurityBindingElement" Id="T:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement">
+      <Member Id="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.#ctor" />
+      <Member Id="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <Member Id="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.Clone" />
+      <Member Id="M:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel.Description">
+    <Type Name="System.ServiceModel.Description.ClientCredentials" Id="T:System.ServiceModel.Description.ClientCredentials">
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.#ctor" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.#ctor(System.ServiceModel.Description.ClientCredentials)" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.Clone" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.CloneCore" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.System#ServiceModel#Description#IEndpointBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.System#ServiceModel#Description#IEndpointBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
+      <Member Id="M:System.ServiceModel.Description.ClientCredentials.System#ServiceModel#Description#IEndpointBehavior#Validate(System.ServiceModel.Description.ServiceEndpoint)" />
+      <Member Id="P:System.ServiceModel.Description.ClientCredentials.ClientCertificate" />
+      <Member Id="P:System.ServiceModel.Description.ClientCredentials.HttpDigest" />
+      <Member Id="P:System.ServiceModel.Description.ClientCredentials.ServiceCertificate" />
+      <Member Id="P:System.ServiceModel.Description.ClientCredentials.UserName" />
+      <Member Id="P:System.ServiceModel.Description.ClientCredentials.Windows" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.ContractDescription" Id="T:System.ServiceModel.Description.ContractDescription">
+      <Member Id="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.CallbackContractType" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.ConfigurationName" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.ContractType" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.Name" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.Namespace" />
+      <Member Id="P:System.ServiceModel.Description.ContractDescription.Operations" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.DataContractSerializerOperationBehavior" Id="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior">
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription)" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.#ctor(System.ServiceModel.Description.OperationDescription,System.ServiceModel.DataContractFormatAttribute)" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer(System.Type,System.String,System.String,System.Collections.Generic.IList{System.Type})" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.CreateSerializer(System.Type,System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Collections.Generic.IList{System.Type})" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IOperationBehavior#AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IOperationBehavior#ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IOperationBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <Member Id="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IOperationBehavior#Validate(System.ServiceModel.Description.OperationDescription)" />
+      <Member Id="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractFormatAttribute" />
+      <Member Id="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractResolver" />
+      <Member Id="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.MaxItemsInObjectGraph" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.FaultDescription" Id="T:System.ServiceModel.Description.FaultDescription">
+      <Member Id="M:System.ServiceModel.Description.FaultDescription.#ctor(System.String)" />
+      <Member Id="P:System.ServiceModel.Description.FaultDescription.Action" />
+      <Member Id="P:System.ServiceModel.Description.FaultDescription.DetailType" />
+      <Member Id="P:System.ServiceModel.Description.FaultDescription.Name" />
+      <Member Id="P:System.ServiceModel.Description.FaultDescription.Namespace" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.FaultDescriptionCollection" Id="T:System.ServiceModel.Description.FaultDescriptionCollection" />
+    <Type Name="System.ServiceModel.Description.IContractBehavior" Id="T:System.ServiceModel.Description.IContractBehavior">
+      <Member Id="M:System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <Member Id="M:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" />
+      <Member Id="M:System.ServiceModel.Description.IContractBehavior.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.IEndpointBehavior" Id="T:System.ServiceModel.Description.IEndpointBehavior">
+      <Member Id="M:System.ServiceModel.Description.IEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <Member Id="M:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)" />
+      <Member Id="M:System.ServiceModel.Description.IEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.IOperationBehavior" Id="T:System.ServiceModel.Description.IOperationBehavior">
+      <Member Id="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <Member Id="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <Member Id="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <Member Id="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageBodyDescription" Id="T:System.ServiceModel.Description.MessageBodyDescription">
+      <Member Id="M:System.ServiceModel.Description.MessageBodyDescription.#ctor" />
+      <Member Id="P:System.ServiceModel.Description.MessageBodyDescription.Parts" />
+      <Member Id="P:System.ServiceModel.Description.MessageBodyDescription.ReturnValue" />
+      <Member Id="P:System.ServiceModel.Description.MessageBodyDescription.WrapperName" />
+      <Member Id="P:System.ServiceModel.Description.MessageBodyDescription.WrapperNamespace" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageDescription" Id="T:System.ServiceModel.Description.MessageDescription">
+      <Member Id="M:System.ServiceModel.Description.MessageDescription.#ctor(System.String,System.ServiceModel.Description.MessageDirection)" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.Action" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.Body" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.Direction" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.Headers" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.MessageType" />
+      <Member Id="P:System.ServiceModel.Description.MessageDescription.Properties" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageDescriptionCollection" Id="T:System.ServiceModel.Description.MessageDescriptionCollection">
+      <Member Id="M:System.ServiceModel.Description.MessageDescriptionCollection.Find(System.String)" />
+      <Member Id="M:System.ServiceModel.Description.MessageDescriptionCollection.FindAll(System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageDirection" Id="T:System.ServiceModel.Description.MessageDirection">
+      <Member Id="F:System.ServiceModel.Description.MessageDirection.Input" />
+      <Member Id="F:System.ServiceModel.Description.MessageDirection.Output" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageHeaderDescription" Id="T:System.ServiceModel.Description.MessageHeaderDescription">
+      <Member Id="M:System.ServiceModel.Description.MessageHeaderDescription.#ctor(System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.Description.MessageHeaderDescription.Actor" />
+      <Member Id="P:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand" />
+      <Member Id="P:System.ServiceModel.Description.MessageHeaderDescription.Relay" />
+      <Member Id="P:System.ServiceModel.Description.MessageHeaderDescription.TypedHeader" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessageHeaderDescriptionCollection" Id="T:System.ServiceModel.Description.MessageHeaderDescriptionCollection">
+      <Member Id="M:System.ServiceModel.Description.MessageHeaderDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessageHeaderDescription)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessagePartDescription" Id="T:System.ServiceModel.Description.MessagePartDescription">
+      <Member Id="M:System.ServiceModel.Description.MessagePartDescription.#ctor(System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.Index" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.MemberInfo" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.Multiple" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.Name" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.Namespace" />
+      <Member Id="P:System.ServiceModel.Description.MessagePartDescription.Type" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessagePartDescriptionCollection" Id="T:System.ServiceModel.Description.MessagePartDescriptionCollection">
+      <Member Id="M:System.ServiceModel.Description.MessagePartDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePartDescription)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessagePropertyDescription" Id="T:System.ServiceModel.Description.MessagePropertyDescription">
+      <Member Id="M:System.ServiceModel.Description.MessagePropertyDescription.#ctor(System.String)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.MessagePropertyDescriptionCollection" Id="T:System.ServiceModel.Description.MessagePropertyDescriptionCollection">
+      <Member Id="M:System.ServiceModel.Description.MessagePropertyDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePropertyDescription)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.OperationDescription" Id="T:System.ServiceModel.Description.OperationDescription">
+      <Member Id="M:System.ServiceModel.Description.OperationDescription.#ctor(System.String,System.ServiceModel.Description.ContractDescription)" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.DeclaringContract" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.Faults" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.IsOneWay" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.KnownTypes" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.Messages" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.Name" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.OperationBehaviors" />
+      <Member Id="P:System.ServiceModel.Description.OperationDescription.TaskMethod" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.OperationDescriptionCollection" Id="T:System.ServiceModel.Description.OperationDescriptionCollection">
+      <Member Id="M:System.ServiceModel.Description.OperationDescriptionCollection.Find(System.String)" />
+      <Member Id="M:System.ServiceModel.Description.OperationDescriptionCollection.FindAll(System.String)" />
+      <Member Id="M:System.ServiceModel.Description.OperationDescriptionCollection.InsertItem(System.Int32,System.ServiceModel.Description.OperationDescription)" />
+      <Member Id="M:System.ServiceModel.Description.OperationDescriptionCollection.SetItem(System.Int32,System.ServiceModel.Description.OperationDescription)" />
+    </Type>
+    <Type Name="System.ServiceModel.Description.ServiceEndpoint" Id="T:System.ServiceModel.Description.ServiceEndpoint">
+      <Member Id="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription)" />
+      <Member Id="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <Member Id="P:System.ServiceModel.Description.ServiceEndpoint.Address" />
+      <Member Id="P:System.ServiceModel.Description.ServiceEndpoint.Binding" />
+      <Member Id="P:System.ServiceModel.Description.ServiceEndpoint.Contract" />
+      <Member Id="P:System.ServiceModel.Description.ServiceEndpoint.EndpointBehaviors" />
+      <Member Id="P:System.ServiceModel.Description.ServiceEndpoint.Name" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel.Dispatcher">
+    <Type Name="System.ServiceModel.Dispatcher.ClientOperation" Id="T:System.ServiceModel.Dispatcher.ClientOperation">
+      <Member Id="M:System.ServiceModel.Dispatcher.ClientOperation.#ctor(System.ServiceModel.Dispatcher.ClientRuntime,System.String,System.String)" />
+      <Member Id="M:System.ServiceModel.Dispatcher.ClientOperation.#ctor(System.ServiceModel.Dispatcher.ClientRuntime,System.String,System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.Action" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.ClientParameterInspectors" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.DeserializeReply" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.IsOneWay" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.Name" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.Parent" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.ReplyAction" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.SerializeRequest" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.TaskMethod" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientOperation.TaskTResult" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.ClientRuntime" Id="T:System.ServiceModel.Dispatcher.ClientRuntime">
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ClientMessageInspectors" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ClientOperations" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractClientType" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractName" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ContractNamespace" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.MaxFaultSize" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.OperationSelector" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.UnhandledClientOperation" />
+      <Member Id="P:System.ServiceModel.Dispatcher.ClientRuntime.Via" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.DispatchOperation" Id="T:System.ServiceModel.Dispatcher.DispatchOperation">
+      <Member Id="M:System.ServiceModel.Dispatcher.DispatchOperation.#ctor(System.ServiceModel.Dispatcher.DispatchRuntime,System.String,System.String)" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.Action" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.AutoDisposeParameters" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.DeserializeRequest" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.IsOneWay" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.Name" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.Parent" />
+      <Member Id="P:System.ServiceModel.Dispatcher.DispatchOperation.SerializeReply" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.DispatchRuntime" Id="T:System.ServiceModel.Dispatcher.DispatchRuntime" />
+    <Type Name="System.ServiceModel.Dispatcher.EndpointDispatcher" Id="T:System.ServiceModel.Dispatcher.EndpointDispatcher" />
+    <Type Name="System.ServiceModel.Dispatcher.IClientMessageFormatter" Id="T:System.ServiceModel.Dispatcher.IClientMessageFormatter">
+      <Member Id="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply(System.ServiceModel.Channels.Message,System.Object[])" />
+      <Member Id="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest(System.ServiceModel.Channels.MessageVersion,System.Object[])" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.IClientMessageInspector" Id="T:System.ServiceModel.Dispatcher.IClientMessageInspector">
+      <Member Id="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" />
+      <Member Id="M:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.IClientOperationSelector" Id="T:System.ServiceModel.Dispatcher.IClientOperationSelector">
+      <Member Id="M:System.ServiceModel.Dispatcher.IClientOperationSelector.SelectOperation(System.Reflection.MethodBase,System.Object[])" />
+      <Member Id="P:System.ServiceModel.Dispatcher.IClientOperationSelector.AreParametersRequiredForSelection" />
+    </Type>
+    <Type Name="System.ServiceModel.Dispatcher.IParameterInspector" Id="T:System.ServiceModel.Dispatcher.IParameterInspector">
+      <Member Id="M:System.ServiceModel.Dispatcher.IParameterInspector.AfterCall(System.String,System.Object[],System.Object,System.Object)" />
+      <Member Id="M:System.ServiceModel.Dispatcher.IParameterInspector.BeforeCall(System.String,System.Object[])" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel.Security">
+    <Type Name="System.ServiceModel.Security.BasicSecurityProfileVersion" Id="T:System.ServiceModel.Security.BasicSecurityProfileVersion">
+      <Member Id="P:System.ServiceModel.Security.BasicSecurityProfileVersion.BasicSecurityProfile10" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.HttpDigestClientCredential" Id="T:System.ServiceModel.Security.HttpDigestClientCredential">
+      <Member Id="P:System.ServiceModel.Security.HttpDigestClientCredential.ClientCredential" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.MessageSecurityException" Id="T:System.ServiceModel.Security.MessageSecurityException">
+      <Member Id="M:System.ServiceModel.Security.MessageSecurityException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.Security.MessageSecurityException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.SecureConversationVersion" Id="T:System.ServiceModel.Security.SecureConversationVersion">
+      <Member Id="P:System.ServiceModel.Security.SecureConversationVersion.Default" />
+      <Member Id="P:System.ServiceModel.Security.SecureConversationVersion.Namespace" />
+      <Member Id="P:System.ServiceModel.Security.SecureConversationVersion.Prefix" />
+      <Member Id="P:System.ServiceModel.Security.SecureConversationVersion.WSSecureConversationFeb2005" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.SecurityAccessDeniedException" Id="T:System.ServiceModel.Security.SecurityAccessDeniedException">
+      <Member Id="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor(System.String)" />
+      <Member Id="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.SecurityPolicyVersion" Id="T:System.ServiceModel.Security.SecurityPolicyVersion">
+      <Member Id="P:System.ServiceModel.Security.SecurityPolicyVersion.Namespace" />
+      <Member Id="P:System.ServiceModel.Security.SecurityPolicyVersion.Prefix" />
+      <Member Id="P:System.ServiceModel.Security.SecurityPolicyVersion.WSSecurityPolicy11" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.SecurityVersion" Id="T:System.ServiceModel.Security.SecurityVersion">
+      <Member Id="P:System.ServiceModel.Security.SecurityVersion.WSSecurity10" />
+      <Member Id="P:System.ServiceModel.Security.SecurityVersion.WSSecurity11" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.TrustVersion" Id="T:System.ServiceModel.Security.TrustVersion">
+      <Member Id="P:System.ServiceModel.Security.TrustVersion.Default" />
+      <Member Id="P:System.ServiceModel.Security.TrustVersion.Namespace" />
+      <Member Id="P:System.ServiceModel.Security.TrustVersion.Prefix" />
+      <Member Id="P:System.ServiceModel.Security.TrustVersion.WSTrustFeb2005" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.UserNamePasswordClientCredential" Id="T:System.ServiceModel.Security.UserNamePasswordClientCredential">
+      <Member Id="P:System.ServiceModel.Security.UserNamePasswordClientCredential.Password" />
+      <Member Id="P:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.WindowsClientCredential" Id="T:System.ServiceModel.Security.WindowsClientCredential">
+      <Member Id="P:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel" />
+      <Member Id="P:System.ServiceModel.Security.WindowsClientCredential.ClientCredential" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.X509CertificateInitiatorClientCredential" Id="T:System.ServiceModel.Security.X509CertificateInitiatorClientCredential">
+      <Member Id="M:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object)" />
+      <Member Id="M:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)" />
+      <Member Id="P:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.Certificate" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.X509CertificateRecipientClientCredential" Id="T:System.ServiceModel.Security.X509CertificateRecipientClientCredential">
+      <Member Id="M:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object)" />
+      <Member Id="M:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)" />
+      <Member Id="M:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate(System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Uri)" />
+      <Member Id="M:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName,System.Uri)" />
+      <Member Id="P:System.ServiceModel.Security.X509CertificateRecipientClientCredential.Authentication" />
+      <Member Id="P:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate" />
+      <Member Id="P:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates" />
+      <Member Id="P:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SslCertificateAuthentication" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.X509CertificateValidationMode" Id="T:System.ServiceModel.Security.X509CertificateValidationMode">
+      <Member Id="F:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust" />
+      <Member Id="F:System.ServiceModel.Security.X509CertificateValidationMode.Custom" />
+      <Member Id="F:System.ServiceModel.Security.X509CertificateValidationMode.None" />
+      <Member Id="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust" />
+      <Member Id="F:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.X509ServiceCertificateAuthentication" Id="T:System.ServiceModel.Security.X509ServiceCertificateAuthentication">
+      <Member Id="M:System.ServiceModel.Security.X509ServiceCertificateAuthentication.#ctor" />
+      <Member Id="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode" />
+      <Member Id="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CustomCertificateValidator" />
+      <Member Id="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.RevocationMode" />
+      <Member Id="P:System.ServiceModel.Security.X509ServiceCertificateAuthentication.TrustedStoreLocation" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.ServiceModel.Security.Tokens">
+    <Type Name="System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" Id="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters">
+      <Member Id="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor" />
+      <Member Id="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor(System.ServiceModel.Channels.SecurityBindingElement)" />
+      <Member Id="P:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.BootstrapSecurityBindingElement" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.Tokens.SecurityTokenParameters" Id="T:System.ServiceModel.Security.Tokens.SecurityTokenParameters">
+      <Member Id="M:System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.Tokens.SupportingTokenParameters" Id="T:System.ServiceModel.Security.Tokens.SupportingTokenParameters">
+      <Member Id="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.#ctor" />
+      <Member Id="M:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Clone" />
+      <Member Id="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.Endorsing" />
+      <Member Id="P:System.ServiceModel.Security.Tokens.SupportingTokenParameters.SignedEncrypted" />
+    </Type>
+    <Type Name="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Id="T:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters">
+      <Member Id="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor" />
     </Type>
   </Namespace>
   <Namespace Name="System.ServiceProcess">

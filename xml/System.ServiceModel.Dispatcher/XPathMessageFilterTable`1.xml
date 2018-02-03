@@ -342,7 +342,7 @@
     </MemberGroup>
     <Member MemberName="GetMatchingFilter">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilter (System.ServiceModel.Channels.Message message, out System.ServiceModel.Dispatcher.MessageFilter filter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Dispatcher.MessageFilter filter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.Message,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -383,7 +383,7 @@
     </Member>
     <Member MemberName="GetMatchingFilter">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilter (System.ServiceModel.Channels.MessageBuffer messageBuffer, out System.ServiceModel.Dispatcher.MessageFilter filter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.MessageBuffer messageBuffer, class System.ServiceModel.Dispatcher.MessageFilter filter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.MessageBuffer messageBuffer, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Channels.MessageBuffer,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -423,7 +423,7 @@
     </Member>
     <Member MemberName="GetMatchingFilter">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilter (System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, out System.ServiceModel.Dispatcher.MessageFilter filter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingFilter(class System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, class System.ServiceModel.Dispatcher.MessageFilter filter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingFilter(class System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.ServiceModel.Dispatcher.SeekableXPathNavigator,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -459,7 +459,7 @@
     </Member>
     <Member MemberName="GetMatchingFilter">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilter (System.Xml.XPath.XPathNavigator navigator, out System.ServiceModel.Dispatcher.MessageFilter filter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingFilter(class System.Xml.XPath.XPathNavigator navigator, class System.ServiceModel.Dispatcher.MessageFilter filter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingFilter(class System.Xml.XPath.XPathNavigator navigator, [out] class System.ServiceModel.Dispatcher.MessageFilter&amp; filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingFilter(System.Xml.XPath.XPathNavigator,System.ServiceModel.Dispatcher.MessageFilter@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -688,7 +688,7 @@
     </MemberGroup>
     <Member MemberName="GetMatchingValue">
       <MemberSignature Language="C#" Value="public bool GetMatchingValue (System.ServiceModel.Channels.Message message, out TFilterData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.Message message, !TFilterData data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.Message message, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.Message,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -725,7 +725,7 @@
     </Member>
     <Member MemberName="GetMatchingValue">
       <MemberSignature Language="C#" Value="public bool GetMatchingValue (System.ServiceModel.Channels.MessageBuffer messageBuffer, out TFilterData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.MessageBuffer messageBuffer, !TFilterData data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.MessageBuffer messageBuffer, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Channels.MessageBuffer,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -762,7 +762,7 @@
     </Member>
     <Member MemberName="GetMatchingValue">
       <MemberSignature Language="C#" Value="public bool GetMatchingValue (System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, out TFilterData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingValue(class System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, !TFilterData data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingValue(class System.ServiceModel.Dispatcher.SeekableXPathNavigator navigator, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.ServiceModel.Dispatcher.SeekableXPathNavigator,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -799,7 +799,7 @@
     </Member>
     <Member MemberName="GetMatchingValue">
       <MemberSignature Language="C#" Value="public bool GetMatchingValue (System.Xml.XPath.XPathNavigator navigator, out TFilterData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingValue(class System.Xml.XPath.XPathNavigator navigator, !TFilterData data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetMatchingValue(class System.Xml.XPath.XPathNavigator navigator, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.GetMatchingValue(System.Xml.XPath.XPathNavigator,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1262,7 +1262,7 @@ myFilters(filter)
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (System.ServiceModel.Dispatcher.MessageFilter filter, out TFilterData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.ServiceModel.Dispatcher.MessageFilter filter, !TFilterData data) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(class System.ServiceModel.Dispatcher.MessageFilter filter, [out] !TFilterData&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.TryGetValue(System.ServiceModel.Dispatcher.MessageFilter,`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1319,5 +1319,32 @@ myFilters(filter)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a filter and its associated filter data from the filter table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> and its associated <paramref name="FilterData" /> to the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilterTable`1" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

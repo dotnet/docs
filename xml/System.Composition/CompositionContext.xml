@@ -162,7 +162,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <typeparam name="TExport">The type to match.</typeparam>
         <param name="contractName">The name to match.</param>
-        <summary>Retrieves the the export that matches the specified generic type parameter and contract name.</summary>
+        <summary>Retrieves the export that matches the specified generic type parameter and contract name.</summary>
         <returns>The exported value.</returns>
         <remarks>
         </remarks>
@@ -273,7 +273,7 @@ Note that this constructor is protected; it can only be called by classes derive
     </Member>
     <Member MemberName="TryGetExport">
       <MemberSignature Language="C#" Value="public abstract bool TryGetExport (System.Composition.Hosting.Core.CompositionContract contract, out object export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, object export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, [out] object&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -300,7 +300,7 @@ Note that this constructor is protected; it can only be called by classes derive
     </Member>
     <Member MemberName="TryGetExport">
       <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, out object export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, object export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, [out] object&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -327,7 +327,7 @@ Note that this constructor is protected; it can only be called by classes derive
     </Member>
     <Member MemberName="TryGetExport">
       <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, string contractName, out object export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, string contractName, object export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, string contractName, [out] object&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -356,7 +356,7 @@ Note that this constructor is protected; it can only be called by classes derive
     </Member>
     <Member MemberName="TryGetExport&lt;TExport&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (out TExport export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(!!TExport export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;([out] !!TExport&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -385,7 +385,7 @@ Note that this constructor is protected; it can only be called by classes derive
     </Member>
     <Member MemberName="TryGetExport&lt;TExport&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (string contractName, out TExport export);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(string contractName, !!TExport export) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(string contractName, [out] !!TExport&amp; export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

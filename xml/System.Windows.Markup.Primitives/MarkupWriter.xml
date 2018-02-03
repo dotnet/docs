@@ -24,6 +24,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.Primitives.MarkupObject" />
+    <altmember cref="T:System.Windows.Markup.Primitives.MarkupProperty" />
+    <altmember cref="T:System.Windows.Markup.XamlWriter" />
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -94,5 +97,14 @@
           <paramref name="instance" /> or <paramref name="manager" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMarkupObjectFor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a <see cref="T:System.Windows.Markup.Primitives.MarkupObject" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

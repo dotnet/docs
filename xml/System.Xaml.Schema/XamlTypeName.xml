@@ -317,7 +317,7 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string typeName, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Xaml.Schema.XamlTypeName result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver, class System.Xaml.Schema.XamlTypeName result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver, [out] class System.Xaml.Schema.XamlTypeName&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParse(System.String,System.Xaml.IXamlNamespaceResolver,System.Xaml.Schema.XamlTypeName@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -346,7 +346,7 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
     </Member>
     <Member MemberName="TryParseList">
       <MemberSignature Language="C#" Value="public static bool TryParseList (string typeNameList, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver, class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver, [out] class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt;&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParseList(System.String,System.Xaml.IXamlNamespaceResolver,System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -398,5 +398,23 @@ XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

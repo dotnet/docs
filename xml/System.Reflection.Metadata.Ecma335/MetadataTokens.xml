@@ -1193,7 +1193,7 @@
     </Member>
     <Member MemberName="TryGetHeapIndex">
       <MemberSignature Language="C#" Value="public static bool TryGetHeapIndex (System.Reflection.Metadata.HandleKind type, out System.Reflection.Metadata.Ecma335.HeapIndex index);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetHeapIndex(valuetype System.Reflection.Metadata.HandleKind type, valuetype System.Reflection.Metadata.Ecma335.HeapIndex index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetHeapIndex(valuetype System.Reflection.Metadata.HandleKind type, [out] valuetype System.Reflection.Metadata.Ecma335.HeapIndex&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TryGetHeapIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.HeapIndex@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1219,7 +1219,7 @@
     </Member>
     <Member MemberName="TryGetTableIndex">
       <MemberSignature Language="C#" Value="public static bool TryGetTableIndex (System.Reflection.Metadata.HandleKind type, out System.Reflection.Metadata.Ecma335.TableIndex index);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTableIndex(valuetype System.Reflection.Metadata.HandleKind type, valuetype System.Reflection.Metadata.Ecma335.TableIndex index) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTableIndex(valuetype System.Reflection.Metadata.HandleKind type, [out] valuetype System.Reflection.Metadata.Ecma335.TableIndex&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TryGetTableIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.TableIndex@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

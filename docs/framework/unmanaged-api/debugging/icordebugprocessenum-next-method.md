@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcessEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Next method, ICorDebugProcessEnum interface [.NET Framework debugging]"
   - "ICorDebugProcessEnum::Next method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugProcessEnum::Next Method
 Gets the specified number of ICorDebugProcess instances from the enumeration, starting at the current position.  

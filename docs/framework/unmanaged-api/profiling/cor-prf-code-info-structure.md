@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_CODE_INFO"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_CODE_INFO structure [.NET Framework profiling]"
 ms.assetid: cf30e27c-1f7e-43a2-ba1e-01e4137301db
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_PRF_CODE_INFO Structure
 Represents one contiguous block of native code stored in memory.  

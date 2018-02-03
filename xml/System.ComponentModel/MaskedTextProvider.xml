@@ -48,6 +48,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MaskedTextBox" />
+    <altmember cref="P:System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />
+    <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -123,6 +127,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AsciiOnly" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -161,6 +167,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Culture" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,6 +210,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -243,6 +254,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Culture" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AsciiOnly" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -286,6 +300,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Culture" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -338,6 +356,14 @@
  -or-  
   
  The mask contains one or more non-printable characters.</exception>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.Mask" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.Clone" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Culture" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PromptChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AsciiOnly" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -381,6 +407,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -427,11 +462,20 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public bool Add (char input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.Char,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -476,11 +520,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       </Docs>
     </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public bool Add (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -527,6 +580,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="AllowPromptAsInput">
@@ -564,6 +626,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PromptChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
       </Docs>
     </Member>
     <Member MemberName="AsciiOnly">
@@ -601,6 +666,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.AsciiOnly" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
       </Docs>
     </Member>
     <Member MemberName="AssignedEditPositionCount">
@@ -635,6 +702,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="AvailableEditPositionCount">
@@ -669,6 +743,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsAvailablePosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -703,11 +782,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PromptChar" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
       <MemberSignature Language="C#" Value="public void Clear (out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear(valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear([out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Clear(System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -740,6 +826,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -775,6 +867,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.#ctor" />
+        <altmember cref="T:System.ICloneable" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -809,6 +904,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.Culture" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
       </Docs>
     </Member>
     <Member MemberName="DefaultPasswordChar">
@@ -843,6 +940,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IsPassword" />
       </Docs>
     </Member>
     <Member MemberName="EditPositionCount">
@@ -877,6 +977,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="EditPositions">
@@ -913,6 +1022,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindAssignedEditPositionFrom">
@@ -957,6 +1072,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindAssignedEditPositionInRange">
@@ -1003,6 +1126,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindEditPositionFrom">
@@ -1045,6 +1176,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindEditPositionInRange">
@@ -1089,6 +1228,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindNonEditPositionFrom">
@@ -1131,6 +1278,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindNonEditPositionInRange">
@@ -1175,6 +1330,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindUnassignedEditPositionFrom">
@@ -1219,6 +1382,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="FindUnassignedEditPositionInRange">
@@ -1265,6 +1436,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetOperationResultFromHint">
@@ -1304,6 +1483,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.MaskedTextResultHint" />
       </Docs>
     </Member>
     <Member MemberName="IncludeLiterals">
@@ -1339,6 +1519,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.SkipLiterals" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
       </Docs>
     </Member>
     <Member MemberName="IncludePrompt">
@@ -1374,6 +1559,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
       </Docs>
     </Member>
     <Member MemberName="InsertAt">
@@ -1427,6 +1614,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="InsertAt">
@@ -1481,11 +1676,19 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="InsertAt">
       <MemberSignature Language="C#" Value="public bool InsertAt (char input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1538,11 +1741,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="InsertAt">
       <MemberSignature Language="C#" Value="public bool InsertAt (string input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1596,6 +1807,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="InvalidIndex">
@@ -1632,6 +1851,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsAvailablePosition">
@@ -1677,6 +1901,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsEditPosition">
@@ -1720,6 +1948,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsAvailablePosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsPassword">
@@ -1761,6 +1994,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.DefaultPasswordChar" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
       </Docs>
     </Member>
     <Member MemberName="IsValidInputChar">
@@ -1800,6 +2037,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsAvailablePosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidMaskChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AsciiOnly" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidMaskChar">
@@ -1839,6 +2083,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
       </Docs>
     </Member>
     <Member MemberName="IsValidPasswordChar">
@@ -1878,6 +2125,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IsPassword" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidMaskChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1918,6 +2169,9 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than or equal to the <see cref="P:System.ComponentModel.MaskedTextProvider.Length" /> of the mask.</exception>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
       </Docs>
     </Member>
     <Member MemberName="LastAssignedPosition">
@@ -1952,6 +2206,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -1988,6 +2246,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
       </Docs>
     </Member>
     <Member MemberName="Mask">
@@ -2022,6 +2283,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.Mask" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.#ctor" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.MaskFull" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.MaskCompleted" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.Clone" />
       </Docs>
     </Member>
     <Member MemberName="MaskCompleted">
@@ -2059,6 +2327,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.MaskCompleted" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.MaskFull" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
       </Docs>
     </Member>
     <Member MemberName="MaskFull">
@@ -2094,6 +2367,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.MaskFull" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.MaskCompleted" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
       </Docs>
     </Member>
     <Member MemberName="PasswordChar">
@@ -2130,6 +2408,12 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The password character specified when setting this property is the same as the current prompt character, <see cref="P:System.ComponentModel.MaskedTextProvider.PromptChar" />. The two are required to be different.</exception>
         <exception cref="T:System.ArgumentException">The character specified when setting this property is not a valid password character, as determined by the <see cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" /> method.</exception>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.PasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.DefaultPasswordChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IsPassword" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
       </Docs>
     </Member>
     <Member MemberName="PromptChar">
@@ -2166,6 +2450,13 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The prompt character specified when setting this property is the same as the current password character, <see cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />. The two are required to be different.</exception>
         <exception cref="T:System.ArgumentException">The character specified when setting this property is not a valid password character, as determined by the <see cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" /> method.</exception>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2204,11 +2495,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove([out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Remove(System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2247,6 +2545,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2292,6 +2597,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2335,11 +2646,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
       <MemberSignature Language="C#" Value="public bool RemoveAt (int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.RemoveAt(System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2384,6 +2701,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -2431,6 +2754,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -2481,11 +2812,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (char input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2534,11 +2872,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (string input, int position, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2589,11 +2934,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (char input, int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2644,11 +2996,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public bool Replace (string input, int startPosition, int endPosition, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 startPosition, int32 endPosition, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2701,6 +3060,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
       </Docs>
     </Member>
     <Member MemberName="ResetOnPrompt">
@@ -2745,6 +3111,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.ResetOnPrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.SkipLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PromptChar" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="ResetOnSpace">
@@ -2782,6 +3156,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.ResetOnSpace" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.SkipLiterals" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -2828,11 +3206,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
       </Docs>
     </Member>
     <Member MemberName="Set">
       <MemberSignature Language="C#" Value="public bool Set (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Set(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2880,6 +3265,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="input" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Add" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Clear" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.InsertAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Remove" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Replace" />
       </Docs>
     </Member>
     <Member MemberName="SkipLiterals">
@@ -2919,6 +3311,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.MaskedTextBox.SkipLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
       </Docs>
     </Member>
     <Member MemberName="ToDisplayString">
@@ -2956,6 +3353,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.ToString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2994,6 +3396,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3036,6 +3443,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3081,6 +3493,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsAvailablePosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3134,6 +3552,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3190,6 +3613,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3249,6 +3677,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3311,11 +3744,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       </Docs>
     </Member>
     <Member MemberName="VerifyChar">
       <MemberSignature Language="C#" Value="public bool VerifyChar (char input, int position, out System.ComponentModel.MaskedTextResultHint hint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyChar(char input, int32 position, valuetype System.ComponentModel.MaskedTextResultHint hint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyChar(char input, int32 position, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; hint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3364,6 +3802,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyEscapeChar(System.Char,System.Int32)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
       </Docs>
     </Member>
     <Member MemberName="VerifyEscapeChar">
@@ -3413,6 +3856,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.VerifyString" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.SkipLiterals" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
       </Docs>
     </Member>
     <Member MemberName="VerifyString">
@@ -3452,11 +3901,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
       </Docs>
     </Member>
     <Member MemberName="VerifyString">
       <MemberSignature Language="C#" Value="public bool VerifyString (string input, out int testPosition, out System.ComponentModel.MaskedTextResultHint resultHint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input, int32 testPosition, valuetype System.ComponentModel.MaskedTextResultHint resultHint) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyString(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3497,7 +3950,111 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.ComponentModel.MaskedTextProvider.Set" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Mask" />
+        <altmember cref="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
+        <altmember cref="P:System.ComponentModel.MaskedTextProvider.Length" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an input character or input string to the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Set">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the formatted string to the specified input string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.MaskedTextProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InsertAt">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a character or string at a specific position within the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="VerifyString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether the specified string could be set successfully.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Clear">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears all the input characters from the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RemoveAt">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes one or more assigned characters from the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces one or more editable characters in the formatted string with the specified characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the last assigned character from the formatted string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

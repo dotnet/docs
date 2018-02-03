@@ -66,6 +66,7 @@
     <block subset="none" type="overrides">
       <para>When you inherit from <see cref="T:System.Reflection.FieldInfo" />, you must override the following members: <see cref="M:System.Reflection.FieldInfo.GetValue(System.Object)" /> and <see cref="M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />.</para>
     </block>
+    <altmember cref="T:System.Type" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -274,6 +277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="GetFieldFromHandle">
@@ -617,7 +622,7 @@
 >  Access restrictions are ignored for fully trusted code. That is, private constructors, methods, fields, and properties can be accessed and invoked through reflection whenever the code is fully trusted.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -659,6 +664,7 @@
  The caller does not have permission to access this field.</exception>
         <exception cref="T:System.ArgumentException">The method is neither declared nor inherited by the class of <paramref name="obj" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetValueDirect">
@@ -737,7 +743,7 @@
 ## Remarks  
  The actual visibility of a field is limited by the visibility of its type. The <xref:System.Reflection.FieldInfo.IsAssembly%2A> property might be `true` for a field, but if it is a field of a private nested type then the field is not visible outside the containing type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes.Assembly?displayProperty=nameWithType> if the only visibility modifier is `internal` (`Friend` in Visual Basic). This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
   
    
   
@@ -745,7 +751,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -753,6 +759,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamily">
@@ -790,7 +800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes.Family?displayProperty=nameWithType> if the only visibility modifier is `protected`. This property is `false` for fields that are `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++); use the <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property to identify such fields.  
   
    
   
@@ -798,7 +808,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -806,6 +816,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyAndAssembly" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyAndAssembly">
@@ -845,7 +860,7 @@
 ## Remarks  
  If a field has <xref:System.Reflection.FieldAttributes.FamANDAssem> level visibility, it can be called from any member in a derived class that is also in the same assembly, but not from any other type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Fields with this visibility cannot be defined in Visual Basic or C#.  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes.FamANDAssem?displayProperty=nameWithType> if the visibility modifier is `protected private` in C++. Fields with this visibility cannot be defined in Visual Basic or C#.  
   
    
   
@@ -853,7 +868,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -861,6 +876,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamilyOrAssembly" />
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsFamilyOrAssembly">
@@ -902,7 +921,7 @@
   
  The actual visibility of a field is limited by the visibility of its type. The <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A> property might be `true` for a field, but if it is a field of a private nested type then the field is not visible outside the containing type.  
   
- The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
+ The visibility of a field is exactly described by <xref:System.Reflection.FieldAttributes.FamORAssem?displayProperty=nameWithType> if the visibility modifier is `protected internal` in C# (`Protected Friend` in Visual Basic, `protected public` in C++).  
   
    
   
@@ -910,7 +929,7 @@
  The following code example defines fields with varying levels of visibility, and displays the values of their <xref:System.Reflection.FieldInfo.IsAssembly%2A>, <xref:System.Reflection.FieldInfo.IsFamily%2A>, <xref:System.Reflection.FieldInfo.IsFamilyOrAssembly%2A>, and <xref:System.Reflection.FieldInfo.IsFamilyAndAssembly%2A> properties.  
   
 > [!NOTE]
->  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
+>  The Visual Basic and C# languages cannot define fields with <xref:System.Reflection.FieldAttributes.FamANDAssem?displayProperty=nameWithType> visibility; that access level appears only in the C++ example.  
   
  [!code-cpp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CPP/source.cpp#1)]
  [!code-csharp[Classic FieldInfo.IsAssembly Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FieldInfo.IsAssembly Example/CS/source.cs#1)]
@@ -918,6 +937,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsAssembly" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsFamily" />
       </Docs>
     </Member>
     <Member MemberName="IsInitOnly">
@@ -957,9 +979,9 @@
 ## Remarks  
  If the returned value is `true`, the field can only be initialized, and is read-only thereafter.  
   
- To get the `IsInitOnly` property, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `IsInitOnly` property. To access a non-public field, combine <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> with either or both of <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> in the `GetField` method.  
+ To get the `IsInitOnly` property, first get the class `Type`. From the `Type`, get the `FieldInfo`. From the `FieldInfo`, get the `IsInitOnly` property. To access a non-public field, combine <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> with either or both of <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> in the `GetField` method.  
   
- The `IsInitOnly` property is set when the <xref:System.Reflection.FieldAttributes?displayProperty=nameWithType> attribute is set.  
+ The `IsInitOnly` property is set when the <xref:System.Reflection.FieldAttributes.InitOnly?displayProperty=nameWithType> attribute is set.  
   
    
   
@@ -980,6 +1002,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="IsLiteral">
@@ -1021,6 +1046,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsNotSerialized">
@@ -1065,6 +1091,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsPinvokeImpl">
@@ -1104,6 +1131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsPrivate">
@@ -1158,6 +1186,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="IsPublic">
@@ -1212,6 +1242,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityCritical">
@@ -1260,6 +1292,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecuritySafeCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecuritySafeCritical">
@@ -1308,6 +1342,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityTransparent" />
       </Docs>
     </Member>
     <Member MemberName="IsSecurityTransparent">
@@ -1356,6 +1392,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecurityCritical" />
+        <altmember cref="P:System.Reflection.FieldInfo.IsSecuritySafeCritical" />
       </Docs>
     </Member>
     <Member MemberName="IsSpecialName">
@@ -1406,6 +1444,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
       </Docs>
     </Member>
     <Member MemberName="IsStatic">
@@ -1468,6 +1507,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldAttributes" />
+        <altmember cref="M:System.Type.GetField(System.String,System.Reflection.BindingFlags)" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -1502,7 +1544,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes?displayProperty=nameWithType> only when a given member is a field.  
+ This property overrides <xref:System.Reflection.MemberInfo.MemberType%2A>. Therefore, when you examine a set of <xref:System.Reflection.MemberInfo> objects — for example, the array returned by <xref:System.Type.GetMembers%2A> — the <xref:System.Reflection.MemberInfo.MemberType%2A> property returns <xref:System.Reflection.MemberTypes.Field?displayProperty=nameWithType> only when a given member is a field.  
   
    
   
@@ -1521,6 +1563,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:System.Type" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1641,7 +1685,7 @@
 >  Fully trusted code has the permissions that are needed to access and invoke private constructors, methods, fields, and properties using reflection.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1728,7 +1772,7 @@
 >  Fully trusted code has the permissions that are needed to access and invoke private constructors, methods, fields, and properties using reflection.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1785,7 +1829,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1798,7 +1842,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._FieldInfo.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _FieldInfo.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1887,7 +1931,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _FieldInfo.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1916,7 +1960,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._FieldInfo.Invoke">
       <MemberSignature Language="C#" Value="void _FieldInfo.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._FieldInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.FieldInfo.System#Runtime#InteropServices#_FieldInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1957,5 +2001,27 @@
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of the field for the given object to the given value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFieldFromHandle">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Reflection.FieldInfo" /> for the field represented by a handle.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

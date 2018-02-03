@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Document Approval Process
 This sample demonstrates the use of many [!INCLUDE[wf](../../../../includes/wf-md.md)] and [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] features together. Together they implement a document approval process scenario. A client application can submit documents for approval and approve documents. An approval manager application exists to facilitate communications between clients and to enforce the rules of the approval process. The approval process is a workflow that can execute several types of approval. Activities exist to get a single approval, a quorum approval (a percentage of set of approvers), and a complex approval process that consists of a quorum and single approval in a sequence.  
@@ -150,6 +152,4 @@ This sample demonstrates the use of many [!INCLUDE[wf](../../../../includes/wf-m
   
 ##### To clean up  
   
-1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.  
-  
-## See Also
+1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, navigate to the DocumentApprovalProcess folder and run Cleanup.cmd.

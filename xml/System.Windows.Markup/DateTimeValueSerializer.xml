@@ -25,10 +25,10 @@
   
  In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.DateTimeValueSerializer> is in the System.Xaml assembly. See [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
-<a name="xamlTextUsage_DateTimeValueSerializer"></a>   
-## XAML Text Usage  
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Markup.Primitives.MarkupWriter" />
+    <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An empty string returns <xref:System.DateTime?displayProperty=nameWithType>.  
+ An empty string returns <xref:System.DateTime.MinValue?displayProperty=nameWithType>.  
   
  The current implementation uses <xref:System.DateTime.Parse%2A> internally, and also uses the following <xref:System.Globalization.DateTimeStyles>: `DateTimeStyles.RoundtripKind | DateTimeStyles.NoCurrentDateDefault | DateTimeStyles.AllowLeadingWhite | DateTimeStyles.AllowTrailingWhite`.  
   

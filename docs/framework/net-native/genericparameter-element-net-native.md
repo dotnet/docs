@@ -14,6 +14,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;GenericParameter&gt; Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
@@ -91,8 +93,8 @@ Applies policy to the parameter type of a generic type or method.
 ```  
   
 ## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)   
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)   
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)   
+ [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
+ [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
  [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

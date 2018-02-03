@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSourceServerModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedSourceServerModule interface [.NET Framework debugging]"
 ms.assetid: a19b23bd-2061-476e-b67d-252f57404f8b
@@ -28,6 +26,8 @@ caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedSourceServerModule Interface
 Provides source server data for a module. Obtain this interface by calling `QueryInterface` on an object that implements the [ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md) interface.  

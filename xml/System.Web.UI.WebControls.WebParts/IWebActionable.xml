@@ -29,16 +29,18 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebActionable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbcs.ascx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebActionable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbvb.ascx#2)]  -->  
+ [!code-aspx-csharp[WebParts_IWebActionable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbcs.ascx#2)]
+ [!code-aspx-vb[WebParts_IWebActionable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbvb.ascx#2)]  
   
  The second part of the code example is an .aspx page that hosts the user control. Because the control is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, at run time ASP.NET wraps the user control in a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control and treats it as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. After you load the page in a browser, notice that the label at the bottom of the control displays how many custom verbs are in the collection referenced by the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> property. Also note that if you click the verbs menu in the control, and click either of the verbs, another label appears showing the total number of times the custom verbs have been clicked.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebActionable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbhostcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_IWebActionable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbhostvb.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_IWebActionable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbhostcs.aspx#1)]
+ [!code-aspx-vb[WebParts_IWebActionable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbhostvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
+    <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
   </Docs>
   <Members>
     <Member MemberName="Verbs">
@@ -78,6 +80,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
+        <altmember cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
       </Docs>
     </Member>
   </Members>

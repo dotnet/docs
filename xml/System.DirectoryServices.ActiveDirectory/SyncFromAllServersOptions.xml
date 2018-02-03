@@ -18,6 +18,9 @@
   <Docs>
     <summary>Specifies additional options when performing a synchronization.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.AdamInstance.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DirectoryServer.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.SyncReplicaFromAllServers(System.String,System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions)" />
   </Docs>
   <Members>
     <Member MemberName="AbortIfServerUnavailable">

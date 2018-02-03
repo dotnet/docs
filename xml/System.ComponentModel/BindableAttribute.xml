@@ -65,6 +65,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -152,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
+        <altmember cref="T:System.ComponentModel.BindableSupport" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -262,6 +269,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -291,10 +303,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute?displayProperty=nameWithType>.  
+ When you mark a property with this value, the <xref:System.ComponentModel.BindableAttribute> is set to the constant member <xref:System.ComponentModel.BindableAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.No?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
+        <altmember cref="F:System.ComponentModel.BindableAttribute.Yes" />
+        <altmember cref="F:System.ComponentModel.BindableAttribute.No" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -446,6 +461,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
+        <altmember cref="F:System.ComponentModel.BindableAttribute.Yes" />
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -479,7 +496,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.BindableAttribute" />
+        <altmember cref="F:System.ComponentModel.BindableAttribute.No" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BindableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

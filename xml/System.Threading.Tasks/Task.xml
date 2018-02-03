@@ -43,24 +43,38 @@
     <summary>Represents an asynchronous operation.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
-  
+   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/Tasks/Task.cs#045a746eb48cbaa9). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  The <xref:System.Threading.Tasks.Task> class represents a single operation that does not return a value and that usually executes asynchronously. <xref:System.Threading.Tasks.Task> objects are one of the central components of the  [task-based asynchronous pattern](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) first introduced in the .NET Framework 4. Because the work performed by a <xref:System.Threading.Tasks.Task> object typically executes asynchronously on a thread pool thread rather than synchronously on the main application thread, you can use the <xref:System.Threading.Tasks.Task.Status%2A> property, as well as the <xref:System.Threading.Tasks.Task.IsCanceled%2A>, <xref:System.Threading.Tasks.Task.IsCompleted%2A>, and <xref:System.Threading.Tasks.Task.IsFaulted%2A> properties, to determine the   state of a task. Most commonly, a lambda expression is used to specify the work that the task is to perform.  
   
  For operations that return values, you use the <xref:System.Threading.Tasks.Task%601> class.  
   
  In this section:  
   
+ [Task instantiation examples](#Instant)   
  [Creating and executing a task](#Creating)   
  [Separating task creation and execution](#Separating)   
  [Waiting for one or more tasks to complete](#WaitingForOne)   
  [Tasks and culture](#Culture)   
  [For debugger developers](#Debugger)  
+
+ <a name="Instant"></a>     
+## Task instantiation  
+ The following example creates and executes four tasks. Three tasks execute an <xref:System.Action%601> delegate named `action`, which accepts an argument of type <xref:System.Object>. A fourth task executes a lambda expression (an <xref:System.Action> delegate) that is defined inline in the call to the task creation method. Each task is instantiated and run in a different way:  
   
+-   Task `t1` is instantiated by calling a Task class constructor, but is started by calling its <xref:System.Threading.Tasks.Task.Start> method only after task `t2` has started.  
+  
+-   Task `t2` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%7BSystem.Object%7D%2CSystem.Object%29?displayProperty=nameWithType> method.  
+  
+-   Task `t3` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method.  
+  
+-   Task `t4` is executed synchronously on the main thread by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method.  
+  
+ Because task `t4` executes synchronously, it executes on the main application thread. The remaining tasks execute asynchronously typically on one or more thread pool threads.  
+  
+ [!code-csharp[System.Threading.Tasks.Task#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/startnew.cs#01)]
+ [!code-vb[System.Threading.Tasks.Task#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/startnew.vb#01)] 
+    
 <a name="Creating"></a>   
 ## Creating and executing a task  
  <xref:System.Threading.Tasks.Task> instances may be created in a variety of ways. The most common approach, which is available starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], is to call the static <xref:System.Threading.Tasks.Task.Run%2A> method. The <xref:System.Threading.Tasks.Task.Run%2A> method provides a simple way to start a task using default values and without requiring additional parameters. The following example uses the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method to start a task that loops and then displays the number of loop iterations:  
@@ -123,29 +137,12 @@
   
 <a name="Debugger"></a>   
 ## For debugger developers  
- For developers implementing custom debuggers, several internal and private members of task may be useful (these may change from release to release). The `m_taskId` field serves as the backing store for the <xref:System.Threading.Tasks.Task.Id%2A> property, however accessing this field directly from a debugger may be more efficient than accessing the same value through the property's getter method (the `s_taskIdCounter` counter is used to retrieve the next available ID for a task). Similarly, the `m_stateFlags` field stores information about the current lifecycle stage of the task, information also accessible through the <xref:System.Threading.Tasks.Task.Status%2A> property. The `m_action` field stores a reference to the task's delegate, and the `m_stateObject` field stores the async state passed to the task by the developer. Finally, for debuggers that parse stack frames, the `InternalWait` method serves a potential marker for when a task is entering a wait operation.  
-  
-   
-  
-## Examples  
- The following example creates and executes four tasks. Three tasks execute an <xref:System.Action%601> delegate named `action`, which accepts an argument of type <xref:System.Object>. A fourth task executes a lambda expression (an <xref:System.Action> delegate) that is defined inline in the call to the task creation method. Each task is instantiated and run in a different way:  
-  
--   Task `t1` is instantiated by calling a Task class constructor, but is started by calling its <xref:System.Threading.Tasks.Task.Start> method only after task `t2` has started.  
-  
--   Task `t2` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%7BSystem.Object%7D%2CSystem.Object%29?displayProperty=nameWithType> method.  
-  
--   Task `t3` is instantiated and started in a single method call by calling the <xref:System.Threading.Tasks.Task.Run%28System.Action%29> method.  
-  
--   Task `t4` is executed synchronously on the main thread by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method.  
-  
- Because task `t4` executes synchronously, it executes on the main application thread. The remaining tasks execute asynchronously typically on one or more thread pool threads.  
-  
- [!code-csharp[System.Threading.Tasks.Task#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/startnew.cs#01)]
- [!code-vb[System.Threading.Tasks.Task#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/startnew.vb#01)]  
+ For developers implementing custom debuggers, several internal and private members of task may be useful (these may change from release to release). The `m_taskId` field serves as the backing store for the <xref:System.Threading.Tasks.Task.Id%2A> property, however accessing this field directly from a debugger may be more efficient than accessing the same value through the property's getter method (the `s_taskIdCounter` counter is used to retrieve the next available ID for a task). Similarly, the `m_stateFlags` field stores information about the current lifecycle stage of the task, information also accessible through the <xref:System.Threading.Tasks.Task.Status%2A> property. The `m_action` field stores a reference to the task's delegate, and the `m_stateObject` field stores the async state passed to the task by the developer. Finally, for debuggers that parse stack frames, the `InternalWait` method serves a potential marker for when a task is entering a wait operation.   
   
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.Task" />, except for <see cref="M:System.Threading.Tasks.Task.Dispose" />, are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <altmember cref="T:System.Threading.Tasks.Task`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -199,6 +196,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is <see langword="null" />.</exception>
+        <altmember cref="M:System.Threading.Tasks.Task.Run(System.Action)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -345,6 +343,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="action" /> argument is null.</exception>
+        <altmember cref="M:System.Threading.Tasks.TaskFactory.StartNew(System.Action{System.Object},System.Object)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -610,6 +609,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Threading.Tasks.Task.FromResult``1(``0)" />
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -1867,6 +1867,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.Id" />
       </Docs>
     </Member>
     <Member MemberName="Delay">
@@ -2278,8 +2279,8 @@ Task t Status: RanToCompletion, Result: 42
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A?displayProperty=nameWithType>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions?displayProperty=nameWithType>|  
-|<xref:System.Threading.Tasks.TaskFactory.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions.None?displayProperty=nameWithType>|  
+|<xref:System.Threading.Tasks.TaskFactory.CreationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskCreationOptions.None?displayProperty=nameWithType>|  
 |<xref:System.Threading.Tasks.TaskFactory.Scheduler%2A?displayProperty=nameWithType>|`null`, or <xref:System.Threading.Tasks.TaskScheduler.Current%2A?displayProperty=nameWithType>|  
   
  The most common use of this property is to create and start a new task in a single call to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method.  
@@ -2294,6 +2295,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskFactory" />
       </Docs>
     </Member>
     <Member MemberName="FromCanceled">
@@ -2523,6 +2525,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.CompletedTask" />
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -2604,6 +2607,7 @@ Task t Status: RanToCompletion, Result: 42
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Threading.Tasks.Task.CurrentId" />
       </Docs>
     </Member>
     <Member MemberName="IsCanceled">
@@ -2818,7 +2822,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   Its cancellation token is <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>.  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -2938,7 +2942,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> method. It creates a task with the following default values:  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -3100,7 +3104,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   Its cancellation token is <xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>.  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -3220,7 +3224,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The <xref:System.Threading.Tasks.Task.Run%2A> method is a simpler alternative to the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method. It creates a task with the following default values:  
   
--   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions?displayProperty=nameWithType>.  
+-   Its <xref:System.Threading.Tasks.Task.CreationOptions%2A> property value is <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>.  
   
 -   It uses the default task scheduler.  
   
@@ -3346,6 +3350,7 @@ Task t Status: RanToCompletion, Result: 42
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Tasks.Task" /> instance has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Threading.Tasks.Task" /> is not in a valid state to be started. It may have already been started, executed, or canceled, or it may have been created in a manner that doesn't support direct scheduling.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -3903,7 +3908,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
-      <MemberSignature Language="C#" Value="public static void WaitAll (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static void WaitAll (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WaitAll(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WaitAll(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4196,7 +4201,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WaitAny">
-      <MemberSignature Language="C#" Value="public static int WaitAny (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static int WaitAny (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 WaitAny(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WaitAny(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4493,7 +4498,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAll">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WhenAll (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WhenAll (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WhenAll(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAll(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4630,7 +4635,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAll&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TResult[]&gt; WhenAll&lt;TResult&gt; (System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TResult[]&gt; WhenAll&lt;TResult&gt; (params System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TResult[]&gt; WhenAll&lt;TResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TResult&gt;[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAll``1(System.Threading.Tasks.Task{``0}[])" />
       <MemberType>Method</MemberType>
@@ -4746,7 +4751,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAny">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt; WhenAny (System.Threading.Tasks.Task[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&gt; WhenAny (params System.Threading.Tasks.Task[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.Tasks.Task&gt; WhenAny(class System.Threading.Tasks.Task[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])" />
       <MemberType>Method</MemberType>
@@ -4846,7 +4851,7 @@ Task t Status: RanToCompletion, Result: 42
       </Docs>
     </Member>
     <Member MemberName="WhenAny&lt;TResult&gt;">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; WhenAny&lt;TResult&gt; (System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Threading.Tasks.Task&lt;TResult&gt;&gt; WhenAny&lt;TResult&gt; (params System.Threading.Tasks.Task&lt;TResult&gt;[] tasks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; WhenAny&lt;TResult&gt;(class System.Threading.Tasks.Task`1&lt;!!TResult&gt;[] tasks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Task.WhenAny``1(System.Threading.Tasks.Task{``0}[])" />
       <MemberType>Method</MemberType>
@@ -4940,5 +4945,115 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for any of the provided <see cref="T:System.Threading.Tasks.Task" /> objects to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Wait">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for the <see cref="T:System.Threading.Tasks.Task" /> to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RunSynchronously">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Threading.Tasks.Task" /> synchronously on the current <see cref="T:System.Threading.Tasks.TaskScheduler" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WaitAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Waits for all of the provided <see cref="T:System.Threading.Tasks.Task" /> objects to complete execution.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WhenAny">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete when any of the supplied tasks have completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Delay">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete after a time delay.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Threading.Tasks.Task" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WhenAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a task that will complete when all of the supplied tasks have completed.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Task" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Start">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts the <see cref="T:System.Threading.Tasks.Task" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ContinueWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a continuation that executes asynchronously when the target <see cref="T:System.Threading.Tasks.Task" /> completes.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

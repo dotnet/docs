@@ -1,18 +1,14 @@
 ---
 title: "/optioncompare"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "/optioncompare"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "optioncompare compiler option [Visual Basic]"
   - "-optioncompare compiler option [Visual Basic]"
@@ -21,21 +17,6 @@ ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /optioncompare
 Specifies how string comparisons are made.  
@@ -59,7 +40,7 @@ Specifies how string comparisons are made.
   
 ### To set /optioncompare in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
 2.  Click the **Compile** tab.  
   
@@ -77,10 +58,10 @@ vbc /optioncompare:binary projFile.vb
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)   
- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)   
- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
+ [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
+ [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
+ [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
+ [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
+ [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
  [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

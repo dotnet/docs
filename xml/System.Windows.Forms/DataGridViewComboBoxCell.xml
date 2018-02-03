@@ -40,6 +40,10 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewComboBoxCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewComboBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.CellTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +66,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.#ctor" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.AutoComplete" />
       </Docs>
     </Member>
     <Member MemberName="AutoComplete">
@@ -115,6 +122,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewComboBoxCell.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewComboBoxCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -160,6 +168,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value when setting this property is not <see langword="null" /> and is not of type <see cref="T:System.Collections.IList" /> nor <see cref="T:System.ComponentModel.IListSource" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.ValueMember" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.DataPropertyName" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.Items" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DisplayMember" />
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="T:System.ComponentModel.IListSource" />
       </Docs>
     </Member>
     <Member MemberName="DetachEditingControl">
@@ -178,6 +195,7 @@
       <Docs>
         <summary>Removes the cell's editing control from the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.DetachEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMember">
@@ -224,6 +242,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property is not <see langword="null" /> and the specified value when setting this property is not <see langword="null" /> or <see cref="F:System.String.Empty" /> and does not name a valid property or column in the data source.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayMember" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.ValueMember" />
       </Docs>
     </Member>
     <Member MemberName="DisplayStyle">
@@ -263,6 +285,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DisplayStyleForCurrentCellOnly">
@@ -294,6 +318,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DropDownWidth">
@@ -334,6 +359,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.DropDownWidth" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DropDownWidth" />
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -359,6 +387,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
+        <altmember cref="T:System.Windows.Forms.ComboBox" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -403,6 +434,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not a valid <see cref="T:System.Windows.Forms.FlatStyle" /> value.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
+        <altmember cref="T:System.Windows.Forms.ComboBox" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -436,6 +471,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.FormattedValueType" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -462,6 +499,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's content area, which is calculated using the specified <see cref="T:System.Drawing.Graphics" /> and cell style.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -488,11 +526,12 @@
         <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormattedValue">
       <MemberSignature Language="C#" Value="protected override object GetFormattedValue (object value, int rowIndex, ref System.Windows.Forms.DataGridViewCellStyle cellStyle, System.ComponentModel.TypeConverter valueTypeConverter, System.ComponentModel.TypeConverter formattedValueTypeConverter, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle&amp; cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewComboBoxCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -544,6 +583,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">Formatting failed and either there is no handler for the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event of the <see cref="T:System.Windows.Forms.DataGridView" /> control or the handler set the <see cref="P:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException" /> property to <see langword="true" />. The exception object can typically be cast to type <see cref="T:System.FormatException" /> for type conversion errors or to type <see cref="T:System.ArgumentException" /> if <paramref name="value" /> cannot be found in the <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> or the <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.Items" /> collection.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.Items" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewComboBoxCell.ParseFormattedValue(System.Object,System.Windows.Forms.DataGridViewCellStyle,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter)" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -572,6 +623,7 @@
         <summary>Calculates the preferred size, in pixels, of the cell.</summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeEditingControl">
@@ -612,6 +664,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.InitializeEditingControl(System.Int32,System.Object,System.Windows.Forms.DataGridViewCellStyle)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewComboBoxCell.DetachEditingControl" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -662,6 +718,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.Items" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DisplayMember" />
       </Docs>
     </Member>
     <Member MemberName="KeyEntersEditMode">
@@ -694,6 +754,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.EditMode" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MaxDropDownItems">
@@ -734,6 +797,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 1 or greater than 100 when setting this property.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.ComboBox.MaxDropDownItems" />
       </Docs>
     </Member>
     <Member MemberName="OnDataGridViewChanged">
@@ -753,6 +818,8 @@
         <summary>Called when the <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> property of the cell changes.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property is not <see langword="null" /> and the value of either the <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DisplayMember" /> property or the <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.ValueMember" /> property is not <see langword="null" /> or <see cref="F:System.String.Empty" /> and does not name a valid property or column in the data source.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="OnEnter">
@@ -777,6 +844,7 @@
           <see langword="true" /> if a user action moved focus to the cell; <see langword="false" /> if a programmatic operation moved focus to the cell.</param>
         <summary>Called when the focus moves to a cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnEnter(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnLeave">
@@ -801,6 +869,7 @@
           <see langword="true" /> if a user action moved focus from the cell; <see langword="false" /> if a programmatic operation moved focus from the cell.</param>
         <summary>Called when the focus moves from a cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnLeave(System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseClick">
@@ -822,6 +891,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains the event data.</param>
         <summary>Called when the user clicks a mouse button while the pointer is on a cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseClick(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -843,6 +913,7 @@
         <param name="rowIndex">The index of the cell's parent row.</param>
         <summary>Called when the mouse pointer moves over a cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseEnter(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -864,6 +935,7 @@
         <param name="rowIndex">The index of the cell's parent row.</param>
         <summary>Called when the mouse pointer leaves the cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseLeave(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -885,6 +957,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> that contains the event data.</param>
         <summary>Called when the mouse pointer moves within a cell.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -995,6 +1068,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to sort a cell that is attached to a data source.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.Items" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1014,6 +1090,7 @@
         <summary>Returns a string that describes the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ValueMember">
@@ -1062,6 +1139,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property is not <see langword="null" /> and the specified value when setting this property is not <see langword="null" /> or <see cref="F:System.String.Empty" /> and does not name a valid property or column in the data source.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -1080,6 +1160,7 @@
         <summary>Gets or sets the data type of the values in the cell.</summary>
         <value>A <see cref="T:System.Type" /> representing the data type of the value in the cell.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ValueType" />
       </Docs>
     </Member>
   </Members>

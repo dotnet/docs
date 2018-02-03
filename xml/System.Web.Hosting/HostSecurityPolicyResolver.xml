@@ -44,6 +44,7 @@
     </remarks>
     <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see cref="P:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType" /> attribute has an invalid value or cannot be found.</exception>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the inheriting type. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.Security.HostSecurityManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -43,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.XmlDataProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -157,6 +158,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Data.Binding.IsAsync" />
+        <altmember cref="T:System.Windows.Data.XmlDataProvider" />
+        <altmember cref="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       </Docs>
     </Member>
     <Member MemberName="MethodName">

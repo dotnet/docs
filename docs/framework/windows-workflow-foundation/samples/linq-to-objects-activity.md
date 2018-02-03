@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 403c82e8-7f2b-42f6-93cd-95c35bc76ead
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # LINQ to Objects Activity
 This sample demonstrates how to create an activity to use LINQ to Objects to query elements in a collection.  
@@ -118,5 +120,5 @@ Activity sampleWorkflow = new Sequence
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\Linq\LinqToObjects`  
   
 ## See Also  
- [Lambda Expressions (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkId=150381)   
+ [Lambda Expressions (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkId=150381)  
  [LINQ to Objects](http://go.microsoft.com/fwlink/?LinkID=150380)

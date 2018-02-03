@@ -84,6 +84,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Factor" /> &lt;= 0, <paramref name="Salvage" /> &lt; 0, <paramref name="Period" /> &lt;= 0, or <paramref name="Period" /> &gt; <paramref name="Life." /></exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.SLN(System.Double,System.Double,System.Double)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.SYD(System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="FV">
@@ -184,11 +187,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Per" /> &lt;= 0 or <paramref name="Per" /> &gt; <paramref name="NPer" /></exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="IRR">
       <MemberSignature Language="C#" Value="public static double IRR (ref double[] ValueArray, double Guess = 0.1);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[] ValueArray, float64 Guess) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[]&amp; ValueArray, float64 Guess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -227,11 +231,14 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Array argument values are invalid or <paramref name="Guess" /> &lt;= -1.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="MIRR">
       <MemberSignature Language="C#" Value="public static double MIRR (ref double[] ValueArray, double FinanceRate, double ReinvestRate);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[] ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[]&amp; ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -273,6 +280,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Rank of <paramref name="ValueArray" /> does not equal 1, <paramref name="FinanceRate" /> = -1, or <paramref name="ReinvestRate" /> = -1</exception>
         <exception cref="T:System.DivideByZeroException">Division by zero has occurred.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
+        <altmember cref="T:System.ArgumentException" />
+        <altmember cref="T:System.DivideByZeroException" />
       </Docs>
     </Member>
     <Member MemberName="NPer">
@@ -321,11 +332,12 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Rate" /> = 0 and <paramref name="Pmt" /> = 0</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="NPV">
       <MemberSignature Language="C#" Value="public static double NPV (double Rate, ref double[] ValueArray);" />
-      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[] ValueArray) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[]&amp; ValueArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -369,6 +381,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="ValueArray" /> is <see langword="Nothing" />, rank of <paramref name="ValueArray" /> &lt;&gt; 1, or <paramref name="Rate" /> = -1</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="Pmt">
@@ -419,6 +434,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="NPer" /> = 0.</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="PPmt">
@@ -471,6 +487,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Per" /> &lt;=0 or <paramref name="Per" /> &gt; <paramref name="NPer" />.</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="PV">
@@ -571,6 +588,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="NPer" /> &lt;= 0.</exception>
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="SLN">
@@ -613,6 +631,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Life" /> = 0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.SYD(System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.DDB(System.Double,System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
     <Member MemberName="SYD">
@@ -657,6 +678,9 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Salvage" /> &lt; 0, <paramref name="Period" /> &gt; <paramref name="Life" />, or <paramref name="Period" /> &lt;=0.</exception>
+        <altmember cref="M:Microsoft.VisualBasic.Financial.DDB(System.Double,System.Double,System.Double,System.Double,System.Double)" />
+        <altmember cref="M:Microsoft.VisualBasic.Financial.SLN(System.Double,System.Double,System.Double)" />
+        <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
   </Members>

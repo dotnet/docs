@@ -35,15 +35,13 @@
  The most common way to create an <xref:System.Xml.Linq.XNamespace> object is to simply assign a string to it. You can then combine the namespace with a local name by using the override of the addition operator. The following example shows this idiom:  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root", "Content");  
 Console.WriteLine(root);  
 ```  
   
 ```vb  
-  
-                Dim aw As XNamespace = "http://www.adventure-works.com"  
+Dim aw As XNamespace = "http://www.adventure-works.com"  
 Dim root As XElement = New XElement(aw + "Root", "Content")  
 Console.WriteLine(root)  
 ```  
@@ -51,8 +49,7 @@ Console.WriteLine(root)
  However, in Visual Basic, you would typically declare a global default namespace, as follows:  
   
 ```vb  
-  
-                Imports <xmlns='http://www.adventure-works.com'>  
+Imports <xmlns='http://www.adventure-works.com'>  
   
 Module Module1  
     Sub Main()  
@@ -66,7 +63,6 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
 <Root xmlns="http://www.adventure-works.com">Content</Root>  
 ```  
   
@@ -80,8 +76,7 @@ End Module
  If you create an attribute that declares a namespace, the prefix specified in the attribute will be persisted in the serialized XML. To create an attribute that declares a namespace with a prefix, you create an attribute where the namespace of the name of the attribute is <xref:System.Xml.Linq.XNamespace.Xmlns%2A>, and the name of the attribute is the namespace prefix. The value of the attribute is the URI of the namespace. The following example shows this idiom:  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     "Content");  
@@ -89,8 +84,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim aw As XNamespace = "http://www.adventure-works.com"  
+Dim aw As XNamespace = "http://www.adventure-works.com"  
 Dim root As XElement = New XElement(aw + "Root", _  
     New XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"), _  
     "Content")  
@@ -100,8 +94,7 @@ Console.WriteLine(root)
  In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], instead of creating a namespace node to control namespace prefixes, you would typically use a global namespace declaration:  
   
 ```vb  
-  
-                Imports <xmlns:aw='http://www.adventure-works.com'>  
+Imports <xmlns:aw='http://www.adventure-works.com'>  
   
 Module Module1  
     Sub Main()  
@@ -126,8 +119,7 @@ End Module
  The following example creates an XML tree that contains an attribute that is declared in such a way that the namespace will become the default namespace:  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute("xmlns", "http://www.adventure-works.com"),  
     new XElement(aw + "Child", "content")  
@@ -136,8 +128,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim aw As XNamespace = "http://www.adventure-works.com"  
+Dim aw As XNamespace = "http://www.adventure-works.com"  
 Dim root As XElement = New XElement(aw + "Root", _  
     New XAttribute("xmlns", "http://www.adventure-works.com"), _  
     New XElement(aw + "Child", "content") _  
@@ -148,8 +139,7 @@ Console.WriteLine(root)
  In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], instead of creating a namespace node to create a default namespace, you would typically use a global default namespace declaration:  
   
 ```vb  
-  
-                Imports <xmlns='http://www.adventure-works.com'>  
+Imports <xmlns='http://www.adventure-works.com'>  
   
 Module Module1  
     Sub Main()  
@@ -184,8 +174,7 @@ Console.WriteLine(e);
 ```  
   
 ```vb  
-  
-                Dim e As XElement = New XElement("{http://www.adventure-works.com}Root", _  
+Dim e As XElement = New XElement("{http://www.adventure-works.com}Root", _  
      New XAttribute("{http://www.adventure-works.com}Att", "content") _  
 )  
 Console.WriteLine(e)  
@@ -247,14 +236,12 @@ Console.WriteLine(e)
  The following example compares two namespaces that refer to the same URI.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 Console.WriteLine(aw == "http://www.adventure-works.com");  
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -315,8 +302,7 @@ True
  The following example gets a <xref:System.Xml.Linq.XNamespace> from a specified URI.  
   
 ```csharp  
-  
-                XNamespace aw = XNamespace.Get("http://www.adventure-works.com");  
+XNamespace aw = XNamespace.Get("http://www.adventure-works.com");  
   
 // This is the preferred form.  
 XNamespace aw2 = "http://www.adventure-works.com";  
@@ -325,8 +311,7 @@ Console.WriteLine(aw2);
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -430,15 +415,13 @@ http://www.adventure-works.com
  The following example uses this property to retrieve an <xref:System.Xml.Linq.XName>.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XName name = aw.GetName("Root");  
 Console.WriteLine("{0}", name);  
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -492,8 +475,7 @@ End Module
  The following example shows how to use this property:  
   
 ```csharp  
-  
-                string markup =  
+string markup =  
 @"<aw:Root  
     xmlns:aw='http://www.adventure-works.com'/>";  
 XElement root = XElement.Parse(markup);  
@@ -501,8 +483,7 @@ Console.WriteLine(root.Name.Namespace.NamespaceName);
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -561,8 +542,7 @@ http://www.adventure-works.com
  The following example shows uses this property to determine which elements are in no namespace.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
   
 XElement root = new XElement("Root",  
     new XElement(aw + "ChildInNamespace", "content"),  
@@ -586,8 +566,7 @@ else
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -670,14 +649,11 @@ ChildInNoNamespace element is in no namespace
 ## Remarks  
  This operator enables the common idiom of combining a namespace and a local name in the construction of an element or attribute. This idiom provides some of the benefits of having namespace prefixes, in that you can refer to a namespace using a variable that is short. This eliminates syntactic noise in the code that creates XML trees.  
   
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
 ## Examples  
  The following example shows the use of the `+` operator to create an <xref:System.Xml.Linq.XName> from an <xref:System.Xml.Linq.XNamespace> and a local name.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XElement(aw + "Child")  
 );  
@@ -685,8 +661,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim aw As XNamespace = "http://www.adventure-works.com"  
+Dim aw As XNamespace = "http://www.adventure-works.com"  
 Dim root As XElement = New XElement(aw + "Root", _  
     New XElement(aw + "Child") _  
 )  
@@ -696,8 +671,7 @@ Console.WriteLine(root)
  In Visual Basic, this is the preferred idiom:  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -760,21 +734,17 @@ End Module
   
 ## Remarks  
  The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
-  
+   
 ## Examples  
  The following example shows the comparison of an <xref:System.Xml.Linq.XNamespace> and a string.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 Console.WriteLine(aw == "http://www.adventure-works.com");  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -826,10 +796,37 @@ True
         <Parameter Name="namespaceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="namespaceName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="namespaceName">A <see cref="T:System.String" /> that contains the namespace URI.</param>
+        <summary>Converts a string containing a Uniform Resource Identifier (URI) to an <see cref="T:System.Xml.Linq.XNamespace" />.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XNamespace" /> constructed from the URI string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[## Examples  
+ The following example shows the initialization of an <xref:System.Xml.Linq.XNamespace> variable by assigning a string to it.  
+  
+```csharp  
+XNamespace aw = "http://www.adventure-works.com";  
+Console.WriteLine(aw);  
+```  
+  
+```vb  
+Imports <xmlns="http://www.adventure-works.com">  
+  
+Module Module1  
+    Sub Main()  
+        Dim aw As XNamespace = GetXmlNamespace()  
+        Console.WriteLine(aw)  
+    End Sub  
+End Module  
+```  
+  
+ This example produces the following output:  
+  
+```  
+http://www.adventure-works.com  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -868,22 +865,18 @@ True
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.  
-  
- The equivalent method for this operator is ?qualifyHint=True&autoUpgrade=False  
+ The operator overloads `==` and `!=` are provided to enable comparisons between <xref:System.Xml.Linq.XNamespace> and string (for example, `element.Name.Namespace == "http://www.adventure-works.com"`). The predefined reference equality operators in C# require one operand to be convertible to the type of the other through reference conversions only, and do not consider the implicit conversion from string to <xref:System.Xml.Linq.XNamespace>.   
   
 ## Examples  
  The following example shows a comparison of a <xref:System.Xml.Linq.XNamespace> to a string.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 Console.WriteLine(aw != "http://www.adventure-works.com");  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -937,14 +930,12 @@ False
  The following example uses this method to print a namespace on the console.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 Console.WriteLine("{0}", aw.ToString());  
 ```  
   
 ```vb  
-  
-                Imports <xmlns="http://www.adventure-works.com">  
+Imports <xmlns="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1002,8 +993,7 @@ http://www.adventure-works.com
  The following example shows how to create an `xml:space="preserve"` attribute in an XML tree:  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XAttribute(XNamespace.Xml + "space", "preserve"),  
     new XElement("Child", "content")  
 );  
@@ -1011,8 +1001,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _  
+Dim root As XElement = _  
     <Root xml:space="preserve">  
         <Child>content</Child>  
     </Root>  
@@ -1069,8 +1058,7 @@ Console.WriteLine(root)
  The following example shows how to add a namespace to an XML tree. The namespace for the attribute that declares the namespace is the namespace returned by this property.  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement root = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XElement(aw + "Child", "content")  
@@ -1079,8 +1067,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root = <aw:Root xmlns:aw="http://www.adventure-works.com">  
+Dim root = <aw:Root xmlns:aw="http://www.adventure-works.com">  
                <aw:Child>content</aw:Child>  
            </aw:Root>  
 Console.WriteLine(root)  

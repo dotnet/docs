@@ -117,6 +117,7 @@
         <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The collection is set to read-only.</exception>
+        <altmember cref="M:System.Collections.Hashtable.Clear" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -233,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -345,6 +347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ICollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">

@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069) or [How To: Access and Read Event Information](http://msdn.microsoft.com/en-us/14db3375-d305-49ae-aa24-aedbe906e76c).  
+ For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/library/5231a436-4cf2-4539-90d2-a04813aba069) or [How To: Access and Read Event Information](http://msdn.microsoft.com/library/14db3375-d305-49ae-aa24-aedbe906e76c).  
   
  ]]></format>
     </remarks>
@@ -638,5 +638,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FormatDescription">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the event message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

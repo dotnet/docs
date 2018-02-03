@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Understanding WebRequest Problems and Exceptions
 <xref:System.Net.WebRequest> and its derived classes (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, and <xref:System.Net.FileWebRequest>) throw exceptions to signal an abnormal condition. Sometimes the resolution of these problems is not obvious.  
@@ -38,6 +35,6 @@ manager: "markl"
 |<xref:System.Net.WebExceptionStatus.ServerProtocolViolation>|The response from the server is not a valid HTTP response. This problem occurs when the .NET Framework detects that the server response does not comply with HTTP 1.1 RFC. This problem may occur when the response contains incorrect headers or incorrect header delimiters.RFC 2616 defines HTTP 1.1 and the valid format for the response from the server. For more information, see [http://www.ietf.org](http://go.microsoft.com/fwlink/?LinkID=147388).|Get a network trace of the transaction and examine the headers in the response.<br /><br /> If your application requires the server response without parsing (this could be a security issue), set `useUnsafeHeaderParsing` to `true` in the configuration file. See [\<httpWebRequest> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md).|  
   
 ## See Also  
- <xref:System.Net.HttpWebRequest>   
- <xref:System.Net.HttpWebResponse>   
+ <xref:System.Net.HttpWebRequest>  
+ <xref:System.Net.HttpWebResponse>  
  <xref:System.Net.Dns>

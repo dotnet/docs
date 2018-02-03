@@ -22,6 +22,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+    <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+    <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+    <altmember cref="T:System.ComponentModel.EditorAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +41,10 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExpressionsCollectionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Design.UITypeEditor" />
+        <altmember cref="T:System.Web.UI.Design.ExpressionEditor" />
+        <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
+        <altmember cref="T:System.ComponentModel.EditorAttribute" />
       </Docs>
     </Member>
     <Member MemberName="EditValue">
@@ -74,6 +82,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle" />
+        <altmember cref="T:System.Web.UI.ExpressionBindingCollection" />
+        <altmember cref="T:System.Web.UI.ExpressionBinding" />
       </Docs>
     </Member>
     <Member MemberName="GetEditStyle">
@@ -105,6 +116,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.Design.ExpressionsCollectionEditor.EditValue" />
+        <altmember cref="T:System.Drawing.Design.UITypeEditorEditStyle" />
       </Docs>
     </Member>
   </Members>

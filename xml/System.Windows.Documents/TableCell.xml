@@ -168,6 +168,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TableCell.BorderThickness" />
       </Docs>
     </Member>
     <Member MemberName="BorderBrushProperty">
@@ -274,6 +275,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TableCell.BorderBrush" />
       </Docs>
     </Member>
     <Member MemberName="BorderThicknessProperty">
@@ -325,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TableCell.RowSpan" />
       </Docs>
     </Member>
     <Member MemberName="ColumnSpanProperty">
@@ -748,6 +751,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TableCell.ColumnSpan" />
       </Docs>
     </Member>
     <Member MemberName="RowSpanProperty">
@@ -842,5 +846,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.TableCell" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

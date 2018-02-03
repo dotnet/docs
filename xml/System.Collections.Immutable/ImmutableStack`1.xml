@@ -26,7 +26,7 @@
     <typeparam name="T">The type of element on the stack.</typeparam>
     <summary>Represents an immutable stack.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -158,7 +158,7 @@
     </Member>
     <Member MemberName="Pop">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableStack&lt;T&gt; Pop (out T value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableStack`1&lt;!T&gt; Pop(!T value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableStack`1&lt;!T&gt; Pop([out] !T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableStack`1.Pop(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

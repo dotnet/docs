@@ -51,12 +51,15 @@
   
  The visual designer uses the <xref:System.Web.UI.Design.ResourceExpressionEditor> to assign the resource expression for the `Text` property. The following .aspx source shows an example of a property value that is set by using a resource expression.  
   
- <!-- TODO: review snippet reference [!code-csharp[ControlsUsingExpressions#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[ControlsUsingExpressions#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#3)]  -->
+ [!code-aspx-csharp[ControlsUsingExpressions#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlsUsingExpressions/CS/controlsusingexpressionscs.aspx#3)]
+ [!code-aspx-vb[ControlsUsingExpressions#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlsUsingExpressions/VB/controlsusingexpressionsvb.aspx#3)]
  [!code-xml[ControlsUsingExpressions#3](~/samples/snippets/common/VS_Snippets_WebNet/ControlsUsingExpressions/Common/controlsusingexpressions.xml#3)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
+    <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+    <altmember cref="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -118,6 +121,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionFields" />
+        <altmember cref="Overload:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression" />
       </Docs>
     </Member>
     <Member MemberName="GetExpressionEditorSheet">
@@ -149,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.ResourceExpressionEditorSheet" />
       </Docs>
     </Member>
   </Members>

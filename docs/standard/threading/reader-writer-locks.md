@@ -16,6 +16,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Reader-Writer Locks
 The <xref:System.Threading.ReaderWriterLockSlim> class enables multiple threads to read a resource concurrently, but requires a thread to wait for an exclusive lock in order to write to the resource.  
@@ -30,7 +33,7 @@ The <xref:System.Threading.ReaderWriterLockSlim> class enables multiple threads 
 >  The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] has two reader-writer locks, <xref:System.Threading.ReaderWriterLockSlim> and <xref:System.Threading.ReaderWriterLock>. <xref:System.Threading.ReaderWriterLockSlim> is recommended for all new development. <xref:System.Threading.ReaderWriterLockSlim> is similar to <xref:System.Threading.ReaderWriterLock>, but it has simplified rules for recursion and for upgrading and downgrading lock state. <xref:System.Threading.ReaderWriterLockSlim> avoids many cases of potential deadlock. In addition, the performance of <xref:System.Threading.ReaderWriterLockSlim> is significantly better than <xref:System.Threading.ReaderWriterLock>.  
   
 ## See Also  
- <xref:System.Threading.ReaderWriterLockSlim>   
- <xref:System.Threading.ReaderWriterLock>   
- [Threading](../../../docs/standard/threading/index.md)   
+ <xref:System.Threading.ReaderWriterLockSlim>  
+ <xref:System.Threading.ReaderWriterLock>  
+ [Threading](../../../docs/standard/threading/index.md)  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

@@ -63,6 +63,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Input.MouseBinding" />
+    <altmember cref="T:System.Windows.Input.KeyGesture" />
+    <altmember cref="T:System.Windows.Input.KeyBinding" />
+    <altmember cref="T:System.Windows.Input.RoutedCommand" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -78,6 +83,11 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGesture" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,6 +108,11 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="mouseAction" /> is not a valid <see cref="T:System.Windows.Input.MouseAction" /> value.</exception>
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +139,12 @@
  -or-  
   
  <paramref name="modifiers" /> is not a valid <see cref="T:System.Windows.Input.ModifierKeys" /> value.</exception>
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.InputBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -206,6 +227,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
     <Member MemberName="MouseAction">
@@ -239,7 +265,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.MouseBinding" />
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.KeyBinding" />
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.CommandBinding" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGesture" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

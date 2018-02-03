@@ -19,7 +19,8 @@ public abstract class Example
         Type[] types = { typeof(Example), typeof(NestedClass),
                          typeof(INested), typeof(S) };
 
-        foreach (var t in types) {
+        foreach (var t in types) 
+        {
            Console.WriteLine("Attributes for type {0}:", t.Name);
 
            TypeAttributes attr = t.Attributes;
@@ -55,7 +56,7 @@ public abstract class Example
                    break;
            }
 
-           ' Use the layout mask to test for layout attributes.
+           // Use the layout mask to test for layout attributes.
            TypeAttributes layout = attr & TypeAttributes.LayoutMask;
            switch (layout)
            {
@@ -70,7 +71,7 @@ public abstract class Example
                    break;
            }
 
-           ' Use the class semantics mask to test for class semantics attributes.
+           // Use the class semantics mask to test for class semantics attributes.
            TypeAttributes classSemantics = attr & TypeAttributes.ClassSemanticsMask;
            switch (classSemantics)
            {
@@ -89,42 +90,42 @@ public abstract class Example
                    break;
            }
 
-           if (0!=(attr & TypeAttributes.Abstract))
+           if ((attr & TypeAttributes.Abstract) != 0)
            {
                Console.WriteLine("   ...is abstract");
            }
 
-           if (0!=(attr & TypeAttributes.Sealed))
+           if ((attr & TypeAttributes.Sealed) != 0)
            {
                Console.WriteLine("   ...is sealed");
            }
+           
            Console.WriteLine();
        }
     }
 }
 // The example displays the following output:
-//       Attributes for type Example:
-//          ...is Public
-//          ...is AutoLayout
-//          ...is a class
-//          ...is MustInherit
-//
-//       Attributes for type NestedClass:
-//          ...is nested and Protected
-//          ...is AutoLayout
-//          ...is a class
-//          ...is NotInheritable
-//
-//       Attributes for type INested:
-//          ...is nested and Public
-//          ...is AutoLayout
-//          ...is an interface
-//          ...is MustInherit
-//
-//       Attributes for type S:
-//          ...is not Public
-//          ...is SequentialLayout
-//          ...is a value type
-//          ...is NotInheritable
-// </Snippet1>
+// Attributes for type Example:
+//    ...is public
+//    ...is AutoLayout
+//    ...is a class
+//    ...is abstract
 
+// Attributes for type NestedClass:
+//    ...is nested and protected
+//    ...is AutoLayout
+//    ...is a class
+//    ...is sealed
+
+// Attributes for type INested:
+//    ...is nested and public
+//    ...is AutoLayout
+//    ...is an interface
+//    ...is abstract
+
+// Attributes for type S:
+//    ...is not public
+//    ...is SequentialLayout
+//    ...is a value type
+//    ...is sealed
+// </Snippet1>

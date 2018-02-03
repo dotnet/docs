@@ -14,6 +14,9 @@
     <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at compile time.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.LateBinding" />
+    <altmember cref="T:System.Reflection.IReflect" />
+    <altmember cref="T:System.Reflection.MemberInfo" />
   </Docs>
   <Members>
     <Member MemberName="defaultMember">
@@ -32,6 +35,9 @@
         <summary>Stores a reference to a default indexed property.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -52,6 +58,10 @@
         <returns>The object that the binding reference is defined on.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="HandleNoSuchMemberError">
@@ -78,6 +88,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="isAssignmentToDefaultIndexedProperty">
@@ -103,6 +117,10 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="isFullyResolved">
@@ -121,6 +139,10 @@
         <summary>Stores a value that indicates whether the binding reference is fully resolved.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsMissing">
@@ -145,6 +167,10 @@
           <see langword="true" /> if <paramref name="value" /> is equivalent to <see cref="T:Microsoft.JScript.Missing" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="isNonVirtual">
@@ -163,6 +189,10 @@
         <summary>Stores a value that indicates whether the binding reference is to a member that overrides a member in a base class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -181,6 +211,10 @@
         <summary>Stores a string that identifies the binding reference.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="ResolveRHValue">
@@ -200,6 +234,10 @@
         <summary>Resolves the right-hand side of the binding reference.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="TranslateToILObject">
@@ -227,6 +265,10 @@
         <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the object that the binding reference is defined on.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
     <Member MemberName="TranslateToILWithDupOfThisOb">
@@ -249,6 +291,10 @@
         <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the binding reference. If necessary, copies the current topmost value on the evaluation stack and then pushes the copy onto the evaluation stack.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.AST" />
+        <altmember cref="T:Microsoft.JScript.LateBinding" />
+        <altmember cref="T:System.Reflection.IReflect" />
+        <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
   </Members>

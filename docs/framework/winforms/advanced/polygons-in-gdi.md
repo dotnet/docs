@@ -10,16 +10,19 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "polygons"
-  - "drawing, polygons"
+  - "drawing [Windows Forms], polygons"
   - "GDI+, polygons"
 ms.assetid: a72213d2-d69a-4c2b-a75c-be7b20390c13
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Polygons in GDI+
 A polygon is a closed shape with three or more straight sides. For example, a triangle is a polygon with three sides, a rectangle is a polygon with four sides, and a pentagon is a polygon with five sides. The following illustration shows several polygons.  
@@ -37,7 +40,7 @@ A polygon is a closed shape with three or more straight sides. For example, a tr
  ![Polygon](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art08.gif "Aboutgdip02_art08")  
   
 ## See Also  
- <xref:System.Drawing.Graphics?displayProperty=nameWithType>   
- <xref:System.Drawing.Pen?displayProperty=nameWithType>   
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)   
+ <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
+ <xref:System.Drawing.Pen?displayProperty=nameWithType>  
+ [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
  [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)

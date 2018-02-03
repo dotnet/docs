@@ -1033,7 +1033,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValues">
-      <MemberSignature Language="C#" Value="public int SetValues (object[] values);" />
+      <MemberSignature Language="C#" Value="public int SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DbUpdatableDataRecord.SetValues(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1082,5 +1082,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a field value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

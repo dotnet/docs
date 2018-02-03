@@ -91,6 +91,10 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], attempting to set the <see cref="P:System.ConsoleCancelEventArgs.Cancel" /> property to <see langword="true" /> if the <see cref="E:System.Console.CancelKeyPress" /> event was invoked by the user pressing Ctrl+Break threw an <see cref="T:System.InvalidOperationException" /> exception. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can set the <see cref="P:System.ConsoleCancelEventArgs.Cancel" /> property to <see langword="true" /> after the user presses Ctrl+Break and cancel the termination of the application.</para>
         </block>
+        <altmember cref="T:System.ConsoleCancelEventHandler" />
+        <altmember cref="T:System.ConsoleKey" />
+        <altmember cref="T:System.ConsoleModifiers" />
+        <altmember cref="P:System.ConsoleCancelEventArgs.SpecialKey" />
       </Docs>
     </Member>
     <Member MemberName="SpecialKey">

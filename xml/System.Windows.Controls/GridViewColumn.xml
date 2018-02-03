@@ -54,6 +54,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.GridView" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+    <altmember cref="T:System.Windows.Controls.GridViewColumnCollection" />
+    <altmember cref="T:System.Windows.Controls.ListView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -165,6 +169,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.CellTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.DisplayMemberBinding" />
       </Docs>
     </Member>
     <Member MemberName="CellTemplateProperty">
@@ -398,6 +404,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.GridViewColumnHeader" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="HeaderContainerStyle">
@@ -471,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridView.ColumnHeaderContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderContainerStyleProperty">
@@ -646,6 +657,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
+        <altmember cref="P:System.Windows.Controls.GridView.ColumnHeaderTemplate" />
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.HeaderContainerStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplateProperty">
@@ -852,7 +866,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get the exact width when this property is set to <xref:System.Double?displayProperty=nameWithType>, use the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property.  
+ To get the exact width when this property is set to <xref:System.Double.NaN?displayProperty=nameWithType>, use the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property.  
   
 <a name="xamlAttributeUsage_Width"></a>   
 ## XAML Attribute Usage  
@@ -905,6 +919,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.GridViewColumn.ActualWidth" />
       </Docs>
     </Member>
     <Member MemberName="WidthProperty">

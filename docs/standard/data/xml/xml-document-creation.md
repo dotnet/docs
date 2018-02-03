@@ -9,15 +9,16 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 ms.assetid: 877e9c62-b082-4bfb-bc5b-f47297eb30ef
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # XML Document Creation
 There are two ways to create an XML document. One way is to create an **XmlDocument** with no parameters. The other way is to create an **XmlDocument** and pass it an XmlNameTable as a parameter. The following example shows how to create a new, empty **XmlDocument** using no parameters.  

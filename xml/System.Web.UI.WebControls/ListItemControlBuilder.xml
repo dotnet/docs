@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.ListItem" />
+    <altmember cref="T:System.Web.UI.ControlBuilderAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals" />
       </Docs>
     </Member>
     <Member MemberName="HtmlDecodeLiterals">
@@ -92,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.ControlBuilder.HtmlDecodeLiterals" />
       </Docs>
     </Member>
   </Members>

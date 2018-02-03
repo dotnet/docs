@@ -1,14 +1,12 @@
 ---
 title: "-warn (C# Compiler Options)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
 f1_keywords: 
   - "/warn"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "warning level [C#]"
   - "/w compiler option [C#]"
@@ -21,28 +19,14 @@ ms.assetid: 5f80ff59-4991-4382-9f9a-77da18446e71
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
-# /warn (C# Compiler Options)
-The **/warn** option specifies the warning level for the compiler to display.  
+# -warn (C# Compiler Options)
+The **-warn** option specifies the warning level for the compiler to display.  
   
 ## Syntax  
   
 ```console  
-/warn:option  
+-warn:option  
 ```  
   
 ## Arguments  
@@ -60,9 +44,9 @@ The **/warn** option specifies the warning level for the compiler to display.
 ## Remarks  
  To get information about an error or warning, you can look up the error code in the Help Index. For other ways to get information about an error or warning, see [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md).  
   
- Use [/warnaserror](../../../csharp/language-reference/compiler-options/warnaserror-compiler-option.md) to treat all warnings as errors. Use [/nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) to disable certain warnings.  
+ Use [-warnaserror](../../../csharp/language-reference/compiler-options/warnaserror-compiler-option.md) to treat all warnings as errors. Use [-nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) to disable certain warnings.  
   
- **/w** is the short form of **/warn**.  
+ **-w** is the short form of **-warn**.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -78,9 +62,9 @@ The **/warn** option specifies the warning level for the compiler to display.
  Compile `in.cs` and have the compiler only display level 1 warnings:  
   
 ```console  
-csc /warn:1 in.cs  
+csc -warn:1 in.cs  
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -55,7 +55,7 @@
 >  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types (see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md)).  
   
 ## Forward Compatibility  
- The <xref:System.Runtime.Serialization.DataContractSerializer> understands data contracts that have been designed to be compatible with future versions of the contract. Such types implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface features the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property that returns an <xref:System.Runtime.Serialization.ExtensionDataObject> object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ The <xref:System.Runtime.Serialization.DataContractSerializer> understands data contracts that have been designed to be compatible with future versions of the contract. Such types implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface features the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property that returns an <xref:System.Runtime.Serialization.ExtensionDataObject> object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ## Running under Partial Trust  
  When instantiating the target object during deserialization, the <xref:System.Runtime.Serialization.DataContractSerializer> does not call the constructor of the target object. If you author a *[DataContract]* type that is accessible from partial trust (that is, it is public and in an assembly that has the `AllowPartiallyTrustedCallers` attribute applied) and that performs some security-related actions, you must be aware that the constructor is not called. In particular, the following techniques do not work:  
@@ -75,6 +75,10 @@
  ]]></format>
     </remarks>
     <threadsafe>Instances of this class are thread safe except when the instance is used with an implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> or <see cref="T:System.Runtime.Serialization.DataContractResolver" />.</threadsafe>
+    <altmember cref="T:System.Runtime.Serialization.DataMemberAttribute" />
+    <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
+    <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+    <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,6 +157,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -311,6 +317,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -355,6 +363,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -397,6 +407,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
+        <altmember cref="T:System.Runtime.Serialization.IDataContractSurrogate" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -485,6 +502,13 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
+        <altmember cref="T:System.Runtime.Serialization.IDataContractSurrogate" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -531,6 +555,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The number of items exceeds the maximum value.</exception>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences" />
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.IDataContractSurrogate" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -665,6 +695,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.IDataContractSurrogate" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreExtensionDataObject">
@@ -697,10 +728,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> property is used when the class to which a <xref:System.Runtime.Serialization.DataContractAttribute> has been applied also implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case, the data added in a future version of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject%2A> property is used when the class to which a <xref:System.Runtime.Serialization.DataContractAttribute> has been applied also implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. In this case, the data added in a future version of the contract is ignored on read and write. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Forward-Compatible Data Contracts](~/docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.IgnoreExtensionDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
+        <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+        <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
       </Docs>
     </Member>
     <Member MemberName="IsStartObject">
@@ -817,6 +852,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.Serialization.KnownTypeAttribute" />
       </Docs>
     </Member>
     <Member MemberName="MaxItemsInObjectGraph">
@@ -860,7 +896,7 @@
 OperationDescription operation = host.Description.Endpoints[0].Contract.Operations.Find("MyOperationName");operation.Behaviors.Find<DataContractSerializerOperationBehavior>().MaxItemsInObjectGraph = 3;  
 ```  
   
- The <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. (The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects, and so on.) The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation and so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
+ The <xref:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph%2A> property specifies the maximum number of objects that the serializer serializes or deserializes in a single <xref:System.Runtime.Serialization.DataContractSerializer.ReadObject%2A> method call. (The method always reads one root object, but this object may have other objects in its data members. Those objects may have other objects, and so on.) The default is <xref:System.Int32.MaxValue>. Note that when serializing or deserializing arrays, every array entry counts as a separate object. Also, note that some objects may have a large memory representation and so this quota alone may not be sufficient to prevent Denial of Service attacks. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md). If you need to increase this quota beyond its default value, it is important to do so both on the sending (serializing) and receiving (deserializing) sides. It applies both when reading and writing data.  
   
  ]]></format>
         </remarks>
@@ -1376,5 +1412,76 @@ OperationDescription operation = host.Description.Endpoints[0].Contract.Operatio
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">The type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the reader is positioned on an object that can be deserialized.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the XML stream and returns the deserialized object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEndObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing XML element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes all the object data (starting XML element, content, and closing element) to an XML document or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteObjectContent">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the XML content without the wrapping element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the opening XML element using the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

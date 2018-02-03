@@ -42,6 +42,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Drawing.BufferedGraphics" />
+    <altmember cref="T:System.Drawing.BufferedGraphicsManager" />
+    <altmember cref="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -109,6 +112,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
+        <altmember cref="T:System.Drawing.Graphics" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Allocate">
@@ -150,6 +156,9 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Drawing.BufferedGraphics" />
+        <altmember cref="T:System.IntPtr" />
+        <altmember cref="T:System.Drawing.Rectangle" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -259,5 +268,14 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for allowing user access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Allocate">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a graphics buffer.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

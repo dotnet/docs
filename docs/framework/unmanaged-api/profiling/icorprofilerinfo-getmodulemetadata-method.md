@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetModuleMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModuleMetaData method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetModuleMetaData method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo::GetModuleMetaData Method
 Gets a metadata interface instance that maps to the specified module.  

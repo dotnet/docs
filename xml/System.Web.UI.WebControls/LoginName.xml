@@ -99,8 +99,8 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.LoginName> class on a page. Clicking the button changes the display format.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginNameTextFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginNameTextFormat/CS/loginnametextformatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginNameTextFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginNameTextFormat/VB/loginnametextformatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginNameTextFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginNameTextFormat/CS/loginnametextformatcs.aspx#1)]
+ [!code-aspx-vb[LoginNameTextFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginNameTextFormat/VB/loginnametextformatvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -171,8 +171,8 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.LoginName.FormatString%2A> property on a page. Clicking the button changes the display format.  
   
- <!-- TODO: review snippet reference [!code-csharp[LoginNameTextFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginNameTextFormat/CS/loginnametextformatcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[LoginNameTextFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginNameTextFormat/VB/loginnametextformatvb.aspx#1)]  -->  
+ [!code-aspx-csharp[LoginNameTextFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginNameTextFormat/CS/loginnametextformatcs.aspx#1)]
+ [!code-aspx-vb[LoginNameTextFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginNameTextFormat/VB/loginnametextformatvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -288,6 +288,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.RenderingCompatibility" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+        <altmember cref="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
       </Docs>
     </Member>
   </Members>

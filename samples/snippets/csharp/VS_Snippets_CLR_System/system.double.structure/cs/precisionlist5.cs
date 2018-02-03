@@ -9,7 +9,7 @@ public class Example
       StreamWriter sw = new StreamWriter(@".\Doubles.dat");
       Double[] values = { 2.2/1.01, 1.0/3, Math.PI };
       for (int ctr = 0; ctr < values.Length; ctr++) 
-         sw.Write("{0:R}{1}", values[ctr], ctr < values.Length - 1 ? "|" : "" );
+         sw.Write("{0:G17}{1}", values[ctr], ctr < values.Length - 1 ? "|" : "" );
 
       sw.Close();
       

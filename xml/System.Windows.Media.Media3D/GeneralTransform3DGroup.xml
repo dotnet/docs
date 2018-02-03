@@ -250,7 +250,7 @@
     </Member>
     <Member MemberName="TryTransform">
       <MemberSignature Language="C#" Value="public override bool TryTransform (System.Windows.Media.Media3D.Point3D inPoint, out System.Windows.Media.Media3D.Point3D result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Media.Media3D.Point3D inPoint, valuetype System.Windows.Media.Media3D.Point3D result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryTransform(valuetype System.Windows.Media.Media3D.Point3D inPoint, [out] valuetype System.Windows.Media.Media3D.Point3D&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3DGroup.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -278,6 +278,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.GeneralTransform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
+        <altmember cref="M:System.Windows.Media.GeneralTransform.Transform(System.Windows.Point)" />
       </Docs>
     </Member>
   </Members>

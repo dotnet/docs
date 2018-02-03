@@ -16,7 +16,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
+      <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, params System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt; columnValue, valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression},System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}[])" />
       <MemberType>Constructor</MemberType>
@@ -57,9 +57,9 @@
         <Parameter Name="row" Type="System.Data.Common.CommandTrees.ExpressionBuilder.Row" />
       </Parameters>
       <Docs>
-        <param name="row">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="row">The row to be converted.</param>
+        <summary>Converts the specified row to a <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted row.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

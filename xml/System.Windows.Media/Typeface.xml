@@ -394,7 +394,7 @@
     </Member>
     <Member MemberName="TryGetGlyphTypeface">
       <MemberSignature Language="C#" Value="public bool TryGetGlyphTypeface (out System.Windows.Media.GlyphTypeface glyphTypeface);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGlyphTypeface(class System.Windows.Media.GlyphTypeface glyphTypeface) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGlyphTypeface([out] class System.Windows.Media.GlyphTypeface&amp; glyphTypeface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.TryGetGlyphTypeface(System.Windows.Media.GlyphTypeface@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -531,5 +531,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

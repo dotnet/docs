@@ -160,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.AutoScroll" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollMinSize">
@@ -198,6 +199,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.AutoScroll" />
       </Docs>
     </Member>
     <Member MemberName="AutoScrollOffset">
@@ -307,6 +309,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Padding" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -380,6 +383,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.BackgroundImageChanged" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -424,6 +429,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.BackgroundImage" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -530,6 +537,8 @@
         <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingContext" /> for the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
         <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.BindingContext" />
+        <altmember cref="T:System.Windows.Forms.BindingManagerBase" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -564,6 +573,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value of the property is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="ControlAdded">
@@ -685,6 +695,8 @@
         <summary>Creates a new instance of the control collection for the control.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Controls" />
+        <altmember cref="T:System.Windows.Forms.Control.ControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -710,6 +722,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Size" />
       </Docs>
     </Member>
     <Member MemberName="Dock">
@@ -731,7 +744,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can dock a <xref:System.Windows.Forms.SplitContainer> to any edge of its container, or you can dock a <xref:System.Windows.Forms.SplitContainer> to all edges of the container so that the <xref:System.Windows.Forms.SplitContainer> entirely fills the container. For example, set this property to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType> to attach the left edge of the <xref:System.Windows.Forms.SplitContainer> to the left edge of its container. Controls are docked in z-order.  
+ You can dock a <xref:System.Windows.Forms.SplitContainer> to any edge of its container, or you can dock a <xref:System.Windows.Forms.SplitContainer> to all edges of the container so that the <xref:System.Windows.Forms.SplitContainer> entirely fills the container. For example, set this property to <xref:System.Windows.Forms.DockStyle.Left?displayProperty=nameWithType> to attach the left edge of the <xref:System.Windows.Forms.SplitContainer> to the left edge of its container. Controls are docked in z-order.  
   
 > [!NOTE]
 >  The z-order corresponds to the depth dimension of the screen, and the x-order and y-order corresponds to the horizontal and vertical dimensions, respectively. Z-order defines which object appears in front of which, in cases where controls or windows can overlap or occupy the same space on the screen. A control or window at the top of the z-order appears on top of all other controls or windows and is referenced by an index of 0 in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property. A control or window at the bottom of the z-order appears underneath all other controls or windows and is referenced by an index of `(Controls.Count-1)` in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property.  
@@ -749,6 +762,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DockStyle" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -807,6 +821,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.FixedPanel" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.FixedPanel" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.IsSplitterFixed" />
       </Docs>
     </Member>
     <Member MemberName="IsSplitterFixed">
@@ -874,6 +890,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnGotFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -909,6 +927,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyDown" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyUp">
@@ -944,6 +964,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnKeyUp(System.Windows.Forms.KeyEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.KeyUp" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -977,6 +999,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -1010,6 +1033,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnLostFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnLostFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseCaptureChanged">
@@ -1031,6 +1055,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseCaptureChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseCaptureChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -1066,6 +1091,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterDistance" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -1099,6 +1127,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMouseLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnMouseLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseLeave" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -1139,6 +1168,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseMove" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterDistance" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1174,6 +1206,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterRectangle" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.SplitterDistance" />
       </Docs>
     </Member>
     <Member MemberName="OnMove">
@@ -1240,6 +1275,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.SplitContainer.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.SplitContainer.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Paint" />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -1305,6 +1341,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoving" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoved" />
       </Docs>
     </Member>
     <Member MemberName="OnSplitterMoving">
@@ -1344,6 +1384,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoved" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoving" />
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -1387,6 +1431,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.Orientation" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -1495,6 +1540,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel1MinSize" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.FixedPanel" />
       </Docs>
     </Member>
     <Member MemberName="Panel1Collapsed">
@@ -1519,6 +1566,7 @@
         <value>
           <see langword="true" /> if <see cref="P:System.Windows.Forms.SplitContainer.Panel1" /> is collapsed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel1" />
       </Docs>
     </Member>
     <Member MemberName="Panel1MinSize">
@@ -1567,6 +1615,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is incompatible with the orientation.</exception>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Orientation" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel1" />
       </Docs>
     </Member>
     <Member MemberName="Panel2">
@@ -1605,6 +1655,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Orientation" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel2MinSize" />
       </Docs>
     </Member>
     <Member MemberName="Panel2Collapsed">
@@ -1629,6 +1681,7 @@
         <value>
           <see langword="true" /> if <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is collapsed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel2" />
       </Docs>
     </Member>
     <Member MemberName="Panel2MinSize">
@@ -1677,6 +1730,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is incompatible with the orientation.</exception>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Panel2" />
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -1711,6 +1766,9 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" /> method in a derived class, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of calling the base class's <see cref="M:System.Windows.Forms.Control.ProcessDialogChar(System.Char)" /> method should be returned. Controls will seldom, if ever, need to override this method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Keys" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputKey(System.Windows.Forms.Keys)" />
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ProcessTabKey">
@@ -1834,6 +1892,7 @@
         <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
         <summary>Performs the work of setting the specified bounds of this control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
     </Member>
     <Member MemberName="SplitterDistance">
@@ -1881,6 +1940,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
         <exception cref="T:System.InvalidOperationException">The value is incompatible with the orientation.</exception>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="SplitterIncrement">
@@ -1957,6 +2017,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.SplitContainer.OnSplitterMoved(System.Windows.Forms.SplitterEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoving" />
       </Docs>
     </Member>
     <Member MemberName="SplitterMoving">
@@ -1992,6 +2056,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.SplitContainer.OnSplitterMoving(System.Windows.Forms.SplitterCancelEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventArgs" />
+        <altmember cref="T:System.Windows.Forms.SplitterEventHandler" />
+        <altmember cref="E:System.Windows.Forms.SplitContainer.SplitterMoved" />
       </Docs>
     </Member>
     <Member MemberName="SplitterRectangle">
@@ -2031,6 +2099,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.SplitContainer.Orientation" />
       </Docs>
     </Member>
     <Member MemberName="SplitterWidth">
@@ -2113,6 +2182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Control.TabIndex" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -2185,7 +2255,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitContainer.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2215,6 +2285,8 @@
         <block subset="none" type="overrides">
           <para>Inheriting controls should call the base class's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" /> method to process any messages that they do not handle.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.PreProcessMessage(System.Windows.Forms.Message@)" />
+        <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

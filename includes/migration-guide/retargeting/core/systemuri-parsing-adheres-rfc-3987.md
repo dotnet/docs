@@ -8,5 +8,5 @@
 |Version|4.5|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Uri.%23ctor(System.String)?displayProperty=nameWithType></li><li><xref:System.Uri.%23ctor(System.String%2CSystem.Boolean)?displayProperty=nameWithType></li><li><xref:System.Uri.%23ctor(System.String%2CSystem.UriKind)?displayProperty=nameWithType></li><li><xref:System.Uri.%23ctor(System.Uri%2CSystem.String)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.String%2CSystem.UriKind%2CSystem.Uri%40)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.Uri%2CSystem.String%2CSystem.Uri%40)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.Uri%2CSystem.Uri%2CSystem.Uri%40)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0006D</li><li>CD0006C</li><li>CD0006F</li><li>CD0006E</li><li>CD0006A</li><li>CD0006G</li><li>CD0006B</li></ul>|
+|Analyzers|<ul><li>CD0006B</li><li>CD0006D</li><li>CD0006C</li><li>CD0006F</li><li>CD0006E</li><li>CD0006A</li><li>CD0006G</li></ul>|
 

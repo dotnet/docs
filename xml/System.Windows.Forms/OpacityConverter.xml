@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Object)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.TypeDescriptor.GetConverter(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -81,6 +83,8 @@
   
  You can use the <paramref name="context" /> parameter to extract additional information about the environment this converter is being invoked from. The parameter may be <see langword="null" />, so you should always verify the contents. Also, properties on the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="Overload:System.Windows.Forms.OpacityConverter.ConvertFrom" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -126,6 +130,9 @@
   
  You can use the <paramref name="context" /> parameter to extract additional information about the environment this converter is being invoked from. The parameter may be <see langword="null" />, so you should always verify the contents. Also, properties on the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> may also return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="Overload:System.Windows.Forms.OpacityConverter.CanConvertFrom" />
+        <altmember cref="Overload:System.Windows.Forms.OpacityConverter.ConvertTo" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -172,6 +179,8 @@
   
  The resultant object is a <see cref="T:System.String" /> representing the percentage of opacity.</para>
         </block>
+        <altmember cref="Overload:System.Windows.Forms.OpacityConverter.CanConvertFrom" />
+        <altmember cref="Overload:System.Windows.Forms.OpacityConverter.ConvertFrom" />
       </Docs>
     </Member>
   </Members>

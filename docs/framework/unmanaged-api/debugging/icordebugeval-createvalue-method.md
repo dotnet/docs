@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::CreateValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval::CreateValue method [.NET Framework debugging]"
   - "CreateValue method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval::CreateValue Method
 Creates a value of the specified type, with an initial value of zero or null.  
@@ -73,5 +73,5 @@ HRESULT CreateValue (
   
 ## See Also  
     
- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)   
+ [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)  
  ICorDebugValue

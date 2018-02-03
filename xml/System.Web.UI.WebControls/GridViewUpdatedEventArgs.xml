@@ -24,7 +24,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.GridView> control returns to read-only mode after an update operation. When you handle an exception that occurred during the update operation, you can keep the <xref:System.Web.UI.WebControls.GridView> control in edit mode by setting the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs> class, see the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.%23ctor%2A> constructor.  
   
@@ -33,11 +33,18 @@
 ## Examples  
  The following example shows how to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +82,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.KeepInEditMode" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -105,11 +119,15 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows%2A> property to verify that a record was updated.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -138,11 +156,15 @@
 ## Examples  
  The following example shows how to determine whether an exception occurred during an update operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -172,11 +194,15 @@
 ## Examples  
  The following example shows how to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewUpdatedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="KeepInEditMode">
@@ -206,11 +232,13 @@
 ## Examples  
  The following example shows how to keep a <xref:System.Web.UI.WebControls.GridView> control in edit mode when an exception occurs.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -244,11 +272,16 @@
 ## Examples  
  The following example shows how to access the values of the key field for an updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
       </Docs>
     </Member>
     <Member MemberName="NewValues">
@@ -282,11 +315,16 @@
 ## Examples  
  The following example shows how to access the new values entered by the user for the non-key fields of the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
       </Docs>
     </Member>
     <Member MemberName="OldValues">
@@ -320,11 +358,16 @@
 ## Examples  
  The following example shows how to access the original values of the non-key fields for the updated record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventArgs/CS/gridviewupdatedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventArgs/VB/gridviewupdatedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowUpdated" />
       </Docs>
     </Member>
   </Members>

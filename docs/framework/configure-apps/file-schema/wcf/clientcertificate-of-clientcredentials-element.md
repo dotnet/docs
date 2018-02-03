@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element
 Defines an X.509 certificate used to authenticate a client to a service.  
@@ -57,17 +59,17 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
   
 ## Remarks  
- This configuration element specifies the certificate used to authenticate the client with this element. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)][How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ This configuration element specifies the certificate used to authenticate the client with this element. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>   
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ClientCertificate%2A>   
- <xref:System.ServiceModel.Description.ClientCredentials>   
- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>   
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>   
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>   
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)   
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)   
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
+ <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ClientCertificate%2A>  
+ <xref:System.ServiceModel.Description.ClientCredentials>  
+ <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>  
+ <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  
+ <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>  
+ [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
+ [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
+ [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
+ [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

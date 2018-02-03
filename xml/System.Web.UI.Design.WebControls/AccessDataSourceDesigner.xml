@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
+    <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +60,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
       </Docs>
     </Member>
     <Member MemberName="DataFile">
@@ -92,6 +97,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
       </Docs>
     </Member>
     <Member MemberName="GetConnectionString">
@@ -128,6 +135,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.ConnectionString" />
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -171,6 +181,11 @@
         <block subset="none" type="overrides">
           <para>Override the <see cref="M:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to the design-time property collection or change their attributes. Be sure to call the base method before performing other processing.</para>
         </block>
+        <altmember cref="P:System.Web.UI.Design.WebControls.AccessDataSourceDesigner.DataFile" />
+        <altmember cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" />
+        <altmember cref="T:System.Web.UI.WebControls.AccessDataSource" />
+        <altmember cref="M:System.Web.UI.Design.WebControls.SqlDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Web.UI.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       </Docs>
     </Member>
   </Members>

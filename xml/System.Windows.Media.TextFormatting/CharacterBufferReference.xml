@@ -182,6 +182,7 @@
         <returns>
           <see langword="true" /> to show the specified <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.TextFormatting.CharacterBufferReference.op_Inequality(System.Windows.Media.TextFormatting.CharacterBufferReference,System.Windows.Media.TextFormatting.CharacterBufferReference)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -207,7 +208,26 @@
         <returns>
           <see langword="false" /> to show <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Media.TextFormatting.CharacterBufferReference.op_Equality(System.Windows.Media.TextFormatting.CharacterBufferReference,System.Windows.Media.TextFormatting.CharacterBufferReference)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

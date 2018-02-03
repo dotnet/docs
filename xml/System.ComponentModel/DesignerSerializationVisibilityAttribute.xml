@@ -52,6 +52,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.AttributeCollection" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example specifies how a property on a component is saved by a designer. This code creates a new <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> and sets its value to <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute?displayProperty=nameWithType>.  
+ The following code example specifies how a property on a component is saved by a designer. This code creates a new <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> and sets its value to <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content?displayProperty=nameWithType>.  
   
  [!code-cpp[Classic DesignerSerializationVisibilityAttribute.DesignerSerializationVisibilityAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DesignerSerializationVisibilityAttribute.DesignerSerializationVisibilityAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic DesignerSerializationVisibilityAttribute.DesignerSerializationVisibilityAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DesignerSerializationVisibilityAttribute.DesignerSerializationVisibilityAttribute Example/CS/source.cs#1)]
@@ -91,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Content">
@@ -125,6 +130,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Hidden" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -155,10 +163,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute?displayProperty=nameWithType>.  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible?displayProperty=nameWithType>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Hidden" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -255,6 +267,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content" />
       </Docs>
     </Member>
     <Member MemberName="IsDefaultAttribute">
@@ -325,6 +340,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
+        <altmember cref="T:System.ComponentModel.AttributeCollection" />
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -361,6 +380,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible" />
+        <altmember cref="F:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content" />
       </Docs>
     </Member>
   </Members>

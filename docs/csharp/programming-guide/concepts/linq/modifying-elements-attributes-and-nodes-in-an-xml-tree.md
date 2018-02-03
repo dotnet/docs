@@ -1,7 +1,7 @@
 ---
 title: "Modifying Elements, Attributes, and Nodes in an XML Tree3"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 0ed22e4e-4c6b-4eb1-b0eb-06685efd8c33
 caps.latest.revision: 3
 author: "BillWagner"

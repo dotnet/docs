@@ -1,44 +1,26 @@
 ---
 title: "How to: Read From Text Files with Multiple Formats in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "TextFieldParser object, reading from a file"
   - "TextFieldType enumeration"
   - "My.Computer.FileSystem.WriteAllText method, parsing structured text files"
-  - "WriteAllText method, parsing structured text files"
-  - "PeekChars method, determining format of text"
-  - "reading text files, multiple formats"
+  - "WriteAllText method [Visual Basic], parsing structured text files"
+  - "PeekChars method [Visual Basic], determining format of text"
+  - "reading text files [Visual Basic], multiple formats"
   - "I/O [Visual Basic], reading text files"
-  - "text files, reading"
+  - "text files [Visual Basic], reading"
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read From Text Files with Multiple Formats in Visual Basic
 The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to easily and efficiently parse structured text files, such as logs. You can process a file with multiple formats by using the `PeekChars` method to determine the format of each line as you parse through the file.  
@@ -91,12 +73,12 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
 -   The user does not have sufficient permissions to access the file (<xref:System.UnauthorizedAccessException>).  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>   
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>   
- <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>   
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>   
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>   
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>   
- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)   
- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)   
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>  
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>  
+ <xref:Microsoft.VisualBasic.FileIO.MalformedLineException>  
+ <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>  
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData%2A>  
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A>  
+ [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
+ [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
  [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

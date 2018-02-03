@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.GeneralTransform" />
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -278,7 +279,7 @@
     </Member>
     <Member MemberName="TryTransform">
       <MemberSignature Language="C#" Value="public abstract bool TryTransform (System.Windows.Media.Media3D.Point3D inPoint, out System.Windows.Media.Media3D.Point3D result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTransform(valuetype System.Windows.Media.Media3D.Point3D inPoint, valuetype System.Windows.Media.Media3D.Point3D result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTransform(valuetype System.Windows.Media.Media3D.Point3D inPoint, [out] valuetype System.Windows.Media.Media3D.Point3D&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform3D.TryTransform(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -310,5 +311,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

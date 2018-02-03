@@ -67,6 +67,8 @@
     <block subset="none" type="overrides">
       <para>A derived class must minimally implement the <see cref="M:System.IO.TextWriter.Write(System.Char)" /> method to make a useful instance of <see cref="T:System.IO.TextWriter" />.</para>
     </block>
+    <altmember cref="T:System.IO.StreamWriter" />
+    <altmember cref="T:System.IO.StringWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -108,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +154,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -228,6 +234,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -366,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -408,6 +418,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -449,6 +461,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="FormatProvider">
@@ -493,6 +507,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="NewLine">
@@ -537,6 +553,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -580,6 +598,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -671,6 +691,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -718,6 +740,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -767,6 +791,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char[])" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -812,6 +837,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -859,6 +887,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -906,6 +937,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -955,6 +989,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1004,6 +1041,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1051,6 +1091,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1102,6 +1145,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1154,6 +1199,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1206,6 +1254,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1268,7 +1319,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -1292,10 +1343,13 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is one).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public virtual void Write (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public virtual void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextWriter.Write(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1361,7 +1415,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -1385,6 +1439,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the length of the <paramref name="arg" /> array.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1442,6 +1499,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1506,7 +1565,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -1530,6 +1589,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero) or greater than or equal to the number of objects to be formatted (which, for this method overload, is two).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1596,7 +1658,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -1620,6 +1682,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is three).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1671,6 +1736,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1715,6 +1782,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1766,6 +1835,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
@@ -1826,6 +1897,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1870,6 +1943,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1921,6 +1996,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -1970,6 +2047,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2021,6 +2100,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2068,6 +2149,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2115,6 +2199,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2164,6 +2251,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2213,6 +2303,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2262,6 +2355,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2309,6 +2405,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2360,6 +2459,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2414,6 +2515,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2468,6 +2572,9 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2530,7 +2637,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has only a single object in its parameter list, the value of *index* must always be 0. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -2556,10 +2663,13 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is one).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
-      <MemberSignature Language="C#" Value="public virtual void WriteLine (string format, object[] arg);" />
+      <MemberSignature Language="C#" Value="public virtual void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.TextWriter.WriteLine(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2625,7 +2735,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has an array in its parameter list, the value of *index* must always be less than the length of the array. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -2650,6 +2760,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the length of the <paramref name="arg" /> array.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2709,6 +2822,8 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2773,7 +2888,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has two objects in its parameter list, the value of *index* must always be 0 or 1. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -2799,6 +2914,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is two).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -2865,7 +2983,7 @@
   
 |Element|Description|  
 |-------------|-----------------|  
-|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
+|index|The zero-based position in the parameter list of the object to be formatted. If the object specified by *index* is `null`, the format item is replaced by <xref:System.String.Empty?displayProperty=nameWithType>. Because this overload has three objects in its parameter list, the value of *index* must always be 0, 1, or 2. If there is no parameter in the *index* position, a <xref:System.FormatException> is thrown.|  
 |,*length*|The minimum number of characters in the string representation of the parameter. If positive, the parameter is right-aligned; if negative, it is left-aligned.|  
 |:*formatString*|A standard or custom format string that is supported by the object to be formatted. Possible values for *formatString* are the same as the values supported by the object's `ToString(string format)` method. If *formatString* is not specified and the object to be formatted implements the <xref:System.IFormattable> interface, `null` is passed as the value of the `format` parameter that is used as the <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> format string.|  
   
@@ -2891,6 +3009,9 @@
  -or-  
   
  The index of a format item is less than 0 (zero), or greater than or equal to the number of objects to be formatted (which, for this method overload, is three).</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -2939,6 +3060,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -2992,6 +3114,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.Char)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3043,6 +3167,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="T:System.IO.StreamWriter" />
+        <altmember cref="T:System.IO.StringWriter" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3096,6 +3222,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.String)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLineAsync">
@@ -3158,7 +3286,75 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation.</exception>
+        <altmember cref="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.IO.StringWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to a text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.TextWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator to the text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteLineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data followed by a line terminator asynchronously to the text string or stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.TextWriter" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to the text string or stream asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

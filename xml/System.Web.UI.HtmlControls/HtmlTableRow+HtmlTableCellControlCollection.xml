@@ -22,6 +22,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.CreateControlCollection" />
+    <altmember cref="T:System.Web.UI.ControlCollection" />
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -51,6 +53,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
       </Docs>
     </Member>
     <Member MemberName="AddAt">
@@ -82,6 +85,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</exception>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection.Add(System.Web.UI.Control)" />
       </Docs>
     </Member>
   </Members>

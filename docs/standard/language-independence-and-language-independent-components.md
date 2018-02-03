@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "language interoperability"
   - "Common Language Specification"
@@ -20,6 +23,9 @@ caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Language Independence and Language-Independent Components
 The .NET Framework is language independent. This means that, as a developer, you can develop in one of the many languages that target the .NET Framework, such as C#, C++/CLI, Eiffel, F#, IronPython, IronRuby, PowerBuilder, Visual Basic, Visual COBOL, and Windows PowerShell. You can access the types and members of class libraries developed for the .NET Framework without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET Framework app regardless of its language.  
@@ -504,7 +510,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 -   To ensure that the component library's public interface exposes only program elements that are CLS-compliant. If elements are not CLS-compliant, compilers will generally issue a warning.  
   
 > [!WARNING]
->  In some cases, language compilers enforce CLS-compliant rules regardless of whether the <xref:System.CLSCompliantAttribute> attribute is used. For example, defining a static member in an interface violates a CLS rule. However, if you define a `static` (in C#) or `Shared` (in Visual Basic) member in an interface, both the C# and Visual Basic compilers display an error message and fail to compile the app.  
+>  In some cases, language compilers enforce CLS-compliant rules regardless of whether the <xref:System.CLSCompliantAttribute> attribute is used. For example, defining a static member in an interface violates a CLS rule. In this regard, if you define a `static` (in C#) or `Shared` (in Visual Basic) member in an interface, both the C# and Visual Basic compilers display an error message and fail to compile the app.  
   
  The <xref:System.CLSCompliantAttribute> attribute is marked with an <xref:System.AttributeUsageAttribute> attribute that has a value of <xref:System.AttributeTargets.All?displayProperty=nameWithType>. This value allows you to apply the <xref:System.CLSCompliantAttribute> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values. However, in practice, you should apply the attribute only to assemblies, types, and type members. Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.  
   

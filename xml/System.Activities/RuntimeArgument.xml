@@ -232,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If an argument is required and not bound to a value a <xref:System.Activities.ValidationException> is thrown when the containing activity is prepared for execution, unless overload groups are used and the required arguments of an overload group are bound. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.Activities.RuntimeArgument.OverloadGroupNames%2A>.  
+ If an argument is required and not bound to a value a <xref:System.Activities.ValidationException> is thrown when the containing activity is prepared for execution, unless overload groups are used and the required arguments of an overload group are bound. [!INCLUDE[crdefault](~/includes/crabout-md.md)] <xref:System.Activities.RuntimeArgument.OverloadGroupNames%2A>.  
   
  ]]></format>
         </remarks>
@@ -328,5 +328,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

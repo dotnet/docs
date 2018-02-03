@@ -22,6 +22,8 @@ caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Control Styles and Templates
 Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. You can change the structure and appearance of a control by modifying the <xref:System.Windows.Controls.ControlTemplate> of that control. There is no way to replace only part of the visual tree of a control; to change the visual tree of a control you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.  

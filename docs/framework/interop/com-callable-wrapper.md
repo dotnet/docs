@@ -10,10 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "CCW"
   - "COM interop, COM wrappers"
@@ -26,6 +24,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COM Callable Wrapper
 When a COM client calls a .NET object, the common language runtime creates the managed object and a COM callable wrapper (CCW) for the object. Unable to reference a .NET object directly, COM clients use the CCW as a proxy for the managed object.  
@@ -183,10 +183,10 @@ public class LoanApp : IAnother {
  An automatically generated dual interface might be appropriate in rare cases; however, more often it creates version-related complexity. For example, COM clients using the class interface of a derived class can easily break with changes to the base class. When a third party provides the base class, the layout of the class interface is out of your control. Further, unlike a dispatch-only interface, a dual interface (**ClassInterface.AutoDual**) provides a description of the class interface in the exported type library. Such a description encourages late-bound clients to cache DispIds at run time.  
   
 ## See Also  
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>   
- [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)   
- [COM Wrappers](../../../docs/framework/interop/com-wrappers.md)   
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)   
- [Simulating COM Interfaces](http://msdn.microsoft.com/en-us/ad2ab959-e2be-411b-aaff-275c3fba606c)   
- [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)   
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
+ [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)  
+ [COM Wrappers](../../../docs/framework/interop/com-wrappers.md)  
+ [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
+ [Simulating COM Interfaces](http://msdn.microsoft.com/library/ad2ab959-e2be-411b-aaff-275c3fba606c)  
+ [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)  
  [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)

@@ -198,6 +198,7 @@
         <summary>Gets the Active Directory Domain Services rights for this access rule.</summary>
         <value>A combination of one or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specify the Active Directory Domain Services access rights that are included in this rule.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" />
       </Docs>
     </Member>
     <Member MemberName="InheritanceType">
@@ -219,5 +220,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

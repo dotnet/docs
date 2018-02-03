@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishEnum::Reset method [.NET Framework debugging]"
   - "Reset method, ICorPublishEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishEnum::Reset Method
 Moves the cursor of to the beginning of the enumeration.  

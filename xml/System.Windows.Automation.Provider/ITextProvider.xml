@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Automation.TextPattern" />
   </Docs>
   <Members>
     <Member MemberName="DocumentRange">
@@ -53,6 +54,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetSelection">
@@ -84,6 +86,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">If the UI Automation provider does not support text selection.</exception>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
     <Member MemberName="GetVisibleRanges">
@@ -114,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
     <Member MemberName="RangeFromChild">
@@ -148,6 +152,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If the child element is a null reference (<see langword="Nothing" /> in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]).</exception>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
     <Member MemberName="RangeFromPoint">
@@ -180,6 +185,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">If a given point is outside the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element associated with the text pattern.</exception>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
     <Member MemberName="SupportedTextSelection">
@@ -198,6 +204,7 @@
         <summary>Gets a value that specifies whether a text provider supports selection and, if so, the type of selection supported.</summary>
         <value>One of <see langword="None" />, <see langword="Single" />, or <see langword="Multiple" /> from <see cref="T:System.Windows.Automation.SupportedTextSelection" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Automation.Provider.ITextRangeProvider" />
       </Docs>
     </Member>
   </Members>

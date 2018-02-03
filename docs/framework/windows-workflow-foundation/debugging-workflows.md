@@ -9,18 +9,20 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Debugging Workflows
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] offers several options for debugging running workflows from the development environment. Workflows can be debugged in the designer, in XAML, and in code.  
   
 ## Debugging in the Workflow Designer  
- Breakpoints can be set on activities in the workflow designer by either highlighting the activity and pressing **F9** or by using the activity’s context menu. Execution of the workflow then breaks when the workflow host is run in debug mode. In the following screenshot, workflow execution is paused at a breakpoint. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Debugging Workflows with the Workflow Designer](/visualstudio/workflow-designer/debugging-workflows-with-the-workflow-designer).  
+ Breakpoints can be set on activities in the workflow designer by either highlighting the activity and pressing **F9** or by using the activity’s context menu. Execution of the workflow then breaks when the workflow host is run in debug mode. In the following screenshot, workflow execution is paused at a breakpoint. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Debugging Workflows with the Workflow Designer](/visualstudio/workflow-designer/debugging-workflows-with-the-workflow-designer).  
   
 ## Debugging in XAML  
- If a workflow has paused at a breakpoint in the designer, the workflow can also be debugged in XAML. To view the point of execution in XAML, select **XAML View** in the workflow designer when workflow execution is paused. Debugging can be switched back to the designer by re-opening the workflow in the designer from the solution explorer. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Debug XAML with the Workflow Designer](/visualstudio/workflow-designer/how-to-debug-xaml-with-the-workflow-designer).  
+ If a workflow has paused at a breakpoint in the designer, the workflow can also be debugged in XAML. To view the point of execution in XAML, select **XAML View** in the workflow designer when workflow execution is paused. Debugging can be switched back to the designer by re-opening the workflow in the designer from the solution explorer. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [How to: Debug XAML with the Workflow Designer](/visualstudio/workflow-designer/how-to-debug-xaml-with-the-workflow-designer).  
   
 ## Debugging in Code  
  Code breakpoints can be used in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the same way that they can be used in other imperative applications. Click the left margin of the code pane to create a code breakpoint, or press **F9** to place a breakpoint at the cursor location.  

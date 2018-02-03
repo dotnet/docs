@@ -36,11 +36,19 @@
 ## Examples  
  The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlTableRow> instance to represent a row in the <xref:System.Web.UI.HtmlControls.HtmlTable> control. An <xref:System.Web.UI.HtmlControls.HtmlTableRow> is retrieved from the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection of the table and its contents are modified.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRow/CS/htmltablerowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRow/VB/htmltablerowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRow/CS/htmltablerowcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRow/VB/htmltablerowvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTable" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Cells" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,11 +80,13 @@
 ## Examples  
  The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableRow> controls and place the table on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTable.#ctor" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -127,11 +137,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Align%2A> property to control the horizontal alignment of the contents of the cells in an entire row.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowBehavior/CS/htmltablerowbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowBehavior/VB/htmltablerowbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowBehavior/CS/htmltablerowbehaviorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowBehavior/VB/htmltablerowbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
     <Member MemberName="BgColor">
@@ -193,11 +208,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.BgColor%2A> property to control the background color of a row in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="BorderColor">
@@ -259,11 +280,17 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor%2A> property to control the border color of a row in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
+        <altmember cref="T:System.Drawing.KnownColor" />
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -303,11 +330,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> collection to iterate through the cells of a row, represented by an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object. The cells are then updated with new content.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRow/CS/htmltablerowcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRow/VB/htmltablerowvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRow#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRow/CS/htmltablerowcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRow#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRow/VB/htmltablerowvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCellCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateControlCollection">
@@ -336,6 +364,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+        <altmember cref="T:System.Web.UI.HtmlControls.HtmlTableRow.HtmlTableCellControlCollection" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -375,11 +405,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Height%2A> property to control the height of a row in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowAppearance/CS/htmltablerowappearancecs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowAppearance/VB/htmltablerowappearancevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
     <Member MemberName="InnerHtml">
@@ -408,6 +443,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.InnerText" />
       </Docs>
     </Member>
     <Member MemberName="InnerText">
@@ -436,6 +472,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.InnerHtml" />
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
@@ -466,6 +503,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Control.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="P:System.Web.UI.HtmlTextWriter.Indent" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndTag">
@@ -496,6 +536,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTableRow.RenderChildren(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="VAlign">
@@ -546,11 +588,16 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableRow.VAlign%2A> property to control the vertical alignment of the contents of the cells in an entire row.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTableRowBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowBehavior/CS/htmltablerowbehaviorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTableRowBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowBehavior/VB/htmltablerowbehaviorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTableRowBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableRowBehavior/CS/htmltablerowbehaviorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTableRowBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableRowBehavior/VB/htmltablerowbehaviorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BgColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.BorderColor" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Height" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.Align" />
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTableRow.VAlign" />
       </Docs>
     </Member>
   </Members>

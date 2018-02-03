@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,6 +111,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ColorDialog.FullOpen" />
       </Docs>
     </Member>
     <Member MemberName="AnyColor">
@@ -145,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ColorDialog.CustomColors" />
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -179,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="CustomColors">
@@ -223,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ColorDialog.AnyColor" />
       </Docs>
     </Member>
     <Member MemberName="FullOpen">
@@ -257,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ColorDialog.AllowFullOpen" />
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -280,9 +286,9 @@
 ## Remarks  
   
 > [!NOTE]
->  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/en-us/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+>  This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand?displayProperty=nameWithType> to prevent it from being called from untrusted code; only the immediate caller is required to have <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A?displayProperty=nameWithType> permission. If your code can be called from partially trusted code, do not pass user input to <xref:System.Runtime.InteropServices.Marshal> class methods without validation. For important limitations on using the `LinkDemand` member, see [Demand vs. LinkDemand](http://msdn.microsoft.com/library/1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
   
- This property also uses the <xref:System.Security.Permissions.SecurityAction?displayProperty=nameWithType> security attribute; to override this member, the derived class must have the `CustomPermission` permission.  
+ This property also uses the <xref:System.Security.Permissions.SecurityAction.InheritanceDemand?displayProperty=nameWithType> security attribute; to override this member, the derived class must have the `CustomPermission` permission.  
   
  ]]></format>
         </remarks>
@@ -330,6 +336,7 @@
       <Docs>
         <summary>Resets all options to their default values, the last selected color to black, and the custom colors to their default values.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.ColorDialog" />
       </Docs>
     </Member>
     <Member MemberName="RunDialog">
@@ -353,6 +360,7 @@
         <returns>
           <see langword="true" /> if the dialog box was successfully run; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.CommonDialog.RunDialog(System.IntPtr)" />
       </Docs>
     </Member>
     <Member MemberName="ShowHelp">

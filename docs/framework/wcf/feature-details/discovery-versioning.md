@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Discovery Versioning
 This topic provides a brief overview of the implementation of some new discovery features. It also gives an overview on how to select the discovery version to use.  

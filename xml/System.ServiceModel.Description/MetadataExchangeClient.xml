@@ -68,8 +68,8 @@
   
 |Scheme|Binding|  
 |------------|-------------|  
-|http|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType>)|  
-|https|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType>)|  
+|http|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode.None?displayProperty=nameWithType>)|  
+|https|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode.Transport?displayProperty=nameWithType>)|  
 |net.tcp|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.TcpTransportBindingElement>|  
 |net.pipe|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>|  
   
@@ -195,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to specify the address and whether to use an HTTP GET request or WS-Transfer Get. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
+ Use this constructor to specify the address and whether to use an HTTP GET request or WS-Transfer Get. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType>.  
   
    
   
@@ -611,7 +611,7 @@
   
 -   When there is an attempt to resolve a <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType>.  
   
--   When <xref:System.ServiceModel.Description.MetadataExchangeClientMode?displayProperty=nameWithType> is used.  
+-   When <xref:System.ServiceModel.Description.MetadataExchangeClientMode.HttpGet?displayProperty=nameWithType> is used.  
   
  ]]></format>
         </remarks>
@@ -743,5 +743,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetMetadataAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an asynchronous metadata set.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

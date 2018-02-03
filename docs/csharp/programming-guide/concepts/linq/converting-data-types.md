@@ -1,26 +1,17 @@
 ---
 title: "Converting Data Types (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Converting Data Types (C#)
 Conversion methods change the type of input objects.  
@@ -88,8 +79,8 @@ static void Cast()
 ```  
   
 ## See Also  
- <xref:System.Linq>   
- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)   
- [from clause](../../../../csharp/language-reference/keywords/from-clause.md)   
- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)   
+ <xref:System.Linq>  
+ [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+ [from clause](../../../../csharp/language-reference/keywords/from-clause.md)  
+ [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
  [How to: Query an ArrayList with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)

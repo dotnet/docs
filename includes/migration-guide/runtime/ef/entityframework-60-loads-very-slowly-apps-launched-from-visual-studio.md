@@ -7,5 +7,4 @@
 |Scope|Edge|
 |Version|4.5|
 |Type|Runtime|
-|Analyzers|<ul><li>CD0091</li></ul>|
 

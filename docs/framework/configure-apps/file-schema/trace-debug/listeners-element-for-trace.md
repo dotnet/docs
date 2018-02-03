@@ -11,11 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<listeners> element"
   - "listeners element"
@@ -24,6 +19,8 @@ caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;listeners&gt; Element for &lt;trace&gt;
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  
@@ -96,5 +93,5 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
 ```  
   
 ## See Also  
- <xref:System.Diagnostics.TraceListener>   
+ <xref:System.Diagnostics.TraceListener>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

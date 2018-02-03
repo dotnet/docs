@@ -12,6 +12,8 @@ ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
 author: "rpetrusha"
 ms.author: "mariaw"
 manager: "wpickett"
+ms.workload: 
+  - "mariaw"
 ---
 
 # .NET Framework 4 migration issues

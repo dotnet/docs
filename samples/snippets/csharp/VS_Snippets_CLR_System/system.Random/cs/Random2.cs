@@ -8,7 +8,7 @@ public class Class1
       // Instantiate random number generator using system-supplied value as seed.
       Random rand = new Random();
       // Generate and display 5 random byte (integer) values.
-      byte[] bytes = new byte[4];
+      byte[] bytes = new byte[5];
       rand.NextBytes(bytes);
       Console.WriteLine("Five random byte values:");
       foreach (byte byteValue in bytes)

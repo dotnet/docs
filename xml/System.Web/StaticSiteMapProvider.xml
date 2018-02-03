@@ -84,6 +84,10 @@ NODEID URL            NAME       PARENTNODEID
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.StaticSiteMapProvider" /> class, you must override the following member: <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />.</para>
     </block>
+    <altmember cref="T:System.Web.SiteMapProvider" />
+    <altmember cref="T:System.Web.XmlSiteMapProvider" />
+    <altmember cref="T:System.Web.SiteMapNode" />
+    <altmember cref="T:System.Web.SiteMap" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -146,6 +150,7 @@ NODEID URL            NAME       PARENTNODEID
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.StaticSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" /> method, ensure that the <see cref="P:System.Web.SiteMapNode.Key" /> property is set to a unique value when adding the site map node using the <see cref="Overload:System.Web.StaticSiteMapProvider.AddNode" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.StaticSiteMapProvider.RemoveNode(System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="BuildSiteMap">
@@ -188,6 +193,9 @@ NODEID URL            NAME       PARENTNODEID
   
  Security trimming behavior is included in the <see cref="T:System.Web.SiteMapProvider" /> and <see cref="T:System.Web.StaticSiteMapProvider" /> class implementations. However, for security trimming to function in derived classes, you must set the <see cref="P:System.Web.SiteMapNode.Roles" /> property of any <see cref="T:System.Web.SiteMapNode" /> objects that you create while building a site map provider when you override the <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" /> method.</para>
         </block>
+        <altmember cref="P:System.Web.SiteMapProvider.RootNode" />
+        <altmember cref="M:System.Configuration.Provider.ProviderBase.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.StaticSiteMapProvider.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -226,6 +234,8 @@ NODEID URL            NAME       PARENTNODEID
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Provider.ProviderBase.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNode">
@@ -264,6 +274,8 @@ NODEID URL            NAME       PARENTNODEID
   
  Security trimming behavior is included in the <see cref="T:System.Web.SiteMapProvider" /> and <see cref="T:System.Web.StaticSiteMapProvider" /> class implementations. However, for security trimming to function in derived classes, you must set the <see cref="P:System.Web.SiteMapNode.Roles" /> property of any <see cref="T:System.Web.SiteMapNode" /> objects that you create while building a site map provider when you override the <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" /> method.</para>
         </block>
+        <altmember cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />
+        <altmember cref="M:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="FindSiteMapNodeFromKey">
@@ -299,6 +311,7 @@ NODEID URL            NAME       PARENTNODEID
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.StaticSiteMapProvider.FindSiteMapNode" />
       </Docs>
     </Member>
     <Member MemberName="GetChildNodes">
@@ -332,6 +345,7 @@ NODEID URL            NAME       PARENTNODEID
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="GetParentNode">
@@ -367,6 +381,7 @@ NODEID URL            NAME       PARENTNODEID
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Web.SiteMapProvider.IsAccessibleToUser(System.Web.HttpContext,System.Web.SiteMapNode)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNode">
@@ -390,6 +405,7 @@ NODEID URL            NAME       PARENTNODEID
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="node" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Web.StaticSiteMapProvider.AddNode" />
       </Docs>
     </Member>
   </Members>

@@ -38,6 +38,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.CommonDialog" />
+    <altmember cref="T:System.Drawing.Printing.Margins" />
+    <altmember cref="T:System.Drawing.Printing.PageSettings" />
+    <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+    <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +80,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.Margins" />
+        <altmember cref="T:System.Drawing.Printing.PageSettings" />
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
+        <altmember cref="T:System.Windows.Forms.CommonDialog" />
       </Docs>
     </Member>
     <Member MemberName="AllowMargins">
@@ -99,6 +109,9 @@
         <value>
           <see langword="true" /> if the margins section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowOrientation" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPaper" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPrinter" />
       </Docs>
     </Member>
     <Member MemberName="AllowOrientation">
@@ -123,6 +136,9 @@
         <value>
           <see langword="true" /> if the orientation section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowMargins" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPaper" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPrinter" />
       </Docs>
     </Member>
     <Member MemberName="AllowPaper">
@@ -147,6 +163,9 @@
         <value>
           <see langword="true" /> if the paper section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowMargins" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowOrientation" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPrinter" />
       </Docs>
     </Member>
     <Member MemberName="AllowPrinter">
@@ -180,6 +199,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowMargins" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowOrientation" />
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.AllowPaper" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -203,6 +225,7 @@
         <summary>Gets or sets a value indicating the <see cref="T:System.Drawing.Printing.PrintDocument" /> to get page settings from.</summary>
         <value>The <see cref="T:System.Drawing.Printing.PrintDocument" /> to get page settings from. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.PrintDocument" />
       </Docs>
     </Member>
     <Member MemberName="EnableMetric">
@@ -260,6 +283,7 @@
         <summary>Gets or sets a value indicating the minimum margins, in hundredths of an inch, the user is allowed to select.</summary>
         <value>The minimum margins, in hundredths of an inch, the user is allowed to select. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Drawing.Printing.Margins" />
       </Docs>
     </Member>
     <Member MemberName="PageSettings">
@@ -300,6 +324,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PageSettings" />
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -340,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Printing.PrinterSettings" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -404,6 +430,7 @@
         <value>
           <see langword="true" /> if the **Help** button is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.ShowNetwork" />
       </Docs>
     </Member>
     <Member MemberName="ShowNetwork">
@@ -439,6 +466,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PageSetupDialog.ShowHelp" />
       </Docs>
     </Member>
   </Members>

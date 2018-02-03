@@ -1,7 +1,7 @@
 ---
 title: "WordprocessingML Document with Styles3"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
 caps.latest.revision: 3
 author: "BillWagner"

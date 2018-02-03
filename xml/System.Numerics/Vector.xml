@@ -2919,7 +2919,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;byte&gt; source, out System.Numerics.Vector&lt;ushort&gt; dest1, out System.Numerics.Vector&lt;ushort&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int8&gt; source, valuetype System.Numerics.Vector`1&lt;unsigned int16&gt; dest1, valuetype System.Numerics.Vector`1&lt;unsigned int16&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int8&gt; source, [out] valuetype System.Numerics.Vector`1&lt;unsigned int16&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;unsigned int16&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.UInt16}@,System.Numerics.Vector{System.UInt16}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2949,7 +2949,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;short&gt; source, out System.Numerics.Vector&lt;int&gt; dest1, out System.Numerics.Vector&lt;int&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int16&gt; source, valuetype System.Numerics.Vector`1&lt;int32&gt; dest1, valuetype System.Numerics.Vector`1&lt;int32&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int16&gt; source, [out] valuetype System.Numerics.Vector`1&lt;int32&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;int32&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.Int32}@,System.Numerics.Vector{System.Int32}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2974,7 +2974,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;int&gt; source, out System.Numerics.Vector&lt;long&gt; dest1, out System.Numerics.Vector&lt;long&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int32&gt; source, valuetype System.Numerics.Vector`1&lt;int64&gt; dest1, valuetype System.Numerics.Vector`1&lt;int64&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int32&gt; source, [out] valuetype System.Numerics.Vector`1&lt;int64&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;int64&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.Int64}@,System.Numerics.Vector{System.Int64}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2999,7 +2999,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;sbyte&gt; source, out System.Numerics.Vector&lt;short&gt; dest1, out System.Numerics.Vector&lt;short&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int8&gt; source, valuetype System.Numerics.Vector`1&lt;int16&gt; dest1, valuetype System.Numerics.Vector`1&lt;int16&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;int8&gt; source, [out] valuetype System.Numerics.Vector`1&lt;int16&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;int16&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.Int16}@,System.Numerics.Vector{System.Int16}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3029,7 +3029,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;float&gt; source, out System.Numerics.Vector&lt;double&gt; dest1, out System.Numerics.Vector&lt;double&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;float32&gt; source, valuetype System.Numerics.Vector`1&lt;float64&gt; dest1, valuetype System.Numerics.Vector`1&lt;float64&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;float32&gt; source, [out] valuetype System.Numerics.Vector`1&lt;float64&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;float64&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.Single},System.Numerics.Vector{System.Double}@,System.Numerics.Vector{System.Double}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3054,7 +3054,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;ushort&gt; source, out System.Numerics.Vector&lt;uint&gt; dest1, out System.Numerics.Vector&lt;uint&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int16&gt; source, valuetype System.Numerics.Vector`1&lt;unsigned int32&gt; dest1, valuetype System.Numerics.Vector`1&lt;unsigned int32&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int16&gt; source, [out] valuetype System.Numerics.Vector`1&lt;unsigned int32&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;unsigned int32&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt32}@,System.Numerics.Vector{System.UInt32}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3084,7 +3084,7 @@
     </Member>
     <Member MemberName="Widen">
       <MemberSignature Language="C#" Value="public static void Widen (System.Numerics.Vector&lt;uint&gt; source, out System.Numerics.Vector&lt;ulong&gt; dest1, out System.Numerics.Vector&lt;ulong&gt; dest2);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int32&gt; source, valuetype System.Numerics.Vector`1&lt;unsigned int64&gt; dest1, valuetype System.Numerics.Vector`1&lt;unsigned int64&gt; dest2) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Widen(valuetype System.Numerics.Vector`1&lt;unsigned int32&gt; source, [out] valuetype System.Numerics.Vector`1&lt;unsigned int64&gt;&amp; dest1, [out] valuetype System.Numerics.Vector`1&lt;unsigned int64&gt;&amp; dest2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector.Widen(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt64}@,System.Numerics.Vector{System.UInt64}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

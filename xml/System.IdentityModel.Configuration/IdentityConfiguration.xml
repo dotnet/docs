@@ -787,5 +787,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IdentityConfiguration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadHandlerConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" /> from a configuration file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -123,7 +123,7 @@
     </Member>
     <Member MemberName="TryGetObject">
       <MemberSignature Language="C#" Value="public bool TryGetObject (Guid objectReferenceId, out object obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObject(valuetype System.Guid objectReferenceId, object obj) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObject(valuetype System.Guid objectReferenceId, [out] object&amp; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.TryGetObject(System.Guid,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -146,5 +146,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AcquireObjectReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires an actual reference of an object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

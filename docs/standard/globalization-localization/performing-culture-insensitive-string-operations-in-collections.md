@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "CaseInsensitiveComparer class, using"
   - "CollectionsUtil.CreateCaseInsensitiveHashtable method"
@@ -22,6 +25,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Performing Culture-Insensitive String Operations in Collections
 There are classes and members in the <xref:System.Collections> namespace that provide culture-sensitive behavior by default. The default constructors for the <xref:System.Collections.CaseInsensitiveComparer> and <xref:System.Collections.CaseInsensitiveHashCodeProvider> classes initialize a new instance using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property. All overloads of the <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType> method create a new instance of the <xref:System.Collections.Hashtable> class using the `Thread.CurrentCulture` property by default. Overloads of the <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType> method perform culture-sensitive sorts by default using `Thread.CurrentCulture`. Sorting and lookup in a <xref:System.Collections.SortedList> can be affected by `Thread.CurrentCulture` when strings are used as the keys. Follow the usage recommendations provided in this section to obtain culture-insensitive results from these classes and methods in the `Collections` namespace.  
@@ -133,11 +139,11 @@ internal class InvariantComparer : IComparer
  Overloads of the `ArrayList.Sort` method perform culture-sensitive sorts by default using the `Thread.CurrentCulture` property. Results can vary by culture due to different sort orders. To eliminate culture-sensitive behavior, use the overloads of this method that accept an `IComparer` implementation. For the `comparer` parameter, specify a custom invariant comparer class that uses `CultureInfo.InvariantCulture`. An example of a custom invariant comparer class is provided in the [Using the SortedList Class](#cpconperformingculture-insensitivestringoperationsincollectionsanchor1) topic.  
   
 ## See Also  
- <xref:System.Collections.CaseInsensitiveComparer>   
- <xref:System.Collections.CaseInsensitiveHashCodeProvider>   
- <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>   
- <xref:System.Collections.SortedList>   
- <xref:System.Collections.Hashtable>   
- <xref:System.Collections.IComparer>   
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)   
+ <xref:System.Collections.CaseInsensitiveComparer>  
+ <xref:System.Collections.CaseInsensitiveHashCodeProvider>  
+ <xref:System.Collections.ArrayList.Sort%2A?displayProperty=nameWithType>  
+ <xref:System.Collections.SortedList>  
+ <xref:System.Collections.Hashtable>  
+ <xref:System.Collections.IComparer>  
+ [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
  <xref:System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable%2A?displayProperty=nameWithType>

@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/add"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "<webRequestModules>, add element"
   - "webRequestModules, add element"
@@ -27,6 +22,8 @@ caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;add&gt; Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  
@@ -39,9 +36,9 @@ Adds a custom Web request module to the application.
 ## Syntax  
   
 ```xml  
-      <add   
-  prefix = "URI prefix"   
-  type = "module name, Version, Culture, PublicKeyToken"   
+<add   
+  prefix="URI prefix"   
+  type="type_fullname, assembly_fullname"   
 />  
 ```  
   
@@ -53,7 +50,7 @@ Adds a custom Web request module to the application.
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
 |`prefix`|The URI prefix for requests handled by this Web request module.|  
-|`type`|The assembly and class name of the module that implements this Web request module.|  
+|`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements this Web request module.|  
   
 ### Child Elements  
  None.  
@@ -69,9 +66,9 @@ Adds a custom Web request module to the application.
   
  The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.  
   
- The value for the `prefix` attribute should be the leading characters of a valid UR --for example, "http", or "http://www.contoso.com".  
+ The value for the `prefix` attribute should be the leading characters of a valid URI --for example, "http", or "http://www.contoso.com".  
   
- The value for the `type` attribute should be a valid DLL name and corresponding class name, separated by a comma .  
+ The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma .  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -93,5 +90,5 @@ Adds a custom Web request module to the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>   
+ <xref:System.Net.WebRequest>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

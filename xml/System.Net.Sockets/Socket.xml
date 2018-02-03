@@ -68,6 +68,10 @@
     </remarks>
     <permission cref="T:System.Net.SocketPermission">To establish an outgoing connection or accept an incoming request.</permission>
     <threadsafe>Instances of this class are thread safe.</threadsafe>
+    <altmember cref="N:System.Net" />
+    <altmember cref="N:System.Net.Cache" />
+    <altmember cref="N:System.Net.Security" />
+    <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -201,6 +205,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">The combination of <paramref name="addressFamily" />, <paramref name="socketType" />, and <paramref name="protocolType" /> results in an invalid socket.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketException" />
+        <altmember cref="T:System.Net.Sockets.AddressFamily" />
+        <altmember cref="T:System.Net.Sockets.ProtocolType" />
+        <altmember cref="T:System.Net.Sockets.SocketType" />
       </Docs>
     </Member>
     <Member MemberName="Accept">
@@ -259,6 +267,9 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The accepting socket is not listening for connections. You must call <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> and <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> before calling <see cref="M:System.Net.Sockets.Socket.Accept" />.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AcceptAsync">
@@ -310,7 +321,7 @@
   
  The caller may set the <xref:System.Net.Sockets.SocketAsyncEventArgs.UserToken%2A?displayProperty=nameWithType> property to any user state object desired before calling the <xref:System.Net.Sockets.Socket.AcceptAsync%2A> method, so that the information will be retrievable in the callback method. If the callback needs more information than a single object, a small class can be created to hold the other required state information as members.  
   
- Optionally, a buffer may be provided in which to receive the initial block of data on the socket after the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method succeeds. In this case, the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A?displayProperty=nameWithType> property needs to be set to the buffer containing the data to receive and the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> property needs to be set to the maximum number of bytes of data to receive in the buffer. These properties can be set using the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%2A?displayProperty=nameWithType> method. Part of the buffer passed in will be consumed internally for use by the the underlying Winsock AcceptEx call. This means that the amount of data returned will always be less than the value of the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> property on the <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType> instance provided. The amount of the buffer used internally varies based on the address family of the socket. The minimum buffer size required is 288 bytes. If a larger buffer size is specified, then the <xref:System.Net.Sockets.Socket> will expect some extra data other than the address data received by the Winsock AcceptEx call and will wait until this extra data is received. If a timeout occurs, the connection is reset. So if extra data is expected of  a specific amount, then the buffer size should be set to the minimum buffer size plus this amount.  
+ Optionally, a buffer may be provided in which to receive the initial block of data on the socket after the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method succeeds. In this case, the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A?displayProperty=nameWithType> property needs to be set to the buffer containing the data to receive and the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> property needs to be set to the maximum number of bytes of data to receive in the buffer. These properties can be set using the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%2A?displayProperty=nameWithType> method. Part of the buffer passed in will be consumed internally for use by the underlying Winsock AcceptEx call. This means that the amount of data returned will always be less than the value of the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=nameWithType> property on the <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType> instance provided. The amount of the buffer used internally varies based on the address family of the socket. The minimum buffer size required is 288 bytes. If a larger buffer size is specified, then the <xref:System.Net.Sockets.Socket> will expect some extra data other than the address data received by the Winsock AcceptEx call and will wait until this extra data is received. If a timeout occurs, the connection is reset. So if extra data is expected of  a specific amount, then the buffer size should be set to the minimum buffer size plus this amount.  
   
  The completion callback method should examine the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A?displayProperty=nameWithType> property to determine if the <xref:System.Net.Sockets.Socket.AcceptAsync%2A> operation was successful.  
   
@@ -330,6 +341,12 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.AcceptSocket" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="AddressFamily">
@@ -374,6 +391,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.AddressFamily" />
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -424,6 +442,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="T:System.IO.Stream" />
+        <altmember cref="F:System.Net.Sockets.SocketType.Dgram" />
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -505,6 +526,11 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -591,6 +617,11 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -679,6 +710,11 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.Net.Sockets.Socket" />
+        <altmember cref="P:System.Net.Sockets.Socket.RemoteEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -757,7 +793,11 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>, or an asynchronous operation is already in progress.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />, or an asynchronous operation is already in progress.</exception>
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -838,7 +878,11 @@
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Net.Sockets.Socket" /> is not in the socket family.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>, or an asynchronous operation is already in progress.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />, or an asynchronous operation is already in progress.</exception>
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -919,7 +963,11 @@
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>, or an asynchronous operation is already in progress.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />, or an asynchronous operation is already in progress.</exception>
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -998,7 +1046,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>, or an asynchronous operation is already in progress.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />, or an asynchronous operation is already in progress.</exception>
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginDisconnect">
@@ -1136,11 +1188,15 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1213,6 +1269,10 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1318,11 +1378,15 @@
  -or-  
   
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags flags, out System.Net.Sockets.SocketError error, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, valuetype System.Net.Sockets.SocketError error, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags flags, [out] valuetype System.Net.Sockets.SocketError&amp; error, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1408,11 +1472,15 @@
  -or-  
   
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveFrom">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socket_flags, ref System.Net.EndPoint remote_end, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint remote_end, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socket_flags, class System.Net.EndPoint&amp; remote_end, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1516,11 +1584,16 @@
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Accept" />
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveMessageFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1687,11 +1760,14 @@
           <paramref name="buffers" /> is empty.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See remarks section below.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1770,6 +1846,9 @@
           <paramref name="buffers" /> is empty.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See remarks section below.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
@@ -1871,11 +1950,14 @@
   
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSend(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@,System.AsyncCallback,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1965,6 +2047,9 @@
   
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" />
       </Docs>
     </Member>
     <Member MemberName="BeginSendFile">
@@ -2179,7 +2264,7 @@
   
  If you are using a connectionless protocol, you do not need to establish a default remote host with the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>. You only need to do this if you intend to call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method. If you do call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>, the `remoteEP` parameter will override the specified default remote host for that send operation only. You are also not required to call the <xref:System.Net.Sockets.Socket.Bind%2A> method. In this case, the underlying service provider will assign the most appropriate local network address and port number. Use a port number of zero if you want the underlying service provider to select a free port. If you need to identify the assigned local network address and port number, you can use the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property after the <xref:System.Net.Sockets.Socket.EndSendTo%2A> method successfully completes.  
   
- If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>. -You must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.EndSendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. -You must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.EndSendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
  If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
@@ -2226,6 +2311,12 @@
  <paramref name="size" /> is greater than the length of <paramref name="buffer" /> minus the value of the <paramref name="offset" /> parameter.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.Broadcast" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Bind">
@@ -2297,6 +2388,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the host defined by <paramref name="localEP" />. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" /></permission>
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />
+        <altmember cref="T:System.Net.IPAddress" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="Blocking">
@@ -2438,6 +2534,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.DontLinger" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -2494,6 +2592,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.DontLinger" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -2530,7 +2630,7 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A>, you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A>, any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A>, any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
  The <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
@@ -2559,8 +2659,16 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />.</exception>
         <permission cref="T:System.Net.SocketPermission">for connecting to the remote host. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Blocking" />
+        <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -2599,7 +2707,7 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
  <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
@@ -2629,7 +2737,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -2668,7 +2776,7 @@
 ## Remarks  
  This method is typically used immediately after a call to <xref:System.Net.Dns.GetHostAddresses%2A>, which can return multiple IP addresses for a single host. If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote endpoint. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
  <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
@@ -2698,7 +2806,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -2737,7 +2845,7 @@
 ## Remarks  
  If you are using a connection-oriented protocol such as TCP, the <xref:System.Net.Sockets.Socket.Connect%2A> method synchronously establishes a network connection between <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> and the specified remote host. If you are using a connectionless protocol, <xref:System.Net.Sockets.Socket.Connect%2A> establishes a default remote host. After you call <xref:System.Net.Sockets.Socket.Connect%2A> you can send data to the remote device with the <xref:System.Net.Sockets.Socket.Send%2A> method, or receive data from the remote device with the <xref:System.Net.Sockets.Socket.Receive%2A> method.  
   
- If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+ If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.Connect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.SendTo%2A> and <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> to synchronously communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.Connect%2A> any datagrams that arrive from an address other than the specified default will be discarded. If you want to set your default remote host to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>, or <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
  <xref:System.Net.Sockets.Socket.Connect%2A> method will block, unless you specifically set the <xref:System.Net.Sockets.Socket.Blocking%2A> property to `false` prior to calling <xref:System.Net.Sockets.Socket.Connect%2A>. If you are using a connection-oriented protocol like TCP and you do disable blocking, <xref:System.Net.Sockets.Socket.Connect%2A> will throw a <xref:System.Net.Sockets.SocketException> because it needs time to make the connection. Connectionless protocols will not throw an exception because they simply establish a default remote host. You can use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. If the error returned WSAEWOULDBLOCK, the remote host connection has been initiated by a connection-oriented <xref:System.Net.Sockets.Socket>, but has not yet completed successfully. Use the <xref:System.Net.Sockets.Socket.Poll%2A> method to determine when the <xref:System.Net.Sockets.Socket> is finished connecting.  
   
@@ -2768,7 +2876,7 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)"/>.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> has been placed in a listening state by calling <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
@@ -2844,6 +2952,12 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the local endpoint and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> are not the same address family.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="ConnectAsync">
@@ -3076,6 +3190,9 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -3164,7 +3281,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -3411,11 +3528,14 @@
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" /> method was previously called.</exception>
         <exception cref="T:System.NotSupportedException">Windows NT is required for this method.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
       </Docs>
     </Member>
     <Member MemberName="EndAccept">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(unsigned int8[] buffer, class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3482,7 +3602,7 @@
     </Member>
     <Member MemberName="EndAccept">
       <MemberSignature Language="C#" Value="public System.Net.Sockets.Socket EndAccept (out byte[] buffer, out int bytesTransferred, IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept(unsigned int8[] buffer, int32 bytesTransferred, class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Sockets.Socket EndAccept([out] unsigned int8[]&amp; buffer, [out] int32&amp; bytesTransferred, class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndAccept(System.Byte[]@,System.Int32@,System.IAsyncResult)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3611,6 +3731,9 @@
           <see cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" /> was previously called for the asynchronous connection.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
       </Docs>
     </Member>
     <Member MemberName="EndDisconnect">
@@ -3746,11 +3869,16 @@
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
       </Docs>
     </Member>
     <Member MemberName="EndReceive">
       <MemberSignature Language="C#" Value="public int EndReceive (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceive(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3811,11 +3939,16 @@
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="T:System.IAsyncResult" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
       </Docs>
     </Member>
     <Member MemberName="EndReceiveFrom">
       <MemberSignature Language="C#" Value="public int EndReceiveFrom (IAsyncResult result, ref System.Net.EndPoint end_point);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint end_point) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFrom(class System.IAsyncResult result, class System.Net.EndPoint&amp; end_point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3884,7 +4017,7 @@
     </Member>
     <Member MemberName="EndReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public int EndReceiveMessageFrom (IAsyncResult asyncResult, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint endPoint, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveMessageFrom(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint endPoint, valuetype System.Net.Sockets.IPPacketInformation ipPacketInformation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveMessageFrom(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; endPoint, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4020,11 +4153,16 @@
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.NoDelay" />
       </Docs>
     </Member>
     <Member MemberName="EndSend">
       <MemberSignature Language="C#" Value="public int EndSend (IAsyncResult asyncResult, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndSend(class System.IAsyncResult asyncResult, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4088,6 +4226,11 @@
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" />
+        <altmember cref="T:System.AsyncCallback" />
+        <altmember cref="P:System.IAsyncResult.AsyncState" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.NoDelay" />
       </Docs>
     </Member>
     <Member MemberName="EndSendFile">
@@ -4370,6 +4513,9 @@
   
  <paramref name="optionName" /> was set to the unsupported value <see cref="F:System.Net.Sockets.SocketOptionName.MaxConnections" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
       </Docs>
     </Member>
     <Member MemberName="GetSocketOption">
@@ -4432,6 +4578,9 @@
   
  In .NET Compact Framework applications, the Windows CE default buffer space is set to 32768 bytes. You can change the per socket buffer space by calling <see cref="Overload:System.Net.Sockets.Socket.SetSocketOption" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
       </Docs>
     </Member>
     <Member MemberName="GetSocketOption">
@@ -4496,6 +4645,9 @@
   
  In .NET Compact Framework applications, the Windows CE default buffer space is set to 32768 bytes. You can change the per socket buffer space by calling <see cref="Overload:System.Net.Sockets.Socket.SetSocketOption" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -4813,6 +4965,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.MaxConnections" />
+        <altmember cref="M:System.Net.Sockets.Socket.Accept" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
       </Docs>
     </Member>
     <Member MemberName="LocalEndPoint">
@@ -4867,6 +5022,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.EndPoint" />
+        <altmember cref="T:System.Net.IPEndPoint" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
       </Docs>
     </Member>
     <Member MemberName="MulticastLoopback">
@@ -5001,6 +5159,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.Socket.OSSupportsIPv6" />
       </Docs>
     </Member>
     <Member MemberName="OSSupportsIPv6">
@@ -5037,6 +5196,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.Socket.OSSupportsIPv4" />
       </Docs>
     </Member>
     <Member MemberName="Poll">
@@ -5108,7 +5268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.Poll%2A> method will check the state of the <xref:System.Net.Sockets.Socket>. Specify <xref:System.Net.Sockets.SelectMode?displayProperty=nameWithType> for the `selectMode` parameter to determine if the <xref:System.Net.Sockets.Socket> is readable. Specify <xref:System.Net.Sockets.SelectMode?displayProperty=nameWithType> to determine if the <xref:System.Net.Sockets.Socket> is writable. Use <xref:System.Net.Sockets.SelectMode?displayProperty=nameWithType> to detect an error condition. <xref:System.Net.Sockets.Socket.Poll%2A> will block execution until the specified time period, measured in `microseconds`, elapses. Set the `microSeconds` parameter to a negative integer if you would like to wait indefinitely for a response. If you want to check the status of multiple sockets, you might prefer to use the <xref:System.Net.Sockets.Socket.Select%2A> method.  
+ The <xref:System.Net.Sockets.Socket.Poll%2A> method will check the state of the <xref:System.Net.Sockets.Socket>. Specify <xref:System.Net.Sockets.SelectMode.SelectRead?displayProperty=nameWithType> for the `selectMode` parameter to determine if the <xref:System.Net.Sockets.Socket> is readable. Specify <xref:System.Net.Sockets.SelectMode.SelectWrite?displayProperty=nameWithType> to determine if the <xref:System.Net.Sockets.Socket> is writable. Use <xref:System.Net.Sockets.SelectMode.SelectError?displayProperty=nameWithType> to detect an error condition. <xref:System.Net.Sockets.Socket.Poll%2A> will block execution until the specified time period, measured in `microseconds`, elapses. Set the `microSeconds` parameter to a negative integer if you would like to wait indefinitely for a response. If you want to check the status of multiple sockets, you might prefer to use the <xref:System.Net.Sockets.Socket.Select%2A> method.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -5133,6 +5293,8 @@
         <exception cref="T:System.NotSupportedException">The <paramref name="mode" /> parameter is not one of the <see cref="T:System.Net.Sockets.SelectMode" /> values.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See remarks below.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.SelectMode" />
+        <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
       </Docs>
     </Member>
     <Member MemberName="ProtocolType">
@@ -5247,6 +5409,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -5377,6 +5544,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -5457,6 +5629,11 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -5533,11 +5710,16 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public int Receive (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5607,6 +5789,11 @@
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
@@ -5704,11 +5891,16 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="Receive">
       <MemberSignature Language="C#" Value="public int Receive (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Receive(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5794,6 +5986,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync">
@@ -5862,6 +6059,13 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveBufferSize">
@@ -5912,7 +6116,7 @@
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5990,11 +6194,16 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6074,11 +6283,17 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6172,11 +6387,17 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFrom">
       <MemberSignature Language="C#" Value="public int ReceiveFrom (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint&amp; remoteEP) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6277,6 +6498,12 @@
  An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFromAsync">
@@ -6345,11 +6572,18 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMessageFrom">
       <MemberSignature Language="C#" Value="public int ReceiveMessageFrom (byte[] buffer, int offset, int size, ref System.Net.Sockets.SocketFlags socketFlags, ref System.Net.EndPoint remoteEP, out System.Net.Sockets.IPPacketInformation ipPacketInformation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP, valuetype System.Net.Sockets.IPPacketInformation ipPacketInformation) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReceiveMessageFrom(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags&amp; socketFlags, class System.Net.EndPoint&amp; remoteEP, [out] valuetype System.Net.Sockets.IPPacketInformation&amp; ipPacketInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.ReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -6452,6 +6686,11 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
+        <altmember cref="P:System.Net.Sockets.Socket.Available" />
+        <altmember cref="M:System.Net.Sockets.Socket.Shutdown(System.Net.Sockets.SocketShutdown)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMessageFromAsync">
@@ -6526,6 +6765,13 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveTimeout">
@@ -6623,6 +6869,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.EndPoint" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Accept" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -6703,6 +6952,10 @@
   
  The <paramref name="checkError" /> parameter is <see langword="null" /> or empty.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Net.Sockets.Socket.Accept" />
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Poll(System.Int32,System.Net.Sockets.SelectMode)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6772,6 +7025,10 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6906,6 +7163,10 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -7049,11 +7310,15 @@
   
  An operating system error occurs while accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public int Send (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -7215,11 +7480,15 @@
   
  An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public int Send (byte[] buffer, int offset, int size, System.Net.Sockets.SocketFlags socketFlags, out System.Net.Sockets.SocketError errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, valuetype System.Net.Sockets.SocketError errorCode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Send(unsigned int8[] buffer, int32 offset, int32 size, valuetype System.Net.Sockets.SocketFlags socketFlags, [out] valuetype System.Net.Sockets.SocketError&amp; errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -7313,6 +7582,10 @@
   
  An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="T:System.Net.Sockets.SocketFlags" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
@@ -7381,6 +7654,13 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">The <see cref="T:System.Net.Sockets.Socket" /> is not yet connected or was not obtained via an <see cref="M:System.Net.Sockets.Socket.Accept" />, <see cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />,or <see cref="Overload:System.Net.Sockets.Socket.BeginAccept" />, method.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="SendBufferSize">
@@ -7633,7 +7913,7 @@
   
  On Windows client editions, the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> method is optimized for minimum memory and resource utilization.  
   
- Use of the <xref:System.Net.Sockets.TransmitFileOptions?displayProperty=nameWithType> flag in the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags%2A?displayProperty=nameWithType> property on the `e` parameter can deliver significant performance benefits. If the thread initiating the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> method call is being used for heavy computations, it is possible, though unlikely, that APCs could be prevented from launching. Note that there is a difference between kernel and user-mode APCs. Kernel APCs launch when a thread is in a wait state. User-mode APCs launch when a thread is in an alertable wait state  
+ Use of the <xref:System.Net.Sockets.TransmitFileOptions.UseKernelApc?displayProperty=nameWithType> flag in the <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags%2A?displayProperty=nameWithType> property on the `e` parameter can deliver significant performance benefits. If the thread initiating the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A> method call is being used for heavy computations, it is possible, though unlikely, that APCs could be prevented from launching. Note that there is a difference between kernel and user-mode APCs. Kernel APCs launch when a thread is in a wait state. User-mode APCs launch when a thread is in an alertable wait state  
   
  ]]></format>
         </remarks>
@@ -7642,6 +7922,11 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the <see cref="T:System.Net.Sockets.Socket" /> is not connected to a remote host.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">A connectionless <see cref="T:System.Net.Sockets.Socket" /> is being used and the file being sent exceeds the maximum packet size of the underlying transport.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsElements" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="SendTimeout">
@@ -7733,7 +8018,7 @@
   
  Blocking sockets will block until the all of the bytes in the buffer are sent. Since a nonblocking <xref:System.Net.Sockets.Socket> completes immediately, it might not send all of the bytes in the `buffer`. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends all of the bytes in the `buffer`. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of outgoing data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendTo%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
- If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -7760,6 +8045,12 @@
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -7807,7 +8098,7 @@
   
  Blocking sockets will block until the requested all of the bytes in the `buffer` are sent. Since a nonblocking <xref:System.Net.Sockets.Socket> completes immediately, it might not send all of the bytes in the `buffer`. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends all of the bytes in the `buffer`. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of out-going data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendTo%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
- If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -7834,6 +8125,12 @@
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -7883,7 +8180,7 @@
   
  Blocking sockets will block until the requested number of bytes are sent. Since a nonblocking <xref:System.Net.Sockets.Socket> completes immediately, it might not send all of the bytes requested in a single operation. It is your application's responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of out-going data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendTo%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
- If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the number of bytes sent does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -7911,6 +8208,12 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="size" /> exceeds the size of <paramref name="buffer" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="SendTo">
@@ -7962,7 +8265,7 @@
   
  Blocking sockets will block until the requested number of bytes are sent. Since a non-blocking <xref:System.Net.Sockets.Socket> completes immediately, it might not send all of the bytes requested in a single operation. It is your applications responsibility to keep track of the number of bytes sent and to retry the operation until the application sends the requested number of bytes. There is also no guarantee that the data you send will appear on the network immediately. To increase network efficiency, the underlying system may delay transmission until a significant amount of out-going data is collected. A successful completion of the <xref:System.Net.Sockets.Socket.SendTo%2A> method means that the underlying system has had room to buffer your data for a network send.  
   
- If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType>. You must also be sure that the size does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you are using a connectionless protocol in blocking mode, <xref:System.Net.Sockets.Socket.SendTo%2A> will block until the datagram is sent. If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You must also be sure that the size does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -8009,6 +8312,12 @@
  An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)" />
+        <altmember cref="P:System.Net.Sockets.Socket.LocalEndPoint" />
       </Docs>
     </Member>
     <Member MemberName="SendToAsync">
@@ -8068,7 +8377,7 @@
   
  If you are using a connectionless protocol, you do not need to establish a default remote host with the <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Connect%2A>, or <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendToAsync%2A>. You only need to do this if you intend to call the <xref:System.Net.Sockets.Socket.BeginSend%2A> or <xref:System.Net.Sockets.Socket.SendAsync%2A> methods. If you do call the <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Connect%2A>, or <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendToAsync%2A>, the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A?displayProperty=nameWithType> property will override the specified default remote host for that send operation only. You are also not required to call the <xref:System.Net.Sockets.Socket.Bind%2A> method. In this case, the underlying service provider will assign the most appropriate local network IP address and port number. Use a port number of zero if you want the underlying service provider to select a free port. If you need to identify the assigned local network IP address and port number, you can use the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property after the <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed?displayProperty=nameWithType> event is signaled and the associated delegates are called.  
   
- If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option for <xref:System.Net.Sockets.SocketOptionName?displayProperty=nameWithType> to true. You must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendToAsync%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
+ If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option for <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType> to true. You must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.SendToAsync%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
  If you specify the DontRoute flag in the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketFlags%2A?displayProperty=nameWithType> property, the data you are sending will not be routed.  
   
@@ -8081,6 +8390,13 @@
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">The protocol specified is connection-oriented, but the <see cref="T:System.Net.Sockets.Socket" /> is not yet connected.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketAsyncEventArgs" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
+        <altmember cref="E:System.Net.Sockets.SocketAsyncEventArgs.Completed" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
+        <altmember cref="P:System.Net.Sockets.SocketAsyncEventArgs.UserToken" />
       </Docs>
     </Member>
     <Member MemberName="SetIPProtectionLevel">
@@ -8128,6 +8444,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="level" /> parameter cannot be <see cref="F:System.Net.Sockets.IPProtectionLevel.Unspecified" />. The IP protection level cannot be set to unspecified.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Net.Sockets.AddressFamily" /> of the socket must be either <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />.</exception>
+        <altmember cref="P:System.Net.IPAddress.IsIPv6Teredo" />
+        <altmember cref="T:System.Net.Sockets.IPProtectionLevel" />
+        <altmember cref="F:System.Net.Sockets.SocketOptionName.IPProtectionLevel" />
+        <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
+        <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetSocketOption">
@@ -8172,7 +8493,7 @@
   
  Listed below are the various <xref:System.Net.Sockets.Socket> options that can be set using this overload. These options are grouped by the appropriate <xref:System.Net.Sockets.SocketOptionLevel> value. If you intend to set any of these options, be sure to use the appropriate <xref:System.Net.Sockets.SocketOptionLevel> value for the `optionLevel` parameter. The option you choose to set must be specified in the `optionName` parameter. If you want to get the current value of any of the options listed, use the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> method.  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Socket?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.AcceptConnection>  
   
@@ -8188,7 +8509,7 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.ReuseAddress>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.IP?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.HeaderIncluded>  
   
@@ -8196,7 +8517,7 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.UseLoopback>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Tcp?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.BsdUrgent>  
   
@@ -8204,7 +8525,7 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.NoDelay>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Udp?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.NoChecksum>  
   
@@ -8284,6 +8605,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)" />
       </Docs>
     </Member>
     <Member MemberName="SetSocketOption">
@@ -8326,7 +8650,7 @@
   
  Listed below are the various <xref:System.Net.Sockets.Socket> options that can be set using this overload. These options are grouped by the appropriate <xref:System.Net.Sockets.SocketOptionLevel>. If you intend to set any of these options, be sure to use the appropriate <xref:System.Net.Sockets.SocketOptionLevel> for the `optionLevel` parameter. The option you choose to set must be specified in the `optionName` parameter. If you want to get the current value of any of the options listed, use the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> method.  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Socket?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.Broadcast>  
   
@@ -8352,7 +8676,7 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.Type>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.IP?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.HeaderIncluded>  
   
@@ -8370,7 +8694,7 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.UseLoopback>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Tcp?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.BsdUrgent>  
   
@@ -8378,13 +8702,13 @@
   
 -   <xref:System.Net.Sockets.SocketOptionName.NoDelay>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.Udp?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.ChecksumCoverage>  
   
 -   <xref:System.Net.Sockets.SocketOptionName.NoChecksum>  
   
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=nameWithType> options that can be set using this overload.  
+ <xref:System.Net.Sockets.SocketOptionLevel.IPv6?displayProperty=nameWithType> options that can be set using this overload.  
   
 -   <xref:System.Net.Sockets.SocketOptionName.HopLimit>  
   
@@ -8409,6 +8733,9 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)" />
       </Docs>
     </Member>
     <Member MemberName="SetSocketOption">
@@ -8467,6 +8794,9 @@
           <paramref name="optionValue" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="T:System.Net.Sockets.SocketOptionName" />
+        <altmember cref="T:System.Net.Sockets.SocketOptionLevel" />
+        <altmember cref="M:System.Net.Sockets.Socket.GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName)" />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -8544,6 +8874,8 @@
         </remarks>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
+        <altmember cref="M:System.Net.Sockets.Socket.Close" />
+        <altmember cref="T:System.Net.Sockets.SocketShutdown" />
       </Docs>
     </Member>
     <Member MemberName="SocketType">
@@ -8588,6 +8920,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.Sockets.SocketType" />
       </Docs>
     </Member>
     <Member MemberName="SupportsIPv4">
@@ -8628,6 +8961,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.Socket.SupportsIPv6" />
       </Docs>
     </Member>
     <Member MemberName="SupportsIPv6">
@@ -8668,6 +9002,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Net.Sockets.Socket.OSSupportsIPv6" />
+        <altmember cref="P:System.Net.Sockets.Socket.SupportsIPv4" />
       </Docs>
     </Member>
     <Member MemberName="Ttl">
@@ -8764,5 +9100,215 @@
         <exception cref="T:System.InvalidOperationException">The socket has been bound to a completion port.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EndSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ends a pending asynchronous send.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSend">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginAccept">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to accept an incoming connection attempt.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSocketOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IOControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets low-level operating modes for the <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data to a specific endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginConnect">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a remote host connection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Closes the <see cref="T:System.Net.Sockets.Socket" /> connection and releases all associated resources.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConnectAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous request for a connection to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetSocketOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the value of a <see cref="T:System.Net.Sockets.Socket" /> option.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins to asynchronously receive data from a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndReceive">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Ends a pending asynchronous read.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Connect">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Establishes a connection to a remote host.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSendFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a file asynchronously to a connected <see cref="T:System.Net.Sockets.Socket" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndAccept">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously accepts an incoming connection attempt.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.Socket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives data from a bound <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SendFile">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a file and optional data synchronously to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends data to a connected <see cref="T:System.Net.Sockets.Socket" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReceiveFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Receives a datagram and stores the source endpoint.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

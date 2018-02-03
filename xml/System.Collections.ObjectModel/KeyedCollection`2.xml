@@ -91,6 +91,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Specialized.StringDictionary" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -142,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -247,6 +250,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="dictionaryCreationThreshold" /> is less than –1.</exception>
+        <altmember cref="T:System.Collections.Generic.IEqualityComparer`1" />
       </Docs>
     </Member>
     <Member MemberName="ChangeItemKey">
@@ -323,6 +327,8 @@
  -or-  
   
  <paramref name="key" /> already exists in the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="ClearItems">
@@ -398,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Comparer">
@@ -490,6 +498,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
       </Docs>
     </Member>
     <Member MemberName="Dictionary">
@@ -540,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.Generic.IDictionary`2" />
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">
@@ -598,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)" />
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -684,6 +696,7 @@
  -or-  
   
  <paramref name="index" /> is greater than <see cref="P:System.Collections.ObjectModel.Collection`1.Count" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -749,6 +762,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">An element with the specified key does not exist in the collection.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -812,6 +826,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -890,6 +906,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -971,11 +989,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
+        <altmember cref="M:System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)" />
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TItem item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, !TItem item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, [out] !TItem&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.TryGetValue(`0,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -997,5 +1017,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

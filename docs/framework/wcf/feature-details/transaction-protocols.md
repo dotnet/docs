@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
 caps.latest.revision: 14
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transaction Protocols
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implements WS-Atomic Transaction and WS-Coordination protocols.  
@@ -185,7 +187,7 @@ manager: "erikre"
 </a:ReplyTo>   
 <a:To>https://...</a:To>   
 <wsse:Security>  
- <u:Timestamp>   
+ <u:Timestamp>  
 <wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
 <wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
 </u:Timestamp>   
@@ -195,7 +197,7 @@ manager: "erikre"
 <wscoor:CreateCoordinationContext>  
 <wscoor:CoordinationType>...</wscoor:CoordinationType>  
 </wscoor:CreateCoordinationContext>  
- </s:Body>   
+ </s:Body>  
 </s11:Envelope>  
 ```  
   

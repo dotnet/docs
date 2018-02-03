@@ -8,11 +8,6 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "operators [.NET Framework], overloads"
   - "names [.NET Framework], overloaded operators"
@@ -23,6 +18,9 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Operator Overloads
 Operator overloads allow framework types to appear as if they were built-in language primitives.  
@@ -121,5 +119,5 @@ Operator overloads allow framework types to appear as if they were built-in lang
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](http://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
 ## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)   
+ [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

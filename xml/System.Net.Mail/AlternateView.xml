@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+ Use the <xref:System.Net.Mail.AlternateView> class to specify copies of an email message in different formats. For example, if you send a message in HTML, you might also want provide a plain text version in case some of the recipients use email readers that cannot display HTML content.  
   
- This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the e-mail's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
+ This class has two properties <xref:System.Net.Mail.AlternateView.LinkedResources%2A> and <xref:System.Net.Mail.AlternateView.BaseUri%2A> that are used to resolve URLs within the content of the email. <xref:System.Net.Mail.AlternateView.LinkedResources%2A> is a collection of <xref:System.Net.Mail.LinkedResource> objects. When rendered, URLs within the email's content are first matched against the URLs in the <xref:System.Net.Mail.LinkedResource.ContentLink%2A> of each <xref:System.Net.Mail.LinkedResource> object in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection, and resolved. <xref:System.Net.Mail.AlternateView.BaseUri%2A> is used by the mail reader to resolve relative URLs within the body, and also to resolve relative <xref:System.Net.Mail.LinkedResource.ContentLink%2A> URLs, in the <xref:System.Net.Mail.AlternateView.LinkedResources%2A> collection.  
   
  ]]></format>
     </remarks>
@@ -475,7 +475,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -502,10 +502,20 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the set of embedded resources referred to by this attachment.</summary>
-        <value>A <see cref="T:System.Net.Mail.LinkedResourceCollection" /> object that stores the collection of linked resources to be sent as part of an e-mail message.</value>
+        <value>A <see cref="T:System.Net.Mail.LinkedResourceCollection" /> object that stores the collection of linked resources to be sent as part of an email message.</value>
         <remarks>To be added.</remarks>
         <altCompliant cref="None." />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAlternateViewFromString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Net.Mail.AlternateView" /> of an email message using the content specified in a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

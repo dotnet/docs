@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "NetFx45_CultureAwareComparerGetHashCode_LongStrings element"
   - "<NetFx45_CultureAwareComparerGetHashCode_LongStrings> element"
@@ -24,6 +19,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element
 Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.  
@@ -34,7 +31,7 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
   
 ## Syntax  
   
-```vb  
+```xml
 <NetFx45_CultureAwareComparerGetHashCode_LongStrings enabled="0|1">  
 ```  
   
@@ -71,6 +68,6 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
 >  The `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` element is not used in [!INCLUDE[win8](../../../../../includes/win8-md.md)] and later versions.  
   
 ## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>   
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

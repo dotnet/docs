@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "command line, .NET Framework tools"
   - ".NET Framework, tools"
@@ -24,6 +19,8 @@ caps.latest.revision: 65
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # .NET Framework Tools
 The .NET Framework tools make it easier for you to create, deploy, and manage applications and components that target the .NET Framework.  

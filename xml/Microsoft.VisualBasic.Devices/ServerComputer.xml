@@ -39,6 +39,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Audio" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Clock" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.FileSystemProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Keyboard" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Mouse" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Ports" />
+    <altmember cref="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
+    <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Clock" />
       </Docs>
     </Member>
     <Member MemberName="FileSystem">
@@ -148,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MyServices.FileSystemProxy" />
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -192,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -236,6 +250,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Environment.MachineName" />
       </Docs>
     </Member>
     <Member MemberName="Network">
@@ -280,6 +295,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.Devices.Network" />
       </Docs>
     </Member>
     <Member MemberName="Registry">
@@ -312,6 +328,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
       </Docs>
     </Member>
   </Members>

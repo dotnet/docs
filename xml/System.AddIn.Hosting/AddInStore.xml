@@ -96,6 +96,7 @@
         <exception cref="T:System.ArgumentNullException">One or more parameters are <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have read access permission to <paramref name="pipelineRootFolderPath" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read the add-in folder. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+        <altmember cref="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.String,System.String[])" />
       </Docs>
     </Member>
     <Member MemberName="FindAddIns">
@@ -146,7 +147,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindAddIns">
-      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, System.AddIn.Hosting.PipelineStoreLocation location, string[] addInFolderPaths);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, System.AddIn.Hosting.PipelineStoreLocation location, params string[] addInFolderPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIns(class System.Type hostViewOfAddIn, valuetype System.AddIn.Hosting.PipelineStoreLocation location, string[] addInFolderPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.AddIn.Hosting.PipelineStoreLocation,System.String[])" />
       <MemberType>Method</MemberType>
@@ -197,7 +198,7 @@
       </Docs>
     </Member>
     <Member MemberName="FindAddIns">
-      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, string pipelineRootFolderPath, string[] addInFolderPaths);" />
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, string pipelineRootFolderPath, params string[] addInFolderPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIns(class System.Type hostViewOfAddIn, string pipelineRootFolderPath, string[] addInFolderPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -241,6 +242,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.AddIn.Hosting.InvalidPipelineStoreException">There is an access violation to the pipeline directory structure.</exception>
+        <altmember cref="M:System.AddIn.Hosting.AddInStore.FindAddIn(System.Type,System.String,System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Rebuild">
@@ -319,6 +321,7 @@
         </remarks>
         <exception cref="T:System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException">A segment directory is missing from the pipeline directory structure.</exception>
         <exception cref="T:System.AddIn.Hosting.InvalidPipelineStoreException">There is an access violation to the pipeline directory structure.</exception>
+        <altmember cref="M:System.AddIn.Hosting.AddInStore.Update(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RebuildAddIns">
@@ -361,6 +364,7 @@
           <paramref name="addInsFolderPath" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">Caller does not have both read and write access permissions to the location that is specified by <paramref name="addInsFolderPath" />.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read and update the add-in folder. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+        <altmember cref="M:System.AddIn.Hosting.AddInStore.UpdateAddIns(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -491,5 +495,32 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read and update the add-in folder. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Update">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the pipeline segments cache with new segments.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAddIns">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all add-ins for a specified host view of the add-in.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Rebuild">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rebuilds the pipeline segments cache and includes new segments.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

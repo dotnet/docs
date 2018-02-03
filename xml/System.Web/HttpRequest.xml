@@ -111,8 +111,8 @@ End Class
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/CS/requestdetailscs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Sample1/VB/requestdetailsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -223,7 +223,7 @@ End Class
 ## Remarks  
  The <xref:System.Web.HttpRequest.AnonymousID%2A> property assigns a long-lived unique identifier to a non-authenticated user, which can be used to track the user or assign profile properties to that user without storing data in a `Session` object. By default, the <xref:System.Web.HttpRequest.AnonymousID%2A> property is tracked using a cookie, but it can be set to use the URI when the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> attribute in the anonymous identification configuration section is set to either the <xref:System.Web.HttpCookieMode.UseUri>, <xref:System.Web.HttpCookieMode.UseDeviceProfile>, or <xref:System.Web.HttpCookieMode.AutoDetect> value. You must explicitly clear the cookie if you no longer want it available, for example when an anonymous user is authenticated.  
   
- Anonymous identification is used when there is a need to identify entities that are not authenticated and when authorization is required. For more information, see [anonymousIdentification Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2bd927ef-9057-4703-9c55-4cfb6d7d0929)  
+ Anonymous identification is used when there is a need to identify entities that are not authenticated and when authorization is required. For more information, see [anonymousIdentification Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/2bd927ef-9057-4703-9c55-4cfb6d7d0929)  
   
    
   
@@ -241,11 +241,13 @@ End Class
   
  The second part of the code example shows how to display the new <xref:System.Web.HttpRequest.AnonymousID%2A> that is created by the `AnonymousIdentification_Creating` event handler in the preceding example.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/anonid_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/anonid_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/CS/anonid_cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest_AnonymousID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_AnonymousID/vb/anonid_vb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.IsAuthenticated" />
+        <altmember cref="E:System.Web.Security.AnonymousIdentificationModule.Creating" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationPath">
@@ -279,8 +281,8 @@ End Class
   
  The following example uses the <xref:System.Web.HttpRequest.ApplicationPath%2A> property to programmatically construct a path to a resource that is in a fixed location in the application. The page that references the resource does not have to be located in the same directory as the resource.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/ApplicationPath.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/ApplicationPath.aspx#2)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/ApplicationPath.aspx#2)]
+ [!code-aspx-vb[System.Web.HttpRequest.ApplicationPath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/ApplicationPath.aspx#2)]  
   
  If you run this example in a Web application that is named WebSite1,  `/WebSite1` will be displayed as the value of the <xref:System.Web.HttpRequest.ApplicationPath%2A> property and `/WebSite1/images/Image1.gif` will be displayed as the complete path of the image.  
   
@@ -314,13 +316,13 @@ End Class
 ## Examples  
  The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to set the URL of an <xref:System.Web.UI.WebControls.Image> control to an image in the same directory as the page. Run this page at different levels of a directory structure to see the resulting <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property values.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/CS/AppRelativeCurrentExecutionPathCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/VB/AppRelativeCurrentExecutionPathVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/CS/AppRelativeCurrentExecutionPathCS.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest.AppRelativeCurrentExecutionPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.AppRelativeCurrentExecutionPath/VB/AppRelativeCurrentExecutionPathVB.aspx#1)]  
   
  The following example uses the <xref:System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath%2A> property to programmatically set the path to a resource, based on the current path of the page.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/apprelativecurrentexecutionfilepath.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/apprelativecurrentexecutionfilepath.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/CS/apprelativecurrentexecutionfilepath.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest.ApplicationPath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.ApplicationPath/VB/apprelativecurrentexecutionfilepath.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -387,6 +389,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.ClientTarget" />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
+        <altmember cref="P:System.Web.HttpRequest.UserAgent" />
       </Docs>
     </Member>
     <Member MemberName="ClientCertificate">
@@ -436,7 +441,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
+ Default content encoding can be specified in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of a configuration file. If content encoding is also specified by the client, the default configuration settings are overridden.  
   
    
   
@@ -550,6 +555,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpRequest.ValidateInput" />
+        <altmember cref="P:System.Web.HttpRequest.Form" />
+        <altmember cref="P:System.Web.HttpRequest.QueryString" />
       </Docs>
     </Member>
     <Member MemberName="CurrentExecutionFilePath">
@@ -583,6 +591,11 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.FilePath" />
+        <altmember cref="P:System.Web.HttpRequest.Path" />
+        <altmember cref="P:System.Web.HttpRequest.PathInfo" />
+        <altmember cref="M:System.Web.HttpServerUtility.Execute(System.String)" />
+        <altmember cref="M:System.Web.HttpServerUtility.Transfer(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="CurrentExecutionFilePathExtension">
@@ -634,6 +647,8 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.PathInfo" />
+        <altmember cref="P:System.Web.HttpRequest.Path" />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -690,8 +705,8 @@ End Class
 ## Examples  
  The following code example creates two new classes, `QQQ1` and `QQQ2` that filter the <xref:System.Web.HttpRequest.InputStream%2A>. Put the classes into the Global.asax file in an ASP.NET application's directory so that all input for all ASP.NET Web pages in the application will be filtered.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Filter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/CS/systemwebhttprequestfilter.cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Filter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/VB/systemwebhttprequestfilter.vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest.Filter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/CS/systemwebhttprequestfilter.cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest.Filter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Filter/VB/systemwebhttprequestfilter.vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -729,6 +744,9 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpRequest.ValidateInput" />
+        <altmember cref="P:System.Web.HttpRequest.Cookies" />
+        <altmember cref="P:System.Web.HttpRequest.QueryString" />
       </Docs>
     </Member>
     <Member MemberName="GetBufferedInputStream">
@@ -809,6 +827,7 @@ End Class
 -   <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" />  
   
  To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="GetBufferlessInputStream">
@@ -850,6 +869,7 @@ End Class
 -   The <see cref="M:System.Web.HttpRequest.GetBufferedInputStream" /> method.  
   
  To avoid this exception, call the <see cref="P:System.Web.HttpRequest.ReadEntityBodyMode" /> method first. This exception is also thrown if the client disconnects while the entity body is being read.</exception>
+        <altmember cref="M:System.Web.HttpRequest.GetBufferedInputStream" />
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -1192,8 +1212,8 @@ End Class
 ## Examples  
  The following code example shows how to retrieve the <xref:System.Web.HttpRequest.LogonUserIdentity%2A> property for the current user and write out the values of each item in a text file. Place this code on the ASP.NET page referenced by the form's `ACTION` attribute.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/CS/logonuseridentity_cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/VB/logonuseridentity_vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/CS/logonuseridentity_cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest_LogonUserIdentity#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_LogonUserIdentity/VB/logonuseridentity_vb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1260,8 +1280,8 @@ End Class
   
  The first part of the example shows how to convert a virtual path to a fully qualified physical path using the <xref:System.Web.HttpRequest.MapPath%2A> method. This physical path is then passed to a <xref:System.IO.StreamReader> object, which obtains the contents of the file. The <xref:System.Web.HttpResponse.Write%2A> method is then called to display the content of the file on the page. The <xref:System.Web.HttpResponse.Filter%2A> property is used to attach a filter to the response stream that makes the text displayed to the page all uppercase.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest_Samples2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/CS/requestsamples2cs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest_Samples2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest_Samples2/VB/requestsamples2vb.aspx#1)]  
   
  The second part of the example shows a class that inherits from <xref:System.IO.Stream> and converts all characters in a stream to uppercase. Put this code in the `App_Code` folder for your application.  
   
@@ -1366,8 +1386,8 @@ End Class
 ## Examples  
  The following code example shows how to loop through the <xref:System.Web.HttpRequest.Params%2A> property for a page and how to display each key/value pair.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpRequest.Params#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Params/CS/requestparamscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpRequest.Params#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Params/VB/requestparamsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpRequest.Params#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpRequest.Params/CS/requestparamscs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpRequest.Params#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpRequest.Params/VB/requestparamsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1404,6 +1424,8 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.FilePath" />
+        <altmember cref="P:System.Web.HttpRequest.PathInfo" />
       </Docs>
     </Member>
     <Member MemberName="PathInfo">
@@ -1437,6 +1459,8 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpRequest.Path" />
+        <altmember cref="P:System.Web.HttpRequest.FilePath" />
       </Docs>
     </Member>
     <Member MemberName="PhysicalApplicationPath">
@@ -1498,6 +1522,8 @@ End Class
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpRequest.MapPath(System.String)" />
+        <altmember cref="P:System.Web.HttpRequest.CurrentExecutionFilePath" />
       </Docs>
     </Member>
     <Member MemberName="QueryString">
@@ -1536,6 +1562,9 @@ Dim fullname2 As String = Request("fullname")
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpRequest.ValidateInput" />
+        <altmember cref="P:System.Web.HttpRequest.Form" />
+        <altmember cref="P:System.Web.HttpRequest.Cookies" />
       </Docs>
     </Member>
     <Member MemberName="RawUrl">
@@ -1841,6 +1870,7 @@ Dim fullname2 As String = Request("fullname")
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UnvalidatedRequestValues" />
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1869,6 +1899,8 @@ Dim fullname2 As String = Request("fullname")
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Uri" />
+        <altmember cref="P:System.Web.HttpRequest.RawUrl" />
       </Docs>
     </Member>
     <Member MemberName="UrlReferrer">
@@ -1926,6 +1958,9 @@ Dim fullname2 As String = Request("fullname")
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Page.ClientTarget" />
+        <altmember cref="T:System.Web.HttpBrowserCapabilities" />
+        <altmember cref="P:System.Web.HttpRequest.Browser" />
       </Docs>
     </Member>
     <Member MemberName="UserHostAddress">
@@ -2040,7 +2075,28 @@ Dim fullname2 As String = Request("fullname")
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpRequestValidationException">Potentially dangerous data was received from the client.</exception>
+        <altmember cref="P:System.Web.HttpRequest.Cookies" />
+        <altmember cref="P:System.Web.HttpRequest.Form" />
+        <altmember cref="P:System.Web.HttpRequest.QueryString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="MapPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Maps the virtual path in the requested URL to a physical path on the server for the current request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBufferlessInputStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that can be used to read the incoming HTTP entity body.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

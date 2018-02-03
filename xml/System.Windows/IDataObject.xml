@@ -488,5 +488,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores the specified data in this data object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFormats">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of formats that the data in this data object is stored in, or can be converted to.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetData">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a data object in a specified data format.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

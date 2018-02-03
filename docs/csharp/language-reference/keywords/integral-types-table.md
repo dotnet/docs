@@ -1,12 +1,10 @@
 ---
 title: "Integral Types Table (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "integral types, C#"
   - "Visual C#, integral types"
@@ -16,20 +14,6 @@ ms.assetid: 62e86126-46ff-40b0-9028-e61d7558268c
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Integral Types Table (C# Reference)
 The following table shows the sizes and ranges of the integral types, which constitute a subset of simple types.  
@@ -49,11 +33,11 @@ The following table shows the sizes and ranges of the integral types, which cons
  If the value represented by an integer literal exceeds the range of `ulong`, a compilation error will occur.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
- [Floating-Point Types Table](../../../csharp/language-reference/keywords/floating-point-types-table.md)   
- [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)   
- [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+ [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+ [Floating-Point Types Table](../../../csharp/language-reference/keywords/floating-point-types-table.md)  
+ [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md)  
+ [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)  
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)

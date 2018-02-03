@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetArgument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetArgument method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetArgument method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugILFrame::GetArgument Method
 Gets the value of the specified argument in this Microsoft intermediate language (MSIL) stack frame.  

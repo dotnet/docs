@@ -89,6 +89,7 @@
       <Docs>
         <summary>Cancels any current printing job.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.Print" />
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoom">
@@ -123,6 +124,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="CanDecreaseZoomProperty">
@@ -174,6 +181,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Input.NavigationCommands.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Input.NavigationCommands.IncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="CanIncreaseZoomProperty">
@@ -218,6 +231,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentPageViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentPageViewer.CanIncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentPageViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentPageViewer.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -336,6 +353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalScrollBarVisibilityProperty">
@@ -380,6 +398,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="IsInactiveSelectionHighlightEnabled">
@@ -596,6 +618,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
       </Docs>
     </Member>
     <Member MemberName="IsToolBarVisibleProperty">
@@ -675,6 +699,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement" />
       </Docs>
     </Member>
     <Member MemberName="MaxZoomProperty">
@@ -736,6 +766,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement" />
       </Docs>
     </Member>
     <Member MemberName="MinZoomProperty">
@@ -1074,6 +1110,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.CancelPrint" />
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1314,6 +1351,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibility" />
       </Docs>
     </Member>
     <Member MemberName="VerticalScrollBarVisibilityProperty">
@@ -1376,6 +1414,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrement">
@@ -1421,6 +1463,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+        <altmember cref="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
+        <altmember cref="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
       </Docs>
     </Member>
     <Member MemberName="ZoomIncrementProperty">

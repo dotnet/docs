@@ -1,42 +1,24 @@
 ---
 title: "User-Defined Constants (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "constants, circular references"
+  - "constants [Visual Basic], circular references"
   - "Const statement [Visual Basic], user-defined constants"
-  - "user-defined constants"
-  - "scope, constants"
-  - "constants, user-defined"
-  - "circular references between constants"
+  - "user-defined constants [Visual Basic]"
+  - "scope [Visual Basic], constants"
+  - "constants [Visual Basic], user-defined"
+  - "circular references between constants [Visual Basic]"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # User-Defined Constants (Visual Basic)
 A constant is a meaningful name that takes the place of a number or string that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants that are defined by the controls or components you work with, or you can create your own. Constants you create yourself are described as *user-defined*.  
@@ -78,12 +60,12 @@ A constant is a meaningful name that takes the place of a number or string that 
  If a cycle occurs, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] generates a compiler error.  
   
 ## See Also  
- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)   
- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)   
- [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)   
- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)   
- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)   
- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)   
- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   
- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   
+ [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
+ [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)  
+ [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
+ [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)  
+ [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)  
+ [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  
+ [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)  
+ [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)  
  [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

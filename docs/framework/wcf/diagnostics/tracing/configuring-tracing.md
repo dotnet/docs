@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "tracing [WCF]"
 ms.assetid: 82922010-e8b3-40eb-98c4-10fc05c6d65d
 caps.latest.revision: 53
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring Tracing
 This topic describes how you can enable tracing, configure trace sources to emit traces and set trace levels, set activity tracing and propagation to support end-to-end trace correlation, and set trace listeners to access traces.  
@@ -148,7 +150,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure a custom trace listener to send traces on the wire, for example, to a remote database. As an application deployer, you should enforce proper access control on the trace logs in the remote machine.  
   
- You can also configure a trace listener programmatically. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)][How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
+ You can also configure a trace listener programmatically. [!INCLUDE[crdefault](../../../../../includes/crdefault-md.md)] [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
 >  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
@@ -187,7 +189,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   
 ## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)   
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)   
- [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)   
+ [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
+ [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
+ [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)  
  [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239)

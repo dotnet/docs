@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorMethodImpl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorMethodImpl enumeration [.NET Framework metadata]"
 ms.assetid: ffbb3caf-20da-4a4b-8983-77376e72b990
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorMethodImpl Enumeration
 Contains values that describe method implementation features.  

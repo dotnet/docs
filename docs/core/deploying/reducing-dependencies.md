@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
+ms.workload: 
+  - dotnetcore
 ---
 
 # Reducing Package Dependencies with project.json
@@ -26,11 +28,12 @@ However, there's a good chance that your library won't use every single package 
 Currently, there is no official `dotnet` command which trims package references.  Instead, you'll have to do it manually.  The general process looks like the following:
 
 1. Reference `NETStandard.Library` version `1.6.0` in a `dependencies` section of your `project.json`.
-2. Restore packages with `dotnet restore` from the command line.
+2. Restore packages with `dotnet restore` ([see note](#dotnet-restore-note)) from the command line.
 3. Inspect the `project.lock.json` file and find the `NETSTandard.Library` section.  It's near the beginning of the file.
 4. Copy all of the listed packages under `dependencies`.
 5. Remove the `.NETStandard.Library` reference and replace it with the copied packages.
 6. Remove references to packages you don't need.
+
 
 You can find out which packages you don't need by one of the following ways:
 
@@ -55,7 +58,7 @@ To trim this library, you start with the `project.json` file and add a reference
 }
 ```
 
-Next, you restore packages with `dotnet restore`, inspect the `project.lock.json` file, and find all the packages restored for `NETSTandard.Library`.
+Next, you restore packages with `dotnet restore` ([see note](#dotnet-restore-note)), inspect the `project.lock.json` file, and find all the packages restored for `NETSTandard.Library`.
 
 Here's what the relevant section in the `project.lock.json` file looks like when targeting `netstandard1.0`:
 
@@ -151,3 +154,6 @@ Here's what a trimmed package could look like:
 ```
 
 Now, it has a smaller footprint than if it had depended on the `NETStandard.Library` metapackage.
+
+<a name="dotnet-restore-note"></a>
+[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

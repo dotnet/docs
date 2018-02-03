@@ -17,6 +17,9 @@ caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Overview of Synchronization Primitives
 <a name="top"></a> The .NET Framework provides a range of synchronization primitives for controlling the interactions of threads and avoiding race conditions. These can be roughly divided into three categories: locking, signaling, and interlocked operations.  
@@ -168,14 +171,14 @@ manager: "wpickett"
  For a conceptual overview, see [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md).  
   
 ## See Also  
- [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)   
- [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)   
- [Mutexes](../../../docs/standard/threading/mutexes.md)   
- [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)   
- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)   
- [Wait Handles](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)   
- [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md)   
- [Reader-Writer Locks](../../../docs/standard/threading/reader-writer-locks.md)   
- [Barrier](../../../docs/standard/threading/barrier.md)   
- [SpinWait](../../../docs/standard/threading/spinwait.md)   
+ [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md)  
+ [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
+ [Mutexes](../../../docs/standard/threading/mutexes.md)  
+ [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md)  
+ [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
+ [Wait Handles](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+ [Interlocked Operations](../../../docs/standard/threading/interlocked-operations.md)  
+ [Reader-Writer Locks](../../../docs/standard/threading/reader-writer-locks.md)  
+ [Barrier](../../../docs/standard/threading/barrier.md)  
+ [SpinWait](../../../docs/standard/threading/spinwait.md)  
  [SpinLock](../../../docs/standard/threading/spinlock.md)

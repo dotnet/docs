@@ -8,5 +8,5 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Type.IsAssignableFrom(System.Type)?displayProperty=nameWithType></li></ul>|
-|Analyzers|<ul><li>CD0089</li><li>CD0089</li></ul>|
+|Analyzers|<ul><li>CD0089</li></ul>|
 

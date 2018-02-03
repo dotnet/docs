@@ -17,9 +17,11 @@ helpviewer_keywords:
   - "credentials [WCF], validation"
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Custom Credential and Credential Validation
 Security in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is based on the exchange of credentials between services and clients. Most security scenarios can be satisfied using common credential types, such as Windows (Kerberos), username and passwords, and certificates. However, if a new type of credential is required, the topics in this section explain how to handle and validate new types.  

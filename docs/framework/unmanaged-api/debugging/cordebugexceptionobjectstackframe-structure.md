@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionObjectStackFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionObjectStackFrame structure [.NET Framework debugging]"
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugExceptionObjectStackFrame Structure
 Represents stack frame information from an exception object.  
@@ -65,5 +65,5 @@ typedef struct CorDebugExceptionObjectStackFrame {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -616,7 +616,7 @@
     </Member>
     <Member MemberName="EndCancel">
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -682,7 +682,7 @@
     </Member>
     <Member MemberName="EndIssue">
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken EndIssue (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken EndIssue(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -749,7 +749,7 @@
     </Member>
     <Member MemberName="EndRenew">
       <MemberSignature Language="C#" Value="public void EndRenew (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRenew(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -794,7 +794,7 @@
     </Member>
     <Member MemberName="EndValidate">
       <MemberSignature Language="C#" Value="public void EndValidate (IAsyncResult result, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndValidate(class System.IAsyncResult result, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -955,7 +955,7 @@
     </Member>
     <Member MemberName="Issue">
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityToken Issue (System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, out System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse rstr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken Issue(class System.IdentityModel.Protocols.WSTrust.RequestSecurityToken rst, [out] class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse&amp; rstr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannel.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1285,5 +1285,149 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Cancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndRenew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Renew">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Renew message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndIssue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Issue message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Issue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Issue message to an endpoint STS.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="EndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes an asynchronous operation to send a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginCancel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a WS-Trust Cancel message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a WS-Trust Validate message to an endpoint.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

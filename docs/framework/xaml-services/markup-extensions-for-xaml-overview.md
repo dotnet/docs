@@ -17,6 +17,8 @@ caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Markup Extensions for XAML Overview
 Markup extensions are a XAML technique for obtaining a value that is neither a primitive nor a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework .  
@@ -161,6 +163,6 @@ public Collate(CollationMode collationMode, object collateThis) {...}
  If you are working with a XAML node stream on the save path, there generally is nothing present in an object graph representation that can inform you that the object to serialize was originally provided by a markup extension usage and a `ProvideValue` result. Scenarios that need to persist markup extension usages for round-tripping while also capturing other changes in the object graph must devise their own techniques for preserving the knowledge of a markup extension usage from the original XAML input. For example, to restore the markup extension usages, you may need to work with the node stream on the save path in order to restore markup extension usages, or perform some type of merge between the original XAML and the round-tripped XAML. Some XAML-implementing frameworks such as WPF use intermediate types (expressions) to help represent cases where markup extension usages provided the values.  
   
 ## See Also  
- <xref:System.Windows.Markup.MarkupExtension>   
- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)   
+ <xref:System.Windows.Markup.MarkupExtension>  
+ [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
  [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

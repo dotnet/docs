@@ -56,7 +56,11 @@ Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/ne
 -   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
   
 The <xref:System.ValueTuple> structure represents a tuple that has no elements. It is useful primarily for its static methods that let you create and compare instances of value tuple types. Its helper methods let you instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static <xref:System.ValueTuple.Create%2A> methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
-  
+
+### Serialization and value tuples
+
+The <xref:System.ValueTuple> type is not serializable in .NET Core 1.x or in the .NET Framework 4.7 and earlier versions. In addition, .NET Standard, including .NET Standard 2.0, does not mandate serialization of <xref:System.ValueTuple> instances; whether or not a <xref:System.ValueTuple> instance is serializable depends on the individual .NET Standard implementation. To determine whether a <xref:System.ValueTuple> type is serializable on a particular .NET implementation, get a <xref:System.Type> object that represents the <xref:System.ValueTuple> type and retrieve the value of its <xref:System.Type.IsSerializable%2A> property. For a list of serializable types in .NET Core and the .NET Framework, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).
+
  ]]></format>
     </remarks>
   </Docs>
@@ -94,10 +98,12 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
         <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified <see cref="T:System.ValueTuple" /> instance. </summary>
         <returns>This method always returns 0. </returns>
         <remarks>
-           <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
         Because a <xref:System.ValueTuple> instance has no elements, any two <xref:System.ValueTuple> instances are considered to be equivalent.
            ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -800,6 +806,7 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IEqualityComparer" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IStructuralEquatable.GetHashCode">
@@ -883,6 +890,10 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -890,10 +901,11 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">There is no acceptable value for <c>index</c>.</param>
+        <summary>Returns an <see cref="T:System.IndexOutOfRangeException" />. There are no elements in a <see langword="ValueTuple" />.</summary>
+        <value>An <see cref="T:System.IndexOutOfRangeException" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">There is no acceptable value for <paramref name="index" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.CompilerServices.ITuple.Length">
@@ -905,12 +917,16 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length of this <see langword="ValueTuple" /> instance, which is always 0. There are no elements in a <see langword="ValueTuple" />.</summary>
+        <value>0, the number of elements in this <see langword="ValueTuple" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -946,5 +962,25 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new value tuple instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple" /> instance is equal to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

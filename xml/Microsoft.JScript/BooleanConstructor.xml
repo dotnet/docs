@@ -14,10 +14,11 @@
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public Microsoft.JScript.BooleanObject CreateInstance (object[] args);" />
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.BooleanObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.BooleanObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanConstructor.CreateInstance(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -48,6 +49,7 @@
         <returns>The instance of the object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -71,6 +73,7 @@
         <returns>The result of the call to the method.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.BooleanPrototype" />
       </Docs>
     </Member>
   </Members>

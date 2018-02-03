@@ -199,7 +199,7 @@
     </Member>
     <Member MemberName="ExpandoTryGetValue">
       <MemberSignature Language="C#" Value="public static bool ExpandoTryGetValue (System.Dynamic.ExpandoObject expando, object indexClass, int index, string name, bool ignoreCase, out object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryGetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase, object value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ExpandoTryGetValue(class System.Dynamic.ExpandoObject expando, object indexClass, int32 index, string name, bool ignoreCase, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.RuntimeOps.ExpandoTryGetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.String,System.Boolean,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -353,5 +353,15 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateRuntimeVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

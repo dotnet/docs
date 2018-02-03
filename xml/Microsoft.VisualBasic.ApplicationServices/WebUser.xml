@@ -37,6 +37,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+    <altmember cref="T:System.Security.Principal.IPrincipal" />
+    <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
+    <altmember cref="P:System.Web.HttpContext.User" />
+    <altmember cref="P:System.Web.HttpContext.Current" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
       </Docs>
     </Member>
     <Member MemberName="InternalPrincipal">
@@ -86,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.User.InternalPrincipal" />
       </Docs>
     </Member>
   </Members>

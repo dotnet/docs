@@ -9,11 +9,13 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 f1_keywords: 
   - "StringFormat.FormatFlags"
   - "Graphics.DrawString"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "text [Windows Forms], drawing vertical"
   - "strings [Windows Forms], drawing vertical"
@@ -24,6 +26,8 @@ caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw Vertical Text on a Windows Form
 The following code example shows how to draw vertical text on a form by using the <xref:System.Drawing.Graphics.DrawString%2A> method of <xref:System.Drawing.Graphics>.  
@@ -42,9 +46,9 @@ The following code example shows how to draw vertical text on a form by using th
 -   The Arial font is not installed.  
   
 ## See Also  
- <xref:System.Drawing.Graphics.DrawString%2A>   
- <xref:System.Drawing.StringFormat.FormatFlags%2A>   
- <xref:System.Drawing.StringFormatFlags>   
- <xref:System.Windows.Forms.Control.OnPaint%2A>   
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)   
+ <xref:System.Drawing.Graphics.DrawString%2A>  
+ <xref:System.Drawing.StringFormat.FormatFlags%2A>  
+ <xref:System.Drawing.StringFormatFlags>  
+ <xref:System.Windows.Forms.Control.OnPaint%2A>  
+ [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
  [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

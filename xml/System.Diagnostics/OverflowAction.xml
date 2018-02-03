@@ -87,6 +87,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.EventLog" />
+        <altmember cref="P:System.Diagnostics.EventLog.OverflowAction" />
+        <altmember cref="P:System.Diagnostics.EventLog.MaximumKilobytes" />
+        <altmember cref="P:System.Diagnostics.EventLog.MinimumRetentionDays" />
+        <altmember cref="M:System.Diagnostics.EventLog.ModifyOverflowPolicy(System.Diagnostics.OverflowAction,System.Int32)" />
       </Docs>
     </Member>
   </Members>

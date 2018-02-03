@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.PackWebRequest" />
+    <altmember cref="T:System.IO.Packaging.PackWebResponse" />
   </Docs>
   <Members>
     <Member MemberName="AddPackage">
@@ -90,6 +92,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
         <exception cref="T:System.InvalidOperationException">A package with the specified <paramref name="packageUri" /> is already in the store.</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.GetPackage(System.Uri)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.RemovePackage(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="GetPackage">
@@ -133,6 +137,8 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.RemovePackage(System.Uri)" />
       </Docs>
     </Member>
     <Member MemberName="RemovePackage">
@@ -175,6 +181,8 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is an invalid package [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</exception>
+        <altmember cref="M:System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)" />
+        <altmember cref="M:System.IO.Packaging.PackageStore.GetPackage(System.Uri)" />
       </Docs>
     </Member>
   </Members>

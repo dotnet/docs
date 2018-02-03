@@ -90,6 +90,12 @@
         <block subset="none" type="usage">
           <para>The <see cref="T:System.Collections.IDictionary" /> specified by the <paramref name="savedState" /> parameter should be empty when passed to the <see cref="M:System.Configuration.Install.TransactedInstaller.Install(System.Collections.IDictionary)" /> method.</para>
         </block>
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.TransactedInstaller.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Uninstall">
@@ -132,6 +138,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.Install.TransactedInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.InstallerCollection" />
+        <altmember cref="P:System.Configuration.Install.Installer.Installers" />
       </Docs>
     </Member>
   </Members>

@@ -25,18 +25,27 @@
   
  If you want to access the name/value pairs of the key fields and non-key fields of the deleted record, use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.GridView.RowDeleted> event to determine whether an exception occurred during a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys" />
+    <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values" />
+    <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -75,6 +84,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="T:System.Exception" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="M:System.Web.UI.WebControls.GridView.OnRowDeleted(System.Web.UI.WebControls.GridViewDeletedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -109,11 +126,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows%2A> property to verify that a record was deleted during the delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConflictDetection" />
+        <altmember cref="T:System.Web.UI.ConflictOptions" />
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -145,11 +169,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception%2A> property to determine whether an exception occurred during a delete operation.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled" />
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -179,11 +208,16 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgs/CS/gridviewdeletedeventargscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgs/VB/gridviewdeletedeventargsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.AffectedRows" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Exception" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -217,11 +251,18 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys%2A> property to access the values of the key fields for a deleted record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/CS/gridviewdeletedeventargskeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/VB/gridviewdeletedeventargskeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/CS/gridviewdeletedeventargskeyscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/VB/gridviewdeletedeventargskeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.DataKeyNames" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -246,7 +287,7 @@
  Use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted record. For example, you can use these values to keep a log of deleted records.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the item template. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+>  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the item template. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742).  
   
  The <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=nameWithType> interface. The object contains <xref:System.Collections.DictionaryEntry?displayProperty=nameWithType> objects that represent the non-key fields of the deleted record.  
   
@@ -258,11 +299,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted record.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewDeletedEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/CS/gridviewdeletedeventargskeyscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewDeletedEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/VB/gridviewdeletedeventargskeysvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewDeletedEventArgsKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/CS/gridviewdeletedeventargskeyscs.aspx#1)]
+ [!code-aspx-vb[GridViewDeletedEventArgsKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewDeletedEventArgsKeys/VB/gridviewdeletedeventargskeysvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+        <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="P:System.Web.UI.WebControls.GridViewDeletedEventArgs.Keys" />
+        <altmember cref="E:System.Web.UI.WebControls.GridView.RowDeleted" />
       </Docs>
     </Member>
   </Members>

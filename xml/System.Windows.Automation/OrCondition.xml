@@ -13,10 +13,13 @@
   <Docs>
     <summary>Represents a combination of two or more conditions where a match exists if any one of the conditions is true.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Automation.Condition" />
+    <altmember cref="T:System.Windows.Automation.AndCondition" />
+    <altmember cref="T:System.Windows.Automation.NotCondition" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OrCondition (System.Windows.Automation.Condition[] conditions);" />
+      <MemberSignature Language="C#" Value="public OrCondition (params System.Windows.Automation.Condition[] conditions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.Condition[] conditions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.OrCondition.#ctor(System.Windows.Automation.Condition[])" />
       <MemberType>Constructor</MemberType>

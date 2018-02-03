@@ -16,13 +16,13 @@ ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 
 A *lambda expression* is a block of code (an expression or a statement block) that is treated as an object. It can be passed as an argument to methods, and it can also be returned by method calls. Lambda expressions are used extensively for:
 
-- Passing the code that is to be executed to asynchronous methods, such as @System.Threading.Tasks.Task.Run(System.Action).
+- Passing the code that is to be executed to asynchronous methods, such as <xref:System.Threading.Tasks.Task.Run(System.Action)>.
 
 - Writing [LINQ query expressions](linq/index.md).
 
 - Creating [expression trees](expression-trees-building.md).
 
-Lambda expressions are code that can be represented either as a delegate, or as an expression tree that compiles to a delegate. The specific delegate type of a lambda expression depends on its parameters and return value. Lambda expressions that don't return a value correspond to a specific `Action` delegate, depending on its number of parameters. Lambda expressions that return a value correspond to a specific `Func` delegate, depending on its number of parameters. For example, a lambda expression that has two parameters but returns no value corresponds to an @System.Action%602 delegate. A lambda expression that has one parameter and returns a value corresponds to @System.Func%602 delegate.
+Lambda expressions are code that can be represented either as a delegate, or as an expression tree that compiles to a delegate. The specific delegate type of a lambda expression depends on its parameters and return value. Lambda expressions that don't return a value correspond to a specific `Action` delegate, depending on its number of parameters. Lambda expressions that return a value correspond to a specific `Func` delegate, depending on its number of parameters. For example, a lambda expression that has two parameters but returns no value corresponds to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value corresponds to <xref:System.Func%602> delegate.
 
 A lambda expression uses `=>`, the [lambda declaration operator](language-reference/operators/lambda-operator.md), to separate the lambda's parameter list from its executable code. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator, and you put the expression or statement block on the other side. For example, the single-line lambda expression `x => x * x` specifies a parameter that’s named `x` and returns the value of `x` squared. You can assign this expression to a delegate type, as the following example shows:
 
@@ -92,7 +92,7 @@ For more information on support for tuples in C#, see [C# Tuple types](tuples.md
 
 ## Lambdas with the standard query operators ##
 
-LINQ to Objects, among other implementations, have an input parameter whose type is one of the @System.Func%601 family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the @System.Func%601 delegate, whose syntax is:
+LINQ to Objects, among other implementations, have an input parameter whose type is one of the <xref:System.Func%601> family of generic delegates. These delegates use type parameters to define the number and type of input parameters, and the return type of the delegate. `Func` delegates are very useful for encapsulating user-defined expressions that are applied to each element in a set of source data. For example, consider the <xref:System.Func%601> delegate, whose syntax is:
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#1)]
 
@@ -104,7 +104,7 @@ where `int` is an input parameter, and `bool` is the return value. The return va
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#3)]
 
-You can also supply a lambda expression when the argument type is an @System.Linq.Expressions.Expression%601, for example in the standard query operators that are defined in the @System.Linq.Queryable type. When you specify an @System.Linq.Expressions.Expression%601 argument, the lambda is compiled to an expression tree. The following example uses the [System.Linq.Enumerable.Count](xref:System.Linq.Enumerable.Count%60%601(System.Collections.Generic.IEnumerable{%60%600})) standard query operator.
+You can also supply a lambda expression when the argument type is an <xref:System.Linq.Expressions.Expression%601>, for example in the standard query operators that are defined in the <xref:System.Linq.Queryable> type. When you specify an <xref:System.Linq.Expressions.Expression%601> argument, the lambda is compiled to an expression tree. The following example uses the [System.Linq.Enumerable.Count](xref:System.Linq.Enumerable.Count%60%601(System.Collections.Generic.IEnumerable{%60%600})) standard query operator.
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/query1.cs#4)]
 
@@ -132,7 +132,7 @@ The general rules for type inference for lambdas are:
 
 - The return value of the lambda (if any) must be implicitly convertible to the delegate's return type.
 
-Note that lambda expressions in themselves do not have a type because the common type system has no intrinsic concept of "lambda expression." However, it is sometimes convenient to speak informally of the "type" of a lambda expression. In these cases the type refers to the delegate type or @System.Linq.Expressions.Expression type to which the lambda expression is converted.
+Note that lambda expressions in themselves do not have a type because the common type system has no intrinsic concept of "lambda expression." However, it is sometimes convenient to speak informally of the "type" of a lambda expression. In these cases the type refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
 ## Variable Scope in Lambda Expressions ##
 

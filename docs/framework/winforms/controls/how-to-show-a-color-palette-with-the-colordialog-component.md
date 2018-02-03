@@ -10,21 +10,24 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
-  - "palettes, showing color"
-  - "color dialog box, showing color palettes"
-  - "colors, allowing users to select"
-  - "color palettes, dialog box"
-  - "ColorDialog component, showing color palettes"
-  - "Color property"
-  - "color palettes, showing in ColorDialog component"
-  - "colors, showing palettes"
+  - "palettes [Windows Forms], showing color"
+  - "color dialog box [Windows Forms], showing color palettes"
+  - "colors [Windows Forms], allowing users to select"
+  - "color palettes [Windows Forms], dialog box"
+  - "ColorDialog component [Windows Forms], showing color palettes"
+  - "color palettes [Windows Forms], showing in ColorDialog component"
+  - "colors [Windows Forms], showing palettes"
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Show a Color Palette with the ColorDialog Component
 The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md) component displays a palette of colors and returns a property containing the color the user has selected.  
@@ -82,5 +85,5 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
     ```  
   
 ## See Also  
- <xref:System.Windows.Forms.ColorDialog>   
+ <xref:System.Windows.Forms.ColorDialog>  
  [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)

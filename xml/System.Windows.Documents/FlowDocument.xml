@@ -294,6 +294,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnGapProperty">
@@ -358,6 +360,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleWidth" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleBrushProperty">
@@ -455,6 +459,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnGap" />
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ColumnRuleBrush" />
       </Docs>
     </Member>
     <Member MemberName="ColumnRuleWidthProperty">
@@ -521,7 +527,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -599,7 +605,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentEnd%2A> property is often used to append content to the end of a <xref:System.Windows.Documents.FlowDocument>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>.  
   
    
   
@@ -611,6 +617,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentStart" />
       </Docs>
     </Member>
     <Member MemberName="ContentStart">
@@ -634,7 +641,7 @@
 ## Remarks  
  The <xref:System.Windows.Documents.FlowDocument.ContentStart%2A> property is often used to insert content to the beginning of a <xref:System.Windows.Documents.FlowDocument>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.TextPointer.LogicalDirection%2A> set to <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>.  
   
    
   
@@ -646,6 +653,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.FlowDocument.ContentEnd" />
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -856,7 +864,7 @@
  *double*  
  <xref:System.Double>  
   
- String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+ String representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -2012,6 +2020,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.DependencyPropertyChangedEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="PageHeight">
@@ -2588,5 +2597,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.FlowDocument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

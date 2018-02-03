@@ -51,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IdentityModel.Claims.ClaimSet" />
+    <altmember cref="T:System.IdentityModel.Claims.Claim" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -112,7 +114,7 @@
     </Member>
     <Member MemberName="CheckAccess">
       <MemberSignature Language="C#" Value="public virtual bool CheckAccess (System.ServiceModel.OperationContext operationContext, ref System.ServiceModel.Channels.Message message);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckAccess(class System.ServiceModel.OperationContext operationContext, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckAccess(class System.ServiceModel.OperationContext operationContext, class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceAuthorizationManager.CheckAccess(System.ServiceModel.OperationContext,System.ServiceModel.Channels.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -233,5 +235,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks authorization for the given operation context and optional message.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

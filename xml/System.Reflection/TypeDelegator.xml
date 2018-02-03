@@ -271,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.TypeAttributes" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructorImpl">
@@ -317,6 +318,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
       </Docs>
     </Member>
     <Member MemberName="GetConstructors">
@@ -715,6 +719,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.InterfaceMapping" />
       </Docs>
     </Member>
     <Member MemberName="GetInterfaces">
@@ -872,6 +877,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Reflection.CallingConventions" />
+        <altmember cref="T:System.Reflection.BindingFlags" />
+        <altmember cref="T:System.Reflection.Binder" />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -1074,6 +1082,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Guid" />
       </Docs>
     </Member>
     <Member MemberName="HasElementTypeImpl">
@@ -1186,6 +1195,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsArrayImpl">
@@ -1541,7 +1551,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/en-us/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
+ The tokens obtained using this property can be passed to the unmanaged reflection API. For more information, see [Unmanaged Reflection API](http://msdn.microsoft.com/library/0c5bb9de-0cf6-438d-ba47-134e6c775fb8).  
   
  ]]></format>
         </remarks>
@@ -1681,6 +1691,7 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.RuntimeTypeHandle" />
       </Docs>
     </Member>
     <Member MemberName="typeImpl">
@@ -1736,5 +1747,35 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.TypeDelegator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing all the public events declared or inherited by the current <see langword="TypeDelegator" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the custom attributes defined for this type.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

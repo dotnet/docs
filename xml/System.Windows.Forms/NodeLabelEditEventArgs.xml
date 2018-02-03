@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.NodeLabelEditEventHandler" />
+    <altmember cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" />
+    <altmember cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +59,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,6 +87,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.Text" />
       </Docs>
     </Member>
     <Member MemberName="CancelEdit">
@@ -147,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.Text" />
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -176,7 +183,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NodeLabelEditEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

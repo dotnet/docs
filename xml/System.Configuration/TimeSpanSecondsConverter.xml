@@ -33,6 +33,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.GenericEnumConverter" />
+    <altmember cref="T:System.Configuration.InfiniteIntConverter" />
+    <altmember cref="T:System.Configuration.TimeSpanMinutesConverter" />
+    <altmember cref="T:System.Configuration.InfiniteTimeSpanConverter" />
+    <altmember cref="T:System.Configuration.TimeSpanSecondsOrInfiniteConverter" />
+    <altmember cref="T:System.Configuration.TypeNameConverter" />
+    <altmember cref="T:System.Configuration.WhiteSpaceTrimStringConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

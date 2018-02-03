@@ -10,10 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "cpp"
 helpviewer_keywords: 
   - "platform invoke, marshaling data"
   - "data marshaling, platform invoke"
@@ -23,6 +20,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Marshaling Data with Platform Invoke
 To call functions exported from an unmanaged library, a .NET Framework application requires a function prototype in managed code that represents the unmanaged function. To create a prototype that enables platform invoke to marshal data correctly, you must do the following:  

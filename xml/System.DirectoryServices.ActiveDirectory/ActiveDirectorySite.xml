@@ -50,6 +50,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="AdjacentSites">
@@ -72,6 +73,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteCollection" />
       </Docs>
     </Member>
     <Member MemberName="BridgeheadServers">
@@ -94,6 +96,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -118,6 +121,8 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Save" />
+        <altmember cref="Overload:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -182,6 +187,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindByName">
@@ -218,6 +224,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> or <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetComputerSite">
@@ -263,6 +270,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="InterSiteTopologyGenerator">
@@ -293,6 +301,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.NotSupportedException">The transport type is not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
     <Member MemberName="IntraSiteReplicationSchedule">
@@ -314,6 +323,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -335,6 +345,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -355,6 +366,7 @@
         <value>A string value that contains the name of the site.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="Overload:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Dispose" />
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -376,6 +388,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRpcBridgeheadServers">
@@ -398,6 +411,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="PreferredSmtpBridgeheadServers">
@@ -420,6 +434,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -445,6 +460,7 @@
         <exception cref="T:System.NotSupportedException">The transport type is not supported.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Delete" />
       </Docs>
     </Member>
     <Member MemberName="Servers">
@@ -467,6 +483,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyDirectoryServerCollection" />
       </Docs>
     </Member>
     <Member MemberName="SiteLinks">
@@ -489,6 +506,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlySiteLinkCollection" />
       </Docs>
     </Member>
     <Member MemberName="Subnets">
@@ -518,6 +536,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Save" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -539,7 +559,18 @@
         <returns>A <see cref="T:System.String" /> that represents the name of the site.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite.Name" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

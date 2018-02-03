@@ -22,11 +22,15 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure and the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommandType%2A> property to the StoredProcedure value to retrieve data from a Microsoft SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList>.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.DeleteCommandType" />
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.InsertCommandType" />
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.SelectCommandType" />
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.UpdateCommandType" />
   </Docs>
   <Members>
     <Member MemberName="StoredProcedure">

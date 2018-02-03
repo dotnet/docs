@@ -47,7 +47,7 @@
         </tr>
         <tr>
           <td>
-            E-mail Address:</td>
+            Email Address:</td>
           <td>
             <asp:Literal ID="emailAddress" runat="server" /></td>
         </tr>

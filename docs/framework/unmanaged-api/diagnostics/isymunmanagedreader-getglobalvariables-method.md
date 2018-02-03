@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetGlobalVariables"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetGlobalVariables method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetGlobalVariables method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedReader::GetGlobalVariables Method
 Returns all global variables.  

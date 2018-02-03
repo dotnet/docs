@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Generic.IDictionary`2" />
+    <altmember cref="T:System.Collections.Generic.Dictionary`2.Enumerator" />
+    <altmember cref="T:System.Collections.DictionaryEntry" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -95,7 +98,7 @@
     </Member>
     <Member MemberName="Deconstruct">
       <MemberSignature Language="C#" Value="public void Deconstruct (out TKey key, out TValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deconstruct([out] !TKey&amp; key, [out] !TValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyValuePair`2.Deconstruct(`0@,`1@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

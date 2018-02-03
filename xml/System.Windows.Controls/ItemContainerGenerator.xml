@@ -37,6 +37,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
   </Docs>
   <Members>
     <Member MemberName="ContainerFromIndex">
@@ -271,6 +272,8 @@
       <Docs>
         <summary>The <see cref="E:System.Windows.Controls.ItemContainerGenerator.StatusChanged" /> event is raised by a <see cref="T:System.Windows.Controls.ItemContainerGenerator" /> to inform controls that its status has changed.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemContainerGenerator.Status" />
+        <altmember cref="T:System.Windows.Controls.Primitives.GeneratorStatus" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
@@ -294,7 +297,7 @@
     </Member>
     <Member MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
       <MemberSignature Language="C#" Value="System.Windows.DependencyObject IItemContainerGenerator.GenerateNext (out bool isNewlyRealized);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(bool isNewlyRealized) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.DependencyObject System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -542,5 +545,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the container element used to display the next item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IndexFromContainer">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index to an item that corresponds to the specified, generated <see cref="T:System.Windows.UIElement" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the generator to generate items, starting at the specified GeneratorPosition, and in the specified GeneratorDirection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

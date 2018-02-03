@@ -140,6 +140,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Size.op_Addition(System.Drawing.Size,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -465,9 +466,9 @@
         <Parameter Name="size" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="size">The <see cref="T:System.Drawing.Size" /> structure to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Drawing.Size" /> structure to a <see cref="T:System.Drawing.Point" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.Point" /> structure to which this operator converts.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -496,10 +497,23 @@
         <Parameter Name="p" Type="System.Drawing.Size" />
       </Parameters>
       <Docs>
-        <param name="p">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="p">The <see cref="T:System.Drawing.Size" /> structure to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Drawing.Size" /> structure to a <see cref="T:System.Drawing.SizeF" /> structure.</summary>
+        <returns>The <see cref="T:System.Drawing.SizeF" /> structure to which this operator converts.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Drawing.Color.G%2A>, <xref:System.Drawing.Color.B%2A>, <xref:System.Drawing.Color.R%2A>, and <xref:System.Drawing.Color.A%2A> properties of a <xref:System.Drawing.Color> and the <xref:System.Drawing.Size.op_Implicit%2A> member.  
+  
+ This example is designed to be used with a Windows Form. Paste the code into the form and call the `ShowPropertiesOfSlateBlue` method from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PointsAndSizes#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.PointsAndSizes#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.PointsAndSizes#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -663,6 +677,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Drawing.Size.op_Subtraction(System.Drawing.Size,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -769,5 +784,15 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Size" /> structure from the specified <see cref="T:System.Drawing.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

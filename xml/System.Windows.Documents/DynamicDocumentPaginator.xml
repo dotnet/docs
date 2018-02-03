@@ -247,6 +247,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationProgress" />
+        <altmember cref="E:System.Windows.Documents.DynamicDocumentPaginator.PaginationCompleted" />
       </Docs>
     </Member>
     <Member MemberName="OnGetPageNumberCompleted">
@@ -360,5 +362,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPageNumberAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based page number of the specified <see cref="T:System.Windows.Documents.ContentPosition" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

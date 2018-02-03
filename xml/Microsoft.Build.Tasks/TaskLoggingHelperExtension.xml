@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="FormatResourceString">
-      <MemberSignature Language="C#" Value="public override string FormatResourceString (string resourceName, object[] args);" />
+      <MemberSignature Language="C#" Value="public override string FormatResourceString (string resourceName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatResourceString(string resourceName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.TaskLoggingHelperExtension.FormatResourceString(System.String,System.Object[])" />
       <MemberType>Method</MemberType>

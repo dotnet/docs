@@ -100,7 +100,7 @@
     </Member>
     <Member MemberName="TaggedScalar">
       <MemberSignature Language="C#" Value="public void TaggedScalar (out System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder type, out System.Reflection.Metadata.Ecma335.ScalarEncoder scalar);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaggedScalar(valuetype System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder type, valuetype System.Reflection.Metadata.Ecma335.ScalarEncoder scalar) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaggedScalar([out] valuetype System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder&amp; type, [out] valuetype System.Reflection.Metadata.Ecma335.ScalarEncoder&amp; scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedScalar(System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder@,System.Reflection.Metadata.Ecma335.ScalarEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -148,7 +148,7 @@
     </Member>
     <Member MemberName="TaggedVector">
       <MemberSignature Language="C#" Value="public void TaggedVector (out System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder arrayType, out System.Reflection.Metadata.Ecma335.VectorEncoder vector);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaggedVector(valuetype System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder arrayType, valuetype System.Reflection.Metadata.Ecma335.VectorEncoder vector) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TaggedVector([out] valuetype System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder&amp; arrayType, [out] valuetype System.Reflection.Metadata.Ecma335.VectorEncoder&amp; vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.LiteralEncoder.TaggedVector(System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder@,System.Reflection.Metadata.Ecma335.VectorEncoder@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -85,6 +85,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.ObjectStateFormatter.Serialize" />
+        <altmember cref="Overload:System.Web.UI.LosFormatter.Deserialize" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Deserialize">
@@ -440,5 +442,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object state graph.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,7 @@
     <summary>Provides utility functions.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Convert" />
   </Docs>
   <Members>
     <Member MemberName="DoubleToInt64">
@@ -38,6 +39,7 @@
           <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -64,6 +66,8 @@
           <see langword="true" /> if the values are equal; <see langword="false" /> if the values are not equal.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Equality" />
+        <altmember cref="F:Microsoft.JScript.JSToken.Equal" />
       </Docs>
     </Member>
     <Member MemberName="UncheckedDecimalToInt64">
@@ -88,6 +92,7 @@
           <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Convert" />
       </Docs>
     </Member>
   </Members>

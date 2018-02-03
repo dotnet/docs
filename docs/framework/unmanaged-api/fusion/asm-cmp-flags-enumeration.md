@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ASM_CMP_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ASM_CMP_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
@@ -28,6 +26,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ASM_CMP_FLAGS Enumeration
 Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md) method.  
@@ -83,5 +83,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)   
+ [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)  
  [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)

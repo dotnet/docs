@@ -6,6 +6,9 @@ ms.author: mairaw
 ms.date: 08/15/2016
 ms.topic: article
 ms.prod: .net
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Choosing between .NET Core and .NET Framework for server apps
 
@@ -34,7 +37,7 @@ The following sections give a more detailed explanation of the previously stated
 
 If your application (web/service) needs to run on multiple platforms (Windows, Linux, and macOS), use .NET Core.
 
-.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and Mac. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](http://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI tools](../core/tools/index.md), available for all supported platforms.
+.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](http://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI tools](../core/tools/index.md), available for all supported platforms.
 
 ### Microservices architecture
 
@@ -101,9 +104,9 @@ In addition to the official roadmap, there are other frameworks to be ported to 
 Some Microsoft or third-party platforms don’t support .NET Core. For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework. Some other services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can always use the equivalent REST API instead of the client SDK.
 
 ## See also
- [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)   
- [.NET Core Guide](../core/index.md)   
- [Porting from .NET Framework to .NET Core](../core/porting/index.md)   
- [.NET Framework on Docker Guide](../framework/docker/index.md)   
- [.NET Components Overview](components.md)   
+ [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)  
+ [.NET Core Guide](../core/index.md)  
+ [Porting from .NET Framework to .NET Core](../core/porting/index.md)  
+ [.NET Framework on Docker Guide](../framework/docker/index.md)  
+ [.NET Components Overview](components.md)  
  [.NET Microservices. Architecture for Containerized .NET Applications](microservices-architecture/index.md)

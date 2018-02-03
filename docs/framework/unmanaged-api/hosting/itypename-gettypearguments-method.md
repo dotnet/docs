@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetTypeArguments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetTypeArguments method [.NET Framework hosting]"
   - "GetTypeArguments method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeName::GetTypeArguments Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

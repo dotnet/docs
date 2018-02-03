@@ -67,6 +67,7 @@
         <param name="flags">The <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value for the attributed field as found in the type library it was imported from.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.TypeLibVarAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.InteropServices.TypeLibVarFlags" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +91,7 @@
         <param name="flags">The <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value for the attributed field as found in the type library it was imported from.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.TypeLibVarAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.InteropServices.TypeLibVarFlags" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -113,7 +115,18 @@
         <summary>Gets the <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value for this field.</summary>
         <value>The <see cref="T:System.Runtime.InteropServices.TypeLibVarFlags" /> value for this field.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.InteropServices.TypeLibVarFlags" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.TypeLibVarAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

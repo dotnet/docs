@@ -29,10 +29,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/tuple.cs#9124c4bea9ab0199). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element. The .NET Framework directly supports tuples with one to seven elements. In addition, you can create tuples of eight or more elements by nesting tuple objects in the <xref:System.Tuple%608.Rest%2A> property of a <xref:System.Tuple%608> object.  
   
  Tuples are commonly used in four ways:  
@@ -72,6 +68,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Tuple`1" />
+    <altmember cref="T:System.Tuple`2" />
+    <altmember cref="T:System.Tuple`3" />
+    <altmember cref="T:System.Tuple`4" />
+    <altmember cref="T:System.Tuple`5" />
+    <altmember cref="T:System.Tuple`6" />
+    <altmember cref="T:System.Tuple`7" />
+    <altmember cref="T:System.Tuple`8" />
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T1&gt;">
@@ -126,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`1" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2&gt;">
@@ -184,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`2" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3&gt;">
@@ -246,6 +252,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`3" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4&gt;">
@@ -312,6 +319,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`4" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5&gt;">
@@ -382,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`5" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6&gt;">
@@ -456,6 +465,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`6" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
@@ -534,6 +544,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`7" />
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
@@ -624,7 +635,21 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Tuple`8" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create&lt;T1&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new tuple object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

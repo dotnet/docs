@@ -26,8 +26,8 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Web.ProcessInfo.Age%2A>, <xref:System.Web.ProcessInfo.PeakMemoryUsed%2A>, <xref:System.Web.ProcessInfo.ProcessID%2A>, <xref:System.Web.ProcessInfo.RequestCount%2A>, <xref:System.Web.ProcessInfo.ShutdownReason%2A>, <xref:System.Web.ProcessInfo.StartTime%2A> and <xref:System.Web.ProcessInfo.Status%2A> properties of the <xref:System.Web.ProcessInfo> class. The example displays a <xref:System.Web.UI.WebControls.LinkButton>. When the <xref:System.Web.UI.WebControls.LinkButton> is clicked, the current process information is displayed.  
   
- <!-- TODO: review snippet reference [!code-csharp[ProcessInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ProcessInfo/CS/processinfocs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[ProcessInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ProcessInfo/VB/processinfovb.aspx#1)]  -->  
+ [!code-aspx-csharp[ProcessInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ProcessInfo/CS/processinfocs.aspx#1)]
+ [!code-aspx-vb[ProcessInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ProcessInfo/VB/processinfovb.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -213,6 +213,7 @@
         <summary>Gets a value that indicates why the process shut down.</summary>
         <value>On of the <see cref="T:System.Web.ProcessShutdownReason" /> values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ProcessShutdownReason" />
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -249,7 +250,17 @@
         <summary>Gets the current status of the process.</summary>
         <value>One of the <see cref="T:System.Web.ProcessStatus" /> values that indicates the current status of the process.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.ProcessStatus" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ProcessInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

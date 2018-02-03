@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 353f4ee2-e6bf-4b1c-b1c8-385fc8a486c0
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transaction Fundamentals
 Transactions bind multiple tasks together. For example, imagine that an application performs two tasks. First, it creates a new table in a database. Next, it calls a specialized object to collect, format, and insert data into the new table. These two tasks are related and even interdependent, such that you want to avoid creating a new table unless you can fill it with data. Executing both tasks within the scope of a single transaction enforces the connection between them. If the second task fails, the first task is rolled back to a point before the new table was created.  
@@ -24,9 +26,9 @@ Transactions bind multiple tasks together. For example, imagine that an applicat
   
  When you develop a transactional application using the classes provided by <xref:System.Transactions>, you do not need to worry about what kind of transactions you need, or the transaction manager involved. The <xref:System.Transactions> infrastructure automatically manages these for you.  
   
- When you create a transaction, you can specify the isolation level that applies to the transaction. The isolation level, defined by the <xref:System.Transactions.IsolationLevel> class, determines what level of access other transactions will have to the data affected by your transaction.  
+ When you create a transaction, you can specify the isolation level that applies to the transaction. The isolation level, defined by the <xref:System.Transactions.IsolationLevel> enum, determines what level of access other transactions will have to the data affected by your transaction.  
   
- You can create transactions using ADO.NET, <xref:System.EnterpriseServices>, or the new transactional programming model provided by the <xref:System.Transactions> namespace. The [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md) section discusses the features that you can use to write a transactional application using the <xref:System.Transactions> namespace.  
+ You can create transactions using ADO.NET, <xref:System.EnterpriseServices>, or the transactional programming model provided by the <xref:System.Transactions> namespace. The [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md) topic discusses the features that you can use to write a transactional application using the <xref:System.Transactions> namespace.  
   
 ## See Also  
  [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md)

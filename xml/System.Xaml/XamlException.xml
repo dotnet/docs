@@ -175,6 +175,7 @@
         <summary>Gets or sets the line number component of XAML text line information that the exception reports.</summary>
         <value>The line number component of the XAML text line information.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xaml.IXamlLineInfo" />
       </Docs>
     </Member>
     <Member MemberName="LinePosition">
@@ -193,6 +194,7 @@
         <summary>Gets or sets the line position component of XAML text line information that the exception reports.</summary>
         <value>The line position component of XAML text line information.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xaml.IXamlLineInfo" />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -220,5 +222,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

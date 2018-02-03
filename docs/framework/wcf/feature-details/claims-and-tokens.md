@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "claims [WCF], and tokens"
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Claims and Tokens
 This topic describes the various claim types that [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] creates from the default tokens that it supports.  
@@ -71,8 +73,8 @@ This topic describes the various claim types that [!INCLUDE[indigo1](../../../..
  If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.  
   
 ## See Also  
- <xref:System.IdentityModel.Claims.ClaimSet>   
- <xref:System.IdentityModel.Claims.Claim>   
- <xref:System.IdentityModel.Claims.Rights>   
- <xref:System.IdentityModel.Claims.ClaimTypes>   
+ <xref:System.IdentityModel.Claims.ClaimSet>  
+ <xref:System.IdentityModel.Claims.Claim>  
+ <xref:System.IdentityModel.Claims.Rights>  
+ <xref:System.IdentityModel.Claims.ClaimTypes>  
  [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

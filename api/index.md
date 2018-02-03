@@ -2,8 +2,12 @@
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API Browser
+quickFilterColumn1: netframework-4.7.1,netcore-2.0,netstandard-2.0
+quickFilterColumn2: xamarinios-10.8,xamarinandroid-7.1,xamarinmac-3.0
+quickFilterColumn3: azure-dotnet,aspnetcore-2.0
+ms.topic: landing-page
 ---
 
 # .NET API Browser
 
-Welcome to the .NET API Browser – your one-stop shop for all .NET-based APIs from Microsoft. Simply start searching for any managed APIs by typing in the box below. You can learn more about the API Browser [in our blog post](https://aka.ms/apibrowser). If you have any feedback, please use [our UserVoice site](https://aka.ms/apibrowserfeedback).
+Welcome to the .NET API Browser – your one-stop shop for all .NET-based APIs from Microsoft. Start searching for any managed APIs by typing in the box below. You can learn more about the API Browser [in our blog post](https://aka.ms/apibrowser). If you have any feedback,  use [our UserVoice site](https://aka.ms/apibrowserfeedback).

@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "protocols, TCP/UDP"
   - "network resources, TCP/UDP"
@@ -31,6 +26,8 @@ caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # TCP-UDP
 Applications can use Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) services with the <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes. These protocol classes are built on top of the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class and take care of the details of transferring data.  
@@ -42,9 +39,9 @@ Applications can use Transmission Control Protocol (TCP) and User Datagram Proto
  The **UdpClient** class uses an array of bytes to hold the UDP datagram. You use the <xref:System.Net.Sockets.UdpClient.Send%2A> method to send the data to the network and the <xref:System.Net.Sockets.UdpClient.Receive%2A> method to receive an incoming datagram.  
   
 ## See Also  
- [Using TCP Services](../../../docs/framework/network-programming/using-tcp-services.md)   
- [Using UDP Services](../../../docs/framework/network-programming/using-udp-services.md)   
- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)   
- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)   
- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)   
+ [Using TCP Services](../../../docs/framework/network-programming/using-tcp-services.md)  
+ [Using UDP Services](../../../docs/framework/network-programming/using-udp-services.md)  
+ [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)  
+ [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)  
+ [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

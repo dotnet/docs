@@ -42,6 +42,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
+    <altmember cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,10 +96,13 @@
 ## Remarks  
  You can use this version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to create a new <xref:System.Windows.Forms.ListViewItem> to add to a <xref:System.Windows.Forms.ListView> control. The text of the new <xref:System.Windows.Forms.ListViewItem> added to the control is based on the `text` parameter. If you want to specify an image for the item, use the version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method that accepts an image index as a parameter. If you have an existing <xref:System.Windows.Forms.ListViewItem> that you want to add to the collection, use the version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ListViewItem> as its parameter.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -125,12 +130,15 @@
 ## Remarks  
  You can use this version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add an existing <xref:System.Windows.Forms.ListViewItem> to the collection. This version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method is typically used to reuse items from other <xref:System.Windows.Forms.ListView> controls or if the <xref:System.Windows.Forms.ListViewItem> was created manually before adding it to the collection. If you want to create a new <xref:System.Windows.Forms.ListViewItem> instead of using an existing item, use the other versions of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
   
  This version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method is also used to assign a <xref:System.Windows.Forms.ListViewItem> to a <xref:System.Windows.Forms.ListViewGroup>.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -160,10 +168,13 @@
 ## Remarks  
  You can use this version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to create a new <xref:System.Windows.Forms.ListViewItem> to add to the <xref:System.Windows.Forms.ListView> control. The text of the new <xref:System.Windows.Forms.ListViewItem> added to the control is based on the `text` parameter. You can also specify an image for the item by passing the index of the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ListView.LargeImageList%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListView.SmallImageList%2A?displayProperty=nameWithType> properties to the `imageIndex` parameter. (Typically, the <xref:System.Windows.Forms.ListView.LargeImageList%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListView.SmallImageList%2A?displayProperty=nameWithType> properties use the same index positions to display related images.) If you do not want to specify an image index for the item, use the version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method that accepts only a string as a parameter. If you have an existing <xref:System.Windows.Forms.ListViewItem> that you want to add to the collection, use the version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ListViewItem> as its parameter.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is added. Otherwise, the item is inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert an item into the <xref:System.Windows.Forms.ListView> at a specific position. To add a set of items to the control in a single operation, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. If you want to use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method to add a large number of items to the control, use the <xref:System.Windows.Forms.ListView.BeginUpdate%2A> and <xref:System.Windows.Forms.ListView.EndUpdate%2A> methods to prevent the <xref:System.Windows.Forms.ListView> from repainting until all items are added. When adding items to a <xref:System.Windows.Forms.ListView>, it is more efficient to sort the items first and then add new items.  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="P:System.Windows.Forms.ListView.Sorting" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -325,7 +336,7 @@
   
  You can also use this method to assign multiple <xref:System.Windows.Forms.ListViewItem> objects to a <xref:System.Windows.Forms.ListViewGroup>.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the items are added. Otherwise, the items are inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert items into the <xref:System.Windows.Forms.ListView> at specific positions.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the items are added. Otherwise, the items are inserted at the end of the list. If the list is not sorted, you can use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to insert items into the <xref:System.Windows.Forms.ListView> at specific positions.  
   
    
   
@@ -356,6 +367,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="items" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Insert(System.Int32,System.Windows.Forms.ListViewItem)" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -381,6 +395,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -411,6 +427,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -589,6 +606,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Contains(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -652,13 +670,15 @@
  This version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method allows you to insert a new item at a specific position in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The text specified in the `text` parameter is used to create a new <xref:System.Windows.Forms.ListViewItem> that is then inserted into the <xref:System.Windows.Forms.ListView.ListViewItemCollection> at the specified location.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
+>  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
   
  To add an item without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. You can use this method if you want to insert a new item into an existing collection of items.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -689,13 +709,15 @@
  This version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method allows you to insert an existing <xref:System.Windows.Forms.ListViewItem> at a specific position in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
+>  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
   
  To add an item without specifying a specific position in the collection to add the item, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method. If you want to add an array of items to the collection, use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.AddRange%2A> method. You can use this method if you want to insert a new item into an existing collection of items.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -728,7 +750,7 @@
  This version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method allows you to insert a new item at a specific position in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>. The text specified in the `text` parameter is used to create a new <xref:System.Windows.Forms.ListViewItem> that is then inserted into the <xref:System.Windows.Forms.ListView.ListViewItemCollection> at the specified location.  
   
 > [!NOTE]
->  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
+>  If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted after the item is inserted.  
   
  You can also use this version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method to specify an image for the item by passing the index of the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ListView.LargeImageList%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListView.SmallImageList%2A?displayProperty=nameWithType> properties to the `imageIndex` parameter. (Typically, the <xref:System.Windows.Forms.ListView.LargeImageList%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.ListView.SmallImageList%2A?displayProperty=nameWithType> properties use the same index positions to display related images.) If you do not want to specify an image index for the item, use the other version of the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A> method that accepts a string as a parameter.  
   
@@ -737,6 +759,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -892,6 +916,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -950,6 +975,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.ListViewItem" /> assigned to the <paramref name="item" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.RemoveAt(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -979,6 +1006,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Remove(System.Windows.Forms.ListViewItem)" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="RemoveByKey">
@@ -1221,5 +1250,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an array of items to the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets an item in the collection.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the collection at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the collection of items.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

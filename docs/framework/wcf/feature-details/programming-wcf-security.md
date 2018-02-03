@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "message security [WCF], programming overview"
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
@@ -16,6 +19,8 @@ caps.latest.revision: 25
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Programming WCF Security
 This topic describes the fundamental programming tasks used to create a secure [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
@@ -50,14 +55,14 @@ This topic describes the fundamental programming tasks used to create a secure [
   
          This choice uses the transport layer to secure the message transfer, while every message includes the rich credentials other services need. This combines the performance advantage of transport security with the rich credentials advantage of message security. This is available with the following bindings: <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSFederationHttpBinding>, <xref:System.ServiceModel.NetPeerTcpBinding>, and <xref:System.ServiceModel.WSHttpBinding>.  
   
-3.  If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+3.  If you decide to use transport security for HTTP (in other words, HTTPS), you must also configure the host with an SSL certificate and enable SSL on a port. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
 4.  If you are using the <xref:System.ServiceModel.WSHttpBinding> and do not need to establish a secure session, set the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property to `false`.  
   
      A secure session occurs when a client and service create a channel using a symmetric key (both client and server use the same key for the length of a conversation, until the dialog is closed).  
   
 ## Setting the Client Credential Type  
- Select a client credential type as appropriate. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md). The following client credential types are available:  
+ Select a client credential type as appropriate. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md). The following client credential types are available:  
   
 -   `Windows`  
   
@@ -105,5 +110,5 @@ This topic describes the fundamental programming tasks used to create a secure [
  [!code-vb[c_TcpClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpclient/vb/source.vb#1)]  
   
 ## See Also  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)   
+ [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)

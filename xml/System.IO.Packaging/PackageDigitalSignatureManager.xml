@@ -29,6 +29,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.Packaging.Package" />
+    <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
+    <altmember cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +64,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
       </Docs>
     </Member>
     <Member MemberName="CertificateOption">
@@ -201,6 +205,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
+        <altmember cref="T:System.Security.Cryptography.HashAlgorithm" />
       </Docs>
     </Member>
     <Member MemberName="GetSignature">
@@ -254,6 +260,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The string for the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to set is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The string for the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to set is empty.</exception>
+        <altmember cref="T:System.Security.Cryptography.Xml.SignedXml" />
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm" />
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.SignatureValue" />
       </Docs>
     </Member>
     <Member MemberName="InvalidSignatureEvent">
@@ -305,6 +314,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ParentWindow">
@@ -355,6 +365,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.IO.Packaging.PackageDigitalSignatureManager.Sign" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.RemoveSignature(System.Uri)" />
+        <altmember cref="T:System.IO.Packaging.PackageDigitalSignature" />
       </Docs>
     </Member>
     <Member MemberName="RemoveSignature">
@@ -735,6 +748,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.IO.Packaging.PackageDigitalSignature.SigningTime" />
       </Docs>
     </Member>
     <Member MemberName="TransformMapping">
@@ -795,6 +809,7 @@
         <returns>
           <see cref="F:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NoError" /> (value 0) if the certificate verified successfully; otherwise, a bitwise enumeration of error flags.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="VerifySignatures">
@@ -834,7 +849,19 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" />
+        <altmember cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifyCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
+        <altmember cref="T:System.IO.Packaging.InvalidSignatureEventHandler" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Countersign">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Countersigns signatures in the package with a specified X.509 certificate.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

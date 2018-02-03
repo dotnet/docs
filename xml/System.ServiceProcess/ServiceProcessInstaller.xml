@@ -48,6 +48,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.ServiceInstaller" />
+    <altmember cref="T:System.ServiceProcess.ServiceBase" />
+    <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
+    <altmember cref="P:System.Configuration.Install.Installer.Installers" />
+    <altmember cref="T:System.ServiceProcess.ServiceAccount" />
+    <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -100,6 +106,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
+        <altmember cref="T:System.ServiceProcess.ServiceAccount" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
     <Member MemberName="CopyFromComponent">
@@ -128,6 +138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Rollback(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -153,6 +165,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -188,6 +202,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="stateSaver" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Rollback(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+        <altmember cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -226,6 +243,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Username" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
     <Member MemberName="Rollback">
@@ -263,6 +283,8 @@
  -or-  
   
  The <paramref name="savedState" /> is corrupted or non-existent.</exception>
+        <altmember cref="M:System.ServiceProcess.ServiceProcessInstaller.Install(System.Collections.IDictionary)" />
+        <altmember cref="T:System.Configuration.Install.ComponentInstaller" />
       </Docs>
     </Member>
     <Member MemberName="Username">
@@ -304,6 +326,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Password" />
+        <altmember cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" />
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" />
       </Docs>
     </Member>
   </Members>

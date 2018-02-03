@@ -14,6 +14,8 @@ caps.latest.revision: 16
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Securing Messages Using Message Security
 This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
@@ -58,7 +60,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
   
  Note that when using this credential type, the service must be running under the SERVICE account.  
   
- The Kerberos protocol is used by default when choosing message credential. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
+ The Kerberos protocol is used by default when choosing message credential. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](http://go.microsoft.com/fwlink/?LinkId=87790).  
   
 ### Username Password  
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  
@@ -70,7 +72,7 @@ This section discusses [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] m
  When using both transport security and message security, the certificate used to secure the message both at the transport and the SOAP message level must be the same.  
   
 ## See Also  
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)   
- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)   
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)   
+ [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
+ [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
+ [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

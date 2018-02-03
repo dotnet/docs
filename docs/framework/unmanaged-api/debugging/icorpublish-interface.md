@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish interface [.NET Framework debugging]"
 ms.assetid: 87c4fcb2-7703-4a2e-afb6-42973381b960
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublish Interface
 Serves as the general interface for publishing information about processes and information about the application domains in those processes.  
@@ -49,5 +49,5 @@ Serves as the general interface for publishing information about processes and i
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)

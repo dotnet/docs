@@ -23,11 +23,16 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database and filter it using a <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A>. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> of the <xref:System.Web.UI.WebControls.SqlDataSource> is applied anytime the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event, the filter parameter is displayed in a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/CS/SDCFilteringCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/VB/SDCFilteringVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/CS/SDCFilteringCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/VB/SDCFilteringVB.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
+    <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
+    <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Filtering" />
+    <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler" />
+    <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +58,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Filtering" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
       </Docs>
     </Member>
     <Member MemberName="ParameterValues">
@@ -84,11 +94,16 @@
 ## Examples  
  The following code example demonstrates how to retrieve data from the Northwind database and filter it using a <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A>. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> of the <xref:System.Web.UI.WebControls.SqlDataSource> is applied anytime the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event, the filter parameter is displayed in a <xref:System.Web.UI.WebControls.Label> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/CS/SDCFilteringCS.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/VB/SDCFilteringVB.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/CS/SDCFilteringCS.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.SqlDataSourceFiltering#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSourceFiltering/VB/SDCFilteringVB.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterParameters" />
+        <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.FilterExpression" />
+        <altmember cref="E:System.Web.UI.WebControls.SqlDataSource.Filtering" />
+        <altmember cref="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
       </Docs>
     </Member>
   </Members>

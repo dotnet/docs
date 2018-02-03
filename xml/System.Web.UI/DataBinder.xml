@@ -18,7 +18,7 @@
 ## Remarks  
  You can use the overloaded static <xref:System.Web.UI.DataBinder.Eval%2A> method of this class in data-binding syntax in an ASP.NET Web page. This provides an easier syntax to work with than standard data binding. However, because `DataBinder.Eval` provides automatic type conversion, it can result in slower performance.  
   
- For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/library/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
   
@@ -29,8 +29,8 @@
   
  This example uses a custom `Product` class which exposes a string `Model` property and a numeric `UnitPrice` property.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataBinder/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataBinder/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.DataBinder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataBinder/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.DataBinder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataBinder/VB/Default.aspx#1)]  
   
  The following code is the custom `Product` class. This code should be included in a separate class file in the App_Code directory, such as Product.cs or Product.vb.  
   
@@ -39,6 +39,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.XPathBinder" />
+    <altmember cref="T:System.Web.UI.IBindableTemplate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -145,18 +147,22 @@
   
  In the declarative syntax for the <xref:System.Web.UI.WebControls.Repeater> control, you use the <xref:System.Web.UI.DataBinder.Eval%2A> method with `Container.DataItem` for the `container` parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  
   
  Or, you can call `Eval` function and not include the `container` parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="expression" /> is <see langword="null" /> or is an empty string after trimming.</exception>
+        <altmember cref="M:System.Web.UI.Control.DataBind" />
+        <altmember cref="T:System.Web.UI.DataBinding" />
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -216,16 +222,18 @@
   
  In the declarative syntax for the <xref:System.Web.UI.WebControls.Repeater> control, you use the <xref:System.Web.UI.DataBinder.Eval%2A> method with `Container.DataItem` for the `container` parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  -->  
+ [!code-aspx-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  
   
  Or, you can call `Eval` function and not include the `container` parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  -->  
+ [!code-aspx-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.XPathBinder" />
+        <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GetDataItem">
@@ -257,11 +265,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="GetDataItem">
       <MemberSignature Language="C#" Value="public static object GetDataItem (object container, out bool foundDataItem);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, bool foundDataItem) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, [out] bool&amp; foundDataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -288,6 +297,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
     <Member MemberName="GetIndexedPropertyValue">
@@ -333,6 +343,7 @@
  \- or -  
   
  <paramref name="expr" /> does not allow indexed access.</exception>
+        <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
       </Docs>
     </Member>
     <Member MemberName="GetIndexedPropertyValue">
@@ -371,11 +382,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method declaratively to bind to an indexed value.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic DataBinder.Eval Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataBinder.Eval Example/CS/sourcecs.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic DataBinder.Eval Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataBinder.Eval Example/VB/sourcevb.aspx#2)]  -->  
+ [!code-aspx-csharp[Classic DataBinder.Eval Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataBinder.Eval Example/CS/sourcecs.aspx#2)]
+ [!code-aspx-vb[Classic DataBinder.Eval Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataBinder.Eval Example/VB/sourcevb.aspx#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertyValue">
@@ -489,5 +501,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetIndexedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an indexed property.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetDataItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an object's declared data item.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of a property.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1,13 +1,16 @@
 ---
 title: "Character Encoding in .NET"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "12/22/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "encoding, understanding"
   - "encoding, choosing"
@@ -17,6 +20,9 @@ caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Character Encoding in .NET
 Characters are abstract entities that can be represented in many different ways. A character encoding is a system that pairs each character in a supported character set with some value that represents that character. For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines. A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character. A character encoding has two distinct components:  
@@ -59,14 +65,14 @@ Characters are abstract entities that can be represented in many different ways.
 > [!NOTE]
 >  The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.  
 >   
->  .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?LinkId=37123).  
+>  .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](http://www.unicode.org/).  
   
  You can retrieve information about all the encodings available in .NET by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method. .NET supports the character encoding systems listed in the following table.  
   
 |Encoding|Class|Description|Advantages/disadvantages|  
 |--------------|-----------|-----------------|-------------------------------|  
 |ASCII|<xref:System.Text.ASCIIEncoding>|Encodes a limited range of characters by using the lower seven bits of a byte.|Because this encoding only supports character values from U+0000 through U+007F, in most cases it is inadequate for internationalized applications.|  
-|UTF-7|<xref:System.Text.UTF7Encoding>|Represents characters as sequences of 7-bit ASCII characters. Non-ASCII Unicode characters are represented by an escape sequence of ASCII characters.|UTF-7 supports protocols such as e-mail and newsgroup protocols. However, UTF-7 is not particularly secure or robust. In some cases, changing one bit can radically alter the interpretation of an entire UTF-7 string. In other cases, different UTF-7 strings can encode the same text. For sequences that include non-ASCII characters, UTF-7 requires more space than UTF-8, and encoding/decoding is slower. Consequently, you should use UTF-8 instead of UTF-7 if possible.|  
+|UTF-7|<xref:System.Text.UTF7Encoding>|Represents characters as sequences of 7-bit ASCII characters. Non-ASCII Unicode characters are represented by an escape sequence of ASCII characters.|UTF-7 supports protocols such as email and newsgroup protocols. However, UTF-7 is not particularly secure or robust. In some cases, changing one bit can radically alter the interpretation of an entire UTF-7 string. In other cases, different UTF-7 strings can encode the same text. For sequences that include non-ASCII characters, UTF-7 requires more space than UTF-8, and encoding/decoding is slower. Consequently, you should use UTF-8 instead of UTF-7 if possible.|  
 |UTF-8|<xref:System.Text.UTF8Encoding>|Represents each Unicode code point as a sequence of one to four bytes.|UTF-8 supports 8-bit data sizes and works well with many existing operating systems. For the ASCII range of characters, UTF-8 is identical to ASCII encoding and allows a broader set of characters. However, for Chinese-Japanese-Korean (CJK) scripts, UTF-8 can require three bytes for each character, and can potentially cause larger data sizes than UTF-16. Note that sometimes the amount of ASCII data, such as HTML tags, justifies the increased size for the CJK range.|  
 |UTF-16|<xref:System.Text.UnicodeEncoding>|Represents each Unicode code point as a sequence of one or two 16-bit integers. Most common Unicode characters require only one UTF-16 code point, although Unicode supplementary characters (U+10000 and greater) require two UTF-16 surrogate code points. Both little-endian and big-endian byte orders are supported.|UTF-16 encoding is used by the common language runtime to represent <xref:System.Char> and <xref:System.String> values, and it is used by the Windows operating system to represent `WCHAR` values.|  
 |UTF-32|<xref:System.Text.UTF32Encoding>|Represents each Unicode code point as a 32-bit integer. Both little-endian and big-endian byte orders are supported.|UTF-32 encoding is used when applications want to avoid the surrogate code point behavior of UTF-16 encoding on operating systems for which encoded space is too important. Single glyphs rendered on a display can still be encoded with more than one UTF-32 character.|  
@@ -143,7 +149,10 @@ Characters are abstract entities that can be represented in many different ways.
 > [!NOTE]
 >  In theory, the Unicode encoding classes provided in .NET (<xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding>) support every character in every character set, so they can be used to eliminate best-fit fallback issues.  
   
- Best-fit strategies vary for different code pages, and they are not documented in detail. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
+ Best-fit strategies vary for different code pages. For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters. For other code pages, this mapping is not made. Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings. For example, a Chinese ideograph has no reasonable mapping to code page 1252. In this case, a replacement string is used. By default, this string is just a single QUESTION MARK (U+003F).  
+  
+> [!NOTE]
+>  Best-fit strategies are not documented in detail. However, several code pages are documented at the [Unicode Consortium's](http://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WindowsBestFit/) website. Please review the **readme.txt** file in that folder for a description of how to interpret the mapping files.
   
  The following example uses code page 1252 (the Windows code page for Western European languages) to illustrate best-fit mapping and its drawbacks. The <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method is used to retrieve an encoding object for code page 1252. By default, it uses a best-fit mapping for Unicode characters that it does not support. The example instantiates a string that contains three non-ASCII characters - CIRCLED LATIN CAPITAL LETTER S (U+24C8), SUPERSCRIPT FIVE (U+2075), and INFINITY (U+221E) - separated by spaces. As the output from the example shows, when the string is encoded, the three original non-space characters are replaced by QUESTION MARK (U+003F), DIGIT FIVE (U+0035), and DIGIT EIGHT (U+0038). DIGIT EIGHT is a particularly poor replacement for the unsupported INFINITY character, and QUESTION MARK indicates that no mapping was available for the original character.  
   
@@ -260,9 +269,9 @@ Characters are abstract entities that can be represented in many different ways.
  [!code-vb[Conceptual.Encoding#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/custom1.vb#7)]  
   
 ## See Also  
- <xref:System.Text.Encoder>   
- <xref:System.Text.Decoder>   
- <xref:System.Text.DecoderFallback>   
- <xref:System.Text.Encoding>   
- <xref:System.Text.EncoderFallback>   
+ <xref:System.Text.Encoder>  
+ <xref:System.Text.Decoder>  
+ <xref:System.Text.DecoderFallback>  
+ <xref:System.Text.Encoding>  
+ <xref:System.Text.EncoderFallback>  
  [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

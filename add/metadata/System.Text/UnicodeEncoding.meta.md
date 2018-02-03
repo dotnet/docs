@@ -173,7 +173,7 @@ manager: "wpickett"
 uid: System.Text.UnicodeEncoding.GetString
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

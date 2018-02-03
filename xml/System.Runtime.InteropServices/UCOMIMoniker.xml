@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="BindToObject">
       <MemberSignature Language="C#" Value="public void BindToObject (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, ref Guid riidResult, out object ppvResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, valuetype System.Guid riidResult, object ppvResult) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [in]valuetype System.Guid&amp; riidResult, [out] object&amp; ppvResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.BindToObject(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -68,7 +68,7 @@
     </Member>
     <Member MemberName="BindToStorage">
       <MemberSignature Language="C#" Value="public void BindToStorage (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, ref Guid riid, out object ppvObj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, valuetype System.Guid riid, object ppvObj) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.BindToStorage(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Guid@,System.Object@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -103,7 +103,7 @@
     </Member>
     <Member MemberName="CommonPrefixWith">
       <MemberSignature Language="C#" Value="public void CommonPrefixWith (System.Runtime.InteropServices.UCOMIMoniker pmkOther, out System.Runtime.InteropServices.UCOMIMoniker ppmkPrefix);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommonPrefixWith(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, class System.Runtime.InteropServices.UCOMIMoniker ppmkPrefix) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommonPrefixWith(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.CommonPrefixWith(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -134,7 +134,7 @@
     </Member>
     <Member MemberName="ComposeWith">
       <MemberSignature Language="C#" Value="public void ComposeWith (System.Runtime.InteropServices.UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, out System.Runtime.InteropServices.UCOMIMoniker ppmkComposite);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeWith(class System.Runtime.InteropServices.UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, class System.Runtime.InteropServices.UCOMIMoniker ppmkComposite) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeWith(class System.Runtime.InteropServices.UCOMIMoniker pmkRight, bool fOnlyIfNotGeneric, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkComposite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.ComposeWith(System.Runtime.InteropServices.UCOMIMoniker,System.Boolean,System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -167,7 +167,7 @@
     </Member>
     <Member MemberName="Enum">
       <MemberSignature Language="C#" Value="public void Enum (bool fForward, out System.Runtime.InteropServices.UCOMIEnumMoniker ppenumMoniker);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enum(bool fForward, class System.Runtime.InteropServices.UCOMIEnumMoniker ppenumMoniker) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enum(bool fForward, [out] class System.Runtime.InteropServices.UCOMIEnumMoniker&amp; ppenumMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Enum(System.Boolean,System.Runtime.InteropServices.UCOMIEnumMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -198,7 +198,7 @@
     </Member>
     <Member MemberName="GetClassID">
       <MemberSignature Language="C#" Value="public void GetClassID (out Guid pClassID);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID(valuetype System.Guid pClassID) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID([out] valuetype System.Guid&amp; pClassID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetClassID(System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -227,7 +227,7 @@
     </Member>
     <Member MemberName="GetDisplayName">
       <MemberSignature Language="C#" Value="public void GetDisplayName (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, out string ppszDisplayName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string ppszDisplayName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [out] string&amp; ppszDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -260,7 +260,7 @@
     </Member>
     <Member MemberName="GetSizeMax">
       <MemberSignature Language="C#" Value="public void GetSizeMax (out long pcbSize);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSizeMax(int64 pcbSize) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSizeMax([out] int64&amp; pcbSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetSizeMax(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -289,7 +289,7 @@
     </Member>
     <Member MemberName="GetTimeOfLastChange">
       <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, out System.Runtime.InteropServices.FILETIME pFileTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTimeOfLastChange(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, valuetype System.Runtime.InteropServices.FILETIME pFileTime) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTimeOfLastChange(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, [out] valuetype System.Runtime.InteropServices.FILETIME&amp; pFileTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -322,7 +322,7 @@
     </Member>
     <Member MemberName="Hash">
       <MemberSignature Language="C#" Value="public void Hash (out int pdwHash);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Hash(int32 pdwHash) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Hash([out] int32&amp; pdwHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Hash(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -351,7 +351,7 @@
     </Member>
     <Member MemberName="Inverse">
       <MemberSignature Language="C#" Value="public void Inverse (out System.Runtime.InteropServices.UCOMIMoniker ppmk);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Inverse(class System.Runtime.InteropServices.UCOMIMoniker ppmk) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Inverse([out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Inverse(System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -469,7 +469,7 @@
     </Member>
     <Member MemberName="IsSystemMoniker">
       <MemberSignature Language="C#" Value="public void IsSystemMoniker (out int pdwMksys);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsSystemMoniker(int32 pdwMksys) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsSystemMoniker([out] int32&amp; pdwMksys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.IsSystemMoniker(System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -527,7 +527,7 @@
     </Member>
     <Member MemberName="ParseDisplayName">
       <MemberSignature Language="C#" Value="public void ParseDisplayName (System.Runtime.InteropServices.UCOMIBindCtx pbc, System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string pszDisplayName, out int pchEaten, out System.Runtime.InteropServices.UCOMIMoniker ppmkOut);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string pszDisplayName, int32 pchEaten, class System.Runtime.InteropServices.UCOMIMoniker ppmkOut) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseDisplayName(class System.Runtime.InteropServices.UCOMIBindCtx pbc, class System.Runtime.InteropServices.UCOMIMoniker pmkToLeft, string pszDisplayName, [out] int32&amp; pchEaten, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.ParseDisplayName(System.Runtime.InteropServices.UCOMIBindCtx,System.Runtime.InteropServices.UCOMIMoniker,System.String,System.Int32@,System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -564,7 +564,7 @@
     </Member>
     <Member MemberName="Reduce">
       <MemberSignature Language="C#" Value="public void Reduce (System.Runtime.InteropServices.UCOMIBindCtx pbc, int dwReduceHowFar, ref System.Runtime.InteropServices.UCOMIMoniker ppmkToLeft, out System.Runtime.InteropServices.UCOMIMoniker ppmkReduced);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reduce(class System.Runtime.InteropServices.UCOMIBindCtx pbc, int32 dwReduceHowFar, class System.Runtime.InteropServices.UCOMIMoniker ppmkToLeft, class System.Runtime.InteropServices.UCOMIMoniker ppmkReduced) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reduce(class System.Runtime.InteropServices.UCOMIBindCtx pbc, int32 dwReduceHowFar, class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkToLeft, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkReduced) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.Reduce(System.Runtime.InteropServices.UCOMIBindCtx,System.Int32,System.Runtime.InteropServices.UCOMIMoniker@,System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -599,7 +599,7 @@
     </Member>
     <Member MemberName="RelativePathTo">
       <MemberSignature Language="C#" Value="public void RelativePathTo (System.Runtime.InteropServices.UCOMIMoniker pmkOther, out System.Runtime.InteropServices.UCOMIMoniker ppmkRelPath);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RelativePathTo(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, class System.Runtime.InteropServices.UCOMIMoniker ppmkRelPath) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RelativePathTo(class System.Runtime.InteropServices.UCOMIMoniker pmkOther, [out] class System.Runtime.InteropServices.UCOMIMoniker&amp; ppmkRelPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIMoniker.RelativePathTo(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.UCOMIMoniker@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -60,6 +60,12 @@ Components of a TileBrush with a TileMode of Tile
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Windows.Media.TileBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
+    <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
+    <altmember cref="P:System.Windows.Media.TileBrush.Viewport" />
+    <altmember cref="P:System.Windows.Media.TileBrush.TileMode" />
+    <altmember cref="P:System.Windows.Media.TileBrush.AlignmentX" />
+    <altmember cref="P:System.Windows.Media.TileBrush.AlignmentY" />
+    <altmember cref="P:System.Windows.Media.TileBrush.Viewbox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +120,8 @@ Components of a TileBrush with a TileMode of Tile
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.AlignmentY" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
       </Docs>
     </Member>
     <Member MemberName="AlignmentXProperty">
@@ -170,6 +178,8 @@ Components of a TileBrush with a TileMode of Tile
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.AlignmentX" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
       </Docs>
     </Member>
     <Member MemberName="AlignmentYProperty">
@@ -249,7 +259,7 @@ Components of a TileBrush with a TileMode of Tile
     </Member>
     <Member MemberName="GetContentBounds">
       <MemberSignature Language="C#" Value="protected abstract void GetContentBounds (out System.Windows.Rect contentBounds);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetContentBounds(valuetype System.Windows.Rect contentBounds) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetContentBounds([out] valuetype System.Windows.Rect&amp; contentBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TileBrush.GetContentBounds(System.Windows.Rect@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -322,6 +332,8 @@ TileBrush with different Stretch settings
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewbox" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewport" />
       </Docs>
     </Member>
     <Member MemberName="StretchProperty">
@@ -484,6 +496,9 @@ Similar TileBrush but with tiling and a different Viewport setting
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.ViewboxUnits" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewport" />
       </Docs>
     </Member>
     <Member MemberName="ViewboxProperty">
@@ -538,6 +553,8 @@ Similar TileBrush but with tiling and a different Viewport setting
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewport" />
       </Docs>
     </Member>
     <Member MemberName="ViewboxUnitsProperty">
@@ -603,6 +620,10 @@ Relative and absolute ViewportUnits
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.ViewportUnits" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewbox" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
+        <altmember cref="P:System.Windows.Media.TileBrush.TileMode" />
       </Docs>
     </Member>
     <Member MemberName="ViewportProperty">
@@ -660,6 +681,10 @@ Relative and absolute ViewportUnits
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewport" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Viewbox" />
+        <altmember cref="P:System.Windows.Media.TileBrush.Stretch" />
+        <altmember cref="P:System.Windows.Media.TileBrush.TileMode" />
       </Docs>
     </Member>
     <Member MemberName="ViewportUnitsProperty">

@@ -28,8 +28,7 @@
   
 ## Remarks  
   
-> [!NOTE]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the net_v45. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in vs_dev11_long, choose Manage NuGet Packages from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+[!INCLUDE [tpl-install-instructions](~/includes/tpl-install-instructions.md)]
   
  ]]></format>
     </remarks>
@@ -37,7 +36,7 @@
   <Members>
     <Member MemberName="ConsumeMessage">
       <MemberSignature Language="C#" Value="public TOutput ConsumeMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;out TOutput&gt; target, out bool messageConsumed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TOutput ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target, bool messageConsumed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TOutput ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TOutput&gt; target, [out] bool&amp; messageConsumed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "callback function, implementing"
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
@@ -21,6 +20,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Implement Callback Functions
 The following procedure and example demonstrate how a managed application, using platform invoke, can print the handle value for each window on the local computer. Specifically, the procedure and example use the **EnumWindows** function to step through the list of windows and a managed callback function (named CallBack) to print the value of the window handle.  
@@ -135,5 +136,5 @@ int main()
 ```  
   
 ## See Also  
- [Callback Functions](../../../docs/framework/interop/callback-functions.md)   
+ [Callback Functions](../../../docs/framework/interop/callback-functions.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

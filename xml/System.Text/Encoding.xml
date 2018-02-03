@@ -39,10 +39,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/encoding.cs#3b6090c501893c25). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
  Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType>.  
@@ -291,6 +287,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -337,6 +335,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="codePage" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -445,6 +445,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.ASCIIEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
       </Docs>
     </Member>
     <Member MemberName="BigEndianUnicode">
@@ -504,6 +508,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UnicodeEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
       </Docs>
     </Member>
     <Member MemberName="BodyName">
@@ -538,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you need an encoding for a body name, you should call <xref:System.Text.Encoding.GetEncoding%2A> with the <xref:System.Text.Encoding.BodyName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only e-mail applications need to retrieve such an encoding; most other applications that need to describe an encoding should use its <xref:System.Text.Encoding.WebName%2A>.  
+ If you need an encoding for a body name, you should call <xref:System.Text.Encoding.GetEncoding%2A> with the <xref:System.Text.Encoding.BodyName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only email applications need to retrieve such an encoding; most other applications that need to describe an encoding should use its <xref:System.Text.Encoding.WebName%2A>.  
   
  In some cases, the value of the <xref:System.Text.Encoding.BodyName%2A> property corresponds to the international standard that defines that encoding. This doesn't mean that the implementation complies in full with that standard.  
   
@@ -553,6 +560,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -641,6 +652,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.CodePage" />
+        <altmember cref="P:System.Text.Encoding.WindowsCodePage" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -829,6 +842,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
+        <altmember cref="T:System.Text.DecoderFallback" />
+        <altmember cref="T:System.Text.DecoderFallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -929,6 +944,8 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">A value cannot be assigned in a set operation because the current <see cref="T:System.Text.Encoding" /> object is read-only.</exception>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="EncodingName">
@@ -976,6 +993,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.DisplayName" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1029,6 +1050,8 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Text.Encoding.#ctor" />
+        <altmember cref="M:System.Object.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1102,6 +1125,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1175,6 +1201,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1254,6 +1283,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1337,6 +1369,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -1436,6 +1471,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1509,6 +1547,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1592,6 +1633,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1709,6 +1753,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1808,6 +1855,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -1907,6 +1957,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxByteCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -1980,6 +2033,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -2059,6 +2115,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetCharCount">
@@ -2148,6 +2207,9 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="Overload:System.Text.Encoding.GetChars" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2225,6 +2287,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2312,6 +2378,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2407,6 +2477,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -2516,6 +2590,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="GetDecoder">
@@ -2559,6 +2637,11 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         <block subset="none" type="overrides">
           <para>The default implementation returns a <see cref="T:System.Text.Decoder" /> that calls the <see cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" /> and <see cref="M:System.Text.Encoding.GetChars(System.Byte[])" /> methods of the current <see cref="T:System.Text.Encoding" />. You must override this method to return a <see cref="T:System.Text.Decoder" /> that maintains its state between calls.</para>
         </block>
+        <altmember cref="T:System.Text.Decoder" />
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -2602,6 +2685,10 @@ On .NET Core, the <xref:System.Text.Encoding.Default%2A> property always returns
         <block subset="none" type="overrides">
           <para>The default implementation returns a <see cref="T:System.Text.Encoder" /> that calls the <see cref="M:System.Text.Encoding.GetByteCount(System.Char[])" /> and <see cref="M:System.Text.Encoding.GetBytes(System.Char[])" /> methods of the current <see cref="T:System.Text.Encoding" />. You must override this method to return a <see cref="T:System.Text.Encoder" /> that maintains its state between calls.</para>
         </block>
+        <altmember cref="T:System.Text.Encoder" />
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2688,6 +2775,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2754,6 +2845,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
  -or-  
   
  The code page indicated by <paramref name="name" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2840,6 +2934,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="codepage" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -2910,6 +3008,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
  -or-  
   
  The code page indicated by <paramref name="name" /> is not supported by the underlying platform.</exception>
+        <altmember cref="P:System.Text.Encoding.EncoderFallback" />
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="M:System.Text.Encoding.GetEncodings" />
       </Docs>
     </Member>
     <Member MemberName="GetEncodings">
@@ -2965,6 +3066,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -2998,6 +3100,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <summary>Returns the hash code for the current instance.</summary>
         <returns>The hash code for the current instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxByteCount">
@@ -3073,6 +3176,9 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <block subset="none" type="overrides">
           <para>All <see cref="T:System.Text.Encoding" /> implementations must guarantee that no buffer overflow exceptions occur if buffers are sized according to the results of this method's calculations.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetBytes(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetByteCount(System.Char[])" />
+        <altmember cref="M:System.Text.Encoding.GetEncoder" />
       </Docs>
     </Member>
     <Member MemberName="GetMaxCharCount">
@@ -3148,6 +3254,10 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
         <block subset="none" type="overrides">
           <para>All <see cref="T:System.Text.Encoding" /> implementations must guarantee that no buffer overflow exceptions occur if buffers are sized according to the results of this method's calculations.</para>
         </block>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetString(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
       </Docs>
     </Member>
     <Member MemberName="GetPreamble">
@@ -3299,6 +3409,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -3369,6 +3483,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -3453,6 +3571,10 @@ The goal is to save this file, then open and decode it as a binary stream.
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoding.GetChars(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetDecoder" />
+        <altmember cref="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
+        <altmember cref="M:System.Text.Encoding.GetMaxCharCount(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HeaderName">
@@ -3487,11 +3609,11 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you need an encoding for a header name, you should call the <xref:System.Text.Encoding.GetEncoding%2A> method with the <xref:System.Text.Encoding.HeaderName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only e-mail applications need to retrieve such an encoding.  
+ If you need an encoding for a header name, you should call the <xref:System.Text.Encoding.GetEncoding%2A> method with the <xref:System.Text.Encoding.HeaderName%2A> property. Often the method retrieves a different encoding from the test encoding furnished in the call. Generally only email applications need to retrieve such an encoding.  
   
  In some cases, the value of the <xref:System.Text.Encoding.BodyName%2A> property corresponds to the international standard that defines that encoding. This doesn't mean that the implementation complies in full with that standard.  
   
- Note that <xref:System.Text.Encoding.WebName%2A> returns the name to use to describe an encoding. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for an e-mail application, for example. However, use of the property to define the encoding is not recommended.  
+ Note that <xref:System.Text.Encoding.WebName%2A> returns the name to use to describe an encoding. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for an email application, for example. However, use of the property to define the encoding is not recommended.  
   
    
   
@@ -3504,6 +3626,10 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.WebName" />
       </Docs>
     </Member>
     <Member MemberName="IsAlwaysNormalized">
@@ -3545,6 +3671,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.NormalizationForm" />
       </Docs>
     </Member>
     <Member MemberName="IsAlwaysNormalized">
@@ -3589,6 +3716,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.NormalizationForm" />
       </Docs>
     </Member>
     <Member MemberName="IsBrowserDisplay">
@@ -3628,6 +3756,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsBrowserSave" />
       </Docs>
     </Member>
     <Member MemberName="IsBrowserSave">
@@ -3667,6 +3796,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsBrowserDisplay" />
       </Docs>
     </Member>
     <Member MemberName="IsMailNewsDisplay">
@@ -3706,6 +3836,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsMailNewsDisplay" />
       </Docs>
     </Member>
     <Member MemberName="IsMailNewsSave">
@@ -3745,6 +3876,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.IsMailNewsSave" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -3894,6 +4026,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.CodePagesEncodingProvider" />
+        <altmember cref="T:System.Text.EncodingProvider" />
       </Docs>
     </Member>
     <Member MemberName="Unicode">
@@ -3947,6 +4081,9 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UnicodeEncoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
+        <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
       </Docs>
     </Member>
     <Member MemberName="UTF32">
@@ -4001,6 +4138,10 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF32Encoding" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
+        <altmember cref="P:System.Text.Encoding.Unicode" />
+        <altmember cref="P:System.Text.Encoding.BigEndianUnicode" />
       </Docs>
     </Member>
     <Member MemberName="UTF7">
@@ -4048,6 +4189,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF7Encoding" />
+        <altmember cref="P:System.Text.Encoding.UTF8" />
       </Docs>
     </Member>
     <Member MemberName="UTF8">
@@ -4118,6 +4261,8 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.UTF8Encoding" />
+        <altmember cref="M:System.Text.Encoding.GetEncoding(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="WebName">
@@ -4155,7 +4300,7 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
 ## Remarks  
  The <xref:System.Text.Encoding.WebName%2A> property is the same as the <xref:System.Text.EncodingInfo.Name%2A> property.  
   
- Note that <xref:System.Text.Encoding.WebName%2A> returns an IANA-registered name for the encoding. When its value is the name of a standard, the implementation of the encoding might not conform in full to that standard. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for e-mail headers. However, most apps should use <xref:System.Text.Encoding.WebName%2A> instead.  
+ Note that <xref:System.Text.Encoding.WebName%2A> returns an IANA-registered name for the encoding. When its value is the name of a standard, the implementation of the encoding might not conform in full to that standard. The <xref:System.Text.Encoding.HeaderName%2A> property defines a different encoding that might work better for email headers. However, most apps should use <xref:System.Text.Encoding.WebName%2A> instead.  
   
  For more information on the IANA, go to [www.iana.org](http://www.iana.org/).  
   
@@ -4178,6 +4323,10 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.EncodingInfo.Name" />
+        <altmember cref="P:System.Text.Encoding.BodyName" />
+        <altmember cref="P:System.Text.Encoding.EncodingName" />
+        <altmember cref="P:System.Text.Encoding.HeaderName" />
       </Docs>
     </Member>
     <Member MemberName="WindowsCodePage">
@@ -4221,7 +4370,97 @@ Registering an encoding provider by using the <xref:System.Text.Encoding.Registe
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.Encoding.CodePage" />
+        <altmember cref="P:System.Text.EncodingInfo.CodePage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEncoding">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an encoding for the specified code page.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a byte array from one encoding to another.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsAlwaysNormalized">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the current encoding is always normalized.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Encoding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -1489,5 +1489,59 @@
         <permission cref="T:System.UnauthorizedAccessException">You cannot access a <c>FRAME</c> elements or the <c>FRAME</c>'s document if the <c>FRAME</c> is in a different zone than the <c>FRAMESET</c> that contains it. For a full explanation, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a file in the named window.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ResizeTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the size of the window to the specified dimensions.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScrollTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scrolls the window to the designated position.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays or downloads the new content located at the specified URL.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MoveTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the window to the specified coordinates on the screen.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="OpenNew">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a file in a new window.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

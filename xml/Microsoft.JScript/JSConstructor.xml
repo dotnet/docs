@@ -14,6 +14,7 @@
     <summary>Wraps a <see cref="T:Microsoft.JScript.FunctionObject" />.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.Reflection.ConstructorInfo" />
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -33,6 +34,8 @@
         <value>A bitwise combination of the enumeration values.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -52,6 +55,8 @@
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -76,6 +81,8 @@
         <returns>An array of custom attributes that are attached to this method, or, if there are none, an array that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -102,6 +109,8 @@
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -123,6 +132,8 @@
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -143,6 +154,8 @@
         <returns>An array that contains information that matches the signature of this constructor.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -177,6 +190,8 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -213,6 +228,8 @@
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -240,6 +257,8 @@
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -260,6 +279,7 @@
           <see cref="F:System.Reflection.MemberTypes.Constructor" />, because this class derives from <see cref="T:System.Reflection.ConstructorInfo" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -279,6 +299,8 @@
         <value>A handle to the internal metadata representation of this constructor.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -298,6 +320,8 @@
         <value>The name of this constructor.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -317,7 +341,31 @@
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array that contains the custom attributes that are attached to this constructor.</summary>
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the constructor.</summary>
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:System.Reflection.ConstructorInfo" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

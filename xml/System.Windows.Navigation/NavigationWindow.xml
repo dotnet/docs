@@ -172,6 +172,7 @@
         <summary>Adds a child object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">when this method is called. This prevents content from being added to <see cref="T:System.Windows.Navigation.NavigationWindow" /> using [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].</exception>
+        <altmember cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="AddText">
@@ -194,6 +195,7 @@
         <summary>Adds text to the object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">if the text parameter value contains non-whitespace characters.</exception>
+        <altmember cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="BackStack">
@@ -228,6 +230,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
+        <altmember cref="T:System.Windows.Navigation.CustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="BackStackProperty">
@@ -279,6 +283,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoBack" />
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoForward" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBackProperty">
@@ -329,6 +336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoForward" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoBack" />
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoForward" />
       </Docs>
     </Member>
     <Member MemberName="CanGoForwardProperty">
@@ -405,6 +415,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
+        <altmember cref="T:System.Windows.Navigation.CustomContentState" />
       </Docs>
     </Member>
     <Member MemberName="ForwardStackProperty">
@@ -446,6 +458,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
       </Docs>
     </Member>
     <Member MemberName="GoBack">
@@ -466,6 +484,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Navigation.NavigationWindow.GoBack" /> is called when there are no entries in back navigation history.</exception>
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoBack" />
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoForward" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoForward" />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -486,6 +507,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Windows.Navigation.NavigationWindow.GoForward" /> is called when there are no entries in forward navigation history.</exception>
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoForward" />
+        <altmember cref="P:System.Windows.Navigation.NavigationWindow.CanGoBack" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.GoBack" />
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -510,6 +534,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -548,6 +578,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -589,6 +622,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -621,6 +657,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri,System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -653,6 +692,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Uri)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object)" />
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.Navigate(System.Object,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Navigated">
@@ -677,6 +719,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="Navigating">
@@ -701,6 +749,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationFailed">
@@ -725,6 +779,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationProgress">
@@ -749,6 +809,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationStopped" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="NavigationService">
@@ -800,6 +866,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigating" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.Navigated" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.LoadCompleted" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationProgress" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.NavigationFailed" />
+        <altmember cref="E:System.Windows.Navigation.NavigationWindow.FragmentNavigation" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -936,6 +1008,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Navigation.NavigationWindow.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
       </Docs>
     </Member>
     <Member MemberName="SandboxExternalContent">
@@ -1180,6 +1253,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Windows.Navigation.NavigationWindow.Navigate" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">
@@ -1207,5 +1281,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates asynchronously to the specified source content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

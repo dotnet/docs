@@ -10,37 +10,39 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "XML, namespaces"
-  - "XAML, parsing of attributes"
-  - "parsing of attributes"
-  - "XAML, markup extensions"
-  - "attached properties"
+  - "XML [WPF], namespaces"
+  - "XAML [WPF], parsing of attributes"
+  - "parsing of attributes [WPF]"
+  - "XAML [WPF], markup extensions"
+  - "attached properties [WPF]"
   - "tag syntax [XAML]"
-  - "markup extensions"
-  - "XAML, object element syntax"
-  - "XAML, syntax terminology"
-  - "attached events"
-  - "lookup semantics"
-  - "XAML, attached events"
-  - "XAML, content syntax"
-  - "XAML, lookup semantics"
-  - "content syntax"
-  - "object element syntax"
+  - "markup extensions [WPF]"
+  - "XAML [WPF], object element syntax"
+  - "XAML [WPF], syntax terminology"
+  - "attached events [WPF]"
+  - "lookup semantics [WPF]"
+  - "XAML [WPF], attached events"
+  - "XAML [WPF], content syntax"
+  - "XAML [WPF], lookup semantics"
+  - "content syntax [WPF]"
+  - "object element syntax [WPF]"
   - "syntax terminology [XAML]"
-  - "XAML, attached properties"
+  - "XAML [WPF], attached properties"
   - "attributes [XAML], parsing"
-  - "XAML, tag syntax"
-  - "XAML, attribute syntax"
-  - "property element syntax"
+  - "XAML [WPF], tag syntax"
+  - "XAML [WPF], attribute syntax"
+  - "property element syntax [WPF]"
   - "terminology [XAML]"
-  - "namespaces, XML"
+  - "namespaces [WPF], XML"
   - "attribute syntax [XAML]"
-  - "XAML, property element syntax"
+  - "XAML [WPF], property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # XAML Syntax In Detail
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
@@ -322,9 +324,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
  But just like *typeName*.*memberName* form for attributes, *baseTypeName*.*memberName* is poor style in markup, and you should avoid it.  
   
 ## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)   
- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)   
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)   
- [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)   
+ [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
+ [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
+ [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
+ [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
+ [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  
  [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

@@ -209,7 +209,7 @@
     </Member>
     <Member MemberName="TryGetTarget">
       <MemberSignature Language="C#" Value="public bool TryGetTarget (out T target);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTarget(!T target) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTarget([out] !T&amp; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.WeakReference`1.TryGetTarget(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,5 +243,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.WeakReference`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

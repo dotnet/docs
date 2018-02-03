@@ -150,16 +150,22 @@
         <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or <see langword="null" />.</param>
         <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance are of the same type and have identical field values; otherwise, <see langword="false" />. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
+## Remarks
+
+The <xref:System.Attribute.Equals%2A> method uses reflection to retrieve field information for the current instance and the `obj` argument. It then compares field values. 
+
+When implementing your own class derived from <xref:System.Attribute>, you can override the <xref:System.Attribute.Equals%2A> method. Because it uses reflection, we recommend that you do so. However, your override should perform a standard test for reference equality (the two arguments represent the same object instance) or value equality (the two arguments are of the same type and have identical field values). If you want to perform a custom comparison to determine whether two attributes objects are equal, you can override the <xref:System.Attribute.Match%2A> method.   
+
 ## Examples  
- The following code example defines two custom parameter <xref:System.Attribute> classes, then creates several objects of each class and shows the use of the <xref:System.Attribute.Equals%2A> method to compare them.  
+ The following example defines two custom parameter <xref:System.Attribute> classes, then creates several objects of each class and uses the <xref:System.Attribute.Equals%2A> method to compare them.  
   
- [!code-cpp[System.Attribute.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Attribute.Equals/CPP/equals.cpp#1)]
- [!code-csharp[System.Attribute.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Attribute.Equals/CS/equals.cs#1)]
- [!code-vb[System.Attribute.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Attribute.Equals/VB/equals.vb#1)]  
+ [!code-cpp[System.Attribute.Equals](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Attribute.Equals/CPP/equals.cpp)]
+ [!code-csharp[System.Attribute.Equals](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Attribute.Equals/CS/equals.cs)]
+ [!code-vb[System.Attribute.Equals](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Attribute.Equals/VB/equals.vb)]  
   
  ]]></format>
         </remarks>
@@ -202,7 +208,7 @@
  Use the <xref:System.Attribute.GetCustomAttributes%2A> method if you expect more than one value to be returned, or <xref:System.Reflection.AmbiguousMatchException> will be thrown.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -259,7 +265,7 @@
  A match is determined in the same way described in the Return Value section of <xref:System.Type.IsAssignableFrom%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on types, methods, and constructors if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on types, methods, and constructors if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -424,7 +430,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -482,7 +488,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on types, methods, and constructors if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on types, methods, and constructors if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -647,7 +653,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -699,7 +705,7 @@
  The return value contains the custom attributes for ancestors of `element`.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -849,7 +855,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -902,7 +908,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -958,7 +964,7 @@
  The return value contains the custom attributes for ancestors of `element` if `inherit` is `true`.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1015,7 +1021,7 @@
  The return value contains the custom attributes for ancestors of `element`.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1281,7 +1287,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1339,7 +1345,7 @@
  The return value contains the custom attributes for ancestors of `element` if `inherit` is `true`.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns security attributes on methods, constructors, and types if the attributes are stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1603,7 +1609,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns `true` if the assembly has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns `true` if the assembly has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1660,7 +1666,7 @@
  The ancestors of `element` are searched for custom attributes.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1828,7 +1834,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns `true` if the assembly has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns `true` if the assembly has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -1886,7 +1892,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/en-us/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
+>  Starting with the .NET Framework version 2.0, this method returns `true` if a type, method, or constructor has security attributes stored in the new metadata format. Assemblies compiled with version 2.0 or later use the new format. Dynamic assemblies and assemblies compiled with earlier versions of the .NET Framework use the old XML format. See [Emitting Declarative Security Attributes](http://msdn.microsoft.com/library/9eeddee8-ca89-4440-b84b-fd613f590cd5).  
   
    
   
@@ -2049,17 +2055,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines if one <xref:System.Attribute> equals another. Its default implementation is the same as <xref:System.Attribute.Equals%2A>, which performs a value and reference comparison. Override this method to implement support for attribute values, such as flags or bit fields, that consist of components that are meaningful in themselves.  
+ This method determines if one <xref:System.Attribute> equals another. Its default implementation is the same as <xref:System.Attribute.Equals%2A>, which determines whether two attributes are of the same type and have the same field values.
+
+ In general, the <xref:System.Attribute.Equals%2A> method is intended to perform a standard test for reference or value equality. You can override the <xref:System.Attribute.Match%2A> method when you want to perform a custom comparison for equality that is based on some criteria other than that two attribute instances are of the same type and have identifical values. For example, you can override the <xref:System.Attribute.Match%2A> method to compare attributes in the following scenarios:
+
+ - An attribute includes a bit field, and you consider two attribute instances equal if a particular bit is set. For example, a `NumericDisplay` attribute might include a bit field that indicates what numeric formats (such as binary, octal, decimal, and hexadecimal) a client supports. The overridden <xref:System.Attribute.Match%2A> method might consider two instances equal if they support the same numeric format.
+
+ - An attribute includes multiple fields that contain the same kind of information, or it contains an array in which values can be in any order. For example, an `Author` attribute might include multiple fields for author names. The overridden <xref:System.Attribute.Match%2A> method might consider two instances equal if they have the same authors regardless of whether each field is equal to the corresponding field.    
+ 
+ 
+## Example  
+ The following example illustrates the use of <xref:System.Attribute.Match%2A> to create a custom comparison method for attribute values. If defines an `AuthorsAttribute` that internally contains a `List<String>` that stores authors' names. Because the names can occur in any order in the list, it overrides the <xref:System.Attribute.Match%2A> method to compare author names regardless of their position in the list. Note the <xref:System.Attribute.Equals%2A> method, which performs a test for value equality, returns different results from the <xref:System.Attribute.Match%2A> method.   
   
- For example, consider an attribute whose value is a binary field divided into a bit field of flags. Two instances of this attribute have one flag in set in common while all the other flags differ. The <xref:System.Attribute.Equals%2A> method cannot determine that the two instances have the same flag set, but the <xref:System.Attribute.Match%2A> method can.  
-  
-   
-  
-## Examples  
- The following code example illustrates the use of <xref:System.Attribute.Match%2A> in the context of <xref:System.Attribute>.  
-  
- [!code-csharp[Match#1](~/samples/snippets/csharp/VS_Snippets_CLR/Match/CS/match.cs#1)]
- [!code-vb[Match#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Match/VB/match.vb#1)]  
+ [!code-csharp[Match#1](~/samples/snippets/csharp/VS_Snippets_CLR/Match/CS/match.cs)]
+ [!code-vb[Match#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Match/VB/match.vb)]  
   
  ]]></format>
         </remarks>
@@ -2067,7 +2076,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Attribute.GetIDsOfNames">
       <MemberSignature Language="C#" Value="void _Attribute.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2137,7 +2146,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Attribute.GetTypeInfoCount">
       <MemberSignature Language="C#" Value="void _Attribute.GetTypeInfoCount (out uint pcTInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#GetTypeInfoCount(System.UInt32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2166,7 +2175,7 @@
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Attribute.Invoke">
       <MemberSignature Language="C#" Value="void _Attribute.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Attribute.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Attribute.System#Runtime#InteropServices#_Attribute#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2250,5 +2259,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDefined">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether any custom attributes of a specified type are applied to an assembly, module, type member, or method parameter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttribute">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a custom attribute of a specified type applied to an assembly, module, type member, or method parameter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an array of the custom attributes applied to an assembly, module, type member, or method parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

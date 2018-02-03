@@ -52,6 +52,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.EventDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,6 +100,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,6 +152,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -317,6 +323,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -397,6 +405,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -444,6 +454,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -569,6 +582,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="InternalSort">
@@ -618,6 +632,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -668,6 +683,8 @@
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is not a valid index for <see cref="P:System.ComponentModel.EventDescriptorCollection.Item(System.Int32)" />.</exception>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -719,6 +736,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.EventDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -899,6 +918,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -950,6 +970,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1003,6 +1024,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1605,5 +1627,45 @@
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified event.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InternalSort">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the members of this <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EventDescriptorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the members of this <see cref="T:System.ComponentModel.EventDescriptorCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

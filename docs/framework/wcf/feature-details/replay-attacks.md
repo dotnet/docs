@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7a17e040-93cd-4432-81b9-9f62fec78c8f
 caps.latest.revision: 10
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Replay Attacks
 A *replay attack* occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
@@ -38,14 +40,14 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
   
  Mitigations include:  
   
--   Use message mode security with stateful security context tokens (with or without secure conversation enabled). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+-   Use message mode security with stateful security context tokens (with or without secure conversation enabled). [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 -   Configure the service to use transport-level security.  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)   
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)   
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)   
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
+ [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
+ [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
+ [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
  [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

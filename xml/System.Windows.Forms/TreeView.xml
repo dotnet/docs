@@ -60,9 +60,9 @@
  Tree nodes can optionally display check boxes. To display the check boxes, set the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.TreeView> to `true`. The <xref:System.Windows.Forms.TreeNode.Checked%2A> property is set to `true` for tree nodes that are in a checked state.  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within the <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event causes the event to be raised multiple times and can result in unexpected behavior. For example, you might set the <xref:System.Windows.Forms.TreeNode.Checked%2A> property in the event handler when you are recursively updating the child nodes so that the user does not have to expand and check each one individually. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction?displayProperty=nameWithType>. For an example of how to do this, see the Example section of the <xref:System.Windows.Forms.TreeView.AfterCheck> or <xref:System.Windows.Forms.TreeView.BeforeCheck> events.  
+>  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within the <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event causes the event to be raised multiple times and can result in unexpected behavior. For example, you might set the <xref:System.Windows.Forms.TreeNode.Checked%2A> property in the event handler when you are recursively updating the child nodes so that the user does not have to expand and check each one individually. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction.Unknown?displayProperty=nameWithType>. For an example of how to do this, see the Example section of the <xref:System.Windows.Forms.TreeView.AfterCheck> or <xref:System.Windows.Forms.TreeView.BeforeCheck> events.  
   
- You can change the appearance of the <xref:System.Windows.Forms.TreeView> control by setting some of its display and style properties. Setting <xref:System.Windows.Forms.TreeView.ShowPlusMinus%2A> to `true` displays a plus-sign or minus-sign button next to each <xref:System.Windows.Forms.TreeNode> that can be expanded or collapsed, respectively. Setting the <xref:System.Windows.Forms.TreeView.ShowRootLines%2A> property to `true` causes the <xref:System.Windows.Forms.TreeView> to display lines that join all the root tree nodes together. You can display lines that connect child tree nodes to their root node by setting the <xref:System.Windows.Forms.TreeView.ShowLines%2A> property to `true`. Setting the <xref:System.Windows.Forms.TreeView.HotTracking%2A> property to `true` changes the appearance of the tree node labels as the mouse pointer passes over them. When hot-tracked, the tree node labels take on the appearance of a hyperlink. You can also completely customize the appearance of the <xref:System.Windows.Forms.TreeView> control. To do this, set the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property to a value other than <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=nameWithType> and handle the <xref:System.Windows.Forms.TreeView.DrawNode> event.  
+ You can change the appearance of the <xref:System.Windows.Forms.TreeView> control by setting some of its display and style properties. Setting <xref:System.Windows.Forms.TreeView.ShowPlusMinus%2A> to `true` displays a plus-sign or minus-sign button next to each <xref:System.Windows.Forms.TreeNode> that can be expanded or collapsed, respectively. Setting the <xref:System.Windows.Forms.TreeView.ShowRootLines%2A> property to `true` causes the <xref:System.Windows.Forms.TreeView> to display lines that join all the root tree nodes together. You can display lines that connect child tree nodes to their root node by setting the <xref:System.Windows.Forms.TreeView.ShowLines%2A> property to `true`. Setting the <xref:System.Windows.Forms.TreeView.HotTracking%2A> property to `true` changes the appearance of the tree node labels as the mouse pointer passes over them. When hot-tracked, the tree node labels take on the appearance of a hyperlink. You can also completely customize the appearance of the <xref:System.Windows.Forms.TreeView> control. To do this, set the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property to a value other than <xref:System.Windows.Forms.TreeViewDrawMode.Normal?displayProperty=nameWithType> and handle the <xref:System.Windows.Forms.TreeView.DrawNode> event.  
   
 > [!NOTE]
 >  When setting the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A>, <xref:System.Windows.Forms.TreeView.Scrollable%2A>, <xref:System.Windows.Forms.TreeView.ImageIndex%2A>, and <xref:System.Windows.Forms.TreeView.SelectedImageIndex%2A> properties at run time, the <xref:System.Windows.Forms.TreeView> handle is recreated (see <xref:System.Windows.Forms.Control.RecreateHandle%2A?displayProperty=nameWithType>) to update the control's appearance. This causes all tree nodes to be collapsed, except for the selected <xref:System.Windows.Forms.TreeNode>.  
@@ -83,6 +83,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeNode" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -111,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
     <Member MemberName="AfterCheck">
@@ -131,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within a <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event handler causes the event to be raised multiple times and can result in unexpected behavior. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction?displayProperty=nameWithType>.  
+ Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within a <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event handler causes the event to be raised multiple times and can result in unexpected behavior. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction.Unknown?displayProperty=nameWithType>.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -146,6 +148,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.CheckBoxes" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCheck" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AfterCollapse">
@@ -179,6 +185,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCollapse" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AfterExpand">
@@ -213,6 +222,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeExpand" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AfterLabelEdit">
@@ -246,6 +258,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="AfterSelect">
@@ -281,6 +296,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeSelect" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Control.MouseUp" />
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsSelected" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -299,6 +319,7 @@
         <summary>Gets or sets the background color for the control.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -437,7 +458,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within the <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event causes the event to be raised multiple times and can result in unexpected behavior. For example, you might set the <xref:System.Windows.Forms.TreeNode.Checked%2A> property in the event handler when you are recursively updating the child nodes, so that the user does not have to expand and check each one individually. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction?displayProperty=nameWithType>.  
+>  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=nameWithType> property from within the <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event causes the event to be raised multiple times and can result in unexpected behavior. For example, you might set the <xref:System.Windows.Forms.TreeNode.Checked%2A> property in the event handler when you are recursively updating the child nodes, so that the user does not have to expand and check each one individually. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction.Unknown?displayProperty=nameWithType>.  
   
  For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -452,6 +473,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.CheckBoxes" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCheck" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeCollapse">
@@ -489,6 +514,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCollapse" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeExpand">
@@ -526,6 +554,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterExpand" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeLabelEdit">
@@ -562,6 +593,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeforeSelect">
@@ -596,6 +630,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterSelect" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
@@ -632,6 +669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.EndUpdate" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -675,6 +713,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CheckBoxes">
@@ -722,6 +761,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.Checked" />
       </Docs>
     </Member>
     <Member MemberName="CollapseAll">
@@ -763,6 +803,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Collapse" />
+        <altmember cref="M:System.Windows.Forms.TreeView.ExpandAll" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -781,6 +823,7 @@
       <Docs>
         <summary>Creates a handle for the control.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -818,6 +861,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -853,7 +897,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -912,7 +956,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The nodes of a <xref:System.Windows.Forms.TreeView> are typically drawn by the operating system. The <xref:System.Windows.Forms.TreeView.DrawMode%2A> property lets you customize the appearance of the nodes. To do this, set <xref:System.Windows.Forms.TreeView.DrawMode%2A> to <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=nameWithType> or <xref:System.Windows.Forms.TreeViewDrawMode?displayProperty=nameWithType> and provide a handler for the <xref:System.Windows.Forms.TreeView.DrawNode> event. This is called owner drawing.  
+ The nodes of a <xref:System.Windows.Forms.TreeView> are typically drawn by the operating system. The <xref:System.Windows.Forms.TreeView.DrawMode%2A> property lets you customize the appearance of the nodes. To do this, set <xref:System.Windows.Forms.TreeView.DrawMode%2A> to <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll?displayProperty=nameWithType> or <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText?displayProperty=nameWithType> and provide a handler for the <xref:System.Windows.Forms.TreeView.DrawNode> event. This is called owner drawing.  
   
    
   
@@ -930,6 +974,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TreeViewDrawMode" /> value.</exception>
+        <altmember cref="T:System.Windows.Forms.TreeViewDrawMode" />
+        <altmember cref="E:System.Windows.Forms.TreeView.DrawNode" />
       </Docs>
     </Member>
     <Member MemberName="DrawNode">
@@ -982,6 +1028,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.DrawMode" />
+        <altmember cref="T:System.Windows.Forms.DrawTreeNodeEventArgs" />
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
+        <altmember cref="T:System.Windows.Forms.TreeViewDrawMode" />
       </Docs>
     </Member>
     <Member MemberName="EndUpdate">
@@ -1018,6 +1068,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.BeginUpdate" />
       </Docs>
     </Member>
     <Member MemberName="ExpandAll">
@@ -1055,6 +1106,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.Expand" />
+        <altmember cref="M:System.Windows.Forms.TreeView.CollapseAll" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1073,6 +1126,7 @@
         <summary>Gets or sets the foreground color of the control.</summary>
         <value>The foreground <see cref="T:System.Drawing.Color" /> of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultForeColor" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="FullRowSelect">
@@ -1168,6 +1222,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="GetNodeAt">
@@ -1208,6 +1263,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="GetNodeCount">
@@ -1247,6 +1303,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -1290,6 +1347,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.SelectedNode" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -1667,6 +1725,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ItemHeight">
@@ -1706,6 +1765,7 @@
  -or-  
   
  The assigned value is greater than the <see cref="F:System.Int16.MaxValue" /> value.</exception>
+        <altmember cref="F:System.Int16.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="LabelEdit">
@@ -1746,6 +1806,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TreeNode.BeginEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="LineColor">
@@ -1815,6 +1877,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeMouseDoubleClick">
@@ -1850,6 +1913,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="NodeMouseHover">
@@ -1931,6 +1995,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
+        <altmember cref="P:System.Windows.Forms.TreeView.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterCheck">
@@ -1964,6 +2030,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCheck" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCheck" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterCollapse">
@@ -1997,6 +2066,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCollapse" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCollapse" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterExpand">
@@ -2030,6 +2102,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterExpand" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeExpand" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterLabelEdit">
@@ -2063,6 +2138,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterSelect">
@@ -2096,6 +2174,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterSelect" />
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeSelect" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeCheck">
@@ -2129,6 +2210,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCheck" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCheck" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeCollapse">
@@ -2162,6 +2246,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeCollapse" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterCollapse" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeExpand">
@@ -2195,6 +2282,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeExpand" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterExpand" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeLabelEdit">
@@ -2228,6 +2318,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnBeforeLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterLabelEdit(System.Windows.Forms.NodeLabelEditEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnBeforeSelect">
@@ -2261,6 +2354,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.BeforeSelect" />
+        <altmember cref="E:System.Windows.Forms.TreeView.AfterSelect" />
+        <altmember cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnDrawNode">
@@ -2294,6 +2390,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnDrawNode(System.Windows.Forms.DrawTreeNodeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnDrawNode(System.Windows.Forms.DrawTreeNodeEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.DrawNode" />
+        <altmember cref="T:System.Windows.Forms.DrawTreeNodeEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -2393,6 +2491,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TreeView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TreeView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.TreeView.ItemDrag" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -2826,6 +2925,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.FullPath" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftLayout">
@@ -2992,6 +3092,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The index assigned value is less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.TreeView.ImageList" />
+        <altmember cref="P:System.Windows.Forms.TreeView.ImageIndex" />
       </Docs>
     </Member>
     <Member MemberName="SelectedImageKey">
@@ -3085,6 +3187,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.TreeNode" />
       </Docs>
     </Member>
     <Member MemberName="ShowLines">
@@ -3166,6 +3269,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.ToolTipText" />
       </Docs>
     </Member>
     <Member MemberName="ShowPlusMinus">
@@ -3208,6 +3312,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.ShowRootLines" />
       </Docs>
     </Member>
     <Member MemberName="ShowRootLines">
@@ -3248,6 +3353,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeView.ShowPlusMinus" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3476,6 +3582,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3495,6 +3602,7 @@
         <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
         <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Component.ToString" />
       </Docs>
     </Member>
     <Member MemberName="TreeViewNodeSorter">
@@ -3542,6 +3650,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
     <Member MemberName="VisibleCount">
@@ -3575,11 +3684,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TreeNode.IsVisible" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeView.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3599,5 +3709,23 @@
         <permission cref="T:System.Security.Permissions.SecurityPermissionFlag">for access to unmanaged code when getting the property value. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNodeAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the tree node that is at the specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides node information, given a point.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

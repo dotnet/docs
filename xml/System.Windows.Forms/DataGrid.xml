@@ -145,6 +145,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="T:System.Data.DataView" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.DataRow" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -174,6 +178,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumnCollection" />
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="T:System.Data.DataView" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Windows.Forms.GridTableStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="AllowNavigation">
@@ -293,6 +303,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Expression" />
+        <altmember cref="P:System.Data.DataView.Sort" />
+        <altmember cref="P:System.Data.DataViewSetting.Sort" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.AllowSorting" />
       </Docs>
     </Member>
     <Member MemberName="AlternatingBackColor">
@@ -358,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AllowNavigation" />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -394,6 +410,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackgroundColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColor">
@@ -428,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundColorChanged">
@@ -613,6 +631,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -638,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -752,6 +772,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
       </Docs>
     </Member>
     <Member MemberName="CaptionFont">
@@ -792,6 +814,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
       </Docs>
     </Member>
     <Member MemberName="CaptionForeColor">
@@ -819,6 +843,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
       </Docs>
     </Member>
     <Member MemberName="CaptionText">
@@ -856,6 +882,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionFont" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
       </Docs>
     </Member>
     <Member MemberName="CaptionVisible">
@@ -957,6 +987,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.IsExpanded(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnHeadersVisible">
@@ -990,6 +1021,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.RowHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="ColumnStartedEditing">
@@ -1082,6 +1118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="CreateGridColumn">
@@ -1129,6 +1166,8 @@
         <summary>Creates a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> using the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
         <returns>The new <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridColumnStyle" />
+        <altmember cref="T:System.Windows.Forms.GridColumnStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCell">
@@ -1171,6 +1210,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridCell" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.FirstVisibleColumn" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCellChanged">
@@ -1251,6 +1292,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">There is no <see cref="T:System.Windows.Forms.CurrencyManager" />.</exception>
+        <altmember cref="T:System.Windows.Forms.CurrencyManager" />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -1358,6 +1400,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataViewManager" />
+        <altmember cref="M:System.Windows.Forms.DataGrid.SetDataBinding(System.Object,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -1429,6 +1475,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataViewManager" />
+        <altmember cref="T:System.Data.DataView" />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -1462,6 +1512,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.SetDataBinding(System.Object,System.String)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -1559,6 +1612,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -1584,6 +1638,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -1614,6 +1669,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.Expand(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="FirstVisibleColumn">
@@ -1653,6 +1709,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="FlatMode">
@@ -1716,6 +1773,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1778,6 +1836,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCurrentCellBounds" />
       </Docs>
     </Member>
     <Member MemberName="GetCellBounds">
@@ -1818,6 +1877,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCurrentCellBounds" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentCellBounds">
@@ -1853,6 +1914,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.GetCellBounds(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetOutputTextDelimiter">
@@ -1930,6 +1992,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is not set.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.GridLineStyle" />
       </Docs>
     </Member>
     <Member MemberName="GridLineStyle">
@@ -1962,6 +2025,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.GridLineColor" />
       </Docs>
     </Member>
     <Member MemberName="GridVScrolled">
@@ -2013,6 +2077,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">While trying to set the property, a <see langword="Color.Empty" /> was passed.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.HeaderForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
       </Docs>
     </Member>
     <Member MemberName="HeaderFont">
@@ -2065,6 +2131,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FlatMode" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.HeaderBackColor" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -2103,6 +2171,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="HitTest">
@@ -2143,6 +2212,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.MouseDown" />
       </Docs>
     </Member>
     <Member MemberName="HorizScrollBar">
@@ -2161,6 +2231,7 @@
         <summary>Gets the horizontal scroll bar for the grid.</summary>
         <value>The <see cref="T:System.Windows.Forms.ScrollBar" /> for the grid.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.VertScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="IsExpanded">
@@ -2195,6 +2266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.Collapse(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -2272,6 +2344,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.CurrentCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridCell" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2340,6 +2414,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.LinkColor" />
       </Docs>
     </Member>
     <Member MemberName="LinkHoverColor">
@@ -2490,6 +2565,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.NavigateBack" />
       </Docs>
     </Member>
     <Member MemberName="OnAllowNavigationChanged">
@@ -2558,7 +2634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnBackColorChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2612,7 +2688,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnBindingContextChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2708,7 +2784,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnDataSourceChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2783,7 +2859,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnFontChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2816,7 +2892,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnForeColorChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2849,7 +2925,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnHandleCreated%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2882,7 +2958,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnHandleDestroyed%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2915,7 +2991,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnKeyDown%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2948,7 +3024,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnKeyPress%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2981,7 +3057,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnLayout%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3014,7 +3090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnLeave%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3047,7 +3123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
    
   
@@ -3087,7 +3163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3118,7 +3194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3149,7 +3225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3180,7 +3256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3232,7 +3308,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3291,7 +3367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnParentRowsLabelStyleChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3345,7 +3421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.DataGrid.OnReadOnlyChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3378,7 +3454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3541,6 +3617,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The enumerator was not valid.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AllowNavigation" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsVisible" />
       </Docs>
     </Member>
     <Member MemberName="ParentRowsLabelStyleChanged">
@@ -3673,6 +3753,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The property value is less than 0.</exception>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.PreferredRowHeight" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRowHeight">
@@ -3707,6 +3789,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.PreferredColumnWidth" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -3764,7 +3848,7 @@
     </Member>
     <Member MemberName="ProcessKeyPreview">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGrid.ProcessKeyPreview(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3856,6 +3940,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyChanged">
@@ -3884,6 +3969,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ResetAlternatingBackColor">
@@ -3918,6 +4004,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AlternatingBackColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetBackColor">
@@ -3986,6 +4073,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.AlternatingBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.BackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionBackColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.CaptionForeColor" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.ForeColor" />
+        <altmember cref="M:System.Windows.Forms.DataGrid.ResetAlternatingBackColor" />
       </Docs>
     </Member>
     <Member MemberName="ResetGridLineColor">
@@ -4315,6 +4408,10 @@
         <value>
           <see langword="true" /> if row headers are visible; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.ParentRowsVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.RowHeaderWidth" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
       </Docs>
     </Member>
     <Member MemberName="RowHeaderWidth">
@@ -4522,6 +4619,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">One or more of the arguments are invalid.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSource" /> argument is <see langword="null" />.</exception>
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataMember" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.DataSource" />
+        <altmember cref="T:System.Data.DataSet" />
+        <altmember cref="T:System.Data.DataView" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAlternatingBackColor">
@@ -4765,6 +4866,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.DataGrid.ResetLinkHoverColor" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeParentRowsBackColor">
@@ -4946,6 +5048,7 @@
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the Control, if any.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Site" />
       </Docs>
     </Member>
     <Member MemberName="SubObjectsSiteChange">
@@ -5025,6 +5128,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataColumn" />
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Windows.Forms.DataGridTableStyle" />
+        <altmember cref="T:System.Windows.Forms.GridTableStylesCollection" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -5152,6 +5259,7 @@
         <summary>Gets the vertical scroll bar of the control.</summary>
         <value>The vertical <see cref="T:System.Windows.Forms.ScrollBar" /> of the grid.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.HorizScrollBar" />
       </Docs>
     </Member>
     <Member MemberName="VisibleColumnCount">
@@ -5189,6 +5297,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGrid.FirstVisibleColumn" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleRowCount" />
       </Docs>
     </Member>
     <Member MemberName="VisibleRowCount">
@@ -5226,7 +5336,54 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridTableStyle.RowHeadersVisible" />
+        <altmember cref="P:System.Windows.Forms.DataGrid.VisibleColumnCount" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets information about the <see cref="T:System.Windows.Forms.DataGrid" /> control at a specified point on the screen.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ColumnStartedEditing">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> control that the user has begun editing a column.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCellBounds">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that specifies the four corners of a cell.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateGridColumn">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> that is added to the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of a specified cell.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

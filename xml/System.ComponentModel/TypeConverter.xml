@@ -93,6 +93,10 @@
   
  For more information about type converters for general (non-XAML) purposes, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada).</para>
     </block>
+    <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+    <altmember cref="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -205,6 +209,7 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, so always check it. Also, properties on the context object can return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -292,6 +297,7 @@
         <block subset="none" type="overrides">
           <para>Override this method to provide your own conversion requirements.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -378,6 +384,7 @@
   
  For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromInvariantString">
@@ -418,6 +425,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromInvariantString">
@@ -462,6 +470,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromString">
@@ -551,6 +560,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromString">
@@ -597,6 +607,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -698,6 +709,7 @@
   
  For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToInvariantString">
@@ -740,6 +752,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToInvariantString">
@@ -784,6 +797,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -873,6 +887,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToString">
@@ -919,6 +934,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed.</exception>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -960,6 +976,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -1008,6 +1025,8 @@
   
  The dictionary provided by the <paramref name="propertyValues" /> parameter has a series of name/value pairs, one for each property returned from <see cref="M:System.ComponentModel.TypeConverter.GetProperties(System.Object)" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Collections.IDictionary" />
       </Docs>
     </Member>
     <Member MemberName="GetConvertFromException">
@@ -1151,6 +1170,7 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, so always check it. Also, properties on the context object can return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -1237,6 +1257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -1295,6 +1316,8 @@
   
 -   If an <see cref="T:System.Attribute" /> instance is specified and it is the default property, it is included in the returned array even if there is no instance of the <see cref="T:System.Attribute" /> in the property.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesSupported">
@@ -1377,6 +1400,7 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, so always check it. Also, properties on the context object can return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -1460,6 +1484,7 @@
         <block subset="none" type="overrides">
           <para>Override this method if the type you want to convert supports standard values.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -1546,6 +1571,7 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, so always check it. Also, properties on the context object can return <see langword="null" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -1621,6 +1647,7 @@
         <block subset="none" type="overrides">
           <para>Override this method if the type you want to convert supports standard values.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -1678,6 +1705,7 @@
   
  You can write your own <c>WillConvertSucceed</c> method by wrapping the <see cref="Overload:System.ComponentModel.TypeConverter.ConvertTo" /> and <see cref="Overload:System.ComponentModel.TypeConverter.ConvertFrom" /> methods in exception blocks.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.EnumConverter" />
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -1742,6 +1770,8 @@
   
  The <see cref="M:System.ComponentModel.TypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" /> method is used to validate a value within the type rather than to determine if <paramref name="value" /> can be converted to the given type. For example, <see cref="M:System.ComponentModel.TypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)" /> can be used to determine if a given value is valid for an enumeration type. For an example, see <see cref="T:System.ComponentModel.EnumConverter" />.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
+        <altmember cref="T:System.ComponentModel.EnumConverter" />
       </Docs>
     </Member>
     <Member MemberName="SortProperties">
@@ -1783,7 +1813,169 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStandardValuesSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether this object supports a standard set of values that can be picked from a list.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertFromString">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified text to an object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetStandardValuesExclusive">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the collection of standard values returned from <see cref="M:System.ComponentModel.TypeConverter.GetStandardValues" /> is an exclusive list.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CanConvertFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether this converter can convert an object of one type to the type of this converter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertTo">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the given value object to the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsValid">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the given value object is valid for this type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertFromInvariantString">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value to a type of this converter, using the invariant culture.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CanConvertTo">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether this converter can convert the object to the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCreateInstanceSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether changing a value on this object requires a call to the <see cref="M:System.ComponentModel.TypeConverter.CreateInstance(System.Collections.IDictionary)" /> method to create a new value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the given value to the type of this converter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPropertiesSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether this object supports properties.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertToInvariantString">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified value to a culture-invariant string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertToString">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified value to a string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Re-creates an <see cref="T:System.Object" /> given a set of property values for the object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetStandardValues">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of standard values for the data type this type converter is designed for.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of properties for the type of array specified by the value parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
+ If the key was created as a named curve, the <xref:System.Security.Cryptography.ECParameters.Curve?displayProperty=nameWithType> field contains named curve parameters;          otherwise,  it contains explicit parameters.  
   
  ]]></format>
         </remarks>
@@ -222,7 +222,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See <xref:System.Security.Cryptography.ECKeyXmlFormat?displayProperty=nameWithType> for information about the XML format that this method uses.  
+ See <xref:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050?displayProperty=nameWithType> for information about the XML format that this method uses.  
   
  ]]></format>
         </remarks>

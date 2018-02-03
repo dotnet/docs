@@ -49,6 +49,8 @@
     <block subset="none" type="overrides">
       <para>You do not typically inherit from <see cref="T:System.Windows.Forms.TextBoxBase" />. To create your own text control class, inherit from <see cref="T:System.Windows.Forms.TextBox" /> or <see cref="T:System.Windows.Forms.RichTextBox" />.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.TextBox" />
+    <altmember cref="T:System.Windows.Forms.RichTextBox" />
   </Docs>
   <Members>
     <Member MemberName="AcceptsTab">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBox.AcceptsReturn" />
       </Docs>
     </Member>
     <Member MemberName="AcceptsTabChanged">
@@ -111,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -125,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AcceptsTab" />
       </Docs>
     </Member>
     <Member MemberName="AppendText">
@@ -162,6 +166,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -281,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ForeColor" />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -477,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -491,6 +498,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CanEnableIme">
@@ -553,6 +561,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -587,6 +600,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.ClearUndo" />
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -621,6 +639,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -649,7 +672,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -696,6 +719,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="CreateHandle">
@@ -733,6 +761,8 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.CreateParams" />
+        <altmember cref="P:System.Windows.Forms.Control.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -767,6 +797,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Undo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCursor">
@@ -810,6 +845,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="DeselectAll">
@@ -893,6 +929,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BackColor" />
       </Docs>
     </Member>
     <Member MemberName="GetCharFromPosition">
@@ -925,6 +962,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetCharIndexFromPosition">
@@ -957,6 +998,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexFromLine">
@@ -989,6 +1034,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="lineNumber" /> parameter is less than zero.</exception>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
       </Docs>
     </Member>
     <Member MemberName="GetFirstCharIndexOfCurrentLine">
@@ -1040,6 +1089,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionFromCharIndex">
@@ -1069,6 +1122,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetLineFromCharIndex(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.GetFirstCharIndexFromLine(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -1129,7 +1186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1143,6 +1200,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.HideSelection" />
       </Docs>
     </Member>
     <Member MemberName="ImeModeBase">
@@ -1161,6 +1219,7 @@
         <summary>Gets or sets the Input Method Editor (IME) mode of a control.</summary>
         <value>The IME mode of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -1242,6 +1301,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -1355,7 +1415,7 @@
 ## Remarks  
  If you change the <xref:System.Windows.Forms.TextBoxBase.Text%2A> property programmatically, the <xref:System.Windows.Forms.TextBoxBase.Modified%2A> property reverts to `false`. This does not raise the <xref:System.Windows.Forms.TextBoxBase.ModifiedChanged> event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1369,6 +1429,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Modified" />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1399,7 +1460,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.RichTextBox> control does not raise a <xref:System.Windows.Forms.TextBoxBase.Click> event for right clicks. The <xref:System.Windows.Forms.TextBoxBase.MouseClick> event provides the functional equivalent.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1484,6 +1545,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Lines" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.WordWrap" />
+        <altmember cref="P:System.Windows.Forms.TextBox.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="MultilineChanged">
@@ -1504,7 +1568,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -1518,6 +1582,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="OnAcceptsTabChanged">
@@ -1542,7 +1607,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnAcceptsTabChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1551,6 +1616,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnAcceptsTabChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnAcceptsTabChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AcceptsTab" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.AcceptsTabChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnBorderStyleChanged">
@@ -1575,7 +1642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnBorderStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1584,6 +1651,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnBorderStyleChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnBorderStyleChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.BorderStyle" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.BorderStyleChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1605,6 +1674,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnFontChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1626,6 +1696,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHandleDestroyed">
@@ -1647,6 +1718,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnHideSelectionChanged">
@@ -1671,7 +1743,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnHideSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1680,6 +1752,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnHideSelectionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnHideSelectionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.HideSelection" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.HideSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnModifiedChanged">
@@ -1704,7 +1778,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnModifiedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1713,6 +1787,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnModifiedChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnModifiedChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Modified" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.ModifiedChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1758,7 +1834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnMultilineChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1767,6 +1843,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnMultilineChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnMultilineChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.MultilineChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -1819,7 +1897,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Windows.Forms.TextBoxBase.OnReadOnlyChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1828,6 +1906,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.TextBoxBase.OnReadOnlyChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBoxBase.OnReadOnlyChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ReadOnly" />
+        <altmember cref="E:System.Windows.Forms.TextBoxBase.ReadOnlyChanged" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1849,6 +1929,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnTextChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -2025,11 +2106,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxBase.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2074,6 +2156,7 @@
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2128,7 +2211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2142,6 +2225,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="ScrollToCaret">
@@ -2225,6 +2309,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="start" /> parameter is less than zero.</exception>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.SelectAll" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionLength" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2301,6 +2389,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionLength" />
       </Docs>
     </Member>
     <Member MemberName="SelectionLength">
@@ -2347,6 +2437,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than zero.</exception>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectionStart" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.SelectedText" />
       </Docs>
     </Member>
     <Member MemberName="SelectionStart">
@@ -2549,6 +2641,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Lines" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Multiline" />
       </Docs>
     </Member>
     <Member MemberName="TextLength">
@@ -2588,6 +2682,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.Text" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -2644,11 +2739,16 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Cut" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Copy" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Paste" />
+        <altmember cref="P:System.Windows.Forms.TextBoxBase.CanUndo" />
+        <altmember cref="M:System.Windows.Forms.TextBoxBase.Clear" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBoxBase.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2665,6 +2765,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
     <Member MemberName="WordWrap">

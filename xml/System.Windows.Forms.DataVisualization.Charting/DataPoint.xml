@@ -295,7 +295,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValueXY">
-      <MemberSignature Language="C#" Value="public void SetValueXY (object xValue, object[] yValue);" />
+      <MemberSignature Language="C#" Value="public void SetValueXY (object xValue, params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueXY(object xValue, object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueXY(System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -341,7 +341,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetValueY">
-      <MemberSignature Language="C#" Value="public void SetValueY (object[] yValue);" />
+      <MemberSignature Language="C#" Value="public void SetValueY (params object[] yValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueY(object[] yValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataPoint.SetValueY(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -478,5 +478,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataPoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

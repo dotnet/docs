@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Data.XmlDataProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -226,6 +227,7 @@
         <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in this collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in this collection.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Data.XmlNamespaceMappingCollection.ProtectedGetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -275,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Data.XmlNamespaceMappingCollection.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Remove">

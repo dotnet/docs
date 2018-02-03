@@ -20,10 +20,10 @@ namespace Examples.SmptExamples.Sync
 			string from = "ben@contoso.com";
 			MailMessage message = new MailMessage(from, to);
 			message.Subject = "Using the new SMTP client.";
-			message.Body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+			message.Body = @"Using this new feature, you can send an email message from an application very easily.";
 			SmtpClient client = new SmtpClient(server);
 			// Credentials are necessary if the server requires the client 
-			// to authenticate before it will send e-mail on the client's behalf.
+			// to authenticate before it will send email on the client's behalf.
 			client.UseDefaultCredentials = true;
                         client.EnableSsl = true;
 			client.Send(message);

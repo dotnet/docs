@@ -1,47 +1,28 @@
 ---
 title: "Property Procedures (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "Set statement, Property procedures"
+  - "Set statement [Visual Basic], Property procedures"
   - "Visual Basic code, procedures"
-  - "return values, Property procedures"
-  - "syntax, Property procedures"
-  - "procedures, property"
+  - "return values [Visual Basic], Property procedures"
+  - "syntax [Visual Basic], Property procedures"
+  - "procedures [Visual Basic], property"
   - "Visual Basic code, properties"
-  - "procedures, calling"
+  - "procedures [Visual Basic], calling"
   - "properties [Visual Basic], custom"
   - "property procedures"
-  - "Get statement, property procedures"
+  - "Get statement [Visual Basic], property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Property Procedures (Visual Basic)
 A property procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that manipulate a custom property on a module, class, or structure. Property procedures are also known as *property accessors*.  
@@ -129,13 +110,13 @@ End Property
  [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
   
 ## See Also  
- [Procedures](./index.md)   
- [Function Procedures](./function-procedures.md)   
- [Operator Procedures](./operator-procedures.md)   
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)   
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)   
- [How to: Create a Property](./how-to-create-a-property.md)   
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)   
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)   
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)   
+ [Procedures](./index.md)  
+ [Function Procedures](./function-procedures.md)  
+ [Operator Procedures](./operator-procedures.md)  
+ [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
+ [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
+ [How to: Create a Property](./how-to-create-a-property.md)  
+ [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
+ [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
+ [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)  
  [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

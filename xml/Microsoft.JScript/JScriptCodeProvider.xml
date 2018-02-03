@@ -19,6 +19,9 @@
     <summary>Provides access to instances of the JScript code generator and code compiler.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+    <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
+    <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +38,10 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptCodeProvider" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreateCompiler">
@@ -55,6 +62,9 @@
         <returns>An instance of the JScript code compiler.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
       </Docs>
     </Member>
     <Member MemberName="CreateGenerator">
@@ -75,6 +85,9 @@
         <returns>An instance of the JScript code generator.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
       </Docs>
     </Member>
     <Member MemberName="FileExtension">
@@ -94,6 +107,10 @@
         <value>The string literal "js".</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+        <altmember cref="T:System.CodeDom.Compiler.ICodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeCompiler" />
+        <altmember cref="T:System.CodeDom.Compiler.CodeDomProvider" />
       </Docs>
     </Member>
   </Members>

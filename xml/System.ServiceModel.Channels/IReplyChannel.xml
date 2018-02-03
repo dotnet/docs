@@ -242,7 +242,7 @@
     </Member>
     <Member MemberName="EndTryReceiveRequest">
       <MemberSignature Language="C#" Value="public bool EndTryReceiveRequest (IAsyncResult result, out System.ServiceModel.Channels.RequestContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndTryReceiveRequest(class System.IAsyncResult result, class System.ServiceModel.Channels.RequestContext context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndTryReceiveRequest(class System.IAsyncResult result, [out] class System.ServiceModel.Channels.RequestContext&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IReplyChannel.EndTryReceiveRequest(System.IAsyncResult,System.ServiceModel.Channels.RequestContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -412,7 +412,7 @@
     </Member>
     <Member MemberName="TryReceiveRequest">
       <MemberSignature Language="C#" Value="public bool TryReceiveRequest (TimeSpan timeout, out System.ServiceModel.Channels.RequestContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveRequest(valuetype System.TimeSpan timeout, class System.ServiceModel.Channels.RequestContext context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveRequest(valuetype System.TimeSpan timeout, [out] class System.ServiceModel.Channels.RequestContext&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IReplyChannel.TryReceiveRequest(System.TimeSpan,System.ServiceModel.Channels.RequestContext@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -498,5 +498,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the context of the request received, if one is available</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceiveRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to receive an available request.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

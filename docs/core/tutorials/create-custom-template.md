@@ -9,6 +9,8 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 519b910a-6efe-4394-9b81-0546aa3e7462
+ms.workload: 
+  - dotnetcore
 ---
 
 # Create a custom template for dotnet new
@@ -35,7 +37,7 @@ If you wish to use the downloaded sample with file system distribution, do the f
 
 ## Create a template from a project
 
-Use an existing project that you've confirmed it compiles and runs, or create a new console app project in a folder on your hard drive. This tutorial assumes that the name of the project folder is *GarciaSoftware.ConsoleTemplate.CSharp* stored at *Documents/Templates* in the user's profile. The tutorial project template name is in the format *\<Company Name>.\<Template Type>.\<Programming Language>*, but you're free to name your project and template anything you wish.
+Use an existing project that you've confirmed compiles and runs, or create a new console app project in a folder on your hard drive. This tutorial assumes that the name of the project folder is *GarciaSoftware.ConsoleTemplate.CSharp* stored at *Documents/Templates* in the user's profile. The tutorial project template name is in the format *\<Company Name>.\<Template Type>.\<Programming Language>*, but you're free to name your project and template anything you wish.
 
 1. Add a folder to the root of the project named *.template.config*.
 1. Inside the *.template.config* folder, create a *template.json* file to configure your template. For more information and member definitions for the *template.json* file, see the [Custom templates for dotnet new](../tools/custom-templates.md#templatejson) topic and the [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template).

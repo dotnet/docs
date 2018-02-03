@@ -1,40 +1,21 @@
 ---
 title: "Type &#39;&lt;typename&gt;&#39; is not defined"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc30002"
   - "bc30002"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30002"
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type &#39;&lt;typename&gt;&#39; is not defined
 The statement has made reference to a type that has not been defined. You can define a type in a declaration statement such as `Enum`, `Structure`, `Class`, or `Interface`.  
@@ -54,9 +35,9 @@ The statement has made reference to a type that has not been defined. You can de
 -   Ensure that the type is in an assembly that is part of the targeted .NET Framework profile. For more information, see [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
   
 ## See Also  
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
+ [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
+ [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
+ [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
  [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

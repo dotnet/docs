@@ -33,7 +33,7 @@
   <Members>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public void Create (string RootWeb, string PhysicalDirectory, string VirtualDirectory, out string Error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string RootWeb, string PhysicalDirectory, string VirtualDirectory, string Error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string RootWeb, string PhysicalDirectory, string VirtualDirectory, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -73,7 +73,7 @@
     </Member>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete (string RootWeb, string PhysicalDirectory, string VirtualDirectory, out string Error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(string RootWeb, string PhysicalDirectory, string VirtualDirectory, string Error) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(string RootWeb, string PhysicalDirectory, string VirtualDirectory, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

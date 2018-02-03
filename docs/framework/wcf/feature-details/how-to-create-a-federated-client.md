@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, federation"
   - "federation"
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Create a Federated Client
 In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client for a *federated service* consists of three main steps:  
@@ -161,13 +166,13 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
  If service certificates must be specified for communicating with any of the security token services, typically because certificate negotiation is not being used, they can be specified using the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property of the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential> class. The <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate%2A> method takes a <xref:System.Uri> and an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> as parameters. The specified certificate is used when communicating with endpoints at the specified URI. Alternatively, you can use the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate%2A> method to add a certificate to the collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property.  
   
 > [!NOTE]
->  The client idea of certificates that are scoped to a given URI applies only to applications that are making outbound calls to services that expose endpoints at those URIs. It does not apply to certificates that are used to sign issued tokens, such as those configured on the server in the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
+>  The client idea of certificates that are scoped to a given URI applies only to applications that are making outbound calls to services that expose endpoints at those URIs. It does not apply to certificates that are used to sign issued tokens, such as those configured on the server in the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
 ## See Also  
- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)   
- [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)   
- [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)   
- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)   
- [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)   
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)   
+ [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)  
+ [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)  
+ [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  
+ [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
+ [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)  
+ [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
  [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)

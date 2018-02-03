@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorOpenFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorOpenFlags enumeration [.NET Framework metadata]"
 ms.assetid: e27a83b5-2698-4996-9032-1e0fed8b91ca
@@ -28,6 +26,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorOpenFlags Enumeration
 Contains flag values that control metadata behavior upon opening manifest files.  
@@ -65,7 +65,7 @@ typedef enum CorOpenFlags
 |`ofCacheImage`|Obsolete. This flag is ignored.|  
 |`ofManifestMetadata`|Obsolete. This flag is ignored.|  
 |`ofReadOnly`|Indicates that the file should be opened for reading, and that a call to `QueryInterface` for an [IMetaDataEmit](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md) cannot be made.|  
-|`ofTakeOwnership`|Indicates that the memory was allocated using a call to [CoTaskMemAlloc](http://msdn.microsoft.com/en-us/c4cb588d-9482-4f90-a92e-75b604540d5c) and will be freed by the metadata.|  
+|`ofTakeOwnership`|Indicates that the memory was allocated using a call to [CoTaskMemAlloc](http://msdn.microsoft.com/library/c4cb588d-9482-4f90-a92e-75b604540d5c) and will be freed by the metadata.|  
 |`ofNoTypeLib`|Obsolete. This flag is ignored.|  
 |`ofNoTransform`|Indicates that automatic transforms of .winmd files should be disabled. In other words, the projection of a Windows Runtime type to a .NET Framework type should be disabled. For more information, see [Underneath the Hood with .NET and the Windows Runtime](http://msdn.microsoft.com/magazine/jj651569.aspx).|  
 |`ofReserved1`|Reserved for internal use.|  

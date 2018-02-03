@@ -26,6 +26,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.SettingChangingEventHandler" />
+    <altmember cref="E:System.Configuration.ApplicationSettingsBase.SettingChanging" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,6 +66,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingChangingEventArgs.SettingName" />
+        <altmember cref="P:System.Configuration.SettingChangingEventArgs.SettingClass" />
+        <altmember cref="P:System.Configuration.SettingChangingEventArgs.SettingKey" />
+        <altmember cref="P:System.Configuration.SettingChangingEventArgs.NewValue" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -93,6 +100,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SettingsProperty.PropertyType" />
+        <altmember cref="P:System.Configuration.ApplicationSettingsBase.Properties" />
       </Docs>
     </Member>
     <Member MemberName="SettingClass">
@@ -122,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.SettingsGroupNameAttribute" />
       </Docs>
     </Member>
     <Member MemberName="SettingKey">
@@ -151,6 +161,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.ApplicationSettingsBase.SettingsKey" />
+        <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
       </Docs>
     </Member>
     <Member MemberName="SettingName">
@@ -180,6 +192,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
+        <altmember cref="P:System.Configuration.SettingsProperty.Name" />
       </Docs>
     </Member>
   </Members>

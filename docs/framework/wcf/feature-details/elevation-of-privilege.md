@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "security [WCF], elevation of privilege"
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Elevation of Privilege
 *Elevation of privilege* results from giving an attacker authorization permissions beyond those initially granted. For example, an attacker with a privilege set of "read only" permissions somehow elevates the set to include "read and write."  
@@ -24,7 +26,7 @@ manager: "erikre"
 ## Trusted STS Should Sign SAML Token Claims  
  A Security Assertions Markup Language (SAML) token is a generic XML token that is the default type for issued tokens. A SAML token can be constructed by a Security Token Service (STS) that the end Web service trusts in a typical exchange. SAML tokens contain claims in statements. An attacker may copy the claims from a valid token, create a new SAML token, and sign it with a different issuer. The intent is to determine whether the server is validating issuers and, if not, utilize the weakness to construct SAML tokens that allow privileges beyond those intended by a trusted STS.  
   
- The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## Switching Identity Without a Security Context  
  The following applies only to [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
@@ -89,9 +91,9 @@ manager: "erikre"
  To mitigate this, reference the X.509 certificate another way, such as using <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial>.  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)   
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)   
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)   
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
+ [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
+ [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
+ [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
  [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

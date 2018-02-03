@@ -23,6 +23,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +47,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeDescriptor" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -76,6 +80,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -111,6 +117,8 @@
         <block subset="none" type="overrides">
           <para>Override this method if the type you want to convert supports standard values.</para>
         </block>
+        <altmember cref="Overload:System.Web.UI.WebControls.ControlPropertyNameConverter.GetStandardValues" />
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -146,6 +154,7 @@
         <block subset="none" type="overrides">
           <para>Override this method if the type you want to convert supports standard values.</para>
         </block>
+        <altmember cref="T:System.ComponentModel.ITypeDescriptorContext" />
       </Docs>
     </Member>
   </Members>

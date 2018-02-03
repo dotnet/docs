@@ -25,14 +25,18 @@
 ## Examples  
  The following example demonstrates how to use the properties of a <xref:System.Web.UI.WebControls.CalendarDay> object to determine whether the date being rendered in the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is in the displayed month and do not fall on Saturday or Sunday. These dates are displayed in yellow. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
+ [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+    <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+    <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+    <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,14 +118,17 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CalendarDay.Date%2A> property to compare the date being rendered in the <xref:System.Web.UI.WebControls.Calendar.DayRender> event with today's date. If the date is today's date, it is displayed in a yellow cell with red text on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay.Date Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.Date Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay.Date Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.Date Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay.Date Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.Date Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay.Date Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.Date Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
+ [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
       </Docs>
     </Member>
     <Member MemberName="DayNumberText">
@@ -150,11 +157,12 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CalendarDay.DayNumberText%2A> property to display the selected day number on the <xref:System.Web.UI.WebControls.Calendar> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay.DayNumberText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.DayNumberText Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay.DayNumberText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.DayNumberText Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay.DayNumberText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.DayNumberText Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay.DayNumberText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.DayNumberText Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
       </Docs>
     </Member>
     <Member MemberName="IsOtherMonth">
@@ -184,14 +192,22 @@
 ## Examples  
  The following example demonstrates how to use the properties of a <xref:System.Web.UI.WebControls.CalendarDay> object to determine whether the date being rendered in the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is in the displayed month and are not either a Saturday or a Sunday. These dates are displayed in yellow. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
+ [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsSelectable">
@@ -221,11 +237,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CalendarDay.IsSelectable%2A> property to disable the ability to select the current date on the <xref:System.Web.UI.WebControls.Calendar> control. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay.IsSelectable Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsSelectable Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay.IsSelectable Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsSelectable Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay.IsSelectable Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsSelectable Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay.IsSelectable Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsSelectable Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -255,11 +279,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CalendarDay.IsSelected%2A> property to determine if the current date is selected in the <xref:System.Web.UI.WebControls.Calendar>. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay.IsSelected Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsSelected Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay.IsSelected Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsSelected Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay.IsSelected Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsSelected Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay.IsSelected Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsSelected Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsToday">
@@ -292,11 +324,19 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.CalendarDay.IsToday%2A> property to determine if the date being rendered in the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is the current date. If the date is the current date, it is displayed in a yellow cell with red text on the <xref:System.Web.UI.WebControls.Calendar>. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay.IsToday Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsToday Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay.IsToday Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsToday Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay.IsToday Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay.IsToday Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay.IsToday Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay.IsToday Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsWeekend" />
       </Docs>
     </Member>
     <Member MemberName="IsWeekend">
@@ -326,14 +366,22 @@
 ## Examples  
  The following example demonstrates how to use the properties of a <xref:System.Web.UI.WebControls.CalendarDay> object to determine whether the date being rendered in the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is in the displayed month and are not either a Saturday or a Sunday. These dates are displayed in yellow. Note that the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> object passed into the <xref:System.Web.UI.WebControls.Calendar.DayRender> event handler is the <xref:System.Web.UI.WebControls.CalendarDay> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic CalendarDay Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CalendarDay Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic CalendarDay Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CalendarDay Example/VB/sourcevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CalendarDayRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarDayRender/CS/calendardayrendercs.aspx#1)]
+ [!code-aspx-vb[CalendarDayRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarDayRender/VB/calendardayrendervb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Calendar" />
+        <altmember cref="E:System.Web.UI.WebControls.Calendar.DayRender" />
+        <altmember cref="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+        <altmember cref="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsOtherMonth" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelectable" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsSelected" />
+        <altmember cref="P:System.Web.UI.WebControls.CalendarDay.IsToday" />
       </Docs>
     </Member>
   </Members>

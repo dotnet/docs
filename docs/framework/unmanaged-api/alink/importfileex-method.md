@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ImportFileEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImportFileEx method"
 ms.assetid: ad276f3f-b303-46ac-97e0-66a377adaa4f
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ImportFileEx Method
 Imports indicated assembly or unbound module.  
@@ -75,6 +75,6 @@ HRESULT ImportFileEx(
  Requires alink.h.  
   
 ## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)   
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)   
+ [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
+ [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
  [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)

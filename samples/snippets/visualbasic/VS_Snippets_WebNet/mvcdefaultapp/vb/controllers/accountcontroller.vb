@@ -205,20 +205,20 @@ Public Class AccountController
     End Function
 
     Private Shared Function ErrorCodeToString(ByVal createStatus As MembershipCreateStatus) As String
-        ' See http://msdn.microsoft.com/en-us/library/system.web.security.membershipcreatestatus.aspx for
+        ' See http://msdn.microsoft.com/library/system.web.security.membershipcreatestatus.aspx for
         ' a full list of status codes.
         Select Case createStatus
             Case MembershipCreateStatus.DuplicateUserName
                 Return "Username already exists. Please enter a different user name."
 
             Case MembershipCreateStatus.DuplicateEmail
-                Return "A username for that e-mail address already exists. Please enter a different e-mail address."
+                Return "A username for that email address already exists. Please enter a different email address."
 
             Case MembershipCreateStatus.InvalidPassword
                 Return "The password provided is invalid. Please enter a valid password value."
 
             Case MembershipCreateStatus.InvalidEmail
-                Return "The e-mail address provided is invalid. Please check the value and try again."
+                Return "The email address provided is invalid. Please check the value and try again."
 
             Case MembershipCreateStatus.InvalidAnswer
                 Return "The password retrieval answer provided is invalid. Please check the value and try again."

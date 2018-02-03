@@ -30,6 +30,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.Management.SqlWebEventProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="events" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Management.WebBaseEvent" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -98,6 +100,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Management.WebBaseEvent" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -131,6 +134,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The object is not in the collection.</exception>
+        <altmember cref="T:System.Web.Management.WebBaseEvent" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -164,6 +168,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of the collection.</exception>
+        <altmember cref="T:System.Web.Management.WebBaseEvent" />
       </Docs>
     </Member>
   </Members>

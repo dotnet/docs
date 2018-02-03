@@ -1,43 +1,24 @@
 ---
 title: "&amp; Operator (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.&"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "And (&) operator"
   - "ampersand operator (&)"
   - "& operator"
-  - "concatenation operators, syntax"
+  - "concatenation operators [Visual Basic], syntax"
   - "strings [Visual Basic], concatenating"
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &amp; Operator (Visual Basic)
 Generates a string concatenation of two expressions.  
@@ -75,8 +56,8 @@ result = expression1 & expression2
  [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
   
 ## See Also  
- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
+ [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
  [Concatenation Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)

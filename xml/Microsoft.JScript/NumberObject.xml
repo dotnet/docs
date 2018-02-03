@@ -14,6 +14,8 @@
     <summary>Represents a number object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.NumberPrototype" />
+    <altmember cref="T:Microsoft.JScript.NumberConstructor" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +37,8 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NumberObject" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
     <Member MemberName="GetType">
@@ -55,6 +59,8 @@
         <returns>The type of the underlying value object, or <see cref="T:Microsoft.JScript.NumberObject" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.NumberPrototype" />
+        <altmember cref="T:Microsoft.JScript.NumberConstructor" />
       </Docs>
     </Member>
   </Members>

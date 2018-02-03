@@ -41,7 +41,7 @@
   
 -   A <xref:System.Threading.ThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ThreadStart%29?displayProperty=nameWithType> constructor.  Any method that has no parameters and that returns `void` in C# or is a `Sub` procedure in Visual Basic can represent the delegate.  
   
--   A <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%2CSystem.Int32%29?displayProperty=nameWithType> constructor. Any method that has a single parameter of type <xref:System.Object> and that returns void in C# or is a Sub procedure in Visual Basic can represent the delegate.  
+-   A <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%29?displayProperty=nameWithType> constructor. Any method that has a single parameter of type <xref:System.Object> and that returns void in C# or is a Sub procedure in Visual Basic can represent the delegate.  
   
  The thread does not begin executing until the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method is called. The <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate is invoked on the thread, and execution begins at the first line of the method represented by the delegate. In the case of the <xref:System.Threading.ParameterizedThreadStart> delegate, the object that is passed to the <xref:System.Threading.Thread.Start%28System.Object%29> method is passed to the delegate.  
   
@@ -64,7 +64,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Threading.ParameterizedThreadStart> delegate with to execute a static method and an instance method. The first <xref:System.Threading.ParameterizedThreadStart> delegate is represented by the static `DoWork` method and the second is represented by the instance `DoMoreWork` method. Both methods match the <xref:System.Threading.ParameterizedThreadStart> delegate signature; that is, they have a single parameter of type <xref:System.Object> and don't return a value.  
+ The following code example uses a <xref:System.Threading.ParameterizedThreadStart> delegate to execute a static method and an instance method. The first <xref:System.Threading.ParameterizedThreadStart> delegate is represented by the static `DoWork` method and the second is represented by the instance `DoMoreWork` method. Both methods match the <xref:System.Threading.ParameterizedThreadStart> delegate signature; that is, they have a single parameter of type <xref:System.Object> and don't return a value.  
   
 > [!NOTE]
 >  The Visual Basic and C# compilers infer the <xref:System.Threading.ParameterizedThreadStart> delegate from the signatures of the `DoWork` and `DoMoreWork` methods, and call the correct constructor. Thus, there is no explicit constructor call in the code.  
@@ -75,5 +75,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Threading.ThreadStart" />
+    <altmember cref="T:System.Threading.Thread" />
+    <altmember cref="Overload:System.Threading.Thread.Start" />
+    <altmember cref="T:System.AppDomain" />
   </Docs>
 </Type>

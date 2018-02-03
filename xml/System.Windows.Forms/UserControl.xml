@@ -38,7 +38,7 @@
 ## Remarks  
  By extending <xref:System.Windows.Forms.ContainerControl>, <xref:System.Windows.Forms.UserControl> inherits all the standard positioning and mnemonic-handling code that is necessary in a user control.  
   
- The <xref:System.Windows.Forms.UserControl> gives you the ability to create controls that can be used in multiple places within an application or organization. You can include all the code needed for validation of common data you ask the user to input; some examples of this are e-mail addresses (see Example section), telephone numbers, and postal codes. Another efficient use of the user control is to simply preload a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox> with static items you commonly use in almost every application; some examples of this are countries/regions, cities, states, and office locations. For more information about authoring custom controls, see [Developing Custom Windows Forms Controls with the .NET Framework](~/docs/framework/winforms/controls/developing-custom-windows-forms-controls.md).  
+ The <xref:System.Windows.Forms.UserControl> gives you the ability to create controls that can be used in multiple places within an application or organization. You can include all the code needed for validation of common data you ask the user to input; some examples of this are email addresses (see Example section), telephone numbers, and postal codes. Another efficient use of the user control is to simply preload a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox> with static items you commonly use in almost every application; some examples of this are countries/regions, cities, states, and office locations. For more information about authoring custom controls, see [Developing Custom Windows Forms Controls with the .NET Framework](~/docs/framework/winforms/controls/developing-custom-windows-forms-controls.md).  
   
 > [!NOTE]
 >  You might consider creating a namespace that contains several classes of user controls and compiling it into one DLL. This DLL can be referenced and distributed with the application or all applications within an organization. This gives you the ability to reference the user control in many applications and save time laying out and coding the contained elements of the user control. A user control also gives you consistency within or across applications; for example, all address information input blocks will all have the same appearance and behavior. Consistency gives your application a more polished and professional appearance.  
@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Windows.Forms.UserControl> that can be reused in multiple applications to get user information. This example adds several <xref:System.Windows.Forms.Label> controls, <xref:System.Windows.Forms.TextBox> controls and an <xref:System.Windows.Forms.ErrorProvider> to the <xref:System.Windows.Forms.UserControl> to gather the user's information. Additionally, the user's e-mail address is validated in the <xref:System.Windows.Forms.Control.Validating> event of the <xref:System.Windows.Forms.TextBox> and the <xref:System.Windows.Forms.ErrorProvider> object is used to give the user feedback if the data fails validation. The code is intended to be compiled into a DLL for reference in other applications.  
+ The following code example creates a <xref:System.Windows.Forms.UserControl> that can be reused in multiple applications to get user information. This example adds several <xref:System.Windows.Forms.Label> controls, <xref:System.Windows.Forms.TextBox> controls and an <xref:System.Windows.Forms.ErrorProvider> to the <xref:System.Windows.Forms.UserControl> to gather the user's information. Additionally, the user's email address is validated in the <xref:System.Windows.Forms.Control.Validating> event of the <xref:System.Windows.Forms.TextBox> and the <xref:System.Windows.Forms.ErrorProvider> object is used to give the user feedback if the data fails validation. The code is intended to be compiled into a DLL for reference in other applications.  
   
  [!code-cpp[Classic UserControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic UserControl Example/CPP/source.cpp#1)]
  [!code-csharp[Classic UserControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic UserControl Example/CS/source.cs#1)]
@@ -61,6 +61,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ContainerControl" />
+    <altmember cref="T:System.Windows.Forms.Form" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -84,7 +86,7 @@
    
   
 ## Examples  
- The following code example creates an instance of the <xref:System.Windows.Forms.UserControl> derived class, `MyCustomerInfoUserControl`, which was created in the example section of the <xref:System.Windows.Forms.UserControl> class overview. The user control is added to a <xref:System.Windows.Forms.Panel> control and has its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=nameWithType>. The <xref:System.Windows.Forms.Panel> is then added to a <xref:System.Windows.Forms.Form>.  
+ The following code example creates an instance of the <xref:System.Windows.Forms.UserControl> derived class, `MyCustomerInfoUserControl`, which was created in the example section of the <xref:System.Windows.Forms.UserControl> class overview. The user control is added to a <xref:System.Windows.Forms.Panel> control and has its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>. The <xref:System.Windows.Forms.Panel> is then added to a <xref:System.Windows.Forms.Form>.  
   
  [!code-cpp[Classic UserControl.UserControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CPP/source.cpp#1)]
  [!code-csharp[Classic UserControl.UserControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CS/source.cs#1)]
@@ -122,6 +124,7 @@
         <value>
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.AutoSize" />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -251,6 +254,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.UserControl.AutoValidate" />
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -288,6 +293,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CreateParams">
@@ -306,6 +312,7 @@
         <summary>Gets the required creation parameters when the control handle is created.</summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ScrollableControl.CreateParams" />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -324,6 +331,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -366,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" />
+        <altmember cref="E:System.Windows.Forms.Form.Load" />
       </Docs>
     </Member>
     <Member MemberName="OnCreateControl">
@@ -441,6 +451,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.UserControl.Load" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -467,6 +479,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnResize">
@@ -488,6 +501,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -520,6 +534,7 @@
         <summary>Gets or sets the text associated with this control.</summary>
         <value>The text associated with this control.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.Control.Text" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -573,6 +588,7 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
       </Docs>
     </Member>
     <Member MemberName="ValidateChildren">
@@ -604,11 +620,12 @@
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -630,6 +647,7 @@
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
   </Members>

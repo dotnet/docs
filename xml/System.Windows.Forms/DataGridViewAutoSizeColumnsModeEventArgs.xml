@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -32,6 +32,13 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventHandler" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnsModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,6 +57,12 @@
         <param name="previousModes">An array of <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> values representing the previous <see cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" /> property values of each column.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnsMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+        <altmember cref="M:System.Windows.Forms.DataGridView.OnAutoSizeColumnsModeChanged(System.Windows.Forms.DataGridViewAutoSizeColumnsModeEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PreviousModes">
@@ -80,6 +93,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeColumnsModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
       </Docs>
     </Member>
   </Members>

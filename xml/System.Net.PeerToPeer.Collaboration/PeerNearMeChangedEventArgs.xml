@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.PeerNearMeChanged" /> event occurs.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
   </Docs>
   <Members>
     <Member MemberName="PeerChangeType">
@@ -39,6 +40,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
     <Member MemberName="PeerNearMe">
@@ -57,6 +59,7 @@
         <summary>Gets the instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> that has changed.</summary>
         <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object that has changed.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" />
       </Docs>
     </Member>
   </Members>

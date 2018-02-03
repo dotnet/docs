@@ -189,7 +189,7 @@
    
   
 ## Examples  
- The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode.UseUri>.  
+ The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode.UseUri>.  
   
 ```  
 <configuration>  
@@ -794,5 +794,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets individual session-state item values.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

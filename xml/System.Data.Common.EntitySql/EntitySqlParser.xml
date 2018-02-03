@@ -16,7 +16,7 @@
   </Docs>
   <Members>
     <Member MemberName="Parse">
-      <MemberSignature Language="C#" Value="public System.Data.Common.EntitySql.ParseResult Parse (string query, System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters);" />
+      <MemberSignature Language="C#" Value="public System.Data.Common.EntitySql.ParseResult Parse (string query, params System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.EntitySql.ParseResult Parse(string query, class System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.EntitySql.EntitySqlParser.Parse(System.String,System.Data.Common.CommandTrees.DbParameterReferenceExpression[])" />
       <MemberType>Method</MemberType>
@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName="ParseLambda">
-      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbLambda ParseLambda (string query, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbLambda ParseLambda (string query, params System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.CommandTrees.DbLambda ParseLambda(string query, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.EntitySql.EntitySqlParser.ParseLambda(System.String,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])" />
       <MemberType>Method</MemberType>

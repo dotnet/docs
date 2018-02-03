@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EnumerateCLRs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"
@@ -30,6 +28,8 @@ caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EnumerateCLRs Function
 Provides a mechanism for enumerating the CLRs in a process.  

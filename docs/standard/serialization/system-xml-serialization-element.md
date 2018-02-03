@@ -7,20 +7,18 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "system.xml.serialization element"
   - "XML serialization, configuration"
   - "<system.xml.serialization> element"
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # &lt;system.xml.serialization&gt; Element
 The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
@@ -72,9 +70,9 @@ The top-level element for controlling XML serialization. For more information ab
 ```  
   
 ## See Also  
- <xref:System.Xml.Serialization.XmlSchemaImporter>   
- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>   
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)   
- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)   
- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)   
+ <xref:System.Xml.Serialization.XmlSchemaImporter>  
+ <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
+ [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
+ [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
+ [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
  [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)

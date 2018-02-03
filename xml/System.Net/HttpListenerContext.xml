@@ -40,6 +40,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.HttpListener" />
+    <altmember cref="T:System.Net.HttpListenerRequest" />
+    <altmember cref="T:System.Net.HttpListenerResponse" />
   </Docs>
   <Members>
     <Member MemberName="AcceptWebSocketAsync">
@@ -94,6 +97,7 @@
   
  <paramref name="subProtocol" /> contains illegal characters.</exception>
         <exception cref="T:System.Net.WebSockets.WebSocketException">An error occurred when sending the response to complete the WebSocket handshake.</exception>
+        <altmember cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" />
       </Docs>
     </Member>
     <Member MemberName="AcceptWebSocketAsync">
@@ -152,6 +156,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="keepAliveInterval" /> is too small.</exception>
         <exception cref="T:System.Net.WebSockets.WebSocketException">An error occurred when sending the response to complete the WebSocket handshake.</exception>
+        <altmember cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" />
       </Docs>
     </Member>
     <Member MemberName="AcceptWebSocketAsync">
@@ -218,6 +223,7 @@
   
  <paramref name="receiveBufferSize" /> is greater than 64K bytes.</exception>
         <exception cref="T:System.Net.WebSockets.WebSocketException">An error occurred when sending the response to complete the WebSocket handshake.</exception>
+        <altmember cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" />
       </Docs>
     </Member>
     <Member MemberName="AcceptWebSocketAsync">
@@ -286,6 +292,7 @@
   
  <paramref name="receiveBufferSize" /> is greater than 64K bytes.</exception>
         <exception cref="T:System.Net.WebSockets.WebSocketException">An error occurred when sending the response to complete the WebSocket handshake.</exception>
+        <altmember cref="T:System.Net.WebSockets.HttpListenerWebSocketContext" />
       </Docs>
     </Member>
     <Member MemberName="Request">
@@ -417,5 +424,15 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /><see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AcceptWebSocketAsync">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accept a WebSocket connection as an asynchronous operation.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

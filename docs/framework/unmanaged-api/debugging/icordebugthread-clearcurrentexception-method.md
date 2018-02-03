@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::ClearCurrentException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::ClearCurrentException method [.NET Framework debugging]"
   - "ClearCurrentException method, ICorDebugThread interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::ClearCurrentException Method
 This method is not implemented. Do not use it.  

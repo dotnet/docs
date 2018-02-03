@@ -68,6 +68,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.UIElement.InputBindings" />
+    <altmember cref="T:System.Windows.Input.CommandBinding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -246,6 +248,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.Input.InputBinding.Command" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Input.RoutedCommand" />
+        <altmember cref="T:System.Windows.Input.InputGesture" />
       </Docs>
     </Member>
     <Member MemberName="CommandParameter">
@@ -493,6 +497,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Input.KeyGesture" />
+        <altmember cref="T:System.Windows.Input.MouseGesture" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -537,5 +543,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

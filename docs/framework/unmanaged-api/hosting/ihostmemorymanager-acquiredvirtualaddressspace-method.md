@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::AcquiredVirtualAddressSpace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager::AcquiredVirtualAddressSpace method [.NET Framework hosting]"
   - "AcquiredVirtualAddressSpace method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::AcquiredVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.  

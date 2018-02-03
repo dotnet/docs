@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 193c725d-134f-4d31-a8f8-4e575233bff6
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Configuring WCF Services in Code
 [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] allows developers to configure services using configuration files or code.  Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] also allows you to configure services in code. In earlier versions of [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have direct access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] provides an easier way to configure both self-hosted and web hosted services in code.  
@@ -100,15 +102,15 @@ public class Service1 : IService1
 >  Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.  
   
 ## See Also  
- [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)   
- [Configuring Client Behaviors](../../../docs/framework/wcf/configuring-client-behaviors.md)   
- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)   
- [Configuration-Based Activation](../../../docs/framework/wcf/samples/configuration-based-activation.md)   
- [Configuration](../../../docs/framework/wcf/samples/configuration-sample.md)   
- [Configuration-Based Activation in IIS and WAS](../../../docs/framework/wcf/feature-details/configuration-based-activation-in-iis-and-was.md)   
- [Configuration and Metadata Support](../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)   
- [Configuration](../../../docs/framework/wcf/diagnostics/exceptions-reference/configuration.md)   
- [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)   
- [How to: Create a Service Endpoint in Configuration](../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)   
- [How to: Publish Metadata for a Service Using a Configuration File](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)   
+ [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
+ [Configuring Client Behaviors](../../../docs/framework/wcf/configuring-client-behaviors.md)  
+ [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
+ [Configuration-Based Activation](../../../docs/framework/wcf/samples/configuration-based-activation.md)  
+ [Configuration](../../../docs/framework/wcf/samples/configuration-sample.md)  
+ [Configuration-Based Activation in IIS and WAS](../../../docs/framework/wcf/feature-details/configuration-based-activation-in-iis-and-was.md)  
+ [Configuration and Metadata Support](../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)  
+ [Configuration](../../../docs/framework/wcf/diagnostics/exceptions-reference/configuration.md)  
+ [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)  
+ [How to: Create a Service Endpoint in Configuration](../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)  
+ [How to: Publish Metadata for a Service Using a Configuration File](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  
  [How to: Specify a Client Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-configuration.md)

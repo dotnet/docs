@@ -289,6 +289,7 @@ Label11="Mobile Phone:"
         <exception cref="T:System.IO.IOException">An I/O error has occurred while accessing <paramref name="stream" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" /></permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Reflection.Assembly.GetManifestResourceStream(System.String)" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -541,11 +542,13 @@ Label11="Mobile Phone:"
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The reader has been closed or disposed, and cannot be accessed.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetResourceData">
       <MemberSignature Language="C#" Value="public void GetResourceData (string resourceName, out string resourceType, out byte[] resourceData);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetResourceData(string resourceName, string resourceType, unsigned int8[] resourceData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetResourceData(string resourceName, [out] string&amp; resourceType, [out] unsigned int8[]&amp; resourceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceReader.GetResourceData(System.String,System.String@,System.Byte[]@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -610,6 +613,7 @@ Label11="Mobile Phone:"
           <paramref name="resourceName" /> has an invalid type.</exception>
         <exception cref="T:System.FormatException">The retrieved resource data is corrupt.</exception>
         <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Resources.ResourceReader" /> object is not initialized, probably because it is closed.</exception>
+        <altmember cref="M:System.Resources.ResourceWriter.AddResourceData(System.String,System.String,System.Byte[])" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -646,6 +650,8 @@ Label11="Mobile Phone:"
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The reader has already been closed and cannot be accessed.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
       </Docs>
     </Member>
   </Members>

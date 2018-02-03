@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::GetDisplayName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublishProcess::GetDisplayName method [.NET Framework debugging]"
   - "GetDisplayName method, ICorPublishProcess interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorPublishProcess::GetDisplayName Method
 Gets the full path of the executable for the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  

@@ -1,43 +1,24 @@
 ---
 title: "Order By Clause (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryOrderBy"
   - "vb.QueryAscending"
   - "vb.QueryDescending"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], Order By"
-  - "Order By clause"
-  - "Order By statement"
+  - "Order By clause [Visual Basic]"
+  - "Order By statement [Visual Basic]"
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Order By Clause (Visual Basic)
 Specifies the sort order for a query result.  
@@ -73,7 +54,7 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
  [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_3.vb)]  
   
 ## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   
- [Queries](../../../visual-basic/language-reference/queries/queries.md)   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)   
+ [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
+ [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)

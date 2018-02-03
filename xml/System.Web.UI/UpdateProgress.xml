@@ -88,8 +88,8 @@
   
  The template can contain HTML and markup. For example, you can display an animated image that notifies the user that the postback is processing. You can also display a button that the user can click to stop the partial-page update. Additionally, you might want to prevent all other postbacks while one is in progress. The following example shows client script that you can use to accomplish these tasks.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress4#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress4#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress4#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress4#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress4/VB/default.aspx#1)]  
   
  You can use the example code by setting the `onClick` attribute of an `HtmlButton` control to "AbortPostBack()". For more information, see the  method and the  property of the  class.  
   
@@ -159,16 +159,18 @@
   
  The following example shows one <xref:System.Web.UI.UpdateProgress> control that displays progress status for two <xref:System.Web.UI.UpdatePanel> controls.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress1#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress1#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress1#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress1#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress1/VB/default.aspx#1)]  
   
  This following example shows two <xref:System.Web.UI.UpdateProgress> controls. Each control displays progress status for an associated <xref:System.Web.UI.UpdatePanel> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdateProgress2#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/CS/default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdateProgress2#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/VB/default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.UpdateProgress2#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/CS/default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.UpdateProgress2#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdateProgress2/VB/default.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.UpdatePanel" />
+    <altmember cref="T:System.Web.UI.ScriptManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -232,6 +234,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -342,6 +345,7 @@
         <value>An integer that represents the number of milliseconds before the <see cref="T:System.Web.UI.UpdateProgress" /> control's progress template is displayed. The default is 500 milliseconds (.5 seconds).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.UpdateProgress.DisplayAfter" /> property is less than zero.</exception>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="DynamicLayout">
@@ -380,6 +384,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.UpdateProgress.ProgressTemplate" />
       </Docs>
     </Member>
     <Member MemberName="GetScriptDescriptors">
@@ -411,6 +416,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
       </Docs>
     </Member>
     <Member MemberName="GetScriptReferences">
@@ -442,6 +448,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptReferences" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -498,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.TemplateInstanceAttribute" />
+        <altmember cref="T:System.Web.UI.ITemplate" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -613,6 +622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptDescriptors" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IScriptControl.GetScriptReferences">
@@ -639,6 +649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IScriptControl.GetScriptReferences" />
       </Docs>
     </Member>
   </Members>

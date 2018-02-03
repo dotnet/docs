@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_GC_THREAD_STATS_TYPES"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_GC_THREAD_STATS_TYPES enumeration [.NET Framework hosting]"
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
@@ -28,6 +26,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_GC_THREAD_STATS_TYPES Enumeration
 Indicates the garbage collection statistics for a thread.  

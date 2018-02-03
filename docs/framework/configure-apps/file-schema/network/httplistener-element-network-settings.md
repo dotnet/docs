@@ -9,16 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;httpListener&gt; Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
@@ -31,8 +28,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Syntax  
   
 ```xml  
-      <httpListener  
-  unescapeRequestUrl ="true|false"  
+<httpListener  
+  unescapeRequestUrl="true|false"  
 />  
 ```  
   
@@ -149,7 +146,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Can be Empty||  
   
 ## See Also  
- <xref:System.Net.Configuration.HttpListenerElement>   
- <xref:System.Net.HttpListener>   
- <xref:System.Net.HttpListenerRequest.Url%2A>   
+ <xref:System.Net.Configuration.HttpListenerElement>  
+ <xref:System.Net.HttpListener>  
+ <xref:System.Net.HttpListenerRequest.Url%2A>  
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -18,6 +18,9 @@ caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Application Domain Resource Monitoring
 Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. This is useful for hosts such as ASP.NET that use many application domains in a long-running process. The host can unload the application domain of an application that is adversely affecting the performance of the entire process, but only if it can identify the problematic application. ARM provides information that can be used to assist in making such decisions.  
@@ -86,7 +89,7 @@ Application domain resource monitoring (ARM) enables hosts to monitor CPU and me
  If you use the unmanaged hosting API, your host must pass the CLR an implementation of the [IHostGCManager](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-interface.md) interface. The CLR calls the [IHostGCManager::SuspensionEnding](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method when it resumes execution of threads that have been suspended while a collection occurs. The CLR passes the generation of the completed collection as a parameter of the method, so the host can determine whether the collection was full or partial. Your implementation of the [IHostGCManager::SuspensionEnding](../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method can query for survived memory, to ensure that the counts are retrieved as soon as they are updated.  
   
 ## See Also  
- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>   
- [ICLRAppDomainResourceMonitor Interface](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)   
- [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)   
+ <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
+ [ICLRAppDomainResourceMonitor Interface](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
+ [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)  
  [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

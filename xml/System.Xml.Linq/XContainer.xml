@@ -59,8 +59,7 @@
  The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -79,8 +78,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _  
+Dim srcTree As XElement = _  
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -97,14 +95,12 @@ xmlTree.Add( _
     Where CInt(el) >= 3 _  
     Select el)  
 Console.WriteLine(xmlTree)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <NewElement>Content</NewElement>  
   <Element3>3</Element3>  
   <Element4>4</Element4>  
@@ -114,6 +110,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -161,8 +160,7 @@ Console.WriteLine(xmlTree)
  The following example creates two XML trees, and then uses this method to add an <xref:System.Xml.Linq.XElement> object to one of them. It also adds the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the XML tree.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -189,8 +187,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -224,8 +221,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
   <Child3>3</Child3>  
@@ -239,10 +235,13 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public void Add (object[] content);" />
+      <MemberSignature Language="C#" Value="public void Add (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.Add(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -292,8 +291,7 @@ Console.WriteLine(xmlTree)
  The following example creates two XML trees, uses this method to add an <xref:System.Xml.Linq.XElement> object to one of them. It also adds the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the XML tree.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -320,8 +318,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -354,8 +351,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
   <Child3>3</Child3>  
@@ -369,6 +365,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.AddFirst" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <MemberGroup MemberName="AddFirst">
@@ -395,8 +394,7 @@ Console.WriteLine(xmlTree)
  The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -415,8 +413,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -438,8 +435,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Element3>3</Element3>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
@@ -449,6 +445,9 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="AddFirst">
@@ -496,8 +495,7 @@ Console.WriteLine(xmlTree)
  The following example creates two XML trees, uses this method to add an <xref:System.Xml.Linq.XElement> object as the first element to one of them. It also adds the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the XML tree.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -524,8 +522,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -558,8 +555,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
   <NewChild>new content</NewChild>  
@@ -573,10 +569,13 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="AddFirst">
-      <MemberSignature Language="C#" Value="public void AddFirst (object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddFirst (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFirst(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.AddFirst(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -626,8 +625,7 @@ Console.WriteLine(xmlTree)
  The following example creates two XML trees, and uses this method to add an <xref:System.Xml.Linq.XElement> object as the first element to one of them. It also adds the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the XML tree.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -654,8 +652,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -688,8 +685,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Element4>4</Element4>  
   <Element5>5</Element5>  
   <NewChild>new content</NewChild>  
@@ -704,6 +700,9 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <Member MemberName="CreateWriter">
@@ -747,8 +746,7 @@ Console.WriteLine(xmlTree)
  You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transform. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
   
 ```csharp  
-  
-                string xslMarkup = @"<?xml version='1.0'?>  
+string xslMarkup = @"<?xml version='1.0'?>  
 <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
     <xsl:template match='/Parent'>  
         <Root>  
@@ -779,8 +777,7 @@ Console.WriteLine(newTree);
 ```  
   
 ```vb  
-  
-                Dim xslMarkup As XDocument = _   
+Dim xslMarkup As XDocument = _   
     <?xml version='1.0'?>  
     <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
         <xsl:template match='/Parent'>  
@@ -815,8 +812,7 @@ Console.WriteLine(newTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <C1>Child1 data</C1>  
   <C2>Child2 data</C2>  
 </Root>  
@@ -867,8 +863,7 @@ Console.WriteLine(newTree)
  The following example creates an XML tree, and then iterates through the <xref:System.Xml.Linq.XContainer.DescendantNodes%2A> axis.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     // Attributes are not nodes, so will not be returned by DescendantNodes.  
     new XAttribute("Att1", "AttributeContent"),  
     new XElement("Child",  
@@ -888,8 +883,7 @@ foreach (XNode node in dnas)
 ```  
   
 ```vb  
-  
-                ' Attributes are not nodes, so will not be returned by DescendantNodes.  
+' Attributes are not nodes, so will not be returned by DescendantNodes.  
 Dim xmlTree As XElement = _   
     <Root Att1="AttributeContent">  
         <Child>  
@@ -919,6 +913,8 @@ element content
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Descendants">
@@ -937,6 +933,8 @@ element content
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Descendants">
@@ -980,8 +978,7 @@ element content
  The following example creates an XML tree, and then uses this axis method to retrieve the descendants.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XAttribute("Att1", "AttributeContent"),  
     new XElement("Child",  
         new XText("Some text"),  
@@ -1020,6 +1017,9 @@ GrandChild
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.DescendantsAndSelf" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Descendants">
@@ -1080,8 +1080,7 @@ foreach (XElement el in de)
 ```  
   
 ```vb  
-  
-                ' Attributes are not nodes, so will not be returned by the descendants axis.  
+' Attributes are not nodes, so will not be returned by the descendants axis.  
 Dim xmlTree As XElement = _   
     <Root Att1="AttributeContent">  
          <Child>Some text  
@@ -1106,8 +1105,7 @@ Child
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                // Attributes are not nodes, so will not be returned by DescendantNodes.  
+// Attributes are not nodes, so will not be returned by DescendantNodes.  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(aw + "Att1", "AttributeContent"),  
@@ -1124,8 +1122,7 @@ foreach (XElement el in de)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw = "http://www.adventure-works.com">  
+Imports <xmlns:aw = "http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1155,6 +1152,8 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <Member MemberName="Element">
@@ -1207,8 +1206,7 @@ End Module
  Note that the Visual Basic example uses the child XML property. It is also allowable to use the <xref:System.Xml.Linq.XContainer.Element%2A> method directly in Visual Basic.  
   
 ```csharp  
-  
-                XElement srcTree = new XElement("Root",  
+XElement srcTree = new XElement("Root",  
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -1230,8 +1228,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim srcTree As XElement = _   
+Dim srcTree As XElement = _   
         <Root>  
             <Element1>1</Element1>  
             <Element2>2</Element2>  
@@ -1260,8 +1257,7 @@ Console.WriteLine(xmlTree)
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child1>1</Child1>  
   <Child2>2</Child2>  
   <Child3>3</Child3>  
@@ -1274,8 +1270,7 @@ Console.WriteLine(xmlTree)
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement srcTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XElement(aw + "Element1", 1),  
@@ -1300,8 +1295,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1336,8 +1330,7 @@ End Module
  This example produces the following output:  
   
 ```xml  
-  
-                <aw:Root xmlns:aw="http://www.adventure-works.com">  
+<aw:Root xmlns:aw="http://www.adventure-works.com">  
   <aw:Child1>1</aw:Child1>  
   <aw:Child2>2</aw:Child2>  
   <aw:Child3>3</aw:Child3>  
@@ -1349,6 +1342,7 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Elements" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Elements">
@@ -1367,6 +1361,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Elements">
@@ -1408,8 +1405,7 @@ End Module
  The following example creates an XML tree, and then selects some elements using this axis method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -1425,8 +1421,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _  
+Dim xmlTree As XElement = _  
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1455,8 +1450,7 @@ Next
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XElement(aw + "Child1", 1),  
@@ -1474,8 +1468,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1509,6 +1502,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -1553,8 +1549,7 @@ End Module
  The following example creates an XML tree, and then selects several child elements using this axis method.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Type1", 1),  
     new XElement("Type1", 2),  
     new XElement("Type2", 3),  
@@ -1569,8 +1564,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Type1>1</Type1>  
             <Type1>2</Type1>  
@@ -1598,8 +1592,7 @@ Next
  The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
-  
-                XNamespace aw = "http://www.adventure-works.com";  
+XNamespace aw = "http://www.adventure-works.com";  
 XElement xmlTree = new XElement(aw + "Root",  
     new XAttribute(XNamespace.Xmlns + "aw", "http://www.adventure-works.com"),  
     new XElement(aw + "Type1", 1),  
@@ -1616,8 +1609,7 @@ foreach (XElement el in elements)
 ```  
   
 ```vb  
-  
-                Imports <xmlns:aw="http://www.adventure-works.com">  
+Imports <xmlns:aw="http://www.adventure-works.com">  
   
 Module Module1  
     Sub Main()  
@@ -1650,6 +1642,9 @@ End Module
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="FirstNode">
@@ -1685,8 +1680,7 @@ End Module
  The following example creates an element that contains child elements. It then gets the first child node of the parent element.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -1698,8 +1692,7 @@ Console.WriteLine(firstNode);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1715,12 +1708,13 @@ Console.WriteLine(firstNode)
  This example produces the following output:  
   
 ```xml  
-  
 <Child1>1</Child1>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XContainer.LastNode" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="LastNode">
@@ -1756,8 +1750,7 @@ Console.WriteLine(firstNode)
  The following example creates an element that contains child elements. It then gets the last child node of the parent element.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XElement("Child3", 3),  
@@ -1769,8 +1762,7 @@ Console.WriteLine(lastNode);
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1786,12 +1778,13 @@ Console.WriteLine(lastNode)
  This example produces the following output:  
   
 ```xml  
-  
 <Child5>5</Child5>  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.Linq.XContainer.FirstNode" />
+        <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -1835,8 +1828,7 @@ Console.WriteLine(lastNode)
  The following example creates an XML tree with a variety of types of nodes. It then queries this axis method to enumerate and print the nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XComment("a comment"),  
@@ -1853,8 +1845,7 @@ foreach (XNode node in nodes)
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XElement = _   
+Dim xmlTree As XElement = _   
         <Root>  
             <Child1>1</Child1>  
             <Child2>2</Child2>  
@@ -1886,8 +1877,7 @@ mixed content
  The following example creates an XML tree that contains a variety of types of nodes. It then enumerates through portions of the tree, printing the node types.  
   
 ```csharp  
-  
-                XDocument xmlTree = new XDocument(  
+XDocument xmlTree = new XDocument(  
     new XComment("a comment"),  
     new XProcessingInstruction("xml-stylesheet", "type=\"text/xsl\" href=\"hello.xsl\""),  
     new XElement("Root",  
@@ -1920,8 +1910,7 @@ foreach (XNode node in xmlTree.Nodes())
 ```  
   
 ```vb  
-  
-                Dim xmlTree As XDocument = _   
+Dim xmlTree As XDocument = _   
     <?xml version="1.0" encoding="utf-8"?>  
     <!--a comment-->  
     <?xml-stylesheet type='text/xsl' href='hello.xsl'?>  
@@ -1964,6 +1953,9 @@ Text
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Descendants" />
+        <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
       </Docs>
     </Member>
     <Member MemberName="RemoveNodes">
@@ -2008,8 +2000,7 @@ Text
  The following example creates an XML tree that contains some child nodes. It then calls this method to remove the child nodes.  
   
 ```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
+XElement xmlTree = new XElement("Root",  
     new XElement("Child1", 1),  
     new XElement("Child2", 2),  
     new XComment("a comment"),  
@@ -2023,8 +2014,7 @@ Console.WriteLine(xmlTree);
 ```  
   
 ```vb  
-  
-                Dim xmltree As XElement = _   
+Dim xmltree As XElement = _   
     <Root>  
         <Child1>1</Child1>  
         <Child2>2</Child2>  
@@ -2040,12 +2030,13 @@ Console.WriteLine(xmltree)
  This example produces the following output:  
   
 ```xml  
-  
 <Root />  
 ```  
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="Overload:System.Xml.Linq.XContainer.ReplaceNodes" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceNodes">
@@ -2072,8 +2063,7 @@ Console.WriteLine(xmltree)
  The following example creates two XML trees, and then uses this method to replace the contents of one of them with the results of a query.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", 1),  
     new XElement("Child", 2),  
     new XElement("Child", 3),  
@@ -2089,8 +2079,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <Root>  
         <Child>1</Child>  
         <Child>2</Child>  
@@ -2103,14 +2092,12 @@ root.ReplaceNodes( _
     Where el.Value >= 3 _  
     Select el)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>3</Child>  
   <Child>4</Child>  
   <Child>5</Child>  
@@ -2119,6 +2106,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceNodes">
@@ -2168,8 +2157,7 @@ Console.WriteLine(root)
  To see an example of replacing the children nodes with the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, see <xref:System.Xml.Linq.XContainer.ReplaceNodes%2A>.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", 1),  
     new XElement("Child", 2),  
     new XElement("Child", 3),  
@@ -2185,8 +2173,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <Root>  
         <Child>1</Child>  
         <Child>2</Child>  
@@ -2199,14 +2186,12 @@ root.ReplaceNodes( _
     Where el.Value >= 3 _  
     Select el)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>3</Child>  
   <Child>4</Child>  
   <Child>5</Child>  
@@ -2215,10 +2200,12 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </Member>
     <Member MemberName="ReplaceNodes">
-      <MemberSignature Language="C#" Value="public void ReplaceNodes (object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceNodes (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceNodes(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2268,8 +2255,7 @@ Console.WriteLine(root)
  The following example creates a dictionary and an XML tree. It then queries the dictionary, projects the results to an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, and replaces the contents of the XML tree with the results of the query.  
   
 ```csharp  
-  
-                XElement root = new XElement("Root",  
+XElement root = new XElement("Root",  
     new XElement("Child", 1),  
     new XElement("Child", 2),  
     new XElement("Child", 3),  
@@ -2285,8 +2271,7 @@ Console.WriteLine(root);
 ```  
   
 ```vb  
-  
-                Dim root As XElement = _   
+Dim root As XElement = _   
     <Root>  
         <Child>1</Child>  
         <Child>2</Child>  
@@ -2299,14 +2284,12 @@ root.ReplaceNodes( _
     Where el.Value >= 3 _  
     Select el)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  
   
 ```xml  
-  
-                <Root>  
+<Root>  
   <Child>3</Child>  
   <Child>4</Child>  
   <Child>5</Child>  
@@ -2315,6 +2298,8 @@ Console.WriteLine(root)
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Xml.Linq.XContainer.Add" />
+        <altmember cref="M:System.Xml.Linq.XContainer.RemoveNodes" />
       </Docs>
     </Member>
   </Members>

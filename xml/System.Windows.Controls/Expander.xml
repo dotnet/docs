@@ -52,6 +52,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ExpandDirection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Expander.Expanded" />
       </Docs>
     </Member>
     <Member MemberName="CollapsedEvent">
@@ -180,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Controls.ExpandDirection" />
       </Docs>
     </Member>
     <Member MemberName="ExpandDirectionProperty">
@@ -244,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Controls.Expander.Collapsed" />
       </Docs>
     </Member>
     <Member MemberName="ExpandedEvent">
@@ -328,6 +332,25 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Controls.Expander.IsExpanded" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnApplyTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invoked whenever application code or internal processes call the <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" /> method.</summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.ApplyTemplate" />
       </Docs>
     </Member>
     <Member MemberName="OnCollapsed">

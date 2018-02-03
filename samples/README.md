@@ -17,7 +17,6 @@ You build the samples using the .NET Core CLI. You can download the CLI from
 these commands from the CLI in the directory of any sample:
 
 ```
-dotnet restore
 dotnet build
 dotnet run
 ```
@@ -64,19 +63,15 @@ To create a sample:
         {
             WhereClause1.QuerySyntaxExample();
 
-			// Add the method syntax as an example.
+            // Add the method syntax as an example.
             WhereClause1.MethodSyntaxExample();
         }
     }
   ```
   To build and run your sample...
 
-5. Restore dependencies
 
- ```    
-	dotnet restore
- ```
-6. Go to the sample folder and Build to check for errors.
+5. Go to the sample folder and Build to check for errors.
 
  ```
     dotnet build

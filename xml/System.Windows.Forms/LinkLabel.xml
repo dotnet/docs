@@ -64,6 +64,11 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.Label" />
+    <altmember cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel.Link" />
+    <altmember cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />
+    <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +134,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.DisabledLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -216,6 +225,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.LinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -309,6 +322,7 @@
  -or-  
   
  The <see cref="P:System.Windows.Forms.LinkArea.Length" /> property of the <see cref="T:System.Windows.Forms.LinkArea" /> object is less than -1.</exception>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="LinkBehavior">
@@ -349,6 +363,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value is assigned that is not one of the <see cref="T:System.Windows.Forms.LinkBehavior" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.LinkBehavior" />
       </Docs>
     </Member>
     <Member MemberName="LinkClicked">
@@ -389,6 +404,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabelLinkClickedEventHandler" />
+        <altmember cref="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="LinkColor">
@@ -428,6 +445,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.DisabledLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.VisitedLinkColor" />
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -474,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />
       </Docs>
     </Member>
     <Member MemberName="LinkVisited">
@@ -635,6 +657,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="E:System.Windows.Forms.Control.GotFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.OnGotFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnKeyDown">
@@ -666,6 +692,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.KeyEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnLinkClicked">
@@ -699,6 +728,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.LinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" />
+        <altmember cref="E:System.Windows.Forms.LinkLabel.LinkClicked" />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -730,6 +761,10 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnLostFocus(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="E:System.Windows.Forms.Control.LostFocus" />
+        <altmember cref="M:System.Windows.Forms.Control.OnLostFocus(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">
@@ -761,6 +796,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -792,6 +830,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnMouseLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.EventArgs" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseMove">
@@ -823,6 +864,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -854,6 +898,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.Control" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
+        <altmember cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPaddingChanged">
@@ -918,6 +965,9 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.LinkLabel.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.PaintEventArgs" />
+        <altmember cref="T:System.Windows.Forms.Control" />
       </Docs>
     </Member>
     <Member MemberName="OnPaintBackground">
@@ -960,6 +1010,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Label.TextAlignChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Label.OnTextAlignChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnTextChanged">
@@ -1054,6 +1105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Point" />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -1109,6 +1161,7 @@
           <see langword="true" /> to move forward in the tab order; <see langword="false" /> to move backward in the tab order.</param>
         <summary>Activates a child control. Optionally specifies the direction in the tab order to select the control from.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.Control.Select(System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetBoundsCore">
@@ -1360,6 +1413,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.LinkArea" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.LinkArea" />
+        <altmember cref="M:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(System.Boolean)" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
       </Docs>
     </Member>
     <Member MemberName="VisitedLinkColor">
@@ -1399,11 +1456,15 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.ActiveLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.DisabledLinkColor" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.LinkColor" />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message msg);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

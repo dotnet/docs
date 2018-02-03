@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "metadata [WCF], overview"
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Metadata Architecture Overview
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] provides a rich infrastructure for exporting, publishing, retrieving, and importing service metadata. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services use metadata to describe how to interact with the service's endpoints so that tools, such as Svcutil.exe, can automatically generate client code for accessing the service.  
@@ -32,7 +34,7 @@ manager: "erikre"
   
 -   A <xref:System.ServiceModel.Description.MetadataLocation> instance.  
   
- A <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> instances  point to another metadata exchange (MEX) endpoint and <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> instances point to a metadata document using an HTTP URL. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports using WSDL documents to describe service endpoints, service contracts, bindings, message exchange patterns, messages and fault messages implemented by a service. Data types used by the service are described in WSDL documents using XML schema. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md). You can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to export and import WSDL extensions for service behavior, contract behaviors, and binding elements that extend the functionality of a service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md).  
+ A <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> instances  point to another metadata exchange (MEX) endpoint and <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> instances point to a metadata document using an HTTP URL. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports using WSDL documents to describe service endpoints, service contracts, bindings, message exchange patterns, messages and fault messages implemented by a service. Data types used by the service are described in WSDL documents using XML schema. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md). You can use [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] to export and import WSDL extensions for service behavior, contract behaviors, and binding elements that extend the functionality of a service. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md).  
   
 ## Exporting Service Metadata  
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], *metadata export* is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. To export metadata from <xref:System.ServiceModel.Description.ServiceEndpoint> instances, use an implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class. A <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> implementation generates metadata that is encapsulated in a <xref:System.ServiceModel.Description.MetadataSet> instance.  
@@ -94,11 +96,11 @@ manager: "erikre"
  You can dynamically update the binding that you use to create a channel to a service endpoint in the event that the binding for the endpoint changes or you want to create a channel to an endpoint that uses the same contract but has a different binding. You can use the <xref:System.ServiceModel.Description.MetadataResolver> static class to retrieve and import metadata at runtime for service endpoints that implement a specific contract. You can then use the imported <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> objects to create a client or channel factory to the desired endpoint.  
   
 ## See Also  
- <xref:System.ServiceModel.Description>   
- [Metadata Formats](../../../../docs/framework/wcf/feature-details/metadata-formats.md)   
- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)   
- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)   
- [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)   
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)   
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)   
+ <xref:System.ServiceModel.Description>  
+ [Metadata Formats](../../../../docs/framework/wcf/feature-details/metadata-formats.md)  
+ [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
+ [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
+ [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)  
+ [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
+ [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
  [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

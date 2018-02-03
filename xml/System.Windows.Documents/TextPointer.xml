@@ -87,6 +87,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Documents.TextRange" />
+    <altmember cref="T:System.Windows.Documents.TextPointerContext" />
+    <altmember cref="T:System.Windows.Documents.TextElement" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -126,6 +129,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="position" /> specifies a position outside of the text container associated with the current position.</exception>
+        <altmember cref="M:System.Windows.Documents.TextPointer.IsInSameDocument(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteTextInRun">
@@ -151,13 +155,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify a positive value to delete characters that follow the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>); specify a negative value to delete characters that precede the current position (as in <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>).  
+ Specify a positive value to delete characters that follow the current position (as in <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>); specify a negative value to delete characters that precede the current position (as in <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>).  
   
  The number of characters actually deleted may be less than the number specified by `count`.  This happens in cases where `count` specifies more characters than exist to be deleted.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method is called at a position where text is not allowed.</exception>
+        <altmember cref="Overload:System.Windows.Documents.TextPointer.GetTextInRun" />
+        <altmember cref="M:System.Windows.Documents.TextPointer.InsertTextInRun(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DocumentEnd">
@@ -183,6 +189,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.DocumentStart" />
       </Docs>
     </Member>
     <Member MemberName="DocumentStart">
@@ -210,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.DocumentEnd" />
       </Docs>
     </Member>
     <Member MemberName="GetAdjacentElement">
@@ -239,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.Parent" />
       </Docs>
     </Member>
     <Member MemberName="GetCharacterRect">
@@ -270,6 +279,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.HasValidLayout" />
       </Docs>
     </Member>
     <Member MemberName="GetInsertionPosition">
@@ -299,7 +309,7 @@
   
  If the <xref:System.Windows.Documents.TextPointer> already points to a valid insertion position, but the closing tag for a non-empty formatting sequence directly follows that position in the given direction, then the <xref:System.Windows.Documents.TextPointer> returned by this method is adjusted to point to the insertion position just after the close of the formatting sequence. For example, consider the markup sequence `<Bold>a</Bold>b`. Note that there are two insertion positions between the letters `a` and `b` — one that precedes the closing `Bold` tag, and one directly following the closing `Bold` tag. If <xref:System.Windows.Documents.TextPointer.GetInsertionPosition%2A> is called on a <xref:System.Windows.Documents.TextPointer> to the position directly after the letter `a` and before of the closing `Bold` tag, and with a `direction` of <xref:System.Windows.Documents.LogicalDirection.Forward>, the returned <xref:System.Windows.Documents.TextPointer> is adjusted to point to the position just before the letter `b`, after the closing `Bold` tag. A similar adjustment is made for opening formatting tags when working in the opposite logical direction. This method is intended to provide a means of disambiguation between insertion positions in similar cases.  
   
- This method can also be used to be selective about insertion points when a sequence of structural tags is involved. For example, when at a position between closing and opening paragraph tags, the direction parameter can be used to select the closest insertion point at the beginning of the following paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>) or at the end of the preceding paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection?displayProperty=nameWithType>).  
+ This method can also be used to be selective about insertion points when a sequence of structural tags is involved. For example, when at a position between closing and opening paragraph tags, the direction parameter can be used to select the closest insertion point at the beginning of the following paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection.Forward?displayProperty=nameWithType>) or at the end of the preceding paragraph (by specifying <xref:System.Windows.Documents.LogicalDirection.Backward?displayProperty=nameWithType>).  
   
  If the pointer is already at insertion position, and there are no adjacent formatting tags in the specified `direction`, the returned <xref:System.Windows.Documents.TextPointer> points to the same position as the calling <xref:System.Windows.Documents.TextPointer>.  
   
@@ -315,6 +325,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetNextInsertionPosition(System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
     <Member MemberName="GetLineStartPosition">
@@ -350,7 +361,7 @@
     </Member>
     <Member MemberName="GetLineStartPosition">
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetLineStartPosition (int count, out int actualCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetLineStartPosition(int32 count, int32 actualCount) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetLineStartPosition(int32 count, [out] int32&amp; actualCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetLineStartPosition(System.Int32,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -463,6 +474,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetInsertionPosition(System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
     <Member MemberName="GetOffsetToPosition">
@@ -508,6 +520,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="position" /> specifies a position outside of the text container associated with the current position.</exception>
+        <altmember cref="Overload:System.Windows.Documents.TextPointer.GetPositionAtOffset" />
+        <altmember cref="M:System.Windows.Documents.TextPointer.IsInSameDocument(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
     <Member MemberName="GetPointerContext">
@@ -583,6 +597,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetOffsetToPosition(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
     <Member MemberName="GetPositionAtOffset">
@@ -620,6 +635,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetOffsetToPosition(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
     <Member MemberName="GetTextInRun">
@@ -659,6 +675,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.DeleteTextInRun(System.Int32)" />
+        <altmember cref="M:System.Windows.Documents.TextPointer.InsertTextInRun(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetTextInRun">
@@ -700,6 +718,8 @@
  -or-  
   
  <paramref name="count" /> is less than 0 or greater than the remaining space in <paramref name="textBuffer" /> (<paramref name="textBuffer" />.<see cref="P:System.Array.Length" /> minus <paramref name="startIndex" />).</exception>
+        <altmember cref="M:System.Windows.Documents.TextPointer.DeleteTextInRun(System.Int32)" />
+        <altmember cref="M:System.Windows.Documents.TextPointer.InsertTextInRun(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetTextRunLength">
@@ -864,6 +884,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetInsertionPosition(System.Windows.Documents.LogicalDirection)" />
+        <altmember cref="M:System.Windows.Documents.TextPointer.GetNextInsertionPosition(System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
     <Member MemberName="IsAtLineStartPosition">
@@ -892,6 +914,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.IsAtLineStartPosition" />
       </Docs>
     </Member>
     <Member MemberName="IsInSameDocument">
@@ -975,6 +998,7 @@
         <summary>Gets the paragraph that scopes the current position, if any.</summary>
         <value>The <see cref="T:System.Windows.Documents.Paragraph" /> that scopes the current position, or <see langword="null" /> if no such paragraph exists.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.Parent" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -993,6 +1017,7 @@
         <summary>Gets the logical parent that scopes the current position.</summary>
         <value>The logical parent that scopes the current position.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Documents.TextPointer.Paragraph" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1014,5 +1039,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLineStartPosition">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the beginning of a line that is specified relative to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTextInRun">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns text adjacent to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetPositionAtOffset">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, in symbols, from the beginning of content.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

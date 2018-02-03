@@ -19,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CreateICeeFileGen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateICeeFileGen function [.NET Framework hosting]"
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
@@ -30,6 +28,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CreateICeeFileGen Function
 Creates an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  

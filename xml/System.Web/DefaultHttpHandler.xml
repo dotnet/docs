@@ -118,6 +118,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="EndProcessRequest">
@@ -197,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       </Docs>
     </Member>
     <Member MemberName="OnExecuteUrlPreconditionFailure">
@@ -303,6 +305,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" /> is called synchronously.</exception>
+        <altmember cref="M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       </Docs>
     </Member>
   </Members>

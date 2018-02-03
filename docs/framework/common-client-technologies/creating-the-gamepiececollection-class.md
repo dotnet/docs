@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating the GamePieceCollection Class
 The **GamePieceCollection** class derives from the generic List class, and introduces methods to more easily manage multiple **GamePiece** objects.  
@@ -34,8 +36,8 @@ The **GamePieceCollection** class derives from the generic List class, and intro
  [!code-csharp[ManipulationXNA#_GamePieceCollection_UpdateFromMouse](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiececollection.cs#_gamepiececollection_updatefrommouse)]  
   
 ## See Also  
- [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)   
- [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)   
- [Creating the GamePiece Class](../../../docs/framework/common-client-technologies/creating-the-gamepiece-class.md)   
- [Creating the Game1 Class](../../../docs/framework/common-client-technologies/creating-the-game1-class.md)   
+ [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)  
+ [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)  
+ [Creating the GamePiece Class](../../../docs/framework/common-client-technologies/creating-the-gamepiece-class.md)  
+ [Creating the Game1 Class](../../../docs/framework/common-client-technologies/creating-the-game1-class.md)  
  [Full Code Listings](../../../docs/framework/common-client-technologies/full-code-listings.md)

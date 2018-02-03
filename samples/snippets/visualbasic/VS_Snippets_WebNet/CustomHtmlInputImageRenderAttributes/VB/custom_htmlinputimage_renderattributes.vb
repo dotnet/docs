@@ -9,7 +9,7 @@ Namespace Samples.AspNet.VB.Controls
 
         Protected Overrides Sub RenderAttributes(ByVal writer As System.Web.UI.HtmlTextWriter)
 
-            ' Add an Alt attribute to the the HtmlInputImage control.
+            ' Add an Alt attribute to the HtmlInputImage control.
             writer.Write(" alt='Alternate text from RenderAttributes'")
 
             ' Call the base class's RenderAttributes method.

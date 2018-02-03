@@ -119,6 +119,9 @@ ListBox that contains multiple types of objects
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.ItemCollection" />
+    <altmember cref="T:System.Windows.Controls.ItemContainerGenerator" />
+    <altmember cref="T:System.Windows.Controls.ItemsPresenter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -134,6 +137,7 @@ ListBox that contains multiple types of objects
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemsControl" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="AddChild">
@@ -281,6 +285,7 @@ ListBox that contains multiple types of objects
       <Docs>
         <summary>Indicates that the initialization of the <see cref="T:System.Windows.Controls.ItemsControl" /> object is about to start.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.FrameworkElement.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="ClearContainerForItemOverride">
@@ -311,6 +316,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="ContainerFromElement">
@@ -333,6 +339,7 @@ ListBox that contains multiple types of objects
         <summary>Returns the container that belongs to the current <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the given element.</summary>
         <returns>The container that belongs to the current <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the given element or <see langword="null" /> if no such container exists.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="ContainerFromElement">
@@ -357,6 +364,7 @@ ListBox that contains multiple types of objects
         <summary>Returns the container that belongs to the specified <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the given container element.</summary>
         <returns>The container that belongs to the specified <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the given element, if <paramref name="itemsControl" /> is not <see langword="null" />. If <paramref name="itemsControl" /> is <see langword="null" />, returns the closest container that belongs to any <see cref="T:System.Windows.Controls.ItemsControl" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMemberPath">
@@ -408,6 +416,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
       </Docs>
     </Member>
     <Member MemberName="DisplayMemberPathProperty">
@@ -484,6 +493,7 @@ ListBox that contains multiple types of objects
         <summary>Creates or identifies the element that is used to display the given item.</summary>
         <returns>The element that is used to display the given item.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="GetItemsOwner">
@@ -572,6 +582,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.GroupStyleSelector" />
       </Docs>
     </Member>
     <Member MemberName="GroupStyleSelector">
@@ -612,6 +623,7 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Data.PropertyGroupDescription" />
       </Docs>
     </Member>
     <Member MemberName="GroupStyleSelectorProperty">
@@ -798,6 +810,7 @@ ListBox that contains multiple types of objects
         <returns>
           <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="IsTextSearchCaseSensitive">
@@ -1300,6 +1313,7 @@ ListBox that contains multiple types of objects
         <summary>Returns the <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the specified container element.</summary>
         <returns>The <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the specified container element.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
       </Docs>
     </Member>
     <Member MemberName="ItemsPanel">
@@ -1595,6 +1609,8 @@ ListBox that contains multiple types of objects
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.ItemsControl.DisplayMemberPath" />
+        <altmember cref="P:System.Windows.Controls.ItemsControl.ItemTemplateSelector" />
       </Docs>
     </Member>
     <Member MemberName="ItemTemplateProperty">
@@ -2319,5 +2335,14 @@ ListBox that contains multiple types of objects
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainerFromElement">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the container that belongs to the current <see cref="T:System.Windows.Controls.ItemsControl" /> that owns the given container element.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

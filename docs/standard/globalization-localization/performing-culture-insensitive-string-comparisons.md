@@ -8,6 +8,9 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "String.CompareTo method"
   - "String.Compare method"
@@ -20,6 +23,9 @@ caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Performing Culture-Insensitive String Comparisons
 By default, the <xref:System.String.Compare%2A?displayProperty=nameWithType> method performs culture-sensitive and case-sensitive comparisons. This method also includes several overloads that provide a `culture` parameter that lets you specify the culture to use, and a `comparisonType` parameter that lets you specify the comparison rules to use. Calling these methods instead of the default overload removes any ambiguity about the rules used in a particular method call, and makes it clear whether a particular comparison is culture-sensitive or culture-insensitive.  
@@ -39,7 +45,7 @@ By default, the <xref:System.String.Compare%2A?displayProperty=nameWithType> met
  [!code-vb[Conceptual.Strings.CultureInsensitiveComparison#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.cultureinsensitivecomparison/vb/cultureinsensitive1.vb#1)]  
   
 ## See Also  
- <xref:System.String.Compare%2A?displayProperty=nameWithType>   
- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>   
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)   
+ <xref:System.String.Compare%2A?displayProperty=nameWithType>  
+ <xref:System.String.CompareTo%2A?displayProperty=nameWithType>  
+ [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)  
  [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

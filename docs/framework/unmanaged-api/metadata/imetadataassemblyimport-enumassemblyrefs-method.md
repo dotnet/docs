@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumAssemblyRefs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::EnumAssemblyRefs method [.NET Framework metadata]"
   - "EnumAssemblyRefs method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::EnumAssemblyRefs Method
 Enumerates the `mdAssemblyRef` instances that are defined in the assembly manifest.  

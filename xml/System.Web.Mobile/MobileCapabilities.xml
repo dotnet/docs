@@ -63,6 +63,7 @@ public void Page_Load(Object sender, EventArgs e)
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,7 +100,7 @@ public void Page_Load(Object sender, EventArgs e)
       <Docs>
         <param name="delegateName">The device evaluation method, property name, or item in the capabilities collection.</param>
         <param name="optionalParameter">The optional argument.</param>
-        <summary>Provides a uniform way to evaluate device capabilities. This method is used internally by ASP.NET to implement various device-selection criteria expressed in the syntax of the controls. For example, this method is used to choose among [&lt;Choice&gt; Element (.NET Framework Developer's Guide)](http://msdn.microsoft.com/en-us/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <summary>Provides a uniform way to evaluate device capabilities. This method is used internally by ASP.NET to implement various device-selection criteria expressed in the syntax of the controls. For example, this method is used to choose among [&lt;Choice&gt; Element (.NET Framework Developer's Guide)](http://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) elements in a DeviceSpecific/Choice construct. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <returns>
           <see langword="true" /> if the device has the specified capability; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -113,6 +114,7 @@ public void Page_Load(Object sender, EventArgs e)
         <exception cref="T:System.ArgumentOutOfRangeException">A <paramref name="capabilityName" /> parameter is not found as a device-filter name specified in the configuration file, as a <see cref="T:System.Web.Mobile.MobileCapabilities" /> property, or as an item in the <see cref="T:System.Web.Mobile.MobileCapabilities" /> Item collection.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="delegateName" /> is <see langword="null" /> or empty.</exception>
+        <altmember cref="M:System.Web.Mobile.MobileCapabilities.HasCapability(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="PreferredRenderingTypeChtml10">

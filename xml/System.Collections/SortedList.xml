@@ -86,6 +86,11 @@
  A <see cref="T:System.Collections.SortedList" /> object can support multiple readers concurrently, as long as the collection is not modified. To guarantee the thread safety of the <see cref="T:System.Collections.SortedList" />, all operations must be done through the wrapper returned by the <see cref="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" /> method.  
   
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.Collections.IComparer" />
+    <altmember cref="T:System.Collections.IDictionary" />
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.Generic.SortedList`2" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -133,6 +138,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -187,6 +194,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,6 +252,10 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="d" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">One or more elements in <paramref name="d" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -295,6 +309,8 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="initialCapacity" /> is less than zero.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough available memory to create a <see cref="T:System.Collections.SortedList" /> object with the specified <paramref name="initialCapacity" />.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -354,6 +370,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough available memory to create a <see cref="T:System.Collections.SortedList" /> object with the specified <paramref name="capacity" />.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -416,6 +435,11 @@
           <paramref name="d" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="comparer" /> is <see langword="null" />, and one or more elements in <paramref name="d" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <altmember cref="T:System.Collections.IDictionary" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="T:System.Collections.Hashtable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -489,6 +513,10 @@
  The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough available memory to add the element to the <see cref="T:System.Collections.SortedList" />.</exception>
         <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+        <altmember cref="P:System.Collections.SortedList.Item(System.Object)" />
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -532,6 +560,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than the current number of elements in the <see cref="T:System.Collections.SortedList" /> object.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory available on the system.</exception>
+        <altmember cref="M:System.Collections.SortedList.TrimToSize" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -585,6 +614,9 @@
  -or-  
   
  The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.SortedList.TrimToSize" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
+        <altmember cref="P:System.Collections.SortedList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -625,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.SortedList.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -683,6 +716,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+        <altmember cref="M:System.Collections.SortedList.ContainsKey(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -741,6 +776,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+        <altmember cref="M:System.Collections.SortedList.Contains(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.ContainsValue(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ContainsValue">
@@ -794,6 +832,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.SortedList.ContainsKey(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -860,6 +900,9 @@
   
  The number of elements in the source <see cref="T:System.Collections.SortedList" /> object is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
         <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.SortedList" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+        <altmember cref="T:System.Array" />
+        <altmember cref="T:System.Collections.DictionaryEntry" />
+        <altmember cref="M:System.Collections.SortedList.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -901,6 +944,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="GetByIndex">
@@ -953,6 +997,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+        <altmember cref="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1003,6 +1049,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -1106,6 +1154,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.SortedList.GetValueList" />
+        <altmember cref="P:System.Collections.SortedList.Keys" />
       </Docs>
     </Member>
     <Member MemberName="GetValueList">
@@ -1157,6 +1208,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IList" />
+        <altmember cref="M:System.Collections.SortedList.GetKeyList" />
+        <altmember cref="P:System.Collections.SortedList.Values" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfKey">
@@ -1214,6 +1268,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+        <altmember cref="M:System.Collections.SortedList.ContainsKey(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfValue">
@@ -1268,6 +1324,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Collections.SortedList.ContainsValue(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -1403,6 +1461,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.SortedList.SyncRoot" />
+        <altmember cref="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1461,6 +1521,9 @@
  The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough available memory to add the element to the <see cref="T:System.Collections.SortedList" />.</exception>
         <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+        <altmember cref="M:System.Collections.SortedList.Add(System.Object,System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.Contains(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.ContainsKey(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -1502,6 +1565,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.SortedList.Values" />
+        <altmember cref="M:System.Collections.SortedList.GetKeyList" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1560,6 +1626,7 @@
  -or-  
   
  The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.SortedList.RemoveAt(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1618,6 +1685,7 @@
  -or-  
   
  The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.SortedList.Remove(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="SetByIndex">
@@ -1671,6 +1739,8 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+        <altmember cref="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
+        <altmember cref="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Synchronized">
@@ -1731,6 +1801,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="list" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Collections.SortedList.IsSynchronized" />
+        <altmember cref="P:System.Collections.SortedList.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -1779,6 +1851,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Collections.SortedList.IsSynchronized" />
+        <altmember cref="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1831,6 +1905,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IDictionaryEnumerator" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="TrimToSize">
@@ -1884,6 +1960,9 @@
  -or-  
   
  The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <altmember cref="M:System.Collections.SortedList.Clear" />
+        <altmember cref="P:System.Collections.SortedList.Capacity" />
+        <altmember cref="P:System.Collections.SortedList.Count" />
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -1925,7 +2004,20 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.ICollection" />
+        <altmember cref="P:System.Collections.SortedList.Keys" />
+        <altmember cref="M:System.Collections.SortedList.GetValueList" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;timeOuts&gt;
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.  
@@ -51,6 +53,6 @@ Represents a configuration element that specifies the interval of time allowed f
 |[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|A configuration element that specifies settings for a service host.|  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>   
- <xref:System.ServiceModel.ServiceHost>   
+ <xref:System.ServiceModel.Configuration.HostElement>  
+ <xref:System.ServiceModel.ServiceHost>  
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

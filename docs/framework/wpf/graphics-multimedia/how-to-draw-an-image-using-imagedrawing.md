@@ -10,16 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "ImageDrawing class"
-  - "drawing, images"
-  - "graphics, drawing images"
-  - "classes, ImageDrawing"
-  - "images, drawing"
+  - "drawing [WPF], images"
+  - "graphics [WPF], drawing images"
+  - "images [WPF], drawing"
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Draw an Image Using ImageDrawing
 This example shows how to use an <xref:System.Windows.Media.ImageDrawing> to draw an image. An <xref:System.Windows.Media.ImageDrawing> enables you display an <xref:System.Windows.Media.ImageSource> with a <xref:System.Windows.Media.DrawingBrush>, <xref:System.Windows.Media.DrawingImage>, or <xref:System.Windows.Media.Visual>. To draw an image, you create an <xref:System.Windows.Media.ImageDrawing> and set its <xref:System.Windows.Media.ImageDrawing.ImageSource%2A?displayProperty=nameWithType> and <xref:System.Windows.Media.ImageDrawing.Rect%2A?displayProperty=nameWithType> properties. The <xref:System.Windows.Media.ImageDrawing.ImageSource%2A?displayProperty=nameWithType> property specifies the image to draw, and the <xref:System.Windows.Media.ImageDrawing.Rect%2A?displayProperty=nameWithType> property specifies the position and size of each image.  
@@ -36,8 +36,8 @@ Four ImageDrawing objects
  For an example showing a simple way to display an image without using <xref:System.Windows.Media.ImageDrawing>, see [Use the Image Element](../../../../docs/framework/wpf/controls/how-to-use-the-image-element.md).  
   
 ## See Also  
- <xref:System.Windows.Freezable.Freeze%2A>   
- <xref:System.Windows.Controls.Image>   
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)   
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)   
+ <xref:System.Windows.Freezable.Freeze%2A>  
+ <xref:System.Windows.Controls.Image>  
+ [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
+ [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
  [PresentationOptions:Freeze Attribute](../../../../docs/framework/wpf/advanced/presentationoptions-freeze-attribute.md)

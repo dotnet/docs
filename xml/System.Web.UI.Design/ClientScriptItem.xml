@@ -31,6 +31,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ClientScriptItemCollection" />
+    <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.AddClientScriptToDocument(System.Web.UI.Design.ClientScriptItem)" />
+    <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetClientScriptsInDocument" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -82,6 +85,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="id" /> is null (thrown by the design host).</exception>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Text" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -100,6 +108,9 @@
         <summary>Gets the <see langword="ID" /> attribute value for the client script element.</summary>
         <value>The <see langword="ID" /> value of the <see langword="script" /> element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -127,6 +138,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Text" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -156,6 +171,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Text" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -185,6 +204,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Type" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -203,6 +226,10 @@
         <summary>Gets the <see langword="type" /> attribute value for the client script element.</summary>
         <value>The name of the MIME type associated with the <see langword="script" /> element.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Text" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Language" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Source" />
+        <altmember cref="P:System.Web.UI.Design.ClientScriptItem.Id" />
       </Docs>
     </Member>
   </Members>

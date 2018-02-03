@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control changes. The <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged> event is raised when the value of the <xref:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode%2A> property changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -31,6 +31,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeRowsMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged" />
+    <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +65,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeRowsMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
       </Docs>
     </Member>
     <Member MemberName="PreviousModeAutoSized">
@@ -92,6 +107,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AutoSizeRowsMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowHeadersWidthSizeModeChanged" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
       </Docs>
     </Member>
   </Members>

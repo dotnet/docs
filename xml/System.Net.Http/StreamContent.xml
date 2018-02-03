@@ -187,7 +187,7 @@
     </Member>
     <Member MemberName="TryComputeLength">
       <MemberSignature Language="C#" Value="protected override bool TryComputeLength (out long length);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength(int64 length) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength([out] int64&amp; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.TryComputeLength(System.Int64@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -222,5 +222,17 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StreamContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

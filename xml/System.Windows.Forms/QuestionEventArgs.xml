@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="P:System.Windows.Forms.QuestionEventArgs.Response" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.CancelRowEdit" />
+    <altmember cref="E:System.Windows.Forms.DataGridView.RowDirtyStateNeeded" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,6 +49,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class using a default <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property value of <see langword="false" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.QuestionEventArgs.Response" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,6 +68,7 @@
         <param name="response">The default value of the <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class using the specified default value for the <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.QuestionEventArgs.Response" />
       </Docs>
     </Member>
     <Member MemberName="Response">
@@ -96,5 +102,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

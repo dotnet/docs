@@ -195,7 +195,7 @@
     </Member>
     <Member MemberName="CalculateFormPostBackUrl">
       <MemberSignature Language="C#" Value="protected virtual string CalculateFormPostBackUrl (bool externalSubmit, ref bool encode);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool encode) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool&amp; encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CalculateFormPostBackUrl(System.Boolean,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -489,6 +489,7 @@
         <param name="style">The specified style to use for formatting characters</param>
         <summary>Begins a block by using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="EnterLayout">
@@ -510,6 +511,7 @@
         <param name="style">The style reference.</param>
         <summary>Begins a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="ExitFormat">
@@ -531,6 +533,7 @@
         <param name="style">The specified style to use for formatting characters.</param>
         <summary>Ends a block that has been using the character formatting from a specified style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="ExitLayout">
@@ -554,6 +557,7 @@
         <param name="breakAfter">If <c>breakAfter</c> is true, a break is added after the closing style element. The first form of the method assumes <c>breakAfter</c> to be <see langword="true" />.</param>
         <summary>Ends a block by using the formatting from a given style. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsValidSoftkeyLabel">
@@ -841,6 +845,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RenderBeginPostBack">
@@ -988,6 +994,8 @@
         <param name="breakAfter">Set to <see langword="true" /> if a break is required after the link.</param>
         <summary>Completes the rendering of a hyperlink element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RenderEndPostBack">
@@ -1158,6 +1166,8 @@
         <param name="breakAfter">Set to <see langword="true" /> if a break is required after the image.</param>
         <summary>Renders an image element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="RenderSelectOption">
@@ -1315,6 +1325,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
+        <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ResetFormattingState">
@@ -1396,6 +1408,7 @@
           <see langword="true" /> to encode the attribute and its assigned value; otherwise, <see langword="false" />.</param>
         <summary>Writes the specified markup attribute and value to the output stream, and, if specified, writes the value encoded. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="WriteBreak">
@@ -1435,6 +1448,7 @@
         <param name="text">The text string to encode and write to the output stream.</param>
         <summary>Encodes the specified text for the requesting device, and then writes it to the output stream. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedText(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedUrl">
@@ -1456,6 +1470,7 @@
         <param name="url">The URL string to encode and write to the output stream.</param>
         <summary>Encodes the specified URL, and then writes it to the output stream. The URL might include parameters. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrl(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="WritePostField">
@@ -1603,5 +1618,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderSelectOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a single option within a selection list.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RenderText">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WritePostField">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see langword="&amp;lt; postfield &amp;gt;" /> element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

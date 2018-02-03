@@ -1935,7 +1935,7 @@
       <Docs>
         <param name="geometryValue">An expression that specifies the geometry value from which the SpatialBoundary value should be retrieved.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialBoundary' function with the specified argument, which must have an Edm.Geometry result type. The result type of the expression is Edm.Geometry.</summary>
-        <returns>A new DbFunctionExpression that returns the the boundary for <paramref name="geometryValue" />.</returns>
+        <returns>A new DbFunctionExpression that returns the boundary for <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="geometryValue" />
@@ -2027,7 +2027,7 @@
       <Docs>
         <param name="geometryValue">An expression that specifies the geometry value from which the convex hull value should be retrieved.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialConvexHull' function with the specified argument, which must have an Edm.Geometry result type. The result type of the expression is Edm.Geometry.</summary>
-        <returns>A new DbFunctionExpression that returns the the convex hull for <paramref name="geometryValue" />.</returns>
+        <returns>A new DbFunctionExpression that returns the convex hull for <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="geometryValue" />
@@ -2238,7 +2238,7 @@
       <Docs>
         <param name="geometryValue">An expression that specifies the value from which the Envelope value should be retrieved.</param>
         <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'SpatialEnvelope' function with the specified argument, which must have an Edm.Geometry result type. The result type of the expression is Edm.Geometry.</summary>
-        <returns>A new DbFunctionExpression that returns the the minimum bounding box for <paramref name="geometryValue" />.</returns>
+        <returns>A new DbFunctionExpression that returns the minimum bounding box for <paramref name="geometryValue" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="geometryValue" />
@@ -2680,5 +2680,59 @@
         </exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GeometryFromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeometryFromText' function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeometryFromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeometryFromBinary' function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeographyFromText' function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeometryFromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeometryFromGml' function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeographyFromBinary' function.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GeographyFromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GeographyFromGml' function.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

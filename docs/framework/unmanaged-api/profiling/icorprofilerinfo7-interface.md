@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo7 Interface
 [Supported in the [!INCLUDE[net_v461](../../../../includes/net-v461-md.md)] and later versions]  

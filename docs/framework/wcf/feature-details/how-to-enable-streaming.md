@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: 6ca2cf4b-c7a1-49d8-a79b-843a90556ba4
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Enable Streaming
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can send messages using either buffered or streamed transfers. In the default buffered-transfer mode, a message must be completely delivered before a receiver can read it. In streaming transfer mode, the receiver can begin to process the message before it is completely delivered. The streaming mode is useful when the information that is passed is lengthy and can be processed serially. Streaming mode is also useful when the message is too large to be entirely buffered.  
@@ -78,5 +83,5 @@ manager: "erikre"
      [!code-vb[c_HowTo_EnableStreaming#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_enablestreaming/vb/service.vb#2)]  
   
 ## See Also  
- [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)   
+ [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md)  
  [Stream](../../../../docs/framework/wcf/samples/stream.md)

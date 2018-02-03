@@ -22,7 +22,7 @@
   <Members>
     <Member MemberName="StartAppDomainProtocolListenerChannel">
       <MemberSignature Language="C#" Value="public void StartAppDomainProtocolListenerChannel (string appId, string protocolId, System.Web.Hosting.IListenerChannelCallback listenerChannelCallback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartAppDomainProtocolListenerChannel(string appId, string protocolId, class System.Web.Hosting.IListenerChannelCallback listenerChannelCallback) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartAppDomainProtocolListenerChannel([in]string appId, [in]string protocolId, class System.Web.Hosting.IListenerChannelCallback listenerChannelCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StartAppDomainProtocolListenerChannel(System.String,System.String,System.Web.Hosting.IListenerChannelCallback)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -55,7 +55,7 @@
     </Member>
     <Member MemberName="StopAppDomainProtocol">
       <MemberSignature Language="C#" Value="public void StopAppDomainProtocol (string appId, string protocolId, bool immediate);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopAppDomainProtocol(string appId, string protocolId, bool immediate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopAppDomainProtocol([in]string appId, [in]string protocolId, bool immediate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StopAppDomainProtocol(System.String,System.String,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -88,7 +88,7 @@
     </Member>
     <Member MemberName="StopAppDomainProtocolListenerChannel">
       <MemberSignature Language="C#" Value="public void StopAppDomainProtocolListenerChannel (string appId, string protocolId, int listenerChannelId, bool immediate);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopAppDomainProtocolListenerChannel(string appId, string protocolId, int32 listenerChannelId, bool immediate) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopAppDomainProtocolListenerChannel([in]string appId, [in]string protocolId, int32 listenerChannelId, bool immediate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAdphManager.StopAppDomainProtocolListenerChannel(System.String,System.String,System.Int32,System.Boolean)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

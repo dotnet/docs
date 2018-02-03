@@ -19,11 +19,6 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
-  <AssemblyInfo>
-    <AssemblyName>FSharp.Core</AssemblyName>
-    <AssemblyVersion>2.3.98.1</AssemblyVersion>
-    <AssemblyVersion>3.98.4.0</AssemblyVersion>
-  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Supports the structural comparison of collection objects.</summary>
@@ -56,6 +51,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.Collections.IStructuralEquatable" />
+    <altmember cref="P:System.Collections.StructuralComparisons.StructuralComparer" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -79,11 +77,6 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>FSharp.Core</AssemblyName>
-        <AssemblyVersion>2.3.98.1</AssemblyVersion>
-        <AssemblyVersion>3.98.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -142,6 +135,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">This instance and <paramref name="other" /> are not the same type.</exception>
+        <altmember cref="T:System.Collections.IComparer" />
       </Docs>
     </Member>
   </Members>

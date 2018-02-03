@@ -72,6 +72,7 @@
         <param name="index">The zero-based relative index in <c>ar</c> at which copying begins.</param>
         <summary>Copies all the elements of the current one-dimensional <see cref="T:System.Array" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Array.CopyTo(System.Array,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Count">

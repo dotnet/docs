@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineParameter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineParameter method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineParameter method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymUnmanagedWriter::DefineParameter Method
 Defines a single parameter in the current method. The parameter type is taken from the parameter's position (sequence) within the method's signature.  

@@ -196,7 +196,7 @@
         <ReturnType>System.Net.Configuration.MailSettingsSectionGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the configuration section containing the SMTP client e-mail settings for the local computer.</summary>
+        <summary>Gets the configuration section containing the SMTP client email settings for the local computer.</summary>
         <value>A <see cref="T:System.Net.Configuration.MailSettingsSectionGroup" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

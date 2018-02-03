@@ -494,5 +494,25 @@
  The zip archive for this entry was opened in <see cref="F:System.IO.Compression.ZipArchiveMode.Create" /> mode, which does not permit the retrieval of entries.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateEntryFromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Archives a file by compressing it and adding it to the zip archive.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ExtractToFile">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Extracts an entry in the zip archive to a file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 50922964-bfe0-4ba8-9422-0e7220d514fd
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Fault Handling in a Flowchart Activity Using TryCatch
 This sample shows how the <xref:System.Activities.Statements.TryCatch> activity can be used within a complex control flow activity.  
@@ -51,5 +53,5 @@ This sample shows how the <xref:System.Activities.Statements.TryCatch> activity 
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\FlowChartWithFaultHandling`  
   
 ## See Also  
- [Flowchart Workflows](../../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)   
+ [Flowchart Workflows](../../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)  
  [Exceptions](../../../../docs/framework/windows-workflow-foundation/exceptions.md)

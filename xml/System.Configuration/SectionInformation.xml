@@ -54,6 +54,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationSection" />
   </Docs>
   <Members>
     <Member MemberName="AllowDefinition">
@@ -99,6 +100,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationSection" />
       </Docs>
     </Member>
     <Member MemberName="AllowExeDefinition">
@@ -144,6 +146,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationAllowExeDefinition" />
       </Docs>
     </Member>
     <Member MemberName="AllowLocation">
@@ -275,6 +278,25 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Configuration.SectionInformation.RestartOnExternalChanges" />
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationBuilder">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationBuilder ConfigurationBuilder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationBuilder ConfigurationBuilder" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigurationBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationBuilder" /> object for this configuration section.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationBuilder" /> object for this configuration section.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="ForceDeclaration">
@@ -369,6 +391,7 @@
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">
           <paramref name="require" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
+        <altmember cref="P:System.Configuration.SectionInformation.IsDeclarationRequired" />
       </Docs>
     </Member>
     <Member MemberName="ForceSave">
@@ -566,6 +589,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="IsDeclared">
@@ -767,6 +791,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">An attempt was made to change both the <see cref="P:System.Configuration.SectionInformation.AllowOverride" /> and <see cref="P:System.Configuration.SectionInformation.OverrideMode" /> properties, which is not supported for compatibility reasons.</exception>
+        <altmember cref="P:System.Configuration.SectionInformation.AllowOverride" />
       </Docs>
     </Member>
     <Member MemberName="OverrideModeDefault">
@@ -797,6 +822,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The override behavior is specified in a parent configuration section.</exception>
+        <altmember cref="P:System.Configuration.SectionInformation.OverrideMode" />
       </Docs>
     </Member>
     <Member MemberName="OverrideModeEffective">
@@ -921,6 +947,8 @@
  \- or -  
   
  The target section is already a protected data section.</exception>
+        <altmember cref="T:System.Configuration.DpapiProtectedConfigurationProvider" />
+        <altmember cref="T:System.Configuration.RsaProtectedConfigurationProvider" />
       </Docs>
     </Member>
     <Member MemberName="RequirePermission">

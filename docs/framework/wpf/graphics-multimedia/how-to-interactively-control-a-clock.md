@@ -9,14 +9,19 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "controlling clocks interactively"
-  - "clocks, controlling interactively"
+  - "controlling clocks interactively [WPF]"
+  - "clocks [WPF], controlling interactively"
 ms.assetid: d0b520e0-2f18-4cef-977f-2909e709548a
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Interactively Control a Clock
 A <xref:System.Windows.Media.Animation.Clock> object's <xref:System.Windows.Media.Animation.ClockController> property enables you to interactively start, pause, resume, seek, advance the clock to its fill period, and stop the clock. Only the root clock of a timing tree can be interactively controlled.  
@@ -31,5 +36,5 @@ A <xref:System.Windows.Media.Animation.Clock> object's <xref:System.Windows.Medi
  [!code-vb[timingbehaviors_procedural_snip#GraphicsMMClockControllerExample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_procedural_snip/visualbasic/clockcontrollerexample.vb#graphicsmmclockcontrollerexample)]  
   
 ## See Also  
- [Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)   
+ [Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

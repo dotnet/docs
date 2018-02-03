@@ -33,7 +33,7 @@
   
  When the work done within the cloned transaction is finally complete and ready to be committed, it can inform the creator of the transaction using the <xref:System.Transactions.DependentTransaction.Complete%2A> method. Thus you can preserve the consistency and correctness of data.  
   
- The <xref:System.Transactions.DependentCloneOption> enumeration is used to determine the behavior on commit.  This behavior control allows an application to come to rest, as well as provides concurrency support. For more information on how this enumeration is used, see [Managing Concurrency with DependentTransaction](http://msdn.microsoft.com/en-us/bdad8468-2a90-4b81-8375-278067120cab).  
+ The <xref:System.Transactions.DependentCloneOption> enumeration is used to determine the behavior on commit.  This behavior control allows an application to come to rest, as well as provides concurrency support. For more information on how this enumeration is used, see [Managing Concurrency with DependentTransaction](http://msdn.microsoft.com/library/bdad8468-2a90-4b81-8375-278067120cab).  
   
    
   

@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:Microsoft.Win32.OpenFileDialog" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -114,6 +115,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No files were selected in the dialog.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">to set this dialog option. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="P:Microsoft.Win32.FileDialog.SafeFileName" />
       </Docs>
     </Member>
     <Member MemberName="OverwritePrompt">

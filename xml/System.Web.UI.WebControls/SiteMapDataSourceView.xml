@@ -24,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.HierarchicalDataSourceView" />
+    <altmember cref="T:System.Web.UI.WebControls.SiteMapDataSource" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapNode" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -82,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
       </Docs>
     </Member>
     <Member MemberName="ExecuteSelect">
@@ -112,6 +117,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceViewChanged">
@@ -133,6 +139,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
         <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.UI.DataSourceView.OnDataSourceViewChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -163,7 +170,19 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.SiteMapDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
+        <altmember cref="T:System.Web.SiteMapNodeCollection" />
+        <altmember cref="T:System.Web.UI.IHierarchicalEnumerable" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

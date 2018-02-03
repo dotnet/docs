@@ -18,6 +18,8 @@ caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # UI Automation Support for the HeaderItem Control Type
 > [!NOTE]
@@ -78,6 +80,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See Also  
- <xref:System.Windows.Automation.ControlType.HeaderItem>   
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)   
+ <xref:System.Windows.Automation.ControlType.HeaderItem>  
+ [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
  [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

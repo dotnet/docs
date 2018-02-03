@@ -321,6 +321,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Globalization.CultureInfo" />
+    <altmember cref="T:System.IFormatProvider" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -407,6 +409,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.IsReadOnly" />
+        <altmember cref="M:System.Globalization.NumberFormatInfo.ReadOnly(System.Globalization.NumberFormatInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyDecimalDigits">
@@ -457,6 +461,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyDecimalSeparator">
@@ -510,6 +522,14 @@
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
         <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyGroupSeparator">
@@ -562,6 +582,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyGroupSizes">
@@ -621,6 +649,14 @@
   
  The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyNegativePattern">
@@ -689,6 +725,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 15.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
       </Docs>
     </Member>
     <Member MemberName="CurrencyPositivePattern">
@@ -739,6 +783,13 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 3.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
       </Docs>
     </Member>
     <Member MemberName="CurrencySymbol">
@@ -788,6 +839,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PerMilleSymbol" />
       </Docs>
     </Member>
     <Member MemberName="CurrentInfo">
@@ -835,6 +895,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="P:System.Globalization.CultureInfo.NumberFormat" />
       </Docs>
     </Member>
     <Member MemberName="DigitSubstitution">
@@ -921,6 +983,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IFormatProvider" />
+        <altmember cref="M:System.Globalization.DateTimeFormatInfo.GetFormat(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetInstance">
@@ -976,6 +1040,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IFormatProvider" />
       </Docs>
     </Member>
     <Member MemberName="InvariantInfo">
@@ -1069,6 +1134,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.NumberFormatInfo.ReadOnly(System.Globalization.NumberFormatInfo)" />
       </Docs>
     </Member>
     <Member MemberName="NaNSymbol">
@@ -1110,6 +1176,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol" />
       </Docs>
     </Member>
     <Member MemberName="NativeDigits">
@@ -1179,6 +1247,7 @@
  -or-  
   
  In a set operation, the numeric value of an element in the value array does not correspond to the element's position in the array. That is, the element at index 0, which is the first element of the array, does not have a numeric value of 0, or the element at index 1 does not have a numeric value of 1.</exception>
+        <altmember cref="T:System.Globalization.DigitShapes" />
       </Docs>
     </Member>
     <Member MemberName="NegativeInfinitySymbol">
@@ -1220,6 +1289,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
       </Docs>
     </Member>
     <Member MemberName="NegativeSign">
@@ -1269,6 +1340,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PositiveSign" />
       </Docs>
     </Member>
     <Member MemberName="NumberDecimalDigits">
@@ -1319,6 +1391,13 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
       </Docs>
     </Member>
     <Member MemberName="NumberDecimalSeparator">
@@ -1372,6 +1451,13 @@
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
         <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
       </Docs>
     </Member>
     <Member MemberName="NumberGroupSeparator">
@@ -1424,6 +1510,13 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
       </Docs>
     </Member>
     <Member MemberName="NumberGroupSizes">
@@ -1491,6 +1584,13 @@
   
  The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
       </Docs>
     </Member>
     <Member MemberName="NumberNegativePattern">
@@ -1551,6 +1651,13 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 4.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
       </Docs>
     </Member>
     <Member MemberName="PercentDecimalDigits">
@@ -1601,6 +1708,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
       </Docs>
     </Member>
     <Member MemberName="PercentDecimalSeparator">
@@ -1652,6 +1767,14 @@
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
         <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
       </Docs>
     </Member>
     <Member MemberName="PercentGroupSeparator">
@@ -1702,6 +1825,14 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
       </Docs>
     </Member>
     <Member MemberName="PercentGroupSizes">
@@ -1761,6 +1892,14 @@
   
  The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
       </Docs>
     </Member>
     <Member MemberName="PercentNegativePattern">
@@ -1817,6 +1956,14 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 11.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
       </Docs>
     </Member>
     <Member MemberName="PercentPositivePattern">
@@ -1865,6 +2012,13 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 3.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
       </Docs>
     </Member>
     <Member MemberName="PercentSymbol">
@@ -1906,6 +2060,15 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PerMilleSymbol" />
       </Docs>
     </Member>
     <Member MemberName="PerMilleSymbol">
@@ -1947,6 +2110,9 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
       </Docs>
     </Member>
     <Member MemberName="PositiveInfinitySymbol">
@@ -1988,6 +2154,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol" />
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
       </Docs>
     </Member>
     <Member MemberName="PositiveSign">
@@ -2029,6 +2197,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">In a set operation, the value to be assigned is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.NegativeSign" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -2076,6 +2245,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="nfi" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Globalization.NumberFormatInfo.IsReadOnly" />
       </Docs>
     </Member>
   </Members>

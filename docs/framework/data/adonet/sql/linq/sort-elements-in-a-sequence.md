@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-ado"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: d59b93a9-50c8-4770-a114-d902f6a0ea76
 caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
+author: "douglaslMS"
+ms.author: "douglasl"
+manager: "craigg"
+ms.workload: 
+  - "dotnet"
 ---
 # Sort Elements in a Sequence
 Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence according to one or more keys.  
@@ -92,5 +97,5 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
  `Carnarvon Tigers`  
   
 ## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)   
+ [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

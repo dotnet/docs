@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
 caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
+ms.workload: 
+  - "dotnet"
 ---
 # Certificate Selection and Validation
 The <xref:System.Net> classes support several ways to select and validate <xref:System.Security.Cryptography.X509Certificates> for Secure Socket Layer (SSL) connections. A client can select one or more certificates to authenticate itself to a server. A server can require that a client certificate have one or more specific attributes for authentication.  
@@ -62,5 +59,5 @@ The <xref:System.Net> classes support several ways to select and validate <xref:
  In addition to these tools, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> classes provides methods for loading a certificate from the file system.  
   
 ## See Also  
- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)   
+ [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

@@ -102,7 +102,7 @@
     </MemberGroup>
     <Member MemberName="InstallAssembly">
       <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags, object sync);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string&amp; application, string&amp; tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -141,7 +141,7 @@
     </Member>
     <Member MemberName="InstallAssembly">
       <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, string partition, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags, object sync);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string partition, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string&amp; application, string partition, string&amp; tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -182,7 +182,7 @@
     </Member>
     <Member MemberName="InstallAssemblyFromConfig">
       <MemberSignature Language="C#" Value="public void InstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig, object sync);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig, object sync) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig&amp; regConfig, object sync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -321,7 +321,7 @@
     </Member>
     <Member MemberName="UninstallAssemblyFromConfig">
       <MemberSignature Language="C#" Value="public void UninstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig, object sync);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig, object sync) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig&amp; regConfig, object sync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

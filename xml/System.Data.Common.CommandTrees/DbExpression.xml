@@ -480,9 +480,9 @@
         <Parameter Name="value" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">An array of 8-bit unsigned integer.</param>
+        <summary>Converts an array of 8-bit unsigned integer to a <see cref="T:System.Data.Common.CommandTrees.DbExpression" /></summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted array of 8-bit unsigned integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,9 +502,9 @@
         <Parameter Name="value" Type="System.Data.Spatial.DbGeography" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The DbGeography object.</param>
+        <summary>Converts a DbGeography object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted DbGeography object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,9 +524,9 @@
         <Parameter Name="value" Type="System.Data.Spatial.DbGeometry" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The DbGeometry object.</param>
+        <summary>Converts a DbGeometry object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted DbGeography object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -546,9 +546,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable Boolean object.</param>
+        <summary>Converts a nullable Boolean object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted nullable Boolean object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,9 +568,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A nullable 8-bit unsigned integer.</param>
+        <summary>Converts a nullable 8-bit unsigned integer to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the converted 8-bit unsigned integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,9 +590,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.DateTime&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.DateTime" /> object.</param>
+        <summary>Converts a nullable <see cref="T:System.DateTime" /> object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,9 +612,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.DateTimeOffset&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.DateTime" /> object.</param>
+        <summary>Converts a nullable <see cref="T:System.DateTimeOffset" /> object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,9 +634,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Decimal&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Decimal" /> object.</param>
+        <summary>Converts a nullable <see cref="T:System.Decimal" /> object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable <see cref="T:System.Decimal" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,9 +656,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The nullable <see cref="T:System.Double" /> object.</param>
+        <summary>Converts a nullable <see cref="T:System.Double" /> object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable <see cref="T:System.Double" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -678,9 +678,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Guid&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A nullable <see cref="T:System.Guid" /> object.</param>
+        <summary>Converts a nullable <see cref="T:System.Guid" /> object to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable <see cref="T:System.Guid" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -700,9 +700,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int16&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A nullable 16-bit unsigned integer.</param>
+        <summary>Converts a nullable 16-bit unsigned integer to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable 16-bit unsigned integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,9 +722,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A nullable 32-bit unsigned integer.</param>
+        <summary>Converts a nullable 32-bit unsigned integer to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable 32-bit unsigned integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -744,9 +744,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A nullable 64-bit unsigned integer.</param>
+        <summary>Converts a nullable 64-bit unsigned integer to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents the nullable 64-bit unsigned integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -766,9 +766,9 @@
         <Parameter Name="value" Type="System.Nullable&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The single-precision floating-point number.</param>
+        <summary>Converts a nullable single-precision floating-point number to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents a single-precision floating-point number.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,9 +788,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">A sequential collection of Unicode characters.</param>
+        <summary>Converts a sequential collection of Unicode characters to <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</summary>
+        <returns>A <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that represents a sequential collection of Unicode characters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -812,5 +812,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an object to a <see cref="T:System.Data.Common.CommandTrees.DbExpression" /></summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

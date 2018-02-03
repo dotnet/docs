@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "shapes, composite, controlling fill"
-  - "composite shapes, controlling fill"
+  - "shapes [WPF], composite [WPF], controlling fill"
+  - "composite shapes [WPF], controlling fill"
   - "graphics [WPF], composite shapes"
-  - "fill, controlling"
+  - "fill [WPF], controlling"
 ms.assetid: c1c94575-9eca-48a5-a49a-2ec65259f229
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Control the Fill of a Composite Shape
 The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:System.Windows.Media.GeometryGroup> or a <xref:System.Windows.Media.PathGeometry>, specifies a "rule" which the composite shape uses to determine whether a given point is part of the geometry. There are two possible values for <xref:System.Windows.Media.FillRule>: <xref:System.Windows.Media.FillRule.EvenOdd> and <xref:System.Windows.Media.FillRule.Nonzero>. The following sections will describe how to use these two rules.  
@@ -68,5 +70,5 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
 ## Example  
   
 ## See Also  
- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)   
+ [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

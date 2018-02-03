@@ -132,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTableCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,6 +174,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataSet.DataSetName" />
+        <altmember cref="T:System.Data.DataTableCollection" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -454,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.Copy" />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -497,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.Clone" />
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDataReader">
@@ -574,7 +579,7 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDataReader">
-      <MemberSignature Language="C#" Value="public System.Data.DataTableReader CreateDataReader (System.Data.DataTable[] dataTables);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTableReader CreateDataReader (params System.Data.DataTable[] dataTables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTableReader CreateDataReader(class System.Data.DataTable[] dataTables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.CreateDataReader(System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -984,6 +989,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.HasChanges" />
       </Docs>
     </Member>
     <Member MemberName="GetChanges">
@@ -2022,7 +2028,7 @@ class Program {
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.DataTable[] tables);" />
+      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, params System.Data.DataTable[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.DataTable[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -2086,7 +2092,7 @@ class Program {
       </Docs>
     </Member>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, string[] tables);" />
+      <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, params string[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, string[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2150,7 +2156,7 @@ class Program {
       </Docs>
     </Member>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public virtual void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.FillErrorEventHandler errorHandler, System.Data.DataTable[] tables);" />
+      <MemberSignature Language="C#" Value="public virtual void Load (System.Data.IDataReader reader, System.Data.LoadOption loadOption, System.Data.FillErrorEventHandler errorHandler, params System.Data.DataTable[] tables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Data.IDataReader reader, valuetype System.Data.LoadOption loadOption, class System.Data.FillErrorEventHandler errorHandler, class System.Data.DataTable[] tables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSet.Load(System.Data.IDataReader,System.Data.LoadOption,System.Data.FillErrorEventHandler,System.Data.DataTable[])" />
       <MemberType>Method</MemberType>
@@ -2369,6 +2375,9 @@ class Program {
         </remarks>
         <exception cref="T:System.Data.ConstraintException">One or more constraints cannot be enabled.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="dataSet" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Data.ForeignKeyConstraint" />
+        <altmember cref="M:System.Data.DataSet.GetChanges" />
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2487,6 +2496,8 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.ForeignKeyConstraint" />
+        <altmember cref="T:System.Data.UniqueConstraint" />
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -2700,7 +2711,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
@@ -2795,7 +2806,7 @@ class Program {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  ]]></format>
         </remarks>
@@ -3034,6 +3045,9 @@ class Program {
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataSet.ReadXmlSchema(System.Xml.XmlReader)" />
+        <altmember cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" />
+        <altmember cref="M:System.Data.DataSet.WriteXmlSchema(System.IO.Stream)" />
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
@@ -5059,5 +5073,95 @@ class Program {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an XML schema into the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataSet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads XML schema and data into the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes XML data, and optionally the schema, from the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HasChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.DataSet" /> has changes, including new, deleted, or modified rows.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merges a specified <see cref="T:System.Data.DataSet" />, <see cref="T:System.Data.DataTable" />, or array of <see cref="T:System.Data.DataRow" /> objects into the current <see langword="DataSet" /> or <see langword="DataTable" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the <see cref="T:System.Data.DataSet" /> structure as an XML schema.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a copy of the <see cref="T:System.Data.DataSet" /> containing all changes made to it since it was last loaded, or since <see cref="M:System.Data.DataSet.AcceptChanges" /> was called.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="InferXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies XML schema to the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

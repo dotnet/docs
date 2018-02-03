@@ -185,6 +185,8 @@ newGrammar.SpeechRecognized +=
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
+    <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -976,7 +978,7 @@ newGrammar.SpeechRecognized +=
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.TryGetValue">
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,SemanticValue&gt;.TryGetValue (string key, out System.Speech.Recognition.SemanticValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.TryGetValue(string key, class System.Speech.Recognition.SemanticValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.TryGetValue(string key, [out] class System.Speech.Recognition.SemanticValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#TryGetValue(System.String,System.Speech.Recognition.SemanticValue@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

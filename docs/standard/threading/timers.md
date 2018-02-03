@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "threading [.NET Framework], timers"
   - "timers, about timers"
@@ -16,6 +20,9 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Timers
 Timers are lightweight objects that enable you to specify a delegate to be called at a specified time. A thread in the thread pool performs the wait operation.  
@@ -32,5 +39,5 @@ Timers are lightweight objects that enable you to specify a delegate to be calle
  [!code-vb[System.Threading.Timer#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Timer/VB/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Threading.Timer>   
+ <xref:System.Threading.Timer>  
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

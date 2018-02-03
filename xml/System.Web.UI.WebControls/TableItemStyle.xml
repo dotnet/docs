@@ -25,12 +25,19 @@
 ## Examples  
  The following code example creates several rows in a <xref:System.Web.UI.WebControls.Table> control and applies a <xref:System.Web.UI.WebControls.TableItemStyle> object to each row.  
   
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <altmember cref="T:System.Web.UI.WebControls.Table" />
+    <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.HorizontalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.VerticalAlign" />
+    <altmember cref="P:System.Web.UI.WebControls.TableItemStyle.Wrap" />
+    <altmember cref="M:System.Web.UI.WebControls.TableItemStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+    <altmember cref="M:System.Web.UI.WebControls.TableItemStyle.MergeWith(System.Web.UI.WebControls.Style)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,8 +61,8 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  -->  
+ [!code-aspx-csharp[TableCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#1)]
+ [!code-aspx-vb[TableCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#1)]  
   
   
  ]]></format>
@@ -85,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -115,6 +123,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Web.UI.WebControls.Style.AddAttributesToRender" />
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
@@ -146,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -189,6 +199,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified horizontal alignment is not one of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> enumeration values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -219,6 +230,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="M:System.Web.UI.WebControls.TableItemStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -244,6 +257,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.Style.Reset" />
       </Docs>
     </Member>
     <Member MemberName="VerticalAlign">
@@ -323,7 +337,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet::SetThreadContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugRegisterSet::SetThreadContext method [.NET Framework debugging]"
   - "SetThreadContext method, ICorDebugRegisterSet interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugRegisterSet::SetThreadContext Method
 `SetThreadContext` is not implemented in the .NET Framework version 2.0. Do not call this method.  
@@ -56,5 +56,5 @@ HRESULT SetThreadContext (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See Also  
- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)   
+ [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)  
  [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

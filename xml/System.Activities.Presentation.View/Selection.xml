@@ -38,7 +38,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Selection (System.Activities.Presentation.Model.ModelItem[] selectedObjects);" />
+      <MemberSignature Language="C#" Value="public Selection (params System.Activities.Presentation.Model.ModelItem[] selectedObjects);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.Model.ModelItem[] selectedObjects) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.Selection.#ctor(System.Activities.Presentation.Model.ModelItem[])" />
       <MemberType>Constructor</MemberType>
@@ -397,5 +397,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Activities.Presentation.View.Selection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

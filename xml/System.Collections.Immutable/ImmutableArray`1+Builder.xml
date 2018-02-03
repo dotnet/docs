@@ -36,7 +36,7 @@
   
  A writable array accessor that can be converted into an <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> instance without allocating extra memory.  
   
- [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -141,7 +141,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (T[] items);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params T[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(!T[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.Builder.AddRange(`0[])" />
       <MemberType>Method</MemberType>

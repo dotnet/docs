@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType::GetClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugType::GetClass method [.NET Framework debugging]"
   - "GetClass method, ICorDebugType interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType::GetClass Method
 Gets an interface pointer to an ICorDebugClass that represents the uninstantiated generic type.  

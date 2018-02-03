@@ -391,7 +391,7 @@
     </Member>
     <Member MemberName="ReadItems">
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt; ReadItems (System.Xml.XmlReader reader, System.ServiceModel.Syndication.SyndicationFeed feed, out bool areAllItemsRead);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; ReadItems(class System.Xml.XmlReader reader, class System.ServiceModel.Syndication.SyndicationFeed feed, bool areAllItemsRead) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; ReadItems(class System.Xml.XmlReader reader, class System.ServiceModel.Syndication.SyndicationFeed feed, [out] bool&amp; areAllItemsRead) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20FeedFormatter.ReadItems(System.Xml.XmlReader,System.ServiceModel.Syndication.SyndicationFeed,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -697,5 +697,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -62,7 +62,7 @@
     </Member>
     <Member MemberName="AddDependent">
       <MemberSignature Language="C#" Value="public abstract bool AddDependent (string key, System.Web.Caching.CacheDependency dependency, out DateTime utcLastUpdated);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AddDependent(string key, class System.Web.Caching.CacheDependency dependency, valuetype System.DateTime utcLastUpdated) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AddDependent(string key, class System.Web.Caching.CacheDependency dependency, [out] valuetype System.DateTime&amp; utcLastUpdated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.CacheStoreProvider.AddDependent(System.String,System.Web.Caching.CacheDependency,System.DateTime@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -327,5 +327,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified item from the cache.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

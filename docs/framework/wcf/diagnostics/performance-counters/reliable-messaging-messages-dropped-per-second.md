@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a11b0b80-b242-48e1-b0bb-7f756db5486b
 caps.latest.revision: 8
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Reliable Messaging Messages Dropped Per Second
 Counter Name: Reliable Messaging Sessions Dropped Per Second.  

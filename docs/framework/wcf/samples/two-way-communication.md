@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fb64192d-b3ea-4e02-9fb3-46a508d26c60
 caps.latest.revision: 24
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Two-Way Communication
 This sample demonstrates how to perform transacted two-way queued communication over MSMQ. This sample uses the `netMsmqBinding` binding. In this case, the service is a self-hosted console application that allows you to observe the service receiving queued messages.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugUserState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugUserState enumeration [.NET Framework debugging]"
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
@@ -28,6 +26,8 @@ caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugUserState Enumeration
 Indicates the user state of a thread.  

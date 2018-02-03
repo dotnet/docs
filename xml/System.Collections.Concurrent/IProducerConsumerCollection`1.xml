@@ -172,7 +172,7 @@
     </Member>
     <Member MemberName="TryTake">
       <MemberSignature Language="C#" Value="public bool TryTake (out T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryTake([out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

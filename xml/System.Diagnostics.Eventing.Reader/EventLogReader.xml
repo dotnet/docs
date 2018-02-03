@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069) or [How To: Access and Read Event Information](http://msdn.microsoft.com/en-us/14db3375-d305-49ae-aa24-aedbe906e76c).  
+ For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/library/5231a436-4cf2-4539-90d2-a04813aba069) or [How To: Access and Read Event Information](http://msdn.microsoft.com/library/14db3375-d305-49ae-aa24-aedbe906e76c).  
   
  ]]></format>
     </remarks>
@@ -259,7 +259,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/en-us/5231a436-4cf2-4539-90d2-a04813aba069).  
+ For example code using this class, see [How To: Query for Events](http://msdn.microsoft.com/library/5231a436-4cf2-4539-90d2-a04813aba069).  
   
  ]]></format>
         </remarks>
@@ -390,5 +390,41 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Seek">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the position in the event stream where the next event that is read will come from.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.EventLogReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the next event that is returned from the event query in this object.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

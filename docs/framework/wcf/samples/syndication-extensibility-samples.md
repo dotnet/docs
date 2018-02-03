@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b2c34ae5-62ed-4c2d-b2fa-2d4d0802099c
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Syndication Extensibility Samples
 This section contains samples that demonstrate custom syndication in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)].  

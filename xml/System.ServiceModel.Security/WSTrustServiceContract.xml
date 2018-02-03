@@ -1246,6 +1246,7 @@
         <summary>Returns the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that will be used when resolving tokens and keys in the WS-Trust message body.</summary>
         <returns>The security token resolver that will be used when resolving tokens and keys in the WS-Trust message body.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ServiceModel.Security.WSTrustServiceContract.GetSecurityHeaderTokenResolver(System.ServiceModel.Channels.RequestContext)" />
       </Docs>
     </Member>
     <Member MemberName="GetSecurityHeaderTokenResolver">

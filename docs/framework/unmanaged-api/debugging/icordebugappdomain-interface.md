@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain interface [.NET Framework debugging]"
 ms.assetid: be7ae711-1217-4a44-be40-166e29641b77
@@ -28,6 +26,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugAppDomain Interface1
 Provides methods for debugging application domains. This interface is a subclass of ICorDebugController.  

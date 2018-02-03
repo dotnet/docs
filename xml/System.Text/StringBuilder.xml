@@ -38,10 +38,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/stringbuilder.cs#adf60ee46ebd299f). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  This class represents a string-like object whose value is a mutable sequence of characters.  
   
  In this section:  
@@ -170,10 +166,12 @@
 ### Iterating StringBuilder characters  
  You can access the characters in a <xref:System.Text.StringBuilder> object by using the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property. In C#, <xref:System.Text.StringBuilder.Chars%2A> is an indexer; in Visual Basic, it is the default property of the <xref:System.Text.StringBuilder> class. This enables you to set or retrieve individual characters by using their index only, without explicitly referencing the <xref:System.Text.StringBuilder.Chars%2A> property. Characters in a <xref:System.Text.StringBuilder> object begin at index 0 (zero) and continue to index <xref:System.Text.StringBuilder.Length%2A> - 1.  
   
- The following example illustrates the <xref:System.Text.StringBuilder.Chars%2A> property. It appends ten random numbers to a <xref:System.Text.StringBuilder> object, and then iterates each character. If the character's Unicode category is <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, it decreases the number by 1 (or changes the number to 9 if its value is 0). The example displays the contents of the <xref:System.Text.StringBuilder> object both before and after the values of individual characters were changed.  
+ The following example illustrates the <xref:System.Text.StringBuilder.Chars%2A> property. It appends ten random numbers to a <xref:System.Text.StringBuilder> object, and then iterates each character. If the character's Unicode category is <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, it decreases the number by 1 (or changes the number to 9 if its value is 0). The example displays the contents of the <xref:System.Text.StringBuilder> object both before and after the values of individual characters were changed.  
   
  [!code-csharp[System.Text.StringBuilder.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/chars1.cs#7)]
  [!code-vb[System.Text.StringBuilder.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/chars1.vb#7)]  
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
   
 <a name="Adding"></a>   
 ### Adding text to a StringBuilder object  
@@ -216,7 +214,7 @@
 |---------------|----------|----------|  
 |Search string values before adding them to the <xref:System.Text.StringBuilder> object.|Useful for determining whether a substring exists.|Cannot be used when the index position of a substring is important.|  
 |Call <xref:System.Text.StringBuilder.ToString%2A> and search the returned <xref:System.String> object.|Easy to use if you assign all the text to a <xref:System.Text.StringBuilder> object, and then begin to modify it.|Cumbersome to repeatedly call <xref:System.Text.StringBuilder.ToString%2A> if you must make modifications before all text is added to the <xref:System.Text.StringBuilder> object.<br /><br /> You must remember to work from the end of the <xref:System.Text.StringBuilder> object's text if you're making changes.|  
-|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.|  
+|Use the <xref:System.Text.StringBuilder.Chars%2A> property to sequentially search a range of characters.|Useful if you're concerned with individual characters or a small substring.|Cumbersome if the number of characters to search is large or if the search logic is complex.<br /><br />Results in very poor performance for objects that have grown very large through repeated method calls.  |  
 |Convert the <xref:System.Text.StringBuilder> object to a <xref:System.String> object, and perform modifications on the <xref:System.String> object.|Useful if the number of modifications is small.|Negates the performance benefit of the <xref:System.Text.StringBuilder> class if the number of modifications is large.|  
   
  Let's examine these techniques in greater detail.  
@@ -236,7 +234,7 @@
      [!code-csharp[System.Text.StringBuilder.Class#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.class/cs/pattern2.cs#13)]
      [!code-vb[System.Text.StringBuilder.Class#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.class/vb/pattern2.vb#13)]  
   
--   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex.  
+-   Use the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property to sequentially search a range of characters in a <xref:System.Text.StringBuilder> object. This approach may not be practical if the number of characters to be searched is large or the search logic is particularly complex. For the performance implications of character-by-character index-based access for very large, chunked <xref:System.Text.StringBuilder> objects, see the documentation for the <xref:System.Text.StringBuilder.Chars%2A?displayProperty=nameWithType> property. 
   
      The following example is identical in functionality to the previous example but differs in implementation. It uses the <xref:System.Text.StringBuilder.Chars%2A> property to detect when a character value has changed, inserts an underscore at that position, and converts the first character in the new sequence to uppercase.  
   
@@ -268,6 +266,7 @@
     <block subset="none" type="usage">
       <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
     </block>
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -363,6 +362,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -468,6 +468,8 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
+        <altmember cref="P:System.Text.StringBuilder.MaxCapacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -521,6 +523,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -587,6 +590,7 @@
  -or-  
   
  <paramref name="startIndex" /> plus <paramref name="length" /> is not a position within <paramref name="value" />.</exception>
+        <altmember cref="P:System.Text.StringBuilder.Capacity" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -638,6 +642,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -691,6 +696,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -742,6 +748,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -853,6 +860,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -906,6 +914,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -959,6 +968,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1012,6 +1022,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1065,6 +1076,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1118,6 +1130,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1176,6 +1189,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1229,6 +1243,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1287,6 +1302,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1345,6 +1361,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1403,6 +1420,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1461,6 +1479,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1520,6 +1539,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1663,6 +1683,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Append">
@@ -1740,6 +1761,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
@@ -1827,7 +1849,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2014,7 +2036,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendFormat">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, object[] args);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendFormat (IFormatProvider provider, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendFormat(class System.IFormatProvider provider, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2493,7 +2515,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2523,7 +2545,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (char separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(char separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2553,7 +2575,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, object[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -2583,7 +2605,7 @@
       </Docs>
     </Member>
     <Member MemberName="AppendJoin">
-      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, string[] values);" />
+      <MemberSignature Language="C#" Value="public System.Text.StringBuilder AppendJoin (string separator, params string[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder AppendJoin(string separator, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2725,6 +2747,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="AppendLine">
@@ -2778,6 +2801,7 @@
         <block subset="none" type="usage">
           <para>In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <see cref="T:System.Text.StringBuilder" /> object by calling the <see cref="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" /> constructor, both the length and the capacity of the <see cref="T:System.Text.StringBuilder" /> instance can grow beyond the value of its <see cref="P:System.Text.StringBuilder.MaxCapacity" /> property. This can occur particularly when you call the <see cref="M:System.Text.StringBuilder.Append(System.String)" /> and <see cref="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" /> methods to append small strings.</para>
         </block>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -2876,13 +2900,18 @@
   
  [!code-csharp[System.Text.StringBuilder.Chars#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.stringbuilder.chars/cs/chars1.cs#1)]
  [!code-vb[System.Text.StringBuilder.Chars#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.stringbuilder.chars/vb/chars1.vb#1)]  
-  
+
+### Performance and character-based indexing
+
+[!INCLUDE[stringbuilder-performance-note](~/includes/stringbuilder-perf-note.md)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the bounds of this instance while setting a character.</exception>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is outside the bounds of this instance while getting a character.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -3175,6 +3204,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3234,6 +3264,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Byte" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3298,6 +3329,7 @@
  -or-  
   
  Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.Char" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3418,6 +3450,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Decimal" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3477,6 +3510,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Double" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3536,6 +3570,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int16" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3595,6 +3630,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int32" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3654,6 +3690,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Int64" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3715,6 +3752,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3779,6 +3817,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.SByte" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3838,6 +3877,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.Single" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3904,6 +3944,7 @@
  -or-  
   
  The current length of this <see cref="T:System.Text.StringBuilder" /> object plus the length of <paramref name="value" /> exceeds <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -3968,6 +4009,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt16" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4032,6 +4074,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt32" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4096,6 +4139,7 @@
         <block subset="none" type="usage">
           <para>In the [!INCLUDE[net_v35SP1_long](~/includes/net-v35sp1-long-md.md)] and earlier versions, calls to this method threw an <see cref="T:System.ArgumentOutOfRangeException" /> if inserting <paramref name="value" /> would cause the object's total length to exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />. Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the method throws an <see cref="T:System.OutOfMemoryException" />.</para>
         </block>
+        <altmember cref="T:System.UInt64" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4165,6 +4209,7 @@
   
  <paramref name="count" /> is less than zero.</exception>
         <exception cref="T:System.OutOfMemoryException">The current length of this <see cref="T:System.Text.StringBuilder" /> object plus the length of <paramref name="value" /> times <paramref name="count" /> exceeds <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -4331,7 +4376,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The maximum capacity for this implementation is <xref:System.Int32?displayProperty=nameWithType>. However, this value is implementation-specific and might be different in other or later implementations. You can explicitly set the maximum capacity of a <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
+ The maximum capacity for this implementation is <xref:System.Int32.MaxValue?displayProperty=nameWithType>. However, this value is implementation-specific and might be different in other or later implementations. You can explicitly set the maximum capacity of a <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
   
  In the[!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], when you instantiate the <xref:System.Text.StringBuilder> object by calling the <xref:System.Text.StringBuilder.%23ctor%28System.Int32%2CSystem.Int32%29> constructor, both the length and the capacity of the <xref:System.Text.StringBuilder> instance can grow beyond the value of its <xref:System.Text.StringBuilder.MaxCapacity%2A> property. This can occur particularly when you call the <xref:System.Text.StringBuilder.Append%2A> and <xref:System.Text.StringBuilder.AppendFormat%2A> methods to append small strings.  
   
@@ -4394,6 +4439,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">If <paramref name="startIndex" /> or <paramref name="length" /> is less than zero, or <paramref name="startIndex" /> + <paramref name="length" /> is greater than the length of this instance.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -4487,7 +4533,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the current instance. If `newValue` is `null` or <xref:System.String?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
+ This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the current instance. If `newValue` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
   
    
   
@@ -4504,6 +4550,7 @@
           <paramref name="oldValue" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="oldValue" /> is zero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -4611,7 +4658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the specified substring. If `newValue` is `null` or <xref:System.String?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
+ This method performs an ordinal, case-sensitive comparison to identify occurrences of `oldValue` in the specified substring. If `newValue` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>, all occurrences of `oldValue` are removed.  
   
    
   
@@ -4637,6 +4684,7 @@
  -or-  
   
  Enlarging the value of this instance would exceed <see cref="P:System.Text.StringBuilder.MaxCapacity" />.</exception>
+        <altmember cref="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -4796,5 +4844,94 @@
  The sum of <paramref name="startIndex" /> and <paramref name="length" /> is greater than the length of the current instance.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts the string representation of a specified object into this instance at a specified character position.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendFormat">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string returned by processing a composite format string, which contains zero or more format items, to this instance. Each format item is replaced by the string representation of a corresponding object argument.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all occurrences of a specified character or string in this instance with another specified character or string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the string representation of a specified object to this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AppendLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends the default line terminator, or a copy of a specified string and the default line terminator, to the end of this instance.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a <see cref="T:System.Text.StringBuilder" /> to a <see cref="T:System.String" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

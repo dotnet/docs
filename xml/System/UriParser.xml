@@ -111,11 +111,17 @@
  \- or -  
   
  <paramref name="uri" /> is not an absolute URI. Relative URIs cannot be used with this method.</exception>
+        <altmember cref="T:System.UriComponents" />
+        <altmember cref="F:System.UriComponents.Host" />
+        <altmember cref="F:System.UriComponents.Port" />
+        <altmember cref="F:System.UriComponents.Scheme" />
+        <altmember cref="T:System.UriFormat" />
+        <altmember cref="M:System.UriParser.GetComponents(System.Uri,System.UriComponents,System.UriFormat)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeAndValidate">
       <MemberSignature Language="C#" Value="protected virtual void InitializeAndValidate (Uri uri, out UriFormatException parsingError);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeAndValidate(class System.Uri uri, class System.UriFormatException parsingError) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeAndValidate(class System.Uri uri, [out] class System.UriFormatException&amp; parsingError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.InitializeAndValidate(System.Uri,System.UriFormatException@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -389,7 +395,7 @@
     </Member>
     <Member MemberName="Resolve">
       <MemberSignature Language="C#" Value="protected virtual string Resolve (Uri baseUri, Uri relativeUri, out UriFormatException parsingError);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string Resolve(class System.Uri baseUri, class System.Uri relativeUri, class System.UriFormatException parsingError) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string Resolve(class System.Uri baseUri, class System.Uri relativeUri, [out] class System.UriFormatException&amp; parsingError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriParser.Resolve(System.Uri,System.Uri,System.UriFormatException@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

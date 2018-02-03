@@ -81,6 +81,10 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="T:System.Data.DataViewManager" />
+    <altmember cref="Overload:System.Data.DataTableExtensions.AsDataView" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -115,6 +119,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTable" />
+        <altmember cref="T:System.Data.DataViewManager" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -233,6 +239,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataView.AllowNew" />
+        <altmember cref="T:System.Data.DataRowView" />
       </Docs>
     </Member>
     <Member MemberName="AllowDelete">
@@ -319,6 +327,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataView.AllowDelete" />
+        <altmember cref="P:System.Data.DataView.AllowNew" />
+        <altmember cref="M:System.Data.DataRowView.BeginEdit" />
       </Docs>
     </Member>
     <Member MemberName="AllowNew">
@@ -362,6 +373,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.AddNew" />
+        <altmember cref="T:System.Data.DataRowView" />
       </Docs>
     </Member>
     <Member MemberName="ApplyDefaultSort">
@@ -468,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.Open" />
       </Docs>
     </Member>
     <Member MemberName="ColumnCollectionChanged">
@@ -640,6 +654,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataViewRowState" />
+        <altmember cref="M:System.Data.DataView.Find(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -784,6 +800,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.Delete(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -1047,6 +1064,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Data.DataView.Open" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1262,6 +1280,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataColumn.Expression" />
+        <altmember cref="P:System.Data.DataView.Sort" />
       </Docs>
     </Member>
     <Member MemberName="RowStateFilter">
@@ -1316,6 +1336,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataViewRowState" />
+        <altmember cref="M:System.Data.DataView.AddNew" />
+        <altmember cref="M:System.Data.DataView.Delete(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1365,6 +1388,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Data.DataView.RowFilter" />
+        <altmember cref="P:System.Data.DataColumn.Expression" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -2666,6 +2691,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
     <MemberGroup MemberName="ToTable">
@@ -2680,7 +2706,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.CultureInfo%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
+ The returned <xref:System.Data.DataTable> maintains the values of the following properties from the source <xref:System.Data.DataTable>: <xref:System.Data.DataTable.Namespace%2A>, <xref:System.Data.DataTable.Prefix%2A>, <xref:System.Data.DataTable.Locale%2A>, and <xref:System.Data.DataTable.CaseSensitive%2A>. Each column in the resulting <xref:System.Data.DataTable> contains an identical copy of all the corresponding properties in the underlying <xref:System.Data.DataTable>.  
   
  The <xref:System.Data.DataRow> instances in the returned `DataTable` will contain values that are consistent with CLR semantics. That is, for all data types besides user-defined types, the corresponding column values are copied by value. For user-defined data types, the column data is copied by reference.  
   
@@ -2820,7 +2846,7 @@ New table name: FilteredTable
       </Docs>
     </Member>
     <Member MemberName="ToTable">
-      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (bool distinct, string[] columnNames);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (bool distinct, params string[] columnNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ToTable(bool distinct, string[] columnNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataView.ToTable(System.Boolean,System.String[])" />
       <MemberType>Method</MemberType>
@@ -2904,7 +2930,7 @@ New table name: NewTable
       </Docs>
     </Member>
     <Member MemberName="ToTable">
-      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (string tableName, bool distinct, string[] columnNames);" />
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ToTable (string tableName, bool distinct, params string[] columnNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ToTable(string tableName, bool distinct, string[] columnNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataView.ToTable(System.String,System.Boolean,System.String[])" />
       <MemberType>Method</MemberType>
@@ -3046,5 +3072,45 @@ New table name: UniqueData
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a row in the <see cref="T:System.Data.DataView" /> by the specified sort key value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataView" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="UpdateIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reserved for internal use only.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an array of <see cref="T:System.Data.DataRowView" /> objects whose columns match the specified sort key value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

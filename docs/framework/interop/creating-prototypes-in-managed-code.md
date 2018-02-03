@@ -10,10 +10,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "prototypes in managed code"
   - "COM interop, DLL functions"
@@ -30,6 +29,8 @@ caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Prototypes in Managed Code
 This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
@@ -227,11 +228,11 @@ interface IDemandStubsItf
 ```  
   
 ## See Also  
- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)   
- [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)   
- [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)   
- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)   
- [Platform Invoke Security Considerations](http://msdn.microsoft.com/en-us/bbcc67f7-50b5-4917-88ed-cb15470409fb)   
- [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)   
- [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)   
+ [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
+ [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)  
+ [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md)  
+ [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
+ [Platform Invoke Security Considerations](http://msdn.microsoft.com/library/bbcc67f7-50b5-4917-88ed-cb15470409fb)  
+ [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)  
+ [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

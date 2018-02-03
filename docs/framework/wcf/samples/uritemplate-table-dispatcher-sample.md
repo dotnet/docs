@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b32975d-ba90-4c5c-83bc-2fbb48f11c0c
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # UriTemplate Table Dispatcher Sample
 The <xref:System.UriTemplateTable> class provides a dictionary-like associative table structure for working with a set of <xref:System.UriTemplate> instances. This sample demonstrates a basic dispatching engine built using `UriTemplateTable`, a common usage scenario for the `UriTemplateTable` class.  
@@ -42,5 +44,5 @@ The <xref:System.UriTemplateTable> class provides a dictionary-like associative 
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplateDispatcher`  
   
 ## See Also  
- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)   
+ [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
  [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)

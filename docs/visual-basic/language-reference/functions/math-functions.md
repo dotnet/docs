@@ -1,16 +1,11 @@
 ---
 title: "Math Functions (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "math functions, Visual Basic"
   - "arithmetic operations, math functions"
@@ -20,22 +15,6 @@ ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Math Functions (Visual Basic)
 The methods of the <xref:System.Math?displayProperty=nameWithType> class provide trigonometric, logarithmic, and other common mathematical functions.  
@@ -190,8 +169,8 @@ End Function
  **Assembly:** mscorlib (in mscorlib.dll)  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>   
- <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>   
- <xref:System.Double.NaN>   
- [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)   
+ <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>  
+ <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>  
+ <xref:System.Double.NaN>  
+ [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

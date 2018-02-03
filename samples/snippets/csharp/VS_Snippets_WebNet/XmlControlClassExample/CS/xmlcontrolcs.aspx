@@ -4,7 +4,7 @@ This sample shows an Xml control using the
 DocumentSource and TransformSource properties to display Xml data
 in the control.
 Create a sample XML file called People.xml and 
-and a sample XSL Transform file called Peopletable.xsl
+a sample XSL Transform file called Peopletable.xsl
 using the code at the end of this sample.
 -->
 

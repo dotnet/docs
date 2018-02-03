@@ -9,21 +9,21 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
-  - "menus, shortcut menus"
+  - "menus [Windows Forms], shortcut menus"
   - "Windows Forms, menus"
   - "pop-up menus"
   - "ContextMenu component [Windows Forms]"
-  - "menus, context menus"
-  - "context menus, for Windows Forms"
-  - "shortcut menus, ContextMenu component"
+  - "menus [Windows Forms], context menus"
+  - "context menus [Windows Forms], for Windows Forms"
+  - "shortcut menus [Windows Forms], ContextMenu component"
 ms.assetid: 9b93ccbc-c0fe-44a2-968e-faac25971831
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # ContextMenu Component (Windows Forms)
 > [!NOTE]
@@ -47,5 +47,5 @@ manager: "wpickett"
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 ## See Also  
- <xref:System.Windows.Forms.MenuStrip>   
+ <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

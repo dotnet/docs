@@ -20,7 +20,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row being edited and to indicate that the edit operation should be canceled. To cancel the edit operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewEditEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewEditEventArgs.%23ctor%2A> constructor.  
   
@@ -29,11 +29,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object passed to the event-handling method to cancel the editing operation if the user attempts to edit a row that contains an author with the last name White.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.GridView" />
+    <altmember cref="T:System.Web.UI.WebControls.GridViewEditEventHandler" />
+    <altmember cref="E:System.Web.UI.WebControls.GridView.RowEditing" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -68,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex" />
       </Docs>
     </Member>
     <Member MemberName="NewEditIndex">
@@ -96,11 +100,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex%2A> property to determine the index of the row being edited.  
   
- <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+ [!code-aspx-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]
+ [!code-aspx-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.GridView" />
+        <altmember cref="P:System.ComponentModel.CancelEventArgs.Cancel" />
+        <altmember cref="P:System.Web.UI.WebControls.GridView.Rows" />
       </Docs>
     </Member>
   </Members>

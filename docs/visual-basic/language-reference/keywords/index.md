@@ -1,20 +1,15 @@
 ---
 title: "Keywords (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "reserved keywords, Visual Basic"
   - "keywords [Visual Basic]"
-  - "Members, Visual Basic run-time"
+  - "Members [Visual Basic], Visual Basic run-time"
   - "Visual Basic code, keywords"
   - "Visual Basic, language reference"
   - "reserved words, Visual Basic keywords"
@@ -23,28 +18,12 @@ ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
 caps.latest.revision: 43
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Keywords (Visual Basic)
 The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords.  
   
 ## Reserved Keywords  
- The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[``]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+ The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 > [!NOTE]
 >  We do not recommend that you use escaped names, because it can make your code hard to read, and it can lead to subtle errors that can be difficult to find.  
@@ -124,7 +103,6 @@ The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] langua
 |-----------|-----------------|  
 |[Arrays Summary](../../../visual-basic/language-reference/keywords/arrays-summary.md)|Lists language elements that are used to create, define, and use arrays.|  
 |[Collection Object Summary](../../../visual-basic/language-reference/keywords/collection-object-summary.md)|Lists language elements that are used for collections.|  
-|[Compiler Directive Summary (Visual Basic)](http://msdn.microsoft.com/en-us/874dad02-d4a5-4a9d-8a48-0191a0ac794a)|Lists directives that control compiler behavior.|  
 |[Control Flow Summary](../../../visual-basic/language-reference/keywords/control-flow-summary.md)|Lists statements that are used for looping and controlling procedure flow.|  
 |[Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)|Lists functions that are used to convert numbers, dates, times, and strings.|  
 |[Data Types Summary](../../../visual-basic/language-reference/keywords/data-types-summary.md)|Lists data types. Also lists functions that are used to convert between data types and verify data types.|  

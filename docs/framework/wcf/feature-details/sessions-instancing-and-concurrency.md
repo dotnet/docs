@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
 caps.latest.revision: 16
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Sessions, Instancing, and Concurrency
 A *session* is a correlation of all messages sent between two endpoints. *Instancing* refers to controlling the lifetime of user-defined service objects and their related <xref:System.ServiceModel.InstanceContext> objects. *Concurrency* is the term given to the control of the number of threads executing in an <xref:System.ServiceModel.InstanceContext> at the same time.  
@@ -88,7 +90,7 @@ public class CalculatorService : ICalculatorInstance
 -   <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client object.  
   
 > [!NOTE]
->  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)]<xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
+>  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
   
  The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new <xref:System.ServiceModel.InstanceContext> and, therefore, never more than one thread is active in the <xref:System.ServiceModel.InstanceContext>.  
   
@@ -114,9 +116,9 @@ public class CalculatorService : ICalculatorConcurrency
 |Single|-   Behavior with sessionful channel: A session and one <xref:System.ServiceModel.InstanceContext> for all calls.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for the created or user-specified singleton.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext> for each created singleton or for the user-specified singleton.|  
   
 ## See Also  
- [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)   
- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)   
- [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)   
- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)   
- [Instancing](../../../../docs/framework/wcf/samples/instancing.md)   
+ [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)  
+ [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)  
+ [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)  
+ [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)  
+ [Instancing](../../../../docs/framework/wcf/samples/instancing.md)  
  [Session](../../../../docs/framework/wcf/samples/session.md)

@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JsonObject (System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;[] items);" />
+      <MemberSignature Language="C#" Value="public JsonObject (params System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Json.JsonValue&gt;[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonObject.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Json.JsonValue}[])" />
       <MemberType>Constructor</MemberType>
@@ -139,7 +139,7 @@
       </Docs>
     </Member>
     <Member MemberName="AddRange">
-      <MemberSignature Language="C#" Value="public void AddRange (System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;[] items);" />
+      <MemberSignature Language="C#" Value="public void AddRange (params System.Collections.Generic.KeyValuePair&lt;string,System.Json.JsonValue&gt;[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Json.JsonValue&gt;[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonObject.AddRange(System.Collections.Generic.KeyValuePair{System.String,System.Json.JsonValue}[])" />
       <MemberType>Method</MemberType>
@@ -464,7 +464,7 @@
     </Member>
     <Member MemberName="TryGetValue">
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out System.Json.JsonValue value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, class System.Json.JsonValue value) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] class System.Json.JsonValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Json.JsonObject.TryGetValue(System.String,System.Json.JsonValue@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

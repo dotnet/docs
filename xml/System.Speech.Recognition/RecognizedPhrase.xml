@@ -103,6 +103,8 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+    <altmember cref="T:System.Speech.Recognition.RecognizedWordUnit" />
   </Docs>
   <Members>
     <Member MemberName="Confidence">
@@ -199,6 +201,10 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="P:System.Speech.Recognition.RecognitionResult.Alternates" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
       </Docs>
     </Member>
     <Member MemberName="ConstructSmlFromSemantics">
@@ -221,7 +227,7 @@ void SpeechRecognizedHandler(object sender, SpeechRecognizedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about the semantic markup language (SML), see the [Semantic Markup Language Reference](http://msdn.microsoft.com/en-us/f9d83443-2cac-49bc-a447-210feda62f5d).  
+ For information about the semantic markup language (SML), see the [Semantic Markup Language Reference](http://msdn.microsoft.com/library/f9d83443-2cac-49bc-a447-210feda62f5d).  
   
    
   
@@ -262,6 +268,10 @@ private string GetSemanticsSML(RecognizedPhrase result)
         <summary>Gets the <see cref="T:System.Speech.Recognition.Grammar" /> that the speech recognizer used to return the <see cref="T:System.Speech.Recognition.RecognizedPhrase" />.</summary>
         <value>The grammar object that the speech recognizer used to identify the input.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Speech.Recognition.Grammar" />
+        <altmember cref="T:System.Speech.Recognition.RecognitionResult" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognitionEngine" />
+        <altmember cref="T:System.Speech.Recognition.SpeechRecognizer" />
       </Docs>
     </Member>
     <Member MemberName="HomophoneGroupId">
@@ -289,6 +299,8 @@ private string GetSemanticsSML(RecognizedPhrase result)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognitionResult.Alternates" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Homophones" />
       </Docs>
     </Member>
     <Member MemberName="Homophones">
@@ -316,6 +328,8 @@ private string GetSemanticsSML(RecognizedPhrase result)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognitionResult.Alternates" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.HomophoneGroupId" />
       </Docs>
     </Member>
     <Member MemberName="ReplacementWordUnits">
@@ -343,6 +357,10 @@ private string GetSemanticsSML(RecognizedPhrase result)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizedWordUnit" />
+        <altmember cref="T:System.Speech.Recognition.ReplacementText" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Text" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Words" />
       </Docs>
     </Member>
     <Member MemberName="Semantics">
@@ -364,7 +382,7 @@ private string GetSemanticsSML(RecognizedPhrase result)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A speech recognition grammar can include semantic information. When a speech recognizer generates a recognition result for such a grammar, the semantic information might be included in the recognition result, according to the rules of the grammar and the input to the recognizer. For more information about semantic information, see [Understanding Semantic Results](http://msdn.microsoft.com/en-us/2a9dbd8b-cf6d-42cd-bbb9-ca0b3e534005) and the <xref:System.Speech.Recognition.SemanticResultKey> and <xref:System.Speech.Recognition.SemanticResultValue> classes.  
+ A speech recognition grammar can include semantic information. When a speech recognizer generates a recognition result for such a grammar, the semantic information might be included in the recognition result, according to the rules of the grammar and the input to the recognizer. For more information about semantic information, see [Understanding Semantic Results](http://msdn.microsoft.com/library/2a9dbd8b-cf6d-42cd-bbb9-ca0b3e534005) and the <xref:System.Speech.Recognition.SemanticResultKey> and <xref:System.Speech.Recognition.SemanticResultValue> classes.  
   
    
   
@@ -388,6 +406,9 @@ static bool TryGetSemanticValue(
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.SemanticResultKey" />
+        <altmember cref="T:System.Speech.Recognition.SemanticResultValue" />
+        <altmember cref="T:System.Speech.Recognition.SemanticValue" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -415,6 +436,8 @@ static bool TryGetSemanticValue(
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.ReplacementWordUnits" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Words" />
       </Docs>
     </Member>
     <Member MemberName="Words">
@@ -442,6 +465,9 @@ static bool TryGetSemanticValue(
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Speech.Recognition.RecognizedWordUnit" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.ReplacementWordUnits" />
+        <altmember cref="P:System.Speech.Recognition.RecognizedPhrase.Text" />
       </Docs>
     </Member>
   </Members>

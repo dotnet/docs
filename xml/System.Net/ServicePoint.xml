@@ -296,6 +296,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is a negative number less than -1.</exception>
+        <altmember cref="P:System.Net.HttpWebRequest.KeepAlive" />
+        <altmember cref="P:System.Net.FtpWebRequest.KeepAlive" />
+        <altmember cref="P:System.Net.HttpListenerRequest.KeepAlive" />
       </Docs>
     </Member>
     <Member MemberName="ConnectionLimit">

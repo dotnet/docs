@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.ScriptManager" />
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ScriptManager" />
       </Docs>
     </Member>
     <Member MemberName="GetProxyScript">
@@ -168,6 +171,7 @@
         <summary>Returns ECMAScript (JavaScript) code that is defined by the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> attribute.</summary>
         <returns>The JavaScript resource.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.ScriptResourceAttribute" />
       </Docs>
     </Member>
     <Member MemberName="GetScriptReferences">
@@ -211,6 +215,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="scriptManager" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.ScriptReference" />
       </Docs>
     </Member>
     <Member MemberName="GetServiceReferences">
@@ -237,6 +242,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="scriptManager" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.UI.ServiceReference" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">

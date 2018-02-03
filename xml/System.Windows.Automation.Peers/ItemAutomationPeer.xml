@@ -74,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetAccessKeyCore">
@@ -100,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetAutomationIdCore">
@@ -128,6 +130,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetBoundingRectangleCore">
@@ -154,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -180,6 +184,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetClickablePointCore">
@@ -206,6 +211,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetHelpTextCore">
@@ -232,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetItemStatusCore">
@@ -258,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetItemTypeCore">
@@ -284,6 +292,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -310,6 +319,26 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetLiveSettingCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetLiveSettingCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the notification characteristics of the live region for the <see cref="T:System.Windows.UIElement" /> that corresponds to the data item in the <see cref="P:System.Windows.Controls.ItemsControl.Items" /> collection that is associated with this <see cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" /> object.</summary>
+        <returns>The notification characteristics of the live region.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -338,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -364,6 +394,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
@@ -389,7 +420,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType> and the item is not in the visual tree, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
+ If `patternInterface` is <xref:System.Windows.Automation.Peers.PatternInterface.VirtualizedItem?displayProperty=nameWithType> and the item is not in the visual tree, this method returns a `this` pointer. If `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput?displayProperty=nameWithType>, this method returns an object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.  
   
  ]]></format>
         </remarks>
@@ -420,6 +451,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -447,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -474,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -501,6 +535,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusableCore">
@@ -528,6 +563,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -557,6 +593,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsPasswordCore">
@@ -584,6 +621,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">
@@ -611,6 +649,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -672,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize">

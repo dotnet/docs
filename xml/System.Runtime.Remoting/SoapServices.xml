@@ -65,7 +65,7 @@
 ## Remarks  
  The current method is used by the .NET Framework and the SoapSuds tool to create an XML namespace name for a common language runtime object type.  
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/library/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
   
    
   
@@ -84,7 +84,7 @@
     </Member>
     <Member MemberName="DecodeXmlNamespaceForClrTypeNamespace">
       <MemberSignature Language="C#" Value="public static bool DecodeXmlNamespaceForClrTypeNamespace (string inNamespace, out string typeNamespace, out string assemblyName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DecodeXmlNamespaceForClrTypeNamespace(string inNamespace, string typeNamespace, string assemblyName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DecodeXmlNamespaceForClrTypeNamespace(string inNamespace, [out] string&amp; typeNamespace, [out] string&amp; assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.DecodeXmlNamespaceForClrTypeNamespace(System.String,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -130,7 +130,7 @@
     </Member>
     <Member MemberName="GetInteropFieldTypeAndNameFromXmlAttribute">
       <MemberSignature Language="C#" Value="public static void GetInteropFieldTypeAndNameFromXmlAttribute (Type containingType, string xmlAttribute, string xmlNamespace, out Type type, out string name);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlAttribute(class System.Type containingType, string xmlAttribute, string xmlNamespace, class System.Type type, string name) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlAttribute(class System.Type containingType, string xmlAttribute, string xmlNamespace, [out] class System.Type&amp; type, [out] string&amp; name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlAttribute(System.Type,System.String,System.String,System.Type@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -177,7 +177,7 @@
     </Member>
     <Member MemberName="GetInteropFieldTypeAndNameFromXmlElement">
       <MemberSignature Language="C#" Value="public static void GetInteropFieldTypeAndNameFromXmlElement (Type containingType, string xmlElement, string xmlNamespace, out Type type, out string name);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlElement(class System.Type containingType, string xmlElement, string xmlNamespace, class System.Type type, string name) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetInteropFieldTypeAndNameFromXmlElement(class System.Type containingType, string xmlElement, string xmlNamespace, [out] class System.Type&amp; type, [out] string&amp; name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -348,7 +348,7 @@
     </Member>
     <Member MemberName="GetTypeAndMethodNameFromSoapAction">
       <MemberSignature Language="C#" Value="public static bool GetTypeAndMethodNameFromSoapAction (string soapAction, out string typeName, out string methodName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetTypeAndMethodNameFromSoapAction(string soapAction, string typeName, string methodName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetTypeAndMethodNameFromSoapAction(string soapAction, [out] string&amp; typeName, [out] string&amp; methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetTypeAndMethodNameFromSoapAction(System.String,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -394,7 +394,7 @@
     </Member>
     <Member MemberName="GetXmlElementForInteropType">
       <MemberSignature Language="C#" Value="public static bool GetXmlElementForInteropType (Type type, out string xmlElement, out string xmlNamespace);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlElementForInteropType(class System.Type type, string xmlElement, string xmlNamespace) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlElementForInteropType(class System.Type type, [out] string&amp; xmlElement, [out] string&amp; xmlNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlElementForInteropType(System.Type,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -430,6 +430,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="GetXmlNamespaceForMethodCall">
@@ -504,7 +505,7 @@
     </Member>
     <Member MemberName="GetXmlTypeForInteropType">
       <MemberSignature Language="C#" Value="public static bool GetXmlTypeForInteropType (Type type, out string xmlType, out string xmlTypeNamespace);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlTypeForInteropType(class System.Type type, string xmlType, string xmlTypeNamespace) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetXmlTypeForInteropType(class System.Type type, [out] string&amp; xmlType, [out] string&amp; xmlTypeNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.SoapServices.GetXmlTypeForInteropType(System.Type,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -540,6 +541,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="IsClrTypeNamespace">
@@ -569,7 +571,7 @@
 ## Remarks  
  The current method is used by the SoapSuds tool to determine whether an XML namespace represents a common language runtime type or a type from a non-common language runtime system.  
   
- For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+ For more information about SoapSuds, see [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/library/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
   
    
   
@@ -737,6 +739,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+        <altmember cref="M:System.Runtime.Remoting.SoapServices.GetInteropFieldTypeAndNameFromXmlElement(System.Type,System.String,System.String,System.Type@,System.String@)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterInteropXmlType">
@@ -1003,5 +1006,25 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="PreLoad">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Preloads specified types based on values set in the <see cref="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" /> applied to the types.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RegisterSoapActionForMethodBase">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates a SOAPAction value with the provided <see cref="T:System.Reflection.MethodBase" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

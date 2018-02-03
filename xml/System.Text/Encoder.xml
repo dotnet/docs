@@ -61,6 +61,8 @@
     <block subset="none" type="overrides">
       <para>When your application inherits from this class, it must override all the members.</para>
     </block>
+    <altmember cref="T:System.Text.Decoder" />
+    <altmember cref="T:System.Text.Encoding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,11 +108,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (char* chars, int charCount, byte* bytes, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush, int32 charsUsed, int32 bytesUsed, bool completed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount, bool flush, [out] int32&amp; charsUsed, [out] int32&amp; bytesUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -191,7 +194,7 @@
     </Member>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char[] chars, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex, int32 byteCount, bool flush, int32 charsUsed, int32 bytesUsed, bool completed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(char[] chars, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex, int32 byteCount, bool flush, [out] int32&amp; charsUsed, [out] int32&amp; bytesUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -335,6 +338,8 @@
  -and-  
   
  <see cref="P:System.Text.Encoder.Fallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.FallbackBuffer" />
       </Docs>
     </Member>
     <Member MemberName="FallbackBuffer">
@@ -378,6 +383,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Text.EncoderFallback" />
+        <altmember cref="P:System.Text.Encoder.Fallback" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -446,6 +453,8 @@
   
  <see cref="P:System.Text.Encoder.Fallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoder.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Encoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetByteCount">
@@ -522,6 +531,8 @@
  -and-  
   
  <see cref="P:System.Text.Encoder.Fallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Encoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -602,6 +613,8 @@
   
  <see cref="P:System.Text.Encoder.Fallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Text.Encoder.GetByteCount(System.Char*,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Encoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -694,6 +707,8 @@
  -and-  
   
  <see cref="P:System.Text.Encoder.Fallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <altmember cref="M:System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)" />
+        <altmember cref="M:System.Text.Encoder.Reset" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -741,5 +756,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBytes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, encodes a set of characters into a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetByteCount">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of bytes produced by encoding a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a buffer or array of Unicode characters to an encoded byte sequence.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -23,7 +23,7 @@
   </Docs>
   <Members>
     <Member MemberName="AllowDrop">
-      <MemberSignature Language="C#" Value="public static bool AllowDrop (System.Windows.IDataObject draggedDataObject, System.Activities.Presentation.EditingContext context, Type[] allowedItemTypes);" />
+      <MemberSignature Language="C#" Value="public static bool AllowDrop (System.Windows.IDataObject draggedDataObject, System.Activities.Presentation.EditingContext context, params Type[] allowedItemTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AllowDrop(class System.Windows.IDataObject draggedDataObject, class System.Activities.Presentation.EditingContext context, class System.Type[] allowedItemTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DragDropHelper.AllowDrop(System.Windows.IDataObject,System.Activities.Presentation.EditingContext,System.Type[])" />
       <MemberType>Method</MemberType>
@@ -441,5 +441,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCompositeView">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the composite view information.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -13,9 +13,11 @@ helpviewer_keywords:
   - "transport quotas [WCF]"
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
 caps.latest.revision: 11
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Transport Quotas
 Transport quotas are a policy mechanism for deciding when a connection is consuming excessive resources. A quota is a hard limit that prevents the use of additional resources once the quota value is exceeded. Transport quotas prevent either malicious or unintentional denial of service attacks.  
@@ -114,9 +116,9 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
  Application configuration can set the same transport quotas as directly accessing properties on a binding. In configuration files, the name of a transport quota always starts with a lowercase letter. For example, the `CloseTimeout` property on a binding corresponds to the `closeTimeout` setting in configuration and the `MaxConnections` property on a binding corresponds to the `maxConnections` setting in configuration.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>   
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>   
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>   
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>   
- <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>   
+ <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>  
+ <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>  
  <xref:System.ServiceModel.Channels.TransportBindingElement>

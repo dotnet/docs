@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAppDomain method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetAppDomain method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetAppDomain Method
 Gets an interface pointer to the application domain in which this ICorDebugThread is currently executing.  

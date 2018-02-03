@@ -15,8 +15,6 @@ api_location:
   - "mscorwks.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: 7bd48c34-37ed-4230-9eec-39a17280f05d
 topic_type: 
   - "apiref"
@@ -24,6 +22,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerInfo5 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

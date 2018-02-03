@@ -169,5 +169,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ProcessRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used by the ASP.NET state server to process session data.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

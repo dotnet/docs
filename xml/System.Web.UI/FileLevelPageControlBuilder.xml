@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.FileLevelUserControlBuilder" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.ControlBuilder" />
       </Docs>
     </Member>
     <Member MemberName="AppendLiteralString">
@@ -71,6 +73,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.FileLevelPageControlBuilder.AppendLiteralString(System.String)" /> method cannot append the literal string to a content page.</exception>
+        <altmember cref="M:System.Web.UI.ControlBuilder.AppendLiteralString(System.String)" />
+        <altmember cref="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendLiteralString(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AppendSubBuilder">
@@ -101,6 +105,8 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.ControlBuilder" /> that was added is associated with a <see cref="T:System.Web.UI.WebControls.Content" /> control and is only allowed on pages that contain <see cref="T:System.Web.UI.WebControls.Content" /> controls.</exception>
         <exception cref="T:System.Web.HttpParseException">The content page contained a literal other than a <see cref="T:System.Web.UI.WebControls.Content" /> control.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.Content" />
+        <altmember cref="P:System.Web.UI.MasterPage.Master" />
       </Docs>
     </Member>
   </Members>

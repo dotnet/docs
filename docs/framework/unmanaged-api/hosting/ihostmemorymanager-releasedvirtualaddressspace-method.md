@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::ReleasedVirtualAddressSpace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReleasedVirtualAddressSpace method [.NET Framework hosting]"
   - "IHostMemoryManager::ReleasedVirtualAddressSpace method [.NET Framework hosting]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IHostMemoryManager::ReleasedVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has finished using the specified memory.  

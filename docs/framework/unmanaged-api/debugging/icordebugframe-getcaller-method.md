@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetCaller"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCaller method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetCaller method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFrame::GetCaller Method
 Gets a pointer to the ICorDebugFrame object in the current chain that called this frame.  

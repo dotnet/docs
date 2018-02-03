@@ -26,8 +26,8 @@
 > [!NOTE]
 >  When accessing reference types as members of a <xref:System.Web.UI.Triplet>, only generic <xref:System.Object> methods are available for that member.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.Triplet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Triplet/CS/Default.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.Triplet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Triplet/VB/Default.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.Triplet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Triplet/CS/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.Triplet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Triplet/VB/Default.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -141,5 +141,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Triplet" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

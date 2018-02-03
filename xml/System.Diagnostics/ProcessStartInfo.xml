@@ -57,7 +57,8 @@
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.Diagnostics.ProcessStartInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for calling members of <see cref="T:System.Diagnostics.ProcessStartInfo" />. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/library/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <altmember cref="T:System.Diagnostics.Process" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -317,9 +318,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that identifies the domain to use when starting the process.</summary>
-        <value>The Active Directory domain to use when starting the process. The domain property is primarily of interest to users within enterprise environments that use Active Directory.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that identifies the domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </summary>
+        <value>The Active Directory domain to use when starting the process. If this value is <see langword="null" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UserName" /> property must be specified in UPN format. </value>
+        <remarks>This property is primarily of interest to users within enterprise environments that use Active Directory.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Environment">
@@ -368,6 +369,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.EnvironmentVariables" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="M:System.Diagnostics.Process.Start" />
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -810,6 +814,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardError" />
       </Docs>
     </Member>
     <Member MemberName="RedirectStandardInput">
@@ -871,6 +877,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardInput" />
       </Docs>
     </Member>
     <Member MemberName="RedirectStandardOutput">
@@ -967,6 +975,8 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
+        <altmember cref="P:System.Diagnostics.Process.StandardOutput" />
       </Docs>
     </Member>
     <Member MemberName="StandardErrorEncoding">
@@ -1067,8 +1077,8 @@ p.WaitForExit();
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the user name to be used when starting the process.</summary>
-        <value>The user name to use when starting the process.</value>
+        <summary>Gets or sets the user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</summary>
+        <value>The user name to use when starting the process. If you use the UPN format, <paramref name="user" />@<paramref name="DNS_domain_name" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.Domain" /> property must be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1148,6 +1158,9 @@ p.WaitForExit();
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to <see langword="true" /> on Universal Windows Platform (UWP) apps occurs.</exception>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardError" />
       </Docs>
     </Member>
     <Member MemberName="Verb">
@@ -1206,6 +1219,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.Verbs" />
       </Docs>
     </Member>
     <Member MemberName="Verbs">
@@ -1258,6 +1272,7 @@ p.WaitForExit();
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.ProcessStartInfo.Verb" />
       </Docs>
     </Member>
     <Member MemberName="WindowStyle">
@@ -1374,5 +1389,15 @@ p.WaitForExit();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessStartInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

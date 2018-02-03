@@ -103,6 +103,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.MulticastDelegate" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -149,6 +150,8 @@
  <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">There was an error binding to the target method.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Object" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -194,12 +197,14 @@
   
  <paramref name="method" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="target" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+          <paramref name="target" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
  <paramref name="target" /> represents an open generic type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -241,7 +246,7 @@
       </Docs>
     </Member>
     <Member MemberName="Combine">
-      <MemberSignature Language="C#" Value="public static Delegate Combine (Delegate[] delegates);" />
+      <MemberSignature Language="C#" Value="public static Delegate Combine (params Delegate[] delegates);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Delegate Combine(class System.Delegate[] delegates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.Combine(System.Delegate[])" />
       <MemberType>Method</MemberType>
@@ -300,6 +305,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Not all the non-null entries in <paramref name="delegates" /> are instances of the same delegate type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="M:System.Delegate.CombineImpl(System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="Combine">
@@ -351,6 +358,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">Both <paramref name="a" /> and <paramref name="b" /> are not <see langword="null" />, and <paramref name="a" /> and <paramref name="b" /> are not instances of the same delegate type.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="M:System.Delegate.CombineImpl(System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="CombineImpl">
@@ -395,6 +404,7 @@
         </remarks>
         <exception cref="T:System.MulticastNotSupportedException">Always thrown.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.Combine(System.Delegate,System.Delegate)" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -439,7 +449,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Reflection.MethodInfo%2CSystem.Boolean%29> method overload and specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -508,7 +518,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -520,10 +530,14 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -589,7 +603,7 @@
 -   If the signature of `type` begins with the second parameter of `method` and the rest of the parameter types are compatible, then the delegate is said to be closed over a null reference. When the delegate is invoked, a null reference is passed to the first parameter of `method`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -703,7 +717,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -711,10 +725,14 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -758,7 +776,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `false` for `ignoreCase` and `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -779,7 +797,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -791,6 +809,10 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -836,7 +858,7 @@
 >  This method overload should be used when the delegate is not closed over its first argument, because it is somewhat faster in that case.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -911,7 +933,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -919,10 +941,14 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -966,7 +992,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `false` for `ignoreCase` and `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -987,7 +1013,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1007,6 +1033,10 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1075,7 +1105,7 @@
 -   If the signature of `type` begins with the second parameter of `method` and the rest of the parameter types are compatible, then the delegate is said to be closed over a null reference. When the delegate is invoked, a null reference is passed to the first parameter of `method`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1189,7 +1219,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1197,10 +1227,14 @@
   
  -or-  
   
- <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
+ <paramref name="method" /> is not a <see langword="RuntimeMethodInfo" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).</exception>
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Reflection.MethodInfo" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1246,7 +1280,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1267,7 +1301,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1279,6 +1313,10 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1324,7 +1362,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1345,7 +1383,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1365,6 +1403,10 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1411,7 +1453,7 @@
  This method creates delegates for instance methods only. An instance method is a method that is associated with an instance of a class; a static method is a method that is associated with the class itself.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1432,7 +1474,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1444,6 +1486,10 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="CreateDelegate">
@@ -1490,7 +1536,7 @@
  This method creates delegates for static methods only. An instance method is a method that is associated with an instance of a class; a static method is a method that is associated with the class itself.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1511,7 +1557,7 @@
   
  -or-  
   
- <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/en-us/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
+ <paramref name="type" /> is not a <see langword="RuntimeType" />. See [Runtime Types in Reflection](http://msdn.microsoft.com/library/c1439fb5-cf76-475d-a9d2-fe64ba858858).  
   
  -or-  
   
@@ -1531,10 +1577,14 @@
         <exception cref="T:System.MissingMethodException">The <see langword="Invoke" /> method of <paramref name="type" /> is not found.</exception>
         <exception cref="T:System.MethodAccessException">The caller does not have the permissions necessary to access <paramref name="method" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <altmember cref="T:System.Type" />
+        <altmember cref="T:System.MulticastDelegate" />
+        <altmember cref="T:System.Security.Permissions.ReflectionPermission" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="DynamicInvoke">
-      <MemberSignature Language="C#" Value="public object DynamicInvoke (object[] args);" />
+      <MemberSignature Language="C#" Value="public object DynamicInvoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DynamicInvoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.DynamicInvoke(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1595,6 +1645,8 @@
   
  One of the encapsulated methods throws an exception.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.DynamicInvokeImpl(System.Object[])" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="DynamicInvokeImpl">
@@ -1649,6 +1701,8 @@
   
  One of the encapsulated methods throws an exception.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.DynamicInvoke(System.Object[])" />
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -1707,6 +1761,7 @@
         </remarks>
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1747,6 +1802,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Object.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetInvocationList">
@@ -1834,6 +1890,8 @@
         </remarks>
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="P:System.Delegate.Method" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -1868,6 +1926,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This method is not supported.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="T:System.Runtime.Serialization.ISerializable" />
+        <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
+        <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
     <Member MemberName="Method">
@@ -1897,6 +1958,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="T:System.Reflection.MethodInfo" />
+        <altmember cref="M:System.Delegate.GetMethodImpl" />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -1958,6 +2021,7 @@
  The equivalent method for this operator is <xref:System.Delegate.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -2019,6 +2083,7 @@
  The equivalent method for this operator is <xref:System.Delegate.Equals%28System.Object%29?displayProperty=nameWithType>]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2066,6 +2131,9 @@
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <exception cref="T:System.ArgumentException">The delegate types do not match.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.RemoveAll(System.Delegate,System.Delegate)" />
+        <altmember cref="M:System.Delegate.RemoveImpl(System.Delegate)" />
+        <altmember cref="M:System.Delegate.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -2113,6 +2181,9 @@
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <exception cref="T:System.ArgumentException">The delegate types do not match.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.Remove(System.Delegate,System.Delegate)" />
+        <altmember cref="M:System.Delegate.RemoveImpl(System.Delegate)" />
+        <altmember cref="M:System.Delegate.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="RemoveImpl">
@@ -2153,6 +2224,8 @@
         </remarks>
         <exception cref="T:System.MemberAccessException">The caller does not have access to the method represented by the delegate (for example, if the method is private).</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <altmember cref="M:System.Delegate.Remove(System.Delegate,System.Delegate)" />
+        <altmember cref="M:System.Delegate.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -2196,5 +2269,38 @@
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Concatenates the invocation lists of the specified multicast (combinable) delegates.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a delegate of the specified type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new delegate.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

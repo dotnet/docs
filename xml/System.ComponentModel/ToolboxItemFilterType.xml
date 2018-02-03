@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
   </Docs>
   <Members>
     <Member MemberName="Allow">
@@ -57,6 +58,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that a toolbox item filter string is allowed, but not required.</summary>
+        <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -99,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Prevent">
@@ -132,6 +135,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Require">
@@ -165,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.ToolboxItemFilterAttribute" />
       </Docs>
     </Member>
   </Members>

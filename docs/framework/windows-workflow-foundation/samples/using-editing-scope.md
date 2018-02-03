@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 79306f9e-318b-4687-9863-8b93d1841716
 caps.latest.revision: 5
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using Editing Scope
 This sample demonstrates how to batch a set of changes so that they can be undone in a single atomic unit. By default, the actions taken by an activity designer author are automatically integrated into the Undo/Redo system.  

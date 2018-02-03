@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Next method, ICorDebugObjectEnum interface [.NET Framework debugging]"
   - "ICorDebugObjectEnum::Next method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugObjectEnum::Next Method
 Gets the relative virtual addresses (RVAs) of the specified number of objects from the enumeration, starting at the current position.  

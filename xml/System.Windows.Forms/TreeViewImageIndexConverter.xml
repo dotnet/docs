@@ -23,6 +23,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.TreeView" />
+    <altmember cref="T:System.ComponentModel.TypeConverter" />
+    <altmember cref="T:System.Windows.Forms.ImageIndexConverter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -71,6 +74,7 @@
         <summary>Converts the specified value object to a 32-bit signed integer object.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ImageIndexConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -99,6 +103,7 @@
         <summary>Converts the specified object to the specified destination type.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ImageIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -121,6 +126,7 @@
         <summary>Returns a collection of standard index values for the image list associated with the specified format context.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid index values. If no image list is found, this collection will contain a single object with a value of -1.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.ImageIndexConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       </Docs>
     </Member>
     <Member MemberName="IncludeNoneAsStandardValue">
@@ -147,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" />
       </Docs>
     </Member>
   </Members>

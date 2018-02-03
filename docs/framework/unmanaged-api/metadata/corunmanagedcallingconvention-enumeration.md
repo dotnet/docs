@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorUnmanagedCallingConvention"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorUnmanagedCallingConvention enumeration [.NET Framework metadata]"
 ms.assetid: 83058790-160b-4703-a5eb-74b66acbdfa9
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorUnmanagedCallingConvention Enumeration
 Specifies the calling conventions for unmanaged code.  

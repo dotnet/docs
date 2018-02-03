@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents the base class for the <see cref="T:System.Windows.Shell.JumpPath" /> and <see cref="T:System.Windows.Shell.JumpTask" /> classes.</summary>
     <remarks>To be added.</remarks>
+    <altmember cref="T:System.Windows.Shell.JumpList" />
   </Docs>
   <Members>
     <Member MemberName="CustomCategory">
@@ -38,6 +39,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Shell.JumpList" />
+        <altmember cref="T:System.Windows.Shell.JumpPath" />
+        <altmember cref="T:System.Windows.Shell.JumpTask" />
       </Docs>
     </Member>
   </Members>

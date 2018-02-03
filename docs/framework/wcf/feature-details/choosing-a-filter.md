@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Choosing a Filter
 When configuring the Routing Service, it is important to select correct message filters and configure them to allow you to make exact matches against the messages you receive. If the filters you select are overly broad in their matches or are incorrectly configured, messages are routed incorrectly. If the filters are too restrictive, you may not have any valid routes available for some of your messages.  
@@ -139,8 +141,8 @@ XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");
   
  Because XPath queries often contain unique namespaces, which are often lengthy or complex string values, the XPath filter allows you to use the namespace table to define unique prefixes for your namespaces. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the namespace table, see [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)]designing XPath queries, see [XPath Syntax](http://go.microsoft.com/fwlink/?LinkId=164592) (http://go.microsoft.com/fwlink/?LinkId=164592).  
+ [!INCLUDE[crabout](../../../../includes/crabout-md.md)] designing XPath queries, see [XPath Syntax](http://go.microsoft.com/fwlink/?LinkId=164592).  
   
 ## See Also  
- [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)   
+ [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)  
  [How To: Use Filters](../../../../docs/framework/wcf/feature-details/how-to-use-filters.md)

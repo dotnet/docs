@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::UnmarkAll"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::UnmarkAll method [.NET Framework metadata]"
   - "UnmarkAll method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataFilter::UnmarkAll Method
 Removes the processing marks from all the tokens in the current metadata scope.  

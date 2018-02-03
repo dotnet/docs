@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction::GetToken method [.NET Framework debugging]"
   - "GetToken method, ICorDebugFunction interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunction::GetToken Method
 Gets the metadata token for this function.  

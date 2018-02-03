@@ -19,6 +19,8 @@ caps.latest.revision: 42
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Bindings and Security
 The system-provided bindings included with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] offer a quick way to program [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.  
@@ -49,7 +51,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
   
 -   Basic security profile as defined in WS-I.  
   
- By default, this binding is not secure. It is designed to interoperate with ASMX services. When security is enabled, the binding is designed for seamless interoperation with Internet Information Services (IIS) security mechanisms, such as basic authentication, digest, and integrated Windows security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md). This binding supports the following:  
+ By default, this binding is not secure. It is designed to interoperate with ASMX services. When security is enabled, the binding is designed for seamless interoperation with Internet Information Services (IIS) security mechanisms, such as basic authentication, digest, and integrated Windows security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md). This binding supports the following:  
   
 -   HTTPS transport security.  
   
@@ -181,7 +183,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation](../../../../docs/framework/wcf/feature-details/federation.md), <xref:System.ServiceModel.WSFederationHttpSecurity>, and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
   
 ## Custom Bindings  
- If none of the system-provided bindings meets you requirements, you can create a custom binding with a custom security binding element. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md).  
+ If none of the system-provided bindings meets you requirements, you can create a custom binding with a custom security binding element. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md).  
   
 ## Binding Choices  
  The following table summarizes the features offered in the security mode setting, that is, it lists the features available when the security mode is set to `Transport`, `Message`, or `TransportWithMessageCredential`. Use this table to help you find the security features your application requires.  
@@ -216,7 +218,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
 |NTLM|NT LAN Manager (NTLM) authentication.|  
 |Windows|Windows authentication.|  
 |Certificate|Authentication performed using a certificate.|  
-|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by [!INCLUDE[infocard](../../../../includes/infocard-md.md)]. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by [!INCLUDE[infocard](../../../../includes/infocard-md.md)]. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
   
 ### Message Client Credentials in Bindings  
  The following table lists the client credential types available when using a binding in Message security mode.  
@@ -230,9 +232,9 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
 ## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)   
- [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)   
+ [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
+ [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
+ [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
+ [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
+ [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

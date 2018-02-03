@@ -35,6 +35,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
+    <altmember cref="T:System.ServiceProcess.ServiceProcessInstaller" />
+    <altmember cref="T:System.ServiceProcess.ServiceAccount" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -89,6 +92,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Form.ShowDialog" />
+        <altmember cref="M:System.Windows.Forms.Application.Run" />
       </Docs>
     </Member>
     <Member MemberName="Password">
@@ -139,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
       </Docs>
     </Member>
     <Member MemberName="Username">

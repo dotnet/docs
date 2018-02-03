@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetActiveFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetActiveFrame method [.NET Framework debugging]"
   - "GetActiveFrame method, ICorDebugThread interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugThread::GetActiveFrame Method
 Gets an interface pointer to the active (most recent) frame on this ICorDebugThread object.  

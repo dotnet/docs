@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
@@ -16,6 +19,8 @@ caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # Best Practices for Security in WCF
 The following sections list the best practices to consider when creating secure applications using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] security, see [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md), [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md), and [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md).  
@@ -50,7 +55,7 @@ The following sections list the best practices to consider when creating secure 
  Be sure you trust the source of your metadata and make sure that no one has tampered with the metadata. Metadata retrieved using the HTTP protocol is sent in clear text and can be tampered with. If the service uses the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> and <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> properties, use the URL supplied by the service creator to download the data using the HTTPS protocol.  
   
 ## Publish Metadata Using Security  
- To prevent tampering with a service's published metadata, secure the metadata exchange endpoint with transport or message-level security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Publishing Metadata Endpoints](../../../../docs/framework/wcf/publishing-metadata-endpoints.md) and [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md).  
+ To prevent tampering with a service's published metadata, secure the metadata exchange endpoint with transport or message-level security. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Publishing Metadata Endpoints](../../../../docs/framework/wcf/publishing-metadata-endpoints.md) and [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md).  
   
 ## Ensure Use of Local Issuer  
  If an issuer address and binding are specified for a given binding, the local issuer is not used for endpoints that use that binding. Clients who expect to always use the local issuer should ensure that they do not use such a binding or that they modify the binding such that the issuer address is null.  
@@ -62,6 +67,6 @@ The following sections list the best practices to consider when creating secure 
  When you create a custom binding, you must set <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> to `true`. Otherwise, if <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> is set to `false`, and the client is using an asymmetric key-based token such as an X509 certificate, the message will not be signed.  
   
 ## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)   
- [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)   
+ [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)  
  [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)

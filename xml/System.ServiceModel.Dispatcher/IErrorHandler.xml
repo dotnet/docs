@@ -89,7 +89,7 @@
   
  Return `true` from <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> to prevent this default behavior. If any error handler returns `true` it instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] that it is safe to continue using state associated with the failed request.  
   
- If no error handler returns `true` from the <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method the exception is considered unhandled and the default response applies, potentially resulting in an aborted <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> and channel when communicating on a session channel or the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property is not set to <xref:System.ServiceModel.InstanceContextMode?displayProperty=nameWithType>.  
+ If no error handler returns `true` from the <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method the exception is considered unhandled and the default response applies, potentially resulting in an aborted <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> and channel when communicating on a session channel or the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property is not set to <xref:System.ServiceModel.InstanceContextMode.Single?displayProperty=nameWithType>.  
   
  The `error` parameter is never `null` and contains the exception object that was thrown.  
   
@@ -116,7 +116,7 @@
     </Member>
     <Member MemberName="ProvideFault">
       <MemberSignature Language="C#" Value="public void ProvideFault (Exception exception, System.ServiceModel.Channels.MessageVersion version, ref System.ServiceModel.Channels.Message fault);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProvideFault(class System.Exception exception, class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.Channels.Message fault) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProvideFault(class System.Exception exception, class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.Channels.Message&amp; fault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault(System.Exception,System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7485154a-6e85-4a67-a9d4-9008e741d4df
 caps.latest.revision: 4
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating Multicasting Applications using the UDP Transport
 Multicasting applications send small messages to a large number of recipients at the same time without the need to establish point to point connections. The emphasis of such applications is speed over reliability. In other words, it is more important to send timely data than to ensure any specific message is actually received. WCF now supports writing multicasting applications using the <xref:System.ServiceModel.UdpBinding>. This transport is useful in scenarios where a service needs to send out small messages to a number of clients simultaneously. A stock ticker application is an example of such a service.  
@@ -23,47 +25,46 @@ Multicasting applications send small messages to a large number of recipients at
   
 ```  
 // Shared contracts between the client and the service  
-    [ServiceContract]  
-    interface IStockTicker  
-    {  
-        [OperationContract(IsOneWay = true)]  
-        void SendStockInfo(StockInfo[] stockInfo);  
-    }  
-  
-    [DataContract]  
-    class StockInfo  
-    {  
-        [DataMember]  
-        public string Symbol;  
-  
-        [DataMember]  
-        public float Price;  
-  
-        public StockInfo(string symbol, float price)  
-        {  
-            this.Symbol = symbol;  
-            this.Price = price;  
-        }  
-    }  
+[ServiceContract]
+interface IStockTicker
+{
+    [OperationContract(IsOneWay = true)]
+    void SendStockInfo(StockInfo[] stockInfo);
+}
+
+[DataContract]
+class StockInfo
+{
+    [DataMember]
+    public string Symbol;
+
+    [DataMember]
+    public float Price;
+
+    public StockInfo(string symbol, float price)
+    {
+        this.Symbol = symbol;
+        this.Price = price;
+    }
+}
 ```  
   
  Each application that wants to receive multicast messages must host a service that exposes this interface.  For example, here is a code sample that illustrates how to receive multicast messages:  
   
 ```  
-// Service Address  
-            string serviceAddress = "soap.udp://224.0.0.1:40000";  
-            // Binding  
-            UdpBinding myBinding = new UdpBinding();  
-            // Host  
-            ServiceHost host = new ServiceHost(typeof  
-                (StockTickerService), new Uri(serviceAddress));  
-            // Add service endpoint  
-            host.AddServiceEndpoint(typeof(IStockTicker), myBinding, string.Empty);  
-            // Openup the service host  
-            host.Open();  
-  
-            Console.WriteLine("Start receiving stock information");  
-            Console.ReadLine();  
+// Service Address
+string serviceAddress = "soap.udp://224.0.0.1:40000";
+// Binding
+UdpBinding myBinding = new UdpBinding();
+// Host
+ServiceHost host = new ServiceHost(typeof(StockTickerService), new Uri(serviceAddress));
+// Add service endpoint
+host.AddServiceEndpoint(typeof(IStockTicker), myBinding, string.Empty);
+// Openup the service host
+host.Open();
+
+Console.WriteLine("Start receiving stock information");
+Console.ReadLine();
 ```  
   
  The application specifies the UDP address that all services will be listening on. A new <xref:System.ServiceModel.ServiceHost> is created and a service endpoint is exposed using the <xref:System.ServiceModel.UdpBinding>. The <xref:System.ServiceModel.ServiceHost> is then opened and will start listening for incoming messages.  
@@ -71,28 +72,28 @@ Multicasting applications send small messages to a large number of recipients at
  In this type of a scenario it is the client that actually sends out multicast messages. Each service that is listening at the correct UDP address will receive the multicast messages. Here is an example of a client that sends out multicast messages:  
   
 ```  
-// Multicast Address  
-            string serviceAddress = "soap.udp://224.0.0.1:40000";  
-  
-            // Binding  
-            UdpBinding myBinding = new UdpBinding();  
-  
-            // Channel factory  
-            ChannelFactory<IStockTicker> factory  
-                = new ChannelFactory<IStockTicker>(myBinding,  
-                            new EndpointAddress(serviceAddress));  
-  
-            // Call service  
-            IStockTicker proxy = factory.CreateChannel();  
-  
-            while (true)  
-            {  
-                // This will continue to mulicast stock information   
-                proxy.SendStockInfo(GetStockInfo());  
-                Console.WriteLine(String.Format("sent stock info at {0}", DateTime.Now));  
-                // Wait for one second before sending another update  
-                System.Threading.Thread.Sleep(new TimeSpan(0, 0, 1));  
-            }  
+// Multicast Address
+string serviceAddress = "soap.udp://224.0.0.1:40000";
+
+// Binding
+UdpBinding myBinding = new UdpBinding();
+
+// Channel factory
+ChannelFactory<IStockTicker> factory 
+    = new ChannelFactory<IStockTicker>(myBinding,
+                new EndpointAddress(serviceAddress));
+
+// Call service
+IStockTicker proxy = factory.CreateChannel();
+
+while (true)
+{
+    // This will continue to mulicast stock information
+    proxy.SendStockInfo(GetStockInfo());
+    Console.WriteLine(String.Format("sent stock info at {0}", DateTime.Now));
+    // Wait for one second before sending another update
+    System.Threading.Thread.Sleep(new TimeSpan(0, 0, 1));
+}
 ```  
   
  This code generates stock information and then uses the service contract IStockTicker to send multicast messages to call services listening on the correct UDP address.  
@@ -104,17 +105,17 @@ Multicasting applications send small messages to a large number of recipients at
  While multicast messages are generally one-way, the UdpBinding does support request/reply message exchange. Messages sent using the UDP transport contain both a From and To address. Care must be taken when using the From address as it could be maliciously changed en-route.  The address can be checked using the following code:  
   
 ```  
-if (address.AddressFamily == AddressFamily.InterNetwork)  
-          {  
-              // IPv4  
-              byte[] addressBytes = address.GetAddressBytes();  
-              return ((addressBytes[0] & 0xE0) == 0xE0);  
-          }  
-          else  
-          {  
-              // IPv6   
-              return address.IsIPv6Multicast;  
-          }  
+if (address.AddressFamily == AddressFamily.InterNetwork)
+{
+    // IPv4
+    byte[] addressBytes = address.GetAddressBytes();
+    return ((addressBytes[0] & 0xE0) == 0xE0);
+}
+else
+{
+    // IPv6
+    return address.IsIPv6Multicast;
+}
 ```  
   
  This code checks the first byte of the From address to see if it contains 0xE0 which signifies that the address is a multi-cast address.  

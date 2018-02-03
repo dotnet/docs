@@ -35,6 +35,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.DomainCollection" /> object that contains the child domains.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainCollection" />
       </Docs>
     </Member>
     <Member MemberName="CreateLocalSideOfTrustRelationship">
@@ -83,6 +84,8 @@
           <paramref name="direction" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="CreateTrustRelationship">
@@ -123,6 +126,8 @@
           <paramref name="direction" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="DeleteLocalSideOfTrustRelationship">
@@ -163,6 +168,8 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain)" />
       </Docs>
     </Member>
     <Member MemberName="DeleteTrustRelationship">
@@ -199,6 +206,8 @@
           <paramref name="targetDomain" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteLocalSideOfTrustRelationship(System.String)" />
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
       </Docs>
     </Member>
     <Member MemberName="DomainControllers">
@@ -219,6 +228,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" /> object that contains the domain controllers in this domain.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="DomainMode">
@@ -239,6 +249,7 @@
         <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.DomainMode" /> values that indicates the mode that this domain is operating in.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainMode" />
       </Docs>
     </Member>
     <Member MemberName="DomainModeLevel">
@@ -287,6 +298,7 @@
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDiscoverableDomainControllers">
@@ -325,6 +337,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDomainControllers">
@@ -347,6 +360,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDomainControllers">
@@ -376,6 +390,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainControllerCollection" />
       </Docs>
     </Member>
     <Member MemberName="FindDomainController">
@@ -406,6 +421,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A domain controller cannot be located.</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="FindDomainController">
@@ -433,6 +449,8 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="flag" /> parameter contains an invalid value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="FindDomainController">
@@ -463,6 +481,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="FindDomainController">
@@ -498,6 +517,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="siteName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
       </Docs>
     </Member>
     <Member MemberName="Forest">
@@ -518,6 +539,7 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> object that represents the forest that this domain is a member of.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Forest" />
       </Docs>
     </Member>
     <Member MemberName="GetAllTrustRelationships">
@@ -542,6 +564,7 @@
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformationCollection" />
       </Docs>
     </Member>
     <Member MemberName="GetComputerDomain">
@@ -570,6 +593,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the domain could not be made.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetCurrentDomain" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentDomain">
@@ -623,6 +647,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetDomain">
@@ -651,6 +676,7 @@
           <paramref name="context" /> is not valid.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="GetSelectiveAuthenticationStatus">
@@ -684,6 +710,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.SetSelectiveAuthenticationStatus(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetSidFilteringStatus">
@@ -717,6 +744,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.SetSidFilteringStatus(System.String,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetTrustRelationship">
@@ -749,6 +777,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" />
       </Docs>
     </Member>
     <Member MemberName="InfrastructureRoleOwner">
@@ -769,6 +798,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that holds the infrastructure owner role.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -809,6 +839,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that holds the PDC emulator role for this domain.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="RaiseDomainFunctionality">
@@ -856,6 +887,7 @@
           <paramref name="domainMode" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.DomainMode" /> enumeration value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainMode" />
       </Docs>
     </Member>
     <Member MemberName="RaiseDomainFunctionalityLevel">
@@ -914,6 +946,7 @@
           <paramref name="targetDomain" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.Domain" />
       </Docs>
     </Member>
     <Member MemberName="RidRoleOwner">
@@ -934,6 +967,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object that represents the domain controller that holds the relative identifier (RID) master role for this domain.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DomainController" />
       </Docs>
     </Member>
     <Member MemberName="SetSelectiveAuthenticationStatus">
@@ -968,6 +1002,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetSelectiveAuthenticationStatus(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="SetSidFilteringStatus">
@@ -1001,6 +1036,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetSidFilteringStatus(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="UpdateLocalSideOfTrustRelationship">
@@ -1078,6 +1114,7 @@
           <paramref name="newTrustDirection" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="UpdateTrustRelationship">
@@ -1111,6 +1148,7 @@
           <paramref name="newTrustDirection" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
     <Member MemberName="VerifyOutboundTrustRelationship">
@@ -1189,7 +1227,48 @@
           <paramref name="direction" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" /> value.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateLocalSideOfTrustRelationship">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the local side of a trust relationship.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindDomainController">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds any domain controller in this domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllDomainControllers">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all of the domain controllers in this domain.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllDiscoverableDomainControllers">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all of the discoverable domain controllers in this domain.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

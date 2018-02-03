@@ -1,4 +1,4 @@
-<%-- <snippet2> --%>
+<!-- <Snippet2> -->
 <%@ Page Language="C#" MasterPageFile="~/MasterPageCS.master" 
   Title="Connections Page" %>
 <%@ Register TagPrefix="aspSample" 
@@ -74,4 +74,4 @@
   <asp:literal id="Literal1" runat="server" />
 
 </asp:Content>
-<%-- </snippet2> --%>
+<!-- </Snippet2> -->

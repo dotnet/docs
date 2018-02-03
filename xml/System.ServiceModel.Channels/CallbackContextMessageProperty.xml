@@ -264,7 +264,7 @@
     </Member>
     <Member MemberName="GetListenAddressAndContext">
       <MemberSignature Language="C#" Value="public void GetListenAddressAndContext (out System.ServiceModel.EndpointAddress listenAddress, out System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetListenAddressAndContext(class System.ServiceModel.EndpointAddress listenAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetListenAddressAndContext([out] class System.ServiceModel.EndpointAddress&amp; listenAddress, [out] class System.Collections.Generic.IDictionary`2&lt;string, string&gt;&amp; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.GetListenAddressAndContext(System.ServiceModel.EndpointAddress@,System.Collections.Generic.IDictionary{System.String,System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -305,7 +305,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.CallbackContextMessageProperty&amp; contextMessageProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CallbackContextMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -330,7 +330,7 @@
     </Member>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.CallbackContextMessageProperty&amp; contextMessageProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CallbackContextMessageProperty@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -353,5 +353,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

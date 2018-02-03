@@ -108,7 +108,7 @@ Namespace Samples.AspNet.VB.Controls
         Bindable(True), _
         Category("Default"), _
         DefaultValue(""), _
-        Description("The e-mail address.") _
+        Description("The email address.") _
         > _
         Public Property Email() As String
             Get
@@ -125,7 +125,7 @@ Namespace Samples.AspNet.VB.Controls
         Bindable(True), _
         Category("Appearance"), _
         DefaultValue(""), _
-        Description("Error message for the e-mail validator.") _
+        Description("Error message for the email validator.") _
         > _
         Public Property EmailErrorMessage() As String
             Get
@@ -143,7 +143,7 @@ Namespace Samples.AspNet.VB.Controls
         Bindable(True), _
         Category("Appearance"), _
         DefaultValue(""), _
-        Description("The text for the e-mail label.") _
+        Description("The text for the email label.") _
         > _
         Public Property EmailLabelText() As String
             Get

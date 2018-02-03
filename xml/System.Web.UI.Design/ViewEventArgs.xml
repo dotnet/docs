@@ -38,10 +38,16 @@
   
 -   A <xref:System.Web.UI.Design.TemplateModeChangedEventArgs> object when the template editing mode changes for the control on the design surface.  
   
- For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about events and delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/library/d98fd58b-fa4f-4598-8378-addf4355a115).  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.ControlDesigner.OnClick(System.Web.UI.Design.DesignerRegionMouseEventArgs)" />
+    <altmember cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
+    <altmember cref="P:System.Web.UI.Design.ControlDesigner.InTemplateMode" />
+    <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +79,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Design.ViewEventArgs.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="EventArgs">
@@ -104,6 +111,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" />
+        <altmember cref="T:System.Web.UI.Design.ViewEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="EventType">
@@ -166,6 +175,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
+        <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+        <altmember cref="P:System.Web.UI.Design.ViewRendering.Regions" />
       </Docs>
     </Member>
   </Members>

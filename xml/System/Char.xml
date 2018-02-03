@@ -75,14 +75,14 @@
   
 <a name="Categories"></a>   
 ## Characters and character categories  
- Each Unicode character or valid surrogate pair belongs to a Unicode category. In the .NET Framework, Unicode categories are represented by members of the <xref:System.Globalization.UnicodeCategory> enumeration and include values such as <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, and <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, for example.  
+ Each Unicode character or valid surrogate pair belongs to a Unicode category. In the .NET Framework, Unicode categories are represented by members of the <xref:System.Globalization.UnicodeCategory> enumeration and include values such as <xref:System.Globalization.UnicodeCategory.CurrencySymbol?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType>, and <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType>, for example.  
   
  To determine the Unicode category of a character, you call the <xref:System.Char.GetUnicodeCategory%2A> method. For example, the following example calls the <xref:System.Char.GetUnicodeCategory%2A> to display the Unicode category of each character in a string.  
   
  [!code-csharp[System.Char.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.char.class/cs/GetUnicodeCategory3.cs#6)]
  [!code-vb[System.Char.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.char.class/vb/GetUnicodeCategory3.vb#6)]  
   
- Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], Unicode characters are classified based on [The Unix Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In versions of the .NET Framework from the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] to  the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], they are classified based on [The Unix Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).  
+ Internally, for characters outside the ASCII range (U+0000 through U+00FF), the <xref:System.Char.GetUnicodeCategory%2A> method depends on Unicode categories reported by the <xref:System.Globalization.CharUnicodeInfo> class. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], Unicode characters are classified based on [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/). In versions of the .NET Framework from the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] to  the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], they are classified based on [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).  
   
 <a name="Elements"></a>   
 ## Characters and text elements  
@@ -137,6 +137,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
  ]]></format>
     </remarks>
     <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+    <altmember cref="T:System.IComparable" />
+    <altmember cref="T:System.IConvertible" />
+    <altmember cref="T:System.String" />
   </Docs>
   <Members>
     <Member MemberName="CompareTo">
@@ -214,6 +217,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CompareTo">
@@ -289,6 +294,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not a <see cref="T:System.Char" /> object.</exception>
+        <altmember cref="T:System.IComparable" />
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="ConvertFromUtf32">
@@ -344,6 +351,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="utf32" /> is not a valid 21-bit Unicode code point ranging from U+0 through U+10FFFF, excluding the surrogate pair range from U+D800 through U+DFFF.</exception>
+        <altmember cref="M:System.Char.ConvertToUtf32(System.Char,System.Char)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToUtf32">
@@ -401,6 +410,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="highSurrogate" /> is not in the range U+D800 through U+DBFF, or <paramref name="lowSurrogate" /> is not in the range U+DC00 through U+DFFF.</exception>
+        <altmember cref="M:System.Char.ConvertFromUtf32(System.Int32)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="ConvertToUtf32">
@@ -459,6 +470,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
         <exception cref="T:System.ArgumentException">The specified index position contains a surrogate pair, and either the first character in the pair is not a valid high surrogate or the second character in the pair is not a valid low surrogate.</exception>
+        <altmember cref="M:System.Char.ConvertFromUtf32(System.Int32)" />
+        <altmember cref="T:System.Text.UTF32Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -502,6 +515,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Equals(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -554,6 +568,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.CompareTo(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -787,6 +802,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="GetUnicodeCategory">
@@ -844,6 +860,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsControl">
@@ -860,7 +877,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -903,7 +920,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. T The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. T The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
    
   
@@ -959,7 +976,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  Character positions in a string are indexed starting from zero.  
   
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category.  
   
    
   
@@ -992,7 +1009,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -1037,7 +1054,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a radix-10 digit. This contrasts with <xref:System.Char.IsNumber%2A>, which determines whether a `Char` is of any numeric Unicode category. Numbers include characters such as fractions, subscripts, superscripts, Roman numerals, currency numerators, encircled numbers, and script-specific digits.  
   
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
    
   
@@ -1050,6 +1067,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsNumber(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsDigit">
@@ -1095,7 +1114,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  Character positions in a string are indexed starting from zero.  
   
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType> category.  
   
    
   
@@ -1112,6 +1131,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsNumber(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsHighSurrogate">
@@ -1242,15 +1263,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
  ]]></format>
         </remarks>
@@ -1295,15 +1316,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
    
   
@@ -1316,6 +1337,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLetter">
@@ -1361,15 +1383,15 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  This method determines whether the character at a specified index position in a string is a member of any category of Unicode letter. Unicode letters include the following:  
   
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory.UppercaseLetter?displayProperty=nameWithType> category.  
   
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory.LowercaseLetter?displayProperty=nameWithType> category.  
   
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory.TitlecaseLetter?displayProperty=nameWithType> category.  
   
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory.ModifierLetter?displayProperty=nameWithType> category.  
   
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory.OtherLetter?displayProperty=nameWithType> category.  
   
    
   
@@ -1386,6 +1408,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsLetterOrDigit">
@@ -1458,6 +1481,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLetterOrDigit">
@@ -1518,6 +1542,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsLower">
@@ -1570,6 +1595,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsUpper(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsLower">
@@ -1630,6 +1657,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Char.IsUpper(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsLowSurrogate">
@@ -1786,7 +1816,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 > [!IMPORTANT]
 >  The <xref:System.Char.IsNumber%28System.Char%29> method is not intended to determine whether a string consists of numeric characters (for example, by calling the method for each character in a string). To determine whether a string consists of numeric characters, call one of the overloads of the `TryParse` method (such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> or <xref:System.Double.TryParse%2A?displayProperty=nameWithType> of an integral or floating point type.  
   
- Valid numbers are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid numbers are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LetterNumber?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory.OtherNumber?displayProperty=nameWithType> category.  
   
  The <xref:System.Char.IsNumber%28System.Char%29> method assumes that `c` corresponds to a single linguistic character and checks whether that character represents a number. However, some numbers in the Unicode standard are represented by two <xref:System.Char> objects that form a surrogate pair. For example, the Aegean numbering system consists of code points U+10107 through U+10133. The following example uses the <xref:System.Char.ConvertFromUtf32%2A> method to instantiate a string that represents AEGEAN NUMBER ONE. As the output from the example shows, the <xref:System.Char.IsNumber%28System.Char%29> method returns `false` if it is passed either a high surrogate or a low surrogate of this character.  
   
@@ -1804,6 +1834,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsDigit(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsNumber">
@@ -1852,7 +1884,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 > [!IMPORTANT]
 >  The <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method is not intended to determine whether a string consists of numeric characters (for example, by calling the method for each character in a string). To determine whether a string consists of numeric characters, call one of the overloads of the `TryParse` method (such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> or <xref:System.Double.TryParse%2A?displayProperty=nameWithType> of an integral or floating point type.  
   
- Valid numbers are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category.  
+ Valid numbers are members of the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber?displayProperty=nameWithType>, <xref:System.Globalization.UnicodeCategory.LetterNumber?displayProperty=nameWithType>, or <xref:System.Globalization.UnicodeCategory.OtherNumber?displayProperty=nameWithType> category.  
   
  If the <xref:System.Char> object at position `index` is the first character of a valid surrogate pair, the <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method determines whether the surrogate pair forms a numeric digit. For example, the Aegean numbering system consists of code points U+10107 through U+10133. The following example uses the <xref:System.Char.ConvertFromUtf32%2A> method to instantiate a string that represents AEGEAN NUMBER ONE. As the output from the example shows, the <xref:System.Char.IsNumber%28System.String%2CSystem.Int32%29> method returns `true` if it is passed the high surrogate of AEGEAN NUMBER ONE. However, if it is passed the low surrogate, it considers only the category of the low surrogate and returns `false`.  
   
@@ -1874,6 +1906,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="M:System.Char.IsDigit(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsPunctuation">
@@ -2000,6 +2035,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsPunctuation">
@@ -2087,6 +2123,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsSeparator">
@@ -2105,14 +2143,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
  ]]></format>
         </remarks>
@@ -2157,14 +2195,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
    
   
@@ -2177,6 +2215,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="IsSeparator">
@@ -2222,14 +2261,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  The Unicode standard recognizes three subcategories of separators:  
   
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes characters such as \u0020.  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory.SpaceSeparator?displayProperty=nameWithType> category), which includes characters such as \u0020.  
   
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2028.  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory.LineSeparator?displayProperty=nameWithType> category), which includes \u2028.  
   
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), which includes \u2029.  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator?displayProperty=nameWithType> category), which includes \u2029.  
   
 > [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category), not as separator characters.  
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory.Control?displayProperty=nameWithType> category), not as separator characters.  
   
    
   
@@ -2246,6 +2285,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogate">
@@ -2285,7 +2326,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
+ A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory.Surrogate?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
   
    
   
@@ -2298,6 +2339,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="Overload:System.Char.IsHighSurrogate" />
+        <altmember cref="Overload:System.Char.IsLowSurrogate" />
+        <altmember cref="Overload:System.Char.IsSurrogatePair" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogate">
@@ -2341,7 +2385,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
 ## Remarks  
  Character positions in a string are indexed starting from zero.  
   
- A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
+ A surrogate is a <xref:System.Char> object with a UTF-16 code unit in the range from U+D800 to U+DFFF. Each character with a code unit in this range belongs to the <xref:System.Globalization.UnicodeCategory.Surrogate?displayProperty=nameWithType> category. The individual surrogate code unit has no interpretation of its own, but has meaning only when used as part of a surrogate pair. For more information about surrogate pairs, see the Unicode Standard at the [Unicode home page](http://go.microsoft.com/fwlink/?linkid=37123).  
   
    
   
@@ -2358,6 +2402,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="Overload:System.Char.IsHighSurrogate" />
+        <altmember cref="Overload:System.Char.IsLowSurrogate" />
+        <altmember cref="Overload:System.Char.IsSurrogatePair" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogatePair">
@@ -2412,6 +2459,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.IsHighSurrogate(System.Char)" />
+        <altmember cref="M:System.Char.IsLowSurrogate(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsSurrogatePair">
@@ -2470,6 +2519,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
+        <altmember cref="M:System.Char.IsHighSurrogate(System.Char)" />
+        <altmember cref="M:System.Char.IsLowSurrogate(System.Char)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsSymbol">
@@ -2578,6 +2629,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
       </Docs>
     </Member>
     <Member MemberName="IsSymbol">
@@ -2656,6 +2708,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IsUpper">
@@ -2699,6 +2753,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="M:System.Char.IsLower(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsUpper">
@@ -2750,6 +2806,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <MemberGroup MemberName="IsWhiteSpace">
@@ -2838,6 +2896,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="IsWhiteSpace">
@@ -2906,6 +2966,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
+        <altmember cref="T:System.Boolean" />
+        <altmember cref="T:System.String" />
+        <altmember cref="T:System.Globalization.UnicodeCategory" />
       </Docs>
     </Member>
     <Member MemberName="MaxValue">
@@ -2943,6 +3006,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Char.MinValue" />
       </Docs>
     </Member>
     <Member MemberName="MinValue">
@@ -2980,6 +3044,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Char.MaxValue" />
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -3027,6 +3092,7 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">The length of <paramref name="s" /> is not 1.</exception>
+        <altmember cref="M:System.Char.ToString" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -3726,6 +3792,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <block subset="none" type="usage">
           <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToLower">
@@ -3777,6 +3845,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToLowerInvariant">
@@ -3821,6 +3892,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.ToLower" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3864,6 +3938,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3910,6 +3986,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3957,6 +4035,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -4012,6 +4092,8 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         <block subset="none" type="usage">
           <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpper">
@@ -4062,6 +4144,9 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Globalization.CultureInfo.CurrentCulture" />
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="ToUpperInvariant">
@@ -4106,11 +4191,14 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.ToUpper" />
+        <altmember cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" />
+        <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
       </Docs>
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string s, out char result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, char result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] char&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Char.TryParse(System.String,System.Char@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4160,7 +4248,202 @@ When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Char.Parse(System.String)" />
+        <altmember cref="M:System.Char.ToString" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a lowercase letter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a character has a surrogate code unit.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetNumericValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified numeric Unicode character to a double-precision floating-point number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsNumber">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a number.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToLower">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a Unicode character to its lowercase equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsHighSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified <see cref="T:System.Char" /> object is a high surrogate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ToUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a Unicode character to its uppercase equivalent.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object or <see cref="T:System.Char" /> value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or value type, and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object or value type.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetUnicodeCategory">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Categorizes a Unicode character into a group identified by one of the <see cref="T:System.Globalization.UnicodeCategory" /> values.</summary>
+        <altmember cref="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ConvertToUtf32">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of a UTF-16 encoded surrogate pair into a Unicode code point.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsUpper">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as an uppercase letter.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsLowSurrogate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the specified <see cref="T:System.Char" /> object is a low surrogate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="IsSurrogatePair">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether two specified <see cref="T:System.Char" /> objects form a surrogate pair.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

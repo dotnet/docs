@@ -211,7 +211,7 @@ End Sub
   
 ## Remarks  
   
-Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.String)> or the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.Type)> method.
 
 The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
  ]]></format>
@@ -238,8 +238,8 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.String)> or the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.Type)> method.
 
 The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
  ]]></format>
@@ -267,7 +267,7 @@ The contract name is compared by using the <xref:System.StringComparer.Ordinal> 
   
 ## Remarks  
   
-Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.String)> or the <xref:System.ComponentModel.Composition.ExportAttribute.%23ctor(System.Type)> method.
 
 The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
  ]]></format>

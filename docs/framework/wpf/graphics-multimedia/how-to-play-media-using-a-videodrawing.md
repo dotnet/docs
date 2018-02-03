@@ -10,16 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "VideoDrawing class"
-  - "MediaPlayer class"
-  - "playback of media"
-  - "classes, VideoDrawing"
-  - "classes, MediaPlayer"
+  - "playback of media [WPF]"
+  - "classes [WPF], MediaPlayer"
 ms.assetid: 165d47ed-22ce-4ded-aa6a-aa9b7467de87
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Play Media using a VideoDrawing
 To play an audio or video file, you use a <xref:System.Windows.Media.VideoDrawing> and a <xref:System.Windows.Media.MediaPlayer>. There are two ways to load and play media. The first is to use a <xref:System.Windows.Media.MediaPlayer> and a <xref:System.Windows.Media.VideoDrawing> by themselves, and the second way is to create your own <xref:System.Windows.Media.MediaTimeline> to use with the <xref:System.Windows.Media.MediaPlayer> and <xref:System.Windows.Media.VideoDrawing>.  
@@ -42,5 +41,5 @@ To play an audio or video file, you use a <xref:System.Windows.Media.VideoDrawin
  Note that, when you use a <xref:System.Windows.Media.MediaTimeline>, you use the interactive <xref:System.Windows.Media.Animation.ClockController> returned from the <xref:System.Windows.Media.Animation.Clock.Controller%2A> property of the <xref:System.Windows.Media.MediaClock> to control media playback instead of the interactive methods of <xref:System.Windows.Media.MediaPlayer>.  
   
 ## See Also  
- <xref:System.Windows.Media.VideoDrawing>   
+ <xref:System.Windows.Media.VideoDrawing>  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IsFrameworkAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsFrameworkAssembly function [.NET Framework fusion]"
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IsFrameworkAssembly Function
 Gets a value that indicates whether the specified assembly is managed.  

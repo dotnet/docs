@@ -35,6 +35,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.TextDecorations" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -291,6 +292,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecoration.PenThicknessUnit" />
       </Docs>
     </Member>
     <Member MemberName="PenOffset">
@@ -333,6 +335,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.TextDecoration.PenOffsetUnit" />
       </Docs>
     </Member>
     <Member MemberName="PenOffsetProperty">
@@ -485,5 +488,14 @@ Example of an underline styled with a linear gradient brush and dashed pen
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecoration" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -68,6 +68,15 @@
     <altmember cref="T:System.Net.WebResponse" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebResponse" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpWebResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -457,7 +466,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.HttpWebResponse.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.HttpWebResponse.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1035,7 +1044,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether headers are supported.</summary>
-        <value><see langword="true" /> if headers are supported; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if headers are supported; otherwise, <see langword="false" />. Always returns <see langword="true" />.</value>
         <remarks>
         </remarks>
       </Docs>
@@ -1091,14 +1101,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpWebResponse" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

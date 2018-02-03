@@ -10,13 +10,15 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "overriding the logical tree"
-  - "logical tree, overriding"
+  - "overriding the logical tree [WPF]"
+  - "logical tree [WPF], overriding"
 ms.assetid: 0ae4d074-8113-4b06-b4fa-e0f39d4967a6
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Override the Logical Tree
 Although it is not necessary in most cases, advanced control authors have the option to override the logical tree.  

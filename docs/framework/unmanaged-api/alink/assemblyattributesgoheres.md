@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyAttributesGoHereS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AssemblyAttributesGoHereS type"
   - "Alink API, AssemblyAttributesGoHereS type"
@@ -29,6 +27,8 @@ caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # AssemblyAttributesGoHereS
 Used by ALink as a placeholder to store information about custom attributes.  
@@ -50,6 +50,6 @@ AssemblyAttributesGoHereS
  mscorlib.dll  
   
 ## See Also  
- [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)   
- [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)   
+ [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)  
+ [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)  
  [AssemblyAttributesGoHereSM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheresm.md)

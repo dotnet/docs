@@ -163,7 +163,7 @@
     </Member>
     <Member MemberName="TryCreateFrom">
       <MemberSignature Language="C#" Value="public static bool TryCreateFrom (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, out System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause clause);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreateFrom(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause clause) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreateFrom(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, [out] class System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause&amp; clause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause.TryCreateFrom(System.Security.Cryptography.X509Certificates.X509Certificate2,System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

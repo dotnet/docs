@@ -21,7 +21,7 @@ public partial class CreateUserWizardErrorcs_aspx : System.Web.UI.Page
                 break;
 
             case MembershipCreateStatus.DuplicateEmail:
-                Label1.Text = "A username for that e-mail address already exists. Please enter a different e-mail address.";
+                Label1.Text = "A username for that email address already exists. Please enter a different email address.";
                 break;
 
             case MembershipCreateStatus.InvalidPassword:
@@ -29,7 +29,7 @@ public partial class CreateUserWizardErrorcs_aspx : System.Web.UI.Page
                 break;
 
             case MembershipCreateStatus.InvalidEmail:
-                Label1.Text = "The e-mail address provided is invalid. Please check the value and try again.";
+                Label1.Text = "The email address provided is invalid. Please check the value and try again.";
                 break;
 
             case MembershipCreateStatus.InvalidAnswer:

@@ -462,10 +462,14 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="timeSpan">
+          <see cref="T:System.TimeSpan" /> from which an instance of <see cref="T:System.Windows.Duration" /> is implicitly created.</param>
+        <summary>Implicitly creates a <see cref="T:System.Windows.Duration" /> from a given <see cref="T:System.TimeSpan" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Duration" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Duration.%23ctor%28System.TimeSpan%29?displayProperty=nameWithType>]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Occurs when <see cref="T:System.TimeSpan" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -710,5 +714,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified object is equal to an instance of <see cref="T:System.Windows.Duration" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

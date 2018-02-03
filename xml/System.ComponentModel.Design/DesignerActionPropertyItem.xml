@@ -41,6 +41,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
+    <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+    <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -70,6 +73,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -103,6 +107,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +150,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
     <Member MemberName="MemberName">
@@ -171,6 +179,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionList" />
       </Docs>
     </Member>
     <Member MemberName="RelatedComponent">
@@ -198,7 +208,18 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.DesignerActionItem" />
+        <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

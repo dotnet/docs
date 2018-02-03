@@ -9,11 +9,16 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: bb765a48-12f2-430d-a54d-6f0c20f2a23a
 caps.latest.revision: 21
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Expose a Contract to SOAP and Web Clients
 By default, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] makes endpoints available only to SOAP clients. In [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md), an endpoint is made available to non-SOAP clients. There may be times when you want to make the same contract available both ways, as a Web endpoint and as a SOAP endpoint. This topic shows an example of how to do this.  
@@ -103,10 +108,10 @@ By default, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] makes endpoi
  When compiling Service.cs, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See Also  
- <xref:System.ServiceModel.WebHttpBinding>   
- <xref:System.ServiceModel.Web.WebGetAttribute>   
- <xref:System.ServiceModel.Web.WebInvokeAttribute>   
- <xref:System.ServiceModel.Web.WebServiceHost>   
- <xref:System.ServiceModel.ChannelFactory>   
- <xref:System.ServiceModel.Description.WebHttpBehavior>   
+ <xref:System.ServiceModel.WebHttpBinding>  
+ <xref:System.ServiceModel.Web.WebGetAttribute>  
+ <xref:System.ServiceModel.Web.WebInvokeAttribute>  
+ <xref:System.ServiceModel.Web.WebServiceHost>  
+ <xref:System.ServiceModel.ChannelFactory>  
+ <xref:System.ServiceModel.Description.WebHttpBehavior>  
  [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

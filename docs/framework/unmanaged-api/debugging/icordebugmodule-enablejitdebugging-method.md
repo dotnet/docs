@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::EnableJITDebugging"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::EnableJITDebugging method [.NET Framework debugging]"
   - "EnableJITDebugging method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugModule::EnableJITDebugging Method
 Controls whether the just-in-time (JIT) compiler preserves debugging information for methods within this module.  

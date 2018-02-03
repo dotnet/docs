@@ -141,6 +141,7 @@
         <summary>When implemented by a derived class, creates and returns an identical copy of the current permission object.</summary>
         <returns>A copy of the current permission object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.Copy" />
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -166,6 +167,7 @@
         <param name="securityElement">A <see cref="T:System.Security.SecurityElement" /> expression.</param>
         <summary>When overridden in a derived class, reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.FromXml(System.Security.SecurityElement)" />
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -192,6 +194,7 @@
         <summary>When implemented by a derived class, creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
         <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission is <see langword="null" /> if the intersection is empty.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.Intersect(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -219,6 +222,7 @@
         <returns>
           <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.IsSubsetOf(System.Security.IPermission)" />
       </Docs>
     </Member>
     <Member MemberName="IsUnrestricted">
@@ -266,6 +270,7 @@
         <summary>Creates an XML encoding of the security object and its current state.</summary>
         <returns>An XML encoding of the security object, including any state information.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.ToXml" />
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -292,6 +297,7 @@
         <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
         <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Security.CodeAccessPermission.Union(System.Security.IPermission)" />
       </Docs>
     </Member>
   </Members>

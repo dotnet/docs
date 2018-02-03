@@ -32,6 +32,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Controls.FlowDocumentReader" />
+    <altmember cref="T:System.Windows.Controls.FlowDocumentScrollViewer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -106,6 +108,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPagePropertyKey" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CanGoToNextPageProperty">
@@ -169,6 +178,13 @@
         <summary>Returns a value that indicates whether or the viewer is able to jump to the specified page number.</summary>
         <returns>A Boolean value that indicates whether or the viewer is able to jump to the specified page number.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPage">
@@ -203,6 +219,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPagePropertyKey" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="CanGoToPreviousPageProperty">
@@ -313,6 +336,13 @@
       <Docs>
         <summary>Causes the viewer to jump to the first page of the current document (represented by the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" /> property).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetIsMasterPage">
@@ -343,6 +373,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if <paramref name="element" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.SetIsMasterPage(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetMasterPageView">
@@ -369,11 +400,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetPageViewsCollection(System.Boolean@)" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews" />
       </Docs>
     </Member>
     <Member MemberName="GetPageViewsCollection">
       <MemberSignature Language="C#" Value="protected virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection (out bool changed);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection(bool changed) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection([out] bool&amp; changed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetPageViewsCollection(System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -398,6 +431,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews" />
       </Docs>
     </Member>
     <Member MemberName="GoToPage">
@@ -426,6 +460,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
       </Docs>
     </Member>
     <Member MemberName="InvalidatePageViews">
@@ -479,6 +520,13 @@
       <Docs>
         <summary>Causes the viewer to jump to the last page in the current document (represented by the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" /> property).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
@@ -600,6 +648,13 @@
       <Docs>
         <summary>Causes the viewer to jump to the next page in the current document (represented by the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" /> property).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -784,6 +839,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnGoToPageCommand">
@@ -814,6 +873,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnLastPageCommand">
@@ -839,6 +902,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnMasterPageNumberChanged">
@@ -889,6 +956,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnPageViewsChanged">
@@ -932,6 +1003,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand" />
       </Docs>
     </Member>
     <Member MemberName="OnPrintCommand">
@@ -957,6 +1032,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnCancelPrintCommand" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.Print" />
       </Docs>
     </Member>
     <Member MemberName="PageCount">
@@ -1102,6 +1179,13 @@
       <Docs>
         <summary>Causes the viewer to jump to the previous page of the current document (represented by the <see cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" /> property).</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+        <altmember cref="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -1129,6 +1213,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.CancelPrint" />
       </Docs>
     </Member>
     <Member MemberName="SetIsMasterPage">
@@ -1160,6 +1245,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">Raised if *element* is **null**.</exception>
+        <altmember cref="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetIsMasterPage(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
     <Member MemberName="System.IServiceProvider.GetService">
@@ -1182,6 +1268,7 @@
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <returns>A service object of type <paramref name="serviceType" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.IServiceProvider" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IAddChild.AddChild">

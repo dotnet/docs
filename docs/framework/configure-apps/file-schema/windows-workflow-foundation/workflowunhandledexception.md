@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;workflowUnhandledException&gt;
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  
@@ -53,5 +55,5 @@ A service behavior that enables you to specify the action to take when an unhand
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>   
+ <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>  
  <xref:System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement>

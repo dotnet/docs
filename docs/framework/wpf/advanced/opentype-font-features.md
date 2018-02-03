@@ -9,15 +9,20 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "fonts, OpenType"
-  - "typography, OpenType font technology"
-  - "OpenType font technology"
+  - "fonts [WPF], OpenType"
+  - "typography [WPF], OpenType font technology"
+  - "OpenType font technology [WPF]"
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # OpenType Font Features
 This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] font technology in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
@@ -364,8 +369,8 @@ Text using OpenType capitals
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants.Inferior> &#124; <xref:System.Windows.FontVariants.Normal> &#124; <xref:System.Windows.FontVariants.Ordinal> &#124; <xref:System.Windows.FontVariants.Ruby> &#124; <xref:System.Windows.FontVariants.Subscript> &#124; <xref:System.Windows.FontVariants.Superscript>|<xref:System.Windows.FontVariants.Normal?displayProperty=nameWithType>|  
   
 ## See Also  
- <xref:System.Windows.Documents.Typography>   
- [OpenType Specification](http://go.microsoft.com/fwlink/?LinkId=96731)   
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)   
- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)   
+ <xref:System.Windows.Documents.Typography>  
+ [OpenType Specification](http://go.microsoft.com/fwlink/?LinkId=96731)  
+ [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
+ [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
  [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)

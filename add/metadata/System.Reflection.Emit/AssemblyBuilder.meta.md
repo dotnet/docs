@@ -74,14 +74,14 @@ manager: "wpickett"
 uid: System.Reflection.Emit.AssemblyBuilder.GetName
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
 uid: System.Reflection.Emit.AssemblyBuilder.GetFiles
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -268,7 +268,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.AssemblyBuilder.GetType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -356,7 +356,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.AssemblyBuilder.GetModules
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -399,7 +399,7 @@ manager: "wpickett"
 uid: System.Reflection.Emit.AssemblyBuilder.GetLoadedModules
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

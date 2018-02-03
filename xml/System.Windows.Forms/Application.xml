@@ -156,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="CommonAppDataPath">
@@ -187,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.CommonAppDataRegistry" />
       </Docs>
     </Member>
     <Member MemberName="CommonAppDataRegistry">
@@ -243,6 +245,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.ProductName" />
+        <altmember cref="P:System.Windows.Forms.Application.ProductVersion" />
+        <altmember cref="T:System.Reflection.AssemblyCompanyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="CurrentCulture">
@@ -273,6 +278,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <altmember cref="T:System.Windows.Forms.InputLanguage" />
       </Docs>
     </Member>
     <Member MemberName="CurrentInputLanguage">
@@ -303,6 +309,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="T:System.Globalization.CultureInfo" />
+        <altmember cref="T:System.Windows.Forms.InputLanguage" />
       </Docs>
     </Member>
     <Member MemberName="DoEvents">
@@ -351,6 +359,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
+        <altmember cref="M:System.Windows.Forms.Application.Run" />
       </Docs>
     </Member>
     <Member MemberName="EnableVisualStyles">
@@ -375,7 +386,7 @@
  This method enables visual styles for the application. Visual styles are the colors, fonts, and other visual elements that form an operating system theme. Controls will draw with visual styles if the control and the operating system support it. To have an effect, <xref:System.Windows.Forms.Application.EnableVisualStyles> must be called before creating any controls in the application; typically, <xref:System.Windows.Forms.Application.EnableVisualStyles> is the first line in the `Main` function. A separate manifest is not required to enable visual styles when calling <xref:System.Windows.Forms.Application.EnableVisualStyles>.  
   
 > [!NOTE]
->  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle?displayProperty=nameWithType> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
+>  Prior to the .NET Framework 2.0, the `FlatStyle` property of some controls, such as controls that derive from <xref:System.Windows.Forms.ButtonBase>, had to be set to <xref:System.Windows.Forms.FlatStyle.System?displayProperty=nameWithType> in order for the controls to be drawn with visual styles. In applications written with the .NET Framework 2.0, this is no longer necessary.  
   
 > [!NOTE]
 >  This method will have no effect for controls hosted in Internet Explorer.  
@@ -391,6 +402,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.RenderWithVisualStyles" />
+        <altmember cref="P:System.Windows.Forms.Application.VisualStyleState" />
+        <altmember cref="T:System.Windows.Forms.FlatStyle" />
       </Docs>
     </Member>
     <Member MemberName="EnterThreadModal">
@@ -502,6 +516,11 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
+        <altmember cref="M:System.Windows.Forms.Application.Run" />
+        <altmember cref="P:System.Windows.Forms.Application.OpenForms" />
+        <altmember cref="E:System.Windows.Forms.Form.Closed" />
+        <altmember cref="E:System.Windows.Forms.Form.Closing" />
       </Docs>
     </Member>
     <Member MemberName="Exit">
@@ -529,6 +548,7 @@
         <summary>Informs all message pumps that they must terminate, and then closes all application windows after the messages have been processed.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityException">For permission to terminate a running application thread. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="ExitThread">
@@ -555,11 +575,12 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
       </Docs>
     </Member>
     <Member MemberName="FilterMessage">
       <MemberSignature Language="C#" Value="public static bool FilterMessage (ref System.Windows.Forms.Message message);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FilterMessage(valuetype System.Windows.Forms.Message message) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FilterMessage(valuetype System.Windows.Forms.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -816,6 +837,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">Caller must have permission to access all windows, as defined by the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of the <see cref="T:System.Security.Permissions.UIPermissionWindow" /> enumeration.</permission>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="T:System.Windows.Forms.FormCollection" />
       </Docs>
     </Member>
     <Member MemberName="ProductName">
@@ -850,6 +873,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.ProductVersion" />
+        <altmember cref="P:System.Windows.Forms.Application.CompanyName" />
+        <altmember cref="T:System.Reflection.AssemblyProductAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ProductVersion">
@@ -886,6 +912,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.ProductName" />
+        <altmember cref="P:System.Windows.Forms.Application.CompanyName" />
+        <altmember cref="T:System.Reflection.AssemblyVersionAttribute" />
       </Docs>
     </Member>
     <Member MemberName="RaiseIdle">
@@ -919,6 +948,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Application.Idle" />
       </Docs>
     </Member>
     <Member MemberName="RegisterMessageLoop">
@@ -952,6 +982,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Application.MessageLoopCallback" />
       </Docs>
     </Member>
     <Member MemberName="RemoveMessageFilter">
@@ -989,6 +1020,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.AddMessageFilter(System.Windows.Forms.IMessageFilter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderWithVisualStyles">
@@ -1020,7 +1052,7 @@
 |The operating system supports visual styles|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsSupportedByOS%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |The user has enabled visual styles in the operating system|To verify this condition separately, use the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation.IsEnabledByUser%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> class.|  
 |Visual styles are enabled in the application|Visual styles can be enabled in an application by calling the <xref:System.Windows.Forms.Application.EnableVisualStyles> method or by using an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls.|  
-|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState?displayProperty=nameWithType>.|  
+|Visual styles are being used to draw the client area of application windows|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAreaEnabled?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAndNonClientAreasEnabled?displayProperty=nameWithType>.|  
   
  ]]></format>
         </remarks>
@@ -1083,6 +1115,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A main message loop is already running on this thread.</exception>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
+        <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -1125,6 +1160,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A main message loop is already running on this thread.</exception>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
+        <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -1172,6 +1210,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">A main message loop is already running on the current thread.</exception>
+        <altmember cref="M:System.Windows.Forms.Application.Exit" />
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
+        <altmember cref="M:System.Windows.Forms.Application.DoEvents" />
       </Docs>
     </Member>
     <Member MemberName="SafeTopLevelCaptionFormat">
@@ -1251,6 +1292,14 @@ static class Program
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">You can only call this method before the first window is created by your Windows Forms application.</exception>
+        <altmember cref="P:System.Windows.Forms.ButtonBase.UseCompatibleTextRendering" />
+        <altmember cref="P:System.Windows.Forms.CheckedListBox.UseCompatibleTextRendering" />
+        <altmember cref="P:System.Windows.Forms.GroupBox.UseCompatibleTextRendering" />
+        <altmember cref="P:System.Windows.Forms.Label.UseCompatibleTextRendering" />
+        <altmember cref="P:System.Windows.Forms.LinkLabel.UseCompatibleTextRendering" />
+        <altmember cref="P:System.Windows.Forms.PropertyGrid.UseCompatibleTextRendering" />
+        <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
+        <altmember cref="M:System.Drawing.Text.PrivateFontCollection.AddMemoryFont(System.IntPtr,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="SetSuspendState">
@@ -1287,6 +1336,7 @@ static class Program
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.PowerState" />
       </Docs>
     </Member>
     <MemberGroup MemberName="SetUnhandledExceptionMode">
@@ -1354,6 +1404,7 @@ static class Program
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">You cannot set the exception mode after the application has created its first window.</exception>
+        <altmember cref="T:System.Windows.Forms.UnhandledExceptionMode" />
       </Docs>
     </Member>
     <Member MemberName="SetUnhandledExceptionMode">
@@ -1518,6 +1569,7 @@ static class Program
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Application.ExitThread" />
       </Docs>
     </Member>
     <Member MemberName="UnregisterMessageLoop">
@@ -1585,6 +1637,7 @@ static class Program
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.Application.UserAppDataRegistry" />
       </Docs>
     </Member>
     <Member MemberName="UserAppDataRegistry">
@@ -1614,6 +1667,7 @@ static class Program
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemInformation" />
       </Docs>
     </Member>
     <Member MemberName="UseWaitCursor">
@@ -1676,5 +1730,23 @@ static class Program
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Run">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins running a standard application message loop on the current thread.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Exit">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Informs all message pumps that they must terminate, and then closes all application windows after the messages have been processed.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

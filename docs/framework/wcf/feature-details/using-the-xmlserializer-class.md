@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "XmlSerializer [WCF], using"
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
 caps.latest.revision: 26
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Using the XmlSerializer Class
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can use two different serialization technologies to turn the data in your application into XML that is transmitted between clients and services, a process called serialization.  
@@ -35,7 +40,7 @@ manager: "erikre"
   
  Many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types fall into the latter two categories and are thus serializable. Arrays of serializable types are also serializable. For a complete list, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
   
- The <xref:System.Runtime.Serialization.DataContractSerializer>, used together with data contract types, is the recommended way to write new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+ The <xref:System.Runtime.Serialization.DataContractSerializer>, used together with data contract types, is the recommended way to write new [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
   
 ## When to Use the XmlSerializer Class  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] also supports the <xref:System.Xml.Serialization.XmlSerializer> class. The <xref:System.Xml.Serialization.XmlSerializer> class is not unique to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. It is the same serialization engine that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services use. The <xref:System.Xml.Serialization.XmlSerializer> class supports a much narrower set of types than the <xref:System.Runtime.Serialization.DataContractSerializer> class, but allows much more control over the resulting XML and supports much more of the XML Schema definition language (XSD) standard. It also does not require any declarative attributes on the serializable types. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the XML Serialization topic in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] documentation. The <xref:System.Xml.Serialization.XmlSerializer> class does not support data contract types.  
@@ -140,7 +145,7 @@ manager: "erikre"
   
 -   The `ReadXml` implementation should not read the wrapper element. It is expected to read the one element that `WriteXml` produces.  
   
--   When serializing an element type regularly (for example, as a data member in a data contract), the serializer outputs a wrapper element before calling `WriteXml`, as with content types. However, when serializing an element type at the top level, the serializer does not normally output a wrapper element at all around the element that `WriteXml` writes, unless a root name and namespace are explicitly specified when constructing the serializer in the `DataContractSerializer` or `NetDataContractSerializer` constructors. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
+-   When serializing an element type regularly (for example, as a data member in a data contract), the serializer outputs a wrapper element before calling `WriteXml`, as with content types. However, when serializing an element type at the top level, the serializer does not normally output a wrapper element at all around the element that `WriteXml` writes, unless a root name and namespace are explicitly specified when constructing the serializer in the `DataContractSerializer` or `NetDataContractSerializer` constructors. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
   
 -   When serializing an element type at the top level without specifying the root name and namespace at construction time, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> essentially do nothing and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A> calls `WriteXml`. In this mode, the object being serialized cannot be `null` and cannot be polymorphically assigned. Also, object graph preservation cannot enabled and the `NetDataContractSerializer` cannot be used.  
   
@@ -209,10 +214,10 @@ manager: "erikre"
 >  The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
   
 ## See Also  
- <xref:System.ServiceModel.DataContractFormatAttribute>   
- <xref:System.Runtime.Serialization.DataContractSerializer>   
- <xref:System.Xml.Serialization.XmlSerializer>   
- <xref:System.ServiceModel.MessageHeaderArrayAttribute>   
- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)   
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)   
+ <xref:System.ServiceModel.DataContractFormatAttribute>  
+ <xref:System.Runtime.Serialization.DataContractSerializer>  
+ <xref:System.Xml.Serialization.XmlSerializer>  
+ <xref:System.ServiceModel.MessageHeaderArrayAttribute>  
+ [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
+ [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

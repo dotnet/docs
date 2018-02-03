@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "ALink"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ALink API"
 ms.assetid: f4a84be2-309c-439c-b686-6facb85f4654
@@ -20,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ALink API (Unmanaged API Reference)
 Supports creating .NET Framework assemblies and unbound modules.  

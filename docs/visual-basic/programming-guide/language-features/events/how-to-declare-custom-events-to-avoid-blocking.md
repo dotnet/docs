@@ -1,39 +1,21 @@
 ---
 title: "How to: Declare Custom Events To Avoid Blocking (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "declaring events, custom"
+  - "declaring events [Visual Basic], custom"
   - "events [Visual Basic], custom"
-  - "custom events"
+  - "custom events [Visual Basic]"
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Declare Custom Events To Avoid Blocking (Visual Basic)
 There are several circumstances when it is important that one event handler not block subsequent event handlers. Custom events allow the event to call its event handlers asynchronously.  
@@ -50,7 +32,7 @@ There are several circumstances when it is important that one event handler not 
  [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
   
 ## See Also  
- <xref:System.Collections.ArrayList>   
- <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>   
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)   
+ <xref:System.Collections.ArrayList>  
+ <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>  
+ [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
  [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

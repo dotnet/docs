@@ -52,7 +52,7 @@ Type providers are best suited to situations where the schema is stable at runti
 
 
 ## A Simple Type Provider
-This sample is Samples.HelloWorldTypeProvider in the `SampleProviders\Providers` directory of the [F# 3.0 Sample Pack](http://go.microsoft.com/fwlink/?LinkId=236999) on the Codeplex website. The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](https://msdn.microsoft.com/library/#BK_Erased) later in this topic.
+This sample is Samples.HelloWorldTypeProvider in the `SampleProviders\Providers` directory of the [F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com) on the Codeplex website. The provider makes available a "type space" that contains 100 erased types, as the following code shows by using F# signature syntax and omitting the details for all except `Type1`. For more information about erased types, see [Details About Erased Provided Types](#details-about-erased-provided-types) later in this topic.
 
 ```fsharp
 namespace Samples.HelloWorldTypeProvider
@@ -165,7 +165,7 @@ devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 
 As an alternative, open Visual Studio, open the Debug menu, choose `Debug/Attach to process…`, and attach to another `devenv` process where you’re editing your script. By using this method, you can more easily target particular logic in the type provider by interactively typing expressions into the second instance (with full IntelliSense and other features).
 
-You can disable Just My Code debugging to better identify errors in generated code. For information about how to enable or disable this feature, see [Navigating through Code with the Debugger](https://msdn.microsoft.com/library/y740d9d3.aspx). Also, you can also set first-chance exception catching by opening the `Debug` menu and then choosing `Exceptions` or by choosing the Ctrl+Alt+E keys to open the `Exceptions` dialog box. In that dialog box, under `Common Language Runtime Exceptions`, select the `Thrown` check box.
+You can disable Just My Code debugging to better identify errors in generated code. For information about how to enable or disable this feature, see [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger). Also, you can also set first-chance exception catching by opening the `Debug` menu and then choosing `Exceptions` or by choosing the Ctrl+Alt+E keys to open the `Exceptions` dialog box. In that dialog box, under `Common Language Runtime Exceptions`, select the `Thrown` check box.
 
 
 ### Implementation of the Type Provider
@@ -495,7 +495,7 @@ Note the following points:
 - Each named group results in a provided property, and accessing the property results in a use of an indexer on a match’s `Groups` collection.
 <br />
 
-The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](http://go.microsoft.com/fwlink/?LinkId=236999) on the Codeplex website.
+The following code is the core of the logic to implement such a provider, and this example omits the addition of all members to the provided type. For information about each added member, see the appropriate section later in this topic. For the full code, download the sample from the [F# 3.0 Sample Pack](http://fsharp3sample.codeplex.com) on the Codeplex website.
 
 ```fsharp
 namespace Samples.FSharp.RegexTypeProvider
@@ -622,7 +622,7 @@ methodName = "Match",
 parameters = [ProvidedParameter("input", typeof<string>)], 
 returnType = matchTy, 
 InvokeCode = fun args -> <@@ ((%%args.[0]:obj) :?> Regex).Match(%%args.[1]) :> obj @@>)
-matchMeth.AddXmlDoc "Searches the specified input string for the first occurrence of this regular expression" 
+matchMeth.AddXmlDoc "Searches the specified input string for the first ocurrence of this regular expression" 
 
 ty.AddMember matchMeth
 ```

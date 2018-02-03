@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugGenericValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugGenericValue interface [.NET Framework debugging]"
 ms.assetid: bc14f408-b359-4c8c-ade2-888ccdf7261b
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugGenericValue Interface1
 A subclass of "ICorDebugValue" that applies to all values. This interface provides Get and Set methods for the value.  

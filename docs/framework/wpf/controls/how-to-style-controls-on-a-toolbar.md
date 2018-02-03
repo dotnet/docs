@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "styling controls on toolbar"
-  - "toolbars"
-  - "customizing controls on toolbar"
+  - "styling controls on toolbar [WPF]"
+  - "toolbars [WPF]"
+  - "customizing controls on toolbar [WPF]"
 ms.assetid: ba6ae056-d6a9-4c24-90f8-467ab0bc0b1a
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Style Controls on a ToolBar
 The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.ResourceKey> objects to specify the style of controls within the <xref:System.Windows.Controls.ToolBar>.  To style a control in a <xref:System.Windows.Controls.ToolBar>, set the `x:key` attribute of the style to a <xref:System.Windows.ResourceKey> defined in <xref:System.Windows.Controls.ToolBar>.  

@@ -629,7 +629,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
     </Member>
     <Member MemberName="ExecuteOracleNonQuery">
       <MemberSignature Language="C#" Value="public int ExecuteOracleNonQuery (out System.Data.OracleClient.OracleString rowid);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteOracleNonQuery(valuetype System.Data.OracleClient.OracleString rowid) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteOracleNonQuery([out] valuetype System.Data.OracleClient.OracleString&amp; rowid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery(System.Data.OracleClient.OracleString@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -985,5 +985,23 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
         <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.OracleClient.OracleCommand.CommandText" /> to the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> and builds an <see cref="T:System.Data.OracleClient.OracleDataReader" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

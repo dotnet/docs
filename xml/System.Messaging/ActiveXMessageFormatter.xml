@@ -105,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Messaging.IMessageFormatter" />
       </Docs>
     </Member>
     <Member MemberName="InitStreamedObject">
@@ -179,6 +180,9 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Messaging.Message.BodyType" /> property of the <paramref name="message" /> passed as a parameter cannot be mapped to a primitive type, nor does it represent a streamed object.</exception>
         <exception cref="T:System.NotSupportedException">The body represents a stored object. The <see cref="T:System.Messaging.ActiveXMessageFormatter" /> does not support deserialization of stored objects.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.ActiveXMessageFormatter.CanRead(System.Messaging.Message)" />
+        <altmember cref="M:System.Messaging.ActiveXMessageFormatter.Write(System.Messaging.Message,System.Object)" />
+        <altmember cref="T:System.Messaging.Message" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -232,6 +236,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The object to serialize is neither a primitive nor a streamed object that implements the OLE <see langword="IPersistStream" /> interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="message" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="M:System.Messaging.ActiveXMessageFormatter.Read(System.Messaging.Message)" />
       </Docs>
     </Member>
   </Members>

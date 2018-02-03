@@ -39,6 +39,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.Hashtable" />
+    <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+    <altmember cref="T:System.Collections.Specialized.OrderedDictionary" />
+    <altmember cref="T:System.Collections.IComparer" />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -155,6 +159,8 @@
         <block subset="none" type="overrides">
           <para>Implementations are required to ensure that if the <see cref="M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)" /> method returns <see langword="true" /> for two objects <c>x</c> and <c>y</c>, then the value returned by the <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method for <c>x</c> must equal the value returned for <c>y</c>.</para>
         </block>
+        <altmember cref="M:System.Object.GetHashCode" />
+        <altmember cref="T:System.Collections.IHashCodeProvider" />
       </Docs>
     </Member>
   </Members>

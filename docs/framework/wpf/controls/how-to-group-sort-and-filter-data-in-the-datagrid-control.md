@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DataGrid [WPF], sort"
   - "DataGrid [WPF], group"
@@ -18,6 +21,8 @@ caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Group, Sort, and Filter Data in the DataGrid Control
 It is often useful to view data in a <xref:System.Windows.Controls.DataGrid> in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a <xref:System.Windows.Controls.DataGrid>, you bind it to a <xref:System.Windows.Data.CollectionView> that supports these functions. You can then work with the data in the <xref:System.Windows.Data.CollectionView> without affecting the underlying source data. The changes in the collection view are reflected in the <xref:System.Windows.Controls.DataGrid> user interface (UI).  
@@ -155,8 +160,8 @@ Grouped Data in a DataGrid
 ## .NET Framework Security  
   
 ## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
- [Create and Bind to an ObservableCollection](../../../../docs/framework/wpf/data/how-to-create-and-bind-to-an-observablecollection.md)   
- [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)   
- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)   
+ [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
+ [Create and Bind to an ObservableCollection](../../../../docs/framework/wpf/data/how-to-create-and-bind-to-an-observablecollection.md)  
+ [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)  
+ [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)  
  [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)

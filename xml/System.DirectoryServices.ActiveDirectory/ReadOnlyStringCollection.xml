@@ -39,6 +39,7 @@
           <see langword="true" /> if the <see cref="T:System.String" /> object is in this collection, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -67,6 +68,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="values" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the destination array.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -92,6 +94,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="site" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -116,6 +119,7 @@
         <value>The <see cref="T:System.String" /> object that exists at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is out of range of the collection.</exception>
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
   </Members>

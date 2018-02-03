@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugType interface [.NET Framework debugging]"
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
@@ -28,6 +26,8 @@ caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugType Interface1
 Represents a type, either basic or complex (that is, user-defined). If the type is generic, `ICorDebugType` represents the instantiated generic type.  

@@ -241,6 +241,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.XmlException">The serialized XML for the <see cref="T:System.Windows.Annotations.AnnotationResource" /> is not valid.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationResource.WriteXml(System.Xml.XmlWriter)" />
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
@@ -265,7 +266,17 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Annotations.Annotation.AnnotationType" /> is not valid.</exception>
+        <altmember cref="M:System.Windows.Annotations.AnnotationResource.ReadXml(System.Xml.XmlReader)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationResource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

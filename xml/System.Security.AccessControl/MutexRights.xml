@@ -34,7 +34,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Security.AccessControl.MutexRights> values when creating and using <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates an <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType?displayProperty=nameWithType> rule.  
+ The following code example demonstrates the use of <xref:System.Security.AccessControl.MutexRights> values when creating and using <xref:System.Security.AccessControl.MutexAccessRule> objects. The example creates an <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow?displayProperty=nameWithType> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object; see <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method, and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
@@ -44,6 +44,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Security.AccessControl.MutexAccessRule" />
+    <altmember cref="T:System.Security.AccessControl.MutexSecurity" />
   </Docs>
   <Members>
     <Member MemberName="ChangePermissions">

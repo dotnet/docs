@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
 caps.latest.revision: 27
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Large Data and Streaming
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is an XML-based communications infrastructure. Because XML data is commonly encoded in the standard text format defined in the [XML 1.0 specification](http://go.microsoft.com/fwlink/?LinkId=94838), connected systems developers and architects are typically concerned about the wire footprint (or size) of messages sent across the network, and the text-based encoding of XML poses special challenges for the efficient transfer of binary data.  
@@ -41,7 +43,7 @@ manager: "erikre"
   
  In a Base64-encoded string, each character represents 6-bits of the original 8-bit data, which results in a 4:3 encoding-overhead ratio for Base64, not counting extra formatting characters (carriage return/line feed) that are commonly added by convention. While the significance of the differences between XML and binary encodings typically depends on the scenario, a size gain of more than 33% when transmitting a 500-MB payload is usually not acceptable.  
   
- To avoid this encoding overhead, the Message Transmission Optimization Mechanism (MTOM) standard allows for externalizing large data elements that are contained in a message and carrying them with the message as binary data without any special encoding. With MTOM, messages are exchanged in a similar fashion to Simple Mail Transfer Protocol (SMTP) e-mail messages with attachments or embedded content (pictures and other embedded content); MTOM messages are packaged as multipart/related MIME sequences with the root part being the actual SOAP message.  
+ To avoid this encoding overhead, the Message Transmission Optimization Mechanism (MTOM) standard allows for externalizing large data elements that are contained in a message and carrying them with the message as binary data without any special encoding. With MTOM, messages are exchanged in a similar fashion to Simple Mail Transfer Protocol (SMTP) email messages with attachments or embedded content (pictures and other embedded content); MTOM messages are packaged as multipart/related MIME sequences with the root part being the actual SOAP message.  
   
  An MTOM SOAP message is modified from its un-encoded version so that special element tags that refer to the respective MIME parts take the place of the original elements in the message that contained binary data. As a result, the SOAP message refers to binary content by pointing to the MIME parts sent with it, but otherwise just carries XML text data. Because this model is closely aligned with the well-established SMTP model, there is broad tooling support to encode and decode MTOM messages on many platforms, which makes it an extremely interoperable choice.  
   

@@ -235,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstanceCore">
@@ -254,6 +255,7 @@
         <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames" />.</summary>
         <returns>A new instance of <see cref="T:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="FreezeCore">
@@ -279,6 +281,7 @@
   
  If <paramref name="isChecking" /> is false, this method returns <see langword="true" /> if this instance is now read-only, or <see langword="false" /> if it cannot be made read-only, with the side effect of having begun to change the frozen status of this object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.FreezeCore(System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetAsFrozenCore">
@@ -376,6 +379,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.AnimationClock" />
       </Docs>
     </Member>
     <Member MemberName="GetNaturalDurationCore">
@@ -398,6 +402,8 @@
         <summary>Provide a custom natural <see cref="T:System.Windows.Duration" /> when the <see cref="T:System.Windows.Duration" /> property is set to <see cref="P:System.Windows.Duration.Automatic" />.</summary>
         <returns>If the last key frame of this animation is a <see cref="T:System.Windows.Media.Animation.KeyTime" />, then this value is used as the <see cref="P:System.Windows.Media.Animation.Clock.NaturalDuration" />; otherwise it will be one second.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.Clock" />
+        <altmember cref="T:System.Windows.Media.Animation.IKeyFrame" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -443,6 +449,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="KeyFrames">
@@ -461,6 +468,7 @@
         <summary>Gets or sets the collection of <see cref="T:System.Windows.Media.Animation.VectorKeyFrame" /> objects that define the animation.</summary>
         <value>The collection of <see cref="T:System.Windows.Media.Animation.VectorKeyFrame" /> objects that define the animation. The default value is <see cref="P:System.Windows.Media.Animation.VectorKeyFrameCollection.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.VectorKeyFrame" />
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -479,6 +487,7 @@
       <Docs>
         <summary>Called when the current <see cref="T:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames" /> object is modified.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.OnChanged" />
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeKeyFrames">

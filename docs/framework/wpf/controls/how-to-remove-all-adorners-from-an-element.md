@@ -9,13 +9,18 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "adorners, removing"
+  - "adorners [WPF], removing"
 ms.assetid: fe5303a3-b76e-4643-aafb-51419032b47b
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Remove all Adorners from an Element
 This example shows how to programmatically remove all adorners from a specified <xref:System.Windows.UIElement>.  

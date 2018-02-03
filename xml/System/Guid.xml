@@ -47,10 +47,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/guid.cs#b622ef5f6b76c10a). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
-  
  A GUID is a 128-bit integer (16 bytes) that can be used across all computers and networks wherever a unique identifier is required. Such an identifier has a very low probability of being duplicated.  
   
    
@@ -616,6 +612,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.Equals(System.Object)" />
+        <altmember cref="Overload:System.Guid.CompareTo" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -726,7 +724,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid?displayProperty=nameWithType>.  
+ This is a convenient `static` method that you can call to get a new <xref:System.Guid>. The method wraps a call to the Windows [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568.aspx) function. The returned <xref:System.Guid> is guaranteed to not equal <xref:System.Guid.Empty?displayProperty=nameWithType>.  
   
    
   
@@ -900,6 +898,8 @@
           <paramref name="input" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="input" /> is not in a recognized format.</exception>
+        <altmember cref="M:System.Guid.TryParse(System.String,System.Guid@)" />
+        <altmember cref="M:System.Guid.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -964,6 +964,7 @@
           <paramref name="input" /> or <paramref name="format" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="input" /> is not in the format specified by <paramref name="format" />.</exception>
+        <altmember cref="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -1225,7 +1226,7 @@
     </Member>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out Guid result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, valuetype System.Guid result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] valuetype System.Guid&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParse(System.String,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1282,11 +1283,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.Parse(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
       <MemberSignature Language="C#" Value="public static bool TryParseExact (string input, string format, out Guid result);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, valuetype System.Guid result) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseExact(string input, string format, [out] valuetype System.Guid&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1347,7 +1349,60 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Guid.ParseExact(System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representation of the value of this instance of the <see cref="T:System.Guid" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to a specified object or <see cref="T:System.Guid" /> and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Guid" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two instances of <see cref="T:System.Guid" /> represent the same value.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

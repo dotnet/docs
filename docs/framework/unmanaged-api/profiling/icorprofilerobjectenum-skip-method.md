@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::Skip"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerObjectEnum::Skip method [.NET Framework profiling]"
   - "Skip method, ICorProfilerObjectEnum interface [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerObjectEnum::Skip Method
 Advances the cursor of this enumerator from its current position so that the specified number of elements are skipped.  

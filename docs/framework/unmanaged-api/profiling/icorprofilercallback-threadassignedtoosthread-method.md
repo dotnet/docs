@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ThreadAssignedToOSThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadAssignedToOSThread method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadAssignedToOSThread method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ThreadAssignedToOSThread Method
 Notifies the profiler that a managed thread is being implemented using a particular operating system thread.  

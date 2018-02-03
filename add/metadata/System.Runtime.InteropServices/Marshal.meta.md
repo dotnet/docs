@@ -65,7 +65,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -144,7 +144,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.CreateWrapperOfType
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -358,7 +358,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.DestroyStructure
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -392,7 +392,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -579,7 +579,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.OffsetOf
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -865,7 +865,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.UnsafeAddrOfPinnedArrayElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1061,7 +1061,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.GetObjectsForNativeVariants
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1203,7 +1203,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.StructureToPtr
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1219,7 +1219,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.CreateAggregatedObject
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1253,7 +1253,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.GetDelegateForFunctionPointer
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---
@@ -1701,7 +1701,7 @@ manager: "wpickett"
 uid: System.Runtime.InteropServices.Marshal.GetNativeVariantForObject
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

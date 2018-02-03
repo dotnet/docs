@@ -9,6 +9,9 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "following the mouse pointer (cursor)"
   - "mouse pointer (cursor), making objects follow"
@@ -18,6 +21,8 @@ caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Make an Object Follow the Mouse Pointer
 This example shows how to change the dimensions of an object when the mouse pointer moves on the screen.  

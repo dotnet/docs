@@ -1973,7 +1973,7 @@ These data point properties include:
       </Docs>
     </Member>
     <Member MemberName="HitTest">
-      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement);" />
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest (int x, int y, bool ignoreTransparent, params System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.HitTestResult[] HitTest(int32 x, int32 y, bool ignoreTransparent, valuetype System.Web.UI.DataVisualization.Charting.ChartElementType[] requestedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Chart.HitTest(System.Int32,System.Int32,System.Boolean,System.Web.UI.DataVisualization.Charting.ChartElementType[])" />
       <MemberType>Method</MemberType>
@@ -3393,5 +3393,59 @@ These data point properties include:
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveImage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the chart image to a stream or a file.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Automatically creates and binds series data to the specified data table.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadTemplate">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a template into the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AlignDataPointsByAxisLabel">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aligns data points using their axis labels.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="DataBindCrossTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Data binds a chart to the table, with one series created per unique value in a given column.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

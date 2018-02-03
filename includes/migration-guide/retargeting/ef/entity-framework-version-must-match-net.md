@@ -7,4 +7,5 @@
 |Scope|Major|
 |Version|4.5|
 |Type|Retargeting|
+|Analyzers|<ul><li>CD0025</li></ul>|
 

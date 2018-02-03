@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
 caps.latest.revision: 2
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;webHttpEndpoint&gt;
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) binding that automatically adds the [\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md) behavior. Use this endpoint when writing a REST service.  
@@ -58,5 +60,5 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
 ## See Also  
- <xref:System.ServiceModel.Description.WebHttpEndpoint>   
+ <xref:System.ServiceModel.Description.WebHttpEndpoint>  
  <xref:System.ServiceModel.Configuration.WebHttpEndpointElement>

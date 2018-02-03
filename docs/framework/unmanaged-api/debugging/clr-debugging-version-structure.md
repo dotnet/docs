@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLR_DEBUGGING_VERSION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLR_DEBUGGING_VERSION structure [.NET Framework debugging]"
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CLR_DEBUGGING_VERSION Structure
 Defines the product version of the common language runtime (CLR) for debugging purposes.  
@@ -68,5 +68,5 @@ WORD wRevision;
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -36,11 +36,12 @@
   
  The second part of the example shows an .aspx file that is used with the previous example.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.PanelStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.PanelStyle/CS/panelstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.PanelStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.PanelStyle/VB/panelstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.UI.WebControls.PanelStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.PanelStyle/CS/panelstylecs.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.PanelStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.PanelStyle/VB/panelstylevb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.Style" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,6 +60,7 @@
         <param name="bag">A <see cref="T:System.Web.UI.StateBag" /> object that represents the state bag in which to store style information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PanelStyle" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="BackImageUrl">
@@ -131,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.PanelStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -180,6 +183,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The direction is not one of the <see cref="T:System.Web.UI.WebControls.ContentDirection" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ContentDirection" />
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlign">
@@ -231,6 +235,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The horizontal alignment is not one of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -261,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.PanelStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -335,6 +341,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Web.UI.WebControls.PanelStyle.ScrollBars" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ScrollBars" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ScrollBars" />
       </Docs>
     </Member>
     <Member MemberName="Wrap">

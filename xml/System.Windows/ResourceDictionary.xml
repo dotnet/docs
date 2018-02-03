@@ -69,6 +69,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Windows.FrameworkElement.Resources" />
+    <altmember cref="P:System.Windows.Application.Resources" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -201,6 +203,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.ResourceDictionary.MergedDictionaries" />
+        <altmember cref="M:System.Windows.FrameworkElement.TryFindResource(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -249,6 +253,7 @@
         <summary>Gets the number of entries in the base <see cref="T:System.Windows.ResourceDictionary" />.</summary>
         <value>The current number of entries in the base dictionary.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.ResourceDictionary.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="DeferrableContent">
@@ -354,6 +359,31 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvalidatesImplicitDataTemplateResources">
+      <MemberSignature Language="C#" Value="public bool InvalidatesImplicitDataTemplateResources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InvalidatesImplicitDataTemplateResources" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ResourceDictionary.InvalidatesImplicitDataTemplateResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the invalidations fired by the <see cref="T:System.Windows.ResourceDictionary" /> object cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template. 
+The invalidations happen when an implicit data template resource changes.</summary>
+        <returns>
+          <see langword="true" /> if the invalidations cause <see cref="T:System.Windows.Controls.ContentPresenter" /> objects to reevaluate their choice of template; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsFixedSize">
       <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
@@ -437,10 +467,6 @@
   
  You do not use indexers to define collection members in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Instead, you create child elements in markup. The child elements are either child elements of <xref:System.Windows.ResourceDictionary>, or of a property element where the property type is `ResourceDictionary`. For details, see the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage sections in <xref:System.Windows.ResourceDictionary>.  
   
-<a name="xamlTextUsage_Item"></a>   
-## XAML Text Usage  
- See Remarks.  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -470,6 +496,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.ResourceDictionary.Item(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="MergedDictionaries">
@@ -523,11 +550,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.ResourceDictionary.Source" />
       </Docs>
     </Member>
     <Member MemberName="OnGettingValue">
       <MemberSignature Language="C#" Value="protected virtual void OnGettingValue (object key, ref object value, out bool canCache);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object value, bool canCache) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGettingValue(object key, object&amp; value, [out] bool&amp; canCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceDictionary.OnGettingValue(System.Object,System.Object@,System.Boolean@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -652,6 +680,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.ResourceDictionary.MergedDictionaries" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -682,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.ResourceDictionary.CopyTo(System.Collections.DictionaryEntry[],System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -759,6 +789,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.ResourceDictionary.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Markup.IUriContext.BaseUri">

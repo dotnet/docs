@@ -29,35 +29,30 @@ End Class 'Window1
 
 
 '<Snippet2>
-Public Class NumderDataTemplateSelector
+Public Class NumberDataTemplateSelector
     Inherits DataTemplateSelector
+
+    Public Property NumberTemplate As DataTemplate
+    Public Property LargeNumberTemplate As DataTemplate
 
     Public Overrides Function SelectTemplate(ByVal item As Object, _
                     ByVal container As DependencyObject) As DataTemplate
 
-        Dim numberStr As String = item '
-
-        If Not (numberStr Is Nothing) Then
-            Dim num As Integer
-            Dim win As Window = Application.Current.MainWindow
-
-            Try
-                num = Convert.ToInt32(numberStr)
-            Catch
-                Return Nothing
-            End Try
-
-            ' Select one of the DataTemplate objects, based on the 
-            ' value of the selected item in the ComboBox.
-            If num < 5 Then
-                Return win.FindResource("numberTemplate") '
-
-            Else
-                Return win.FindResource("largeNumberTemplate") '
-            End If
+        ' Nothing can be passed by IDE designer
+        if (item Is Nothing) Then
+            Return Nothing
         End If
 
-        Return Nothing
+        Dim num = Convert.ToInt32(CStr(item))
+
+        ' Select one of the DataTemplate objects, based on the 
+        ' value of the selected item in the ComboBox.
+        If num < 5 Then
+            Return NumberTemplate
+
+        Else
+            Return LargeNumberTemplate
+        End If
 
     End Function 'SelectTemplate
 End Class 'NumderDataTemplateSelector 

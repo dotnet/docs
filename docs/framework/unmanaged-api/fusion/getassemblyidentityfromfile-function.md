@@ -19,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyIdentityFromFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAssemblyIdentityFromFile function [.NET Framework fusion]"
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004
@@ -30,6 +28,8 @@ caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # GetAssemblyIdentityFromFile Function
 Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly at the specified file path.  
@@ -62,5 +62,5 @@ HRESULT GetAssemblyIdentityFromFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- <<!--zzxref:IUnknown --> `IUnknown`>   
+ <<!--zzxref:IUnknown --> `IUnknown`>  
  [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

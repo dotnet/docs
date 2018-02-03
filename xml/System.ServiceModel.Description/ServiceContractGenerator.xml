@@ -145,7 +145,7 @@
     </Member>
     <Member MemberName="GenerateBinding">
       <MemberSignature Language="C#" Value="public void GenerateBinding (System.ServiceModel.Channels.Binding binding, out string bindingSectionName, out string configurationName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateBinding(class System.ServiceModel.Channels.Binding binding, string bindingSectionName, string configurationName) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateBinding(class System.ServiceModel.Channels.Binding binding, [out] string&amp; bindingSectionName, [out] string&amp; configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.GenerateBinding(System.ServiceModel.Channels.Binding,System.String@,System.String@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -208,7 +208,7 @@
     </Member>
     <Member MemberName="GenerateServiceEndpoint">
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference GenerateServiceEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint, out System.ServiceModel.Configuration.ChannelEndpointElement channelElement);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeReference GenerateServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ChannelEndpointElement channelElement) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeReference GenerateServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint, [out] class System.ServiceModel.Configuration.ChannelEndpointElement&amp; channelElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.GenerateServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -334,5 +334,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

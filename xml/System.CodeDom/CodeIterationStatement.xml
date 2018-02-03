@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CodeIterationStatement (System.CodeDom.CodeStatement initStatement, System.CodeDom.CodeExpression testExpression, System.CodeDom.CodeStatement incrementStatement, System.CodeDom.CodeStatement[] statements);" />
+      <MemberSignature Language="C#" Value="public CodeIterationStatement (System.CodeDom.CodeStatement initStatement, System.CodeDom.CodeExpression testExpression, System.CodeDom.CodeStatement incrementStatement, params System.CodeDom.CodeStatement[] statements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeStatement initStatement, class System.CodeDom.CodeExpression testExpression, class System.CodeDom.CodeStatement incrementStatement, class System.CodeDom.CodeStatement[] statements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeIterationStatement.#ctor(System.CodeDom.CodeStatement,System.CodeDom.CodeExpression,System.CodeDom.CodeStatement,System.CodeDom.CodeStatement[])" />
       <MemberType>Constructor</MemberType>
@@ -96,6 +96,8 @@
         <param name="statements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements within the loop.</param>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeIterationStatement" /> class using the specified parameters.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatement" />
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
     <Member MemberName="IncrementStatement">
@@ -125,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName="InitStatement">
@@ -176,6 +179,7 @@
         <summary>Gets the collection of statements to be executed within the loop.</summary>
         <value>An array of type <see cref="T:System.CodeDom.CodeStatement" /> that indicates the statements within the loop.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.CodeDom.CodeStatement" />
       </Docs>
     </Member>
     <Member MemberName="TestExpression">
@@ -205,7 +209,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeIterationStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

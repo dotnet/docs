@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
 caps.latest.revision: 12
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Creating a BindingElement
 Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md) and [Client Channel-Level Programming](../../../../docs/framework/wcf/extending/client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
@@ -78,6 +80,6 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  Once you have created a binding element for your channel, return to the [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md) topic to see whether you want to add configuration file support to your binding element, if and how to add metadata publication support, and whether and how to construct a user-defined binding that uses your binding element.  
   
 ## See Also  
- <xref:System.ServiceModel.Channels.BindingElement>   
- [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)   
+ <xref:System.ServiceModel.Channels.BindingElement>  
+ [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)  
  [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

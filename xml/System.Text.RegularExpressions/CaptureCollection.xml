@@ -61,6 +61,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.RegularExpressions.Capture" />
+    <altmember cref="T:System.Text.RegularExpressions.Group" />
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -269,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.CaptureCollection.SyncRoot" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -342,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Text.RegularExpressions.CaptureCollection.IsSynchronized" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Text.RegularExpressions.Capture&gt;.Add">

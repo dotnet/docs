@@ -39,6 +39,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
+    <altmember cref="T:System.Configuration.ConfigurationPropertyAttribute" />
+    <altmember cref="T:System.Configuration.StringValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -73,6 +76,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.StringValidator" />
       </Docs>
     </Member>
     <Member MemberName="InvalidCharacters">
@@ -208,6 +212,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
       </Docs>
     </Member>
   </Members>

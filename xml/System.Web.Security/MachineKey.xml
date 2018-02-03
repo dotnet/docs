@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MachineKey> class provides methods that expose the hashing and encryption logic that ASP.NET provides. For information about which encryption and hashing algorithms ASP.NET uses, and the key values that it uses with them, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
+ The <xref:System.Web.Security.MachineKey> class provides methods that expose the hashing and encryption logic that ASP.NET provides. For information about which encryption and hashing algorithms ASP.NET uses, and the key values that it uses with them, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
   
 > [!WARNING]
 >  The  <xref:System.Web.Security.MachineKey> APIs should only be used in an ASP.NET app. Behavior of the MachineKey APIs outside the context of an ASP.NET application is undefined  
@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about which encryption and hashing algorithms ASP.NET uses to decrypt and validate the data that is passed in, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
+ For information about which encryption and hashing algorithms ASP.NET uses to decrypt and validate the data that is passed in, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
   
    
   
@@ -97,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about which encryption and hashing algorithms ASP.NET uses to decrypt and validate the data that is passed in, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
+ For information about which encryption and hashing algorithms ASP.NET uses to decrypt and validate the data that is passed in, see [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46).  
   
    
   
@@ -109,7 +109,7 @@
       </Docs>
     </Member>
     <Member MemberName="Protect">
-      <MemberSignature Language="C#" Value="public static byte[] Protect (byte[] userData, string[] purposes);" />
+      <MemberSignature Language="C#" Value="public static byte[] Protect (byte[] userData, params string[] purposes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Protect(unsigned int8[] userData, string[] purposes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Protect(System.Byte[],System.String[])" />
       <MemberType>Method</MemberType>
@@ -169,7 +169,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
   
  When the <xref:System.Web.Security.MachineKey.Unprotect%2A> method is called, the value that is provided for the `purposes` parameter must be the same value that was provided to the <xref:System.Web.Security.MachineKey.Protect%2A> method. Otherwise the operation will fail with a <xref:System.Security.Cryptography.CryptographicException> exception.  
   
- The configuration settings that are required for the <xref:System.Web.Configuration.MachineKeyCompatibilityMode?displayProperty=nameWithType> option are required for this method even if the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=nameWithType> property is not set to the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> option.  
+ The configuration settings that are required for the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45?displayProperty=nameWithType> option are required for this method even if the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=nameWithType> property is not set to the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> option.  
   
  ]]></format>
         </remarks>
@@ -178,7 +178,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
-      <MemberSignature Language="C#" Value="public static byte[] Unprotect (byte[] protectedData, string[] purposes);" />
+      <MemberSignature Language="C#" Value="public static byte[] Unprotect (byte[] protectedData, params string[] purposes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Unprotect(unsigned int8[] protectedData, string[] purposes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MachineKey.Unprotect(System.Byte[],System.String[])" />
       <MemberType>Method</MemberType>

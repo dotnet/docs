@@ -57,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ButtonBase" />
+    <altmember cref="T:System.Windows.Forms.Button" />
+    <altmember cref="T:System.Windows.Forms.CheckBox" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,6 +132,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.Appearance" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.Appearance" />
       </Docs>
     </Member>
     <Member MemberName="AppearanceChanged">
@@ -163,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RadioButton.Appearance" />
       </Docs>
     </Member>
     <Member MemberName="AutoCheck">
@@ -316,6 +321,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.RadioButton.Checked" />
+        <altmember cref="M:System.Windows.Forms.RadioButton.OnCheckedChanged(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -600,6 +607,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.RadioButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.RadioButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PerformClick">
@@ -629,6 +637,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.Control.Click" />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">

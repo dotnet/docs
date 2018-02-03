@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetDocumentsForMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDocumentsForMethod method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetDocumentsForMethod method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ISymENCUnmanagedMethod::GetDocumentsForMethod Method
 Gets the documents that this method has lines in.  

@@ -66,6 +66,9 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindAllClasses">
@@ -90,6 +93,9 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.SchemaClassType" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDefunctClasses">
@@ -111,6 +117,8 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> objects for the classes that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
       </Docs>
     </Member>
     <Member MemberName="FindAllDefunctProperties">
@@ -132,6 +140,9 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindAllProperties">
@@ -153,6 +164,9 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindAllProperties">
@@ -177,6 +191,10 @@
         <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" /> object that contains a collection of <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> objects for the properties that were retrieved.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.PropertyTypes" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindClass">
@@ -206,6 +224,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="ldapDisplayName" /> is zero length.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindDefunctClass">
@@ -235,6 +255,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="commonName" /> is zero length.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindDefunctProperty">
@@ -264,6 +286,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="commonName" /> is zero length.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="FindProperty">
@@ -293,6 +317,8 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="propertyName" /> is zero length.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentSchema">
@@ -314,6 +340,7 @@
         <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object that represents the schema for the domain that the local computer is a member of.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">A connection to the local domain cannot be made.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" />
       </Docs>
     </Member>
     <Member MemberName="GetDirectoryEntry">
@@ -336,6 +363,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" /></permission>
+        <altmember cref="T:System.DirectoryServices.DirectoryEntry" />
       </Docs>
     </Member>
     <Member MemberName="GetSchema">
@@ -364,6 +392,7 @@
           <paramref name="context" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="context" /> is invalid.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -403,7 +432,28 @@
         <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that represents the server that is the schema master.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <altmember cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAllClasses">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all Active Directory Domain Services classes in the schema.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindAllProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all of the Active Directory Domain Services properties in the schema.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

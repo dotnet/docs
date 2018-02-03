@@ -54,6 +54,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
+    <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+    <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+    <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+    <altmember cref="T:System.Web.UI.Control" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +82,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="Control">
@@ -112,6 +124,13 @@
         <block subset="none" type="overrides">
           <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter" /> class, you should, at a minimum, implement a <see langword="Control" /> property to return a strongly typed instance of the control, as shown in the Example section</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataBoundControl" />
+        <altmember cref="T:System.Web.UI.WebControls.WebControl" />
+        <altmember cref="T:System.Web.UI.Adapters.ControlAdapter" />
+        <altmember cref="T:System.Web.UI.WebControls.Adapters.WebControlAdapter" />
+        <altmember cref="P:System.Web.UI.WebControls.Adapters.WebControlAdapter.Control" />
+        <altmember cref="T:System.Web.UI.Control" />
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
@@ -155,6 +174,9 @@
   
  The <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> base method calls <see cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />. You should call the <see cref="M:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter.PerformDataBinding(System.Collections.IEnumerable)" /> base method only if you require the data binding functionality of the <see cref="T:System.Web.UI.WebControls.DataBoundControl" />.</para>
         </block>
+        <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <altmember cref="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
+        <altmember cref="M:System.Web.UI.WebControls.ListControl.PerformDataBinding(System.Collections.IEnumerable)" />
       </Docs>
     </Member>
   </Members>

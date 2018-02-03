@@ -14,6 +14,7 @@
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.FunctionObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
   </Docs>
   <Members>
     <Member MemberName="apply">
@@ -46,10 +47,12 @@
         <returns>The return value of the call to the function that this object represents.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
       </Docs>
     </Member>
     <Member MemberName="call">
-      <MemberSignature Language="C#" Value="public static object call (object thisob, object thisarg, object[] args);" />
+      <MemberSignature Language="C#" Value="public static object call (object thisob, object thisarg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object call(object thisob, object thisarg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -84,6 +87,8 @@
         <returns>The return value of the call to the function that this object represents.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -103,6 +108,7 @@
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -131,6 +137,8 @@
         <returns>A string representation of <paramref name="thisob" /> that contains the name of the function.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.FunctionObject" />
+        <altmember cref="T:Microsoft.JScript.FunctionConstructor" />
       </Docs>
     </Member>
   </Members>

@@ -14,6 +14,7 @@
     <summary>Represents the <see langword="with" /> statement. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.Globals" />
   </Docs>
   <Members>
     <Member MemberName="JScriptWith">
@@ -40,6 +41,7 @@
           <paramref name="withOb" /> converted to an object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.Globals" />
       </Docs>
     </Member>
   </Members>

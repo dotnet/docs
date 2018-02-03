@@ -1,40 +1,21 @@
 ---
 title: "&#39;For Each&#39; on type &#39;&lt;typename&gt;&#39; is ambiguous because the type implements multiple instantiations of &#39;System.Collections.Generic.IEnumerable(Of T)&#39;"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vbc32096"
   - "bc32096"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32096"
 ms.assetid: ed20d09c-913f-482e-89f8-c0a596c3ec24
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &#39;For Each&#39; on type &#39;&lt;typename&gt;&#39; is ambiguous because the type implements multiple instantiations of &#39;System.Collections.Generic.IEnumerable(Of T)&#39;
 A `For Each` statement specifies an iterator variable that has more than one <xref:System.Collections.IEnumerable.GetEnumerator%2A> method.  
@@ -48,5 +29,5 @@ A `For Each` statement specifies an iterator variable that has more than one <xr
 -   Use [DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md) or [TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md) to cast the iterator variable type to the interface defining the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method you want to use.  
   
 ## See Also  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)   
+ [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

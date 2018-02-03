@@ -1,46 +1,26 @@
 ---
 title: "Overrides (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
-
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "Overrides"
   - "vb.Overrides"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "properties [Visual Basic], redefining"
-  - "procedures, overriding"
-  - "procedures, redefining"
+  - "procedures [Visual Basic], overriding"
+  - "procedures [Visual Basic], redefining"
   - "overriding"
-  - "Overrides keyword"
+  - "Overrides keyword [Visual Basic]"
   - "overriding, Overrides keyword"
   - "properties [Visual Basic], overriding"
 ms.assetid: 9f5e6144-ce10-465e-842b-1a8f8760af90
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overrides (Visual Basic)
 Specifies that a property or procedure overrides an identically named property or procedure inherited from a base class.  
@@ -84,10 +64,10 @@ Specifies that a property or procedure overrides an identically named property o
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See Also  
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)   
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)   
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)   
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)   
- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)   
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
+ [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
+ [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
+ [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
+ [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
+ [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)  
+ [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
  [Type List](../../../visual-basic/language-reference/statements/type-list.md)

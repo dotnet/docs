@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetIlSection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIlSection method [.NET Framework metadata]"
   - "ICeeGen::GetIlSection method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICeeGen::GetIlSection Method
 Gets the section of the intermediate language code base referenced by the specified handle.  

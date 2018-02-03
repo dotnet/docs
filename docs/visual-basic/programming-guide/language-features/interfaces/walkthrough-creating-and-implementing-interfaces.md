@@ -1,40 +1,22 @@
 ---
 title: "Creating and Implementing Interfaces (Visual Basic)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "interfaces, walkthroughs"
-  - "interfaces, testing"
-  - "interface implementation, walkthrough"
-  - "interfaces, creating"
+  - "interfaces [Visual Basic], walkthroughs"
+  - "interfaces [Visual Basic], testing"
+  - "interface implementation [Visual Basic], walkthrough"
+  - "interfaces [Visual Basic], creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Creating and Implementing Interfaces (Visual Basic)
 Interfaces describe the characteristics of properties, methods, and events, but leave the implementation details up to structures or classes.  
@@ -128,7 +110,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
 6.  Run the `Test` procedure by pressing F5. The message "Prop1 was set to 9" is displayed. After you click OK, the message "The X parameter for Method1 is 5" is displayed. Click OK, and the message "The event handler caught the event" is displayed.  
   
 ## See Also  
- [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)   
- [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)   
- [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)   
+ [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)  
+ [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
+ [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)  
  [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)

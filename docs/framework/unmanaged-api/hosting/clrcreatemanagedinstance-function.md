@@ -20,8 +20,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "ClrCreateManagedInstance"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ClrCreateManagedInstance function [.NET Framework hosting]"
 ms.assetid: 58ba42c0-4857-43bf-a039-73a4dc6544c2
@@ -31,6 +29,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ClrCreateManagedInstance Function
 Creates an instance of the specified managed type.  
@@ -70,5 +70,5 @@ STDAPI ClrCreateManagedInstance (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)   
+ [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_TYPE_LAYOUT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_TYPE_LAYOUT structure [.NET Framework debugging]"
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2
@@ -28,6 +26,8 @@ caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # COR_TYPE_LAYOUT Structure
 Provides information about the layout of an object in memory.  
@@ -67,5 +67,5 @@ typedef struct COR_TYPE_LAYOUT {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)   
+ [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -59,6 +59,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Text.Encoding" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -147,6 +148,7 @@
         <exception cref="T:System.ArgumentException">The stream does not support writing or is already closed.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> is <see langword="null" />.</exception>
+        <altmember cref="P:System.Text.Encoding.UTF8" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -192,6 +194,7 @@
         <exception cref="T:System.ArgumentException">The stream does not support writing or is already closed.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -233,6 +236,7 @@
         <exception cref="T:System.ArgumentException">The stream does not support writing or is already closed.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="output" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -809,6 +813,7 @@
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="ch" /> is a single surrogate character.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -878,6 +883,7 @@
           <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1331,6 +1337,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1612,6 +1619,7 @@
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
         <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
     <Member MemberName="Write7BitEncodedInt">
@@ -1664,5 +1672,38 @@
         <exception cref="T:System.IO.IOException">The stream is closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.BinaryWriter" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a value to the current stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.BinaryWriter" /> class that writes to a stream.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

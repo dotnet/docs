@@ -11,9 +11,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d9fca29f-fa44-4ec4-bb48-b10800694500
 caps.latest.revision: 6
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # MSMQ
 In an MSMQ application, no additional activity is transferred from the queued channel to MSMQ and from MSMQ to the queued channel.  

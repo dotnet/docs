@@ -10,15 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
-  - "VB"
-  - "CSharp"
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "endpoints [WCF], overview"
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
 caps.latest.revision: 40
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Endpoint Creation Overview
 All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service occurs through the *endpoints* of the service. Endpoints provide the clients access to the functionality that a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service offers. This section describes the structure of an endpoint and outlines how to define an endpoint in configuration and in code.  
@@ -26,11 +28,11 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
 ## The Structure of an Endpoint  
  Each endpoint contains an address that indicates where to find the endpoint, a binding that specifies how a client can communicate with the endpoint, and a contract that identifies the methods available.  
   
--   **Address**. The address uniquely identifies the endpoint and tells potential consumers where the service is located. It is represented in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] object model by the <xref:System.ServiceModel.EndpointAddress> address, which contains a Uniform Resource Identifier (URI) and address properties that include an identity, some Web Services Description Language (WSDL) elements, and a collection of optional headers. The optional headers provide additional detailed addressing information to identify or interact with the endpoint. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
+-   **Address**. The address uniquely identifies the endpoint and tells potential consumers where the service is located. It is represented in the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] object model by the <xref:System.ServiceModel.EndpointAddress> address, which contains a Uniform Resource Identifier (URI) and address properties that include an identity, some Web Services Description Language (WSDL) elements, and a collection of optional headers. The optional headers provide additional detailed addressing information to identify or interact with the endpoint. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
   
--   **Binding**. The binding specifies how to communicate with the endpoint. The binding specifies how the endpoint communicates with the world, including which transport protocol to use (for example, TCP or HTTP), which encoding to use for the messages (for example, text or binary), and which security requirements are necessary (for example, Secure Sockets Layer [SSL] or SOAP message security). [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
+-   **Binding**. The binding specifies how to communicate with the endpoint. The binding specifies how the endpoint communicates with the world, including which transport protocol to use (for example, TCP or HTTP), which encoding to use for the messages (for example, text or binary), and which security requirements are necessary (for example, Secure Sockets Layer [SSL] or SOAP message security). [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
   
--   **Service contract**. The service contract outlines what functionality the endpoint exposes to the client. A contract specifies the operations that a client can call, the form of the message and the type of input parameters or data required to call the operation, and the kind of processing or response message the client can expect. Three basic types of contracts correspond to basic message exchange patterns (MEPs): datagram (one-way), request/reply, and duplex (bidirectional). The service contract can also employ data and message contracts to require specific data types and message formats when being accessed. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to define a service contract, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md). Note that a client may also be required to implement a service-defined contract, called a callback contract, to receive messages from the service in a duplex MEP. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
+-   **Service contract**. The service contract outlines what functionality the endpoint exposes to the client. A contract specifies the operations that a client can call, the form of the message and the type of input parameters or data required to call the operation, and the kind of processing or response message the client can expect. Three basic types of contracts correspond to basic message exchange patterns (MEPs): datagram (one-way), request/reply, and duplex (bidirectional). The service contract can also employ data and message contracts to require specific data types and message formats when being accessed. [!INCLUDE[crabout](../../../includes/crabout-md.md)] how to define a service contract, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md). Note that a client may also be required to implement a service-defined contract, called a callback contract, to receive messages from the service in a duplex MEP. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
   
  The endpoint for a service can be specified either imperatively by using code or declaratively through configuration. If no endpoints are specified then the runtime provides default endpoints by adding one default endpoint for each base address for each service contract implemented by the service. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile and redeploy the application.  
   

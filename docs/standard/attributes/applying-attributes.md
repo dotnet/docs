@@ -8,6 +8,10 @@ ms.suite: ""
 ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], attributes"
   - "attributes [.NET Framework], applying"
@@ -16,6 +20,9 @@ caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+  - "dotnetcore"
 ---
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  
@@ -51,7 +58,7 @@ Use the following process to apply an attribute to an element of your code.
  When this attribute is applied, the string `"My Assembly"` is placed in the assembly manifest in the metadata portion of the file. You can view the attribute either by using the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) or by creating a custom program to retrieve the attribute.  
   
 ## See Also  
- [Attributes](../../../docs/standard/attributes/index.md)   
- [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)   
- [Concepts](/cpp/windows/attributed-programming-concepts)   
+ [Attributes](../../../docs/standard/attributes/index.md)  
+ [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
+ [Concepts](/cpp/windows/attributed-programming-concepts)  
  [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

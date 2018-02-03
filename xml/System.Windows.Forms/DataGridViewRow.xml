@@ -43,6 +43,9 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewRow" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewRow.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewRow.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewColumn" />
+    <altmember cref="M:System.Windows.Forms.DataGridViewRow.Clone" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +68,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="AccessibilityObject">
@@ -102,6 +106,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.Control.CreateAccessibilityInstance" />
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
       </Docs>
     </Member>
     <Member MemberName="AdjustRowHeaderBorderStyle">
@@ -161,6 +169,10 @@
         <block subset="none" type="overrides">
           <para>Override this method if you want to customize the appearance of the borders of row header cells.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AdvancedRowHeadersBorderStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Visible" />
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -203,6 +215,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.CreateCellsInstance" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -242,6 +258,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewRow.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewRow.Clone" /> method so that the properties of the base class are copied to the new row, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ContextMenuStrip">
@@ -290,6 +307,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When getting the value of this property, the row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripChanged" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DataSource" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
+        <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -319,6 +342,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="CreateCells">
@@ -354,10 +378,14 @@
  -or-  
   
  A column that has no cell template was added.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCellCollection.Clear" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
       </Docs>
     </Member>
     <Member MemberName="CreateCells">
-      <MemberSignature Language="C#" Value="public void CreateCells (System.Windows.Forms.DataGridView dataGridView, object[] values);" />
+      <MemberSignature Language="C#" Value="public void CreateCells (System.Windows.Forms.DataGridView dataGridView, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateCells(class System.Windows.Forms.DataGridView dataGridView, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.CreateCells(System.Windows.Forms.DataGridView,System.Object[])" />
       <MemberType>Method</MemberType>
@@ -398,6 +426,11 @@
  -or-  
   
  A column that has no cell template was added.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.SetValues(System.Object[])" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.SetValue(System.Int32,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="CreateCellsInstance">
@@ -432,6 +465,8 @@
         <block subset="none" type="overrides">
           <para>Typically, derived classes should implement their own version of the <see cref="M:System.Windows.Forms.DataGridViewRow.CreateCellsInstance" /> method and not call the base class version.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellCollection" />
       </Docs>
     </Member>
     <Member MemberName="DataBoundItem">
@@ -473,6 +508,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DefaultCellStyle">
@@ -522,6 +558,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, the row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="Displayed">
@@ -547,6 +585,7 @@
           <see langword="true" /> if the row is currently displayed on the screen; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DividerHeight">
@@ -590,6 +629,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, the row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="DrawFocus">
@@ -643,6 +683,7 @@
  -or-  
   
  <paramref name="cellStyle" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="ErrorText">
@@ -697,6 +738,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When getting the value of this property, the row is a shared row in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.ErrorText" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextNeeded" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowErrorTextChanged" />
+        <altmember cref="T:System.Windows.Forms.ErrorProvider" />
       </Docs>
     </Member>
     <Member MemberName="Frozen">
@@ -738,6 +785,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetContextMenuStrip">
@@ -771,6 +819,7 @@
           <paramref name="rowIndex" /> is -1.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="rowIndex" /> is less than zero or greater than or equal to the number of rows in the control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorText">
@@ -802,6 +851,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The row belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control and <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredHeight">
@@ -853,6 +903,10 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="autoSizeRowMode" /> is not a valid <see cref="T:System.Windows.Forms.DataGridViewAutoSizeRowMode" /> value.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="rowIndex" /> is not in the valid range of 0 to the number of rows in the control minus 1.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeRowMode" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth(System.Windows.Forms.DataGridViewAutoSizeColumnMode,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="GetState">
@@ -893,6 +947,11 @@
  -or-  
   
  The row has not been added to a <see cref="T:System.Windows.Forms.DataGridView" /> control, but the <paramref name="rowIndex" /> value does not match the row's <see cref="P:System.Windows.Forms.DataGridViewBand.Index" /> property value.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Index" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.State" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRowCollection.IndexOf(System.Windows.Forms.DataGridViewRow)" />
       </Docs>
     </Member>
     <Member MemberName="HeaderCell">
@@ -922,7 +981,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The header cell of a row is typically used to display a row label. Users can also click the row header to select the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode?displayProperty=nameWithType>.  
+ The header cell of a row is typically used to display a row label. Users can also click the row header to select the row if the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect?displayProperty=nameWithType>.  
   
    
   
@@ -935,6 +994,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.SelectionMode" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -978,6 +1040,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, the row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.MinimumHeight" />
       </Docs>
     </Member>
     <Member MemberName="InheritedStyle">
@@ -1014,6 +1078,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.RowsDefaultCellStyle" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.DefaultCellStyle" />
       </Docs>
     </Member>
     <Member MemberName="IsNewRow">
@@ -1059,6 +1129,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="MinimumHeight">
@@ -1103,6 +1174,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">When setting this property, the row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is less than 2.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewRow.Height" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1153,6 +1226,11 @@
   
  The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and <paramref name="rowIndex" /> is less than zero or greater than the number of rows in the control minus one.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowPostPaint" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.PaintHeader(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean,System.Windows.Forms.DataGridViewPaintParts)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.PaintCells(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean,System.Windows.Forms.DataGridViewPaintParts)" />
       </Docs>
     </Member>
     <Member MemberName="PaintCells">
@@ -1205,6 +1283,10 @@
         <exception cref="T:System.InvalidOperationException">The row has not been added to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="paintParts" /> in not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+        <altmember cref="P:System.ComponentModel.HandledEventArgs.Handled" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="PaintHeader">
@@ -1257,6 +1339,10 @@
         <exception cref="T:System.InvalidOperationException">The row has not been added to a <see cref="T:System.Windows.Forms.DataGridView" /> control.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="paintParts" /> in not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.RowPrePaint" />
+        <altmember cref="P:System.ComponentModel.HandledEventArgs.Handled" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -1306,6 +1392,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.ReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="Resizable">
@@ -1352,6 +1440,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.AllowUserToResizeRows" />
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -1387,10 +1477,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="SetValues">
-      <MemberSignature Language="C#" Value="public bool SetValues (object[] values);" />
+      <MemberSignature Language="C#" Value="public bool SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.SetValues(System.Object[])" />
       <MemberType>Method</MemberType>
@@ -1438,6 +1529,10 @@
  -or-  
   
  This row is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.CreateCells(System.Windows.Forms.DataGridView)" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.SetValue(System.Int32,System.Object)" />
+        <altmember cref="P:System.Windows.Forms.DataGridView.VirtualMode" />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -1464,6 +1559,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewElementStates" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRow.GetState(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1490,6 +1588,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewBand.Index" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1531,7 +1631,18 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The row is in a <see cref="T:System.Windows.Forms.DataGridView" /> control and is a shared row.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewRowCollection.Remove(System.Windows.Forms.DataGridViewRow)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCells">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets the cells in the row.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

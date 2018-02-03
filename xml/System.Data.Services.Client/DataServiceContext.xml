@@ -445,7 +445,7 @@
       </Docs>
     </Member>
     <Member MemberName="BeginExecuteBatch">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteBatch (AsyncCallback callback, object state, System.Data.Services.Client.DataServiceRequest[] queries);" />
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginExecuteBatch (AsyncCallback callback, object state, params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecuteBatch(class System.AsyncCallback callback, object state, class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />
       <MemberType>Method</MemberType>
@@ -1277,7 +1277,7 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteBatch">
-      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse ExecuteBatch (System.Data.Services.Client.DataServiceRequest[] queries);" />
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse ExecuteBatch (params System.Data.Services.Client.DataServiceRequest[] queries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse ExecuteBatch(class System.Data.Services.Client.DataServiceRequest[] queries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.ExecuteBatch(System.Data.Services.Client.DataServiceRequest[])" />
       <MemberType>Method</MemberType>
@@ -2245,7 +2245,7 @@
     </Member>
     <Member MemberName="TryGetEntity&lt;TEntity&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetEntity&lt;TEntity&gt; (Uri identity, out TEntity entity) where TEntity : class;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntity&lt;class TEntity&gt;(class System.Uri identity, !!TEntity entity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntity&lt;class TEntity&gt;(class System.Uri identity, [out] !!TEntity&amp; entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetEntity``1(System.Uri,``0@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2286,7 +2286,7 @@
     </Member>
     <Member MemberName="TryGetUri">
       <MemberSignature Language="C#" Value="public bool TryGetUri (object entity, out Uri identity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUri(object entity, class System.Uri identity) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetUri(object entity, [out] class System.Uri&amp; identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceContext.TryGetUri(System.Object,System.Uri@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2432,5 +2432,85 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReadStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets binary property data for the specified entity as a data stream.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Execute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginLoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins the operation to load the value of the specified property from the data service.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AttachTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Notifies the <see cref="T:System.Data.Services.Client.DataServiceContext" /> to start tracking the specified resource and supplies the location of the resource in the specified resource set.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetSaveStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets a new data stream as the binary property of an entity.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginSaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Submits the pending changes to the data service collected by the <see cref="T:System.Data.Services.Client.DataServiceContext" /> since the last time changes were saved.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginExecute&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously sends a request to the data service to execute a specific URI.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads deferred content from the data service.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

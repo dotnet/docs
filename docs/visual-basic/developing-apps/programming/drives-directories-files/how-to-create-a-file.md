@@ -1,38 +1,20 @@
 ---
 title: "How to: Create a File in Visual Basic"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
-  - "text files, creating"
-  - "files, creating"
+  - "text files [Visual Basic], creating"
+  - "files [Visual Basic], creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create a File in Visual Basic
 This example creates an empty text file at the specified path using the <xref:System.IO.File.Create%2A> method in the <xref:System.IO.File> class.  
@@ -68,7 +50,7 @@ This example creates an empty text file at the specified path using the <xref:Sy
  An <xref:System.UnauthorizedAccessException> is thrown if the user does not have permission to create the file.  
   
 ## See Also  
- <xref:System.IO>   
- <xref:System.IO.File.Create%2A>   
- [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)   
- [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8)
+ <xref:System.IO>  
+ <xref:System.IO.File.Create%2A>  
+ [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)  
+ [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)

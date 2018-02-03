@@ -7,9 +7,8 @@ manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
+ms.prod: .net
+ms.technology: devlang-csharp
 ms.assetid: cbda9c08-151b-4c9e-82f7-c3d7f3dac66b
 ---
 # Group results by contiguous keys
@@ -46,10 +45,10 @@ The following example shows how to group elements into chunks that represent sub
 ## Example  
  The following example shows both the extension method and the client code that uses it.  
   
- [!code-cs[cscsrefContiguousGroups#1](../../../samples/snippets/csharp/concepts/linq/how-to-group-results-by-contiguous-keys_1.cs)]  
+ [!code-csharp[cscsrefContiguousGroups#1](../../../samples/snippets/csharp/concepts/linq/how-to-group-results-by-contiguous-keys_1.cs)]  
   
  To use the extension method in your project, copy the `MyExtensions` static class to a new or existing source code file and if it is required, add a `using` directive for the namespace where it is located.  
   
 ## See also  
- [LINQ Query Expressions](index.md)   
+ [LINQ Query Expressions](index.md)  
  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ITypeNameBuilder"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder interface [.NET Framework hosting]"
 ms.assetid: 1f88e62e-2762-44d1-83b1-095f8734c0bc
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ITypeNameBuilder Interface
 Provides methods for building a type name.  

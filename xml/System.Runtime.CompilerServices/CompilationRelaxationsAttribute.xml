@@ -53,6 +53,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Runtime.CompilerServices.CompilationRelaxations" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,6 +94,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.CompilerServices.CompilationRelaxations" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Runtime.CompilerServices.CompilationRelaxations" />
       </Docs>
     </Member>
     <Member MemberName="CompilationRelaxations">
@@ -162,7 +165,21 @@
   
  Use the <see cref="T:System.Runtime.CompilerServices.CompilationRelaxations" /> enumeration with the <see cref="P:System.Runtime.CompilerServices.CompilationRelaxationsAttribute.CompilationRelaxations" /> property.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Runtime.CompilerServices.CompilationRelaxations" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CompilationRelaxationsAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

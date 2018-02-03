@@ -58,6 +58,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Attribute" />
+    <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
+    <altmember cref="T:System.ComponentModel.DescriptionAttribute" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,10 +86,11 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AttributeCollection (Attribute[] attributes);" />
+      <MemberSignature Language="C#" Value="public AttributeCollection (params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.#ctor(System.Attribute[])" />
       <MemberType>Constructor</MemberType>
@@ -130,6 +134,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributes" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -158,6 +163,7 @@
         <summary>Gets the attribute collection.</summary>
         <value>The attribute collection.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -211,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -260,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -293,6 +301,7 @@
         <param name="index">The index to start from.</param>
         <summary>Copies the collection to an array, starting at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -337,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -367,7 +377,7 @@
       </Docs>
     </Member>
     <Member MemberName="FromExisting">
-      <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection FromExisting (System.ComponentModel.AttributeCollection existing, Attribute[] newAttributes);" />
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection FromExisting (System.ComponentModel.AttributeCollection existing, params Attribute[] newAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.AttributeCollection FromExisting(class System.ComponentModel.AttributeCollection existing, class System.Attribute[] newAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.FromExisting(System.ComponentModel.AttributeCollection,System.Attribute[])" />
       <MemberType>Method</MemberType>
@@ -485,6 +495,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -533,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -583,6 +596,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -636,6 +650,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
+        <altmember cref="T:System.ComponentModel.BrowsableAttribute" />
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -685,6 +701,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Attribute" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -799,5 +816,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the attribute with the specified index.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether this collection of attributes has the specified attribute or array of attributes.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a specified attribute or array of attributes is the same as an attribute or array of attributes in the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

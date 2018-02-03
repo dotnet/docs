@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunctionBreakpoint::GetFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunctionBreakpoint::GetFunction method [.NET Framework debugging]"
   - "GetFunction method, ICorDebugFunctionBreakpoint interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugFunctionBreakpoint::GetFunction Method
 Gets an interface pointer to an ICorDebugFunction that references the function in which the breakpoint is set.  

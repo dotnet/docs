@@ -1,4 +1,4 @@
-<%--<snippet1>--%>
+<!-- <Snippet1> -->
 <%@ Page Language="C#" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <%@ Import Namespace="System.Globalization" %>
@@ -87,4 +87,4 @@
         </form>
     </body>
 </html>
-<%--</snippet1>--%>
+<!-- </Snippet1> -->

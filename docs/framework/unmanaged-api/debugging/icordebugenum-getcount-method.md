@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEnum::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEnum::GetCount method [.NET Framework debugging]"
   - "GetCount method, ICorDebugEnum interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEnum::GetCount Method
 Gets the number of items in the enumeration.  

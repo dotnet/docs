@@ -45,7 +45,7 @@ Namespace CS
 
             Dim envNone As EnvelopeVersion = EnvelopeVersion.None
             Dim nextDestNone As String = envNone.NextDestinationActorValue
-            'The following code throws a System.ArgumentReferenceExeption.
+            'The following code throws a System.ArgumentReferenceException.
             'The object reference is not set to an instance of an object
             ' string[] ultDestsNone = envNone.GetUltimateDestinationActorValues();
             Dim toStrNone As String = envNone.ToString()

@@ -85,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -116,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintQueue.GetJob(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="HostingPrintQueue">
@@ -445,6 +447,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
       </Docs>
     </Member>
     <Member MemberName="IsPrinted">
@@ -531,6 +535,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
       </Docs>
     </Member>
     <Member MemberName="IsRetained">
@@ -802,6 +809,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintTicket.Duplexing" />
+        <altmember cref="P:System.Printing.PrintTicket.PagesPerSheet" />
       </Docs>
     </Member>
     <Member MemberName="NumberOfPagesPrinted">
@@ -847,6 +856,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Resume" />
       </Docs>
     </Member>
     <Member MemberName="PositionInPrintQueue">
@@ -910,6 +921,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Commit" />
       </Docs>
     </Member>
     <Member MemberName="Restart">
@@ -969,6 +981,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.IsPaused" />
+        <altmember cref="M:System.Printing.PrintSystemJobInfo.Pause" />
       </Docs>
     </Member>
     <Member MemberName="StartTimeOfDay">
@@ -1013,6 +1027,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.StartTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintQueue.UntilTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.UntilTimeOfDay" />
       </Docs>
     </Member>
     <Member MemberName="Submitter">
@@ -1122,6 +1142,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.TimeZone" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="P:System.Printing.PrintQueue.StartTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintQueue.UntilTimeOfDay" />
+        <altmember cref="P:System.Printing.PrintSystemJobInfo.StartTimeOfDay" />
       </Docs>
     </Member>
   </Members>

@@ -14,6 +14,8 @@ caps.latest.revision: 6
 author: "wadepickett"
 ms.author: "wpickett"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # x:Property Directive
 Declares a XAML property in markup.  

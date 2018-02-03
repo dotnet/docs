@@ -94,6 +94,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetCommandLineArgs" />
       </Docs>
     </Member>
     <Member MemberName="CurrentDirectory">
@@ -511,7 +512,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The first element in the array contains the file name of the executing program. If the file name is not available, the first element is equal to <xref:System.String?displayProperty=nameWithType>. The remaining elements contain any additional tokens entered on the command line.  
+ The first element in the array contains the file name of the executing program. If the file name is not available, the first element is equal to <xref:System.String.Empty?displayProperty=nameWithType>. The remaining elements contain any additional tokens entered on the command line.  
   
  The program file name can, but is not required to, include path information.  
   
@@ -544,6 +545,7 @@ goto :EOF
         </remarks>
         <exception cref="T:System.NotSupportedException">The system does not support command-line arguments.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.CommandLine" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariable">
@@ -580,15 +582,15 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
+ The <xref:System.Environment.GetEnvironmentVariable%28System.String%29> method retrieves an environment variable from the environment block of the current process only. It is equivalent to calling the <xref:System.Environment.GetEnvironmentVariable%28System.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>. The environment block of the current process includes the following environment variables:  
   
 -   All per-machine environment variables that are defined at the time the process is created, along with their values.  
   
 -   All per-user environment variables that are defined at the time the process is created, along with their values.  
   
--   Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>.  
+-   Any variables added to the process block while the process is running by calling either the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
   
- If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>.  
+ If environment variables are created after the process has started, you can use this method to retrieve only those variables that were created by calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%29> method or the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method with a `target` value of .<xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>.  
   
  To retrieve all environment variables along with their values, call the <xref:System.Environment.GetEnvironmentVariables%2A> method.  
   
@@ -614,6 +616,9 @@ goto :EOF
           <paramref name="variable" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for the ability to read the value of <paramref name="variable" />. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariable">
@@ -677,6 +682,9 @@ goto :EOF
  or  
   
  for full access to environment variables if <paramref name="target" /> is <see cref="F:System.EnvironmentVariableTarget.User" /> or <see cref="F:System.EnvironmentVariableTarget.Machine" /> (Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />).</permission>
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariables">
@@ -726,6 +734,7 @@ goto :EOF
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <exception cref="T:System.OutOfMemoryException">The buffer is out of memory.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for the ability to read the names and values of environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetEnvironmentVariables">
@@ -783,6 +792,8 @@ goto :EOF
  or  
   
  for full access to environment variables if <paramref name="target" /> is <see cref="F:System.EnvironmentVariableTarget.User" /> or <see cref="F:System.EnvironmentVariableTarget.Machine" /> (Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />).</permission>
+        <altmember cref="M:System.Environment.SetEnvironmentVariable(System.String,System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="GetFolderPath">
@@ -976,6 +987,7 @@ goto :EOF
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.AppDomain.IsFinalizingForUnload" />
       </Docs>
     </Member>
     <Member MemberName="Is64BitOperatingSystem">
@@ -1272,7 +1284,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method is equivalent to calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> overload with a value of <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> for the `target` argument.  
+ Calling this method is equivalent to calling the <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> overload with a value of <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType> for the `target` argument.  
   
  If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`. If it does exist, its value is modified. Because the environment variable is defined in the environment block of the current process only, it does not persist after the process has ended.  
   
@@ -1323,6 +1335,8 @@ goto :EOF
  An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
       </Docs>
     </Member>
     <Member MemberName="SetEnvironmentVariable">
@@ -1360,7 +1374,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
+ The <xref:System.Environment.SetEnvironmentVariable%28System.String%2CSystem.String%2CSystem.EnvironmentVariableTarget%29> method lets you define an environment variable that is available to all processes that run on a machine (the <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType> value), to all processes run by a user (the <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> value), or to the current process (the <xref:System.EnvironmentVariableTarget.Process> value). Per-machine and per-user environment variables are copied into the environment block of the current process. However, environment variables that are unique to the current process environment block persist only until the process ends.  
   
  If the `value` argument is not empty (see the discussion of deleting an environment variable later in this section for the definition of an empty value) and the environment variable named by the `variable` parameter does not exist, the environment variable is created and assigned the contents of `value`.  If it does exist, its value is modified.  
   
@@ -1380,16 +1394,16 @@ goto :EOF
   
  If `target` is <xref:System.EnvironmentVariableTarget.User>, the environment variable is stored in the HKEY_CURRENT_USER\Environment key of the local computer's registry. It is also copied to instances of File Explorer that are running as the current user. The environment variable is then inherited by any new processes that the user launches from File Explorer.  
   
- Similarly, if `target` is <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
+ Similarly, if `target` is <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, the environment variable is stored in the HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment key of the local computer's registry. It is also copied to all instances of File Explorer. The environment variable is then inherited by any new processes that are launched from File Explorer.  
   
  If `target` is <xref:System.EnvironmentVariableTarget.User> or <xref:System.EnvironmentVariableTarget.Machine>, other applications are notified of the set operation by a Windows `WM_SETTINGCHANGE` message.  
   
- If `target` is <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
+ If `target` is <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType> or <xref:System.EnvironmentVariableTarget.Machine?displayProperty=nameWithType>, we recommend that the length of `value` be less than 2048 characters.  
   
    
   
 ## Examples  
- The following example creates environment variables for the <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  
+ The following example creates environment variables for the <xref:System.EnvironmentVariableTarget.Process?displayProperty=nameWithType>, <xref:System.EnvironmentVariableTarget.User?displayProperty=nameWithType>, and <xref:System.EnvironmentVariableTarget.Machine> targets, checks whether the operating system registry contains the user and machine environment variables, then deletes the environment variables.  
   
  [!code-cpp[environment.getsetenvar#1](~/samples/snippets/cpp/VS_Snippets_CLR/environment.getsetenvar/CPP/source.cpp#1)]
  [!code-csharp[environment.getsetenvar#1](~/samples/snippets/csharp/VS_Snippets_CLR/environment.getsetenvar/CS/gsev.cs#1)]
@@ -1423,6 +1437,9 @@ goto :EOF
  An error occurred during the execution of this operation.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission to perform this operation.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String,System.EnvironmentVariableTarget)" />
+        <altmember cref="M:System.Environment.GetEnvironmentVariables(System.EnvironmentVariableTarget)" />
+        <altmember cref="T:System.EnvironmentVariableTarget" />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -1569,7 +1586,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This information can be useful when determining whether to use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions?displayProperty=nameWithType> option when you work with memory-mapped files.  
+ This information can be useful when determining whether to use the <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType> option when you work with memory-mapped files.  
   
  In Windows, this value is the `dwPageSize` member in the `SYSTEM_INFO` structure.  
   
@@ -1614,7 +1631,7 @@ goto :EOF
  The value of this property is derived from the system timer and is stored as a 32-bit signed integer. Note that, because it is derived from the system timer, the resolution of the <xref:System.Environment.TickCount%2A> property is limited to the resolution of the system timer, which is typically in the range of 10 to 16 milliseconds.  
   
 > [!IMPORTANT]
->  Because the value of the <xref:System.Environment.TickCount%2A> property value is a 32-bit signed integer, if the system runs continuously, <xref:System.Environment.TickCount%2A> will increment from zero to <xref:System.Int32?displayProperty=nameWithType> for approximately 24.9 days, then jump to <xref:System.Int32?displayProperty=nameWithType>, which is a negative number, then increment back to zero during the next 24.9 days. You can work around this issue by calling the Windows [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx) function, which resets to zero after approximately 49.7 days, or by calling the [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx) function.  
+>  Because the value of the <xref:System.Environment.TickCount%2A> property value is a 32-bit signed integer, if the system runs continuously, <xref:System.Environment.TickCount%2A> will increment from zero to <xref:System.Int32.MaxValue?displayProperty=nameWithType> for approximately 24.9 days, then jump to <xref:System.Int32.MinValue?displayProperty=nameWithType>, which is a negative number, then increment back to zero during the next 24.9 days. You can work around this issue by calling the Windows [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx) function, which resets to zero after approximately 49.7 days, or by calling the [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx) function.  
   
  <xref:System.Environment.TickCount%2A> is different from the <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> property, which is the number of 100-nanosecond intervals that have elapsed since 1/1/0001, 12:00am.  
   
@@ -1670,6 +1687,7 @@ goto :EOF
         <exception cref="T:System.PlatformNotSupportedException">The operating system does not support retrieving the network domain name.</exception>
         <exception cref="T:System.InvalidOperationException">The network domain name cannot be retrieved.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the USERDOMAIN environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.UserName" />
       </Docs>
     </Member>
     <Member MemberName="UserInteractive">
@@ -1714,6 +1732,7 @@ goto :EOF
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.SystemInformation" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -1762,6 +1781,7 @@ goto :EOF
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for read access to the USERNAME environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
+        <altmember cref="P:System.Environment.UserDomainName" />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1792,7 +1812,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the .NET Framework Versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property returns a <xref:System.Version> object whose string representation has the form `4.0.30319.xxxxx`. For the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], its point releases, and the .NET Framework 4.7, it has the form `4.0.30319.42000`.  
+ For the .NET Framework Versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property returns a <xref:System.Version> object whose string representation has the form `4.0.30319.xxxxx`. For the .NET Framework 4.6 and later versions, it has the form `4.0.30319.42000`.  
   
 > [!WARNING]
 >  For the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later, we do not recommend using the <xref:System.Environment.Version%2A> property to detect the version of the runtime; instead, you can determine the version of the common language runtime by querying the registry. For more information, see [How to: Determine Which .NET Framework Versions Are Installed](~/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).  
@@ -1851,5 +1871,61 @@ goto :EOF
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">for full access to the resource protected by this permission. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an environment variable.</summary>
+        <altmember cref="M:System.Environment.GetEnvironmentVariables" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetEnvironmentVariables">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves all environment variable names and their values.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetEnvironmentVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates, modifies, or deletes an environment variable.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetFolderPath">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the path to the system special folder that is identified by the specified enumeration.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FailFast">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message and optional exception information in error reporting to Microsoft.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

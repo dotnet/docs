@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugging::OpenVirtualProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OpenVirtualProcess method [.NET Framework debugging]"
   - "ICLRDebugging::OpenVirtualProcess method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICLRDebugging::OpenVirtualProcess Method
 Gets the ICorDebugProcess interface that corresponds to a common language runtime (CLR) module loaded in the process.  
@@ -103,5 +103,5 @@ HRESULT OpenVirtualProcess(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)   
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

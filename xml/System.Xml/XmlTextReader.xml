@@ -138,6 +138,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see langword="XmlTextReader" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +179,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -225,6 +227,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -302,6 +305,8 @@ XmlTextReader reader = new XmlTextReader(s);
  An error occurred while processing the request.</exception>
         <exception cref="T:System.UriFormatException">
           <paramref name="url" /> is not a valid URI.</exception>
+        <altmember cref="P:System.Xml.XmlTextReader.XmlResolver" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -338,6 +343,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -381,6 +387,7 @@ XmlTextReader reader = new XmlTextReader(s);
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="input" /> or <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -422,6 +429,7 @@ XmlTextReader reader = new XmlTextReader(s);
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -462,6 +470,7 @@ XmlTextReader reader = new XmlTextReader(s);
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="input" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -502,6 +511,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -552,6 +562,7 @@ XmlTextReader reader = new XmlTextReader(s);
  An error occurred while processing the request.</exception>
         <exception cref="T:System.UriFormatException">
           <paramref name="url" /> is not a valid URI.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -614,6 +625,7 @@ XmlTextReader reader = new XmlTextReader(s);
           <paramref name="fragType" /> is not an Element, Attribute, or Document <see langword="XmlNodeType" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xmlFragment" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -655,6 +667,7 @@ XmlTextReader reader = new XmlTextReader(s);
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <paramref name="input" /> or <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -698,6 +711,7 @@ XmlTextReader reader = new XmlTextReader(s);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="nt" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -761,6 +775,8 @@ XmlTextReader reader = new XmlTextReader(s);
           <paramref name="fragType" /> is not an <see langword="Element" />, <see langword="Attribute" />, or <see langword="Document" /><see langword="XmlNodeType" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="xmlFragment" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlParserContext" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="AttributeCount">
@@ -808,6 +824,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="BaseURI">
@@ -859,6 +876,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanReadBinaryContent">
@@ -898,6 +916,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanReadValueChunk">
@@ -937,6 +956,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="CanResolveEntity">
@@ -976,6 +996,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1016,6 +1037,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -1061,6 +1083,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="DtdProcessing">
@@ -1094,7 +1117,7 @@ XmlTextReader reader = new XmlTextReader(s);
  The <xref:System.Xml.DtdProcessing> enumeration contains the <xref:System.Xml.DtdProcessing.Prohibit>, <xref:System.Xml.DtdProcessing.Ignore>, and <xref:System.Xml.DtdProcessing.Parse> enumerators. <xref:System.Xml.DtdProcessing.Parse> is the default behavior. The <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property replaces the `ProhibitDTD` property and adds the ability to ignore the DOCTYPE element.  
   
 > [!IMPORTANT]
->  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing?displayProperty=nameWithType>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
+>  If the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property is set to <xref:System.Xml.DtdProcessing.Ignore?displayProperty=nameWithType>, the <xref:System.Xml.XmlTextReader> will not report the DTDs. This means that the DTD/DOCTYPE will be lost on output.  
   
  ]]></format>
         </remarks>
@@ -1197,6 +1220,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="EOF">
@@ -1234,6 +1258,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAttribute">
@@ -1297,6 +1322,7 @@ XmlTextReader reader = new XmlTextReader(s);
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlTextReader.AttributeCount" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -1354,6 +1380,7 @@ XmlTextReader reader = new XmlTextReader(s);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetAttribute">
@@ -1418,6 +1445,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetNamespacesInScope">
@@ -1468,6 +1496,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="GetRemainder">
@@ -1522,6 +1551,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="HasLineInfo">
@@ -1560,6 +1590,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="HasValue">
@@ -1624,6 +1655,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="IsDefault">
@@ -1662,6 +1694,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="IsEmptyElement">
@@ -1722,6 +1755,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -1771,6 +1805,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LinePosition">
@@ -1830,6 +1865,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LocalName">
@@ -1881,6 +1917,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="LookupNamespace">
@@ -1932,6 +1969,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Xml.XmlTextReader.Namespaces" /> property is set to <see langword="true" /> and the <paramref name="prefix" /> value is <see langword="null" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <MemberGroup MemberName="MoveToAttribute">
@@ -2001,6 +2039,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="i" /> parameter is less than 0 or greater than or equal to <see cref="P:System.Xml.XmlReader.AttributeCount" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToAttribute">
@@ -2044,6 +2083,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToAttribute">
@@ -2089,6 +2129,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToElement">
@@ -2138,6 +2179,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToFirstAttribute">
@@ -2189,6 +2231,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="MoveToNextAttribute">
@@ -2238,6 +2281,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2307,6 +2351,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Namespaces">
@@ -2349,6 +2394,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Setting this property after a read operation has occurred (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is not <see langword="ReadState.Initial" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NamespaceURI">
@@ -2400,6 +2446,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NameTable">
@@ -2438,6 +2485,8 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlNameTable" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -2489,6 +2538,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Normalization">
@@ -2559,6 +2609,7 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Setting this property when the reader is closed (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is <see langword="ReadState.Closed" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -2608,6 +2659,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ProhibitDtd">
@@ -2654,6 +2706,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="QuoteChar">
@@ -2692,6 +2745,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -2748,6 +2802,8 @@ abc<tag/>
  ]]></format>
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred while parsing the XML.</exception>
+        <altmember cref="T:System.Xml.EntityHandling" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadAttributeValue">
@@ -2801,6 +2857,7 @@ abc<tag/>
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadBase64">
@@ -2864,6 +2921,8 @@ abc<tag/>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> &lt; 0, or <paramref name="len" /> &lt; 0, or <paramref name="len" /> &gt; <paramref name="array" />.Length- <paramref name="offset" />.</exception>
+        <altmember cref="M:System.Xml.XmlTextWriter.WriteBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadBinHex">
@@ -2927,6 +2986,7 @@ abc<tag/>
         <exception cref="T:System.ArgumentNullException">The value of <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> &lt; 0, or <paramref name="len" /> &lt; 0, or <paramref name="len" /> &gt; <paramref name="array" />.Length- <paramref name="offset" />.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadChars">
@@ -3035,6 +3095,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" />
           <see langword="&lt; 0" /> or <paramref name="count" /><see langword="&lt; 0" />.</exception>
+        <altmember cref="M:System.Xml.XmlTextReader.ReadBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBase64">
@@ -3096,6 +3159,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Xml.XmlTextReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> is not supported in the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsBinHex">
@@ -3158,6 +3224,9 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
           <see cref="M:System.Xml.XmlTextReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> is not supported on the current node.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The index into the buffer or index + count is larger than the allocated buffer size.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlTextReader" /> implementation does not support this method.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
+        <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBase64">
@@ -3223,6 +3292,8 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlTextReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBinHex">
@@ -3288,6 +3359,8 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Xml.XmlReader" /> implementation does not support this method.</exception>
         <exception cref="T:System.Xml.XmlException">The element contains mixed-content.</exception>
         <exception cref="T:System.FormatException">The content cannot be converted to the requested type.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
+        <altmember cref="M:System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ReadState">
@@ -3382,6 +3455,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.Xml.XmlException">An error occurred while parsing the XML.</exception>
         <exception cref="T:System.InvalidOperationException">An invalid operation was attempted.</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="ResetState">
@@ -3444,6 +3518,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.InvalidOperationException">Calling <see langword="ResetState" /> if the reader was constructed using an <see cref="T:System.Xml.XmlParserContext" />.</exception>
         <exception cref="T:System.Xml.XmlException">Documents in a single stream do not share the same encoding.</exception>
+        <altmember cref="T:System.Xml.ReadState" />
       </Docs>
     </Member>
     <Member MemberName="ResolveEntity">
@@ -3485,6 +3560,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -3536,6 +3612,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.GetNamespacesInScope">
@@ -3574,6 +3651,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.LookupNamespace">
@@ -3612,6 +3690,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlNamespaceResolver.LookupPrefix">
@@ -3643,6 +3722,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         <summary>For a description of this member, see <see cref="M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)" />.</summary>
         <returns>The prefix that is mapped to the namespace URI; <see langword="null" /> if the namespace URI is not mapped to a prefix.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -3716,6 +3796,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="WhitespaceHandling">
@@ -3767,6 +3848,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">Invalid value specified.</exception>
         <exception cref="T:System.InvalidOperationException">Setting this property when the reader is closed (<see cref="P:System.Xml.XmlTextReader.ReadState" /> is <see langword="ReadState.Closed" />).</exception>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlLang">
@@ -3822,6 +3904,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlResolver">
@@ -3879,6 +3962,11 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Xml.XmlUrlResolver.Credentials" />
+        <altmember cref="T:System.Net.CredentialCache" />
+        <altmember cref="T:System.Net.NetworkCredential" />
+        <altmember cref="T:System.Xml.XmlSecureResolver" />
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -3926,6 +4014,7 @@ if (XmlNodeType.Element == reader.NodeType && "thing" == reader.Name)
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Xml.XmlReader" />
       </Docs>
     </Member>
   </Members>

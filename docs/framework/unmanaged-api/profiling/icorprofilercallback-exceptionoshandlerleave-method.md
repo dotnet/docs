@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionOSHandlerLeave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionOSHandlerLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerLeave method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerLeave Method
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  

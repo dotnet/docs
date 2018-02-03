@@ -9,18 +9,18 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, content copying and pasting"
   - "interoperability [WPF]"
-  - "ElementHost control, copying and pasting at design time"
-  - "WPF user control, hosting in Windows Forms"
+  - "ElementHost control [Windows Forms], copying and pasting at design time"
+  - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 6e81bb13-577c-46c3-a1cf-8d15969fb83e
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms
 This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) control from one Windows Form to another.  
@@ -32,7 +32,7 @@ This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) c
 -   Copy a WPF Control.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -73,8 +73,8 @@ This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) c
      The copied control is also named `elementHost1`, because it is a private field of the `Form2` class. There is no name collision with the `elementHost1` in the `Form1` class.  
   
 ## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>   
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)
+ <xref:System.Windows.Forms.Integration.ElementHost>  
+ <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
+ [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
+ [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)

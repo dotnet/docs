@@ -9,22 +9,27 @@ ms.technology:
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
-  - "fonts, baseline"
-  - "text, decorations"
-  - "fonts, underline"
-  - "fonts, overline"
-  - "strikethrough type"
-  - "fonts, strikethrough"
-  - "overline type"
-  - "underline type"
-  - "typography, text decorations"
-  - "baseline type"
+  - "fonts [WPF], baseline"
+  - "text [WPF], decorations"
+  - "fonts [WPF], underline"
+  - "fonts [WPF], overline"
+  - "strikethrough type [WPF]"
+  - "fonts [WPF], strikethrough"
+  - "overline type [WPF]"
+  - "underline type [WPF]"
+  - "typography [WPF], text decorations"
+  - "baseline type [WPF]"
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Create a Text Decoration
 A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline. The following example shows the locations of the text decorations relative to the text.  
@@ -68,6 +73,6 @@ Hyperlinks defined with TextDecorations
  [!code-xaml[TextDecorationSnippets#TextDecorationSnippets3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets3)]  
   
 ## See Also  
- <xref:System.Windows.TextDecoration>   
- <xref:System.Windows.Documents.Hyperlink>   
+ <xref:System.Windows.TextDecoration>  
+ <xref:System.Windows.Documents.Hyperlink>  
  [Specify Whether a Hyperlink is Underlined](../../../../docs/framework/wpf/advanced/how-to-specify-whether-a-hyperlink-is-underlined.md)

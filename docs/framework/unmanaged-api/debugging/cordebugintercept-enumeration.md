@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugIntercept"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugIntercept enumeration [.NET Framework debugging]"
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # CorDebugIntercept Enumeration
 Indicates the types of code that can be intercepted (that is, stepped into).  

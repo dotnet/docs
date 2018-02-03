@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::CreateProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::CreateProcess method [.NET Framework debugging]"
   - "CreateProcess method, ICorDebugProcess interface [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug::CreateProcess Method
 Launches a process and its primary thread under the control of the debugger.  

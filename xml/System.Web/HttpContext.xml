@@ -29,11 +29,13 @@
   
  The following example demonstrates how to access and display properties of the <xref:System.Web.HttpContext> object. The context of the current HTTP request is accessed by using the <xref:System.Web.UI.Page.Context%2A> property of the <xref:System.Web.UI.Page> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.HttpContext#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext/cs/httpcontextcs.aspx#1)]
+ [!code-aspx-vb[System.Web.HttpContext#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext/vb/httpcontextvb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.IHttpModule" />
+    <altmember cref="T:System.Web.IHttpHandler" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -247,6 +249,7 @@
   
  To get the <see cref="T:System.Web.HttpApplication" /> object for the current HTTP request, use <see cref="P:System.Web.HttpContext.ApplicationInstance" />. (ASP.NET uses <see langword="ApplicationInstance" /> instead of <see langword="Application" /> as a property name to refer to the current <see cref="T:System.Web.HttpApplication" /> instance in order to avoid confusion between ASP.NET and classic ASP. In classic ASP, <see langword="Application" /> refers to the global application state dictionary.)</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.HttpContext.ApplicationInstance" />
       </Docs>
     </Member>
     <Member MemberName="ApplicationInstance">
@@ -268,6 +271,7 @@
  ASP.NET uses <see langword="ApplicationInstance" /> instead of <see langword="Application" /> as a property name to refer to the current <see cref="T:System.Web.HttpApplication" /> instance in order to avoid confusion between ASP.NET and classic ASP. In classic ASP, <see langword="Application" /> refers to the global application state dictionary.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The Web application is running under IIS 7.0 in Integrated mode, and an attempt was made to change the property value from a non-null value to <see langword="null" />.</exception>
+        <altmember cref="P:System.Web.HttpContext.Application" />
       </Docs>
     </Member>
     <Member MemberName="AsyncPreloadMode">
@@ -338,6 +342,7 @@
       <Docs>
         <summary>Clears all errors for the current HTTP request.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Web.HttpContext.Error" />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -417,6 +422,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpContext.Response" />
+        <altmember cref="P:System.Web.HttpContext.Request" />
       </Docs>
     </Member>
     <Member MemberName="CurrentHandler">
@@ -442,6 +449,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpContext.Handler" />
+        <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
       </Docs>
     </Member>
     <Member MemberName="CurrentNotification">
@@ -480,6 +489,8 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework version 3.0.</exception>
+        <altmember cref="P:System.Web.HttpContext.IsPostNotification" />
+        <altmember cref="T:System.Web.RequestNotification" />
       </Docs>
     </Member>
     <Member MemberName="DisposeOnPipelineCompleted">
@@ -527,6 +538,7 @@ End Sub
         <summary>Gets the first error (if any) accumulated during HTTP request processing.</summary>
         <value>The first <see cref="T:System.Exception" /> for the current HTTP request/response process; otherwise, <see langword="null" /> if no errors were accumulated during the HTTP request processing. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Web.HttpContext.ClearError" />
       </Docs>
     </Member>
     <Member MemberName="GetAppConfig">
@@ -561,6 +573,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Configuration.WebConfigurationManager" />
       </Docs>
     </Member>
     <Member MemberName="GetConfig">
@@ -595,6 +608,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.HttpContext.GetSection(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalResourceObject">
@@ -634,6 +648,7 @@ End Sub
  \- or -  
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalResourceObject">
@@ -675,6 +690,7 @@ End Sub
  \- or -  
   
  The main assembly does not contain the resources for the neutral culture, and these resources are required because the appropriate satellite assembly is missing.</exception>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -709,6 +725,7 @@ End Sub
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> parameter.</exception>
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetLocalResourceObject">
@@ -745,6 +762,7 @@ End Sub
         <exception cref="T:System.Resources.MissingManifestResourceException">A resource object was not found for the specified <paramref name="virtualPath" /> Parameter.</exception>
         <exception cref="T:System.ArgumentException">The specified <paramref name="virtualPath" /> parameter is not in the current application's root directory.</exception>
         <exception cref="T:System.InvalidOperationException">The resource class for the page was not found.</exception>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
     <Member MemberName="GetSection">
@@ -767,6 +785,7 @@ End Sub
         <summary>Gets a specified configuration section for the current application's default configuration.</summary>
         <returns>The specified <see cref="T:System.Configuration.ConfigurationSection" />, <see langword="null" /> if the section does not exist, or an internal object if the section is not accessible at run time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Configuration.ConfigurationManager.GetSection(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Handler">
@@ -794,6 +813,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
+        <altmember cref="P:System.Web.HttpContext.PreviousHandler" />
       </Docs>
     </Member>
     <Member MemberName="IsCustomErrorEnabled">
@@ -873,6 +894,8 @@ End Sub
  ]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">The operation requires the integrated pipeline mode in [!INCLUDE[iisver](~/includes/iisver-md.md)] and at least the .NET Framework 3.0.</exception>
+        <altmember cref="P:System.Web.HttpContext.CurrentNotification" />
+        <altmember cref="T:System.Web.RequestNotification" />
       </Docs>
     </Member>
     <Member MemberName="IsWebSocketRequest">
@@ -979,6 +1002,8 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.HttpContext.Handler" />
+        <altmember cref="P:System.Web.HttpContext.CurrentHandler" />
       </Docs>
     </Member>
     <Member MemberName="Profile">
@@ -1004,6 +1029,7 @@ End Sub
   
  ]]></format>
         </remarks>
+        <altmember cref="N:System.Web.Profile" />
       </Docs>
     </Member>
     <Member MemberName="RemapHandler">
@@ -1123,8 +1149,8 @@ End Sub
 ## Examples  
  The following example shows how to use the <xref:System.Web.HttpContext.RewritePath%2A> method to enable a Web site to respond to URLs that do not reflect the file structure in the Web site. The first block of code is an ASP.NET Web page that is named RewritePath.aspx. It requires a query string. If the name of your site is WebSite1, the URL `http://localhost/WebSite1/RewritePath.aspx?page=1` displays "Page 1" in the browser. The block of code that follows the Web page is the `Application_BeginRequest` event handler in the Global.asax file. This code intercepts requests for URLs such as `http://localhost/WebSite1/page1` and converts them to the form that is required for RewritePath.aspx before they are processed. Therefore, the URL `http://localhost/WebSite1/page1` invokes RewritePath.aspx with the query-string parameter that displays "Page 1" in the browser. If a URL such as `http://localhost/WebSite1/page1` is received, an overload of <xref:System.Web.HttpContext.RewritePath%2A> is invoked that enables you to provide a value for the <xref:System.Web.HttpRequest.PathInfo%2A> property as well as a query string parameter.  
   
- <!-- TODO: review snippet reference [!code-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  -->  
+ [!code-aspx-csharp[HttpContext_RewritePath#2](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/rewritepath.aspx#2)]
+ [!code-aspx-vb[HttpContext_RewritePath#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/rewritepath.aspx#2)]  
   
  [!code-csharp[HttpContext_RewritePath#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpContext_ReWritePath/CS/global.asax#1)]
  [!code-vb[HttpContext_RewritePath#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpContext_ReWritePath/VB/global.asax#1)]  
@@ -1408,6 +1434,7 @@ firstName = DirectCast(context.Session("FirstName"), String)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The method was called after the <see cref="E:System.Web.HttpApplication.AcquireRequestState" /> event was raised.</exception>
+        <altmember cref="T:System.Web.SessionState.SessionStateBehavior" />
       </Docs>
     </Member>
     <Member MemberName="SkipAuthorization">
@@ -1566,8 +1593,8 @@ firstName = DirectCast(context.Session("FirstName"), String)
   
  If the application uses Windows authentication, the user name includes the domain. For example, the page title would be "Home page for DOMAIN\username".  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  
+ [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1609,5 +1636,51 @@ firstName = DirectCast(context.Session("FirstName"), String)
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGlobalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an application-level resource.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AcceptWebSocketRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accepts an <see cref="T:System.Web.WebSockets.AspNetWebSocket" /> request.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetLocalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a page-level resource.</summary>
+        <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RewritePath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects a request for a resource to a different path than the one that is indicated by the requested URL. <see cref="Overload:System.Web.HttpContext.RewritePath" /> is used in cookieless session state to strip session IDs from URLs.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

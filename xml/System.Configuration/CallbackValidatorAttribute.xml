@@ -29,6 +29,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
+    <altmember cref="T:System.Configuration.CallbackValidator" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +50,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.CallbackValidatorAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.CallbackValidator" />
       </Docs>
     </Member>
     <Member MemberName="CallbackMethodName">
@@ -70,6 +73,7 @@
         <summary>Gets or sets the name of the callback method.</summary>
         <value>The name of the method to call.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.CallbackValidator" />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -92,6 +96,7 @@
         <summary>Gets or sets the type of the validator.</summary>
         <value>The <see cref="T:System.Type" /> of the current validator attribute instance.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ValidatorInstance">
@@ -116,6 +121,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <see cref="P:System.Configuration.CallbackValidatorAttribute.Type" /> property is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Configuration.CallbackValidatorAttribute.CallbackMethodName" /> property is not set to a public static void method with one object parameter.</exception>
+        <altmember cref="T:System.Configuration.ConfigurationValidatorAttribute" />
       </Docs>
     </Member>
   </Members>

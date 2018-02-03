@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMethodMalloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMethodMalloc interface [.NET Framework profiling]"
 ms.assetid: 8c8ab5dc-557c-473a-82f2-6e403eca7dac
@@ -28,6 +26,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMethodMalloc Interface
 Provides a method to allocate memory for a new Microsoft intermediate language (MSIL) function body.  

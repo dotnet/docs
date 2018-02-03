@@ -1,12 +1,10 @@
 ---
 title: "LINQ to XML for XPath Users (C#)"
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 91774511-1dca-4f06-ac0b-913746f104fe
 caps.latest.revision: 3
 author: "BillWagner"
@@ -40,6 +38,6 @@ This set of topics show a number of XPath expressions and their [!INCLUDE[sqltec
 |[How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md)|Compares how to find the immediate preceding sibling of a node using XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].<br /><br /> The associated XPath expression is:`"preceding-sibling::*[1]"`|  
   
 ## See Also  
- <xref:System.Xml.XPath?displayProperty=nameWithType>   
- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)   
+ <xref:System.Xml.XPath?displayProperty=nameWithType>  
+ [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)  
  [Process XML Data Using the XPath Data Model](../../../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md)

@@ -14,9 +14,11 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], troubleshooting"
 ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
 caps.latest.revision: 22
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # WCF Troubleshooting Quickstart
 This topic lists a number of known issues customers have run into while developing WCF clients and services. If the issue you are running into is not in this list, we recommend you configure tracing for your service. This will generate a trace file that you can view with the trace file viewer and get detailed information about exceptions that may be occurring within the service. For more information on configuring tracing, see: [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md). For more information on the trace file viewer, see: [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md).  
@@ -61,7 +63,7 @@ This topic lists a number of known issues customers have run into while developi
   
 <a name="BKMK_q2"></a>   
 ## My service starts to reject new clients after about 10 clients are interacting with it. What is happening?  
- By default, services can have only 10 concurrent sessions. Therefore, if the service bindings use sessions, the service accepts new client connections until it reaches that number, after which it refuses new client connections until one of the current sessions ends. You can support more clients in a number of ways. If your service does not require sessions, do not use a sessionful binding. ([!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Using Sessions](../../../docs/framework/wcf/using-sessions.md).) Another option is to increase the session limit by changing the value of the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property to the number appropriate to your circumstance.  
+ By default, services can have only 10 concurrent sessions. Therefore, if the service bindings use sessions, the service accepts new client connections until it reaches that number, after which it refuses new client connections until one of the current sessions ends. You can support more clients in a number of ways. If your service does not require sessions, do not use a sessionful binding. ([!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Using Sessions](../../../docs/framework/wcf/using-sessions.md).) Another option is to increase the session limit by changing the value of the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property to the number appropriate to your circumstance.  
   
 <a name="BKMK_q3"></a>   
 ## Can I load my service configuration from somewhere other than the WCF application’s configuration file?  
@@ -108,7 +110,7 @@ public class MyServiceHost : ServiceHost
   
 -   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](http://msdn.microsoft.com/en-us/a451a525-e7ce-452d-9da9-620221260113).  
+-   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](http://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113).  
   
 -   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
@@ -154,13 +156,13 @@ public class MyServiceHost : ServiceHost
   
 -   Cannot depend upon exceptions serializing in a standard way. Some—like <xref:System.Security.SecurityException>—may not be serializable at all.  
   
--   Exposes internal implementation details to clients. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+-   Exposes internal implementation details to clients. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
   
  If you are debugging an application, however, you can serialize exception information and return it to the client by using the <xref:System.ServiceModel.Description.ServiceDebugBehavior> class.  
   
 <a name="BKMK_q6"></a>   
 ## It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?  
- Specifying that an operation is one way means only that the operation contract accepts an input message and does not return an output message. In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], all client invocations return when the outbound data has been written to the wire or an exception is thrown. One-way operations work the same way, and they can throw if the service cannot be located or block if the service is not prepared to accept the data from the network. Typically in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], this results in one-way calls returning to the client more quickly than request-reply; but any condition that slows the sending of the outbound data over the network slows one-way operations as well as request-reply operations. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][One-Way Services](../../../docs/framework/wcf/feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ Specifying that an operation is one way means only that the operation contract accepts an input message and does not return an output message. In [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], all client invocations return when the outbound data has been written to the wire or an exception is thrown. One-way operations work the same way, and they can throw if the service cannot be located or block if the service is not prepared to accept the data from the network. Typically in [!INCLUDE[indigo2](../../../includes/indigo2-md.md)], this results in one-way calls returning to the client more quickly than request-reply; but any condition that slows the sending of the outbound data over the network slows one-way operations as well as request-reply operations. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [One-Way Services](../../../docs/framework/wcf/feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
   
 <a name="BKMK_q77"></a>   
 ## I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?  

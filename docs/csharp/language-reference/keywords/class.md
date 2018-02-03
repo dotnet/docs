@@ -1,6 +1,6 @@
 ---
 title: "class (C# Reference)"
-ms.date: "2017-07-18"
+ms.date: 07/18/2017
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -8,29 +8,12 @@ ms.topic: "article"
 f1_keywords: 
   - "class_CSharpKeyword"
   - "class"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "class keyword [C#]"
 ms.assetid: b95d8815-de18-4c3f-a8cc-a0a53bdf8690
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # class (C# Reference)
 
@@ -56,7 +39,7 @@ Only single inheritance is allowed in C#. In other words, a class can inherit im
 
 Classes that you declare directly within a namespace, not nested within other classes, can be either [public](../../../csharp/language-reference/keywords/public.md) or [internal](../../../csharp/language-reference/keywords/internal.md). Classes are `internal` by default.
 
-Class members, including nested classes, can be [public](../../../csharp/language-reference/keywords/public.md), `protected internal`, [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), or [private](../../../csharp/language-reference/keywords/private.md). Members are [private](../../../csharp/language-reference/keywords/private.md) by default.
+Class members, including nested classes, can be [public](../../../csharp/language-reference/keywords/public.md), `protected internal`, [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [private](../../../csharp/language-reference/keywords/private.md), or `private protected`. Members are [private](../../../csharp/language-reference/keywords/private.md) by default.
 
 For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).
 
@@ -93,7 +76,7 @@ A class can contain declarations of the following members:
 ## Example
 The following example demonstrates declaring class fields, constructors, and methods. It also demonstrates object instantiation and printing instance data. In this example, two classes are declared. The first class, `Child`, contains two private fields (`name` and `age`), two public constructors and one public method. The second class, `StringTest`, is used to contain `Main`.
 
-[!code-cs[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/class_1.cs)]
+[!code-csharp[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/class_1.cs)]
 
 ## Comments
 Notice that in the previous example the private fields (`name` and `age`) can only be accessed through the public method of the `Child` class. For example, you cannot print the child's name, from the `Main` method, using a statement like this:
@@ -112,7 +95,7 @@ Finally, notice that for the object created using the default constructor (`chil
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See Also
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
+ [C# Reference](../../../csharp/language-reference/index.md)  
+ [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+ [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

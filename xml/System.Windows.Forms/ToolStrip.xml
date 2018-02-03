@@ -80,6 +80,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.MenuStrip" />
+    <altmember cref="T:System.Windows.Forms.ContextMenuStrip" />
+    <altmember cref="T:System.Windows.Forms.StatusStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDown" />
+    <altmember cref="T:System.Windows.Forms.ToolStripContainer" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -98,7 +104,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStrip (System.Windows.Forms.ToolStripItem[] items);" />
+      <MemberSignature Language="C#" Value="public ToolStrip (params System.Windows.Forms.ToolStripItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.#ctor(System.Windows.Forms.ToolStripItem[])" />
       <MemberType>Constructor</MemberType>
@@ -159,6 +165,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Forms.ToolStrip.AllowDrop" /> and <see cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" /> are both set to <see langword="true" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" />
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="AllowItemReorder">
@@ -204,6 +214,10 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <see cref="P:System.Windows.Forms.ToolStrip.AllowDrop" /> and <see cref="P:System.Windows.Forms.ToolStrip.AllowItemReorder" /> are both set to <see langword="true" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.AllowDrop" />
+        <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
+        <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
+        <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
       </Docs>
     </Member>
     <Member MemberName="AllowMerge">
@@ -1184,6 +1198,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.Items" />
       </Docs>
     </Member>
     <Member MemberName="DisplayRectangle">
@@ -1244,7 +1259,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1607,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.Padding" />
       </Docs>
     </Member>
     <Member MemberName="GripRectangle">
@@ -2076,6 +2092,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.DisplayedItems" />
       </Docs>
     </Member>
     <Member MemberName="LayoutCompleted">
@@ -3262,7 +3279,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3456,6 +3473,7 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value being set is not one of the <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> values.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="T:System.Windows.Forms.ToolStripRenderMode" /> is set to <see cref="F:System.Windows.Forms.ToolStripRenderMode.Custom" /> without the <see cref="P:System.Windows.Forms.ToolStrip.Renderer" /> property being assigned to a new instance of <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStrip.Renderer" />
       </Docs>
     </Member>
     <Member MemberName="ResetMinimumSize">
@@ -3546,7 +3564,7 @@
 ## Remarks  
  The `directed` and `forward` parameters are used by container-style controls. When the `directed` parameter is set to `true`, the `forward` parameter is evaluated to determine which control to select. When `forward` is set to `true`, the next control in the tab order is selected; when `false`, the previous control in the tab order is selected.  
   
- The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
+ The <xref:System.Windows.Forms.ToolStrip.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles.Selectable?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.  
   
  ]]></format>
         </remarks>
@@ -3931,7 +3949,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStrip.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3971,5 +3989,32 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStrip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetItemAt">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item located at the specified location.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetChildAtPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the child control at a specified location.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

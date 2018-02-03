@@ -139,6 +139,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.Fill" /> dependency property. This field is read-only.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Fill" />
       </Docs>
     </Member>
     <Member MemberName="GeometryTransform">
@@ -179,6 +180,7 @@
         <summary>Measures a <see cref="T:System.Windows.Shapes.Shape" /> during the first layout pass prior to arranging it.</summary>
         <returns>The maximum <see cref="T:System.Windows.Size" /> for the <see cref="T:System.Windows.Shapes.Shape" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Shapes.Shape.ArrangeOverride(System.Windows.Size)" />
       </Docs>
     </Member>
     <Member MemberName="OnRender">
@@ -236,6 +238,7 @@
         <summary>Gets or sets a <see cref="T:System.Windows.Media.Stretch" /> enumeration value that describes how the shape fills its allocated space.</summary>
         <value>One of the <see cref="T:System.Windows.Media.Stretch" /> enumeration values.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Stretch" />
       </Docs>
     </Member>
     <Member MemberName="StretchProperty">
@@ -253,6 +256,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.Stretch" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stretch" />
       </Docs>
     </Member>
     <Member MemberName="Stroke">
@@ -314,6 +318,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
+        <altmember cref="T:System.Windows.Thickness" />
       </Docs>
     </Member>
     <Member MemberName="StrokeDashArrayProperty">
@@ -331,6 +337,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeDashArray" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeDashArray" />
       </Docs>
     </Member>
     <Member MemberName="StrokeDashCap">
@@ -356,6 +363,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PenLineCap" />
       </Docs>
     </Member>
     <Member MemberName="StrokeDashCapProperty">
@@ -373,6 +381,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeDashCap" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeDashCap" />
       </Docs>
     </Member>
     <Member MemberName="StrokeDashOffset">
@@ -391,6 +400,7 @@
         <summary>Gets or sets a <see cref="T:System.Double" /> that specifies the distance within the dash pattern where a dash begins.</summary>
         <value>A <see cref="T:System.Double" /> that represents the distance within the dash pattern where a dash begins.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
       </Docs>
     </Member>
     <Member MemberName="StrokeDashOffsetProperty">
@@ -408,6 +418,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeDashOffset" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeDashOffset" />
       </Docs>
     </Member>
     <Member MemberName="StrokeEndLineCap">
@@ -433,6 +444,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.PenLineCap" />
+        <altmember cref="T:System.Windows.Shapes.Shape" />
       </Docs>
     </Member>
     <Member MemberName="StrokeEndLineCapProperty">
@@ -450,6 +463,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeEndLineCap" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeEndLineCap" />
       </Docs>
     </Member>
     <Member MemberName="StrokeLineJoin">
@@ -486,6 +500,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Shapes.Line" />
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
       </Docs>
     </Member>
     <Member MemberName="StrokeLineJoinProperty">
@@ -503,6 +519,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeLineJoin" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeLineJoin" />
       </Docs>
     </Member>
     <Member MemberName="StrokeMiterLimit">
@@ -528,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
       </Docs>
     </Member>
     <Member MemberName="StrokeMiterLimitProperty">
@@ -545,6 +563,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeMiterLimit" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeMiterLimit" />
       </Docs>
     </Member>
     <Member MemberName="StrokeProperty">
@@ -562,6 +581,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.Stroke" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
       </Docs>
     </Member>
     <Member MemberName="StrokeStartLineCap">
@@ -587,6 +607,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Shapes.Ellipse" />
       </Docs>
     </Member>
     <Member MemberName="StrokeStartLineCapProperty">
@@ -604,6 +625,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeStartLineCap" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeStartLineCap" />
       </Docs>
     </Member>
     <Member MemberName="StrokeThickness">
@@ -627,6 +649,7 @@
         <summary>Gets or sets the width of the <see cref="T:System.Windows.Shapes.Shape" /> outline.</summary>
         <value>The width of the <see cref="T:System.Windows.Shapes.Shape" /> outline.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.Stroke" />
       </Docs>
     </Member>
     <Member MemberName="StrokeThicknessProperty">
@@ -644,6 +667,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Shapes.Shape.StrokeThickness" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Shapes.Shape.StrokeThickness" />
       </Docs>
     </Member>
   </Members>

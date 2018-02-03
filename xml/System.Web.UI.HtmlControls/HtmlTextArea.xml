@@ -43,18 +43,24 @@
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTextArea>, see the <xref:System.Web.UI.HtmlControls.HtmlTextArea.%23ctor%2A> constructor.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control to create a multiline text box.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]
+ [!code-aspx-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Cols" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Value" />
+    <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Name" />
+    <altmember cref="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" />
+    <altmember cref="T:System.Web.UI.HtmlControls.HtmlInputText" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -86,8 +92,8 @@
 ## Examples  
  The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTextArea> control and place on the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCtor/CS/htmltextareactorcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCtor/VB/htmltextareactorvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCtor/CS/htmltextareactorcs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCtor/VB/htmltextareactorvb.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -124,8 +130,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.HtmlControls.HtmlTextArea> server control so that it always determines whether the parsed object is of the type <xref:System.Web.UI.LiteralControl> or <xref:System.Web.UI.DataBoundLiteralControl>.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/CS/custom_htmltextarea_addparsedsubobjectcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/VB/custom_htmltextarea_addparsedsubobjectvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/CS/custom_htmltextarea_addparsedsubobjectcs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/VB/custom_htmltextarea_addparsedsubobjectvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTextAreaAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/CS/custom_htmltextarea_addparsedsubobject.cs#2)]
  [!code-vb[CustomHtmlTextAreaAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/VB/custom_htmltextarea_addparsedsubobject.vb#2)]  
@@ -133,6 +139,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The object specified by the <paramref name="obj" /> parameter can only be of the type <see cref="T:System.Web.UI.LiteralControl" /> or <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+        <altmember cref="M:System.Web.UI.Control.AddParsedSubObject(System.Object)" />
+        <altmember cref="T:System.Web.UI.LiteralControl" />
+        <altmember cref="T:System.Web.UI.DataBoundLiteralControl" />
       </Docs>
     </Member>
     <Member MemberName="Cols">
@@ -171,11 +180,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Cols%2A> property to control the width of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaCols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCols/CS/htmltextareacolscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaCols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCols/VB/htmltextareacolsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaCols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCols/CS/htmltextareacolscs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaCols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCols/VB/htmltextareacolsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
       </Docs>
     </Member>
     <Member MemberName="LoadPostData">
@@ -210,6 +220,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -251,11 +263,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Name%2A> property to select an <xref:System.Web.UI.HtmlControls.HtmlTextArea> control on a page and set its <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaName/CS/htmltextareanamecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaName/VB/htmltextareanamevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaName/CS/htmltextareanamecs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaName/VB/htmltextareanamevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -289,8 +302,8 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender%2A> method to always display 5 rows and 75 columns in a custom <xref:System.Web.UI.HtmlControls.HtmlTextArea> server control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/CS/custom_htmltextarea_onprerendercs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/VB/custom_htmltextarea_onprerendervb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/CS/custom_htmltextarea_onprerendercs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/VB/custom_htmltextarea_onprerendervb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTextAreaOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/CS/custom_htmltextarea_onprerender.cs#2)]
  [!code-vb[CustomHtmlTextAreaOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/VB/custom_htmltextarea_onprerender.vb#2)]  
@@ -300,6 +313,8 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control is properly registered with the page.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnServerChange">
@@ -334,7 +349,7 @@
   
  This event is commonly used to perform data validation on the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control when the user updates the text in the control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -343,17 +358,19 @@
 ## Examples  
  The following code example demonstrates how to specify and create a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event. A message is displayed when the value entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control exceeds 20 characters.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="RaisePostDataChangedEvent">
@@ -379,6 +396,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" />
+        <altmember cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -412,14 +431,17 @@
 ## Examples  
  The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes%2A> method in a custom server control so that specific title text is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/cs/custom_htmltextarea_renderattributescs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/vb/custom_htmltextarea_renderattributesvb.aspx#1)]  -->  
+ [!code-aspx-csharp[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/cs/custom_htmltextarea_renderattributescs.aspx#1)]
+ [!code-aspx-vb[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/vb/custom_htmltextarea_renderattributesvb.aspx#1)]  
   
  [!code-csharp[CustomHtmlTextAreaRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/cs/custom_htmltextarea_renderattributes.cs#2)]
  [!code-vb[CustomHtmlTextAreaRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/vb/custom_htmltextarea_renderattributes.vb#2)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Name" />
+        <altmember cref="P:System.Web.UI.Control.UniqueID" />
+        <altmember cref="T:System.Web.UI.AttributeCollection" />
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -458,11 +480,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Rows%2A> property to control the height of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaRows/CS/htmltextarearowscs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaRows/VB/htmltextarearowsvb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaRows/CS/htmltextarearowscs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaRows/VB/htmltextarearowsvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
       </Docs>
     </Member>
     <Member MemberName="ServerChange">
@@ -491,21 +514,23 @@
 > [!NOTE]
 >  The control must have viewstate enabled for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event to work correctly.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
  The following code example demonstrates how to specify and create a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event. A message is displayed when the value entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control exceeds 10 characters.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]
+ [!code-aspx-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
@@ -595,18 +620,20 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property to programmatically control the text entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. This property is commonly used to retrieve the text entered in the text box, but you can also use it to specify the text to display in the control. This is useful if you want to provide a default value or display a message in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/library/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
    
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property to determine the contents of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. The contents are then displayed in the Web page.  
   
- <!-- TODO: review snippet reference [!code-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  -->  
+ [!code-aspx-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]
+ [!code-aspx-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.HtmlControls.HtmlTextArea.Value" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
   </Members>

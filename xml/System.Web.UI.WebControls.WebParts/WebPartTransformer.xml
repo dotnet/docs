@@ -41,8 +41,8 @@
   
  The second section of the code example shows how to include the transformer within the declarative syntax for a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object.  
   
- <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/Transformer.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/Transformer.aspx#1)]  -->  
+ [!code-aspx-csharp[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/Transformer.aspx#1)]
+ [!code-aspx-vb[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/Transformer.aspx#1)]  
   
  A customized transformer must be specified in the `<transformers>` section of the Web.config file to be available for use in a Web page. The third section of the code example shows how to add the customized transformer to the Web.config file.  
   

@@ -24,9 +24,9 @@
         // Loop through table and compare each record against user's entry
         foreach (DataRowView datarow in dv)
         {
-            // Extract e-mail address from the current row
+            // Extract email address from the current row
             txtEmail = datarow["Alias "].ToString();
-            // Compare e-mail address against user's entry
+            // Compare email address against user's entry
             if (txtEmail == args.Value)
             {
                 args.IsValid = true;

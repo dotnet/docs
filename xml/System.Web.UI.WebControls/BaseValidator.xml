@@ -32,7 +32,7 @@
   
 |Validation control|Description|  
 |------------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.CompareValidator>|Validates a value against the value entered into another input control, against a constant value, or against a proper data type by setting the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A?displayProperty=nameWithType> property to <xref:System.Web.UI.WebControls.ValidationCompareOperator?displayProperty=nameWithType>.|  
+|<xref:System.Web.UI.WebControls.CompareValidator>|Validates a value against the value entered into another input control, against a constant value, or against a proper data type by setting the <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A?displayProperty=nameWithType> property to <xref:System.Web.UI.WebControls.ValidationCompareOperator.DataTypeCheck?displayProperty=nameWithType>.|  
 |<xref:System.Web.UI.WebControls.CustomValidator>|Validates a value using a user-provided custom validation routine.|  
 |<xref:System.Web.UI.WebControls.RangeValidator>|Validates whether a value is within a range of values.|  
 |<xref:System.Web.UI.WebControls.RegularExpressionValidator>|Validates a value using a regular expression.|  
@@ -130,14 +130,24 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.BaseValidator" /> class, you must override the following member: <see cref="M:System.Web.UI.WebControls.BaseValidator.EvaluateIsValid" />.</para>
     </block>
+    <altmember cref="T:System.Web.UI.WebControls.CompareValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.CustomValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RangeValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RegularExpressionValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+    <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+    <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CausesValidation" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ErrorMessage" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.Text" />
+    <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -169,6 +179,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.CompareValidator.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.CustomValidator.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.RangeValidator.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.RegularExpressionValidator.#ctor" />
+        <altmember cref="M:System.Web.UI.WebControls.RequiredFieldValidator.#ctor" />
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -200,6 +215,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.BaseValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method, be sure to call the corresponding method in the base class. Otherwise, the attributes contained in the base class will not be rendered.</para>
         </block>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedControlID">
@@ -234,6 +250,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <altmember cref="P:System.Web.UI.WebControls.Label.AssociatedControlID" />
       </Docs>
     </Member>
     <Member MemberName="CheckControlValidationProperty">
@@ -272,6 +289,9 @@
  \- or -  
   
  The specified control does not have a <see cref="T:System.Web.UI.ValidationPropertyAttribute" /> attribute associated with it; therefore, it cannot be validated with a validation control.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.PropertiesValid" />
+        <altmember cref="T:System.Web.UI.ValidationPropertyAttribute" />
       </Docs>
     </Member>
     <Member MemberName="ControlPropertiesValid">
@@ -311,6 +331,9 @@
  \- or -  
   
  The input control specified by the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property does not have a <see cref="T:System.Web.UI.ValidationPropertyAttribute" /> attribute associated with it; therefore, it cannot be validated with a validation control.</exception>
+        <altmember cref="T:System.Web.UI.ValidationPropertyAttribute" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.PropertiesValid" />
       </Docs>
     </Member>
     <Member MemberName="ControlToValidate">
@@ -382,11 +405,15 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.ControlToValidate%2A> property to specify the input control to validate.  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="T:System.Web.UI.ValidationPropertyAttribute" />
+        <altmember cref="T:System.Web.UI.WebControls.RequiredFieldValidator" />
+        <altmember cref="T:System.Web.UI.WebControls.CustomValidator" />
       </Docs>
     </Member>
     <Member MemberName="DetermineRenderUplevel">
@@ -423,6 +450,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.RenderUplevel" />
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -473,12 +501,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.ValidatorDisplay" /> values.</exception>
+        <altmember cref="T:System.Web.UI.WebControls.ValidatorDisplay" />
       </Docs>
     </Member>
     <Member MemberName="EnableClientScript">
@@ -525,11 +554,15 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.DetermineRenderUplevel" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.RegisterValidatorCommonScript" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.RegisterValidatorDeclaration" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.RenderUplevel" />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -566,8 +599,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.Enabled Example/VB/sourcevb.aspx#1)]  
   
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseValidator.Enabled%2A> property to enable or disable the validation controls on the Web page using client-side code.  
   
@@ -619,11 +652,13 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.Text" />
       </Docs>
     </Member>
     <Member MemberName="EvaluateIsValid">
@@ -657,6 +692,9 @@
         <block subset="none" type="overrides">
           <para>You must implement this method in a derived class to return whether the value in the input control is valid.</para>
         </block>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.Validate" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -693,11 +731,12 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/CS/sourcecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/VB/sourcevb.aspx#1)]  -->  
+ [!code-aspx-csharp[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/CS/sourcecs.aspx#1)]
+ [!code-aspx-vb[Classic BaseValidator.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic BaseValidator.ForeColor Example/VB/sourcevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Color" />
       </Docs>
     </Member>
     <Member MemberName="GetControlRenderID">
@@ -730,6 +769,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.Control.ClientID" />
       </Docs>
     </Member>
     <Member MemberName="GetControlValidationValue">
@@ -762,6 +802,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.GetValidationProperty(System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="GetValidationProperty">
@@ -794,6 +836,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.PropertyDescriptor" />
       </Docs>
     </Member>
     <Member MemberName="IsUnobtrusive">
@@ -878,11 +921,17 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseValidatorIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorIsValid/CS/basevalidatorisvalidcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseValidatorIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorIsValid/VB/basevalidatorisvalidvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseValidatorIsValid#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorIsValid/CS/basevalidatorisvalidcs.aspx#1)]
+ [!code-aspx-vb[BaseValidatorIsValid#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorIsValid/VB/basevalidatorisvalidvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
+        <altmember cref="E:System.Web.UI.Control.Load" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.Validate" />
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="P:System.Web.UI.Page.IsValid" />
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -920,6 +969,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseValidator.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseValidator.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Init" />
+        <altmember cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -946,7 +997,7 @@
 ## Remarks  
  This method has been overridden to check the client browser and configure the validation control for compatibility prior to rendering.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseValidator.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -955,6 +1006,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseValidator.OnPreRender(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseValidator.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
+        <altmember cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -981,7 +1034,7 @@
 ## Remarks  
  This method has been overridden to unregister the validation control on the page.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/library/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
   
  The <xref:System.Web.UI.WebControls.BaseValidator.OnUnload%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -990,6 +1043,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseValidator.OnUnload(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseValidator.OnUnload(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.Unload" />
+        <altmember cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="PropertiesValid">
@@ -1024,6 +1079,8 @@
  \- or -  
   
  The input control specified by the <see cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" /> property is not found on the page.</exception>
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.ControlPropertiesValid" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.CheckControlValidationProperty(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterValidatorCommonScript">
@@ -1055,6 +1112,7 @@
         <block subset="none" type="overrides">
           <para>Call this method in the <see cref="E:System.Web.UI.Control.PreRender" /> event handler of the derived class to register the code that performs client-side validation.</para>
         </block>
+        <altmember cref="E:System.Web.UI.Control.PreRender" />
       </Docs>
     </Member>
     <Member MemberName="RegisterValidatorDeclaration">
@@ -1083,6 +1141,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Page.RegisterArrayDeclaration(System.String,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1111,6 +1170,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
     </Member>
     <Member MemberName="RenderUplevel">
@@ -1140,6 +1201,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.DetermineRenderUplevel" />
       </Docs>
     </Member>
     <Member MemberName="SetFocusOnError">
@@ -1178,6 +1240,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ControlToValidate" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1214,6 +1277,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.ValidationSummary" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ErrorMessage" />
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -1244,6 +1309,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.IsValid" />
+        <altmember cref="P:System.Web.UI.WebControls.BaseValidator.ValidationGroup" />
+        <altmember cref="M:System.Web.UI.WebControls.BaseValidator.EvaluateIsValid" />
       </Docs>
     </Member>
     <Member MemberName="ValidationGroup">
@@ -1316,11 +1384,15 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- <!-- TODO: review snippet reference [!code-csharp[BaseValidatorValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorValidationGroup/CS/BaseValidatorValidationGroupcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[BaseValidatorValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorValidationGroup/VB/BaseValidatorValidationGroupvb.aspx#1)]  -->  
+ [!code-aspx-csharp[BaseValidatorValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseValidatorValidationGroup/CS/BaseValidatorValidationGroupcs.aspx#1)]
+ [!code-aspx-vb[BaseValidatorValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseValidatorValidationGroup/VB/BaseValidatorValidationGroupvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CausesValidation" />
+        <altmember cref="P:System.Web.UI.WebControls.IButtonControl.ValidationGroup" />
+        <altmember cref="M:System.Web.UI.Page.Validate" />
+        <altmember cref="M:System.Web.UI.Page.GetValidators(System.String)" />
       </Docs>
     </Member>
   </Members>

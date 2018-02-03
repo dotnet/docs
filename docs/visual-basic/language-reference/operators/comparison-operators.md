@@ -1,13 +1,11 @@
 ---
 title: "Comparison Operators (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.<>"
@@ -15,15 +13,13 @@ f1_keywords:
   - "vb.<="
   - "vb.>"
   - "vb.<"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "greater than or equal to operator [Visual Basic]"
   - ">= operator [Visual Basic]"
   - "= operator [Visual Basic]"
   - "< operator [Visual Basic]"
   - "less than operator [Visual Basic]"
-  - "relational operators, syntax"
+  - "relational operators [Visual Basic], syntax"
   - "Like operator [Visual Basic]"
   - "<> operator [Visual Basic]"
   - "> operator [Visual Basic]"
@@ -38,26 +34,11 @@ helpviewer_keywords:
   - "<= operator [Visual Basic]"
   - "operators [Visual Basic], comparison"
   - "Is operator [Visual Basic]"
-  - "comparison operators, Visual Basicl"
+  - "comparison operators [Visual Basic], Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Comparison Operators (Visual Basic)
 The following are the comparison operators defined in Visual Basic.  
@@ -173,9 +154,9 @@ result = string Like pattern
  In the preceding example, the first comparison returns `False` and the remaining comparisons return `True`.  
   
 ## See Also  
- <xref:System.InvalidCastException>   
- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ <xref:System.InvalidCastException>  
+ [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
+ [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
+ [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
+ [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
  [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

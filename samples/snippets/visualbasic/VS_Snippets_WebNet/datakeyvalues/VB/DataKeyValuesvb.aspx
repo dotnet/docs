@@ -11,7 +11,7 @@
     ' Retrieve the IOrderedDictionary object that contains the key field values.
     Dim allKeysDictionary As IOrderedDictionary = CustomerDetailsView.DataKey.Values
 
-    ' Display the the value of the key fields.
+    ' Display the value of the key fields.
     MessageLabel.Text = "The key field values for the displayed record are: <br/><br/>"
 
     ' In Visual Basic, the DictionaryEntry objects contained in the 

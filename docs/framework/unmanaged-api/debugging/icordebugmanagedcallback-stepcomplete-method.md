@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::StepComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StepComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::StepComplete method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugManagedCallback::StepComplete Method
 Notifies the debugger that a step has completed.  

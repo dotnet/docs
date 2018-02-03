@@ -33,12 +33,15 @@
 > [!NOTE]
 >  The instance of Cache that is accessed by the snippet below is a member of the <xref:System.Web.UI.Page> object that this sample inherits.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Web.Caching Examples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.Caching Examples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#1)]  -->  
+ [!code-aspx-csharp[System.Web.Caching Examples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#1)]
+ [!code-aspx-vb[System.Web.Caching Examples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#1)]
   
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <altmember cref="T:System.Web.HttpContext" />
+    <altmember cref="T:System.Web.Caching.CacheDependency" />
+    <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,6 +116,9 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is set to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="slidingExpiration" /> parameter is set to less than <see langword="TimeSpan.Zero" /> or more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -169,12 +175,13 @@
 ## Remarks  
  The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property returns the percentage of physical memory that is available to the application. When the available percentage becomes low, the cache algorithm begins removing items from the cache.  
   
- The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property can be set with the `percentagePhysicalMemoryUsedLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. If the `percentagePhysicalMemoryUsedLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property is calculated.  
+ The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property can be set with the `percentagePhysicalMemoryUsedLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. If the `percentagePhysicalMemoryUsedLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property is calculated.  
   
  <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.Caching.Cache.EffectivePrivateBytesLimit" />
       </Docs>
     </Member>
     <Member MemberName="EffectivePrivateBytesLimit">
@@ -198,7 +205,7 @@
 ## Remarks  
  The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property returns the number of bytes that can be used by the application process. Once this limit is reached, the cache algorithm begins aggressively scavenging the cache.  
   
- The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property can be set with the `privateBytesLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. When the `privateBytesLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property contains the size chosen by the algorithm.  
+ The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property can be set with the `privateBytesLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. When the `privateBytesLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property contains the size chosen by the algorithm.  
   
    
   
@@ -353,6 +360,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheDependency" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -410,6 +418,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -461,6 +471,7 @@
  -or-  
   
  The <paramref name="dependencies" /> parameter is <see langword="null" />, and the <paramref name="absoluteExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoAbsoluteExpiration" />, and the <paramref name="slidingExpiration" /> parameter is set to <see cref="F:System.Web.Caching.Cache.NoSlidingExpiration" />.</exception>
+        <altmember cref="T:System.Web.Caching.CacheItemUpdateCallback" />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -519,6 +530,10 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> or <paramref name="value" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">You set the <paramref name="slidingExpiration" /> parameter to less than <see langword="TimeSpan.Zero" /> or the equivalent of more than one year.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="absoluteExpiration" /> and <paramref name="slidingExpiration" /> parameters are both set for the item you are trying to add to the <see langword="Cache" />.</exception>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="T:System.TimeSpan" />
+        <altmember cref="T:System.Web.Caching.CacheItemPriority" />
+        <altmember cref="T:System.Web.Caching.CacheItemRemovedCallback" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -593,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.DateTime" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="NoSlidingExpiration">
@@ -613,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan?displayProperty=nameWithType> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
+ When used, this field sets the `slidingExpiration` parameter to the <xref:System.TimeSpan.Zero?displayProperty=nameWithType> field, which has a constant value of zero. The cached item expires in accordance with the `absoluteExpiration` parameter associated with the `Insert` or `Add` method call.  
   
    
   
@@ -625,6 +642,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.TimeSpan.Zero" />
+        <altmember cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -678,5 +697,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts an item into the <see cref="T:System.Web.Caching.Cache" /> object. Use one of the versions of this method to overwrite an existing <see langword="Cache" /> item with the same <paramref name="key" /> parameter.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

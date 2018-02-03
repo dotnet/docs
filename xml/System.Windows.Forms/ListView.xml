@@ -55,7 +55,7 @@
   
  Windows XP and Windows Server 2003 provide three features that enhance the <xref:System.Windows.Forms.ListView> control when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method: tile view, grouping, and the insertion mark.  
   
- The tile view lets you balance graphical and textual information by displaying item and subitem text next to large icons. Set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View?displayProperty=nameWithType> to enable this behavior.  
+ The tile view lets you balance graphical and textual information by displaying item and subitem text next to large icons. Set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Tile?displayProperty=nameWithType> to enable this behavior.  
   
  The grouping feature lets you visually group items into related categories. Use the <xref:System.Windows.Forms.ListView.Groups%2A> property to add <xref:System.Windows.Forms.ListViewGroup> objects to the <xref:System.Windows.Forms.ListView> control when you want to enable this feature. To temporarily disable the feature, set the <xref:System.Windows.Forms.ListView.ShowGroups%2A> property to `false`.  
   
@@ -106,6 +106,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ListViewItem" />
+    <altmember cref="T:System.Windows.Forms.ImageList" />
+    <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -182,6 +185,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.ItemActivation" /> members.</exception>
+        <altmember cref="T:System.Windows.Forms.ItemActivation" />
+        <altmember cref="E:System.Windows.Forms.ListView.ItemActivate" />
       </Docs>
     </Member>
     <Member MemberName="AfterLabelEdit">
@@ -224,6 +229,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnAfterLabelEdit(System.Windows.Forms.LabelEditEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.ListView.BeforeLabelEdit" />
+        <altmember cref="T:System.Windows.Forms.LabelEditEventHandler" />
+        <altmember cref="P:System.Windows.Forms.ListView.LabelEdit" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -261,6 +270,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.ListViewAlignment" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewAlignment" />
       </Docs>
     </Member>
     <Member MemberName="AllowColumnReorder">
@@ -317,6 +327,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeIcons">
@@ -342,6 +354,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="ArrangeIcons">
@@ -371,6 +384,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value specified in the <paramref name="value" /> parameter is not a member of the <see cref="T:System.Windows.Forms.ListViewAlignment" /> enumeration.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewAlignment" />
+        <altmember cref="P:System.Windows.Forms.ListView.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="AutoArrange">
@@ -402,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.Alignment" />
       </Docs>
     </Member>
     <Member MemberName="AutoResizeColumn">
@@ -629,6 +645,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnBeforeLabelEdit(System.Windows.Forms.LabelEditEventArgs)" />
+        <altmember cref="E:System.Windows.Forms.ListView.AfterLabelEdit" />
+        <altmember cref="T:System.Windows.Forms.LabelEditEventHandler" />
+        <altmember cref="P:System.Windows.Forms.ListView.LabelEdit" />
       </Docs>
     </Member>
     <Member MemberName="BeginUpdate">
@@ -665,6 +685,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.EndUpdate" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -699,6 +722,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.BorderStyle" />
       </Docs>
     </Member>
     <Member MemberName="CacheVirtualItems">
@@ -798,6 +822,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.StateImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="P:System.Windows.Forms.ListView.MultiSelect" />
       </Docs>
     </Member>
     <Member MemberName="CheckedIndices">
@@ -833,6 +860,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.CheckedIndexCollection" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckedItems" />
       </Docs>
     </Member>
     <Member MemberName="CheckedItems">
@@ -880,6 +909,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.CheckedListViewItemCollection" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckedIndices" />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -917,6 +948,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Clear" />
       </Docs>
     </Member>
     <Member MemberName="ColumnClick">
@@ -952,6 +985,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ColumnReordered">
@@ -1055,6 +1089,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
       </Docs>
     </Member>
     <Member MemberName="ColumnWidthChanged">
@@ -1255,7 +1291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true` and the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>. This event can occur for each column header in the control. For more information on owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
+ This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true` and the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>. This event can occur for each column header in the control. For more information on owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1269,6 +1305,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.DrawListViewColumnHeaderEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="DrawItem">
@@ -1291,7 +1334,7 @@
 ## Remarks  
  This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true`. For more information about owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
   
- The <xref:System.Windows.Forms.ListView.DrawItem> event can occur for each <xref:System.Windows.Forms.ListView> item. When the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView.DrawSubItem> and <xref:System.Windows.Forms.ListView.DrawColumnHeader> events also occur. In this case, you can handle the <xref:System.Windows.Forms.ListView.DrawItem> event to draw elements common to all items, such as the background, and handle the <xref:System.Windows.Forms.ListView.DrawSubItem> event to draw elements for individual subitems, such as text values. You can also draw all items in the <xref:System.Windows.Forms.ListView> control using only one of the two events, although this may be less convenient. To draw column headers in the details view, you must handle the <xref:System.Windows.Forms.ListView.DrawColumnHeader> event.  
+ The <xref:System.Windows.Forms.ListView.DrawItem> event can occur for each <xref:System.Windows.Forms.ListView> item. When the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView.DrawSubItem> and <xref:System.Windows.Forms.ListView.DrawColumnHeader> events also occur. In this case, you can handle the <xref:System.Windows.Forms.ListView.DrawItem> event to draw elements common to all items, such as the background, and handle the <xref:System.Windows.Forms.ListView.DrawSubItem> event to draw elements for individual subitems, such as text values. You can also draw all items in the <xref:System.Windows.Forms.ListView> control using only one of the two events, although this may be less convenient. To draw column headers in the details view, you must handle the <xref:System.Windows.Forms.ListView.DrawColumnHeader> event.  
   
 > [!NOTE]
 >  Because of a bug in the underlying Win32 control, the <xref:System.Windows.Forms.ListView.DrawItem> event occurs without accompanying <xref:System.Windows.Forms.ListView.DrawSubItem> events once per row in the details view when the mouse pointer moves over the row, causing anything painted in a <xref:System.Windows.Forms.ListView.DrawSubItem> event handler to be painted over by a custom background drawn in a <xref:System.Windows.Forms.ListView.DrawItem> event handler. See the example in the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> reference topic for a workaround that invalidates each row when the extra event occurs. An alternative workaround is to put all your custom drawing code in a <xref:System.Windows.Forms.ListView.DrawSubItem> event handler and paint the background for the entire item (including subitems) only when the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex%2A?displayProperty=nameWithType> value is 0.  
@@ -1308,6 +1351,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.DrawListViewItemEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="DrawSubItem">
@@ -1328,7 +1379,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true` and the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>. For more information on owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
+ This event lets you customize the appearance of a <xref:System.Windows.Forms.ListView> control using owner drawing. It is raised only when the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property is set to `true` and the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>. For more information on owner drawing, see the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property reference topic.  
   
 > [!NOTE]
 >  Subitem information typically appears in the tile view as well as the details view, but in the tile view, it must be drawn in a handler for the <xref:System.Windows.Forms.ListView.DrawItem> event.  
@@ -1350,6 +1401,14 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.DrawListViewSubItemEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.OwnerDraw" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="EndUpdate">
@@ -1386,6 +1445,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.BeginUpdate" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" />
+        <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.Add(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="EnsureVisible">
@@ -1416,6 +1478,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.TopItem" />
       </Docs>
     </Member>
     <Member MemberName="FindItemWithText">
@@ -1641,6 +1704,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -1718,6 +1782,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="F:System.Windows.Forms.View.Details" />
       </Docs>
     </Member>
     <Member MemberName="GetItemAt">
@@ -1766,6 +1832,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.Control.PointToScreen(System.Drawing.Point)" />
+        <altmember cref="M:System.Windows.Forms.Control.PointToClient(System.Drawing.Point)" />
+        <altmember cref="T:System.Windows.Forms.ListViewInsertionMark" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="GetItemRect">
@@ -1795,6 +1866,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
       </Docs>
     </Member>
     <Member MemberName="GetItemRect">
@@ -1826,6 +1899,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Drawing.Rectangle" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ItemBoundsPortion" />
       </Docs>
     </Member>
     <Member MemberName="GridLines">
@@ -1882,6 +1958,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
       </Docs>
     </Member>
     <Member MemberName="Groups">
@@ -1917,7 +1994,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a textual header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A> property is set to a value other than <xref:System.Windows.Forms.View?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.ListView> grouping feature lets you create visual groups of logically related <xref:System.Windows.Forms.ListView> items. Each group consists of a textual header followed by a horizontal line and the items assigned to that group. You can align the header text to the left, right, or center of the control. Any groups assigned to a <xref:System.Windows.Forms.ListView> control appear whenever the <xref:System.Windows.Forms.ListView.View%2A> property is set to a value other than <xref:System.Windows.Forms.View.List?displayProperty=nameWithType>.  
   
  <xref:System.Windows.Forms.ListView> groups help your users find the items they are looking for by separating the items into useful categories. You can create whatever categories you need. One typical approach is to group the items based on the way the list is sorted. For example, you can group the items by the initial letter of the item name when the list is sorted alphabetically or by subitems such as type or date when the list is sorted by clicking a column header in the details view. Windows Explorer uses this type of grouping.  
   
@@ -1948,6 +2025,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroupCollection" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.ShowGroups" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -1976,7 +2058,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify the type of column headers to display when the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View.Details> and the <xref:System.Windows.Forms.ListView> control has <xref:System.Windows.Forms.ColumnHeader> objects specified in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. <xref:System.Windows.Forms.ColumnHeader> objects define the columns that are displayed in the <xref:System.Windows.Forms.ListView> control. Each column is used to display subitem information for each item in the <xref:System.Windows.Forms.ListView>.  
   
- The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify whether the column headers are visible or, if they are visible, whether they will function as clickable buttons. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=nameWithType>, the column headers are not displayed, although the items and subitems of the <xref:System.Windows.Forms.ListView> control are still arranged in columns. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=nameWithType>, the column headers act like buttons that users can click to carry out an action, such as sorting the items in the <xref:System.Windows.Forms.ListView> control using the items in the clicked column as a key. You can implement this behavior in a handler for the <xref:System.Windows.Forms.ListView.ColumnClick> event. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle?displayProperty=nameWithType>, the column headers appear, but cannot be clicked.  
+ The <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property allows you to specify whether the column headers are visible or, if they are visible, whether they will function as clickable buttons. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle.None?displayProperty=nameWithType>, the column headers are not displayed, although the items and subitems of the <xref:System.Windows.Forms.ListView> control are still arranged in columns. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle.Clickable?displayProperty=nameWithType>, the column headers act like buttons that users can click to carry out an action, such as sorting the items in the <xref:System.Windows.Forms.ListView> control using the items in the clicked column as a key. You can implement this behavior in a handler for the <xref:System.Windows.Forms.ListView.ColumnClick> event. If the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property is set to <xref:System.Windows.Forms.ColumnHeaderStyle.Nonclickable?displayProperty=nameWithType>, the column headers appear, but cannot be clicked.  
   
    
   
@@ -1990,6 +2072,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.ColumnHeaderStyle" /> values.</exception>
+        <altmember cref="E:System.Windows.Forms.ListView.ColumnClick" />
+        <altmember cref="T:System.Windows.Forms.ColumnHeaderStyle" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -2202,7 +2288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ListView> insertion mark feature lets you visually indicate the expected drop location in a drag-and-drop operation when an item is dragged to a new position. This feature works only when the <xref:System.Windows.Forms.ListView.AutoArrange%2A> property is set to `true` and when the <xref:System.Windows.Forms.ListView> control does not sort the items automatically. To prevent automatic sorting, the <xref:System.Windows.Forms.ListView.Sorting%2A> property must be set to <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> and the <xref:System.Windows.Forms.ListView.View%2A> property must be set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, <xref:System.Windows.Forms.View?displayProperty=nameWithType>, or <xref:System.Windows.Forms.View?displayProperty=nameWithType>. Additionally, the insertion mark feature may not be visible with the <xref:System.Windows.Forms.ListView> grouping feature because the grouping feature orders the items by group membership.  
+ The <xref:System.Windows.Forms.ListView> insertion mark feature lets you visually indicate the expected drop location in a drag-and-drop operation when an item is dragged to a new position. This feature works only when the <xref:System.Windows.Forms.ListView.AutoArrange%2A> property is set to `true` and when the <xref:System.Windows.Forms.ListView> control does not sort the items automatically. To prevent automatic sorting, the <xref:System.Windows.Forms.ListView.Sorting%2A> property must be set to <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> and the <xref:System.Windows.Forms.ListView.View%2A> property must be set to <xref:System.Windows.Forms.View.LargeIcon?displayProperty=nameWithType>, <xref:System.Windows.Forms.View.SmallIcon?displayProperty=nameWithType>, or <xref:System.Windows.Forms.View.Tile?displayProperty=nameWithType>. Additionally, the insertion mark feature may not be visible with the <xref:System.Windows.Forms.ListView> grouping feature because the grouping feature orders the items by group membership.  
   
  The <xref:System.Windows.Forms.ListViewInsertionMark> class is typically used in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=nameWithType> or <xref:System.Windows.Forms.Control.MouseMove?displayProperty=nameWithType> event to update the position of the insertion mark as an item is dragged. It is also used in a handler for the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType> or <xref:System.Windows.Forms.Control.MouseUp?displayProperty=nameWithType> event to insert a dragged item at the correct location. For more information, see <xref:System.Windows.Forms.ListViewInsertionMark> and [How to: Display an Insertion Mark in a Windows Forms ListView Control](~/docs/framework/winforms/controls/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md).  
   
@@ -2222,6 +2308,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewInsertionMark" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -2281,6 +2369,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnItemActivate(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Windows.Forms.ListView.Activation" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedItems" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedIndices" />
       </Docs>
     </Member>
     <Member MemberName="ItemCheck">
@@ -2322,6 +2415,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.ItemCheckEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemChecked">
@@ -2396,6 +2491,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Forms.ListView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" />
+        <altmember cref="T:System.Windows.Forms.ItemDragEventHandler" />
       </Docs>
     </Member>
     <Member MemberName="ItemMouseHover">
@@ -2494,6 +2591,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />
       </Docs>
     </Member>
     <Member MemberName="ItemSelectionChanged">
@@ -2532,6 +2630,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ListView.VirtualItemsSelectionRangeChanged" />
       </Docs>
     </Member>
     <Member MemberName="LabelEdit">
@@ -2591,6 +2690,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ListView.BeforeLabelEdit" />
+        <altmember cref="E:System.Windows.Forms.ListView.AfterLabelEdit" />
       </Docs>
     </Member>
     <Member MemberName="LabelWrap">
@@ -2625,6 +2726,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
       </Docs>
     </Member>
     <Member MemberName="LargeImageList">
@@ -2687,6 +2789,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.SmallImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.StateImageList" />
       </Docs>
     </Member>
     <Member MemberName="ListViewItemSorter">
@@ -2736,6 +2841,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Collections.IComparer" />
+        <altmember cref="E:System.Windows.Forms.ListView.ColumnClick" />
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -2780,6 +2887,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedItems" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedIndices" />
+        <altmember cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />
+        <altmember cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="OnAfterLabelEdit">
@@ -2822,6 +2934,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnAfterLabelEdit(System.Windows.Forms.LabelEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnAfterLabelEdit(System.Windows.Forms.LabelEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.AfterLabelEdit" />
+        <altmember cref="T:System.Windows.Forms.LabelEditEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnBackgroundImageChanged">
@@ -2888,6 +3002,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnBeforeLabelEdit(System.Windows.Forms.LabelEditEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnBeforeLabelEdit(System.Windows.Forms.LabelEditEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.BeforeLabelEdit" />
+        <altmember cref="T:System.Windows.Forms.LabelEditEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnCacheVirtualItems">
@@ -2963,6 +3079,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.ColumnClick" />
+        <altmember cref="T:System.Windows.Forms.ColumnClickEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnReordered">
@@ -3130,6 +3248,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnDrawItem(System.Windows.Forms.DrawListViewItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnDrawItem(System.Windows.Forms.DrawListViewItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="T:System.Windows.Forms.DrawListViewItemEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnDrawSubItem">
@@ -3163,6 +3283,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnDrawSubItem(System.Windows.Forms.DrawListViewSubItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnDrawSubItem(System.Windows.Forms.DrawListViewSubItemEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DrawListViewSubItemEventArgs" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -3259,6 +3381,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnItemActivate(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnItemActivate(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.ItemActivate" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemCheck">
@@ -3292,6 +3416,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.ItemCheck" />
+        <altmember cref="T:System.Windows.Forms.ItemCheckEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemChecked">
@@ -3358,6 +3484,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.ItemDrag" />
+        <altmember cref="T:System.Windows.Forms.ItemDragEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnItemMouseHover">
@@ -3659,6 +3787,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ListView.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListView.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.ListView.SelectedIndexChanged" />
+        <altmember cref="T:System.EventArgs" />
       </Docs>
     </Member>
     <Member MemberName="OnSystemColorsChanged">
@@ -3740,7 +3870,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Forms.ListView> control is normally drawn by the operating system. In order to customize the appearance of <xref:System.Windows.Forms.ListView> items, subitems, and column headers, set the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property to `true` and provide a handler for one or more of the following events: <xref:System.Windows.Forms.ListView.DrawItem>, <xref:System.Windows.Forms.ListView.DrawSubItem>, <xref:System.Windows.Forms.ListView.DrawColumnHeader>. This is called owner drawing. When the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, all three events occur; otherwise, only the <xref:System.Windows.Forms.ListView.DrawItem> event occurs.  
+ A <xref:System.Windows.Forms.ListView> control is normally drawn by the operating system. In order to customize the appearance of <xref:System.Windows.Forms.ListView> items, subitems, and column headers, set the <xref:System.Windows.Forms.ListView.OwnerDraw%2A> property to `true` and provide a handler for one or more of the following events: <xref:System.Windows.Forms.ListView.DrawItem>, <xref:System.Windows.Forms.ListView.DrawSubItem>, <xref:System.Windows.Forms.ListView.DrawColumnHeader>. This is called owner drawing. When the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>, all three events occur; otherwise, only the <xref:System.Windows.Forms.ListView.DrawItem> event occurs.  
   
 > [!NOTE]
 >  Subitem information typically appears in the tile view as well as the details view, but in the tile view, it must be drawn in a handler for the <xref:System.Windows.Forms.ListView.DrawItem> event. The <xref:System.Windows.Forms.ListView.DrawSubItem> event does not occur for any subitems for which no <xref:System.Windows.Forms.ColumnHeader> object has been added to the <xref:System.Windows.Forms.ListView.Columns%2A> collection. Note also that the first subitem of each <xref:System.Windows.Forms.ListViewItem> object represents the parent item itself, and is displayed in the first column.  
@@ -3766,6 +3896,13 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ListView.DrawItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawSubItem" />
+        <altmember cref="E:System.Windows.Forms.ListView.DrawColumnHeader" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+        <altmember cref="P:System.Windows.Forms.ListView.View" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -4141,6 +4278,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" />
+        <altmember cref="M:System.Windows.Forms.ListView.OnSelectedIndexChanged(System.EventArgs)" />
+        <altmember cref="T:System.EventHandler" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedIndices" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedItems" />
       </Docs>
     </Member>
     <Member MemberName="SelectedIndices">
@@ -4188,6 +4330,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.SelectedIndexCollection" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedItems" />
       </Docs>
     </Member>
     <Member MemberName="SelectedItems">
@@ -4235,6 +4379,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
+        <altmember cref="P:System.Windows.Forms.ListView.SelectedIndices" />
       </Docs>
     </Member>
     <Member MemberName="ShowGroups">
@@ -4266,6 +4412,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.Groups" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroup" />
+        <altmember cref="T:System.Windows.Forms.ListViewGroupCollection" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="ShowItemToolTips">
@@ -4367,6 +4517,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListView" />
+        <altmember cref="P:System.Windows.Forms.ListView.LargeImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.StateImageList" />
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -4390,10 +4543,11 @@
 ## Remarks  
  Typically items are sorted using the <xref:System.Windows.Forms.ListView.Sorting%2A> property, which sorts items based on the item text. To customize the sort order, you must write a class that implements the <xref:System.Collections.IComparer> interface and set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property to an object of that class. This is useful, for example, when you want to sort items by subitem text. For more information on performing manual sorting of items, see the example for the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted automatically when items are added. Items are not sorted automatically when the label text changes.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted automatically when items are added. Items are not sorted automatically when the label text changes.  
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.ListViewItemSorter" />
       </Docs>
     </Member>
     <Member MemberName="Sorting">
@@ -4424,7 +4578,7 @@
   
  If you want to perform your own item sorting instead of using the <xref:System.Windows.Forms.ListView.Sorting%2A> property, use the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property in combination with the <xref:System.Windows.Forms.ListView.Sort%2A> method.  
   
- If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted automatically when items is added. Items are not sorted automatically when the label text changes.  
+ If the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=nameWithType> property is set to a value other than <xref:System.Windows.Forms.SortOrder.None?displayProperty=nameWithType> or if the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property is set, the list is sorted automatically when items is added. Items are not sorted automatically when the label text changes.  
   
    
   
@@ -4454,6 +4608,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.SortOrder" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.SortOrder" />
       </Docs>
     </Member>
     <Member MemberName="StateImageList">
@@ -4486,6 +4641,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.LargeImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.SmallImageList" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckBoxes" />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -4573,7 +4732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property controls the size of tiles when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>. Setting this property is useful to prevent line-wrapping when subitem text is too long to be displayed on a single line.  
+ This property controls the size of tiles when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Tile?displayProperty=nameWithType>. Setting this property is useful to prevent line-wrapping when subitem text is too long to be displayed on a single line.  
   
    
   
@@ -4586,6 +4745,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" />
+        <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
     <Member MemberName="TopItem">
@@ -4638,6 +4799,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListView.View" /> property is set to <see cref="F:System.Windows.Forms.View.LargeIcon" />,  <see cref="F:System.Windows.Forms.View.SmallIcon" />, or <see cref="F:System.Windows.Forms.View.Tile" />.</exception>
+        <altmember cref="T:System.Windows.Forms.ListViewItem" />
+        <altmember cref="M:System.Windows.Forms.ListView.EnsureVisible(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -4696,6 +4859,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ListView.Activation" />
+        <altmember cref="P:System.Windows.Forms.ListView.AllowColumnReorder" />
+        <altmember cref="P:System.Windows.Forms.ListView.CheckBoxes" />
+        <altmember cref="P:System.Windows.Forms.ListView.FullRowSelect" />
+        <altmember cref="P:System.Windows.Forms.ListView.GridLines" />
+        <altmember cref="P:System.Windows.Forms.ListView.HoverSelection" />
       </Docs>
     </Member>
     <Member MemberName="UseCompatibleStateImageBehavior">
@@ -4767,7 +4936,7 @@
 > [!NOTE]
 >  If you are using multiple image lists, for small and large icon view, with a <xref:System.Windows.Forms.ListView> control, you should place small and large versions of the image at the same index location in their respective image lists. When switching between views, the index location of the image in one list is used to locate the image in the other list, regardless of the key value specified.  
   
- Most of the properties in the <xref:System.Windows.Forms.ListView> control affect how the different views behave or are displayed. Some properties that affect the views of the items are only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to a specific value, while others are useful in all views. For example, properties such as <xref:System.Windows.Forms.ListView.GridLines%2A> and <xref:System.Windows.Forms.ListView.FullRowSelect%2A> are only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, while the <xref:System.Windows.Forms.ListView.MultiSelect%2A> and <xref:System.Windows.Forms.ListView.CheckBoxes%2A> properties are useful in all views.  
+ Most of the properties in the <xref:System.Windows.Forms.ListView> control affect how the different views behave or are displayed. Some properties that affect the views of the items are only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to a specific value, while others are useful in all views. For example, properties such as <xref:System.Windows.Forms.ListView.GridLines%2A> and <xref:System.Windows.Forms.ListView.FullRowSelect%2A> are only useful when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>, while the <xref:System.Windows.Forms.ListView.MultiSelect%2A> and <xref:System.Windows.Forms.ListView.CheckBoxes%2A> properties are useful in all views.  
   
  The following table shows some of the <xref:System.Windows.Forms.ListView> members and the views they are valid in.  
   
@@ -4786,10 +4955,10 @@
 |<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View.Details>|  
 |<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View.LargeIcon>, <xref:System.Windows.Forms.View.SmallIcon>, or <xref:System.Windows.Forms.View.Tile>|  
   
- You can use the <xref:System.Windows.Forms.ListView.View%2A> property to provide different views of data in your application, or to lock a specific view to utilize that view's benefits. For example, the <xref:System.Windows.Forms.ListView.View%2A> property is often set to <xref:System.Windows.Forms.View?displayProperty=nameWithType> because the details view provides a number of viewing options not available in the other views.  
+ You can use the <xref:System.Windows.Forms.ListView.View%2A> property to provide different views of data in your application, or to lock a specific view to utilize that view's benefits. For example, the <xref:System.Windows.Forms.ListView.View%2A> property is often set to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType> because the details view provides a number of viewing options not available in the other views.  
   
 > [!NOTE]
->  If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView> control will not display any items. If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView> control will not display any subitems.  
+>  If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Details?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView> control will not display any items. If your <xref:System.Windows.Forms.ListView> control does not have any column headers specified and you set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Tile?displayProperty=nameWithType>, the <xref:System.Windows.Forms.ListView> control will not display any subitems.  
   
  The tile view displays each item with a large icon on the left and textual information on the right. The textual information consists of the item label followed by subitems. By default, only the first subitem is displayed, which corresponds to the item label. To display additional subitems, you must add <xref:System.Windows.Forms.ColumnHeader> objects to the <xref:System.Windows.Forms.ListView.Columns%2A> collection. Each subitem in the tile corresponds to a column header. To control which subitems are displayed and the order in which they are displayed, you must set the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Name%2A?displayProperty=nameWithType> property for each item and the <xref:System.Windows.Forms.ColumnHeader.Name%2A?displayProperty=nameWithType> property for each header. You can then add, remove, and rearrange headers in the <xref:System.Windows.Forms.ListView.Columns%2A> collection to achieve the desired result.  
   
@@ -4834,6 +5003,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.View" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.View" />
+        <altmember cref="P:System.Windows.Forms.ListView.TileSize" />
+        <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
     <Member MemberName="VirtualItemsSelectionRangeChanged">
@@ -4870,6 +5042,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" />
       </Docs>
     </Member>
     <Member MemberName="VirtualListSize">
@@ -4909,6 +5082,7 @@
           <see cref="P:System.Windows.Forms.ListView.VirtualListSize" /> is set to a value less than 0.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="P:System.Windows.Forms.ListView.VirtualMode" /> is set to <see langword="true" />, <see cref="P:System.Windows.Forms.ListView.VirtualListSize" /> is greater than 0, and <see cref="E:System.Windows.Forms.ListView.RetrieveVirtualItem" /> is not handled.</exception>
+        <altmember cref="P:System.Windows.Forms.ListView.VirtualMode" />
       </Docs>
     </Member>
     <Member MemberName="VirtualMode">
@@ -4979,7 +5153,7 @@
     </Member>
     <Member MemberName="WndProc">
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.WndProc(System.Windows.Forms.Message@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -4998,5 +5172,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItemRect">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the bounding rectangle for an item within the control.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ArrangeIcons">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Arranges items in the control when they are displayed as icons.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindItemWithText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first <see cref="T:System.Windows.Forms.ListViewItem" /> with that begins with the given text value.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides item information, given an x- and y-coordinate.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FindNearestItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the next item from a given point, searching in the specified direction.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

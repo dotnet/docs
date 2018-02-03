@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumExportedTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumExportedTypes method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataAssemblyImport::EnumExportedTypes Method
 Enumerates the exported types referenced in the assembly manifest in the current metadata scope.  

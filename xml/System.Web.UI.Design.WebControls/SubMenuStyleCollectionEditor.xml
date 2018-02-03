@@ -36,6 +36,14 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+    <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+    <altmember cref="T:System.Web.UI.WebControls.Menu" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
+    <altmember cref="P:System.Web.UI.WebControls.Menu.LevelSubMenuStyles" />
+    <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
+    <altmember cref="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" />
+    <altmember cref="T:System.Web.UI.WebControls.MenuItemStyleCollection" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,6 +69,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
       </Docs>
     </Member>
     <Member MemberName="CanSelectMultipleInstances">
@@ -87,6 +99,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
+        <altmember cref="M:System.ComponentModel.Design.CollectionEditor.CanSelectMultipleInstances" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
       </Docs>
     </Member>
     <Member MemberName="CreateCollectionForm">
@@ -113,6 +131,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
+        <altmember cref="T:System.ComponentModel.Design.CollectionEditor" />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -142,6 +165,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
+        <altmember cref="T:System.Activator" />
+        <altmember cref="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
     <Member MemberName="CreateNewItemTypes">
@@ -168,6 +197,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyle" />
+        <altmember cref="T:System.Web.UI.WebControls.SubMenuStyleCollection" />
+        <altmember cref="M:System.ComponentModel.Design.CollectionEditor.CreateNewItemTypes" />
+        <altmember cref="T:System.Web.UI.WebControls.Menu" />
+        <altmember cref="T:System.Web.UI.Design.WebControls.MenuDesigner" />
       </Docs>
     </Member>
   </Members>

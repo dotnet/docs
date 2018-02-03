@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Diagnostics.EventLog" />
+    <altmember cref="T:System.Diagnostics.EventLogEntryCollection" />
+    <altmember cref="T:System.Diagnostics.EventInstance" />
   </Docs>
   <Members>
     <Member MemberName="Category">
@@ -75,6 +78,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the category.</exception>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.CategoryNumber" />
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
       </Docs>
     </Member>
     <Member MemberName="CategoryNumber">
@@ -105,6 +110,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.EntryType" />
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Category" />
+        <altmember cref="P:System.Diagnostics.EventInstance.CategoryId" />
       </Docs>
     </Member>
     <Member MemberName="Data">
@@ -174,6 +182,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Diagnostics.EventLogEntryType" />
+        <altmember cref="P:System.Diagnostics.EventInstance.EntryType" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -239,6 +249,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.InstanceId" />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -315,6 +326,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventInstance.InstanceId" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="MachineName">
@@ -372,6 +385,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The space could not be allocated for one of the insertion strings associated with the message.</exception>
+        <altmember cref="T:System.Diagnostics.EventInstance" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="ReplacementStrings">
@@ -413,6 +428,8 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Message" />
+        <altmember cref="Overload:System.Diagnostics.EventLog.WriteEvent" />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -452,6 +469,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLog.Source" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -512,6 +530,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.TimeWritten" />
       </Docs>
     </Member>
     <Member MemberName="TimeWritten">
@@ -542,6 +561,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.TimeGenerated" />
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -573,6 +593,7 @@ e1.WriteEntry(LocRM.GetString("strMessage"),
  ]]></format>
         </remarks>
         <exception cref="T:System.SystemException">Account information could not be obtained for the user's SID.</exception>
+        <altmember cref="P:System.Diagnostics.EventLogEntry.Source" />
       </Docs>
     </Member>
   </Members>

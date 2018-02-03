@@ -9,9 +9,11 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: b23c3a54-10d4-4f13-ab6d-98b26b76f22a
 caps.latest.revision: 3
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;bufferReceive&gt;
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  

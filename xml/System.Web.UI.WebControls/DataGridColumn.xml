@@ -82,6 +82,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.ISite.DesignMode" />
       </Docs>
     </Member>
     <Member MemberName="FooterStyle">
@@ -121,11 +122,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.FooterStyle%2A> property to set the style properties for the footer section of the column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnFooterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterStyle/CS/datagridcolumnfooterstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnFooterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterStyle/VB/datagridcolumnfooterstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnFooterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterStyle/CS/datagridcolumnfooterstylecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnFooterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterStyle/VB/datagridcolumnfooterstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="FooterText">
@@ -162,11 +166,13 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.FooterText%2A> property to specify the text displayed in the footer section of the column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterText/CS/datagridcolumnfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterText/VB/datagridcolumnfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterText/CS/datagridcolumnfootertextcs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterText/VB/datagridcolumnfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderText" />
       </Docs>
     </Member>
     <Member MemberName="HeaderImageUrl">
@@ -206,11 +212,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl%2A> property to specify the image displayed in the header section of the column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnHeaderImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnHeaderImageUrl/CS/datagridcolumnheaderimageurlcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnHeaderImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnHeaderImageUrl/VB/datagridcolumnheaderimageurlvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnHeaderImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnHeaderImageUrl/CS/datagridcolumnheaderimageurlcs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnHeaderImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnHeaderImageUrl/VB/datagridcolumnheaderimageurlvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="HeaderStyle">
@@ -250,11 +257,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderStyle%2A> property to get the style properties for the header section of the column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnFooterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterStyle/CS/datagridcolumnfooterstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnFooterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterStyle/VB/datagridcolumnfooterstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnFooterStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterStyle/CS/datagridcolumnfooterstylecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnFooterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterStyle/VB/datagridcolumnfooterstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.ItemStyle" />
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -291,11 +301,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.HeaderText%2A> property to specify the text for the header section of the column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterText/CS/datagridcolumnfootertextcs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterText/VB/datagridcolumnfootertextvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnFooterText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnFooterText/CS/datagridcolumnfootertextcs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnFooterText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnFooterText/VB/datagridcolumnfootertextvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterText" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderImageUrl" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -326,6 +339,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.DesignMode" />
+        <altmember cref="P:System.ComponentModel.ISite.DesignMode" />
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="InitializeCell">
@@ -427,11 +443,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.ItemStyle%2A> property to get the style properties of the item cells in a column.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnItemStyle/CS/datagridcolumnitemstylecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnItemStyle/VB/datagridcolumnitemstylevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnItemStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnItemStyle/CS/datagridcolumnitemstylecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnItemStyle/VB/datagridcolumnitemstylevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.TableItemStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.HeaderStyle" />
+        <altmember cref="P:System.Web.UI.WebControls.DataGridColumn.FooterStyle" />
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -462,6 +481,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="OnColumnChanged">
@@ -487,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebControls.DataGridDesigner.OnColumnsChanged" />
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -512,6 +533,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -538,6 +560,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Object" />
       </Docs>
     </Member>
     <Member MemberName="SortExpression">
@@ -581,11 +604,14 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.SortExpression%2A> property to specify the field name to use for sorting.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnSortExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnSortExpression/CS/datagridcolumnsortexpressioncs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnSortExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnSortExpression/VB/datagridcolumnsortexpressionvb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnSortExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnSortExpression/CS/datagridcolumnsortexpressioncs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnSortExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnSortExpression/VB/datagridcolumnsortexpressionvb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
+        <altmember cref="M:System.Web.UI.WebControls.DataGrid.OnSortCommand(System.Web.UI.WebControls.DataGridSortCommandEventArgs)" />
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -724,6 +750,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="ViewState">
@@ -749,6 +776,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -783,11 +811,12 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to indicate whether a column is visible.  
   
- <!-- TODO: review snippet reference [!code-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  -->  
+ [!code-aspx-csharp[DataGridColumnVisible#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridColumnVisible/CS/datagridcolumnvisiblecs.aspx#1)]
+ [!code-aspx-vb[DataGridColumnVisible#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridColumnVisible/VB/datagridcolumnvisiblevb.aspx#1)]  
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.UI.WebControls.DataGrid" />
       </Docs>
     </Member>
   </Members>

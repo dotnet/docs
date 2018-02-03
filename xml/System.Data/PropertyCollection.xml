@@ -39,6 +39,12 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Data.DataColumn" />
+    <altmember cref="T:System.Data.DataSet" />
+    <altmember cref="T:System.Data.DataTable" />
+    <altmember cref="P:System.Data.DataColumn.ExtendedProperties" />
+    <altmember cref="P:System.Data.DataSet.ExtendedProperties" />
+    <altmember cref="P:System.Data.DataTable.ExtendedProperties" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -129,5 +135,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.PropertyCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

@@ -14,6 +14,8 @@ caps.latest.revision: 8
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
+ms.workload: 
+  - "dotnet"
 ---
 # &lt;tokenReplayCache&gt;
 Registers a token replay cache with a service or a security token handler collection.  
@@ -68,5 +70,5 @@ Registers a token replay cache with a service or a security token handler collec
 ```  
   
 ## See Also  
- <xref:System.IdentityModel.Tokens.TokenReplayCache>   
+ <xref:System.IdentityModel.Tokens.TokenReplayCache>  
  [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md)

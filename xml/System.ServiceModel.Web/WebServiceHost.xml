@@ -50,7 +50,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebServiceHost (object singletonInstance, Uri[] baseAddresses);" />
+      <MemberSignature Language="C#" Value="public WebServiceHost (object singletonInstance, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object singletonInstance, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.#ctor(System.Object,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -91,7 +91,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebServiceHost (Type serviceType, Uri[] baseAddresses);" />
+      <MemberSignature Language="C#" Value="public WebServiceHost (Type serviceType, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serviceType, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberType>Constructor</MemberType>
@@ -162,5 +162,14 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebServiceHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

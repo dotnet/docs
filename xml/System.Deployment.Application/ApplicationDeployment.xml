@@ -182,6 +182,8 @@
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The deployment manifest cannot be downloaded.</exception>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The deployment manifest is corrupted. You will likely need to redeploy the application to fix this problem.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
       </Docs>
     </Member>
     <Member MemberName="CheckForUpdate">
@@ -248,6 +250,9 @@
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The deployment manifest cannot be downloaded. This exception appears in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The deployment manifest is corrupted. You will likely need to redeploy the application to fix this problem. This exception appears in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel" />
       </Docs>
     </Member>
     <Member MemberName="CheckForUpdateAsyncCancel">
@@ -378,6 +383,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">You attempted to call this static property from a non-[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</exception>
+        <altmember cref="P:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed" />
       </Docs>
     </Member>
     <Member MemberName="CurrentVersion">
@@ -413,6 +419,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <altmember cref="P:System.Deployment.Application.ApplicationDeployment.UpdatedVersion" />
       </Docs>
     </Member>
     <Member MemberName="DataDirectory">
@@ -479,6 +486,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
+        <altmember cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsync">
@@ -525,6 +533,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsync">
@@ -569,6 +578,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
         <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="DownloadFileGroupAsyncCancel">
@@ -705,6 +715,8 @@
         </remarks>
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">
           <paramref name="groupName" /> is not a file group defined in the application manifest.</exception>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
+        <altmember cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />
       </Docs>
     </Member>
     <Member MemberName="IsFirstRun">
@@ -867,6 +879,10 @@
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
         <exception cref="T:System.InvalidOperationException">The application is currently being updated.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
+        <altmember cref="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
@@ -917,6 +933,7 @@
         <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
         <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
         <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+        <altmember cref="E:System.Deployment.Application.ApplicationDeployment.UpdateCompleted" />
       </Docs>
     </Member>
     <Member MemberName="UpdateAsyncCancel">
@@ -1100,5 +1117,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DownloadFileGroupAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads, on demand, a set of optional files in the background.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CheckForUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> to determine whether a new update is available.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CheckForDetailedUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the same operation as <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />, but returns extended information about the available update.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

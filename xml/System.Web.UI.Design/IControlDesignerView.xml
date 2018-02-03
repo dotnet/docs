@@ -17,6 +17,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
   </Docs>
   <Members>
     <Member MemberName="ContainingRegion">
@@ -35,6 +36,7 @@
         <summary>Gets the designer region that contains the associated control, if any.</summary>
         <value>A <see cref="T:System.Web.UI.Design.DesignerRegion" /> object if the associated control is contained in a designer region; otherwise <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="GetBounds">
@@ -57,6 +59,7 @@
         <summary>Retrieves the outer bounds of the designer view.</summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> containing information about the location and measurements of the view at design time.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -78,6 +81,7 @@
         <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> representing the location and outer measurements of the view on the design surface. The coordinate-system origin for this rectangle is the top-left corner of the element to which the behavior is attached.</param>
         <summary>Notifies the design host that the area represented by the provided rectangle needs to be repainted on the design surface.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="NamingContainerDesigner">
@@ -96,6 +100,7 @@
         <summary>Gets the designer component for the naming container of the associated control, if any.</summary>
         <value>An IDesigner object representing the designer component for the naming container for the associated control; otherwise <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="SetFlags">
@@ -120,6 +125,7 @@
           <see langword="true" /> to set the flag, <see langword="false" /> to cancel the flag.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IControlDesignerView.SetFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="SetRegionContent">
@@ -143,6 +149,7 @@
         <param name="content">The HTML markup to be put into the designer region.</param>
         <summary>Puts the provided content into the provided designer region.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="SupportsRegions">
@@ -162,6 +169,7 @@
         <value>
           <see langword="true" /> if designer regions are supported; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -180,6 +188,7 @@
       <Docs>
         <summary>Causes the associated control to redraw the invalidated regions within its client area.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
     <Member MemberName="ViewEvent">
@@ -210,6 +219,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.ComponentModel.Design.DesignSurface.View" />
       </Docs>
     </Member>
   </Members>

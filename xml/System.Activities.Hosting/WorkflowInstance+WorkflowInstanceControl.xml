@@ -257,7 +257,7 @@
     </Member>
     <Member MemberName="GetCompletionState">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState GetCompletionState (out Exception terminationException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState(class System.Exception terminationException) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState([out] class System.Exception&amp; terminationException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Exception@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -279,7 +279,7 @@
     </Member>
     <Member MemberName="GetCompletionState">
       <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState GetCompletionState (out System.Collections.Generic.IDictionary&lt;string,object&gt; outputs, out Exception terminationException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; outputs, class System.Exception terminationException) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState([out] class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&amp; outputs, [out] class System.Exception&amp; terminationException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Collections.Generic.IDictionary{System.String,System.Object}@,System.Exception@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -654,5 +654,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBookmarks">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCompletionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ScheduleBookmarkResumption">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Schedules a <see cref="T:System.Activities.Bookmark" /> resumption.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

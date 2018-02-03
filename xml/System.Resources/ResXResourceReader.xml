@@ -61,6 +61,7 @@
     </remarks>
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <altmember cref="T:System.Resources.ResXResourceWriter" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -309,6 +310,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">In a set operation, a value cannot be specified because the XML resource file has already been accessed and is in use.</exception>
+        <altmember cref="M:System.Resources.ResXResourceReader.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -594,6 +596,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Resources.ResXResourceReader.GetEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="UseResXDataNodes">
@@ -662,5 +665,23 @@
         <exception cref="T:System.InvalidOperationException">In a set operation, the enumerator for the resource file or stream is already open.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="FromFileContents">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Resources.ResXResourceReader" /> object and initializes it to read a string whose contents are in the form of an XML resource file.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

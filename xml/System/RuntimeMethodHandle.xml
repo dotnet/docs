@@ -77,6 +77,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.RuntimeMethodHandle" /> and equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.RuntimeMethodHandle.Value" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -118,6 +119,7 @@
         <returns>
           <see langword="true" /> if <paramref name="handle" /> is equal to the value of this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.RuntimeMethodHandle.Value" />
       </Docs>
     </Member>
     <Member MemberName="GetFunctionPointer">
@@ -336,5 +338,18 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether one <see cref="T:System.RuntimeMethodHandle" /> is equal to another.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

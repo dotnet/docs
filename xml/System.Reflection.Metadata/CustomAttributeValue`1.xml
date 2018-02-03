@@ -16,8 +16,9 @@
   <Interfaces />
   <Docs>
     <typeparam name="TType">The attribute type.</typeparam>
-    <summary>Represents a custom atttribute of the type specified by <paramref name="TType"/>.</summary>
-    <remarks></remarks>
+    <summary>Represents a custom atttribute of the type specified by <paramref name="TType" />.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +39,8 @@
         <param name="fixedArguments">The fixed arguments.</param>
         <param name="namedArguments">The named arguments.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeValue`1" /> structure using the specified fixed arguments and named arguments.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FixedArguments">
@@ -57,7 +59,8 @@
       <Docs>
         <summary>Gets the fixed arguments for the custom attribute.</summary>
         <value>An immutable array of arguments.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NamedArguments">
@@ -76,7 +79,8 @@
       <Docs>
         <summary>Gets the named arguments for the custom attribute value.</summary>
         <value>An immutable array of arguments.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

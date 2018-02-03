@@ -27,6 +27,7 @@
     <block subset="none" type="overrides">
       <para>For an example of a custom <see cref="T:System.Windows.WeakEventManager" />, see [Weak Event Patterns](~/docs/framework/wpf/advanced/weak-event-patterns.md).</para>
     </block>
+    <altmember cref="T:System.Windows.IWeakEventListener" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -76,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
       </Docs>
     </Member>
     <Member MemberName="DeliverEventToList">
@@ -108,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentManager">
@@ -137,6 +141,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.SetCurrentManager(System.Type,System.Windows.WeakEventManager)" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -166,6 +172,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="T:System.Windows.WeakEventManager.ListenerList" />
       </Docs>
     </Member>
     <Member MemberName="NewListenerList">
@@ -242,6 +250,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.ProtectedRemoveListener(System.Object,System.Windows.IWeakEventListener)" />
       </Docs>
     </Member>
     <Member MemberName="ProtectedRemoveHandler">
@@ -299,6 +309,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.ProtectedAddListener(System.Object,System.Windows.IWeakEventListener)" />
       </Docs>
     </Member>
     <Member MemberName="Purge">
@@ -337,6 +349,8 @@
         <block subset="none" type="overrides">
           <para>If the underlying type for the <see cref="P:System.Windows.WeakEventManager.Item(System.Object)" /> is something other than <see cref="T:System.Windows.WeakEventManager.ListenerList" />, or contains data beyond a <see cref="T:System.Windows.WeakEventManager.ListenerList" />, you must override the <see cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" /> method. The override should provide purge behavior for the alternate type items list. Generally, the override should provide behavior without calling the base implementation. If a specific <see cref="T:System.Windows.WeakEventManager.ListenerList" /> still needs clearing, call <see cref="M:System.Windows.WeakEventManager.ListenerList.Purge" />.</para>
         </block>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="T:System.Windows.WeakEventManager.ListenerList" />
       </Docs>
     </Member>
     <Member MemberName="ReadLock">
@@ -362,6 +376,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="T:System.Windows.WeakEventManager.ListenerList" />
+        <altmember cref="P:System.Windows.WeakEventManager.WriteLock" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -383,6 +400,9 @@
         <param name="source">The source to remove listener information for.</param>
         <summary>Removes all listeners for the specified source.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="T:System.Windows.WeakEventManager.ListenerList" />
+        <altmember cref="M:System.Windows.WeakEventManager.ProtectedRemoveListener(System.Object,System.Windows.IWeakEventListener)" />
       </Docs>
     </Member>
     <Member MemberName="ScheduleCleanup">
@@ -408,6 +428,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="SetCurrentManager">
@@ -438,6 +460,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.GetCurrentManager(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -463,6 +487,8 @@
           <para>
             <see cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" /> overrides should add a handler to the provided <paramref name="source" />. The handler is declared by the manager itself. The class handler should not be public, and it should only be called in response to the event being managed. The class handler should call the <see cref="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" /> method or the <see cref="M:System.Windows.WeakEventManager.DeliverEventToList(System.Object,System.EventArgs,System.Windows.WeakEventManager.ListenerList)" /> method appropriately.</para>
         </block>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.GetCurrentManager(System.Type)" />
       </Docs>
     </Member>
     <Member MemberName="StopListening">
@@ -488,6 +514,9 @@
           <para>
             <see cref="M:System.Windows.WeakEventManager.StopListening(System.Object)" /> implementations should remove the class handler as added by the <see cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" /> method. Removing a listener should not clear the listener list. Instead, it should only disconnect the class handler (perhaps temporarily). Other methods are available for clearing the entire list, such as the <see cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" /> method with the <paramref name="purgeAll" /> parameter set to <see langword="true" />.</para>
         </block>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" />
+        <altmember cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" />
       </Docs>
     </Member>
     <Member MemberName="WriteLock">
@@ -513,6 +542,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.IWeakEventListener" />
+        <altmember cref="T:System.Windows.WeakEventManager.ListenerList" />
+        <altmember cref="P:System.Windows.WeakEventManager.ReadLock" />
       </Docs>
     </Member>
   </Members>

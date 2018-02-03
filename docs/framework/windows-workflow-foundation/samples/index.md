@@ -5,9 +5,11 @@ ms.prod: ".net-framework"
 ms.topic: "article"
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 caps.latest.revision: 13
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Windows Workflow (WF) Samples
 These samples provide instruction on various aspects of [!INCLUDE[wf](../../../../includes/wf-md.md)].  

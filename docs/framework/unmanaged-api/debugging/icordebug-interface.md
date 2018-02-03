@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug interface [.NET Framework debugging]"
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
@@ -28,6 +26,8 @@ caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebug Interface
 Provides methods that allow developers to debug applications in the common language runtime (CLR) environment.  

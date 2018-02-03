@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ClientApplicationSettings"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "application settings [Windows Forms]"
   - "Windows Forms, application settings"
@@ -21,6 +19,8 @@ caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Application Settings for Windows Forms
 The Applications Settings feature of Windows Forms makes it easy to create, store, and maintain custom application and user preferences on the client. With Application Settings, you can store not only application data such as database connection strings, but also user-specific data, such as toolbar positions and most-recently used lists.  

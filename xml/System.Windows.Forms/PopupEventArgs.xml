@@ -30,6 +30,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolTip" />
+    <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
+    <altmember cref="T:System.Windows.Forms.DrawToolTipEventArgs" />
+    <altmember cref="P:System.Windows.Forms.PopupEventArgs.ToolTipSize" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -62,6 +66,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedControl" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.IsBalloon" />
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.ToolTipSize" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedControl">
@@ -97,6 +105,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedWindow" />
+        <altmember cref="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
     <Member MemberName="AssociatedWindow">
@@ -132,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.PopupEventArgs.AssociatedControl" />
       </Docs>
     </Member>
     <Member MemberName="IsBalloon">
@@ -168,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolTip.IsBalloon" />
       </Docs>
     </Member>
     <Member MemberName="ToolTipSize">
@@ -203,6 +215,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolTip.Popup" />
+        <altmember cref="T:System.Windows.Forms.DrawToolTipEventArgs" />
       </Docs>
     </Member>
   </Members>

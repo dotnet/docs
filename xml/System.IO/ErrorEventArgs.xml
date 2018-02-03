@@ -44,6 +44,9 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.ErrorEventHandler" />
+    <altmember cref="T:System.IO.FileSystemWatcher" />
+    <altmember cref="M:System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

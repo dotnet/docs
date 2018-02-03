@@ -11,9 +11,11 @@ helpviewer_keywords:
   - "programming [WF], hosting workflows"
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
 caps.latest.revision: 15
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Hosting Workflows
 The topics in this section discuss hosting workflows.  
@@ -35,6 +37,6 @@ The topics in this section discuss hosting workflows.
  Describes how to use `WorkflowIdentity` to host multiple versions of a workflow side-by-side.  
   
 ## See Also  
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)   
- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)   
+ [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
+ [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)  
  [Windows Workflow Foundation Data Model](../../../docs/framework/windows-workflow-foundation/data-model.md)

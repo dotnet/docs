@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectsAllocatedByClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ObjectsAllocatedByClass method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectsAllocatedByClass method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ObjectsAllocatedByClass Method
 Notifies the profiler about the number of instances of each specified class that have been created since the most recent garbage collection.  

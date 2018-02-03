@@ -14,6 +14,8 @@ caps.latest.revision: 29
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # Getting Started with .NET Native
 Whether you are writing a new Windows app for Windows 10 or you are migrating an existing Windows Store app, you can follow the same set of procedures. To create a [!INCLUDE[net_native](../../../includes/net-native-md.md)] app, follow these steps:  
@@ -117,10 +119,10 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
 -   [Runtime Exceptions in .NET Native Apps](../../../docs/framework/net-native/runtime-exceptions-in-net-native-apps.md)  
   
 ## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)   
- [NIB: .NET Native Setup and Configuration](http://msdn.microsoft.com/en-us/7c9bc375-8b87-4c33-bede-72d513e362ec)   
- [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md)   
- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)   
- [APIs That Rely on Reflection](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)   
- [Serialization and Metadata](../../../docs/framework/net-native/serialization-and-metadata.md)   
+ [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
+ [NIB: .NET Native Setup and Configuration](http://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)  
+ [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md)  
+ [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)  
+ [APIs That Rely on Reflection](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)  
+ [Serialization and Metadata](../../../docs/framework/net-native/serialization-and-metadata.md)  
  [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)

@@ -69,6 +69,17 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Forms.ToolStrip" />
+    <altmember cref="T:System.Windows.Forms.ToolStripButton" />
+    <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSeparator" />
+    <altmember cref="T:System.Windows.Forms.ToolStripControlHost" />
+    <altmember cref="T:System.Windows.Forms.ToolStripComboBox" />
+    <altmember cref="T:System.Windows.Forms.ToolStripTextBox" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripMenuItem" />
+    <altmember cref="T:System.Windows.Forms.ToolStripSplitButton" />
+    <altmember cref="T:System.Windows.Forms.ToolStripDropDownButton" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -170,6 +181,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDefaultActionDescription">
@@ -221,6 +238,11 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleDescription">
@@ -260,6 +282,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleName">
@@ -297,6 +325,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleRole" />
       </Docs>
     </Member>
     <Member MemberName="AccessibleRole">
@@ -323,7 +357,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole?displayProperty=nameWithType>.  
+ The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole.PushButton?displayProperty=nameWithType>.  
   
  For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
   
@@ -332,6 +366,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</exception>
+        <altmember cref="T:System.Windows.Forms.AccessibleObject" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDefaultActionDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleDescription" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibleName" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -821,6 +861,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Height" />
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Width" />
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" />
       </Docs>
     </Member>
     <Member MemberName="CanSelect">
@@ -1182,7 +1225,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1964,6 +2007,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.TextAlign" />
+        <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
       </Docs>
     </Member>
     <Member MemberName="ImageIndex">
@@ -2271,6 +2316,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <altmember cref="M:System.Windows.Forms.ToolStripItem.IsInputKey(System.Windows.Forms.Keys)" />
       </Docs>
     </Member>
     <Member MemberName="IsInputKey">
@@ -2302,6 +2348,8 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <altmember cref="T:System.Windows.Forms.Keys" />
+        <altmember cref="M:System.Windows.Forms.Control.IsInputChar(System.Char)" />
       </Docs>
     </Member>
     <Member MemberName="IsOnDropDown">
@@ -2525,6 +2573,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -2571,6 +2625,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -2617,6 +2677,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -2663,6 +2729,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -2709,6 +2781,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseUp" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -2755,6 +2833,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseMove" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseHover" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseDown" />
+        <altmember cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" />
+        <altmember cref="T:System.Windows.Forms.MouseEventArgs" />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2889,6 +2973,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripItem.OnBoundsChanged" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -3341,6 +3426,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripItem.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.ToolStripItem.OnLayout(System.Windows.Forms.LayoutEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <altmember cref="E:System.Windows.Forms.Control.Layout" />
+        <altmember cref="M:System.Windows.Forms.Control.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="OnLocationChanged">
@@ -4353,7 +4440,7 @@
     </Member>
     <Member MemberName="ProcessCmdKey">
       <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -5011,6 +5098,7 @@
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the <see cref="T:System.Windows.Forms.ToolStripItem" /></param>
         <summary>Sets the size and location of the item.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
     </Member>
     <Member MemberName="SetVisibleCore">
@@ -5352,6 +5440,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
+        <altmember cref="P:System.Windows.Forms.ToolStripItem.ImageAlign" />
+        <altmember cref="T:System.Windows.Forms.ToolStripLabel" />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -5512,6 +5602,7 @@
         <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
         <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.ComponentModel.Component.ToString" />
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -5604,5 +5695,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates some or all of the surface of the <see cref="T:System.Windows.Forms.ToolStripItem" /> and causes it to be redrawn.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

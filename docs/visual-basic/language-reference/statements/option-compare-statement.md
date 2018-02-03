@@ -1,51 +1,32 @@
 ---
 title: "Option Compare Statement"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Compare"
   - "vb.OptionCompare"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "case sensitivity, Option Compare statement"
-  - "Compare keyword"
-  - "binary comparison"
+  - "Compare keyword [Visual Basic]"
+  - "binary comparison [Visual Basic]"
   - "strings [Visual Basic], returning from functions"
-  - "binary comparison, Option Compare statement"
+  - "binary comparison [Visual Basic], Option Compare statement"
   - "strings [Visual Basic], comparing"
   - "string comparison [Visual Basic], Option Compare statement"
-  - "Text keyword, Option Compare statement"
-  - "Binary keyword, Option Compare statement"
+  - "Text keyword [Visual Basic], Option Compare statement"
+  - "Binary keyword [Visual Basic], Option Compare statement"
   - "string comparison [Visual Basic], sorting data"
-  - "Option Compare statement"
+  - "Option Compare statement [Visual Basic]"
   - "text [Visual Basic], comparing"
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Option Compare Statement
 Declares the default comparison method to use when comparing string data.  
@@ -87,7 +68,7 @@ Option Compare { Binary | Text }
   
 #### To set Option Compare in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
+1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
 2.  Click the **Compile** tab.  
   
@@ -110,15 +91,15 @@ Option Compare { Binary | Text }
  [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_2.vb)]  
   
 ## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>   
- <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>   
- <xref:Microsoft.VisualBasic.Strings.Replace%2A>   
- <xref:Microsoft.VisualBasic.Strings.Split%2A>   
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>   
- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)   
- [String Functions](../../../visual-basic/language-reference/functions/string-functions.md)   
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
+ <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
+ <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Replace%2A>  
+ <xref:Microsoft.VisualBasic.Strings.Split%2A>  
+ <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
+ [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
+ [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
+ [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
+ [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)  
+ [String Functions](../../../visual-basic/language-reference/functions/string-functions.md)  
+ [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

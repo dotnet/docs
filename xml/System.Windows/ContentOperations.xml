@@ -20,6 +20,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.VisualTreeHelper" />
+    <altmember cref="T:System.Windows.LogicalTreeHelper" />
   </Docs>
   <Members>
     <Member MemberName="GetParent">
@@ -81,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.FrameworkContentElement.Parent" />
       </Docs>
     </Member>
   </Members>

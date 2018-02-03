@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionThrown"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionThrown method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionThrown method [.NET Framework profiling]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorProfilerCallback::ExceptionThrown Method
 Notifies the profiler that an exception has been thrown.  

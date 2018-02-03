@@ -33,6 +33,11 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+    <altmember cref="T:System.ComponentModel.Design.Serialization.BasicDesignerLoader" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
+    <altmember cref="T:System.ComponentModel.Design.IDesignerHost" />
+    <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+    <altmember cref="N:System.CodeDom" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,6 +142,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost" /> has not been initialized, or the designer loader did not supply a type resolution service, which is required for CodeDom serialization.</exception>
+        <altmember cref="T:System.CodeDom.Compiler.ICodeGenerator" />
+        <altmember cref="T:System.ComponentModel.Design.ITypeResolutionService" />
+        <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationService" />
+        <altmember cref="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" />
+        <altmember cref="T:System.ComponentModel.Design.Serialization.INameCreationService" />
       </Docs>
     </Member>
     <Member MemberName="IsReloadNeeded">
@@ -298,6 +308,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
     <Member MemberName="PerformFlush">
@@ -366,6 +377,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The language did not provide a code parser for this file; this file type may not support a designer.</exception>
         <exception cref="T:System.InvalidOperationException">The class can be designed, but it is not the first class in the file, or the designer could not be shown for this file because none of the classes within it can be designed.</exception>
+        <altmember cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize">
@@ -514,6 +526,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.ComponentModel.Design.ITypeResolutionService" />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -542,6 +555,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeCompileUnit" />
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepperEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepperEnum interface [.NET Framework debugging]"
 ms.assetid: 988718c1-1a4a-40f2-a04c-7d67e5cfe1e2
@@ -28,6 +26,8 @@ caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugStepperEnum Interface1
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  

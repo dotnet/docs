@@ -10,14 +10,16 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
-  - "windows, setting height from a page"
-  - "pages, setting window height from"
-  - "height of window, setting from a page"
+  - "windows [WPF], setting height from a page"
+  - "pages [WPF], setting window height from"
+  - "height of window [WPF], setting from a page"
 ms.assetid: 4e4488ff-ab5c-4ee9-81a4-e1addb55c5cc
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # How to: Set the Height of a Window from a Page
 This example illustrates how to set the height of the window from a <xref:System.Windows.Controls.Page>.  

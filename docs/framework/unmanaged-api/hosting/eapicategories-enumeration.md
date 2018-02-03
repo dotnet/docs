@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EApiCategories"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EApiCategories enumeration [.NET Framework hosting]"
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
@@ -28,6 +26,8 @@ caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # EApiCategories Enumeration
 Describes the categories of capabilities that the host can block from running in partially trusted code.  
@@ -81,5 +81,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)   
+ [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)  
  [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

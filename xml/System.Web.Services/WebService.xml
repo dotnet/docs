@@ -89,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpApplicationState" />
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -131,6 +132,7 @@
         </remarks>
         <exception cref="T:System.Exception">
           <paramref name="Context" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Web.HttpContext" />
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -171,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.HttpServerUtility" />
+        <altmember cref="M:System.Web.HttpServerUtility.CreateObject(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -206,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.SessionState.HttpSessionState" />
       </Docs>
     </Member>
     <Member MemberName="SoapVersion">
@@ -244,6 +249,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Web.Services.Protocols.SoapProtocolVersion" />
+        <altmember cref="P:System.Web.HttpContext.Items" />
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -284,7 +291,7 @@
  </security>  
 ```  
   
- For more information on setting up security for an XML Web service see [&#91;\<topic://cpconSecuringASPNETWebServices>&#93;](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c).  
+ For more information on setting up security for an XML Web service see [&#91;\<topic://cpconSecuringASPNETWebServices>&#93;](http://msdn.microsoft.com/library/354b2ab1-2782-4542-b32a-dc560178b90c).  
   
    
   
@@ -295,6 +302,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Security.Principal.IPrincipal" />
       </Docs>
     </Member>
   </Members>

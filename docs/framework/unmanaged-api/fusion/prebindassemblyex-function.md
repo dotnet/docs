@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "PreBindAssemblyEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "PreBindAssemblyEx function [.NET Framework fusion]"
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
@@ -28,6 +26,8 @@ caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # PreBindAssemblyEx Function
 Gets the post-policy display name for an assembly.  

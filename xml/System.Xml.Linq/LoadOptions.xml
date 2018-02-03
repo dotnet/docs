@@ -47,8 +47,7 @@
  This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
   
 ```csharp  
-  
-                string markup = @"<Root>  
+string markup = @"<Root>  
     <Child1 />  
     <Child2 />  
     <Child4 />  
@@ -86,8 +85,7 @@ foreach (XElement e in po.DescendantsAndSelf())
 ```  
   
 ```vb  
-  
-                Dim markup As String = _  
+Dim markup As String = _  
     "<Root>" + Environment.NewLine & _  
     "    <Child1 />" + Environment.NewLine & _  
     "    <Child2 />" + Environment.NewLine & _  
@@ -141,6 +139,7 @@ Root                1    2
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Xml.Linq.SaveOptions" />
   </Docs>
   <Members>
     <Member MemberName="None">

@@ -20,6 +20,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Net.PeerToPeer.Cloud" />
+    <altmember cref="M:System.Net.PeerToPeer.PeerToPeerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+    <altmember cref="Overload:System.Net.PeerToPeer.PeerToPeerException.#ctor" />
+    <altmember cref="N:System" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +39,7 @@
       <Docs>
         <summary>Initializes a new default instance of the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -53,6 +58,9 @@
         <param name="message">The error message that provides the reason for the exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> class with the supplied message string.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,6 +81,8 @@
         <param name="context">Context that provides the means for deserializing the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> data. Also referred to as the source of the serialized data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> class with serialized data.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerToPeerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -93,6 +103,8 @@
         <param name="innerException">The exception instance that caused the current <see cref="T:System.Exception" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> class with the supplied message string and exception.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Net.PeerToPeer.PeerToPeerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+        <altmember cref="T:System.String" />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -128,6 +140,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerName" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRecord" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -156,7 +171,20 @@
         <param name="context">Contains the destination for the serialized stream associated with the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> instance.</param>
         <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRecord" />
+        <altmember cref="T:System.Net.PeerToPeer.PeerNameRegistration" />
+        <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.PeerToPeerException" /> class.</summary>
+        <altmember cref="T:System.Net.PeerToPeer.Cloud" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

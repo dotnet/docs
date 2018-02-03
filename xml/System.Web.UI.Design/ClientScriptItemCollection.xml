@@ -27,6 +27,10 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
+    <altmember cref="T:System.Web.UI.Design.ClientScriptItem" />
+    <altmember cref="T:System.Web.UI.Design.WebFormsRootDesigner" />
+    <altmember cref="T:System.Web.UI.ClientScriptManager" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +58,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Web.UI.Design.WebFormsRootDesigner.GetClientScriptsInDocument" />
+        <altmember cref="T:System.Web.UI.Design.ClientScriptItem" />
       </Docs>
     </Member>
   </Members>

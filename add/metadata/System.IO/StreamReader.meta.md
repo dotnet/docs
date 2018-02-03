@@ -218,7 +218,7 @@ manager: "wpickett"
 uid: System.IO.StreamReader.Dispose
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+manager: "wpickett"
 ---
 
 ---

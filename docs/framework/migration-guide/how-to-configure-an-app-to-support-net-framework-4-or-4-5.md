@@ -18,6 +18,8 @@ caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # How to: Configure an App to Support .NET Framework 4 or 4.5
 All apps that host the common language runtime (CLR) need to start, or *activate*, the CLR in order to run managed code. Typically, a   .NET Framework app runs on the version of the CLR that it was built on, but you can change this behavior for desktop apps by using an application configuration file (sometimes referred to as an app.config file). However, you cannot change the default activation behavior for Windows Store apps or Windows Phone apps by using an application configuration file. This article explains how to enable your desktop app to run on another version of the .NET Framework and provides an example of how to target version 4 or 4.5.  
@@ -86,5 +88,5 @@ All apps that host the common language runtime (CLR) need to start, or *activate
  \* For more information about this error message and ways to avoid it, see [.NET Framework Initialization Errors: Managing the User Experience](../../../docs/framework/deployment/initialization-errors-managing-the-user-experience.md).  
   
 ## See Also  
- [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)   
+ [Migrating from the .NET Framework 1.1](../../../docs/framework/migration-guide/migrating-from-the-net-framework-1-1.md)  
  [Migration Guide](../../../docs/framework/migration-guide/index.md)

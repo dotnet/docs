@@ -36,6 +36,13 @@
     <block subset="none" type="overrides">
       <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewImageCell" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewImageCell.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewImageCell.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
     </block>
+    <altmember cref="T:System.Windows.Forms.DataGridView" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <altmember cref="T:System.Windows.Forms.DataGridViewImageColumn" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+    <altmember cref="T:System.Drawing.Image" />
+    <altmember cref="T:System.Drawing.Icon" />
+    <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +65,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,6 +95,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueType" />
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -116,6 +130,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewImageCell.Clone" /> in a derived class, call the base class's <see cref="M:System.Windows.Forms.DataGridViewImageCell.Clone" /> method so that the properties of the base class are copied to the new cell, and be sure to also copy the values of any properties that were added to the derived class.</para>
         </block>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -145,6 +160,9 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="M:System.Windows.Forms.DataGridViewImageCell.CreateAccessibilityInstance" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.AccessibilityObject" />
       </Docs>
     </Member>
     <Member MemberName="DefaultNewRowValue">
@@ -172,6 +190,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Icon" />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -213,6 +235,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.Description" />
       </Docs>
     </Member>
     <Member MemberName="EditType">
@@ -238,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
     <Member MemberName="FormattedValueType">
@@ -271,6 +296,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Type" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
       </Docs>
     </Member>
     <Member MemberName="GetContentBounds">
@@ -297,6 +328,7 @@
         <summary>Returns the bounding rectangle that encloses the cell's content area, which is calculated using the specified <see cref="T:System.Drawing.Graphics" /> and cell style.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's contents.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetErrorIconBounds">
@@ -323,11 +355,12 @@
         <summary>Returns the bounding rectangle that encloses the cell's error icon, if one is displayed.</summary>
         <returns>The <see cref="T:System.Drawing.Rectangle" /> that bounds the cell's error icon, if one is displayed; otherwise, <see cref="F:System.Drawing.Rectangle.Empty" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetErrorIconBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="GetFormattedValue">
       <MemberSignature Language="C#" Value="protected override object GetFormattedValue (object value, int rowIndex, ref System.Windows.Forms.DataGridViewCellStyle cellStyle, System.ComponentModel.TypeConverter valueTypeConverter, System.ComponentModel.TypeConverter formattedValueTypeConverter, System.Windows.Forms.DataGridViewDataErrorContexts context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetFormattedValue(object value, int32 rowIndex, class System.Windows.Forms.DataGridViewCellStyle&amp; cellStyle, class System.ComponentModel.TypeConverter valueTypeConverter, class System.ComponentModel.TypeConverter formattedValueTypeConverter, valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.GetFormattedValue(System.Object,System.Int32,System.Windows.Forms.DataGridViewCellStyle@,System.ComponentModel.TypeConverter,System.ComponentModel.TypeConverter,System.Windows.Forms.DataGridViewDataErrorContexts)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -370,6 +403,17 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.FormattedValueType" />
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.DataError" />
+        <altmember cref="E:System.Windows.Forms.DataGridView.CellFormatting" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewCellStyle" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+        <altmember cref="F:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent" />
+        <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.FormattedValue" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.Description" />
       </Docs>
     </Member>
     <Member MemberName="GetPreferredSize">
@@ -398,6 +442,7 @@
         <summary>Calculates the preferred size, in pixels, of the cell.</summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the preferred size, in pixels, of the cell.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)" />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -420,6 +465,7 @@
         <summary>Gets the value of the cell.</summary>
         <returns>The value contained in the <see cref="T:System.Windows.Forms.DataGridViewCell" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.GetValue(System.Int32)" />
       </Docs>
     </Member>
     <Member MemberName="ImageLayout">
@@ -453,6 +499,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The supplied <see cref="T:System.Windows.Forms.DataGridViewImageCellLayout" /> value is invalid.</exception>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Windows.Forms.DataGridViewImageCellLayout" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.Padding" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.ImageLayout" />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -513,6 +563,7 @@
         <summary>Returns a string that describes the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Forms.DataGridViewCell.ToString" />
       </Docs>
     </Member>
     <Member MemberName="ValueIsIcon">
@@ -550,6 +601,12 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="T:System.Drawing.Icon" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
       </Docs>
     </Member>
     <Member MemberName="ValueType">
@@ -577,7 +634,24 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewColumn.ValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.FormattedValueType" />
+        <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
+        <altmember cref="T:System.Drawing.Image" />
+        <altmember cref="T:System.Drawing.Icon" />
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageCell" /> class.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

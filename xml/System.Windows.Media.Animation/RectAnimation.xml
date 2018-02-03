@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.Windows.Media.Animation.RectAnimationUsingKeyFrames" />
+    <altmember cref="T:System.Windows.Freezable" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -210,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="ByProperty">
@@ -276,6 +280,7 @@
         <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.RectAnimation" />.</summary>
         <returns>The new instance.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunction">
@@ -301,6 +306,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="EasingFunctionProperty">
@@ -318,6 +324,7 @@
       <Docs>
         <summary>Identifies the <see cref="P:System.Windows.Media.Animation.RectAnimation.EasingFunction" /> dependency property.</summary>
         <remarks>To be added.</remarks>
+        <altmember cref="T:System.Windows.Media.Animation.IEasingFunction" />
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -384,6 +391,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.By" />
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.To" />
       </Docs>
     </Member>
     <Member MemberName="FromProperty">
@@ -436,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.Windows.Media.Animation.RectAnimationBase.GetCurrentValueCore(System.Windows.Rect,System.Windows.Rect,System.Windows.Media.Animation.AnimationClock)" />
       </Docs>
     </Member>
     <Member MemberName="IsAdditive">
@@ -510,6 +520,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -576,6 +587,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.From" />
+        <altmember cref="P:System.Windows.Media.Animation.RectAnimation.By" />
       </Docs>
     </Member>
     <Member MemberName="ToProperty">
@@ -595,5 +608,14 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RectAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

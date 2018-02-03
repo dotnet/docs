@@ -79,6 +79,7 @@
         <summary>Gets the object that defines the view for the <see cref="T:System.Windows.Automation.TreeWalker" /> object.</summary>
         <value>The condition that defines the view. This is the value that was passed to the constructor.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="M:System.Windows.Automation.TreeWalker.#ctor(System.Windows.Automation.Condition)" />
       </Docs>
     </Member>
     <Member MemberName="ContentViewWalker">
@@ -111,6 +112,8 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElement.IsContentElementProperty" />
+        <altmember cref="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
       </Docs>
     </Member>
     <Member MemberName="ControlViewWalker">
@@ -143,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFirstChild">

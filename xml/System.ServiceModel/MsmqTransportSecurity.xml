@@ -167,12 +167,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm.SHA1>.  
+ The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm.Sha1>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of <see cref="T:System.ServiceModel.MsmqSecureHashAlgorithm" /> values.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqTransportSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

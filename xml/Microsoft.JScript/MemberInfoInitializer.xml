@@ -19,6 +19,7 @@
     <summary>Defines methods that an external COM object must implement. This interface is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> to bind to an external object. This interface is implemented by <see cref="T:Microsoft.JScript.COMFieldInfo" />, <see cref="T:Microsoft.JScript.COMMethodInfo" />, and <see cref="T:Microsoft.JScript.COMPropertyInfo" />.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <altmember cref="T:Microsoft.JScript.COMMemberInfo" />
   </Docs>
   <Members>
     <Member MemberName="GetCOMMemberInfo">
@@ -39,6 +40,9 @@
         <returns>A managed object that enables JScript to communicate with an external COM member.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -63,6 +67,9 @@
         <summary>When implemented in a class, initializes the information that enables JScript to communicate with the specified external COM member.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.COMFieldInfo" />
+        <altmember cref="T:Microsoft.JScript.COMMethodInfo" />
+        <altmember cref="T:Microsoft.JScript.COMPropertyInfo" />
       </Docs>
     </Member>
   </Members>

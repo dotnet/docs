@@ -1,7 +1,7 @@
 ---
 title: "How to: Find All Nodes in a Namespace (C#)"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
 caps.latest.revision: 3
 author: "BillWagner"

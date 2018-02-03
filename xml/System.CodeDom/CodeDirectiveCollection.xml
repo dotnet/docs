@@ -40,6 +40,7 @@
   
  ]]></format>
     </remarks>
+    <altmember cref="T:System.CodeDom.CodeDirective" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -153,6 +154,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.CodeDom.CodeDirective" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -190,6 +192,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.CodeDom.CodeDirective" />
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -462,5 +465,23 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a set of <see cref="T:System.CodeDom.CodeDirective" /> objects to the collection.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

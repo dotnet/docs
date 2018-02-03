@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "event handling [Windows Forms]"
   - "Windows Forms controls, event handling"
@@ -22,6 +20,8 @@ caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Creating Event Handlers in Windows Forms
 An event handler is a procedure in your code that determines what actions are performed when an event occurs, such as when the user clicks a button or a message queue receives a message. When an event is raised, the event handler or handlers that receive the event are executed. Events can be assigned to multiple handlers, and the methods that handle particular events can be changed dynamically. You can also use the Windows Forms Designer to create event handlers.  
@@ -42,7 +42,7 @@ An event handler is a procedure in your code that determines what actions are pe
  [Order of Events in Windows Forms](../../../docs/framework/winforms/order-of-events-in-windows-forms.md)  
  Describes the order in which events are raised in Windows Forms controls.  
   
- [How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/en-us/8461e9b8-14e8-406f-936e-3726732b23d2)  
+ [How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2)  
  Describes how to use the Windows Forms Designer to create event handlers.  
   
 ## Related Sections  

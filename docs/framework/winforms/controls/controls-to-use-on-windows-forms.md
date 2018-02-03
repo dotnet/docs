@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "controls [Windows Forms]"
   - "Windows Forms controls, list of"
@@ -19,6 +17,8 @@ caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
+ms.workload: 
+  - dotnet
 ---
 # Controls to Use on Windows Forms
 The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md).  
@@ -81,9 +81,9 @@ The following is an alphabetic list of controls and components that can be used 
  [ErrorProvider Component](../../../../docs/framework/winforms/controls/errorprovider-component-windows-forms.md)  
  Displays error information to the user in a non-intrusive way.  
   
- "FileDialog Class"  
- Provides base-class functionality for file dialog boxes.  
-  
+ [FileDialog Class](../../../../docs/framework/winforms/controls/filedialog-class.md)
+ Provides base-class functionality for file dialog boxes.
+
  [FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-windows-forms.md)  
  Represents a panel that dynamically lays out its contents horizontally or vertically.  
   
@@ -171,8 +171,8 @@ The following is an alphabetic list of controls and components that can be used 
  [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)  
  Selects files to save and where to save them.  
   
- "SoundPlayer Class"  
- Enables you to easily include sounds in your applications.  
+ [SoundPlayer Class](../../../../docs/framework/winforms/controls/soundplayer-class.md)
+ Enables you to easily include sounds in your applications.
   
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
  Allows the user to resize a docked control.  
@@ -238,7 +238,7 @@ The following is an alphabetic list of controls and components that can be used 
  [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)  
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
- [Controls and Programmable Objects Compared in Various Languages and Libraries](http://msdn.microsoft.com/en-us/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
+ [Controls and Programmable Objects Compared in Various Languages and Libraries](http://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
  Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in [!INCLUDE[vbprvblong](../../../../includes/vbprvblong-md.md)]. Note that controls are now classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
  [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  

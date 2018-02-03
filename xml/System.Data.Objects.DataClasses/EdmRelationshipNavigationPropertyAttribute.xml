@@ -85,7 +85,7 @@
 ## Remarks  
  The relationship name is not namespace qualified.  
   
- The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
+ The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/library/c305169a-8af7-432f-9ba7-800a163aed41).  
   
  ]]></format>
         </remarks>
@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
+ The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/library/c305169a-8af7-432f-9ba7-800a163aed41).  
   
  ]]></format>
         </remarks>
@@ -130,7 +130,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the role name at the other end of the relationship.</summary>
-        <value>The target role name is specified by the <see langword="Role" /> attribute of the other <see langword="End" /> element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).</value>
+        <value>The target role name is specified by the <see langword="Role" /> attribute of the other <see langword="End" /> element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/library/c305169a-8af7-432f-9ba7-800a163aed41).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

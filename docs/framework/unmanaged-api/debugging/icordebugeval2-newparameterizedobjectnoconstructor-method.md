@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # ICorDebugEval2::NewParameterizedObjectNoConstructor Method
 Instantiates a new parameterized type object of the specified class without attempting to call a constructor method.  

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataError::OnError"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataError::OnError method [.NET Framework metadata]"
   - "OnError method, IMetaDataError interface [.NET Framework metadata]"
@@ -29,6 +27,8 @@ caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
+ms.workload: 
+  - "dotnet"
 ---
 # IMetaDataError::OnError Method
 Provides notification of errors that occur during the metadata merge.  

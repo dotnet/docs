@@ -39,6 +39,8 @@
         <returns>The exception <paramref name="e" />, converted to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if that is possible.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <altmember cref="T:Microsoft.JScript.JScriptException" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
     <Member MemberName="PushHandlerScope">

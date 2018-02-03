@@ -112,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="F:System.String.Empty" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -195,6 +196,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="value" /> parameter is a <see cref="T:System.Globalization.StringInfo" /> object and its <see cref="P:System.Globalization.StringInfo.String" /> property equals the <see cref="P:System.Globalization.StringInfo.String" /> property of this <see cref="T:System.Globalization.StringInfo" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <altmember cref="Overload:System.String.Equals" />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -240,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="M:System.String.GetHashCode" />
       </Docs>
     </Member>
     <Member MemberName="GetNextTextElement">
@@ -287,6 +290,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)" />
+        <altmember cref="M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetNextTextElement">
@@ -338,6 +343,8 @@
           <paramref name="str" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for <paramref name="str" />.</exception>
+        <altmember cref="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)" />
+        <altmember cref="M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="GetTextElementEnumerator">
@@ -402,6 +409,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="T:System.Globalization.TextElementEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="GetTextElementEnumerator">
@@ -461,6 +469,7 @@
           <paramref name="str" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the range of valid indexes for <paramref name="str" />.</exception>
+        <altmember cref="T:System.Globalization.TextElementEnumerator" />
       </Docs>
     </Member>
     <Member MemberName="LengthInTextElements">
@@ -560,6 +569,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="str" /> is <see langword="null" />.</exception>
+        <altmember cref="Overload:System.Globalization.StringInfo.SubstringByTextElements" />
+        <altmember cref="P:System.Globalization.StringInfo.LengthInTextElements" />
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -597,7 +608,7 @@
 ## Remarks  
  When a <xref:System.Globalization.StringInfo> object is instantiated, its <xref:System.Globalization.StringInfo.String%2A> property is set to one of the following values:  
   
--   <xref:System.String?displayProperty=nameWithType> if the default  <xref:System.Globalization.StringInfo.%23ctor> is called. You should then use the <xref:System.Globalization.StringInfo.String%2A> property to assign the string that this <xref:System.Globalization.StringInfo> object rperesents.  
+-   <xref:System.String.Empty?displayProperty=nameWithType> if the default  <xref:System.Globalization.StringInfo.%23ctor> is called. You should then use the <xref:System.Globalization.StringInfo.String%2A> property to assign the string that this <xref:System.Globalization.StringInfo> object rperesents.  
   
 -   The string supplied as the `value` argument to the <xref:System.Globalization.StringInfo.%23ctor%28System.String%29> constructor.  
   
@@ -708,5 +719,45 @@
  <paramref name="startingTextElement" /> + <paramref name="lengthInTextElements" /> specify an index that is greater than the number of text elements in this <see cref="T:System.Globalization.StringInfo" /> object.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SubstringByTextElements">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a substring of text elements from the current <see cref="T:System.Globalization.StringInfo" /> object.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetNextTextElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the first text element in a specified string.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.StringInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetTextElementEnumerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerator that iterates through the text elements of a string.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

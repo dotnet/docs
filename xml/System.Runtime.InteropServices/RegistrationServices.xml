@@ -200,7 +200,7 @@
     </MemberGroup>
     <Member MemberName="RegisterTypeForComClients">
       <MemberSignature Language="C#" Value="public virtual void RegisterTypeForComClients (Type type, ref Guid g);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTypeForComClients(class System.Type type, valuetype System.Guid g) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTypeForComClients(class System.Type type, valuetype System.Guid&amp; g) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients(System.Type,System.Guid@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -233,6 +233,7 @@
         <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter cannot be created.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <altmember cref="M:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly(System.Reflection.Assembly,System.Runtime.InteropServices.AssemblyRegistrationFlags)" />
       </Docs>
     </Member>
     <Member MemberName="RegisterTypeForComClients">

@@ -1,16 +1,12 @@
 ---
 title: "/win32manifest (Visual Basic)"
-
-ms.date: "2015-07-20"
+ms.date: 07/20/2015
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/win32manifest compiler option [Visual Basic]"
   - "win32manifest compiler option [Visual Basic]"
@@ -19,21 +15,6 @@ ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /win32manifest (Visual Basic)
 Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
@@ -89,5 +70,5 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
 ```  
   
 ## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [/nowin32manifest (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nowin32manifest.md)

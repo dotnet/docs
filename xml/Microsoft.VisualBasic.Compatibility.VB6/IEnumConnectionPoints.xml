@@ -35,7 +35,7 @@
   <Members>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public void Clone (out Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints ecp);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone(class Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints ecp) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone([out] class Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints&amp; ecp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Clone(Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -65,7 +65,7 @@
     </Member>
     <Member MemberName="Next">
       <MemberSignature Language="C#" Value="public void Next (int cConnections, out Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint[] cp, out int cFetched);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Next(int32 cConnections, class Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint[] cp, int32 cFetched) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Next([in]int32 cConnections, [out] class Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint[]&amp; cp, [out] int32&amp; cFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Next(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IConnectionPoint[]@,System.Int32@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -126,7 +126,7 @@
     </Member>
     <Member MemberName="Skip">
       <MemberSignature Language="C#" Value="public void Skip (int cConnections);" />
-      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Skip(int32 cConnections) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Skip([in]int32 cConnections) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IEnumConnectionPoints.Skip(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

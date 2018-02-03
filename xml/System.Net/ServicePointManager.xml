@@ -834,7 +834,7 @@ Each callback would return a value that indicates whether the certificate will b
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission"> to set the <see cref="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">to set the <see cref="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
         <altmember cref="T:System.Net.ServicePoint" />
         <altmember cref="T:System.Security.Permissions.SecurityPermission" />
       </Docs>

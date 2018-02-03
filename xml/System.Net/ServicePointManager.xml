@@ -801,21 +801,17 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
+An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
   
- When custom validation is not used, the certificate name is compared with host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.hmtl", the default behavior is for the client to check the certificate against www.contoso.com.  
+When custom validation is not used, the certificate name is compared with host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.hmtl", the default behavior is for the client to check the certificate against www.contoso.com.  
 
- Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritive. 
-
- As <xref:System.Net.ServicePointManager> is shared across threads, malicious code 
- within your application can override the default settings or settings you have explicitly set. 
- Always use code, libraries, and NuGet packages that you trust in your project. As 
- a developer of NuGet packages and libraries consider wrapping security-critical code 
- in a <xref:System.AppDomain%2A>.
+Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritative. 
+In other words, you can attach multiple delegates and they all get a callback from <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A>. 
+Each callback would return a value that indicates whether the certificate will be accepted or not, however only the value from the last delegate will be respected.
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">to set the <see cref="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission"> to set the <see cref="P:System.Net.ServicePointManager.ServerCertificateValidationCallback" /> property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ServerCipherSuitesCallback">

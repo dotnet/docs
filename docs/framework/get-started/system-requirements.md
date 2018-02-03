@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework system requirements"
 ms.custom: "updateeachrelease"
-ms.date: "10/17/2017"
+ms.date: "02/02/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -19,10 +19,23 @@ manager: "wpickett"
 ms.workload: 
   - "dotnet"
 ---
-
 # .NET Framework system requirements
 
-The tables in this topic provide the hardware, operating system, and software requirements for the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases (4.6.1 and 4.6.2), and the .NET Framework 4.7 and its point release (4.7.1). Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
+The tables in this topic provide the hardware, operating system, and software requirements for the following .NET Framework versions:
+
+* .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2).
+* .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2).
+* .NET Framework 4.7 and its point release (4.7.1).
+
+Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
+
+> [!IMPORTANT]
+> All .NET Framework versions since .NET Framework 4 are in-place updates, so only a single 4.x version can be present on a system.
+> In addition, particular versions of the .NET Framework are pre-installed on some versions of the Windows operating system. This means that:
+>
+> * If there's a later version installed on the machine already, you cannot install a previous 4.x version.
+> * If the OS comes pre-installed with a particular .NET version, you cannot install a previous 4.x version on the same machine.
+> * If you install a later version, you don't have to first uninstall the previous version.
 
 All .NET Framework versions since .NET Framework 4 are in-place updates. In other words, if there's a later version installed on the machine already, you don't have to install the previous versions. Similarly, if you install a later version, you don't have to first uninstall the previous versions. And, if an OS already comes pre-installed with a particular .NET Framework version, you cannot install previous 4.x versions on the same machine.
 
@@ -61,7 +74,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
  **Notes:**
 
-- On Windows 7 systems, the .NET Framework requires Windows 7 SP1. If you're on Windows 7 and haven't yet installed Service Pack 1, you'll need to do so before installing the .NET Framework.
+- On Windows 7 systems, the .NET Framework requires Windows 7 SP1. If you're on Windows 7 and haven't yet installed Service Pack 1, you need to do so before installing the .NET Framework.
 
 - The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is supported on the Windows Preinstallation Environment (Windows PE). Not all features are supported on Windows PE.
 

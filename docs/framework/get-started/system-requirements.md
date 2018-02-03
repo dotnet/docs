@@ -37,8 +37,6 @@ Development environments that enable you to develop apps for the .NET Framework 
 > * If the OS comes pre-installed with a particular .NET version, you cannot install a previous 4.x version on the same machine.
 > * If you install a later version, you don't have to first uninstall the previous version.
 
-All .NET Framework versions since .NET Framework 4 are in-place updates. In other words, if there's a later version installed on the machine already, you don't have to install the previous versions. Similarly, if you install a later version, you don't have to first uninstall the previous versions. And, if an OS already comes pre-installed with a particular .NET Framework version, you cannot install previous 4.x versions on the same machine.
-
 For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
 
 For information on the support lifecycle of .NET Framework versions, see [Microsoft Support Lifecycle](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=Microsoft%20.NET%20Framework&Filter=FilterNO).

@@ -218,9 +218,11 @@
   
  Any callbacks or cancelable operations registered with the <xref:System.Threading.CancellationToken> will be executed.  
   
- It is recommended that cancelable operations and callbacks registered with <xref:System.Threading.CancellationToken> do not throw exceptions. However, this overload of Cancel will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed.  
+ It is recommended that cancelable operations and callbacks registered with <xref:System.Threading.CancellationToken> do not throw exceptions. However, this overload of Cancel will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed. 
+
+ The <xref:System.Threading.ExecutionContext> that was captured when each callback was registered will be reestablished when the callback is invoked.   
   
- The <xref:System.Threading.ExecutionContext> and, if captured, the <xref:System.Threading.SynchronizationContext>, in use when each callback was registered will be reestablished when the callback is invoked.  
+ If <xref:System.Threading.SynchronizationContext> was captured when a callback was registered, that callback will be executed on the captured context.  
   
    
   
@@ -282,7 +284,9 @@
   
  If `throwOnFirstException` is `false`, this overload will aggregate any exceptions thrown into an <xref:System.AggregateException>, such that one callback throwing an exception will not prevent other registered callbacks from being executed.  
   
- The <xref:System.Threading.ExecutionContext> and, if captured, the <xref:System.Threading.SynchronizationContext>, in use when each callback was registered will be reestablished when the callback is invoked.    
+ The <xref:System.Threading.ExecutionContext> that was captured when each callback was registered will be reestablished when the callback is invoked.   
+  
+ If <xref:System.Threading.SynchronizationContext> was captured when a callback was registered, that callback will be executed on the captured context.   
   
  ]]></format>
         </remarks>

@@ -50,7 +50,7 @@ namespace HelloWorld
             // </Snippet4>
 
             // <Snippet5>
-            WriteLine($"There are {helloWorldDeclaration.Members.Count} members declared in this namespace.");
+            WriteLine($"There is {helloWorldDeclaration.Members.Count} member declared in this namespace.");
             WriteLine($"The first member is a {helloWorldDeclaration.Members[0].Kind()}");
             // </Snippet5>
 

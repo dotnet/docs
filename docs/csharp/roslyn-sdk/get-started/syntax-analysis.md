@@ -13,7 +13,7 @@ ms.custom: mvc
 
 In this tutorial, you'll explore the **Syntax API**. The syntax API provides access to the data structures that describe a C# or Visual Basic program. These data structures have enough detail that they can fully represent any program of any size. These structures can describe complete programs that compile and run correctly. They can also describe incomplete programs, as you write them, in the editor.
 
-To enable this rich expression, the data structures and APIs that make up the syntax API are necessarily complex. As is traditional, let's start with what the data structure looks like for the typical "Hello World" program:
+To enable this rich expression, the data structures and APIs that make up the syntax API are necessarily complex. Let's start with what the data structure looks like for the typical "Hello World" program:
 
 ```csharp
 using System;
@@ -51,7 +51,7 @@ The four primary building blocks of syntax trees are:
 * The <xref:Microsoft.CodeAnalysis.SyntaxToken?displayProperty=nameWithType> structure, which represents an individual keyword, identifier, operator, or punctuation.
 * And lastly the <xref:Microsoft.CodeAnalysis.SyntaxTrivia?displayProperty=nameWithType> structure, which represents syntactically insignificant bits of information such as the whitespace between tokens, preprocessing directives, and comments.
 
-Trivia, tokens, and nodes are composed hierarchically to form a tree that completely represents everything in a fragment of Visual Basic or C# code. For example, the preceding C# source file examined using the **Syntax Visualizer** (In Visual Studio, choose **View** > **Other Windows** > **Syntax Visualizer**) looks like the following figure:
+Trivia, tokens, and nodes are composed hierarchically to form a tree that completely represents everything in a fragment of Visual Basic or C# code. You can see this structure using the **Syntax Visualizer** window. In Visual Studio, choose **View** > **Other Windows** > **Syntax Visualizer**. For example, the preceding C# source file examined using the **Syntax Visualizer** looks like the following figure:
 
 **SyntaxNode**: Blue | **SyntaxToken**: Green | **SyntaxTrivia**: Red
 ![C# Code File](media/walkthrough-csharp-syntax-figure1.png)
@@ -62,7 +62,7 @@ While you can find anything in a code file using the syntax APIs, most scenarios
 
 ## Traversing trees
 
-You can examine the nodes in a syntax tree in two ways. You can traverse the tree to examine each node. Alternatively, you can query for specific elements or nodes.
+You can examine the nodes in a syntax tree in two ways. You can traverse the tree to examine each node, or you can query for specific elements or nodes.
 
 > [!IMPORTANT]
 > The following samples require the **.NET Compiler SDK** installed as part of Visual Studio 2017. You can find the .NET Compiler SDK as the last optional component listed under the **Visual Studio extension development** workload. The templates aren't installed without this component.

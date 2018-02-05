@@ -32,10 +32,6 @@
 > [!NOTE]
 >  If the MVC data model or entity partial class contains a field that is annotated with the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute, but the page does not contain the property, an error is not raised. Validation occurs only for fields that are submitted to the server.  
   
- A Visual Studio project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?linkid=158686).  
-  
-   
-  
 ## Examples  
  The following example uses the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute to override the database schema rule that allows a data field to be empty. The example performs the following steps:  
   

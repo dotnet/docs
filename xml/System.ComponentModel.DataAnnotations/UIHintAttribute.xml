@@ -26,9 +26,7 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- A Visual Studio project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?linkid=158686).  
-  
+## Remarks
  MVC uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a model with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> class to associate a user control with a data field. Dynamic Data uses the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute.UIHint%2A> property to determine which user control to use in order to display a data field.  
   
  For more information about how to use attributes, see [Attributes](~/docs/standard/attributes/index.md).  

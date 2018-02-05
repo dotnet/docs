@@ -94,7 +94,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -126,7 +126,7 @@
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -159,7 +159,7 @@
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>
@@ -192,7 +192,7 @@
  This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
   
 > [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Data Validation](https://www.owasp.org/index.php/Data_Validation).  
   
  ]]></format>
         </remarks>

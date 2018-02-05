@@ -560,7 +560,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
  The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
 
@@ -612,7 +612,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
  The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
 
@@ -666,7 +666,7 @@ For the definition of equality, see the <xref:System.Threading.CancellationToken
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propogated out of this method call.  
+ If this token is already in the canceled state, the delegate will be run immediately and synchronously. Any exception the delegate generates will be propagated out of this method call.  
   
  The current <xref:System.Threading.ExecutionContext> is captured along with the delegate and will be used when executing it. 
 

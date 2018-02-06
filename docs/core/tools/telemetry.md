@@ -13,7 +13,6 @@ ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
 ms.workload: 
   - dotnetcore
 ---
-
 # .NET Core CLI Tools telemetry
 
 The [.NET Core SDK](index.md) includes a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It's important that the .NET Team understands how the tools are used so that we can improve them. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).
@@ -130,5 +129,5 @@ You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-te
 ## See also
 
 [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/)  
-[Telemetry reference source (dotnet/cli repo; release/2.0.0 branch)](https://github.com/dotnet/cli/tree/release/2.0.0/src/dotnet/Telemetry)   
+[Telemetry reference source (dotnet/cli repo; release/2.0.0 branch)](https://github.com/dotnet/cli/tree/release/2.0.0/src/dotnet/Telemetry/Telemetry.cs)   
 [.NET Core SDK Usage Data](https://github.com/dotnet/core/blob/master/release-notes/cli-usage-data.md)

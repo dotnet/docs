@@ -70,15 +70,13 @@
  For a list of default property values for an instance of <xref:System.Timers.Timer>, see the <xref:System.Timers.Timer.%23ctor%2A> constructor.  
   
 > [!TIP]
->  Be aware that the .NET Framework Class Library includes four classes named `Timer`, each of which offers different functionality:  
+>  Be aware that .NET includes four classes named `Timer`, each of which offers different functionality:  
 >   
->  -   <xref:System.Timers.Timer?displayProperty=nameWithType> (this topic): fires an event at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Threading.Timer?displayProperty=nameWithType>: executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
-> -   <xref:System.Windows.Forms.Timer?displayProperty=nameWithType>: a Windows Forms component that fires an event at regular intervals. The component has no user interface and is designed for use in a single-threaded environment.  
-> -   <xref:System.Web.UI.Timer?displayProperty=nameWithType>: an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
-  
-   
-  
+> - <xref:System.Timers.Timer?displayProperty=nameWithType> (this topic): fires an event at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> - <xref:System.Threading.Timer?displayProperty=nameWithType>: executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=nameWithType> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> - <xref:System.Windows.Forms.Timer?displayProperty=nameWithType>: a Windows Forms component that fires an event at regular intervals. The component has no user interface and is designed for use in a single-threaded environment.  
+> - <xref:System.Web.UI.Timer?displayProperty=nameWithType>: an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
+
 ## Examples  
  The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=nameWithType> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=nameWithType> property each time it is raised.  
   

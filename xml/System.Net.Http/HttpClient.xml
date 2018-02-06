@@ -66,6 +66,8 @@ public class GoodController : ApiController
 }  
   
 ```  
+
+By default <xref:System.Net.ServicePointManager.DefaultConnectionLimit> will define the maximum number of concurrent connections to the same server. 
   
 The <xref:System.Net.Http.HttpClient> is a high-level API that wraps the lower-level functionality available on each platform where it runs.
 

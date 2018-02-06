@@ -240,8 +240,8 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 
 ### Blob storage reference
 
-- [Azure Storage APIs for .NET](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/storage?view=azure-dotnet)
-- [Azure Storage Services REST API Reference](https://docs.microsoft.com/en-us/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)
 
 ### Related guides
 

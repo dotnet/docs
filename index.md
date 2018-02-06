@@ -44,7 +44,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netframework-4.7">
+                <a href="/dotnet/api/?view=netframework-4.7.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
